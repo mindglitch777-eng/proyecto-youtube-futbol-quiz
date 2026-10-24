@@ -1,0 +1,112 @@
+{
+ "video_id": "MF9eMbFXiQg",
+ "modelo": "gemini-flash-latest",
+ "uso": {
+  "promptTokenCount": 3052,
+  "candidatesTokenCount": 1252,
+  "totalTokenCount": 4734,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2269
+   }
+  ],
+  "thoughtsTokenCount": 430,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 24.8,
+  "formato": "Desafío en la pileta donde te hunden la cabeza en el agua hasta que nombrás un jugador de fútbol",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 4.5,
+   "que_se_ve": "Una chica en una pileta sosteniendo a un chico bajo el agua con la foto de Cristiano Ronaldo arriba; el chico sale a la superficie gritando 'Ronaldo' desesperado.",
+   "que_se_dice_o_texto": "Ronaldo!",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.5,
+    "parte": "gancho",
+    "descripcion": "La chica sumerge al chico; él sale a la superficie y nombra a Ronaldo para sumar el primer punto."
+   },
+   {
+    "inicio_s": 4.5,
+    "fin_s": 8.0,
+    "parte": "pregunta",
+    "descripcion": "Cambia el turno: el chico hunde a la chica, ella sale y grita 'Yamal' para sumar 1 punto."
+   },
+   {
+    "inicio_s": 8.0,
+    "fin_s": 13.5,
+    "parte": "pregunta",
+    "descripcion": "La vuelve a sumergir; sale tosiendo agua y dice 'Oyarzabal' para llegar a 2 puntos."
+   },
+   {
+    "inicio_s": 13.5,
+    "fin_s": 17.5,
+    "parte": "pregunta",
+    "descripcion": "La sumerge de nuevo; ella sale ahogada y grita 'Szoboszlai' alcanzando 3 puntos."
+   },
+   {
+    "inicio_s": 17.5,
+    "fin_s": 24.8,
+    "parte": "cierre",
+    "descripcion": "Última sumergida intensa; ella logra responder entre risas y ahogo, sumando 4 puntos mientras festeja y aparece el botón de suscripción."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.5,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El participante sumergido sale a la superficie y dice el nombre del jugador en voz alta; el contador numérico arriba sube un punto con un efecto sonoro",
+   "efecto_sonido": "Campana / ding de acierto y risas de fondo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "La chica festeja eufórica haber llegado a 4 puntos mientras aparece un sticker de 'Subscribe'.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Subscribe",
+   "momento_s": 23.5
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés / nombres internacionales con acento anglosajón/europeo",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "Efecto de campana/ding al sumar punto",
+    "Sonidos de chapoteo y agua",
+    "Risa de fondo/voz distorsionada"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Contador numérico verde/amarillo centrado en la parte superior y botón animado de 'Subscribe'",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Pileta de natación al aire libre con jardín y cerco verde",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Vlog/reto de comedia física en piscina en plano medio vertical",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La tensión física y cómica de ver a alguien aguantando la respiración bajo el agua para pensar un nombre rápido, el contraste entre la incomodidad de ahogarse y la alegría de acertar, y la rapidez del ritmo que mantiene la atención de principio a fin.",
+  "como_replicarlo_sin_cara_y_sin_clips": "No es fácilmente replicable sin personas reales ya que depende 100% de la comedia física del reto en la pileta; una alternativa gráfica sería una animación donde un personaje cae o se sumerge progresivamente con un temporizador hasta que aparece la respuesta correcta."
+ }
+}
