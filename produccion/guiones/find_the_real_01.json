@@ -1,0 +1,10 @@
+{
+ "id": "find_the_real_01",
+ "semilla": 11,
+ "rondas": [
+  {"nombre": "Yamal", "foto": "lamine_yamal_0", "etiqueta": "EASY", "intensidad": 1.0},
+  {"nombre": "Mbappé", "foto": "kylian_mbapp_0", "etiqueta": "MEDIUM", "intensidad": 0.7},
+  {"nombre": "Haaland", "foto": "erling_haaland_0", "etiqueta": "HARD", "intensidad": 0.55},
+  {"nombre": "Ronaldo", "foto": "cristiano_ronaldo_0", "etiqueta": "ONLY 1%", "intensidad": 0.22}
+ ]
+}
