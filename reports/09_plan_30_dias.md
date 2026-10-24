@@ -11,14 +11,14 @@
 
 | # | Formato | Por qué | Cómo se hace sin cara ni clips |
 |---|---|---|---|
-| A | **Encontrá al real / impostor** (grilla de caras) | Rinde 1,38× sin cara; 26 a 30 videos de 1 M+ por idioma; SpotVerse llegó a 43 M con 37 videos | Grilla 5×5 de fotos libres de Wikimedia, una "intrusa"; barra de tiempo; revelación con círculo y sonido de acierto |
-| B | **Imagen oculta / silueta** | 1,39× sin cara; en inglés hay 49 videos de 1 M+, en español solo 8 → hueco | Silueta negra de foto libre que se va revelando (pixelado → nítido); 4 rondas de 3 s |
-| C | **Verdadero o falso** | Formato con más rendimiento relativo (1,43×) y mediana de 225 mil en español | Fondo de color, frase grande, 3 s, revelación con ✅/❌ y un dato verificado |
-| D | **Carrera del jugador** (escudos de sus clubes) | Mejor formato sin cara (1,46×); poca competencia (15 canales en español) | Escudos en fila con flechas → "¿quién es?"; datos de Wikipedia/Transfermarkt como fuente |
-| E | **Ordená de mayor a menor** | 95 videos de 1 M+ en inglés contra 10 en español | 4 jugadores o equipos, el usuario piensa el orden; revelación con números (goles, valor, títulos) |
-| F | **Tier list express** | Mucho debate en comentarios; 31 videos de 1 M+ en español | Plantilla S/A/B/C con 6 jugadores; queda "polémico" a propósito |
+| A | **Encontrá al real / impostor** (grilla de caras) | Rinde 1,35× sin cara; en español buscar "encuentra al verdadero" da solo 12 videos (hueco); SpotVerse llegó a 43 M con 37 videos | Grilla 5×5 de fotos libres de Wikimedia, una "intrusa"; barra de tiempo; revelación con círculo y sonido de acierto |
+| B | **Imagen oculta / silueta** | 1,23× sin cara; **el hueco más grande**: en inglés 73 videos de 1 M+, en español 9 | Silueta negra de foto libre que se va revelando (pixelado → nítido); 4 rondas de 3 s |
+| C | **Nombrá jugadores (versión sin cara)** | **El mejor sin cara (1,42×)**; en español 66 videos de 1 M+ | "Nombrá 5 jugadores que jugaron en Boca y Real Madrid en 10 s": temporizador grande y revelación de la lista |
+| D | **Verdadero o falso** | 1,27× sin cara; fuerte en español (18 videos de 1 M+) | Fondo de color, frase grande, 3 s, revelación con ✅/❌ y un dato verificado |
+| E | **Armá tu equipo / elegí uno** | 1,35× sin cara; en inglés 97 videos de 1 M+, en español 33 | "Elegí 1 por línea": 4 pantallas de 2 opciones, el equipo final, "¿cuál armaste? 👇" |
+| F | **Carrera del jugador** (escudos de sus clubes) | 1,25× sin cara; poca competencia (18 canales en español) | Escudos en fila con flechas → "¿quién es?"; datos de Wikipedia/Transfermarkt como fuente |
 
-**Propuesta:** arrancar con **A, B, C y D** (más rendimiento relativo y más fáciles de automatizar). E y F entran en la semana 3 si sobra capacidad.
+**Propuesta:** arrancar con **A, B, C y D** (los de más rendimiento sin cara o más hueco en español, y fáciles de automatizar). E y F entran en la semana 3 si sobra capacidad.
 
 ## Calendario
 
@@ -29,7 +29,7 @@
 | 3 (días 15–21) | 14 a 21 | **Duplicar** los 2 formatos que más rindieron (60% del volumen). Probar E o F. Sumar el tercer short del día solo si el pipeline lo hace en menos de 20 minutos. |
 | 4 (días 22–30) | 14 a 21 | Más fuerte en el ganador. Series ("Parte 2, 3…") de lo que pegó. |
 
-**Horarios fijos:** 12:00 y 20:00 (hora Argentina). Ver reporte 04: el horario pesa poco, la constancia sí.
+**Horarios fijos:** 12:00 y 21:00 (hora Argentina); evitar las 16–17 h. Ver reporte 04: el horario pesa poco, la constancia sí.
 
 ## Métricas y reglas de decisión
 

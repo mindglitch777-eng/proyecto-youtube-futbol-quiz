@@ -73,15 +73,32 @@ for fm in lift.formato:
         t = str(r.titulo).replace("|", "/")[:70]
         f3.append(f"| {NOMBRE.get(fm, fm)} | [{t}]({r.url}) | {r.canal} | {k(r.vistas)} |")
 
+x2 = lambda n: f"{n:.2f}×".replace(".", ",")
+Q = lift[~lift.formato.isin(["otro_quiz", "no_quiz_futbol", "no_futbol", "datos_curiosos"])]
+QS = lsc.reset_index()
+QS = QS[~QS.formato.isin(["otro_quiz", "no_quiz_futbol", "no_futbol", "datos_curiosos"])]
+top_t = ", ".join(f"{NOMBRE.get(r.formato, r.formato).split(' (')[0].lower()} {x2(r.lift)}" for _, r in Q.head(8).iterrows())
+top_s = ", ".join(f"{NOMBRE.get(r.formato, r.formato).split(' (')[0].lower()} {x2(r.lift)}" for _, r in QS.head(8).iterrows())
+flojos = ", ".join(f"{NOMBRE.get(r.formato, r.formato).split(' (')[0].lower()} {x2(r.lift)}" for _, r in Q.tail(5).iterrows())
+huecos = []
+for fm in Q.formato:
+    if fm in comp.index:
+        r = comp.loc[fm]
+        en, es = r[("v1M", "en")], r[("v1M", "es")]
+        if en >= 2 * max(es, 1) and en >= 20:
+            huecos.append(f"{NOMBRE.get(fm, fm).split(' (')[0].lower()} ({en} videos de 1 M+ en inglés contra {es} en español)")
+fuertes = [f"{NOMBRE.get(fm, fm).split(' (')[0].lower()} ({comp.loc[fm][('v1M','es')]})" for fm in Q.formato
+           if fm in comp.index and comp.loc[fm][("v1M", "es")] >= 18 and comp.loc[fm][("v1M", "es")] >= comp.loc[fm][("v1M", "en")] * 0.8]
+CONCLUSION = f"""1. **Mejores formatos vs. el promedio de su canal:** {top_t}. **Entre los mejores la diferencia es chica: la ejecución pesa más que la elección.**
+2. **Sin cara:** {top_s}.
+3. **Más flojos:** {flojos}.
+4. **Huecos en español** (mucho éxito en inglés, poco en español): {"; ".join(huecos)}.
+5. **Fuertes en español** (cantidad de videos de 1 M+): {", ".join(fuertes)}."""
 N_CLASIF = f"{int(v.formato.notna().sum()):,}".replace(",", ".")
 txt = f"""# 02 · Formatos de quiz
 
-**Conclusión:**
-1. **Los formatos que más rinden por encima del promedio de su propio canal:** verdadero o falso, imagen oculta, pistas, armá tu equipo, impostor, escudo, nombrá jugadores y carrera. Todos rinden 1,25 a 1,45 veces lo normal del canal.
-2. **Sin cara**, los mejores son carrera, imagen oculta, impostor, nombrá jugadores, armá tu equipo y escudo. **Todos se pueden hacer con plantilla.**
-3. **Flojos o saturados:** emojis (0,9×, ningún outlier), duelo, opción múltiple y gol/jugada (este además usa clips, ver reporte 07).
-4. **Huecos en español** (rinden bien y hay pocos canales que los hagan): **imagen oculta** (en inglés hay 49 videos de 1 M o más, en español 8), **ordená de mayor a menor** (95 contra 10), **tier list**, **armá tu equipo** y **carrera**.
-5. **En español ya funcionan bien:** verdadero o falso (mediana 225 mil, 18 videos de 1 M o más), escudo, nombrá jugadores e impostor.
+**Conclusión (generada desde los datos):**
+{CONCLUSION}
 
 ## Cómo se midió
 

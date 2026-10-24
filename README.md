@@ -23,13 +23,14 @@ research/          scripts
 | Script | Qué hace | Cuota de YouTube |
 |---|---|---|
 | `research/yt_research.py search` | Búsquedas base | 100 por búsqueda |
-| `research/yt_research.py formatos` / `mercados` / `fresco` | Formatos alternativos, por país, muestra sin sesgo | 100 por búsqueda |
+| `research/yt_research.py formatos` / `propuestos` / `mercados` / `fresco` | Formatos alternativos, por país, muestra sin sesgo | 100 por búsqueda |
 | `research/yt_research.py channels` / `canales_quiz` | Stats y últimos 50 de cada canal | ~2 por canal |
 | `research/yt_research.py comments N` | Comentarios de N shorts | 1 por short |
 | `research/gemini_clasificar.py` | Gemini etiqueta el formato de cada short (texto) | 0 (Gemini gratis) |
 | `research/gemini_shorts.py --lista X.json` | Gemini **mira** cada short y saca su anatomía | 0 |
 | `research/analyze.py` | Arma todos los CSV | 0 |
 | `research/crecimiento.py` | Curvas de crecimiento | 0 |
+| `research/realismo.py` | Tasa de éxito sin sesgo (muestra por fecha) | 0 |
 | `research/reporte_*.py` | Regenera los reportes 01, 02 y 03 desde los CSV | 0 |
 
 **Claves:** se pasan como variables de entorno y **nunca** se guardan en el repo:

@@ -54,12 +54,20 @@ Reparto por idioma de los canales medidos (`data/processed/canales.csv`):
 
 | Idioma | Quiz puro | Quiz mixto | No quiz |
 |---|---|---|---|
-| Español | 44 | 37 | 69 |
-| Inglés | 43 | 41 | 34 |
-| Portugués | 19 | 9 | 6 |
+| Español | 59 | 55 | 91 |
+| Inglés | 98 | 81 | 78 |
+| Portugués | 27 | 15 | 16 |
 
 ## Qué tan realista es
 
-- **Muestra sin sesgo:** de 65 canales jóvenes (menos de 12 meses) que estaban subiendo quizzes de fútbol el 24-oct, **3 (≈5%) llegaron a 10 M de vistas en total** y **12 (18%) a 1.000 subs**. La mediana es de 359 subs y 117 mil vistas (`data/raw/fresh_channels.json`). Muestra chica: tomalo como orden de magnitud.
+- **Muestra sin sesgo:** busqué lo **último que se subió** (12 búsquedas ordenadas por fecha, `research/realismo.py`) y medí cómo les va hoy a esos canales (`data/processed/realismo.csv`). De 306 canales que estaban subiendo quizzes de fútbol:
+
+| Grupo | Canales | 100 mil+ vistas | 1 M+ | **10 M+** | 20 M+ | 1.000+ subs |
+|---|---|---|---|---|---|---|
+| Creados en los últimos 12 meses | 158 | 38% | 12% | **5%** | 3% | 23% |
+| Últimos 12 meses y 30 videos o más ("intento serio") | 75 | 61% | 24% | **11%** | 5% | 40% |
+| Todos (cualquier antigüedad) | 306 | 54% | 28% | 14% | 11% | 41% |
+
+  Ojo: "10 M+" son vistas **totales** del canal, no en 90 días (lo que pide YouTube es más exigente). El canal joven mediano tiene 80 subs y 47 mil vistas.
 - **Los que lo lograron** (`crecimiento.csv`): casi siempre fue con **1 a 3 videos que explotaron temprano**, no por acumulación lenta. Ver reporte 04.
-- **Traducción:** es una apuesta tipo lotería con chances que se pueden mejorar (formato, volumen, iteración). No es un sueldo garantizado. El plan de 30 días (reporte 09) está diseñado para saber rápido si hay tracción.
+- **Traducción:** si se le pone constancia (30+ videos), la chance de llegar a 10 M es de **~1 en 10**, y de 20 M **~1 en 20**. Se puede mejorar con formato, ejecución e iteración, pero no es un sueldo garantizado. El plan de 30 días (reporte 09) está diseñado para saber rápido si hay tracción.

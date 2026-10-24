@@ -5,7 +5,7 @@
 2. Lo que sí es copiable: **canales sin cara, nacidos en 2026, que llegan a decenas de millones en semanas** con imagen oculta, impostor, tier list y duelo (tabla 2).
 3. **En español, los canales sin cara son pocos y chicos** (tabla 3). Ese hueco es la oportunidad.
 
-Datos: 434 canales medidos, de los cuales **155 son quiz puro, 127 mixtos y 150 no quiz**.
+Datos: 560 canales medidos, de los cuales **206 son quiz puro, 161 mixtos y 189 no quiz**.
 - **Cómo se clasificaron:** Gemini etiquetó el formato de los últimos 50 videos de cada canal según título y tags. Quiz puro = 70% o más quiz; mixto = entre 20% y 70%.
 - **Archivo completo:** `data/processed/canales.csv` (país, subs, vistas, ritmo, mejor video, proporción mejor/mediana, % de outliers, etc.).
 - **Fuera de estas tablas:** los canales oficiales de ligas (UEFA, LaLiga…).
@@ -43,11 +43,11 @@ Ordenados por vistas por día de vida del canal.
 | [Waterboyz](https://youtube.com/channel/UCcgnq94JzVrIBAmKYRifh0A) | 2026-01 | en | 292 mil | 290 M | 660 | 306 mil | 2,74 | 63% | armar_equipo |
 | [paulOn](https://youtube.com/channel/UCPMGlNGUyEghsZmZCnoVPpA) | 2025-12 | es | 125 mil | 196 M | 492 | 181 mil | 0,54 | 92% | preguntas_a_personas |
 | [Migelftbl](https://youtube.com/channel/UCDDRq5ef2u8JaM-pf49LanA) | 2026-07 | es | 121 mil | 57,0 M | 44 | 809 mil | 0,49 | 9% | duelo |
+| [MUK FT MIND](https://youtube.com/channel/UCNOi0ZWYrhlo26d5M1G1jOQ) | 2026-09 | en | 6 mil | 24,8 M | 38 | 273 mil | 0,89 | 0% | imagen_oculta |
 | [início de jogo](https://youtube.com/channel/UCn6NQ1nd8xMF7nwnS7sN7Jw) | 2025-11 | pt | 217 mil | 197 M | 1047 | 67 mil | 3,37 | 57% | impostor |
 | [Footypoints](https://youtube.com/channel/UCQg42PAMjcOz1-YoVkoJlcg) | 2025-11 | en | 139 mil | 191 M | 105 | 177 mil | 0,3 | 2% | duelo |
+| [FULYON SHORTS](https://youtube.com/channel/UC5PgkslN0-aal256mrdnyxg) | 2026-02 | en | 48 mil | 121 M | 92 | 222 mil | 0,54 | 0% | imagen_oculta |
 | [FootballRanks](https://youtube.com/channel/UCqS4bcdaEwg24mctA5kPANA) | 2026-06 | en | 14 mil | 54,5 M | 51 | 38 mil | 0,6 | 2% | tier_list |
-| [SRD Game](https://youtube.com/channel/UCuk5pDlj8SG7BTLQlqEMvBg) | 2026-08 | en | 15 mil | 22,4 M | 39 | 35 mil | 0,97 | 0% | impostor |
-| [Aura From Football](https://youtube.com/channel/UCgQFYEGM25P_wZY8y1fRQiQ) | 2026-08 | en | 23 mil | 31,6 M | 94 | 33 mil | 1,34 | 2% | gol_o_jugada |
 
 ### Solo sin cara (15% o menos de videos con personas)
 
@@ -59,12 +59,12 @@ Ordenados por vistas por día de vida del canal.
 | [SpotVerse](https://youtube.com/channel/UCFa04zYV0EUB9NSr2-WD-LQ) | 2026-09 | en | 28 mil | 43,5 M | 37 | 264 mil | 0,93 | 0% | impostor |
 | [TIER](https://youtube.com/channel/UCIlPE_mrOYGW-0tzilMa88g) | 2026-07 | en | 50 mil | 113 M | 52 | 503 mil | 0,5 | 0% | tier_list |
 | [Migelftbl](https://youtube.com/channel/UCDDRq5ef2u8JaM-pf49LanA) | 2026-07 | es | 121 mil | 57,0 M | 44 | 809 mil | 0,49 | 9% | duelo |
+| [MUK FT MIND](https://youtube.com/channel/UCNOi0ZWYrhlo26d5M1G1jOQ) | 2026-09 | en | 6 mil | 24,8 M | 38 | 273 mil | 0,89 | 0% | imagen_oculta |
 | [Footypoints](https://youtube.com/channel/UCQg42PAMjcOz1-YoVkoJlcg) | 2025-11 | en | 139 mil | 191 M | 105 | 177 mil | 0,3 | 2% | duelo |
+| [FULYON SHORTS](https://youtube.com/channel/UC5PgkslN0-aal256mrdnyxg) | 2026-02 | en | 48 mil | 121 M | 92 | 222 mil | 0,54 | 0% | imagen_oculta |
 | [FootballRanks](https://youtube.com/channel/UCqS4bcdaEwg24mctA5kPANA) | 2026-06 | en | 14 mil | 54,5 M | 51 | 38 mil | 0,6 | 2% | tier_list |
 | [SRD Game](https://youtube.com/channel/UCuk5pDlj8SG7BTLQlqEMvBg) | 2026-08 | en | 15 mil | 22,4 M | 39 | 35 mil | 0,97 | 0% | impostor |
 | [Aura From Football](https://youtube.com/channel/UCgQFYEGM25P_wZY8y1fRQiQ) | 2026-08 | en | 23 mil | 31,6 M | 94 | 33 mil | 1,34 | 2% | gol_o_jugada |
-| [Rival Stats](https://youtube.com/channel/UC8CFPYt0JQ1lPqAKWzd6bKg) | 2026-07 | en | 41 mil | 42,5 M | 192 | 54 mil | 2,07 | 0% | duelo |
-| [FlashQuiz](https://youtube.com/channel/UCqCR90vsnzKBIYjGb-P5fxw) | 2026-10 | es | 59 mil | 6,8 M | 35 | 57 mil | 2,09 | 0% | escudo |
 
 ## 3. En español y sin cara
 
@@ -75,13 +75,13 @@ Ordenados por vistas por día de vida del canal.
 | [PituX](https://youtube.com/channel/UClxhk-zz2J2QM2pl5jyiTKA) | 2017-03 | es | 9,8 M | 4.959 M | 1301 | 109 mil | 8,44 | 14% | otro_quiz |
 | [Futbolcontemo](https://youtube.com/channel/UCASyFAS0rys2xg5ofINOFOA) | 2017-11 | es | 903 mil | 674 M | 5526 | 99 mil | 3,85 | 6% | gol_o_jugada |
 | [Fútbol Quiz1](https://youtube.com/channel/UCCA17rcjKVadmLu5z0tnkoA) | 2026-01 | es | 9 mil | 1,5 M | 8 | 97 mil | 0,48 | 0% | escudo |
+| [yasudsh](https://youtube.com/channel/UCKUU1e73kKpa_Zkurv0_NdQ) | 2026-02 | es | 29 mil | 24,0 M | 19 | 93 mil | 1,06 | 16% | otro_quiz |
 | [LetrasQuiz - Ortografía](https://youtube.com/channel/UCvfAlaRMYB8oQJLFu0ORlwg) | 2022-06 | es | 45 mil | 34,5 M | 243 | 88 mil | 1,57 | 0% | otro_quiz |
 | [Balti FC](https://youtube.com/channel/UChxPtBhX-NQcWaSqLohnngg) | 2025-01 | es | 4 mil | 475 mil | 7 | 66 mil | 0,02 | 0% | impostor |
 | [FlashQuiz](https://youtube.com/channel/UCqCR90vsnzKBIYjGb-P5fxw) | 2026-10 | es | 59 mil | 6,8 M | 35 | 57 mil | 2,09 | 0% | escudo |
 | [Goatline Theory](https://youtube.com/channel/UCOLow8szhPZjhDrQZmqz55A) | 2026-06 | es | 54 mil | 29,2 M | 199 | 57 mil | 2,22 | 0% | imagen_oculta |
 | [Esauquiz](https://youtube.com/channel/UCA_wg5Vl2JybxMBg6_-nv4Q) | 2020-04 | es | 62 mil | 17,3 M | 485 | 49 mil | 1,04 | 0% | otro_quiz |
 | [Futbol Quiz Trivia](https://youtube.com/channel/UClafbeiIuOD3ZE_9PffQsNg) | 2025-05 | es | 2 mil | 592 mil | 7 | 48 mil | 1,17 | 0% | impostor |
-| [Munnset](https://youtube.com/channel/UCPL2lJQDBiMR2Pmee6gRebA) | 2019-11 | es | 55 mil | 14,5 M | 300 | 43 mil | 0,46 | 16% | otro_quiz |
 
 ## Lecturas
 

@@ -90,11 +90,11 @@ Ver la tabla `titulos` en `data/processed/videos.csv` (columnas `titulo_len`, `t
 
 | | Shorts quiz de 1 M o más | Resto |
 |---|---|---|
-| Largo del título (caracteres, mediana) | 53 | 60 |
-| Con signo de pregunta | 29% | 38% |
-| Con al menos 1 emoji | 56% | 51% |
-| % de mayúsculas (mediana) | 17% | 19% |
-| Con hashtags en el título | 54% | 60% |
-| Usa #shorts (título o descripción) | 40% | 39% |
+| Largo del título (caracteres, mediana) | 53 | 59 |
+| Con signo de pregunta | 28% | 35% |
+| Con al menos 1 emoji | 58% | 55% |
+| % de mayúsculas (mediana) | 16% | 17% |
+| Con hashtags en el título | 57% | 60% |
+| Usa #shorts (título o descripción) | 42% | 40% |
 
-(n = 1736 shorts de 1 M o más y 12691 del resto.)
+(n = 2258 shorts de 1 M o más y 19206 del resto.)

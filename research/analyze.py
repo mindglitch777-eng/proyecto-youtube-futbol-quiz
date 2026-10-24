@@ -175,6 +175,18 @@ def main():
     df = pd.DataFrame(filas).sort_values("mediana_vistas_base", ascending=False)
     df.to_csv(PROC / "formatos.csv", index=False)
 
+    # rendimiento relativo al canal ("lift"): mediana de vistas / mediana de los últimos 50 del canal
+    def lift(b):
+        return (b.groupby("formato").agg(n=("id", "size"), canales=("channelId", "nunique"),
+                                         lift=("x_mediana_canal", "median"),
+                                         pct_2x=("x_mediana_canal", lambda s: (s >= 2).mean()),
+                                         pct_10x=("outlier_10x", "mean"), med=("vistas", "median"),
+                                         dur=("duracion_s", "median"))
+                .query("n >= 40").sort_values("lift", ascending=False).round(3))
+    b = base[base["edad_dias"] >= 3]
+    lift(b).to_csv(PROC / "formatos_lift.csv")
+    lift(b[b["cara"] == False]).to_csv(PROC / "formatos_lift_sin_cara.csv")
+
     # formato x idioma
     fi = (todos[~todos["formato"].isin(NO_QUIZ)].groupby(["formato", "idioma"])
           .agg(n=("id", "size"), canales=("channelId", "nunique"), mediana_vistas=("vistas", "median"),

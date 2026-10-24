@@ -98,6 +98,18 @@ FORMAT_SEEDS = [
     ("adivina el jugador por la silueta", "es", True),
 ]
 
+# validación de los formatos propuestos (24-oct, 2da tanda)
+PROPUESTOS_SEEDS = [
+    ("encuentra al verdadero messi", "es", True),
+    ("find the real ronaldo", "en", True),
+    ("adivina el jugador por la sombra", "es", True),
+    ("name that player football", "en", True),
+    ("en que equipos jugo adivina el futbolista", "es", True),
+    ("career path football quiz", "en", True),
+    ("verdadero o falso fútbol quiz", "es", True),
+    ("true or false football quiz", "en", True),
+]
+
 # mercados: misma consulta acotada por país (regionCode) para comparar tamaño y competencia
 MARKET_SEEDS = [
     ("quiz de futbol", "es", "AR"),
@@ -238,7 +250,10 @@ def cmd_markets():
 
 # muestra SIN sesgo de éxito: lo último que se subió (order=date), para ver cómo le va
 # al canal típico que hace quizzes de fútbol, no solo a los que pegaron
-FRESH_SEEDS = [("football quiz", "en"), ("quiz de futbol", "es"), ("adivina el jugador", "es")]
+FRESH_SEEDS = [("football quiz", "en"), ("quiz de futbol", "es"), ("adivina el jugador", "es"),
+               ("guess the player", "en"), ("trivia futbol", "es"), ("quiz futebol", "pt"),
+               ("impostor futbol", "es"), ("guess the footballer", "en"), ("adivina el escudo", "es"),
+               ("football trivia", "en"), ("adivina el futbolista", "es"), ("preguntas de futbol", "es")]
 
 
 def cmd_fresh():
@@ -421,6 +436,8 @@ if __name__ == "__main__":
             cmd_search()
         if cmd == "formatos":
             cmd_search(FORMAT_SEEDS[:arg] if arg else FORMAT_SEEDS)
+        if cmd == "propuestos":
+            cmd_search(PROPUESTOS_SEEDS)
         if cmd == "fresco":
             cmd_fresh()
         if cmd == "mercados":
