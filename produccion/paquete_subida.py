@@ -8,19 +8,21 @@ ROOT = Path(__file__).resolve().parent
 g = json.loads(Path(sys.argv[1]).read_text())
 cred = json.loads((ROOT / "assets/fotos/creditos.json").read_text())
 out = ROOT / "salida" / g["id"]
-nombres = [r["nombre"] for r in g["rondas"]]
-creditos = "\n".join(f"- {cred[r['foto']]['jugador']}: \"{cred[r['foto']]['archivo'].removeprefix('File:')}\" by "
-                     f"{cred[r['foto']]['autor'] or 'unknown'}, {cred[r['foto']]['licencia']} ({cred[r['foto']]['pagina']}). Edited (distorted)."
-                     for r in g["rondas"])
+nombres = [r["nombre"] for r in g["rondas"]] if "nombre" in g["rondas"][0] else [n for r in g["rondas"] for n in (r["nombre_a"], r["nombre_b"])]
+fotos = [r["foto"] for r in g["rondas"]] if "foto" in g["rondas"][0] else [f for r in g["rondas"] for f in (r["a"], r["b"])]
+total = len(nombres)
+creditos = "\n".join(f"- {cred[f]['jugador']}: \"{cred[f]['archivo'].removeprefix('File:')}\" by "
+                     f"{cred[f]['autor'] or 'unknown'}, {cred[f]['licencia']} ({cred[f]['pagina']}). Edited."
+                     for f in fotos)
 tags = ["#football", "#soccer", "#footballquiz", "#shorts"] + [f"#{n.lower().replace('é', 'e').replace(' ', '')}" for n in nombres[:3]]
+titulos = g.get("titulos") or [f"FIND THE REAL {nombres[0].upper()} 🔎 Only 1% get all {total}",
+                               f"Only 1% can find the REAL {nombres[-1]} 🤯", f"FIND REAL {' '.join(n.upper() for n in nombres)}"]
 txt = f"""=== TÍTULO (elegí uno; hasta 100 caracteres) ===
-A) FIND THE REAL {nombres[0].upper()} 🔎 Only 1% get all {len(nombres)}
-B) Only 1% can find the REAL {nombres[-1]} 🤯
-C) FIND REAL {' '.join(n.upper() for n in nombres)}
+""" + "\n".join(f"{'ABC'[i]}) {t_}" for i, t_ in enumerate(titulos)) + f"""
 
 === DESCRIPCIÓN ===
-Can you find the real one every round? The last one is only for the 1% 🧠
-Comment your score /{len(nombres)} 👇
+{g.get("descripcion", "Can you find the real one every round? The last one is only for the 1% 🧠")}
+Comment your score /{total} 👇
 
 {' '.join(tags)}
 

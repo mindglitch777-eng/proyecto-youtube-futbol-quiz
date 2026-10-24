@@ -1,0 +1,54 @@
+{
+ "id": "fusion_01",
+ "voz": "Puck",
+ "voz_cierre": "What's your score out of eight? Be honest!",
+ "rondas": [
+  {
+   "a": "lionel_messi_0",
+   "b": "cristiano_ronaldo_0",
+   "nombre_a": "Messi",
+   "nombre_b": "Ronaldo",
+   "etiqueta": "EASY",
+   "respira": 0.12,
+   "voz_pregunta": "Only one percent can name BOTH players!",
+   "voz_revela": "Messi and Ronaldo! Too easy?"
+  },
+  {
+   "a": "kylian_mbapp_0",
+   "b": "erling_haaland_0",
+   "nombre_a": "Mbappé",
+   "nombre_b": "Haaland",
+   "etiqueta": "MEDIUM",
+   "respira": 0.1,
+   "voz_pregunta": "Okay, level two. Who are these two?",
+   "voz_revela": "Mbappé and Haaland!"
+  },
+  {
+   "a": "lamine_yamal_0",
+   "b": "neymar_0",
+   "nombre_a": "Yamal",
+   "nombre_b": "Neymar",
+   "etiqueta": "HARD",
+   "respira": 0.08,
+   "voz_pregunta": "This one is tricky.",
+   "voz_revela": "Yamal and Neymar!"
+  },
+  {
+   "a": "christian_pulisic_0",
+   "b": "bukayo_saka_0",
+   "nombre_a": "Pulisic",
+   "nombre_b": "Saka",
+   "etiqueta": "ONLY 1%",
+   "respira": 0.06,
+   "voz_pregunta": "Final round. Only one percent get this one.",
+   "voz_revela": "Pulisic and Saka! Did you get it?"
+  }
+ ],
+ "titulos": [
+  "2 PLAYERS, 1 FACE 🤯 Only 1% name all 8",
+  "Can you name BOTH players? 🧠⚽",
+  "Messi + Ronaldo in ONE face?! 😳"
+ ],
+ "descripcion": "Two footballers. One face. Name BOTH players in every round — the last one is only for the 1% 🧠",
+ "comentario_fijado": "Be honest… what's your score out of 8? 👇 (Round 4 is brutal)"
+}
