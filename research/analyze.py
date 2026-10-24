@@ -39,6 +39,14 @@ def fecha(s):
     return datetime.fromisoformat(s.replace("Z", "+00:00"))
 
 
+def _get(d, *ks):
+    for k in ks:
+        if not isinstance(d, dict):
+            return None
+        d = d.get(k)
+    return d
+
+
 def main():
     videos = load("videos.json", {})
     canales = load("channels.json", {})
@@ -184,6 +192,48 @@ def main():
         if len(elegidos) >= 80:
             break
     (RAW / "comments_targets.json").write_text(json.dumps(elegidos))
+
+    # ---------------- anatomía (Gemini mirando los videos)
+    filas = []
+    for f in sorted((RAW / "gemini_shorts").glob("*.json")):
+        d = json.loads(f.read_text())
+        a = d.get("analisis")
+        if not isinstance(a, dict):
+            continue
+        v = videos.get(d["video_id"], {})
+        g = lambda *ks: _get(a, *ks)
+        est = a.get("estructura") or []
+        filas.append({
+            "id": d["video_id"], "url": f"https://youtube.com/shorts/{d['video_id']}", "canal": v.get("channelTitle"),
+            "titulo": v.get("title"), "vistas": v.get("views"), "duracion_s": v.get("duration_s"),
+            "formato_gemini": g("formato"), "formato_titulo": fmt.get(d["video_id"], {}).get("f"),
+            "n_preguntas": g("n_preguntas_o_rondas"), "gancho_fin_s": g("gancho", "fin_s"), "gancho_tipo": g("gancho", "tipo"),
+            "gancho_texto": g("gancho", "que_se_dice_o_texto"),
+            "pensar_s": g("tiempo_para_pensar_por_pregunta_s"), "cuenta_regresiva": g("cuenta_regresiva", "hay"),
+            "cuenta_estilo": g("cuenta_regresiva", "estilo"), "revelacion": g("revelacion", "como"),
+            "loop": str(g("cierre_y_loop", "loop")).lower() == "true", "loop_como": g("cierre_y_loop", "como_hace_el_loop"),
+            "cta": g("cta", "en_video"), "voz": g("audio", "voz"), "musica": g("audio", "musica"),
+            "sfx": "; ".join(map(str, g("audio", "efectos_de_sonido") or [])),
+            "texto": g("texto_en_pantalla", "hay_texto"), "subtitulos": g("texto_en_pantalla", "subtitulos_de_voz"),
+            "texto_estilo": g("texto_en_pantalla", "estilo"),
+            "cara": g("visual", "persona_real_en_camara"), "fotos_jugadores": g("visual", "fotos_de_jugadores"),
+            "escudos": g("visual", "escudos_o_logos"), "clips_tv": g("visual", "clips_de_partidos_o_transmisiones"),
+            "ia_dibujos": g("visual", "imagenes_generadas_por_ia_o_dibujos"), "planos": g("visual", "cambios_de_plano_aprox"),
+            "estilo": g("visual", "estilo_general"), "dificultad": g("dificultad_de_las_preguntas"),
+            "invita_comentar": g("invita_a_comentar_la_respuesta"), "por_que_funciona": g("que_hace_que_funcione"),
+            "replica_sin_cara": g("como_replicarlo_sin_cara_y_sin_clips"),
+            "partes": " | ".join(f"{p.get('inicio_s')}-{p.get('fin_s')} {p.get('parte')}" for p in est if isinstance(p, dict)),
+        })
+    if filas:
+        pd.DataFrame(filas).sort_values("vistas", ascending=False).to_csv(PROC / "anatomia.csv", index=False)
+
+    # ---------------- sujetos (jugadores/clubes) en shorts quiz
+    sq = dv[dv["es_quiz"].fillna(False) & dv["sujeto"].notna()]
+    (sq.assign(sujeto=sq["sujeto"].str.strip().str.title())
+       .groupby("sujeto").agg(videos=("id", "size"), vistas_total=("vistas", "sum"), mediana=("vistas", "median"),
+                              coment_por_1000=("coment_por_1000", "median"))
+       .query("videos >= 3").sort_values("vistas_total", ascending=False).head(80)
+       .to_csv(PROC / "sujetos.csv"))
 
     # ---------------- resumen
     stats = {
