@@ -1,6 +1,6 @@
 # Proyecto YouTube: quizzes de fútbol en Shorts
 
-**Empezá por [`reports/00_resumen_ejecutivo.md`](reports/00_resumen_ejecutivo.md).**
+**Empezá por el explorador interactivo: [`reports/explorador.html`](reports/explorador.html)** (se regenera con `python3 research/datos_explorador.py`), o por [`reports/00_resumen_ejecutivo.md`](reports/00_resumen_ejecutivo.md).
 
 ## Estructura
 
