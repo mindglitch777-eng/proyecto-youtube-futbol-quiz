@@ -12,7 +12,7 @@
 2. **Plantilla ganadora sin cara:**
    - 15–30 s, 3–4 rondas;
    - gancho escrito gigante en el segundo 0–1;
-   - 3 s para pensar con cuenta regresiva visible;
+   - 2–3 s para pensar con cuenta regresiva visible;
    - sonido de acierto, música de tendencia, sin voz, loop al inicio.
    → reporte 03.
 3. **Casos copiables:** MStriker (77 videos, 146 M), SpotVerse (37 videos, 43 M), Muzam (22 videos, 55 M), TIER (52 videos, 113 M). Todos nacieron en 2026 y suben **~1 por día**. → reportes 01 y 04.
@@ -22,7 +22,7 @@
 
 - **Emojis:** 0,92× y ningún outlier. Saturado y flojo.
 - **Subir 3 por día de relleno:** los canales de ~3 por día tienen medianas de 1 a 70 mil. Los que explotaron suben 1 por día.
-- **Clips de partidos:** el 54% de los sin cara exitosos los usa, pero es **riesgo de Content ID y strikes**. No los usamos. → reporte 07.
+- **Clips de partidos:** el 63% de los sin cara exitosos los usa, pero es **riesgo de Content ID y strikes**. No los usamos. → reporte 07.
 - **El horario:** no hay una hora mágica (0,9–1,2×).
 - **Contenido rioplatense:** Argentina y México dan igual en las búsquedas. Conviene español neutro.
 

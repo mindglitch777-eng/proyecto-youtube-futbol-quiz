@@ -3,7 +3,7 @@
 **Conclusión: la plantilla ganadora sin cara**
 - **15 a 30 s**, con **3 o 4 rondas**.
 - **Gancho escrito gigante en el primer segundo**, un desafío como "FIND THE REAL RONALDO" o "NAME THAT PLAYER".
-- **3 a 4 s para pensar**, con **cuenta regresiva visible** (número grande más barra que se vacía) y tic-tac.
+- **2 a 3 s para pensar**, con **cuenta regresiva visible** (número grande más barra que se vacía) y tic-tac.
 - **Revelación con sonido de acierto.**
 - **Música de tendencia de fondo, casi siempre sin voz.**
 - **El final corta al inicio (loop).**
