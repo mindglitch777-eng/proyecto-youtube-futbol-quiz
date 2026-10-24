@@ -1,0 +1,92 @@
+{
+ "video_id": "jlcOyl_02_k",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2233,
+  "candidatesTokenCount": 896,
+  "totalTokenCount": 3129,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1450
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 15.0,
+  "formato": "desafío visual de elegir accesorios para jugadores",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "dos jugadores de fútbol (Vinícius Jr. y Cristiano Ronaldo) sin pelo, con gafas de sol puestas",
+   "que_se_dice_o_texto": "arranqui te canquin can y que fue",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación de los personajes con gafas"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 15.0,
+    "parte": "pregunta",
+    "descripcion": "secuencia rápida donde aparecen diferentes accesorios (cadenas, pelos de anime) sobre los jugadores"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "cambio instantáneo de accesorio sobre la imagen",
+   "efecto_sonido": "sonido de 'pop' o 'clic'"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente y vuelve a empezar",
+   "loop": "true",
+   "como_hace_el_loop": "el video termina en el último accesorio y reinicia en la imagen base"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento caribeño/urbano",
+   "musica": "tendencia/viral, ritmo de reggaetón",
+   "efectos_de_sonido": [
+    "pop",
+    "sonido de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "números blancos simples en la parte superior izquierda",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "azul cian sólido",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "edición rápida tipo meme con recortes de fotos",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "ritmo frenético, uso de personajes virales (CR7 y Vini) y música pegadiza que invita a ver el bucle",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar fotos de jugadores famosos, recortarles la cabeza con una herramienta de IA y superponer imágenes PNG de accesorios (gafas, pelos, cadenas) sincronizadas con el beat de una canción viral"
+ }
+}

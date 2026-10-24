@@ -1,0 +1,121 @@
+{
+ "video_id": "znEpfD-G1ek",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 4242,
+  "candidatesTokenCount": 1160,
+  "totalTokenCount": 5402,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3459
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 39.0,
+  "formato": "juego de encontrar al animal camuflado en el árbol",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "un creador hablándole a la cámara con una camiseta de fútbol y una foto de una jirafa camuflada en un árbol arriba",
+   "que_se_dice_o_texto": "3 segundos dentro del minuto, बताओ ये जिराफ कहां छुपा हुआ है?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "El creador plantea el primer desafío de buscar la jirafa camuflada en 3 segundos."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 5.0,
+    "parte": "revelacion",
+    "descripcion": "Muestra la respuesta de la jirafa rodeada en rojo."
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 10.0,
+    "parte": "pregunta",
+    "descripcion": "Presenta el nivel 2 para encontrar una lagartija/gecko."
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 18.0,
+    "parte": "pregunta",
+    "descripcion": "Nivel 3 con un cocodrilo camuflado en el barro."
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 25.0,
+    "parte": "pregunta",
+    "descripcion": "Nivel 4 con una rana camuflada en un tronco."
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 39.0,
+    "parte": "cierre",
+    "descripcion": "Nivel 5 muy difícil con una serpiente y llamada a la acción para comentar."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "círculo rojo dibujado sobre la imagen original revelando la ubicación del animal",
+   "efecto_sonido": [
+    "sonido de risa/comedia"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "pide que dejen la respuesta en los comentarios y compartan con amigos antes de revelar la última ubicación",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "el que haya encontrado comenta y compartilo con tus amigos",
+   "momento_s": 33.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "hindi",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "risas de fondo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto de nivel grande arriba en la pantalla",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "pantalla partida: arriba fotos de camuflaje, abajo creador con streaming y luces RGB",
+   "persona_real_in_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "streamer de juegos reaccionando y presentando acertijos visuales",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "formato de niveles progresivos que engancha al espectador hasta el final",
+   "participación activa de un creador en cámara reaccionando",
+   "imágenes de camuflaje real muy llamativas y retorcidas"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar fotos de camuflaje en pantalla completa con una cuenta regresiva de temporizador y voces sintéticas o subtítulos animados."
+ }
+}

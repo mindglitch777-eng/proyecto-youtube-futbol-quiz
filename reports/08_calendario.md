@@ -25,4 +25,25 @@ Fuentes: [Sports Mole: Champions 2026-27](https://www.sportsmole.co.uk/football/
 
 ## Jugadores y equipos con más tracción
 
-Ver la tabla generada en `data/processed/sujetos.csv` y el resumen en `05_audiencia.md`.
+Tema principal de cada short quiz, según Gemini, sumando vistas (`data/processed/sujetos.csv`, temas con 3 shorts o más):
+
+| Tema | Shorts | Vistas sumadas | Mediana por short |
+|---|---|---|---|
+| Lamine Yamal | 66 | 391 M | 99 mil |
+| Mundial (World Cup / Mundial 2026) | 196 | 434 M | 84–167 mil |
+| Cristiano Ronaldo / Ronaldo | 184 | 235 M | 30–48 mil |
+| Real Madrid vs Barcelona | 10 | 143 M | 214 mil |
+| Real Madrid | 98 | 125 M | 79 mil |
+| Erling Haaland | 21 | 119 M | 346 mil |
+| FC Barcelona | 41 | 86 M | 67 mil |
+| Ronaldinho | 10 | 76 M | 173 mil |
+| Neymar | 79 | 68 M | 144 mil |
+| Premier League | 53 | 55 M | 142 mil |
+| Banderas (selecciones) | 63 | 53 M | 31 mil (**1,34 comentarios cada 1.000 vistas**, el más alto) |
+
+**Lectura:**
+- **Yamal, Haaland y Ronaldinho** tienen la mejor relación mediana/saturación.
+- **Ronaldo** aparece en todos lados: mucho volumen y mediana baja (saturado).
+- **El Clásico** y **el Mundial** son los temas "evento" más fuertes.
+- **Banderas** genera el doble de comentarios: buen tema para la fecha FIFA de noviembre.
+- En comentarios dominan Ronaldo, Messi y Yamal (reporte 05).

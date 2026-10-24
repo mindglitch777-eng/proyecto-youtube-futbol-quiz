@@ -1,0 +1,85 @@
+{
+ "video_id": "LMGDstcYBjg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1325,
+  "candidatesTokenCount": 796,
+  "totalTokenCount": 2121,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 542
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 5.0,
+  "formato": "desafío de habilidad física con reacción del creador",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "imagen de dos manos haciendo gestos con dedos y un hombre reaccionando con confusión",
+   "que_se_texto": "Solo el 1% puede hacer esto. El 99% puede hacer esto. Yo confundido:",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "El creador muestra una imagen viral de manos y reacciona con confusión mientras suena música de fondo."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente y se repite.",
+   "loop": "true",
+   "como_hace_el_loop": "El video es corto y la música es continua, lo que facilita la repetición."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español",
+   "musica": "tendencia/viral",
+   "efectos_de_sonido": [
+    "música de fondo rítmica"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro, centrado",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "imagen estática de manos y video del creador",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "reacción a contenido viral",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Utiliza un desafío de habilidad física muy simple, apela a la curiosidad del espectador y genera una reacción humana identificable.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla con la imagen del desafío y un texto que diga '¿Puedes hacerlo?' con una música viral de fondo."
+ }
+}

@@ -1,0 +1,98 @@
+{
+ "video_id": "KH3qZ7zOwv4",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2140,
+  "candidatesTokenCount": 938,
+  "totalTokenCount": 3078,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1357
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 15.0,
+  "formato": "juego de emparejar caras de futbolistas con sus equipos o parejas mediante piezas de llaveros",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "una mano moviendo una pieza de llavero con la cara de Cristiano Ronaldo hacia un tablero",
+   "que_se_dice_o_texto": "el de top of your game",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "inicio rápido con música y acción de colocar la primera pieza"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 14.0,
+    "parte": "revelacion",
+    "descripcion": "se van colocando las piezas de los jugadores en sus respectivos lugares mientras se eliminan las opciones incorrectas de la parte superior"
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 15.0,
+    "parte": "cierre",
+    "descripcion": "el tablero queda completo con todas las piezas colocadas"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "la pieza se encaja físicamente en el tablero",
+   "efecto_sonido": "sonido de encaje o clic"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina con el tablero lleno y vuelve a empezar",
+   "loop": true,
+   "como_hace_el_loop": "el video termina abruptamente y reinicia, lo que permite una transición fluida"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "canción viral de fondo",
+   "efectos_de_sonido": [
+    "sonido de encaje",
+    "sonido de error (x)"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": false,
+   "subtitulos_de_voz": false,
+   "estilo": null,
+   "idioma": null
+  },
+  "visual": {
+   "fondo": "puerta blanca",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "manualidades/DIY con piezas físicas",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_ve_que_funcione": "el uso de elementos físicos (llaveros) es satisfactorio de ver, el ritmo es muy rápido y el bucle infinito mantiene la retención",
+  "como_replicarlo_sin_cara_y_sin_clips": "puedes imprimir fotos de jugadores y equipos en cartulina, recortarlas y grabarte con un celular desde arriba (cenital) encajándolas en un tablero de cartón"
+ }
+}

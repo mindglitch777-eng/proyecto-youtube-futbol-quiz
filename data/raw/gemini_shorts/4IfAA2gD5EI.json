@@ -1,0 +1,93 @@
+{
+ "video_id": "4IfAA2gD5EI",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4516,
+  "candidatesTokenCount": 966,
+  "totalTokenCount": 5482,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3733
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 41.0,
+  "formato": "Ranking de clips de fútbol inesperados con una lista numerada que se va completando.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Una chica haciendo un truco de fútbol en una cancha, con una lista numerada del 1 al 5 en pantalla.",
+   "que_se_dice_o_texto": "Ranking Unexpected Top Football Edits (Wait For The Last One !! )",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking con un clip de fútbol inesperado."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 41.0,
+    "parte": "revelacion",
+    "descripcion": "Se muestran clips de fútbol editados de forma cómica o inesperada mientras se completan los puestos del ranking."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El nombre del jugador aparece en la lista numerada mientras se reproduce el clip correspondiente.",
+   "efecto_sonido": "Música de tendencia con efectos de sonido de transición."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina con un llamado a la acción y un clip de celebración de Cristiano Ronaldo.",
+   "loop": true,
+   "como_hace_el_loop": "El final del video con la celebración de Ronaldo corta abruptamente para volver al inicio del ranking."
+  },
+  "cta": {
+   "en_video": "Subscribe guys",
+   "momento_s": 40.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés con acento neutro",
+   "musica": "Música de tendencia viral (remix de funk brasileño)",
+   "efectos_de_sonido": [
+    "Sonidos de transiciones rápidas",
+    "Efectos de sonido de memes"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte superior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de fútbol editados",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición rápida, estilo 'shitpost' o meme de fútbol.",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_pasa_al_final": "El video termina con un llamado a la acción y un clip de celebración de Cristiano Ronaldo.",
+  "que_hace_que_funcione": "El uso de música viral, la edición rápida y cómica, y la promesa de un 'ranking' que mantiene la atención hasta el final.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes estáticas de jugadores con efectos de movimiento, texto animado para el ranking y música de tendencia de fondo."
+ }
+}

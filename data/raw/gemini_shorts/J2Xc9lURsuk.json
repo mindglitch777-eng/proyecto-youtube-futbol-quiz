@@ -1,0 +1,104 @@
+{
+ "video_id": "J2Xc9lURsuk",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4518,
+  "candidatesTokenCount": 995,
+  "totalTokenCount": 5513,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3735
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 41.0,
+  "formato": "ilusión óptica interactiva para inducir un efecto visual",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "una animación de un agujero negro absorbiendo una habitación",
+   "que_se_dice_o_texto": "अपनी चारों तरफ देखो। क्या तुम्हारे आसपास की चीजें तुम्हारे पास आ रही हैं?",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "presentación de una ilusión visual impactante y pregunta al espectador"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 11.0,
+    "parte": "transicion",
+    "descripcion": "el creador explica que el video causará un efecto visual y pide like"
+   },
+   {
+    "inicio_s": 11.0,
+    "fin_s": 38.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "espiral hipnótica girando para que el espectador mantenga la mirada"
+   },
+   {
+    "inicio_s": 38.0,
+    "fin_s": 41.0,
+    "parte": "cierre",
+    "descripcion": "cuenta regresiva final y despedida"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 27.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "voz en off"
+  },
+  "revelacion": {
+   "como": "el efecto visual ocurre al dejar de mirar la espiral y mirar objetos reales",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el creador pregunta qué tal funcionó el truco",
+   "loop": "false",
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "जल्दी से वीडियो को लाइक कर दो",
+   "momento_s": 8.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "hindi",
+   "musica": "música de fondo tensa y misteriosa",
+   "efectos_de_sonido": [
+    "sonido de succión de agujero negro",
+    "zumbido hipnótico"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": false,
+   "subtitulos_de_voz": false,
+   "estilo": null,
+   "idioma": null
+  },
+  "visual": {
+   "fondo": "pantalla dividida: arriba animación de ilusión, abajo creador hablando",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "estilo de video de reacción/experimento visual",
+   "cambios_de_plano_aprox": 2
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "el uso de una ilusión óptica que genera curiosidad, la interacción directa con el espectador y la promesa de una experiencia física real",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla completa con la espiral hipnótica, una voz en off que guíe al espectador y texto en pantalla para las instrucciones"
+ }
+}

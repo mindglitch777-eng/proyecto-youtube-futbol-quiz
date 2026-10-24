@@ -1,0 +1,22 @@
+{
+ "video_id": "X2igmJ0dhlc",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2162,
+  "candidatesTokenCount": 1103,
+  "totalTokenCount": 3265,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1379
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 15.0,\n \"formato\": \"adivinar el jugador real entre caras deformadas, 3 rondas\",\n \"n_preguntas_o_rondas\": 3,\n \"gancho\": {\n  \"fin_s\": 1.0,\n  \"que_se_ve\": \"Grilla con 25 caras deformadas de Cristiano Ronaldo y un título arriba.\",\n  \"que_se_dice_o_texto\": \"FIND REAL RONALDO\",\n  \"tipo\": \"desafío ('solo el 1% sabe')\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 1.0,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"Presentación del primer desafío de Cristiano Ronaldo.\"\n  },\n  {\n   \"inicio_s\": 1.0,\n   \"fin_s\": 4.4,\n   \"parte\": \"tiempo_para_pensar\",\n   \"descripcion\": \"Cuenta regresiva con barra verde para encontrar al jugador real.\"\n  },\n  {\n   \"inicio_s\": 4.4,\n   \"fin_s\": 5.0,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"Se marca con un círculo rojo la foto correcta de Ronaldo.\"\n  },\n  {\n   \"inicio_s\": 5.0,\n   \"fin_s\": 10.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Segundo desafío: encontrar al Mr Beast real en la grilla.\"\n  },\n  {\n   \"inicio_s\": 10.0,\n   \"fin_s\": 15.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Tercer desafío: encontrar a Jude Bellingham real en la grilla.\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 3.4,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"barra verde decreciente abajo\"\n },\n \"revelacion\": {\n  \"como\": \"círculo rojo alrededor de la opción correcta y sonido de victoria\",\n  _efecto_sonido: \"sonido de acierto tipo videojuego\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"El video corta abruptamente al terminar la tercera ronda sin cierre explícito.\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": \"SUBSCRIBE\",\n  \"momento_s\": 0.0\n },\n \"audio\": {\n  \"voz\": \"IA/TTS probable\",\n  \"idioma_y_acento\": \"inglés neutral\",\n  \"musica\": \"música de tensión de fondo para juegos móviles\",\n  \"efectos_de_sonido\": [\n   \"sonido de tic-tac / cuenta regresiva\",\n   \"sonido de acierto/ding al revelar\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"letras grandes estilo meme o juego, con contorno grueso y colores brillantes\",\n  \"idioma\": \"inglés\"\n },\n \"visual\": {\n  \"fondo\": \"césped de cancha de fútbol animado\",\n  \"persona_real_en_camara\": false,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": false,\n  \"clips_de_partidos_o_transmisiones\": false,\n  \"imagenes_generadas_por_ia_o_dibujos\": true,\n  \"estilo_general\": \"estética de minijuego viral tipo 'Encuentra las diferencias' con imágenes deformadas con filtro de IA\",\n  \"cambios_de_plano_aprox\": 3\n },\n \"dificultad_de_las_preguntas\": \"fácil\",\n \"invita_a_comentar_la_respuesta\": false,\n \"que_hace_que_funcione\": [\n  \"Uso de caras graciosas y deformadas de famosos virales que genera curiosidad\",\n  \"Ritmo rápido y cuenta regresiva visual que mantiene la atención\",\n  \"Formato de minijuego interactivo que incentiva al espectador a pausar o adivinar antes de que se acabe el tiempo\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Generar grillas con fotos deformadas de futbolistas usando una herramienta de IA o filtros, agregar una barra de tiempo abajo y música de tensión.\"\n}"
+}

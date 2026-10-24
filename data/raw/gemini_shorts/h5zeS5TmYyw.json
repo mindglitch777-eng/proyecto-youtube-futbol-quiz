@@ -1,0 +1,85 @@
+{
+ "video_id": "h5zeS5TmYyw",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1335,
+  "candidatesTokenCount": 817,
+  "totalTokenCount": 2152,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 552
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 6.0,
+  "formato": "desafío interactivo de lenguaje de señas",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 6.0,
+   "que_se_ve": "un hombre joven frente a la cámara con un alfabeto de lengua de señas de fondo",
+   "que_se_dice_o_texto": "Dale 2 veces en la 1º letra de tu nombre",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 6.0,
+    "parte": "gancho",
+    "descripcion": "el creador señala el alfabeto y pide al usuario que interactúe con la pantalla"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_se_ve": "el video termina con el creador haciendo gestos y sonriendo",
+   "loop": true,
+   "como_hace_el_loop": "el video es corto y el movimiento del creador es fluido, permitiendo que se reinicie sin cortes bruscos"
+  },
+  "cta": {
+   "en_video": "Dale 2 veces en la 1º letra de tu nombre",
+   "momento_s": 0.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español",
+   "musica": "música pop viral de fondo",
+   "efectos_de_sonido": [
+    "ninguno"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado en la parte inferior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "imagen estática de un alfabeto de lengua de señas",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "estilo tutorial rápido de redes sociales",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_hace_que_funcione": "la interacción directa con la pantalla (doble toque), la brevedad del contenido y la gamificación simple",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una imagen de fondo con un alfabeto o cualquier otro juego visual y añadir una voz en off o texto que invite a realizar una acción específica en la pantalla"
+ }
+}

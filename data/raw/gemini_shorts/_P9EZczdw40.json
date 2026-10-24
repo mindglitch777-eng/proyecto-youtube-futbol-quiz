@@ -1,0 +1,98 @@
+{
+ "video_id": "_P9EZczdw40",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 6891,
+  "candidatesTokenCount": 936,
+  "totalTokenCount": 7827,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6108
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 65.0,
+  "formato": "desafío de adivinar equipos de la IPL a partir de sus camisetas antiguas",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "el creador hablando a cámara y una camiseta de la IPL",
+   "que_se_dice_o_texto": "chalo dekhte hain tum kitne purane ipl ke fan ho",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 65.0,
+    "parte": "pregunta",
+    "descripcion": "secuencia de 5 rondas donde muestra una camiseta, da unos segundos y revela el equipo"
+   },
+   {
+    "inicio_s": 65.0,
+    "fin_s": 65.0,
+    "parte": "cierre",
+    "descripcion": "petición final de comentarios"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el creador dice el nombre del equipo y aparece el logo sobre la camiseta",
+   "efecto_sonido": "sonido de confirmación"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "pide comentar si acertaron",
+   "loop": true,
+   "como_hace_el_loop": "el video termina con una pregunta que invita a volver a ver el inicio"
+  },
+  "cta": {
+   "en_video": "comment mein batao",
+   "momento_s": 64.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "hindi",
+   "musica": "música de fondo rítmica y animada",
+   "efectos_de_sonido": [
+    "sonidos de transición",
+    "sonido de revelación"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto grande, amarillo con borde negro, centrado",
+   "idioma": "hindi"
+  },
+  "visual": {
+   "fondo": "habitación con luces LED y setup de streaming",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "pantalla dividida: arriba la camiseta, abajo el creador",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la interacción constante con el espectador, el formato de trivia rápida y la nostalgia de las camisetas antiguas",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una plantilla con fondo dinámico, mostrar la camiseta en el centro y usar una voz en off con texto en pantalla para las preguntas y respuestas"
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "video_id": "urwmW4Eq5Zs",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2872,
+  "candidatesTokenCount": 736,
+  "totalTokenCount": 3608,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2089
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 22.0,
+  "formato": "análisis de jugada de fútbol con seguimiento de jugadores",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 22.0,
+   "que_se_ve": "jugada de gol del Real Madrid",
+   "que_se_dice_o_texto": null,
+   "tipo": "otro"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 22.0,
+    "parte": "otro",
+    "descripcion": "secuencia de jugada de fútbol con nombres de jugadores superpuestos"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina con el gol",
+   "loop": true,
+   "como_hace_el_loop": "el video vuelve a empezar desde el inicio de la jugada"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "música electrónica de fondo",
+   "efectos_de_sonido": [
+    "ninguno"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro sobre los jugadores",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "campo de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "análisis táctico de jugada",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "el uso de etiquetas sobre los jugadores ayuda a seguir la jugada, la música es pegadiza y el contenido es de alta calidad visual",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar un videojuego de fútbol como FIFA/FC24 para recrear jugadas famosas y añadir etiquetas de texto"
+ }
+}

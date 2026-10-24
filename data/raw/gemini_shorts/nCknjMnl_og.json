@@ -1,0 +1,92 @@
+{
+ "video_id": "nCknjMnl_og",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3981,
+  "candidatesTokenCount": 876,
+  "totalTokenCount": 4857,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3198
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 35.0,
+  "formato": "Ranking de momentos fallidos de fútbol con comentarios de un avatar animado",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "Un niño pequeño en pañales celebrando un touchdown y siendo tacleado por un jugador de fútbol americano",
+   "que_se_dice_o_texto": "Ranking Best Football Fail Moments",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking y primer clip de fail"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 35.0,
+    "parte": "revelacion",
+    "descripcion": "Secuencia de 5 clips de fails numerados, intercalados con comentarios de un avatar animado"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El video muestra el clip del fail directamente",
+   "efecto_sonido": "Sonidos de impacto y música de fondo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente después del quinto clip",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "Música de fondo rítmica y viral",
+   "efectos_de_sonido": [
+    "Sonidos de impacto",
+    "Sonidos de dibujos animados"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con contorno negro, centrado o posicionado según el clip",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de video de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición rápida con superposición de avatar animado",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "El uso de clips virales de fails, la edición dinámica con un avatar que reacciona y el formato de ranking que mantiene la atención",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede replicar usando imágenes estáticas de fails con efectos de movimiento (Ken Burns), una voz en off de IA y un avatar animado generado por herramientas como Adobe Character Animator o similares"
+ }
+}

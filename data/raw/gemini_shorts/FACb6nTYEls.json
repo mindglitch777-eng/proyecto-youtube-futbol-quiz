@@ -1,0 +1,104 @@
+{
+ "video_id": "FACb6nTYEls",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2162,
+  "candidatesTokenCount": 1024,
+  "totalTokenCount": 3186,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1379
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 16.0,
+  "formato": "juego de encontrar al jugador real entre una cuadrícula de versiones distorsionadas",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "título 'FIND REAL RONALDO' con una explosión de fondo",
+   "que_se_dice_o_texto": "FIND REAL RONALDO",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: encontrar a Ronaldo"
+   },
+   {
+    "inicio_s": 4.5,
+    "fin_s": 5.5,
+    "parte": "transicion",
+    "descripcion": "Efecto de explosión y cambio de cuadrícula"
+   },
+   {
+    "inicio_s": 5.5,
+    "fin_s": 10.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: encontrar a Jude Bellingham"
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: encontrar a Haaland"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 4.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra de progreso verde que se vacía"
+  },
+  "revelacion": {
+   "como": "se encierra al jugador correcto en un círculo rojo",
+   "efecto_sonido": "sonido de 'ding' o acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente tras la última revelación",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "botón de 'Subscribe' con una mano haciendo clic",
+   "momento_s": 0.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "música de tendencia tipo 'phonk' o ritmo rápido de juego",
+   "efectos_de_sonido": [
+    "explosión",
+    "sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras grandes, color blanco con borde negro, parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "césped de campo de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "estilo meme/distorsionado con cuadrícula de 25 imágenes",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la gratificación instantánea de resolver un acertijo visual, el uso de caras distorsionadas que generan humor y el ritmo rápido que mantiene la retención.",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una herramienta de edición para crear una cuadrícula de 5x5 con una foto real y 24 versiones editadas con filtros de 'deformar' o 'licuar' en Photoshop, añadiendo una barra de tiempo animada."
+ }
+}

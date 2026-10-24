@@ -1,0 +1,87 @@
+{
+ "video_id": "YZ1U8tNXC0M",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3691,
+  "candidatesTokenCount": 848,
+  "totalTokenCount": 4539,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2908
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 31.0,
+  "formato": "Recopilación de clips de momentos fallidos en dodgeball con un ranking dinámico en pantalla.",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Un jugador de dodgeball intenta una maniobra acrobática y falla estrepitosamente.",
+   "que_se_dice_o_texto": "Ranking Best Dodgeball Fail Moments",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 31.0,
+    "parte": "otro",
+    "descripcion": "Presentación de 5 clips consecutivos de fallos en dodgeball, cada uno con un título de ranking que cambia en pantalla."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "La revelación es el propio clip de video que muestra el fallo.",
+   "efecto_sonido": "Música de fondo con efectos de sonido de impacto y risas."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras el último clip.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Música de fondo viral y rítmica (tipo hip-hop/trap) que acompaña los golpes.",
+   "efectos_de_sonido": [
+    "Sonidos de impacto",
+    "Efectos de sonido de dibujos animados",
+    "Risas grabadas"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, fuente sans-serif, posicionado a la izquierda.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de video de partidos de dodgeball.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Compilación de clips de humor físico con superposición de texto.",
+   "cambios_de_plano_aprox": 5
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "El humor físico inmediato, el ritmo rápido de los clips y la curiosidad por ver qué 'fail' sigue en el ranking.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría replicar usando clips de stock de deportes o animaciones simples de 'stickman' fallando, manteniendo el formato de ranking con texto en pantalla."
+ }
+}

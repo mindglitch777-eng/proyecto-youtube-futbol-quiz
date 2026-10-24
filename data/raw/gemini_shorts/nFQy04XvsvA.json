@@ -1,0 +1,93 @@
+{
+ "video_id": "nFQy04XvsvA",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3796,
+  "candidatesTokenCount": 901,
+  "totalTokenCount": 4697,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3013
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 34.0,
+  "formato": "Ranking de momentos polémicos o curiosos en el fútbol con una lista numerada en pantalla.",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Un jugador de fútbol cometiendo una falta y el narrador riendo.",
+   "que_se_dice_o_texto": "RANKING FUNNIEST BIG BRAIN FOOTBALL CALLS",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking con un clip divertido."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 34.0,
+    "parte": "revelacion",
+    "descripcion": "Se muestran 6 clips de jugadas polémicas, cada una con un título en pantalla que se va tachando de la lista."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El clip se reproduce y el texto en pantalla describe la situación.",
+   "efecto_sonido": "Risas grabadas, efectos de sonido de dibujos animados y música de fondo."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente después del último clip.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés, acento británico",
+   "musica": "Música de fondo cómica y rítmica",
+   "efectos_de_sonido": [
+    "Risas",
+    "Sonidos de dibujos animados",
+    "Silbato de árbitro"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, fuente sans-serif, posicionado sobre el video.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición dinámica con superposición de texto y efectos de sonido.",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "El uso de humor, la brevedad de los clips y la estructura de ranking que mantiene la atención del espectador.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría hacer usando capturas de pantalla de situaciones curiosas en videojuegos de fútbol (como FIFA/FC) o usando animaciones simples de stickman para recrear las situaciones."
+ }
+}

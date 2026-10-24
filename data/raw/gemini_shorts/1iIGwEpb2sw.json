@@ -1,0 +1,92 @@
+{
+ "video_id": "1iIGwEpb2sw",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5517,
+  "candidatesTokenCount": 888,
+  "totalTokenCount": 6405,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4734
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 52.0,
+  "formato": "Ranking de clips de fútbol editados con transiciones rápidas y música viral.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un hombre en silla de ruedas con yesos en las piernas siendo atacado por un perro con un objeto grande.",
+   "que_se_dice_o_texto": "Ranking Unexpected Top Football Edits (Wait For The Last One !! )",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking con un clip viral inesperado."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 52.0,
+    "parte": "revelacion",
+    "descripcion": "Secuencia de 5 clips de fútbol editados, cada uno precedido por un clip de humor o acción inesperada."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El nombre del jugador aparece en pantalla mientras se muestra su clip de fútbol.",
+   "efecto_sonido": "Música de tendencia con bajos marcados."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras mostrar el último clip.",
+   "loop": true,
+   "como_hace_el_loop": "El final del último clip de fútbol empalma con el inicio del video original."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "tendencia/viral (remix de música electrónica)",
+   "efectos_de_sonido": [
+    "sonidos de impacto",
+    "transiciones de audio"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte superior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "clips de video variados",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición rápida, estilo 'shitpost' con transiciones de alta energía.",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Uso de clips virales inesperados para retener la atención, ritmo rápido de edición y música popular.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes de archivo de stock o animaciones simples de jugadores, manteniendo el mismo estilo de edición rápida y música viral."
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "video_id": "tfv9iAtzzyg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3711,
+  "candidatesTokenCount": 895,
+  "totalTokenCount": 4606,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2928
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 33.0,
+  "formato": "ranking de momentos polémicos de fútbol con comentarios humorísticos",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "título en pantalla 'RANKING FUNNIEST SHAMELESS HANDBALL GOALS' y clip de Sergio Ramos anotando con la mano",
+   "que_se_dice_o_texto": "RANKING FUNNIEST SHAMELESS HANDBALL GOALS",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentación del ranking de goles con mano"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 33.0,
+    "parte": "revelacion",
+    "descripcion": "presentación secuencial de 6 clips de goles con la mano con comentarios humorísticos"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el clip muestra la acción y el narrador hace el comentario",
+   "efecto_sonido": "sonidos de silbato, risas y efectos de sonido de dibujos animados"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente tras el último clip",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "música de fondo rítmica y animada",
+   "efectos_de_sonido": [
+    "silbato de árbitro",
+    "risas grabadas",
+    "efectos de sonido de dibujos animados"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro, centrado en la parte superior y lista numerada en la izquierda",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "edición rápida con superposición de texto y efectos de sonido",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_ve": "el video funciona por el humor, la brevedad y el uso de momentos icónicos del fútbol que generan debate",
+  "como_replicarlo_sin_cara_y_sin_clips": "se podría replicar usando imágenes estáticas de los jugadores con efectos de movimiento (zoom/pan) y narración en off sobre los momentos polémicos"
+ }
+}

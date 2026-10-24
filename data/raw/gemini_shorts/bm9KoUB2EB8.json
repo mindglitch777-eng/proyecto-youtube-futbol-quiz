@@ -1,0 +1,92 @@
+{
+ "video_id": "bm9KoUB2EB8",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5255,
+  "candidatesTokenCount": 865,
+  "totalTokenCount": 6120,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4472
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 49.5,
+  "formato": "Ranking de clips de fútbol inesperados con transiciones de memes.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Texto en pantalla con el título del video y una oveja de Shaun the Sheep.",
+   "que_se_dice_o_texto": "Ranking Unexpected Top Football Edits (Wait For The Last One !! )",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking con texto en pantalla."
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 49.5,
+    "parte": "revelacion",
+    "descripcion": "Se muestran 5 clips de fútbol, cada uno precedido por un meme de transición."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El clip de fútbol aparece inmediatamente después de la transición del meme.",
+   "efecto_sonido": "Música de fondo con efectos de sonido de memes."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras mostrar el quinto clip.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Música de tendencia/viral (remix de canciones populares).",
+   "efectos_de_sonido": [
+    "Sonidos de memes",
+    "Efectos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte superior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de memes y clips de fútbol.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición rápida de estilo 'shitpost' con transiciones de memes.",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "El uso de memes populares para hacer transiciones, el ritmo rápido de la edición y la curiosidad por ver el siguiente clip.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes estáticas de jugadores con efectos de movimiento (zoom/shake) y transiciones de memes descargadas de internet."
+ }
+}

@@ -1,0 +1,92 @@
+{
+ "video_id": "CRt7AEfryKY",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3428,
+  "candidatesTokenCount": 788,
+  "totalTokenCount": 4216,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2645
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 29.0,
+  "formato": "clip de jugada destacada de fútbol con narración emocionante",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "jugador conduciendo el balón en el campo",
+   "que_se_dice_o_texto": "Arda Güler y su zurda...",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentación de la jugada con texto en pantalla"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 29.0,
+    "parte": "revelacion",
+    "descripcion": "desarrollo de la jugada hasta el gol y celebración"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el gol ocurre en el video",
+   "efecto_sonido": "narración eufórica del gol"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el jugador celebra y el video termina",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento español",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "narración de partido",
+    "sonido ambiente del estadio"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado superior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "partido de fútbol",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "clip deportivo dinámico",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la calidad del gol, la emoción del narrador y el uso de cámara lenta en el momento clave del disparo",
+  "como_replicarlo_sin_cara_y_sin_clips": null
+ }
+}

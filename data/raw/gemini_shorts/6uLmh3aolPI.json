@@ -1,0 +1,91 @@
+{
+ "video_id": "6uLmh3aolPI",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2233,
+  "candidatesTokenCount": 836,
+  "totalTokenCount": 3069,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1450
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 16.0,
+  "formato": "juego de completar el look de jugadores con accesorios",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "dos jugadores calvos con gafas de sol",
+   "que_se_texto": "1. 2. 3. 4.",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación de los jugadores con gafas"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 16.0,
+    "parte": "revelacion",
+    "descripcion": "secuencia rápida de accesorios (cadenas, pelucas, barbas) apareciendo sobre los jugadores"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "cambio instantáneo de imagen",
+   "efecto_sonido": "efectos de sonido de dibujos animados"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente",
+   "loop": true,
+   "como_hace_el_loop": "el final vuelve a la imagen inicial de los jugadores con gafas"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento caribeño/urbano",
+   "musica": "tendencia/viral (reggaeton)",
+   "efectos_de_sonido": [
+    "efectos de sonido de dibujos animados"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "fuente simple, color blanco, posición superior izquierda",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "amarillo sólido",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "edición rápida tipo meme",
+   "cambios_de_plano_aprox": 7
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "ritmo muy rápido, música pegadiza y humor visual absurdo",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una plantilla de edición en CapCut con fotos estáticas de jugadores y superponer imágenes PNG de accesorios con transiciones rápidas al ritmo de la música"
+ }
+}

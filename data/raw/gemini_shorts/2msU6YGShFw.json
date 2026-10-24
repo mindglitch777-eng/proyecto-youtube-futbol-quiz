@@ -1,0 +1,85 @@
+{
+ "video_id": "2msU6YGShFw",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1233,
+  "candidatesTokenCount": 741,
+  "totalTokenCount": 1974,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 450
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 5.0,
+  "formato": "video de jugada destacada con texto superpuesto",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "jugador anotando un gol con un toque sutil",
+   "que_se_dice_o_texto": "Most satisfying finish ever? 🥹",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "se muestra la jugada completa desde el pase hasta el gol"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina y vuelve a empezar",
+   "loop": "true",
+   "como_hace_el_loop": "el corte es limpio y la acción es cíclica"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "música de fondo viral",
+   "efectos_de_sonido": [
+    "sonido ambiente del estadio"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado en la parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "partido de fútbol profesional",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "clip de transmisión deportiva",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la brevedad del clip, la calidad estética de la jugada y la pregunta subjetiva que invita a la interacción",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una animación simple de un juego de fútbol o una recreación con figuras geométricas moviéndose hacia un objetivo"
+ }
+}

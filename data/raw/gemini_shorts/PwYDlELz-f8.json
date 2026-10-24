@@ -1,0 +1,92 @@
+{
+ "video_id": "PwYDlELz-f8",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2240,
+  "candidatesTokenCount": 885,
+  "totalTokenCount": 3125,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1457
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 16.0,
+  "formato": "juego de personalización de avatares de futbolistas mediante la selección de accesorios",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Cristiano Ronaldo y un jugador de Argentina con gafas de sol sobre fondo amarillo",
+   "que_se_dice_o_texto": "ranki te cankin can y que fue",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación de los personajes con gafas de sol"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 16.0,
+    "parte": "otro",
+    "descripcion": "secuencia rápida de cambios de accesorios (cadenas, pelucas) sobre los personajes"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "cambio visual instantáneo de los accesorios",
+   "efecto_sonido": "sonidos de pop y música rítmica"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video se corta abruptamente y vuelve a empezar",
+   "loop": true,
+   "como_hace_el_loop": "el fondo amarillo y la posición de los personajes se mantienen constantes"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "español con acento urbano",
+   "musica": "tendencia/viral",
+   "efectos_de_sonido": [
+    "sonidos de pop",
+    "efectos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "números simples en lista vertical, color negro, fuente sans-serif",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "amarillo sólido",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "edición rápida tipo meme con elementos superpuestos",
+   "cambios_de_plano_aprox": 8
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "ritmo musical muy marcado, uso de figuras virales del fútbol y cambios visuales constantes que retienen la atención",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar fotos estáticas de jugadores famosos, aplicar filtros de edición para quitarles el pelo y superponer imágenes PNG de accesorios (gafas, cadenas, pelucas) sincronizadas con el beat de una canción viral"
+ }
+}

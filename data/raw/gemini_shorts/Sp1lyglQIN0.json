@@ -1,0 +1,114 @@
+{
+ "video_id": "Sp1lyglQIN0",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 4157,
+  "candidatesTokenCount": 1069,
+  "totalTokenCount": 5226,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3374
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 37.8,
+  "formato": "ranking de tops de fútbol editados de manera inesperada",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 2.2,
+   "que_se_ve": "chica levantando peso con un niño observando",
+   "que_se_dice_o_texto": "Ranking Unexpected Top Football Edits (Wait For The Last One !!)\n1.",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.2,
+    "parte": "gancho",
+    "descripcion": "presentación del ranking inesperado con promesa de ver hasta el último"
+   },
+   {
+    "inicio_s": 2.2,
+    "fin_s": 5.9,
+    "parte": "revelacion",
+    "descripcion": "revelación del puesto 2 con Neymar"
+   },
+   {
+    "inicio_s": 5.9,
+    "fin_s": 18.9,
+    "parte": "revelacion",
+    "descripcion": "transición y revelación de Donnarumma"
+   },
+   {
+    "inicio_s": 18.9,
+    "fin_s": 27.0,
+    "parte": "revelacion",
+    "descripcion": "revelación del puesto 3 con Valverde"
+   },
+   {
+    "inicio_s": 27.0,
+    "fin_s": 37.8,
+    "parte": "revelacion",
+    "descripcion": "revelación del puesto 1 con Messi y CTA de suscripción"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "aparición del nombre con efectos visuales y clips rápidos",
+   "efecto_sonido": "música con drop y efectos de transición"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "pide suscripción con clip de Messi",
+   "loop": true,
+   "como_hace_el_loop": "el final con texto de suscripción corta bruscamente para reiniciar en la chica levantando peso del gancho"
+  },
+  "cta": {
+   "en_video": "Subscribe guys",
+   "momento_s": 36.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés con acento neutral",
+   "musica": "tendencia/viral con ritmo acelerado",
+   "efectos_de_sonido": [
+    "transiciones de video",
+    "impactos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras mayúsculas con contorno y colores llamativos en el centro superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "memes y videos virales mezclados con gameplay y fútbol",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "shitpost y edits frenéticos de fútbol",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "uso del formato de ranking inesperado con elementos absurdos al inicio",
+   "ritmo extremadamente rápido con ediciones estilo shitpost",
+   "sorpresa en el orden de los puestos que genera retención hasta el final"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar plantillas de listas con números del 1 al 5, reemplazar los clips de fútbol por imágenes estáticas con filtros locos, y mantener la música en tendencia con cortes rápidos"
+ }
+}

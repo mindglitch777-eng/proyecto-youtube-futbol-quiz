@@ -1,0 +1,99 @@
+{
+ "video_id": "ToJv33Ew-iE",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4513,
+  "candidatesTokenCount": 973,
+  "totalTokenCount": 5486,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3730
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 40.5,
+  "formato": "Ranking de los 5 mejores momentos de flag football, presentados de menor a mayor impacto.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.5,
+   "que_se_ve": "Un jugador de flag football corriendo y siendo derribado de forma cómica.",
+   "que_se_dice_o_texto": "This is what happens when your brain is lagging",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.5,
+    "parte": "gancho",
+    "descripcion": "Introducción del video con un clip divertido de un jugador fallando."
+   },
+   {
+    "inicio_s": 3.5,
+    "fin_s": 40.5,
+    "parte": "revelacion",
+    "descripcion": "Presentación de los 5 momentos numerados del 5 al 1, con comentarios humorísticos sobre cada jugada."
+   },
+   {
+    "inicio_s": 40.0,
+    "fin_s": 40.5,
+    "parte": "cierre",
+    "descripcion": "El video termina abruptamente tras el último clip."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se muestran clips de jugadas de flag football con una lista numerada superpuesta.",
+   "efecto_sonido": "Sonidos de impacto, música de fondo y efectos de sonido de dibujos animados."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina después del quinto momento.",
+   "loop": true,
+   "como_hace_el_loop": "El video termina y vuelve a empezar inmediatamente."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "Música de fondo rítmica y dinámica.",
+   "efectos_de_sonido": [
+    "Sonidos de dibujos animados",
+    "Sonidos de impacto",
+    "Sonidos de error de sistema"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto grande, colorido, con contorno, centrado o en la parte inferior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de flag football.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición rápida con superposiciones de texto y elementos gráficos.",
+   "cambios_de_plano_aprox": 5
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_se_dice_o_texto": "El video funciona por su ritmo rápido, el uso de humor en los comentarios y la naturaleza visualmente impactante de las jugadas de flag football.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría replicar usando animaciones simples de stickman o gráficos vectoriales que representen las jugadas, manteniendo el mismo estilo de edición rápida y comentarios humorísticos."
+ }
+}

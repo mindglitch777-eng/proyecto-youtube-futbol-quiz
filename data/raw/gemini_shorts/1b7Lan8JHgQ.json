@@ -1,0 +1,22 @@
+{
+ "video_id": "1b7Lan8JHgQ",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7118,
+  "candidatesTokenCount": 1024,
+  "totalTokenCount": 8142,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6335
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 71.9,\n \"formato\": \"desafío de reflejos y conteo de tiempo con botón físico\",\n \"n_preguntas_o_rondas\": 5,\n \"gancho\": {\n  \"fin_s\": 2.0,\n  \"que_se_ve\": \"un grupo de amigos alrededor de una mesa con un temporizador digital y un botón rojo, un joven presiona el botón intentando detenerlo exactamente en 1 segundo\",\n  \"que_se_dice_o_texto\": \"00:00.00\",\n  \"tipo\": \"acción/sorpresa\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 2.0,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"primer intento de la ronda de 1 segundo\"\n  },\n  {\n   \"inicio_s\": 2.0,\n   \"fin_s\": 12.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"rondas 1 y 2 de detener el cronómetro\"\n  },\n  {\n   \"inicio_s\": 12.0,\n   \"fin_s\": 64.0,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"sucesión de intentos con reacciones de acierto o fallo\"\n  },\n  {\n   \"inicio_s\": 64.0,\n   \"fin_s\": 71.9,\n   \"parte\": \"cierre\",\n   \"descripcion\": \"compilación de jugadas y celebraciones de Zlatan Ibrahimović\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 5.0,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"temporizador digital numérico en pantalla\"\n },\n \"revelacion\": {\n  \"como\": \"el temporizador digital muestra el tiempo exacto en que se presionó el botón\",\n  \"efecto_sonido\": \"bocina de fallo y aplausos de acierto\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"muestra clips de Zlatan Ibrahimović en blanco y negro con música electrónica\",\n  \"loop\": false,\n  como_hace_el_loop: null\n },\n \"cta\": {\n  \"en_video\": null,\n  \"momento_s\": null\n },\n \"audio\": {\n  \"voz\": \"humana\",\n  \"idioma_y_acento\": \"español neutro\",\n  \"musica\": \"tendencia/viral\",\n  \"efectos_de_sonido\": [\n   \"bocina de error\",\n   \"aplausos\",\n   \"clic de botón\",\n   \"beats de música electrónica\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"números rojos grandes del temporizador\",\n  \"idioma\": \"español\"\n },\n \"visual\": {\n  \"fondo\": \"estudio interior con cortina blanca\",\n  \"persona_real_en_camara\": true,\n  \"fotos_de_jugadores\": false,\n  \"escudos_o_logos\": true,\n  \"clips_de_partidos_o_transmisiones\": true,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"dinámico con reacciones y transición a clips de fútbol\",\n  \"cambios_de_plano_aprox\": 15\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": false,\n \"que_hace_que_funcione\": [\n  \"alta tensión y dinamismo en los desafíos físicos\",\n  \"reacciones genuinas y divertidas del grupo de amigos\",\n  \"transición fluida hacia un clip épico de Zlatan Ibrahimović\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"usar gráficos animados de temporizador en cuenta regresiva con efectos de sonido de acierto o fallo y reemplazar los clips de Zlatan por imágenes editadas del jugador con transiciones rápidas.\"\n}"
+}

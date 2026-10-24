@@ -1,0 +1,85 @@
+{
+ "video_id": "N5KeURByIug",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3069,
+  "candidatesTokenCount": 774,
+  "totalTokenCount": 3843,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2286
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 25.0,
+  "formato": "Ranking de momentos deportivos destacados con música viral",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Un jugador lanzando una pelota de dodgeball con precisión",
+   "que_se_dice_o_texto": "Ranking Best Aura Sports Moments",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 25.0,
+    "parte": "otro",
+    "descripcion": "Secuencia rápida de 6 clips de jugadas deportivas impresionantes numeradas del 6 al 1"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El ranking se muestra mediante texto superpuesto que cambia a medida que avanza el video",
+   "efecto_sonido": "música de fondo continua"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras mostrar el puesto número 1",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "canción de rap viral de fondo",
+   "efectos_de_sonido": [
+    "sonido de impacto de pelota"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, posición fija a la izquierda",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "clips de video de deportes",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "compilación de clips de alta intensidad",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Uso de música viral, ritmo rápido de edición y contenido visualmente impactante que genera curiosidad por ver el siguiente puesto",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar clips de stock de deportes de alta calidad o animaciones de jugadas, manteniendo la estructura de ranking numerado y música en tendencia"
+ }
+}

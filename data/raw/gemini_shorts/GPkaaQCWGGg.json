@@ -1,0 +1,93 @@
+{
+ "video_id": "GPkaaQCWGGg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 7572,
+  "candidatesTokenCount": 933,
+  "totalTokenCount": 8505,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6789
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 78.0,
+  "formato": "recopilación de jugadas de un partido con texto superpuesto que narra una historia de frustración y éxito",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Cristiano Ronaldo fallando un gol frente a la portería de la Juventus.",
+   "que_se_dice_o_texto": "Ronaldo Vs Juventus",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del tema con un fallo de Ronaldo."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 78.0,
+    "parte": "otro",
+    "descripcion": "Secuencia de clips de jugadas fallidas seguidas por el gol de chilena, con texto que guía la narrativa emocional."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el gol de chilena aparece como el clímax de la secuencia",
+   "efecto_sonido": "narración de gol y ovación del público"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina con la celebración de Ronaldo y el logo del canal",
+   "loop": true,
+   "como_hace_el_loop": "el final del video muestra a Ronaldo celebrando, lo que conecta visualmente con el inicio de la acción del partido"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés, acento británico (narración de partido)",
+   "musica": "de fondo, música dramática de suspenso",
+   "efectos_de_sonido": [
+    "sonido de silbato",
+    "sonido de golpe de balón",
+    "ovación del público"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado en la parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "clips de partido de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, enfocado en jugadas de fútbol",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la narrativa de 'redención' (fallar mucho para luego marcar un gol icónico), el uso de clips de alta calidad y la música que genera tensión.",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar imágenes estáticas de los jugadores con efectos de movimiento (Ken Burns), superponer gráficos de estadísticas o cronología de eventos y usar una voz en off que narre la historia."
+ }
+}

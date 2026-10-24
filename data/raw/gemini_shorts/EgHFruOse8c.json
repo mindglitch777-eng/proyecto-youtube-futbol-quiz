@@ -1,0 +1,98 @@
+{
+ "video_id": "EgHFruOse8c",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5427,
+  "candidatesTokenCount": 968,
+  "totalTokenCount": 6395,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4644
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 52.0,
+  "formato": "desafío de encontrar animales camuflados en imágenes",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "un leopardo de las nieves en un entorno rocoso nevado",
+   "que_se_dice_o_texto": "Qué, ¿tú me snow leopard ko dhoond sakte ho? Toh jaldi batao, yeh is photo mein kahan chipa hua hai?",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío de encontrar al leopardo"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 6.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "el espectador busca al animal mientras suena un tic-tac"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 52.0,
+    "parte": "revelacion",
+    "descripcion": "se muestra la respuesta con un círculo rojo y se repite el proceso para 4 niveles más"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "sonido de tic-tac"
+  },
+  "revelacion": {
+   "como": "círculo rojo dibujado sobre la imagen",
+   "efecto_sonido": "sonido de confirmación"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "pide comentar y dar like",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Tum comment mein batana ki tumne saare dhoond liye the aur like bhi kardo is video ko.",
+   "momento_s": 48.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "hindi",
+   "musica": "música de fondo de tensión/misterio",
+   "efectos_de_sonido": [
+    "tic-tac",
+    "sonido de confirmación"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras grandes, coloridas, estilo cómic, parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "pantalla dividida: arriba imágenes de animales, abajo el creador hablando",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "estilo de reacción/desafío visual",
+   "cambios_de_plano_aprox": 5
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la interactividad del desafío, el ritmo rápido de los niveles y la presencia del creador que guía la experiencia",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una voz en off, imágenes de stock de animales camuflados y una cuenta regresiva visual en pantalla"
+ }
+}

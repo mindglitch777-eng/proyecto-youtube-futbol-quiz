@@ -1,0 +1,116 @@
+{
+ "video_id": "LrK_zRBs0p0",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2155,
+  "candidatesTokenCount": 1135,
+  "totalTokenCount": 3290,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1372
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 15.0,
+  "formato": "juego de encontrar al jugador diferente en una cuadrícula de 5x5",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "cuadrícula de 25 caras idénticas de un hombre con una explosión encima",
+   "que_se_dice_o_texto": "FIND RONALDO",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "pregunta",
+    "descripcion": "se muestra la cuadrícula de caras y se pide encontrar a Ronaldo"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 5.0,
+    "parte": "revelacion",
+    "descripcion": "se encierra en un círculo rojo a Ronaldo"
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 9.0,
+    "parte": "pregunta",
+    "descripcion": "se muestra la cuadrícula de caras de Haaland y se pide encontrarlo"
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 10.0,
+    "parte": "revelacion",
+    "descripcion": "se encierra en un círculo rojo a Haaland"
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 14.0,
+    "parte": "pregunta",
+    "descripcion": "se muestra la cuadrícula de caras de Lamine Yamal y se pide encontrarlo"
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 15.0,
+    "parte": "revelacion",
+    "descripcion": "se encierra en un círculo rojo a Lamine Yamal"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 4.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra de progreso verde que disminuye"
+  },
+  "revelacion": {
+   "como": "círculo rojo animado alrededor del jugador correcto",
+   "efecto_sonido": "sonido de explosión y sonido de acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente",
+   "loop": "true",
+   "como_hace_el_loop": "el video vuelve al inicio sin transición"
+  },
+  "cta": {
+   "en_video": "SUBSCRIBE",
+   "momento_s": 0.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "música de fondo rítmica y tensa",
+   "efectos_de_sonido": [
+    "explosión",
+    "sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "fuente sans-serif, blanca con borde negro, parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "rejilla estilo retro futurista",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "edición rápida con imágenes deformadas de jugadores",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "el uso de imágenes deformadas y divertidas de jugadores famosos, la gamificación simple y el ritmo rápido que mantiene la atención",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una herramienta de edición para crear una cuadrícula de 5x5 con imágenes de jugadores famosos (puedes usar filtros de deformación en apps como FaceApp) y añadir una barra de progreso animada"
+ }
+}

@@ -1,0 +1,85 @@
+{
+ "video_id": "ipimnzKYb80",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1522,
+  "candidatesTokenCount": 726,
+  "totalTokenCount": 2248,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 739
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 8.0,
+  "formato": "video de jugada de habilidad futbolística en bucle",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 0.0,
+   "que_se_ve": "jugador de fútbol realizando un regate",
+   "que_se_dice_o_texto": null,
+   "tipo": "otro"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 8.0,
+    "parte": "otro",
+    "descripcion": "repetición continua de una jugada de regate de Lamine Yamal"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video vuelve a empezar desde el inicio",
+   "loop": "true",
+   "como_hace_el_loop": "el movimiento del jugador es fluido y el corte es imperceptible"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "música electrónica de tendencia con ritmo marcado",
+   "efectos_de_sonido": [
+    "ninguno"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": false,
+   "subtitulos_de_voz": false,
+   "estilo": null,
+   "idioma": null
+  },
+  "visual": {
+   "fondo": "campo de fútbol",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "clip deportivo de alta calidad",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la calidad técnica de la jugada, el ritmo de la música y el formato de bucle infinito que retiene al espectador",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar animaciones 2D o 3D de un avatar realizando un regate similar sobre un fondo de césped estilizado"
+ }
+}

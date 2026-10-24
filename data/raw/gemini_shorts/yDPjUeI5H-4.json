@@ -1,0 +1,110 @@
+{
+ "video_id": "yDPjUeI5H-4",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3519,
+  "candidatesTokenCount": 1100,
+  "totalTokenCount": 4619,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2736
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 31.0,
+  "formato": "Adivina el jugador de fútbol por su tiro libre",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Un jugador de fútbol preparándose para un tiro libre con una silueta roja sobre él.",
+   "que_se_dice_o_texto": "GUESS THE FREE KICK",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío con el texto 'GUESS THE FREE KICK'."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 7.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra el tiro libre de Cristiano Ronaldo, seguido de una cuenta regresiva y la revelación."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 14.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra el tiro libre de Neymar Jr, seguido de una cuenta regresiva y la revelación."
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 22.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra el tiro libre de Roberto Carlos, seguido de una cuenta regresiva y la revelación."
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 31.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra el tiro libre de Marco Reus, seguido de una cuenta regresiva y la revelación."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número grande en el centro con una barra de progreso circular"
+  },
+  "revelacion": {
+   "como": "Aparece la foto del jugador y su nombre en el centro de la pantalla.",
+   "efecto_sonido": "Sonido de 'ding' o efecto de transición"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina después de la última revelación.",
+   "loop": "true",
+   "como_hace_el_loop": "El video vuelve al inicio de forma fluida."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "Canción de tendencia/viral con ritmo marcado",
+   "efectos_de_sonido": [
+    "Sonido de cuenta regresiva",
+    "Sonido de impacto de balón"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Tipografía blanca con contorno, estilo moderno y dinámico",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Dinámico, con siluetas de colores sobre los jugadores",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "El uso de clips icónicos de fútbol, la gamificación con cuenta regresiva y la música viral.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar avatares de jugadores en 2D, siluetas animadas y efectos de sonido de fútbol para recrear la acción sin usar clips de transmisión."
+ }
+}

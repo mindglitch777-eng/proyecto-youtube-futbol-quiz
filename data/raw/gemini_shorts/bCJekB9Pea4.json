@@ -1,0 +1,92 @@
+{
+ "video_id": "bCJekB9Pea4",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 6072,
+  "candidatesTokenCount": 852,
+  "totalTokenCount": 6924,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5289
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 60.0,
+  "formato": "recopilación de momentos de confrontación de un jugador específico con otros futbolistas",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "jugador Albulayhi confrontando a Son Heung-min",
+   "que_se_dice_o_texto": "Son Vs Albulayhi 🤡 Wait for it..",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "presentación del primer enfrentamiento con texto en pantalla"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 60.0,
+    "parte": "otro",
+    "descripcion": "secuencia de clips mostrando a Albulayhi confrontando a Messi, un árbitro, Ziyech, Mount y finalmente siendo derribado por Ronaldo"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente tras la jugada de Ronaldo",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "música de tendencia/viral con ritmo marcado",
+   "efectos_de_sonido": [
+    "sonido de silbato",
+    "efectos de sonido de impacto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado en la parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "edición dinámica de clips deportivos",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "el uso de figuras futbolísticas muy populares, la narrativa de 'humillación' o confrontación, y el ritmo rápido de la edición",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar imágenes estáticas de los jugadores con efectos de zoom y movimiento, junto con texto que narre la rivalidad o el momento de tensión"
+ }
+}

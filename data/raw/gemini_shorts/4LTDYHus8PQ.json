@@ -1,0 +1,85 @@
+{
+ "video_id": "4LTDYHus8PQ",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2342,
+  "candidatesTokenCount": 715,
+  "totalTokenCount": 3057,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1559
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.0,
+  "formato": "clip de jugada destacada de fútbol con música de fondo",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 0.0,
+   "que_se_ve": "null",
+   "que_se_dice_o_texto": "null",
+   "tipo": "null"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 17.0,
+    "parte": "otro",
+    "descripcion": "jugada de gol de Kylian Mbappé con el Real Madrid"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": "null"
+  },
+  "revelacion": {
+   "como": "null",
+   "efecto_sonido": "null"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente",
+   "loop": false,
+   "como_hace_el_loop": "null"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "null",
+   "musica": "música de tendencia/viral de fondo",
+   "efectos_de_sonido": [
+    "sonido ambiente del estadio"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": false,
+   "subtitulos_de_voz": false,
+   "estilo": "null",
+   "idioma": "null"
+  },
+  "visual": {
+   "fondo": "campo de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "clip de transmisión deportiva",
+   "cambios_de_plano_aprox": 2
+  },
+  "dificultad_de_las_preguntas": "null",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la calidad de la jugada, la popularidad del jugador (Mbappé) y el uso de música viral",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una animación 2D o un videojuego de fútbol (como FIFA/FC24) para recrear la jugada"
+ }
+}

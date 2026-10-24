@@ -1,0 +1,86 @@
+{
+ "video_id": "m7R3I1_s_zQ",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1687,
+  "candidatesTokenCount": 852,
+  "totalTokenCount": 2539,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 904
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 9.0,
+  "formato": "Desafío visual de conteo progresivo con temática de Minecraft",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Una mano sosteniendo una figura de Steve sobre un sacapuntas, con iconos de Steve y un Warden arriba.",
+   "que_se_dice_o_texto": "6.7X STEVE \"Wait for WARDEN\"",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 9.0,
+    "parte": "desafío",
+    "descripcion": "El usuario va insertando la figura de Steve en el sacapuntas mientras el contador de 'X STEVE' cambia dinámicamente."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "La revelación es el proceso mismo de 'sacar punta' a la figura.",
+   "efecto_sonido": "Sonido de sacapuntas"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras mostrar la progresión.",
+   "loop": true,
+   "como_hace_el_loop": "El video vuelve al inicio donde la figura está intacta."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "Música viral de fondo (remix de Minecraft)",
+   "efectos_de_sonido": [
+    "Sonido de sacapuntas",
+    "Efectos de sonido de Minecraft"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte inferior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Mesa blanca",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video de formato 'satisfactorio' o 'ASMR' con figuras de acción.",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_hace_que_funcione": "El uso de una figura popular (Minecraft), el elemento visual satisfactorio de sacar punta y la promesa de un evento final (Wait for Warden).",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una animación 3D o stop-motion de un objeto siendo destruido o transformado con un contador dinámico en la parte superior."
+ }
+}

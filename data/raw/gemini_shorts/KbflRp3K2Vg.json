@@ -1,0 +1,89 @@
+{
+ "video_id": "KbflRp3K2Vg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2872,
+  "candidatesTokenCount": 855,
+  "totalTokenCount": 3727,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2089
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 22.5,
+  "formato": "jugadores de fútbol realizan una acción física o gesto para representar su posición en el campo",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "grupo de jugadores de fútbol en un campo, uno empieza a moverse",
+   "que_se_dice_o_texto": "DESCRIBE YOUR POSITION WITHOUT A WORD",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío con texto en pantalla"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 22.5,
+    "parte": "revelacion",
+    "descripcion": "secuencia rápida de jugadores realizando gestos o movimientos que representan su posición"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el jugador realiza el gesto y pasa al siguiente",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente",
+   "loop": true,
+   "como_hace_el_loop": "el corte es limpio y vuelve al inicio de la fila de jugadores"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "música electrónica de ritmo rápido y repetitivo (tendencia)",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado en la parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "campo de fútbol profesional",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video de formato corto tipo TikTok/Reels, dinámico y rítmico",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "el ritmo rápido de la música, la naturaleza visual y física del desafío, y la curiosidad por adivinar qué posición representa cada jugador",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una plantilla con siluetas animadas o iconos de posiciones de fútbol que aparecen al ritmo de la música, con texto preguntando '¿Qué posición es?'"
+ }
+}

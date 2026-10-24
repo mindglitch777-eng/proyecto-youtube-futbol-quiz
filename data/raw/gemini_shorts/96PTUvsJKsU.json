@@ -1,0 +1,132 @@
+{
+ "video_id": "96PTUvsJKsU",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7328,
+  "candidatesTokenCount": 1209,
+  "totalTokenCount": 8537,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6545
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 71.0,
+  "formato": "adivinar marca de celular por su ringtone",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 3.4,
+   "que_se_ve": "Animación de un teléfono sonando y texto en pantalla",
+   "que_se_dice_o_texto": "¿Qué app... qué phone... ringtone?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.4,
+    "parte": "gancho",
+    "descripcion": "Presentación del reto de adivinar el teléfono por su tono."
+   },
+   {
+    "inicio_s": 3.4,
+    "fin_s": 13.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: suena el ringtone con ondas de audio y cuenta regresiva."
+   },
+   {
+    "inicio_s": 13.5,
+    "fin_s": 23.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: tono de iPhone."
+   },
+   {
+    "inicio_s": 23.5,
+    "fin_s": 34.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: tono de Vivo."
+   },
+   {
+    "inicio_s": 34.0,
+    "fin_s": 44.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4: tono clásico de Nokia."
+   },
+   {
+    "inicio_s": 44.0,
+    "fin_s": 54.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 5: tono de Realme."
+   },
+   {
+    "inicio_s": 54.0,
+    "fin_s": 64.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 6: tono de Oppo."
+   },
+   {
+    "inicio_s": 64.0,
+    "fin_s": 71.0,
+    "parte": "cierre",
+    "descripcion": "Pregunta bonus final para que comenten."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número grande dentro de un círculo con cuenta regresiva de 3 a 1"
+  },
+  "revelacion": {
+   "como": "Foto del dispositivo móvil acompañada de la reacción del creador",
+   "efecto_sonido": "Aplauso o sonido de acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Pide la respuesta en los comentarios",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "el aunserto ap me ge comments batana",
+   "momento_s": 69.5
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Hindi",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "ringtones de teléfonos",
+    "cuenta regresiva"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Tipografía gruesa, color amarillo con borde negro, centrada",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Estudio con luces LED azules y neón",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Split screen (arriba retos, abajo creador con reacción)",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Uso de sonidos muy reconocibles de marcas populares",
+   "Estructura visual dividida que muestra la reacción del creador en tiempo real",
+   "Ritmo rápido con cuenta regresiva clara"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla estática o animada de los tonos con onda de audio, reemplazando la reacción del creador con un texto de cuenta regresiva."
+ }
+}

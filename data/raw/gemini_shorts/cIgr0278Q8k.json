@@ -1,0 +1,104 @@
+{
+ "video_id": "cIgr0278Q8k",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3243,
+  "candidatesTokenCount": 1025,
+  "totalTokenCount": 4268,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2460
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 27.0,
+  "formato": "juego de adivinar el jugador de fútbol basado en clips de goles",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "texto en la parte superior con niveles de dificultad (EASY, MEDIUM, HARD, IMPOSSIBLE) y un clip de un gol",
+   "que_se_dice_o_texto": "NAME THAT PLAYER",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 6.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 1: gol de Neymar, cuenta regresiva de 3 segundos y revelación"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 2: gol de Vinicius Jr, cuenta regresiva y revelación"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 19.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 3: gol de Lucas Paquetá, cuenta regresiva y revelación"
+   },
+   {
+    "inicio_s": 19.0,
+    "fin_s": 27.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 4: gol de Oscar, cuenta regresiva y revelación"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número grande en el centro de la pantalla con sonido de tic-tac"
+  },
+  "revelacion": {
+   "como": "la silueta del jugador se completa con su foto real y su nombre aparece debajo",
+   "efecto_sonido": "sonido de acierto o transición rápida"
+  },
+  "cierre_y_loop": {
+   "que_se_ve": "el video termina abruptamente tras la última revelación",
+   "loop": true,
+   "como_hace_el_loop": "el final del último clip conecta visualmente con el inicio del primero"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "canción de tendencia/viral de fondo",
+   "efectos_de_sonido": [
+    "tic-tac de cuenta regresiva",
+    "sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras blancas con borde negro, estilo moderno y llamativo",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, con efectos de color sobre los jugadores",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la gamificación rápida, la música viral y el desafío visual de adivinar jugadores famosos",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar siluetas de jugadores sobre fondos de estadios genéricos y animar el nombre del jugador al revelar"
+ }
+}

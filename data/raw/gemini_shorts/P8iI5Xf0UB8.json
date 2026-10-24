@@ -1,0 +1,87 @@
+{
+ "video_id": "P8iI5Xf0UB8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2961,
+  "candidatesTokenCount": 741,
+  "totalTokenCount": 3702,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2178
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 24.1,
+  "formato": "ranking de los mejores toques de fútbol",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "texto superior y cuenta regresiva de ranking en pantalla",
+   "que_se_dice_o_texto": "Ranking Best Football Touch Moments",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 24.1,
+    "parte": "otro",
+    "descripcion": "presentación secuencial del ranking de toques de fútbol del 7 al 1"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "números del 7 al 1 en orden inverso en pantalla"
+  },
+  "revelacion": {
+   "como": "aparición de texto del ranking conforme avanza el video",
+   "efecto_sonido": "música y efectos variados"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "termina la revelación del número 1",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "aplausos",
+    "gritos",
+    "efectos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "tipografía bold con números de colores y texto blanco",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "varios escenarios al aire libre y canchas",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "compilación de clips cortos de habilidades futbolísticas",
+   "cambios_de_plano_aprox": 7
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "formato de ranking ascendente, clips cortos muy dinámicos y habilidades sorprendentes",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar videos de stock de habilidades o animaciones con los mismos textos de ranking"
+ }
+}

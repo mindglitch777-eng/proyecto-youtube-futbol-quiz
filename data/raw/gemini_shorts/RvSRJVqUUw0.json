@@ -1,0 +1,99 @@
+{
+ "video_id": "RvSRJVqUUw0",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3162,
+  "candidatesTokenCount": 914,
+  "totalTokenCount": 4076,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2379
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 26.0,
+  "formato": "recopilación de momentos destacados de un niño en la final del mundial",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "un joven hablando a cámara con un fondo de habitación",
+   "que_se_dice_o_texto": "TOP Momentos de Keyne en la final del mundial",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "el creador presenta el tema del video"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 25.0,
+    "parte": "otro",
+    "descripcion": "recopilación de 5 clips numerados del niño en el campo de juego"
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 26.0,
+    "parte": "cierre",
+    "descripcion": "el creador vuelve a cámara para cerrar el video"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el creador dice 'somos campeones' y el video termina",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento español",
+   "musica": "música de fondo animada",
+   "efectos_de_sonido": [
+    "sonidos de ambiente de estadio",
+    "efectos de sonido de dibujos animados"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto grande, color verde con contorno negro, centrado",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "habitación con estanterías",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "estilo vlog con cortes rápidos a clips de archivo",
+   "cambios_de_plano_aprox": 8
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_ve": "el creador habla a cámara y luego se muestran clips de un niño en la final del mundial",
+  "que_hace_que_funcione": "el carisma del creador, el uso de clips virales y el ritmo rápido de la edición",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar imágenes de stock de niños jugando al fútbol, voz en off y texto en pantalla para narrar los momentos"
+ }
+}

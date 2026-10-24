@@ -1,0 +1,93 @@
+{
+ "video_id": "YeQP-pSNCfQ",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3975,
+  "candidatesTokenCount": 908,
+  "totalTokenCount": 4883,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3192
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 36.0,
+  "formato": "Ranking de momentos divertidos de fans en el fútbol",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un fan de Argentina llorando y luego cambiando su camiseta por la de España.",
+   "que_se_dice_o_texto": "RANKING FUNNIEST 2026 WORLD CUP FANS",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking y el primer clip impactante."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 36.0,
+    "parte": "revelacion",
+    "descripcion": "Secuencia de clips numerados del 6 al 1 mostrando diferentes fans en situaciones cómicas."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El ranking se muestra mediante una lista numerada superpuesta que se va completando.",
+   "efecto_sonido": "Sonidos de risas, efectos de sonido de dibujos animados y música de fondo."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente después del último clip.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "Música de fondo cómica y de tendencia",
+   "efectos_de_sonido": [
+    "Risas",
+    "Sonidos de dibujos animados",
+    "Efectos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto grande, colorido, con contorno, posicionado en la parte superior e inferior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de fútbol y reacciones de fans.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición rápida tipo 'compilación de memes' con superposiciones de texto.",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_se_hace_que_funcione": "El uso de clips virales de reacciones exageradas, el formato de ranking que genera curiosidad y la edición dinámica con efectos de sonido cómicos.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría replicar usando memes de stock o animaciones simples de personajes reaccionando a situaciones, manteniendo el formato de lista numerada y la voz en off cómica."
+ }
+}

@@ -1,0 +1,93 @@
+{
+ "video_id": "L8kCGIeJYWg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3687,
+  "candidatesTokenCount": 877,
+  "totalTokenCount": 4564,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2904
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 31.0,
+  "formato": "Ranking de momentos fallidos de fútbol con comentarios humorísticos",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 0.6,
+   "que_se_ve": "Texto en pantalla: 'Ranking Best Football Fail Moments' y una jugadora de fútbol americano.",
+   "que_se_dice_o_texto": "She's never gonna 1v1 a man again",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 0.6,
+    "parte": "gancho",
+    "descripcion": "Introducción del tema con una jugada fallida."
+   },
+   {
+    "inicio_s": 0.6,
+    "fin_s": 31.0,
+    "parte": "revelacion",
+    "descripcion": "Presentación secuencial de 5 clips de errores de fútbol, cada uno con un comentario sarcástico de un avatar animado."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El clip se reproduce y el avatar comenta el error.",
+   "efecto_sonido": "Sonidos de risas, efectos de impacto y música de fondo."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras el último clip.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "Música de fondo rítmica y viral",
+   "efectos_de_sonido": [
+    "Risas",
+    "Sonidos de impacto",
+    "Efectos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Texto grande, colores brillantes, contorno negro, centrado.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de jugadas fallidas de fútbol americano.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición rápida con superposición de avatar animado y texto.",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "El uso de humor sarcástico, la edición rápida de momentos impactantes y el uso de un avatar para dar personalidad al comentario.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar clips de stock de errores deportivos, un avatar generado por IA para narrar y subtítulos dinámicos."
+ }
+}

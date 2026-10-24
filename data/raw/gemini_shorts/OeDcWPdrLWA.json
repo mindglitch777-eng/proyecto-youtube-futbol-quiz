@@ -1,0 +1,93 @@
+{
+ "video_id": "OeDcWPdrLWA",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4142,
+  "candidatesTokenCount": 944,
+  "totalTokenCount": 5086,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3359
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 36.0,
+  "formato": "Ranking de momentos de fútbol con clips de 'ankle breakers' (regates que hacen caer al rival) intercalados con memes de reacción.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "Texto en pantalla con el título del ranking.",
+   "que_se_dice_o_texto": "Ranking Best Ankle Breaker Moments (last one is insane)",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 0.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking con texto en pantalla."
+   },
+   {
+    "inicio_s": 0.5,
+    "fin_s": 36.0,
+    "parte": "revelacion",
+    "descripcion": "Secuencia de 5 clips de regates, cada uno interrumpido por memes de reacción y efectos de sonido."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El clip de fútbol se corta abruptamente y se inserta un meme de reacción (ej. hombre cayendo, grito, etc.).",
+   "efecto_sonido": "Sonidos de memes virales, gritos, efectos de 'bruh' y música de fondo."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina tras el quinto clip sin una despedida explícita.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Música de fondo de tendencia (estilo phonk o hip-hop instrumental) mezclada con efectos de sonido de memes.",
+   "efectos_de_sonido": [
+    "Gritos de memes",
+    "Sonido de 'bruh'",
+    "Efectos de impacto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, posicionado en el centro o parte superior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de fútbol amateur y profesional.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición rápida tipo 'shitposting' con cortes abruptos y memes.",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "El uso de clips de alta intensidad (regates), la edición cómica con memes que rompen la tensión y el ritmo rápido que mantiene la retención.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría replicar usando animaciones simples de figuras geométricas o avatares 2D realizando los movimientos, intercalados con memes de stock o reacciones de video de dominio público."
+ }
+}

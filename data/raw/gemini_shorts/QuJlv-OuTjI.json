@@ -1,0 +1,93 @@
+{
+ "video_id": "QuJlv-OuTjI",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3709,
+  "candidatesTokenCount": 923,
+  "totalTokenCount": 4632,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2926
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 33.0,
+  "formato": "Ranking de goles inusuales de Cristiano Ronaldo con una lista numerada que se va completando.",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Cristiano Ronaldo marcando un gol con sus cordones mientras el portero está en el suelo.",
+   "que_se_dice_o_texto": "RANKING FUNNIEST UNUSUAL RONALDO GOALS",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del tema con el gol número 6."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 33.0,
+    "parte": "revelacion",
+    "descripcion": "Se muestran los goles del 6 al 1 en orden ascendente con comentarios humorísticos."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparece el nombre del gol en la lista numerada en pantalla mientras se ve el clip.",
+   "efecto_sonido": "Comentarios de narrador y efectos de sonido de estadio."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras mostrar el número 1.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Inglés",
+   "musica": "De fondo, ritmo rápido y enérgico.",
+   "efectos_de_sonido": [
+    "Narración deportiva",
+    "Sonidos de estadio",
+    "Efectos de sonido cómicos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con contorno negro, centrado y en la parte superior, lista numerada a la izquierda.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición dinámica de estilo 'ranking' con superposición de texto.",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_se_dice_o_texto": "El video funciona por el uso de clips virales de un jugador famoso, el formato de ranking que genera curiosidad y el tono humorístico de la narración.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría replicar usando imágenes estáticas de los momentos clave de los goles con efectos de zoom y movimiento (Ken Burns), junto con una voz en off generada por IA y una lista de texto animada."
+ }
+}
