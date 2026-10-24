@@ -1,0 +1,97 @@
+{
+ "video_id": "QcpKb14LjwY",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1785,
+  "candidatesTokenCount": 901,
+  "totalTokenCount": 2686,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1002
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 11.0,
+  "formato": "análisis de una jugada polémica de fútbol infantil",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "un portero infantil atrapando un balón y siendo golpeado por un delantero",
+   "que_se_dice_o_texto": "Miren esta muchachos, el balón me hace un giro extraño, la alcanzo a agarrar, el delantero patea y ustedes qué creen?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "el narrador introduce la jugada y plantea la duda"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 8.0,
+    "parte": "pregunta",
+    "descripcion": "se muestra la jugada en cámara lenta y se pregunta si fue gol o falta"
+   },
+   {
+    "inicio_s": 8.0,
+    "fin_s": 11.0,
+    "parte": "cierre",
+    "descripcion": "invitación a comentar y suscribirse"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina con un logo y llamado a la acción",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Déjame en los comentarios, suscríbete",
+   "momento_s": 8.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento colombiano",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "sonido ambiente de partido"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras blancas con borde negro, estilo dinámico",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol sintética",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video grabado con celular en formato vertical",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la polémica sobre una regla de fútbol, el uso de cámara lenta para analizar el contacto y la interacción directa con la audiencia",
+  "como_replicarlo_sin_cara_y_sin_clips": "usando una animación simple de un juego de fútbol o una recreación con figuras, manteniendo la voz en off que plantea la pregunta polémica"
+ }
+}

@@ -1,0 +1,97 @@
+{
+ "video_id": "cHdrtBan6do",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 6979,
+  "candidatesTokenCount": 948,
+  "totalTokenCount": 7927,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6196
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 109.0,
+  "formato": "desafío de adivinar jugadores de fútbol con caricaturas, aumentando el valor del premio en cada ronda",
+  "n_preguntas_o_rondas": 9,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "un hombre entrevistando a dos jóvenes en un centro comercial",
+   "que_se_dice_o_texto": "valendo dinheiro, qual o jogador?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío y el premio inicial"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 103.0,
+    "parte": "pregunta",
+    "descripcion": "el entrevistador muestra caricaturas de jugadores y los participantes deben adivinar el nombre para ganar dinero"
+   },
+   {
+    "inicio_s": 103.0,
+    "fin_s": 109.0,
+    "parte": "cierre",
+    "descripcion": "el entrevistador invita a la audiencia a adivinar el último jugador"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el nombre es dicho por los participantes y confirmado por el entrevistador",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el entrevistador pide a la audiencia que adivine el último jugador",
+   "loop": true,
+   "como_hace_el_loop": "el video termina con una pregunta abierta que invita a volver a ver el inicio"
+  },
+  "cta": {
+   "en_video": "você que tá assistindo, quem é esse craque argentino?",
+   "momento_s": 104.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "portugués brasileño",
+   "musica": "de fondo, ritmo animado",
+   "efectos_de_sonido": [
+    "ninguno"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto simple con contorno negro, centrado arriba",
+   "idioma": "portugués"
+  },
+  "visual": {
+   "fondo": "centro comercial",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "entrevista informal con superposición de caricaturas",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "el incentivo económico, el uso de caricaturas divertidas y la interacción dinámica entre el entrevistador y los participantes",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con una caricatura de un jugador arriba y un contador de dinero abajo, con una voz en off haciendo la pregunta y revelando la respuesta después de unos segundos"
+ }
+}

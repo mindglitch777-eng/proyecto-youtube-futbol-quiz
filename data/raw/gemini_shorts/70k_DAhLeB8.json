@@ -1,0 +1,92 @@
+{
+ "video_id": "70k_DAhLeB8",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 9713,
+  "candidatesTokenCount": 928,
+  "totalTokenCount": 10641,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8930
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 99.0,
+  "formato": "juego de reacción rápida con un botón, donde tres personas compiten para ver quién es el más lento o el 'impostor' en una serie de rondas",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "tres jóvenes parados frente a una mesa con un botón central y un cronómetro digital",
+   "que_se_dice_o_texto": "Empiezo yo, va. Dale, pam.",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "inicio rápido del juego con el primer participante presionando el botón"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 99.0,
+    "parte": "pregunta",
+    "descripcion": "serie de rondas donde los participantes intentan presionar el botón lo más rápido posible, seguidas de discusiones y acusaciones sobre quién es el 'impostor' o el más lento"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "cronómetro digital en pantalla"
+  },
+  "revelacion": {
+   "como": "el cronómetro muestra el tiempo de reacción de cada participante",
+   "efecto_sonido": "sonido de pitido del cronómetro"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "los participantes se ríen y se señalan entre ellos, revelando al 'impostor'",
+   "loop": true,
+   "como_hace_el_loop": "el video termina con una risa colectiva que conecta con el inicio de la siguiente ronda"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento español",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "pitido del cronómetro",
+    "sonido del botón al ser presionado"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto verde brillante sobre fondo oscuro, tipografía simple",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "interior de una casa, mesa blanca",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "vlog informal, plano fijo",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la dinámica de grupo, el humor en las discusiones y la tensión competitiva del juego de reacción",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con un cronómetro digital y manos presionando botones, con voces en off discutiendo los resultados"
+ }
+}

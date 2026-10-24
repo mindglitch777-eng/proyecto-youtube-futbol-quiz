@@ -1,0 +1,86 @@
+{
+ "video_id": "v1Ip33B_do0",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1612,
+  "candidatesTokenCount": 836,
+  "totalTokenCount": 2448,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 829
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 9.0,
+  "formato": "desafío de completar una secuencia de personajes de Minecraft mediante edición creativa",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "una mano sosteniendo un muñeco de Steve sobre un sacapuntas rojo",
+   "que_se_dice_o_texto": "null",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 9.0,
+    "parte": "desafío",
+    "descripcion": "se muestra una secuencia de 4 personajes de Minecraft; en cada paso, el muñeco físico es 'afilado' en el sacapuntas para revelar al siguiente personaje"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": "null"
+  },
+  "revelacion": {
+   "como": "el muñeco físico cambia de forma o es reemplazado por el siguiente personaje de la secuencia",
+   "efecto_sonido": "sonido de afilado y música rítmica"
+  },
+  "cierre_y_loop": {
+   "que_se_ve": "el video termina abruptamente tras completar la secuencia",
+   "loop": true,
+   "como_hace_el_loop": "el video vuelve al inicio donde la mano sostiene al primer muñeco"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "null",
+   "musica": "canción viral de ritmo rápido y repetitivo",
+   "efectos_de_sonido": [
+    "sonido de sacapuntas",
+    "efectos de sonido de Minecraft"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "iconos de personajes con checks verdes",
+   "idioma": "null"
+  },
+  "visual": {
+   "fondo": "blanco neutro",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video de manualidades/humor con edición de efectos visuales",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_hace_que_funcione": "el uso de efectos visuales creativos, la sincronización con la música viral y la satisfacción visual de la transformación",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una plantilla de pantalla dividida donde la parte superior muestra la secuencia de iconos y la parte inferior muestra una animación de stop-motion o transiciones de imágenes de los personajes"
+ }
+}

@@ -1,0 +1,104 @@
+{
+ "video_id": "7k6wQwyDMjM",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 8881,
+  "candidatesTokenCount": 974,
+  "totalTokenCount": 9855,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8098
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 88.0,
+  "formato": "juego de eliminación de dulces con sorteo de papeles",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "el creador sosteniendo una pistola de juguete y una lista de dulces en pantalla",
+   "que_se_dice_o_texto": "Entonces hoy haremos el desafío Boom Boom, tienes que elegir dos dulces de aquí",
+   "tipo": "desafío"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 25.0,
+    "parte": "pregunta",
+    "descripcion": "explicación de las reglas y elección de dulces"
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 88.0,
+    "parte": "revelacion",
+    "descripcion": "el creador saca papeles de un cuenco para eliminar dulces uno por uno"
+   },
+   {
+    "inicio_s": 88.0,
+    "fin_s": 88.0,
+    "parte": "cierre",
+    "descripcion": "el creador anuncia que ganó el juego"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el creador muestra un papel con el nombre del dulce eliminado y aparece una explosión en la imagen",
+   "efecto_sonido": "sonido de explosión"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el creador celebra su victoria y pide comentarios",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "comenta cuál dulce elegiste",
+   "momento_s": 20.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "hindi",
+   "musica": "música de fondo animada y de tensión",
+   "efectos_de_sonido": [
+    "explosión",
+    "sonido de papel"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto simple sobre la imagen",
+   "idioma": "hindi"
+  },
+  "visual": {
+   "fondo": "estudio con luces LED",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "vlog de entretenimiento",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la interacción directa con el espectador, el uso de elementos visuales dinámicos (explosiones) y la personalidad enérgica del creador",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con una lista de elementos (ej. equipos de fútbol) y un generador aleatorio de texto que vaya eliminando opciones con efectos de sonido"
+ }
+}

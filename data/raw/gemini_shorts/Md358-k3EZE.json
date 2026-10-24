@@ -1,0 +1,89 @@
+{
+ "video_id": "Md358-k3EZE",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2795,
+  "candidatesTokenCount": 840,
+  "totalTokenCount": 3635,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2012
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 22.0,
+  "formato": "juego de adivinanza visual donde se prueban diferentes peinados sobre la cabeza de un jugador de fútbol",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "jugador calvo con un peinado verde flotando encima",
+   "que_se_dice_o_texto": "1, 2, 3, 4, 5, 6, 7, 8, 9, 10",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 22.0,
+    "parte": "otro",
+    "descripcion": "secuencia rápida de 10 peinados diferentes colocados sobre la cabeza de Erling Haaland"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "cambio instantáneo de peinado",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_se_ve": "el video termina abruptamente y vuelve a empezar",
+   "loop": true,
+   "como_hace_el_loop": "el video es un ciclo continuo de cambios de peinado"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "canción viral sobre Erling Haaland",
+   "efectos_de_sonido": [
+    "ninguno"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "números amarillos con borde negro en el lado izquierdo",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "estadio de fútbol desenfocado",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "edición de video tipo filtro de redes sociales",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "uso de una figura pública muy popular (Haaland)",
+   "ritmo rápido que mantiene la atención",
+   "elemento visual absurdo y divertido (peinados sobre un calvo)"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una foto estática de un jugador famoso, aplicar filtros de peinados mediante una app de edición de video o herramientas de IA, y añadir una canción de tendencia de fondo."
+ }
+}

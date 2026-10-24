@@ -1,0 +1,89 @@
+{
+ "video_id": "WDyUyjlAniM",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 10895,
+  "candidatesTokenCount": 849,
+  "totalTokenCount": 11744,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 10112
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 151.0,
+  "formato": "juego de adivinanza de equipo de fútbol mediante preguntas de sí o no",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "dos personas sentadas frente a frente, cada una con el logo del Atlético de Madrid sobre su cabeza",
+   "que_se_dice_o_texto": "This is my team. This is my team.",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "presentación de los participantes y el equipo que ambos han elegido"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 151.0,
+    "parte": "pregunta",
+    "descripcion": "los participantes se hacen preguntas de sí o no para intentar adivinar el equipo del otro, aunque ambos terminan eligiendo el mismo"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "revelación verbal al final del video",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "los participantes se dan cuenta de que ambos eligieron el mismo equipo y reaccionan con sorpresa",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés, acento británico",
+   "musica": "ninguna",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "logo estático sobre la cabeza de cada persona",
+   "idioma": "ninguno"
+  },
+  "visual": {
+   "fondo": "interior de una casa",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video tipo vlog de conversación",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la dinámica de interacción entre los dos participantes, el humor de la situación al descubrir que ambos eligieron el mismo equipo y el ritmo rápido de las preguntas",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con avatares o logos de equipos, y una voz en off que simule la conversación de los dos participantes"
+ }
+}

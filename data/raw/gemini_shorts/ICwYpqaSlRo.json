@@ -1,0 +1,98 @@
+{
+ "video_id": "ICwYpqaSlRo",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 7066,
+  "candidatesTokenCount": 934,
+  "totalTokenCount": 8000,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6283
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 110.0,
+  "formato": "subasta de equipos de fútbol americano universitario donde el que ofrece más dinero se queda con el equipo",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "tres personas sentadas frente a una mesa con un logo de equipo de fútbol americano en el centro",
+   "que_se_dice_o_texto": "CFB Mystery Draft Highest Bid Takes It",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío de subasta de equipos"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 105.0,
+    "parte": "revelacion",
+    "descripcion": "se presentan 10 equipos uno por uno, los participantes pujan y el ganador se queda con el equipo"
+   },
+   {
+    "inicio_s": 105.0,
+    "fin_s": 110.0,
+    "parte": "cierre",
+    "descripcion": "reacción final de los participantes al ver los equipos obtenidos"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el logo del equipo aparece en el centro de la pantalla",
+   "efecto_sonido": "sonido de campana o efecto de revelación"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "los participantes se ríen de los resultados obtenidos",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés estadounidense",
+   "musica": "de fondo, ritmo constante",
+   "efectos_de_sonido": [
+    "sonidos de dinero",
+    "efectos de revelación de logos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro, centrado",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "pared blanca lisa",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "estilo vlog de YouTube, plano medio",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la dinámica de subasta genera tensión, la interacción entre los participantes es entretenida y el formato es rápido y fácil de seguir",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con los logos de los equipos, un contador de dinero animado y una voz en off que narre las pujas"
+ }
+}

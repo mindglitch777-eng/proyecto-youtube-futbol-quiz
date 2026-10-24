@@ -1,0 +1,98 @@
+{
+ "video_id": "g3V7bpX4RyA",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5613,
+  "candidatesTokenCount": 957,
+  "totalTokenCount": 6570,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4830
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 54.0,
+  "formato": "desafío de opinión personal sobre el estado de conservación de alimentos",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "el creador señalando hacia arriba y una imagen de una barra de chocolate en diferentes estados de derretimiento",
+   "que_se_dice_o_texto": "AT WHAT POINT WOULD YOU NO LONGER EAT THIS?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "el creador introduce el tema y pregunta hasta qué punto comerían los alimentos mostrados"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 54.0,
+    "parte": "pregunta",
+    "descripcion": "el creador recorre 6 alimentos diferentes, dando su opinión personal sobre hasta qué punto los comería"
+   },
+   {
+    "inicio_s": 50.0,
+    "fin_s": 54.0,
+    "parte": "cierre",
+    "descripcion": "el creador pide a la audiencia que comente su respuesta para el último alimento"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el creador marca con un check verde la opción que elige",
+   "efecto_sonido": "sonido de check"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el creador pide comentarios sobre la última imagen",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "el respuesta, आप मुझे कमेंट्स में बताना",
+   "momento_s": 52.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "hindi",
+   "musica": "música de fondo rítmica y animada",
+   "efectos_de_sonido": [
+    "sonido de check",
+    "sonido de pop"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado en la parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "pantalla dividida: arriba imágenes de alimentos, abajo el creador hablando",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "estilo de reacción/comentario",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la naturaleza subjetiva de la pregunta genera debate, el formato es rápido y fácil de seguir, y la personalidad del creador mantiene el interés",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una voz en off con una plantilla de video que muestre las imágenes de los alimentos y un cursor o check animado para indicar la elección"
+ }
+}

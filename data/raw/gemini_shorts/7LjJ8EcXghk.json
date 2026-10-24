@@ -1,0 +1,97 @@
+{
+ "video_id": "7LjJ8EcXghk",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4599,
+  "candidatesTokenCount": 960,
+  "totalTokenCount": 5559,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3816
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 41.0,
+  "formato": "teoría conspirativa sobre un jugador de fútbol",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "Primer plano de Vinícius Jr. sonriendo, seguido de un clip de un jugador parecido en un partido de la selección de India.",
+   "que_se_dice_o_texto": "El verdadero Vini sin barba y sin mandíbula ha sido finalmente encontrado.",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de la teoría conspirativa sobre el 'falso' Vinícius Jr."
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 35.0,
+    "parte": "otro",
+    "descripcion": "Desarrollo de la teoría con comparaciones físicas, tatuajes faltantes y clips de partidos."
+   },
+   {
+    "inicio_s": 35.0,
+    "fin_s": 41.0,
+    "parte": "revelacion",
+    "descripcion": "Conclusión de la teoría afirmando que el verdadero Vini estaba en India."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "texto en pantalla y narración final",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina con una afirmación final sobre la ubicación del jugador.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Español neutro",
+   "musica": "Música de suspenso/misterio de fondo",
+   "efectos_de_sonido": [
+    "sonidos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Letras grandes, blancas con borde negro, centradas",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "clips de video de Vinícius Jr. y un jugador parecido",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición rápida tipo 'conspiración' con recortes de noticias y comparativas",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Uso de una narrativa sensacionalista, edición dinámica con comparativas visuales y el factor sorpresa de una teoría conspirativa sobre una figura pública.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes estáticas de los jugadores, capturas de pantalla de artículos de noticias falsos o tweets, y una voz en off de IA narrando la teoría con música de misterio."
+ }
+}

@@ -1,0 +1,106 @@
+{
+ "video_id": "cggXI_xuM0I",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 1611,
+  "candidatesTokenCount": 896,
+  "totalTokenCount": 2507,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 828
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 9.4,
+  "formato": "progreso acumulativo absurdo de baterías a un auto Tesla",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Manos insertando una pila en un sacapuntas rojo",
+   "que_se_dice_o_texto": "1% TESLA 🥺 \"Wait for 100%\"",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "Inicio del proceso con 1% y texto de espera"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 4.0,
+    "parte": "transicion",
+    "descripcion": "Se van acumulando más pilas de diferentes tamaños en el sacapuntas"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 9.4,
+    "parte": "revelacion",
+    "descripcion": "El sacapuntas se transforma/aparece un auto Tesla real"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "salto de corte a un auto Tesla blanco en exterior",
+   "efecto_sonido": [
+    "bocina",
+    "motor"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El auto de juguete/miniatura se convierte en real frente a la cámara",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "clics",
+    "bocina",
+    "motor"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras blancas con borde negro y emojis",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "mesa blanca y estacionamiento exterior",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video vertical de humor/satisfacción con objeto cotidiano",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Curiosidad por ver el resultado final del 100%",
+   "Transición visual impactante de objeto pequeño a auto real",
+   "Ritmo rápido sin tiempos muertos"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar objetos cotidianos pequeños y hacer un montaje con cortes rápidos hasta revelar un objeto grande."
+ }
+}

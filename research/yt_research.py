@@ -236,6 +236,34 @@ def cmd_markets():
     guardar("videos.json", videos)
 
 
+# muestra SIN sesgo de éxito: lo último que se subió (order=date), para ver cómo le va
+# al canal típico que hace quizzes de fútbol, no solo a los que pegaron
+FRESH_SEEDS = [("football quiz", "en"), ("quiz de futbol", "es"), ("adivina el jugador", "es")]
+
+
+def cmd_fresh():
+    out = cargar("fresh_sample.json", {})
+    canales_out = cargar("fresh_channels.json", {})
+    for q, lang in FRESH_SEEDS:
+        if q in out:
+            continue
+        d = api("search", part="snippet", q=q, type="video", videoDuration="short", order="date",
+                maxResults=50, relevanceLanguage=lang)
+        out[q] = [{"videoId": it["id"]["videoId"], "channelId": it["snippet"]["channelId"],
+                   "publishedAt": it["snippet"]["publishedAt"]} for it in d.get("items", []) if it["id"].get("videoId")]
+        guardar("fresh_sample.json", out)
+    ids = list(dict.fromkeys(x["channelId"] for v in out.values() for x in v if x["channelId"] not in canales_out))
+    for k in range(0, len(ids), 50):
+        d = api("channels", part="snippet,statistics", id=",".join(ids[k:k + 50]))
+        for it in d.get("items", []):
+            st = it.get("statistics", {})
+            canales_out[it["id"]] = {"title": it["snippet"]["title"], "publishedAt": it["snippet"]["publishedAt"],
+                                     "subs": int(st.get("subscriberCount", 0)), "views": int(st.get("viewCount", 0)),
+                                     "videos": int(st.get("videoCount", 0))}
+    guardar("fresh_channels.json", canales_out)
+    print(f"muestra fresca: {sum(len(v) for v in out.values())} videos, {len(canales_out)} canales", file=sys.stderr)
+
+
 def cmd_search(seeds=SEEDS):
     hits = cargar("search_hits.json", [])
     hechas = {(h["q"], h["lang"], h["ultimos_12m"]) for h in hits}
@@ -393,6 +421,8 @@ if __name__ == "__main__":
             cmd_search()
         if cmd == "formatos":
             cmd_search(FORMAT_SEEDS[:arg] if arg else FORMAT_SEEDS)
+        if cmd == "fresco":
+            cmd_fresh()
         if cmd == "mercados":
             cmd_markets()
         if cmd in ("iterate", "all"):

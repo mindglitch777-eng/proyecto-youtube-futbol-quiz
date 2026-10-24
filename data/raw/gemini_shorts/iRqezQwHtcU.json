@@ -1,0 +1,97 @@
+{
+ "video_id": "iRqezQwHtcU",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 7159,
+  "candidatesTokenCount": 932,
+  "totalTokenCount": 8091,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6376
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 110.0,
+  "formato": "Juego de trivia rápida de 5 preguntas sobre fútbol americano con un sistema de puntos acumulativos.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un hombre con gorra y sudadera frente a un micrófono, con un gráfico de 'Fast Money' en pantalla.",
+   "que_se_dice_o_texto": "Name a quarterback who won MVP but never won a Super Bowl.",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "El presentador plantea la primera pregunta del juego."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 23.0,
+    "parte": "pregunta",
+    "descripcion": "El participante responde a las 5 preguntas de forma consecutiva."
+   },
+   {
+    "inicio_s": 23.0,
+    "fin_s": 110.0,
+    "parte": "revelacion",
+    "descripcion": "El presentador revela los puntos obtenidos por cada respuesta y el total final."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El presentador lee la respuesta y el puntaje aparece en una tabla azul en pantalla.",
+   "efecto_sonido": "Ninguno específico, solo voz."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El participante celebra su puntaje y el video termina.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés, acento estadounidense",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "ninguno"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco sobre fondo azul en una tabla, tipografía sans-serif simple.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Estudio de grabación con decoración deportiva (logos, figuras, micrófono).",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Podcast deportivo informal.",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "El formato de juego rápido genera tensión, la interacción entre los dos presentadores es dinámica y el sistema de puntos mantiene el interés hasta el final.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla de juego animada con una voz en off (IA) que lea las preguntas y revele los puntos, manteniendo el mismo estilo de tabla de resultados."
+ }
+}

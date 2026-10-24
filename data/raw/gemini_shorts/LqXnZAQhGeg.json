@@ -1,0 +1,99 @@
+{
+ "video_id": "LqXnZAQhGeg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 8883,
+  "candidatesTokenCount": 1006,
+  "totalTokenCount": 9889,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8100
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 130.0,
+  "formato": "Adivinar el jugador de fútbol basándose en una característica física específica (pelo, dientes, ojos, etc.) mostrada en una foto sobre la cabeza de una persona.",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Una persona con una foto de un peinado sobre su cabeza.",
+   "que_se_dice_o_texto": "DE QUEM É ESSE CABELO?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío con una pregunta sobre un rasgo físico."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 125.0,
+    "parte": "pregunta",
+    "descripcion": "Secuencia de 7 rondas donde se muestra un rasgo, el participante intenta adivinar y luego realiza un tiro al arco."
+   },
+   {
+    "inicio_s": 125.0,
+    "fin_s": 130.0,
+    "parte": "cierre",
+    "descripcion": "Finalización del video con una broma entre los participantes."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "La foto del jugador completo aparece sobre la cabeza de la persona.",
+   "efecto_sonido": "Sonidos de acierto o fallo (efectos de sonido de juego)."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Los participantes se ríen y el video termina abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Portugués brasileño",
+   "musica": "Música de fondo rítmica y animada de tendencia.",
+   "efectos_de_sonido": [
+    "Sonidos de acierto",
+    "Sonidos de fallo",
+    "Sonidos de patada al balón"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte superior.",
+   "idioma": "Portugués"
+  },
+  "visual": {
+   "fondo": "Cancha de fútbol sintética al aire libre.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video tipo vlog de entretenimiento deportivo.",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "El formato es dinámico y combina un juego de adivinanzas con acción física (tiros al arco), lo que mantiene la retención. La interacción entre los participantes genera un ambiente divertido y cercano.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla dividida: arriba la foto del rasgo físico y abajo una animación de un personaje de videojuego (como FIFA/FC) intentando adivinar o simplemente mostrando la revelación con texto dinámico."
+ }
+}

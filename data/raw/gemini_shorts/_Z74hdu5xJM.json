@@ -1,0 +1,98 @@
+{
+ "video_id": "_Z74hdu5xJM",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 6076,
+  "candidatesTokenCount": 1014,
+  "totalTokenCount": 7090,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5293
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 58.0,
+  "formato": "Adivinar el nombre del jugador de cricket basándose en el número de su camiseta.",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "Un creador de contenido hablando a cámara con una camiseta de cricket de la India con el número 7 en la parte superior.",
+   "que_se_dice_o_texto": "Qué, ¿pueden reconocer a estos jugadores de cricket indios por el número de su camiseta? Veamos quién puede ganarme.",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "El creador presenta el desafío de adivinar jugadores de cricket por su número de camiseta."
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 58.0,
+    "parte": "pregunta",
+    "descripcion": "El creador muestra 7 camisetas diferentes con números y trata de adivinar el jugador, revelando el nombre después de unos segundos de duda."
+   },
+   {
+    "inicio_s": 57.0,
+    "fin_s": 58.0,
+    "parte": "cierre",
+    "descripcion": "El creador pide a la audiencia que comente quién es el jugador del número 7."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El nombre del jugador aparece escrito sobre la camiseta en la imagen.",
+   "efecto_sonido": "Sonido de 'ding' o efecto de revelación"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El creador pide comentar la respuesta de la última camiseta.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Comentá",
+   "momento_s": 57.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Hindi",
+   "musica": "música de fondo rítmica y animada",
+   "efectos_de_sonido": [
+    "sonidos de interfaz",
+    "efectos de voz del creador"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte inferior.",
+   "idioma": "Hindi"
+  },
+  "visual": {
+   "fondo": "Estudio con iluminación tenue y micrófono.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video de reacción y trivia con pantalla dividida (imagen arriba, creador abajo).",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La interacción directa del creador con la audiencia, el formato de trivia rápida y el uso de un tema popular (cricket) que genera debate.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de video con una imagen de la camiseta en el centro, un temporizador visual y texto que revele el nombre del jugador tras 3 segundos, acompañado de música de fondo."
+ }
+}
