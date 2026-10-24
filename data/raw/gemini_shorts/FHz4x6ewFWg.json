@@ -1,0 +1,132 @@
+{
+ "video_id": "FHz4x6ewFWg",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3967,
+  "candidatesTokenCount": 1186,
+  "totalTokenCount": 5153,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3184
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 34.0,
+  "formato": "adivinar jugador en base a bandera, emoji o letra inicial y jugar un desafío con pelota",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "dos creadores parados en una cancha de fútbol con iconos y signos de interrogación arriba",
+   "que_se_dice_o_texto": "3, 2, 1",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "cuenta regresiva inicial"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 7.0,
+    "parte": "pregunta",
+    "descripcion": "ronda de Kevin De Bruyne"
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 9.0,
+    "parte": "revelacion",
+    "descripcion": "celebración del gol"
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 17.0,
+    "parte": "pregunta",
+    "descripcion": "ronda de Kylian Mbappé"
+   },
+   {
+    "inicio_s": 17.0,
+    "fin_s": 19.0,
+    "parte": "cierre",
+    "descripcion": "reacción cómica por gol fallido"
+   },
+   {
+    "inicio_s": 19.0,
+    "fin_s": 25.0,
+    "parte": "pregunta",
+    "descripcion": "ronda de Ronaldo Nazário"
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 33.0,
+    "parte": "pregunta",
+    "descripcion": "ronda de Lionel Messi"
+   },
+   {
+    "inicio_s": 33.0,
+    "fin_s": 34.0,
+    "parte": "cierre",
+    "descripcion": "pantalla final con llamada a la acción"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 1.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "voz en off contando 3, 2, 1"
+  },
+  "revelacion": {
+   "como": "foto del jugador aparece arriba en el cuadro central con efectos de sonido",
+   "efectos_de_sonido": "gritos y silbidos de gol"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "aparece pantalla roja pidiendo suscripción",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "SUBSCRIBE",
+   "momento_s": 33.5
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés con acento americano",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "gritos de celebración",
+    "efectos de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras rojas grandes sobre fondo negro al final",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "cancha de césped sintético al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, vertical, humorístico con participación de streamers conocidos",
+   "cambios_de_plano_aprox": 8
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "participación de creadores virales famosos",
+   "combinación de trivia rápida con comedia física y fútbol real",
+   "ritmo muy ágil sin tiempos muertos"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar un avatar animado o plantilla de preguntas con cuenta regresiva flotante y efectos de sonido de acierto o fallo sobre fondo de videojuego de fútbol"
+ }
+}

@@ -1,0 +1,96 @@
+{
+ "video_id": "OfjFEfmHcTk",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2596,
+  "candidatesTokenCount": 891,
+  "totalTokenCount": 3487,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1813
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 19.8,
+  "formato": "Juego dinámico de ruleta y acumulación de jugadores por relevos",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "Dos creadores listos con una ruleta gigante hecha de cartón, uno corre hacia el otro.",
+   "que_se_dice_o_texto": "LET'S GO",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.5,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida de los participantes y corrida inicial."
+   },
+   {
+    "inicio_s": 2.5,
+    "fin_s": 19.8,
+    "parte": "pregunta",
+    "descripcion": "Rondas sucesivas donde giran la ruleta, suman un jugador a su lista flotante y corren a relevar al compañero."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparece la foto del jugador sobre la cabeza del participante al completar la tirada",
+   "efecto_sonido": "Sonido de 'ding' o acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video corta abruptamente tras acumular varios jugadores sin una conclusión definitiva.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés con exclamaciones y gritos de motivación",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "gritos de emoción",
+    "efectos de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Letras grandes, amarillas con borde negro, estilo meme o TikTok en la parte superior",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Cancha de fútbol sintética al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Dinámico, formato vertical, cámara en mano con acción constante",
+   "cambios_de_plano_aprox": 5
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Alto dinamismo y movimiento físico constante que mantiene la atención",
+   "Elementos visuales divertidos (ruleta casera gigante y avatares flotantes de futbolistas)",
+   "Ritmo acelerado con cortes precisos en cada turno"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer una versión animada con una ruleta digital girando en pantalla y cartas coleccionables de jugadores cayendo."
+ }
+}

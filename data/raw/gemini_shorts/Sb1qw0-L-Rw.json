@@ -1,0 +1,109 @@
+{
+ "video_id": "Sb1qw0-L-Rw",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7799,
+  "candidatesTokenCount": 1001,
+  "totalTokenCount": 8800,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 7016
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 77.0,
+  "formato": "Adivinar la posición correcta de futbolistas en un bloque de Minecraft",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un personaje de Minecraft saltando sobre bloques con la cara de Messi repetida.",
+   "que_se_dice_o_texto": "Mesi x4... Mesi x7",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida del escenario en Minecraft con spam de Messi."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 53.0,
+    "parte": "pregunta",
+    "descripcion": "Desafío de acomodar a Neymar, Mbappé y Cristiano en las posiciones correctas."
+   },
+   {
+    "inicio_s": 53.0,
+    "fin_s": 58.0,
+    "parte": "transicion",
+    "descripcion": "Amenaza con arma en Minecraft si no se suscriben."
+   },
+   {
+    "inicio_s": 58.0,
+    "fin_s": 63.0,
+    "parte": "cierre",
+    "descripcion": "Cuenta regresiva y resolución final."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 50.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número en pantalla del 1 al 4 con mira de pistola"
+  },
+  "revelacion": {
+   "como": "Se reemplazan los bloques con los jugadores en sus posiciones correctas",
+   "efecto_sonido": "Disparos y explosiones"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se muestra la solución correcta y se pide suscripción bajo amenaza.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Tienen 5 segundos para suscribirse",
+   "momento_s": 53.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español latino",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "disparos",
+    "explosiones",
+    "memes graciosos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Letras grandes blancas con borde negro y fondo dinámico",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "Gameplay de Minecraft",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Dinámico, caótico, estilo meme con recortes rápidos",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Uso constante de memes y caras graciosas (Pepe, gatos)",
+   "Ritmo acelerado con gameplay de Minecraft de fondo",
+   "CTA agresivo y humorístico con amenazas de pistola en el juego"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar un mundo plano de Minecraft pregrabado, superponer imágenes PNG de jugadores famosos y editar subtítulos automáticos con memes virales."
+ }
+}

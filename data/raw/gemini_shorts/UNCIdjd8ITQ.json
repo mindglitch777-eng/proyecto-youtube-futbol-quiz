@@ -1,0 +1,102 @@
+{
+ "video_id": "UNCIdjd8ITQ",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3982,
+  "candidatesTokenCount": 949,
+  "totalTokenCount": 4931,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3199
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 35.0,
+  "formato": "adivinar si la foto mostrada coincide o no con el nombre del jugador",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Tres jóvenes parados en una cancha de césped sintético y una foto pixelada de Rodrygo con una marca de verificación verde gigante arriba",
+   "que_se_dice_o_texto": "Ya amo",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida de la primera ronda de adivinación de futbolistas"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 33.0,
+    "parte": "pregunta",
+    "descripcion": "Secuencia rápida donde se muestran fotos de jugadores con nombres y los participantes deben decir si es correcto o incorrecto"
+   },
+   {
+    "inicio_s": 33.0,
+    "fin_s": 35.0,
+    "parte": "cierre",
+    "descripcion": "Llamado a la acción y despedida de los participantes bailando"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se muestra una marca verde o roja gigante encima de la foto según si el jugador coincide",
+   "efecto_sonido": "Risas grabadas y efectos de sonido de acierto/error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Los participantes festejan y saludan a la cámara mientras piden que dejen su like",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Deixe o like nesse vídeo!",
+   "momento_s": 33.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Portugués (Brasil)",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "risas",
+    "bocinas de error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": false,
+   "subtitulos_de_voz": false,
+   "estilo": null,
+   "idioma": null
+  },
+  "visual": {
+   "fondo": "Cancha de fútbol sintética techada",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Divertido, dinámico, formato de reto en grupo",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica rápida y en grupo que genera dinamismo visual",
+   "Reacciones exageradas y divertidas de los participantes ante los errores",
+   "Uso de futbolistas mundialmente famosos que atraen al público general"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer usando imágenes estáticas con marcas de verificación o equis sobre fondo verde o animaciones estilo quiz con temporizadores"
+ }
+}

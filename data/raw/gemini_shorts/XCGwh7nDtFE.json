@@ -1,0 +1,103 @@
+{
+ "video_id": "XCGwh7nDtFE",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3339,
+  "candidatesTokenCount": 994,
+  "totalTokenCount": 4333,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2556
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 28.1,
+  "formato": "adivinar jugador por su gol haciendo jueguitos con la pelota",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.1,
+   "que_se_ve": "Un joven hace jueguitos con la pelota en un parque al aire libre mientras otro jugador en jersey de España mira, con fotos de rostros con signos de interrogación arriba.",
+   "que_se_dice_o_texto": "Guess the player by their goal",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.1,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío de adivinar jugadores por su gol."
+   },
+   {
+    "inicio_s": 2.1,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "El jugador realiza una jugada que recrea un gol famoso (Maradona, James Rodríguez) y se revelan."
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 28.1,
+    "parte": "revelacion",
+    "descripcion": "Continúan adivinando más goles famosos con dramatismo y celebración al acertar."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se reemplaza el signo de interrogación por la foto del jugador con un check verde",
+   "efecto_sonido": "aplausos y efectos de acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El participante festeja tras el último gol y el video corta de repente",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés con acento extranjero",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "aplausos",
+    "gritos de celebración",
+    "sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto grande con signos de interrogación y avatares flotantes en la parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "parque verde al aire libre con árboles y cielo nublado",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, grabado con cámara en mano al aire libre con elementos gráficos superpuestos",
+   "cambios_de_plano_aprox": 8
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Combina la habilidad futbolística en vivo con trivia nostálgica de goles icónicos.",
+   "La reacción enérgica y las celebraciones de los creadores generan dinamismo constante.",
+   "El uso de avatares con incógnitas mantiene la expectativa alta en cada ronda."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar animaciones de fútbol de videojuegos (como FIFA/EA Sports) recreando los goles con los avatares oscurecidos y adivinando por texto."
+ }
+}

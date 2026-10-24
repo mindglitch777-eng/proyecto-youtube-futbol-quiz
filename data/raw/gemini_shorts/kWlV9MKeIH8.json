@@ -1,0 +1,120 @@
+{
+ "video_id": "kWlV9MKeIH8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2361,
+  "candidatesTokenCount": 1114,
+  "totalTokenCount": 3475,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1578
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.0,
+  "formato": "adivinar jugador entre dos opciones con cuenta regresiva",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "silueta verde sobre jugador en la barrera, texto 'GUESS PLAYER'",
+   "que_se_dice_o_texto": "GUESS PLAYER",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "muestra la jugada y pregunta quién es el jugador con silueta verde"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 7.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "cuenta regresiva de 3 segundos con dos opciones de fotos"
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 8.0,
+    "parte": "revelacion",
+    "descripcion": "revela que es Ronaldo"
+   },
+   {
+    "inicio_s": 8.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "segunda ronda, silueta verde sobre otro jugador"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 15.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "cuenta regresiva con dos opciones"
+   },
+   {
+    "inicio_s": 15.0,
+    "fin_s": 17.0,
+    "parte": "revelacion",
+    "descripcion": "revela que es Cavani"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número en círculo animado con sonido tic-tac"
+  },
+  "revelacion": {
+   "como": "zoom a video de festejo con nombre en grande y rojo",
+   "efecto_sonido": "efecto de acierto/celebración"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "termina abruptamente en Cavani sin cierre explícito",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "botones de like y suscribirse animados sobre las opciones",
+   "momento_s": 4.0
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "canción pop melódica en inglés de fondo",
+   "efectos_de_sonido": [
+    "tic-tac de cuenta regresiva",
+    "sonido de revelación"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto verde con borde negro para GUESS PLAYER, nombres en rojo estilo 3D",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol durante partido oficial",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con siluetas verdes recortadas y marcas de agua",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Uso de futbolistas muy conocidos mundialmente (Ronaldo, Cavani)",
+   "Dinámica interactiva de 2 opciones tipo A/B con tiempo límite",
+   "Transición rápida entre la duda y la revelación con festejo"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar FIFA EA Sports o videojuegos de fútbol para capturar las siluetas y momentos, combinados con fotos de perfil de los jugadores en Canva."
+ }
+}

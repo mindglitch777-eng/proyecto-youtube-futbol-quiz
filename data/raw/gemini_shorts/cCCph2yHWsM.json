@@ -1,0 +1,108 @@
+{
+ "video_id": "cCCph2yHWsM",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3248,
+  "candidatesTokenCount": 975,
+  "totalTokenCount": 4223,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2465
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 28.0,
+  "formato": "adivinar 4 futbolistas por niveles de dificultad creciente",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 6.0,
+   "que_se_ve": "Un jugador patea un tiro libre y hace gol, seguido de una cuenta regresiva.",
+   "que_se_dice_o_texto": "EASY, MEDIUM, HARD, IMPOSSIBLE",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 6.0,
+    "parte": "pregunta",
+    "descripcion": "Pregunta nivel fácil: gol de Kylian Mbappé de tiro libre."
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 13.0,
+    "parte": "pregunta",
+    "descripcion": "Pregunta nivel medio: Vinicius Junior definiendo."
+   },
+   {
+    "inicio_s": 13.0,
+    "fin_s": 21.0,
+    "parte": "pregunta",
+    "descripcion": "Pregunta nivel difícil: Jude Bellingham."
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 28.0,
+    "parte": "revelacion",
+    "descripcion": "Pregunta nivel imposible: Arda Güler."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "círculo numérico descendente con animación"
+  },
+  "revelacion": {
+   "como": "silueta que se revela con foto real del jugador celebrando",
+   "efecto_sonido": "woosh"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra al último jugador y corta de golpe.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "remix viral de fondo con ritmo acelerado",
+   "efectos_de_sonido": [
+    "woosh",
+    "tic-tac"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras gruesas con borde y sombra, colores vivos según dificultad",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "estadio de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con filtros de color y efectos de silueta",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La progresión clara de dificultad (de fácil a imposible) engancha al espectador hasta el final.",
+   "El uso de cuenta regresiva genera urgencia e incentiva a adivinar rápido.",
+   "La transición rápida entre clips mantiene la retención alta."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar gráficos animados de siluetas de jugadores con tarjetas de estadísticas o emojis representativos en lugar de clips de partidos."
+ }
+}

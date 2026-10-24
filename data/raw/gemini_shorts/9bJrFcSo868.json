@@ -1,0 +1,123 @@
+{
+ "video_id": "9bJrFcSo868",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3707,
+  "candidatesTokenCount": 1166,
+  "totalTokenCount": 4873,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2924
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 32.2,
+  "formato": "adivinar jugador por sus habilidades o estilo de juego (con recreación física)",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.1,
+   "que_se_ve": "un creador de contenido haciendo jueguitos con la pelota de fútbol en un parque, con emojis de incógnita arriba",
+   "que_se_dice_o_texto": "Guess the player by their skill",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.1,
+    "parte": "gancho",
+    "descripcion": "presentación de la temática del video (adivinar jugadores por habilidades)"
+   },
+   {
+    "inicio_s": 2.1,
+    "fin_s": 6.1,
+    "parte": "pregunta",
+    "descripcion": "primer desafío: Cristiano Ronaldo"
+   },
+   {
+    "inicio_s": 6.1,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "segundo desafío: Lamine Yamal"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 20.0,
+    "parte": "pregunta",
+    "descripcion": "tercer desafío: Ronaldinho"
+   },
+   {
+    "inicio_s": 20.0,
+    "fin_s": 25.5,
+    "parte": "pregunta",
+    "descripcion": "cuarto desafío: Neymar (con CTA incorporado)"
+   },
+   {
+    "inicio_s": 25.5,
+    "fin_s": 32.2,
+    "parte": "cierre",
+    "descripcion": "quinto desafío fallido y final abrupto"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 4.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "aparece la cara del jugador con un tilde verde sobre el incógnita superior y el presentador lo grita",
+   "efectos_de_sonido": [
+    "aplausos",
+    "risa"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el creador falla el último truco, se cae de espaldas y queda la incógnita sin resolver",
+   "loop": true,
+   "como_hace_el_loop": "el final con la caída se corta abruptamente para conectar con el inicio donde vuelve a patear la pelota",
+   "cta": {
+    "en_video": "You have to subscribe",
+    "momento_s": 22.0
+   },
+   "audio": {
+    "voz": "humana",
+    "idioma_y_acento": "inglés con acento fluido",
+    "musica": "de fondo",
+    "efectos_de_sonido": [
+     "silbato",
+     "efectos de transición"
+    ]
+   },
+   "texto_en_pantalla": {
+    "hay_texto": true,
+    "subtitulos_de_voz": false,
+    "estilo": "emojis de incógnitas que se transforman en fotos de jugadores con tilde verde",
+    "idioma": "inglés"
+   },
+   "visual": {
+    "fondo": "parque verde al aire libre",
+    "persona_real_en_camara": true,
+    "fotos_de_jugadores": true,
+    "escudos_o_logos": false,
+    "clips_de_partidos_o_transmisiones": false,
+    "imagenes_generadas_por_ia_o_dibujos": false,
+    "estilo_general": "dinámico, estilo reto callejero de fútbol",
+    "cambios_de_plano_aprox": 4
+   },
+   "dificultad_de_las_preguntas": "fácil",
+   "invita_a_comentar_la_respuesta": true,
+   "que_hace_que_funcione": [
+    "recreación física y divertida de las celebraciones o estilos característicos de cada estrella",
+    "ritmo ágil sin tiempos muertos con revelaciones inmediatas",
+    "desafío interactivo que reta al espectador a adivinar antes que el video"
+   ],
+   "como_replicarlo_sin_cara_y_sin_clips": "usar gráficos animados de avatares pixelados o siluetas haciendo los mismos trucos, acompañados de efectos de sonido y la misma interfaz de incógnitas"
+  }
+ }
+}

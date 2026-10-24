@@ -1,0 +1,114 @@
+{
+ "video_id": "xIRV-WFQphQ",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3614,
+  "candidatesTokenCount": 1015,
+  "totalTokenCount": 4629,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2831
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 31.9,
+  "formato": "juego de adivinar el futbolista con filtro en la cabeza mientras la castigan con un almohadón si falla",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "una mujer sentada con filtro de futbolista en la cabeza y un hombre atrás con un almohadón listo para pegarle",
+   "que_se_dice_o_texto": "Si adivina se salva 🤣",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentación de la regla del juego"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 6.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 1: Cristiano Ronaldo"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 2 y 3: Messi y Ronaldinho"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 21.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 4: Pelé"
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 31.9,
+    "parte": "pregunta",
+    "descripcion": "ronda 5 y cierre"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "golpe físico inmediato con almohadón en la cabeza al fallar",
+   "efecto_sonido": "gritos y golpes"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente después de la última ronda de golpes",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español rioplatense",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "gritos",
+    "golpes de almohadón"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro en la parte superior e inferior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "departamento moderno",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "challenge de pareja en casa con filtro de redes sociales",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "dinámica de castigo físico humorístico que genera tensión y comedia",
+   "uso de caras icónicas del fútbol muy reconocibles",
+   "ritmo rápido y reacciones genuinas"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con un temporizador, fotos de jugadores y efectos de sonido de golpes simulados mediante una plantilla de edición"
+ }
+}

@@ -1,0 +1,124 @@
+{
+ "video_id": "Qgdc5IItrVA",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7894,
+  "candidatesTokenCount": 1181,
+  "totalTokenCount": 9075,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 7111
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 79.0,
+  "formato": "comparar estadísticas de goles de futbolistas en un tiempo límite con un temporizador",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Dos personas paradas frente a una mesa con un cronómetro grande verde en marcha y texto en la parte superior.",
+   "que_se_dice_o_texto": "367 GOLS BILÉ O X O CAYO",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío y la primera consigna con el cronómetro andando."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 13.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: comparación de goles entre Mané y Fred."
+   },
+   {
+    "inicio_s": 13.0,
+    "fin_s": 35.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: Puskas vs Zico."
+   },
+   {
+    "inicio_s": 35.0,
+    "fin_s": 50.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: Pedro vs Roberto Firmino."
+   },
+   {
+    "inicio_s": 50.0,
+    "fin_s": 58.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4: Harry Kane vs Kylian Mbappé."
+   },
+   {
+    "inicio_s": 58.0,
+    "fin_s": 79.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 5: Lewandowski vs Hulk y cierre final."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "cronómetro digital físico sobre la mesa y sonido de tic-tac"
+  },
+  "revelacion": {
+   "como": "aparecen fotos superpuestas de los jugadores en la mesa con sus goles totales y puntaje de la partida",
+   "efecto_sonido": [
+    "gritos de festejo",
+    "reacciones de audio"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El participante gana la partida y festeja, termina el video sin loop directo.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "portugués de Brasil",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "tic-tac de reloj",
+    "gritos",
+    "reacciones"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "fuente gruesa en mayúsculas, colores blanco, amarillo y verde sobre fondo negro o transparente en la parte superior",
+   "idioma": "portugués"
+  },
+  "visual": {
+   "fondo": "cancha de césped sintético y pared de ladrillos al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, tipo reto de influencers con dos personas compitiendo",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "dinámica rápida y competitiva entre un adulto y un niño",
+   "reacciones espontáneas y genuinas con humor",
+   "uso de un cronómetro físico que genera tensión constante"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de preguntas tipo quiz con cronómetro de cuenta regresiva en pantalla, mostrando cartas o avatares animados de los futbolistas y efectos de sonido de acierto y error."
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "video_id": "8psr2G2-uuw",
+ "modelo": "gemini-3.6-flash",
+ "uso": {
+  "promptTokenCount": 5063,
+  "candidatesTokenCount": 1095,
+  "totalTokenCount": 7492,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4280
+   }
+  ],
+  "thoughtsTokenCount": 1334,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 47.1,
+  "formato": "Ranking de los mejores momentos de adivinar futbolistas del Mundial enmascarados",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un participante enmascarado respondiendo preguntas frente a Piqué y creadores de contenido, afirmando haber jugado con Messi",
+   "que_se_dice_o_texto": "Who was the best person you played with? Messi.",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 16.5,
+    "parte": "revelacion",
+    "descripcion": "Momento donde el jugador número 5 revela que jugó en Inter Miami con Messi y Piqué adivina rápidamente."
+   },
+   {
+    "inicio_s": 16.6,
+    "fin_s": 31.5,
+    "parte": "revelacion",
+    "descripcion": "El jugador número 3 dice hablar español perfecto, pero Piqué detecta que su acento no es colombiano y lo expone."
+   },
+   {
+    "inicio_s": 31.6,
+    "fin_s": 47.1,
+    "parte": "revelacion",
+    "descripcion": "Prueba de cabeceo imaginario y tiro al arco fallido donde Piqué se ríe y anota sus conclusiones."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Muestran las respuestas y reacciones cómicas de Piqué y los jueces con gráficos en pantalla",
+   "efecto_sonido": "Efectos sonoros dramáticos, meme de IShowSpeed gritando 'Oh my God' y risas"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Piqué se ríe agachando la cabeza tras ver el desempeño del jugador enmascarado.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Get paid to post clips just like this at discord.gg/clippinghof",
+   "momento_s": 0.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés (EE. UU.) y Español (España/Colombia)",
+   "musica": "Música de fondo rítmica y ligera de suspenso/comedia",
+   "efectos_de_sonido": [
+    "meme IShowSpeed Oh My God",
+    "gritos de sorpresa",
+    "risas"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Subtítulos dinámicos en amarillo, blanco y verde en el centro, con contador de sospecha y tarjetas del jugador",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Campo de fútbol exterior con mesa de jueces y panelistas",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Reality show / reto de entretenimiento de fútbol con creadores de contenido y estrellas reales",
+   "cambios_de_plano_aprox": 18
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Participación de una figura mundial como Gerard Piqué interactuando con humor, situaciones ridículas de los enmascarados y edición muy dinámica basada en momentos virales.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede recrear con plantillas de cartas de FIFA/EA FC y narración por IA, recopilando anécdotas extrañas o pistas de jugadores para que la audiencia adivine en los comentarios."
+ }
+}

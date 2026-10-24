@@ -1,0 +1,93 @@
+{
+ "video_id": "vqRnyKrXky0",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 4064,
+  "candidatesTokenCount": 894,
+  "totalTokenCount": 4958,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3281
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 37.0,
+  "formato": "adivinar futbolistas famosos a partir de fotos de su infancia",
+  "n_preguntas_o_rondas": 12,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Foto de la infancia de un jugador y dos creadores/jugadores sentados en un sillón mirándola",
+   "que_se_dice_o_texto": "I don't know who de quién es",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del primer caso de infancia con desconcierto inicial."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 37.0,
+    "parte": "pregunta",
+    "descripcion": "Secuencia rápida de adivinanza de futbolistas de niños (Messi, Cristiano, Mbappé, De Bruyne, Neymar, Saka, etc.) con sus reacciones en vivo."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparece la foto actual del jugador con un tick verde o cruz roja sobre la foto de infancia",
+   "efectos_de_sonido": []
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Termina de adivinar el último jugador sin un llamado formal al loop.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés con acentos variados",
+   "musica": "de fondo",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "subtítulos automáticos dinámicos estilo capcut con palabra por palabra resaltada",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "estudio con sillón, plantas y luces led de fondo",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "reacción de famosos (KSI y Haaland) jugando a un filtro o app en el teléfono",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "La participación de figuras top mundiales (Haaland y KSI) genera alta retención",
+   "El ritmo dinámico y rápido de preguntas y respuestas",
+   "Las expresiones genuinas y divertidas al ver fotos de infancia"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de quiz con pantalla dividida (arriba la foto de infancia y abajo 4 opciones o espacio para escribir) con música en tendencia y cuenta regresiva."
+ }
+}

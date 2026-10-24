@@ -1,0 +1,106 @@
+{
+ "video_id": "ZmyMxJExr58",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 5417,
+  "candidatesTokenCount": 1129,
+  "totalTokenCount": 7375,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4634
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 829,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 50.6,
+  "formato": "Adivinar jugadores de fútbol a través de sus fotos de cuando eran niños",
+  "n_preguntas_o_rondas": 8,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Muestran la foto de un jugador de niño en pantalla y Lamine Yamal responde al instante",
+   "que_se_dice_o_texto": "Neymar! - Fácil",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Primera foto de niño (Neymar), respuesta rápida para enganchar al espectador"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 40.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda de preguntas continuas con fotos infantiles de futbolistas (F. De Jong, Cubarsí, Messi, Lewandowski, Gavi, Pedri)"
+   },
+   {
+    "inicio_s": 40.0,
+    "fin_s": 44.0,
+    "parte": "revelacion",
+    "descripcion": "Última foto (el propio Lamine Yamal de bebé con Messi) y respuesta cómica inmediata"
+   },
+   {
+    "inicio_s": 44.0,
+    "fin_s": 50.6,
+    "parte": "cierre",
+    "descripcion": "Celebración de la puntuación perfecta (10/10) entre la presentadora y Lamine Yamal"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "sonido de tic-tac de reloj cuando la pregunta es más difícil (caso de Pedri)"
+  },
+  "revelacion": {
+   "como": "Aparece la foto en el centro de la pantalla y el texto verde/blanco con el nombre del jugador cuando responden",
+   "efecto_sonido": "Música rítmica y sonidos breves de confirmación/risas"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Valoran la puntuación final '10/10' y se saludan chocando las manos",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español e Inglés mezclado",
+   "musica": "Música alegre y rítmica de fondo",
+   "efectos_de_sonido": [
+    "Tic-tac de reloj",
+    "Risas",
+    "Murmullos de ambiente"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Texto en color verde centrado y texto en amarillo/blanco con sombra negra",
+   "idioma": "Español e Inglés"
+  },
+  "visual": {
+   "fondo": "Cortina de tela dorada brillante",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Formato de juego presencial dinámico frente a cámara",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La presencia directa de una estrella de fútbol mundial (Lamine Yamal) participando en el juego, la nostalgia y ternura de las fotos de la infancia de futbolistas famosos, y el ritmo ágil de las respuestas.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede usar una plantilla donde aparezca primero la foto del jugador de niño con un temporizador de 3 segundos, y luego revelar la foto actual del jugador con su nombre y escudo del club."
+ }
+}

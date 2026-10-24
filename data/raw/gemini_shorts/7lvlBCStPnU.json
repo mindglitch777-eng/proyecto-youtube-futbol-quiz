@@ -1,0 +1,120 @@
+{
+ "video_id": "7lvlBCStPnU",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2295,
+  "candidatesTokenCount": 1097,
+  "totalTokenCount": 3392,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1512
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.0,
+  "formato": "adivinar el jugador de fútbol según jugada",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "jugador con silueta verde brillante corriendo hacia la pelota",
+   "que_se_dice_o_texto": "GUESS PLAYER",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y silueta verde"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 6.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva de 3 a 1 con dos opciones de jugadores"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 7.5,
+    "parte": "revelacion",
+    "descripcion": "Se revela a Messi con su nombre en pantalla"
+   },
+   {
+    "inicio_s": 7.5,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda con silueta negra y jugada"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 15.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva y dos opciones nuevas"
+   },
+   {
+    "inicio_s": 15.0,
+    "fin_s": 17.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Yamal y cierre"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra circular con números del 3 al 1"
+  },
+  "revelacion": {
+   "como": "recuadro verde sobre la foto correcta y nombre del jugador en grande",
+   "efecto_sonido": "pop / sonido de acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "muestra al jugador festejando y corta abruptamente",
+   "loop": true,
+   "como_hace_el_loop": "el corte final encaja con el inicio de la silueta verde"
+  },
+  "cta": {
+   "en_video": "iconos de like y suscríbete en pantalla",
+   "momento_s": 4.0
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "canción viral en loop de fondo (remix electrónico)",
+   "efectos_de_sonido": [
+    "tic tac o cuenta regresiva",
+    "sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras gruesas con bordes negros y colores vibrantes",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con siluetas y efectos de color",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "dinámica rápida de adivinanza con cuenta regresiva",
+   "uso de siluetas reconocibles de jugadores famosos",
+   "música pegadiza y formato loop"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar siluetas vectoriales sobre fondos genéricos de cancha y fotos de perfil de los jugadores con plantillas de Premiere o CapCut"
+ }
+}

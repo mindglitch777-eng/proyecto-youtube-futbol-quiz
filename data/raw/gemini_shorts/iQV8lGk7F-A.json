@@ -1,0 +1,99 @@
+{
+ "video_id": "iQV8lGk7F-A",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 8709,
+  "candidatesTokenCount": 916,
+  "totalTokenCount": 9625,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 7926
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 128.0,
+  "formato": "juego de encontrar al impostor (asociar palabras lejanas) entre amigos en un banco de suplentes",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "Cuatro jóvenes sentados en un banco de suplentes con textos superpuestos 'IMPOSTOR CR7' y 'CR7'. Abajo aparece la imagen de una persona durmiendo en la calle.",
+   "que_se_dice_o_texto": "Para esta palabra, hay que irse muy lejos, y yo voy a decir chilena",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y primera pista/intento"
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 128.0,
+    "parte": "pregunta",
+    "descripcion": "Dinámica de rondas de palabras donde cada uno da una pista lejana hasta descubrir quién es el impostor"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 15.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Votación final a la cuenta de 3 donde todos señalan al impostor",
+   "efecto_sonido": [
+    "risas",
+    "aplausos"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se revela quién era el impostor entre risas y discusiones",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español de España",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "risas",
+    "aplausos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "textos estáticos en rojo y blanco sobre los personajes indicando roles",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "Banco de suplentes de una cancha al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato tipo challenge de grupo de amigos",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "La dinámica grupal genera tensión y comedia natural",
+   "Las pistas absurdas y rebuscadas entre amigos",
+   "El formato tipo 'Among Us' llevado al mundo real con palabras"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede replicar con capturas de pantalla de chat o avatares animados interactuando por zoom, manteniendo las voces de los participantes."
+ }
+}

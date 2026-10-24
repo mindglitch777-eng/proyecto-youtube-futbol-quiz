@@ -1,0 +1,95 @@
+{
+ "video_id": "21da7MWrClM",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 1248,
+  "candidatesTokenCount": 916,
+  "totalTokenCount": 2164,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 465
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 5.0,
+  "formato": "adivinar jugador entre tres opciones A/B/C con manos doblando papel abajo",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Tres fotos de jugadores de fútbol etiquetadas como A, B y C arriba, y abajo manos doblando un objeto de papel rojo y blanco.",
+   "que_se_dice_o_texto": "You have Eagle eye",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío visual con las opciones A, B y C y texto en pantalla."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 5.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva con voces sincronizadas para que el espectador elija."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "voz contada del 1 al 3 y bocina/pitido de inicio"
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": "bocina de inicio"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente o reinicia.",
+   "loop": true,
+   "como_hace_el_loop": "El final se corta directo al inicio con la misma música."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "conteo de voces 1 2 3",
+    "bocina de inicio"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras negras sobre fondo blanco con viñeta de diálogo y emojis",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "muro de ladrillos arriba y mesa de madera abajo",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "pantalla dividida (split screen): quiz de fútbol arriba y video ASMR/manualidades abajo",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Split screen que combina contenido de trivia futbolera con manualidades ASMR abajo para retener la atención visual.",
+   "Cuenta regresiva rápida y dinámica que presiona al usuario a responder rápido."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar Canva o CapCut para poner un video de fondo satisfactorio (ASMR, slime, origami) y arriba un quiz de 3 opciones con fotos de jugadores generadas o de dominio público."
+ }
+}

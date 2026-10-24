@@ -1,0 +1,103 @@
+{
+ "video_id": "aLcJbwoP_b4",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6159,
+  "candidatesTokenCount": 984,
+  "totalTokenCount": 7143,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5376
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 59.0,
+  "formato": "Desafío de trivia callejera sobre fútbol donde deben nombrar 5 equipos de la Premier League sin color rojo en su logo",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Entrevistador con micrófono frente a unos jóvenes en la calle, logo de Cristiano Ronaldo y texto grande",
+   "que_se_dice_o_texto": "Can you name the five premier league teams without red in their logo?",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del reto de nombrar 5 equipos de la Premier League sin rojo en su escudo."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 59.0,
+    "parte": "pregunta",
+    "descripcion": "Dinámica continua de adivinanza con aciertos y errores descartando equipos."
+   },
+   {
+    "inicio_s": 59.0,
+    "fin_s": 59.0,
+    "parte": "cierre",
+    "descripcion": "Resolución del último equipo y final del video."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparición del escudo del equipo con un sello de verificado verde o cruz roja sobrepuesta",
+   "efecto_sonido": "Efectos de acierto/error de videojuego"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se revela el último equipo (Everton) y termina abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés con acento estadounidense",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "bocina de error",
+    "ding de acierto",
+    "sonidos de memes"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Texto grande, dinámico, con colores llamativos y memes superpuestos",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Explanada o estacionamiento al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Edición estilo TikTok vertiginosa con memes, recortes de PNG y gráficos flotantes",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "La dificultad del reto genera frustración y tensión entretenida.",
+   "Uso constante de memes y elementos visuales dinámicos que mantienen la atención.",
+   "Interacción fluida y natural entre el entrevistador y los participantes."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer con una plantilla de pantalla dividida mostrando la pregunta arriba y una cuenta regresiva con imágenes de los escudos apareciendo y siendo tachados."
+ }
+}

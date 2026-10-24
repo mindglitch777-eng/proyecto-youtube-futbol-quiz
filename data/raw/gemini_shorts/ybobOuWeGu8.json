@@ -1,0 +1,116 @@
+{
+ "video_id": "ybobOuWeGu8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3695,
+  "candidatesTokenCount": 1115,
+  "totalTokenCount": 4810,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2912
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 32.2,
+  "formato": "Juego de adivinar jugadores a partir de letras iniciales, donde los amigos que fallan se tiran a la piscina",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 4.1,
+   "que_se_ve": "Cuatro chicos parados al borde de una piscina con letras gigantes flotando o sobrepuestas encima",
+   "que_se_dice_o_texto": "Suiiii Ronaldo",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.1,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida de la dinámica con las primeras letras O-N-D-R"
+   },
+   {
+    "inicio_s": 4.1,
+    "fin_s": 14.9,
+    "parte": "revelacion",
+    "descripcion": "Chistes y nombres alternativos (Ronaldinho, Ronaldo Al-Zahra) hasta que uno falla y se cae a la piscina"
+   },
+   {
+    "inicio_s": 14.9,
+    "fin_s": 24.3,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda con letras E-M-A (Mbappe / Emam Ashour) y otro cae a la piscina"
+   },
+   {
+    "inicio_s": 24.3,
+    "fin_s": 30.1,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda con M-S (Mo Salah) y el último empuja a otro o cae"
+   },
+   {
+    "inicio_s": 30.1,
+    "fin_s": 32.2,
+    "parte": "cierre",
+    "descripcion": "Llamado a la acción y festejo"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se muestra texto en pantalla con las opciones graciosas o el nombre correcto mientras los amigos actúan y se tiran al agua",
+   "efectos_de_sonido": [
+    "risa"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El creador festeja a cámara con los amigos empapados de fondo",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Like y Subscribe",
+   "momento_s": 31.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "árabe",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "risas",
+    "chapuzón"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Letras grandes de colores brillantes flotando/encima de cada persona y subtítulos blancos con borde negro",
+   "idioma": "inglés y árabe"
+  },
+  "visual": {
+   "fondo": "Jardín con piscina exterior",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video vertical humorístico de retos entre amigos con comedia física",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica de castigo físico inmediato (caer a la piscina) que genera tensión y comedia",
+   "Humor absurdo con nombres inventados y reacciones exageradas",
+   "Ritmo rápido sin tiempos muertos"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar plantillas animadas de preguntas con letras iniciales, efectos de sonido de error y un meme de caída en la piscina de fondo."
+ }
+}

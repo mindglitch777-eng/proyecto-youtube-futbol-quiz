@@ -1,0 +1,96 @@
+{
+ "video_id": "-m0DQzmupo4",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 10975,
+  "candidatesTokenCount": 916,
+  "totalTokenCount": 11891,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 10192
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 152.0,
+  "formato": "entrevista a jugador de fútbol completando un top 10 interactivo en pantalla",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "jugador celebrando gol con camiseta de España y presentador en set con camisetas de fondo",
+   "que_se_dice_o_texto": "Can you tell me the top 10 most handsome footballers in the world?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "El entrevistador lanza la premisa de adivinar el top 10 de futbolistas más guapos."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 152.0,
+    "parte": "revelacion",
+    "descripcion": "Los participantes van rellenando la lista de 10 futbolistas con fotos y debate en pantalla."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "aparece la foto del jugador y su nombre en la lista numerada en pantalla superior",
+   "efecto_sonido": "pop o risas según el caso"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el entrevistado acepta la lista completa con humor y se ríen",
+   "loop": true,
+   "como_hace_el_loop": "el final empalma de forma fluida con la pregunta inicial sobre los futbolistas guapos",
+   "cta": {
+    "en_video": null,
+    "momento_s": null
+   },
+   "audio": {
+    "voz": "humana",
+    "idioma_y_acento": "inglés con acento español",
+    "musica": "de fondo",
+    "efectos_de_sonido": [
+     "risas",
+     "pop"
+    ]
+   },
+   "texto_en_pantalla": {
+    "hay_texto": true,
+    "subtitulos_de_voz": true,
+    "estilo": "letras grandes amarillas y blancas con borde negro estilo Hormozi, centradas abajo",
+    "idioma": "inglés"
+   },
+   "visual": {
+    "fondo": "estudio con camisetas de fútbol colgadas atrás",
+    "persona_real_en_camara": true,
+    "fotos_de_jugadores": true,
+    "escudos_o_logos": false,
+    "clips_de_partidos_o_transmisiones": true,
+    "imagenes_generadas_por_ia_o_dibujos": false,
+    "estilo_general": "split-screen vertical con lista interactiva arriba y entrevista abajo",
+    "cambios_de_plano_aprox": 15
+   },
+   "dificultad_de_las_preguntas": "fácil",
+   "invita_a_comentar_la_respuesta": true,
+   "que_hace_que_funcione": [
+    "participación de un jugador profesional real (Ferran Torres)",
+    "humor y camaradería en el debate sobre belleza",
+    "dinámica visual constante completando una lista en pantalla"
+   ],
+   "como_replicarlo_sin_cara_y_sin_clips": "usar fotos fijas de los futbolistas con zoom y una plantilla de top 10 animada con voz superpuesta"
+  }
+ }
+}

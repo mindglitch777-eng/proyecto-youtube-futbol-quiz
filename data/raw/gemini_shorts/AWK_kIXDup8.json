@@ -1,0 +1,99 @@
+{
+ "video_id": "AWK_kIXDup8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5611,
+  "candidatesTokenCount": 924,
+  "totalTokenCount": 6535,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4828
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 53.0,
+  "formato": "entrevista callejera de 'esta selección contra esta selección' eligiendo jugadores cara a cara",
+  "n_preguntas_o_rondas": 12,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Un niño frente a la cámara con un micrófono frente a un estadio, con emojis de Inglaterra y Turquía arriba",
+   "que_se_dice_o_texto": "HARRY KANE OR CAN UZUN",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de la primera pregunta cara a cara del formato selección vs selección."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 52.0,
+    "parte": "pregunta",
+    "descripcion": "Secuencia rápida de comparaciones de jugadores de Inglaterra y Turquía con marcador en pantalla que se actualiza."
+   },
+   {
+    "inicio_s": 52.0,
+    "fin_s": 53.0,
+    "parte": "cierre",
+    "descripcion": "Agradecimiento final al entrevistado."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 1.5,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El entrevistado responde de inmediato y el marcador en pantalla suma un punto",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El entrevistador agradece y se corta de golpe",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés con acento británico",
+   "musica": "de fondo",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Letras grandes estilo meme con bordes y fondo de color en palabras clave, centrado",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "Afuera del estadio Emirates",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, entrevistas callejeras con recortes superpuestos de jugadores y marcador en vivo",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "El formato de marcador acumulativo genera expectativa sobre qué país ganará",
+   "Las respuestas rápidas y fluidas del niño mantienen el ritmo alto",
+   "Mezclar jugadores consagrados con promesas jóvenes genera debate en los comentarios"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer con un formato POV de pantalla dividida mostrando los dos jugadores, una barra de vida o marcador y texto animado con IA eligiendo de fondo."
+ }
+}

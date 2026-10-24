@@ -1,0 +1,100 @@
+{
+ "video_id": "V0mtIwTv9WM",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 6527,
+  "candidatesTokenCount": 1030,
+  "totalTokenCount": 8441,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5744
+   }
+  ],
+  "thoughtsTokenCount": 884,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 63.8,
+  "formato": "Adivinar el jugador secreto de la otra persona haciendo preguntas de Sí o No",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 1.5,
+   "que_se_ve": "Dos chicas vistiendo camisetas de fútbol (Real Madrid y AC Milan) apuntando a la cámara con micrófonos en la mano.",
+   "que_se_dice_o_texto": "ADIVINA El jugador de la otra persona",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.5,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida del juego 'Adivina el jugador'."
+   },
+   {
+    "inicio_s": 1.5,
+    "fin_s": 58.0,
+    "parte": "pregunta",
+    "descripcion": "Rondas alternas de preguntas de Sí/No con memes y efectos superpuestos para adivinar el jugador oculto."
+   },
+   {
+    "inicio_s": 58.0,
+    "fin_s": 63.8,
+    "parte": "revelacion",
+    "descripcion": "Adivinan el jugador (Cucurella) y celebran efusivamente."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Mencionan el nombre del jugador en voz alta y se muestran fotos superpuestas con gritos de celebración.",
+   "efecto_sonido": "Gritos, música de victoria y efectos de sonido de memes"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Una de las chicas adivina a Cucurella y celebran saltando y gritando.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español (Latino/Mexicano)",
+   "musica": "Efectos de sonido dramáticos, canciones de memes y música de suspenso de fondo",
+   "efectos_de_sonido": [
+    "Trompeta dramática",
+    "Efectos de meme (siren, chillidos, risas)",
+    "Sonidos de respuesta correcta/incorrecta"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto flotante blanco con contorno negro en la parte superior, acompañado de imágenes de jugadores y memes",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Pared con acabado de madera en interior de habitación",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video estilo reto/vlog cara a cara enriquecido con memes e imágenes recortadas",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La química y expresividad natural de las creadoras, el ritmo ágil acentuado por insertos de memes populares y la tensión divertida del juego de adivinanza.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede usar una plantilla de pantalla dividida con dos cartas de jugadores ocultas por signos de interrogación, voces de texto a voz simulando las preguntas de Sí/No y revelando pistas paso a paso con imágenes de los clubes o características."
+ }
+}

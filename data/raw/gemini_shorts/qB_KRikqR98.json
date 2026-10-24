@@ -1,0 +1,117 @@
+{
+ "video_id": "qB_KRikqR98",
+ "modelo": "gemini-flash-latest",
+ "uso": {
+  "promptTokenCount": 3329,
+  "candidatesTokenCount": 1305,
+  "totalTokenCount": 4634,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2546
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 27.9,
+  "formato": "Adivinar el futbolista en pantalla leyendo los labios de la otra persona bajo el agua o te sumergís",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "Una mujer y una niña en una piscina; la niña dice 'Mbappé' mientras la mujer le tapa los oídos y luego se sumerge en el agua.",
+   "que_se_dice_o_texto": "Mbappé",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "La niña pronuncia Mbappé mientras la mujer la mira y adivina al instante, sumergiéndose en el agua como parte de la dinámica."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 9.5,
+    "parte": "pregunta",
+    "descripcion": "Aparece la foto de Vinícius Júnior. La niña dice 'Vini', la mujer sale del agua y arriesga 'Rodri', fallando (sonido de error, contador marca 1)."
+   },
+   {
+    "inicio_s": 9.5,
+    "fin_s": 15.5,
+    "parte": "pregunta",
+    "descripcion": "Se sumerge de nuevo, la niña repite 'Vini', sale y dice 'Pedri', fallando de nuevo (contador sube a 2 con sonido de error)."
+   },
+   {
+    "inicio_s": 15.5,
+    "fin_s": 21.5,
+    "parte": "pregunta",
+    "descripcion": "Se sumerge otra vez, la niña repite 'Vini', sale y dice 'Gavi', fallando por tercera vez (contador sube a 3 con sonido de error)."
+   },
+   {
+    "inicio_s": 21.5,
+    "fin_s": 26.5,
+    "parte": "revelacion",
+    "descripcion": "Se sumerge de nuevo, la niña dice 'Vini', la mujer sale y grita '¡Vini!', acertando con sonido de campana y festejo."
+   },
+   {
+    "inicio_s": 26.5,
+    "fin_s": 27.9,
+    "parte": "cierre",
+    "descripcion": "Ambas festejan en el agua y aparece el botón gráfico de 'Subscribe'."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "La participante adivina en voz alta el nombre del jugador que ya está visible en pantalla en la parte superior.",
+   "efecto_sonido": "Campana de acierto ('ding') y zumbido de error ('buzzer')"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "La mujer festeja levantando los brazos sonriendo mientras aparece un botón gráfico de 'Subscribe'.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Subscribe",
+   "momento_s": 27.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español / nombres de futbolistas",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "sonido de chapoteo bajo el agua",
+    "buzzer de fallo",
+    "ding de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Números verdes con borde blanco/sombra indicando los intentos fallidos, botón rojo de 'Subscribe' al final",
+   "idioma": "en"
+  },
+  "visual": {
+   "fondo": "Piscina al aire libre con jardín soleado",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Vlog/desafío casero al aire libre grabado en vertical",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La dinámica física y cómica de sumergirse repetidamente en el agua tras cada error; la ternura y espontaneidad de la interacción entre la niña y la mujer; el suspenso cómico de fallar nombres obvios.",
+  "como_replicarlo_sin_cara_y_sin_clips": "No es fácilmente replicable sin personas reales ya que el atractivo radica 100% en el reto físico en la piscina y la lectura de labios en vivo."
+ }
+}

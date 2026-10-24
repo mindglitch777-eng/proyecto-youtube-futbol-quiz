@@ -12,6 +12,7 @@ import json
 import os
 import sys
 import time
+from concurrent.futures import ThreadPoolExecutor
 from pathlib import Path
 
 import requests
@@ -20,7 +21,7 @@ ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "data" / "raw" / "gemini_shorts"
 OUT.mkdir(parents=True, exist_ok=True)
 KEY = os.environ.get("GEMINI_API_KEY")
-MODELS = os.environ.get("GEMINI_MODELS", "gemini-flash-latest,gemini-3.5-flash,gemini-3.5-flash-lite").split(",")
+MODELS = os.environ.get("GEMINI_MODELS", "gemini-3.5-flash,gemini-3.6-flash,gemini-3.5-flash-lite,gemini-flash-latest").split(",")
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
 
 PROMPT = """Sos analista de YouTube Shorts de fútbol. Mirá la imagen Y escuchá el audio de este short completo.
@@ -68,7 +69,7 @@ def call(vid):
     for ronda in range(3):
         for model in MODELS:
             try:
-                r = requests.post(URL.format(model), headers={"x-goog-api-key": KEY}, json=body, timeout=600)
+                r = requests.post(URL.format(model), headers={"x-goog-api-key": KEY}, json=body, timeout=240)
             except requests.RequestException as e:
                 errores.append(f"{model} {e}")
                 continue
@@ -85,10 +86,14 @@ def call(vid):
 
 
 def main(ids):
-    for vid in ids:
+    with ThreadPoolExecutor(int(os.environ.get("HILOS", "4"))) as ex:
+        list(ex.map(uno, ids))
+
+
+def uno(vid):
         dest = OUT / f"{vid}.json"
         if dest.exists() and json.loads(dest.read_text()).get("analisis"):
-            continue
+            return
         txt, uso, model = call(vid)
         res = {"video_id": vid, "modelo": model, "uso": uso}
         if txt is None:

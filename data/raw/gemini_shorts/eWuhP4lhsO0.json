@@ -1,0 +1,99 @@
+{
+ "video_id": "eWuhP4lhsO0",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6787,
+  "candidatesTokenCount": 917,
+  "totalTokenCount": 7704,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6004
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 65.0,
+  "formato": "adivinar el jugador de fútbol pixelado por rondas de eliminación",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "una foto pixelada de un jugador de fútbol y la streamer en la parte superior reaccionando",
+   "que_se_dice_o_texto": "Adivina el futbolista antes que la otra persona",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y la regla principal"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 65.0,
+    "parte": "pregunta",
+    "descripcion": "Desarrollo del juego de adivinanza mediante eliminación de opciones y pistas visuales"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 20.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra y texto de cuenta regresiva"
+  },
+  "revelacion": {
+   "como": "se muestra la foto completa del jugador con animación de confeti y marcador verde",
+   "efectos_sonido": [
+    "aplausos",
+    "campanas de victoria"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "invita a suscribirse tras ganar",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Suscríbete si prefieres a Cristiano Ronaldo y dale like si prefieres a Messi",
+   "momento_s": 9.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español neutro con acento latino",
+   "musica": "música de fondo alegre de juego",
+   "efectos_de_sonido": [
+    "risa",
+    "efectos de acierto/error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes, tipografía estilo meme de Roblox, colores llamativos",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "juego de Roblox estilo trivia de fútbol",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con cámara flotante de la creadora y gameplay de Roblox abajo",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "uso de doble pantalla con reacción en vivo de la streamer",
+   "mecánica interactiva tipo juego de Roblox que genera tensión",
+   "llamado a la acción rápido con futbolistas populares como Messi y Cristiano"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar un simulador de pantalla dividida con gameplay de fondo de Roblox o Minecraft parkour, manteniendo las opciones en pantalla y la voz en off narrando la partida"
+ }
+}

@@ -1,0 +1,150 @@
+{
+ "video_id": "jpV5OAxnfWY",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6701,
+  "candidatesTokenCount": 1417,
+  "totalTokenCount": 8118,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5918
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 65.0,
+  "formato": "adivinar si la siguiente carta de fútbol vale más o menos que la anterior",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.2,
+   "que_se_ve": "un conductor mostrando una carta y el valor en libras (£43)",
+   "que_se_dice_o_texto": "Esta carta se vende por 43 libras. ¿Ok?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.2,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y precio de la primera carta"
+   },
+   {
+    "inicio_s": 2.2,
+    "fin_s": 14.0,
+    "parte": "pregunta",
+    "descripcion": "Primera ronda: carta de Georgia Stanway frente a Shearer"
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 17.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación del precio de Stanway (£146)"
+   },
+   {
+    "inicio_s": 17.0,
+    "fin_s": 25.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: Lamine Yamal"
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 27.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Yamal (£300k)"
+   },
+   {
+    "inicio_s": 27.0,
+    "fin_s": 41.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda: carta especial de Messi, Ronaldo y Haaland"
+   },
+   {
+    "inicio_s": 41.0,
+    "fin_s": 43.5,
+    "parte": "revelacion",
+    "descripcion": "Revelación y sorpresa porque baja el precio (£102k)"
+   },
+   {
+    "inicio_s": 43.5,
+    "fin_s": 50.0,
+    "parte": "pregunta",
+    "descripcion": "Cuarta ronda: Alexia Putellas / Lucy Bronze"
+   },
+   {
+    "inicio_s": 50.0,
+    "fin_s": 51.5,
+    "parte": "revelacion",
+    "descripcion": "Revelación (£427)"
+   },
+   {
+    "inicio_s": 51.5,
+    "fin_s": 64.5,
+    "parte": "pregunta",
+    "descripcion": "Quinta ronda: Georgia Stanway autografiada 1/1"
+   },
+   {
+    "inicio_s": 64.5,
+    "fin_s": 65.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación final (£637)"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 4.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "aparece el precio grande con los importes en otras monedas abajo y sonido de caja registradora",
+   "efecto_sonido": "cash register / ding"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "se revela el último precio y festejan",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés británico",
+   "musica": "de fondo alegre y dinámica tipo concurso",
+   "efectos_de_sonido": [
+    "dinero / caja registradora",
+    "tic-tac"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "precios grandes con símbolo de libra en negrita, estilo Topps",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "estudio de Topps con estantes con cartas y figuras",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato de trivia / reto de precios con creadores de contenido",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "dinámica de 'más o menos' estilo Higher or Lower que engancha muchísimo",
+   "reacciones genuinas de los participantes ante precios inesperados",
+   "cartas coleccionables de alto valor que generan curiosidad"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar Canva o CapCut con un fondo estático de coleccionismo, imágenes de cartas de fútbol sacadas de internet, colocar el texto de los precios con zoom y usar una voz en off con efectos de sonido de caja registradora."
+ }
+}

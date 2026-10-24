@@ -1,0 +1,175 @@
+{
+ "video_id": "d2JOw5nE5nA",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5694,
+  "candidatesTokenCount": 1657,
+  "totalTokenCount": 7351,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4911
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 54.0,
+  "formato": "adivinar el futbolista según su cabello",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "dos chicas jóvenes bailando o posando con ropa deportiva en su sala y texto arriba",
+   "que_se_dice_o_texto": "ADIVINA EL FUTBOLISTA POR SU CABELLO",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del tema y reto de adivinar jugadores por el cabello"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 5.0,
+    "parte": "pregunta",
+    "descripcion": "Primera ronda: cabello corto ensortijado (Bellingham)"
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 7.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Jude Bellingham con sonido y animación"
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 10.0,
+    "parte": "transicion",
+    "descripcion": "Broma o piropo rápido sobre el jugador"
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 14.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: cabello castaño largo y ondulado con luces"
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 17.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Vitinha celebrando"
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 21.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda: cabello rubio largo recogido (Haaland)"
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 23.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Erling Haaland sin camiseta con el pelo suelto"
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 27.0,
+    "parte": "pregunta",
+    "descripcion": "Cuarta ronda: cabello rizado teñido rubio (Lamine Yamal)"
+   },
+   {
+    "inicio_s": 27.0,
+    "fin_s": 31.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Lamine Yamal con su pareja y broma de la edad"
+   },
+   {
+    "inicio_s": 31.0,
+    "fin_s": 35.0,
+    "parte": "pregunta",
+    "descripcion": "Quinta ronda: cabello afro corto (Doué)"
+   },
+   {
+    "inicio_s": 35.0,
+    "fin_s": 39.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Doué bailando en el vestuario"
+   },
+   {
+    "inicio_s": 40.0,
+    "fin_s": 44.0,
+    "parte": "pregunta",
+    "descripcion": "Sexta ronda: coronilla rubia (Harry Kane)"
+   },
+   {
+    "inicio_s": 44.0,
+    "fin_s": 51.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Harry Kane y luego doble foto (Camavinga y Alaba o similar)"
+   },
+   {
+    "inicio_s": 51.0,
+    "fin_s": 54.0,
+    "parte": "cierre",
+    "descripcion": "Comentarios finales de las chicas y fin del short"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.5,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparece la foto del jugador sobre la cabeza con sonido de acierto o meme",
+   "efecto_sonido": "efectos de meme, aplausos y risas"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Las chicas discuten sobre un jugador y se despiden con humor",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español latino",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "bocinazos",
+    "risas de meme",
+    "aplausos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "tipografía bold rosa con contorno blanco arriba en los títulos",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "sala de una casa",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con dos presentadoras, recortes de cabello flotantes y clips cortos de reacción",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica rápida y entretenida con dos personas carismáticas en pantalla",
+   "Uso de memes y clips cortos que mantienen alta la retención",
+   "Temática de futbolistas actuales muy populares"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla con cuenta regresiva, mostrando solo la foto recortada del cabello y luego revelando al jugador con su foto oficial y nombre."
+ }
+}

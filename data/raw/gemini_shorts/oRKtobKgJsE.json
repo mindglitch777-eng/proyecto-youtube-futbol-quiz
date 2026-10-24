@@ -1,0 +1,121 @@
+{
+ "video_id": "oRKtobKgJsE",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3870,
+  "candidatesTokenCount": 1131,
+  "totalTokenCount": 5001,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3087
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 33.5,
+  "formato": "adivinar el país de origen de jugadores de fútbol con castigo físico si falla",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "Una chica sentada mirando a cámara y detrás un chico con un peluche gigante a punto de golpearla en la cabeza.",
+   "que_se_dice_o_texto": "Si adivina su país se salva 🤠",
+   "tipo": "desafío"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego con Buffon en pantalla y el castigo listo atrás."
+   },
+   {
+    "inicio_s": 2.5,
+    "fin_s": 7.0,
+    "parte": "pregunta",
+    "descripcion": "Raphinha: la chica acierta 'Peruano' (falla) y recibe golpe."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 13.0,
+    "parte": "pregunta",
+    "descripcion": "Salah: la chica dice 'Haití' (falla) pero se salva/interactúa."
+   },
+   {
+    "inicio_s": 13.0,
+    "fin_s": 20.0,
+    "parte": "pregunta",
+    "descripcion": "Kanté: la chica dice 'África' y recibe un golpe fuerte."
+   },
+   {
+    "inicio_s": 20.0,
+    "fin_s": 26.0,
+    "parte": "pregunta",
+    "descripcion": "Valverde: la chica dice 'Argentina' y recibe golpe, el chico revela que es uruguayo."
+   },
+   {
+    "inicio_s": 26.0,
+    "fin_s": 33.5,
+    "parte": "pregunta",
+    "descripcion": "Dembélé: la chica dice 'África' y recibe el último golpe antes del corte."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "verbal por parte del conductor de atrás o golpe correctivo inmediato",
+   "efecto_sonido": [
+    "golpe seco"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video corta abruptamente tras el golpe de Dembélé sin cierre formal.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español latino",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "golpe sordo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "tipografía blanca sin borde, centrada abajo",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "interior de departamento moderno",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "challenge de pareja en formato vertical con humor físico",
+   "cambios_de_plano_aprox": 7
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La tensión y el humor físico del castigo con el peluche detrás de la jugadora.",
+   "Las respuestas insólitas de la chica generando comedia.",
+   "Dinámica rápida que mantiene alta la retención."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar fotos de jugadores con filtro de preguntas flotante sobre fondo animado, con efectos de sonido de golpes y respuestas de opción múltiple con barra de tiempo."
+ }
+}

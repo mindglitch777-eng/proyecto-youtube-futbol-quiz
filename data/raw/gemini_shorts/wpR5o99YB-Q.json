@@ -1,0 +1,119 @@
+{
+ "video_id": "wpR5o99YB-Q",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6166,
+  "candidatesTokenCount": 1088,
+  "totalTokenCount": 7254,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5383
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 59.0,
+  "formato": "Trivia de fútbol interactiva de trivia rápida con desafíos de nivel creciente",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Dos presentadores sentados en un sofá frente a un fondo nevado con balones de fútbol y cuenta regresiva superior",
+   "que_se_dice_o_texto": "Dime 5 argentinos que ganaron la Champions",
+   "tipo": "desafío"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del primer desafío sobre argentinos campeones de Champions"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 9.0,
+    "parte": "revelacion",
+    "descripcion": "La invitada responde y aparecen fotos y nombres de los jugadores"
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 22.0,
+    "parte": "pregunta",
+    "descripcion": "Segundo desafío: 4 leyendas de España con su respectiva respuesta"
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 33.0,
+    "parte": "pregunta",
+    "descripcion": "Tercer desafío: 3 selecciones que visten de amarillo"
+   },
+   {
+    "inicio_s": 33.0,
+    "fin_s": 53.0,
+    "parte": "pregunta",
+    "descripcion": "Cuarto desafío: 2 jugadores que jugaron en Boca y en el Barça"
+   },
+   {
+    "inicio_s": 53.0,
+    "fin_s": 59.0,
+    "parte": "cierre",
+    "descripcion": "Quinto desafío fallido con efecto de sonido de error"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "números del 5 al 1 con círculos verdes en la parte superior"
+  },
+  "revelacion": {
+   "como": "Fotos flotantes de los jugadores aparecen abajo con recortes limpios y nombres en texto",
+   "efecto_sonido": "sonido de error estilo chicharra al fallar al final"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "La invitada falla el último desafío y suena un silbato/bocinazo de error",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español europeo",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "bocinazo de error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes en mayúsculas, color blanco con contorno negro, resaltando palabras clave en colores como rojo y amarillo, ubicadas en el centro",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "estudio moderno con ventanal panorámico con vista a ciudad nevada",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, estilo podcast/stream con edición rápida y subtítulos grandes",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Ritmo dinámico con cuenta regresiva visual clara",
+   "Participación de creadores conocidos generando empatía",
+   "Dificultad progresiva que atrapa al espectador hasta el final"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de Canva o CapCut con temporizador en pantalla, fondo de cancha o abstracto, y mostrar únicamente los recortes de fotos de los jugadores junto con iconos o escudos."
+ }
+}

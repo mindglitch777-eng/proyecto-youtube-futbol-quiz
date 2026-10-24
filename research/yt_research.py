@@ -90,6 +90,22 @@ FORMAT_SEEDS = [
     ("futbol 11 grid quien jugo con ambos", "es", True),
     ("this or that football", "en", True),
     ("ordena de mayor a menor futbol", "es", True),
+    ("spin the wheel football", "en", True),
+    ("ruleta futbol armo mi equipo", "es", True),
+    ("guess the jersey football", "en", True),
+    ("would you rather football", "en", True),
+    ("football bingo", "en", True),
+    ("adivina el jugador por la silueta", "es", True),
+]
+
+# mercados: misma consulta acotada por país (regionCode) para comparar tamaño y competencia
+MARKET_SEEDS = [
+    ("quiz de futbol", "es", "AR"),
+    ("quiz de futbol", "es", "MX"),
+    ("quiz de futbol", "es", "ES"),
+    ("football quiz", "en", "US"),
+    ("football quiz", "en", "GB"),
+    ("quiz de futebol", "pt", "BR"),
 ]
 
 QUIZ_WORDS = re.compile(
@@ -198,6 +214,26 @@ def correr_busqueda(q, lang, recientes, hits):
     hits.append({"q": q, "lang": lang, "ultimos_12m": recientes, "video_ids": ids})
     print(f"  '{q}' [{lang}{', 12m' if recientes else ''}]: {len(ids)} videos", file=sys.stderr)
     return ids
+
+
+def cmd_markets():
+    hits = cargar("search_hits.json", [])
+    hechas = {(h["q"], h.get("region")) for h in hits}
+    videos = cargar("videos.json", {})
+    nuevos = []
+    for q, lang, region in MARKET_SEEDS:
+        if (q, region) in hechas:
+            continue
+        d = api("search", part="snippet", q=q, type="video", videoDuration="short", order="viewCount",
+                maxResults=50, relevanceLanguage=lang, regionCode=region, publishedAfter=HACE_12M)
+        ids = [it["id"]["videoId"] for it in d.get("items", []) if it["id"].get("videoId")]
+        hits.append({"q": q, "lang": lang, "region": region, "ultimos_12m": True, "video_ids": ids,
+                     "total_estimado": d.get("pageInfo", {}).get("totalResults")})
+        nuevos += ids
+        guardar("search_hits.json", hits)
+        print(f"  '{q}' [{region}]: {len(ids)}", file=sys.stderr)
+    detalles_videos(nuevos, videos)
+    guardar("videos.json", videos)
 
 
 def cmd_search(seeds=SEEDS):
@@ -355,6 +391,8 @@ if __name__ == "__main__":
             cmd_search()
         if cmd == "formatos":
             cmd_search(FORMAT_SEEDS[:arg] if arg else FORMAT_SEEDS)
+        if cmd == "mercados":
+            cmd_markets()
         if cmd in ("iterate", "all"):
             cmd_iterate(arg or 8)
         if cmd in ("channels", "all"):

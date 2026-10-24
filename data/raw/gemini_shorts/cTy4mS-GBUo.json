@@ -1,0 +1,123 @@
+{
+ "video_id": "cTy4mS-GBUo",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6246,
+  "candidatesTokenCount": 1172,
+  "totalTokenCount": 7418,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5463
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 61.0,
+  "formato": "Trivia de fútbol con cuenta regresiva donde un invitado intenta responder preguntas difíciles bajo presión",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "Dos creadores parados en una cancha, uno entrevistando al otro, con números en círculos negros arriba (5 4 3 2 1)",
+   "que_se_dice_o_texto": "Dime cinco jugadores que hayan costado más de 100 millones",
+   "tipo": "desafío"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de la primera pregunta sobre jugadores de más de 100 millones"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 14.0,
+    "parte": "revelacion",
+    "descripcion": "El invitado responde nombrando jugadores mientras aparecen sus fotos"
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 22.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda pregunta sobre cuatro equipos con escudo rojo"
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 35.0,
+    "parte": "revelacion",
+    "descripcion": "Tercera pregunta sobre tres estadios de la Premier League con fotos de estadios"
+   },
+   {
+    "inicio_s": 35.0,
+    "fin_s": 49.0,
+    "parte": "pregunta",
+    "descripcion": "Cuarta pregunta sobre dos jugadores con apodo de animal"
+   },
+   {
+    "inicio_s": 49.0,
+    "fin_s": 61.0,
+    "parte": "cierre",
+    "descripcion": "Última pregunta sobre jugador brasileño en Madrid y Manchester City y despedida fallida"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "números del 5 al 1 en círculos negros arriba en pantalla"
+  },
+  "revelacion": {
+   "como": "Fotos de los jugadores o imágenes de estadios superpuestas al hablar",
+   "efecto_sonido": [
+    "bocina de error",
+    "risas"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El invitado se queda pensando en la última pregunta mientras suena música de meme y se corta abruptamente",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español de España",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "efecto de sonido gracioso de fail",
+    "música de meme"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes con contorno negro y palabras resaltadas en color amarillo, estilo Reels dinámico",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "vlog de fútbol callejero con edición dinámica de subtítulos y recursos visuales",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "dinámica rápida de preguntas y respuestas bajo presión",
+   "expresiones naturales y reacciones divertidas entre los participantes",
+   "edición visual con fotos y subtítulos llamativos"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer con un formato de pantalla dividida usando una plantilla de trivia con temporizador, mostrando los escudos o fotos descargadas con animaciones de texto"
+ }
+}

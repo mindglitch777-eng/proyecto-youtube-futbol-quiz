@@ -1,0 +1,105 @@
+{
+ "video_id": "Ir_B-j1nY8E",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5431,
+  "candidatesTokenCount": 1006,
+  "totalTokenCount": 6437,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4648
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 51.7,
+  "formato": "ranking/adivinanza de momentos o jugadores de la copa del mundo con panelistas",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Panelistas sentados en una mesa al aire libre con un jugador enmascarado adelante y el título superior 'RANKING TOP 5 GUESS THE WC PLAYER MOMENTS'.",
+   "que_se_dice_o_texto": "RANKING TOP 5 GUESS THE WC PLAYER MOMENTS",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del ranking y temática del short con los panelistas y el jugador enmascarado."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 19.0,
+    "parte": "pregunta",
+    "descripcion": "Discusión sobre jugadores y momentos del mundial (Messi, partidos, etc.)."
+   },
+   {
+    "inicio_s": 19.0,
+    "fin_s": 51.7,
+    "parte": "revelacion",
+    "descripcion": "Secuencia de momentos del ranking con las reacciones de los panelistas y clips de partidos o del desafío."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparición de carteles con datos, nombres y clips en pantalla.",
+   "efectos_de_sonido": [
+    "risas",
+    "efectos de sonido cómicos"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video finaliza abruptamente tras las reacciones del panel.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "risas",
+    "efectos de meme"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "subtítulos dinámicos de colores con fondo o contorno grueso en el centro de la pantalla",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "cancha exterior de fútbol y mesa de panel",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato tipo podcast/challenge de creadores de contenido de fútbol con panelistas en vivo y clips integrados",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La participación de panelistas reconocidos reaccionando en vivo genera dinamismo.",
+   "El uso de personajes enmascarados y desafíos físicos o de trivia engancha a la audiencia.",
+   "La edición rápida con subtítulos coloridos y subtítulos automáticos mantiene alta la retención."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes estáticas de los jugadores con efectos de movimiento (Ken Burns), voz en off relatando las pistas del ranking y opciones múltiples en pantalla con temporizador."
+ }
+}

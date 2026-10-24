@@ -1,0 +1,137 @@
+{
+ "video_id": "TRkVfXAXROg",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7160,
+  "candidatesTokenCount": 1165,
+  "totalTokenCount": 8325,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6377
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 70.8,
+  "formato": "adivinar jugador de fútbol con letras revueltas",
+  "n_preguntas_o_rondas": 6,
+  "gancho": {
+   "fin_s": 2.2,
+   "que_se_ve": "Dos adultos y un niño en una cancha de fútbol sintetico frente a una pared blanca.",
+   "que_se_dice_o_texto": "ASHCRA AFIIKHM",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.2,
+    "parte": "gancho",
+    "descripcion": "Presentación del primer anagrama con Achraf Hakimi."
+   },
+   {
+    "inicio_s": 2.2,
+    "fin_s": 5.4,
+    "parte": "revelacion",
+    "descripcion": "Acierto y festejo de la primera pregunta."
+   },
+   {
+    "inicio_s": 5.4,
+    "fin_s": 10.0,
+    "parte": "pregunta",
+    "descripcion": "Segundo anagrama: Jamal Musiala."
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 14.8,
+    "parte": "pregunta",
+    "descripcion": "Tercer anagrama: Ronald Araújo."
+   },
+   {
+    "inicio_s": 14.8,
+    "fin_s": 20.8,
+    "parte": "pregunta",
+    "descripcion": "Cuarto anagrama: Ousmane Dembélé."
+   },
+   {
+    "inicio_s": 20.8,
+    "fin_s": 43.1,
+    "parte": "pregunta",
+    "descripcion": "Quinto anagrama con cuenta regresiva hablada: Erling Haaland."
+   },
+   {
+    "inicio_s": 43.1,
+    "fin_s": 55.7,
+    "parte": "pregunta",
+    "descripcion": "Sexto anagrama con Rafael Leão."
+   },
+   {
+    "inicio_s": 55.7,
+    "fin_s": 70.8,
+    "parte": "pregunta",
+    "descripcion": "Séptimo y último anagrama más difícil: Martín Zubimendi."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 4.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "conteo oral en voz alta de 3 a 1"
+  },
+  "revelacion": {
+   "como": "aparece la foto del jugador flotando arriba con su nombre escrito en verde brillante y risas/festejos",
+   "efectos_de_sonido": [
+    "risas",
+    "aplausos",
+    "efectos graciosos"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se revela el último jugador y los participantes ríen y celebran.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "portugués de Brasil",
+   "musica": "de fondo alegre y dinámica",
+   "efectos_de_sonido": [
+    "risas",
+    "aplausos",
+    "sonidos humorísticos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "tipografía gruesa blanca con borde negro o verde en la parte superior",
+   "idioma": "portugués"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol sintético al aire libre con muro blanco",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, familiar, humorístico y casual",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinamismo grupal con amigos y un niño participando, lo que genera empatía.",
+   "Uso de anagramas de futbolistas muy conocidos que enganchan al espectador a adivinar antes.",
+   "Las reacciones exageradas y humorísticas al acertar o fallar."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer usando plantillas de texto animado tipo CapCut con los anagramas cayendo o contando con temporizadores visuales, mostrando las fotos de los jugadores sin necesidad de salir en cámara."
+ }
+}

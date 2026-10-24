@@ -1,0 +1,116 @@
+{
+ "video_id": "yw-02zGYCsY",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 4984,
+  "candidatesTokenCount": 1082,
+  "totalTokenCount": 6066,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4201
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 47.7,
+  "formato": "adivinar el jugador basado en pistas y falsos impostores",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Tres chicas sentadas juntas frente a una pared de madera, con camisetas de fútbol de México",
+   "que_se_dice_o_texto": "Impostor | Hakimi | Hakimi",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y las opciones en pantalla"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "Primera ronda: pista 'Lesión' y 'Champions' para adivinar a Hakimi"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 21.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: pistas sobre celebración y Neymar"
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 33.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda: pistas de goleador y defensa"
+   },
+   {
+    "inicio_s": 33.0,
+    "fin_s": 47.7,
+    "parte": "revelacion",
+    "descripcion": "Cuarta ronda, trampa donde atrapan al impostor y revelan la respuesta final"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "sonido de tic-tac y animaciones"
+  },
+  "revelacion": {
+   "como": "aparición de foto del jugador flotando y reacción de risas de las chicas",
+   "efecto_sonido": "bocina o sonido de acierto/error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Atrapan a una de las chicas simulando ser el impostor y termina con risas",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español latino",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "tic-tac",
+    "bocina",
+    "risas grabadas",
+    "memes de internet"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto grande en rojo y blanco con bordes negros",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "pared de madera clara",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con reacciones humanas en vivo, inserción de memes y fotos flotantes",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica interactiva con tres personas que simulan ser el impostor y generan expectativa",
+   "Uso de humor, memes y reacciones exageradas que mantienen la atención",
+   "Ritmo rápido con cortes constantes y pistas progresivas"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar tres avatares o personajes animados estilo Among Us con textos flotantes con las mismas pistas y temporizador."
+ }
+}

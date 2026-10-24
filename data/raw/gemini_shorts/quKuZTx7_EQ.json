@@ -1,0 +1,117 @@
+{
+ "video_id": "quKuZTx7_EQ",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2283,
+  "candidatesTokenCount": 1092,
+  "totalTokenCount": 3375,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1500
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.0,
+  "formato": "adivina el jugador de fútbol basado en su silueta de una jugada",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "jugador silueteado en blanco en una cancha de fútbol con la pregunta GUESS PLAYER",
+   "que_se_dice_o_texto": "GUESS PLAYER",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "presenta la silueta del primer jugador con un contador"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 6.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "cuenta regresiva de 3 segundos con dos opciones de fotos"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 7.0,
+    "parte": "revelacion",
+    "descripcion": "se revela que es Emiliano Martinez con su nombre y jugada real"
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 11.0,
+    "parte": "pregunta",
+    "descripcion": "presenta la silueta negra del segundo jugador"
+   },
+   {
+    "inicio_s": 11.0,
+    "fin_s": 14.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "cuenta regresiva de 3 segundos con opciones (Cristiano Ronaldo o Dybala)"
+   },
+   {
+    "inicio_s": 14.0,
+    "fin_s": 17.0,
+    "parte": "revelacion",
+    "descripcion": "se revela que es Ronaldo"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra circular con números decrecientes de 3 a 1"
+  },
+  "revelacion": {
+   "como": "recuadro verde en la opción correcta, aparición del jugador en video real y su nombre",
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "termina abruptamente con la revelación de Ronaldo",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "like para la opción izquierda, suscríbete para la derecha",
+   "momento_s": 3.0
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "ninguno",
+   "musica": "canción pop viral de fondo",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras gruesas amarillas y blancas con contorno negro",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "partido de fútbol real difuminado",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "edición dinámica con recortes, siluetas y cuenta regresiva",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "dinámica de adivinanza rápida que retiene la atención",
+   "uso de siluetas icónicas de momentos muy recordados",
+   "gamificación mediante botones de like y suscripción"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar fotos silueteadas sobre fondos de colores animados, manteniendo la cuenta regresiva circular y las opciones A/B."
+ }
+}

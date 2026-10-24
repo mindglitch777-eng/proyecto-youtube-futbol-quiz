@@ -1,0 +1,99 @@
+{
+ "video_id": "VShjf821zbQ",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5700,
+  "candidatesTokenCount": 886,
+  "totalTokenCount": 6586,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4917
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 54.0,
+  "formato": "tríquiz de trivias de fútbol de 3 jugadores con cuadrícula y avance",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 1.5,
+   "que_se_ve": "Jules frente al micrófono con una cuadrícula de trivias abajo.",
+   "que_se_dice_o_texto": "MY NATION IS GERMANY",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.5,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida de los países de los participantes (Alemania, España, México)."
+   },
+   {
+    "inicio_s": 1.5,
+    "fin_s": 54.0,
+    "parte": "pregunta",
+    "descripcion": "Rondas sucesivas de trivia futbolística donde los jugadores responden sobre estadísticas de mundiales."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se marca la casilla correspondiente en la cuadrícula con el escudo del país.",
+   "efectos_de_sonido": [
+    "gritos de celebración",
+    "aplausos"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Termina la última ronda con festejos.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés con varios acentos",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "gritos de celebración",
+    "aplausos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes con borde y color dinámico por palabra",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "estudio con panel y bandejas de banderas",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico estilo podcast de streaming con cortes rápidos",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica competitiva entre tres amigos con reacciones muy enérgicas.",
+   "Uso de subtítulos dinámicos grandes que mantienen la atención.",
+   "Mecánica visual clara con cuadrícula y tableros que muestran el progreso en tiempo real."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla animada en pantalla dividida en tres con avatares o banderas, mostrando las preguntas de trivia tipo 'grid' y efectos de sonido de aciertos y fallos."
+ }
+}

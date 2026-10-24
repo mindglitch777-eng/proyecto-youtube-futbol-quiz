@@ -1,0 +1,114 @@
+{
+ "video_id": "O7g64ZjSY9g",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2792,
+  "candidatesTokenCount": 906,
+  "totalTokenCount": 3698,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2009
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 22.0,
+  "formato": "adivinar el jugador común entre dos equipos que tuvieron",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Dos creadores en videollamada con logos de Real Madrid y Mallorca flotando",
+   "que_se_dice_o_texto": "Tres, dos, uno, Mallorca",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida de la primera ronda de equipos"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 5.0,
+    "parte": "revelacion",
+    "descripcion": "Acierto de Eto'o y reacción del participante"
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 10.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda Everton vs Chelsea"
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda Milan vs Espanyol"
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 22.0,
+    "parte": "cierre",
+    "descripcion": "Cuarta ronda Barcelona vs Leganés y cierre"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "voz en off con cuenta atrás 3, 2, 1"
+  },
+  "revelacion": {
+   "como": "Aparición superpuesta del jugador festejando con el escudo del equipo",
+   "efecto_sonido": "gritos y celebraciones"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Discuten por un equipo y termina abruptamente",
+   "loop": false,
+   "como_hace_el_loop": "no aplica"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español neutro/latino",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "gritos",
+    "celebraciones"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras grandes de colores con borde negro, centradas",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "morado con luces de estudio",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "streamers reaccionando en formato split-screen vertical",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica rápida tipo trivia con respuesta inmediata",
+   "Uso de un mismo jugador icónico (Eto'o) como hilo conductor",
+   "Reacciones enérgicas y genuinas de los creadores"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar capturas estáticas de los escudos, cuenta regresiva con texto animado y la foto recortada del jugador con plantilla de Canva o CapCut."
+ }
+}

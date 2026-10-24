@@ -1,0 +1,103 @@
+{
+ "video_id": "8v-PiSP9A44",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 1877,
+  "candidatesTokenCount": 805,
+  "totalTokenCount": 2682,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1094
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 11.8,
+  "formato": "humor/meme de basquetbolistas saliendo a la cancha con un jugador inesperado al final",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 1.5,
+   "que_se_ve": "Un grupo de jugadores de basquetbol corriendo hacia la cancha rompiendo una bandera de las porristas, con un jugador pequeño con una calavera en la cara al final.",
+   "que_se_dice_o_texto": "We all know the star player",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.5,
+    "parte": "gancho",
+    "descripcion": "Los jugadores rompen el cartel de presentación en el partido."
+   },
+   {
+    "inicio_s": 1.5,
+    "fin_s": 10.0,
+    "parte": "revelacion",
+    "descripcion": "Primer plano del jugador pequeño y gracioso saliendo corriendo."
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 11.8,
+    "parte": "cierre",
+    "descripcion": "Reacción de un streamer (IShowSpeed) sorprendido/riendo."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "zoom y emoji de calavera sobre el jugador gracioso",
+   "efectos_de_sonido": [
+    "música dramática/graciosa"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra la reacción del streamer y corta de golpe.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "tendencia/viral (melodía dramática de meme)",
+   "efectos_de_sonido": [
+    "musica de meme"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro central",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "cancha de basquetbol escolar y luego habitación de streamer",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "meme de video vertical con reacción",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_oficial": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Contraste gracioso entre el equipo imponente y un jugador pequeño y atípico",
+   "Uso del emoji de calavera muy popular en TikTok para remarcar situaciones graciosas",
+   "Reacción de un streamer conocido al final que valida y potencia el humor"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": null
+ }
+}

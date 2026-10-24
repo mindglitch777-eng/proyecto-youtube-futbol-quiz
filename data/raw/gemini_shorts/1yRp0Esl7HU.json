@@ -1,0 +1,113 @@
+{
+ "video_id": "1yRp0Esl7HU",
+ "modelo": "gemini-flash-latest",
+ "uso": {
+  "promptTokenCount": 3509,
+  "candidatesTokenCount": 1151,
+  "totalTokenCount": 5342,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2726
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 682,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 29.8,
+  "formato": "Adivinar qué cabeza de futbolista encaja en el cuerpo musculoso (con camiseta de Argentina dorsal 7)",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Cuerpo hipermusculoso sosteniendo mancuernas con camiseta de Argentina y un signo de interrogación en el cuello, debajo de 4 cabezas flotantes de futbolistas",
+   "que_se_dice_o_texto": null,
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del cuerpo sin cabeza y las 4 opciones de cabezas flotando arriba."
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 6.5,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "La cabeza de Neymar se traslada alrededor del cuerpo, se coloca y sale una cruz roja de error con sonido incorrecto."
+   },
+   {
+    "inicio_s": 6.5,
+    "fin_s": 13.5,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "La cabeza de Garnacho se desplaza, se monta sobre el cuerpo y aparece una cruz roja."
+   },
+   {
+    "inicio_s": 13.5,
+    "fin_s": 21.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "La cabeza de Luis Suárez se desplaza, se monta sobre el cuerpo y falla (cruz roja)."
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 29.8,
+    "parte": "revelacion",
+    "descripcion": "La cabeza de Cristiano Ronaldo se desplaza y encaja perfectamente; aparece un tilde verde con sonido de acierto y festejo."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 6.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "La cabeza de Cristiano Ronaldo se posiciona en el cuello y aparece un círculo verde con tilde de acierto",
+   "efecto_sonido": "Campana de acierto y coro/grito de celebración de fondo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Cristiano Ronaldo queda montado en el cuerpo con el tilde verde en el pecho mientras termina la canción",
+   "loop": "false",
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Animaciones de botones 'Like' y 'Subscribe' con cursor de clic",
+   "momento_s": 2.5
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Canción pop emocional de fondo que cambia a melodía rítmica al final",
+   "efectos_de_sonido": [
+    "whoosh de desplazamiento",
+    "buzzer de error / sonido cómico",
+    "campana de acierto",
+    "vítores/gritos de fondo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Botones gráficos de YouTube ('Like', 'Subscribe')",
+   "idioma": "en"
+  },
+  "visual": {
+   "fondo": "Cielo azul plano y césped verde simulado",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Montaje y animación 2D con capas PNG recortadas, cuerpo hipertrofiado generado digitalmente",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La curiosidad visual que genera la combinación bizarra (cuerpo hipermusculoso con el dorsal 7 y la camiseta de Argentina), y la anticipación mecánica estilo videojuego donde se prueba una opción tras otra hasta acertar.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Generar con IA un cuerpo atlético o cómico vistiendo una camiseta reconocible sin cabeza, recortar 4 cabezas PNG de jugadores famosos y animar en Premiere o CapCut la trayectoria de cada una encajando en el cuello con efectos de sonido de error/acierto."
+ }
+}

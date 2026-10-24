@@ -1,0 +1,22 @@
+{
+ "video_id": "9zThkaUEBok",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3427,
+  "candidatesTokenCount": 1041,
+  "totalTokenCount": 4468,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2644
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 30.0,\n \"formato\": \"adivinar el jugador de fútbol por fases de dificultad creciente\",\n \"n_preguntas_o_rondas\": 4,\n \"gancho\": {\n  \"fin_s\": 3.0,\n  \"que_se_ve\": \"jugador resaltado en azul eléctrico con silueta borrosa y texto 'NAME THAT PLAYER' y niveles de dificultad arriba\",\n  \"que_se_dice_o_texto\": \"NAME THAT PLAYER\",\n  \"tipo\": \"desafío ('solo el 1% sabe')\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 6.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Nivel fácil: Cristiano Ronaldo con silueta azul, temporizador de 3 segundos y revelación.\"\n  },\n  {\n   \"inicio_s\": 6.0,\n   \"fin_s\": 15.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Nivel medio: Gareth Bale con silueta amarilla, temporizador y revelación.\"\n  },\n  {\n   \"inicio_s\": 15.0,\n   \"fin_s\": 22.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Nivel difícil: Luka Modric con silueta roja, temporizador y revelación.\"\n  },\n  {\n   \"inicio_s\": 22.0,\n   \"fin_s\": 30.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Nivel imposible: Federico Valverde con silueta morada, temporizador y revelación con cierre.\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 3.0,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"círculo temporizador con números (3 a 0) en cuenta regresiva\"\n },\n \"revelacion\": {\n  \"como\": \"silueta blanca con foto real del jugador y su nombre en grande\",\n  _efecto_sonido: \"sonido de acierto o transición\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"muestra el último jugador celebrando y el short termina sin transición explícita de loop\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": null,\n  \"momento_s\": null\n },\n \"audio\": {\n  \"voz\": \"ninguna\",\n  \"idioma_y_acento\": null,\n  \"musica\": \"música trap/remix viral de fondo\",\n  \"efectos_de_sonido\": [\n   \"tic-tac de temporizador\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"letras grandes con borde y colores llamativos según la dificultad (azul, amarillo, rojo, morado)\",\n  \"idioma\": \"inglés y nombres propios\"\n },\n \"visual\": {\n  \"fondo\": \"cancha de fútbol con jugadas de partidos de Champions League\",\n  \"persona_real_en_camara\": false,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": true,\n  \"clips_de_partidos_o_transmisiones\": true,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"dinámico, estilo quiz de fútbol con efectos de color y temporizadores circulares\",\n  \"cambios_de_plano_aprox\": 8\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": true,\n \"que_hace_que_funcione\": [\n  \"escala de dificultad progresiva que engancha al espectador\",\n  \"tiempo justo de 3 segundos que genera urgencia y ganas de responder\",\n  \"uso de goles icónicos de jugadores famosos del Real Madrid\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"usar fotos estáticas con filtros de silueta de color sobre fondos de estadios o gráficos animados con plantillas de quiz de fútbol\"\n}"
+}

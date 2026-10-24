@@ -1,0 +1,22 @@
+{
+ "video_id": "JyxNhbW2vTk",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6244,
+  "candidatesTokenCount": 1002,
+  "totalTokenCount": 7246,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5461
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 61.0,\n \"formato\": \"adivinar el jugador a partir de fotos de infancia mientras patean al arco\",\n \"n_preguntas_o_rondas\": 4,\n \"gancho\": {\n  \"fin_s\": 5.0,\n  \"que_se_ve\": \"un niño pateando un balón hacia el arco de fútbol en una cancha cubierta\",\n  \"que_se_dice_o_texto\": \"Cada acierto el jugador queda más velho, rapaziada\",\n  \"tipo\": \"desafío\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 5.0,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"introducción al desafío de adivinar jugadores según fotos de infancia mientras intentan meter goles\"\n  },\n  {\n   \"inicio_s\": 5.0,\n   \"fin_s\": 24.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"primer participante patea penales y se revelan fotos de infancia de Donnarumma progresivamente\"\n  },\n  {\n   \"inicio_s\": 24.0,\n   \"fin_s\": 47.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"segundo participante patea y se revelan fotos de infancia de Marcelo\"\n  },\n  {\n   \"inicio_s\": 47.0,\n   \"fin_s\": 61.0,\n   \"parte\": \"cierre\",\n   \"descripcion\": \"tercer participante patea y se revelan fotos de infancia de Neymar\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 4.0,\n \"cuenta_regresiva\": {\n  \"hay\": false,\n  \"estilo\": null\n },\n \"revelacion\": {\n  \"como\": \"se muestra una foto actual o un montaje del jugador con su nombre escrito en texto\",\n  _efecto_sonido: \"aplausos o gritos de celebración\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"el video termina abruptamente tras el último tiro\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": null,\n  \"momento_s\": null\n },\n \"audio\": {\n  \"voz\": \"humana\",\n  \"idioma_y_acento\": \"portugués brasileño\",\n  \"musica\": \"de fondo\",\n  \"efectos_de_sonido\": [\n   \"aplausos\",\n   \"gritos\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"contador de aciertos sobre 5 con marco amarillo arriba en la pantalla\",\n  \"idioma\": \"portugués\"\n },\n \"visual\": {\n  \"fondo\": \"cancha de fútbol sala cubierta\",\n  \"persona_real_en_camara\": true,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": false,\n  \"clips_de_partidos_o_transmisiones\": false,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"dinámico, vlog de fútbol amateur con marcadores flotantes\",\n  \"cambios_de_plano_aprox\": 10\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": true,\n \"que_hace_que_funcione\": [\n  \"combina la interacción física (patear penales) con trivia visual\",\n  \"la progresión de fotos de infancia de menos a más reconocibles genera curiosidad\",\n  \"el carisma y las reacciones de los participantes y el narrador\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"usar una plantilla estática o animada con las fotos de infancia revelándose segundo a segundo contra reloj, sin necesidad de grabar en la cancha\"\n}"
+}

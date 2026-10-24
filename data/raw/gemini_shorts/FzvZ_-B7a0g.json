@@ -1,0 +1,117 @@
+{
+ "video_id": "FzvZ_-B7a0g",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6238,
+  "candidatesTokenCount": 1113,
+  "totalTokenCount": 7351,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5455
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 60.0,
+  "formato": "entrevista callejera de trivias rápidas de fútbol en cuenta regresiva",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "Dos entrevistadores en la calle con contador arriba (5 4 3 2 1)",
+   "que_se_dice_o_texto": "DAVID, dime los cinco mejores jugadores de este mundial",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío de los 5 mejores jugadores"
+   },
+   {
+    "inicio_s": 2.5,
+    "fin_s": 9.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: 5 jugadores del mundial"
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 18.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: 4 selecciones que vistan de rojo"
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 35.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: 3 jugadores que jugaron con Messi y Cristiano"
+   },
+   {
+    "inicio_s": 35.0,
+    "fin_s": 46.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4: 2 jugadores mejores que Lamine Yamal"
+   },
+   {
+    "inicio_s": 46.0,
+    "fin_s": 60.0,
+    "parte": "cierre",
+    "descripcion": "Ronda 5 fallida y despedida con frustración divertida"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 10.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "números del 5 al 1 en círculos negros con borde amarillo en la parte superior"
+  },
+  "revelacion": {
+   "como": "aparecen las fotos recortadas de los jugadores nombrados abajo en pantalla de forma secuencial",
+   "efecto_sonido": []
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El entrevistado no sabe la respuesta y reacciona frustrado diciendo que es imposible",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español de España",
+   "musica": "ninguna",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras gruesas blancas con borde negro y colores dinámicos (amarillo/rojo) al centro",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "calle urbana con edificios",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato vertical callejero tipo challenge de TikTok/Shorts",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Preguntas en cadena con dificultad creciente (5 a 1)",
+   "Interacción dinámica y reacciones genuinas en la calle",
+   "Edición visual con recortes de jugadores que acompañan el ritmo"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla dividida con un quiz interactivo o temporizador animado y fotos recortadas de los jugadores sobre fondo de estadios o colores lisos."
+ }
+}

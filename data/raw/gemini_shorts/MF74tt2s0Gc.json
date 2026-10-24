@@ -1,0 +1,102 @@
+{
+ "video_id": "MF74tt2s0Gc",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6254,
+  "candidatesTokenCount": 1038,
+  "totalTokenCount": 7292,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5471
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 60.0,
+  "formato": "adivinar jugador mediante secuencia de instrucciones de movimiento en grilla de cartas",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "Presentador gesticulando y señalando con confianza a la cámara, luego aparecen fotos flotantes de jugadores.",
+   "que_se_dice_o_texto": "VAS A PENSAR EN UNO DE ESTOS JUGADORES Y VOY A ADIVINAR CUAL VA A SER ELEGIDO. ASÍ ES, VOY A LEER TU MENTE.",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "El presentador plantea el desafío de leer la mente del espectador eligiendo un jugador."
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 55.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Serie de instrucciones paso a paso de movimiento sobre una cuadrícula con fotos de jugadores de fútbol."
+   },
+   {
+    "inicio_s": 55.0,
+    "fin_s": 60.0,
+    "parte": "revelacion",
+    "descripcion": "El presentador revela la carta elegida (Kylian Mbappé) y pregunta si adivinó."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 50.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Foto del jugador flotando con zoom y efecto de aparición sobre el pecho del presentador",
+   "efecto_sonido": "efecto de acierto/magia"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Pide suscripción y pregunta si adivinó antes de cerrar abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "DALE LIKE PARA SELECCIONARLO / SUSCRÍBETE Y COMPARTE",
+   "momento_s": 38.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español latino",
+   "musica": "música de tensión de fondo",
+   "efectos_de_sonido": [
+    "magia",
+    "transiciones"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes, blancas con borde negro y fondo dinámico en negrita",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "estudio con iluminación LED azul y rosa, estanterías y cuadros",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, estilo mentalista/mago de redes sociales con edición ágil y gráficos flotantes",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La ilusión de magia interactiva retiene al espectador hasta el final siguiendo los pasos.",
+   "Ritmo muy rápido que no da tiempo a aburrirse.",
+   "Llamados a la acción estratégicamente integrados con la narrativa."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer usando un fondo de estudio abstracto o una plantilla animada en Canva/After Effects con las cartas de los jugadores moviéndose según las instrucciones de voz en off."
+ }
+}

@@ -1,0 +1,110 @@
+{
+ "video_id": "p_Ria0qWEJo",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 13986,
+  "candidatesTokenCount": 998,
+  "totalTokenCount": 14984,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 13203
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 145.4,
+  "formato": "Juego de adivinar el jugador mediante palabras clave secretas entre amigos",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Cuatro jóvenes sentados en un banco al aire libre bajo una marquesina, con texto en pantalla indicando los roles.",
+   "que_se_dice_o_texto": "¿Quién empieza?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de los participantes y el juego."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 44.0,
+    "parte": "pregunta",
+    "descripcion": "Primera ronda de pistas y discusiones."
+   },
+   {
+    "inicio_s": 44.0,
+    "fin_s": 101.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda con pistas más sutiles y acusaciones."
+   },
+   {
+    "inicio_s": 101.0,
+    "fin_s": 145.4,
+    "parte": "cierre",
+    "descripcion": "Ronda final, revelación y risas entre los participantes."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Fotos de los jugadores editadas con elementos cómicos sobre la cabeza del impostor o mención verbal.",
+   "efectos_de_sonido": [
+    "risas"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se ríen de la palabra elegida y la reacción del impostor.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español de España",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "risas",
+    "aplausos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto en mayúsculas, blanco y rojo sobre la imagen indicando los roles ('NEYMAR', 'IMPOSTOR').",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Banco de suplentes al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Vlog de humor y juegos estilo reto en grupo",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La dinámica grupal y la tensión por descubrir al impostor.",
+   "Las pistas absurdas y humorísticas que generan reacciones genuinas.",
+   "El formato de juego rápido con la etiqueta de 'impostor' que engancha visualmente."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usando avatares animados o avatares de videojuegos con voces de IA o propias, mostrando carteles con las pistas en lugar de personas físicas."
+ }
+}

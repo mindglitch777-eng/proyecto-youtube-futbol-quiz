@@ -1,0 +1,95 @@
+{
+ "video_id": "6LXaZ4CFkoM",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 4437,
+  "candidatesTokenCount": 852,
+  "totalTokenCount": 5289,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3654
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 40.0,
+  "formato": "desafío de destreza y rapidez sobre mesa con dos personas",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Dos personas frente a una mesa llena de discos apilados con escudos de fútbol, comenzando a interactuar rápidamente con ellos",
+   "que_se_dice_o_texto": null,
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación inicial de los participantes y el set de discos con escudos."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 40.0,
+    "parte": "otro",
+    "descripcion": "Dinámica rápida donde ambos participantes mueven y organizan los discos por equipos mientras suena un pitido constante."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": "sonido de pitido/clic repetitivo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Terminan de ordenar los discos en pilas separadas y sonríen a la cámara.",
+   "loop": true,
+   "como_hace_el_loop": "El final muestra los discos ordenados listos para volver a repartirse al inicio del video.",
+   "cta": {
+    "en_video": null,
+    "momento_s": null
+   }
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "sonido de pitido o bip constante"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": false,
+   "subtitulos_de_voz": false,
+   "estilo": null,
+   "idioma": null
+  },
+  "visual": {
+   "fondo": "calle exterior con vegetación y monumentos al fondo",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video vertical casero, plano fijo",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "El ritmo acelerado guiado por el efecto de sonido constante.",
+   "La temática de fútbol con escudos reconocidos (Real Madrid, Barcelona, etc.).",
+   "La simpatía y velocidad de los participantes."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una perspectiva cenital de manos ordenando cartas o fichas de fútbol sobre una mesa con un cronómetro de fondo."
+ }
+}

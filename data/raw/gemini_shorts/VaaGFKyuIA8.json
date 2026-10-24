@@ -1,0 +1,102 @@
+{
+ "video_id": "VaaGFKyuIA8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6250,
+  "candidatesTokenCount": 977,
+  "totalTokenCount": 7227,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5467
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 60.0,
+  "formato": "adivinar top 10 de jugadores mejor pagados del mundo",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Entrevistador con micrófono frente a un niño en la calle, con billetes verdes flotando digitalmente y la cara de Cristiano Ronaldo.",
+   "que_se_dice_o_texto": "Can you name the ten highest paid players in the world cup?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de la consigna sobre los futbolistas mejor pagados."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 59.0,
+    "parte": "pregunta",
+    "descripcion": "El niño va nombrando jugadores y el entrevistador valida o rechaza en tiempo real."
+   },
+   {
+    "inicio_s": 59.0,
+    "fin_s": 60.0,
+    "parte": "cierre",
+    "descripcion": "Último acierto y final abrupto."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparición de la foto recortada del jugador con tilde verde o cruz roja y animación de sonido",
+   "efecto_sonido": "Ding de acierto y zumbido de error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El niño acierta el último jugador con ayuda de pistas y termina el video.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés con acento americano",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "acierto",
+    "error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Letras grandes en mayúsculas, color blanco con borde negro, centradas, estilo meme dinámico",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Exterior urbano con gente caminando en la calle",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Entrevista callejera con edición dinámica tipo TikTok con recortes PNG y efectos visuales",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Dinámica de trivia rápida con presión de tiempo y formato de lista del 1 al 10",
+   "Participación de un niño que genera empatía y demuestra conocimiento sorpresivo",
+   "Edición ágil con efectos visuales, fotos recortadas y respuestas instantáneas"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de pantalla dividida con iconos, una cuenta regresiva por ronda y efectos de sonido de acierto/error sobre un fondo animado en bucle."
+ }
+}

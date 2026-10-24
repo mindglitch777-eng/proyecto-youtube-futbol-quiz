@@ -1,0 +1,22 @@
+{
+ "video_id": "j_2XaUzegGM",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3160,
+  "candidatesTokenCount": 1148,
+  "totalTokenCount": 4308,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2377
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 26.5,\n \"formato\": \"nombrá un jugador con la letra o te mojás\",\n \"n_preguntas_o_rondas\": 5,\n \"gancho\": {\n  \"fin_s\": 1.5,\n  \"que_se_ve\": \"Tres personas paradas al borde de una pileta al aire libre, con letras sobre sus cabezas\",\n  \"que_se_dice_o_texto\": \"R\",\n  \"tipo\": \"acción/sorpresa\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 1.5,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"Presentación de la letra inicial R\"\n  },\n  {\n   \"inicio_s\": 1.5,\n   \"fin_s\": 2.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 1 con la letra R\"\n  },\n  {\n   \"inicio_s\": 2.5,\n   \"fin_s\": 5.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 2 con la letra M\"\n  },\n  {\n   \"inicio_s\": 5.5,\n   \"fin_s\": 8.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 3 con la letra A\"\n  },\n  {\n   \"inicio_s\": 8.5,\n   \"fin_s\": 13.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 4 con la letra Y\"\n  },\n  {\n   \"inicio_s\": 13.5,\n   \"fin_s\": 17.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 5 con la letra Z\"\n  },\n  {\n   \"inicio_s\": 17.5,\n   \"fin_s\": 21.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 6 con la letra G\"\n  },\n  {\n   \"inicio_s\": 21.0,\n   \"fin_s\": 26.5,\n   \"parte\": \"cierre\",\n   \"descripcion\": \"Ronda final D donde caen a la pileta\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 2.0,\n \"cuenta_regresiva\": {\n  \"hay\": false,\n  \"estilo\": null\n },\n \"revelacion\": {\n  \"como\": \"Los participantes gritan el nombre y aparece en pantalla con carteles animados\",\n  \"efecto_sonido\": \"gritos y sonidos divertidos\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"Pierden y caen de espaldas a la pileta\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": null,\n  \"momento_s\": null\n },\n \"audio\": {\n  \"voz\": \"humana\",\n  \"idioma_y_acento\": \"español\",\n  \"musica\": \"de fondo\",\n  \"efectos_de_sonido\": [\n   \"gritos\",\n   \"chapuzón\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"letras mayúsculas grandes con borde negro y fondo de color por jugador\",\n  \"idioma\": \"español\"\n },\n \"visual\": {\nplanos\": \"piso con luz natural brillante al aire libre\",\n   \"persona_real_en_camara\": true,\n   \"fotos_de_jugadores\": false,\n   \"escudos_o_logos\": false,\n   \"clips_de_partidos_o_transmisiones\": false,\n   \"imagenes_generadas_por_ia_o_dibujos\": false,\n   \"estilo_general\": \"dinámico tipo challenge de influencers\",\n   \"cambios_de_plano_aprox\": 6\n },\n \"dificultad_de_las_preguntas\": \"muy fácil\",\n \"invita_a_comentar_la_respuesta\": false,\n \"que_hace_que_funcione\": [\n  \"Formato físico con castigo (caer al agua)\",\n  \"Dinámica rápida de preguntas y respuestas\",\n  \"Interacción directa de los participantes en cámara\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Usar plantillas de preguntas tipo quiz con cuenta regresiva en pantalla y efectos de sonido de caída al final.\"\n}"
+}

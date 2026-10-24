@@ -1,0 +1,22 @@
+{
+ "video_id": "MkyldZta2Js",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6348,
+  "candidatesTokenCount": 962,
+  "totalTokenCount": 7310,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5565
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 61.0,\n \"formato\": \"adivinar futbolista del contrincante con pistas de cartas/grilla tipo Quién es Quién en Roblox\",\n \"n_preguntas_o_rondas\": 1,\n \"gancho\": {\n  \"fin_s\": 3.0,\n  \"que_se_ve\": \"Pantalla dividida con streamer arriba y grilla de fútbol abajo\",\n  \"que_se_dice_o_texto\": \"Adivina el jugador de fútbol antes que la otra persona\",\n  \"tipo\": \"pregunta directa\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 3.0,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"Presentación del desafío de adivinar al futbolista.\"\n  },\n  {\n   \"inicio_s\": 3.0,\n   \"fin_s\": 12.0,\n   \"parte\": \"transicion\",\n   \"descripcion\": \"Selección del personaje y llamado a suscribirse.\"\n  },\n  {\n   \"inicio_s\": 12.0,\n   \"fin_s\": 59.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Partida en tiempo real donde los jugadores revelan casilleros y adivinan el futbolista del rival.\"\n  },\n  {\n   \"inicio_s\": 59.0,\n   \"fin_s\": 61.0,\n   \"parte\": \"cierre\",\n   \"descripcion\": \"Derrota de la streamer y reacción final.\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": null,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"número en pantalla\"\n },\n \"revelacion\": {\n  \"como\": \"burbuja de pensamiento con foto del jugador\",\n  _efecto_sonido: null\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"La streamer pierde la partida y se lamenta de forma graciosa.\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": \"Suscribete si prefieres a Messi\",\n  \"momento_s\": 9.0\n },\n \"audio\": {\n  \"voz\": \"humana\",\n  \"idioma_y_acento\": \"español latino\",\n  \"musica\": \"de fondo\",\n  _efectos_de_sonido: []\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": true,\n  \"estilo\": \"texto grande con borde negro, fuente redondeada estilo gamer\",\n  \"idioma\": \"español\"\n },\n \"visual\": {\n  \"fondo\": \"juego de Roblox tipo Quién es Quién\",\n  \"persona_real_en_camara\": true,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": false,\n  \"clips_de_partidos_o_transmisiones\": false,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"stream de Roblox en pantalla dividida\",\n  \"cambios_de_plano_aprox\": 3\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": false,\n \"que_hace_que_funcione\": [\n  \"Dinámica de juego interactiva tipo 'Quién es Quién' que genera tensión\",\n  \"Reacciones expresivas en cámara de la streamer\",\n  \"Uso de avatares y memes de futbolistas (ej. Messi calvo)\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Usar un simulador en pantalla de Roblox o interfaz gráfica propia mostrando la partida con voces en off y efectos de grilla.\"\n}"
+}

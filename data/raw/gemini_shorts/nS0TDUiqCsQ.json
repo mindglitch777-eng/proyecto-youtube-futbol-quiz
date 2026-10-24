@@ -1,0 +1,99 @@
+{
+ "video_id": "nS0TDUiqCsQ",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5157,
+  "candidatesTokenCount": 917,
+  "totalTokenCount": 6074,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4374
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 49.0,
+  "formato": "adivinar jugador de fútbol en base a posición, país y club mediante chutes a los arcos",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 1.5,
+   "que_se_ve": "una carta dorada de EA Sports FC con silueta misteriosa, atributos y la portería con carteles de posición, país y club",
+   "que_se_dice_o_texto": "113 XXX",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 14.5,
+    "parte": "pregunta",
+    "descripcion": "ronda 1: jugador de 113 de media"
+   },
+   {
+    "inicio_s": 14.5,
+    "fin_s": 29.5,
+    "parte": "pregunta",
+    "descripcion": "ronda 2: jugador del PSG portugués"
+   },
+   {
+    "inicio_s": 29.5,
+    "fin_s": 49.0,
+    "parte": "pregunta",
+    "descripcion": "ronda 3: extremo izquierdo argentino"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "se destapa la carta con confeti y el nombre del jugador",
+   "efecto_sonido": "aplausos y efectos musicales festivos"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "festejo del último acierto y celebración con papel picado",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español argentino",
+   "musica": "de fondo alegre y dinámica",
+   "efectos_de_sonido": [
+    "gritos de frustración al errar",
+    "silbidos",
+    "festejos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras grandes blancas sobre marcos flotantes de cartas FUT",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, tipo challenge de fútbol con elementos flotantes de videojuegos",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "mezcla el fútbol real con la nostalgia de las cartas de Ultimate Team, la interacción de amigos y la tensión de los desafíos con pelota",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar animaciones en After Effects o CapCut con un diseño de carta FUT y disparos animados o simplemente un temporizador con cuenta atrás sobre la carta"
+ }
+}

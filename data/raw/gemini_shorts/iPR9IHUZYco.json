@@ -1,0 +1,112 @@
+{
+ "video_id": "iPR9IHUZYco",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 6345,
+  "candidatesTokenCount": 1026,
+  "totalTokenCount": 7371,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5562
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 62.0,
+  "formato": "adivinar si es impostor o Garnacho respondiendo preguntas de trivias de fútbol en formato 3 personas",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Tres personas en un estudio frente a una Copa del Mundo y arriba la foto de Garnacho con la leyenda Impostor / Garnacho / Garnacho.",
+   "que_se_dice_o_texto": "¿Ha sido campeón del mundo?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y primera pregunta sobre si Garnacho fue campeón del mundo."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 21.0,
+    "parte": "pregunta",
+    "descripcion": "Preguntas y debate si Garnacho tiene aura, goles espectaculares y la revelación con clip."
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 47.0,
+    "parte": "pregunta",
+    "descripcion": "Preguntas sobre goles de falta y humillar al Barça, mostrando clips de partidos."
+   },
+   {
+    "inicio_s": 47.0,
+    "fin_s": 62.0,
+    "parte": "revelacion",
+    "descripcion": "Pregunta final sobre la Premier League, el error de creer que era Arbeloa y cierre."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se muestra un clip de partido y risas de los participantes",
+   "efectos_de_sonido": [
+    "risas",
+    "aplausos"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Los participantes celebran y se ríen de la confusión final.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español de España",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "risas",
+    "aplausos",
+    "gritos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con fondo negro y rojo en la parte superior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "estudio rojo con un atril y la Copa del Mundo en exhibición",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico con personas en estudio y clips de fútbol intercalados",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La dinámica humorística entre tres creadores conocidos",
+   "La integración de clips reales de jugadas para ilustrar el debate",
+   "El giro cómico final con la confusión de Arbeloa"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar capturas de pantalla de los tweets o estadísticas del jugador con voz en off de debate tipo quiz."
+ }
+}

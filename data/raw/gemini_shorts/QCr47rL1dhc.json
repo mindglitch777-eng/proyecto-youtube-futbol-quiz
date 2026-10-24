@@ -1,0 +1,117 @@
+{
+ "video_id": "QCr47rL1dhc",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2334,
+  "candidatesTokenCount": 1109,
+  "totalTokenCount": 3443,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1551
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.5,
+  "formato": "adivinar el jugador de fútbol entre 2 opciones",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un gol de un jugador recortado en color verde sobre fondo de partido de fútbol",
+   "que_se_dice_o_texto": "GUESS THE PLAYER",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.5,
+    "parte": "pregunta",
+    "descripcion": "Jugada animada del primer jugador por adivinar con la silueta verde."
+   },
+   {
+    "inicio_s": 3.5,
+    "fin_s": 6.8,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva de 3 segundos con dos opciones de foto (Vinicius vs Casemiro o similar)."
+   },
+   {
+    "inicio_s": 6.8,
+    "fin_s": 7.7,
+    "parte": "revelacion",
+    "descripcion": "Se muestra la celebración real de Vinicius Jr."
+   },
+   {
+    "inicio_s": 7.7,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "Jugada animada del segundo jugador con silueta azul."
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 15.8,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva de 3 segundos con dos opciones de foto (Dembélé vs Mbappé)."
+   },
+   {
+    "inicio_s": 15.8,
+    "fin_s": 17.5,
+    "parte": "revelacion",
+    "descripcion": "Se muestra la celebración de Ousmane Dembélé."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número grande decreciente y barra de tiempo"
+  },
+  "revelacion": {
+   "como": "corte a video real del jugador celebrando",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video corta abruptamente tras la segunda revelación.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "LIKE / SUBSCRIBE",
+   "momento_s": 4.5
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "tendencia/viral con ritmo acelerado",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras gruesas con borde y colores vivos, centradas",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "partidos de fútbol reales",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "edición dinámica estilo trivia de fútbol con recortes animados",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Uso de animaciones coloridas sobre partidos reales que generan intriga visual instantánea",
+   "Dinámica de 1vs2 opciones que facilita la participación rápida del espectador",
+   "Ritmo ágil sin tiempos muertos con música en tendencia"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar capturas del FIFA/EA Sports FC con siluetas de colores y fotos de los jugadores recortadas sobre fondo verde, sin usar clips oficiales de televisión."
+ }
+}

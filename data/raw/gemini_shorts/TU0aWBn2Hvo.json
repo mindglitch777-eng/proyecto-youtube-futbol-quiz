@@ -1,0 +1,135 @@
+{
+ "video_id": "TU0aWBn2Hvo",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 5053,
+  "candidatesTokenCount": 1424,
+  "totalTokenCount": 6965,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4270
+   }
+  ],
+  "thoughtsTokenCount": 488,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 47.0,
+  "formato": "Adivinar al futbolista recortado/modificado a partir de una foto distorsionada",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "KSI le muestra a Céline una foto de Messi levantando la Copa del Mundo pero con el rostro/pelo cambiado y le pregunta quién es.",
+   "que_se_dice_o_texto": "Alright Celine, who is that?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "KSI presenta la primera imagen tapada a Céline."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "Céline intenta adivinar y duda entre Neymar y Messi debido al cabello y el trofeo."
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 19.0,
+    "parte": "revelacion",
+    "descripcion": "Se revela la cara completa editada de Cristiano Ronaldo levantando la Copa del Mundo."
+   },
+   {
+    "inicio_s": 19.0,
+    "fin_s": 23.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: Céline dice un nombre al azar (Yamal) creyendo que es falso."
+   },
+   {
+    "inicio_s": 23.0,
+    "fin_s": 30.0,
+    "parte": "revelacion",
+    "descripcion": "Resulta ser Yamal (montado con el pelo de Haaland) y ambos reaccionan con sorpresa."
+   },
+   {
+    "inicio_s": 31.0,
+    "fin_s": 36.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda: Muestran solo un recorte de la frente/pelo, Céline dice Kane."
+   },
+   {
+    "inicio_s": 36.0,
+    "fin_s": 38.0,
+    "parte": "revelacion",
+    "descripcion": "Se revela que es Mbappé y se ríen."
+   },
+   {
+    "inicio_s": 39.0,
+    "fin_s": 44.0,
+    "parte": "pregunta",
+    "descripcion": "Cuarta ronda: Muestran el corte superior de la cabeza, Céline responde Vini Jr."
+   },
+   {
+    "inicio_s": 45.0,
+    "fin_s": 47.0,
+    "parte": "revelacion",
+    "descripcion": "Se revela la cara completa de Ibrahimovic."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Se despliega la imagen completa editada de cara entera con un efecto visual e icono del jugador en la parte superior.",
+   "efecto_sonido": "Efecto de revelación/campanada (ding) al acertar o acertijo divertido"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Revelan a Ibrahimovic y termina abruptamente con risas.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés (acento británico / internacional)",
+   "musica": "Música cómica suave de fondo",
+   "efectos_de_sonido": [
+    "Ding de respuesta correcta",
+    "Risas de fondo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Subtítulos amarillos y blancos dinámicos en el centro inferior",
+   "idioma": "en"
+  },
+  "visual": {
+   "fondo": "Estudio blanco minimalista",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Entretenimiento en estudio con creadores de contenido usando camisetas de fútbol y un juego interactivo en pantalla.",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La química y reacciones de los creadores (KSI y Céline), la confusión graciosa creada por las fotos manipuladas con Photoshop (combina pelo/cuerpo de un jugador con la cara de otro) y el ritmo rápido del quiz.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede usar una plantilla en formato vertical con una barra que cubra parte del rostro o un Photoshop divertido de dos futbolistas fusionados, dejando un temporizador de 3 a 5 segundos para que los usuarios intenten adivinar en los comentarios antes de revelar la foto completa."
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "video_id": "HBD87JNuST0",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3986,
+  "candidatesTokenCount": 915,
+  "totalTokenCount": 4901,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3203
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 35.6,
+  "formato": "entrevista emotiva a fanática de Neymar que termina en sorpresa",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 9.0,
+   "que_se_ve": "Steve Harvey preguntándole a una niña llorando por Neymar, reacción del público",
+   "que_se_dice_o_texto": "SO NEYMAR IS YOUR FAVORITE SOCCER PLAYER? / SOMETIMES I CRY",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 9.0,
+    "parte": "gancho",
+    "descripcion": "Steve Harvey entrevista a una niña fanática de Neymar que se emociona hasta las lágrimas."
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 24.0,
+    "parte": "transicion",
+    "descripcion": "La niña se sienta en el regazo de Steve Harvey y hablan sobre si conoce a Neymar."
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 35.6,
+    "parte": "revelacion",
+    "descripcion": "Sorprenden a la niña con un video mensaje de Neymar y un compilatorio de fotos juntos."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "mensaje en video de Neymar en pantalla gigante y abrazo posterior",
+   "efecto_sonido": "aplausos del público"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "La niña aparece abrazando a Neymar en una foto con la canción de fondo.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés (entrevista) y portugués (mensaje de Neymar)",
+   "musica": "canción emotiva de fondo tipo tendencia",
+   "efectos_de_sonido": [
+    "aplausos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "texto dinámico centrado, blanco con bordes negros o colores según el contexto",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "set de programa de televisión / clips de video",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato de talk show emotivo con subtitulado dinámico de shorts",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Emoción genuina de la niña al principio que engancha al espectador",
+   "El plot twist de la sorpresa de Neymar genera un cierre sumamente emotivo y satisfactorio"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": null
+ }
+}
