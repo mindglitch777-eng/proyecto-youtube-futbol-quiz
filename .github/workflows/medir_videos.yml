@@ -4,9 +4,11 @@ name: Medir shorts (cortes, volumen, hoja de contacto)
 # Lee la lista de ids de data/raw/gemini_shorts_targets.json (o la que pongas en "lista").
 # Al repo solo se suben métricas y hojas de contacto; los videos se borran en el runner.
 
+# ESTADO (24-oct-2026): YouTube bloquea la descarga desde GitHub ("Sign in to confirm
+# you're not a bot"). Solo andaría pasando cookies de una cuenta de Google, lo que
+# arriesga esa cuenta: NO recomendado. Queda como herramienta por si cambia.
+
 on:
-  push:
-    paths: [research/medir_ids.json]
   workflow_dispatch:
     inputs:
       lista:
@@ -25,7 +27,7 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg && pip install -q yt-dlp
-      - run: python3 research/medir_video.py --lista "${{ inputs.lista || 'research/medir_ids.json' }}"
+      - run: python3 research/medir_video.py --lista "${{ inputs.lista }}"
       - name: Guardar resultados
         run: |
           git config user.name "github-actions[bot]"

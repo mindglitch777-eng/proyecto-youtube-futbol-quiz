@@ -1,0 +1,122 @@
+{
+ "video_id": "p32D_d-15gE",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2505,
+  "candidatesTokenCount": 1137,
+  "totalTokenCount": 3642,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1722
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 18.0,
+  "formato": "adivinar el jugador de fútbol a partir de una foto de su peinado",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "joven con camiseta de Brasil hablando a cámara",
+   "que_se_dice_o_texto": "Adivina al jugador de Futbol",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentación del reto"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 6.0,
+    "parte": "pregunta",
+    "descripcion": "pregunta 1: foto de peinado de Mbappé"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 7.0,
+    "parte": "revelacion",
+    "descripcion": "revelación de Mbappé"
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 11.0,
+    "parte": "pregunta",
+    "descripcion": "pregunta 2: foto de peinado de Mbappé"
+   },
+   {
+    "inicio_s": 11.0,
+    "fin_s": 12.0,
+    "parte": "revelacion",
+    "descripcion": "revelación de Mbappé"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "pregunta 3: foto de peinado de Bellingham"
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 18.0,
+    "parte": "revelacion",
+    "descripcion": "revelación de Bellingham y cierre"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número grande en el centro de la pantalla con sonido de tic-tac"
+  },
+  "revelacion": {
+   "como": "la foto del jugador aparece sobre la cabeza del presentador",
+   "efecto_sonido": "sonido de victoria/acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el presentador celebra y el video termina abruptamente",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento neutro/latino",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "tic-tac de cuenta regresiva",
+    "sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde rojo, centrado",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "habitación interior con pared lisa",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato vertical tipo selfie",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "dinámica rápida, uso de elementos visuales reconocibles (peinados) y la interacción directa con el espectador",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla con fondo de estadio, mostrar solo la foto del peinado en el centro y usar una voz en off para narrar la cuenta regresiva"
+ }
+}

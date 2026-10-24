@@ -1,0 +1,117 @@
+{
+ "video_id": "1MYDnajHCY4",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 10883,
+  "candidatesTokenCount": 933,
+  "totalTokenCount": 11816,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 10100
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 151.3,
+  "formato": "adivinar jugador de fútbol mediante pistas (liga, país, equipo, posición, número)",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 1.2,
+   "que_se_ve": "dos creadores hablando y debajo un presentador con camiseta de Boca frente a una cuadrícula de pistas",
+   "que_se_dice_o_texto": "Tus jugadores Dembélé",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.2,
+    "parte": "gancho",
+    "descripcion": "presentación de la dinámica y primer jugador"
+   },
+   {
+    "inicio_s": 1.2,
+    "fin_s": 9.0,
+    "parte": "pregunta",
+    "descripcion": "adivinar a Dembélé con pistas erróneas iniciales"
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 25.0,
+    "parte": "pregunta",
+    "descripcion": "segunda ronda con Florian Wirtz"
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 45.0,
+    "parte": "pregunta",
+    "descripcion": "tercera ronda con Joao Pedro"
+   },
+   {
+    "inicio_s": 45.0,
+    "fin_s": 113.0,
+    "parte": "pregunta",
+    "descripcion": "cuarta ronda con Kai Havertz y Richarlison"
+   },
+   {
+    "inicio_s": 113.0,
+    "fin_s": 151.3,
+    "parte": "cierre",
+    "descripcion": "última ronda con Raúl Jiménez y festejo final"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 8.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "aparece la foto del jugador sobrepuestas en pantalla y se marcan en verde/rojo las pistas",
+   "efecto_sonido": "efectos de acierto/fallo y reacciones"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "celebran el último acierto y hacen un corazón con las manos",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español neutro/latino",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "aplausos",
+    "zumbidos de error",
+    "aciertos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "negro con bordes blancos y recuadros de colores",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "estudio con panel de pistas de fútbol",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico y entretenido con interacción entre varios creadores",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la dinámica interactiva tipo Wordle futbolero, las reacciones divertidas de los participantes y el ritmo constante",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una plantilla estilo Wordle con animaciones de pistas verdes y rojas sobre fotos estáticas de jugadores"
+ }
+}

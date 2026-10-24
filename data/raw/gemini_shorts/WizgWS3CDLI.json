@@ -1,0 +1,92 @@
+{
+ "video_id": "WizgWS3CDLI",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 10515,
+  "candidatesTokenCount": 840,
+  "totalTokenCount": 11355,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 9732
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 147.0,
+  "formato": "video explicativo sobre curiosidades de estadios de la NFL y la Copa Mundial",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "grúa quitando la letra H de un estadio",
+   "que_se_dice_o_texto": "Why are the Kansas City Chiefs being forced to change the name of their stadium?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "pregunta sobre el cambio de nombre del estadio"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 147.0,
+    "parte": "otro",
+    "descripcion": "explicación detallada sobre las políticas de la FIFA y los estadios de la NFL"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el presentador termina su reflexión y el video se corta",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés, acento estadounidense",
+   "musica": "de fondo, ritmo constante y serio",
+   "efectos_de_sonido": [
+    "sonido de grúa",
+    "sonido de micrófono"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "blanco con contorno negro, centrado",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "mezcla de clips de estadios, tomas de drones y presentador hablando",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "documental corto informativo",
+   "cambios_de_plano_aprox": 25
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "el gancho visual impactante, el ritmo rápido de edición y la curiosidad sobre un tema de actualidad deportiva",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar imágenes de archivo de estadios, gráficos animados para explicar las reglas de la FIFA y una voz en off con subtítulos dinámicos"
+ }
+}

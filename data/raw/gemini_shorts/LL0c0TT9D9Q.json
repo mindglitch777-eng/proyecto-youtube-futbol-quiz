@@ -1,0 +1,97 @@
+{
+ "video_id": "LL0c0TT9D9Q",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5244,
+  "candidatesTokenCount": 1005,
+  "totalTokenCount": 6249,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4461
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 50.0,
+  "formato": "tres creadores compiten eligiendo o adivinando estadísticas de tres delanteros (Haaland, Kane, Aubameyang) en una grilla interactiva",
+  "n_preguntas_o_rondas": 9,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "Tres personas en un estudio con micrófonos y una tabla roja con fichas de delanteros en pantalla.",
+   "que_se_dice_o_texto": "My striker is Haaland / Harry Kane / Aubameyang",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "Presentación rápida de los tres delanteros elegidos por cada participante."
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 50.0,
+    "parte": "revelacion",
+    "descripcion": "Sucesión de rondas donde cada participante acierta o falla en la categoría pedida (goles, asistencias, faltas, etc.) rellenando la grilla."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparece la foto del jugador en la celda correspondiente de la tabla roja con efectos de sonido.",
+   "efecto_sonido": "gritos, risas, sonido de acierto/error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Discuten sobre un dato estadístico fallido de Aubameyang.",
+   "loop": false,
+   "como_hace_el_loop": "no aplica"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés con acentos variados (británico/afrodescendiente)",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "gritos de festejo",
+    "risas",
+    "bocinas/efectos de concurso"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes en mayúsculas, color amarillo y blanco con borde negro, estilo meme/podcast dinámico al centro",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "estudio de podcast con rejas y camisetas colgadas en la pared",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato vertical de podcast o stream con tres participantes y una grilla interactiva superpuesta",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "La dinámica grupal con reacciones genuinas, gritos y cargadas entre los participantes",
+   "El uso de una tabla visual interactiva que mantiene al espectador atento a quién gana cada ronda",
+   "La combinación de futbolistas muy conocidos (Haaland, Kane, Aubameyang) con estadísticas específicas"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede replicar usando una plantilla de grilla estilo 'Grid' o 'Trivia' animada en After Effects o Canva, voz en off propia o de IA relatando el juego, y fotos de los jugadores con efectos de sonido."
+ }
+}

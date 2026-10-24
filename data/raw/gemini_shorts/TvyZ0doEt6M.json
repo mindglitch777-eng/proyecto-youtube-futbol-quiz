@@ -1,0 +1,97 @@
+{
+ "video_id": "TvyZ0doEt6M",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3069,
+  "candidatesTokenCount": 918,
+  "totalTokenCount": 3987,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2286
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 25.0,
+  "formato": "adivinar el estadio de la Premier League construido con piezas de LEGO",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "una base gris de LEGO con el título 'GUESS MY MINI LEGO Premier League STADIUM'",
+   "que_se_dice_o_texto": "GUESS MY MINI LEGO Premier League STADIUM",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación del desafío con el título en pantalla"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 24.0,
+    "parte": "revelacion",
+    "descripcion": "secuencia de stop-motion donde se construye el estadio pieza por pieza"
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 25.0,
+    "parte": "cierre",
+    "descripcion": "el estadio terminado se queda estático"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "la construcción progresiva revela el estadio",
+   "efecto_sonido": "sonido de piezas de LEGO encajando"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina con el estadio construido",
+   "loop": true,
+   "como_hace_el_loop": "el último frame es idéntico al primero, permitiendo una transición fluida"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "sonido de piezas de LEGO encajando"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "fuente sans-serif, color negro y amarillo, parte superior",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "gris neutro (base de LEGO)",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "stop-motion minimalista",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "el formato visualmente satisfactorio (ASMR visual), la curiosidad por adivinar el estadio y la brevedad del video",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar un software de modelado 3D (como Studio 2.0 para LEGO) para crear una animación de construcción de cualquier estadio famoso y exportar el video"
+ }
+}

@@ -1,10 +1,10 @@
 {
  "video_id": "D4H8viFfoNM",
- "modelo": "gemini-3.5-flash-lite",
+ "modelo": "gemini-3.1-flash-lite",
  "uso": {
   "promptTokenCount": 5800,
-  "candidatesTokenCount": 980,
-  "totalTokenCount": 6780,
+  "candidatesTokenCount": 961,
+  "totalTokenCount": 6761,
   "promptTokensDetails": [
    {
     "modality": "VIDEO",
@@ -17,6 +17,82 @@
   ],
   "serviceTier": "standard"
  },
- "analisis": null,
- "crudo": "{\n \"duracion_s\": 55.0,\n \"formato\": \"Adivinar la dieta de un jugador famoso mostrando cada comida paso a paso\",\n \"n_preguntas_o_rondas\": 1,\n \"gancho\": {\n  \"fin_s\": 3.3,\n  \"que_se_ve\": \"Un creador apuntando a fotos de jugadores de fútbol en una pantalla (Ronaldo, Yamal, Mbappé, Messi)\",\n  \"que_se_dice_o_texto\": \"Seguiré la dieta de un famoso jugador de fútbol, ¿pero puedes adivinar quién es?\",\n  \"tipo\": \"desafío ('solo el 1% sabe')\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 3.3,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"El presentador plantea el reto de adivinar el jugador cuya dieta va a seguir.\"\n  },\n  {\n   \"inicio_s\": 3.3,\n   \"fin_s\": 52.0,\n   \"parte\": \"otro\",\n   \"descripcion\": \"Desarrollo de las 6 comidas de la dieta del jugador a lo largo del día.\"\n  },\n  {\n   \"inicio_s\": 52.0,\n   \"fin_s\": 55.0,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"Revelación final del jugador (Kylian Mbappé).\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": null,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"barra numérica inferior del 1 al 6 verde\"\n },\n \"revelacion\": {\n  \"como\": \"Se muestra al jugador en la laptop viendo un partido y el presentador lo nombra\",\n  _efecto_sonido: \"ninguno\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"El presentador afirma haber terminado la dieta de Mbappé de 3100 calorías.\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": null,\n  \"momento_s\": null\n },\n \"audio\": {\n  \"voz\": \"humana\",\n  \"idioma_y_acento\": \"español neutro\",\n  \"musica\": \"de fondo\",\n  \"efectos_de_sonido\": [\n   \"sonido de tragar\",\n   \"sonido de agua\",\n   \"sonidos de entrenamiento\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": true,\n  \"estilo\": \"letras grandes, blancas y amarillas con contorno negro en el centro\",\n  \"idioma\": \"español\"\n },\n \"visual\": {\n  \"fondo\": \"estudio con estanterías y cocina\",\n  \"persona_real_en_camara\": true,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": false,\n  \"clips_de_partidos_o_transmisiones\": true,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"dinámico, vlog de retos fitness y comida\",\n  \"cambios_de_plano_aprox\": 20\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": true,\n \"que_hace_que_funcione\": [\n  \"Formato interactivo de adivinanza al inicio\",\n  \"Ritmo dinámico mostrando el proceso real de comer y entrenar\",\n  \"Curiosidad por conocer las estrictas dietas de deportistas de élite\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Usar imágenes de stock de comida, iconos de jugadores en pantalla dividida y voz en off relatando las comidas con una barra de progreso numérica.\"\n}"
+ "analisis": {
+  "duracion_s": 55.0,
+  "formato": "El creador intenta seguir la dieta de un futbolista famoso y desafía a la audiencia a adivinar quién es.",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 3.5,
+   "que_se_ve": "El creador señala a fotos de Cristiano Ronaldo, Messi y Mbappé mientras muestra platos de comida.",
+   "que_se_dice_o_texto": "Seguiré la dieta de un famoso jugador de fútbol, pero ¿puedes adivinar quién es?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío y los candidatos."
+   },
+   {
+    "inicio_s": 3.5,
+    "fin_s": 52.0,
+    "parte": "pista",
+    "descripcion": "El creador muestra y consume las 5 comidas de la dieta del futbolista."
+   },
+   {
+    "inicio_s": 52.0,
+    "fin_s": 55.0,
+    "parte": "revelacion",
+    "descripcion": "El creador revela que la dieta es de Kylian Mbappé."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra"
+  },
+  "revelacion": {
+   "como": "El creador muestra un clip de Mbappé en su laptop y dice su nombre.",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El creador termina de hablar y el video finaliza.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español latino",
+   "musica": "de fondo, ritmo dinámico",
+   "efectos_de_sonido": [
+    "sonidos de masticación",
+    "sonido de cubiertos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "letras grandes, blancas con borde negro, centro de pantalla",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "estudio con estantes de suplementos",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "vlog de estilo de vida y fitness",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "El formato de 'adivina el personaje' genera curiosidad, el ritmo es rápido y el contenido es visualmente atractivo al mostrar comida real.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Podrías usar imágenes de stock de los platos de comida, una voz en off narrando la dieta y gráficos en pantalla para mostrar las opciones de jugadores, revelando al final con una foto del futbolista."
+ }
 }

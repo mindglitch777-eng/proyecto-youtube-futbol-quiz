@@ -1,0 +1,22 @@
+{
+ "video_id": "d4qPvaD6jKs",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2231,
+  "candidatesTokenCount": 988,
+  "totalTokenCount": 3219,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1448
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 15.0,\n \"formato\": \"adivinar el jugador correcto entre múltiples variantes de IA o disfraces (Yamal, Ronaldo, Haaland)\",\n \"n_preguntas_o_rondas\": 3,\n \"gancho\": {\n  \"fin_s\": 1.0,\n  \"que_se_ve\": \"Grilla con 25 caras modificadas de Lamine Yamal sobre fondo verde de cancha.\",\n  \"que_se_dice_o_texto\": \"FIND YAMAL\",\n  \"tipo\": \"desafío ('solo el 1% sabe')\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 4.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 1: Encontrar a Yamal en una grilla de 25 variaciones.\"\n  },\n  {\n   \"inicio_s\": 4.5,\n   \"fin_s\": 9.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 2: Encontrar a Ronaldo en una grilla de 25 variaciones.\"\n  },\n  {\n   \"inicio_s\": 9.5,\n   \"fin_s\": 15.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 3: Encontrar a Haaland en una grilla de 25 variaciones.\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 4.5,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"barra verde inferior que se achica con sonido de tic-tac\"\n },\n \"revelacion\": {\n  \"como\": \"círculo rojo dibujado a mano sobre la opción correcta\",\n  _sonido: \"efecto de acierto o campana\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"Termina de golpe tras mostrar la última respuesta con botón de suscripción.\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": \"Botón animado de suscripción (LIKE SUBSCRIBE)\",\n  \"momento_s\": 10.0\n },\n \"audio\": {\n  \"voz\": \"ninguna\",\n  \"idioma_y_acento\": null,\n  \"musica\": \"música electrónica rítmica y viral de fondo\",\n  \"efectos_de_sonido\": [\n   \"tic-tac de cuenta regresiva\",\n   \"sonido de acierto\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"letras mayúsculas gruesas blancas con borde negro arriba\",\n  \"idioma\": \"inglés\"\n },\n \"visual\": {\n  \"fondo\": \"césped de cancha de fútbol\",\n  \"persona_real_en_camara\": false,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": false,\n  \"clips_de_partidos_o_transmisiones\": false,\n  \"imagenes_generadas_por_ia_o_dibujos\": true,\n  \"estilo_general\": \"grilla de imágenes editadas con filtros graciosos de IA o accesorios sobre jugadores famosos\",\n  \"cambios_de_plano_aprox\": 3\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": false,\n \"que_hace_que_funcione\": [\n  \"dinámica rápida de búsqueda visual que atrapa la atención al instante\",\n  \"uso de jugadores súper conocidos con versiones divertidas y estrambóticas\",\n  \"cuenta regresiva visual muy clara que genera urgencia\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Usar Canva o CapCut para armar grillas con fotos de futbolistas modificadas con gorros o accesorios de IA y agregar una barra de tiempo abajo.\"\n}"
+}

@@ -1,0 +1,116 @@
+{
+ "video_id": "V5jp-7fBaVk",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4879,
+  "candidatesTokenCount": 1150,
+  "totalTokenCount": 6029,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4096
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 45.0,
+  "formato": "truco de magia mental interactivo con banderas de países",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 4.0,
+   "que_se_ve": "el presentador hablando a cámara con una cuadrícula de banderas de fondo",
+   "que_se_dice_o_texto": "VAS A PENSAR EN UNA SELECCIÓN",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "gancho",
+    "descripcion": "el presentador introduce el reto de adivinar el país en el que el espectador piensa"
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "se pide al espectador que elija un país de la cuadrícula y lo comente"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 22.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "se instruye al espectador para identificar la última letra del país elegido"
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 32.0,
+    "parte": "pista",
+    "descripcion": "se muestra una pantalla con letras de colores y se pide recordar el color de la letra correspondiente"
+   },
+   {
+    "inicio_s": 32.0,
+    "fin_s": 42.0,
+    "parte": "transicion",
+    "descripcion": "el presentador genera tensión antes de revelar el resultado"
+   },
+   {
+    "inicio_s": 42.0,
+    "fin_s": 45.0,
+    "parte": "revelacion",
+    "descripcion": "aparece un círculo verde en pantalla como respuesta"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 10.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "aparece un círculo verde flotando en el centro de la pantalla",
+   "efecto_sonido": "sonido de 'ding' o efecto mágico"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el presentador pregunta si adivinó y el video termina",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "coméntalo para elegirlo, dale like al video y suscríbete",
+   "momento_s": 12.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español latino",
+   "musica": "música de fondo de misterio/tensión",
+   "efectos_de_sonido": [
+    "sonido de magia",
+    "sonido de confirmación"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras blancas grandes con contorno, centradas",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "estudio con iluminación morada y suelo de tablero de ajedrez",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, estilo influencer de retos",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la interactividad directa con el espectador, el uso de un truco de magia mental que genera curiosidad y la estructura clara de pasos a seguir",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una voz en off con una pantalla de grabación que muestre la cuadrícula de banderas y las letras, guiando al espectador con texto en pantalla"
+ }
+}

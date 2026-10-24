@@ -1,0 +1,117 @@
+{
+ "video_id": "zFkydKXpTUU",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2333,
+  "candidatesTokenCount": 912,
+  "totalTokenCount": 3245,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1550
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.5,
+  "formato": "adivinar el portero según su nombre en pantalla mientras hace una atajada",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.5,
+   "que_se_ve": "un arquero con camiseta a rayas atajando un tiro al arco",
+   "que_se_dice_o_texto": "ADIVINA EL PORTERO JAVI",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.5,
+    "parte": "revelacion",
+    "descripcion": "Ronda 1: Javi atajando."
+   },
+   {
+    "inicio_s": 3.5,
+    "fin_s": 6.8,
+    "parte": "revelacion",
+    "descripcion": "Ronda 2: Gómez atajando."
+   },
+   {
+    "inicio_s": 6.8,
+    "fin_s": 10.0,
+    "parte": "revelacion",
+    "descripcion": "Ronda 3: Robledo atajando."
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 13.5,
+    "parte": "revelacion",
+    "descripcion": "Ronda 4: David atajando."
+   },
+   {
+    "inicio_s": 13.5,
+    "fin_s": 17.5,
+    "parte": "revelacion",
+    "descripcion": "Ronda 5: Dani atajando."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el nombre aparece fijo en la parte superior central mientras ocurre la acción",
+   "efectos_de_sonido": [
+    "golpe de balón",
+    "refuerzo de sonido"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "termina la última atajada de Dani cortando abruptamente",
+   "loop": true,
+   "como_hace_el_loop": "el corte vuelve al primer arquero Javi con el mismo encuadre"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "ninguno",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "impacto de pelota",
+    "sonido ambiente de cancha"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco en mayúsculas con fondo negro o borde en la parte superior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "cancha de césped sintético con arco de fútbol y red",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato vertical tipo POV/challenge de arqueros",
+   "cambios_de_plano_aprox": 5
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "dinámica rápida de atajadas continuas",
+   "elemento interactivo de adivinanza visual",
+   "repetición fluida tipo loop"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar fotos de arqueros famosos con efecto borroso o pixelado que se revelan tras unos segundos"
+ }
+}

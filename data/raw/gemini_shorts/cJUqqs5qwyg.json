@@ -1,0 +1,115 @@
+{
+ "video_id": "cJUqqs5qwyg",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5072,
+  "candidatesTokenCount": 1078,
+  "totalTokenCount": 6150,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4289
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 47.9,
+  "formato": "adivinar jugador por su trayectoria de clubes",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 3.4,
+   "que_se_ve": "Tres creadores sentados frente a una mesa con un pulsador rojo, escudos del Barcelona y Brighton arriba.",
+   "que_se_dice_o_texto": "Adivina el jugador por su trayectoria",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.4,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y primera ronda (Barcelona -> Brighton)."
+   },
+   {
+    "inicio_s": 3.4,
+    "fin_s": 11.5,
+    "parte": "revelacion",
+    "descripcion": "Aciertan Ansu Fati, celebran y muestran su trayectoria completa en gráficos."
+   },
+   {
+    "inicio_s": 11.5,
+    "fin_s": 27.2,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: trayectoria desde el Club América hasta Fulham."
+   },
+   {
+    "inicio_s": 27.2,
+    "fin_s": 36.1,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda: Dinamo Zagreb -> Leipzig -> Manchester City."
+   },
+   {
+    "inicio_s": 36.1,
+    "fin_s": 47.9,
+    "parte": "cierre",
+    "descripcion": "Cuarta ronda, última revelación y cierre."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El jugador pulsa el botón, aparece la foto animada del jugador y su nombre en el centro inferior con un efecto de sonido",
+   "efecto_sonido": "bocina / zumbido de acierto o error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El participante acierta Tonali, se ríen y el video termina abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español de España",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "bocina de pulsador",
+    "gritos de celebración",
+    "efectos de error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, grande y centrado en la parte superior e inferior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "interior de una casa con mesa, lámpara colgante y puerta de fondo",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato de quiz dinámico con creadores de contenido compitiendo",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Dinámica de competencia entre amigos con reacciones genuinas y humor.",
+   "Ritmo rápido en la sucesión de pistas de escudos.",
+   "Visuales claros con la evolución de la trayectoria por años."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla con cuenta regresiva, mostrando los escudos de los clubes secuencialmente con animaciones y pistas de audio."
+ }
+}

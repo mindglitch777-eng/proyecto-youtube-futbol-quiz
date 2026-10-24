@@ -1,0 +1,111 @@
+{
+ "video_id": "T65b98OuG6g",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7254,
+  "candidatesTokenCount": 1061,
+  "totalTokenCount": 8315,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6471
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 72.3,
+  "formato": "adivinar futbolistas de infancia pateando balones a la travesía",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un joven a punto de patear una pelota hacia el travesaño en una cancha cubierta, con tres fotos de niños arriba.",
+   "que_se_dice_o_texto": "A cada acierto na trave, o jogador vai ficando mais velho.",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío de pegarle al travesaño para revelar jugadores de infancia."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 24.0,
+    "parte": "revelacion",
+    "descripcion": "El jugador patea, acierta y revela al primer jugador (Haaland)."
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 49.0,
+    "parte": "revelacion",
+    "descripcion": "Segundo turno de disparos, aciertos y revelación del segundo jugador (Paulo Dybala)."
+   },
+   {
+    "inicio_s": 49.0,
+    "fin_s": 72.3,
+    "parte": "revelacion",
+    "descripcion": "Tercer turno, aciertos finales y revelación del tercer jugador (Neymar)."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 21.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El jugador adulto aparece mágicamente detrás del conductor con la camiseta actual mientras se muestra la foto de infancia con palomita verde.",
+   "efectos_de_sonido": [
+    "impactos de balón",
+    "gritos de emoción"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra al último jugador (Neymar) y el video finaliza sin un loop explícito.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "portugués brasileño",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "silbidos",
+    "golpes de pelota"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "números y contadores de aciertos sobre las fotos de infancia en la esquina superior",
+   "idioma": "portugués"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol sala interior",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "dinámico, con efectos visuales y transiciones de jugadores",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Combina habilidad física (pegarle al travesaño) con trivia de fútbol.",
+   "Las transformaciones visuales de los jugadores de niños a adultos sorprenden.",
+   "Ritmo rápido y narración enérgica."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes de archivo o animaciones donde los balones golpeen un contador digital para revelar las fotos de infancia de los jugadores con efectos de transición."
+ }
+}

@@ -1,0 +1,128 @@
+{
+ "video_id": "HmtPISmM1KQ",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 8786,
+  "candidatesTokenCount": 1287,
+  "totalTokenCount": 10073,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8003
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 128.0,
+  "formato": "Adivinar jugador de fútbol mediante una secuencia de tres emojis que representan pistas sobre su identidad.",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Dos personas (un adulto y un niño) frente a la cámara, con un gráfico de emojis debajo.",
+   "que_se_dice_o_texto": "Adivinen al jugador después de que le pegan al arco.",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío y los participantes."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 22.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: Emojis de gallo, trofeo y escudo del Real Madrid."
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 27.0,
+    "parte": "revelacion",
+    "descripcion": "El adulto revela que es Karim Benzema."
+   },
+   {
+    "inicio_s": 27.0,
+    "fin_s": 38.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: Emojis de bandera de Francia, Torre Eiffel y tortuga ninja."
+   },
+   {
+    "inicio_s": 38.0,
+    "fin_s": 40.0,
+    "parte": "revelacion",
+    "descripcion": "El niño revela que es Kylian Mbappé."
+   },
+   {
+    "inicio_s": 40.0,
+    "fin_s": 56.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: Emojis de Cristo Redentor, escudo del Real Madrid y jugador bailando."
+   },
+   {
+    "inicio_s": 56.0,
+    "fin_s": 104.0,
+    "parte": "revelacion",
+    "descripcion": "El niño revela que es Vinícius Júnior."
+   },
+   {
+    "inicio_s": 104.0,
+    "fin_s": 128.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4: Emojis de cámara, bandera de Corea del Sur y cara abrazando."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 15.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Los participantes dicen el nombre del jugador en voz alta.",
+   "efecto_sonido": "Sonidos de acierto y celebración."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El adulto invita a los espectadores a comentar si el niño tuvo suerte.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Pongan en los comentarios, David tuvo mucha suerte.",
+   "momento_s": 126.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español, acento latinoamericano.",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "Sonido de impacto de balón",
+    "Sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Gráfico estático con emojis en la parte inferior.",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Jardín exterior con una portería de fútbol.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video tipo vlog de desafío deportivo.",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La interacción dinámica entre los dos participantes, el uso de emojis como pistas visuales simples y el elemento de juego físico (patear el balón) que mantiene la atención.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla dividida con una animación de los emojis en la parte superior y una cuenta regresiva con sonido de tic-tac, revelando el nombre del jugador mediante una transición de texto animado."
+ }
+}

@@ -1,0 +1,118 @@
+{
+ "video_id": "gyqNkY_f8Kk",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3144,
+  "candidatesTokenCount": 1044,
+  "totalTokenCount": 4188,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2361
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 25.0,
+  "formato": "adivinar jugador según club, país y posición",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Cuatro chicos parados en un jardín con escudos y banderas flotando en pantalla",
+   "que_se_dijo_o_texto": "Real Madrid, Inglaterra, centrocampista",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de la primera consigna: club, país y posición."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 4.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Jude Bellingham con festejo."
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 9.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: Manchester United, Inglaterra, extremo."
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera y cuarta ronda: Arsenal y Chelsea."
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 25.0,
+    "parte": "cierre",
+    "descripcion": "Última ronda y festejo final de los participantes."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Foto del jugador aparece en grande flotando en pantalla acompañada de gritos y aplausos",
+   "efecto_sonido": [
+    "aplausos",
+    "gritos de alegría",
+    "efecto de acierto"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Los participantes festejan el último acierto y celebran juntos en cámara",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés británico con acento juvenil",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "aplausos",
+    "gritos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Escudos de clubes y banderas de países sobreimpresas de forma dinámica",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Jardín al aire libre con pasto sintético y un arco de fútbol",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video vertical dinámico estilo trivia entre amigos en exterior",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Dinamismo y energía alta de los participantes",
+   "Interacción grupal genuina con reacciones divertidas",
+   "Preguntas de fútbol actual muy reconocibles"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla animada en pantalla dividida con temporizador, mostrando pistas en texto y revelando la foto del jugador con efectos de sonido."
+ }
+}

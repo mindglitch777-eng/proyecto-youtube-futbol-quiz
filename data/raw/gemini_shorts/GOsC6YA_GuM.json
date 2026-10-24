@@ -1,0 +1,118 @@
+{
+ "video_id": "GOsC6YA_GuM",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5058,
+  "candidatesTokenCount": 1056,
+  "totalTokenCount": 6114,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4275
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 46.8,
+  "formato": "adivinar el jugador de futbol pixelado por ronda",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "un grupo de amigos en una sala y una foto pixelada flotando arriba",
+   "que_se_dice_o_texto": "Esse daqui é o Estevão",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "presentacion del primer jugador pixelado y primer intento fallido"
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 18.0,
+    "parte": "pregunta",
+    "descripcion": "intentos sucesivos del grupo intentando adivinar el primer jugador"
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 24.0,
+    "parte": "revelacion",
+    "descripcion": "acierto y revelacion de la foto de Raphinha"
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 42.0,
+    "parte": "pregunta",
+    "descripcion": "siguientes rondas con nuevos jugadores pixelados"
+   },
+   {
+    "inicio_s": 42.0,
+    "fin_s": 46.8,
+    "parte": "cierre",
+    "descripcion": "llamado a la suscripcion del canal"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "la imagen pixelada se aclara mostrando la foto real del jugador acompanada de sonido de victoria y aplausos",
+   "efecto_sonido": [
+    "bocinazo de respuesta correcta",
+    "aplausos y risas"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "invitacion directa a suscribirse al canal con boton rojo de youtube",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "INCREVA-SE",
+   "momento_s": 43.5
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "portugues de brasil",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "bocinazo de error",
+    "bocinazo de acierto",
+    "aplausos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "boton rojo estilo youtube con texto blanco",
+   "idioma": "portugues"
+  },
+  "visual": {
+   "fondo": "sala de interior con cesped sintetico",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinamico, estilo reto grupal de amigos",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "dinamica grupal con mucha energia y reacciones naturales",
+   "humor en los intentos fallidos de los participantes",
+   "ritmo agil sin silencios"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una plantilla donde aparezca un jugador pixelado que se va aclarando gradualmente con un contador de tiempo o efectos de sonido"
+ }
+}

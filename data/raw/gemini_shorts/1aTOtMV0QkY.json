@@ -1,0 +1,98 @@
+{
+ "video_id": "1aTOtMV0QkY",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 9989,
+  "candidatesTokenCount": 924,
+  "totalTokenCount": 10913,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 9206
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 142.0,
+  "formato": "Juego de adivinanza de dinero basado en pistas sobre el valor de objetos o conceptos relacionados con el fútbol.",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Dos hombres sentados en una terraza, uno con camiseta del Valencia y otro con camiseta gris.",
+   "que_se_dice_o_texto": "ADIVINA EL DINERO 0€ 16€",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y los participantes."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 138.0,
+    "parte": "pregunta",
+    "descripcion": "Serie de preguntas rápidas donde uno intenta adivinar el valor de algo y el otro responde sí o no."
+   },
+   {
+    "inicio_s": 138.0,
+    "fin_s": 142.0,
+    "parte": "cierre",
+    "descripcion": "Reacción final y celebración del resultado."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Respuesta verbal inmediata del otro participante.",
+   "efecto_sonido": "Ninguno específico, solo risas y reacciones."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Celebración efusiva por haber adivinado el valor final.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español, acento español peninsular.",
+   "musica": "Ninguna.",
+   "efectos_de_sonido": [
+    "Risas",
+    "Gritos de sorpresa"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte superior.",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Terraza exterior con edificios al fondo.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Vlog informal, plano fijo.",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La dinámica rápida de preguntas y respuestas, la química entre los dos presentadores y el humor en las reacciones.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla dividida con texto dinámico que cambie según las preguntas, usando una voz en off o texto en pantalla para simular el diálogo."
+ }
+}

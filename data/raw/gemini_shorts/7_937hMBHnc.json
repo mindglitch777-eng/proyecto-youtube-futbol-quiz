@@ -1,0 +1,22 @@
+{
+ "video_id": "7_937hMBHnc",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7073,
+  "candidatesTokenCount": 1068,
+  "totalTokenCount": 8141,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6290
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 110.0,\n \"formato\": \"Adivinar un jugador de fútbol secreto mediante rondas de pistas con límite de tiempo\",\n \"n_preguntas_o_rondas\": 4,\n \"gancho\": {\n  \"fin_s\": 5.0,\n  \"que_se_ve\": \"Dos creadores parados frente a una mesa con un cronómetro y un botón gigante, con siluetas de jugadores arriba con pistas ocultas\",\n  \"que_se_dice_o_texto\": \"1-01\",\n  \"tipo\": \"desafío ('solo el 1% sabe')\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 5.0,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"Presentación del reto con cronómetro\"\n  },\n  {\n   \"inicio_s\": 5.0,\n   \"fin_s\": 25.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 1: Posición extremo izquierdo\"\n  },\n  {\n   \"inicio_s\": 25.0,\n   \"fin_s\": 35.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 2: Liga francesa\"\n  },\n  {\n   \"inicio_s\": 36.0,\n   \"fin_s\": 52.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 3: Defensa de la Ligue 1\"\n  },\n  {\n   \"inicio_s\": 53.0,\n   \"fin_s\": 110.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Ronda 4: Jugador moreno de la Champions y Bélgica\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 15.0,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"cronómetro digital grande sobre la mesa\"\n },\n \"revelacion\": {\n  \"como\": \"Aparición de la foto del jugador sobre la silueta correspondiente\",\n  _efecto_sonido: \"Timbre/bocina de acierto\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"Pide dejar en comentarios quién es el último jugador\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": \"Sígueme si te gustan estos retos\",\n  \"momento_s\": 20.0\n },\n \"audio\": {\n  \"voz\": \"humana\",\n  \"idioma_y_acento\": \"Español de España\",\n  \"musica\": \"de fondo\",\n  \"efectos_de_sonido\": [\n   \"bocina\",\n   \"pitido de cronómetro\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"Texto blanco con contorno negro en la parte superior y central\",\n  \"idioma\": \"Español\"\n },\n \"visual\": {\n  \"fondo\": \"Parque al aire libre con rejas y vegetación\",\n  \"persona_real_en_camara\": true,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": true,\n  \"clips_de_partidos_o_transmisiones\": false,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"Dinámico con reacciones exageradas, tomas estáticas de mesa con cronómetro\",\n  \"cambios_de_plano_aprox\": 15\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": true,\n \"que_hace_que_funcione\": [\n  \"La tensión generada por el cronómetro y el botón\",\n  \"Las reacciones enérgicas y competitivas de los participantes\",\n  \"El misterio progresivo mediante pistas por ronda\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Una plantilla de video vertical con cuenta atrás, un contador de pistas que se van revelando tipo trivia interactiva y efectos de sonido de acierto o error.\"\n}"
+}

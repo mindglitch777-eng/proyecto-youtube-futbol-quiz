@@ -1,0 +1,97 @@
+{
+ "video_id": "jT6-qv5XIKg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 10699,
+  "candidatesTokenCount": 924,
+  "totalTokenCount": 11623,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 9916
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 149.0,
+  "formato": "Desafío de trivia callejera donde el presentador pregunta a transeúntes sobre jugadores mexicanos que anotaron en un mundial a cambio de sobres de cartas.",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "El presentador sostiene un cartel con sobres de cartas y le pregunta a un niño.",
+   "que_se_dice_o_texto": "Por cinco sobres, jugador mexicano que metió gol en un mundial.",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío y el premio."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 146.0,
+    "parte": "pregunta",
+    "descripcion": "El presentador recorre el centro comercial haciendo la misma pregunta a diferentes personas."
+   },
+   {
+    "inicio_s": 146.0,
+    "fin_s": 149.0,
+    "parte": "cierre",
+    "descripcion": "El presentador anuncia que continuará en una próxima parte."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El presentador dice 'continuará' y el video termina abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "continuará",
+   "momento_s": 146.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español, acento mexicano",
+   "musica": "de fondo, ritmo animado",
+   "efectos_de_sonido": [
+    "sonido de error al fallar la respuesta"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Tipografía grande, color blanco con contorno azul, estilo neón.",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Centro comercial",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Vlog de calle, cámara en mano, estilo dinámico.",
+   "cambios_de_plano_aprox": 20
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La interacción con personas reales, la promesa de un premio físico y el suspenso de ver a todos fallar.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una pantalla dividida con una animación de un personaje preguntando y texto en pantalla, mostrando las opciones de respuesta y un temporizador."
+ }
+}

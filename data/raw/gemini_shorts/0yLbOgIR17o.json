@@ -1,0 +1,120 @@
+{
+ "video_id": "0yLbOgIR17o",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 5428,
+  "candidatesTokenCount": 1086,
+  "totalTokenCount": 6514,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4645
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 51.5,
+  "formato": "adivinar futbolistas de pequeños",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "presentador en la calle con una mystery box",
+   "que_se_dice_o_texto": "Adivina el jugador de pequeño y te regalo esta Mystery Box",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y la Mystery Box de premio."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 19.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1 y 2 (Ronaldinho, Casillas) con comodines e interacción de redes."
+   },
+   {
+    "inicio_s": 19.0,
+    "fin_s": 32.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3 (Flick) con fallo y pase de turno al amigo."
+   },
+   {
+    "inicio_s": 32.0,
+    "fin_s": 38.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4 y 5 (Piqué, Toni Kroos) resueltas por el amigo."
+   },
+   {
+    "inicio_s": 38.0,
+    "fin_s": 42.0,
+    "parte": "transicion",
+    "descripcion": "Celebración de la victoria y preparación para abrir la caja."
+   },
+   {
+    "inicio_s": 42.0,
+    "fin_s": 51.5,
+    "parte": "cierre",
+    "descripcion": "Plot twist: abren la caja y encuentran una camiseta de River Plate para alguien del Barça/Boca (remate humorístico tipo Curb Your Enthusiasm)."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "foto actual del jugador sobre la cabeza del entrevistado con marca de check verde",
+   "efecto_sonido": "beep o acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El participante gana una camiseta que no le gusta (River Plate), se silencia la música y entra el meme de Curb Your Enthusiasm con créditos.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español de España",
+   "musica": "ninguna predominante, efectos cómicos al final",
+   "efectos_de_sonido": [
+    "bocina de fallo",
+    "tema musical de Curb Your Enthusiasm"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "subtítulos dinámicos blancos con resaltado negro/color al ritmo de la voz",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "calle urbana concurrida (Barcelona)",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "formato callejero con edición dinámica y memes",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "La tensión del premio físico (Mystery Box) en la calle",
+   "La dinámica de comodines condicionados a redes sociales",
+   "El plot twist final con humor absurdo y música de meme"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Video dividido en pantalla con fotos de infancia de futbolistas y temporizador visual, mostrando la respuesta con cuenta regresiva, y rematando con un texto de texto cómico al final."
+ }
+}

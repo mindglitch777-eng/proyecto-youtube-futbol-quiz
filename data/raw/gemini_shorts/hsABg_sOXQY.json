@@ -1,0 +1,97 @@
+{
+ "video_id": "hsABg_sOXQY",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2329,
+  "candidatesTokenCount": 917,
+  "totalTokenCount": 3246,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1546
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.0,
+  "formato": "juego de encontrar al jugador diferente en una cuadrícula de fotos idénticas",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "cuadrícula de fotos de Lamine Yamal",
+   "que_se_dice_o_texto": "Encuentra a Lamine Yamal",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: Lamine Yamal"
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 11.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: Lionel Messi"
+   },
+   {
+    "inicio_s": 11.0,
+    "fin_s": 17.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: Cristiano Ronaldo"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 4.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra de progreso inferior"
+  },
+  "revelacion": {
+   "como": "se dibuja un círculo rojo alrededor del jugador diferente",
+   "efecto_sonido": "sonido de 'ding' o acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente",
+   "loop": true,
+   "como_hace_el_loop": "el fondo y la música se mantienen constantes, permitiendo un reinicio fluido"
+  },
+  "cta": {
+   "en_video": "COMMENT",
+   "momento_s": 15.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "español neutro",
+   "musica": "música de fondo rítmica y pegadiza",
+   "efectos_de_sonido": [
+    "sonido de acierto al revelar"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro en la parte superior",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "patrón de color rosa con iconos de interrogación",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "minimalista, tipo quiz de redes sociales",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "es un formato altamente interactivo, visualmente simple y genera retención al invitar al usuario a encontrar el detalle oculto",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una cuadrícula de imágenes estáticas, una barra de progreso animada y una voz en off de IA para guiar al usuario"
+ }
+}

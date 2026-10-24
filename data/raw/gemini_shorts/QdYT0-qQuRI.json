@@ -1,0 +1,95 @@
+{
+ "video_id": "QdYT0-qQuRI",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4241,
+  "candidatesTokenCount": 905,
+  "totalTokenCount": 5146,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3458
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 37.0,
+  "formato": "Entrevista rápida de 'Verdadero o Falso' a un futbolista profesional.",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "Dos hombres sentados en un sofá, uno de ellos sostiene una tarjeta.",
+   "que_se_dice_o_texto": "verdadero o falso.",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 0.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del formato de juego."
+   },
+   {
+    "inicio_s": 0.5,
+    "fin_s": 35.0,
+    "parte": "pregunta",
+    "descripcion": "El entrevistador lee 10 afirmaciones sobre fútbol y el entrevistado responde brevemente."
+   },
+   {
+    "inicio_s": 35.0,
+    "fin_s": 37.0,
+    "parte": "cierre",
+    "descripcion": "El entrevistado sonríe y el video termina con el logo del programa."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "La respuesta es dada verbalmente por el entrevistado al instante.",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina con el logo del programa y el entrevistado sonriendo.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español, acento español",
+   "musica": "ninguna",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto grande, centrado, con colores llamativos (verde/rojo) y contorno negro.",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Estudio de grabación con decoración de temática futbolística.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Entrevista tipo podcast con inserción de imágenes relacionadas al tema de la pregunta.",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La presencia de una figura reconocida del fútbol, el ritmo rápido de las preguntas y la naturaleza polémica de las afirmaciones.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una voz en off, imágenes de archivo de stock o gráficos animados de los jugadores mencionados y texto en pantalla para las preguntas y respuestas."
+ }
+}

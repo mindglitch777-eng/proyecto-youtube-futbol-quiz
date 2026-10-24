@@ -1,0 +1,22 @@
+{
+ "video_id": "UsMANDQ4u_M",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2157,
+  "candidatesTokenCount": 971,
+  "totalTokenCount": 3128,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1374
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": null,
+ "crudo": "{\n \"duracion_s\": 15.0,\n \"formato\": \"adivinar el jugador real entre múltiples variantes alteradas en cuadrícula\",\n \"n_preguntas_o_rondas\": 3,\n \"gancho\": {\n  \"fin_s\": 1.0,\n  \"que_se_ve\": \"una cuadrícula con 25 variaciones de la cara de Lamine Yamal y el título FIND YAMAL\",\n  \"que_se_dice_o_texto\": \"FIND YAMAL\",\n  \"tipo\": \"desafío\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 4.5,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"ronda 1: encontrar a Lamine Yamal en la cuadrícula con barra de tiempo verde\"\n  },\n  {\n   \"inicio_s\": 4.5,\n   \"fin_s\": 9.2,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"ronda 2: encontrar a Bellingham con barra de tiempo verde\"\n  },\n  {\n   \"inicio_s\": 9.2,\n   \"fin_s\": 15.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"ronda 3: encontrar a Mbappé con barra de tiempo verde y botones CTA al final\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 4.5,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"barra horizontal verde que disminuye abajo\"\n },\n \"revelacion\": {\n  \"como\": \"círculo rojo alrededor de la cara correcta en la cuadrícula\",\n  _sonido\": \"efecto de acierto o campana\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"muestra los botones de like y suscribirse con la barra terminando\",\n  \"loop\": false,\n  \"como_hace_el_loop\": null\n },\n \"cta\": {\n  \"en_video\": \"LIKE SUBSCRIBE\",\n  \"momento_s\": 12.0\n },\n \"audio\": {\n  \"voz\": \"ninguna\",\n  \"idioma_y_acento\": null,\n  \"musica\": \"música electrónica rítmica de fondo tipo juego\",\n  \"efectos_de_sonido\": [\n   \"bip de cuenta regresiva\",\n   \"efecto de revelación/acierto\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"letras mayúsculas gruesas negras con borde blanco y fondo sólido\",\n  \"idioma\": \"inglés\"\n },\n \"visual\": {\n  \"fondo\": \"cancha de fútbol verde en la parte inferior\",\n  \"persona_real_en_camara\": false,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": false,\n  \"clips_de_partidos_o_transmisiones\": false,\n  \"imagenes_generadas_por_ia_o_dibujos\": true,\n  \"estilo_general\": \"estilo de minijuego interactivo tipo quiz visual con caras modificadas con filtros graciosos\",\n  \"cambios_de_plano_aprox\": 3\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": false,\n \"que_hace_que_funcione\": [\n  \"dinámica de juego interactiva tipo 'dónde está Wally' que retiene la atención hasta el final\",\n  \"uso de caras de jugadores virales modificadas con humor y accesorios divertidos\",\n  \"cuenta regresiva visual clara que genera urgencia\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"crear una cuadrícula usando Photoshop o Canva con fotos de un mismo jugador con diferentes filtros divertidos y añadir una barra de progreso animada\"\n}"
+}

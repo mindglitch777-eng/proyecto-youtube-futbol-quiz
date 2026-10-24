@@ -1,0 +1,99 @@
+{
+ "video_id": "j52UoQt7asU",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 7166,
+  "candidatesTokenCount": 1007,
+  "totalTokenCount": 8173,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6383
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 113.0,
+  "formato": "juego de trivia de fútbol donde el valor del premio aumenta con cada respuesta correcta",
+  "n_preguntas_o_rondas": 8,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "un hombre sosteniendo un micrófono frente a otro joven, con un texto de '$200-$' en la parte superior",
+   "que_se_dice_o_texto": "Valendo dinheiro, qual o jogador?",
+   "tipo": "promesa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación del reto y el premio"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 113.0,
+    "parte": "pregunta",
+    "descripcion": "secuencia de 8 preguntas donde el entrevistador muestra una foto editada de un jugador y el participante debe adivinar quién es"
+   },
+   {
+    "inicio_s": 110.0,
+    "fin_s": 113.0,
+    "parte": "cierre",
+    "descripcion": "el entrevistador pide a la audiencia que identifique al último jugador"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el entrevistador confirma el nombre y el valor del premio aumenta",
+   "efecto_sonido": "sonidos de caja registradora y aplausos"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el entrevistador pide a la audiencia que adivine el último jugador",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Você que está assistindo, quem é esse craque do Botafogo?",
+   "momento_s": 107.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "portugués brasileño",
+   "musica": "música de fondo rítmica y animada",
+   "efectos_de_sonido": [
+    "caja registradora",
+    "aplausos",
+    "sonidos de interfaz"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto amarillo con borde negro en la parte superior indicando el valor del premio",
+   "idioma": "portugués"
+  },
+  "visual": {
+   "fondo": "calle concurrida",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "entrevista callejera con edición dinámica de cabezas de jugadores sobrepuestas",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la progresión del premio genera tensión, el uso de imágenes editadas de jugadores es visualmente atractivo y la interacción directa con la audiencia al final fomenta los comentarios",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con una imagen de fondo de un estadio, mostrar las fotos editadas de los jugadores en el centro y usar una voz en off para hacer las preguntas, manteniendo el contador de dinero en la parte superior"
+ }
+}

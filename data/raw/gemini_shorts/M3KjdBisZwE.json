@@ -1,0 +1,97 @@
+{
+ "video_id": "M3KjdBisZwE",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 14795,
+  "candidatesTokenCount": 960,
+  "totalTokenCount": 15755,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 14012
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 153.0,
+  "formato": "Juego de adivinanza tipo 'Among Us' donde un grupo de amigos intenta identificar al impostor que no conoce al jugador del que están hablando.",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Cinco hombres sentados en un banco en una cancha de fútbol indoor, con el texto 'HECTOR FORT' sobre cada uno y 'IMPOSTOR' sobre el del medio.",
+   "que_se_dice_o_texto": "Gómez, ¿tú crees que este jugador va a meter más de 10 goles este año?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del grupo y la premisa del juego."
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 224.0,
+    "parte": "pregunta",
+    "descripcion": "Los participantes hacen preguntas sobre un jugador de fútbol para detectar quién no sabe de quién están hablando."
+   },
+   {
+    "inicio_s": 224.0,
+    "fin_s": 233.0,
+    "parte": "revelacion",
+    "descripcion": "El grupo cuenta hasta tres y señala al impostor."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "voz en off contando 'dos, uno'"
+  },
+  "revelacion": {
+   "como": "Señalan al impostor con el dedo y este se levanta riendo.",
+   "efecto_sonido": "risas del grupo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El impostor se levanta y el video termina con risas.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento español",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "risas"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro, centrado sobre cada persona",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "cancha de fútbol indoor",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "video tipo vlog de grupo de amigos",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La dinámica social de grupo, el humor y la tensión de descubrir quién está mintiendo.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de chat o una pantalla dividida con avatares de personajes de Among Us, donde cada uno responde preguntas de trivia sobre un jugador."
+ }
+}

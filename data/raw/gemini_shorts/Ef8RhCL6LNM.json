@@ -1,0 +1,99 @@
+{
+ "video_id": "Ef8RhCL6LNM",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 8975,
+  "candidatesTokenCount": 973,
+  "totalTokenCount": 9948,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8192
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 130.0,
+  "formato": "Desafío de puntería con balones de diferentes tipos para adivinar jugadores según una letra inicial.",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "El creador se prepara para patear un balón hacia el travesaño.",
+   "que_se_dice_o_texto": "Cada bola no travessão, uma letra",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "El creador presenta el desafío de patear balones al travesaño."
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 22.0,
+    "parte": "pregunta",
+    "descripcion": "El creador intenta patear balones al travesaño para obtener letras y adivinar jugadores."
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 130.0,
+    "parte": "revelacion",
+    "descripcion": "El creador revela los jugadores que cumplen con las condiciones de las letras obtenidas."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparece una foto del jugador sobre el video.",
+   "efecto_sonido": "Sonido de acierto o música de fondo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente después de la última revelación.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "DEIXA NOS COMENTÁRIOS!",
+   "momento_s": 59.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Portugués brasileño",
+   "musica": "Música de fondo animada y efectos de sonido de fútbol",
+   "efectos_de_sonido": [
+    "Sonido de patada",
+    "Sonido de rebote de balón",
+    "Sonido de acierto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con contorno negro, centrado en la parte inferior.",
+   "idioma": "Portugués"
+  },
+  "visual": {
+   "fondo": "Cancha de fútbol sala interior.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Video de formato vertical tipo vlog de desafíos deportivos.",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Combina un desafío físico dinámico con trivia de fútbol, manteniendo la atención del espectador con cortes rápidos y elementos visuales.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una animación de un balón golpeando un travesaño y mostrar las letras, luego revelar las fotos de los jugadores con una voz en off."
+ }
+}

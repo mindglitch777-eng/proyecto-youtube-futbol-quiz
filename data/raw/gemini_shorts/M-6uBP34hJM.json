@@ -1,10 +1,10 @@
 {
  "video_id": "M-6uBP34hJM",
- "modelo": "gemini-3.5-flash-lite",
+ "modelo": "gemini-3.1-flash-lite",
  "uso": {
   "promptTokenCount": 4832,
-  "candidatesTokenCount": 1449,
-  "totalTokenCount": 6281,
+  "candidatesTokenCount": 894,
+  "totalTokenCount": 5726,
   "promptTokensDetails": [
    {
     "modality": "TEXT",
@@ -17,6 +17,76 @@
   ],
   "serviceTier": "standard"
  },
- "analisis": null,
- "crudo": "{\n \"duracion_s\": 47.7,\n \"formato\": \"adivinar el jugador del Real Madrid según el gol en formato de dificultad creciente\",\n \"n_preguntas_o_rondas\": 4,\n \"gancho\": {\n  \"fin_s\": 4.1,\n  \"que_se_ve\": \"Se ve el campo de fútbol con el escudo del Real Madrid y la silueta con el texto 'GUESS THE PLAYER'. Arriba dice EASY, MEDIUM, HARD, IMPOSSIBLE con fotos silueteadas.\",\n  \"que_se_dice_o_texto\": \"EASY MEDIUM HARD IMPOSSIBLE\",\n  \"tipo\": \"desafío\"\n },\n \"estructura\": [\n  {\n   \"inicio_s\": 0.0,\n   \"fin_s\": 4.1,\n   \"parte\": \"gancho\",\n   \"descripcion\": \"Presentación del juego y primera jugada de gol con silueta azul.\"\n  },\n  {\n   \"inicio_s\": 4.1,\n   \"fin_s\": 9.1,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"Revelación de Mbappé y celebración del jugador.\"\n  },\n  {\n   \"inicio_s\": 9.1,\n   \"fin_s\": 12.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Segunda jugada de gol (Medium) con silueta amarilla.\"\n  },\n  {\n   \"inicio_s\": 12.0,\n   \"fin_s\": 20.0,\n   \"parte\": \"tiempo_para_pensar\",\n   \"descripcion\": \"Barra de tiempo verde descendente para adivinar el segundo jugador.\"\n  },\n  {\n   \"inicio_s\": 20.0,\n   \"fin_s\": 22.0,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"Revelación de Valverde.\"\n  },\n  {\n   \"inicio_s\": 22.0,\n   \"fin_s\": 27.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Tercera jugada de gol (Hard) con silueta roja.\"\n  },\n  {\n   \"inicio_s\": 27.0,\n   \"fin_s\": 32.0,\n   \"parte\": \"tiempo_para_pensar\",\n   \"descripcion\": \"Barra de tiempo verde descendente para la tercera pregunta.\"\n  },\n  {\n   \"inicio_s\": 32.0,\n   \"fin_s\": 35.0,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"Revelación de Bellingham.\"\n  },\n  {\n   \"inicio_s\": 35.0,\n   \"fin_s\": 39.0,\n   \"parte\": \"pregunta\",\n   \"descripcion\": \"Cuarta jugada de gol (Impossible) con silueta morada.\"\n  },\n  {\n   \"inicio_s\": 39.0,\n   \"fin_s\": 44.0,\n   \"parte\": \"tiempo_para_pensar\",\n   \"descripcion\": \"Barra de tiempo verde descendente para la última pregunta.\"\n  },\n  {\n   \"inicio_s\": 44.0,\n   \"fin_s\": 47.7,\n   \"parte\": \"revelacion\",\n   \"descripcion\": \"Revelación final de Díaz y cierre del video.\"\n  }\n ],\n \"tiempo_para_pensar_por_pregunta_s\": 5.0,\n \"cuenta_regresiva\": {\n  \"hay\": true,\n  \"estilo\": \"barra\"\n },\n \"revelacion\": {\n  \"como\": \"Se revela la cara real y el nombre del jugador en grande mientras celebra\",\n  _sonido\": \"música viral con ritmo\"\n },\n \"cierre_y_loop\": {\n  \"que_pasa_al_final\": \"Muestra al último jugador celebrando con sus compañeros\",\n  \"loop\": true,\n  \"como_hace_el_loop\": \"El final conecta directamente con el inicio del video sin corte perceptible\"\n },\n \"cta\": {\n  \"en_video\": null,\n  \"momento_s\": null\n },\n \"audio\": {\n  \"voz\": \"ninguna\",\n  \"idioma_y_acento\": \"ninguno\",\n  \"musica\": \"tendencia/viral con ritmo rápido de fondo\",\n  \"efectos_de_sonido\": [\n   \"ninguno destacado\"\n  ]\n },\n \"texto_en_pantalla\": {\n  \"hay_texto\": true,\n  \"subtitulos_de_voz\": false,\n  \"estilo\": \"letras blancas con borde negro, tipografía gruesa estilo meme/gaming\",\n  \"idioma\": \"español/inglés mixto\"\n },\n \"visual\": {\n  \"fondo\": \"partidos de fútbol del Real Madrid\",\n  \"persona_real_en_camara\": false,\n  \"fotos_de_jugadores\": true,\n  \"escudos_o_logos\": true,\n  \"clips_de_partidos_o_transmisiones\": true,\n  \"imagenes_generadas_por_ia_o_dibujos\": false,\n  \"estilo_general\": \"dinámico, estilo quiz de fútbol con siluetas de colores y barra de tiempo\",\n  \"cambios_de_plano_aprox\": 8\n },\n \"dificultad_de_las_preguntas\": \"media\",\n \"invita_a_comentar_la_respuesta\": true,\n \"que_hace_que_funcione\": [\n  \"Estructura de dificultad progresiva (Easy a Impossible) que engancha al espectador hasta el final.\",\n  \"Uso de una barra de tiempo visual clara que genera urgencia y participación.\",\n  \"Excelente loop continuo que aumenta las visualizaciones totales.\"\n ],\n \"como_replicarlo_sin_cara_y_sin_clips\": \"Se puede hacer usando goles animados en 2D o FIFA/EA Sports FC con recortes limpios, siluetas de colores y la misma plantilla superior de dificultad.\"\n}"
+ "analisis": {
+  "duracion_s": 46.0,
+  "formato": "Juego de adivinar el jugador de fútbol a partir de un clip de gol con una silueta superpuesta.",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "Cuatro siluetas negras con los niveles de dificultad: EASY, MEDIUM, HARD, IMPOSSIBLE.",
+   "que_se_dice_o_texto": "EASY MEDIUM HARD IMPOSSIBLE",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 0.5,
+    "parte": "gancho",
+    "descripcion": "Presentación de los niveles de dificultad con siluetas."
+   },
+   {
+    "inicio_s": 0.5,
+    "fin_s": 46.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestran 4 clips de goles de jugadores del Real Madrid con una silueta sobre el jugador que anotó, seguida de la revelación."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra de progreso verde que se vacía"
+  },
+  "revelacion": {
+   "como": "La silueta desaparece y se muestra la foto del jugador con su nombre en pantalla.",
+   "efecto_sonido": "Sonido de acierto/transición"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina tras mostrar al último jugador.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Canción de tendencia/viral de fondo",
+   "efectos_de_sonido": [
+    "Sonido de acierto",
+    "Música de fondo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado",
+   "idioma": "Español/Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de fútbol",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición dinámica con superposiciones gráficas",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La gamificación del contenido, el uso de clips de fútbol populares y la gratificación instantánea al revelar la respuesta.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar tarjetas de estadísticas de jugadores (tipo FIFA) con siluetas y nombres ocultos, manteniendo la música viral y la barra de tiempo."
+ }
 }

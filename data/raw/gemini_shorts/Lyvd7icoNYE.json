@@ -1,0 +1,122 @@
+{
+ "video_id": "Lyvd7icoNYE",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 4335,
+  "candidatesTokenCount": 1160,
+  "totalTokenCount": 5495,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3552
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 40.0,
+  "formato": "Adivinar el equipo de fútbol basándose en las nacionalidades de los jugadores de su alineación titular.",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "Dos personas frente a una pantalla con una alineación de fútbol.",
+   "que_se_dice_o_texto": "WHO IS THAT?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 0.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del reto con la primera alineación."
+   },
+   {
+    "inicio_s": 0.5,
+    "fin_s": 6.0,
+    "parte": "pregunta",
+    "descripcion": "El participante intenta adivinar el primer equipo."
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 7.0,
+    "parte": "revelacion",
+    "descripcion": "Se revela el escudo del Real Madrid."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "El participante adivina el segundo equipo (Manchester United)."
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 23.0,
+    "parte": "pregunta",
+    "descripcion": "El participante adivina el tercer equipo (Galatasaray)."
+   },
+   {
+    "inicio_s": 23.0,
+    "fin_s": 39.0,
+    "parte": "pregunta",
+    "descripcion": "El participante intenta adivinar el último equipo (Sassuolo) sin éxito."
+   },
+   {
+    "inicio_s": 39.0,
+    "fin_s": 40.0,
+    "parte": "cierre",
+    "descripcion": "Invitación a la audiencia a comentar la respuesta."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El escudo del equipo aparece en el centro de la pantalla con una animación.",
+   "efecto_sonido": "Sonido de acierto o fallo según corresponda."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El presentador pide a la audiencia que comente la respuesta correcta.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "If you think you know the answer, like this video and comment down below!",
+   "momento_s": 39.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés",
+   "musica": "de fondo, ritmo rápido y dinámico",
+   "efectos_de_sonido": [
+    "Sonido de acierto",
+    "Sonido de fallo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto grande, blanco con contorno negro, centrado.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Panel de marca de un evento de eSports.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Dinámico, estilo entrevista de eSports.",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La interacción entre los presentadores, el desafío visual claro y la dificultad creciente que genera curiosidad.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de pantalla dividida con la alineación de banderas arriba y el espacio para el escudo abajo, usando una voz en off para narrar el reto."
+ }
+}

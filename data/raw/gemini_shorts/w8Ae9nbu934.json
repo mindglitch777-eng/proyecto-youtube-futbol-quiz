@@ -1,0 +1,103 @@
+{
+ "video_id": "w8Ae9nbu934",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2194,
+  "candidatesTokenCount": 968,
+  "totalTokenCount": 3162,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1411
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 16.0,
+  "formato": "Adivinar el jugador de baloncesto a partir de un clip de jugada con silueta roja.",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "Jugador de baloncesto en silueta roja realizando una jugada.",
+   "que_se_dice_o_texto": "GUESS WHO",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra una jugada de baloncesto con un jugador resaltado en rojo y el texto 'GUESS WHO'."
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 7.0,
+    "parte": "revelacion",
+    "descripcion": "Se muestran dos opciones de jugadores con una barra de tiempo debajo."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 11.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra una segunda jugada con otro jugador en silueta roja."
+   },
+   {
+    "inicio_s": 11.0,
+    "fin_s": 16.0,
+    "parte": "revelacion",
+    "descripcion": "Se muestran las opciones para la segunda jugada y el video termina."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra"
+  },
+  "revelacion": {
+   "como": "Se muestran dos fotos de jugadores con sus nombres debajo.",
+   "efecto_sonido": "ninguno"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "canción pop de tendencia",
+   "efectos_de_sonido": [
+    "sonido de rebote de balón"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro, centrado",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "clips de partidos de la NBA",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "dinámico, con edición de silueta roja sobre los jugadores",
+   "cambios_de_plano_aprox": 2
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "El uso de siluetas rojas crea curiosidad inmediata, el formato de trivia es muy interactivo y el ritmo rápido mantiene la retención.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar fotos de jugadores con un filtro de silueta o recorte, añadir un cronómetro visual y texto de 'Adivina quién' sobre un fondo de cancha de baloncesto estático."
+ }
+}

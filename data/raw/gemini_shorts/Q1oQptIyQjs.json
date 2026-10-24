@@ -1,0 +1,92 @@
+{
+ "video_id": "Q1oQptIyQjs",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 9424,
+  "candidatesTokenCount": 883,
+  "totalTokenCount": 10307,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8641
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 135.0,
+  "formato": "juego de adivinar el nombre de un futbolista letra por letra con un cronómetro de tiempo límite",
+  "n_preguntas_o_rondas": 5,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "dos personas sentadas frente a una mesa con un cronómetro y un botón",
+   "que_se_dice_o_texto": "0:33",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.0,
+    "parte": "gancho",
+    "descripcion": "presentación rápida del desafío"
+   },
+   {
+    "inicio_s": 1.0,
+    "fin_s": 135.0,
+    "parte": "pregunta",
+    "descripcion": "los participantes intentan adivinar el nombre del jugador dando pistas de letras y compitiendo contra el cronómetro"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 20.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "reloj digital en pantalla"
+  },
+  "revelacion": {
+   "como": "el nombre del jugador aparece en la parte superior de la pantalla",
+   "efecto_sonido": "sonido de timbre al presionar el botón"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "los participantes piden a la audiencia que comenten el nombre del jugador",
+   "loop": true,
+   "como_hace_el_loop": "el video termina con una pregunta abierta que invita a volver a ver el inicio"
+  },
+  "cta": {
+   "en_video": "Que la gente lo deje en comentarios",
+   "momento_s": 133.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento español",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "sonido de botón",
+    "sonido de error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco sobre fondo negro o transparente",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "parque al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "vlog de desafío",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "la competencia entre los dos participantes, el uso de un cronómetro que genera tensión y la interacción directa con la audiencia",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con un cronómetro digital, letras ocultas que se revelan y una voz en off que guía el juego"
+ }
+}

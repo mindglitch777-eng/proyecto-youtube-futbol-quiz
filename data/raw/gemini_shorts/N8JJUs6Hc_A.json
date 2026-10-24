@@ -1,0 +1,138 @@
+{
+ "video_id": "N8JJUs6Hc_A",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 3336,
+  "candidatesTokenCount": 1333,
+  "totalTokenCount": 4669,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2553
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 29.0,
+  "formato": "Adivinar al jugador que no corresponde a la selección mostrada en 3 rondas",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "Cuatro jugadores con camiseta y bandera de Argentina (Messi, Cucurella con cara cambiada/humorística, Enzo Fernández, Maradona)",
+   "que_se_dice_o_texto": "Cual de estos jugadores no es de la seleccion argentina?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.5,
+    "parte": "gancho",
+    "descripcion": "Pregunta inicial sobre Argentina con 4 fotos"
+   },
+   {
+    "inicio_s": 2.5,
+    "fin_s": 7.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva del 5 al 1 con números animados en el centro"
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 8.8,
+    "parte": "revelacion",
+    "descripcion": "Se revela que Cucurella no es argentino"
+   },
+   {
+    "inicio_s": 8.8,
+    "fin_s": 11.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda sobre Portugal (Yamal, Ronaldo, Silva, etc.)"
+   },
+   {
+    "inicio_s": 11.0,
+    "fin_s": 15.5,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva del 5 al 1"
+   },
+   {
+    "inicio_s": 15.5,
+    "fin_s": 18.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación de Lamine Yamal"
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 21.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda sobre España"
+   },
+   {
+    "inicio_s": 21.0,
+    "fin_s": 25.0,
+    "parte": "tiempo_para_pensar",
+    "descripcion": "Cuenta regresiva del 5 al 1"
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 29.0,
+    "parte": "cierre",
+    "descripcion": "Llamado a dejar la respuesta en comentarios"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número central decreciente animado con sonido de reloj"
+  },
+  "revelacion": {
+   "como": "El jugador incorrecto cambia de foto o resalta con un efecto visual",
+   "efecto_sonido": "sonido de acierto/revelación"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Pide escribir la respuesta en comentarios, sin loop explícito",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Escribe la respuesta en los comentarios",
+   "momento_s": 26.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Español neutro",
+   "musica": "de fondo",
+   "efectos_de_sonido": [
+    "tic-tac de cuenta regresiva",
+    "sonido de revelación"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Tipografía gruesa en mayúsculas, colores llamativos (blanco, verde, amarillo) con contorno negro",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Estadio de fútbol 3D iluminado con gradas rojas",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Quiz dinámico de fútbol estilo vertical tipo TikTok/Shorts",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica rápida de 'intruso' muy popular en TikTok",
+   "Cuenta regresiva genera urgencia y engagement",
+   "Elementos visuales claros y reconocibles para fanáticos del fútbol"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede hacer completamente en Canva, CapCut o Premiere usando fotos de jugadores recortadas, banderas nacionales y un contador de tiempo estándar superpuesto sobre un fondo de estadio."
+ }
+}

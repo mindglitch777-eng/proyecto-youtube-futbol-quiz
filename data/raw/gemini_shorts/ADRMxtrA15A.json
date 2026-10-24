@@ -1,0 +1,107 @@
+{
+ "video_id": "ADRMxtrA15A",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2545,
+  "candidatesTokenCount": 986,
+  "totalTokenCount": 3531,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1762
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 20.2,
+  "formato": "adivinar el jugador de baloncesto oculto",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 5.9,
+   "que_se_ve": "silueta roja de un jugador de baloncesto driblando en la cancha",
+   "que_se_dice_o_texto": "GUESS WHO",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.9,
+    "parte": "pregunta",
+    "descripcion": "Silueta roja de un jugador driblando con un signo de interrogación y el texto GUESS WHO"
+   },
+   {
+    "inicio_s": 5.9,
+    "fin_s": 8.9,
+    "parte": "revelacion",
+    "descripcion": "Se revela que es Curry celebrando con barra de tiempo agotándose y opciones Curry vs Butler"
+   },
+   {
+    "inicio_s": 8.9,
+    "fin_s": 15.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: silueta roja corriendo con texto GUESS WHO LAKERS"
+   },
+   {
+    "inicio_s": 15.0,
+    "fin_s": 20.2,
+    "parte": "revelacion",
+    "descripcion": "Se revela que es Haliburton celebrando con opciones Haliburton vs McConnell"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra"
+  },
+  "revelacion": {
+   "como": "video corto del jugador real celebrando y opciones en pantalla con foto y nombre",
+   "efecto_sonido": "música y sonido de acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina mostrando la celebración de Haliburton",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "ninguno",
+   "musica": "canción pop con ritmo rápido de fondo",
+   "efectos_de_sonido": [
+    "silbidos y aplausos del público"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras grandes, blancas y amarillas con borde negro, centradas",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "cancha de baloncesto",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "edición dinámica con silueta roja recortada sobre clips de partidos de la NBA",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Dinámica rápida de adivinanza con opciones múltiples claras",
+   "Uso de siluetas misteriosas que generan curiosidad inmediata",
+   "Recompensas visuales instantáneas con celebraciones icónicas de jugadores"
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar siluetas vectoriales de jugadores sobre fondos animados y tarjetas de estadísticas con fotos de perfil estáticas en lugar de clips de transmisión."
+ }
+}

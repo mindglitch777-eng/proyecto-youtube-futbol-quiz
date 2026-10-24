@@ -1,0 +1,149 @@
+{
+ "video_id": "6z1iFicVeKw",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 7515,
+  "candidatesTokenCount": 1624,
+  "totalTokenCount": 9139,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 6732
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 75.3,
+  "formato": "adivinar la selección de fútbol según su bandera con cuenta regresiva sonora y nivel de dificultad progresivo",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 7.0,
+   "que_se_ve": "Vista aérea cenital de un estadio de fútbol grande con una lista numerada del 1 al 10 en la pantalla y texto superior 'ADIVINA LA BANDERA DE LA SELECCIÓN'.",
+   "que_se_dice_o_texto": "Adivina el país por su bandera. Si no aciertas al menos ocho deberías volver a la escuela. Comencemos con el primero.",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 7.0,
+    "parte": "gancho",
+    "descripcion": "Presentación de la dinámica y las reglas del desafío con imagen aérea de estadio."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 10.9,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: Bandera de Brasil con sonido de tic-tac y revelación."
+   },
+   {
+    "inicio_s": 10.9,
+    "fin_s": 16.3,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: Bandera de Argentina."
+   },
+   {
+    "inicio_s": 16.3,
+    "fin_s": 25.9,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: Bandera de España con CTA parcial."
+   },
+   {
+    "inicio_s": 25.9,
+    "fin_s": 31.4,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4: Bandera de Japón."
+   },
+   {
+    "inicio_s": 31.4,
+    "fin_s": 37.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 5: Bandera de Marruecos."
+   },
+   {
+    "inicio_s": 37.5,
+    "fin_s": 46.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 6: Bandera de Canadá con pausa y comentario."
+   },
+   {
+    "inicio_s": 46.5,
+    "fin_s": 51.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 7: Bandera de Ecuador."
+   },
+   {
+    "inicio_s": 51.5,
+    "fin_s": 56.8,
+    "parte": "pregunta",
+    "descripcion": "Ronda 8: Bandera de Serbia."
+   },
+   {
+    "inicio_s": 56.8,
+    "fin_s": 65.5,
+    "parte": "pregunta",
+    "descripcion": "Ronda 9: Bandera de Corea del Sur."
+   },
+   {
+    "inicio_s": 65.5,
+    "fin_s": 75.3,
+    "parte": "cierre",
+    "descripcion": "Ronda 10 (pregunta abierta sin respuesta definitiva) invitando a comentar."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.5,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "sonido de tic-tac rápido durante los segundos de cada bandera"
+  },
+  "revelacion": {
+   "como": "El nombre del país aparece escrito en la lista numerada a la izquierda del estadio con tipografía naranja.",
+   "efecto_sonido": "efecto de acierto/clic"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se deja la última bandera (Uzbekistán) sin resolver y se pide la respuesta en comentarios.",
+   "loop": true,
+   "como_hace_el_loop": "El final con la pregunta abierta invita a reempezar el video para verificar las respuestas anteriores o ver el inicio de nuevo."
+  },
+  "cta": {
+   "en_video": "Dale like si acertaste las primeras tres / No olvides comentar tu puntuación y seguirnos para más retos de fútbol / Si te la sabes te leo en los comentarios",
+   "momento_s": 22.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Español neutro",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "tic-tac"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Tipografía gruesa sans-serif, color blanco y naranja con borde negro, centrada arriba y lista numerada a la izquierda",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Video de dron cenital en bucle de un estadio de fútbol moderno al aire libre",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Fondo relajante de dron con superposición de banderas animadas y lista de respuestas tipo quiz",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Uso de un fondo visualmente atractivo en bucle (estadio de fútbol) que retiene la atención sin distraer.",
+   "Progresión de dificultad que empieza con selecciones muy conocidas y termina con banderas más difíciles.",
+   "CTA interactivo fuerte al final y desafío inicial ('si no aciertas 8 vuelve a la escuela') que genera retención y comentarios."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede replicar perfectamente usando un fondo de videojuego (como FIFA/EA Sports FC simulado) o un fondo animado en bucle de Canva, sobre el cual se insertan imágenes de banderas con transiciones simples y una voz sintética."
+ }
+}

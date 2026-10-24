@@ -1,0 +1,97 @@
+{
+ "video_id": "EDcBWEExIZg",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 9424,
+  "candidatesTokenCount": 1002,
+  "totalTokenCount": 10426,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 8641
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 96.0,
+  "formato": "Desafío de trivia de fútbol en Minecraft donde el jugador debe elegir entre dos futbolistas para evitar que un trofeo caiga a la lava.",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Un personaje de Minecraft en una torre con fotos de Messi y Cristiano Ronaldo, y un trofeo sobre bloques de colores.",
+   "que_se_dice_o_texto": "OKEY, y aquí va Messi, Messi, Messi",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del desafío y el primer movimiento."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 96.0,
+    "parte": "pregunta",
+    "descripcion": "Sucesión de rondas donde el jugador debe elegir entre Messi, Cristiano Ronaldo, Mbappé o Lamine Yamal para avanzar."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El personaje se mueve al bloque elegido y el trofeo sube o se mantiene a salvo.",
+   "efecto_sonido": "Sonidos de Minecraft (colocación de bloques, daño, victoria)"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El jugador gana el desafío y celebra con el trofeo.",
+   "loop": true,
+   "como_hace_el_loop": "El video termina con una celebración que conecta visualmente con el inicio de la torre."
+  },
+  "cta": {
+   "en_video": "Si creen que aquí va Cristiano Ronaldo, dejen su like. Pero si creen que va Mbappé, comenten SIUUU",
+   "momento_s": 113.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Español latino",
+   "musica": "Música de fondo de Minecraft",
+   "efectos_de_sonido": [
+    "Sonidos de bloques de Minecraft",
+    "Gritos de Cristiano Ronaldo (Siuuu)",
+    "Sonido de lava"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Letras grandes, rojas con borde negro, centradas.",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Mundo de Minecraft",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Gameplay de Minecraft con edición dinámica.",
+   "cambios_de_plano_aprox": 20
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": [
+   "Uso de personajes populares (Messi/CR7) que generan debate.",
+   "Formato de juego de riesgo (evitar la lava) que mantiene la tensión.",
+   "Interacción constante con la audiencia pidiendo likes o comentarios."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de Minecraft grabada con OBS, reemplazar los clips de los jugadores por imágenes estáticas de sus rostros y usar una voz en off grabada con un tono entusiasta."
+ }
+}

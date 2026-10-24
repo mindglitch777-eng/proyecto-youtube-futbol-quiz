@@ -280,7 +280,7 @@ def cmd_iterate(n=8):
     cmd_search(seeds)
 
 
-def cmd_channels(top_canales=220):
+def cmd_channels(top_canales=220, extra_ids=()):
     videos = cargar("videos.json", {})
     hits = cargar("search_hits.json", [])
     # canales que aparecen en búsquedas, ordenados por vistas sumadas de sus shorts encontrados
@@ -291,7 +291,7 @@ def cmd_channels(top_canales=220):
             if v and (v["duration_s"] or 999) <= SHORT_MAX_S and QUIZ_WORDS.search(v["title"] + " " + " ".join(v["tags"])):
                 peso[v["channelId"]] += v["views"]
                 apariciones[v["channelId"]] += 1
-    ids = [c for c, _ in peso.most_common(top_canales)]
+    ids = [c for c, _ in peso.most_common(top_canales)] + [c for c in extra_ids if c not in peso]
     canales = cargar("channels.json", {})
     faltan = [c for c in ids if c not in canales]
     for k in range(0, len(faltan), 50):
@@ -313,6 +313,8 @@ def cmd_channels(top_canales=220):
     recientes = cargar("channel_recent.json", {})
     try:
         for c in sorted(canales.values(), key=lambda c: -peso.get(c["id"], 0)):
+            if c["id"] not in ids:
+                continue
             if c["id"] in recientes:
                 continue
             d = api("playlistItems", part="contentDetails", playlistId=c["uploads"], maxResults=50)
@@ -397,6 +399,15 @@ if __name__ == "__main__":
             cmd_iterate(arg or 8)
         if cmd in ("channels", "all"):
             cmd_channels()
+        if cmd == "canales_quiz":
+            # canales con shorts quiz (según Gemini) de >= 1M vistas que no entraron por ranking de búsqueda
+            import csv
+            filas = list(csv.DictReader(open(ROOT / "data" / "processed" / "videos.csv")))
+            ya = cargar("channels.json", {})
+            extra = list(dict.fromkeys(r["channelId"] for r in filas if r["es_quiz"] == "True"
+                                       and r["en_busqueda"] == "True" and int(r["vistas"]) >= 1_000_000
+                                       and r["channelId"] not in ya))
+            cmd_channels(len(ya), extra)
         if cmd in ("history", "all"):
             cmd_history(arg or 20)
         if cmd == "comments":

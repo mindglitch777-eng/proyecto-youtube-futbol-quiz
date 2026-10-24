@@ -1,0 +1,104 @@
+{
+ "video_id": "RQyMv7-GUB4",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 2360,
+  "candidatesTokenCount": 1012,
+  "totalTokenCount": 3372,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1577
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.0,
+  "formato": "Adivina el jugador de baloncesto a partir de una silueta en movimiento durante un partido.",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 0.5,
+   "que_se_ve": "Un jugador de baloncesto en silueta roja realizando una jugada.",
+   "que_se_dice_o_texto": "GUESS WHO",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra la silueta roja de un jugador en acción con el texto 'GUESS WHO'."
+   },
+   {
+    "inicio_s": 4.0,
+    "fin_s": 8.0,
+    "parte": "revelacion",
+    "descripcion": "Se presentan dos opciones de jugadores y se revela a Stephen Curry."
+   },
+   {
+    "inicio_s": 8.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "Se muestra una nueva silueta roja de otro jugador en acción."
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 17.0,
+    "parte": "revelacion",
+    "descripcion": "Se presentan dos opciones y se revela a LeBron James."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "barra de progreso verde"
+  },
+  "revelacion": {
+   "como": "Aparece la cara del jugador correcto sobre la silueta y se muestra un clip del jugador real.",
+   "efecto_sonido": "Sonido de acierto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente tras la segunda revelación.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "LIKE (para la opción izquierda) SUBSCRIBE (para la opción derecha)",
+   "momento_s": 5.0
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Canción pop de tendencia con ritmo marcado",
+   "efectos_de_sonido": [
+    "Sonido de acierto",
+    "Sonido de rebote de balón"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, fuente sans-serif llamativa",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de partidos de la NBA",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Dinámico, con edición rápida y elementos gráficos superpuestos",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Uso de siluetas para generar curiosidad, interacción directa mediante botones de like/subscribe y ritmo rápido que mantiene la atención.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar siluetas vectoriales de jugadores sobre un fondo de cancha de baloncesto estático, animando la silueta con efectos de movimiento y usando fotos de los jugadores para la revelación."
+ }
+}

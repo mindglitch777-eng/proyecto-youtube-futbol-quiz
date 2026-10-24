@@ -1,0 +1,116 @@
+{
+ "video_id": "Xf7EDXHkGoY",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3336,
+  "candidatesTokenCount": 1140,
+  "totalTokenCount": 4476,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2553
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 29.0,
+  "formato": "Quiz de fútbol de 3 rondas donde el usuario debe identificar al jugador que no pertenece a la selección nacional mostrada.",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Cuatro fotos de jugadores con la bandera de España debajo.",
+   "que_se_dice_o_texto": "¿Cuál de estos jugadores no es de la selección española?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 7.0,
+    "parte": "pregunta",
+    "descripcion": "Presentación de la primera pregunta con 4 jugadores y bandera de España."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 9.0,
+    "parte": "revelacion",
+    "descripcion": "Se revela que Enzo Fernández es el intruso."
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda pregunta con jugadores y bandera de Argentina."
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 18.0,
+    "parte": "revelacion",
+    "descripcion": "Se revela que Gavi es el intruso."
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 25.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera pregunta con jugadores y bandera de Francia."
+   },
+   {
+    "inicio_s": 25.0,
+    "fin_s": 29.0,
+    "parte": "cierre",
+    "descripcion": "Se pide la respuesta en los comentarios."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "número central con sonido de tic-tac"
+  },
+  "revelacion": {
+   "como": "El jugador intruso se resalta y aparece el nombre debajo.",
+   "efecto_sonido": "Sonido de acierto/error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Se invita a comentar la respuesta de la última pregunta.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Escribe la respuesta en los comentarios",
+   "momento_s": 26.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Español neutro",
+   "musica": "Música de fondo rítmica y tensa tipo quiz",
+   "efectos_de_sonido": [
+    "Tic-tac de cuenta regresiva",
+    "Sonido de revelación"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Tipografía grande, negrita, colores llamativos (amarillo/blanco), posición central",
+   "idioma": "Español"
+  },
+  "visual": {
+   "fondo": "Estadio de fútbol con iluminación nocturna",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Dinámico, estilo quiz de redes sociales",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La interactividad inmediata, el uso de una cuenta regresiva que genera urgencia y la temática de fútbol que es muy popular.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una plantilla de Canva o CapCut con un fondo de estadio, colocar 4 imágenes estáticas de jugadores, añadir un cronómetro de 5 segundos y usar una voz en off de IA para leer las preguntas."
+ }
+}

@@ -1,0 +1,100 @@
+{
+ "video_id": "a4eMauic58k",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 6254,
+  "candidatesTokenCount": 988,
+  "totalTokenCount": 7242,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5471
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 60.0,
+  "formato": "desafío de trivia de fútbol donde el entrevistador le pide al entrevistado que nombre equipos de la Premier League con una característica específica en su logo",
+  "n_preguntas_o_rondas": 9,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "dos personas paradas en un campo de fútbol, con un Pikachu animado superpuesto en primer plano",
+   "que_se_dice_o_texto": "Can you name every Premier League club with yellow in their logo?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "el entrevistador plantea el desafío"
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 59.0,
+    "parte": "pregunta",
+    "descripcion": "el entrevistado intenta adivinar los equipos mientras el entrevistador valida o rechaza las respuestas"
+   },
+   {
+    "inicio_s": 59.0,
+    "fin_s": 60.0,
+    "parte": "cierre",
+    "descripcion": "el video termina abruptamente tras la última respuesta correcta"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 5.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el logo del equipo aparece en pantalla con un check verde o una X roja",
+   "efecto_sonido": "sonido de confirmación o error"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina de forma abrupta",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés, acento estadounidense",
+   "musica": "de fondo, ritmo rápido y animado",
+   "efectos_de_sonido": [
+    "sonido de check verde",
+    "sonido de X roja",
+    "sonido de error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con contorno negro, centrado, tipografía sans-serif",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "campo de fútbol al aire libre",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "dinámico, con elementos gráficos superpuestos",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_pasa_al_final": "el video termina de forma abrupta",
+  "que_hace_que_funcione": "el desafío es claro y genera curiosidad, la interacción entre los dos personajes es natural y rápida, y el uso de elementos visuales (logos, check/X) mantiene el ritmo alto",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una pantalla dividida con una voz en off, mostrando los logos de los equipos y un contador de aciertos, sin necesidad de mostrar a las personas"
+ }
+}
