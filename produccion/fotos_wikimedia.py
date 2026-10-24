@@ -21,7 +21,7 @@ OUT = BASE / "fotos"
 OUT.mkdir(parents=True, exist_ok=True)
 S = requests.Session()
 S.headers["User-Agent"] = "futbol-quiz-research/0.1 (https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz)"
-EXTRA = 3
+EXTRA = int(__import__('os').environ.get('FOTOS_POR_JUGADOR', '8')) - 1
 LIBRES = re.compile(r"^(CC BY|CC BY-SA|CC0|Public domain|PD)", re.I)
 
 
@@ -57,7 +57,7 @@ def principal(nombre):
 
 def extras(nombre):
     d = get("https://commons.wikimedia.org/w/api.php", action="query", list="search", srsearch=f"{nombre} filetype:bitmap",
-            srnamespace=6, srlimit=15, format="json").json()
+            srnamespace=6, srlimit=25, format="json").json()
     return [x["title"] for x in d["query"]["search"]]
 
 
@@ -67,11 +67,12 @@ def main():
     creditos = json.loads(cred_path.read_text()) if cred_path.exists() else {}
     for nombre in pedido:
         slug = re.sub(r"[^a-z0-9]+", "_", nombre.lower()).strip("_")
-        if any(k.startswith(slug + "_") for k in creditos):
+        ya = {v["archivo"] for k, v in creditos.items() if k.startswith(slug + "_")}
+        n = len(ya)
+        if n > EXTRA:
             continue
-        candidatos = [principal(nombre)] + extras(nombre)
-        n = 0
-        for t in dict.fromkeys(c for c in candidatos if c):
+        candidatos = [principal(nombre)] + extras(nombre) + extras(nombre + " portrait")
+        for t in dict.fromkeys(c for c in candidatos if c and c not in ya):
             meta = info(t)
             if not meta or not meta["thumb"] or not LIBRES.search(meta["licencia"] or ""):
                 continue
