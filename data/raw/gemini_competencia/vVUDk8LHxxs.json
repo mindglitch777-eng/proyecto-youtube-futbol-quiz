@@ -1,0 +1,60 @@
+{
+ "formato": "evolucion",
+ "canal": "FULYON SHORTS",
+ "video": {
+  "id": "vVUDk8LHxxs",
+  "titulo": "NEYMAR vs LAMINE YAMAL — WHO REALLY HAS THE BETTER SKILLS? 😳🔥",
+  "fecha": "2026-09-26T13:23:08Z",
+  "vistas": 5909724,
+  "likes": 26910,
+  "coment": 53,
+  "dur": "PT31S"
+ },
+ "mediana": 225829.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Juego runner de decisiones numéricas con imágenes de futbolistas virales de fondo",
+  "duracion_s": 30,
+  "primer_segundo": "Se ve la pantalla de selección inicial con Lamine Yamal y Neymar y rollos de billetes en una pista en 3D",
+  "gancho_texto": "VS Bonus round 1 fight",
+  "protagonistas": [
+   "Lamine Yamal",
+   "Neymar Jr"
+  ],
+  "desenlace": "Neymar gana 7 a 4, siendo el favorito nostálgico del público frente a la nueva promesa",
+  "ganador_popular": true,
+  "arco_de_tension": "La puntuación del dinero sube y baja constantemente con sumas y divisiones hasta el último segundo",
+  "momentos_emocion": [
+   {
+    "t": 1.0,
+    "que": "Empieza el primer enfrentamiento con música acelerada"
+   },
+   {
+    "t": 14.0,
+    "que": "El dinero se reduce drásticamente por una división y genera tensión"
+   },
+   {
+    "t": 27.0,
+    "que": "Neymar gana con la leyenda 'winner' y el dinero final"
+   }
+  ],
+  "audio": {
+   "musica": "Phonk acelerado en tendencia de TikTok con voces procesadas",
+   "voz": "Sí, voz en off robótica/filtrada anunciando las rondas",
+   "efectos": "Sonidos de dinero, gritos/aplausos estilo meme y golpes"
+  },
+  "visual": "Juego runner 3D mezclado con fotos de futbolistas, memes y caras editadas",
+  "texto_en_pantalla": "Marcadores de partido (1:0, 3:1, 4:2, etc.), operaciones matemáticas (+20, -70, ÷4) y montos de dinero en verde y rojo",
+  "ritmo_cortes_por_segundo": 0.8,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad generacional entre Neymar y Lamine Yamal (el presente vs la nueva joya)",
+  "por_que_rinde_asi": [
+   "Combina la satisfacción visual de los juegos runner con dinero que crece y decrece.",
+   "Utiliza futbolistas hiper populares (Neymar y Lamine Yamal) y memes conocidos por la comunidad.",
+   "El formato dinámico con música Phonk y constante tensión matemática mantiene la retención alta."
+  ],
+  "que_le_falta": "Un llamado a la acción al final para comentar a quién apoyaban y aumentar la interacción.",
+  "riesgo_copyright": "Uso de fotos de futbolistas reales y canciones con derechos de autor de Phonk."
+ }
+}

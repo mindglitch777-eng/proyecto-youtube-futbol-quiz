@@ -1,0 +1,61 @@
+{
+ "formato": "evolucion",
+ "canal": "FULYON SHORTS",
+ "video": {
+  "id": "HoHyf09sV80",
+  "titulo": "FIND YAMAL RONALDO NEYMAR",
+  "fecha": "2026-10-20T07:41:25Z",
+  "vistas": 12134791,
+  "likes": 60663,
+  "coment": 335,
+  "dur": "PT16S"
+ },
+ "mediana": 225829.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "juego de encontrar al personaje correcto entre caras distorsionadas",
+  "duracion_s": 15,
+  "primer_segundo": "grilla de 25 caras editadas con efecto de hinchazón y texto FIND YAMAL",
+  "gancho_texto": "FIND YAMAL",
+  "protagonistas": [
+   "Lamine Yamal",
+   "Cristiano Ronaldo",
+   "Neymar"
+  ],
+  "desenlace": "el jugador original es encontrado correctamente en cada ronda con un círculo rojo y sonido de acierto",
+  "ganador_popular": true,
+  "arco_de_tension": "cuenta regresiva visual con barra verde inferior y sonido tipo reloj presionando al espectador",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "inicio de la ronda 1 con Yamal"
+   },
+   {
+    "t": 5.0,
+    "que": "cambio a la ronda de Cristiano Ronaldo"
+   },
+   {
+    "t": 10.0,
+    "que": "cambio a la ronda de Neymar"
+   }
+  ],
+  "audio": {
+   "musica": "instrumental lúdica y tensa de juego de ingenio",
+   "voz": "no",
+   "efectos": "tic tac de reloj y sonido de acierto/fallo"
+  },
+  "visual": "fotos editadas con filtros de deformación en grilla de 5x5; calidad alta; colores vibrantes",
+  "texto_en_pantalla": "FIND YAMAL, FIND RONALDO, FIND NEYMAR, numeros 1 al 25",
+  "ritmo_cortes_por_segundo": 0.33,
+  "loop": true,
+  "pedido_al_espectador": "Subscribe Like",
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "juego interactivo que retiene la atención hasta el final",
+   "uso de futbolistas súper populares (Yamal, Cristiano, Neymar)",
+   "ritmo rápido y presión constante del reloj"
+  ],
+  "que_le_falta": "alguna pregunta trivia extra o easter egg al final",
+  "riesgo_copyright": "uso de imágenes de futbolistas reales"
+ }
+}

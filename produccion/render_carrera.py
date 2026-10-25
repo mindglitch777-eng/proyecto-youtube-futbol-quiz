@@ -268,7 +268,19 @@ def main(guion_path):
                else c.get("corto", c["nombre"]).upper()) for c in comp]
     eliminar = g.get("eliminar", 0)
     mods = g["circuito"]
-    mejor = max(range(g.get("intentos", 50)), key=lambda s: drama(simular(n, mods, s, eliminar), n, eliminar))
+    # ganador elegido (el del debate del día): la física es real, elegimos entre muchas carreras la que gana él
+    objetivo = next((i for i, c in enumerate(g["competidores"]) if c["nombre"] == g.get("ganador")), None)
+    puntajes = []
+    for s in range(g.get("intentos", 220 if objetivo is not None else 50)):
+        sim_s = simular(n, mods, s, eliminar)
+        if objetivo is not None and (not sim_s["orden"] or sim_s["orden"][0] != objetivo):
+            continue
+        puntajes.append((drama(sim_s, n, eliminar), s))
+        if objetivo is not None and len(puntajes) >= 12:
+            break
+    if not puntajes:
+        raise SystemExit(f"ninguna carrera la gana {g.get('ganador')}: subí 'intentos'")
+    mejor = max(puntajes)[1]
     sim = simular(n, mods, mejor, eliminar)
     R = sim["R"]; P = sim["pista"]
     ganador = sim["orden"][0]
@@ -462,9 +474,9 @@ def main(guion_path):
         ff.stdin.write(np.asarray(im, np.uint8).tobytes())
     ff.stdin.close(); ff.wait()
 
-    # audio: beat + efectos + relator (edge-tts)
+    # audio: efectos + público; después dos versiones: (A) beat + relator, (B) solo efectos para sumar un sonido de tendencia
     dur = nf / FPS
-    mix = beat(dur) * 0.8
+    mix = np.zeros(int(dur * SR), np.float32)
     fx = efectos(n)
     def add(s, sig, vol=1.0):
         i = int(s * SR); j = min(len(mix), i + len(sig))
@@ -483,6 +495,8 @@ def main(guion_path):
     nz = np.convolve(rng.standard_normal(int(2.4 * SR)).astype(np.float32), np.ones(40) / 40, mode="same")
     env = np.concatenate([np.linspace(0.2, 1, int(0.4 * SR)), np.ones(int(1.0 * SR)), np.linspace(1, 0, int(1.0 * SR))])[: len(nz)]
     add(t_video_gan - 0.05, nz * env, 2.2)
+    solo_fx = mix.copy()
+    mix = mix + beat(dur)[: len(mix)] * 0.8
     lineas = [l for _, l in voz]
     rutas = voces_edge(lineas, out)
     dv = np.ones_like(mix)
@@ -492,13 +506,13 @@ def main(guion_path):
         if i < len(mix):
             dv[i:j] = np.minimum(dv[i:j], 0.45)
             mix[i:j] += 1.05 * x[: j - i]
-    mix = np.tanh(mix * dv * 1.3) * 0.9
     import wave
-    with wave.open(str(out / "audio.wav"), "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
-        w.writeframes((np.clip(mix, -1, 1) * 32767).astype(np.int16).tobytes())
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / "mudo.mp4"), "-i", str(out / "audio.wav"),
-                    "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out / "short.mp4")], check=True)
+    for nombre_v, pista in (("short.mp4", np.tanh(mix * dv * 1.3) * 0.9), ("short_sin_voz.mp4", np.tanh(solo_fx * 1.1) * 0.6)):
+        with wave.open(str(out / "audio.wav"), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
+            w.writeframes((np.clip(pista, -1, 1) * 32767).astype(np.int16).tobytes())
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / "mudo.mp4"), "-i", str(out / "audio.wav"),
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out / nombre_v)], check=True)
     (out / "mudo.mp4").unlink()
     json.dump({"semilla": mejor, "ganador": comp[ganador]["nombre"], "orden": [comp[i]["nombre"] for i in sim["orden"]],
                "eliminados": [comp[i]["nombre"] for i in sim["fuera"]], "dur": round(dur, 1)},

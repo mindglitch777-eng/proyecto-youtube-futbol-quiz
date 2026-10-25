@@ -1,0 +1,61 @@
+{
+ "formato": "evolucion",
+ "canal": "FULYON SHORTS",
+ "video": {
+  "id": "oX-_8rlKuN8",
+  "titulo": "FIND RONALDO NEYMAR YAMAL",
+  "fecha": "2026-10-23T14:55:25Z",
+  "vistas": 3481408,
+  "likes": 17265,
+  "coment": 244,
+  "dur": "PT16S"
+ },
+ "mediana": 225829.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "juego interactivo de encontrar al jugador correcto entre caras modificadas",
+  "duracion_s": 15,
+  "primer_segundo": "título 'FIND RONALDO' y una grilla numerada de 25 caras editadas",
+  "gancho_texto": "FIND RONALDO",
+  "protagonistas": [
+   "Cristiano Ronaldo",
+   "Neymar",
+   "Lamine Yamal"
+  ],
+  "desenlace": "se encuentran sucesivamente los tres futbolistas pedidos en tres rondas rápidas",
+  "ganador_popular": true,
+  "arco_de_tension": "cuenta regresiva visual con una barra verde inferior y tic-tac de audio por cada ronda",
+  "momentos_emocion": [
+   {
+    "t": 4.0,
+    "que": "acierto de Cristiano Ronaldo en la celda 7"
+   },
+   {
+    "t": 9.0,
+    "que": "acierto de Neymar en la celda 19"
+   },
+   {
+    "t": 14.0,
+    "que": "acierto de Yamal en la celda 22"
+   }
+  ],
+  "audio": {
+   "musica": "tic-tac de reloj estilo juego de ingenio",
+   "voz": "no",
+   "efectos": "sonido de selección correcta"
+  },
+  "visual": "fotos editadas con IA, colores brillantes y formato vertical",
+  "texto_en_pantalla": "FIND RONALDO, FIND NEYMAR, FIND YAMAL en la parte superior",
+  "ritmo_cortes_por_segundo": 0.2,
+  "loop": true,
+  "pedido_al_espectador": "encontrar al jugador antes de que termine el tiempo",
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "gamificación que retiene al espectador hasta adivinar",
+   "uso de jugadores hiper populares (Ronaldo, Neymar, Yamal)",
+   "efecto visual humorístico que genera curiosidad"
+  ],
+  "que_le_falta": "un nivel final más difícil o con trampa para aumentar comentarios",
+  "riesgo_copyright": "bajo, uso de imágenes públicas transformadas"
+ }
+}

@@ -1,0 +1,72 @@
+{
+ "id": "carrera_08",
+ "ganador": "Cristiano Ronaldo",
+ "paleta": "oro",
+ "evento": "ONE TROPHY. THREE SUPERSTARS",
+ "titulo": "WHO GETS THE TROPHY?",
+ "gancho": "MBAPPÉ, YAMAL OR RONALDO?",
+ "voz_intro": "Mbappé, Yamal or Ronaldo? Pick one now!",
+ "eliminar": 1,
+ "circuito": [
+  "clavos",
+  "aspas",
+  "zigzag",
+  "rebotadores",
+  "acelerador",
+  "molinos",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Cristiano Ronaldo",
+   "voz": "Ronaldo",
+   "anillo": [
+    240,
+    70,
+    70
+   ]
+  }
+ ],
+ "cierre": "IF YOU LIKE RONALDO, COMMENT SIUU",
+ "titulos": [
+  "Mbappé, Yamal or Ronaldo? One Trophy, Three Superstars! 🏆",
+  "Who gets the trophy? Mbappé, Yamal or Ronaldo 😱",
+  "MBAPPÉ vs YAMAL vs RONALDO race 🏁"
+ ],
+ "formato": "carrera",
+ "voz_lineas": [
+  "Mbappé, Yamal or Ronaldo? Pick one now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Mbappé takes the lead!",
+  "Mbappé is out!",
+  "Mbappé wins it!",
+  "Lamine Yamal takes the lead!",
+  "Lamine Yamal is out!",
+  "Lamine Yamal wins it!",
+  "Ronaldo takes the lead!",
+  "Ronaldo is out!",
+  "Ronaldo wins it!"
+ ]
+}

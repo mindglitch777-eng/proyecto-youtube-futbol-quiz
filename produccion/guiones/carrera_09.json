@@ -1,0 +1,72 @@
+{
+ "id": "carrera_09",
+ "ganador": "Cristiano Ronaldo",
+ "paleta": "violeta",
+ "evento": "ONE TROPHY. THREE LEGENDS",
+ "titulo": "WHO GETS THE TROPHY?",
+ "gancho": "MESSI, NEYMAR OR RONALDO?",
+ "voz_intro": "Messi, Neymar or Ronaldo? Pick one now!",
+ "eliminar": 1,
+ "circuito": [
+  "rebotadores",
+  "zigzag",
+  "molinos",
+  "clavos",
+  "aspas",
+  "acelerador",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Lionel Messi",
+   "voz": "Messi",
+   "anillo": [
+    120,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Neymar",
+   "voz": "Neymar",
+   "anillo": [
+    255,
+    220,
+    0
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Cristiano Ronaldo",
+   "voz": "Ronaldo",
+   "anillo": [
+    240,
+    70,
+    70
+   ]
+  }
+ ],
+ "cierre": "IF YOU LIKE RONALDO, COMMENT SIUU",
+ "titulos": [
+  "Messi, Neymar or Ronaldo? Only ONE gets the trophy 🏆",
+  "Messi vs Neymar vs Ronaldo race 😱 Who wins?",
+  "The GOAT race: Messi, Neymar or Ronaldo? 🐐"
+ ],
+ "formato": "carrera",
+ "voz_lineas": [
+  "Messi, Neymar or Ronaldo? Pick one now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Messi takes the lead!",
+  "Messi is out!",
+  "Messi wins it!",
+  "Neymar takes the lead!",
+  "Neymar is out!",
+  "Neymar wins it!",
+  "Ronaldo takes the lead!",
+  "Ronaldo is out!",
+  "Ronaldo wins it!"
+ ]
+}

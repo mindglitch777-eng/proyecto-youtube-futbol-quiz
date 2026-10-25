@@ -1,0 +1,70 @@
+{
+ "formato": "carrera",
+ "canal": "Goal nowa",
+ "video": {
+  "id": "DFrL_BY8dDc",
+  "titulo": "football challenge ⚽?#football #footballchallenge #worldcup #worldcup2026 #vairal",
+  "fecha": "2026-07-16T08:16:48Z",
+  "vistas": 300,
+  "likes": 0,
+  "coment": 0,
+  "dur": "PT7S"
+ },
+ "mediana": 28515.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "challenge grupal con pelotas de diferentes países",
+  "duracion_s": 5,
+  "primer_segundo": "8 personas paradas en línea con banderas y pelotas, preparadas para patear",
+  "gancho_texto": "Goal nowa",
+  "protagonistas": [
+   "Marruecos",
+   "Inglaterra",
+   "Argentina",
+   "España",
+   "Brasil",
+   "Estados Unidos",
+   "Francia",
+   "Portugal"
+  ],
+  "desenlace": "Las pelotas ruedan hacia adelante y una toca la principal, desatando la celebración del grupo",
+  "ganador_popular": false,
+  "arco_de_tension": "cuenta regresiva y golpe simultáneo a las pelotas",
+  "momentos_emocion": [
+   {
+    "t": 1.0,
+    "que": "patean las pelotas al mismo tiempo"
+   },
+   {
+    "t": 3.0,
+    "que": "las pelotas chocan con la principal"
+   },
+   {
+    "t": 4.0,
+    "que": "festejo grupal"
+   }
+  ],
+  "audio": {
+   "musica": "canción épica en tendencia",
+   "voz": "no",
+   "efectos": "golpes de pelota y sonido de festejo"
+  },
+  "visual": "video vertical grabado con celular, buena iluminación exterior en cancha de pasto sintético",
+  "texto_en_pantalla": "Goal nowa en el segundo 0",
+  "ritmo_cortes_por_segundo": 0.2,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "duración extremadamente corta que facilita el loop",
+   "banderas de países atractivas para el algoritmo global",
+   "acción inmediata sin introducciones largas"
+  ],
+  "que_le_falta": [
+   "un giro inesperado o caída de alguien",
+   "mejor edición de sonido en el impacto",
+   "gancho textual más provocativo"
+  ],
+  "riesgo_copyright": "música potencialmente con derechos de autor"
+ }
+}
