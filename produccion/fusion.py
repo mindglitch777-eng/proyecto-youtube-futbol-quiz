@@ -26,30 +26,45 @@ def _facemark():
     return fm
 
 
-def puntos(img):
+def puntos(img, caja=None):
     gris = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
-    caras = _cascada.detectMultiScale(gris, 1.1, 5, minSize=(80, 80))
-    if not len(caras):
-        raise ValueError("no encontré cara")
-    cara = max(caras, key=lambda c: c[2] * c[3])
+    if caja is not None:
+        cara = np.array([int(v) for v in caja])
+    else:
+        caras = _cascada.detectMultiScale(gris, 1.1, 5, minSize=(80, 80))
+        if not len(caras):
+            raise ValueError("no encontré cara")
+        cara = max(caras, key=lambda c: c[2] * c[3])
     ok, lm = _facemark().fit(gris, np.array([cara]))
     return lm[0][0].astype(np.float32)
 
 
-def alinear(path):
-    """Recorte LADOxLADO con los ojos en una posición fija (para que las caras coincidan)."""
+def alinear(path, espejar=False, cara=None):
+    """Recorte LADOxLADO con los ojos en una posición fija (para que las caras coincidan).
+    cara: 14 valores de YuNet (caja + 5 puntos) de la persona correcta; si falta, se detecta.
+    espejar=True da vuelta la foto para que mire hacia el mismo lado que la otra."""
     img = cv2.imread(str(path))
-    p = puntos(img)
-    ojo_i, ojo_d = p[36:42].mean(0), p[42:48].mean(0)
-    # destino: ojos a 37% de alto, separados 30% del ancho
+    if cara is not None:
+        f = np.array(cara, np.float32)
+        ojo_i, ojo_d = f[4:6].copy(), f[6:8].copy()      # YuNet: ojo derecho del sujeto (izq. en la imagen) primero
+    else:
+        p = puntos(img)
+        ojo_i, ojo_d = p[36:42].mean(0), p[42:48].mean(0)
+    if espejar:
+        w = img.shape[1]
+        img = img[:, ::-1].copy()
+        ojo_i, ojo_d = np.array([w - 1 - ojo_d[0], ojo_d[1]]), np.array([w - 1 - ojo_i[0], ojo_i[1]])
+    if ojo_i[0] > ojo_d[0]:
+        ojo_i, ojo_d = ojo_d, ojo_i
     dst_i, dst_d = np.array([LADO * 0.35, LADO * 0.40]), np.array([LADO * 0.65, LADO * 0.40])
     ang = np.degrees(np.arctan2(*(ojo_d - ojo_i)[::-1]))
     esc = np.linalg.norm(dst_d - dst_i) / np.linalg.norm(ojo_d - ojo_i)
     centro = (ojo_i + ojo_d) / 2
-    M = cv2.getRotationMatrix2D(tuple(map(float, centro)), ang, esc)
+    M = cv2.getRotationMatrix2D(tuple(map(float, centro)), float(ang), float(esc))
     M[:, 2] += (dst_i + dst_d) / 2 - centro
     out = cv2.warpAffine(img, M, (LADO, LADO), flags=cv2.INTER_CUBIC, borderMode=cv2.BORDER_REFLECT)
-    return out, puntos(out)
+    # ya alineada, la cara está siempre en el mismo lugar: caja fija para los 68 puntos
+    return out, puntos(out, [LADO * 0.18, LADO * 0.20, LADO * 0.64, LADO * 0.70])
 
 
 def _con_borde(p):
@@ -89,9 +104,9 @@ def _warp_tri(src, dst, t_src, t_dst):
 
 
 class Fusion:
-    def __init__(self, path_a, path_b):
-        self.a, pa = alinear(path_a)
-        self.b, pb = alinear(path_b)
+    def __init__(self, path_a, path_b, espejar_a=False, espejar_b=False, cara_a=None, cara_b=None):
+        self.a, pa = alinear(path_a, espejar_a, cara_a)
+        self.b, pb = alinear(path_b, espejar_b, cara_b)
         self.pa, self.pb = _con_borde(pa), _con_borde(pb)
         self.tris = _triangulos((self.pa + self.pb) / 2)
         self.a32, self.b32 = self.a.astype(np.float32), self.b.astype(np.float32)

@@ -1,0 +1,28 @@
+name: Generar voces (edge-tts)
+
+# Se dispara al cambiar los guiones. Genera una locución por frase con edge-tts y la sube al repo.
+on:
+  push:
+    paths: [produccion/guiones/**, produccion/voz_edge.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  voz:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q edge-tts
+      - run: python3 produccion/voz_edge.py
+      - name: Guardar voces
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add produccion/assets/voz_edge
+          git commit -m "Voces edge-tts" || echo "nada nuevo"
+          git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}"

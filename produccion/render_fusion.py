@@ -39,6 +39,24 @@ ESTILO = "Say this in an excited, fast, high-energy sports hype announcer voice,
 
 
 # ---------------------------------------------------------------- audio
+def voces_edge(lineas, out):
+    """Usa las locuciones de edge-tts generadas en GitHub Actions (assets/voz_edge). Las pasa a wav sin silencios."""
+    indice = json.loads((ROOT / "assets/voz_edge/indice.json").read_text())
+    faltan = [l for l in lineas if l not in indice]
+    if faltan:
+        raise SystemExit(f"faltan voces edge para: {faltan[:3]} (correr el workflow 'Generar voces')")
+    rutas = []
+    for i, l in enumerate(lineas):
+        dst = out / f"voz_{i:02d}.wav"
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(ROOT / "assets/voz_edge" / indice[l]["archivo"]),
+                        "-af", "silenceremove=start_periods=1:start_threshold=-45dB,areverse,"
+                               "silenceremove=start_periods=1:start_threshold=-45dB,areverse",
+                        "-ar", "24000", "-ac", "1", str(dst)], check=True)
+        rutas.append(dst)
+    return rutas
+
+
+
 def leer_wav(path):
     with wave.open(str(path)) as w:
         sr, n = w.getframerate(), w.getnframes()
@@ -65,6 +83,7 @@ def efectos(n):
     e, tt = env(0.03, k=120); fx["tick2"] = np.sin(2 * np.pi * 2400 * tt) * e * 0.38
     e, tt = env(0.9, k=4.5)
     fx["ding"] = (np.sin(2 * np.pi * 1318 * tt) + 0.6 * np.sin(2 * np.pi * 1976 * tt) + 0.3 * np.sin(2 * np.pi * 2637 * tt)) * e * 0.22
+    e, tt = env(0.25, k=14); fx["pista"] = (np.sin(2 * np.pi * 880 * tt) + np.sin(2 * np.pi * 1320 * tt)) * e * 0.18
     e, tt = env(1.0, k=4); fx["boom"] = np.sin(2 * np.pi * (36 + 70 * np.exp(-10 * tt)) * tt) * e * 0.9
     e, tt = env(0.28, k=9); fx["latido"] = np.sin(2 * np.pi * (50 + 30 * np.exp(-30 * tt)) * tt) * e * 0.55
     d = 0.9; nz = rng.standard_normal(int(d * SR)).astype(np.float32); tt = np.arange(len(nz)) / SR
@@ -126,14 +145,15 @@ def main(guion_path):
 
     # voces y tiempos
     lineas = [x for r in g["rondas"] for x in (r["voz_pregunta"], r["voz_revela"])] + [g["voz_cierre"]]
-    wavs = voces_guion(lineas, estilo, vname)
+    wavs = voces_edge(lineas, out) if g.get("motor_voz", "edge") == "edge" else voces_guion(lineas, estilo, vname)
     rondas, t = [], 0.0
     for i, r in enumerate(g["rondas"]):
         vq, vr = wavs[2 * i], wavs[2 * i + 1]
         dq, dr_ = dur_wav(vq), dur_wav(vr)
-        think = max(r.get("pensar", 3.0), dq + 1.3)
+        think = max(r.get("pensar", g.get("pensar", 4.5)), dq + 1.5)
         reveal = max(1.7, dr_ + 0.45)
-        fus = Fusion(FOTOS / f"{r['a']}.jpg", FOTOS / f"{r['b']}.jpg")
+        fus = Fusion(FOTOS / f"{r['a']}.jpg", FOTOS / f"{r['b']}.jpg", r.get("espejar_a", False), r.get("espejar_b", False),
+                     r.get("cara_a"), r.get("cara_b"))
         rondas.append({**r, "t0": t, "think": think, "reveal": reveal, "vq": vq, "vr": vr, "dq": dq, "dr": dr_, "fus": fus})
         t += think + reveal
     v_end = wavs[-1]; d_end = dur_wav(v_end)
@@ -156,6 +176,7 @@ def main(guion_path):
             rest = tr - s
             add(sfx, s, fx["tick2"] if rest < 1.0 else fx["tick"])
             s += 0.25 if rest < 1.0 else 0.5
+        add(sfx, r["t0"] + r["think"] * 0.55, fx["pista"])
         for k in range(3):
             add(sfx, tr - 1.0 + k * 0.33, fx["latido"])
         add(sfx, tr - 0.9, fx["riser"])
@@ -220,10 +241,15 @@ def main(guion_path):
                 dr.rounded_rectangle((bx0, by, bx0 + (bx1 - bx0) * frac, by + 24), 12, fill=LED if rest > 1 else ROJO)
             texto(dr, (bx1 + 52, by + 11), str(max(1, math.ceil(rest))), 64, LED if rest > 1 else ROJO, 7)
             # subtítulo de la pregunta
+            t_pista = r["think"] * 0.55
             if tr < r["dq"] + 0.4:
                 subtitulo(dr, r["voz_pregunta"], 1.0 if k == 0 else (tr - 0.05) / max(r["dq"], .1), 1540)
-            else:
+            elif tr < t_pista:
                 texto(dr, (CX + 35, 1540), "NAME BOTH!", 70, BLANCO, 8)
+            else:
+                ini = lambda n: n[0].upper() + "•" * (len(n.replace(" ", "")) - 1)
+                q = ease_out((tr - t_pista) / 0.2)
+                texto(dr, (CX + 35, 1540), f"HINT:  {ini(r['nombre_a'])}  +  {ini(r['nombre_b'])}", int(66 * (0.85 + 0.15 * q)), LED, 8)
         else:
             p = ease_out(min(trv / T_SPLIT, 1)) if not final else 1
             diam = int(DIAM + (DIAM_S - DIAM) * p)

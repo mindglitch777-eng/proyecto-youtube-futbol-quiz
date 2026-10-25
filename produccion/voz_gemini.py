@@ -24,7 +24,7 @@ import requests
 ROOT = Path(__file__).resolve().parent
 CACHE = ROOT / "assets" / "voz"
 CACHE.mkdir(parents=True, exist_ok=True)
-MODELOS = os.environ.get("GEMINI_TTS_MODELS", "gemini-2.5-flash-preview-tts,gemini-3.8-flash-tts").split(",")
+MODELOS = os.environ.get("GEMINI_TTS_MODELS", "gemini-2.5-flash-preview-tts,gemini-3.8-flash-tts,gemini-3.8-flash-lite-tts").split(",")
 MODELO_TRANSCRIBE = os.environ.get("GEMINI_STT_MODEL", "gemini-3.1-flash-lite")
 URL = "https://generativelanguage.googleapis.com/v1beta/models/{}:generateContent"
 TEMPO = 1.1
@@ -35,7 +35,17 @@ def _post(model, body):
 
 
 def _normal(s):
-    return re.sub(r"[^a-z0-9 ]", "", s.lower().replace("é", "e").replace("one percent", "1%").replace("1%", "one percent")).split()
+    import unicodedata
+    s = unicodedata.normalize("NFKD", s.lower()).encode("ascii", "ignore").decode()
+    s = s.replace("one percent", "1%").replace("1%", "one percent").replace("-", " ")
+    return re.sub(r"[^a-z0-9 ]", "", s).split()
+
+
+def _parecido(a, b):
+    """Proporción de palabras de b que aparecen en orden en a (tolerante a nombres mal transcriptos)."""
+    import difflib
+    sm = difflib.SequenceMatcher(None, a, b)
+    return sum(m.size for m in sm.get_matching_blocks()) / max(len(b), 1)
 
 
 def _transcribe(pcm):
@@ -98,24 +108,65 @@ def voz(texto, estilo, voz_nombre="Puck"):
     raise RuntimeError(f"TTS falló para '{texto}': {ultimo}")
 
 
-def _segmentos(x, sr, n_esperado, gap_min=0.32):
-    """Corta por silencios; une los huecos más chicos hasta tener n_esperado segmentos."""
-    env = np.convolve(np.abs(x), np.ones(int(0.02 * sr)) / int(0.02 * sr), mode="same")
-    voz_on = env > 0.02
-    idx = np.where(voz_on)[0]
+def _segmentos(x, sr, lineas):
+    """Elige los cortes entre frases: entre todos los micro-silencios, los que dejan cada tramo
+    con la duración más parecida a la esperada (proporcional a las letras de la frase)."""
+    n = len(lineas)
+    win = int(0.02 * sr)
+    env = np.convolve(np.abs(x), np.ones(win) / win, mode="same")
+    activo = env > 0.015
+    idx = np.where(activo)[0]
     if not len(idx):
         return None
-    # tramos con voz
-    cortes = np.where(np.diff(idx) > gap_min * sr)[0]
-    inicios = [idx[0]] + [idx[c + 1] for c in cortes]
-    fines = [idx[c] for c in cortes] + [idx[-1]]
-    segs = list(zip(inicios, fines))
-    # descartar ruidos muy cortos (< 0.15 s)
-    segs = [s for s in segs if s[1] - s[0] > 0.15 * sr]
-    while len(segs) > n_esperado:
-        gaps = [segs[i + 1][0] - segs[i][1] for i in range(len(segs) - 1)]
-        i = int(np.argmin(gaps)); segs[i:i + 2] = [(segs[i][0], segs[i + 1][1])]
-    return segs if len(segs) == n_esperado else None
+    ini, fin = idx[0], idx[-1]
+    # huecos candidatos (>= 0.08 s de silencio)
+    huecos = []
+    i = ini
+    while i < fin:
+        if not activo[i]:
+            j = i
+            while j < fin and not activo[j]:
+                j += 1
+            if (j - i) / sr >= 0.08:
+                huecos.append(((i + j) // 2, (j - i) / sr, i, j))
+            i = j
+        else:
+            i += 1
+    if len(huecos) < n - 1:
+        return None
+    letras = np.array([len(l) for l in lineas], float)
+    total = (fin - ini) / sr - sum(h[1] for h in huecos) * 0.5
+    esperado = total * letras / letras.sum()
+    pos = [ini] + [h[0] for h in huecos] + [fin]
+    largo_hueco = [0] + [h[1] for h in huecos] + [0]
+    m = len(pos)
+    INF = 1e18
+    # dp[k][j]: mejor costo usando k frases terminando en el corte j
+    dp = np.full((n + 1, m), INF); prev = np.zeros((n + 1, m), int); dp[0][0] = 0
+    for k in range(1, n + 1):
+        for j in range(1, m):
+            if k == n and j != m - 1:
+                continue
+            for i0 in range(j):
+                if dp[k - 1][i0] >= INF:
+                    continue
+                d = (pos[j] - pos[i0]) / sr
+                c = dp[k - 1][i0] + ((d - esperado[k - 1]) / max(esperado[k - 1], 0.4)) ** 2 - 0.8 * min(largo_hueco[j], 0.6)
+                if c < dp[k][j]:
+                    dp[k][j] = c; prev[k][j] = i0
+    if dp[n][m - 1] >= INF:
+        return None
+    cortes = [m - 1]
+    for k in range(n, 0, -1):
+        cortes.append(prev[k][cortes[-1]])
+    cortes = cortes[::-1]
+    segs = []
+    for k in range(n):
+        a_, b_ = pos[cortes[k]], pos[cortes[k + 1]]
+        # recortar silencio en los bordes del tramo
+        sub = np.where(activo[a_:b_])[0]
+        segs.append((a_ + sub[0], a_ + sub[-1]) if len(sub) else (a_, b_))
+    return segs
 
 
 def voces_guion(lineas, estilo, voz_nombre="Puck"):
@@ -137,13 +188,14 @@ def voces_guion(lineas, estilo, voz_nombre="Puck"):
                 ultimo = f"{m} {r.status_code}"; continue
             pcm = base64.b64decode(r.json()["candidates"][0]["content"]["parts"][0]["inlineData"]["data"])
             x = np.frombuffer(pcm, np.int16).astype(np.float32) / 32768
-            segs = _segmentos(x, sr, len(lineas))
+            (CACHE / "_ultimo_crudo.raw").write_bytes(pcm)      # para depurar cortes sin gastar otro pedido
+            segs = _segmentos(x, sr, lineas)
             if not segs:
                 ultimo = f"{m}: no pude cortar en {len(lineas)} frases"; print("  " + ultimo); continue
             # control: cada tramo no puede ser mucho más largo que su frase
             malos = [i for i, (a, b) in enumerate(segs) if (b - a) / sr > 0.5 * len(lineas[i].split()) + 1.3]
             trans = _transcribe((x[segs[0][0]:segs[-1][1]] * 32767).astype(np.int16).tobytes())
-            if malos or (trans and _normal(trans) != sum((_normal(l) for l in lineas), [])):
+            if malos or (trans and _parecido(_normal(trans), sum((_normal(l) for l in lineas), [])) < 0.85):
                 ultimo = f"{m}: tramos largos {malos} / transcripción '{trans}'"; print("  voz rechazada: " + ultimo[:200]); continue
             for i, (a, b) in enumerate(segs):
                 a = max(0, a - int(0.03 * sr)); b = min(len(x), b + int(0.08 * sr))
