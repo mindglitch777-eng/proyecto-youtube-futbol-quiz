@@ -1,50 +1,42 @@
-# Calendario maestro (2 shorts por día)
+# Calendario maestro · Futbol Edition (2 shorts por día)
 
-**Horarios: 10:00 y 23:00, hora Argentina**, siempre los mismos (el algoritmo y tu audiencia se acostumbran).
-Cada carpeta `produccion/salida/<id>/` tiene el video y `SUBIR.txt` (título, descripción con créditos y comentario para fijar).
+Hoy (dom 25-oct) arrancamos con la predicción del Balón de Oro (gana Kane) y el Clásico. La versión «gana Yamal» quedó afuera.
+Calendario interactivo con descargas: https://claude.ai/artifact/PKUd1z5oEWdrR9fuatxhTr
 
-| Cuándo | Video | Por qué ese día | Título A |
+| Cuándo (hora Argentina) | Archivo | Por qué ese día | Título A |
 |---|---|---|---|
-| dom 25-10 23:00 | `carrera_06` | Noche del Clásico (se jugó hoy 21:00 de España) | EL CLÁSICO RACE 🏁 Who wins? Pick one! |
-| lun 26-10 10:00 | `find_the_real_02` | Ola FIND de FULYON (23 M y creciendo) | FIND YAMAL MESSI RONALDO 🔎 |
-| lun 26-10 23:00 | `carrera_01` | Balón de Oro (ceremonia 17:00 ART): subí carrera_01 si gana YAMAL o carrera_01b si gana KANE | BALLON D'OR 2026 PREDICTION RACE 🏁 Who wins? Pick one! |
-| mar 27-10 10:00 | `evo_01` | Evolución: Messi desde 2005 | Wait for it… 😳 Age evolution |
-| mar 27-10 23:00 | `carrera_08` | Trío con Ronaldo (fórmula DriveLabs) | Mbappé, Yamal or Ronaldo? One Trophy, Three Superstars! 🏆 |
-| mié 28-10 10:00 | `objeto_01` | Evolución de pelotas del Mundial (el formato de 10–26 M) | World Cup ball evolution (1930–2026) ⚽🔥 |
-| mié 28-10 23:00 | `dupla_02` | Dupla: Messi y Neymar | MESSI & NEYMAR age evolution 😳 |
-| jue 29-10 10:00 | `prime_01` | Prime vs now: Barcelona 2015 | BARCELONA 2015 THEN vs NOW 😳 |
-| jue 29-10 23:00 | `carrera_04` | Debate GOAT (gana Ronaldo) | THE GOAT DEBATE RACE 🏁 Who wins? Pick one! |
-| vie 30-10 10:00 | `find_the_real_03` | FIND | FIND MBAPPÉ VINÍCIUS BELLINGHAM 🔎 |
-| vie 30-10 23:00 | `carrera_02` | Campeones del mundo (gana Argentina) | WORLD CUP CHAMPIONS RACE 🏁 Who wins? Pick one! |
-| sáb 31-10 10:00 | `evo_02` | Evolución: Neymar | Wait for it… 😳 Age evolution |
-| sáb 31-10 23:00 | `carrera_03` | Libertadores (gana Boca) | COPA LIBERTADORES GIANTS RACE 🏁 Who wins? Pick one! |
-| dom 01-11 10:00 | `dupla_01` | Dupla: Lampard y Drogba (público UK) | LAMPARD & DROGBA age evolution 😳 |
-| dom 01-11 23:00 | `carrera_09` | Trío con Ronaldo | Messi, Neymar or Ronaldo? Only ONE gets the trophy 🏆 |
-| lun 02-11 10:00 | `prime_02` | Prime vs now: Alemania 2014 | GERMANY 2014 THEN vs NOW 😳 |
-| lun 02-11 23:00 | `carrera_05` | Premier Big 6 (gana United) | PREMIER LEAGUE BIG 6 RACE 🏁 Who wins? Pick one! |
-| mar 03-11 10:00 | `carrera_10` | Predicción Champions del martes (gana Barça) | Champions League Tuesday: who wins? 🏆 Prediction race |
-| mar 03-11 23:00 | `evo_03` | Evolución: Beckham | Wait for it… 😳 Age evolution |
-| mié 04-11 10:00 | `carrera_11` | Predicción Champions del miércoles (gana Madrid) | Champions League Wednesday: who wins? 🏆 Prediction race |
-| mié 04-11 23:00 | `find_the_real_04` | FIND | FIND NEYMAR SALAH KANE 🔎 |
-| jue 05-11 10:00 | `dupla_03` | Dupla: Casillas y Ramos | CASILLAS & RAMOS age evolution 😳 |
-| jue 05-11 23:00 | `carrera_07` | Leyendas vs nueva generación (gana Ronaldinho) | LEGENDS vs NEW GEN RACE 🏁 Who wins? Pick one! |
-| vie 06-11 10:00 | `evo_04` | Evolución: Salah | Wait for it… 😳 Age evolution |
-| vie 06-11 23:00 | `lote1_02` | Fusión: Argentina vs Brasil | ARGENTINA vs BRAZIL in ONE face 🇦🇷🇧🇷 |
-| sáb 07-11 10:00 | `prime_03` | Prime vs now: España 2010 | SPAIN 2010 THEN vs NOW 😳 |
-| sáb 07-11 23:00 | `find_the_real_05` | FIND | FIND HAALAND PEDRI SAKA 🔎 |
-| dom 08-11 10:00 | `evo_05` | Evolución: Zlatan | Wait for it… 😳 Age evolution |
-| dom 08-11 23:00 | `dupla_04` | Dupla: Suárez y Messi | SUÁREZ & MESSI age evolution 😳 |
-| lun 09-11 10:00 | `prime_04` | Prime vs now: Francia 2018 | FRANCE 2018 THEN vs NOW 😳 |
-| lun 09-11 23:00 | `lote1_04` | Fusión: Premier League | PREMIER LEAGUE stars in ONE face 🤯 |
-| mar 10-11 10:00 | `evo_06` | Evolución: Modrić | Wait for it… 😳 Age evolution |
-| mar 10-11 23:00 | `lote1_06` | Fusión: jóvenes estrellas | YOUNG STARS in ONE face 🤯 Name both |
-| mié 11-11 10:00 | `evo_07` | Evolución: Kane | Wait for it… 😳 Age evolution |
-| mié 11-11 23:00 | `lote1_10` | Fusión: Messi o Ronaldo | MESSI + ? Only 1% know 😳 |
-
-## Reglas de la semana
-1. **Día 1 a 4: probar todos los formatos** (carreras, evolución, prime vs now, fusión, find the real).
-2. **A las 48–72 h de cada video**, anotá en `produccion/registro.csv` vistas, % vieron vs. deslizaron y retención.
-3. **El jueves**: el formato que pase **10 veces la mediana del canal** se **clona 3–5 veces** la semana siguiente
-   (mismo formato, título casi igual, otro tema). El que quede abajo de la mediana sale del calendario.
-4. **Eventos en vivo** (finales, clásicos, Balón de Oro, fechas FIFA): una carrera o evolución del tema ese mismo día.
-5. Respondé los primeros 5 comentarios de cada video en la primera hora.
+| Domingo 25 oct 20:00 | `01_dom25-10_20h_carrera_01b.mp4` | Predicción del Balón de Oro (la ceremonia es mañana 17:00 ART). Gana Kane, el favorito. | BALLON D'OR 2026 PREDICTION RACE 🏁 Who wins? Pick one! |
+| Domingo 25 oct 23:00 | `02_dom25-10_23h_carrera_06.mp4` | Noche del Clásico (se jugó hoy) | EL CLÁSICO RACE 🏁 Who wins? Pick one! |
+| Lunes 26 oct 10:00 | `03_lun26-10_10h_find_the_real_02.mp4` | Ola FIND de FULYON (23 M y creciendo) | FIND YAMAL MESSI RONALDO 🔎 |
+| Lunes 26 oct 23:00 | `04_lun26-10_23h_evo_01.mp4` | Evolución: Messi desde 2005 | Wait for it… 😳 Age evolution |
+| Martes 27 oct 10:00 | `05_mar27-10_10h_carrera_08.mp4` | Trío con Ronaldo (fórmula DriveLabs) | Mbappé, Yamal or Ronaldo? One Trophy, Three Superstars! 🏆 |
+| Martes 27 oct 23:00 | `06_mar27-10_23h_objeto_01.mp4` | Evolución de pelotas del Mundial (el formato de 10–26 M) | World Cup ball evolution (1930–2026) ⚽🔥 |
+| Miércoles 28 oct 10:00 | `07_mié28-10_10h_dupla_02.mp4` | Dupla: Messi y Neymar | MESSI & NEYMAR age evolution 😳 |
+| Miércoles 28 oct 23:00 | `08_mié28-10_23h_prime_01.mp4` | Prime vs now: Barcelona 2015 | BARCELONA 2015 THEN vs NOW 😳 |
+| Jueves 29 oct 10:00 | `09_jue29-10_10h_carrera_04.mp4` | Debate GOAT (gana Ronaldo) | THE GOAT DEBATE RACE 🏁 Who wins? Pick one! |
+| Jueves 29 oct 23:00 | `10_jue29-10_23h_find_the_real_03.mp4` | FIND | FIND MBAPPÉ VINÍCIUS BELLINGHAM 🔎 |
+| Viernes 30 oct 10:00 | `11_vie30-10_10h_carrera_02.mp4` | Campeones del mundo (gana Argentina) | WORLD CUP CHAMPIONS RACE 🏁 Who wins? Pick one! |
+| Viernes 30 oct 23:00 | `12_vie30-10_23h_evo_02.mp4` | Evolución: Neymar | Wait for it… 😳 Age evolution |
+| Sábado 31 oct 10:00 | `13_sáb31-10_10h_carrera_03.mp4` | Libertadores (gana Boca) | COPA LIBERTADORES GIANTS RACE 🏁 Who wins? Pick one! |
+| Sábado 31 oct 23:00 | `14_sáb31-10_23h_dupla_01.mp4` | Dupla: Lampard y Drogba (público UK) | LAMPARD & DROGBA age evolution 😳 |
+| Domingo 1 nov 10:00 | `15_dom01-11_10h_carrera_09.mp4` | Trío con Ronaldo | Messi, Neymar or Ronaldo? Only ONE gets the trophy 🏆 |
+| Domingo 1 nov 23:00 | `16_dom01-11_23h_prime_02.mp4` | Prime vs now: Alemania 2014 | GERMANY 2014 THEN vs NOW 😳 |
+| Lunes 2 nov 10:00 | `17_lun02-11_10h_carrera_05.mp4` | Premier Big 6 (gana United) | PREMIER LEAGUE BIG 6 RACE 🏁 Who wins? Pick one! |
+| Lunes 2 nov 23:00 | `18_lun02-11_23h_evo_03.mp4` | Evolución: Beckham | Wait for it… 😳 Age evolution |
+| Martes 3 nov 10:00 | `19_mar03-11_10h_carrera_10.mp4` | Predicción Champions del martes (gana Barça) | Champions League Tuesday: who wins? 🏆 Prediction race |
+| Martes 3 nov 23:00 | `20_mar03-11_23h_find_the_real_04.mp4` | FIND | FIND NEYMAR SALAH KANE 🔎 |
+| Miércoles 4 nov 10:00 | `21_mié04-11_10h_carrera_11.mp4` | Predicción Champions del miércoles (gana Madrid) | Champions League Wednesday: who wins? 🏆 Prediction race |
+| Miércoles 4 nov 23:00 | `22_mié04-11_23h_dupla_03.mp4` | Dupla: Casillas y Ramos | CASILLAS & RAMOS age evolution 😳 |
+| Jueves 5 nov 10:00 | `23_jue05-11_10h_carrera_07.mp4` | Leyendas vs nueva generación (gana Ronaldinho) | LEGENDS vs NEW GEN RACE 🏁 Who wins? Pick one! |
+| Jueves 5 nov 23:00 | `24_jue05-11_23h_evo_04.mp4` | Evolución: Salah | Wait for it… 😳 Age evolution |
+| Viernes 6 nov 10:00 | `25_vie06-11_10h_lote1_02.mp4` | Fusión: Argentina vs Brasil | ARGENTINA vs BRAZIL in ONE face 🇦🇷🇧🇷 |
+| Viernes 6 nov 23:00 | `26_vie06-11_23h_prime_03.mp4` | Prime vs now: España 2010 | SPAIN 2010 THEN vs NOW 😳 |
+| Sábado 7 nov 10:00 | `27_sáb07-11_10h_find_the_real_05.mp4` | FIND | FIND HAALAND PEDRI SAKA 🔎 |
+| Sábado 7 nov 23:00 | `28_sáb07-11_23h_evo_05.mp4` | Evolución: Zlatan | Wait for it… 😳 Age evolution |
+| Domingo 8 nov 10:00 | `29_dom08-11_10h_dupla_04.mp4` | Dupla: Suárez y Messi | SUÁREZ & MESSI age evolution 😳 |
+| Domingo 8 nov 23:00 | `30_dom08-11_23h_prime_04.mp4` | Prime vs now: Francia 2018 | FRANCE 2018 THEN vs NOW 😳 |
+| Lunes 9 nov 10:00 | `31_lun09-11_10h_lote1_04.mp4` | Fusión: Premier League | PREMIER LEAGUE stars in ONE face 🤯 |
+| Lunes 9 nov 23:00 | `32_lun09-11_23h_evo_06.mp4` | Evolución: Modrić | Wait for it… 😳 Age evolution |
+| Martes 10 nov 10:00 | `33_mar10-11_10h_lote1_06.mp4` | Fusión: jóvenes estrellas | YOUNG STARS in ONE face 🤯 Name both |
+| Martes 10 nov 23:00 | `34_mar10-11_23h_evo_07.mp4` | Evolución: Kane | Wait for it… 😳 Age evolution |
+| Miércoles 11 nov 10:00 | `35_mié11-11_10h_lote1_10.mp4` | Fusión: Messi o Ronaldo | MESSI + ? Only 1% know 😳 |
