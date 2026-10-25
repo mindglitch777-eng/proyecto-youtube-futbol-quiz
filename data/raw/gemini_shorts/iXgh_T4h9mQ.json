@@ -1,0 +1,98 @@
+{
+ "video_id": "iXgh_T4h9mQ",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 2420,
+  "candidatesTokenCount": 1100,
+  "totalTokenCount": 4650,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1637
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1130,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 17.5,
+  "formato": "Adivinar futbolistas por fotos de su infancia antes de que tu rival complete 100 metros nadando en la piscina.",
+  "n_preguntas_o_rondas": 8,
+  "gancho": {
+   "fin_s": 1.5,
+   "que_se_ve": "Dos personas en la piscina listas para competir: una para nadar 100m y otra para adivinar fotos.",
+   "que_se_dice_o_texto": "WHO DID WIN? One, two, three, go!",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 1.5,
+    "parte": "gancho",
+    "descripcion": "Inicio rápido con conteo regresivo '1, 2, 3, go!' en la piscina."
+   },
+   {
+    "inicio_s": 1.5,
+    "fin_s": 16.0,
+    "parte": "pregunta",
+    "descripcion": "El participante muestra carteles impresos de futbolistas de niños mientras el rival nada de fondo y sube el contador de metros."
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 17.5,
+    "parte": "cierre",
+    "descripcion": "El nadador llega a los 100M, celebra en el agua y se declara ganador del reto."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "Contador dinámico de metros (0/100M) y aciertos (0/8) en pantalla"
+  },
+  "revelacion": {
+   "como": "Se superpone la foto actual del futbolista con un indicador de acierto o error sobre el cartel.",
+   "efecto_sonido": "Ninguno en particular, solo voz y ambiente"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El nadador llega a 100M, interrumpe al adivinador y celebran juntos.",
+   "loop": true,
+   "como_hace_el_loop": "El corte del grito de victoria empalma con el inicio rápido del conteo '1, 2, 3, go!'."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés",
+   "musica": "Música de fondo animada y de ritmo rápido",
+   "efectos_de_sonido": [
+    "chapoteo de agua"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto amarillo arriba 'WHO DID WIN?', marcado de nombres con contadores 'DAIMER 0/100M' y 'ALEX 0/8' en fuentes gruesas con borde negro",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Piscina al aire libre con edificio de fondo",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Desafío real en piscina con fotos físicas impresas en papel resistente al agua",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La tensión en tiempo real del cronómetro/carrera de natación. La curiosidad visual de ver fotos inéditas de futbolistas famosos cuando eran niños. La interacción dinámica entre dos personas en un entorno real y veraniego.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar pantalla dividida con un video de gameplay o carrera en la parte inferior y fotos de futbolistas de niños en la parte superior con un contador digital de tiempo."
+ }
+}

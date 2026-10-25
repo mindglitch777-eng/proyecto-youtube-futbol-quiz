@@ -1,0 +1,99 @@
+{
+ "video_id": "HyPr9YUKSmY",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 2697,
+  "candidatesTokenCount": 1119,
+  "totalTokenCount": 5414,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1914
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1598,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 21.7,
+  "formato": "Desafío dual: adivinar 10 futbolistas por su peinado/corte de pelo antes de que el compañero corra 100 metros estirando una cinta.",
+  "n_preguntas_o_rondas": 10,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Dos personas en una cancha de fútbol en plano POV; una sale corriendo tirando de una cinta mientras la otra sostiene hojas impresas con recortes de peinados.",
+   "que_se_dice_o_texto": "WHO DID WIN?",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del reto con marcador de metros recorridos vs aciertos de jugadores."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 20.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda rápida de identificación de futbolistas por recorte de peinado mientras avanza el contador de metros."
+   },
+   {
+    "inicio_s": 20.0,
+    "fin_s": 21.7,
+    "parte": "cierre",
+    "descripcion": "Daimer alcanza los 100 metros antes de que Alex logre completar las 10 respuestas y gana el desafío."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 1.5,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "Contadores numéricos en pantalla (metros de 0 a 100M y aciertos de 0 a 10)"
+  },
+  "revelacion": {
+   "como": "Se superpone el peinado/cara completa del futbolista en pantalla con un indicador de acierto",
+   "efecto_sonido": "Efectos sonoros pop/ding al validar la respuesta"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El corredor alcanza los 100 metros marcando el final del juego y la victoria sobre el adivinador.",
+   "loop": "false",
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés / nombres de jugadores",
+   "musica": "Música rítmica y acelerada de fondo",
+   "efectos_de_sonido": [
+    "Efecto de acierto",
+    "Sonido mecánico/desenrollar cinta"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto superior con tipografía gruesa y marcadores de puntuación en colores cyan y amarillo",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Cancha de fútbol al aire libre con césped natural y cielo despejado",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Perspectiva en primera persona (POV) en tiempo real combinando desafío físico y trivia visual",
+   "cambios_de_plano_aprox": 1
+  },
+  "dificultad_de_las_preguntas": "media",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "1. La tensión en tiempo real de una carrera física compitiendo contra la agilidad mental.\n2. Formato en primera persona (POV) que genera una sensación inmersiva y dinámica.\n3. Uso de cortes de pelo icónicos de futbolistas famosos muy reconocibles por los fanáticos.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una animación 2D o plantilla con un personaje corriendo hacia una meta con barra de progreso, mientras al lado se muestran recortes de peinados de jugadores en tarjetas dinámicas para adivinar en tiempo límite."
+ }
+}

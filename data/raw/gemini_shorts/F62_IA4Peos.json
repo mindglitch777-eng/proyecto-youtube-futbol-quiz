@@ -1,0 +1,125 @@
+{
+ "video_id": "F62_IA4Peos",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 3596,
+  "candidatesTokenCount": 1268,
+  "totalTokenCount": 6217,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2813
+   }
+  ],
+  "thoughtsTokenCount": 1353,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 30.3,
+  "formato": "Adiviná el futbolista por su foto de infancia sosteniendo una vara sobre una pileta o caés al agua",
+  "n_preguntas_o_rondas": 7,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Una mujer sostiene una barra verde sobre una pileta mientras aparece la foto de Cristiano Ronaldo de niño y una cuenta regresiva.",
+   "que_se_dice_o_texto": "C. RONALDO",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Ronda 1: Adivinan a Cristiano Ronaldo de niño."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 7.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: El hombre adivina a Lionel Messi."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 10.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: La mujer adivina a Kylian Mbappé."
+   },
+   {
+    "inicio_s": 10.0,
+    "fin_s": 14.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 4: El hombre adivina a Neymar Jr."
+   },
+   {
+    "inicio_s": 15.0,
+    "fin_s": 18.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 5: La mujer adivina a Erling Haaland."
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 23.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 6: El hombre adivina a Lamine Yamal."
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 30.3,
+    "parte": "cierre",
+    "descripcion": "Ronda 7: La mujer no sabe la respuesta, se agota el tiempo y cae al agua."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "Reloj analógico con sonido de tic-tac sobre la foto infantil"
+  },
+  "revelacion": {
+   "como": "Muestra el nombre en verde sobre la foto infantil y luego la foto/clip actual del futbolista",
+   "efecto_sonido": "Sonido de explosión o impacto"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "La chica no logra responder, suena bocina de error y cae a la pileta.",
+   "loop": "false",
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Nombres de los futbolistas en tono festivo",
+   "musica": "Efectos de tensión y breves remates musicales de éxito",
+   "efectos_de_sonido": [
+    "tic-tac de reloj",
+    "bocina de error",
+    "explosión de acierto",
+    "salpicadura de agua"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto en verde con el nombre del jugador arriba",
+   "idioma": "Español / Universal"
+  },
+  "visual": {
+   "fondo": "Jardín residencial con pileta",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Juego en pareja al aire libre en formato vertical con inserción de imágenes de futbolistas",
+   "cambios_de_plano_aprox": 14
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "La tensión física de estar suspendidos sobre la agua genera empatía instantánea, y las fotos de niños de futbolistas top enganchan rápido a la audiencia.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar una animación estilo juego interactivo donde un avatar cae a un pozo de lava o agua si la barra de tiempo llega a cero antes de revelar la foto."
+ }
+}

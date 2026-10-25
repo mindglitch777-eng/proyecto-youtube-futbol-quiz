@@ -73,3 +73,47 @@ FULYON SHORTS (creado en feb-2026, 92 videos, 121 M de vistas, 50 mil subs, **1 
    - Falta bajar fotos con fecha de Wikimedia, que se hace con el workflow.
 3. **Regla de clonado:** si un video pasa 10 veces la mediana del canal a las 48 h, se hacen 3–5 versiones con el mismo título y formato en los días siguientes.
 4. **Idea para más adelante:** el "juego runner" con caras de jugadores, que FULYON usó para varios episodios de 4–16 M. Es más complejo de producir.
+
+## 6. El cruce: menos explotado Y más fuerte, solo sin cara
+
+Recalculé la tabla **solo con videos sin cara**, que es lo que podemos hacer nosotros (`data/processed/oportunidad_sin_cara.csv`).
+- **Puntaje** = mediana de vistas en otros nichos (en millones) × cuánto rinde en fútbol ÷ (% de shorts de fútbol que la usan + 0,3).
+- Sube cuando la mecánica pega afuera, rinde en fútbol y casi nadie la hace.
+
+| Mecánica (sin cara) | % de fútbol | Rinde | Mediana otros nichos | % con 1 M+ (otros nichos) | Puntaje |
+|---|---|---|---|---|---|
+| **Evolución** | **0,71%** | **2,33×** | **9,2 M** | **100%** (44/44) | **21,1** |
+| Verdadero/falso | 1,18% | 0,99× | 10,7 M (solo 6 videos) | 83% | 7,2 |
+| Emojis | 0,67% | 2,32× | 2,4 M | 74% | 5,6 |
+| Diferencias | 0,27% | 2,09× | 1,1 M | 55% | 4,0 |
+| Encontrar el real | 4,16% | 1,08× | 5,9 M | 68% | 1,4 |
+| Fusión | 0,47% | 1,17× | 0,05 M | 4% | 0,07 |
+
+**La evolución gana por lejos: el puntaje es 3 veces el del segundo.**
+
+**Búsquedas de validación de hoy** (12 consultas, 1.200 unidades):
+- **"Adiviná al futbolista de bebé"** es el juego de fútbol más grande del año: 99 M, 88 M, 77 M, KSI 61 M, IShowSpeed 64 M.
+  - **Pero todo eso es con cara y con famosos** (Lamine Yamal, Haaland, Kroos jugando): mediana de **20 M con cara** contra **33 mil sin cara** (22 videos).
+  - Las fotos de infancia, además, tienen dueño.
+  - **Conclusión: no lo copiamos.**
+- **Evolución pasiva en fútbol:** 41 de 43 resultados con 1 M+.
+  - "Real Madrid Now vs 2017 Prime" hizo 47,7 M.
+  - "Pau Cubarsí Age Evolution (2008–2026)" hizo 2,4 M.
+- **Evolución como juego** ("Then vs Now, can you guess who?"): un solo intento, de 37 mil. **No es que no funcione: nadie lo probó en serio.**
+- **Emojis en fútbol:** mediana de 23 mil y un solo caso de 3,5 M (turco). Es secundario.
+
+## 7. Formato propuesto: "WHO IS HE? · AGE EVOLUTION"
+
+Junta la mecánica sin cara más fuerte (evolución) con la nuestra (adivinar):
+
+1. **0 s:** cuadro 0 con la foto más vieja del jugador, el año gigante ("2005") y el texto "GUESS HIM BEFORE 2026".
+2. **0–20 s:** el año avanza y la cara envejece con morph, foto tras foto alineadas por los ojos (ya tenemos la tecnología). Los equipos y las banderas aparecen como pistas en los últimos años.
+3. **Revelación:** nombre, cara actual y "WHAT YEAR DID YOU GET IT?". Esa pregunta pide un comentario con número, como el puntaje.
+4. **Loop** de vuelta a la foto vieja.
+
+**Por qué tiene la mayor probabilidad:**
+- Aunque no adivines, mirás el cambio: **la satisfacción de la evolución pasiva**, que es la que da 1 M+ casi siempre.
+- El que juega se queda hasta el final: **retención**.
+- La competencia directa es prácticamente cero.
+
+**Qué falta:** de 6 a 10 fotos con fecha por jugador (Wikimedia, desde la fecha de la foto). Se baja con el mismo workflow de GitHub.

@@ -1,0 +1,134 @@
+{
+ "video_id": "5_qqHaZzJ1Y",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 5253,
+  "candidatesTokenCount": 1395,
+  "totalTokenCount": 8022,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4470
+   }
+  ],
+  "thoughtsTokenCount": 1374,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 50.0,
+  "formato": "Adivinar el jugador de fútbol a partir de su versión infantil (cara de niño generada por IA) con video reacción.",
+  "n_preguntas_o_rondas": 8,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "El creador reaccionando en la mitad inferior a la primera cara de niño generada por IA con la camiseta de la selección francesa.",
+   "que_se_dice_o_texto": "Can You Guess the Football Player by the Kid Face?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del juego y la dinámica preguntando si se puede adivinar al futbolista."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 7.0,
+    "parte": "pregunta",
+    "descripcion": "Primera ronda: Kylian Mbappé."
+   },
+   {
+    "inicio_s": 7.0,
+    "fin_s": 12.0,
+    "parte": "pregunta",
+    "descripcion": "Segunda ronda: Cristiano Ronaldo."
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 20.0,
+    "parte": "pregunta",
+    "descripcion": "Tercera ronda: Zinedine Zidane."
+   },
+   {
+    "inicio_s": 20.0,
+    "fin_s": 26.0,
+    "parte": "pregunta",
+    "descripcion": "Cuarta ronda: Erling Haaland."
+   },
+   {
+    "inicio_s": 26.0,
+    "fin_s": 33.0,
+    "parte": "pregunta",
+    "descripcion": "Quinta ronda: Ronaldinho."
+   },
+   {
+    "inicio_s": 33.0,
+    "fin_s": 38.0,
+    "parte": "pregunta",
+    "descripcion": "Sexta ronda: Neymar Jr."
+   },
+   {
+    "inicio_s": 38.0,
+    "fin_s": 44.0,
+    "parte": "pregunta",
+    "descripcion": "Séptima ronda: Jude Bellingham."
+   },
+   {
+    "inicio_s": 44.0,
+    "fin_s": 50.0,
+    "parte": "cierre",
+    "descripcion": "Octava ronda (Zlatan Ibrahimović) dejada sin respuesta para invitar a la audiencia a comentar."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 3.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Muestra la fotografía real del jugador profesional junto con su nombre en texto blanco sobre la imagen.",
+   "efecto_sonido": "Efecto de campana/ding al revelar la respuesta."
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra un niño con bigote y la camiseta de Suecia y el creador invita a los espectadores a comentar quién es.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "Esto díganlo ustedes mismos, ¿quién creen que es?",
+   "momento_s": 47.0
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Malayalam",
+   "musica": "Música rítmica instrumental de fondo.",
+   "efectos_de_sonido": [
+    "Efecto de sonido de campana de respuesta correcta"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Banner superior en rojo con texto amarillo/blanco 'Can You Guess the Football Player by the Kid Face?' y nombres de los jugadores en mayúsculas blancas centradas.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Pantalla dividida horizontalmente: arriba la trivia con imágenes de niños e imágenes reales, abajo la cámara del creador en su silla gamer con micrófono.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Video de reacción split-screen sobre juego de trivia futbolística.",
+   "cambios_de_plano_aprox": 16
+  },
+  "dificultad_de_las_preguntas": "fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Imágenes llamativas de niños creadas por IA que generan ternura y curiosidad, dinámica rápida con jugadores muy famosos y un final en suspenso para obligar a comentar.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede usar una plantilla a pantalla completa con las fotos de IA de los niños, incluir una barra de tiempo o cuenta regresiva de 3 segundos, revelar la foto real del jugador y dejar la última pregunta abierta para llamar a la interacción en comentarios."
+ }
+}

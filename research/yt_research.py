@@ -129,6 +129,15 @@ FUTBOL_MEC_SEEDS = [(q, "en", True) for q in [
     "footballers ai version", "footballers if they were",
 ]]
 
+# validación del cruce "menos explotado + más fuerte": candidatas top de oportunidad_mecanicas.csv
+CRUCE_SEEDS = [(q, "en", True) for q in [
+    "guess the footballer by emoji", "football emoji quiz", "guess the club by emoji",
+    "guess the footballer age", "how old is this footballer",
+    "football true or false", "football myth or fact",
+    "footballers then and now quiz", "guess the young footballer", "guess the footballer as a kid",
+    "how many footballers can you count", "guess the footballer by celebration sound",
+]]
+
 # mercados: misma consulta acotada por país (regionCode) para comparar tamaño y competencia
 MARKET_SEEDS = [
     ("quiz de futbol", "es", "AR"),
@@ -459,6 +468,8 @@ if __name__ == "__main__":
             cmd_search(FUTBOL_MEC_SEEDS)
         if cmd == "nichos":
             cmd_search(NICHOS_SEEDS)
+        if cmd == "cruce":
+            cmd_search(CRUCE_SEEDS)
         if cmd == "propuestos":
             cmd_search(PROPUESTOS_SEEDS)
         if cmd == "fresco":

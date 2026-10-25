@@ -1,0 +1,99 @@
+{
+ "video_id": "mn430JmW_yo",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 8438,
+  "candidatesTokenCount": 1107,
+  "totalTokenCount": 10687,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 7655
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1142,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 84.0,
+  "formato": "adivinar el jugador de fútbol por su foto de cuando era niño",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 8.0,
+   "que_se_ve": "Jugadores profesionales de la Premier League intentando adivinar a un compañero viendo una foto antigua de cuando era niño.",
+   "que_se_dice_o_texto": "Van de Ven? Foden? I have no idea...",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 15.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 1: Varios jugadores intentan adivinar quién es el niño de la foto hasta que descubren que es Rúben Dias."
+   },
+   {
+    "inicio_s": 15.0,
+    "fin_s": 44.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 2: Foto de niño de Luke Shaw. Confusión con Harry Maguire y otros jugadores hasta dar con la respuesta."
+   },
+   {
+    "inicio_s": 45.0,
+    "fin_s": 84.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda 3: Foto de niño con la bandera de Inglaterra pintada en la cara. Tras varios intentos fallidos se revela que es Jarrod Bowen."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Muestran la foto actual del jugador junto a la de su infancia y su nombre con el estilo gráfico oficial de la Premier League.",
+   "efecto_sonido": "Efecto de sonido de error (X) al fallar y tono positivo al adivinar"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Alex Iwobi reacciona sorprendido al saber que era Jarrod Bowen diciendo 'Would have never thought'.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "inglés (británico / internacional)",
+   "musica": "Música alegre y rítmica de fondo estilo concurso/entretenimiento",
+   "efectos_de_sonido": [
+    "Sonido de respuesta incorrecta (zumbador con cruz)",
+    "Sonidos de revelación de tarjeta"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Subtítulos en blanco con fondo negro/transparente y nombres de los jugadores con tipografía oficial de Premier League.",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "Sets de entrevista con fondos de colores planos (rojo, verde, azul, amarillo) según el club del jugador.",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Entrevista tipo reto en estudio con gráfica oficial de la Premier League.",
+   "cambios_de_plano_aprox": 38
+  },
+  "dificultad_de_las_preguntas": "difícil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Muestra el lado divertido y espontáneo de futbolistas famosos intentando reconocer a sus compañeros de niños. La edición es ágil, mezclando las reacciones de varios jugadores al mismo tiempo para crear expectativa.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede usar una plantilla donde aparezca la foto del futbolista de niño en el centro, un temporizador de 3 a 5 segundos con música de tensión, y luego revelar la foto actual del jugador con su nombre y estadísticas."
+ }
+}
