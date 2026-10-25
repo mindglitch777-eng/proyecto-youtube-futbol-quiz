@@ -1,0 +1,119 @@
+{
+ "id": "carrera_01b",
+ "ganador": "Harry Kane",
+ "paleta": "oro",
+ "evento": "BALLON D'OR 2026 PREDICTION",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "WHO DESERVES THE BALLON D'OR?",
+ "voz_intro": "Who deserves the Ballon d'Or? Pick your player now!",
+ "eliminar": 3,
+ "circuito": [
+  "clavos",
+  "aspas",
+  "rebotadores",
+  "zigzag",
+  "acelerador",
+  "molinos",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Ousmane Dembélé",
+   "voz": "Dembélé",
+   "anillo": [
+    255,
+    120,
+    80
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Harry Kane",
+   "voz": "Kane",
+   "anillo": [
+    240,
+    70,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lionel Messi",
+   "voz": "Messi",
+   "anillo": [
+    120,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Vinícius Júnior",
+   "voz": "Vinicius",
+   "anillo": [
+    255,
+    255,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Erling Haaland",
+   "voz": "Haaland",
+   "anillo": [
+    170,
+    120,
+    255
+   ]
+  }
+ ],
+ "cierre": "WHO SHOULD WIN IT? COMMENT",
+ "formato": "carrera",
+ "voz_lineas": [
+  "Who deserves the Ballon d'Or? Pick your player now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Lamine Yamal takes the lead!",
+  "Lamine Yamal is out!",
+  "Lamine Yamal wins it!",
+  "Mbappé takes the lead!",
+  "Mbappé is out!",
+  "Mbappé wins it!",
+  "Dembélé takes the lead!",
+  "Dembélé is out!",
+  "Dembélé wins it!",
+  "Kane takes the lead!",
+  "Kane is out!",
+  "Kane wins it!",
+  "Messi takes the lead!",
+  "Messi is out!",
+  "Messi wins it!",
+  "Vinicius takes the lead!",
+  "Vinicius is out!",
+  "Vinicius wins it!",
+  "Haaland takes the lead!",
+  "Haaland is out!",
+  "Haaland wins it!"
+ ]
+}

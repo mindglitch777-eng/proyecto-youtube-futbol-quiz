@@ -30,9 +30,8 @@ LOTE = [
          gancho="WHO DESERVES THE BALLON D'OR?", voz_intro="Who deserves the Ballon d'Or? Pick your player now!",
          eliminar=3, circuito=["clavos", "aspas", "rebotadores", "zigzag", "acelerador", "molinos", "embudo"],
          competidores=[j("Lamine Yamal", anillo=ORO), j("Kylian Mbappé", "Mbappé", CIAN), j("Ousmane Dembélé", "Dembélé", [255, 120, 80]),
-                       j("Harry Kane", anillo=[240, 70, 70]), j("Mohamed Salah", "Salah", [80, 230, 140]),
-                       j("Vinícius Júnior", "Vinicius", [255, 255, 255]), j("Erling Haaland", "Haaland", [170, 120, 255]),
-                       j("Pedri", anillo=[255, 160, 220])],
+                       j("Harry Kane", "Kane", [240, 70, 70]), j("Lionel Messi", "Messi", [120, 200, 255]),
+                       j("Vinícius Júnior", "Vinicius", [255, 255, 255]), j("Erling Haaland", "Haaland", [170, 120, 255])],
          cierre="WHO SHOULD WIN IT? COMMENT"),
     dict(id="carrera_02", ganador="Argentina", paleta="cancha", evento="WORLD CUP CHAMPIONS", titulo="WHO WINS THE RACE?",
          gancho="8 WORLD CHAMPIONS. ONLY 1 WINS", voz_intro="Eight world champions. Only one wins. Pick your country now!",
@@ -96,6 +95,38 @@ LOTE = [
          competidores=[j("Lionel Messi", "Messi", [120, 200, 255]), j("Neymar", anillo=[255, 220, 0]), j("Cristiano Ronaldo", "Ronaldo", [240, 70, 70])],
          cierre="IF YOU LIKE RONALDO, COMMENT SIUU",
          titulos=["Messi, Neymar or Ronaldo? Only ONE gets the trophy 🏆", "Messi vs Neymar vs Ronaldo race 😱 Who wins?", "The GOAT race: Messi, Neymar or Ronaldo? 🐐"]),
+]
+
+# Balón de Oro: versión B donde gana Kane (favorito de las casas de apuestas); se sube la que coincida con el real
+LOTE.append(dict(next(g for g in LOTE if g["id"] == "carrera_01"), id="carrera_01b", ganador="Harry Kane"))
+
+UCL_MAR = [c("FC Barcelona", "BARÇA", [[165, 0, 68], [0, 77, 152]], "rayas", "Barca", [255, 90, 140]),
+           c("Manchester United", "UNITED", [[218, 41, 28], [20, 20, 20]], "mitades", "Man United", [255, 210, 0]),
+           c("Bayern Munich", "BAYERN", [[220, 5, 45], [245, 245, 245]], "franja", "Bayern", [240, 60, 80]),
+           c("Atlético Madrid", "ATLÉTICO", [[203, 53, 36], [245, 245, 245]], "rayas", "Atletico", [230, 90, 70]),
+           c("Paris Saint-Germain", "PSG", [[0, 65, 112], [218, 41, 28]], "franja", "P S G", [80, 140, 255]),
+           c("Villarreal", "VILLARREAL", [[255, 225, 0]], "liso", "Villarreal", [255, 225, 0]),
+           c("Inter", "INTER", [[0, 104, 168], [20, 20, 20]], "rayas", "Inter", [60, 160, 255]),
+           c("Roma", "ROMA", [[142, 31, 47], [240, 188, 66]], "franja", "Roma", [240, 188, 66])]
+UCL_MIE = [c("Real Madrid", "MADRID", [[245, 245, 245], [0, 82, 159]], "franja", "Real Madrid", [245, 245, 245]),
+           c("Liverpool", "LIVERPOOL", [[200, 16, 46]], "liso", "Liverpool", [230, 40, 70]),
+           c("Manchester City", "CITY", [[108, 171, 221]], "liso", "Man City", [108, 171, 221]),
+           c("Arsenal", "ARSENAL", [[220, 0, 20], [245, 245, 245]], "franja", "Arsenal", [255, 90, 90]),
+           c("Napoli", "NAPOLI", [[18, 160, 215]], "liso", "Napoli", [18, 160, 215]),
+           c("Borussia Dortmund", "BVB", [[253, 225, 0], [20, 20, 20]], "franja", "Dortmund", [253, 225, 0]),
+           c("FC Porto", "PORTO", [[0, 64, 140], [245, 245, 245]], "rayas", "Porto", [80, 130, 230]),
+           c("RB Leipzig", "LEIPZIG", [[245, 245, 245], [221, 1, 63]], "franja", "Leipzig", [221, 1, 63])]
+LOTE += [
+    dict(id="carrera_10", ganador="FC Barcelona", paleta="noche", evento="CHAMPIONS LEAGUE TUESDAY", titulo="PREDICTION RACE",
+         gancho="WHO WINS ON TUESDAY NIGHT?", voz_intro="Champions League Tuesday. Pick your club now!",
+         eliminar=3, circuito=["clavos", "aspas", "zigzag", "rebotadores", "acelerador", "molinos", "embudo"], competidores=UCL_MAR,
+         cierre="WHO WINS TONIGHT? COMMENT",
+         titulos=["Champions League Tuesday: who wins? 🏆 Prediction race", "UCL prediction race 😱 Pick your club", "Barça, Bayern or United? UCL prediction 🏁"]),
+    dict(id="carrera_11", ganador="Real Madrid", paleta="oro", evento="CHAMPIONS LEAGUE WEDNESDAY", titulo="PREDICTION RACE",
+         gancho="WHO WINS ON WEDNESDAY NIGHT?", voz_intro="Champions League Wednesday. Pick your club now!",
+         eliminar=3, circuito=["zigzag", "rebotadores", "clavos", "molinos", "aspas", "acelerador", "embudo"], competidores=UCL_MIE,
+         cierre="WHO WINS TONIGHT? COMMENT",
+         titulos=["Champions League Wednesday: who wins? 🏆 Prediction race", "Madrid, Liverpool or City? UCL prediction 😱", "UCL prediction race 🏁 Pick your club"]),
 ]
 
 if __name__ == "__main__":

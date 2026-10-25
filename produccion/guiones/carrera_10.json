@@ -1,0 +1,244 @@
+{
+ "id": "carrera_10",
+ "ganador": "FC Barcelona",
+ "paleta": "noche",
+ "evento": "CHAMPIONS LEAGUE TUESDAY",
+ "titulo": "PREDICTION RACE",
+ "gancho": "WHO WINS ON TUESDAY NIGHT?",
+ "voz_intro": "Champions League Tuesday. Pick your club now!",
+ "eliminar": 3,
+ "circuito": [
+  "clavos",
+  "aspas",
+  "zigzag",
+  "rebotadores",
+  "acelerador",
+  "molinos",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "club",
+   "nombre": "FC Barcelona",
+   "corto": "BARÇA",
+   "colores": [
+    [
+     165,
+     0,
+     68
+    ],
+    [
+     0,
+     77,
+     152
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Barca",
+   "anillo": [
+    255,
+    90,
+    140
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Manchester United",
+   "corto": "UNITED",
+   "colores": [
+    [
+     218,
+     41,
+     28
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "mitades",
+   "voz": "Man United",
+   "anillo": [
+    255,
+    210,
+    0
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Bayern Munich",
+   "corto": "BAYERN",
+   "colores": [
+    [
+     220,
+     5,
+     45
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Bayern",
+   "anillo": [
+    240,
+    60,
+    80
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Atlético Madrid",
+   "corto": "ATLÉTICO",
+   "colores": [
+    [
+     203,
+     53,
+     36
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Atletico",
+   "anillo": [
+    230,
+    90,
+    70
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Paris Saint-Germain",
+   "corto": "PSG",
+   "colores": [
+    [
+     0,
+     65,
+     112
+    ],
+    [
+     218,
+     41,
+     28
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "P S G",
+   "anillo": [
+    80,
+    140,
+    255
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Villarreal",
+   "corto": "VILLARREAL",
+   "colores": [
+    [
+     255,
+     225,
+     0
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Villarreal",
+   "anillo": [
+    255,
+    225,
+    0
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Inter",
+   "corto": "INTER",
+   "colores": [
+    [
+     0,
+     104,
+     168
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Inter",
+   "anillo": [
+    60,
+    160,
+    255
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Roma",
+   "corto": "ROMA",
+   "colores": [
+    [
+     142,
+     31,
+     47
+    ],
+    [
+     240,
+     188,
+     66
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Roma",
+   "anillo": [
+    240,
+    188,
+    66
+   ]
+  }
+ ],
+ "cierre": "WHO WINS TONIGHT? COMMENT",
+ "titulos": [
+  "Champions League Tuesday: who wins? 🏆 Prediction race",
+  "UCL prediction race 😱 Pick your club",
+  "Barça, Bayern or United? UCL prediction 🏁"
+ ],
+ "formato": "carrera",
+ "voz_lineas": [
+  "Champions League Tuesday. Pick your club now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Barca takes the lead!",
+  "Barca is out!",
+  "Barca wins it!",
+  "Man United takes the lead!",
+  "Man United is out!",
+  "Man United wins it!",
+  "Bayern takes the lead!",
+  "Bayern is out!",
+  "Bayern wins it!",
+  "Atletico takes the lead!",
+  "Atletico is out!",
+  "Atletico wins it!",
+  "P S G takes the lead!",
+  "P S G is out!",
+  "P S G wins it!",
+  "Villarreal takes the lead!",
+  "Villarreal is out!",
+  "Villarreal wins it!",
+  "Inter takes the lead!",
+  "Inter is out!",
+  "Inter wins it!",
+  "Roma takes the lead!",
+  "Roma is out!",
+  "Roma wins it!"
+ ]
+}

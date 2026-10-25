@@ -1,0 +1,234 @@
+{
+ "id": "carrera_11",
+ "ganador": "Real Madrid",
+ "paleta": "oro",
+ "evento": "CHAMPIONS LEAGUE WEDNESDAY",
+ "titulo": "PREDICTION RACE",
+ "gancho": "WHO WINS ON WEDNESDAY NIGHT?",
+ "voz_intro": "Champions League Wednesday. Pick your club now!",
+ "eliminar": 3,
+ "circuito": [
+  "zigzag",
+  "rebotadores",
+  "clavos",
+  "molinos",
+  "aspas",
+  "acelerador",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "club",
+   "nombre": "Real Madrid",
+   "corto": "MADRID",
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ],
+    [
+     0,
+     82,
+     159
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Real Madrid",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Liverpool",
+   "corto": "LIVERPOOL",
+   "colores": [
+    [
+     200,
+     16,
+     46
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Liverpool",
+   "anillo": [
+    230,
+    40,
+    70
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Manchester City",
+   "corto": "CITY",
+   "colores": [
+    [
+     108,
+     171,
+     221
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Man City",
+   "anillo": [
+    108,
+    171,
+    221
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Arsenal",
+   "corto": "ARSENAL",
+   "colores": [
+    [
+     220,
+     0,
+     20
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Arsenal",
+   "anillo": [
+    255,
+    90,
+    90
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Napoli",
+   "corto": "NAPOLI",
+   "colores": [
+    [
+     18,
+     160,
+     215
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Napoli",
+   "anillo": [
+    18,
+    160,
+    215
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Borussia Dortmund",
+   "corto": "BVB",
+   "colores": [
+    [
+     253,
+     225,
+     0
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Dortmund",
+   "anillo": [
+    253,
+    225,
+    0
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "FC Porto",
+   "corto": "PORTO",
+   "colores": [
+    [
+     0,
+     64,
+     140
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Porto",
+   "anillo": [
+    80,
+    130,
+    230
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "RB Leipzig",
+   "corto": "LEIPZIG",
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ],
+    [
+     221,
+     1,
+     63
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Leipzig",
+   "anillo": [
+    221,
+    1,
+    63
+   ]
+  }
+ ],
+ "cierre": "WHO WINS TONIGHT? COMMENT",
+ "titulos": [
+  "Champions League Wednesday: who wins? 🏆 Prediction race",
+  "Madrid, Liverpool or City? UCL prediction 😱",
+  "UCL prediction race 🏁 Pick your club"
+ ],
+ "formato": "carrera",
+ "voz_lineas": [
+  "Champions League Wednesday. Pick your club now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Real Madrid takes the lead!",
+  "Real Madrid is out!",
+  "Real Madrid wins it!",
+  "Liverpool takes the lead!",
+  "Liverpool is out!",
+  "Liverpool wins it!",
+  "Man City takes the lead!",
+  "Man City is out!",
+  "Man City wins it!",
+  "Arsenal takes the lead!",
+  "Arsenal is out!",
+  "Arsenal wins it!",
+  "Napoli takes the lead!",
+  "Napoli is out!",
+  "Napoli wins it!",
+  "Dortmund takes the lead!",
+  "Dortmund is out!",
+  "Dortmund wins it!",
+  "Porto takes the lead!",
+  "Porto is out!",
+  "Porto wins it!",
+  "Leipzig takes the lead!",
+  "Leipzig is out!",
+  "Leipzig wins it!"
+ ]
+}
