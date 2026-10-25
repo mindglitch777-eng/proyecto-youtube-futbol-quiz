@@ -101,7 +101,7 @@ def bandera(pais, lado=150):
 
 # ------------------------------------------------------------------ líneas de tiempo
 def tramos_evolucion(g):
-    filas = elegir_anios(fotos_de(g["jugador"]), g.get("max_fotos", 8))
+    filas = elegir_anios(fotos_de(g["jugador"], g.get("max_puntaje", 90)), g.get("max_fotos", 8))
     esp = espejos(filas)
     T_HOLD, T_MORPH = g.get("hold", 1.15), g.get("morph", 0.85)
     tramos, t = [], 0.0
@@ -180,7 +180,7 @@ def main(guion_path):
                              outline=LED if tv < t_rev else (61, 214, 128), width=10)
         anio = int(round(tr["a"].anio + (tr["b"].anio - tr["a"].anio) * u))
         if evo:
-            texto(dr, (W / 2, 120), g["gancho"], ajustar(g["gancho"], 86, W - 80), BLANCO, 10)
+            gan = g["gancho"].replace("{fin}", str(filas[-1].anio)); texto(dr, (W / 2, 120), gan, ajustar(gan, 86, W - 80), BLANCO, 10)
             texto(dr, (W / 2, 330), str(anio), 190, LED, 14)
             if tv < t_rev:
                 texto(dr, (W / 2, PY + PANEL + 110), "WHO IS HE?", 110, BLANCO, 12)
@@ -217,7 +217,10 @@ def main(guion_path):
             mix[i:j] += vol * sig[: j - i]
     for n_, s in sonidos:
         add(s, fx[n_], 0.7 if n_ == "whoosh" else 1.0)
-    rutas = voces_edge([l for _, l in voz], out)
+    try:
+        rutas = voces_edge([l for _, l in voz], out)
+    except SystemExit as e:          # prueba sin locución (todavía no corrió el workflow de voces)
+        print("SIN VOZ:", e); rutas = []; voz = []
     dv = np.ones_like(mix)
     for (s, _), r in zip(voz, rutas):
         x = leer_wav(r); i = int(s * SR); j = min(len(mix), i + len(x))

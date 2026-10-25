@@ -1,0 +1,30 @@
+{
+ "id": "find_the_real_02",
+ "semilla": 14,
+ "rondas": [
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_4",
+   "etiqueta": "EASY",
+   "intensidad": 0.95
+  },
+  {
+   "nombre": "Messi",
+   "foto": "lionel_messi_4",
+   "etiqueta": "HARD",
+   "intensidad": 0.55
+  },
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "etiqueta": "ONLY 1%",
+   "intensidad": 0.25
+  }
+ ],
+ "formato": "find_the_real",
+ "titulos": [
+  "FIND YAMAL MESSI RONALDO 🔎",
+  "FIND THE REAL YAMAL MESSI RONALDO 😳",
+  "Only 1% can find the REAL Ronaldo 🤯"
+ ]
+}

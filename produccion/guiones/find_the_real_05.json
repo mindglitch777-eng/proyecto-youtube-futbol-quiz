@@ -1,0 +1,30 @@
+{
+ "id": "find_the_real_05",
+ "semilla": 35,
+ "rondas": [
+  {
+   "nombre": "Haaland",
+   "foto": "erling_haaland_0",
+   "etiqueta": "EASY",
+   "intensidad": 0.95
+  },
+  {
+   "nombre": "Pedri",
+   "foto": "pedri_0",
+   "etiqueta": "HARD",
+   "intensidad": 0.55
+  },
+  {
+   "nombre": "Saka",
+   "foto": "bukayo_saka_3",
+   "etiqueta": "ONLY 1%",
+   "intensidad": 0.25
+  }
+ ],
+ "formato": "find_the_real",
+ "titulos": [
+  "FIND HAALAND PEDRI SAKA 🔎",
+  "FIND THE REAL HAALAND PEDRI SAKA 😳",
+  "Only 1% can find the REAL Saka 🤯"
+ ]
+}

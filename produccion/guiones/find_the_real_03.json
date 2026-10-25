@@ -1,0 +1,30 @@
+{
+ "id": "find_the_real_03",
+ "semilla": 21,
+ "rondas": [
+  {
+   "nombre": "Mbappé",
+   "foto": "kylian_mbapp_6",
+   "etiqueta": "EASY",
+   "intensidad": 0.95
+  },
+  {
+   "nombre": "Vinícius",
+   "foto": "vin_cius_j_nior_0",
+   "etiqueta": "HARD",
+   "intensidad": 0.55
+  },
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_7",
+   "etiqueta": "ONLY 1%",
+   "intensidad": 0.25
+  }
+ ],
+ "formato": "find_the_real",
+ "titulos": [
+  "FIND MBAPPÉ VINÍCIUS BELLINGHAM 🔎",
+  "FIND THE REAL MBAPPÉ VINÍCIUS BELLINGHAM 😳",
+  "Only 1% can find the REAL Bellingham 🤯"
+ ]
+}

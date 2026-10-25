@@ -1,0 +1,30 @@
+{
+ "id": "find_the_real_04",
+ "semilla": 28,
+ "rondas": [
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "etiqueta": "EASY",
+   "intensidad": 0.95
+  },
+  {
+   "nombre": "Salah",
+   "foto": "mohamed_salah_0",
+   "etiqueta": "HARD",
+   "intensidad": 0.55
+  },
+  {
+   "nombre": "Kane",
+   "foto": "harry_kane_0",
+   "etiqueta": "ONLY 1%",
+   "intensidad": 0.25
+  }
+ ],
+ "formato": "find_the_real",
+ "titulos": [
+  "FIND NEYMAR SALAH KANE 🔎",
+  "FIND THE REAL NEYMAR SALAH KANE 😳",
+  "Only 1% can find the REAL Kane 🤯"
+ ]
+}

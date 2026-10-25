@@ -263,7 +263,9 @@ def main(guion_path):
     pal = PALETAS[g.get("paleta", "noche")]
     comp = competidores(g, 2 * (62 if len(g["competidores"]) <= 6 else 54))
     n = len(comp)
-    nombres = [c.get("corto_hud", c["nombre"].split()[-1].upper() if c["tipo"] == "jugador" else c.get("corto", c["nombre"]).upper()) for c in comp]
+    especiales = {"Vinícius Júnior": "VINÍCIUS", "Zinedine Zidane": "ZIDANE", "Kylian Mbappé": "MBAPPÉ"}
+    nombres = [c.get("corto_hud") or (especiales.get(c["nombre"], c["nombre"].split()[-1].upper()) if c["tipo"] == "jugador"
+               else c.get("corto", c["nombre"]).upper()) for c in comp]
     eliminar = g.get("eliminar", 0)
     mods = g["circuito"]
     mejor = max(range(g.get("intentos", 50)), key=lambda s: drama(simular(n, mods, s, eliminar), n, eliminar))
@@ -337,10 +339,10 @@ def main(guion_path):
         llegados = [i for i in vivos if i in sim["llegada"] and sim["llegada"][i] <= ts]
         corriendo = [i for i in vivos if i not in llegados]
         if corriendo:
-            cam_obj = min(max(est[i][1] for i in corriendo) - 820, P.meta - H + 520)
+            cam_obj = min(max(est[i][1] for i in corriendo) - 900, P.meta - H + 520)
         if f == 0:
-            cam = cam_obj = -120
-        cam += (max(cam_obj, -120) - cam) * (0.10 if tv > T_INTRO else 1)
+            cam = cam_obj = -300
+        cam += (max(cam_obj, -300) - cam) * (0.10 if tv > T_INTRO else 1)
         sacud = 0
         if any(abs(tv - s) < 0.12 for n_, s in sonidos if n_ == "boom"):
             sacud = 10
