@@ -14,7 +14,7 @@ MEJOR = json.loads((ROOT / "assets/mejor_foto.json").read_text())
 
 
 def linea(c):
-    return (f"- {c['jugador']}: \"{c['archivo'].removeprefix('File:')}\" by {c['autor'] or 'unknown'}, "
+    return (f"- {c.get('jugador') or 'World Cup ball ' + str(c.get('anio'))}: \"{c['archivo'].removeprefix('File:')}\" by {c['autor'] or 'unknown'}, "
             f"{c['licencia']} ({c['pagina']}). Edited.")
 
 
@@ -42,13 +42,15 @@ def paquete(g):
         fijar = "Who did you pick… and did they win? 👇"
         archivo = ('short.mp4" (con relator: nuestro toque) o "short_sin_voz.mp4" + un sonido en tendencia desde el editor '
                    '(remix acelerado, cumbia o funk, como la competencia). Alterná para comparar')
-    elif f in ("evolucion", "prime_now"):
+    elif f in ("evolucion", "prime_now", "objeto"):
         cred = json.loads((out / "creditos.json").read_text())
         creditos = [linea(c) for c in cred.values()]
         twemoji = f == "evolucion"
+        if f == "objeto":
+            tags = ["#football", "#soccer", "#worldcup", "#shorts", "#evolution", "#nostalgia"]
         titulos = g["titulos"]
         desc = g["descripcion"]
-        tags = ["#football", "#soccer", "#shorts", "#evolution" if f == "evolucion" else "#thenvsnow", "#nostalgia"]
+        tags = ["#football", "#soccer", "#shorts", "#evolution" if f in ("evolucion", "objeto") else "#thenvsnow", "#nostalgia"]
         fijar = g["comentario_fijado"]
         archivo = ('short_sin_musica.mp4" + un sonido en tendencia desde el editor de Shorts (canción nostálgica o remix '
                    'acelerado: así lo hacen los que pegan). Si no encontrás uno bueno, subí "short.mp4')

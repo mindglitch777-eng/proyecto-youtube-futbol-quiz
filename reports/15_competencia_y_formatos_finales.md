@@ -64,3 +64,15 @@
 - **Duplas** (Messi y Neymar, Ronaldo y Messi): dos paneles evolucionando a la vez.
 - **Evolución de camisetas o botines** dibujados por nosotros (colores y diseño, sin escudos): la evolución de objetos es lo que más pega (26 M).
 - **Carreras de predicción** para cada partido grande de la semana (Champions, clásicos).
+
+## 4. Segunda tanda (25-oct, tarde): lo que faltaba, ya hecho
+
+| Formato | Cómo lo hace la competencia que pega | Qué hicimos |
+|---|---|---|
+| **FIND** (FULYON: 23,4 M) | Grilla **5×5 numerada del 1 al 25**, título seco "FIND YAMAL", barra verde de cuenta regresiva y tic-tac, ~5 s por ronda, 15 s, loop | Los 4 FIND re-renderizados con esa fórmula, más "COMMENT THE NUMBERS" |
+| **Evolución de objetos** (Kickoff: 26 M, 19,7 M, 10 M) | Año gigante en cada foto, ~1 corte por segundo, ~35 s, pop o himno sin voz | `objeto_01`: **las 19 pelotas del Mundial 1930–2026** con fotos libres, nombre de cada pelota, línea de tiempo y "WHICH ONE IS THE BEST? COMMENT THE YEAR" (lo que Gemini dijo que le faltaba al de 10 M) |
+| **Duplas** (Frox / Icon Stories: 1–2,5 M) | Dos personas con vínculo, edad y año, nostalgia | 4 duplas con morph sincronizado: Lampard y Drogba, Messi y Neymar, Casillas y Ramos, Suárez y Messi |
+| **Predicción de eventos reales** (Footypoints: 38,8 M; Sphere Stars: 5,9 M) | "X vs Y / Who wins?" atado al partido | Champions: **martes 3-nov** (Barça, United, Bayern, Atlético, PSG…) y **miércoles 4-nov** (Madrid, Liverpool, City, Arsenal…) |
+| **Balón de Oro** | Kane es el favorito de las casas de apuestas y Yamal el segundo | **Dos versiones**: gana Yamal (`carrera_01`) o gana Kane (`carrera_01b`). La ceremonia es el 26-oct a las 17:00 ART; a las 23:00 se sube la que coincida con el ganador real |
+
+Fuentes de fechas: UEFA (Champions 3 y 4 de noviembre; Balón de Oro el 26-oct en el London Palladium) y ESPN (Clásico el 25-oct en el Camp Nou).
