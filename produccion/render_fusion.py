@@ -29,6 +29,7 @@ from fusion import Fusion  # noqa: E402
 from render_find_the_real import (BLANCO, FPS, FUENTE2, H, LED, ROJO, SR, VERDE, W, ajustar, ease_out,  # noqa: E402
                                   fondo, fuente, texto)
 from voz_gemini import voces_guion  # noqa: E402
+from banderas import PAIS, png as bandera_png  # noqa: E402
 
 ROOT = Path(__file__).resolve().parent
 FOTOS = ROOT / "assets" / "fotos"
@@ -162,7 +163,15 @@ def main(guion_path):
         reveal = max(1.7, dr_ + 0.45)
         fus = Fusion(FOTOS / f"{r['a']}.jpg", FOTOS / f"{r['b']}.jpg", r.get("espejar_a", False), r.get("espejar_b", False),
                      r.get("cara_a"), r.get("cara_b"))
-        rondas.append({**r, "t0": t, "think": think, "reveal": reveal, "vq": vq, "vr": vr, "dq": dq, "dr": dr_, "fus": fus})
+        # pistas: banderas (si son de países distintos) al 35% y luego iniciales
+        pa, pb = PAIS.get(r["nombre_a"]), PAIS.get(r["nombre_b"])
+        banderas = None
+        if g.get("pista_banderas", True) and pa and pb and pa != pb:
+            banderas = tuple(Image.open(bandera_png(x)).convert("RGBA") for x in (pa, pb))
+        t_flag = think * 0.35
+        t_ini = max(think * (0.68 if banderas else 0.55), dq + 0.5)
+        rondas.append({**r, "t0": t, "think": think, "reveal": reveal, "vq": vq, "vr": vr, "dq": dq, "dr": dr_, "fus": fus,
+                       "banderas": banderas, "t_flag": t_flag, "t_ini": t_ini})
         t += think + reveal
     v_end = wavs[-1]; d_end = dur_wav(v_end)
     t_end0 = t; dur = t + max(1.8, d_end + 0.5)
@@ -184,7 +193,9 @@ def main(guion_path):
             rest = tr - s
             add(sfx, s, fx["tick2"] if rest < 1.0 else fx["tick"])
             s += 0.25 if rest < 1.0 else 0.5
-        add(sfx, r["t0"] + r["think"] * 0.55, fx["pista"])
+        if r["banderas"]:
+            add(sfx, r["t0"] + r["t_flag"], fx["pista"])
+        add(sfx, r["t0"] + r["t_ini"], fx["pista"])
         for k in range(3):
             add(sfx, tr - 1.0 + k * 0.33, fx["latido"])
         add(sfx, tr - 0.9, fx["riser"])
@@ -248,8 +259,18 @@ def main(guion_path):
             if frac > 0:
                 dr.rounded_rectangle((bx0, by, bx0 + (bx1 - bx0) * frac, by + 24), 12, fill=LED if rest > 1 else ROJO)
             texto(dr, (bx1 + 52, by + 11), str(max(1, math.ceil(rest))), 64, LED if rest > 1 else ROJO, 7)
+            # pista 1: banderas a los costados de la cara
+            if r["banderas"] and tr >= r["t_flag"]:
+                q = ease_out((tr - r["t_flag"]) / 0.25)
+                lado = int(128 * (0.6 + 0.4 * q))
+                for img_b, x in zip(r["banderas"], (CX - 300, CX + 300)):
+                    cx_, cy_ = x + sx, CY - 285 + sy
+                    dr.ellipse((cx_ - lado * 0.62, cy_ - lado * 0.62, cx_ + lado * 0.62, cy_ + lado * 0.62), fill=(10, 30, 22, 235),
+                               outline=LED + (255,), width=5)
+                    fb = img_b.resize((lado, lado), Image.LANCZOS)
+                    im.paste(fb, (int(cx_ - lado / 2), int(cy_ - lado / 2)), fb)
             # subtítulo de la pregunta
-            t_pista = r["think"] * 0.55
+            t_pista = r["t_ini"]
             if tr < r["dq"] + 0.4:
                 subtitulo(dr, r["voz_pregunta"], 1.0 if k == 0 else (tr - 0.05) / max(r["dq"], .1), 1540)
             elif tr < t_pista:
@@ -269,9 +290,12 @@ def main(guion_path):
             pegar_centro(im, circulo(cb, diam, VERDE), xb + sx, yb + sy)
             if p > 0.6:
                 q = ease_out((trv - T_SPLIT * 0.6) / 0.25) if not final else 1
-                for nombre, x in ((r["nombre_a"], xa), (r["nombre_b"], xb)):
+                for j, (nombre, x) in enumerate(((r["nombre_a"], xa), (r["nombre_b"], xb))):
                     tam = ajustar(nombre.upper(), int(84 * (0.8 + 0.2 * q)), 440)
                     texto(dr, (x, CY + DIAM_S / 2 + 40), nombre.upper(), tam, LED, 9)
+                    if r["banderas"]:
+                        fb = r["banderas"][j].resize((84, 84), Image.LANCZOS)
+                        im.paste(fb, (int(x - 42), int(CY + DIAM_S / 2 + 92)), fb)
             if not final:
                 subtitulo(dr, r["voz_revela"], (trv - 0.25) / max(r["dr"], .1), 1540)
             # destello

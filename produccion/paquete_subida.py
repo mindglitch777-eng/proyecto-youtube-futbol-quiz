@@ -28,6 +28,7 @@ Comment your score /{total} 👇
 
 Photo credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:
 {creditos}
+Flag icons: Twemoji (https://github.com/jdecked/twemoji), CC BY 4.0.
 
 === COMENTARIO PARA FIJAR (lo escribís vos apenas sale) ===
 Be honest… how many did you get? 👇 {'/'.join(['0', '1', '2', '3', '4'][:len(nombres) + 1])}
