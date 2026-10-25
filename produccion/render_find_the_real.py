@@ -235,7 +235,13 @@ def guardar_wav(path, audio):
 
 # ------------------------------------------------------------------ principal
 def main(guion_path):
+    global COLS, ROWS, TILE, GAP, GX, GY, T_THINK, T_ROUND
     g = json.loads(Path(guion_path).read_text())
+    estilo_find = g.get("estilo") == "find"     # fórmula FULYON: grilla 5x5 numerada, "FIND X", 4 s por ronda
+    if estilo_find:
+        COLS = ROWS = 5; TILE, GAP = 172, 10
+        GX = (W - (COLS * TILE + (COLS - 1) * GAP)) // 2 - 38; GY = 560
+        T_THINK = 4.0; T_ROUND = T_POP + T_THINK + T_REVEAL
     rnd = random.Random(g.get("semilla", 7))
     out_dir = ROOT / "salida" / g["id"]; out_dir.mkdir(parents=True, exist_ok=True)
     base_bg = fondo()
@@ -248,7 +254,7 @@ def main(guion_path):
         usados.add(real)
         tiles = []
         for i in range(COLS * ROWS):
-            tiles.append(a_tile(cara if i == real else distorsion(cara, r["intensidad"], rnd)))
+            tiles.append(a_tile(cara if i == real else distorsion(cara, r["intensidad"], rnd), lado=TILE))
         rondas.append({**r, "real": real, "tiles": tiles})
 
     dur = len(rondas) * T_ROUND + T_END
@@ -286,15 +292,20 @@ def main(guion_path):
         f_et = fuente(44, FUENTE2); wet = f_et.getlength(etiqueta) + 50
         dr.rounded_rectangle((W / 2 - wet / 2, 150, W / 2 + wet / 2, 218), 34, fill=col_et)
         dr.text((W / 2, 184), etiqueta, font=f_et, fill=(12, 20, 16), anchor="mm")
-        texto(dr, (W / 2, 300), "FIND THE REAL", 104, BLANCO, 9)
         nombre = r["nombre"].upper()
-        tam = ajustar(nombre, 200, W - 120)
         pop = 1 + 0.12 * (1 - ease_out(tr / 0.25)) if tr < 0.25 and not final and k > 0 else 1
-        texto(dr, (W / 2, 450), nombre, int(tam * pop), LED, 12)
+        if estilo_find:
+            s_ = f"FIND {nombre}"
+            texto(dr, (W / 2, 370), s_, int(ajustar(s_, 170, W - 80) * pop), LED, 12)
+        else:
+            texto(dr, (W / 2, 300), "FIND THE REAL", 104, BLANCO, 9)
+            tam = ajustar(nombre, 200, W - 120)
+            texto(dr, (W / 2, 450), nombre, int(tam * pop), LED, 12)
         # contador de ronda
         for i in range(len(rondas)):
             cx = W / 2 + (i - (len(rondas) - 1) / 2) * 44
-            dr.ellipse((cx - 11, 548, cx + 11, 570), fill=LED if i <= k else (255, 255, 255, 70))
+            cy_ = 490 if estilo_find else 559
+            dr.ellipse((cx - 11, cy_ - 11, cx + 11, cy_ + 11), fill=LED if i <= k else (255, 255, 255, 70))
         # grilla
         revel = tr >= T_POP + T_THINK
         p_rev = ease_out((tr - T_POP - T_THINK) / 0.35) if revel else 0
@@ -317,6 +328,9 @@ def main(guion_path):
             im.paste(tl, (ox, oy), tl)
             dr.rounded_rectangle((ox, oy, ox + tl.width - 1, oy + tl.height - 1), 26,
                                  outline=(255, 255, 255, int(120 * aparicion * (1 - 0.7 * p_rev * (not es_real)))), width=3)
+            if estilo_find:      # número de casilla: la gente comenta el número
+                dr.rounded_rectangle((ox + 6, oy + 6, ox + 58, oy + 50), 12, fill=(0, 0, 0, 170))
+                dr.text((ox + 32, oy + 28), str(i + 1), font=fuente(34, FUENTE2), fill=(255, 255, 255), anchor="mm")
         if revel:
             x, y = pos_tile(r["real"]); c = (x + TILE / 2, y + TILE / 2); rad = TILE * 0.62 + 30 * (1 - p_rev)
             dr.ellipse((c[0] - rad, c[1] - rad, c[0] + rad, c[1] + rad), outline=VERDE + (255,), width=12)
@@ -346,7 +360,8 @@ def main(guion_path):
             dr.rectangle((0, 0, W, H), fill=(4, 12, 9, int(170 * a)))
             texto(dr, (W / 2, 760), "HOW MANY", int(150 * (0.9 + 0.1 * a)), BLANCO, 12)
             texto(dr, (W / 2, 920), "DID YOU FIND?", int(132 * (0.9 + 0.1 * a)), LED, 12)
-            texto(dr, (W / 2, 1110), "COMMENT YOUR SCORE /4", 64, BLANCO, 7)
+            cta = "COMMENT THE NUMBERS" if estilo_find else f"COMMENT YOUR SCORE /{len(rondas)}"
+            texto(dr, (W / 2, 1110), cta, 64, BLANCO, 7)
             # flecha hacia comentarios
             ax, ay = W / 2, 1230 + 14 * math.sin(te * 9)
             dr.polygon([(ax - 46, ay), (ax + 46, ay), (ax, ay + 60)], fill=LED)
