@@ -1,0 +1,67 @@
+{
+ "formato": "carrera",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "86Huc_x-srg",
+  "titulo": "Argentina Legends: Who Scored the Most Goals? 🇦🇷",
+  "fecha": "2026-10-15T13:00:17Z",
+  "vistas": 856211,
+  "likes": 8136,
+  "coment": 53,
+  "dur": "PT1M13S"
+ },
+ "mediana": 57253.0,
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "formato_exacto": "Gráfico animado de barras evolutivo sobre los máximos goleadores históricos de la selección argentina",
+  "duracion_s": 72,
+  "primer_segundo": "Se ve el título 'ARGENTINA LEGENDS GOALS' y la tabla inicial entre 1977-1994 con Maradona al frente con 33 goles.",
+  "gancho_texto": "ARGENTINA LEGENDS GOALS",
+  "protagonistas": [
+   "Lionel Messi",
+   "Diego Maradona",
+   "Gabriel Batistuta",
+   "Sergio Agüero",
+   "Ángel Di María"
+  ],
+  "desenlace": "Messi culmina en la cima absoluta alcanzando los 126 goles proyectados para 2026, ganando de forma totalmente esperada como el favorito del público.",
+  "ganador_popular": true,
+  "arco_de_tension": "Evolución cronológica año a año donde Messi arranca desde cero en 2006 y va superando paulatinamente a Maradona (2013) y a Batistuta (2016) hasta distanciarse de manera abrumadora.",
+  "momentos_emocion": [
+   {
+    "t": 7.0,
+    "que": "Messi aparece en el marcador en 2006 anotando sus primeros 2 goles."
+   },
+   {
+    "t": 29.0,
+    "que": "Messi supera a Diego Maradona en 2013 al llegar a 37 goles."
+   },
+   {
+    "t": 38.0,
+    "que": "Messi supera a Gabriel Batistuta en 2016 alcanzando 57 goles y el primer lugar histórico."
+   },
+   {
+    "t": 53.0,
+    "que": "Messi rompe la barrera de los 80 goles en 2021 tras un año con 18 anotaciones."
+   },
+   {
+    "t": 68.0,
+    "que": "Messi supera la barrera de los 120 goles hacia 2026 cerrando en lo más alto."
+   }
+  ],
+  "audio": {
+   "musica": "Tema pegadizo y movido de tendencia turca en TikTok/Shorts",
+   "voz": null,
+   "efectos": "Efectos de sonido leves al actualizar posiciones y cifras"
+  },
+  "visual": "Animación 2D limpia con barras rosadas, esferas azules con contadores, rostros recortados de los futbolistas y ejes temporales claros.",
+  "texto_en_pantalla": "ARGENTINA LEGENDS GOALS, nombres de jugadores (MESSI, Maradona, DI MARIA, Batistuta, AGUERO), contadores de goles y años arriba.",
+  "ritmo_cortes_por_segundo": 0.45,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "El debate del GOAT argentino y la comparación estadística entre Lionel Messi, Diego Maradona y Gabriel Batistuta.",
+  "por_que_rinde_asi": "1. El formato de visualización de datos en barras animadas genera altísima retención porque la gente quiere ver la progresión completa hasta el final.\n2. La figura universal de Lionel Messi atrae a millones de fanáticos del fútbol buscando comprobar su récord insuperable.\n3. La música rítmica y pegadiza incentiva a ver el video repetidamente en bucle.",
+  "que_le_falta": "Un llamado a la acción (CTA) preguntando al público quién es su leyenda favorita o invitando a comentar.",
+  "riesgo_copyright": "Música comercial de fondo susceptible a reclamos de derechos de autor."
+ }
+}

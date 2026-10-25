@@ -1,0 +1,65 @@
+{
+ "formato": "carrera",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "BqABbyPuPVQ",
+  "titulo": "Neymar, Haaland or Ronaldo? The Ultimate Showdown! 🏆🔥",
+  "fecha": "2026-08-24T23:00:22Z",
+  "vistas": 20138102,
+  "likes": 600886,
+  "coment": 3618,
+  "dur": "PT43S"
+ },
+ "mediana": 350804.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "juego interactivo de carreras y eliminación entre futbolistas con filtro en pantalla",
+  "duracion_s": 42,
+  "primer_segundo": "Neymar mirando a la cámara y tres opciones de futbolistas arriba con signos de interrogación",
+  "gancho_texto": "Neymar y la selección entre Neymar, Haaland y Cristiano Ronaldo",
+  "protagonistas": [
+   "Neymar",
+   "Erling Haaland",
+   "Cristiano Ronaldo"
+  ],
+  "desenlace": "Cristiano Ronaldo gana la competencia final y levanta la copa, cumpliendo con la expectativa de ser el más popular del trío.",
+  "ganador_popular": true,
+  "arco_de_tension": "se construye mediante carreras simultáneas donde los avatares eluden obstáculos y ganan o pierden terreno rápidamente entre explosiones de humo",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "inicio del juego con Neymar eligiendo al azar"
+   },
+   {
+    "t": 11.0,
+    "que": "aparición del avatar de Haaland y cambio de escenario"
+   },
+   {
+    "t": 32.0,
+    "que": "avance definitivo de Cristiano Ronaldo hacia la victoria"
+   },
+   {
+    "t": 41.0,
+    "que": "pantalla final de victoria con Cristiano"
+   }
+  ],
+  "audio": {
+   "musica": "remix viral de TikTok con base electrónica acelerada",
+   "voz": "no",
+   "efectos": "explosiones, sonidos de salto y efectos de victoria"
+  },
+  "visual": "mezcla de video real del jugador de fondo, avatares 2D/3D en pista animada y recortes fotográficos de alta calidad",
+  "texto_en_pantalla": "signos de interrogación iniciales y cartel final de 'YOU WIN!'",
+  "ritmo_cortes_por_segundo": 0.1,
+  "loop": true,
+  "pedido_al_espectador": "If you like Ronaldo, do this (dar like o suscribirse)",
+  "polemica_o_debate": "debate eterno sobre quién es mejor entre los grandes íconos del fútbol moderno",
+  "por_que_rinde_asi": [
+   "Uso de futbolistas súper populares (Neymar, Haaland, Cristiano Ronaldo) que generan identificación masiva.",
+   "Formato de juego visual dinámico y adictivo con avatares en miniatura que atrapa la atención hasta el final.",
+   "Llamado a la acción directo apelando al fandom de Cristiano Ronaldo para generar interacciones."
+  ],
+  "que_le_falta": "mayor interacción en comentarios antes del final para duplicar la retención",
+  "riesgo_copyright": "uso de imágenes de jugadores reales, rostros y trofeos oficiales"
+ }
+}

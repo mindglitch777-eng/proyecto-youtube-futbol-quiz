@@ -1,0 +1,73 @@
+{
+ "formato": "carrera",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "cPy2ce79FD4",
+  "titulo": "Mbappé, Neymar or Ronaldo? One Trophy, Three Superstars! 😱🏆",
+  "fecha": "2026-10-12T00:30:12Z",
+  "vistas": 5176559,
+  "likes": 144178,
+  "coment": 463,
+  "dur": "PT39S"
+ },
+ "mediana": 350804.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "juego de filtro vertical de fútbol con jugadores virtuales acumulando puntos/items",
+  "duracion_s": 38,
+  "primer_segundo": "Aparece la cara de Mbappé en un filtro sobre el fondo de un estadio, con tres carriles y un personaje corriendo.",
+  "gancho_texto": "Mbappé",
+  "protagonistas": [
+   "Mbappé",
+   "Neymar",
+   "Cristiano Ronaldo"
+  ],
+  "desenlace": "En el intento de Cristiano Ronaldo se completa el objetivo con éxito y aparece 'YOU WIN!'.",
+  "ganador_popular": true,
+  "arco_de_tension": "Se muestran tres intentos fallidos de los jugadores principales (Mbappé y Neymar pierden) creando expectativa hasta que Cristiano Ronaldo completa el desafío con triunfo.",
+  "momentos_emocion": [
+   {
+    "t": 0,
+    "que": "Inicia el intento de Mbappé."
+   },
+   {
+    "t": 11,
+    "que": "Mbappé pierde ('YOU LOSE!')."
+   },
+   {
+    "t": 12,
+    "que": "Inicia el intento de Neymar."
+   },
+   {
+    "t": 22,
+    "que": "Neymar pierde ('YOU LOSE!')."
+   },
+   {
+    "t": 24,
+    "que": "Inicia el intento de Cristiano Ronaldo."
+   },
+   {
+    "t": 37,
+    "que": "Cristiano Ronaldo gana ('YOU WIN!')."
+   }
+  ],
+  "audio": {
+   "musica": "Remix viral de canción pop con ritmo acelerado",
+   "voz": "no",
+   "efectos": "Sonidos de explosión, aciertos y fallos del filtro"
+  },
+  "visual": "Filtro de realidad aumentada sobre rostros reales en formato vertical 9:16, animaciones 2D y 3D superpuestas en césped verde.",
+  "texto_en_pantalla": "YOU LOSE! / YOU WIN!",
+  "ritmo_cortes_por_segundo": 0.08,
+  "loop": false,
+  "pedido_al_espectador": "If you like Ronaldo, do this",
+  "polemica_o_debate": "Comparación entre las tres grandes estrellas actuales del fútbol mundial (Mbappé, Neymar, Cristiano Ronaldo).",
+  "por_que_rinde_asi": [
+   "Usa el formato de filtro interactivo muy popular en TikTok y Shorts.",
+   "Involucra a tres de los futbolistas más seguidos del mundo generando rivalidad y expectativa.",
+   "La estructura de fallar primero con Mbappé y Neymar genera intriga sobre si Cristiano ganará al final."
+  ],
+  "que_le_falta": "Un llamado a la acción más claro en los primeros segundos para retener a los espectadores que abandonan rápido.",
+  "riesgo_copyright": "Uso de imagen de los futbolistas y fondos con marcas comerciales de la FIFA."
+ }
+}

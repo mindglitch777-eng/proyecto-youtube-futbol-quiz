@@ -1,0 +1,68 @@
+{
+ "formato": "carrera",
+ "canal": "Footypoints",
+ "video": {
+  "id": "VtRe__COi7o",
+  "titulo": "Nobody Expect this move From Barca🤯🥶 #laliga",
+  "fecha": "2026-05-12T05:15:58Z",
+  "vistas": 12779,
+  "likes": 127,
+  "coment": 0,
+  "dur": "PT9S"
+ },
+ "mediana": 176992.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "skit cómico/humorístico sobre la rivalidad futbolística con símbolos y logotipos superpuestos",
+  "duracion_s": 8,
+  "primer_segundo": "Una persona con la camiseta de Barcelona salta hacia una caja blanca y marca un gol simbólico con la leyenda '1-0' para FC Barcelona.",
+  "gancho_texto": "LALIGA - 0-0",
+  "protagonistas": [
+   "Real Madrid",
+   "FC Barcelona"
+  ],
+  "desenlace": "El Real Madrid termina perdiendo 0-2 en una representación humorística dentro de una caja",
+  "ganador_popular": false,
+  "arco_de_tension": "Cambio rápido de marcador de 0-0 a 0-2 mediante una acción física humorística dentro de la caja",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "El jugador de Barcelona entra en la caja"
+   },
+   {
+    "t": 0.5,
+    "que": "El marcador pasa a 0-1"
+   },
+   {
+    "t": 0.8,
+    "que": "El jugador de Real Madrid entra en la caja"
+   },
+   {
+    "t": 0.16,
+    "que": "El marcador cambia a 0-2 para Barcelona"
+   }
+  ],
+  "audio": {
+   "musica": "remix viral y acelerado de fondo",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "clips grabados con celular en interior de casa, calidad estándar, superposición de escudos y textos en 2D",
+  "texto_en_pantalla": "LALIGA y el marcador 0-0 / 0-2",
+  "ritmo_cortes_por_segundo": 0.5,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "rivalidad Real Madrid vs Barcelona (El Clásico)",
+  "por_que_rinde_asi": [
+   "Es muy corto y repetitivo (loop), lo que afecta la retención si no engancha rápido",
+   "El humor físico es algo básico y puede no conectar con audiencias globales",
+   "La edición con escudos digitales se siente casera y poco pulida frente a animaciones de alta calidad"
+  ],
+  "que_le_falta": [
+   "Mayor dinamismo en los cambios de escena",
+   "Un remate o giro de humor más fuerte al final",
+   "Mejor calidad de producción y edición en los elementos gráficos"
+  ],
+  "riesgo_copyright": "uso de escudos y nombres oficiales de clubes y torneos (Real Madrid, FC Barcelona, LaLiga)"
+ }
+}

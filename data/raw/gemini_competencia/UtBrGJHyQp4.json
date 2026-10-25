@@ -1,0 +1,64 @@
+{
+ "formato": "carrera",
+ "canal": "Footypoints",
+ "video": {
+  "id": "UtBrGJHyQp4",
+  "titulo": "Real Madrid vs Barcelona  / Who Wins? 🤔 #laliga",
+  "fecha": "2026-08-29T10:06:20Z",
+  "vistas": 6308643,
+  "likes": 21767,
+  "coment": 46,
+  "dur": "PT13S"
+ },
+ "mediana": 176992.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Meme humorístico de fútbol con doble sentido y edición creativa de rivalidad",
+  "duracion_s": 12,
+  "primer_segundo": "Dos personas rompiendo una pared con logos de Real Madrid y un marcador 0-0",
+  "gancho_texto": "Real Madrid vs Barcelona 0-0 con edición de dos personas destrozando una casa",
+  "protagonistas": [
+   "Real Madrid",
+   "Barcelona"
+  ],
+  "desenlace": "El Barcelona (representado por el vecino con paraguas) irrumpe destruyendo la pared del Real Madrid y el marcador cambia bruscamente a 2-0 para Barcelona",
+  "ganador_popular": true,
+  "arco_de_tension": "Comienza con destrucción simétrica y marcador empatado, aumenta la tensión cuando aparece el personaje del Barcelona y culmina con un giro humorístico donde el Barcelona anota doble",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Dos personas con logos de Real Madrid rompen una pared"
+   },
+   {
+    "t": 0.5,
+    "que": "Marcador 0-0 en pantalla"
+   },
+   {
+    "t": 0.6,
+    "que": "Aparece un hombre con camiseta y logo de Barcelona"
+   },
+   {
+    "t": 0.11,
+    "que": "El Barcelona destruye la casa y el marcador pasa a 2-0"
+   }
+  ],
+  "audio": {
+   "musica": "Canción en tendencia remixada con ritmo enérgico",
+   "voz": "no",
+   "efectos": "Golpes, destrucción de paredes, gritos"
+  },
+  "visual": "Clips de video real editados con superposición de logos de fútbol y marcador de TV, calidad estándar de redes sociales",
+  "texto_en_pantalla": "LALIGA, marcador 0-0 que luego cambia a 2-0",
+  "ritmo_cortes_por_segundo": 0.75,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad clásica Real Madrid vs Barcelona (Clásico español)",
+  "por_que_rinde_asi": [
+   "Usa el humor absurdo y la edición creativa para representar un clásico",
+   "Apela a la gigantesca comunidad global de hinchas del Real Madrid y Barcelona",
+   "Tiene un giro final inesperado y muy gráfico que genera risa y ganas de reaccionar"
+  ],
+  "que_le_falta": "Un llamado a la acción para comentar qué equipo ganará el próximo partido real",
+  "riesgo_copyright": "Uso de logos oficiales de LaLiga y clubes (Real Madrid y Barcelona), además de música comercial"
+ }
+}

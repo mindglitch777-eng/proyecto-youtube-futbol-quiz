@@ -1,0 +1,61 @@
+{
+ "formato": "evolucion",
+ "canal": "Icon Stories",
+ "video": {
+  "id": "-B56WZA6vQs",
+  "titulo": "Céline Dept Evolution: From Footballer to Global YouTube Star",
+  "fecha": "2026-10-02T13:00:27Z",
+  "vistas": 1702895,
+  "likes": 15354,
+  "coment": 71,
+  "dur": "PT22S"
+ },
+ "mediana": 237230.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Evolución de edad de una futbolista con IA combinando con banderas y camisetas de clubes/selecciones",
+  "duracion_s": 22,
+  "primer_segundo": "Una niña sonriendo con el mapa de Bélgica y el texto '10 2009'",
+  "gancho_texto": "10 2009",
+  "protagonistas": [
+   "Bélgica",
+   "Portugal",
+   "Juventus"
+  ],
+  "desenlace": "Muestra la progresión de la niña hasta los 25 años en el 2026 vistiendo la camiseta de Bélgica",
+  "ganador_popular": false,
+  "arco_de_tension": "Curiosidad por ver la transformación facial realista generada por IA a lo largo de los años y sus cambios de club",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Presentación de la niña a los 10 años"
+   },
+   {
+    "t": 17.0,
+    "que": "Aparece con la camiseta de la Juventus con el número 17"
+   },
+   {
+    "t": 20.0,
+    "que": "Imagen final a los 25 años en 2026"
+   }
+  ],
+  "audio": {
+   "musica": "Canción pop en tendencia con ritmo alegre",
+   "voz": "no",
+   "efectos": "ninguno"
+  },
+  "visual": "Generaciones de imágenes hiperrealistas por IA; alta calidad; colores vivos y césped verde brillante",
+  "texto_en_pantalla": "Edad y año (ej: '10 2009', '19 2018', etc.) en tipografía grande y gruesa",
+  "ritmo_cortes_por_segundo": 0.45,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Efecto visual hipnótico de transformación facial realista por IA",
+   "Curiosidad por el paso del tiempo y ver cómo evoluciona la protagonista",
+   "Dinámica rápida con música atractiva que genera retención alta"
+  ],
+  "que_le_falta": "Un giro inesperado o final interactivo para invitar a comentar",
+  "riesgo_copyright": "Imágenes generadas por IA (bajo riesgo), canciones comerciales de fondo (riesgo medio)"
+ }
+}

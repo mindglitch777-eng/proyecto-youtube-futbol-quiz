@@ -1,0 +1,66 @@
+{
+ "formato": "carrera",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "dwPjA2-Sujg",
+  "titulo": "Yamal, Haaland or Ronaldo? The Final Race Begins! 🏆🔥",
+  "fecha": "2026-09-08T21:00:18Z",
+  "vistas": 3496762,
+  "likes": 48715,
+  "coment": 194,
+  "dur": "PT42S"
+ },
+ "mediana": 350804.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "filtro interactivo de carrera de fútbol entre tres futbolistas",
+  "duracion_s": 42,
+  "primer_segundo": "se ve a un creador en un auto con un filtro de pista de fútbol vertical, Messi y tres iconos misteriosos",
+  "gancho_texto": "miniaturas de Yamal, Haaland y Cristiano con iconos de interrogación",
+  "protagonistas": [
+   "Yamal",
+   "Haaland",
+   "Cristiano Ronaldo",
+   "Messi"
+  ],
+  "desenlace": "Cristiano Ronaldo gana su carrera en la última ronda frente a Messi",
+  "ganador_popular": true,
+  "arco_de_tension": "eliminación progresiva de jugadores a lo largo de tres rondas con música en crescendo",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "inicio de la primera ronda con Messi corriendo"
+   },
+   {
+    "t": 11.0,
+    "que": "explosión y cambio al segundo jugador (Haaland)"
+   },
+   {
+    "t": 24.0,
+    "que": "explosión y cambio al tercer jugador (Cristiano Ronaldo)"
+   },
+   {
+    "t": 41.0,
+    "que": "pantalla final de 'YOU WIN!' con Ronaldo"
+   }
+  ],
+  "audio": {
+   "musica": "remix épico y viral de TikTok con base electrónica",
+   "voz": "no",
+   "efectos": "explosiones y sonidos de checkpoints"
+  },
+  "visual": "filtro de RA superpuesto sobre video real del creador, animaciones 2D y 3D de futbolistas y copas",
+  "texto_en_pantalla": "YOU WIN!",
+  "ritmo_cortes_por_segundo": 0.07,
+  "loop": true,
+  "pedido_al_espectador": "If you like Ronaldo, do this",
+  "polemica_o_debate": "debate GOAT y comparación entre leyendas y promesas actuales",
+  "por_que_rinde_asi": [
+   "Uso de un filtro viral interactivo muy popular en TikTok y Shorts",
+   "Protagonismo de las mayores estrellas del fútbol mundial actual y histórico",
+   "Llamado a la acción explícito pidiendo interactuar si sos fan de Cristiano"
+  ],
+  "que_le_falta": "mayor variedad de reacciones del creador durante la partida",
+  "riesgo_copyright": "uso de imagen de futbolistas y marcas de torneos"
+ }
+}

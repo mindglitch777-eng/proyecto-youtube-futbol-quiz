@@ -1,0 +1,60 @@
+{
+ "formato": "carrera",
+ "canal": "Footypoints",
+ "video": {
+  "id": "A69mTmqzWQE",
+  "titulo": "Real Madrid Lost 1-2 to Bayern Munich in the UCL Quarterfinal🥵😱",
+  "fecha": "2026-04-08T10:39:06Z",
+  "vistas": 12723681,
+  "likes": 61145,
+  "coment": 0,
+  "dur": "PT9S"
+ },
+ "mediana": 176992.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Skete humorístico familiar interpretando un partido de fútbol con marcador dinámico",
+  "duracion_s": 8,
+  "primer_segundo": "Un joven salta emocionado frente a una mujer sentada; arriba iconos de Real Madrid y Bayern Múnich y marcador 0-0",
+  "gancho_texto": "CHAMPIONS LEAGUE",
+  "protagonistas": [
+   "Bayern Múnich",
+   "Real Madrid"
+  ],
+  "desenlace": "El Bayern (representado por los niños) gana 2-1 al Real Madrid, sorprendiendo con la pequeña que anota el gol definitivo",
+  "ganador_popular": false,
+  "arco_de_tension": "Aparece un gol rápido, luego se suman más personajes bailando y el marcador cambia súbitamente a favor de Bayern",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Salto inicial del joven celebrando y marcador 0-0"
+   },
+   {
+    "t": 4.0,
+    "que": "Entra la niña bailando y cambia el marcador a 2-1"
+   },
+   {
+    "t": 7.0,
+    "que": "Salen corriendo celebrando la victoria del Bayern"
+   }
+  ],
+  "audio": {
+   "musica": "Canción viral en tendencia con ritmo electrónico acelerado",
+   "voz": "no",
+   "efectos": "ninguno"
+  },
+  "visual": "Clips grabados en casa con celular, baja-media calidad, edición con iconos superpuestos",
+  "texto_en_pantalla": "CHAMPIONS LEAGUE, WARNING ENTERTAINMENT PURPOSE ONLY, @FOOTYPOINT-S, 0-0, 2-1",
+  "ritmo_cortes_por_segundo": 0.38,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad Bayern vs Real Madrid en Champions League",
+  "por_que_rinde_asi": [
+   "Utiliza una rivalidad de fútbol de máxima relevancia (Champions League)",
+   "Combina comedia casera tierna y sorpresiva con niños bailando",
+   "Duración muy corta y ágil que invita a ver el loop"
+  ],
+  "que_le_falta": "Mejor iluminación y mayor sincronización de la música con los movimientos",
+  "riesgo_copyright": "Uso de escudos oficiales de los clubes de fútbol"
+ }
+}

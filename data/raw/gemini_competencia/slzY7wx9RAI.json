@@ -1,0 +1,60 @@
+{
+ "formato": "carrera",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "slzY7wx9RAI",
+  "titulo": "Messi vs Ronaldo — Who Has More Non-Penalty Goals?",
+  "fecha": "2026-10-02T09:00:31Z",
+  "vistas": 908620,
+  "likes": 9823,
+  "coment": 309,
+  "dur": "PT1M18S"
+ },
+ "mediana": 57253.0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Gráfico de barras progresivo histórico animado sobre goles sin penales de futbolistas",
+  "duracion_s": 77,
+  "primer_segundo": "Título 'NON-PENALTY GOALS', imágenes de Messi y Ronaldo, año 2002 y conteo de goles inicial",
+  "gancho_texto": "NON-PENALTY GOALS",
+  "protagonistas": [
+   "Messi",
+   "Ronaldo"
+  ],
+  "desenlace": "Messi supera a Ronaldo en goles sin penales en los años finales, ganando la comparativa en la era moderna/actual",
+  "ganador_popular": true,
+  "arco_de_tension": "Remontada constante y sorpassos alternados año tras año que generan suspenso sobre quién lidera el ranking histórico",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio del conteo en 2002"
+   },
+   {
+    "t": 29.0,
+    "que": "Primer gran sorpasso de Messi a Ronaldo en 2012"
+   },
+   {
+    "t": 114.0,
+    "que": "Resultado final con Messi en primer lugar"
+   }
+  ],
+  "audio": {
+   "musica": "Remix electrónico en tendencia de fondo (canción 'Baby I'm Yours' acelerada/nightcore)",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "2D minimalista y limpio con avatares de los jugadores, barras animadas verticales y diseño estilo juego móvil",
+  "texto_en_pantalla": "NON-PENALTY GOALS, años en la línea de tiempo y números de goles actualizados año a año",
+  "ritmo_cortes_por_segundo": 1.0,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad Messi vs Ronaldo y debate del GOAT sobre goles sin penales",
+  "por_que_rinde_asi": [
+   "Toca el debate futbolístico más grande de la historia (Messi vs Ronaldo)",
+   "Usa un formato de datos visuales dinámicos (bar race) que engancha hasta el final",
+   "Mantiene la tensión con sorpassos constantes y la evolución año por año"
+  ],
+  "que_le_falta": "Un cierre con estadísticas resumidas o pregunta al espectador para fomentar comentarios",
+  "riesgo_copyright": "Bajo (uso de avatares/caricaturas o fotos de dominio público y música de tendencia libre o remixada)"
+ }
+}

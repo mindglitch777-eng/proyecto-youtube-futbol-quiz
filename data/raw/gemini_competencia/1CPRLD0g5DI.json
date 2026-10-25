@@ -1,0 +1,64 @@
+{
+ "formato": "carrera",
+ "canal": "Fire Rankings",
+ "video": {
+  "id": "1CPRLD0g5DI",
+  "titulo": "Can you guess the Top 3 players? 🤔 #quiz #football #soccer #shorts",
+  "fecha": "2026-10-21T17:00:25Z",
+  "vistas": 842,
+  "likes": 13,
+  "coment": 0,
+  "dur": "PT30S"
+ },
+ "mediana": 94104.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "carrera vertical estilo marble race con países y jugadores de fútbol",
+  "duracion_s": 30,
+  "primer_segundo": "bolitas cayendo por un laberinto en el cielo con nombres como Germany, Messi, Ronaldo y video incrustado arriba",
+  "gancho_texto": "Who win the WC",
+  "protagonistas": [
+   "Messi",
+   "Ronaldo",
+   "Mbappé",
+   "Neymar",
+   "Portugal",
+   "Argentina"
+  ],
+  "desenlace": "Mbappé y Neymar caen al final en un tramo largo superando a los demás",
+  "ganador_popular": true,
+  "arco_de_tension": "caídas simultáneas, laberintos ramificados y clips flotantes de fútbol",
+  "momentos_emocion": [
+   {
+    "t": 6.0,
+    "que": "múltiples menciones a Messi y Mbappé bajando rápido"
+   },
+   {
+    "t": 11.0,
+    "que": "Portugal toma ventaja con fuegos artificiales de fondo"
+   },
+   {
+    "t": 23.0,
+    "que": "caída libre larga hacia el fondo del laberinto"
+   }
+  ],
+  "audio": {
+   "musica": "remix viral rápido y acelerado en tendencia",
+   "voz": "no",
+   "efectos": "silbidos, golpes y transiciones rápidas"
+  },
+  "visual": "capturas de pantalla, fondos de cielo y nubes con laberinto marrón tipo 2D/3D",
+  "texto_en_pantalla": "nombres de países, jugadores y la pregunta Who win the WC",
+  "ritmo_cortes_por_segundo": 0.8,
+  "loop": true,
+  "pedido_al_espectador": "SUBSCRIBED botón flotante",
+  "polemica_o_debate": "Quién gana la Copa del Mundo / GOAT",
+  "por_que_rinde_asi": [
+   "temática muy popular de carreras de bolitas con fútbol",
+   "estímulos visuales constantes con videos superpuestos",
+   "ritmo rápido y adictivo"
+  ],
+  "que_le_falta": "mejor edición del texto para que no se superponga tanto con los videos y gancho inicial más claro",
+  "riesgo_copyright": "uso de clips de transmisiones oficiales de fútbol y música comercial"
+ }
+}

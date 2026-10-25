@@ -1,0 +1,62 @@
+{
+ "formato": "carrera",
+ "canal": "Fire Rankings",
+ "video": {
+  "id": "MY4Cn0Aslrw",
+  "titulo": "Who owns the World Cup? Messi vs Ronaldo 🐐🔥 #football #viral #shorts",
+  "fecha": "2026-10-05T17:00:10Z",
+  "vistas": 492986,
+  "likes": 3674,
+  "coment": 20,
+  "dur": "PT28S"
+ },
+ "mediana": 94104.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "carrera animada de esferas con países/jugadores de fútbol",
+  "duracion_s": 27,
+  "primer_segundo": "Carrera de esferas de Portugal, Argentina, Messi y Ronaldo bajando por un circuito en bucle sobre fondo azul",
+  "gancho_texto": "Who win the WC",
+  "protagonistas": [
+   "Argentina",
+   "Portugal",
+   "Messi",
+   "Ronaldo"
+  ],
+  "desenlace": "Gana Argentina (Messi), el favorito popular y del Mundial actual.",
+  "ganador_popular": true,
+  "arco_de_tension": "Carrera curva con múltiples adelantamientos, giros en círculos y clips de festejo arriba",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Salida simultánea de las esferas"
+   },
+   {
+    "t": 12.0,
+    "que": "Argentina toma la delantera clara mientras suena música épica"
+   },
+   {
+    "t": 22.0,
+    "que": "Llegada a la meta con botón de suscripción"
+   }
+  ],
+  "audio": {
+   "musica": "remix pegadizo y épico en tendencia con coros",
+   "voz": "no",
+   "efectos": "sonidos de deslizamiento y festejo"
+  },
+  "visual": "animación 2D/3D tipo juego de canicas con inserción de clips de video de partidos arriba, colores azul y verde",
+  "texto_en_pantalla": "Argentina, Portugal, Messi, Ronaldo, Who win the WC, Martinez, Molina, Romero, SUBSCRIBE",
+  "ritmo_cortes_por_segundo": 0.33,
+  "loop": true,
+  "pedido_al_espectador": "suscribirse",
+  "polemica_o_debate": "Messi vs Ronaldo / GOAT",
+  "por_que_rinde_asi": [
+   "Enfrenta a los dos máximos rivales del fútbol actual (Messi vs Ronaldo)",
+   "Visual dinámico y colorido que atrapa la atención desde el primer segundo",
+   "Usa el formato adictivo de carrera con bucle que retiene al espectador hasta el final"
+  ],
+  "que_le_falta": "Un llamado a comentar eligiendo bando para generar debate en los comentarios",
+  "riesgo_copyright": "clips de partidos de fútbol y música comercial"
+ }
+}

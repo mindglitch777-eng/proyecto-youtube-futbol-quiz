@@ -1,0 +1,60 @@
+{
+ "formato": "carrera",
+ "canal": "Footypoints",
+ "video": {
+  "id": "twngdZK6U-w",
+  "titulo": "Barcelona vs Athletic Club / Who Wins? 🤔  #laliga  #usa",
+  "fecha": "2026-08-27T13:54:33Z",
+  "vistas": 14191,
+  "likes": 179,
+  "coment": 0,
+  "dur": "PT15S"
+ },
+ "mediana": 176992.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Edición de humor futbolero combinando clip viral y escudos de LaLiga",
+  "duracion_s": 14,
+  "primer_segundo": "Hombre hablando por teléfono y mujer bailando en una parada de colectivos con escudos de Barcelona y Athletic Club sobre sus cabezas",
+  "gancho_texto": "PREDICTION",
+  "protagonistas": [
+   "FC Barcelona",
+   "Athletic Club"
+  ],
+  "desenlace": "El policía es reemplazado por un jugador del Barcelona, simulando un meme humorístico de la rivalidad",
+  "ganador_popular": true,
+  "arco_de_tension": "Expectativa por el resultado del partido mezclada con la broma de la situación en la calle",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Baile y llamada en la parada"
+   },
+   {
+    "t": 5.0,
+    "que": "Aparece el policía"
+   },
+   {
+    "t": 12.0,
+    "que": "El policía se transforma en jugador del Barça"
+   }
+  ],
+  "audio": {
+   "musica": "Remix viral de TikTok / trap acelerado",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "Clips de video vertical de redes, baja/media calidad, sobreimpresión de escudos y marcador de fútbol",
+  "texto_en_pantalla": "PREDICTION y marcador 0-0 arriba/abajo",
+  "ritmo_cortes_por_segundo": 0.2,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad Barcelona vs Athletic Club",
+  "por_que_rinde_asi": [
+   "Usa un video viral gracioso ajeno al fútbol y le pone contexto de partido",
+   "Duración corta que facilita el loop",
+   "Humor visual inmediato con los escudos sobre las cabezas"
+  ],
+  "que_le_falta": "Mejor integración de los elementos de fútbol y una pregunta al espectador para fomentar comentarios",
+  "riesgo_copyright": "Uso de marcas/escudos oficiales de LaLiga y clubes, además de música con derechos"
+ }
+}

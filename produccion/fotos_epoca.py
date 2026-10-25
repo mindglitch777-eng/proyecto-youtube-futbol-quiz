@@ -23,7 +23,8 @@ API = "https://commons.wikimedia.org/w/api.php"
 S = requests.Session()
 S.headers["User-Agent"] = "futbol-quiz-research/0.1 (https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz)"
 POR_ANIO = int(os.environ.get("POR_ANIO", "6"))
-MAX_ARCHIVOS = 400
+MAX_ARCHIVOS = 2500
+POR_CATEGORIA = 40          # tope por subcategoría, para cubrir todos los años y no solo los primeros
 LIBRES = re.compile(r"^(CC BY|CC BY-SA|CC0|Public domain|PD)", re.I)
 MALAS = re.compile(r"statue|wax|mural|signature|autograph|logo|shirt|jersey|stadium|poster|stamp|graffiti|crowd|team", re.I)
 
@@ -56,7 +57,7 @@ def archivos(nombre):
         cats += [s for s in miembros(c, "subcat") if not re.search(r"(?i)family|statue|wax|signature|tattoo|museum|car", s)]
     vistos, files = set(), []
     for c in dict.fromkeys(cats):
-        for f in miembros(c, "file"):
+        for f in miembros(c, "file")[:POR_CATEGORIA if c != f"Category:{nombre}" else 150]:
             if f not in vistos and re.search(r"(?i)\.(jpe?g|png)$", f) and not MALAS.search(f):
                 vistos.add(f); files.append((c, f))
         if len(files) > MAX_ARCHIVOS:
@@ -91,7 +92,10 @@ def main():
     for nombre in pedido:
         slug = re.sub(r"[^a-z0-9]+", "_", nombre.lower()).strip("_")
         ya = {v["archivo"] for v in creditos.values() if v["jugador"] == nombre}
-        if sum(v["jugador"] == nombre and v.get("v", 1) >= 2 for v in creditos.values()):
+        solo = [x.strip() for x in os.environ.get("SOLO", "").split(",") if x.strip()]
+        if solo and nombre not in solo:
+            continue
+        if not solo and sum(v["jugador"] == nombre and v.get("v", 1) >= 2 for v in creditos.values()):
             continue      # ya bajado con la versión 2 (más fotos por año y más resolución)
         files = archivos(nombre)
         cat_de = {f: c for c, f in files}

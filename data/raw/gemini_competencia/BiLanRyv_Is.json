@@ -1,0 +1,71 @@
+{
+ "formato": "carrera",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "BiLanRyv_Is",
+  "titulo": "Messi vs R9 + Kaká + Ronaldinho + Neymar",
+  "fecha": "2026-10-02T13:00:00Z",
+  "vistas": 838682,
+  "likes": 7975,
+  "coment": 127,
+  "dur": "PT48S"
+ },
+ "mediana": 57253.0,
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "formato_exacto": "Comparativa gráfica en infografía 2D acumulativa de trofeos entre Lionel Messi y cuatro leyendas de Brasil (R9, Kaká, Ronaldinho y Neymar).",
+  "duracion_s": 47,
+  "primer_segundo": "Se muestra la tabla comparativa vacía con las fotos de Messi y los 4 brasileños, mientras suena un ritmo de percusión enérgico.",
+  "gancho_texto": "MESSI VS R9, KAKA, RONALDINHO & NEYMAR - MAJOR ACHIEVEMENTS",
+  "protagonistas": [
+   "Lionel Messi",
+   "Ronaldo Nazário",
+   "Kaká",
+   "Ronaldinho",
+   "Neymar"
+  ],
+  "desenlace": "Messi arrasa en la categoría de premios individuales (8 Balones de Oro y 6 Botas de Oro), superando ampliamente la suma combinada de las cuatro estrellas brasileñas. Gana Messi, el favorito del momento y más popular.",
+  "ganador_popular": true,
+  "arco_de_tension": "Progresión fila por fila: Brasil toma la ventaja inicial en Mundial y Copa América, empatan en Champions League, y finalmente Messi liquida la comparativa con un dominio abrumador en galardones individuales.",
+  "momentos_emocion": [
+   {
+    "t": 1.0,
+    "que": "Brasil toma la ventaja inicial con 5 Copas del Mundo frente a 1 de Messi."
+   },
+   {
+    "t": 6.0,
+    "que": "Brasil amplía la ventaja con 4 Copas América frente a 2 de Messi."
+   },
+   {
+    "t": 13.0,
+    "que": "Empate en UEFA Champions League con 4 trofeos para cada lado."
+   },
+   {
+    "t": 22.0,
+    "que": "Messi remonta acumulando velozmente sus 8 Balones de Oro."
+   },
+   {
+    "t": 35.0,
+    "que": "Messi cierra la comparativa acumulando sus 6 Botas de Oro."
+   }
+  ],
+  "audio": {
+   "musica": "Música de percusión épica e instrumental tipo redoble de tambores de combate.",
+   "voz": "no",
+   "efectos": "Efectos de sonido de impacto y golpes pesados ('thud/pop') cada vez que aparece un trofeo."
+  },
+  "visual": "Infografía 2D limpia sobre fondo blanco, cuadros de texto claros, imágenes cutout de alta resolución de jugadores y trofeos dorados.",
+  "texto_en_pantalla": "Encabezado permanente 'MESSI VS R9, KAKA, RONALDINHO & NEYMAR' y etiquetas de trofeos 'WORLD CUP', 'COPA AMERICA', 'UCL', 'BALLON D'OR', 'GOLDEN BOOT'.",
+  "ritmo_cortes_por_segundo": 0.8,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "¿Es Messi individualmente más grande que cuatro de los mejores jugadores brasileños de la historia juntos?",
+  "por_que_rinde_asi": [
+   "Enfrenta a Messi contra 4 leyendas masivas en un solo video, desatando una fuerte rivalidad futbolística entre Argentina y Brasil.",
+   "El formato de conteo progresivo de trofeos genera alta retención, ya que el espectador espera ver el resultado de cada categoría hasta el final.",
+   "La interfaz gráfica es limpia, minimalista y directa, facilitando la comprensión instantánea sin necesidad de voz en off."
+  ],
+  "que_le_falta": "Un llamado a la acción (pantalla de pregunta al final para incentivar comentarios) y música con tendencia viral en TikTok/Shorts.",
+  "riesgo_copyright": "Bajo (imágenes promocionales de jugadores y gráficos vectoriales de trofeos con música libre de derechos)."
+ }
+}

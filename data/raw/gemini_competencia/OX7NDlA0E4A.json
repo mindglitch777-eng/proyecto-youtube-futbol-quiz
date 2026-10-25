@@ -1,0 +1,66 @@
+{
+ "formato": "carrera",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "OX7NDlA0E4A",
+  "titulo": "Did Ancient People Play Football? The Ball Is Only Half the Story",
+  "fecha": "2026-10-05T20:00:14Z",
+  "vistas": 1741,
+  "likes": 5,
+  "coment": 3,
+  "dur": "PT8M15S"
+ },
+ "mediana": 350804.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "video explicativo animado sobre la historia de los antiguos juegos de pelota y su relación con el fútbol moderno",
+  "duracion_s": 495,
+  "primer_segundo": "un monigote con camiseta azul y pantaloneta blanca patea un balón de fútbol en un campo verde",
+  "gancho_texto": "A ball comes toward you. You kick it back. Simple. But what if that kick broke the rules?",
+  "protagonistas": [
+   "jugadores de Mesoamérica",
+   "jugadores de Cuju en China",
+   "jugadores de Kemari en Japón",
+   "delegados ingleses de 1863"
+  ],
+  "desenlace": "el video concluye planteando una pregunta al espectador sobre cuál de los tres juegos antiguos elegiría probar, sin declarar un ganador definitivo",
+  "ganador_popular": false,
+  "arco_de_tension": "se plantea una pregunta histórica sobre el origen del fútbol y se van descartando mitos mediante la comparación de pistas arqueológicas y escritas",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "introducción del dilema con un monigote pateando un balón"
+   },
+   {
+    "t": 224.0,
+    "que": "exhibición de cómo se jugaba con las caderas en Mesoamérica"
+   },
+   {
+    "t": 418.0,
+    "que": "demostración de Cuju en la China antigua con un espejo de bronce"
+   },
+   {
+    "t": 498.0,
+    "que": "muestra de Kemari en Japón enfocando en la cooperación"
+   }
+  ],
+  "audio": {
+   "musica": "instrumental de fondo suave y educativo",
+   "voz": "narración clara y pausada en inglés",
+   "efectos": null
+  },
+  "visual": "animaciones estilo 2D ilustradas y coloridas con gráficos informativos",
+  "texto_en_pantalla": "subtítulos dinámicos palabra por palabra y títulos de secciones",
+  "ritmo_cortes_por_segundo": 0.2,
+  "loop": false,
+  "pedido_al_espectador": "cuál de los tres juegos antiguos (Hip ball, Cuju o Kemari) elegirías probar",
+  "polemica_o_debate": "si el fútbol moderno proviene directamente de un juego antiguo específico o si cada cultura tiene su propia historia",
+  "por_que_rinde_asi": [
+   "tema histórico interesante y poco conocido sobre el origen del deporte",
+   "explicación visual clara con comparaciones atractivas",
+   "estructura interactiva que invita a elegir una opción al final"
+  ],
+  "que_le_falta": "un ritmo de cortes más dinámico para retener la atención en formato corto",
+  "riesgo_copyright": "bajo, contenido original animado"
+ }
+}

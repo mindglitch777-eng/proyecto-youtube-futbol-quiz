@@ -1,0 +1,64 @@
+{
+ "formato": "carrera",
+ "canal": "Fire Rankings",
+ "video": {
+  "id": "LKf06AuDEoY",
+  "titulo": "Who Gets the Christmas Gift? Messi vs Ronaldo vs Haaland 🎁 #footballshorts #soccer",
+  "fecha": "2026-10-19T05:00:00Z",
+  "vistas": 1165,
+  "likes": 15,
+  "coment": 0,
+  "dur": "PT24S"
+ },
+ "mediana": 94104.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "carrera en laberinto con pelotas de futbolistas",
+  "duracion_s": 23,
+  "primer_segundo": "Se ve un laberinto con agua y bolitas con caras de Messi y Ronaldo cayendo.",
+  "gancho_texto": "Messi vs Ronaldo",
+  "protagonistas": [
+   "Messi",
+   "Ronaldo",
+   "Mbappé",
+   "Neymar",
+   "Haaland",
+   "Yamal"
+  ],
+  "desenlace": "Gana Messi, que es el más popular junto a Ronaldo.",
+  "ganador_popular": true,
+  "arco_de_tension": "Carrera tipo laberinto de agua con cambios de posiciones y adelantamientos constantes.",
+  "momentos_emocion": [
+   {
+    "t": 3.0,
+    "que": "Messi toma la delantera en el laberinto"
+   },
+   {
+    "t": 10.0,
+    "que": "Mbappé acelera y se adelanta"
+   },
+   {
+    "t": 20.0,
+    "que": "Definición final de la carrera"
+   }
+  ],
+  "audio": {
+   "musica": "remix viral de fondo con ritmo rápido",
+   "voz": "no",
+   "efectos": "sonidos de agua y caídas"
+  },
+  "visual": "2D animado tipo laberinto con inserción de clips de partidos y fotos reales",
+  "texto_en_pantalla": "Nombres de los futbolistas (Messi, Ronaldo, Neymar, Mbappé, Haaland, Yamal)",
+  "ritmo_cortes_por_segundo": 0.5,
+  "loop": true,
+  "pedido_al_espectador": "SUBSCRIBED (botón animado abajo)",
+  "polemica_o_debate": "Debate GOAT (Messi vs Ronaldo)",
+  "por_que_rinde_asi": [
+   "Usa futbolistas top y muy debatidos (Messi y Ronaldo)",
+   "Formato visual adictivo de carrera o laberinto",
+   "Mucha saturación de estímulos visuales y musicales"
+  ],
+  "que_le_falta": "Mejorar la fluidez de la animación y recortar la duración para que mantenga alta retención.",
+  "riesgo_copyright": "Uso de clips de partidos oficiales de fútbol y música comercial"
+ }
+}

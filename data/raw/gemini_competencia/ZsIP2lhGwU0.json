@@ -1,0 +1,64 @@
+{
+ "formato": "carrera",
+ "canal": "Sphere Stars",
+ "video": {
+  "id": "ZsIP2lhGwU0",
+  "titulo": "DON'T WATCH THIS AT 3 AM! 4K GOAT Race: Ronaldo vs Messi vs Neymar #shorts",
+  "fecha": "2026-09-03T19:23:13Z",
+  "vistas": 3286,
+  "likes": 17,
+  "coment": 2,
+  "dur": "PT23S"
+ },
+ "mediana": 77677.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "carrera vertical estilo marble race con futbolistas famosos",
+  "duracion_s": 22,
+  "primer_segundo": "se ve un laberinto vertical morado con bolas con caras de jugadores y un meme de mbappé arriba",
+  "gancho_texto": null,
+  "protagonistas": [
+   "Ronaldo",
+   "Yamal",
+   "Haaland",
+   "Neymar",
+   "Mbappé",
+   "Messi"
+  ],
+  "desenlace": "el video se corta antes de mostrar un claro ganador definitivo en la última bajada",
+  "ganador_popular": false,
+  "arco_de_tension": "caídas simultáneas y cambios de posiciones en un laberinto vertical",
+  "momentos_emocion": [
+   {
+    "t": 3.0,
+    "que": "Mbappé y Ronaldo toman la delantera momentánea"
+   },
+   {
+    "t": 16.0,
+    "que": "Messi y Neymar se agrupan en el pelotón intermedio"
+   }
+  ],
+  "audio": {
+   "musica": "remix electrónico bailable en tendencia de TikTok",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "animación 2D/3D tipo marble race sobre fondo morado, con memes e imágenes de futbolistas en la parte superior",
+  "texto_en_pantalla": "nombres de los futbolistas (Ronaldo, Yamal, Haaland, Neymar, Mbappé, Messi)",
+  "ritmo_cortes_por_segundo": 0.8,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "debate sobre quién es el mejor o rivalidad generacional de futbolistas",
+  "por_que_rinde_asi": [
+   "uso de futbolistas top y memes virales arriba que atraen la atención inicial",
+   "formato adictivo de carrera vertical (marble race) que genera curiosidad",
+   "ritmo visual constante con cambios de posiciones"
+  ],
+  "que_le_falta": [
+   "un desenlace claro con un ganador definitivo",
+   "gancho textual más fuerte o pregunta al inicio",
+   "efectos de sonido dinámicos para los rebotes y caídas"
+  ],
+  "riesgo_copyright": "medio-alto por uso de fotos de futbolistas y memes con marcas de agua o transmisiones"
+ }
+}

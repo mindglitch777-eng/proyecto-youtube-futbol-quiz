@@ -1,0 +1,65 @@
+{
+ "formato": "evolucion",
+ "canal": "Unstoppable Football",
+ "video": {
+  "id": "zsnmBZgiJ9U",
+  "titulo": "Football Then vs Now ☠️",
+  "fecha": "2026-09-11T17:53:14Z",
+  "vistas": 3990448,
+  "likes": 76988,
+  "coment": 133,
+  "dur": "PT33S"
+ },
+ "mediana": 432935.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Evolución de futbolistas famosos en el tiempo mostrando su edad y dinero estimado",
+  "duracion_s": 32,
+  "primer_segundo": "Aparece un collage de jugadores de fútbol en la parte superior y un clip de un jugador con sangre en la cabeza en 2002 con subtítulos de edad y dinero",
+  "gancho_texto": "2002 AGE: 26 Money: $5M",
+  "protagonistas": [
+   "Fabio Cannavaro",
+   "Luka Modric",
+   "Robert Lewandowski",
+   "Rodrigo De Paul",
+   "Antony",
+   "Mohamed Salah",
+   "Pepe"
+  ],
+  "desenlace": "Muestra la progresión temporal de múltiples leyendas del fútbol llegando hasta el año 2026",
+  "ganador_popular": true,
+  "arco_de_tension": "Curiosidad por ver cómo evolucionan y envejecen las estrellas del fútbol junto a su patrimonio estimado",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Presentación del primer jugador (Cannavaro en 2002)"
+   },
+   {
+    "t": 5.0,
+    "que": "Aparición de Modric"
+   },
+   {
+    "t": 28.0,
+    "que": "Momento meme de rana y cierre emotivo con Pepe"
+   }
+  ],
+  "audio": {
+   "musica": "Remix viral de tendencia en TikTok con ritmo sostenido y melancólico",
+   "voz": "no",
+   "efectos": "transiciones musicales y sonidos de golpes de ritmo"
+  },
+  "visual": "Clips de video, fotos de archivo, imágenes generadas por IA de envejecimiento y calidad variable",
+  "texto_en_pantalla": "Años (2002, 2026, etc.), edad y dinero ($5M, $30M, etc.)",
+  "ritmo_cortes_por_segundo": 0.25,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Comparación de fortunas y longevidad en el fútbol de élite",
+  "por_que_rinde_asi": [
+   "Usa múltiples figuras reconocidas mundialmente creando expectativa constante",
+   "La mezcla de IA y fotos reales de 'versiones futuras' genera curiosidad morbosa y fascinación",
+   "Ritmo rápido y dinámico que mantiene enganchado al espectador hasta el final"
+  ],
+  "que_le_falta": "Una pregunta interactiva al final para impulsar comentarios",
+  "riesgo_copyright": "Uso de imágenes de archivo de futbolistas y transmisiones de partidos"
+ }
+}

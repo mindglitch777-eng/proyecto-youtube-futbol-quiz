@@ -1,0 +1,57 @@
+{
+ "formato": "evolucion",
+ "canal": "Icon Stories",
+ "video": {
+  "id": "mi-fQYqGu8g",
+  "titulo": "Pelé & Neymar Evolution: A Legendary Friendship Through the Years",
+  "fecha": "2026-09-20T15:30:22Z",
+  "vistas": 2313747,
+  "likes": 21719,
+  "coment": 99,
+  "dur": "PT22S"
+ },
+ "mediana": 237230.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Video de progresión de edad de dos futbolistas famosos año por año",
+  "duracion_s": 22,
+  "primer_segundo": "Foto de Neymar y Pelé riendo con números de edad (18 y 70) y el año 2010",
+  "gancho_texto": "Visual de la dupla Neymar y Pelé creciendo en edad año a año",
+  "protagonistas": [
+   "Neymar",
+   "Pelé",
+   "Brasil"
+  ],
+  "desenlace": "Termina con la muerte de Pelé en 2022 y Neymar con 30 años llorando o triste",
+  "ganador_popular": false,
+  "arco_de_tension": "Cronología ascendente de edades que culmina de manera trágica con el fallecimiento de Pelé",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Presentación alegre de Neymar y Pelé en 2010"
+   },
+   {
+    "t": 19.0,
+    "que": "Cambio drástico a la muerte de Pelé en 2022 con Neymar conmemorándolo"
+   }
+  ],
+  "audio": {
+   "musica": "Canción melancólica y nostálgica en loop",
+   "voz": "no",
+   "efectos": null
+  },
+  "visual": "Fotos y clips históricos estáticos y dinámicos; calidad variable; colores vibrantes que se vuelven oscuros al final",
+  "texto_en_pantalla": "Edades de cada uno, año, bandera de Brasil y mapa de Brasil",
+  "ritmo_cortes_por_segundo": 0.36,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Homenaje y conexión generacional entre dos leyendas brasileñas",
+  "por_que_rinde_asi": [
+   "Conexión emotiva y relación de mentor-ídolo entre dos grandes de Brasil",
+   "Evolución cronológica clara y fácil de seguir",
+   "Desenlace trágico y emotivo (muerte de Pelé) que genera impacto"
+  ],
+  "que_le_falta": "Un llamado a la acción o subtítulos dinámicos en texto",
+  "riesgo_copyright": "Fotos de archivo y canciones con derechos de autor"
+ }
+}

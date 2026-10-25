@@ -1,0 +1,66 @@
+{
+ "formato": "carrera",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "Nm5Or2fL0jM",
+  "titulo": "FIFA World Cup Winners: Every Country Ranked! 🌍",
+  "fecha": "2026-10-16T13:00:18Z",
+  "vistas": 2974579,
+  "likes": 19561,
+  "coment": 222,
+  "dur": "PT1M15S"
+ },
+ "mediana": 57253.0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Carrera de barras animadas 3D sobre ganadores históricos de la Copa del Mundo",
+  "duracion_s": 76,
+  "primer_segundo": "Se ve el gráfico en 1930 con Uruguay ganando su primer Mundial, y suena música alegre de fondo con letra en turco.",
+  "gancho_texto": "WORLD CUP WINNERS 1930",
+  "protagonistas": [
+   "Uruguay",
+   "Italia",
+   "Alemania",
+   "Brasil",
+   "Argentina",
+   "Inglaterra",
+   "Francia",
+   "España"
+  ],
+  "desenlace": "Brasil gana la carrera con 5 mundiales, seguido por Italia y Alemania con 4, y Argentina subiendo al final a 3.",
+  "ganador_popular": true,
+  "arco_de_tension": "La tensión se genera viendo cómo las barras crecen año a año y cambian de posición en una intensa competencia estilo carrera.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Uruguay abre el marcador en 1930."
+   },
+   {
+    "t": 27.0,
+    "que": "Brasil pasa al primer puesto."
+   },
+   {
+    "t": 105.0,
+    "que": "Argentina alcanza los 3 títulos y se acomoda en el podio final."
+   }
+  ],
+  "audio": {
+   "musica": "Canción viral en turco con ritmo alegre y bailable",
+   "voz": "Sí, voz cantada en turco con ritmo pegadizo",
+   "efectos": null
+  },
+  "visual": "Animación 3D limpia y colorida con banderas, trofeos dorados y barras de progreso verticales.",
+  "texto_en_pantalla": "WORLD CUP WINNERS, años de los mundiales (1930 a 2026) y contadores de títulos",
+  "ritmo_cortes_por_segundo": 0.5,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Debate histórico sobre selecciones máximas ganadoras de mundiales",
+  "por_que_rinde_asi": [
+   "Formato adictivo de carrera de barras (ranking dinámico) que genera intriga sobre quién gana.",
+   "Música sumamente pegadiza y bailable que retiene al espectador.",
+   "Interés global por el fútbol y la rivalidad de selecciones históricas como Brasil, Argentina, Alemania e Italia."
+  ],
+  "que_le_falta": "Un llamado a la acción al final para comentar el ganador histórico o su selección favorita.",
+  "riesgo_copyright": "Uso de banderas nacionales y copas del mundo estilizadas (bajo riesgo)."
+ }
+}

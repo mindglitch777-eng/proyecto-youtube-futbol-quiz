@@ -1,0 +1,59 @@
+{
+ "formato": "evolucion",
+ "canal": "Icon Stories",
+ "video": {
+  "id": "sRFL_hQObXQ",
+  "titulo": "Stokes Twins Evolution: From Backyard Videos to 140M Subscribers",
+  "fecha": "2026-10-15T13:00:06Z",
+  "vistas": 8865,
+  "likes": 161,
+  "coment": 3,
+  "dur": "PT22S"
+ },
+ "mediana": 237230.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Evolución de edad de gemelos con fotos a lo largo de los años",
+  "duracion_s": 22,
+  "primer_segundo": "Dos bebés recién nacidos con pañales de tela y texto indicando edad 0 y año 1996",
+  "gancho_texto": "1996 / 0 y 0",
+  "protagonistas": [
+   "Gemelos"
+  ],
+  "desenlace": "Muestra la progresión año a año hasta el 2026 con 29 años",
+  "ganador_popular": false,
+  "arco_de_tension": "Transición rápida de la infancia a la adultez mostrando el paso del tiempo",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Nacimiento de los gemelos en 1996"
+   },
+   {
+    "t": 9.0,
+    "que": "Los gemelos adolescentes/jóvenes sin camisa"
+   },
+   {
+    "t": 19.0,
+    "que": "Los gemelos adultos sonrientes en 2026"
+   }
+  ],
+  "audio": {
+   "musica": "Canción viral alegre",
+   "voz": "no",
+   "efectos": "ninguno"
+  },
+  "visual": "Fotos y clips cronológicos con mapa de EE.UU. y números de edad",
+  "texto_en_pantalla": "Años (1996, 2000, 2010...) y edades (0, 3, 13, 20...) parpadeando",
+  "ritmo_cortes_por_segundo": 0.45,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Fascinación por el paso del tiempo y el envejecimiento de gemelos idénticos",
+   "Ritmo dinámico de transiciones que mantiene la atención",
+   "Curiosidad por ver el cambio físico desde bebés hasta adultos"
+  ],
+  "que_le_falta": "Un giro inesperado o una pregunta en pantalla para generar comentarios",
+  "riesgo_copyright": "Uso de música comercial"
+ }
+}

@@ -19,6 +19,8 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -q requests
       - run: python3 produccion/fotos_epoca.py
+        env:
+          SOLO: "Cristiano Ronaldo, Lionel Messi, Luka Modrić, Zlatan Ibrahimović, Karim Benzema, Wayne Rooney, Toni Kroos, Thierry Henry, Steven Gerrard, Ronaldinho, Kaká, Andrés Iniesta, Kylian Mbappé, Gareth Bale, Ángel Di María, Luis Suárez, Neymar"
       - name: Guardar fotos
         if: always()
         run: |

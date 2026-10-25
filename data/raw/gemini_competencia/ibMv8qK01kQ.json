@@ -1,0 +1,64 @@
+{
+ "formato": "carrera",
+ "canal": "Fire Rankings",
+ "video": {
+  "id": "ibMv8qK01kQ",
+  "titulo": "Which player is the true king? 👑⚽️ #football #soccer #debate",
+  "fecha": "2026-10-08T05:00:20Z",
+  "vistas": 299336,
+  "likes": 1740,
+  "coment": 5,
+  "dur": "PT21S"
+ },
+ "mediana": 94104.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "carrera en laberinto estilo arcade de futbolistas con clips reales",
+  "duracion_s": 20,
+  "primer_segundo": "una bola con la cara de Yamal cae por un laberinto azul con verde y hay un clip de fútbol arriba",
+  "gancho_texto": "Yamal",
+  "protagonistas": [
+   "Yamal",
+   "Messi",
+   "Neymar",
+   "Haaland",
+   "Mbappé",
+   "Ronaldo"
+  ],
+  "desenlace": "Yamal gana la carrera tras múltiples cruces y sorpresas con los demás jugadores",
+  "ganador_popular": false,
+  "arco_de_tension": "eliminaciones y cambios constantes de liderazgo entre las bolas a lo largo del laberinto",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "caída inicial de Yamal"
+   },
+   {
+    "t": 10.0,
+    "que": "agrupación de todos los jugadores peleando el primer puesto"
+   },
+   {
+    "t": 19.0,
+    "que": "llegada a la meta con Yamal ganando"
+   }
+  ],
+  "audio": {
+   "musica": "remix electrónico bailable en tendencia",
+   "voz": "no",
+   "efectos": "sonidos de agua y deslizamiento"
+  },
+  "visual": "animación 2D tipo juego de celular combinada con clips de video de partidos reales",
+  "texto_en_pantalla": "nombres de los futbolistas (Yamal, Messi, Ronaldo, Haaland, Mbappe, Neymar) siguiendo a cada bola",
+  "ritmo_cortes_por_segundo": 0.5,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "rivalidad entre las estrellas actuales y jóvenes promesas del fútbol",
+  "por_que_rinde_asi": [
+   "combina gamificación adictiva (carreras de laberinto) con estrellas virales del fútbol",
+   "el formato en loop atrapa la atención y aumenta el tiempo de visualización",
+   "la victoria de un jugador joven como Yamal genera identificación y debate en comentarios"
+  ],
+  "que_le_falta": "un llamado a la acción al final para comentar a su jugador favorito",
+  "riesgo_copyright": "uso de clips de transmisiones de partidos de fútbol y rostros de futbolistas"
+ }
+}

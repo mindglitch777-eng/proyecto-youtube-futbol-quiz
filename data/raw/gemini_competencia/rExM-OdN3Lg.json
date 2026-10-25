@@ -1,0 +1,56 @@
+{
+ "formato": "carrera",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "rExM-OdN3Lg",
+  "titulo": "Vinicius vs Yamal: Who Has More Trophies? 🏆",
+  "fecha": "2026-10-08T13:00:35Z",
+  "vistas": 11467,
+  "likes": 122,
+  "coment": 0,
+  "dur": "PT1M1S"
+ },
+ "mediana": 57253.0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "carrera de acumulación de trofeos en el tiempo entre dos futbolistas",
+  "duracion_s": 60,
+  "primer_segundo": "título ALL TROPHIES, 2018-19, fotos de Vinicius y Yamal, marcador en 0",
+  "gancho_texto": "ALL TROPHIES",
+  "protagonistas": [
+   "Vinicius",
+   "Yamal"
+  ],
+  "desenlace": "Vinicius gana claramente con 14 trofeos frente a 8 de Yamal; Vinicius era el favorito consolidado, sin sorpresa",
+  "ganador_popular": true,
+  "arco_de_tension": "carrera temporal año a año donde Vinicius arranca acumulando ventaja y Yamal remonta hacia el final pero no alcanza",
+  "momentos_emocion": [
+   {
+    "t": 28.0,
+    "que": "Yamal anota su primer trofeo"
+   },
+   {
+    "t": 53.0,
+    "que": "Yamal llega a 8 trofeos al final de la simulación"
+   }
+  ],
+  "audio": {
+   "musica": "electrónica/dance con beat rápido y persistente",
+   "voz": "no",
+   "efectos": "golpes de tambor o sonido de conteo al sumar puntos"
+  },
+  "visual": "2D minimalista y limpio con imágenes de los jugadores, barras de progreso y render 3D de trofeos de fondo en colores pasteles",
+  "texto_en_pantalla": "ALL TROPHIES, años en la parte superior (2018-19 hasta 2026), nombres VINICIUS y YAMAL, números de contadores",
+  "ritmo_cortes_por_segundo": 1.0,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "comparación de carrera y palmarés entre una estrella consolidada y una joven promesa (Vinicius vs Yamal)",
+  "por_que_rinde_asi": [
+   "temática de debate generacional muy atractiva para fans del fútbol actual",
+   "formato dinámico y visualmente limpio de cuenta regresiva/progresiva temporal",
+   "curiosidad por ver hasta dónde llega Lamine Yamal comparado con Vinicius"
+  ],
+  "que_le_falta": "más dinamismo en la animación o estadísticas secundarias (goles/asistencias) para mantener la atención en los momentos muertos",
+  "riesgo_copyright": "uso de fotos oficiales de jugadores y diseño de trofeos de la FIFA / UEFA"
+ }
+}

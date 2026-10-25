@@ -1,0 +1,57 @@
+{
+ "formato": "evolucion",
+ "canal": "Icon Stories",
+ "video": {
+  "id": "W-cQXzTnxzI",
+  "titulo": "Pelé & His Mother: From Childhood to World Cup Glory #shorts",
+  "fecha": "2026-10-25T18:41:04Z",
+  "vistas": 1387,
+  "likes": 28,
+  "coment": 1,
+  "dur": "PT22S"
+ },
+ "mediana": 237230.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Video de fotos en secuencia mostrando el paso del tiempo de Pelé junto a su madre.",
+  "duracion_s": 21,
+  "primer_segundo": "Se ve una foto en blanco y negro de Pelé comiendo y su madre al lado, con números 18 y 36 sobreimpresos y el mapa de Brasil con el año 1958.",
+  "gancho_texto": "1958 con las edades de Pelé y su madre (18 y 36).",
+  "protagonistas": [
+   "Pelé",
+   "Celeste Arantes (madre de Pelé)",
+   "Brasil"
+  ],
+  "desenlace": "El video finaliza en 2022 con Pelé a los 82 años y su madre cumpliendo 100 años.",
+  "ganador_popular": true,
+  "arco_de_tension": "Curiosidad por ver la evolución de las edades de ambos a lo largo de las décadas hasta llegar a los 100 años de la madre.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Presentación de Pelé a los 18 y su madre a los 36 en 1958."
+   },
+   {
+    "t": 19.0,
+    "que": "Última foto en 2022 con Pelé de 82 y su madre de 100 años."
+   }
+  ],
+  "audio": {
+   "musica": "Música sentimental y nostálgica de fondo.",
+   "voz": "no",
+   "efectos": "null"
+  },
+  "visual": "Secuencia de fotos históricas en blanco y negro y color, con subtítulos de años y edades con diseño de números grandes y el mapa de Brasil.",
+  "texto_en_pantalla": "Edades de ambos y año en cada foto (1958, 1960, 1964, 1965, 1970, 1986, 2008, 2015, 2022).",
+  "ritmo_cortes_por_segundo": 0.43,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "La temática emotiva y familiar sobre Pelé es atractiva pero poco común para canales puramente de fútbol de alto rendimiento.",
+   "La transición de fotos es lineal y previsible, sin un giro sorpresivo o gancho fuerte en los primeros segundos.",
+   "Falta de dinamismo, narración o contexto que enganche a la audiencia masiva de YouTube Shorts."
+  ],
+  "que_le_falta": "Un gancho narrativo o texto inicial más impactante y una voz en off que cuente la historia para retener a la audiencia.",
+  "riesgo_copyright": "Uso de fotografías de archivo que podrían tener derechos de autor."
+ }
+}

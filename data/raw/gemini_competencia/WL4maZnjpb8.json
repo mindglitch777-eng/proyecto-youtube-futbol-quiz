@@ -1,0 +1,56 @@
+{
+ "formato": "carrera",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "WL4maZnjpb8",
+  "titulo": "Liverpool vs Man United: All Trophies Compared",
+  "fecha": "2026-09-30T09:00:12Z",
+  "vistas": 3167,
+  "likes": 38,
+  "coment": 2,
+  "dur": "PT31S"
+ },
+ "mediana": 57253.0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "video comparativo animado de trofeos de dos clubes de fútbol",
+  "duracion_s": 30,
+  "primer_segundo": "títulos de Liverpool y Manchester United con iconos de trofeos y marcadores en cero",
+  "gancho_texto": "ALL TROPHIES",
+  "protagonistas": [
+   "Liverpool",
+   "Manchester United"
+  ],
+  "desenlace": "empate final en 68 trofeos entre ambos clubes",
+  "ganador_popular": false,
+  "arco_de_tension": "suma progresiva de puntos por cada tipo de copa hasta un final empatado",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "inicio de la cuenta de trofeos de Champions"
+   },
+   {
+    "t": 25.0,
+    "que": "empate final 68 a 68"
+   }
+  ],
+  "audio": {
+   "musica": "electrónica viral de fondo con ritmo constante",
+   "voz": "no",
+   "efectos": "sonidos de conteo y golpes de marcador"
+  },
+  "visual": "2D gráfico animado vertical con colores vibrantes amarillo y celeste",
+  "texto_en_pantalla": "ALL TROPHIES, LIVERPOOL, MAN UNITED, nombres de copas y números acumulados",
+  "ritmo_cortes_por_segundo": 1.0,
+  "loop": true,
+  "pedido_al_espectador": "Next Video?",
+  "polemica_o_debate": "eterna rivalidad sobre qué equipo inglés es el más grande",
+  "por_que_rinde_asi": [
+   "tema de debate clásico entre dos de las hinchadas más grandes del mundo",
+   "animación limpia y dinámica que mantiene la atención hasta el final",
+   "desenlace en empate que genera discusión en los comentarios"
+  ],
+  "que_le_falta": "un cierre más impactante o una pregunta directa en pantalla para fomentar el debate",
+  "riesgo_copyright": "uso de escudos oficiales de clubes"
+ }
+}

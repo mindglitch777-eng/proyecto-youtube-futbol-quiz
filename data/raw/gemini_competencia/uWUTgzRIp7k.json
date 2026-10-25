@@ -1,0 +1,61 @@
+{
+ "formato": "carrera",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "uWUTgzRIp7k",
+  "titulo": "Yamal vs Bellingham vs Ronaldo — Who Reaches the Finish? 🏆🔥",
+  "fecha": "2026-09-05T21:00:25Z",
+  "vistas": 5158344,
+  "likes": 120755,
+  "coment": 495,
+  "dur": "PT42S"
+ },
+ "mediana": 350804.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "minijuego de preguntas o carrera sobre quién es mejor entre estrellas de fútbol",
+  "duracion_s": 41,
+  "primer_segundo": "El rostro de Lamine Yamal arriba y el personaje en la pista de carrera corriendo hacia los trofeos y balones",
+  "gancho_texto": "Yamal, Bellingham y Cristiano Ronaldo en minijuego de trivia/carrera",
+  "protagonistas": [
+   "Lamine Yamal",
+   "Jude Bellingham",
+   "Cristiano Ronaldo"
+  ],
+  "desenlace": "Cada uno compite eligiendo ítems en la pista; Yamal y Bellingham pierden en sus intentos y Ronaldo al final gana la ronda",
+  "ganador_popular": true,
+  "arco_de_tension": "Se repite la misma estructura de mini-juego para tres astros distintos, generando expectativa sobre quién acierta más o gana",
+  "momentos_emocion": [
+   {
+    "t": 11.5,
+    "que": "Yamal pierde (YOU LOSE!)"
+   },
+   {
+    "t": 23.0,
+    "que": "Bellingham pierde"
+   },
+   {
+    "t": 39.0,
+    "que": "Cristiano Ronaldo gana/completa el desafío"
+   }
+  ],
+  "audio": {
+   "musica": "Canción melancólica/épica en tendencia (slowed down)",
+   "voz": "No hay voz hablada, solo efectos y música",
+   "efectos": "Sonidos de impactos, explosiones/nubes de humo al perder, efectos de juego"
+  },
+  "visual": "Fotomontaje con IA/3D, rostros reales sobre cuerpos animados y fondos dinámicos",
+  "texto_en_pantalla": "YOU LOSE! y los nombres de los jugadores",
+  "ritmo_cortes_por_segundo": 0.25,
+  "loop": false,
+  "pedido_al_espectador": "If you like Ronaldo, do this (compartir, suscribirse)",
+  "polemica_o_debate": "Comparativa de rendimiento y popularidad entre Yamal, Bellingham y Cristiano Ronaldo",
+  "por_que_rinde_asi": [
+   "Usa a tres de los futbolistas más virales del momento (Yamal, Bellingham y CR7)",
+   "Formato de juego interactivo tipo arcade muy adictivo y popular en Shorts",
+   "Involucra debate sobre GOATs y jóvenes promesas generando comentarios"
+  ],
+  "que_le_falta": "Un final más interactivo o una pregunta directa a la audiencia en los primeros segundos",
+  "riesgo_copyright": "Uso de recortes de rostros y nombres asociados a futbolistas y marcas"
+ }
+}

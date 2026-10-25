@@ -1,0 +1,60 @@
+{
+ "formato": "carrera",
+ "canal": "Footypoints",
+ "video": {
+  "id": "RRwVEUuJZU0",
+  "titulo": "Real Madrid vs FC Barcelona / Who Wins? 🤔 #laliga #realmadrid #barcelona",
+  "fecha": "2026-08-22T19:49:11Z",
+  "vistas": 38757872,
+  "likes": 189933,
+  "coment": 742,
+  "dur": "PT14S"
+ },
+ "mediana": 176992.5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Duelo de predicción humorístico sobre partido de fútbol con billetes y baile",
+  "duracion_s": 13,
+  "primer_segundo": "Una mujer baila en pijama con billetes en la mano y un escudo de Real Madrid flotando en su cabeza, con subtítulo PREDICTION",
+  "gancho_texto": "PREDICTION",
+  "protagonistas": [
+   "FC Barcelona",
+   "Real Madrid"
+  ],
+  "desenlace": "El hombre aparece con dinero y se define la predicción con triunfo de Barcelona 3-2 abrazando a la niña",
+  "ganador_popular": true,
+  "arco_de_tension": "El cambio de marcador en pantalla y los bailes mientras se cruzan apuestas",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "La mujer baila agitando billetes con escudo de Real Madrid"
+   },
+   {
+    "t": 5.0,
+    "que": "La niña se va enojada de la escena"
+   },
+   {
+    "t": 9.0,
+    "que": "Aparece un hombre con camiseta de Vasco da Gama/Real Madrid y se define el 3-2 para Barcelona"
+   }
+  ],
+  "audio": {
+   "musica": "Canción pop en tendencia con ritmo bailable",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "Clips de video casero con filtros, burbujas verdes y escudos superpuestos en 2D; calidad regular",
+  "texto_en_pantalla": "PREDICTION, 0-0, 3-2, LALIGA",
+  "ritmo_cortes_por_segundo": 0.3,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad Barcelona vs Real Madrid",
+  "por_que_rinde_asi": [
+   "Combina una temática de fútbol súper popular (Real Madrid vs Barcelona) con humor familiar y baile",
+   "Uso de elementos visuales flotantes y contadores de goles que generan expectativa rápida",
+   "Formato corto muy dinámico que atrapa desde el primer segundo"
+  ],
+  "que_le_falta": "Mejor iluminación y mayor resolución en los escudos para más profesionalismo",
+  "riesgo_copyright": "Uso de escudos oficiales de clubes y logo de LaLiga"
+ }
+}
