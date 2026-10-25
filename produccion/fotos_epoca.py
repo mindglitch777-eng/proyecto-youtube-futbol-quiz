@@ -22,7 +22,7 @@ OUT.mkdir(parents=True, exist_ok=True)
 API = "https://commons.wikimedia.org/w/api.php"
 S = requests.Session()
 S.headers["User-Agent"] = "futbol-quiz-research/0.1 (https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz)"
-POR_ANIO = int(os.environ.get("POR_ANIO", "2"))
+POR_ANIO = int(os.environ.get("POR_ANIO", "6"))
 MAX_ARCHIVOS = 400
 LIBRES = re.compile(r"^(CC BY|CC BY-SA|CC0|Public domain|PD)", re.I)
 MALAS = re.compile(r"statue|wax|mural|signature|autograph|logo|shirt|jersey|stadium|poster|stamp|graffiti|crowd|team", re.I)
@@ -68,7 +68,7 @@ def infos(titulos):
     res = {}
     for k in range(0, len(titulos), 50):
         d = get(action="query", titles="|".join(titulos[k:k + 50]), prop="imageinfo",
-                iiprop="url|extmetadata|size", iiurlwidth=900)
+                iiprop="url|extmetadata|size", iiurlwidth=1280)
         for pg in d.get("query", {}).get("pages", {}).values():
             if "imageinfo" in pg:
                 res[pg["title"]] = pg["imageinfo"][0]
@@ -90,8 +90,9 @@ def main():
     creditos = json.loads(cred_path.read_text()) if cred_path.exists() else {}
     for nombre in pedido:
         slug = re.sub(r"[^a-z0-9]+", "_", nombre.lower()).strip("_")
-        if any(v["jugador"] == nombre for v in creditos.values()):
-            continue
+        ya = {v["archivo"] for v in creditos.values() if v["jugador"] == nombre}
+        if sum(v["jugador"] == nombre and v.get("v", 1) >= 2 for v in creditos.values()):
+            continue      # ya bajado con la versión 2 (más fotos por año y más resolución)
         files = archivos(nombre)
         cat_de = {f: c for c, f in files}
         meta = infos([f for _, f in files])
@@ -109,7 +110,9 @@ def main():
             por_anio.setdefault(a, []).append((prio, t, ii, limpio("Artist"), limpio("LicenseShortName"), limpio("LicenseUrl")))
         n = 0
         for a in sorted(por_anio):
-            for k, (_, t, ii, autor, lic, lic_url) in enumerate(sorted(por_anio[a], key=lambda x: x[0])[:POR_ANIO]):
+            elegidos = [x for x in sorted(por_anio[a], key=lambda x: x[0]) if x[1] not in ya][:POR_ANIO]
+            for k, (_, t, ii, autor, lic, lic_url) in enumerate(elegidos):
+                k += sum(1 for v in creditos.values() if v["jugador"] == nombre and v["anio"] == a)
                 try:
                     img = S.get(ii["thumburl"], timeout=60).content
                 except requests.RequestException:
@@ -117,8 +120,10 @@ def main():
                 clave = f"{slug}_{a}_{k}"
                 (OUT / f"{clave}.jpg").write_bytes(img)
                 creditos[clave] = {"jugador": nombre, "anio": a, "archivo": t, "pagina": ii.get("descriptionurl"),
-                                   "autor": autor, "licencia": lic, "licencia_url": lic_url}
+                                   "autor": autor, "licencia": lic, "licencia_url": lic_url, "v": 2}
                 n += 1
+        if n == 0:     # marca de versión aunque no haya fotos nuevas
+            creditos[f"{slug}__v2"] = {"jugador": nombre, "anio": 0, "archivo": "", "v": 2}
         print(f"{nombre}: {len(files)} archivos, {n} fotos, años {sorted(por_anio)}", flush=True)
         cred_path.write_text(json.dumps(creditos, ensure_ascii=False, indent=1))
 
