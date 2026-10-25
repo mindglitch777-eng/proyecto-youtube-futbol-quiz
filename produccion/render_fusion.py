@@ -128,12 +128,20 @@ def pegar_centro(base, capa, cx, cy):
 
 
 def subtitulo(dr, s, prog, y):
-    """Subtítulo grande que se escribe palabra por palabra (prog 0..1)."""
+    """Subtítulo grande que se escribe palabra por palabra (prog 0..1). Si no entra, va en dos líneas."""
     palabras = s.upper().split()
     k = max(1, math.ceil(len(palabras) * min(prog * 1.15, 1)))
-    linea = " ".join(palabras[:k])
-    tam = ajustar(" ".join(palabras), 76, 900)
-    texto(dr, (CX + 35, y), linea, tam, BLANCO, 8)
+    if fuente(76).getlength(" ".join(palabras)) <= 900:
+        texto(dr, (CX + 35, y), " ".join(palabras[:k]), 76, BLANCO, 8)
+        return
+    # dos líneas balanceadas
+    corte = min(range(1, len(palabras)), key=lambda i: abs(fuente(70).getlength(" ".join(palabras[:i]))
+                                                          - fuente(70).getlength(" ".join(palabras[i:]))))
+    l1, l2 = palabras[:corte], palabras[corte:]
+    tam = min(ajustar(" ".join(l1), 70, 900), ajustar(" ".join(l2), 70, 900))
+    texto(dr, (CX + 35, y - 38), " ".join(l1[:k]), tam, BLANCO, 8)
+    if k > corte:
+        texto(dr, (CX + 35, y + 42), " ".join(l2[:k - corte]), tam, BLANCO, 8)
 
 
 # ---------------------------------------------------------------- principal
