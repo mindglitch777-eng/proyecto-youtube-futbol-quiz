@@ -1,0 +1,114 @@
+{
+ "video_id": "BkgMJShPtdI",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 4035,
+  "candidatesTokenCount": 1170,
+  "totalTokenCount": 6744,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3252
+   }
+  ],
+  "thoughtsTokenCount": 1539,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 36.8,
+  "formato": "Comparación 'Antes vs Ahora' (Then vs Now) de futbolistas campeones del mundo en 2002",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Cafu celebrando con la Copa del Mundo en 2002 con el título superior '2002 WORLD CUP WINNERS THEN VS NOW'",
+   "que_se_dice_o_texto": "2002 WORLD CUP WINNERS THEN VS NOW",
+   "tipo": "otro"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 6.0,
+    "parte": "transicion",
+    "descripcion": "Comparación Antes vs Ahora de Cafu"
+   },
+   {
+    "inicio_s": 6.0,
+    "fin_s": 12.0,
+    "parte": "transicion",
+    "descripcion": "Comparación Antes vs Ahora de Kaká"
+   },
+   {
+    "inicio_s": 12.0,
+    "fin_s": 18.0,
+    "parte": "transicion",
+    "descripcion": "Comparación Antes vs Ahora de Ronaldinho"
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 24.0,
+    "parte": "transicion",
+    "descripcion": "Comparación Antes vs Ahora de Rivaldo"
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 30.0,
+    "parte": "transicion",
+    "descripcion": "Comparación Antes vs Ahora de Roberto Carlos"
+   },
+   {
+    "inicio_s": 30.0,
+    "fin_s": 36.8,
+    "parte": "cierre",
+    "descripcion": "Comparación Antes vs Ahora de Ronaldo Nazário"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Muestra el video actual del jugador inmediatamente después del video de 2002",
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra a Ronaldo Nazário en la actualidad y empalma rítmicamente con el inicio del video",
+   "loop": true,
+   "como_hace_el_loop": "El audio rítmico y la transición de escenas permiten que el video comience de nuevo suavemente"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Canción 'Spirits' de The Strumbellas (remix/slowed) adaptada al ritmo de las transiciones",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Título permanente en la parte superior con fuente llamativa en verde y blanco; nombres de jugadores y año en el centro",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "Clips de festejos/partidos de 2002 alternados con apariciones recientes de los jugadores",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición nostálgica en formato vertical con barra superior tipo barra de progreso/lista de jugadores",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Gran factor de nostalgia sobre figuras legendarias del fútbol mundial, ritmo fluido de edición sincronizado con la música y curiosidad visual por el cambio físico con los años.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar fotografías libres de derechos o de dominio público del 'Antes y Ahora' de los jugadores montadas en una plantilla de CapCut con música en tendencia."
+ }
+}

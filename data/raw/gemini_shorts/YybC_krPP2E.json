@@ -1,0 +1,99 @@
+{
+ "video_id": "YybC_krPP2E",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5164,
+  "candidatesTokenCount": 1029,
+  "totalTokenCount": 6193,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4381
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 49.0,
+  "formato": "Video de edición rápida tipo 'storytime' comparativo sobre el crecimiento de Cristiano Ronaldo Jr.",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "Cristiano Ronaldo Jr. de niño junto a su padre, seguido de Neymar riendo en un palco.",
+   "que_se_dice_o_texto": "বন্ধুরা, রোনালদোর ছেলেকে দেখে নেইমার যে এতটা অবাক হয়ে যাবে সেটা কেউ কল্পনাও করতে পারেনি!",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "gancho",
+    "descripcion": "Introducción con la reacción de Neymar ante el hijo de Cristiano."
+   },
+   {
+    "inicio_s": 5.0,
+    "fin_s": 23.0,
+    "parte": "otro",
+    "descripcion": "Contexto histórico: comparación de 2017 y el entrenamiento de Cristiano Jr."
+   },
+   {
+    "inicio_s": 23.0,
+    "fin_s": 49.0,
+    "parte": "revelacion",
+    "descripcion": "Revelación del crecimiento de Cristiano Jr. en 2024 y la reacción de Neymar."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Comparación visual de estaturas en 2024 con flechas y números.",
+   "efecto_sonido": "Sonido de sorpresa y música dramática"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina con un clip de Neymar reaccionando y un llamado a la acción.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": "ভিডিওটিতে লাইক দিয়ে চ্যানেলটি সাবস্ক্রাইব করে দিবে। আর কমেন্টে CR7 লিখতে ভুলবে না।",
+   "momento_s": 37.0
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "Bengalí",
+   "musica": "Música de fondo dramática y de suspenso",
+   "efectos_de_sonido": [
+    "Sonido de risa",
+    "Sonido de sorpresa",
+    "Sonido de transición"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto en negrita, colores llamativos (amarillo/blanco), con contorno negro, centrado.",
+   "idioma": "Inglés y Bengalí"
+  },
+  "visual": {
+   "fondo": "Clips de partidos y entrenamientos",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edición dinámica con zoom, recortes y superposición de texto.",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Uso de figuras virales (CR7 y Neymar), narrativa de 'antes y después' que genera curiosidad, y edición rápida con efectos de sonido.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar fotos estáticas de los jugadores en diferentes años, aplicar efectos de zoom y movimiento (Ken Burns), y usar una voz en off de IA para narrar la historia."
+ }
+}

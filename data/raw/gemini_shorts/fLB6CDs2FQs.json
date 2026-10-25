@@ -1,0 +1,101 @@
+{
+ "video_id": "fLB6CDs2FQs",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 3700,
+  "candidatesTokenCount": 1074,
+  "totalTokenCount": 5928,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2917
+   }
+  ],
+  "thoughtsTokenCount": 1154,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 32.2,
+  "formato": "Juego 3D tipo runner/carrera hipercasual de dinero con progresión de nivel y memes de Cristiano Ronaldo",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "El rollo de dinero empieza a avanzar en la pista 'Day 0' con la cara de Ronaldo.",
+   "que_se_dice_o_texto": "Cristiano Ronaldo! Siuuu!",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.5,
+    "parte": "gancho",
+    "descripcion": "Inicio del juego en el nivel Day 0 con grito característico de Cristiano Ronaldo."
+   },
+   {
+    "inicio_s": 2.5,
+    "fin_s": 30.0,
+    "parte": "desarrollo",
+    "descripcion": "Recorrido por la pista superando obstáculos, multiplicadores de dinero y cambiando de 'Day/Nivel' con distintas fotos y memes de Ronaldo."
+   },
+   {
+    "inicio_s": 30.0,
+    "fin_s": 32.2,
+    "parte": "cierre",
+    "descripcion": "Llegada a la meta final 'Day 99999' con Ronaldo levantando la copa y texto de Siuuuu."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Llegada a la meta final con animación de festejo y sonido de victoria.",
+   "efecto_sonido": "Grito de Siuuu amplificado y música de triunfo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Llega a la meta del nivel final y suena el grito de Siuuu.",
+   "loop": true,
+   "como_hace_el_loop": "El grito final y la velocidad de la pista conectan de forma fluida con el reinicio del video."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "internacional / efectos de voz",
+   "musica": "Música animada de juego arcade / funk brasileño de fondo",
+   "efectos_de_sonido": [
+    "Grito de Siuuu",
+    "Risa de meme",
+    "Sonido de recolectar dinero",
+    "Efecto de golpe/error"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto 3D integrado al juego con cifras de dinero ($), días (Day X) y multiplicadores en colores verde, rojo y azul.",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "Entorno 3D estilizado con mar, palmeras y estética de juego de carreras móvil",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Gameplay 3D hipercasual combinado con memes e imágenes virales de fútbol.",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Aprovecha la adicción visual de los juegos tipo 'runner' hipercasuales y la combina con la figura hiperpopular de Cristiano Ronaldo, sus memes y efectos de sonido reconocibles como el 'Siuuu'.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se puede crear o grabar una plantilla de juego 3D tipo runner en Unity/Unreal y reemplazar los carteles/retratos del recorrido por imágenes estáticas o memes de cualquier personaje o futbolista."
+ }
+}

@@ -1,0 +1,87 @@
+{
+ "video_id": "P-kpXDiDjPs",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3522,
+  "candidatesTokenCount": 885,
+  "totalTokenCount": 4407,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2739
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 30.0,
+  "formato": "Juego de tipo 'runner' donde se elige entre dos opciones que afectan el valor de dinero, mostrando la evolución de Cristiano Ronaldo a través de los años.",
+  "n_preguntas_o_rondas": 15,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Un rollo de billetes avanzando en un camino con dos puertas que muestran fotos de Cristiano Ronaldo y valores numéricos.",
+   "que_se_dice_o_texto": "DAY 1",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 30.0,
+    "parte": "pregunta",
+    "descripcion": "El jugador avanza por un camino eligiendo puertas que suman o restan dinero, mientras se muestran fotos de Cristiano Ronaldo de diferentes años."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 2.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El cambio de la foto de Cristiano Ronaldo y el valor del dinero en pantalla.",
+   "efecto_sonido": "Sonido de monedas y efectos de sonido de juego móvil"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El personaje llega a la meta y el video se reinicia.",
+   "loop": true,
+   "como_hace_el_loop": "El video termina abruptamente y vuelve a empezar en el 'Day 1'."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Música de tendencia/viral con ritmo rápido",
+   "efectos_de_sonido": [
+    "Sonido de monedas",
+    "Sonido de error/fallo",
+    "Sonido de éxito"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco con borde negro, centrado en la parte superior e inferior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Entorno de juego 3D tipo 'runner' con árboles y camino.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Gameplay de juego móvil tipo 'hypercasual'.",
+   "cambios_de_plano_aprox": 0
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "El uso de imágenes de un jugador famoso (Cristiano Ronaldo), el formato de juego adictivo tipo 'runner' y la música viral.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar un motor de juego móvil (como Unity o Godot) para crear un 'runner' simple, usar fotos de dominio público o propias de un jugador y aplicar una música de tendencia."
+ }
+}

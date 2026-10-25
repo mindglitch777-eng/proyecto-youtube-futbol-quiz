@@ -1,0 +1,96 @@
+{
+ "video_id": "4tmeXp3-Ztg",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 2698,
+  "candidatesTokenCount": 1037,
+  "totalTokenCount": 5131,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1915
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1396,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 21.0,
+  "formato": "Evolución histórica y homenaje visual mostrando la relación y edades de Neymar y Pelé a lo largo de los años.",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Foto de Neymar (18 años) y Pelé (69 años) en el año 2010.",
+   "que_se_dice_o_texto": "18 69 2010 LegendEvolution7",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Inicio de la evolución mostrando a Neymar con 18 años y a Pelé con 69 en 2010."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 18.0,
+    "parte": "transicion",
+    "descripcion": "Secuencia de diapositivas con fotos reales de ambos compartiendo momentos en los años 2011, 2012, 2013 y 2019."
+   },
+   {
+    "inicio_s": 18.0,
+    "fin_s": 21.0,
+    "parte": "cierre",
+    "descripcion": "Homenaje final de 2022 tras la muerte de Pelé (R.I.P. 82 años y Neymar 30)."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra a Neymar sosteniendo una pancarta con la imagen de Pelé en 2022 con la inscripción R.I.P.",
+   "loop": true,
+   "como_hace_el_loop": "El audio rítmico continúa de manera fluida enlazando el final con el inicio del video."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Música rítmica animada de fondo tipo remix viral.",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto en color amarillo para edades, rojo para los años y marca de agua con borde negro centrado.",
+   "idioma": "Inglés / Números"
+  },
+  "visual": {
+   "fondo": "Fondo difuminado de la misma imagen ampliada.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Pase de diapositivas con fotografías reales de época de Pelé y Neymar anotando edades y años.",
+   "cambios_de_plano_aprox": 7
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Apela a la emotividad y la nostalgia de la historia del fútbol brasilero al comparar la evolución de dos leyendas unidas por una gran relación afectiva.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Utilizar fotografías de dominio público de dos figuras reconocidas, superponiendo texto con sus edades y los años correspondientes mediante una plantilla de edición de diapositivas."
+ }
+}

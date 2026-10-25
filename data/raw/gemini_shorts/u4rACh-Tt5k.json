@@ -1,0 +1,86 @@
+{
+ "video_id": "u4rACh-Tt5k",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 14518,
+  "candidatesTokenCount": 840,
+  "totalTokenCount": 15358,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 13735
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 150.0,
+  "formato": "presentación cronológica de la evolución de la tecnología de televisores a través de los años",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "una familia sentándose a ver un televisor antiguo en 1954",
+   "que_se_dice_o_texto": "1954 Early Color TV",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 150.0,
+    "parte": "otro",
+    "descripcion": "secuencia de clips mostrando la evolución de los televisores desde 1954 hasta 2024, con la familia cambiando de posición y modelo de TV en cada época"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "la habitación queda vacía y el video vuelve a empezar con la familia entrando en 1954",
+   "loop": "true",
+   "como_hace_el_loop": "el video termina con la habitación vacía y el inicio muestra a la familia entrando en el mismo espacio"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "música de fondo instrumental que cambia sutilmente de tono",
+   "efectos_de_sonido": [
+    "sonido de estática de TV",
+    "sonido de transición de cambio de escena"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco centrado con sombra, indicando el año y el tipo de tecnología",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "sala de estar que cambia de decoración y tecnología según la época",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "estilo cinematográfico generado por IA con transiciones fluidas",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la alta calidad visual de la IA, la satisfacción de ver una evolución histórica clara y el loop perfecto que invita a volver a verlo",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar herramientas de generación de video por IA (como Runway o Luma) para crear una escena fija que evoluciona, manteniendo el mismo encuadre y cambiando solo los elementos tecnológicos"
+ }
+}

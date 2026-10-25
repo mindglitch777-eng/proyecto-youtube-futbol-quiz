@@ -1,0 +1,104 @@
+{
+ "video_id": "UjD94SGqIdM",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5873,
+  "candidatesTokenCount": 958,
+  "totalTokenCount": 6831,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5090
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 56.0,
+  "formato": "video explicativo sobre la evolución técnica de un objeto cotidiano",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "animación 3D de un grifo antiguo cortando el flujo de agua",
+   "que_se_dice_o_texto": "Early faucets blocked the water",
+   "tipo": "otro"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 9.0,
+    "parte": "otro",
+    "descripcion": "explicación del funcionamiento y falla de los grifos antiguos"
+   },
+   {
+    "inicio_s": 9.0,
+    "fin_s": 20.0,
+    "parte": "otro",
+    "descripcion": "introducción del grifo de bola y su limitación"
+   },
+   {
+    "inicio_s": 20.0,
+    "fin_s": 41.0,
+    "parte": "otro",
+    "descripcion": "evolución del grifo de bola para controlar temperatura y sus problemas de sellado"
+   },
+   {
+    "inicio_s": 41.0,
+    "fin_s": 56.0,
+    "parte": "otro",
+    "descripcion": "solución final con discos cerámicos y cierre del video"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el agua deja de gotear y el video termina",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "IA/TTS probable",
+   "idioma_y_acento": "inglés",
+   "musica": "de fondo, instrumental y relajada",
+   "efectos_de_sonido": [
+    "sonidos de agua fluyendo",
+    "sonidos mecánicos de piezas metálicas"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "texto blanco centrado en la parte inferior, tipografía sans-serif moderna",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "animación 3D",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "animación 3D técnica y limpia",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "la claridad visual de la animación 3D, el ritmo constante de la explicación y la satisfacción de ver cómo se resuelve un problema técnico cotidiano",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar software de modelado 3D (como Blender) para crear animaciones simples de cortes transversales de objetos cotidianos y narrar el proceso de mejora técnica"
+ }
+}

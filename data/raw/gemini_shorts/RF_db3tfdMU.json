@@ -1,0 +1,102 @@
+{
+ "video_id": "RF_db3tfdMU",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 2612,
+  "candidatesTokenCount": 1114,
+  "totalTokenCount": 5234,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1829
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1508,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 20.3,
+  "formato": "Evolución y estado actual / tributo R.I.P. de boxeadores legendarios mostrando año de juventud vs época actual o año de fallecimiento.",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 4.5,
+   "que_se_ve": "Foto impactante de un niño muscular etiquetado como 1978 y luego Mike Tyson en la actualidad etiquetado como 2026.",
+   "que_se_dice_o_texto": "1978 / 2026",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 4.5,
+    "parte": "gancho",
+    "descripcion": "Muestra la transformación de Mike Tyson desde su juventud (1978) hasta la actualidad (2026)."
+   },
+   {
+    "inicio_s": 4.5,
+    "fin_s": 9.5,
+    "parte": "revelacion",
+    "descripcion": "Muestra a George Foreman en 1970 y posteriormente su monumento funerario R.I.P 2025."
+   },
+   {
+    "inicio_s": 9.5,
+    "fin_s": 14.5,
+    "parte": "revelacion",
+    "descripcion": "Muestra a Muhammad Ali en 1962 y su tributo R.I.P 2016."
+   },
+   {
+    "inicio_s": 14.5,
+    "fin_s": 20.3,
+    "parte": "cierre",
+    "descripcion": "Muestra a Sugar Ray Robinson en 1947 y su tumba R.I.P 1989."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Fotos de antes y después con fechas y lápidas con el texto R.I.P.",
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Muestra la tumba de Sugar Ray Robinson y finaliza suavemente para reiniciar.",
+   "loop": true,
+   "como_hace_el_loop": "La música melódica se mantiene continua y empalma con el inicio de la secuencia."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Canción melódica y nostálgica de fondo en tendencia ('I know what you want girl...').",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto en color verde centrado en la parte inferior indicando años o 'R.I.P, [AÑO]'.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Fotografías de boxeadores y monumentos conmemorativos.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Diapositivas comparativas antes/después con fotos icónicas e imágenes IA.",
+   "cambios_de_plano_aprox": 8
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Apela al impacto emocional y la nostalgia de recordar a grandes leyendas del deporte, utilizando un contraste visual fuerte entre juventud y su homenaje final.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar plantillas de imágenes de figuras públicas legendarias, colocar texto con los años/R.I.P en color llamativo y sincronizar con música emotiva en tendencia."
+ }
+}

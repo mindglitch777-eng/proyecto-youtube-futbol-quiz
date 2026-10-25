@@ -1,0 +1,85 @@
+{
+ "video_id": "8aEO8-Kkx2g",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 1327,
+  "candidatesTokenCount": 794,
+  "totalTokenCount": 2121,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 544
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 5.0,
+  "formato": "meme comparativo de evolución histórica usando personajes animados",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 5.0,
+   "que_se_ve": "una imagen de la evolución de la botella de Coca-Cola y clips de personajes de películas (Megamente y Barnyard) bailando",
+   "que_se_dice_o_texto": "The Evolution of Coca-Cola bottle",
+   "tipo": "otro"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.0,
+    "parte": "otro",
+    "descripcion": "presentación de la evolución de la botella de Coca-Cola sincronizada con clips de baile de personajes animados para representar diferentes épocas"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el video termina abruptamente",
+   "loop": true,
+   "como_hace_el_loop": "el ritmo de la música y el corte permiten que el video se reinicie de forma fluida"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "tendencia/viral (remix de música electrónica)",
+   "efectos_de_sonido": [
+    "música de fondo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco con borde negro, centrado",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "imagen estática de botellas de Coca-Cola y clips de video de personajes animados",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "meme de edición rápida",
+   "cambios_de_plano_aprox": 2
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "uso de humor visual con personajes conocidos, ritmo rápido sincronizado con la música, y formato de comparación histórica simple",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar una imagen estática de una evolución de producto y superponer clips de stock de personas o personajes bailando con transiciones rápidas al ritmo de una canción viral"
+ }
+}

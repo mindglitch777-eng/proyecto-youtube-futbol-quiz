@@ -1,0 +1,116 @@
+{
+ "video_id": "_jEaCVqdfVc",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 6512,
+  "candidatesTokenCount": 1219,
+  "totalTokenCount": 8888,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 5729
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1157,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 62.5,
+  "formato": "Explicación histórica entretenida sobre la evolución del calzado a lo largo del tiempo.",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 3.5,
+   "que_se_ve": "El creador en pantalla mostrando la comparación directa entre una atadura de hierba primitiva y una zapatilla Vans moderna.",
+   "que_se_dice_o_texto": "Have you ever wondered how shoes went from this to this?",
+   "tipo": "pregunta directa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.5,
+    "parte": "gancho",
+    "descripcion": "Pregunta inicial que capta la atención mostrando la diferencia entre el calzado primitivo y el moderno."
+   },
+   {
+    "inicio_s": 3.5,
+    "fin_s": 15.5,
+    "parte": "desarrollo",
+    "descripcion": "Explica el primer calzado de hace 10,000 años (8000 a.C.), hecho de pieles y plantas rudimentarias."
+   },
+   {
+    "inicio_s": 15.5,
+    "fin_s": 31.5,
+    "parte": "desarrollo",
+    "descripcion": "Evolución en el 3000 a.C. (antiguo Egipto) hacia sandalias de fibras vegetales tejidas."
+   },
+   {
+    "inicio_s": 31.5,
+    "fin_s": 43.5,
+    "parte": "desarrollo",
+    "descripcion": "Período de 1000 a 1200 d.C., los zapateros empiezan a coser cuero para cubrir mejor el pie."
+   },
+   {
+    "inicio_s": 43.5,
+    "fin_s": 59.5,
+    "parte": "desarrollo",
+    "descripcion": "Invención del caucho vulcanizado en 1839 y la llegada de las zapatillas de producción masiva."
+   },
+   {
+    "inicio_s": 59.5,
+    "fin_s": 62.5,
+    "parte": "cierre",
+    "descripcion": "Conclusión humorística señalando el calzado cómodo que usamos hoy en día."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El creador se dirige a la cámara señalando las zapatillas que lleva puestas y termina la frase.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés (acento americano)",
+   "musica": "Música rítmica de fondo",
+   "efectos_de_sonido": [
+    "sonidos pop/whoosh en transiciones de imágenes y apariciones de texto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": true,
+   "estilo": "Texto dinámico en mayúsculas, color blanco con borde negro gruesos, palabra por palabra o frases cortas",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Escenarios digitales superpuestos según la época histórica (cueva, antiguo Egipto, pueblo medieval, taller del siglo XIX)",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Montaje dinámico estilo TikTok/Shorts con creador recortado, animaciones de imágenes recortadas y caricaturas para los rostros",
+   "cambios_de_plano_aprox": 28
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Un gancho visual impactante de comparación directa, narración histórica explicada de forma graciosa y ligera, y cambios visuales constantes cada 1-2 segundos.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Utilizar imágenes o animaciones generadas por IA para representar cada época histórica, acompañadas de una voz en off atractiva y subtítulos animados en el centro de la pantalla."
+ }
+}

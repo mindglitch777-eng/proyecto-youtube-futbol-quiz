@@ -1,0 +1,104 @@
+{
+ "video_id": "nxLvPNO-7JA",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 5436,
+  "candidatesTokenCount": 1012,
+  "totalTokenCount": 6448,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 4653
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 52.0,
+  "formato": "comparación humorística de la cantidad de producto en una bolsa de papas a través de los años",
+  "n_preguntas_o_rondas": 4,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "primer plano de un hombre con expresión exagerada sosteniendo una papa frita",
+   "que_se_dice_o_texto": "Este eres tú abriendo una bolsa de patatas en los 90",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 15.0,
+    "parte": "revelacion",
+    "descripcion": "muestra la cantidad de papas en los 90"
+   },
+   {
+    "inicio_s": 15.0,
+    "fin_s": 26.0,
+    "parte": "revelacion",
+    "descripcion": "muestra la cantidad de papas en los 2000"
+   },
+   {
+    "inicio_s": 26.0,
+    "fin_s": 38.0,
+    "parte": "revelacion",
+    "descripcion": "muestra la cantidad de papas en 2026"
+   },
+   {
+    "inicio_s": 38.0,
+    "fin_s": 52.0,
+    "parte": "revelacion",
+    "descripcion": "muestra la cantidad de papas en 2042"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "el creador vacía la bolsa en un plato mostrando cada vez menos contenido",
+   "efecto_sonido": "sonido de bolsa crujiendo y papas cayendo"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "el creador se queda mirando la bolsa vacía con cara de sorpresa",
+   "loop": true,
+   "como_hace_el_loop": "el video termina abruptamente y vuelve a empezar con la misma frase inicial"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "español, acento español",
+   "musica": "ninguna",
+   "efectos_de_sonido": [
+    "crujido de bolsa",
+    "sonido de papas cayendo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "texto blanco simple en la parte superior izquierda",
+   "idioma": "español"
+  },
+  "visual": {
+   "fondo": "habitación con estantería y póster",
+   "persona_real_en_camara": true,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "estilo vlog de comedia",
+   "cambios_de_plano_aprox": 4
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_se_dice_o_texto": "el humor exagerado, la brevedad del video y la temática relatable sobre la inflación de precios",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar imágenes de archivo de bolsas de papas vacías o llenas con texto superpuesto que indique el año y efectos de sonido de crujidos"
+ }
+}

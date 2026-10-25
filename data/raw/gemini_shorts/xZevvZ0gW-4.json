@@ -1,0 +1,103 @@
+{
+ "video_id": "xZevvZ0gW-4",
+ "modelo": "gemini-3.1-flash-lite",
+ "uso": {
+  "promptTokenCount": 3511,
+  "candidatesTokenCount": 978,
+  "totalTokenCount": 4489,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2728
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 30.0,
+  "formato": "Evolución cronológica de un personaje ficticio (Mosasaurus) a través de diferentes años.",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 0.0,
+   "que_se_ve": "Un Mosasaurus saltando fuera del agua para atrapar un tiburón.",
+   "que_se_dice_o_texto": "MOSASAURUS 2015",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 8.0,
+    "parte": "otro",
+    "descripcion": "Presentación del Mosasaurus en 2015 con clips de la película."
+   },
+   {
+    "inicio_s": 8.0,
+    "fin_s": 16.0,
+    "parte": "otro",
+    "descripcion": "Presentación del Mosasaurus en 2018 con clips de la película."
+   },
+   {
+    "inicio_s": 16.0,
+    "fin_s": 24.0,
+    "parte": "otro",
+    "descripcion": "Presentación del Mosasaurus en 2022 con clips de la película."
+   },
+   {
+    "inicio_s": 24.0,
+    "fin_s": 30.0,
+    "parte": "otro",
+    "descripcion": "Presentación del Mosasaurus en 2025 con clips de la película."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video termina abruptamente.",
+   "loop": false,
+   "como_hace_el_loop": null
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Canción viral de tendencia (remix de 'Ra Ra Rasputin').",
+   "efectos_de_sonido": [
+    "Sonidos ambientales de agua y rugidos de las películas"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco simple con borde negro, centrado en la parte superior.",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Clips de películas de Jurassic World.",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Montaje de clips de cine con música viral.",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Uso de música viral pegadiza, clips de acción de alto impacto visual y formato de evolución que genera curiosidad.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Se podría replicar usando imágenes estáticas de alta calidad o arte conceptual del personaje, aplicando efectos de zoom y movimiento (Ken Burns) sincronizados con el ritmo de la música."
+ }
+}

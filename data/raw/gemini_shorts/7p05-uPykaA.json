@@ -1,0 +1,101 @@
+{
+ "video_id": "7p05-uPykaA",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 3691,
+  "candidatesTokenCount": 1076,
+  "totalTokenCount": 6085,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2908
+   }
+  ],
+  "thoughtsTokenCount": 1318,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 31.0,
+  "formato": "Gameplay de juego móvil 3D de dinero (Money Runner) con temática de evolución de memes de Cristiano Ronaldo",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 2.0,
+   "que_se_ve": "Rollo de dinero avanzando en una pista 3D hacia la imagen de Cristiano Ronaldo acostado en el Día 1",
+   "que_se_dice_o_texto": "Cristo Ronaldo, SEWEY!",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 2.0,
+    "parte": "gancho",
+    "descripcion": "Inicio del nivel en Día 1 con el audio meme de Cristo Ronaldo."
+   },
+   {
+    "inicio_s": 2.0,
+    "fin_s": 28.5,
+    "parte": "transicion",
+    "descripcion": "Avanza por portales positivos y negativos acumulando/perdiendo dólares y cambiando de nivel/foto de Cristiano Ronaldo."
+   },
+   {
+    "inicio_s": 28.5,
+    "fin_s": 31.0,
+    "parte": "cierre",
+    "descripcion": "Llegada al nivel final con el máximo poder/días y cruce de la línea de meta."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": null,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Evolución visual del personaje al cruzar los portales con cambios de fotos y montos de dinero",
+   "efecto_sonido": "Grito de SIUUU, efectos de monedas y risas meme"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El rollo de dinero cruza la meta final y se acumula en los multiplicadores.",
+   "loop": true,
+   "como_hace_el_loop": "El choque final conecta directo con el reinicio de la pista al principio del video."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "humana",
+   "idioma_y_acento": "Inglés / Audios de memes virales",
+   "musica": "Remixes de música Phonk y beats electrónicos virales",
+   "efectos_de_sonido": [
+    "Grito SIUUU",
+    "Risa malvada meme",
+    "Sonido de recolección de dinero",
+    "Efecto de resta/pérdida de puntos"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto 3D flotante con el día ('DAY 1', 'DAY 999') y los valores de dinero (+80$, -120$)",
+   "idioma": "Inglés"
+  },
+  "visual": {
+   "fondo": "Pista de carreras 3D en un entorno futurista rosa y blanco",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "Gameplay de animación 3D estilo juego móvil hypercasual combinado con memes de fútbol",
+   "cambios_de_plano_aprox": 15
+  },
+  "dificultad_de_las_preguntas": null,
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Combina la adicción visual de los juegos 3D de carreras de dinero con el humor absurdo de los memes de Cristiano Ronaldo y efectos de sonido altamente reconocibles.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Crear una animación o grabar el gameplay de un juego 3D tipo runner y colocar fotos/memes recortadas sobre los portales de nivelación."
+ }
+}

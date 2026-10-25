@@ -110,6 +110,25 @@ PROPUESTOS_SEEDS = [
     ("true or false football quiz", "en", True),
 ]
 
+# frente B (25-oct): mecánicas interactivas virales en OTROS nichos, para trasladar al fútbol
+NICHOS_SEEDS = [(q, "en", True) for q in [
+    "guess the celebrity", "guess the nba player", "guess the anime character", "guess the rapper", "guess the country",
+    "guess the flag", "guess the logo", "guess the song", "guess the movie", "guess the price",
+    "find the odd one out", "spot the difference", "optical illusion test", "eye test only 1%", "memory test",
+    "brain test only genius", "which one is real", "pick one", "would you rather", "higher or lower game",
+    "guess the fusion", "guess by the eyes", "guess by the voice", "guess the zoomed", "blurry picture guess",
+    "guess the age", "who is older", "if they were", "ai version of", "evolution of",
+    "guess the character by shadow", "count the", "find the hidden", "riddle only smart people", "what happens next",
+]]
+
+# frente C (25-oct): competencia en fútbol de las mecánicas candidatas + validación de la fusión
+FUTBOL_MEC_SEEDS = [(q, "en", True) for q in [
+    "footballer evolution", "evolution of messi", "guess the footballer evolution", "football evolution shorts",
+    "only one door is real football", "pick a door football", "guess the footballer by voice", "guess the anthem football",
+    "face fusion football", "2 players 1 face", "guess the fused footballers", "merged footballers",
+    "footballers ai version", "footballers if they were",
+]]
+
 # mercados: misma consulta acotada por país (regionCode) para comparar tamaño y competencia
 MARKET_SEEDS = [
     ("quiz de futbol", "es", "AR"),
@@ -436,6 +455,10 @@ if __name__ == "__main__":
             cmd_search()
         if cmd == "formatos":
             cmd_search(FORMAT_SEEDS[:arg] if arg else FORMAT_SEEDS)
+        if cmd == "futbol_mec":
+            cmd_search(FUTBOL_MEC_SEEDS)
+        if cmd == "nichos":
+            cmd_search(NICHOS_SEEDS)
         if cmd == "propuestos":
             cmd_search(PROPUESTOS_SEEDS)
         if cmd == "fresco":
