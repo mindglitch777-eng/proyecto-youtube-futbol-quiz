@@ -36,11 +36,12 @@ def paquete(g):
         titulos = g.get("titulos") or [f"{g['evento']} RACE 🏁 Who wins? Pick one!",
                                        f"Only ONE can win… {g['gancho'].title()} 😳", f"{ev} marble race 🏆 PICK NOW"]
         gan = g["gancho"].capitalize() + ("" if g["gancho"].endswith("?") else ".")
-        desc = f"{gan} Pick yours BEFORE the race starts 👇 Real physics, no edits. Who did you pick?"
+        desc = f"{gan} Pick yours BEFORE the race starts 👇 Who did you pick?"
         tags = ["#football", "#soccer", "#marblerace", "#shorts", hashtag(g["evento"])] + \
                [hashtag(c["nombre"]) for c in g["competidores"][:3]]
         fijar = "Who did you pick… and did they win? 👇"
-        archivo = "short.mp4"
+        archivo = ('short.mp4" (con relator: nuestro toque) o "short_sin_voz.mp4" + un sonido en tendencia desde el editor '
+                   '(remix acelerado, cumbia o funk, como la competencia). Alterná para comparar')
     elif f in ("evolucion", "prime_now"):
         cred = json.loads((out / "creditos.json").read_text())
         creditos = [linea(c) for c in cred.values()]
@@ -49,7 +50,8 @@ def paquete(g):
         desc = g["descripcion"]
         tags = ["#football", "#soccer", "#shorts", "#evolution" if f == "evolucion" else "#thenvsnow", "#nostalgia"]
         fijar = g["comentario_fijado"]
-        archivo = "short.mp4"
+        archivo = ('short_sin_musica.mp4" + un sonido en tendencia desde el editor de Shorts (canción nostálgica o remix '
+                   'acelerado: así lo hacen los que pegan). Si no encontrás uno bueno, subí "short.mp4')
     else:   # find_the_real
         creditos = [linea(CRED[r["foto"]]) for r in g["rondas"]]
         titulos = g["titulos"]
@@ -72,7 +74,7 @@ Photo credits (Wikimedia Commons). Images were modified; the modified images are
 {fijar}
 
 === CÓMO SUBIR (desde el celular) ===
-1. Subí "{archivo}" (ya tiene relator, música y efectos).
+1. Subí "{archivo}".
 2. Pegá título, descripción y hashtags. Audiencia: "No es para niños".
 3. Publicá en el horario del calendario (10:00 o 23:00, hora Argentina).
 4. Fijá el comentario y respondé los primeros 5 comentarios en la primera hora.

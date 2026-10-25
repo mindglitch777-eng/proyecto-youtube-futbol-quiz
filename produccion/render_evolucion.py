@@ -38,6 +38,22 @@ NACION = {
     "Marc-André ter Stegen": "DE", "Jordi Alba": "ES", "Manuel Neuer": "DE", "Mesut Özil": "DE", "Philipp Lahm": "DE",
     "Bastian Schweinsteiger": "DE", "Mats Hummels": "DE", "Miroslav Klose": "DE", "Paul Pogba": "FR", "N'Golo Kanté": "FR",
     "Hugo Lloris": "FR", "Olivier Giroud": "FR", "Vinícius Júnior": "BR", "Jude Bellingham": "ENG", "Lamine Yamal": "ES",
+    "Frank Lampard": "ENG", "Didier Drogba": "CI", "Iker Casillas": "ES", "Samuel Eto'o": "CM", "Andrea Pirlo": "IT",
+    "Gianluigi Buffon": "IT", "Fernando Torres": "ES", "David Villa": "ES", "Carles Puyol": "ES", "Xavi Hernández": "ES",
+    "Xabi Alonso": "ES", "Thierry Henry": "FR", "Steven Gerrard": "ENG", "Ronaldinho": "BR", "Kaká": "BR", "Zinedine Zidane": "FR",
+    "David Beckham": "ENG", "Erling Braut Haaland": "NO", "Marcelo Vieira": "BR", "Daniel Carvajal": "ES",
+}
+NACIDO = {
+    "Neymar": 1992, "David Beckham": 1975, "Mohamed Salah": 1992, "Mats Hummels": 1988, "Harry Kane": 1993, "Luis Suárez": 1987,
+    "Frank Lampard": 1978, "Didier Drogba": 1978, "Sergio Ramos": 1986, "Robert Lewandowski": 1988, "Iker Casillas": 1981,
+    "Kylian Mbappé": 1998, "Lionel Messi": 1987, "Cristiano Ronaldo": 1985, "Luka Modrić": 1985, "Zlatan Ibrahimović": 1981,
+    "Karim Benzema": 1987, "Wayne Rooney": 1985, "Toni Kroos": 1990, "Thierry Henry": 1977, "Steven Gerrard": 1980,
+    "Ronaldinho": 1980, "Kaká": 1982, "Andrés Iniesta": 1984, "Gareth Bale": 1989, "Ángel Di María": 1988, "Manuel Neuer": 1986,
+    "Thomas Müller": 1989, "Xavi Hernández": 1980, "Zinedine Zidane": 1972, "Gianluigi Buffon": 1978, "Andrea Pirlo": 1979,
+    "Samuel Eto'o": 1981, "Kevin De Bruyne": 1991, "Gerard Piqué": 1987, "Javier Mascherano": 1984, "Marc-André ter Stegen": 1992,
+    "Olivier Giroud": 1986, "Philipp Lahm": 1983, "David Villa": 1981, "Fernando Torres": 1984, "Carles Puyol": 1978,
+    "Dani Alves": 1983, "Erling Braut Haaland": 2000, "Paul Pogba": 1993, "N'Golo Kanté": 1991, "Antoine Griezmann": 1991,
+    "Hugo Lloris": 1986, "Mesut Özil": 1988, "Miroslav Klose": 1978, "Bastian Schweinsteiger": 1984, "Sergio Busquets": 1988,
 }
 CORTO = {"Marc-André ter Stegen": "TER STEGEN", "Ángel Di María": "DI MARÍA", "Kevin De Bruyne": "DE BRUYNE",
          "N'Golo Kanté": "KANTÉ", "Vinícius Júnior": "VINÍCIUS", "Zlatan Ibrahimović": "ZLATAN", "Dani Alves": "DANI ALVES",
@@ -49,10 +65,10 @@ def corto(n):
 
 
 # ------------------------------------------------------------------ fotos
-def fotos_de(jugador, max_puntaje=45):
+def fotos_de(jugador, max_puntaje=45, min_cara=110):
     df = pd.read_csv(ROOT / "assets" / "poses_epoca.csv")
     bloq = set(json.loads((ROOT / "assets" / "fotos_bloqueadas.json").read_text()))
-    d = df[(df.jugador == jugador) & (df.puntaje <= max_puntaje) & (df.cara_px >= 110) & ~df.foto.isin(bloq)]
+    d = df[(df.jugador == jugador) & (df.puntaje <= max_puntaje) & (df.cara_px >= min_cara) & ~df.foto.isin(bloq)]
     return d.sort_values("puntaje").groupby("anio").head(1).sort_values("anio")
 
 
@@ -101,7 +117,7 @@ def bandera(pais, lado=150):
 
 # ------------------------------------------------------------------ líneas de tiempo
 def tramos_evolucion(g):
-    filas = elegir_anios(fotos_de(g["jugador"], g.get("max_puntaje", 90)), g.get("max_fotos", 8))
+    filas = elegir_anios(fotos_de(g["jugador"], g.get("max_puntaje", 90), g.get("min_cara", 100)), g.get("max_fotos", 9))
     esp = espejos(filas)
     T_HOLD, T_MORPH = g.get("hold", 1.15), g.get("morph", 0.85)
     tramos, t = [], 0.0
@@ -115,12 +131,12 @@ def tramos_evolucion(g):
 def tramos_prime(g):
     tramos, t, usados = [], 0.0, []
     for jug in g["jugadores"]:
-        d = fotos_de(jug, 60)
+        d = fotos_de(jug, g.get("max_puntaje", 120), g.get("min_cara", 90))
         if d.empty:
             continue
         antes = d.iloc[(d.anio - g["anio"]).abs().argsort()[:1]].iloc[0]
         ahora = d.iloc[-1]
-        if ahora.anio - antes.anio < g.get("min_gap", 5) or abs(antes.anio - g["anio"]) > 2:
+        if ahora.anio - antes.anio < g.get("min_gap", 5) or abs(antes.anio - g["anio"]) > 2 or ahora.anio < g.get("min_ahora", 2020):
             print("salteo", jug, antes.anio, ahora.anio); continue
         a = next(d.loc[[antes.name]].itertuples()); b = next(d.loc[[ahora.name]].itertuples())
         eb = bool(a.asimetria * b.asimetria < 0 and abs(b.asimetria) > 0.05)
@@ -153,13 +169,13 @@ def main(guion_path):
             sonidos.append(("tick2", T_INTRO + tr["t0"]))
     if evo:
         pais = NACION.get(g["jugador"])
-        t_h1, t_h2 = T_INTRO + t_juego * 0.55, T_INTRO + t_juego * 0.8
-        sonidos += [("ding", t_h1), ("ding", t_h2), ("riser", t_rev - 0.9), ("boom", t_rev), ("ding", t_rev + 0.05)]
-        ini = ". ".join(p[0] for p in g["jugador"].replace("-", " ").split()[:2]) + "."
-        voz = [(0.1, g["voz_intro"]), (t_rev + 0.1, g["voz_revela"])]
+        t_h1 = T_INTRO + t_juego * 0.72
+        sonidos += [("ding", t_h1), ("riser", t_rev - 0.9), ("boom", t_rev), ("ding", t_rev + 0.05)]
+        nacido = NACIDO.get(g["jugador"])
+        voz = []          # como la competencia que pega: sin voz, música de tendencia (se suma en el editor de Shorts)
     else:
         sonidos += [("boom", t_rev), ("ding", t_rev + 0.05)]
-        voz = [(0.1, g["voz_intro"]), (t_rev + 0.1, g["voz_cierre"])]
+        voz = []          # sin voz, como los "then vs now" que pegan
     ff = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}",
                            "-r", str(FPS), "-i", "-", "-c:v", "libx264", "-pix_fmt", "yuv420p", "-crf", "19",
                            str(out / "mudo.mp4")], stdin=subprocess.PIPE)
@@ -180,15 +196,18 @@ def main(guion_path):
                              outline=LED if tv < t_rev else (61, 214, 128), width=10)
         anio = int(round(tr["a"].anio + (tr["b"].anio - tr["a"].anio) * u))
         if evo:
-            gan = g["gancho"].replace("{fin}", str(filas[-1].anio)); texto(dr, (W / 2, 120), gan, ajustar(gan, 86, W - 80), BLANCO, 10)
-            texto(dr, (W / 2, 330), str(anio), 190, LED, 14)
+            texto(dr, (W / 2, 95), "AGE EVOLUTION", 92, LED, 10)
+            rango = f"{filas[0].anio} → {filas[-1].anio if tv >= t_rev else '????'}"
+            texto(dr, (W / 2, 190), rango, 64, BLANCO, 8)
+            texto(dr, (W / 2 - 200, 345), str(anio), 150, BLANCO, 12)
+            if nacido:
+                texto(dr, (W / 2 + 230, 300), "AGE", 50, (200, 200, 220), 6)
+                texto(dr, (W / 2 + 230, 375), str(anio - nacido), 110, LED, 11)
             if tv < t_rev:
-                texto(dr, (W / 2, PY + PANEL + 110), "WHO IS HE?", 110, BLANCO, 12)
+                pulso = 0.5 + 0.5 * np.sin(tv * 6)
+                texto(dr, (W / 2, PY + PANEL + 115), "WAIT FOR IT...", 100, tuple(int(255 * (0.75 + 0.25 * pulso)) for _ in range(3)), 12)
                 if tv >= t_h1 and pais:
-                    fl = bandera(pais, 130); im.paste(fl, (W // 2 - 300, PY + PANEL + 190), fl)
-                    texto(dr, (W / 2 - 140, PY + PANEL + 255), "HINT", 54, LED, 7, anchor="lm")
-                if tv >= t_h2:
-                    texto(dr, (W / 2 + 140, PY + PANEL + 255), ini, 70, BLANCO, 8)
+                    fl = bandera(pais, 120); im.paste(fl, (W // 2 - 60, PY + PANEL + 200), fl)
         else:
             texto(dr, (W / 2, 110), g["titulo"], ajustar(g["titulo"], 96, W - 80), LED, 10)
             texto(dr, (W / 2, 215), "THEN vs NOW", 78, BLANCO, 9)
@@ -209,7 +228,7 @@ def main(guion_path):
         ff.stdin.write(np.asarray(im, np.uint8).tobytes())
     ff.stdin.close(); ff.wait()
 
-    mix = beat(dur) * 0.7
+    mix = np.zeros(int(dur * SR), np.float32)
     fx = efectos(4)
     def add(s, sig, vol=1.0):
         i = int(s * SR); j = min(len(mix), i + len(sig))
@@ -217,20 +236,23 @@ def main(guion_path):
             mix[i:j] += vol * sig[: j - i]
     for n_, s in sonidos:
         add(s, fx[n_], 0.7 if n_ == "whoosh" else 1.0)
+    solo_fx = mix.copy()
+    mix = mix + beat(dur)[: len(mix)] * 0.7
     try:
-        rutas = voces_edge([l for _, l in voz], out)
+        rutas = voces_edge([l for _, l in voz], out) if voz else []
     except SystemExit as e:          # prueba sin locución (todavía no corrió el workflow de voces)
         print("SIN VOZ:", e); rutas = []; voz = []
     dv = np.ones_like(mix)
     for (s, _), r in zip(voz, rutas):
         x = leer_wav(r); i = int(s * SR); j = min(len(mix), i + len(x))
         dv[i:j] = np.minimum(dv[i:j], 0.45); mix[i:j] += 1.05 * x[: j - i]
-    mix = np.tanh(mix * dv * 1.3) * 0.9
-    with wave.open(str(out / "audio.wav"), "wb") as w:
-        w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
-        w.writeframes((np.clip(mix, -1, 1) * 32767).astype(np.int16).tobytes())
-    subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / "mudo.mp4"), "-i", str(out / "audio.wav"),
-                    "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out / "short.mp4")], check=True)
+    # (A) con beat propio; (B) solo efectos, para sumar un sonido en tendencia en el editor de Shorts (como hace la competencia)
+    for nombre_v, pista in (("short.mp4", np.tanh(mix * dv * 1.3) * 0.9), ("short_sin_musica.mp4", np.tanh(solo_fx * 1.1) * 0.6)):
+        with wave.open(str(out / "audio.wav"), "wb") as w:
+            w.setnchannels(1); w.setsampwidth(2); w.setframerate(SR)
+            w.writeframes((np.clip(pista, -1, 1) * 32767).astype(np.int16).tobytes())
+        subprocess.run(["ffmpeg", "-y", "-loglevel", "error", "-i", str(out / "mudo.mp4"), "-i", str(out / "audio.wav"),
+                        "-c:v", "copy", "-c:a", "aac", "-b:a", "192k", "-shortest", str(out / nombre_v)], check=True)
     (out / "mudo.mp4").unlink()
     cred = json.loads((EP / "creditos_epoca.json").read_text())
     usadas = sorted({tr["a"].foto for tr in tramos} | {tr["b"].foto for tr in tramos})

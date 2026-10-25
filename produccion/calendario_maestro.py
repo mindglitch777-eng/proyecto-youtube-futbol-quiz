@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
 Calendario maestro: 2 shorts por día (10:00 y 23:00 hora Argentina) mezclando todos los formatos.
-Regla: cada día lleva 1 formato nuevo (carrera / evolución / prime vs now) + 1 de prueba (fusión / find the real),
-para comparar formatos en la primera semana y clonar el que gane (reporte 14).
+Regla: cada día mezcla formatos (carrera, evolución, prime vs now, find the real, fusión) para comparar en la
+primera semana y clonar el que gane (reportes 14 y 15).
 Salida: produccion/salida/CALENDARIO_MAESTRO.md
 """
 import json
@@ -14,23 +14,21 @@ DIAS = ["lun", "mar", "mié", "jue", "vie", "sáb", "dom"]
 
 # (id, motivo) en orden; las dos primeras van hoy y mañana por los eventos
 PLAN = [
-    # dom 25-oct (10:00 ya salió lote1_01)
-    (None, None), ("carrera_06", "Noche del Clásico"),
-    ("lote1_03", "Balón de Oro (ceremonia: verificá la fecha)"), ("carrera_01", "Balón de Oro: noche de la ceremonia"),
-    ("find_the_real_02", "Ola FIND de FULYON"), ("evo_01", "Formato nuevo: evolución"),
-    ("lote1_02", "Argentina vs Brasil"), ("carrera_02", "Campeones del mundo (identidad de país)"),
-    ("prime_01", "Formato nuevo: prime vs now"), ("carrera_04", "Debate GOAT"),
-    ("lote1_04", "Premier League (público que paga más)"), ("carrera_05", "Premier Big 6"),
-    ("find_the_real_03", "Ola FIND"), ("carrera_03", "Libertadores (sábado de fútbol sudamericano)"),
-    ("evo_02", "Evolución"), ("carrera_07", "Leyendas vs nueva generación"),
-    # semana 2: se reemplaza según los números del día 4 (clonar lo que pase 10x la mediana)
-    ("prime_02", "Prime vs now"), ("lote1_05", "Inglaterra"),
-    ("evo_03", "Evolución"), ("find_the_real_04", "FIND"),
-    ("lote1_06", "Jóvenes estrellas"), ("prime_03", "Prime vs now"),
-    ("evo_04", "Evolución"), ("lote1_07", "Francia"),
-    ("find_the_real_05", "FIND"), ("lote1_08", "Delanteros"),
-    ("evo_05", "Evolución"), ("lote1_09", "España vs Alemania"),
-    ("evo_06", "Evolución"), ("lote1_10", "Messi o Ronaldo"),
+    (None, None), ("carrera_06", "Noche del Clásico (rivalidad del día)"),
+    ("find_the_real_02", "Ola FIND de FULYON (23 M y creciendo)"), ("carrera_01", "Balón de Oro: predicción el día de la ceremonia (verificá la fecha)"),
+    ("evo_01", "Evolución: Messi desde 2005"), ("carrera_08", "Trío con Ronaldo (fórmula DriveLabs)"),
+    ("prime_01", "Prime vs now: Barcelona 2015 (nostalgia)"), ("lote1_02", "Fusión: Argentina vs Brasil"),
+    ("evo_02", "Evolución: Neymar"), ("carrera_04", "Debate GOAT (gana Ronaldo)"),
+    ("find_the_real_03", "Ola FIND"), ("carrera_02", "Campeones del mundo (gana Argentina)"),
+    ("prime_02", "Prime vs now: Alemania 2014"), ("carrera_03", "Libertadores (gana Boca)"),
+    ("evo_03", "Evolución: Beckham (público UK/EE.UU.)"), ("carrera_09", "Trío con Ronaldo"),
+    ("lote1_04", "Fusión: Premier League"), ("carrera_05", "Premier Big 6 (gana United)"),
+    ("evo_04", "Evolución: Salah"), ("carrera_07", "Leyendas vs nueva generación (gana Ronaldinho)"),
+    ("prime_03", "Prime vs now: España 2010"), ("find_the_real_04", "FIND"),
+    ("evo_05", "Evolución: Zlatan"), ("lote1_06", "Fusión: jóvenes estrellas"),
+    ("prime_04", "Prime vs now: Francia 2018"), ("find_the_real_05", "FIND"),
+    ("evo_06", "Evolución: Modrić"), ("lote1_10", "Fusión: Messi o Ronaldo"),
+    ("evo_07", "Evolución: Kane (público UK)"), ("lote1_14", "Fusión: modo imposible"),
 ]
 
 
