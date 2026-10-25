@@ -1,0 +1,90 @@
+{
+ "video_id": "lrgJcwOMoK0",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 2793,
+  "candidatesTokenCount": 928,
+  "totalTokenCount": 5129,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2010
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1408,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 22.8,
+  "formato": "Carrera de canicas en laberinto simulado con caras de futbolistas y clips de video en pantalla",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 2.5,
+   "que_se_ve": "Canicas con las caras de Mbappé, Neymar, Messi, Yamal y Ronaldo cayendo por un laberinto azul y verde mientras se muestra un clip de Mbappé arriba",
+   "que_se_dice_o_texto": "Nombres de los futbolistas (Mbappe, Neymar, Messi, Yamal, Ronaldo)",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 11.5,
+    "parte": "otro",
+    "descripcion": "Primera carrera en el laberinto con música de funk brasileño y clips de jugadas y celebraciones"
+   },
+   {
+    "inicio_s": 11.5,
+    "fin_s": 22.8,
+    "parte": "otro",
+    "descripcion": "Segunda carrera con temática navideña y música de meme de Cristiano Ronaldo cantando"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El jugador/canica que logra descender y completar el recorrido del laberinto",
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Las canicas avanzan hacia la parte inferior con la música navideña de Ronaldo",
+   "loop": true,
+   "como_hace_el_loop": "El movimiento fluido del laberinto al final empalma de forma continua con la caída inicial de la canica"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Funk brasileño en la primera mitad y remix navideño tipo meme de Cristiano Ronaldo en la segunda",
+   "efectos_de_sonido": []
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Nombres de los futbolistas en letras blancas con borde negro sobre las canicas",
+   "idioma": "en"
+  },
+  "visual": {
+   "fondo": "Laberinto dinámico azul y verde en pantalla completa",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Simulación física 2D de canicas combinada con ventana flotante de clips de partidos y memes",
+   "cambios_de_plano_aprox": 10
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Efecto satisfactorio e hipnótico de las canicas recorriendo el laberinto, sumado a la atracción de futbolistas top y audio viral de moda.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Crear la animación del laberinto en programas como Algodoo o Unity utilizando vectores de camisetas o números de jugadores en lugar de fotos reales y clips de TV."
+ }
+}

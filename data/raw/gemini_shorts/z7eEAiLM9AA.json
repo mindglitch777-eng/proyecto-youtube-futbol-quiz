@@ -1,0 +1,86 @@
+{
+ "video_id": "z7eEAiLM9AA",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 2873,
+  "candidatesTokenCount": 990,
+  "totalTokenCount": 4828,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2090
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 965,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 23.0,
+  "formato": "Carrera de canicas/bolitas en laberinto de agua entre futbolistas con clips de sus jugadas y música viral personalizada",
+  "n_preguntas_o_rondas": 1,
+  "gancho": {
+   "fin_s": 3.0,
+   "que_se_ve": "Caras de futbolistas icónicos deslizándose a gran velocidad por un laberinto de agua 3D con clips de jugadas en la parte superior",
+   "que_se_dice_o_texto": "Neymar, Ronaldo, Mbappe, Yamal, Haland, Messi",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 23.0,
+    "parte": "otro",
+    "descripcion": "Carrera continua en tobogán acuático 3D donde el líder cambia constantemente, activando su correspondiente canción viral y clip de jugada en pantalla"
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "El jugador que encabeza la carrera en cada tramo del laberinto",
+   "efecto_sonido": "Cambios de tema musical según el futbolista en cabeza"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "La carrera continúa hasta el final del tramo del laberinto y se reinicia suavemente",
+   "loop": true,
+   "como_hace_el_loop": "El movimiento fluido del tobogán de agua y el ritmo de la música permiten un empalme casi continuo con el inicio"
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "varios (canciones en portugués, francés, inglés, español)",
+   "musica": "Popurrí de canciones virales de TikTok asociadas a cada futbolista (Parado no Bailão para Neymar, Kylian Mbappé song, cánticos de Messi, Haaland song, etc.)",
+   "efectos_de_sonido": [
+    "sonido de agua y deslizamiento"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto en negrita blanco con contorno negro posicionado sobre cada cara móvil",
+   "idioma": "Nombres propios"
+  },
+  "visual": {
+   "fondo": "Laberinto de agua en 3D sobre patrón geométrico verde y azul",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Simulación 3D de física de fluidos con caras recortadas de futbolistas y reproductor de video emergente arriba",
+   "cambios_de_plano_aprox": 12
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "Formato visualmente hipnótico y adictivo basado en simulación de física/carreras. Sincronización perfecta entre el líder de la carrera, la música caracterísitca y el clip de video arriba. Estimula la competencia y el debate entre fans de diferentes futbolistas.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Utilizar un software de simulación física 3D o 2D (como Algodoo o Blender) para crear una carrera de bolas de colores representando marcas o países, agregando música temática que cambie dinámicamente según quién va ganando."
+ }
+}

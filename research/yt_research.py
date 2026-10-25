@@ -138,6 +138,14 @@ CRUCE_SEEDS = [(q, "en", True) for q in [
     "how many footballers can you count", "guess the footballer by celebration sound",
 ]]
 
+# candidatos a formato nuevo (patrón fuerte + mecánica poco usada en fútbol)
+NUEVOS_SEEDS = [(q, "en", True) for q in [
+    "football squad then vs now", "prime vs now football team", "football marble race", "footballers race simulation",
+    "countries marble race", "football riddle", "guess the player by career path", "higher or lower football",
+    "guess the transfer fee", "find the ball football", "football who would win", "guess the footballer by hairstyle",
+    "football tier list",
+]]
+
 # mercados: misma consulta acotada por país (regionCode) para comparar tamaño y competencia
 MARKET_SEEDS = [
     ("quiz de futbol", "es", "AR"),
@@ -468,6 +476,8 @@ if __name__ == "__main__":
             cmd_search(FUTBOL_MEC_SEEDS)
         if cmd == "nichos":
             cmd_search(NICHOS_SEEDS)
+        if cmd == "nuevos":
+            cmd_search(NUEVOS_SEEDS)
         if cmd == "cruce":
             cmd_search(CRUCE_SEEDS)
         if cmd == "propuestos":

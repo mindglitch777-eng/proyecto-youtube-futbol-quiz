@@ -1,0 +1,96 @@
+{
+ "video_id": "oLj7JKvQvj8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 2140,
+  "candidatesTokenCount": 932,
+  "totalTokenCount": 3072,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 1357
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 15.0,
+  "formato": "ranking o comparación rápida de jugadores de fútbol con tiempos en pantalla",
+  "n_preguntas_o_rondas": 2,
+  "gancho": {
+   "fin_s": 1.0,
+   "que_se_ve": "Pantalla negra con el título 'Goat' arriba sobre fondo de queso y lista con Yamal, Mbappe y Vini jr con cronómetros.",
+   "que_se_dice_o_texto": "Goat",
+   "tipo": "desafío ('solo el 1% sabe')"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 3.0,
+    "parte": "gancho",
+    "descripcion": "Presentación del primer grupo de jugadores jóvenes (Yamal, Mbappe, Vini jr)."
+   },
+   {
+    "inicio_s": 3.0,
+    "fin_s": 15.0,
+    "parte": "revelacion",
+    "descripcion": "Aparición de Cristiano, Messi y Neymar con imágenes y música épica."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.5,
+  "cuenta_regresiva": {
+   "hay": true,
+   "estilo": "cronómetro numérico en segundos"
+  },
+  "revelacion": {
+   "como": "fotografías en blanco y negro con efectos de parpadeo y zoom",
+   "efecto_sonido": "música de trap con graves potentes y bocina"
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El video muestra a Neymar y se corta abruptamente para volver a empezar.",
+   "loop": true,
+   "como_hace_el_loop": "El final abrupto empalma con el título inicial de 'Goat'."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": "ninguno",
+   "musica": "tendencia/viral, trap con graves muy pesados (phonk/bass boosted)",
+   "efectos_de_sonido": [
+    "bocina de aire",
+    "golpes de bajo"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "fuente gruesa tipo arcade/meme, fondo negro con bordes redondeados",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "negro con transiciones de fotos de futbolistas",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "edits estilo TikTok/Shorts con filtro oscuro, flash y música de trap",
+   "cambios_de_plano_aprox": 6
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": [
+   "Ritmo extremadamente rápido sincronizado con el bajo de la música.",
+   "Uso de futbolistas legendarios muy populares (Cristiano, Messi, Neymar).",
+   "Estilo visual de edit oscuro muy atractivo para la audiencia joven."
+  ],
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes estáticas de jugadores con efectos de zoom y flash, cronómetros animados en pantalla y una canción de phonk con graves potentes."
+ }
+}

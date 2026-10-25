@@ -1,0 +1,102 @@
+{
+ "video_id": "NwUfSk451D8",
+ "modelo": "gemini-3.5-flash-lite",
+ "uso": {
+  "promptTokenCount": 4241,
+  "candidatesTokenCount": 832,
+  "totalTokenCount": 5073,
+  "promptTokensDetails": [
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   },
+   {
+    "modality": "VIDEO",
+    "tokenCount": 3458
+   }
+  ],
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 37.7,
+  "formato": "video estilo juego de obstáculos 3D con caras de futbolistas y camisetas a elegir",
+  "n_preguntas_o_rondas": 3,
+  "gancho": {
+   "fin_s": 9.4,
+   "que_se_ve": "Personaje de Messi esquivando obstáculos en una pista en pendiente hacia arriba, con las caras de Messi, Neymar y Cristiano Ronaldo arriba.",
+   "que_se_dice_o_texto": "Messi",
+   "tipo": "acción/sorpresa"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 9.4,
+    "parte": "gancho",
+    "descripcion": "Ronda de Messi en el juego 3D donde pierde."
+   },
+   {
+    "inicio_s": 9.4,
+    "fin_s": 22.0,
+    "parte": "pregunta",
+    "descripcion": "Ronda de Neymar donde vuelve a perder."
+   },
+   {
+    "inicio_s": 22.0,
+    "fin_s": 37.7,
+    "parte": "revelacion",
+    "descripcion": "Ronda de Cristiano Ronaldo / selección ganadora donde completa el recorrido con éxito."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": "Aparición de carteles de You Win o You Lose según el resultado",
+   "efecto_sonido": [
+    "explosión",
+    "música de fracaso/victoria"
+   ]
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "El personaje llega a la meta y gana con la Copa del Mundo.",
+   "loop": true,
+   "como_hace_el_loop": "El final con la victoria corta y vuelve a iniciar el juego desde la pista inicial de Messi."
+  },
+  "cta": {
+   "en_video": "If you like Ronaldo, do this",
+   "momento_s": 29.0
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "tendencia/viral",
+   "efectos_de_sonido": [
+    "explosiones",
+    "aplausos",
+    "efectos de salto"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "letras blancas con contorno negro en fuente bold",
+   "idioma": "inglés"
+  },
+  "visual": {
+   "fondo": "paisaje verde y pista tipo videojuego runner 3D",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": true,
+   "escudos_o_logos": false,
+   "clips_de_partidos_o_transmisiones": false,
+   "imagenes_generadas_por_ia_o_dibujos": true,
+   "estilo_general": "animación 3D estilo juego mobile runner",
+   "cambios_de_plano_aprox": 3
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": true,
+  "que_hace_que_funcione": "Uso de avatares de jugadores muy populares (Messi, Neymar, Cristiano), formato tipo endless runner adictivo y rivalidad entre estrellas.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar un motor de juego 3D tipo Unity o plantilla de runner mobile con recortes de rostros virales de futbolistas."
+ }
+}

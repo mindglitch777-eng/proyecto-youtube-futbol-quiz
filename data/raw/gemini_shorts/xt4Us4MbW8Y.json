@@ -1,0 +1,92 @@
+{
+ "video_id": "xt4Us4MbW8Y",
+ "modelo": "gemini-3.5-flash",
+ "uso": {
+  "promptTokenCount": 3003,
+  "candidatesTokenCount": 1004,
+  "totalTokenCount": 5161,
+  "promptTokensDetails": [
+   {
+    "modality": "VIDEO",
+    "tokenCount": 2220
+   },
+   {
+    "modality": "TEXT",
+    "tokenCount": 783
+   }
+  ],
+  "thoughtsTokenCount": 1154,
+  "serviceTier": "standard"
+ },
+ "analisis": {
+  "duracion_s": 24.5,
+  "formato": "Compilación/edit de la selección de Brasil 2002 con estilo Phonk/Sigma",
+  "n_preguntas_o_rondas": 0,
+  "gancho": {
+   "fin_s": 5.5,
+   "que_se_ve": "Formación de la selección de Brasil de 2002 con el texto 'Brazil 2002 prime'",
+   "que_se_dice_o_texto": "Brazil 2002 prime 💀",
+   "tipo": "otro"
+  },
+  "estructura": [
+   {
+    "inicio_s": 0.0,
+    "fin_s": 5.5,
+    "parte": "gancho",
+    "descripcion": "Presentación del equipo de Brasil 2002 con música suave y el texto identificativo."
+   },
+   {
+    "inicio_s": 5.5,
+    "fin_s": 24.5,
+    "parte": "transicion",
+    "descripcion": "Drop de la música phonk con edición rápida alternando imágenes a color de leyendas de Brasil (Ronaldo, Ronaldinho, Rivaldo, Kaká, Edmílson, Roberto Carlos, Cafú) y filtros oscuros con calavera."
+   }
+  ],
+  "tiempo_para_pensar_por_pregunta_s": 0.0,
+  "cuenta_regresiva": {
+   "hay": false,
+   "estilo": null
+  },
+  "revelacion": {
+   "como": null,
+   "efecto_sonido": null
+  },
+  "cierre_y_loop": {
+   "que_pasa_al_final": "Corta de golpe tras el plano de Cafú con el efecto de calavera.",
+   "loop": true,
+   "como_hace_el_loop": "El ritmo de la música y el corte seco al final se conectan rítmicamente con el inicio del video."
+  },
+  "cta": {
+   "en_video": null,
+   "momento_s": null
+  },
+  "audio": {
+   "voz": "ninguna",
+   "idioma_y_acento": null,
+   "musica": "Funk brasilero / Phonk edit con graves potentes sincronizado con los cortes de la imagen.",
+   "efectos_de_sonido": [
+    "Distorsión de bajos en los golpes de beat"
+   ]
+  },
+  "texto_en_pantalla": {
+   "hay_texto": true,
+   "subtitulos_de_voz": false,
+   "estilo": "Texto blanco centrado en pantalla 'Brazil 2002 prime' con emoji de calavera, escudo de la CBF y marca de agua al pie.",
+   "idioma": "en"
+  },
+  "visual": {
+   "fondo": "Transmisión televisiva original del Mundial Korea-Japón 2002",
+   "persona_real_en_camara": false,
+   "fotos_de_jugadores": false,
+   "escudos_o_logos": true,
+   "clips_de_partidos_o_transmisiones": true,
+   "imagenes_generadas_por_ia_o_dibujos": false,
+   "estilo_general": "Edit de fútbol estilo TikTok (Phonk/Sigma edit) con alta saturación, cambios de contraste y superposición del emoji de calavera.",
+   "cambios_de_plano_aprox": 18
+  },
+  "dificultad_de_las_preguntas": "muy fácil",
+  "invita_a_comentar_la_respuesta": false,
+  "que_hace_que_funcione": "La nostalgia de uno de los mejores equipos de la historia del fútbol combinada con un estilo de edición viral en tendencias (Phonk edit) altamente dinámico que engancha visual y auditivamente.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Utilizar fotografías fijas de alta calidad de jugadores icónicos o cartas de FIFA/EA FC, aplicando zoom in/out rápido y los mismos efectos de contraste y música Phonk sincronizados al beat."
+ }
+}
