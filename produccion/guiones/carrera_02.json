@@ -1,0 +1,146 @@
+{
+ "id": "carrera_02",
+ "paleta": "cancha",
+ "evento": "WORLD CUP CHAMPIONS",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "8 WORLD CHAMPIONS. ONLY 1 WINS",
+ "voz_intro": "Eight world champions. Only one wins. Pick your country now!",
+ "eliminar": 3,
+ "circuito": [
+  "zigzag",
+  "clavos",
+  "molinos",
+  "acelerador",
+  "rebotadores",
+  "aspas"
+ ],
+ "competidores": [
+  {
+   "tipo": "pais",
+   "nombre": "Brazil",
+   "pais": "BR",
+   "voz": "Brazil",
+   "corto": "BRAZIL",
+   "anillo": [
+    255,
+    220,
+    0
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "Germany",
+   "pais": "DE",
+   "voz": "Germany",
+   "corto": "GERMANY",
+   "anillo": [
+    240,
+    240,
+    240
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "Italy",
+   "pais": "IT",
+   "voz": "Italy",
+   "corto": "ITALY",
+   "anillo": [
+    60,
+    140,
+    255
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "Argentina",
+   "pais": "AR",
+   "voz": "Argentina",
+   "corto": "ARGENTINA",
+   "anillo": [
+    120,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "France",
+   "pais": "FR",
+   "voz": "France",
+   "corto": "FRANCE",
+   "anillo": [
+    70,
+    90,
+    230
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "Uruguay",
+   "pais": "UY",
+   "voz": "Uruguay",
+   "corto": "URUGUAY",
+   "anillo": [
+    150,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "England",
+   "pais": "ENG",
+   "voz": "England",
+   "corto": "ENGLAND",
+   "anillo": [
+    240,
+    60,
+    60
+   ]
+  },
+  {
+   "tipo": "pais",
+   "nombre": "Spain",
+   "pais": "ES",
+   "voz": "Spain",
+   "corto": "SPAIN",
+   "anillo": [
+    255,
+    190,
+    0
+   ]
+  }
+ ],
+ "cierre": "DID YOUR COUNTRY WIN?",
+ "formato": "carrera",
+ "voz_lineas": [
+  "Eight world champions. Only one wins. Pick your country now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Brazil takes the lead!",
+  "Brazil is out!",
+  "Brazil wins it!",
+  "Germany takes the lead!",
+  "Germany is out!",
+  "Germany wins it!",
+  "Italy takes the lead!",
+  "Italy is out!",
+  "Italy wins it!",
+  "Argentina takes the lead!",
+  "Argentina is out!",
+  "Argentina wins it!",
+  "France takes the lead!",
+  "France is out!",
+  "France wins it!",
+  "Uruguay takes the lead!",
+  "Uruguay is out!",
+  "Uruguay wins it!",
+  "England takes the lead!",
+  "England is out!",
+  "England wins it!",
+  "Spain takes the lead!",
+  "Spain is out!",
+  "Spain wins it!"
+ ]
+}

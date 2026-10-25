@@ -1,0 +1,131 @@
+{
+ "id": "carrera_07",
+ "paleta": "fuego",
+ "evento": "LEGENDS vs NEW GEN",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "LEGENDS OR THE NEW GENERATION?",
+ "voz_intro": "Legends or the new generation? Pick one now!",
+ "eliminar": 3,
+ "circuito": [
+  "rebotadores",
+  "zigzag",
+  "clavos",
+  "molinos",
+  "acelerador",
+  "aspas",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Ronaldinho",
+   "voz": "Ronaldinho",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Zinedine Zidane",
+   "voz": "Zidane",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Thierry Henry",
+   "voz": "Henry",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "David Beckham",
+   "voz": "Beckham",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Jude Bellingham",
+   "voz": "Bellingham",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Jamal Musiala",
+   "voz": "Musiala",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Bukayo Saka",
+   "voz": "Saka",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  }
+ ],
+ "cierre": "LEGENDS OR NEW GEN?",
+ "formato": "carrera",
+ "voz_lineas": [
+  "Legends or the new generation? Pick one now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Ronaldinho takes the lead!",
+  "Ronaldinho is out!",
+  "Ronaldinho wins it!",
+  "Zidane takes the lead!",
+  "Zidane is out!",
+  "Zidane wins it!",
+  "Henry takes the lead!",
+  "Henry is out!",
+  "Henry wins it!",
+  "Beckham takes the lead!",
+  "Beckham is out!",
+  "Beckham wins it!",
+  "Lamine Yamal takes the lead!",
+  "Lamine Yamal is out!",
+  "Lamine Yamal wins it!",
+  "Bellingham takes the lead!",
+  "Bellingham is out!",
+  "Bellingham wins it!",
+  "Musiala takes the lead!",
+  "Musiala is out!",
+  "Musiala wins it!",
+  "Saka takes the lead!",
+  "Saka is out!",
+  "Saka wins it!"
+ ]
+}

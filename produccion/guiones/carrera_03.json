@@ -1,0 +1,238 @@
+{
+ "id": "carrera_03",
+ "paleta": "fuego",
+ "evento": "COPA LIBERTADORES GIANTS",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "THE BIGGEST CLUBS IN SOUTH AMERICA",
+ "voz_intro": "The giants of South America. Pick your club now!",
+ "eliminar": 3,
+ "circuito": [
+  "clavos",
+  "zigzag",
+  "aspas",
+  "rebotadores",
+  "molinos",
+  "acelerador",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "club",
+   "nombre": "Boca Juniors",
+   "corto": "BOCA",
+   "colores": [
+    [
+     0,
+     45,
+     130
+    ],
+    [
+     255,
+     200,
+     0
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Boca Juniors",
+   "anillo": [
+    255,
+    200,
+    0
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "River Plate",
+   "corto": "RIVER",
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ],
+    [
+     220,
+     30,
+     40
+    ]
+   ],
+   "estilo": "banda",
+   "voz": "River Plate",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Flamengo",
+   "corto": "FLA",
+   "colores": [
+    [
+     200,
+     20,
+     30
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Flamengo",
+   "anillo": [
+    230,
+    40,
+    40
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Palmeiras",
+   "corto": "PALMEIRAS",
+   "colores": [
+    [
+     0,
+     110,
+     60
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Palmeiras",
+   "anillo": [
+    40,
+    200,
+    110
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Peñarol",
+   "corto": "PEÑAROL",
+   "colores": [
+    [
+     255,
+     205,
+     0
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Peñarol",
+   "anillo": [
+    255,
+    205,
+    0
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Racing Club",
+   "corto": "RACING",
+   "colores": [
+    [
+     120,
+     190,
+     240
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Racing Club",
+   "anillo": [
+    120,
+    190,
+    240
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Independiente",
+   "corto": "INDEPENDIENTE",
+   "colores": [
+    [
+     200,
+     16,
+     30
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Independiente",
+   "anillo": [
+    255,
+    90,
+    90
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Corinthians",
+   "corto": "CORINTHIANS",
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "mitades",
+   "voz": "Corinthians",
+   "anillo": [
+    200,
+    200,
+    200
+   ]
+  }
+ ],
+ "cierre": "WHO IS YOUR CLUB? COMMENT",
+ "formato": "carrera",
+ "voz_lineas": [
+  "The giants of South America. Pick your club now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Boca Juniors takes the lead!",
+  "Boca Juniors is out!",
+  "Boca Juniors wins it!",
+  "River Plate takes the lead!",
+  "River Plate is out!",
+  "River Plate wins it!",
+  "Flamengo takes the lead!",
+  "Flamengo is out!",
+  "Flamengo wins it!",
+  "Palmeiras takes the lead!",
+  "Palmeiras is out!",
+  "Palmeiras wins it!",
+  "Peñarol takes the lead!",
+  "Peñarol is out!",
+  "Peñarol wins it!",
+  "Racing Club takes the lead!",
+  "Racing Club is out!",
+  "Racing Club wins it!",
+  "Independiente takes the lead!",
+  "Independiente is out!",
+  "Independiente wins it!",
+  "Corinthians takes the lead!",
+  "Corinthians is out!",
+  "Corinthians wins it!"
+ ]
+}

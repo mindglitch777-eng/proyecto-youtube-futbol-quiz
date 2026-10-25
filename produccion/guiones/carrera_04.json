@@ -1,0 +1,105 @@
+{
+ "id": "carrera_04",
+ "paleta": "violeta",
+ "evento": "THE GOAT DEBATE",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "WHO IS THE REAL GOAT?",
+ "voz_intro": "Who is the real goat? Pick one now!",
+ "eliminar": 0,
+ "circuito": [
+  "clavos",
+  "molinos",
+  "zigzag",
+  "rebotadores",
+  "aspas",
+  "acelerador",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Lionel Messi",
+   "voz": "Messi",
+   "anillo": [
+    120,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Cristiano Ronaldo",
+   "voz": "Ronaldo",
+   "anillo": [
+    240,
+    70,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Neymar",
+   "voz": "Neymar",
+   "anillo": [
+    255,
+    220,
+    0
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    80,
+    120,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Erling Haaland",
+   "voz": "Haaland",
+   "anillo": [
+    170,
+    120,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  }
+ ],
+ "cierre": "IS YOUR GOAT THE WINNER?",
+ "formato": "carrera",
+ "voz_lineas": [
+  "Who is the real goat? Pick one now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Messi takes the lead!",
+  "Messi is out!",
+  "Messi wins it!",
+  "Ronaldo takes the lead!",
+  "Ronaldo is out!",
+  "Ronaldo wins it!",
+  "Neymar takes the lead!",
+  "Neymar is out!",
+  "Neymar wins it!",
+  "Mbappé takes the lead!",
+  "Mbappé is out!",
+  "Mbappé wins it!",
+  "Haaland takes the lead!",
+  "Haaland is out!",
+  "Haaland wins it!",
+  "Lamine Yamal takes the lead!",
+  "Lamine Yamal is out!",
+  "Lamine Yamal wins it!"
+ ]
+}

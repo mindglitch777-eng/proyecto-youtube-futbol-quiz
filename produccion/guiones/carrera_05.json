@@ -1,0 +1,173 @@
+{
+ "id": "carrera_05",
+ "paleta": "noche",
+ "evento": "PREMIER LEAGUE BIG 6",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "ONLY ONE CLUB CAN WIN",
+ "voz_intro": "The Premier League big six. Pick your club now!",
+ "eliminar": 2,
+ "circuito": [
+  "zigzag",
+  "rebotadores",
+  "clavos",
+  "aspas",
+  "acelerador",
+  "molinos"
+ ],
+ "competidores": [
+  {
+   "tipo": "club",
+   "nombre": "Arsenal",
+   "corto": "ARSENAL",
+   "colores": [
+    [
+     220,
+     0,
+     20
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Arsenal",
+   "anillo": [
+    255,
+    70,
+    70
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Chelsea",
+   "corto": "CHELSEA",
+   "colores": [
+    [
+     3,
+     70,
+     148
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Chelsea",
+   "anillo": [
+    60,
+    120,
+    255
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Liverpool",
+   "corto": "LIVERPOOL",
+   "colores": [
+    [
+     200,
+     16,
+     46
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Liverpool",
+   "anillo": [
+    200,
+    16,
+    46
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Manchester City",
+   "corto": "CITY",
+   "colores": [
+    [
+     108,
+     171,
+     221
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Man City",
+   "anillo": [
+    108,
+    171,
+    221
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Manchester United",
+   "corto": "UNITED",
+   "colores": [
+    [
+     218,
+     41,
+     28
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "mitades",
+   "voz": "Man United",
+   "anillo": [
+    255,
+    210,
+    0
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Tottenham Hotspur",
+   "corto": "SPURS",
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ],
+    [
+     19,
+     34,
+     87
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Spurs",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  }
+ ],
+ "cierre": "DID YOUR CLUB WIN?",
+ "formato": "carrera",
+ "voz_lineas": [
+  "The Premier League big six. Pick your club now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Arsenal takes the lead!",
+  "Arsenal is out!",
+  "Arsenal wins it!",
+  "Chelsea takes the lead!",
+  "Chelsea is out!",
+  "Chelsea wins it!",
+  "Liverpool takes the lead!",
+  "Liverpool is out!",
+  "Liverpool wins it!",
+  "Man City takes the lead!",
+  "Man City is out!",
+  "Man City wins it!",
+  "Man United takes the lead!",
+  "Man United is out!",
+  "Man United wins it!",
+  "Spurs takes the lead!",
+  "Spurs is out!",
+  "Spurs wins it!"
+ ]
+}

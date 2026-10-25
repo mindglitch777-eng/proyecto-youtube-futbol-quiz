@@ -1,0 +1,104 @@
+{
+ "id": "carrera_06",
+ "paleta": "noche",
+ "evento": "EL CLÁSICO",
+ "titulo": "REAL MADRID vs BARÇA RACE",
+ "gancho": "MADRID OR BARÇA? PICK ONE",
+ "voz_intro": "Madrid or Barca? Pick your side now!",
+ "eliminar": 0,
+ "circuito": [
+  "clavos",
+  "aspas",
+  "zigzag",
+  "rebotadores",
+  "molinos",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Vinícius Júnior",
+   "voz": "Vinicius",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Jude Bellingham",
+   "voz": "Bellingham",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    200,
+    30,
+    90
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Pedri",
+   "voz": "Pedri",
+   "anillo": [
+    200,
+    30,
+    90
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Robert Lewandowski",
+   "voz": "Lewandowski",
+   "anillo": [
+    200,
+    30,
+    90
+   ]
+  }
+ ],
+ "cierre": "MADRID OR BARÇA FAN?",
+ "formato": "carrera",
+ "voz_lineas": [
+  "Madrid or Barca? Pick your side now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Mbappé takes the lead!",
+  "Mbappé is out!",
+  "Mbappé wins it!",
+  "Vinicius takes the lead!",
+  "Vinicius is out!",
+  "Vinicius wins it!",
+  "Bellingham takes the lead!",
+  "Bellingham is out!",
+  "Bellingham wins it!",
+  "Lamine Yamal takes the lead!",
+  "Lamine Yamal is out!",
+  "Lamine Yamal wins it!",
+  "Pedri takes the lead!",
+  "Pedri is out!",
+  "Pedri wins it!",
+  "Lewandowski takes the lead!",
+  "Lewandowski is out!",
+  "Lewandowski wins it!"
+ ]
+}

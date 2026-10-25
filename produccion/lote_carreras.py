@@ -1,0 +1,94 @@
+#!/usr/bin/env python3
+"""Arma los guiones de las 7 carreras temáticas (produccion/guiones/carrera_XX.json) con las frases del relator."""
+import json
+from pathlib import Path
+
+from render_carrera import lineas_voz
+
+ROOT = Path(__file__).resolve().parent
+ORO, CIAN, BLANCO_, GRANATE = [255, 205, 70], [90, 210, 255], [245, 245, 245], [200, 30, 90]
+
+
+def j(nombre, voz=None, anillo=None):
+    d = {"tipo": "jugador", "nombre": nombre, "voz": voz or nombre}
+    if anillo:
+        d["anillo"] = anillo
+    return d
+
+
+def p(nombre, pais, anillo):
+    return {"tipo": "pais", "nombre": nombre, "pais": pais, "voz": nombre, "corto": nombre.upper(), "anillo": anillo}
+
+
+def c(nombre, corto, colores, estilo, voz=None, anillo=None):
+    return {"tipo": "club", "nombre": nombre, "corto": corto, "colores": colores, "estilo": estilo,
+            "voz": voz or nombre, "anillo": anillo or colores[0]}
+
+
+LOTE = [
+    dict(id="carrera_01", paleta="oro", evento="BALLON D'OR 2026", titulo="WHO WINS THE RACE?",
+         gancho="WHO DESERVES THE BALLON D'OR?", voz_intro="Who deserves the Ballon d'Or? Pick your player now!",
+         eliminar=3, circuito=["clavos", "aspas", "rebotadores", "zigzag", "acelerador", "molinos", "embudo"],
+         competidores=[j("Lamine Yamal", anillo=ORO), j("Kylian Mbappé", "Mbappé", CIAN), j("Ousmane Dembélé", "Dembélé", [255, 120, 80]),
+                       j("Harry Kane", anillo=[240, 70, 70]), j("Mohamed Salah", "Salah", [80, 230, 140]),
+                       j("Vinícius Júnior", "Vinicius", [255, 255, 255]), j("Erling Haaland", "Haaland", [170, 120, 255]),
+                       j("Pedri", anillo=[255, 160, 220])],
+         cierre="WHO SHOULD WIN IT? COMMENT"),
+    dict(id="carrera_02", paleta="cancha", evento="WORLD CUP CHAMPIONS", titulo="WHO WINS THE RACE?",
+         gancho="8 WORLD CHAMPIONS. ONLY 1 WINS", voz_intro="Eight world champions. Only one wins. Pick your country now!",
+         eliminar=3, circuito=["zigzag", "clavos", "molinos", "acelerador", "rebotadores", "aspas"],
+         competidores=[p("Brazil", "BR", [255, 220, 0]), p("Germany", "DE", [240, 240, 240]), p("Italy", "IT", [60, 140, 255]),
+                       p("Argentina", "AR", [120, 200, 255]), p("France", "FR", [70, 90, 230]), p("Uruguay", "UY", [150, 210, 255]),
+                       p("England", "ENG", [240, 60, 60]), p("Spain", "ES", [255, 190, 0])],
+         cierre="DID YOUR COUNTRY WIN?"),
+    dict(id="carrera_03", paleta="fuego", evento="COPA LIBERTADORES GIANTS", titulo="WHO WINS THE RACE?",
+         gancho="THE BIGGEST CLUBS IN SOUTH AMERICA", voz_intro="The giants of South America. Pick your club now!",
+         eliminar=3, circuito=["clavos", "zigzag", "aspas", "rebotadores", "molinos", "acelerador", "embudo"],
+         competidores=[c("Boca Juniors", "BOCA", [[0, 45, 130], [255, 200, 0]], "franja", anillo=[255, 200, 0]),
+                       c("River Plate", "RIVER", [[245, 245, 245], [220, 30, 40]], "banda", anillo=[245, 245, 245]),
+                       c("Flamengo", "FLA", [[200, 20, 30], [20, 20, 20]], "rayas", anillo=[230, 40, 40]),
+                       c("Palmeiras", "PALMEIRAS", [[0, 110, 60], [245, 245, 245]], "franja", anillo=[40, 200, 110]),
+                       c("Peñarol", "PEÑAROL", [[255, 205, 0], [20, 20, 20]], "rayas", anillo=[255, 205, 0]),
+                       c("Racing Club", "RACING", [[120, 190, 240], [245, 245, 245]], "rayas", anillo=[120, 190, 240]),
+                       c("Independiente", "INDEPENDIENTE", [[200, 16, 30]], "liso", anillo=[255, 90, 90]),
+                       c("Corinthians", "CORINTHIANS", [[245, 245, 245], [20, 20, 20]], "mitades", anillo=[200, 200, 200])],
+         cierre="WHO IS YOUR CLUB? COMMENT"),
+    dict(id="carrera_04", paleta="violeta", evento="THE GOAT DEBATE", titulo="WHO WINS THE RACE?",
+         gancho="WHO IS THE REAL GOAT?", voz_intro="Who is the real goat? Pick one now!",
+         eliminar=0, circuito=["clavos", "molinos", "zigzag", "rebotadores", "aspas", "acelerador", "embudo"],
+         competidores=[j("Lionel Messi", "Messi", [120, 200, 255]), j("Cristiano Ronaldo", "Ronaldo", [240, 70, 70]),
+                       j("Neymar", anillo=[255, 220, 0]), j("Kylian Mbappé", "Mbappé", [80, 120, 255]),
+                       j("Erling Haaland", "Haaland", [170, 120, 255]), j("Lamine Yamal", anillo=ORO)],
+         cierre="IS YOUR GOAT THE WINNER?"),
+    dict(id="carrera_05", paleta="noche", evento="PREMIER LEAGUE BIG 6", titulo="WHO WINS THE RACE?",
+         gancho="ONLY ONE CLUB CAN WIN", voz_intro="The Premier League big six. Pick your club now!",
+         eliminar=2, circuito=["zigzag", "rebotadores", "clavos", "aspas", "acelerador", "molinos"],
+         competidores=[c("Arsenal", "ARSENAL", [[220, 0, 20], [245, 245, 245]], "franja", anillo=[255, 70, 70]),
+                       c("Chelsea", "CHELSEA", [[3, 70, 148]], "liso", anillo=[60, 120, 255]),
+                       c("Liverpool", "LIVERPOOL", [[200, 16, 46]], "liso", anillo=[200, 16, 46]),
+                       c("Manchester City", "CITY", [[108, 171, 221]], "liso", "Man City", [108, 171, 221]),
+                       c("Manchester United", "UNITED", [[218, 41, 28], [20, 20, 20]], "mitades", "Man United", [255, 210, 0]),
+                       c("Tottenham Hotspur", "SPURS", [[245, 245, 245], [19, 34, 87]], "franja", "Spurs", [245, 245, 245])],
+         cierre="DID YOUR CLUB WIN?"),
+    dict(id="carrera_06", paleta="noche", evento="EL CLÁSICO", titulo="REAL MADRID vs BARÇA RACE",
+         gancho="MADRID OR BARÇA? PICK ONE", voz_intro="Madrid or Barca? Pick your side now!",
+         eliminar=0, circuito=["clavos", "aspas", "zigzag", "rebotadores", "molinos", "embudo"],
+         competidores=[j("Kylian Mbappé", "Mbappé", BLANCO_), j("Vinícius Júnior", "Vinicius", BLANCO_),
+                       j("Jude Bellingham", "Bellingham", BLANCO_), j("Lamine Yamal", anillo=GRANATE),
+                       j("Pedri", anillo=GRANATE), j("Robert Lewandowski", "Lewandowski", GRANATE)],
+         cierre="MADRID OR BARÇA FAN?"),
+    dict(id="carrera_07", paleta="fuego", evento="LEGENDS vs NEW GEN", titulo="WHO WINS THE RACE?",
+         gancho="LEGENDS OR THE NEW GENERATION?", voz_intro="Legends or the new generation? Pick one now!",
+         eliminar=3, circuito=["rebotadores", "zigzag", "clavos", "molinos", "acelerador", "aspas", "embudo"],
+         competidores=[j("Ronaldinho", anillo=ORO), j("Zinedine Zidane", "Zidane", ORO), j("Thierry Henry", "Henry", ORO),
+                       j("David Beckham", "Beckham", ORO), j("Lamine Yamal", anillo=CIAN), j("Jude Bellingham", "Bellingham", CIAN),
+                       j("Jamal Musiala", "Musiala", CIAN), j("Bukayo Saka", "Saka", CIAN)],
+         cierre="LEGENDS OR NEW GEN?"),
+]
+
+if __name__ == "__main__":
+    for g in LOTE:
+        g["formato"] = "carrera"
+        g["voz_lineas"] = lineas_voz(g)
+        (ROOT / "guiones" / f"{g['id']}.json").write_text(json.dumps(g, ensure_ascii=False, indent=1))
+        print(g["id"], len(g["voz_lineas"]), "frases")

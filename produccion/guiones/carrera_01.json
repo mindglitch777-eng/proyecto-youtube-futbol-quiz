@@ -1,0 +1,131 @@
+{
+ "id": "carrera_01",
+ "paleta": "oro",
+ "evento": "BALLON D'OR 2026",
+ "titulo": "WHO WINS THE RACE?",
+ "gancho": "WHO DESERVES THE BALLON D'OR?",
+ "voz_intro": "Who deserves the Ballon d'Or? Pick your player now!",
+ "eliminar": 3,
+ "circuito": [
+  "clavos",
+  "aspas",
+  "rebotadores",
+  "zigzag",
+  "acelerador",
+  "molinos",
+  "embudo"
+ ],
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Ousmane Dembélé",
+   "voz": "Dembélé",
+   "anillo": [
+    255,
+    120,
+    80
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Harry Kane",
+   "voz": "Harry Kane",
+   "anillo": [
+    240,
+    70,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Mohamed Salah",
+   "voz": "Salah",
+   "anillo": [
+    80,
+    230,
+    140
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Vinícius Júnior",
+   "voz": "Vinicius",
+   "anillo": [
+    255,
+    255,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Erling Haaland",
+   "voz": "Haaland",
+   "anillo": [
+    170,
+    120,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Pedri",
+   "voz": "Pedri",
+   "anillo": [
+    255,
+    160,
+    220
+   ]
+  }
+ ],
+ "cierre": "WHO SHOULD WIN IT? COMMENT",
+ "formato": "carrera",
+ "voz_lineas": [
+  "Who deserves the Ballon d'Or? Pick your player now!",
+  "Photo finish!",
+  "Did your pick win?",
+  "Lamine Yamal takes the lead!",
+  "Lamine Yamal is out!",
+  "Lamine Yamal wins it!",
+  "Mbappé takes the lead!",
+  "Mbappé is out!",
+  "Mbappé wins it!",
+  "Dembélé takes the lead!",
+  "Dembélé is out!",
+  "Dembélé wins it!",
+  "Harry Kane takes the lead!",
+  "Harry Kane is out!",
+  "Harry Kane wins it!",
+  "Salah takes the lead!",
+  "Salah is out!",
+  "Salah wins it!",
+  "Vinicius takes the lead!",
+  "Vinicius is out!",
+  "Vinicius wins it!",
+  "Haaland takes the lead!",
+  "Haaland is out!",
+  "Haaland wins it!",
+  "Pedri takes the lead!",
+  "Pedri is out!",
+  "Pedri wins it!"
+ ]
+}

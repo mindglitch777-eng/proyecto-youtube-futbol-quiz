@@ -28,7 +28,8 @@ async def main():
     lineas = []
     for g in sorted((ROOT / "guiones").glob("*.json")):
         d = json.loads(g.read_text())
-        if "voz_cierre" not in d:          # guion sin locución (p. ej. find_the_real)
+        lineas += d.get("voz_lineas", [])    # carreras y formatos nuevos: lista explícita de frases
+        if "voz_cierre" not in d:          # guion sin locución por rondas (p. ej. find_the_real, carreras)
             continue
         lineas += [x for r in d["rondas"] for x in (r["voz_pregunta"], r["voz_revela"])] + [d["voz_cierre"]]
     for t in dict.fromkeys(lineas):
