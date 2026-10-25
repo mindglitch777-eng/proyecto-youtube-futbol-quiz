@@ -30,37 +30,51 @@ def get(**p):
     return {}
 
 
+def candidatos(consultas, tope=14):
+    """Varias fuentes de Commons: búsqueda de archivos por cada consulta + archivos de la categoría que mejor coincide."""
+    vistos = []
+    for q in consultas:
+        d = get(action="query", list="search", srsearch=f"{q} filetype:bitmap", srnamespace=6, srlimit=8)
+        vistos += [x["title"] for x in d.get("query", {}).get("search", [])]
+        c = get(action="query", list="search", srsearch=q, srnamespace=14, srlimit=2)
+        for cat in [x["title"] for x in c.get("query", {}).get("search", [])]:
+            m = get(action="query", list="categorymembers", cmtitle=cat, cmtype="file", cmlimit=10)
+            vistos += [x["title"] for x in m.get("query", {}).get("categorymembers", [])]
+    return [t for t in dict.fromkeys(vistos) if re.search(r"(?i)\.(jpe?g|png)$", t)][:tope]
+
+
 def main():
     pedido = json.loads((BASE / "pedido_objetos.json").read_text())
     for serie, items in pedido.items():
         out = BASE / "objetos" / serie; out.mkdir(parents=True, exist_ok=True)
         cred_p = out / "creditos.json"
         cred = json.loads(cred_p.read_text()) if cred_p.exists() else {}
-        for anio, consulta in items:
+        for anio, consultas in items:
+            if isinstance(consultas, str):
+                consultas = [consultas]
             if any(v["anio"] == anio for v in cred.values()):
                 continue
-            d = get(action="query", generator="search", gsrsearch=f"{consulta} filetype:bitmap", gsrnamespace=6, gsrlimit=12,
-                    prop="imageinfo", iiprop="url|extmetadata|size", iiurlwidth=1000)
-            pags = sorted(d.get("query", {}).get("pages", {}).values(), key=lambda p: p.get("index", 99))
+            titulos = candidatos(consultas)
+            d = get(action="query", titles="|".join(titulos), prop="imageinfo", iiprop="url|extmetadata|size", iiurlwidth=1000) if titulos else {}
             k = 0
-            for pg in pags:
+            for pg in d.get("query", {}).get("pages", {}).values():
                 ii = (pg.get("imageinfo") or [{}])[0]
                 md = ii.get("extmetadata", {})
                 limpio = lambda x: re.sub(r"<[^>]+>", "", md.get(x, {}).get("value", "")).strip()
                 if not LIBRES.search(limpio("LicenseShortName")) or (ii.get("width") or 0) < 400 or not ii.get("thumburl"):
                     continue
                 try:
-                    img = S.get(ii["thumburl"], timeout=60).content
+                    r = S.get(ii["thumburl"], timeout=60)
                 except requests.RequestException:
                     continue
+                if not r.headers.get("content-type", "").startswith("image/"):
+                    continue          # a veces Commons devuelve una página HTML en vez de la imagen
                 clave = f"{anio}_{k}"
-                (out / f"{clave}.jpg").write_bytes(img)
-                cred[clave] = {"anio": anio, "consulta": consulta, "archivo": pg["title"], "pagina": ii.get("descriptionurl"),
+                (out / f"{clave}.jpg").write_bytes(r.content)
+                cred[clave] = {"anio": anio, "consulta": consultas[0], "archivo": pg["title"], "pagina": ii.get("descriptionurl"),
                                "autor": limpio("Artist"), "licencia": limpio("LicenseShortName"), "licencia_url": limpio("LicenseUrl")}
                 k += 1
-                if k >= 4:
-                    break
-            print(serie, anio, consulta, k, flush=True)
+            print(serie, anio, len(titulos), "candidatos,", k, "bajadas", flush=True)
             cred_p.write_text(json.dumps(cred, ensure_ascii=False, indent=1))
 
 
