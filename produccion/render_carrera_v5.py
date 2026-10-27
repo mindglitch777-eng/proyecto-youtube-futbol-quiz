@@ -224,9 +224,10 @@ def main(guion_path, sufijo="_v5"):
                 x, y, _ = sim["estados"][ke][i]; u = (ts - tf) / 1.0
                 L.circulo(x, y - cy, R * (1 + u), None, borde=ROJO, ancho=10, borde_a=1 - u)
                 textos.append(((x, y - cy), "OUT", 60, ROJO, 8, "mm"))
+        textos = [t_ for t_ in textos if t_[0][1] > 350]          # nada del mundo asoma debajo del HUD
         n_mundo = len(textos)
         # HUD superior
-        L.rect_redondo(16, 14, W - 32, 320, 30, (5, 7, 16), 0.86)
+        L.rect_redondo(16, 14, W - 32, 320, 30, (5, 7, 16), 0.96)
         textos.append(((W / 2, 64), g["evento"], M.ajustar(g["evento"], 52, W - 120), pal["acento"], 6, "mm"))
         textos.append(((W / 2, 138), g["titulo"], M.ajustar(g["titulo"], 84, W - 90), (255, 255, 255), 9, "mm"))
 

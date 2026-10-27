@@ -150,6 +150,8 @@ def main(guion_path):
                 textos.append(((W / 2, 1040), s, M.ajustar(s, 80, W - 220), comp[quien]["color"] if quien is not None else (255, 255, 255), 8, "mm", a))
         if tv >= t_fin:
             u = M.suave((tv - t_fin) / 0.35)
+            if u > 0.5:                                          # pantalla final limpia: solo título + resultado
+                textos = textos[:2]
             c.new_path(); c.rectangle(0, 0, W, H); L.rgba((4, 6, 14), 0.94 * u); c.fill()
             if gran is None:
                 gran = M.pil_a_cairo(comp[ganador]["img"].resize((360, 360), M.Image.LANCZOS))
