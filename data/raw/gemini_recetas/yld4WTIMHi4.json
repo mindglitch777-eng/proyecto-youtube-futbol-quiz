@@ -1,0 +1,88 @@
+{
+ "formato": "caso",
+ "canal": "Fire Rankings",
+ "video": {
+  "id": "yld4WTIMHi4",
+  "titulo": "🍀subscribe for good luck🍀 Messi VS Ronaldo VS Neymar VS Haaland: Quem é o melhor? #futebol #skills",
+  "vistas": 14686008,
+  "fecha": "2026-06-24"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "Simulación física de carreras de canicas (con avatares de futbolistas) sobre toboganes/tuberías ramificadas que bajan automáticamente según la gravedad y colisiones, sin intervención del usuario.",
+  "layout": [
+   {
+    "zona": "0-15% superior",
+    "que_hay": "Ventana de video recortada (green screen o highlights de futbolistas) y marca de agua del jugador líder."
+   },
+   {
+    "zona": "15-85% central",
+    "que_hay": "Laberinto de tuberías/toboganes verdes en forma de círculos entrelazados sobre fondo azul cielo con nubes."
+   },
+   {
+    "zona": "85-100% inferior",
+    "que_hay": "Línea de llegada o continuidad de tuberías fuera de pantalla."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Avatares de futbolistas (Messi, Ronaldo, Mbappe, Neymar, Haaland, Yamal)",
+    "forma_color_tamano": "Esferas pequeñas con rostros circulares recortados, borde blanco y nombre de texto encima",
+    "movimiento": "Caída libre guiada por gravedad, deslizamiento por curvas, aceleración fluida y rebotes elásticos entre ellos"
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-3.0",
+    "que_pasa": "Los avatares caen por el primer tobogán y se dividen en diferentes rutas del laberinto."
+   },
+   {
+    "t": "3.0-7.0",
+    "que_pasa": "Cambio de video superior con highlights, los avatares se agrupan y vuelven a separarse."
+   },
+   {
+    "t": "7.0-15.0",
+    "que_pasa": "Sucesión de caídas verticales y curvas cerradas con reordenamiento constante de posiciones."
+   },
+   {
+    "t": "15.0-23.0",
+    "que_pasa": "Ciclo continuo de descensos con música urbana de fondo y clips de video dinámicos en la parte superior."
+   }
+  ],
+  "camara": "Fija con scroll vertical automático lento siguiendo el flujo principal de las esferas.",
+  "tipografia_y_textos": "Sans-serif bold blanca con borde negro pronunciado, tamaño mediano fijo sobre cada avatar.",
+  "paleta": [
+   "#2E7D32",
+   "#4CAF50",
+   "#29B6F6",
+   "#E0F7FA",
+   "#FFFFFF",
+   "#000000"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Deslizamiento",
+    "sonido": "Whoosh fluido de agua o viento"
+   },
+   {
+    "evento": "Colisión",
+    "sonido": "Golpes secos de canicas"
+   }
+  ],
+  "musica": "Remix urbano latino (reggaetón/trap) con ritmo pegadizo, aprox 100 BPM, alta tendencia en TikTok.",
+  "fps_y_suavidad": "60 fps fluidos, sin tirones, con ligero motion blur en las caídas rápidas.",
+  "detalles_que_dan_calidad": [
+   "Estelas blancas traslúcidas detrás de los avatares",
+   "Sombras sutiles en los tubos",
+   "Nubes flotantes decorativas en el fondo",
+   "Videos dinámicos en miniatura con croma/recorte superior"
+  ],
+  "gancho_y_cierre": "Primer segundo exacto muestra a Messi liderando con audio punch; cierre en loop continuo sin pantalla final definida.",
+  "que_mejorarias_para_superarlo": [
+   "Añadir efectos de partículas de fuego o electricidad al personaje en primer lugar",
+   "Mejorar la resolución y sincronización de los clips de video superiores",
+   "Incluir reacciones de audio de los comentaristas de fútbol reales"
+  ]
+ }
+}

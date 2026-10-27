@@ -1,0 +1,96 @@
+{
+ "formato": "caso",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "BqABbyPuPVQ",
+  "titulo": "Neymar, Haaland or Ronaldo? The Ultimate Showdown! 🏆🔥",
+  "vistas": 20143678,
+  "fecha": "2026-08-24"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "El jugador controla un personaje sobre una pista vertical de dos carriles con scroll infinito hacia abajo; debe esquivar obstáculos estáticos y recolectar ítems (copas y balones) colisionando con ellos para sumar puntos o avanzar de fase.",
+  "layout": [
+   {
+    "zona": "arriba (0-15%)",
+    "que_hay": "Tres avatares de futbolistas (Neymar, Haaland, Cristiano) con interrogantes o logros completados."
+   },
+   {
+    "zona": "centro (15-85%)",
+    "que_hay": "Vista en perspectiva de pista de atletismo dividida en dos carriles, con el personaje animado del creador de fondo."
+   },
+   {
+    "zona": "abajo (85-100%)",
+    "que_hay": "Interfaz de reproductor de video de TikTok (likes, comentarios, botón compartir)."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "pista_2d",
+    "forma_color_tamano": "rectángulo con textura de camino marrón y líneas blancas, ancho ajustable a perspectiva",
+    "movimiento": "desplazamiento vertical constante hacia abajo (scroll vertical)"
+   },
+   {
+    "objeto": "personaje_jugador",
+    "forma_color_tamano": "avatar caricaturizado (tipo sprite 2D)",
+    "movimiento": "cambio lateral instantáneo entre carril izquierdo y derecho mediante colisiones"
+   },
+   {
+    "objeto": "obstaculos_e_items",
+    "forma_color_tamano": "copas doradas del mundo y balones de fútbol texturizados",
+    "movimiento": "bajan junto con la pista y desaparecen al colisionar"
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.1",
+    "que_pasa": "Inicio del video, Neymar en pantalla con pista activa y primer obstáculo."
+   },
+   {
+    "t": "0.1-12.0",
+    "que_pasa": "Fase Neymar: recolección de copas y balones, cambio de carriles."
+   },
+   {
+    "t": "12.0-25.0",
+    "que_pasa": "Transición a fase Haaland con cambio de fondo y personaje."
+   },
+   {
+    "t": "25.0-42.0",
+    "que_pasa": "Fase Cristiano Ronaldo, finalización exitosa del juego con mensaje 'YOU WIN!'"
+   }
+  ],
+  "camara": "fija con efecto de profundidad en perspectiva 2.5D, fondo de video real estático detrás de la pista",
+  "tipografia_y_textos": "fuente sans-serif gruesa estilo meme/gaming, color blanco con borde negro, animación de aparición con escala",
+  "paleta": [
+   "#ffffff",
+   "#000000",
+   "#d4af37",
+   "#228b22",
+   "#cd5c5c"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "recoleccion_item",
+    "sonido": "efecto de sonido 'pling' o moneda de videojuego"
+   },
+   {
+    "evento": "cambio_fase",
+    "sonido": "explosión o swoosh digital"
+   }
+  ],
+  "musica": "remix techno/phonk acelerado, aprox 130 bpm, música en tendencia de TikTok",
+  "fps_y_suavidad": "60 fps, fluido, sin motion blur artificial evidente",
+  "detalles_que_dan_calidad": [
+   "efectos de explosión de humo blanco al cambiar de fase",
+   "partículas doradas flotantes",
+   "sombra proyectada bajo los personajes y objetos"
+  ],
+  "gancho_y_cierre": "primer segundo exacto: Neymar mostrando la cara y pista activa; último segundo exacto: pantalla 'YOU WIN!' sobre Cristiano Ronaldo",
+  "que_mejorarias_para_superarlo": [
+   "añadir transiciones más suaves entre fases sin corte abrupto de video",
+   "incorporar feedback háptico visual (parpadeo de color al recolectar)",
+   "mejorar la integración visual entre el video de fondo y los elementos 2D"
+  ]
+ }
+}

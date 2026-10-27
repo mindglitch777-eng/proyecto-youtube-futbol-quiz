@@ -1,0 +1,86 @@
+{
+ "formato": "caso",
+ "canal": "Sphere Stars",
+ "video": {
+  "id": "UKbWpCsFo_M",
+  "titulo": "Who Will Win FIFA World Cup 2026? 🏆 Predictions Maze! #shorts #football",
+  "vistas": 5895112,
+  "fecha": "2026-06-22"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "Bolas representando países caen por un laberinto tipo plinko/túneles verticales ramificados. Al pasar por checkpoints, se eliminan o avanzan según el azar o la lógica preestablecida del video vertical.",
+  "layout": [
+   {
+    "zona": "arriba (0-20%)",
+    "que_hay": "Video de jugador de fútbol destacado con bandera y nombre flotante"
+   },
+   {
+    "zona": "centro (20-85%)",
+    "que_hay": "Laberinto de líneas moradas y rosadas con múltiples caminos ramificados, nombres de países y esferas con banderas"
+   },
+   {
+    "zona": "abajo (85-100%)",
+    "que_hay": "Copa del mundo de la FIFA y texto inferior"
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Esferas con banderas (España, Argentina, Brasil, Portugal, Francia)",
+    "forma_color_tamano": "Círculos con textura de bandera, tamaño medio",
+    "movimiento": "Caída libre acelerada por gravedad 2D, colisiones elásticas contra paredes y rebotes"
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-2.0",
+    "que_pasa": "Juan García (España) en pantalla superior; caída inicial de bolas con nombres de países"
+   },
+   {
+    "t": "2.0-5.0",
+    "que_pasa": "Aparece Dibu Martínez / Molina (Argentina), las bolas descienden por el laberinto ramificado"
+   },
+   {
+    "t": "5.0-10.0",
+    "que_pasa": "Secuencia de jugadores de España y Francia (Carvajal, Le Normand, Maignan, Lucas Digne)"
+   },
+   {
+    "t": "10.0-15.0",
+    "que_pasa": "Aparecen Laporte, Balde, Vini Junior (Brasil) mientras las esferas siguen cayendo"
+   },
+   {
+    "t": "15.0-22.0",
+    "que_pasa": "Raphinha, Romero, Alisson; las esferas se filtran hasta las últimas zonas cerca de la Copa FIFA"
+   }
+  ],
+  "camara": "fija",
+  "tipografia_y_textos": "Sans-serif gruesa, blanca con borde negro (tipo meme/tiktok), tamaño grande centrado en las zonas de texto",
+  "paleta": [
+   "#9b51e0",
+   "#e0f7fa",
+   "#ffffff",
+   "#000000",
+   "#ffcc00"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Cada rebote o cambio de pantalla",
+    "sonido": "Efectos de sonido tipo meme viral coreano/latino, gritos y risas editadas con música trap fuerte de fondo"
+   }
+  ],
+  "musica": "Trap latino acelerado con voces de fondo y percusión pesada, ~130 bpm, altamente viral",
+  "fps_y_suavidad": "60 fps aparentes, movimiento fluido de física 2D con ligeros cortes de edición rápida por cada jugador",
+  "detalles_que_dan_calidad": [
+   "Sombras en los videos superiores",
+   "Iluminación brillante estilo neón en las líneas del laberinto",
+   "Partículas tipo destello al avanzar las esferas"
+  ],
+  "gancho_y_cierre": "Primer segundo exacto muestra al jugador Juan García y la caída repentina de bolas. Último segundo muestra la Copa FIFA y la resolución de las esferas.",
+  "que_mejorarias_para_superarlo": [
+   "Mejorar la sincronización de los rebotes con el ritmo de la música",
+   "Evitar la superposición excesiva de nombres de países en algunos tramos",
+   "Agregar físicas de fluidos o partículas más dinámicas al chocar"
+  ]
+ }
+}

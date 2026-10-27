@@ -1,0 +1,120 @@
+{
+ "formato": "caso",
+ "canal": "Footrix",
+ "video": {
+  "id": "3KdS3En91bI",
+  "titulo": "Who wins the Nations League 2026/27?",
+  "vistas": 2578941,
+  "fecha": "2026-10-02"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "Simulación estilo 'marbles race' en círculo verde con gravedad 2D y rebotes elásticos. El primer país que sale por la abertura lateral de la pista es el que avanza de ronda o gana el torneo.",
+  "layout": [
+   {
+    "zona": "0-15%",
+    "que_hay": "Título principal 'WHO WINS THE NATIONS LEAGUE 2026/27' y la copa en miniatura."
+   },
+   {
+    "zona": "15-40%",
+    "que_hay": "Árbol de torneo tipo bracket con los 8 equipos (Francia, Inglaterra, España, Alemania, Bélgica, Portugal, Noruega, Países Bajos)."
+   },
+   {
+    "zona": "40-75%",
+    "que_hay": "Área de juego principal: círculo grande con borde luminoso verde brillante que actúa como arena de física, conteniendo los enfrentamientos actuales y la ranura de salida."
+   },
+   {
+    "zona": "75-100%",
+    "que_hay": "Texto dinámico con la fase actual ('QUARTER-FINAL', 'SEMI-FINAL', 'FINAL') y los nombres de los países enfrentados, además de instrucciones inferiores ('FIRST OUT GOES THROUGH')."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Esferas de países",
+    "forma_color_tamano": "Círculos texturizados con las banderas oficiales de cada nación, tamaño mediano.",
+    "movimiento": "Físicas 2D con gravedad, velocidad angular variable al colisionar y rebotes en las paredes circulares."
+   },
+   {
+    "objeto": "Círculo contenedor",
+    "forma_color_tamano": "Anillo circular grande con borde luminoso verde neón y una abertura en la parte inferior derecha.",
+    "movimiento": "Estático con partículas que emanan de la ranura al salir una esfera."
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.09",
+    "que_pasa": "Intro del primer partido de cuartos: Inglaterra vs Francia dentro del círculo verde."
+   },
+   {
+    "t": "0.09-0.10",
+    "que_pasa": "Inglaterra sale disparada por la ranura, se muestra efecto de partículas y estallido, Francia avanza."
+   },
+   {
+    "t": "0.10-0.16",
+    "que_pasa": "Cuartos 2: España vs Alemania. España sale, avanza."
+   },
+   {
+    "t": "0.16-0.22",
+    "que_pasa": "Cuartos 3: Bélgica vs Portugal. Bélgica sale, Portugal avanza."
+   },
+   {
+    "t": "0.22-0.34",
+    "que_pasa": "Cuartos 4: Noruega vs Países Bajos. Países Bajos sale, Noruega avanza."
+   },
+   {
+    "t": "0.34-0.46",
+    "que_pasa": "Semifinal 1: Francia vs España. Francia sale, España avanza."
+   },
+   {
+    "t": "0.46-0.51",
+    "que_pasa": "Semifinal 2: Portugal vs Noruega. Noruega sale, Portugal avanza."
+   },
+   {
+    "t": "0.51-0.57",
+    "que_pasa": "Final: España vs Portugal. Portugal sale, España se corona campeón."
+   },
+   {
+    "t": "0.57-1.00",
+    "que_pasa": "Pantalla final de campeón con animación de confeti cayendo y copa grande flotando con la bandera de España."
+   }
+  ],
+  "camara": "Fija en todo momento, con transiciones por cortes rápidos entre cada fase del torneo sin movimiento de paneo.",
+  "tipografia_y_textos": "Tipografía sans-serif geométrica en negrita (estilo Montserrat o Roboto Condensed). Títulos en blanco con sombra paralela, subtítulos en amarillo o gris claro según la fase, animación de aparición mediante fade-in y escala.",
+  "paleta": [
+   "#0b0f19",
+   "#00ff88",
+   "#ffffff",
+   "#ffcc00",
+   "#e63946"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Rebotes de esferas",
+    "sonido": "Efecto de impacto metálico/seco tipo plop de canica."
+   },
+   {
+    "evento": "Salida de esfera por la ranura",
+    "sonido": "Sonido electrónico de éxito/pop con estallido de partículas."
+   },
+   {
+    "evento": "Pantalla de campeón",
+    "sonido": "Fanfarria festiva de victoria con aplausos y estallido de confeti."
+   }
+  ],
+  "musica": "Ritmo electrónico pop instrumental optimizado para cortos con fuerte marcación de tempo cada 4 segundos, aprox 128 BPM, tendencia en TikTok/Reels.",
+  "fps_y_suavidad": "60 fps fluidos, interpolación de físicas suave, sin tirones, con motion blur sutil en las esferas a alta velocidad.",
+  "detalles_que_dan_calidad": [
+   "Anillo de neón con brillo difuminado (glow effect)",
+   "Partículas tipo chispas cuando una esfera cruza la meta/salida",
+   "Confeti animado en la pantalla final de campeón",
+   "Iluminación puntual sobre los escudos en el árbol superior del torneo"
+  ],
+  "gancho_y_cierre": "Gancho al segundo 0.00 con la presentación inmediata de la pregunta y el choque de las primeras bolas; cierre exacto al segundo 1.00 con la celebración del campeón.",
+  "que_mejorarias_para_superarlo": [
+   "Añadir efectos de sonido más inmersivos para los choques entre las propias bolas.",
+   "Incorporar comentarios de voz sintetizada narrando los partidos.",
+   "Mejorar la variedad de partículas en las eliminaciones."
+  ]
+ }
+}

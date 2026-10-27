@@ -5,6 +5,7 @@ Corre en GitHub Actions (la nube de Claude no llega a Wikipedia). Lee assets/ped
 {"clave": "Título del artículo"} y guarda assets/escudos/<clave>.png + fuentes.json.
 """
 import json
+import re
 import time
 from pathlib import Path
 
@@ -28,6 +29,25 @@ def get(url, **p):
     return None
 
 
+def desde_infobox(titulo):
+    r = get("https://en.wikipedia.org/w/api.php", action="parse", page=titulo, prop="wikitext",
+            section=0, redirects=1, format="json", formatversion=2)
+    if not r or "parse" not in r.json():
+        return None, None
+    texto = r.json()["parse"]["wikitext"]
+    m = re.search(r"\|\s*(?:image|logo|crest|clubcrest)\s*=\s*(?:\[\[)?(?:File:|Image:)?([^|\]\n<]+?\.(?:svg|png|jpg|gif))",
+                  texto, re.I)
+    if not m:
+        return None, None
+    archivo = m.group(1).strip()
+    r = get("https://en.wikipedia.org/w/api.php", action="query", titles="File:" + archivo, prop="imageinfo",
+            iiprop="url", iiurlwidth=600, format="json")
+    if not r:
+        return None, None
+    info = next(iter(r.json()["query"]["pages"].values())).get("imageinfo", [{}])[0]
+    return info.get("thumburl") or info.get("url"), archivo
+
+
 def main():
     pedido = json.loads((BASE / "pedido_escudos.json").read_text())
     fuentes_p = OUT / "fuentes.json"
@@ -41,14 +61,18 @@ def main():
             print(clave, "sin respuesta"); continue
         pg = next(iter(r.json()["query"]["pages"].values()))
         th = pg.get("thumbnail", {}).get("source")
+        nombre = pg.get("pageimage")
+        if not th:
+            # Los logos no libres (fair use) no salen en pageimages: leer el campo image= del infobox
+            th, nombre = desde_infobox(pg.get("title", titulo))
         if not th:
             print(clave, "sin imagen"); continue
         img = get(th)
         if not img or not img.headers.get("content-type", "").startswith("image/"):
             print(clave, "descarga fallida"); continue
         (OUT / f"{clave}.png").write_bytes(img.content)
-        fuentes[clave] = {"articulo": titulo, "archivo": pg.get("pageimage"), "url": th}
-        print(clave, "ok", pg.get("pageimage"))
+        fuentes[clave] = {"articulo": titulo, "archivo": nombre, "url": th}
+        print(clave, "ok", nombre)
         fuentes_p.write_text(json.dumps(fuentes, ensure_ascii=False, indent=1))
 
 

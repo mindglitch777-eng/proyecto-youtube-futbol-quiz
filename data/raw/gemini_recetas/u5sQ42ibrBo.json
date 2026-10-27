@@ -1,0 +1,105 @@
+{
+ "formato": "caso",
+ "canal": "bouncyball",
+ "video": {
+  "id": "u5sQ42ibrBo",
+  "titulo": "Which song is the bouncing ball playing? #asmr #adhd #satisfying #ball #bounce #bouncingball #code",
+  "vistas": 39476947,
+  "fecha": "2025-05-29"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "Una bola rebota dentro de un círculo cerrado con un marcador numérico decreciente en su interior. Al llegar a cero, el contenedor colapsa y la bola cae verticalmente acelerada por gravedad mientras los números siguen disminuyendo.",
+  "layout": [
+   {
+    "zona": "0-15% superior",
+    "que_pasa": "Texto superior estático con la pregunta del reto."
+   },
+   {
+    "zona": "15-85% centro",
+    "que_pasa": "Círculo negro central con borde colorido y la bola rebotando dentro."
+   },
+   {
+    "zona": "85-100% inferior",
+    "que_pasa": "Puntal o línea vertical que sostiene el círculo en la primera mitad del video, luego se convierte en el canal de caída."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Bajo fondo",
+    "forma_color_tamano": "Patrón concéntrico multicolor estilo arcoíris (ondas psicodélicas)",
+    "movimiento": "Estático en fondo"
+   },
+   {
+    "objeto": "Contenedor circular",
+    "forma_color_tamano": "Círculo negro con borde delgado, conectado a un bastón vertical abajo",
+    "movimiento": "Estático hasta t=0:09, luego se deforma y desaparece"
+   },
+   {
+    "objeto": "Bola rebotadora",
+    "forma_color_tamano": "Pequeño círculo con borde blanco y centro oscuro",
+    "movimiento": "Física 2D de rebotes elásticos constantes dentro del círculo, luego caída libre vertical con aceleración"
+   },
+   {
+    "objeto": "Contador numérico",
+    "forma_color_tamano": "Texto numérico centrado sobre la bola, color blanco",
+    "movimiento": "Desciende rápidamente desde 500000 hasta 0 mientras la bola rebota"
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.5",
+    "que_pasa": "La bola inicia el rebote con 500000 en pantalla dentro del círculo."
+   },
+   {
+    "t": "0.5-8.5",
+    "que_pasa": "La bola rebota frenéticamente dentro del círculo; el contador disminuye progresivamente."
+   },
+   {
+    "t": "8.5-9.5",
+    "que_pasa": "El contador llega casi a 0, el contenedor colapsa y cambia la perspectiva."
+   },
+   {
+    "t": "9.5-18.0",
+    "que_pasa": "La bola cae en línea recta vertical hacia abajo con distorsión de scanlines/glitch mientras el número desciende a 0 y suena una nota continua."
+   }
+  ],
+  "camara": "Fija con zoom alejado general; transición brusca de plano medio a plano vertical con efecto de glitch a los 9 segundos.",
+  "tipografia_y_textos": "Sans-serif bold, mayúsculas, color blanco con borde negro sutil. Texto superior: 'WILL THE BOUNCING BALL ESCAPE?'",
+  "paleta": [
+   "#000000",
+   "#FFFFFF",
+   "#FF0000",
+   "#00FF00",
+   "#0000FF",
+   "#FFFF00",
+   "#FF00FF",
+   "#00FFFF"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Rebotes de la bola",
+    "sonido": "Efectos de xilófono / notas musicales ascendentes melódicas con cada rebote"
+   },
+   {
+    "evento": "Caída final",
+    "sonido": "Tono continuo tipo sintetizador en rampa descendente de frecuencia (pitch bend)"
+   }
+  ],
+  "musica": "Sin pista musical rítmica de fondo, únicamente efectos de sonido procedurales sincronizados con cada rebote.",
+  "fps_y_suavidad": "60 FPS fluidos con estelas de movimiento (motion blur) notables en la bola y transiciones de glitch digital en la segunda mitad.",
+  "detalles_que_dan_calidad": [
+   "Estelas luminosas (trails) tras la trayectoria de la bola",
+   "Cambio de color en la estela de la bola según el espectro del fondo",
+   "Efecto visual de distorsión de televisión analógica/glitch en la fase de caída libre",
+   "Alineación precisa del sonido melódico con la frecuencia de colisión"
+  ],
+  "gancho_y_cierre": "Primer segundo exacto muestra la bola en pleno movimiento inicial con la pregunta gancho. Cierre abrupto justo cuando la bola termina de caer a los 18 segundos.",
+  "que_mejorarias_que_mejorarias_para_superarlo": [
+   "Añadir vibración de cámara (screen shake) al impactar los bordes en el conteo final",
+   "Mejorar la resolución del efecto glitch para darle un aspecto más moderno",
+   "Incluir música de fondo inmersiva que acompañe el clímax de la caída"
+  ]
+ }
+}

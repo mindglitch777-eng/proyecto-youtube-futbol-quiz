@@ -1,0 +1,116 @@
+{
+ "formato": "caso",
+ "canal": "Footrix",
+ "video": {
+  "id": "-cvxjq81dcc",
+  "titulo": "WHO WINS THE BALLON D’OR 2026?! | Yamal, Mbappé, Messi, Rodri, Kane, Haaland, Olise or Dembélé",
+  "vistas": 3885794,
+  "fecha": "2026-10-25"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "En cada ronda (Cuartos, Semifinales, Final), dos jugadores (representados por avatares circulares con sus caras) giran dentro de una arena circular delimitada por un borde brillante. Gana y avanza el primero que sale (o cruza el límite exterior).",
+  "layout": [
+   {
+    "zona": "arriba (0% - 25%)",
+    "que_hay": "Título 'BALLON D'OR WINNER 2026', icono de trofeo dorado central, y árbol de torneo completo a los lados con fotos de los 8 candidatos."
+   },
+   {
+    "zona": "centro (25% - 85%)",
+    "que_hay": "Indicador de fase actual (ej. 'QUARTER-FINAL'), nombres enfrentados ('MBAPPÉ vs RODRI') y gran arena circular central con partículas y borde de neón dorado."
+   },
+   {
+    "zona": "abajo (85% - 100%)",
+    "que_hay": "Texto de instrucción 'FIRST OUT GOES THROUGH' que luego cambia a anuncios de ganadores ('MBAPPÉ ADVANCES')."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Arena circular",
+    "forma_color_tamano": "Círculo grande con trazo dorado brillante sobre fondo negro/degradado marrón.",
+    "movimiento": "Estático con efectos de pulso y rotación sutil en anillos."
+   },
+   {
+    "objeto": "Avatares de jugadores",
+    "forma_color_tamano": "Círculos con rostros fotográficos de futbolistas (Mbappé, Rodri, Yamal, Dembélé, Olise, Messi, Kane, Haaland).",
+    "movimiento": "Simulación de física 2D: giran en círculos dentro de la arena, chocan entre sí y salen disparados hacia el exterior al perder."
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.5",
+    "que_pasa": "Intro del primer enfrentamiento: Mbappé vs Rodri en la arena central."
+   },
+   {
+    "t": "0.5-4.0",
+    "que_pasa": "Simulación de física: Rodri sale despedido primero, Mbappé gana."
+   },
+   {
+    "t": "4.0-12.0",
+    "que_pasa": "Cuarto de final 2: Yamal vs Dembélé (Yamal avanza)."
+   },
+   {
+    "t": "12.0-23.0",
+    "que_pasa": "Cuarto de final 3: Olise vs Messi (Messi avanza)."
+   },
+   {
+    "t": "23.0-33.0",
+    "que_pasa": "Cuarto de final 4: Kane vs Haaland (Kane avanza)."
+   },
+   {
+    "t": "33.0-43.0",
+    "que_pasa": "Semifinal 1: Mbappé vs Yamal (Mbappé avanza)."
+   },
+   {
+    "t": "43.0-48.0",
+    "que_pasa": "Semifinal 2: Messi vs Kane (Kane avanza)."
+   },
+   {
+    "t": "48.0-56.0",
+    "que_pasa": "Final: Mbappé vs Kane (Kane gana)."
+   },
+   {
+    "t": "56.0-58.0",
+    "que_pasa": "Pantalla final con confeti, trofeo del Balón de Oro y rostro del ganador (Kane)."
+   }
+  ],
+  "camara": "Fija en todo el vertical con tomas cerradas en la arena central y actualizaciones dinámicas del árbol superior.",
+  "tipografia_y_textos": "Fuente sans-serif geométrica en bold (tipo Montserrat o Futura), color blanco y dorado, con sombras sutiles y efectos de aparición suave.",
+  "paleta": [
+   "#000000",
+   "#1a150e",
+   "#d4af37",
+   "#f3e5ab",
+   "#ffffff"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Rebote de avatares",
+    "sonido": "Efecto de impacto metálico o sordo."
+   },
+   {
+    "evento": "Salida de jugador",
+    "sonido": "Silbido de velocidad / whoosh con explosión corta."
+   },
+   {
+    "evento": "Anuncio de ganador",
+    "sonido": "Fanfarria corta y épica."
+   }
+  ],
+  "musica": "Ritmo hip-hop instrumental de suspense, aprox 90 BPM, muy popular en formato TikTok/Shorts de retos.",
+  "fps_y_suavidad": "60 fps, alta fluidez en las físicas 2D, uso de partículas brillantes al eliminar jugadores.",
+  "detalles_que_dan_calidad": [
+   "Partículas brillantes tipo chispas doradas al chocar y salir",
+   "Borde de neón con resplandor en la arena",
+   "Confeti dorado en la pantalla final de victoria",
+   "Conexiones de líneas en el árbol de torneo que se iluminan al avanzar"
+  ],
+  "gancho_y_cierre": "Primer segundo exacto muestra el inicio inmediato del primer combate de cuartos de final con alta tensión visual. Cierre exacto en el segundo 58 mostrando al campeón con confeti cayendo y loop lógico hacia el inicio si se reinicia.",
+  "que_mejorarias_que_mejorarias_para_superarlo": [
+   "Añadir comentarios de voz sintética narrando las eliminaciones en tiempo real",
+   "Mejorar las físicas de colisión con efectos de deformación elástica en los avatares",
+   "Incluir estadísticas rápidas de los jugadores flotando durante los combates"
+  ]
+ }
+}

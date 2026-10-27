@@ -1,0 +1,104 @@
+{
+ "formato": "caso",
+ "canal": "Rival Stats",
+ "video": {
+  "id": "aX1nwzDNDe0",
+  "titulo": "Messi vs Ronaldo: Ultimate Trophy Battle",
+  "vistas": 4219869,
+  "fecha": "2026-07-24"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "Carrera de trofeos acumulados en el tiempo entre dos futbolistas (Messi vs Ronaldo) que avanza de año en año cronológicamente, sumando contadores numéricos y mostrando los trofeos ganados en cada temporada.",
+  "layout": [
+   {
+    "zona": "0-10%",
+    "que_hay": "Título superior 'ALL TROPHIES' en un recuadro blanco."
+   },
+   {
+    "zona": "10-90%",
+    "que_hay": "Línea de tiempo vertical central o desplazándose, con avatares de Messi (arriba, recuadro azul) y Cristiano Ronaldo (abajo, recuadro rojo), contadores numéricos y trofeos vectoriales apareciendo año por año."
+   },
+   {
+    "zona": "90-100%",
+    "que_hay": "Zona inferior fuera de pantalla o margen inferior de cierre."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Avatar Messi",
+    "forma_color_tamano": "Foto circular con camiseta de Argentina, fondo celeste",
+    "movimiento": "Posición fija verticalmente en la mitad superior, escala constante"
+   },
+   {
+    "objeto": "Avatar Ronaldo",
+    "forma_color_tamano": "Foto circular con camiseta de Portugal, fondo rojo",
+    "movimiento": "Posición fija verticalmente en la mitad inferior, escala constante"
+   },
+   {
+    "objeto": "Contador Messi",
+    "forma_color_tamano": "Caja azul con número blanco",
+    "movimiento": "Incrementa dinámicamente según se suman trofeos"
+   },
+   {
+    "objeto": "Contador Ronaldo",
+    "forma_color_tamano": "Caja roja con número blanco",
+    "movimiento": "Incrementa dinámicamente según se suman trofeos"
+   },
+   {
+    "objeto": "Líneas de tiempo anuales",
+    "forma_color_tamano": "Líneas verticales blancas con etiqueta de año superior (ej. 2002, 2003/04)",
+    "movimiento": "Se desplazan horizontalmente de derecha a izquierda"
+   },
+   {
+    "objeto": "Trofeos",
+    "forma_color_tamano": "Iconos vectoriales 2D metálicos (copas, Champions, Balón de Oro, ligas, etc.)",
+    "movimiento": "Caen o aparecen flotando sobre sus respectivas líneas de año"
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.5",
+    "que_pasa": "Título superior y año 2002 inicial con primer trofeo y contadores vacíos/iniciales"
+   },
+   {
+    "t": "0.5-2.14",
+    "que_pasa": "Desplazamiento horizontal continuo de la línea de tiempo revelando años desde 2002 hasta 2025/26 con acumulación de trofeos y contadores que suben mediante efectos de sonido rítmicos."
+   }
+  ],
+  "camara": "Sigue el eje horizontal desplazándose hacia la izquierda (efecto scrolling horizontal de línea de tiempo temporal).",
+  "tipografia_y_textos": "Sans-serif geométrica gruesa estilo bold (tipo Montserrat o Arial Black), números blancos sobre bloques sólidos azul y rojo, texto superior en caja blanca con bordes negros.",
+  "paleta": [
+   "#1b3b36",
+   "#ffffff",
+   "#00ffff",
+   "#ff0000",
+   "#c0c0c0",
+   "#ffd700"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Aparición de cada trofeo / incremento de contador",
+    "sonido": "Golpe metálico percusivo, tipo 'clank' o 'pop' rítmico sincronizado con la música"
+   },
+   {
+    "evento": "Musica de fondo",
+    "sonido": "Beat electrónico rítmico y acelerado tipo EDM/phonk minimalista"
+   }
+  ],
+  "musica": "Beat electrónico dinámico y constante a aprox 120-130 BPM, altamente enérgico y estilo tendencia de reels virales.",
+  "fps_y_suavidad": "60 fps fluidos, con motion blur sutil en el desplazamiento horizontal y transiciones limpias.",
+  "detalles_que_dan_calidad": [
+   "Sombras suaves en los contadores y avatares",
+   "Efectos de brillo metálico en los iconos de los trofeos",
+   "Sincronización perfecta entre cada golpe de sonido y la aparición de un trofeo"
+  ],
+  "gancho_y_cierre": "Gancho en 0.0s mostrando los avatares y el punto de partida en 2002; cierre en 2.14s con el total final de trofeos de ambos jugadores (Messi 46, Ronaldo 36). No hace loop perfecto.",
+  "que_mejorarias_que_dar_calidad": [
+   "Añadir partículas de explosión o confeti al superar al rival en el contador",
+   "Incluir mini animaciones de celebración en los avatares al sumar trofeos importantes",
+   "Mejorar el detalle 3D de los trofeos con sombreado procedural más realista"
+  ]
+ }
+}

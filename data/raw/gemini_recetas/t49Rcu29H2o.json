@@ -1,0 +1,72 @@
+{
+ "formato": "caso",
+ "canal": "MainFutLab",
+ "video": {
+  "id": "t49Rcu29H2o",
+  "titulo": "Who Will Lift the Trophy? AI Predicts EURO Winners 2028–2068 🤖🏆 #soccer #euro",
+  "vistas": 5147973,
+  "fecha": "2026-08-26"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": null,
+  "layout": [
+   {
+    "zona": "arriba (0-30%)",
+    "que_hay": "Texto de título principal o año con país y escudo"
+   },
+   {
+    "zona": "centro (30-80%)",
+    "que_hay": "Video de jugadores celebrando y festejando"
+   },
+   {
+    "zona": "abajo (80-100%)",
+    "que_hay": "Marca de agua o créditos del creador (MAINFUTLAB)"
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Escudos y banderas de países",
+    "forma_color_tamano": "Gráficos vectoriales con colores representativos de cada nación",
+    "movimiento": "Estáticos superpuestos sobre video"
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.5",
+    "que_pasa": "Introducción con trofeo y jugadores de España celebrando"
+   },
+   {
+    "t": "0.5-25.0",
+    "que_pasa": "Secuencia rápida de predicciones año por año desde 2068 hasta 2028"
+   }
+  ],
+  "camara": "Cortes directos rápidos sincronizados con el ritmo de la música",
+  "tipografia_y_textos": "Fuente sans-serif bold, blanca con bordes negros y efecto de relieve, tamaño grande, centrada",
+  "paleta": [
+   "#ffffff",
+   "#000000",
+   "#00ff00",
+   "#ff0000",
+   "#0000ff"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Cambio de año/país",
+    "sonido": "Golpes rítmicos de música beat drop"
+   }
+  ],
+  "musica": "Hip-hop/phonk enérgico, aprox 130 bpm, formato remix tendencia en reels/shorts",
+  "fps_y_suavidad": "60 fps, alta fluidez en los videos de archivo con transiciones de corte rápido",
+  "detalles_que_dan_calidad": [
+   "Efectos de brillo tipo confeti dorado al inicio",
+   "Logos oficiales de selecciones nacionales bien recortados"
+  ],
+  "gancho_y_cierre": "Primer segundo con celebración épica y texto 'UEFA EURO WINNERS', cierre abrupto en 2028 con España",
+  "que_mejorarias_para_superarlo": [
+   "Agregar transiciones más fluidas entre los clips de los jugadores",
+   "Sincronizar mejor los cambios de año con los drops de la canción"
+  ]
+ }
+}

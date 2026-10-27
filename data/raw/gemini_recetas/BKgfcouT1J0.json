@@ -1,0 +1,104 @@
+{
+ "formato": "caso",
+ "canal": "bouncyball",
+ "video": {
+  "id": "BKgfcouT1J0",
+  "titulo": "Will the ball escape 5 million rings? #asmr #adhd #satisfying #ball #bounce #bouncingball",
+  "vistas": 86203817,
+  "fecha": "2025-06-08"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "receta": {
+  "regla_del_juego": "Adivinar 5 sonidos de memes mientras un círculo numerado desciende rápidamente a través de un canal vertical rodeado de anillos concéntricos estilo vinilo arcoíris.",
+  "layout": [
+   {
+    "zona": "arriba (10% de alto)",
+    "que_hay": "Texto con la pregunta 'CAN YOU GUESS 5 MEME SOUNDS?' en fuente bold blanca con borde negro."
+   },
+   {
+    "zona": "centro (75% de alto)",
+    "que_hay": "Un disco negro con una ranura/canal vertical central por donde cae un objeto brillante con contador numérico."
+   },
+   {
+    "zona": "abajo (15% de alto)",
+    "que_hay": "Continuación del canal vertical y barras de espectro de audio en la parte inferior."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Disco concéntrico de fondo",
+    "forma_color_tamano": "Círculos concéntricos multicolor estilo vinilo, ocupando toda la pantalla.",
+    "movimiento": "Rotación constante y cambio de colores en los anillos."
+   },
+   {
+    "objeto": "Círculo central con canal",
+    "forma_color_tamano": "Círculo negro grande centrado con una línea vertical blanca/negra que baja.",
+    "movimiento": "Estático en el fondo, con zoom gradual hacia el final."
+   },
+   {
+    "objeto": "Objeto que cae (contador)",
+    "forma_color_tamano": "Círculo/partícula pequeña brillante con número dinámico decreciente (ej. 5000000).",
+    "movimiento": "Caída acelerada vertical desde y=0 hasta desaparecer en el abismo."
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.5",
+    "que_pasa": "Inicia la música de meme con tono de caja de música, el círculo está arriba con el número 5000000."
+   },
+   {
+    "t": "0.5-6.0",
+    "que_pasa": "El número desciende rápidamente mientras suena la melodía y cambian los colores de los anillos concéntricos."
+   },
+   {
+    "t": "6.0-23.0",
+    "que_pasa": "El fondo de vinilo desaparece, la cámara acelera verticalmente, el contador baja drásticamente y aparecen estelas de colores psicodélicos."
+   },
+   {
+    "t": "23.0-24.5",
+    "que_pasa": "Sonido distorsionado tipo 'bruh' o error final, la pantalla parpadea en negro con estela morada y finaliza el video."
+   }
+  ],
+  "camara": "Fija al inicio con efecto psicodélico de ondas, luego simula un zoom in vertical acelerado (efecto túnel infinito hacia abajo) a partir del segundo 6.",
+  "tipografia_y_textos": "Fuente sans-serif bold estilo arcade/meme (ej. Arial Black o Impact), color blanco con contorno negro grueso, tamaño mediano fijo arriba.",
+  "paleta": [
+   "#000000",
+   "#FFFFFF",
+   "#FF0000",
+   "#00FF00",
+   "#0000FF",
+   "#FFFF00",
+   "#FF00FF",
+   "#00FFFF"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Inicio (0.0s)",
+    "sonido": "Melodía de caja de música o tono MIDI clásico de meme."
+   },
+   {
+    "evento": "Durante la caída (6.0s - 22.0s)",
+    "sonido": "Efectos de sonido de memes variados acelerados o mezclados."
+   },
+   {
+    "evento": "Final (23.0s)",
+    "sonido": "Grito distorsionado o sonido de bajo profundo tipo 'bruh' con reverb."
+   }
+  ],
+  "musica": "Compilado de sonidos de memes virales de TikTok/YouTube Shorts, aprox 120-140 BPM, formato tendencia de retos de adivinanza.",
+  "fps_y_suavidad": "Renderizado a 60 fps con fuerte motion blur vertical y efectos de distorsión digital/glitch en la segunda mitad.",
+  "detalles_que_dan_calidad": [
+   "Efecto visual de vinilo psicodélico en rotación.",
+   "Estelas luminosas (trail) detrás del objeto que cae.",
+   "Contador numérico decreciente en tiempo real muy preciso.",
+   "Transición fluida de formato visualizador de música a efecto túnel espacial."
+  ],
+  "gancho_y_cierre": "Primer segundo exacto muestra el gancho visual 'CAN YOU GUESS 5 MEME SOUNDS?'. Último segundo exacto (24.0s) muestra el cierre con pantalla negra y estela morada final.",
+  "que_mejorarias_que_mejorarias_para_superarlo": [
+   "Agregar una barra de progreso visual más clara para la cuenta regresiva.",
+   "Mejorar la sincronización exacta entre el cambio de notas musicales y los saltos del contador.",
+   "Añadir efectos de vibración de pantalla (screen shake) en los momentos clímax de los sonidos."
+  ]
+ }
+}

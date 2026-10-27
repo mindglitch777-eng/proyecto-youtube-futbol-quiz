@@ -1,0 +1,124 @@
+{
+ "formato": "caso",
+ "canal": "DriveLabs",
+ "video": {
+  "id": "W7UxFCYojkc",
+  "titulo": "Yamal, I show Speed or Ronaldo 🏆⚽",
+  "vistas": 24257065,
+  "fecha": "2026-08-03"
+ },
+ "mediana": 0,
+ "modelo": "gemini-flash-latest",
+ "receta": {
+  "regla_del_juego": "El jugador avanza por una pista dividida en dos carriles estilo runner 3D. En el camino aparecen coleccionables en ambos carriles (Trofeo Copa del Mundo en fondo verde o Balón Brazuca en fondo rojo). Al cruzar los ítems, se van llenando las 5 casillas de arriba (representadas con bloques '?') asignadas a tres personajes (Yamal, IShowSpeed, Ronaldo). Al final de cada tramo, el personaje choca contra un NPC (Messi chiquito con copa), se produce una explosión de humo y se avanza a la siguiente ronda/nivel hasta completar todos los requisitos de trofeos para ganar ('YOU WIN!').",
+  "layout": [
+   {
+    "zona": "arriba (0% - 25% de alto)",
+    "que_hay": "Tres cabezas recortadas flotantes (Lamine Yamal, IShowSpeed, Cristiano Ronaldo) y debajo de ellas 5 cajas doradas estilo bloque '?' de Mario que se van reemplazando por iconos de trofeos o balones conseguidos."
+   },
+   {
+    "zona": "centro y fondo (15% - 85% de alto)",
+    "que_hay": "Video de fondo con recorte/greenscreen del personaje de la ronda (Yamal bailando, Speed en el Balón de Oro, Cristiano Ronaldo sonriendo). En primer plano, pista de carrera 3D con perspectiva cónica hacia el horizonte con líneas delimitadoras rojas y línea divisoria blanca central."
+   },
+   {
+    "zona": "abajo (70% - 100% de alto)",
+    "que_hay": "Sprite 2D recortado del avatar del jugador (primero Lamine Yamal musculoso con shorts blancos, luego con la equipación número 19 de la selección de España), posicionándose a la izquierda o derecha de la pista."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Pista de carreras",
+    "forma_color_tamano": "Carretera gris asfalto en perspectiva fugada con bordes rojos y línea punteada/continua blanca en el centro.",
+    "movimiento": "Efecto de scrolling hacia la cámara dando sensación de movimiento continuo hacia adelante."
+   },
+   {
+    "objeto": "Coleccionables (Trofeo Copa del Mundo y Balón Brazuca)",
+    "forma_color_tamano": "Sprites 3D renderizados. La Copa sobre base verde esmeralda y el Balón sobre base roja.",
+    "movimiento": "Se desplazan de fondo a primer plano a velocidad constante hacia el jugador."
+   },
+   {
+    "objeto": "Avatar jugador",
+    "forma_color_tamano": "Ilustración 2D con estética de anime/cómic musculoso. Inicialmente sin camiseta y luego con equipación roja/azul de España #19.",
+    "movimiento": "Cambios de carril laterales discretos (izquierda/derecha) y animación de victoria con brazos alzados."
+   },
+   {
+    "objeto": "NPC Messi",
+    "forma_color_tamano": "Caricatura de Messi con la camiseta de Argentina sosteniendo la Copa del Mundo.",
+    "movimiento": "Estático al final del tramo, se acerca con el scroll de la pista."
+   },
+   {
+    "objeto": "Nube de humo de transición",
+    "forma_color_tamano": "Efecto de humo blanco estilo cartoon/poof que cubre la pista.",
+    "movimiento": "Expansión rápida y desvanecimiento."
+   },
+   {
+    "objeto": "Confeti y texto YOU WIN!",
+    "forma_color_tamano": "Texto en 3D verde brillante con borde y partículas de confeti multicolor rectangulares.",
+    "movimiento": "El confeti cae con gravedad y bamboleo; el texto flota con ligero pulso."
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.09",
+    "que_pasa": "Voz dice 'Yamal'. Fondo de Yamal bailando. El personaje esquiva/recoge balones y trofeos llenando los primeros dos casilleros con balones."
+   },
+   {
+    "t": "0.09-0.21",
+    "que_pasa": "Transición de humo. Voz dice 'IShowSpeed'. Fondo cambia a Speed en la gala del Ballon d'Or. El avatar recoge trofeos y balones, desbloqueando el tercer y cuarto casillero. Aparece el avatar de Yamal ya con uniforme de España."
+   },
+   {
+    "t": "0.21-0.28",
+    "que_pasa": "Transición de humo. Voz dice 'Ronaldo'. Fondo de Cristiano Ronaldo en biblioteca. El avatar se mueve recogiendo el último ítem."
+   },
+   {
+    "t": "0.28-0.31",
+    "que_pasa": "Interrupción de pantalla dividida ('If you like Ronaldo, do this' con botones de YouTube shorts) y regreso rápido al gameplay."
+   },
+   {
+    "t": "0.31-0.36",
+    "que_pasa": "Se completa la última casilla con el Trofeo del Mundo. Explosión de humo, aparece Yamal alzando la Copa del Mundo, cae confeti y sale el texto 'YOU WIN!' en verde con sonido de victoria."
+   }
+  ],
+  "camara": "Fija en ángulo frontal en perspectiva picada baja/tercera persona mirando hacia el fondo de la pista infinita; no hay paneos ni giros.",
+  "tipografia_y_textos": "Texto 'YOU WIN!' en tipografía sans-serif bold / display en 3D, color verde brillante (#00FF44) con bisel y relieve; texto TTS en off.",
+  "paleta": [
+   "#4A4A4A",
+   "#FFFFFF",
+   "#E51D24",
+   "#239B56",
+   "#F4D03F",
+   "#00FF44"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Inicio de cada fase",
+    "sonido": "Voz sintética TTS en inglés pronunciando el nombre del futbolista ('Yamal', 'IShowSpeed', 'Ronaldo')."
+   },
+   {
+    "evento": "Recolección de objetos",
+    "sonido": "Efectos vocales cómicos de meme ('Bruh' repetitivo y gritos vocales distorsionados de IShowSpeed)."
+   },
+   {
+    "evento": "Transición de tramo / explosión",
+    "sonido": "Efecto de golpe/explosión cartoon tipo 'poof'."
+   },
+   {
+    "evento": "Victoria final",
+    "sonido": "Fanfarria o grito triunfal con eco."
+   }
+  ],
+  "musica": "Canción de meme de fondo con bajo distorsionado / phonk o trend de TikTok a unos 130 BPM sincronizada con los pasos.",
+  "fps_y_suavidad": "30 fps con animación por capas; movimiento interpolado lineal sin motion blur realista.",
+  "detalles_que_dan_calidad": [
+   "Sincronización cómica del video de fondo con las reacciones a lo que pasa en la pista.",
+   "Perspectiva de la pista con escalado de tamaño correcto en los objetos según la profundidad.",
+   "Partículas de confeti volumétricas con rotación en el momento del 'YOU WIN!'."
+  ],
+  "gancho_y_cierre": "Gancho: Primer segundo inicia de golpe con la voz diciendo 'Yamal', tres caras conocidas y acción inmediata en la pista. Cierre: Explosión de confeti, Yamal levantando la copa con 'YOU WIN!', corte directo ideal para loop de repetición.",
+  "que_mejorarias_para_superarlo": [
+   "Añadir sombras proyectadas dinámicas en el piso para el avatar y los ítems para que no parezcan 'pegados' encima.",
+   "Animación de caminata/carrera continua en el avatar en lugar de un sprite rígido que solo se desliza de lado a lado.",
+   "Eliminar la interrupción abrupta de 'If you like Ronaldo...' para mantener la inmersión y retención pura de gameplay."
+  ]
+ }
+}

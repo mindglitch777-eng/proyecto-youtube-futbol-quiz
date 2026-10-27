@@ -1,0 +1,127 @@
+{
+ "formato": "caso",
+ "canal": "FULYON SHORTS",
+ "video": {
+  "id": "FeUuTzPg-zA",
+  "titulo": "FIND YAMAL RONALDO NEYMAR",
+  "vistas": 23360077,
+  "fecha": "2026-10-24"
+ },
+ "mediana": 0,
+ "modelo": "gemini-flash-latest",
+ "receta": {
+  "regla_del_juego": "Se presenta una cuadrícula de 5x5 (25 retratos numerados del 1 al 25) con caricaturas o variantes de futbolistas. Se le pide al espectador encontrar una versión específica de un jugador ('Find Yamal', 'Find Ronaldo', 'Find Neymar'). Una barra de progreso decrece durante aproximadamente 3.5 segundos con sonido de reloj (tic-tac). Al agotarse el tiempo, se dibuja un círculo rojo alrededor de la casilla correcta con un sonido de campana/acierto antes de pasar a la siguiente ronda.",
+  "layout": [
+   {
+    "zona": "arriba (0% - 15%)",
+    "que_hay": "Cielo azul con nubes de fondo, botones flotantes de 'Subscribe Like' en esquinas superiores, título central con texto estilizado 'FIND [JUGADOR]' con un emoji de balón en llamas arriba."
+   },
+   {
+    "zona": "centro (15% - 85%)",
+    "que_hay": "Grilla fija de 5 filas por 5 columnas con 25 casillas numeradas (esquina superior izquierda de cada celda con número blanco sobre fondo negro con borde rojo), conteniendo retratos alterados cómicamente con IA."
+   },
+   {
+    "zona": "abajo (85% - 100%)",
+    "que_hay": "Fondo de césped de fútbol desenfocado, barra de temporizador horizontal verde/amarilla con borde blanco, y visualizador de onda de audio o ecualizador animado blanco debajo de la barra."
+   }
+  ],
+  "elementos": [
+   {
+    "objeto": "Cuadrícula de retratos",
+    "forma_color_tamano": "25 celdas cuadradas/rectangulares alineadas en 5x5, con bordes delgados oscuros y números en esquinas superiores izquierdas",
+    "movimiento": "Estático durante la ronda; cambia instantáneamente entre rondas."
+   },
+   {
+    "objeto": "Barra de temporizador",
+    "forma_color_tamano": "Barra horizontal alargada con bordes redondeados, relleno verde con degradado amarillo, marco blanco grueso",
+    "movimiento": "Se reduce linealmente de derecha a izquierda hasta llegar a cero en ~3.5 segundos."
+   },
+   {
+    "objeto": "Círculo de respuesta correcta",
+    "forma_color_tamano": "Círculo vectorial trazado a mano alzada en color rojo grueso",
+    "movimiento": "Se dibuja en sentido horario rodeando la casilla ganadora justo al terminar el temporizador."
+   },
+   {
+    "objeto": "Visualizador de audio",
+    "forma_color_tamano": "Barras verticales blancas tipo ecualizador en la parte inferior central",
+    "movimiento": "Oscilan en escala vertical respondiendo a la voz en off."
+   }
+  ],
+  "linea_de_tiempo": [
+   {
+    "t": "0.0-0.8",
+    "que_pasa": "Voz robótica dice 'Find Yamal'. La grilla muestra 25 variantes de Lamine Yamal (y otros). Empieza a correr el reloj."
+   },
+   {
+    "t": "0.8-3.7",
+    "que_pasa": "Barra de progreso se vacía con sonido de tic-tac continuo."
+   },
+   {
+    "t": "3.7-4.5",
+    "que_pasa": "Se marca con círculo rojo la casilla 19 (Yamal real/original) con sonido de campana de éxito."
+   },
+   {
+    "t": "4.5-5.3",
+    "que_pasa": "Voz dice 'Find Ronaldo'. Se actualiza la grilla con 25 retratos con temática de Cristiano Ronaldo. Inicia el reloj."
+   },
+   {
+    "t": "5.3-8.8",
+    "que_pasa": "Barra de progreso se vacía con tic-tac."
+   },
+   {
+    "t": "8.8-9.6",
+    "que_pasa": "Se marca con círculo rojo la casilla 6 con campana de éxito."
+   },
+   {
+    "t": "9.6-10.4",
+    "que_pasa": "Voz dice 'Find Neymar'. Grilla cambia a 25 fotos con temática de Neymar."
+   },
+   {
+    "t": "10.4-13.8",
+    "que_pasa": "Barra de temporizador se consume con tic-tac."
+   },
+   {
+    "t": "13.8-15.0",
+    "que_pasa": "Se marca con círculo rojo la casilla 12 con campana de éxito; corte final."
+   }
+  ],
+  "camara": "Fija en plano frontal vertical 9:16 sin movimientos ni zooms; transiciones por corte directo entre niveles.",
+  "tipografia_y_textos": "Texto 'FIND [JUGADOR]' en fuente bold display de estilo cómic/gaming en amarillo con degradado blanco, borde exterior negro y sombra proyectada azul. Números de casillas en fuente sans-serif blanca condensada dentro de cajas rectangulares negras con contorno rojo.",
+  "paleta": [
+   "#1A75FF",
+   "#FFE600",
+   "#FF1A1A",
+   "#2ECC71",
+   "#FFFFFF",
+   "#000000"
+  ],
+  "sonido_por_evento": [
+   {
+    "evento": "Inicio de cada ronda",
+    "sonido": "Voz TTS en inglés pronunciando 'Find [Nombre]'."
+   },
+   {
+    "evento": "Cuenta regresiva",
+    "sonido": "Efecto de sonido de reloj rítmico 'tic-tac' mecánico."
+   },
+   {
+    "evento": "Revelación de respuesta",
+    "sonido": "Timbre agudo / campanilla de acierto 'ding'."
+   }
+  ],
+  "musica": "Sin música de fondo, solo efectos de sonido (SFX de reloj, campana y voz TTS).",
+  "fps_y_suavidad": "30 fps, sin motion blur, animaciones de barras y trazado limpias.",
+  "detalles_que_dan_calidad": [
+   "Efecto de trazado animado para el círculo rojo de revelación.",
+   "Animación suave de la barra de progreso decreciente.",
+   "Imágenes generadas con IA con estilo caricaturesco exagerado ('fat/skinny face filter') que generan curiosidad humorística.",
+   "Efecto de onda de audio interactivo sincronizado con la voz del narrador."
+  ],
+  "gancho_y_cierre": "Gancho: arranca instantáneamente con la consigna 'Find Yamal' en el segundo 0 sin intro para atrapar la atención. Cierre: finaliza abruptamente tras mostrar la tercera respuesta, incentivando bucle o suscripción.",
+  "que_mejorarias_para_superarlo": [
+   "Agregar una pista musical rítmica de baja intensidad para mantener mayor retención.",
+   "Añadir efectos visuales de partículas o brillo sobre la casilla correcta al revelarse.",
+   "Aumentar el dinamismo con un leve zoom in conforme el tiempo se agota para elevar la tensión."
+  ]
+ }
+}
