@@ -30,6 +30,8 @@ CX, CY, R = W / 2, 1075, 385          # arena
 GAP = 0.66                             # ancho angular de cada arco (rad)
 BALL = 36
 DT = 1 / 240
+SUB = 8                                # pasos de física por estado guardado (8 = 30 fps, 4 = 60 fps)
+DURS = {"QF": (2.8, 6.5), "SF": (5.5, 10.5), "F": (10, 17)}
 PAL = {"fondo": (8, 12, 24), "fondo2": (22, 30, 64), "aro": (120, 160, 255), "acento": (255, 210, 63)}
 REGLAS = {"QF": 1, "SF": 2, "F": 3}
 NOMBRE_RONDA = {"QF": "QUARTER-FINAL", "SF": "SEMI-FINAL", "F": "FINAL"}
@@ -64,7 +66,7 @@ def partido(goles_para_ganar, semilla, rot=1.25):
     goles = [0, 0]; t = 0.0; estados = []; eventos = []; pausa = 0.0; vprev = b.velocity
     golpes = 0
     while max(goles) < goles_para_ganar and t < 40:
-        for _ in range(8):
+        for _ in range(SUB):
             if pausa > 0:
                 pausa -= DT; t += DT
                 if pausa <= 0:
@@ -134,7 +136,7 @@ def armar_torneo(g):
             a, b = vivos[k], vivos[k + 1]
             quiere = 0 if gana_en(a, ronda) and not gana_en(b, ronda) else 1 if gana_en(b, ronda) and not gana_en(a, ronda) else random.Random(base + k).randint(0, 1)
             goles = REGLAS[ronda]
-            dmin, dmax = {"QF": (2.8, 6.5), "SF": (5.5, 10.5), "F": (10, 17)}[ronda]
+            dmin, dmax = DURS[ronda]
             p = elegir(goles, quiere, dmin, dmax, base + len(rondas) * 100 + k * 10)
             partidos.append(dict(ronda=ronda, a=a, b=b, sim=p))
             sig.append(a if p["ganador"] == 0 else b)

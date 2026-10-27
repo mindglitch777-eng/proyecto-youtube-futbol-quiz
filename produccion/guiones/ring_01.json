@@ -1,0 +1,38 @@
+{
+ "id": "ring_01",
+ "formato": "ring",
+ "titulo": "MESSI vs RONALDO",
+ "subtitulo": "WHO BREAKS MORE RINGS?",
+ "ganador": "Lionel Messi",
+ "semilla": 1,
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Lionel Messi",
+   "voz": "Lionel Messi",
+   "anillo": [
+    110,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Cristiano Ronaldo",
+   "voz": "Cristiano Ronaldo",
+   "anillo": [
+    255,
+    80,
+    80
+   ]
+  }
+ ],
+ "cierre": "THE GOAT DEBATE IS OVER?",
+ "titulos": [
+  "Messi vs Ronaldo: who escapes the rings? 😱",
+  "Can Ronaldo beat Messi here? ⚽",
+  "Messi or Ronaldo? The ring escape 🏆"
+ ],
+ "descripcion": "Two balls, seven spinning rings. Every ring you break is a point. Messi or Ronaldo? Pick before it ends 👇",
+ "comentario_fijado": "Messi or Ronaldo? 👇"
+}

@@ -89,6 +89,29 @@ def bola_club(colores, estilo, corto, d):
     return _circular(im, d)
 
 
+# nombre del club en los guiones -> archivo en assets/escudos (bajados de Wikipedia por escudos.py)
+ESCUDO = {"Real Madrid": "real_madrid", "Barcelona": "barcelona", "FC Barcelona": "barcelona", "Bayern Munich": "bayern",
+          "Arsenal": "arsenal", "Liverpool": "liverpool", "Manchester City": "man_city", "Manchester United": "man_united",
+          "Chelsea": "chelsea", "Tottenham Hotspur": "tottenham", "Paris Saint-Germain": "psg", "PSG": "psg", "Inter": "inter",
+          "Inter Milan": "inter", "AC Milan": "milan", "Milan": "milan", "Juventus": "juventus", "Atlético Madrid": "atletico",
+          "Borussia Dortmund": "dortmund", "Napoli": "napoli", "Porto": "porto", "FC Porto": "porto", "Benfica": "benfica", "RB Leipzig": "leipzig",
+          "Roma": "roma", "Villarreal": "villarreal", "Aston Villa": "aston_villa", "Newcastle United": "newcastle",
+          "Bayer Leverkusen": "leverkusen", "Ajax": "ajax", "Celtic": "celtic", "Sporting CP": "sporting",
+          "Galatasaray": "galatasaray", "Fenerbahçe": "fenerbahce", "Marseille": "marseille", "Sevilla": "sevilla",
+          "Boca Juniors": "boca", "River Plate": "river", "Flamengo": "flamengo", "Palmeiras": "palmeiras", "Peñarol": "penarol",
+          "Racing Club": "racing", "Independiente": "independiente", "Corinthians": "corinthians", "Santos": "santos",
+          "São Paulo": "sao_paulo", "Nacional": "nacional", "Al Nassr": "al_nassr", "Al Hilal": "al_hilal",
+          "Inter Miami": "inter_miami", "LA Galaxy": "la_galaxy"}
+
+
+def escudo_club(nombre):
+    """Ruta del escudo real del club; falla fuerte si no está (nunca inventar un escudo)."""
+    ruta = ROOT / "assets" / "escudos" / f"{ESCUDO[nombre]}.png"
+    if not ruta.exists():
+        raise FileNotFoundError(f"falta el escudo de {nombre}: {ruta}")
+    return ruta
+
+
 def competidores(g, d):
     out = []
     for c in g["competidores"]:
@@ -97,7 +120,8 @@ def competidores(g, d):
         elif c["tipo"] == "pais":
             img = bola_bandera(c["pais"], d)
         else:
-            img = bola_club(c["colores"], c.get("estilo", "liso"), c["corto"], d)
+            from motor import escudo_en_disco
+            img = escudo_en_disco(escudo_club(c["nombre"]), d, 0.12)
         out.append(dict(c, img=img, color=tuple(c.get("anillo", c.get("colores", [[255, 255, 255]])[0]))))
     return out
 

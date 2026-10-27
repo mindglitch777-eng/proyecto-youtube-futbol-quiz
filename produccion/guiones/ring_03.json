@@ -1,0 +1,62 @@
+{
+ "id": "ring_03",
+ "formato": "ring",
+ "titulo": "WHO ESCAPES FIRST?",
+ "subtitulo": "4 STARS · 7 RINGS · 1 WINNER",
+ "ganador": "Lamine Yamal",
+ "semilla": 3,
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Kylian Mbappé",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Harry Kane",
+   "voz": "Harry Kane",
+   "anillo": [
+    255,
+    90,
+    90
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Erling Haaland",
+   "voz": "Erling Haaland",
+   "anillo": [
+    170,
+    120,
+    255
+   ]
+  }
+ ],
+ "cierre": "WHO WAS YOUR PICK?",
+ "duracion": [
+  16,
+  30
+ ],
+ "titulos": [
+  "Yamal, Mbappé, Kane or Haaland? 😱 Ring escape",
+  "4 stars, 7 rings, 1 winner ⚽",
+  "Who breaks the most rings? 🏆"
+ ],
+ "descripcion": "Four stars in spinning rings. Every ring you break is a point. Pick your player 👇",
+ "comentario_fijado": "Who was your pick? 👇"
+}

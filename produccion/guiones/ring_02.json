@@ -1,0 +1,54 @@
+{
+ "id": "ring_02",
+ "formato": "ring",
+ "titulo": "REAL MADRID vs BARÇA",
+ "subtitulo": "WHO BREAKS MORE RINGS?",
+ "ganador": "Real Madrid",
+ "semilla": 2,
+ "competidores": [
+  {
+   "tipo": "club",
+   "nombre": "Real Madrid",
+   "corto": "MADRID",
+   "voz": "Real Madrid",
+   "anillo": [
+    245,
+    245,
+    245
+   ],
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ]
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "FC Barcelona",
+   "corto": "BARÇA",
+   "voz": "FC Barcelona",
+   "anillo": [
+    200,
+    40,
+    90
+   ],
+   "colores": [
+    [
+     200,
+     40,
+     90
+    ]
+   ]
+  }
+ ],
+ "cierre": "MADRID OR BARÇA FAN?",
+ "titulos": [
+  "Real Madrid vs Barça: ring escape 😱",
+  "El Clásico in a spinning ring ⚽ Who wins?",
+  "Madrid or Barça? Pick before it ends 🏆"
+ ],
+ "descripcion": "El Clásico, but every ring broken is a goal. Who wins? 👇",
+ "comentario_fijado": "Madrid or Barça? 👇"
+}
