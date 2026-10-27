@@ -1,0 +1,73 @@
+{
+ "formato": "sim",
+ "canal": "FOOTIEHAWK",
+ "video": {
+  "id": "cX_5p81DzOk",
+  "titulo": "Yildiz VS Haaland VS Mbappe VS Messi VS Ronaldo #shorts",
+  "vistas": 22026656,
+  "fecha": "2026-08-30"
+ },
+ "mediana": 815962,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "challenge de baile con futbolistas famosos superpuestos",
+  "duracion_s": 25,
+  "primer_segundo": "Una mujer con vestido metálico sobre un taburete y un hombre intentando quitarlo mientras suena música rápida y en pantalla aparecen avatares de futbolistas con un indicador verde parpadeando.",
+  "gancho_texto": null,
+  "protagonistas": [
+   "Haaland",
+   "Mbappé",
+   "Messi",
+   "Cristiano Ronaldo"
+  ],
+  "desenlace": "El video culmina con Cristiano Ronaldo y Messi apareciendo al final junto a un emoji de corona dorada y llamados a la acción de like y suscripción.",
+  "ganador_popular": true,
+  "arco_de_tension": "La tensión se genera con la selección sucesiva de los futbolistas mediante flechas e íconos flotantes hasta llegar al cierre de votación.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio del desafío con la caída de la silla."
+   },
+   {
+    "t": 5.0,
+    "que": "Aparición de Haaland bailando con la creadora."
+   },
+   {
+    "t": 10.0,
+    "que": "Aparición de Mbappé en el Parque de los Príncipes."
+   },
+   {
+    "t": 14.0,
+    "que": "Aparición de Messi sosteniendo la camiseta del Barcelona."
+   },
+   {
+    "t": 19.0,
+    "que": "Aparición de Cristiano Ronaldo celebrando con su marca."
+   }
+  ],
+  "audio": {
+   "musica": "Remix de tendencia en TikTok de alta energía",
+   "voz": "no",
+   "efectos": "Sonidos de interacción y transiciones rápidas"
+  },
+  "visual": "Clips de video reales combinados con recortes faciales de futbolistas y efectos digitales estilo IA; calidad estándar con saturación alta.",
+  "texto_en_pantalla": "FOOTIEHAWK, Like para Ronaldo, Subscribe para Messi",
+  "ritmo_cortes_por_segundo": 0.2,
+  "loop": true,
+  "pedido_al_espectador": "Like para Ronaldo, Subscribe para Messi",
+  "polemica_o_debate": "Rivalidad Cristiano Ronaldo vs Messi",
+  "por_que_rinde_asi": [
+   "Usa a las figuras más grandes del fútbol mundial juntos.",
+   "Invita a la interacción directa con una consigna de like y suscripción.",
+   "Tiene un ritmo vertiginoso y edición dinámica que atrapa desde el primer segundo."
+  ],
+  "que_le_falta": "Mezclar interacciones más fluidas entre los recortes de los futbolistas y el fondo real.",
+  "riesgo_copyright": "Uso de imagen de futbolistas profesionales y marcas registradas de clubes.",
+  "calidad_produccion": "Combinación de video real con recortes de rostros e IA; nivel 7/10 por la buena sincronización del montaje.",
+  "camara_y_movimiento": "Cortes rápidos, zooms en los momentos de transición y seguimiento de los bailarines.",
+  "diseno_sonoro": "Base musical constante y efectos de sonido en cada cambio de jugador para mantener el gancho.",
+  "tramos": "0-4s gancho inicial de la silla, 4-24s secuencias de baile con los futbolistas, 24-25s llamado a la acción.",
+  "repetibilidad": "El loop y la comparativa entre los jugadores invitan a volver a verlo para elegir un favorito.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar avatares 3D o imágenes de dominio público de futbolistas animados con herramientas de IA sobre fondos abstractos o estadios genéricos."
+ }
+}

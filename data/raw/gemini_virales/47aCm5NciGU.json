@@ -1,0 +1,60 @@
+{
+ "formato": "sim",
+ "canal": "bouncyball",
+ "video": {
+  "id": "47aCm5NciGU",
+  "titulo": "Which song is the bouncing balls playing? #asmr #adhd #satisfying #ball #bounce #bouncingball #code",
+  "vistas": 3985944,
+  "fecha": "2026-09-17"
+ },
+ "mediana": 326093,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Simulador ASMR de bolas de colores rebotando al ritmo de un meme musical",
+  "duracion_s": 20,
+  "primer_segundo": "Bolas verdes chocan generando partículas y sonido de bombo de meme",
+  "gancho_texto": "GUESS THE MEME SOUND",
+  "protagonistas": [],
+  "desenlace": "Las pistas se vacían por completo mientras explotan todas las partículas coloridas.",
+  "ganador_popular": false,
+  "arco_de_tension": "Las bolas se acumulan y aceleran los impactos rítmicos hasta la destrucción total de cada carril.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio del ritmo con primer impacto verde"
+   },
+   {
+    "t": 2.0,
+    "que": "Cambio de color a azul y explosión masiva"
+   },
+   {
+    "t": 10.0,
+    "que": "Aceleración y caos simultáneo en todos los carriles"
+   }
+  ],
+  "audio": {
+   "musica": "Remix de meme rítmico (estilo bombo viral de TikTok)",
+   "voz": "no",
+   "efectos": "Golpes graves y estallidos de partículas sincronizados"
+  },
+  "visual": "Animación 3D simple con estética de juego arcade; colores brillantes sobre fondo negro",
+  "texto_en_pantalla": "GUESS THE MEME SOUND en la parte superior fija",
+  "ritmo_cortes_por_segundo": 0.0,
+  "loop": true,
+  "pedido_al_espectador": "Adivinar el sonido del meme o comentar",
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Efecto ASMR visual y auditivo altamente hipnótico",
+   "Sincronización perfecta entre golpes y partículas",
+   "Diseño en loop fluido que atrapa la atención"
+  ],
+  "que_le_falta": "Un contador de tiempo o elementos interactivos más marcados",
+  "riesgo_copyright": "Bajo (audio de meme genérico)",
+  "calidad_produccion": "Animación 2D/3D tipo simulador de código; nivel 8/10 por su fluidez y diseño sonoro",
+  "camara_y_movimiento": "Plano cenital fijo con enfoque dinámico en el punto de impacto inferior",
+  "diseno_sonoro": "Sonidos de bajo profundos acompañados de crujidos y explosiones rítmicas",
+  "tramos": "0-3s Gancho visual y sonoro; 3-17s Intensificación progresiva de carriles; 17-20s Desenlace y loop",
+  "repetibilidad": "El loop perfecto y la saturación visual invitan a verlo varias veces",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar motores de física gratuitos (como Processing o Unity), agregar canciones de tendencia en TikTok y renderizar simulaciones de colisiones."
+ }
+}

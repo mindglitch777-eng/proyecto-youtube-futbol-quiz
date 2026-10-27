@@ -9,11 +9,17 @@
  "eliminar": 1,
  "circuito": [
   "clavos",
-  "aspas",
-  "zigzag",
-  "rebotadores",
+  "pendulos",
+  "trampolin",
   "acelerador",
+  "portales",
+  "zigzag",
+  "zigzag",
+  "pendulos",
+  "aspas",
   "molinos",
+  "portales",
+  "rebotadores",
   "embudo"
  ],
  "competidores": [
@@ -68,5 +74,10 @@
   "Ronaldo takes the lead!",
   "Ronaldo is out!",
   "Ronaldo wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

@@ -1,0 +1,74 @@
+{
+ "formato": "sim",
+ "canal": "FOOTIEHAWK",
+ "video": {
+  "id": "mBNhazxs65k",
+  "titulo": "Son VS Lehmann VS De Jong VS Messi VS Ronaldo #shorts",
+  "vistas": 9386407,
+  "fecha": "2026-09-01"
+ },
+ "mediana": 815962,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "formato_exacto": "Juego de eliminación de futbolistas mediante clips virales e impresionantes hasta llegar al duelo final GOAT (Ronaldo vs Messi)",
+  "duracion_s": 23,
+  "primer_segundo": "Un hombre saca un balón de voleibol en la playa al atardecer bajo el avatar de Son Heung-min, con música de fondo rítmica.",
+  "gancho_texto": null,
+  "protagonistas": [
+   "Son Heung-min",
+   "Alisha Lehmann",
+   "Frenkie de Jong",
+   "Lionel Messi",
+   "Cristiano Ronaldo"
+  ],
+  "desenlace": "Messi queda eliminado en el penúltimo clip y Cristiano Ronaldo resulta ganador al levantar un auto, activando la pantalla de votación GOAT (Like por Ronaldo, Subscribe por Messi).",
+  "ganador_popular": true,
+  "arco_de_tension": "Eliminación progresiva uno a uno en cada clip hasta dejar a los dos máximos rivales (Messi y Ronaldo) para decidir el ganador.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio del reto con la prueba de voleibol de playa."
+   },
+   {
+    "t": 4.0,
+    "que": "Primera eliminación (Son) marcada con el emoji de silencio."
+   },
+   {
+    "t": 8.0,
+    "que": "Eliminación de Lehmann tras la caída en el muro."
+   },
+   {
+    "t": 12.0,
+    "que": "Eliminación de De Jong en la Torre Eiffel."
+   },
+   {
+    "t": 17.0,
+    "que": "Eliminación de Messi en la prueba de parkour extremo."
+   },
+   {
+    "t": 21.0,
+    "que": "Victoria de Ronaldo al levantar el auto y aparición del llamado a la acción GOAT."
+   }
+  ],
+  "audio": {
+   "musica": "Tema rítmico viral bailable con acordes marcados y bajo constante.",
+   "voz": "sí, voz sintética al final diciendo 'Like for Ronaldo, subscribe for Messi'.",
+   "efectos": "Sonidos de golpe e impacto, efecto sonoro de 'shhh' al eliminar a cada jugador y efectos pop de botones."
+  },
+  "visual": "Montaje de clips virales reales y CGI (efecto del auto levitado) con barra de interfaz 2D superior con imágenes de futbolistas y emojis.",
+  "texto_en_pantalla": "Like, Subscribe, marcas de botones e imágenes recortadas de Ronaldo y Messi.",
+  "ritmo_cortes_por_segundo": 0.22,
+  "loop": true,
+  "pedido_al_espectador": "Like por Ronaldo, Suscribirse por Messi",
+  "polemica_o_debate": "La eterna rivalidad del GOAT entre Cristiano Ronaldo y Lionel Messi",
+  "por_que_rinde_asi": "1. Estructura de descarte/eliminación ('Last One Standing') que garantiza retención completa hasta ver al ganador.\n2. Uso de clips de alto impacto visual y habilidades sorprendentes/CGI.\n3. Call To Action masivo enfrentando a las dos comunidades de fans más grandes del fútbol (Ronaldo vs Messi).",
+  "que_le_falta": "Efectos visuales adicionales que conecten más explícitamente el avatar superior con la persona del clip.",
+  "riesgo_copyright": "Reutilización de clips virales de terceros y uso de la imagen/rostro de futbolistas famosos.",
+  "calidad_produccion": "Combinación de clips virales con edición VFX puntual (CGI del auto) e interfaz gráfica 2D limpia; nivel de pulido 8/10.",
+  "camara_y_movimiento": "Tomas de cámara fija y en movimiento en tercera persona de varios clips virales, con transiciones directas por corte.",
+  "diseno_sonoro": "Sincronización exacta entre las fallas de los clips y los efectos de sonido de chistido/silencio sobre los avatares.",
+  "tramos": "0-4s eliminación 1 (Son), 4-8s eliminación 2 (Lehmann), 8-12s eliminación 3 (De Jong), 12-17s eliminación 4 (Messi), 17-23s victoria de Ronaldo y pantalla GOAT.",
+  "repetibilidad": "Alta, ya que el espectador vuelve a mirar para comprobar la secuencia de selección y los clips de acción rápida.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Crear una plantilla visual con avatares recortados de futbolistas e integrar animaciones o minijuegos generados por código o simulaciones 3D neutras, cerrando con una pantalla de interacción vs."
+ }
+}

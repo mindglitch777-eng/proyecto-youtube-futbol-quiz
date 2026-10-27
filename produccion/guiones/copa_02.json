@@ -1,0 +1,103 @@
+{
+ "id": "copa_02",
+ "formato": "copa",
+ "evento": "BALLON D'OR 2026 CUP",
+ "titulo": "KANE WON IT... BUT CAN HE WIN THIS?",
+ "semilla": 2,
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Harry Kane",
+   "voz": "Kane",
+   "anillo": [
+    255,
+    120,
+    120
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Vinícius Júnior",
+   "voz": "Vinicius",
+   "anillo": [
+    255,
+    255,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Erling Haaland",
+   "voz": "Haaland",
+   "anillo": [
+    170,
+    120,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Ousmane Dembélé",
+   "voz": "Dembélé",
+   "anillo": [
+    255,
+    140,
+    80
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lionel Messi",
+   "voz": "Messi",
+   "anillo": [
+    120,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Pedri",
+   "voz": "Pedri",
+   "anillo": [
+    255,
+    160,
+    220
+   ]
+  }
+ ],
+ "ruta": {
+  "Harry Kane": "F",
+  "Lamine Yamal": "SF",
+  "Kylian Mbappé": "QF",
+  "Lionel Messi": "QF"
+ },
+ "cierre": "DID THE RIGHT MAN WIN?",
+ "titulos": [
+  "Kane won the Ballon d'Or… but can he win THIS? 🏆",
+  "Ballon d'Or 2026 Cup: Kane vs Yamal vs Mbappé 😱",
+  "The Ballon d'Or rematch ⚽ Who really deserved it?"
+ ],
+ "descripcion": "Harry Kane won the 2026 Ballon d'Or. We put the top 8 in a spinning circle to settle it. Did the right man win? 👇",
+ "comentario_fijado": "Did Kane deserve the Ballon d'Or? 👇"
+}

@@ -1,0 +1,69 @@
+{
+ "formato": "sim",
+ "canal": "Footrix",
+ "video": {
+  "id": "3KdS3En91bI",
+  "titulo": "Who wins the Nations League 2026/27?",
+  "vistas": 2578941,
+  "fecha": "2026-10-02"
+ },
+ "mediana": 9833,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "simulación de torneo por eliminación directa mediante juego de bolillas con físicas",
+  "duracion_s": 59,
+  "primer_segundo": "llave de cuartos de final de la Nations League 2026/27 con banderas y una arena circular verde con bolillas",
+  "gancho_texto": "WHO WINS THE NATIONS LEAGUE 2026/27",
+  "protagonistas": [
+   "England",
+   "France",
+   "Spain",
+   "Germany",
+   "Belgium",
+   "Portugal",
+   "Norway",
+   "Netherlands"
+  ],
+  "desenlace": "España le gana la final a Portugal y se consagra campeón de la Nations League",
+  "ganador_popular": true,
+  "arco_de_tension": "eliminaciones consecutivas de cuartos, semis y final con la regla de 'first out goes through'",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "inicio de los cuartos de final Inglaterra vs Francia"
+   },
+   {
+    "t": 9.0,
+    "que": "Francia avanza tras quedar fuera primero Inglaterra"
+   },
+   {
+    "t": 58.0,
+    "que": "España se consagra campeón con lluvia de papelitos"
+   }
+  ],
+  "audio": {
+   "musica": "melodía alegre y enérgica estilo arcade / juego móvil",
+   "voz": "no",
+   "efectos": "rebotes de bolillas, sonido de eliminación por explosión de partículas, aplausos y bocinas de gol"
+  },
+  "visual": "animación 3D limpia y minimalista, colores oscuros de fondo con estética espacial y arena circular brillante en verde neón",
+  "texto_en_pantalla": "WHO WINS THE NATIONS LEAGUE 2026/27, QUARTER-FINAL, ENGLAND VS FRANCE, FIRST OUT GOES THROUGH, FRANCE ADVANCES, etc.",
+  "ritmo_cortes_por_segundo": 0.1,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "rivalidades europeas de selecciones nacionales y simulaciones predictivas",
+  "por_que_rinde_asi": [
+   "formato de torneo rápido y adictivo estilo canicas / physics simulation",
+   "interés global en el fútbol de selecciones y simulaciones del futuro",
+   "diseño visual sumamente pulido y satisfactorio que retiene la atención hasta el final"
+  ],
+  "que_le_falta": "un llamado a la acción al final para comentar el pronóstico del usuario",
+  "riesgo_copyright": "uso de escudos y banderas oficiales de federaciones de fútbol",
+  "calidad_produccion": "3D con nivel de pulido 9/10, físicas muy fluidas y diseño de interfaz impecable",
+  "camara_y_movimiento": "plano cenital fijo en la arena circular con actualización automática del cuadro del torneo arriba",
+  "diseno_sonoro": "efectos de colisión físicos sincronizados con los rebotes y sonido distintivo al ser eliminado",
+  "tramos": "0-10 cuartos 1, 11-34 resto de cuartos, 35-51 semifinales, 52-59 final y coronación",
+  "repetibilidad": "ver si tu selección favorita gana el torneo y adivinar quién sale primero",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar Blender o Godot para simular físicas de esferas con texturas de banderas genéricas o escudos estilizados sin copyright, y overlays de texto automáticos"
+ }
+}

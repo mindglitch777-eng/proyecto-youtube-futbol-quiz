@@ -1,0 +1,63 @@
+{
+ "formato": "sim",
+ "canal": "Ball Fight Simulation",
+ "video": {
+  "id": "Sj2gwKVWZwI",
+  "titulo": "🇪🇸 Spain vs 🇧🇪 Belgium | Quarter-final | World Cup 2026",
+  "vistas": 1216,
+  "fecha": "2026-07-09"
+ },
+ "mediana": 786,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Simulación estilo arcade/física de simulación de partidos estilo Mundial",
+  "duracion_s": 28,
+  "primer_segundo": "Pantalla de título 'World Cup Quarter-Finals' con España vs Bélgica 11 a 11 y círculos de rebote",
+  "gancho_texto": "WHO WILL WIN?",
+  "protagonistas": [
+   "España",
+   "Bélgica"
+  ],
+  "desenlace": "Bélgica gana 8 a 0 (al final del conteo), derrotando a España en cuartos de final de forma aplastante",
+  "ganador_popular": false,
+  "arco_de_tension": "Partido cambiante con idas y vueltas constantes en el marcador hasta que Bélgica saca ventaja y España se queda sin fichas",
+  "momentos_emocion": [
+   {
+    "t": 1.0,
+    "que": "Inicia la simulación con caóticas colisiones y marcador 11 vs 11"
+   },
+   {
+    "t": 14.0,
+    "que": "España toma momentánea ventaja 7 vs 6"
+   },
+   {
+    "t": 26.0,
+    "que": "Bélgica anota los últimos puntos dejando a España en 0"
+   }
+  ],
+  "audio": {
+   "musica": "Ritmo chiptune de 8 bits arcade acelerado",
+   "voz": "no",
+   "efectos": "Efectos de rebote estilo pong/retro y alertas al cambiar el marcador"
+  },
+  "visual": "Gráficos 2D pixelados minimalistas sobre fondo negro con círculos y banderas de países",
+  "texto_en_pantalla": "World Cup Quarter-Finals, España vs Bélgica, Bounce = Spawn chance, WINNER",
+  "ritmo_cortes_por_segundo": 1.0,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad futbolística europea en torneo de selecciones",
+  "por_que_rinde_asi": [
+   "Dinámica visual adictiva de 'pelotitas rebotando' que genera curiosidad hasta el final",
+   "Formato corto de torneo (Mundial) que apela al sentido de urgencia y competencia",
+   "Incertidumbre constante en el marcador antes del desenlace"
+  ],
+  "que_le_falta": "Comentarios de voz o una narración en off con tensión añadida",
+  "riesgo_copyright": "Bajo, uso de banderas simplificadas y elementos generados o arcade genéricos",
+  "calidad_produccion": "juego; nivel 6 por diseño minimalista funcional y limpio",
+  "camara_y_movimiento": "Cámara fija cenital enfocada en la arena circular con zoom estático",
+  "diseno_sonoro": "Sonidos de golpes retro acompasados con los rebotes de las partículas dentro del círculo",
+  "tramos": "0-2s gancho e introducción, 2-26s desarrollo del partido y colisiones, 26-28s anuncio del ganador",
+  "repetibilidad": "Ver el choque final y cómo se desploma el marcador del perdedor a cero",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar un motor de física 2D en Python o Godot con esferas de colores, escudos vectoriales gratuitos y música 8-bit de fondo"
+ }
+}

@@ -9,11 +9,17 @@
  "eliminar": 3,
  "circuito": [
   "clavos",
-  "aspas",
+  "molinos",
+  "pendulos",
   "zigzag",
   "rebotadores",
+  "portales",
+  "portales",
   "acelerador",
-  "molinos",
+  "trampolin",
+  "aspas",
+  "zigzag",
+  "pendulos",
   "embudo"
  ],
  "competidores": [
@@ -240,5 +246,10 @@
   "Roma takes the lead!",
   "Roma is out!",
   "Roma wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

@@ -1,0 +1,103 @@
+{
+ "id": "copa_01",
+ "formato": "copa",
+ "evento": "THE GOAT CUP",
+ "titulo": "WHO WINS THE GOAT CUP?",
+ "semilla": 1,
+ "competidores": [
+  {
+   "tipo": "jugador",
+   "nombre": "Cristiano Ronaldo",
+   "voz": "Ronaldo",
+   "anillo": [
+    240,
+    70,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Erling Haaland",
+   "voz": "Haaland",
+   "anillo": [
+    170,
+    120,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Kylian Mbappé",
+   "voz": "Mbappé",
+   "anillo": [
+    90,
+    210,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Vinícius Júnior",
+   "voz": "Vinicius",
+   "anillo": [
+    255,
+    255,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lionel Messi",
+   "voz": "Messi",
+   "anillo": [
+    120,
+    200,
+    255
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Harry Kane",
+   "voz": "Kane",
+   "anillo": [
+    255,
+    120,
+    120
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Lamine Yamal",
+   "voz": "Lamine Yamal",
+   "anillo": [
+    255,
+    205,
+    70
+   ]
+  },
+  {
+   "tipo": "jugador",
+   "nombre": "Neymar",
+   "voz": "Neymar",
+   "anillo": [
+    255,
+    220,
+    0
+   ]
+  }
+ ],
+ "ruta": {
+  "Cristiano Ronaldo": "F",
+  "Lionel Messi": "SF",
+  "Kylian Mbappé": "QF",
+  "Lamine Yamal": "QF"
+ },
+ "cierre": "LIKE = RONALDO · COMMENT = MESSI",
+ "titulos": [
+  "Messi or Ronaldo? The GOAT Cup 🏆⚽ Who wins?",
+  "8 superstars, 1 circle, 1 champion 😱",
+  "The GOAT CUP: only one survives 🐐"
+ ],
+ "descripcion": "8 superstars. One spinning circle. Two goals. Who wins the GOAT Cup? Pick yours before it starts 👇",
+ "comentario_fijado": "Who did you pick? Be honest 👇"
+}

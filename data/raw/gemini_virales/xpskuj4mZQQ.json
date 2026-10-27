@@ -1,0 +1,67 @@
+{
+ "formato": "sim",
+ "canal": "Footrix",
+ "video": {
+  "id": "xpskuj4mZQQ",
+  "titulo": "El Clásico Wins Since 2000 | REAL MADRID vs BARCELONA",
+  "vistas": 2462859,
+  "fecha": "2026-10-22"
+ },
+ "mediana": 9833,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Carrera histórica de puntos / contador acumulado en línea de tiempo vertical animada",
+  "duracion_s": 40,
+  "primer_segundo": "Aparece el título 'EL CLASICO 2000 - 2026' y la línea cronológica empieza a sumar partidos con tarjetas flotantes",
+  "gancho_texto": "EL CLASICO 2000 - 2026",
+  "protagonistas": [
+   "FC Barcelona",
+   "Real Madrid"
+  ],
+  "desenlace": "El Barcelona termina ganando la comparativa histórica de partidos en el periodo con 33 victorias frente a 28 del Real Madrid",
+  "ganador_popular": true,
+  "arco_de_tension": "Carrera reñida donde el Real Madrid lidera al inicio y luego el Barcelona remonta y saca ventaja en los años dorados",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Presentación del título y primeros partidos del año 2000"
+   },
+   {
+    "t": 10.0,
+    "que": "Empate y adelantamiento del Barcelona en la cuenta"
+   },
+   {
+    "t": 25.0,
+    "que": "Apertura de brecha importante a favor del Barcelona"
+   },
+   {
+    "t": 39.0,
+    "que": "Resultado final 33 a 28"
+   }
+  ],
+  "audio": {
+   "musica": "Canción instrumental épica y nostálgica con ritmo de cuenta regresiva",
+   "voz": "no",
+   "efectos": "Sonido de chispa/magia en cada aparición de partido"
+  },
+  "visual": "Animación 2D y diseño plano minimalista sobre fondo oscuro borroso con partículas estelares",
+  "texto_en_pantalla": "Fechas (Oct 2000, Nov 2001, etc.), resultados de partidos en tarjetas doradas y marcadores totales",
+  "ritmo_cortes_por_segundo": 1.0,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Rivalidad histórica Real Madrid vs FC Barcelona (El Clásico)",
+  "por_que_rinde_asi": [
+   "Rivalidad masiva global entre los dos clubes más seguidos del mundo",
+   "Formato de carrera interactiva que mantiene la atención hasta el último segundo para ver quién gana",
+   "Ritmo dinámico con acumulación constante de datos y gráficos limpios"
+  ],
+  "que_le_falta": "Un llamado a la acción al final para comentar qué equipo ganará el próximo partido",
+  "riesgo_copyright": "Uso de escudos oficiales de los clubes (marcas registradas)",
+  "calidad_produccion": "Animación 2D fluida, nivel de pulido 9/10, excelente sincronización visual y sonora",
+  "camara_y_movimiento": "Movimiento vertical continuo tipo scroll hacia abajo acompañando la línea de tiempo",
+  "diseno_sonoro": "Efecto de brillo metálico sutil cada vez que se suma un punto o aparece una tarjeta",
+  "tramos": "0-3s gancho y contexto; 3-38s desarrollo cronológico de la rivalidad; 38-40s marcador final",
+  "repetibilidad": "Alta curiosidad por ver en qué año exacto remontó un equipo u otro",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar plantillas de After Effects o p5.js con datos en JSON de estadísticas deportivas y escudos genéricos o siluetas"
+ }
+}

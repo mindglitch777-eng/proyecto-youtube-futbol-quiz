@@ -146,6 +146,18 @@ NUEVOS_SEEDS = [(q, "en", True) for q in [
     "football tier list",
 ]]
 
+# simulaciones físicas (pelota en círculo giratorio con arcos, bouncing ball, predicciones)
+SIM_SEEDS = [(q, "en", True) for q in [
+    "football simulation rotating circle goal", "ball in rotating circle goal football", "bouncing ball football simulation",
+    "world cup prediction simulation ball", "football match simulation circle", "penalty simulation ball circle",
+    "who will win simulation football", "ball escape circle football", "countryballs football simulation",
+    "satisfying ball simulation football", "football physics simulation who wins", "champions league prediction simulation",
+    "el clasico simulation", "messi vs ronaldo simulation ball", "football marble simulation goal",
+    "spinning circle football goal", "rotating ring ball goal simulation", "ball bouncing inside circle goal",
+    "who will win world cup simulation circle", "country ball inside circle goal", "football prediction bouncing ball",
+    "flag ball simulation football", "goal simulation who scores first",
+]]
+
 # mercados: misma consulta acotada por país (regionCode) para comparar tamaño y competencia
 MARKET_SEEDS = [
     ("quiz de futbol", "es", "AR"),
@@ -476,6 +488,8 @@ if __name__ == "__main__":
             cmd_search(FUTBOL_MEC_SEEDS)
         if cmd == "nichos":
             cmd_search(NICHOS_SEEDS)
+        if cmd == "sim":
+            cmd_search(SIM_SEEDS)
         if cmd == "nuevos":
             cmd_search(NUEVOS_SEEDS)
         if cmd == "cruce":

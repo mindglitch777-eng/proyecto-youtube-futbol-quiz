@@ -42,6 +42,17 @@ def paquete(g):
         fijar = "Who did you pick… and did they win? 👇"
         archivo = ('short.mp4" (con relator: nuestro toque) o "short_sin_voz.mp4" + un sonido en tendencia desde el editor '
                    '(remix acelerado, cumbia o funk, como la competencia). Alterná para comparar')
+    elif f == "copa":
+        for c in g["competidores"]:
+            if c["tipo"] == "jugador":
+                creditos.append(linea(CRED[MEJOR[c["nombre"]]["foto"]]))
+            twemoji |= c["tipo"] == "pais"
+        titulos = g["titulos"]
+        desc = g["descripcion"]
+        tags = ["#football", "#soccer", "#simulation", "#shorts", hashtag(g["evento"])] + [hashtag(c["nombre"]) for c in g["competidores"][:3]]
+        fijar = g["comentario_fijado"]
+        archivo = ('short.mp4" (con beat y efectos) o "short_sin_musica.mp4" + un sonido en tendencia desde el editor '
+                   '(remix acelerado o funk). Alterná para comparar')
     elif f in ("evolucion", "prime_now", "objeto"):
         cred = json.loads((out / "creditos.json").read_text())
         creditos = [linea(c) for c in cred.values()]

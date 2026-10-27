@@ -1,0 +1,71 @@
+{
+ "formato": "sim",
+ "canal": "Neon Arcade",
+ "video": {
+  "id": "pWa0ZCFtMQw",
+  "titulo": "Real Madrid vs Napoli ⚽ Who wins? | Football Marble Race #shorts",
+  "vistas": 27999,
+  "fecha": "2026-10-25"
+ },
+ "mediana": 1488,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "simulación arcade de fútbol 2D minimalista y vertiginosa con anillos y rebotes",
+  "duracion_s": 41,
+  "primer_segundo": "Escudo del Real Madrid chocando contra el borde circular con efectos de partículas amarillas sobre fondo negro y marcador 0-0",
+  "gancho_texto": "napoli's NIGHTMARE",
+  "protagonistas": [
+   "Real Madrid",
+   "Napoli"
+  ],
+  "desenlace": "Gana el Real Madrid agónicamente 3-2 en el último segundo contra el Napoli, cumpliendo la expectativa del favorito pero con máxima tensión.",
+  "ganador_popular": true,
+  "arco_de_tension": "Carrera de goles alternados con disparos rápidos y marcador ajustado (0-0, 1-0, 1-1, 2-1, 2-2, 2-3) hasta el clímax final.",
+  "momentos_emocion": [
+   {
+    "t": 14.0,
+    "que": "Primer gol del partido (1-0)"
+   },
+   {
+    "t": 16.0,
+    "que": "Empate inmediato del Napoli (1-1)"
+   },
+   {
+    "t": 20.0,
+    "que": "Gol del Real Madrid (2-1)"
+   },
+   {
+    "t": 21.0,
+    "que": "Empate 2-2 con fuegos artificiales"
+   },
+   {
+    "t": 38.0,
+    "que": "Gol agónico de la victoria (2-3) con celebración de fuegos artificiales"
+   }
+  ],
+  "audio": {
+   "musica": "música electrónica frenética estilo arcade de TikTok",
+   "voz": "no",
+   "efectos": "golpes metálicos al rebotar, estallidos y fuegos artificiales en los goles"
+  },
+  "visual": "Gráficos 2D minimalistas, círculos de neón (verde, azul, rosa), partículas doradas de impacto y escudos oficiales de los equipos",
+  "texto_en_pantalla": "napoli's NIGHTMARE al inicio, GOAL en cada gol, llamadas a comentar y votar en momentos clave",
+  "ritmo_cortes_por_segundo": 0.05,
+  "loop": true,
+  "pedido_al_espectador": "Comentar qué partido ver después y votar en la newsletter",
+  "polemica_o_debate": "Rivalidad de Champions League entre gigantes europeos",
+  "por_que_rinde_asi": [
+   "Acción constante y velocidad visual hipnótica que retiene al espectador",
+   "Efecto ASMR y visual satisfactorio con rebotes y partículas",
+   "Narrativa rápida de ida y vuelta que mantiene la tensión hasta el último segundo"
+  ],
+  "que_le_falta": "Un relato de locutor o efectos de hinchada real para elevar la inmersión",
+  "riesgo_copyright": "Uso de escudos oficiales de clubes de fútbol",
+  "calidad_produccion": "Animación 2D por código/motor gráfico simple; pulido 8/10 por su limpieza visual y fluidez",
+  "camara_y_movimiento": "Plano cenital fijo dentro de un círculo cerrado con seguimiento de los escudos rebotando",
+  "diseno_sonoro": "Sonidos de impacto y explosión sincrónicos con los goles para intensificar cada tanto",
+  "tramos": "0-2s gancho visual y texto; 2-38s desarrollo de los goles y marcador; 38-41s cierre y loop",
+  "repetibilidad": "El ritmo vertiginoso y los múltiples goles hacen que el espectador quiera ver el cierre otra vez",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar Processing, After Effects o un script de Python con física 2D básica, escudos libres de derechos y música trending de TikTok"
+ }
+}

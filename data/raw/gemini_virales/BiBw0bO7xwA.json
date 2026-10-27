@@ -1,0 +1,60 @@
+{
+ "formato": "sim",
+ "canal": "GreyHaT Sim",
+ "video": {
+  "id": "BiBw0bO7xwA",
+  "titulo": "Bouncing Balls Multiply in a Spiral! Satisfying Chain Reaction Simulation",
+  "vistas": 4776453,
+  "fecha": "2026-08-26"
+ },
+ "mediana": 136719,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "simulación arcade de física de partículas llenando un laberinto en espiral",
+  "duracion_s": 25,
+  "primer_segundo": "comienza la simulación con esferas rojas llenando el laberinto y contadores en pantalla",
+  "gancho_texto": null,
+  "protagonistas": [],
+  "desenlace": "las esferas llenan todo el laberinto superando masivamente el número de bloques",
+  "ganador_popular": false,
+  "arco_de_tension": "se construye viendo cómo el número de bolas crece exponencialmente y desborda los límites del laberinto",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "inicio de la avalancha de bolas rojas"
+   },
+   {
+    "t": 10.0,
+    "que": "cambio masivo a color verde llenando el centro"
+   },
+   {
+    "t": 20.0,
+    "que": "las bolas rompen las paredes exteriores y explotan por toda la pantalla"
+   }
+  ],
+  "audio": {
+   "musica": null,
+   "voz": "no",
+   "efectos": "sonidos continuos de colisión, rebote y llenado de bloques estilo ASMR de físicas"
+  },
+  "visual": "2D, simulación digital en cuadrícula, colores contrastantes (rojo, azul, verde)",
+  "texto_en_pantalla": "BALLS y BLOCKS con contadores numéricos dinámicos",
+  "ritmo_cortes_por_segundo": 0.0,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Efecto satisfactorio y ASMR visual y auditivo de llenado",
+   "Satisfacción de ver la acumulación y destrucción masiva al final",
+   "Ritmo constante sin interrupciones que atrapa la atención hasta el último segundo"
+  ],
+  "que_le_falta": "Un reto inicial o apuesta visual que cree más expectativa previa",
+  "riesgo_copyright": "bajo, contenido generado por simulación propia",
+  "calidad_produccion": "juego 2D/simulación; nivel 8/10 por la fluidez de físicas y diseño limpio",
+  "camara_y_movimiento": "plano cenital fijo sin cortes ni zooms",
+  "diseno_sonoro": "efectos de rebote constante que simulan profundidad y acción mecánica relajante",
+  "tramos": "0-20s acumulación en espiral, 20-25s explosión final y desborde",
+  "repetibilidad": "el loop perfecto y la saturación visual hacen que se rejugue para ver cada detalle",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar un motor de física 2D gratuito como Processing o Unity, programar un generador de laberintos y grabar la pantalla"
+ }
+}

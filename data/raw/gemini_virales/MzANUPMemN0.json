@@ -1,0 +1,67 @@
+{
+ "formato": "sim",
+ "canal": "Pixel Pitch",
+ "video": {
+  "id": "MzANUPMemN0",
+  "titulo": "Liverpool vs Villarreal ⚽ Who Will Win? | Champions League Goal Challenge #shorts",
+  "vistas": 1529,
+  "fecha": "2026-10-20"
+ },
+ "mediana": 878,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Minijuego simulado de Champions League entre Liverpool y Villarreal",
+  "duracion_s": 17,
+  "primer_segundo": "Cuenta regresiva de 3 a 1 con selección de equipos Liverpool vs Villarreal en pantalla circular oscura.",
+  "gancho_texto": "WHO WILL WIN? PICK A SIDE",
+  "protagonistas": [
+   "Liverpool",
+   "Villarreal"
+  ],
+  "desenlace": "Termina en empate 4-4, lo cual es un resultado sorprendente y muy ajustado dado que el Villarreal comenzó ganando y luego el Liverpool remontó hasta el 4-2, culminando en un empate dramático.",
+  "ganador_popular": false,
+  "arco_de_tension": "Remontada y partidazo con empate agónico; arranca Villarreal ganando, Liverpool lo da vuelta 4-2, y Villarreal empata 4-4 en los segundos finales.",
+  "momentos_emocion": [
+   {
+    "t": 4.0,
+    "que": "Primer gol de Villarreal"
+   },
+   {
+    "t": 5.0,
+    "que": "Gol de empate de Liverpool"
+   },
+   {
+    "t": 12.0,
+    "que": "Liverpool se pone 4-2"
+   },
+   {
+    "t": 14.0,
+    "que": "Empate agónico 4-4 de Villarreal"
+   }
+  ],
+  "audio": {
+   "musica": "Música arcade/electrónica de fondo de juego rápido",
+   "voz": "no",
+   "efectos": "Sonidos de cuenta regresiva, pitidos y estallidos de gol tipo arcade"
+  },
+  "visual": "Animación 2D minimalista estilo juego móvil; colores oscuros con neón blanco y los escudos en fichas circulares",
+  "texto_en_pantalla": "WHO WILL WIN? PICK A SIDE, CHAMPIONS LEAGUE ROTATING GOAL CHALLENGE, GOAL!, FULL TIME, DRAW",
+  "ritmo_cortes_por_segundo": 0.24,
+  "loop": true,
+  "pedido_al_espectador": "PICK A SIDE",
+  "polemica_o_debate": "Rivalidad de Champions League y partidos épicos europeos",
+  "por_que_rinde_asi": [
+   "Formato gamificado que invita a elegir un bando de inmediato",
+   "Tensión constante con goles rápidos y constantes cambios en el marcador",
+   "Desenlace inesperado con empate agónico 4-4"
+  ],
+  "que_le_falta": "Comentarios de voz en off narrando la emoción de los goles para mayor retención",
+  "riesgo_copyright": "Uso de escudos oficiales de clubes de fútbol",
+  "calidad_produccion": "Animación 2D en juego móvil; nivel de pulido 7/10 por diseño limpio, aunque simple.",
+  "camara_y_movimiento": "Vista cenital fija con elementos dinámicos moviéndose en círculos y rebotes.",
+  "diseno_sonoro": "Efectos arcade de pitidos para marcar goles y tensión en cuenta regresiva.",
+  "tramos": "0-3: gancho y selección de equipo; 3-15: partido de goles y remontada; 15-17: cierre con empate y loop.",
+  "repetibilidad": "El ritmo frenético de los goles y el final empatado invitan a ver el video de nuevo para seguir la trayectoria de los discos.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar plantillas de simulación física en Python, Godot o Unity con formas geométricas genéricas y banderas en lugar de escudos oficiales."
+ }
+}

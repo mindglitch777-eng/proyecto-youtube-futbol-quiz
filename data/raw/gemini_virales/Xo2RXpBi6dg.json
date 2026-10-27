@@ -1,0 +1,64 @@
+{
+ "formato": "sim",
+ "canal": "visualizing magic",
+ "video": {
+  "id": "Xo2RXpBi6dg",
+  "titulo": "will the ball evolve? 3 #satisfying #bouncingball #simulation #creativecoding",
+  "vistas": 7326334,
+  "fecha": "2026-09-02"
+ },
+ "mediana": 456572,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Simulación visual de evolución de esferas con caras estilo Geometry Dash dentro de un círculo",
+  "duracion_s": 49,
+  "primer_segundo": "Se ve una esfera gris cayendo por un tubo hacia un círculo con borde de arcoíris y se oye una voz infantil y divertida",
+  "gancho_texto": "will the ball evolve?",
+  "protagonistas": [],
+  "desenlace": "Las esferas chocan, se fusionan, evolucionan a tamaños mayores y caras más enojadas o grandes, llenando el círculo hasta que una esfera verde gigante domina el espacio",
+  "ganador_popular": false,
+  "arco_de_tension": "Se construye a través de fusiones sucesivas, aumento progresivo de tamaño, cambios de expresiones faciales y sonidos cada vez más intensos",
+  "momentos_emocion": [
+   {
+    "t": 5.0,
+    "que": "Primera evolución importante a cara morada enojada"
+   },
+   {
+    "t": 12.0,
+    "que": "Aparece la esfera roja gigante"
+   },
+   {
+    "t": 27.0,
+    "que": "Aparece la esfera azul gigante muy sonriente"
+   },
+   {
+    "t": 44.0,
+    "que": "Aparece la esfera verde gigante que llena casi todo el círculo"
+   }
+  ],
+  "audio": {
+   "musica": "Música electrónica de arcade rápida y repetitiva",
+   "voz": "Sí, voz infantil acelerada y aguda con frases recurrentes ('Fire in the hole')",
+   "efectos": "Sonidos de pops, explosiones, gritos agudos y risas"
+  },
+  "visual": "Animación 2D estilo juego arcade minimalista, colores vibrantes de neón sobre fondo negro",
+  "texto_en_pantalla": "will the ball evolve?",
+  "ritmo_cortes_por_segundo": 0.0,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Efecto ASMR y satisfacción visual de fusiones continuas",
+   "Uso de un meme de audio muy reconocible y adictivo ('Fire in the hole')",
+   "Curiosidad constante por ver cuál es la evolución final y máxima del objeto"
+  ],
+  "que_le_falta": "Un bucle perfecto (loop) al final para retener aún más la audiencia",
+  "riesgo_copyright": "Bajo, utiliza elementos y sonidos populares de memes de internet y juegos",
+  "calidad_produccion": "Animación 2D basada en física de simulación; nivel 7/10 por fluidez y diseño limpio aunque simple",
+  "camara_y_movimiento": "Plano general estático que muestra todo el contenedor circular, sin zooms ni movimientos de cámara",
+  "diseno_sonoro": "Efectos de sonido sincronizados exactamente con cada impacto y fusión, elevando la tensión conforme crecen los personajes",
+  "tramos": "0-2s gancho con la pregunta inicial y caída de bolas; 2-44s evolución progresiva y caótica de esferas; 44-49s clímax con la esfera verde gigante",
+  "repetibilidad": "La velocidad del caos y la cantidad de elementos simultáneos hacen que el espectador quiera verlo otra vez para no perderse detalles",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar un motor de física 2D gratuito (como p5.js o Unity) para programar colisiones de objetos con imágenes vectoriales o emojis que cambien al fusionarse"
+ }
+}

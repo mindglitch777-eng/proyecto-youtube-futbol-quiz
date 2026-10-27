@@ -1,0 +1,67 @@
+{
+ "formato": "top_sin_cara",
+ "canal": "Footypoints",
+ "video": {
+  "id": "RRwVEUuJZU0",
+  "titulo": "Real Madrid vs FC Barcelona / Who Wins? 🤔 #laliga #realmadrid #barcelona",
+  "vistas": 38757708,
+  "fecha": "2026-08-22"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "skit de predicción de fútbol en clave de humor con apuestas y chistes internos",
+  "duracion_s": 14,
+  "primer_segundo": "Una mujer baila sosteniendo dinero con un filtro de Real Madrid en la cabeza, mientras una niña vestida de Barcelona baila al fondo",
+  "gancho_texto": "PREDICTION / 0-0",
+  "protagonistas": [
+   "Barcelona",
+   "Real Madrid"
+  ],
+  "desenlace": "Gana el Barcelona 3-2 en un giro inesperado donde se reparten el dinero",
+  "ganador_popular": true,
+  "arco_de_tension": "Se inicia con un marcador de empate y baile provocativo, pasa por la aparición de un hombre con dinero y culmina con el cambio de marcador a favor del Barcelona",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Baile inicial con escudos flotantes"
+   },
+   {
+    "t": 5.0,
+    "que": "La niña se va decepcionada"
+   },
+   {
+    "t": 8.0,
+    "que": "Aparece un hombre con dinero y cambia la dinámica"
+   },
+   {
+    "t": 13.0,
+    "que": "Se revela el marcador final 3-2 para el Barcelona"
+   }
+  ],
+  "audio": {
+   "musica": "remix viral de trap/latino con melodía pegadiza",
+   "voz": "no",
+   "efectos": "efectos de sonido de dinero y transición"
+  },
+  "visual": "video casero vertical, buena iluminación hogareña, colores vibrantes en los filtros y marcadores digitales",
+  "texto_en_pantalla": "PREDICTION, LALIGA, 0-0, 3-2",
+  "ritmo_cortes_por_segundo": 0.3,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "rivalidad clásica Real Madrid vs Barcelona",
+  "por_que_rinde_asi": [
+   "Involucra la eterna rivalidad de los dos clubes más grandes de España",
+   "Usa elementos visuales reconocibles de videojuegos y TikTok (filtros, marcadores)",
+   "Tiene humor cotidiano y personajes carismáticos en un formato skit rápido"
+  ],
+  "que_le_falta": "Un remate aún más exagerado o gracioso al final",
+  "riesgo_copyright": "uso de escudos oficiales y logos de LaLiga",
+  "calidad_produccion": "video casero con edición de nivel medio de TikTok; nivel de pulido 7/10 por los elementos gráficos superpuestos",
+  "camara_y_movimiento": "cámara fija en trípode o apoyada, con cortes dinámicos entre las distintas escenas de la casa",
+  "diseno_sonoro": "música de fondo continua con énfasis en los cambios de escena y un beat pegadizo",
+  "tramos": "0-3s gancho y presentación, 3-9s desarrollo de la apuesta, 9-14s desenlace y resultado",
+  "repetibilidad": "alta por el contraste entre los bailes iniciales y el resultado final inesperado",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar avatares 3D o gráficos animados de los escudos enfrentándose con animaciones divertidas y efectos de sonido de apuestas"
+ }
+}

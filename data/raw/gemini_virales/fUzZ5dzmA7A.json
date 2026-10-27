@@ -1,0 +1,61 @@
+{
+ "formato": "sim",
+ "canal": "visualizing magic",
+ "video": {
+  "id": "fUzZ5dzmA7A",
+  "titulo": "Measuring π #satisfying #bouncingball #simulation #creativecoding",
+  "vistas": 4031665,
+  "fecha": "2026-07-31"
+ },
+ "mediana": 456572,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "animación geométrica educativa y asmr de aproximación de pi",
+  "duracion_s": 30,
+  "primer_segundo": "un círculo gris con líneas guía y la palabra 'Triangle' arriba, sonido de bocina y dibujo animado de un triángulo rojo",
+  "gancho_texto": "Measuring pi",
+  "protagonistas": [
+   "Triangle",
+   "Square",
+   "Polygon",
+   "Pi"
+  ],
+  "desenlace": "muestra polígonos cada vez con más lados (triángulo, cuadrado, pentágono hasta dohectágono) acercándose al valor exacto de pi con una aproximación visual y sonora hipnótica",
+  "ganador_popular": true,
+  "arco_de_tension": "se construye agregando lados sucesivamente con una bocina fallida ('nope') y un contador numérico que se aproxima cada vez más a pi mientras se acumulan líneas horizontales",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "comienza el conteo con el triángulo y el primer 'nope'"
+   },
+   {
+    "t": 28.0,
+    "que": "se llena la pantalla de líneas horizontales coloridas formando la figura completa de pi"
+   }
+  ],
+  "audio": {
+   "musica": "ninguna melodía, se centra en efectos sonoros y pitidos rítmicos",
+   "voz": "no",
+   "efectos": "bocina de error ('nope') repetida en cada polígono y pitido de progreso"
+  },
+  "visual": "animación 2D esquemática y geométrica en blanco, gris y líneas de colores del arcoíris",
+  "texto_en_pantalla": "nombres de las figuras geométricas (Triangle, Square, etc.) y número decimal variable en el centro inferior",
+  "ritmo_cortes_por_segundo": 1.0,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "satisfacción visual y asmr por la acumulación de líneas y colores",
+   "curiosidad matemática progresiva que genera enganche hasta el final",
+   "efecto sonoro icónico e irritantemente adictivo ('nope')"
+  ],
+  "que_le_falta": "nada, el formato es perfectamente autocontenido",
+  "riesgo_copyright": "ninguno",
+  "calidad_produccion": "animación 2D programada tipo simulación; nivel 8/10 por la fluidez de la progresión matemática y diseño sonoro",
+  "camara_y_movimiento": "estática con paneo vertical automático a medida que se acumulan las líneas del gráfico",
+  "diseno_sonoro": "bocina estilo 'wrong buzzer' sincronizada con la aparición de cada polígono y zumbido constante",
+  "tramos": "0-2s gancho con triángulo; 2-25s progresión geométrica exponencial; 25-30s resolución y llenado total",
+  "repetibilidad": "muy alta porque el espectador quiere ver el resultado final exacto de pi y el loop es perfecto",
+  "como_replicarlo_sin_cara_y_sin_clips": "generar un script en python (matplotlib o manim) que dibuje polígonos inscritos en un círculo y sume el perímetro automáticamente con efectos de sonido de error"
+ }
+}

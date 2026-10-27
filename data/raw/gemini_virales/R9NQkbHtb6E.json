@@ -1,0 +1,70 @@
+{
+ "formato": "sim",
+ "canal": "MainFutLab",
+ "video": {
+  "id": "R9NQkbHtb6E",
+  "titulo": "AI Predicted Every World Cup Winner… Here’s What Happened",
+  "vistas": 2959547,
+  "fecha": "2026-09-30"
+ },
+ "mediana": 49874,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "top inverso de predicciones de IA de ganadores de mundiales de fútbol desde 2030 hasta 2066",
+  "duracion_s": 25,
+  "primer_segundo": "jugador levantando una copa con texto animado WORLD CUP WINNERS 2066-2030 AI PREDICTION",
+  "gancho_texto": "WORLD CUP WINNERS 2066-2030 AI PREDICTION",
+  "protagonistas": [
+   "Portugal",
+   "France",
+   "Spain",
+   "Brazil",
+   "Netherlands",
+   "Argentina",
+   "Morocco",
+   "England",
+   "Japan"
+  ],
+  "desenlace": "termina en cuenta regresiva inversa llegando al 2066 con Japón como ganador sorpresa",
+  "ganador_popular": false,
+  "arco_de_tension": "cuenta regresiva inversa desde el 2030 hasta el 2066, pasando por selecciones gigantes y metiendo sorpresas que generan curiosidad por ver quién gana al final",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "impacto visual inicial con jugadores levantando copas"
+   },
+   {
+    "t": 12.0,
+    "que": "aparición de Messi representando a Argentina"
+   },
+   {
+    "t": 23.0,
+    "que": "llegada al 2030 con Cristiano Ronaldo y Portugal"
+   }
+  ],
+  "audio": {
+   "musica": "remix épico / slowed + reverb en tendencia con letra emotiva",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "clips de IA hiperrealistas de jugadores actuales envejecidos o ambientados en el futuro con los colores de sus selecciones; alta calidad, colores vibrantes",
+  "texto_en_pantalla": "WORLD CUP WINNERS 2066-2030 AI PREDICTION al inicio y luego años con países (ej: 2066: JAPAN)",
+  "ritmo_cortes_por_segundo": 0.36,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "predicciones futuras de mundiales y debate sobre qué selecciones dominarán",
+  "por_que_rinde_asi": [
+   "formato de cuenta regresiva inversa adictivo",
+   "uso de imágenes de IA hiperrealistas que parecen reales",
+   "temática de fútbol global con países muy populares"
+  ],
+  "que_le_falta": "un llamado a la acción al final para comentar el país favorito",
+  "riesgo_copyright": "uso de marcas oficiales de FIFA, escudos de federaciones y rostros de futbolistas",
+  "calidad_produccion": "IA avanzada combinada con edición dinámica; nivel 9/10 por el realismo de las imágenes generadas y la sincronización con el ritmo",
+  "camara_y_movimiento": "efectos de zoom lento y transiciones rápidas entre cada año",
+  "diseno_sonoro": "base musical continua que acelera el pulso y genera expectativa sin efectos de sonido adicionales",
+  "tramos": "0-4s: intro y gancho principal; 4-25s: cuenta regresiva año por año con imágenes de jugadores",
+  "repetibilidad": "el formato inverso y rápido obliga a volver a verlo para chequear todos los países y años",
+  "como_replicarlo_sin_cara_y_sin_clips": "usar un generador de IA para crear fotos futuristas de futbolistas de espaldas o siluetas con camisetas genéricas, con tipografía llamativa y música épica sin copyright"
+ }
+}

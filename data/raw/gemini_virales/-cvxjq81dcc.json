@@ -1,0 +1,69 @@
+{
+ "formato": "sim",
+ "canal": "Footrix",
+ "video": {
+  "id": "-cvxjq81dcc",
+  "titulo": "WHO WINS THE BALLON D’OR 2026?! | Yamal, Mbappé, Messi, Rodri, Kane, Haaland, Olise or Dembélé",
+  "vistas": 3885794,
+  "fecha": "2026-10-25"
+ },
+ "mediana": 9833,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Torneo eliminatorio interactivo de predicción del Balón de Oro 2026",
+  "duracion_s": 58,
+  "primer_segundo": "Llave de cuartos de final Ballon d'Or Winner 2026 con Mbappe vs Rodri girando en círculo",
+  "gancho_texto": "BALLON D'OR WINNER 2026 - FIRST OUT GOES THROUGH",
+  "protagonistas": [
+   "Mbappé",
+   "Rodri",
+   "Yamal",
+   "Dembélé",
+   "Olise",
+   "Messi",
+   "Kane",
+   "Haaland"
+  ],
+  "desenlace": "Gana Harry Kane, lo cual resulta sorpresivo frente a favoritos habituales como Mbappé o Messi",
+  "ganador_popular": false,
+  "arco_de_tension": "Eliminatorias directas donde el primer jugador en salir de un círculo giratorio es eliminado (o avanza según regla del juego)",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio del primer enfrentamiento Mbappé vs Rodri"
+   },
+   {
+    "t": 47.0,
+    "que": "Semifinal tensa Messi vs Kane donde avanza Kane"
+   },
+   {
+    "t": 57.0,
+    "que": "Consagración final de Harry Kane con confeti"
+   }
+  ],
+  "audio": {
+   "musica": "Música rítmica arcade de tensión y misterio",
+   "voz": "no",
+   "efectos": "Sonidos de cuenta regresiva, impacto y celebración"
+  },
+  "visual": "Diseño gráfico 2D/3D con estética dorada y elegante, fotos recortadas de jugadores en círculos",
+  "texto_en_pantalla": "BALLON D'OR WINNER 2026, QUARTER-FINAL, SEMI-FINAL, FINAL, nombres de jugadores y ganadores",
+  "ritmo_cortes_por_segundo": 0.08,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Quién ganará el Balón de Oro en 2026 y comparativa entre estrellas",
+  "por_que_rinde_asi": [
+   "Dinámica visual adictiva de ruleta/eliminación",
+   "Participación de las máximas figuras del fútbol mundial actual",
+   "Resultado inesperado que genera sorpresa en el espectador"
+  ],
+  "que_le_falta": "Un llamado a la acción al final para comentar su favorito",
+  "riesgo_copyright": "Imágenes de rostros de futbolistas (uso bajo fair use / miniatura de internet)",
+  "calidad_produccion": "Diseño 2D/3D limpio y pulido profesional, nivel 8/10 por la fluidez de las animaciones y diseño estético en tonos dorados",
+  "camara_y_movimiento": "Cámara estática con elementos animados girando en bucle y transiciones de llaves",
+  "diseno_sonoro": "Efectos de sonido arcade para marcar las eliminaciones y fanfarria final",
+  "tramos": "0-5s gancho y presentación, 5-55s eliminatorias sucesivas, 55-58s coronación",
+  "repetibilidad": "La curiosidad por ver quién gana el torneo y si coincide con la predicción del espectador",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar herramientas de edición o código (Python/Manim) para generar círculos rotatorios con avatares genéricos o vectores de futbolistas y efectos de sonido libres de copyright"
+ }
+}

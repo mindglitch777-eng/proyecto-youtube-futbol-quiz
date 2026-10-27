@@ -1,0 +1,205 @@
+{
+ "id": "copa_03",
+ "formato": "copa",
+ "evento": "CHAMPIONS LEAGUE CUP",
+ "titulo": "WHO WINS THE CHAMPIONS LEAGUE?",
+ "semilla": 3,
+ "competidores": [
+  {
+   "tipo": "club",
+   "nombre": "Real Madrid",
+   "corto": "MADRID",
+   "colores": [
+    [
+     245,
+     245,
+     245
+    ],
+    [
+     0,
+     82,
+     159
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Real Madrid",
+   "anillo": [
+    245,
+    245,
+    245
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Arsenal",
+   "corto": "ARSENAL",
+   "colores": [
+    [
+     220,
+     0,
+     20
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Arsenal",
+   "anillo": [
+    255,
+    90,
+    90
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Bayern Munich",
+   "corto": "BAYERN",
+   "colores": [
+    [
+     220,
+     5,
+     45
+    ],
+    [
+     245,
+     245,
+     245
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "Bayern",
+   "anillo": [
+    240,
+    60,
+    80
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Inter",
+   "corto": "INTER",
+   "colores": [
+    [
+     0,
+     104,
+     168
+    ],
+    [
+     20,
+     20,
+     20
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Inter",
+   "anillo": [
+    60,
+    160,
+    255
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "FC Barcelona",
+   "corto": "BARÇA",
+   "colores": [
+    [
+     165,
+     0,
+     68
+    ],
+    [
+     0,
+     77,
+     152
+    ]
+   ],
+   "estilo": "rayas",
+   "voz": "Barca",
+   "anillo": [
+    255,
+    90,
+    140
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Paris Saint-Germain",
+   "corto": "PSG",
+   "colores": [
+    [
+     0,
+     65,
+     112
+    ],
+    [
+     218,
+     41,
+     28
+    ]
+   ],
+   "estilo": "franja",
+   "voz": "P S G",
+   "anillo": [
+    80,
+    140,
+    255
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Liverpool",
+   "corto": "LIVERPOOL",
+   "colores": [
+    [
+     200,
+     16,
+     46
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Liverpool",
+   "anillo": [
+    230,
+    40,
+    70
+   ]
+  },
+  {
+   "tipo": "club",
+   "nombre": "Manchester City",
+   "corto": "CITY",
+   "colores": [
+    [
+     108,
+     171,
+     221
+    ]
+   ],
+   "estilo": "liso",
+   "voz": "Man City",
+   "anillo": [
+    108,
+    171,
+    221
+   ]
+  }
+ ],
+ "ruta": {
+  "Real Madrid": "F",
+  "FC Barcelona": "SF",
+  "Bayern Munich": "QF",
+  "Liverpool": "QF"
+ },
+ "cierre": "WHO WINS IT FOR REAL?",
+ "titulos": [
+  "Who wins the Champions League 2026/27? 🏆 Circle Cup",
+  "Madrid, Barça or Bayern? UCL prediction 😱",
+  "UCL prediction: 8 giants, 1 spinning circle ⚽"
+ ],
+ "descripcion": "8 Champions League giants. One spinning circle. Two goals. Who lifts the trophy? Pick yours 👇",
+ "comentario_fijado": "Who wins the Champions League this season? 👇"
+}

@@ -1,0 +1,74 @@
+{
+ "formato": "sim",
+ "canal": "MainFutLab",
+ "video": {
+  "id": "3UjgT9W9f94",
+  "titulo": "Does AI Know Who Will Win the Next Champions League? 😬🏆 #championsleague #soccer #viral",
+  "vistas": 594811,
+  "fecha": "2026-10-23"
+ },
+ "mediana": 49874,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Predicción de ganadores de la Champions League por IA año a año de forma regresiva",
+  "duracion_s": 33,
+  "primer_segundo": "Jugadores del PSG levantando la Champions League con confeti y texto 'CHAMPIONS LEAGUE WINNERS 2027-2040 AI PREDICTS'",
+  "gancho_texto": "CHAMPIONS LEAGUE WINNERS 2027-2040 AI PREDICTS",
+  "protagonistas": [
+   "PSG",
+   "Barcelona",
+   "Real Madrid",
+   "Napoli",
+   "Manchester City",
+   "Arsenal",
+   "Inter Milan",
+   "Liverpool",
+   "Chelsea",
+   "Man United",
+   "Newcastle",
+   "Juventus",
+   "Atletico"
+  ],
+  "desenlace": "Recorrido inverso desde 2040 hasta 2027 mostrando distintos equipos ganadores, cerrando con el PSG.",
+  "ganador_popular": true,
+  "arco_de_tension": "Cuenta regresiva temporal (de 2040 a 2027) que acelera la expectativa hacia el presente y futuro cercano, combinando equipos gigantes y sorpresas.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Ganador inicial y título llamativo"
+   },
+   {
+    "t": 15.0,
+    "que": "Aparición de clubes de media tabla o sorpresas (Newcastle, Napoli)"
+   },
+   {
+    "t": 31.0,
+    "que": "Cierre con el PSG campeón de IA"
+   }
+  ],
+  "audio": {
+   "musica": "Canción en tendencia con ritmo épico y emocional (give me freedom...)",
+   "voz": "no",
+   "efectos": "ninguno destacado"
+  },
+  "visual": "Clips de video reales/IA estilizados, alta saturación, colores vibrantes con etiquetas de texto en verde fosforescente",
+  "texto_en_pantalla": "Años y nombres de equipos en cada corte (ej: '2040: ATLÉTICO', '2039: REAL MADRID')",
+  "ritmo_cortes_por_segundo": 0.42,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Debates sobre el futuro del fútbol europeo y qué equipos romperán la hegemonía",
+  "por_que_rinde_asi": [
+   "Formato de cuenta regresiva inversa que engancha hasta el final",
+   "Uso de IA y predicciones futuristas sobre fútbol muy atractivas para jóvenes",
+   "Mezcla de clubes gigantes con sorpresas que genera comentarios y debates"
+  ],
+  "que_le_falta": "Un llamado a la acción al final para comentar el año o equipo favorito",
+  "riesgo_copyright": "Uso de imágenes y escudos oficiales de clubes y UEFA Champions League",
+  "calidad_produccion": "Clips de fútbol editados con tipografías llamativas; nivel 8/10 por la sincronización con la música y el concepto dinámico",
+  "camara_y_movimiento": "Cámaras lentas en rostros de futbolistas, zooms rápidos y cortes precisos al ritmo de la música",
+  "diseno_sonoro": "Canción continua con letra motivacional que guía la duración total del short",
+  "tramos": "0-3s Gancho inicial; 3-32s Conteo regresivo año por año de ganadores; 32-33s Cierre",
+  "repetibilidad": "Verlo de nuevo para chequear el año de su equipo favorito o debatir si la IA acertará",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar fotos de stock o avatares generados por IA con camisetas ficticias o escudos vectoriales libres de copyright, manteniendo el conteo regresivo y música épica"
+ }
+}

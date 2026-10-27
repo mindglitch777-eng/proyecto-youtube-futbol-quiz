@@ -1,0 +1,60 @@
+{
+ "formato": "sim",
+ "canal": "bouncyball",
+ "video": {
+  "id": "eX5dtXBbDgU",
+  "titulo": "Which song is the bouncing balls playing? #asmr #adhd #satisfying #ball #bounce #bouncingball #code",
+  "vistas": 5604310,
+  "fecha": "2026-09-22"
+ },
+ "mediana": 326093,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Simulación física repetitiva y ASMR con aceleración de gravedad y destrucción de esferas",
+  "duracion_s": 20,
+  "primer_segundo": "Se ve texto superior 'EVERY SMASH GRAVITY INCREASES' sobre fondo negro y una cadena vertical de esferas de colores neón conectadas por líneas con flechas.",
+  "gancho_texto": "EVERY SMASH GRAVITY INCREASES",
+  "protagonistas": [],
+  "desenlace": "Las esferas aumentan de tamaño rápidamente a medida que la gravedad se incrementa, chocando y llenando toda la pantalla hasta colapsar el espacio visual en un bucle continuo.",
+  "ganador_popular": false,
+  "arco_de_tension": "Aumento exponencial de la gravedad golpe tras golpe, acelerando el ritmo de destrucción y el tamaño de las esferas hasta el caos visual.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio de la simulación con esferas pequeñas."
+   },
+   {
+    "t": 10.0,
+    "que": "Las esferas crecen y ocupan más espacio en pantalla."
+   },
+   {
+    "t": 18.0,
+    "que": "Colisión masiva de esferas gigantes cubriendo el encuadre."
+   }
+  ],
+  "audio": {
+   "musica": "Música rítmica y electrónica de fondo con beats que acompañan los impactos",
+   "voz": "no",
+   "efectos": "Sonidos metálicos y de ruptura tipo ASMR sincronizados con cada golpe o destrucción de esfera"
+  },
+  "visual": "Animación 2D minimalista y geométrica en fondo negro, con colores neón vibrantes y alta saturación",
+  "texto_en_pantalla": "EVERY SMASH GRAVITY INCREASES (fijo arriba en la primera parte)",
+  "ritmo_cortes_por_segundo": 0.0,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Efecto ASMR visual y auditivo sumamente satisfactorio y relajante.",
+   "La sensación de progresión infinita y caos creciente atrapa la atención hasta el último segundo.",
+   "Estructura en loop perfecto que genera visualizaciones repetidas sin que el usuario note dónde empieza y termina."
+  ],
+  "que_le_falta": "Un contador de 'gravedad actual' o de impactos en tiempo real para aumentar la interactividad mental.",
+  "riesgo_copyright": "Ninguno (contenido 100% generado por simulación propia)",
+  "calidad_produccion": "Animación 2D por código/física; nivel de pulido 9/10 por la fluidez de las colisiones y sincronización de sonido.",
+  "camara_y_movimiento": "Plano fijo general cenital sin movimientos de cámara, enfocando toda la acción en el centro.",
+  "diseno_sonoro": "Sonidos clank/crash limpios y estridentes tipo ASMR para cada impacto que marcan el ritmo del video.",
+  "tramos": "0-2s: Gancho y presentación; 2-18s: Desarrollo y aceleración progresiva de la gravedad; 18-20s: Clímax caótico y transición al loop.",
+  "repetibilidad": "El loop transparente y el aumento exponencial rápido hacen que el usuario quiera ver el ciclo completo otra vez.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar un motor de física 2D en Python (Pygame, Processing) o Unity para simular gravedad variable y partículas con sonidos ASMR libres de copyright."
+ }
+}

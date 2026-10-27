@@ -1,0 +1,90 @@
+{
+ "formato": "sim",
+ "canal": "Footrix",
+ "video": {
+  "id": "_YOuPpToUwk",
+  "titulo": "The Goal That Sent Two Countries to War | True Story",
+  "vistas": 26,
+  "fecha": "2026-10-27"
+ },
+ "mediana": 9833,
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "formato_exacto": "Documental animado e informativo de larga duración sobre la verdad detrás de 'La Guerra del Fútbol' entre El Salvador y Honduras en 1969.",
+  "duracion_s": 591,
+  "primer_segundo": "Fotografía histórica en blanco y negro de futbolistas disputando un balón mientras la voz narradora introduce los partidos de junio de 1969.",
+  "gancho_texto": "THE MATCH THAT STARTED A WAR?",
+  "protagonistas": [
+   "El Salvador",
+   "Honduras",
+   "Amelia Bolaños",
+   "Ryszard Kapuściński",
+   "Roberto Cardona",
+   "Mario Griffin",
+   "Mauricio 'Pipo' Rodríguez",
+   "Capitán Fernando Soto",
+   "Mario Monge"
+  ],
+  "desenlace": "Muestra cómo en 1981, 12 años después de la guerra, Honduras empata con México para clasificar a El Salvador junto con ellos al Mundial de España 1982.",
+  "ganador_popular": true,
+  "arco_de_tension": "Estructura documental dividida en 8 capítulos que va desglosando la tensión geopolítica, la violencia en los 3 partidos de fútbol, la invasión armada de 100 horas y finalmente desmonta el mito de la joven suicida demostrando que la guerra tuvo causas político-migratorias.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Presentación de la famosa leyenda de Amelia Bolaños."
+   },
+   {
+    "t": 34.0,
+    "que": "Aparición del sello 'NEVER EXISTED' desmintiendo el mito."
+   },
+   {
+    "t": 126.0,
+    "que": "Explicación de las deportaciones masivas y tensión fronteriza."
+   },
+   {
+    "t": 206.0,
+    "que": "Gol de Honduras en el minuto 89' durante el primer juego."
+   },
+   {
+    "t": 310.0,
+    "que": "Quema de la bandera hondureña e incidentes violentos en el segundo juego."
+   },
+   {
+    "t": 437.0,
+    "que": "Gol en tiempo extra de 'Pipo' Rodríguez en el partido desempate."
+   },
+   {
+    "t": 548.0,
+    "que": "El último combate aéreo con aviones de hélice en la historia militar."
+   },
+   {
+    "t": 720.0,
+    "que": "Investigación periodística que confirma que Amelia Bolaños jamás existió."
+   },
+   {
+    "t": 932.0,
+    "que": "Empate histórico entre Honduras y México que le da el pase al Mundial a El Salvador."
+   }
+  ],
+  "audio": {
+   "musica": "Banda sonora documental de suspenso e investigación con tonos sombríos y orquestación cinematográfica.",
+   "voz": "Sí, voz en off masculina profesional en inglés, tono narrativo, sobrio e informativo.",
+   "efectos": "Hojas de papel, máquina de escribir, silbatos de árbitro, rugido de multitudes, explosiones, aviones volando, disparos y sellos de documento."
+  },
+  "visual": "Motion graphics 2D y 2.5D de altísima calidad, mapas topográficos animados en tonos oscuros, fotos de archivo tratadas con profundidad paralaje y estética de archivos policiales/expedientes.",
+  "texto_en_pantalla": "Títulos de capítulos numerados, marcadores de partidos, estadísticas demográficas, nombres de jugadores y citas textuales.",
+  "ritmo_cortes_por_segundo": 0.35,
+  "loop": false,
+  "pedido_al_espectador": "Suscribirse al canal y activar la campana de notificaciones al final del video.",
+  "polemica_o_debate": "Desmitificación de si un partido de fútbol realmente provocó una guerra o si fue una manipulación de la prensa y los gobiernos militares.",
+  "por_que_rinde_asi": "Es un video largo en formato horizontal (casi 10 minutos) analizado en métricas de shorts, donde el tiempo de retención y la dinámica difieren del formato vertical acelerado.",
+  "que_le_falta": "Para formato corto viral, adaptarlo a estructura vertical de 60 segundos enfocado en la revelación de 'El mito de la chica que se suicidó por un gol' con subtítulos dinámicos centrales.",
+  "riesgo_copyright": "Metraje histórico de archivo de transmisiones de la FIFA/Mundiales y fotos periodísticas registradas.",
+  "calidad_produccion": "Motion graphics 2.5D e infografía documental de nivel profesional (10/10) con una animación fluida de mapas, textos y documentos estilizados.",
+  "camara_y_movimiento": "Panorámicas lentas sobre mapas, efectos de zoom suave hacia detalles de periódicos y efecto paralaje en fotografías en blanco y negro.",
+  "diseno_sonoro": "Cuidado ambiente sonoro con capas de efectos reales (motores de avión, muchedumbres de estadios, golpes de sello) que acentúan la narrativa.",
+  "tramos": "0:00-0:45 Gancho con el mito de Amelia Bolaños; 0:45-1:45 Capítulo 1: Contexto migratorio y territorial; 1:45-4:55 Capítulos 2 a 4: Los tres partidos de fútbol; 4:55-6:26 Capítulo 5: La Guerra de las 100 Horas; 6:26-8:04 Capítulos 6 y 7: Costo humano y desmitificación; 8:04-9:51 Capítulo 8: La reconciliación y cierre.",
+  "repetibilidad": "Baja en su totalidad por ser un documental largo, pero alta en segmentos específicos para revisar detalles históricos o gráficos.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Utilizar narración en voz en off profesional, crear mapas vectoriales animados con After Effects/Mapbox, recortar fotos históricas de dominio público para darles efecto 3D paralaje y montar gráficos tipo expediente periodístico."
+ }
+}

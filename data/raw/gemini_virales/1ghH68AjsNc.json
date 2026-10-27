@@ -1,0 +1,72 @@
+{
+ "formato": "top_sin_cara",
+ "canal": "CheemsNews",
+ "video": {
+  "id": "1ghH68AjsNc",
+  "titulo": "SHAKIRA MENCIONO a sus FUTBOLISTAS FAVORITOS en DAI DAI 😱 #shakira #curiosidades #datoscuriosos",
+  "vistas": 26061682,
+  "fecha": "2026-08-25"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Listado vertiginoso de leyendas del fútbol mencionadas en una canción de Shakira con clips rápidos.",
+  "duracion_s": 20,
+  "primer_segundo": "Shakira bailando con una flecha roja apuntando hacia ella y texto con interrogante sobre futbolistas favoritos.",
+  "gancho_texto": "¿Te diste cuenta que Shakira mencionó a sus futbolistas favoritos en 'Darty'?",
+  "protagonistas": [
+   "Shakira",
+   "Pelé",
+   "Maradona",
+   "Romario",
+   "Cristiano Ronaldo",
+   "Ronaldo",
+   "Iniesta",
+   "Kaká",
+   "Messi",
+   "Mbappé",
+   "Salah"
+  ],
+  "desenlace": "Muestra una seguidilla imparable de leyendas históricas y actuales del fútbol mundial al ritmo de la música.",
+  "ganador_popular": true,
+  "arco_de_tension": "Aceleración constante de nombres y clips icónicos uno tras otro sin respiro.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Pregunta inicial y baile de Shakira."
+   },
+   {
+    "t": 11.0,
+    "que": "Explosión de nombres de leyendas (Pelé, Maradona, etc.)."
+   },
+   {
+    "t": 18.0,
+    "que": "Cierre con Messi y Salah."
+   }
+  ],
+  "audio": {
+   "musica": "Canción pop/urbana moderna de Shakira ('Darty')",
+   "voz": "Voz en off masculina con acento latino, rápida y enérgica",
+   "efectos": "Silbidos de árbitro y sonidos de ambiente de estadio"
+  },
+  "visual": "Clips de video musicales y de partidos históricos, alta saturación, subtítulos gigantes en pantalla.",
+  "texto_en_pantalla": "Sí, subtítulos dinámicos de colores llamativos con emojis en cada segundo.",
+  "ritmo_cortes_por_segundo": 0.9,
+  "loop": true,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Listado definitivo de GOATs y leyendas del fútbol mundial.",
+  "por_que_rinde_asi": [
+   "Combina la enorme popularidad de Shakira con la nostalgia y pasión del fútbol.",
+   "Ritmo frenético que impide el aburrimiento y fomenta la visualización completa.",
+   "Uso de subtítulos dinámicos gigantes que retienen la atención visual."
+  ],
+  "que_le_falta": "Una pregunta final interactiva en comentarios para disparar el engagement.",
+  "riesgo_copyright": "Alto riesgo por uso de clips musicales con derechos y videos de partidos FIFA/televisión.",
+  "calidad_produccion": "Nivel de pulido 8/10; edición rápida y muy profesional, aunque compuesta de material ajeno.",
+  "camara_y_movimiento": "Zooms agresivos, flechas rojas indicadoras y cortes ultra rápidos al ritmo de los nombres.",
+  "diseno_sonoro": "Sincronización perfecta entre cada mención de leyenda y los cortes musicales o efectos de estadio.",
+  "tramos": "0-3s Gancho y contexto, 3-20s Desfile rápido de futbolistas y cierre musical.",
+  "repetibilidad": "Alta, ya que al pasar tan rápido los nombres, el espectador suele rechequear el video para ver a todos los jugadores mencionados.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar recortes animados tipo cómic o vectores libres de cada jugador, con subtítulos dinámicos generados por código (Remotion) y música trending de fondo."
+ }
+}

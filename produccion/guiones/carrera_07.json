@@ -8,11 +8,17 @@
  "voz_intro": "Legends or the new generation? Pick one now!",
  "eliminar": 3,
  "circuito": [
-  "rebotadores",
-  "zigzag",
   "clavos",
+  "portales",
+  "pendulos",
   "molinos",
+  "portales",
+  "trampolin",
+  "zigzag",
+  "pendulos",
   "acelerador",
+  "zigzag",
+  "rebotadores",
   "aspas",
   "embudo"
  ],
@@ -128,5 +134,10 @@
   "Saka takes the lead!",
   "Saka is out!",
   "Saka wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

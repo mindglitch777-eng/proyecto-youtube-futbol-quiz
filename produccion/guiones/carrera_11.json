@@ -8,12 +8,18 @@
  "voz_intro": "Champions League Wednesday. Pick your club now!",
  "eliminar": 3,
  "circuito": [
-  "zigzag",
-  "rebotadores",
   "clavos",
-  "molinos",
-  "aspas",
+  "trampolin",
+  "portales",
+  "zigzag",
+  "zigzag",
   "acelerador",
+  "pendulos",
+  "molinos",
+  "rebotadores",
+  "aspas",
+  "pendulos",
+  "portales",
   "embudo"
  ],
  "competidores": [
@@ -230,5 +236,10 @@
   "Leipzig takes the lead!",
   "Leipzig is out!",
   "Leipzig wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

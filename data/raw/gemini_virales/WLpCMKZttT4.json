@@ -1,0 +1,66 @@
+{
+ "formato": "sim",
+ "canal": "FOOTIEHAWK",
+ "video": {
+  "id": "WLpCMKZttT4",
+  "titulo": "Gavi VS Son VS Benzema VS Lehmann VS Messi VS Ronaldo #shorts",
+  "vistas": 49578,
+  "fecha": "2026-10-19"
+ },
+ "mediana": 815962,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Short viral de competencia de jugadores con eliminación rápida y llamado a elegir entre Cristiano Ronaldo y Messi",
+  "duracion_s": 24,
+  "primer_segundo": "Un joven empapado imita que corta agua con una tijera al lado de una manguera en un jardín",
+  "gancho_texto": "Cabecitas de futbolistas en la parte superior eliminándose progresivamente al ritmo de la música",
+  "protagonistas": [
+   "Cristiano Ronaldo",
+   "Messi",
+   "Son Heung-min",
+   "Karim Benzema",
+   "Jenni Hermoso"
+  ],
+  "desenlace": "El video finaliza enfrentando a Cristiano Ronaldo y Lionel Messi, pidiendo like por Ronaldo y suscribirse por Messi.",
+  "ganador_popular": true,
+  "arco_de_tension": "Se inicia con una barra de selección superior que va cambiando de un jugador a otro rápidamente mediante cortes sincronizados con el ritmo.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio con el gancho visual de caras de jugadores y un desafío humorístico con agua"
+   },
+   {
+    "t": 10.0,
+    "que": "Cambio rápido de escena a saltos y trucos virales"
+   },
+   {
+    "t": 22.0,
+    "que": "Clímax con Cristiano Ronaldo con ojos láser y transición al duelo final CR7 vs Messi"
+   }
+  ],
+  "audio": {
+   "musica": "Remix electrónico rápido con melodía vocal acelerada en ruso/ucraniano",
+   "voz": "no",
+   "efectos": "Sonidos de transición rápidos y efectos musicales de tensión"
+  },
+  "visual": "Recopilación de clips virales de internet de baja y media calidad combinados con ediciones digitales de caras flotantes y láseres",
+  "texto_en_pantalla": "Like for Ronaldo, Subscribe for Messi, íconos de pulgar arriba y campana",
+  "ritmo_cortes_por_segundo": 0.25,
+  "loop": true,
+  "pedido_al_espectador": "Like para Ronaldo, Suscribirse para Messi",
+  "polemica_o_debate": "El debate eterno GOAT entre Cristiano Ronaldo y Lionel Messi",
+  "por_que_rinde_asi": [
+   "Utiliza la rivalidad eterna Cristiano vs Messi para retener al espectador hasta el final",
+   "Combina videos virales dinámicos y humorísticos de internet manteniendo la atención alta",
+   "Usa el formato de 'eliminación de candidatos' muy popular en TikTok y Shorts para generar curiosidad"
+  ],
+  "que_le_falta": "Un gancho inicial más claro sobre qué se está decidiendo antes de pasar a los clips aleatorios",
+  "riesgo_copyright": "Alto por el uso masivo de clips de terceros sacados de internet y música con derechos",
+  "calidad_produccion": "Edición casera de clips virales y memes con nivel de pulido 5/10 por cortes bruscos e imágenes superpuestas de IA y recortadas",
+  "camara_y_movimiento": "Cortes rápidos entre clips, zooms digitales y transiciones sincronizadas con el beat de la música",
+  "diseno_sonoro": "Base musical constante y acelerada con énfasis rítmico en cada corte de personaje",
+  "tramos": "0-3s: Gancho visual con cabezas de jugadores; 3-21s: Secuencia rápida de clips virales y desafíos; 21-24s: Llamado a la acción CR7 vs Messi",
+  "repetibilidad": "Baja, una vez visto el resultado y el llamado a la acción no incentiva a re-visualizaciones profundas",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar imágenes estáticas de licencia libre de los jugadores, gráficos animados generados por código (SVG/Canvas) para la barra de eliminación y música sin copyright de la biblioteca de YouTube"
+ }
+}

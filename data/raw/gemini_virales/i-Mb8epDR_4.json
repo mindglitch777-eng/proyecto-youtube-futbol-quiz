@@ -1,0 +1,68 @@
+{
+ "formato": "sim",
+ "canal": "Rivals10",
+ "video": {
+  "id": "i-Mb8epDR_4",
+  "titulo": "Top 11 Argentina Players Of All Time #football",
+  "vistas": 6018071,
+  "fecha": "2026-07-26"
+ },
+ "mediana": 68987,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Presentación rápida de leyendas del fútbol argentino con deepfakes o filtros faciales de alta calidad.",
+  "duracion_s": 22,
+  "primer_segundo": "Diego Armando Maradona sosteniendo un cartel con su nombre frente a una pantalla verde.",
+  "gancho_texto": "DIEGO ARMANDO MARADONA",
+  "protagonistas": [
+   "Diego Armando Maradona",
+   "Ángel Di María",
+   "Gabriel Batistuta",
+   "Diego Simeone",
+   "Javier Mascherano",
+   "Mario Kempes",
+   "Sergio Agüero",
+   "Javier Zanetti",
+   "Juan Román Riquelme",
+   "Emiliano Martínez",
+   "Lionel Messi"
+  ],
+  "desenlace": "El video culmina con la aparición de Lionel Messi como máxima figura y cierre de la selección argentina.",
+  "ganador_popular": true,
+  "arco_de_tension": "Se genera expectativa por ver quién será el siguiente ídolo histórico de la selección, manteniendo el ritmo constante hasta el cierre con Messi.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Aparición inicial de Maradona con grito eufórico."
+   },
+   {
+    "t": 20.0,
+    "que": "Cierre con Lionel Messi, el jugador actual más aclamado."
+   }
+  ],
+  "audio": {
+   "musica": "Música épica y rítmica en tendencia de Shorts.",
+   "voz": "Voz generada por IA diciendo el nombre de cada jugador con energía.",
+   "efectos": "Ninguno destacado más allá de la música de fondo y la voz."
+  },
+  "visual": "Deepfakes o intercambio de rostros hiperrealistas sobre actores sosteniendo carteles con nombres, croma verde, excelente calidad y fidelidad.",
+  "texto_en_pantalla": "Carteles blancos con nombres en negro y la bandera de Argentina, junto con la marca de agua @RivalsFC10.",
+  "ritmo_cortes_por_segundo": 0.5,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": "Debate generacional sobre las máximas leyendas del fútbol argentino.",
+  "por_que_rinde_asi": [
+   "Uso de tecnología de rostros hiperrealistas (Deepfake) que sorprende al espectador.",
+   "Nostalgia y orgullo nacional al ver a todas las leyendas juntas.",
+   "Ritmo dinámico con transiciones rápidas de jugadores muy queridos."
+  ],
+  "que_le_falta": "Una pregunta al final para incentivar comentarios.",
+  "riesgo_copyright": "Uso de imagen de futbolistas y marcas de indumentaria deportiva (Adidas, Le Coq Sportif).",
+  "calidad_produccion": "Deepfake con nivel de pulido 9/10, rostros muy bien integrados y realistas sobre cuerpos de actores.",
+  "camara_y_movimiento": "Plano medio fijo, sin movimientos de cámara, cambios directos de corte por cada jugador.",
+  "diseno_sonoro": "Voz en off potente y musicalidad constante que acompaña el ritmo de los cambios de plano.",
+  "tramos": "0-22s: Presentación consecutiva de leyendas argentinas a un ritmo constante de aprox. 2 segundos por jugador.",
+  "repetibilidad": "Verlo una segunda vez para identificar a todos los jugadores y apreciar los detalles de los rostros en los deepfakes.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar ilustraciones vectoriales o avatares 3D generados por código que sostengan carteles con nombres de leyendas históricas de cualquier país o disciplina."
+ }
+}

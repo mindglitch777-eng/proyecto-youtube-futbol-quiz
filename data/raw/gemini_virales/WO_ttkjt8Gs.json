@@ -1,0 +1,60 @@
+{
+ "formato": "sim",
+ "canal": "bouncyball",
+ "video": {
+  "id": "WO_ttkjt8Gs",
+  "titulo": "Three Satisfying Simulations.",
+  "vistas": 20140,
+  "fecha": "2026-08-21"
+ },
+ "mediana": 326093,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Simulación física de rebotes con progresión exponencial",
+  "duracion_s": 146,
+  "primer_segundo": "Una bola roja rebota en una caja negra con barras numéricas que se duplican",
+  "gancho_texto": "SIMULATION ONE",
+  "protagonistas": [],
+  "desenlace": "Las simulaciones terminan en patrones geométricos abstractos de rebotes y destrucción de bloques.",
+  "ganador_popular": false,
+  "arco_de_tension": "La dificultad y el valor de los bloques aumentan exponencialmente de forma constante, generando destrucción masiva y cambio de colores.",
+  "momentos_emocion": [
+   {
+    "t": 0.0,
+    "que": "Inicio de la simulación uno con conteo bajo"
+   },
+   {
+    "t": 73.0,
+    "que": "Cambio a simulación dos con círculos concéntricos y ondas"
+   },
+   {
+    "t": 142.0,
+    "que": "Transición a simulación tres con anillos coloridos"
+   }
+  ],
+  "audio": {
+   "musica": "Música electrónica estilo chiptune / arcade relajante",
+   "voz": "no",
+   "efectos": "Sonidos de impacto y destrucción tipo arcade clásico"
+  },
+  "visual": "Animación 2D por código; alta calidad visual con colores neón vibrantes",
+  "texto_en_pantalla": "SIMULATION ONE / TWO / THREE y números exponenciales en cada nivel",
+  "ritmo_cortes_por_segundo": 0.05,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Satisfacción visual ASMR por la destrucción de bloques",
+   "Curiosidad por ver hasta qué número exponencial llega la simulación",
+   "Ritmo constante y estimulación visual continua"
+  ],
+  "que_le_falta": "Un objetivo claro o apuesta sobre qué simulación resistirá más",
+  "riesgo_copyright": "Bajo (contenido generado por código/animación original)",
+  "calidad_produccion": "Animación 2D/3D simulada por código; nivel 9/10 por su limpieza visual y sincronización de efectos y música",
+  "camara_y_movimiento": "Plano fijo general con transiciones limpias entre simulaciones",
+  "diseno_sonoro": "Efectos de sonido retro para cada impacto que se sincronizan perfectamente con la música de fondo",
+  "tramos": "0-72s: Simulación uno lineal; 73-141s: Simulación circular; 142-146s: Cierre",
+  "repetibilidad": "Ver si la bola logra romper el número más alto en las siguientes simulaciones",
+  "como_replicarlo_sin_cara_y_sin_clips": "Usar motores de física en Processing, Unity o Godot para simular rebotes y crecimiento exponencial de números."
+ }
+}

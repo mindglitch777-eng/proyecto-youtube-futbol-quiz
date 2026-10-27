@@ -9,10 +9,17 @@
  "eliminar": 0,
  "circuito": [
   "clavos",
-  "aspas",
+  "acelerador",
   "zigzag",
   "rebotadores",
+  "trampolin",
   "molinos",
+  "pendulos",
+  "portales",
+  "pendulos",
+  "zigzag",
+  "aspas",
+  "portales",
   "embudo"
  ],
  "competidores": [
@@ -101,5 +108,10 @@
   "Lewandowski takes the lead!",
   "Lewandowski is out!",
   "Lewandowski wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

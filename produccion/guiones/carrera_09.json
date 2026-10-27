@@ -8,12 +8,18 @@
  "voz_intro": "Messi, Neymar or Ronaldo? Pick one now!",
  "eliminar": 1,
  "circuito": [
-  "rebotadores",
-  "zigzag",
-  "molinos",
   "clavos",
+  "molinos",
+  "portales",
+  "zigzag",
+  "trampolin",
+  "portales",
+  "zigzag",
+  "pendulos",
+  "pendulos",
   "aspas",
   "acelerador",
+  "rebotadores",
   "embudo"
  ],
  "competidores": [
@@ -68,5 +74,10 @@
   "Ronaldo takes the lead!",
   "Ronaldo is out!",
   "Ronaldo wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

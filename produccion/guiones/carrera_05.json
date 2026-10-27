@@ -8,12 +8,19 @@
  "voz_intro": "The Premier League big six. Pick your club now!",
  "eliminar": 2,
  "circuito": [
-  "zigzag",
-  "rebotadores",
   "clavos",
+  "zigzag",
+  "trampolin",
+  "portales",
+  "portales",
   "aspas",
+  "pendulos",
   "acelerador",
-  "molinos"
+  "rebotadores",
+  "zigzag",
+  "molinos",
+  "pendulos",
+  "embudo"
  ],
  "competidores": [
   {
@@ -170,5 +177,10 @@
   "Spurs takes the lead!",
   "Spurs is out!",
   "Spurs wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

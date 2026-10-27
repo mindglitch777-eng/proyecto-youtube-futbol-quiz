@@ -9,11 +9,17 @@
  "eliminar": 3,
  "circuito": [
   "clavos",
-  "zigzag",
   "aspas",
-  "rebotadores",
-  "molinos",
+  "pendulos",
+  "portales",
+  "zigzag",
   "acelerador",
+  "zigzag",
+  "molinos",
+  "portales",
+  "rebotadores",
+  "trampolin",
+  "pendulos",
   "embudo"
  ],
  "competidores": [
@@ -235,5 +241,10 @@
   "Corinthians takes the lead!",
   "Corinthians is out!",
   "Corinthians wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

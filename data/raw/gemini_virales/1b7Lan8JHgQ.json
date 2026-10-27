@@ -1,0 +1,62 @@
+{
+ "formato": "top_sin_cara",
+ "canal": "Life Football",
+ "video": {
+  "id": "1b7Lan8JHgQ",
+  "titulo": "Who Can Pause It Perfectly? 🤔😳 #shorts #football #soccer",
+  "vistas": 34699806,
+  "fecha": "2026-09-15"
+ },
+ "mediana": 0,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "formato_exacto": "Desafío de tiempo en equipo con botonera digital y eliminación progresiva",
+  "duracion_s": 72,
+  "primer_segundo": "Se ve un cronómetro digital en 00:00:00 frente a un grupo de jóvenes sonrientes esperando jugar.",
+  "gancho_texto": "Intentar frenar el cronómetro exactamente en los segundos pedidos sin pasarse",
+  "protagonistas": [
+   "Streamers y creadores de contenido de fútbol"
+  ],
+  "desenlace": "El grupo supera exitosamente los retos progresivos hasta el cierre con compilado estético.",
+  "ganador_popular": true,
+  "arco_de_tension": "Cada participante tiene una oportunidad de presionar el botón en el segundo exacto; el suspenso crece con los gritos y reacciones exageradas de los amigos, coronado con una transición a clips épicos de Zlatan Ibrahimović.",
+  "momentos_emocion": [
+   {
+    "t": 7.0,
+    "que": "Primer acierto exacto en 1 segundo y celebración intensa."
+   },
+   {
+    "t": 30.0,
+    "que": "Logro milimétrico en 3 segundos generando festejo alocado."
+   },
+   {
+    "t": 1.0,
+    "que": "Transición inesperada hacia un edit aesthetic en blanco y negro de Zlatan."
+   }
+  ],
+  "audio": {
+   "musica": "Phonk agresivo y enérgico, tendencia viral en TikTok.",
+   "voz": "Voces superpuestas de los participantes contando y gritando.",
+   "efectos": "Beeps del cronómetro, zumbido de error y pitidos de éxito."
+  },
+  "visual": "Clips de video vertical casero con iluminación de estudio, alta definición, seguido de secuencias en blanco y negro estilizadas.",
+  "texto_en_pantalla": "Cronómetro digital gigante en tiempo real.",
+  "ritmo_cortes_por_segundo": 0.4,
+  "loop": false,
+  "pedido_al_espectador": null,
+  "polemica_o_debate": null,
+  "por_que_rinde_asi": [
+   "Combinación de desafío físico/mental con reacciones genuinas y divertidas del grupo.",
+   "Fuerte contraste entre el juego casual de estudio y el giro cinematográfico con una superestrella mundial.",
+   "Ritmo dinámico con tensión constante y finales al límite del segundo."
+  ],
+  "que_le_falta": "Un llamado a la acción al final para interactuar en comentarios.",
+  "riesgo_copyright": "Uso de música comercial con derechos de autor y clips de televisión/partidos de fútbol.",
+  "calidad_produccion": "Vídeo casero con producción cuidada y edición dinámica, nivel 8/10 por la sincronización de audio y estética final.",
+  "camara_y_movimiento": "Cámara fija en trípode durante el desafío de mesa, cortes rápidos y cámara lenta en el bloque aesthetic.",
+  "diseno_sonoro": "Mezcla de audio ambiente de risas y gritos junto a la música phonk potenciada en los momentos clave de tensión.",
+  "tramos": "0-5s: Presentación y primer intento; 5-64s: Secuencia de retos progresivos; 64-72s: Cierre épico con clips de fútbol.",
+  "repetibilidad": "La tensión por ver si aciertan o fallan por milisegundos invita a mirar el desenlace.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Utilizar simulaciones de cronómetros digitales generados por código (Canvas o After Effects) combinados con imágenes de archivo de futbolistas de libre uso y música phonk de biblioteca."
+ }
+}

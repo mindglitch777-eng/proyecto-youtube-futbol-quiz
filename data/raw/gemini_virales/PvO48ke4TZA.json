@@ -1,0 +1,67 @@
+{
+ "formato": "sim",
+ "canal": "Pixel Pitch",
+ "video": {
+  "id": "PvO48ke4TZA",
+  "titulo": "Liverpool vs Man City ⚽ Pass Play | Premier League #shorts",
+  "vistas": 2171,
+  "fecha": "2026-10-11"
+ },
+ "mediana": 878,
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "formato_exacto": "Simulación animada en 2D de un juego de física y rebotes estilo arcade ('Pass Play') entre Liverpool y Manchester City.",
+  "duracion_s": 50,
+  "primer_segundo": "Aparece la pantalla de selección con el texto 'WHO PASSES IT IN? PICK A SIDE', los escudos de Liverpool y Man City, y un conteo regresivo (3, 2, 1).",
+  "gancho_texto": "WHO PASSES IT IN? PICK A SIDE",
+  "protagonistas": [
+   "Liverpool FC",
+   "Manchester City"
+  ],
+  "desenlace": "Gana Manchester City 2 - 1 tras meter un gol con multiplicador 'Double Time x2', remontando el partido.",
+  "ganador_popular": true,
+  "arco_de_tension": "Liverpool abre el marcador (1-0), pero Man City activa el evento 'Double Time' y marca un gol que vale por 2 (1-2), manteniendo el resultado hasta el pitido final.",
+  "momentos_emocion": [
+   {
+    "t": 3.0,
+    "que": "Comienza el partido con los discos rebotando dentro del círculo."
+   },
+   {
+    "t": 17.0,
+    "que": "Gol de Liverpool tras un rebote directo (1 - 0)."
+   },
+   {
+    "t": 25.0,
+    "que": "Gol con multiplicador de Man City (1 - 2)."
+   },
+   {
+    "t": 41.0,
+    "que": "Explosión 'BOOM' dentro del círculo agregando caos a los segundos finales."
+   },
+   {
+    "t": 47.0,
+    "que": "Pitido final y pantalla de 'Man City WIN!'."
+   }
+  ],
+  "audio": {
+   "musica": "Música electrónica rítmica estilo arcade / juego retro.",
+   "voz": "no",
+   "efectos": "Pitido de árbitro, conteo regresivo, sonidos de rebotes tipo disco/puck, sirena de gol y efectos de poder (speed up, boom)."
+  },
+  "visual": "Animación 2D sobre fondo oscuro, estilo interfaz de videojuego arcade minimalista con neón y físicas de movimiento fluido.",
+  "texto_en_pantalla": "WHO PASSES IT IN? PICK A SIDE / PASS PLAY - LAST TOUCH SCORES / Liverpool SPEED / DOUBLE TIME / GOAL! Liverpool / GOAL! Man City x2 / BOOM / FULL TIME / Man City WIN! / FOLLOW FOR MORE",
+  "ritmo_cortes_por_segundo": 0.1,
+  "loop": false,
+  "pedido_al_espectador": "Elegir un bando al inicio ('PICK A SIDE') y seguir la cuenta al final ('FOLLOW FOR MORE').",
+  "polemica_o_debate": "La gran rivalidad reciente de la Premier League entre Liverpool y Manchester City.",
+  "por_que_rinde_asi": "1. Gancho interactivo inmediato que incita al espectador a elegir un equipo antes de empezar. 2. Formato de juego hipnótico y basado en físicas impredecibles que mantiene alta la retención. 3. Elección de dos de los clubes con mayor masa de fans e interacción en redes.",
+  "que_le_falta": "Efectos de voz o locución dramática que reaccione en tiempo real a las jugadas para aumentar la emoción.",
+  "riesgo_copyright": "Uso de los escudos oficiales del Liverpool FC y Manchester City.",
+  "calidad_produccion": "Juego/animación 2D por física; nivel 8/10 por la fluidez de movimiento, interfaz limpia y efectos visuales de potencia bien logrados.",
+  "camara_y_movimiento": "Cámara fija en plano cenital centrado en el círculo del juego; el movimiento proviene de los discos y la rotación del objetivo.",
+  "diseno_sonoro": "Sonidos arcade precisos para cada impacto, cambios de ritmo marcados por los aceleradores y señal sonora clara de gol.",
+  "tramos": "0-3s gancho y conteo; 3-46s simulación del juego y goles; 46-50s resultado final y llamada a la acción.",
+  "repetibilidad": "Media-alta; el usuario puede volver a verlo para entender cómo la pelota rebotó o qué modificador cambió el resultado.",
+  "como_replicarlo_sin_cara_y_sin_clips": "Desarrollar un motor gráfico simple de física 2D en Unity o Python/Phaser, usando círculos rebotadores con logos editables e insertando mecánicas de potencia como zonas de aceleración o multiplicación."
+ }
+}

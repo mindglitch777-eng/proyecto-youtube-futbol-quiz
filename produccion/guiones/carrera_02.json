@@ -8,12 +8,19 @@
  "voz_intro": "Eight world champions. Only one wins. Pick your country now!",
  "eliminar": 3,
  "circuito": [
-  "zigzag",
   "clavos",
+  "portales",
+  "zigzag",
+  "pendulos",
   "molinos",
+  "pendulos",
+  "portales",
   "acelerador",
+  "zigzag",
+  "aspas",
+  "trampolin",
   "rebotadores",
-  "aspas"
+  "embudo"
  ],
  "competidores": [
   {
@@ -143,5 +150,10 @@
   "Spain takes the lead!",
   "Spain is out!",
   "Spain wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }

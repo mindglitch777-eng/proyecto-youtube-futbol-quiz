@@ -107,6 +107,7 @@ class Pista:
     def __init__(self, space, modulos, rnd):
         self.space, self.rnd = space, rnd
         self.segs, self.clavos, self.giros, self.rebot, self.boost, self.controles, self.marcas = [], [], [], [], [], [], []
+        self.portales, self.pendulos, self.tramp = [], [], []
         y = 380
         self.seg((40, -600), (40, 99999)); self.seg((W - 40, -600), (W - 40, 99999))
         for m in modulos:
@@ -175,6 +176,35 @@ class Pista:
         self.boost.append((y + 120, y + 330, 1)); self.boost.append((y + 500, y + 710, -1))
         return y + 780
 
+    def m_portales(self, y):
+        """Portales: el que cae adentro vuelve 700 px para atrás (remontadas y bronca en los comentarios)."""
+        for x, dy in ((W * 0.3, 260), (W * 0.7, 600)):
+            self.portales.append((x, y + dy, 64, 700))
+        for x, dy in ((W * 0.62, 180), (W * 0.38, 470), (W * 0.5, 720)):
+            self.clavo(x, y + dy, 22, 0.7)
+        return y + 820
+
+    def m_trampolin(self, y):
+        """Rampas elásticas que lanzan las bolas para arriba y a los costados."""
+        for a, b in (((60, y + 160), (430, y + 300)), ((W - 60, y + 160), (W - 430, y + 300)),
+                     ((330, y + 560), (W - 330, y + 600))):
+            s_ = self.seg(a, b, 12, 1.45); self.tramp.append((a, b))
+            self.segs.pop()
+        return y + 780
+
+    def m_pendulos(self, y):
+        """Péndulos que barren el paso: si te agarra, te tira para el costado."""
+        for k, x in enumerate((W * 0.3, W * 0.7, W * 0.5)):
+            b = pymunk.Body(body_type=pymunk.Body.KINEMATIC); b.position = (x, y + 60 + k * 300)
+            A, w, f = 1.0, 2.2 + 0.4 * k, self.rnd.uniform(0, 6.28)
+            b.angle = A * math.sin(f)
+            self.space.add(b)
+            s_ = pymunk.Segment(b, (0, 0), (0, 250), 14); s_.elasticity = 0.9; s_.friction = 0.4
+            c_ = pymunk.Circle(b, 34, (0, 250)); c_.elasticity = 1.1
+            self.space.add(s_, c_)
+            self.pendulos.append((b, A, w, f))
+        return y + 1060
+
     def m_embudo(self, y):
         self.seg((40, y), (W / 2 - 170, y + 330)); self.seg((W - 40, y), (W / 2 + 170, y + 330))
         self.clavo(W / 2, y + 470, 30, 0.8)
@@ -200,12 +230,19 @@ def simular(n, modulos, semilla, eliminar):
     ctrl = list(pista.controles[-eliminar:]) if eliminar else []
     t, vprev = 0.0, [0.0] * n
     lider_prev = None
-    while len(llegada) + len(fuera) < n and t < 40:
+    enfriar = {}
+    while len(llegada) + len(fuera) < n and t < 60:
         for _ in range(2):
+            for pb, A, w, f in pista.pendulos:
+                pb.angular_velocity = A * w * math.cos(w * t + f)
             space.step(DT); t += DT
             for i, b, c in bolas:
                 if i in fuera or i in llegada:
                     continue
+                for px, py, pr, salto in pista.portales:
+                    if (b.position.x - px) ** 2 + (b.position.y - py) ** 2 < pr ** 2 and t - enfriar.get(i, -9) > 1.5:
+                        b.position = (b.position.x, b.position.y - salto); b.velocity = (b.velocity.x * 0.3, -200)
+                        enfriar[i] = t; eventos.append(("portal", t, i))
                 for y0, y1, sentido in pista.boost:
                     if y0 < b.position.y < y1:
                         b.velocity = (b.velocity.x + sentido * 40, b.velocity.y + 25)
@@ -239,6 +276,9 @@ def simular(n, modulos, semilla, eliminar):
                 dt_estado=2 * DT, t_fin=t)
 
 
+DUR_MIN, DUR_MAX = 11, 22
+
+
 def drama(sim, n, eliminar):
     ll = sorted(sim["llegada"].values())
     if len(sim["llegada"]) + len(sim["fuera"]) < n or len(ll) < 2:
@@ -247,7 +287,7 @@ def drama(sim, n, eliminar):
     gap = ll[1] - ll[0]
     dur = ll[0]
     # el favorito del cuadro 0 (el primero en la lista) no debe ganar siempre: lo decide la física
-    return min(lideres, 8) * 1.0 - 5 * gap + (4 if gap < 0.35 else 0) - (0 if 11 < dur < 22 else 25)
+    return min(lideres, 8) * 1.0 - 5 * gap + (4 if gap < 0.35 else 0) - (0 if DUR_MIN < dur < DUR_MAX else 25)
 
 
 # ------------------------------------------------------------------ render
@@ -268,6 +308,8 @@ def main(guion_path):
                else c.get("corto", c["nombre"]).upper()) for c in comp]
     eliminar = g.get("eliminar", 0)
     mods = g["circuito"]
+    global DUR_MIN, DUR_MAX
+    DUR_MIN, DUR_MAX = g.get("duracion", [11, 22])
     # ganador elegido (el del debate del día): la física es real, elegimos entre muchas carreras la que gana él
     objetivo = next((i for i, c in enumerate(g["competidores"]) if c["nombre"] == g.get("ganador")), None)
     puntajes = []
@@ -329,6 +371,8 @@ def main(guion_path):
             sonidos.append(("tick", tv))
         elif tipo == "boost":
             sonidos.append(("whoosh", tv))
+        elif tipo == "portal":
+            popups.append((tv, f"{nombres[i]} SENT BACK!", (190, 110, 255))); sonidos += [("whoosh", tv), ("boom", tv + 0.05)]
     voz = [v for v in voz if v[0] < t_video_gan - 1.6]
     if foto_final:
         voz.append((t_video_gan - 1.5, "Photo finish!"))
@@ -375,6 +419,24 @@ def main(guion_path):
         for x, y, r in P.clavos:
             if -40 < y - cy < H + 40:
                 dr.ellipse((x - r, y - cy - r, x + r, y - cy + r), fill=pal["clavo"])
+        for px, py, pr, _ in P.portales:
+            if -100 < py - cy < H + 100:
+                for j in range(5):
+                    rr = pr * (1 - j * 0.17); a0 = (tv * 220 + j * 40) % 360
+                    dr.arc((px - rr, py - cy - rr, px + rr, py - cy + rr), a0, a0 + 250, fill=(190, 110, 255, 230 - j * 35), width=8)
+                texto(dr, (px, py - cy + pr + 26), "BACK -700", 26, (210, 160, 255), 4)
+        for a, b in P.tramp:
+            if max(a[1], b[1]) - cy > -50 and min(a[1], b[1]) - cy < H + 50:
+                dr.line((a[0], a[1] - cy, b[0], b[1] - cy), fill=(80, 255, 170), width=26)
+                dr.line((a[0], a[1] - cy, b[0], b[1] - cy), fill=(220, 255, 235), width=8)
+        for pb, A, w, f in P.pendulos:
+            ang = A * math.sin(w * ts + f)
+            px, py = pb.position
+            if -300 < py - cy < H + 300:
+                ex, ey = px - 250 * math.sin(ang), py + 250 * math.cos(ang)
+                dr.line((px, py - cy, ex, ey - cy), fill=pal["acento"], width=26)
+                dr.ellipse((ex - 34, ey - cy - 34, ex + 34, ey - cy + 34), fill=(255, 90, 90), outline=(255, 255, 255), width=5)
+                dr.ellipse((px - 14, py - cy - 14, px + 14, py - cy + 14), fill=(255, 255, 255))
         for x, y in P.rebot:
             if -80 < y - cy < H + 80:
                 cerca = any(math.hypot(est[i][0] - x, est[i][1] - y) < R + 70 for i in vivos)
@@ -402,9 +464,21 @@ def main(guion_path):
             for fila in range(2):
                 dr.rectangle((x, my + fila * 20, x + 20, my + 20 + fila * 20),
                              fill=BLANCO if ((x // 40) + fila) % 2 else (0, 0, 0))
+        lider_i = max(corriendo, key=lambda i: est[i][1]) if corriendo else None
+        for i in vivos:
+            k0 = max(k - 10, 0)
+            for j, kk in enumerate(range(k0, k, 2)):
+                ex, ey, _ = sim["estados"][kk][i]
+                rr = R * (0.35 + 0.5 * (j + 1) / 5)
+                if -R * 2 < ey - cy < H + R * 2:
+                    dr.ellipse((ex - rr, ey - cy - rr, ex + rr, ey - cy + rr), fill=comp[i]["color"] + (int(25 + 18 * j),))
         for i in vivos:
             x, y, a = est[i]
             if -R * 2 < y - cy < H + R * 2:
+                if i == lider_i:
+                    cx_, cy_ = x, y - cy - R - 30
+                    dr.polygon([(cx_ - 34, cy_ + 14), (cx_ - 34, cy_ - 16), (cx_ - 17, cy_), (cx_, cy_ - 22), (cx_ + 17, cy_), (cx_ + 34, cy_ - 16), (cx_ + 34, cy_ + 14)],
+                               fill=(255, 210, 63), outline=(120, 80, 0))
                 img = comp[i]["img"] if comp[i]["tipo"] == "pais" else comp[i]["img"].rotate(-math.degrees(a) * 0.35, resample=Image.BICUBIC)
                 im.paste(img, (int(x - R), int(y - cy - R)), img)
                 dr.ellipse((x - R, y - cy - R, x + R, y - cy + R), outline=comp[i]["color"], width=7)

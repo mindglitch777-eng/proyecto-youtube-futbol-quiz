@@ -9,11 +9,17 @@
  "eliminar": 0,
  "circuito": [
   "clavos",
+  "portales",
+  "aspas",
+  "zigzag",
+  "portales",
   "molinos",
   "zigzag",
+  "pendulos",
   "rebotadores",
-  "aspas",
   "acelerador",
+  "trampolin",
+  "pendulos",
   "embudo"
  ],
  "competidores": [
@@ -102,5 +108,10 @@
   "Lamine Yamal takes the lead!",
   "Lamine Yamal is out!",
   "Lamine Yamal wins it!"
- ]
+ ],
+ "duracion": [
+  24,
+  34
+ ],
+ "intentos": 400
 }
