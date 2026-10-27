@@ -1,0 +1,28 @@
+name: Bajar escudos (Wikipedia)
+
+on:
+  push:
+    paths: [produccion/assets/pedido_escudos.json, produccion/escudos.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  escudos:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: python3 produccion/escudos.py
+      - name: Guardar escudos
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add produccion/assets/escudos
+          git commit -m "Escudos de clubes (Wikipedia)" || echo "nada nuevo"
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
