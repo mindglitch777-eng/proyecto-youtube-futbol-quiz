@@ -1,14 +1,12 @@
 name: Render runners (uno por máquina)
 
-# Se lanza a mano (o desde Claude): cada guion se renderiza en una máquina separada y en paralelo.
+# Se lanza al actualizar produccion/render_cola.json: cada guion se renderiza en una máquina separada y en paralelo.
 # Al terminar sube salida/<id>/short.mp4 (+ versión liviana) al repo y también como artifact descargable.
 
 on:
+  push:
+    paths: [produccion/render_cola.json]      # lista de guiones a renderizar: ["runner_02", "runner_03"]
   workflow_dispatch:
-    inputs:
-      guiones:
-        description: "ids separados por coma (ej: runner_02,runner_03)"
-        default: "runner_02,runner_03"
 
 permissions:
   contents: write
@@ -19,8 +17,9 @@ jobs:
     outputs:
       matriz: ${{ steps.m.outputs.matriz }}
     steps:
+      - uses: actions/checkout@v4
       - id: m
-        run: echo "matriz=$(echo '${{ inputs.guiones }}' | python3 -c 'import sys,json;print(json.dumps([x.strip() for x in sys.stdin.read().split(",") if x.strip()]))')" >> "$GITHUB_OUTPUT"
+        run: echo "matriz=$(python3 -c 'import json;print(json.dumps(json.load(open("produccion/render_cola.json"))))')" >> "$GITHUB_OUTPUT"
 
   render:
     needs: lista
