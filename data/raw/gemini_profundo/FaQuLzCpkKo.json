@@ -1,0 +1,94 @@
+{
+ "id": "FaQuLzCpkKo",
+ "canal": "90+Short",
+ "vistas": 2266183,
+ "titulo": "RONALDINHO Today 😍⚽",
+ "video_del_hit": 2,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "transmisión real de partido",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Compilación de videos verticales de celular y transmisiones de TV reescalados, con compresión visible pero aceptable para redes sociales.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "RONALDINHO",
+    "texto": "RONALDINHO",
+    "sonido": "Música alegre brasileña con percusión y ritmo dinámico",
+    "movimiento_o_efecto": "Corte directo a Ronaldinho sentado saludando sonriente"
+   },
+   {
+    "t": "0.5"
+   },
+   {
+    "t": "1.0"
+   },
+   {
+    "t": "1.5"
+   },
+   {
+    "t": "2.0"
+   },
+   {
+    "t": "2.5"
+   },
+   {
+    "t": "3.0"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Aparece instantáneamente Ronaldinho sonriendo con su carisma característico junto a una mujer en un estadio lleno.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 3.0,
+    "contenido": "Ronaldinho saluda y abraza a una mujer en la tribuna",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "marcas de agua de canales"
+    ]
+   }
+  ],
+  "cortes_por_10s": 4,
+  "sincronia_con_la_musica": "Sí, los cambios de escena coinciden con los golpes fuertes de la percusión brasileña (beats en 0.2, 2.0, 4.1, 7.0).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "RONALDINHO",
+    "estilo": "Sans-serif bold blanca con sombra negra, arriba al centro"
+   }
+  ],
+  "audio": {
+   "musica": "Funk brasileño / Samba remix moderno con beat marcado, aprox 125 BPM",
+   "efectos": [],
+   "voz": "No hay voz en off",
+   "momento_clave_de_audio": "El inicio fuerte de la percusión en 0.0"
+  },
+  "estructura": "planteo → tensión → remate: compilación rápida de momentos icónicos y alegres de Ronaldinho (saludos, abrazos, fiestas, eventos) con música enérgica.",
+  "giro_o_sorpresa": "La transformación de Ronaldinho con sombrero elegante y lentes oscuros bailando en la cancha a mitad del video.",
+  "final_y_loop": "Termina con Ronaldinho y un imitador/amigo posando; no conecta en loop perfecto pero mantiene el ritmo alegre.",
+  "emocion_que_busca": "nostalgia / asombro / simpatía",
+  "por_que_comentan": "Elogian la eterna sonrisa y la buena onda de Ronaldinho, el mejor jugador con más carisma de la historia.",
+  "por_que_comparten_o_repiten": "Por la energía positiva contagiosa del jugador y la selección de momentos alegres.",
+  "tres_razones_por_las_que_exploto": [
+   "Carisma inigualable de Ronaldinho",
+   "Música contagiosa y alegre",
+   "Edición rápida y precisa sincronizada con el beat"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "Ninguna IA puede replicar archivos reales de archivo de Ronaldinho interactuando con fans y futbolistas.",
+   "dificultad_1a10": 10,
+   "que_se_pierde_si_no_usamos_ese_material": "La autenticidad y el factor emocional real de la figura."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Recopilar 6 a 8 clips cortos de Ronaldinho sonriendo o bailando",
+   "Paso 2: Elegir un tema de funk brasileño en tendencia con beat marcado",
+   "Paso 3: Cortar cada 1.5 - 2 segundos exactamente en cada golpe musical",
+   "Paso 4: Añadir textos limpios y minimalistas en la parte superior"
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

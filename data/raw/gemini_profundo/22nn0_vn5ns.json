@@ -1,0 +1,285 @@
+{
+ "id": "22nn0_vn5ns",
+ "canal": "RHE PATRIOT POST",
+ "vistas": 2105194,
+ "titulo": "When Footballers Get Humbled 😭 Football Edits 3 | Neymar, Vini, Dembele, Messi, Ronaldo",
+ "video_del_hit": 1,
+ "modelo": "gemini-flash-latest",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (clips de transmisiones de fútbol real recortados en vertical con zoom seguidos de clips generados por IA hiperrealista para remates humorísticos)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Las jugadas de fútbol provienen de reescalados y recortes verticales de transmisiones de TV con compresión visible y nitidez media; sin embargo, los remates humorísticos generados por IA tienen una iluminación, textura y realismo visual muy logrados que compensan la baja resolución del fútbol.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Martial desbordando por la banda izquierda ante un defensor del Stoke City con cartel 'MARTIAL' y flecha roja.",
+    "texto": "MARTIAL",
+    "sonido": "Voz grave en portugués cantando funk lento y distorsionado ('Aquela garota...')",
+    "movimiento_o_efecto": "Cámara lenta y zoom digital siguiendo la gambeta."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Martial quiebra la cintura y el defensor resbala barriéndose hacia afuera de la cancha.",
+    "texto": null,
+    "sonido": "Voz grave y ritmo pesado de funk brasileño.",
+    "movimiento_o_efecto": "Plano abierto siguiendo la caída del defensor."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Zoom rápido al choque cuerpo a cuerpo y regate en primer plano.",
+    "texto": null,
+    "sonido": "Voz continuando la melodía.",
+    "movimiento_o_efecto": "Replay con zoom cerrado."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "El pie de Martial engancha la pelota mientras el defensor pierde el equilibrio.",
+    "texto": null,
+    "sonido": "Melodía vocal descendente previa al remate.",
+    "movimiento_o_efecto": "Cámara lenta dramática."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "El defensor en el suelo arrastrándose hacia la nada.",
+    "texto": null,
+    "sonido": "Pausa rítmica antes del golpe cómico.",
+    "movimiento_o_efecto": "Transición hacia el clip meme."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Clip generado por IA: el defensor con el mismo uniforme gatea derrotado en medio del desierto.",
+    "texto": null,
+    "sonido": "Voz cantando el estribillo 'E eu vou pegar...'",
+    "movimiento_o_efecto": "Cámara fija en plano medio en el desierto con arena."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "El defensor se queda de rodillas en las dunas sin entender nada.",
+    "texto": null,
+    "sonido": "Continuación del coro funk.",
+    "movimiento_o_efecto": "Corte abrupto hacia la siguiente jugada."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la promesa de un regate humillante clásico del fútbol con la sorpresa absurda de un remate generado por IA donde la barrida manda al jugador a un desierto realista.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.9,
+    "contenido": "Martial desborda y deja al defensor barriéndose por el suelo",
+    "encuadre": "general",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "marcador de jugador con flecha"
+    ]
+   },
+   {
+    "desde": 1.9,
+    "hasta": 3.8,
+    "contenido": "Replay cercano de la gambeta de Martial",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 3.8,
+    "hasta": 5.4,
+    "contenido": "Defensor gateando desorientado en el desierto generado por IA",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "generación IA"
+    ]
+   },
+   {
+    "desde": 5.4,
+    "hasta": 7.8,
+    "contenido": "Boufal (Marruecos) amaga y hace girar a Marcos Llorente (España) en el Mundial",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "etiqueta 'BOUFAL' con flecha"
+    ]
+   },
+   {
+    "desde": 7.8,
+    "hasta": 9.0,
+    "contenido": "Marcos Llorente esquivando aliens en un apocalipsis de ciencia ficción generado por IA",
+    "encuadre": "general",
+    "camara": "zoom out",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "generación IA"
+    ]
+   },
+   {
+    "desde": 9.0,
+    "hasta": 9.8,
+    "contenido": "Musiala engancha rápidamente la pelota",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 9.8,
+    "hasta": 11.4,
+    "contenido": "Grimaldo estirando en zancada lateral con mancuerna en el gimnasio",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 11.4,
+    "hasta": 13.3,
+    "contenido": "Rayan Cherki pisando y amagando ante Kostić",
+    "encuadre": "general a medio",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "etiqueta 'CHERKI' con flecha"
+    ]
+   },
+   {
+    "desde": 13.3,
+    "hasta": 15.6,
+    "contenido": "Kostić vestido de bailarina de danza del vientre en un palacio árabe generado por IA",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "generación IA"
+    ]
+   },
+   {
+    "desde": 15.6,
+    "hasta": 18.9,
+    "contenido": "Dembélé engancha hacia adentro y deja a Diego Carlos deslizándose",
+    "encuadre": "general a primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "etiqueta 'DEMBELE' con flecha"
+    ]
+   },
+   {
+    "desde": 18.9,
+    "hasta": 20.8,
+    "contenido": "Diego Carlos deslizándose sin parar por la arena de una playa caribeña generada por IA",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "generación IA"
+    ]
+   },
+   {
+    "desde": 20.8,
+    "hasta": 24.3,
+    "contenido": "Mané le amaga a Neymar y lo deja trastabillando y cayendo",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 24.3,
+    "hasta": 26.5,
+    "contenido": "Neymar haciendo pole dance con falda tutú rosa generado por IA",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "generación IA"
+    ]
+   },
+   {
+    "desde": 26.5,
+    "hasta": 29.5,
+    "contenido": "Vinícius Jr gambetea al arquero/defensor haciéndolo barrerse en falso",
+    "encuadre": "general",
+    "camara": "paneo",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "etiqueta 'VINICIUS' con flecha"
+    ]
+   },
+   {
+    "desde": 29.5,
+    "hasta": 32.0,
+    "contenido": "Defensor con camiseta número 7 gateando hundido en lodo espeso generado por IA",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "generación IA"
+    ]
+   }
+  ],
+  "cortes_por_10s": 4.6,
+  "sincronia_con_la_musica": "Totalmente sincronizada: cada amague concluye en el beat previo y la imagen IA surrealista entra exactamente en el golpe vocal cómico ('E eu vou pegar... / E laraiara...') en los segundos 03.8, 07.8, 09.8, 13.3, 18.9, 24.3 y 29.5.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "MARTIAL",
+    "estilo": "Banner amarillo con bordes redondeados, texto en negro, flecha roja inferior animada, centrado sobre el jugador"
+   },
+   {
+    "t": "5.6",
+    "texto": "BOUFAL",
+    "estilo": "Mismo banner amarillo con flecha verde sobre el jugador"
+   },
+   {
+    "t": "11.6",
+    "texto": "CHERKI",
+    "estilo": "Texto blanco con contorno negro y flecha verde neón"
+   },
+   {
+    "t": "15.9",
+    "texto": "DEMBELE",
+    "estilo": "Texto amarillo en negrita con contorno negro y flecha roja"
+   },
+   {
+    "t": "26.7",
+    "texto": "VINICIUS",
+    "estilo": "Texto blanco con contorno negro en negrita con flecha verde"
+   }
+  ],
+  "audio": {
+   "musica": "Brazilian Phonk / Funk carioca ultra slowed (pitch muy bajo) con voz barítona monótona",
+   "efectos": [],
+   "voz": "Voz masculina ralentizada cantando versos en portugués: 'Aquela garota agora ela quer me dar... e eu vou pegar, e laraiaraiara...'",
+   "momento_clave_de_audio": "El cambio al coro repetitivo en cada transición a la imagen de IA (segundos 03.8, 13.3, 24.3)."
+  },
+  "estructura": "Estructura episódica de 'Montaje Meme': Planteo del regate humillante (tensión de 1-2s) → Remate visual surrealista con IA llevando la metáfora de la humillación al extremo (1-2s). Se repite 6 veces en bucle rítmico.",
+  "giro_o_sorpresa": "La exageración literal y surrealista de cada barrida o quiebre de cintura (ej. deslizarse hasta la playa, esquivar aliens, terminar vestido con tutú haciendo pole dance o gateando en el lodo).",
+  "final_y_loop": "Termina con el defensor gateando en el barro y se corta en seco; el audio continuo permite un loop orgánico de vuelta al regate de Martial.",
+  "emocion_que_busca": "Risa, asombro por el absurdo de la IA y disfrute del 'humiliation edit' futbolístico.",
+  "por_que_comentan": "Discuten cuál fue el remate de IA más gracioso (Neymar en tutú rosa de pole dance suele ser el imán de comentarios), además del debate típico de hinchas defendiendo a sus jugadores.",
+  "por_que_comparten_o_repiten": "Es un meme visualmente hilarante y rápido de consumir; se comparte para reírse de amigos que son hinchas de Neymar o de los defensores burlados.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso brillante de video/imagen generado por IA como punchline literal de la humillación.",
+   "Formato de ritmo rápido con música funk slowed que genera hipnotismo en el scroll.",
+   "La parodia a Neymar con tutú y a Kostić bailando árabe es humor meme universal que no necesita idioma."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 8,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento instantáneo de los futbolistas de élite y las jugadas reales que hacen que el remate cómico funcione."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Seleccionar 5 o 6 jugadas icónicas de fútbol donde un defensor termine barriéndose, cayendo o desorientado.",
+   "Tomar el frame exacto de la pose final del jugador humillado y usar Midjourney / Flux / Runway / Kling para generarlo en un contexto absurdo (la luna, una playa, una pista de patinaje, el desierto).",
+   "Poner el audio funk slowed de tendencia donde el estribillo coincida milimétricamente con el corte a la IA.",
+   "Agregar tracking simple de texto/flecha en la jugada para que el usuario identifique al atacante de inmediato.",
+   "Mantener cada segmento en menos de 4 segundos para un ritmo dinámico e imparable."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

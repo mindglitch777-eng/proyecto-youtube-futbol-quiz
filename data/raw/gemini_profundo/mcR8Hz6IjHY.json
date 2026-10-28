@@ -1,0 +1,183 @@
+{
+ "id": "mcR8Hz6IjHY",
+ "canal": "Footypoints",
+ "vistas": 2290085,
+ "titulo": "Barca SHOCKED madrid 🐐 #laliga",
+ "video_del_hit": 2,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (compilado de videos virales reales de internet con logos de clubes superpuestos)",
+  "calidad_imagen_1a10": 5,
+  "por_que_esa_calidad": "Videos virales de baja resolución y calidad heterogénea. Estética de meme casero.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Persona en balcón y sujeto en calle con logos de clubes. Marcador 0-0.",
+    "texto": "FINAL / 0-0",
+    "sonido": "Música phunk en inicio",
+    "movimiento_o_efecto": "Lanzamiento de bolsa de agua"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Bolsa de agua cayendo hacia la calle",
+    "texto": "0-0",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Caída en picado"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Impacto del agua cerca del sujeto",
+    "texto": "0-0",
+    "sonido": "Efecto de golpe",
+    "movimiento_o_efecto": "Salpicadura"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Reacción del sujeto en la calle",
+    "texto": "0-0",
+    "sonido": "Ritmo musical",
+    "movimiento_o_efecto": "Movimiento brusco"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Sujeto cae al suelo mojado",
+    "texto": "0-0",
+    "sonido": "Beat de la música",
+    "movimiento_o_efecto": "Caída"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Aparición de marcador 1-0",
+    "texto": "1-0",
+    "sonido": "Drop de música",
+    "movimiento_o_efecto": "Cambio de marcador"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Transición de plano",
+    "texto": "1-0",
+    "sonido": "Base musical",
+    "movimiento_o_efecto": "Corte de toma"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Acción física de impacto inmediato mezclada con el derbi Barcelona vs Real Madrid.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 4.5,
+    "contenido": "Broma con agua desde balcón que hace caer a un sujeto.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Overlay de logos y marcador"
+    ]
+   },
+   {
+    "desde": 4.5,
+    "hasta": 7.5,
+    "contenido": "Niño resbalando de frente en un tobogán inflable a la piscina.",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Overlay de logos"
+    ]
+   },
+   {
+    "desde": 7.5,
+    "hasta": 10.5,
+    "contenido": "Chica comiendo sándwich a la que le limpian la cara bruscamente.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Overlay de logos y marcador 1-1"
+    ]
+   },
+   {
+    "desde": 10.5,
+    "hasta": 15.5,
+    "contenido": "Mujer usando máquina de boxeo arcade y sujeto pegando fuerte.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Overlay de marcador 2-1 y 2-2"
+    ]
+   },
+   {
+    "desde": 15.5,
+    "hasta": 19.0,
+    "contenido": "Sujeto en calle enlodada al paso de una camioneta.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto WIN sobre Barcelona"
+    ]
+   }
+  ],
+  "cortes_por_10s": 2,
+  "sincronia_con_la_musica": "Los cambios de marcador (goles) coinciden con los golpes fuertes del beat musical en 4.0s, 7.5s, 12.0s y 15.5s.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "FINAL / 0-0",
+    "estilo": "Fuente Sans-Serif gruesa, blanco y amarillo, centrado e inferior."
+   },
+   {
+    "t": "4.0",
+    "texto": "1-0",
+    "estilo": "Texto de marcador en la parte inferior."
+   },
+   {
+    "t": "7.5",
+    "texto": "1-1",
+    "estilo": "Texto de marcador en la parte inferior."
+   },
+   {
+    "t": "12.0",
+    "texto": "2-1",
+    "estilo": "Texto de marcador en la parte inferior."
+   },
+   {
+    "t": "15.0",
+    "texto": "2-2 / WIN",
+    "estilo": "Texto de marcador y cartel de victoria verde."
+   }
+  ],
+  "audio": {
+   "musica": "Funk brasileño / Phunk estilo TikTok en tendencia, ~130 BPM.",
+   "efectos": [
+    "Golpes de audio sincronizados con caídas"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "El drop del beat en cada anotación de gol."
+  },
+  "estructura": "Planteo (0-4s: primer gol) → Tensión (4-15s: empate y alternativas) → Remate (15-19s: definición final y victoria).",
+  "giro_o_sorpresa": "La victoria del Barcelona en una situación absurda en la última escena.",
+  "final_y_loop": "Termina con la camioneta y la palabra WIN, reiniciando directamente la canción.",
+  "emocion_que_busca": "risa / debate",
+  "por_que_comentan": "Suscita discusiones y burlas entre fanáticos de Barcelona y Real Madrid.",
+  "por_que_comparten_o_repiten": "Edición dinámica de memes virales de ritmo rápido que divierte a fans del fútbol.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso del clásico rivalismo Barça vs Madrid",
+   "Selección de clips virales graciosos",
+   "Ritmo de edición adaptado a música en tendencia"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Recopilando clips virales de dominio público o grabando caídas propias y aplicando la plantilla de marcadores.",
+   "dificultad_1a10": 2,
+   "que_se_pierde_si_no_usamos_ese_material": "El reconocimiento inmediato de los videos virales ya consolidados."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Buscar 4 o 5 videos de golpes/caídas virales de alta gracia.",
+   "Superponer escudos de dos equipos rivales en cada protagonista.",
+   "Editar marcadores acumulativos sincronizados con el beat de un tema Phunk viral."
+  ],
+  "puntaje_produccion_1a10": 4,
+  "puntaje_idea_1a10": 8
+ }
+}

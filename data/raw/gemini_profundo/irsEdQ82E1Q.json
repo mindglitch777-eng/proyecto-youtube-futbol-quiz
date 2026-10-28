@@ -1,0 +1,168 @@
+{
+ "id": "irsEdQ82E1Q",
+ "canal": "Foot-high ",
+ "vistas": 14453522,
+ "titulo": "What happen with Madrid nowdays 🥺🗣️😔 #football",
+ "video_del_hit": 2,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "animación 2D estilo caricatura digital combinada con recortes fotográficos y videos reales al final",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La animación 2D es de estilo meme/caricatura sencilla, con contornos negros marcados y colores planos, pero funciona perfecto para formato vertical y redes por su expresividad y agilidad visual.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Escudo de Real Madrid en la pared y jugador con camiseta del Barcelona pintando",
+    "texto": "REAL MADRID CONDITION NOWDAYS",
+    "sonido": "Música pop bailable con sintetizadores, golpe fuerte al 0.0",
+    "movimiento_o_efecto": "Zoom in rápido y aparición de texto con gradiente de colores"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "El escudo cobra vida y se asusta",
+    "texto": "REAL MADRID CONDITION NOWDAYS",
+    "sonido": "Beat constante",
+    "movimiento_o_efecto": "El dibujo se transforma en monstruo negro"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "El escudo monstruo asustado",
+    "texto": null,
+    "sonido": "Música sigue",
+    "movimiento_o_efecto": "Corte de plano"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Jugadores rivales preparando arcos y flechas",
+    "texto": null,
+    "sonido": "Efecto de tensión musical",
+    "movimiento_o_efecto": "Zoom in"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "El escudo recibe flechazos",
+    "texto": null,
+    "sonido": "Sonido de flechas clavándose",
+    "movimiento_o_efecto": "Impactos sincronizados al beat"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Escudo con múltiples flechas",
+    "texto": null,
+    "sonido": "Música en desarrollo",
+    "movimiento_o_efector": "Paneo lateral"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina provocación futbolera (Barcelona vs Real Madrid), humor gráfico inmediato y un estímulo visual dinámico desde el primer segundo con música enérgico.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.9,
+    "contenido": "Jugador del Barcelona pinta encima del escudo del Real Madrid",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zoom in",
+     "aparición de texto"
+    ]
+   },
+   {
+    "desde": 0.9,
+    "hasta": 1.7,
+    "contenido": "El escudo se transforma en una caricatura asustada",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación de transformación"
+    ]
+   },
+   {
+    "desde": 1.7,
+    "hasta": 2.9,
+    "contenido": "Jugadores rivales apuntando con arcos",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 2.9,
+    "hasta": 4.1,
+    "contenido": "El escudo recibe flechazos",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "impactos de flechas"
+    ]
+   },
+   {
+    "desde": 4.1,
+    "hasta": 7.5,
+    "contenido": "Jugadores del Madrid sentados sufriendo",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 7.5,
+    "hasta": 11.0,
+    "contenido": "Homenaje a la época dorada del Madrid con Zidane y jugadores históricos en fotos reales",
+    "encuadre": "primer plano secuencial",
+    "camara": "fija con cortes rápidos",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "recortes de video real con zoom"
+    ]
+   }
+  ],
+  "cortes_por_10s": 8,
+  "sincronia_con_la_musica": "Sí, los impactos de las flechas y los cambios de plano caen exactamente en los beats fuertes de la música (ej. 0.0, 1.8, 4.2).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "REAL MADRID CONDITION NOWDAYS",
+    "estilo": "Fuente bold gruesa, colores variados (amarillo, verde, rojo), borde negro, centrado con leve inclinación, animación de entrada con zoom"
+   }
+  ],
+  "audio": {
+   "musica": "Pop electrónico rítmico, 128 bpm, tono burlón/viral, sonido típico de edits de fútbol en TikTok",
+   "efectos": [
+    "Silbidos",
+    "Impactos de flechas",
+    "Risas de burla"
+   ],
+   "voz": "No hay voz hablada, sólo melodía pop pegadiza",
+   "momento_clave_de_audio": "El drop con el golpe seco al inicio en 0.0"
+  },
+  "estructura": "planteo (0-2s: burla al presente del Real Madrid) → tensión (2-7s: ataque masivo de rivales y sufrimiento) → remate (7-11s: contraste emotivo con la era dorada y Zidane)",
+  "giro_o_sorpresa": "Pasa de ser una burla absoluta y meme infantil a un cierre nostálgico y serio con videos reales de jugadores históricos del Real Madrid.",
+  "final_y_loop": "Termina con una secuencia rápida de rostros serios de jugadores históricos, creando un corte seco que invita a re-visualizar el contraste.",
+  "emocion_que_busca": "debate y provocación futbolera entre hinchas",
+  "por_que_comentan": "Porque debate sobre el presente del Real Madrid versus su época dorada, generando peleas en comentarios entre hinchas de Barcelona y Real Madrid",
+  "por_que_comparten_o_repiten": "Por la combinación perfecta de humor meme actual, transiciones sincronizadas al beat y nostalgia futbolera.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de personajes y memes de fútbol actuales muy reconocidos por la gen Z",
+   "Sincronización milimétrica de cada golpe y flechazo con el beat de la música",
+   "El giro emocional final que pasa de la burla al respeto por la historia del club"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar herramientas de animación 2D o IA generativa de imágenes tipo caricatura, combinadas con banco de videos de fútbol de archivo libre.",
+   "dificultad_1a10": 6,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento inmediato de los avatares caricaturizados de los futbolistas actuales y el archivo histórico exacto."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Elegir un tema de fútbol actual que genere polémica o debate en redes sociales.",
+   "Paso 2: Diseñar o conseguir caricaturas vectoriales de los jugadores involucrados con expresiones exageradas.",
+   "Paso 3: Montar la edición sobre un tema musical en tendencia con fuerte presencia de beats marcados.",
+   "Paso 4: Sincronizar cada golpe, flecha o transición exactamente en el golpe musical.",
+   "Paso 5: Agregar un giro emocional o nostálgico al final con material de archivo real para enganchar al espectador."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

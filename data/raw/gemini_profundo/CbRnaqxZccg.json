@@ -1,0 +1,266 @@
+{
+ "id": "CbRnaqxZccg",
+ "canal": "Soccer-XD",
+ "vistas": 1018549,
+ "titulo": "Legends Last World Cup 💔💔 #shorts #football #fifaworldcup",
+ "video_del_hit": 1,
+ "modelo": "gemini-flash-latest",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (animación 2D tipo caricatura/flash estilo JustToonIt, clips reales de partidos con efecto de sobreimpresión/transparencia y póster digital final)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La animación 2D es vectorial y colorida pero de interpolación muy básica; los clips reales intercalados tienen baja resolución, distorsión y artefactos de compresión por sobreimpresión rápida.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Messi animado en el vestuario extiende su mano hacia su camiseta con el número 10 flotando.",
+    "texto": null,
+    "sonido": "Voz melancólica cantando 'I never let you go...'",
+    "movimiento_o_efecto": "Messi camina hacia la camiseta; la camiseta flota con ojos tristes."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "La camiseta argentina mira a Messi con lágrimas en los ojos.",
+    "texto": null,
+    "sonido": "Música rítmica pop/remix suave y nostálgico.",
+    "movimiento_o_efecto": "Animación de parpadeo y lágrimas en la camiseta."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Messi intenta consolar a la camiseta flotante.",
+    "texto": null,
+    "sonido": "Melodía vocal continúa.",
+    "movimiento_o_efecto": "Messi estira el brazo con expresión compasiva."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "La camiseta saca un pañuelo blanco y se suena los mocos/llora.",
+    "texto": null,
+    "sonido": "Vocal 'Oh why...'",
+    "movimiento_o_efecto": "La camiseta dobla una manga para cubrirse la cara con un pañuelo."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "La camiseta sigue secándose las lágrimas desconsolada.",
+    "texto": null,
+    "sonido": "Base electrónica entrando.",
+    "movimiento_o_efecto": "Temblor en la camiseta animada."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Messi observa con resignación y tristeza.",
+    "texto": null,
+    "sonido": "Compás previo a la transición.",
+    "movimiento_o_efecto": "Leve zoom in en la escena."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "La camiseta continúa sollozando en el casillero del vestuario.",
+    "texto": null,
+    "sonido": "Transición musical.",
+    "movimiento_o_efecto": "Preparación para el fade al clip real."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Humaniza un objeto sagrado para los futboleros (la camiseta 10 de Messi) mostrándola llorar, disparando curiosidad instantánea sobre por qué se están despidiendo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 4.8,
+    "contenido": "Messi animado llamando a su camiseta número 10 de Argentina que llora.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 4.8,
+    "hasta": 7.5,
+    "contenido": "Sobreimpresión de Messi real festejando un gol en el Mundial sobre la animación.",
+    "encuadre": "plano medio",
+    "camara": "cámara rápida",
+    "transicion_de_entrada": "fundido cruzado con ghosting",
+    "efectos": [
+     "transparencia / superposición"
+    ]
+   },
+   {
+    "desde": 7.5,
+    "hasta": 13.9,
+    "contenido": "Cristiano Ronaldo animado llama a su camiseta 7 de Portugal, que vuela hacia él llorando a gritos.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 13.9,
+    "hasta": 16.5,
+    "contenido": "Clip real de Cristiano Ronaldo celebrando con los brazos abiertos sobre la animación.",
+    "encuadre": "primer plano a medio",
+    "camara": "paneo rápido",
+    "transicion_de_entrada": "fundido cruzado con ghosting",
+    "efectos": [
+     "superposición"
+    ]
+   },
+   {
+    "desde": 16.5,
+    "hasta": 18.0,
+    "contenido": "Neymar animado con su camiseta de Brasil número 10 que solloza.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 18.0,
+    "hasta": 20.5,
+    "contenido": "Clip real de Neymar corriendo y festejando.",
+    "encuadre": "plano medio",
+    "camara": "paneo",
+    "transicion_de_entrada": "fundido cruzado",
+    "efectos": [
+     "superposición"
+    ]
+   },
+   {
+    "desde": 20.5,
+    "hasta": 22.0,
+    "contenido": "Luka Modrić animado mirando con duda a su camiseta de Croacia llorando.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 22.0,
+    "hasta": 23.5,
+    "contenido": "Clip real de Modrić celebrando.",
+    "encuadre": "primer plano",
+    "camara": "rápida",
+    "transicion_de_entrada": "fundido cruzado",
+    "efectos": [
+     "superposición"
+    ]
+   },
+   {
+    "desde": 23.5,
+    "hasta": 25.0,
+    "contenido": "Kevin De Bruyne animado llamando a su camiseta de Bélgica número 7 que llora desconsolada.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 25.0,
+    "hasta": 26.5,
+    "contenido": "Clip real de festejo de gol de selección sobreimpreso.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "fundido cruzado",
+    "efectos": [
+     "superposición"
+    ]
+   },
+   {
+    "desde": 26.5,
+    "hasta": 31.5,
+    "contenido": "Todas las leyendas de espaldas, con los números de sus camisetas llorando.",
+    "encuadre": "primer plano trasero",
+    "camara": "paneo vertical hacia arriba",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 31.5,
+    "hasta": 33.5,
+    "contenido": "Pantalla en el túnel del estadio que dice 'THE LAST DANCE 💔' con ojos tristes.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "zoom in",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 33.5,
+    "hasta": 40.5,
+    "contenido": "Fila completa de jugadores en el césped frente a la pelota oficial y la Copa del Mundo, ambos llorando.",
+    "encuadre": "plano general / picado",
+    "camara": "paneo lateral lento",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "animación 2D"
+    ]
+   },
+   {
+    "desde": 40.5,
+    "hasta": 45.0,
+    "contenido": "Póster conmemorativo de 'THE LAST DANCE FIFA WORLD CUP 2026' con fotos de todos los veteranos juntos.",
+    "encuadre": "plano general",
+    "camara": "zoom out suave",
+    "transicion_de_entrada": "fundido rápido",
+    "efectos": [
+     "motion graphics / poster"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3.1,
+  "sincronia_con_la_musica": "Los cambios entre la escena animada y los clips reales coinciden rítmicamente con los compases vocales de la canción (ej. cortes en 4.8s, 7.5s, 13.9s, 16.5s, 20.5s y 26.5s).",
+  "textos_en_pantalla": [
+   {
+    "t": "31.5",
+    "texto": "THE LAST DANCE 💔",
+    "estilo": "Letras blancas tipo marcador en pantalla azul con corazón roto y ojos tristes."
+   },
+   {
+    "t": "40.5",
+    "texto": "THE LAST DANCE - FIFA WORLD CUP 2026 - ONE LAST TOURNAMENT, ONE LAST CHANCE, ONE LAST DANCE - THANK YOU FOR THE MEMORIES",
+    "estilo": "Tipografía sans-serif de póster promocional, color negro sobre fondo blanco con collage de fotos."
+   }
+  ],
+  "audio": {
+   "musica": "Pop / Dance melancólico (Remix estilo 'Dancin' de Aaron Smith / cover electrónico lento a ~115 BPM).",
+   "efectos": null,
+   "voz": "Voz femenina/masculina procesada cantando en inglés letras melancólicas ('I never let you go... all night long...').",
+   "momento_clave_de_audio": "Segundo 26.5 cuando entra la frase musical más melancólica al mostrar a todos los jugadores de espaldas."
+  },
+  "estructura": "Planteo (0.0-26.5s: Despedidas individuales de cada estrella con su camiseta llorando) → Tensión (26.5-40.5s: Todos los jugadores reunidos de espaldas y la Copa del Mundo llorando frente a ellos) → Remate (40.5-45.0s: Póster homenaje 'The Last Dance' reuniendo a toda la generación que se retira).",
+  "giro_o_sorpresa": "Que el trofeo del Mundial y el balón también tengan ojos y estén llorando porque estas leyendas no volverán a jugar.",
+  "final_y_loop": "Termina con una imagen fija tipo póster tributo; no hay loop infinito fluido ya que pasa de la imagen estática al vestuario de Messi con corte abrupto.",
+  "emocion_que_busca": "nostalgia",
+  "por_que_comentan": "Debaten si Messi o Cristiano llegarán a 2026, qué jugador van a extrañar más y peleas sobre qué selección merecía más.",
+  "por_que_comparten_o_repiten": "Apela al fin de una era dorada del fútbol mundial (Messi, CR7, Modrić, Neymar) que marcó la infancia/adolescencia de casi toda la audiencia.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de figuras legendarias globales que generan engagement instantáneo (Messi, Ronaldo, Neymar).",
+   "Concepto emocional universal: la tristeza del retiro inevitable y el paso del tiempo.",
+   "Estilo visual de caricatura meme fácil de digerir y altamente reconocible en YouTube Shorts."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "null",
+   "dificultad_1a10": 8,
+   "que_se_pierde_si_no_usamos_ese_material": "Se perderían los clips reales de festejos oficiales de la FIFA y los rostros/identidad exacta de los futbolistas y camisetas oficiales licenciadas, además del póster con fotos de prensa."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Elegir una temática de fin de ciclo o retiro de grandes figuras del deporte o cultura pop.",
+   "Animar una metáfora visual emotiva (ej. el objeto icónico cobrando vida y despidiéndose del personaje).",
+   "Intercalar flash-forwards o recuerdos reales de sus mejores momentos para contrastar la nostalgia con la gloria.",
+   "Rematar con una imagen colectiva de homenaje y un mensaje claro de despedida/agradecimiento."
+  ],
+  "puntaje_produccion_1a10": 5,
+  "puntaje_idea_1a10": 8
+ }
+}

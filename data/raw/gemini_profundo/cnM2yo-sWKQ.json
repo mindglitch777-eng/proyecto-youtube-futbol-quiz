@@ -1,0 +1,221 @@
+{
+ "id": "cnM2yo-sWKQ",
+ "canal": "TenzyFX",
+ "vistas": 7391869,
+ "titulo": "When Raphinha Stole Cubarsi's First Goal🤯😂",
+ "video_del_hit": 2,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "transmisión real de partido con edición y gráficos superpuestos",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Video de transmisión oficial adaptado a formato vertical 9:16 con buena nitidez y efectos visuales atractivos.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Fermín cobrando tiro libre para el Barcelona.",
+    "texto": "*FREE KICK FOR BARCELONA*",
+    "sonido": "Música funk brasileña / electro",
+    "movimiento_o_efecto": "Zoom in progresivo con etiqueta flotante sobre Fermín"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Fermín pasa la pelota a la jugada preparada.",
+    "texto": "*FREE KICK FOR BARCELONA*",
+    "sonido": "Música de fondo",
+    "movimiento_o_efecto": "Seguimiento de cámara al centro del área"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Centro al área y movimiento de atacantes.",
+    "texto": "*FREE KICK FOR BARCELONA*",
+    "sonido": "Música de fondo",
+    "movimiento_o_efecto": "Corte y aceleración leve de toma"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Pelota cruzando el área hacia Cubarsí.",
+    "texto": "CUBARSI",
+    "sonido": "Música en alza",
+    "movimiento_o_efecto": "Etiqueta animada sobre Cubarsí"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Remate/desvío de Cubarsí hacia el arco.",
+    "texto": "CUBARSI",
+    "sonido": "Música en alza",
+    "movimiento_o_efecto": "Efecto de brillo en la pelota"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Entrada de Raphinha en la línea de gol.",
+    "texto": "RAPHINHA",
+    "sonido": "Impacto de sonido en gol",
+    "movimiento_o_efecto": "Resplandor rojo en la zona de gol"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Pelota entrando al arco.",
+    "texto": "RAPHINHA",
+    "sonido": "Música funk en loop",
+    "movimiento_o_efecto": "Corte hacia la celebración"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Plantea rápidamente una jugada de gol confusa y polimica entre dos compañeros de equipo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.02,
+    "contenido": "Tiro libre de Barcelona ejecutado por Fermín.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "etiqueta de texto",
+     "brillo"
+    ]
+   },
+   {
+    "desde": 0.03,
+    "hasta": 0.05,
+    "contenido": "Remate al arco y toque final en la línea.",
+    "encuadre": "general",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "resplandor rojo",
+     "etiquetas de jugadores"
+    ]
+   },
+   {
+    "desde": 0.06,
+    "hasta": 0.09,
+    "contenido": "Cubarsí celebrando su supuesto primer gol.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "emoji animado",
+     "texto flotante"
+    ]
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.11,
+    "contenido": "Raphinha afirmando que él tocó la pelota.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo irónico"
+    ]
+   },
+   {
+    "desde": 0.12,
+    "hasta": 0.13,
+    "contenido": "Árbitro señalando revisión de VAR.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "efecto de destello"
+    ]
+   },
+   {
+    "desde": 0.14,
+    "hasta": 0.19,
+    "contenido": "Repetición en cámara lenta mostrando el toque antes de la línea.",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "círculo de enfoque rojo",
+     "flecha indicadora"
+    ]
+   },
+   {
+    "desde": 0.2,
+    "hasta": 0.21,
+    "contenido": "Reacción con cara de culpa de Raphinha.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "texto desvanecido"
+    ]
+   },
+   {
+    "desde": 0.22,
+    "hasta": 0.23,
+    "contenido": "Reacción de decepción de Cubarsí.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "emoji de llanto"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3.48,
+  "sincronia_con_la_musica": "Los cambios de plano y aparición de textos acompañan el ritmo del beat funk de fondo.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.00",
+    "texto": "*FREE KICK FOR BARCELONA*",
+    "estilo": "Bold, verde/blanco, centrado arriba"
+   },
+   {
+    "t": "0.06",
+    "texto": "*FIRST UCL GOAL FOR CUBARSI*",
+    "estilo": "Bold, amarillo/blanco, centro izquierda"
+   },
+   {
+    "t": "0.10",
+    "texto": "\"I THINK I MADE THE LAST TOUCH\"",
+    "estilo": "Cursiva/Bold, verde brillante, centro abajo"
+   },
+   {
+    "t": "0.18",
+    "texto": "*TOUCH BEFORE THE LINE*",
+    "estilo": "Bold, verde/rojo, arriba de la acción"
+   },
+   {
+    "t": "0.22",
+    "texto": "*BRO'S GOAL GOT STOLEN*",
+    "estilo": "Bold, amarillo, centro"
+   }
+  ],
+  "audio": {
+   "musica": "Brazilian Funk Remix, ~130 BPM, estilo Montagem de tendencia en Reels/TikTok",
+   "efectos": [
+    "sonido de impacto",
+    "pop de emoji"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "El beat se intensifica durante la revisión de VAR a los 0:14."
+  },
+  "estructura": "Planteo (0-5s): Tiro libre y gol confuso → Tensión (6-13s): Celebración de Cubarsí vs declaración de Raphinha → Remate (14-23s): VAR confirma que Raphinha robó el gol y reacciones graciosas.",
+  "giro_o_sorpresa": "El video en cámara lenta demuestra que Raphinha efectivamente empujó el balón justo antes de que cruzara completamente.",
+  "final_y_loop": "Corta con la cara triste de Cubarsí y el loop reinicia directo al cobro de la jugada.",
+  "emocion_que_busca": "risa / empatía humorística / debate futbolero",
+  "por_que_comentan": "Los usuarios discuten si Raphinha hizo bien en asegurar el gol o si le robó un momento histórico al juvenil Cubarsí.",
+  "por_que_comparten_o_repiten": "Es un momento insólito y divertido de un partido de Champions League muy visto.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas populares del Barcelona (Raphinha y Cubarsí).",
+   "Edición dinámica estilo meme con emojis y zoom a la jugada clave.",
+   "Tema altamente debatable en la sección de comentarios."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "Requiere footage real con derechos de transmisión de la UEFA Champions League.",
+   "dificultad_1a10": 8,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el realismo del momento deportivo exacto y el valor de las caras reales de los jugadores."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Identificar una jugada polémica o divertida en un partido popular.",
+   "Recortar las tomas clave: origen, gol, reacciones y repetición cercana.",
+   "Añadir música funk/trending y efectos visuales (emojis, círculos de enfoque, subtítulos dinámicos)."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

@@ -1,0 +1,158 @@
+{
+ "id": "Y5aSiwY682w",
+ "canal": "dsfsdf",
+ "vistas": 10342920,
+ "titulo": "HAALAND vs MBAPPÉ 🤯 NEVER LAUGH TOO EARLY! ⚽🔥",
+ "video_del_hit": 2,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "video real con actores imitando futbolistas y edición humorística de sketches",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "buena iluminación de estudio y nitidez impecable, vestimenta oficial de selecciones y clubes, gran parecido físico y gestual de los dobles/actores, edición dinámica y limpia.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "El actor de Haaland abriendo una puerta azul con zapatillas de tiburón y moño rosa en el piso",
+    "texto": null,
+    "sonido": "Puerta abriéndose y música cómica de entrada",
+    "movimiento_o_efecto": "Cámara fija con zoom in al abrirse la puerta"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Haaland saltando hacia las zapatillas",
+    "texto": null,
+    "sonido": "Golpe sordo de salto",
+    "movimiento_o_efecto": "Cámara rápida/aceleración"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Mbappé y otros dos jugadores corriendo en un pasillo con caras de sorpresa",
+    "texto": null,
+    "sonido": "Grito de sorpresa masivo '¡Oh!'",
+    "movimiento_o_efecto": "Cámara en movimiento hacia adelante con temblor"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Mbappé y compañeros señalando a cámara con la boca abierta",
+    "texto": null,
+    "sonido": "Efecto de sonido de sorpresa en aumento",
+    "movimiento_o_efecto": "Cámara fija"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Haaland festejando con los puños apretados",
+    "texto": null,
+    "sonido": "Grito de gol o festejo eufórico",
+    "movimiento_o_efecto": "Cámara fija en primer plano"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Haaland mirando desconcertado hacia abajo",
+    "texto": null,
+    "sonido": "Silencio breve o nota de suspenso",
+    "movimiento_o_efecto": "Cámara fija"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Primer plano de los pies de Haaland con las zapatillas disparejas",
+    "texto": null,
+    "sonido": "Sonido cómica de error o bocina suave",
+    "movimiento_o_efecto": "Cámara con zoom in a los pies"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina figuras top del fútbol mundial (Haaland, Mbappé) en una situación bizarra y humorística con zapatillas infantiles ridículas, generando curiosidad inmediata sobre el remate.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.8,
+    "contenido": "Haaland abre la puerta y salta hacia las zapatillas",
+    "encuadre": "general",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "aceleración"
+    ]
+   },
+   {
+    "desde": 0.8,
+    "hasta": 2.0,
+    "contenido": "Mbappé y compañeros corriendo y señalando sorprendidos",
+    "encuadre": "medio",
+    "camara": "temblor",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "zoom rápido"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 3.8,
+    "contenido": "Haaland festeja y luego mira desconcertado sus pies",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 3.8,
+    "hasta": 6.0,
+    "contenido": "Mbappé sostiene las zapatillas originales riéndose",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 6.0,
+    "hasta": 11.5,
+    "contenido": "Giro de expresión de Haaland y celebración final conjunta con las zapatillas",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "gritos",
+     "risa masiva"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, los cambios de plano y las reacciones de los jugadores caen exactamente en los beats de la música y efectos de sonido (ej. 0.3, 1.2, 3.5)",
+  "textos_en_pantalla": [],
+  "audio": {
+   "musica": "Música rítmica de comedia y sketches de YouTube, 120 bpm, estilo tendencia viral",
+   "efectos": [
+    "Gritos de sorpresa",
+    "Efecto de puerta",
+    "Risas al final"
+   ],
+   "voz": "No hay voz hablada, solo gritos y expresiones guturales",
+   "momento_clave_de_audio": "El grito unísono '¡Oh!' en el segundo 1.2 y la carcajada masiva final en el segundo 11.0"
+  },
+  "estructura": "Planteo (Haaland entra confiado y festeja anticipadamente) → Tensión (descubre que tiene las zapatillas equivocadas y Mbappé se burla) → Remate (todos terminan riendo y celebrando juntos con las zapatillas ridículas)",
+  "giro_o_sorpresa": "Haaland celebra antes de tiempo sin notar que se puso zapatillas de tiburón y de moño rosa desparejas, y Mbappé tenía las otras.",
+  "final_y_loop": "Termina con todos los futbolistas abrazados y riendo a carcajadas mostrando las zapatillas a cámara. No hace loop perfecto pero invita a ver de nuevo por la simpatía.",
+  "emocion_que_busca": "risa / asombro / empatía con creadores de contenido",
+  "por_que_comentan": "Debaten sobre el parecido de los dobles con los jugadores reales y comentan la ridiculez de las zapatillas.",
+  "por_que_comparten_o_repiten": "Es un formato corto, humorístico y universal sin barreras de idioma, protagonizado por ídolos del fútbol.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de dobles muy parecidos a futbolistas de élite mundial (Haaland, Mbappé).",
+   "Contraste bizarro entre la seriedad/fama de los jugadores y zapatillas infantiles ridículas.",
+   "Ritmo ágil de comedia física sin diálogos complejos que funciona en cualquier idioma."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Utilizando dobles o actores con camisetas de fútbol geniales y utilería graciosa (zapatillas infantiles)",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho inmediato de reconocer a los jugadores reales o dobles idénticos de la élite del fútbol."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Conseguir actores o dobles con gran parecido físico a futbolistas famosos y vestirlos con indumentaria oficial.",
+   "Diseñar un gag visual simple y absurdo (calzado ridículo vs actitud desafiante).",
+   "Grabar con planos cortos y dinámicos con mucha expresividad facial.",
+   "Editar con cortes rápidos sincronizados a efectos de sonido y música de comedia.",
+   "Cerrar con una explosión de alegría o baile grupal."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

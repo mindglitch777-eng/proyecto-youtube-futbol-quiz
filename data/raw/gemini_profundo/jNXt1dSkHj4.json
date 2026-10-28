@@ -1,0 +1,192 @@
+{
+ "id": "jNXt1dSkHj4",
+ "canal": "AIBallerX",
+ "vistas": 2180240,
+ "titulo": "Ranking Footballers Unexpected New Version 💀",
+ "video_del_hit": 2,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (recopilación de videos virales de redes sociales)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Calidad heterogénea por provenir de distintas fuentes de usuarios con compresión de redes sociales.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Niño amagando en cancha sintética con ranking en texto",
+    "texto": "Ranking Footballers Unexpected New Version",
+    "sonido": "Voz gritando 'Speed, speed'",
+    "movimiento_o_efecto": "Cámara en mano siguiendo al niño"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Niño gambeteando a otro",
+    "texto": "Ranking Footballers Unexpected New Version",
+    "sonido": "Música suave de fondo",
+    "movimiento_o_efecto": "Movimiento continuo"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Amague y caída del rival",
+    "texto": "5. Neymar Jr.",
+    "sonido": "Gritos de emoción en audio original",
+    "movimiento_o_efecto": "Acción rápida"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "El niño se escapa con la pelota",
+    "texto": "5. Neymar Jr.",
+    "sonido": "Música de fondo",
+    "movimiento_o_efecto": "Desplazamiento a la derecha"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Niño continuando la jugada",
+    "texto": "5. Neymar Jr.",
+    "sonido": "Música y risas",
+    "movimiento_o_efecto": "Seguimiento lateral"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "El rival en el suelo",
+    "texto": "5. Neymar Jr.",
+    "sonido": "Gritos del público",
+    "movimiento_o_efecto": "Avance de jugada"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "El niño festeja o avanza",
+    "texto": "5. Neymar Jr.",
+    "sonido": "Música de fondo",
+    "movimiento_o_efecto": "Transición de toma próxima"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la curiosidad de un ranking con la gracia inmediata de una jugada viral.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 7.5,
+    "contenido": "Niño amagando a otro en cancha sintética.",
+    "encuadre": "medio",
+    "camara": "temblor",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Texto superpuesto"
+    ]
+   },
+   {
+    "desde": 7.5,
+    "hasta": 15.5,
+    "contenido": "Entrada de barrida agresiva a una mujer en el césped.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto superpuesto"
+    ]
+   },
+   {
+    "desde": 15.5,
+    "hasta": 25.5,
+    "contenido": "Niño haciendo jueguitos y piruetas dentro de una casa.",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto superpuesto"
+    ]
+   },
+   {
+    "desde": 25.5,
+    "hasta": 39.0,
+    "contenido": "POV en nieve esquivando conos a gran velocidad con la pelota.",
+    "encuadre": "primer plano",
+    "camara": "temblor",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto superpuesto",
+     "Cámara en primera persona"
+    ]
+   },
+   {
+    "desde": 39.0,
+    "hasta": 47.0,
+    "contenido": "Joven esquivando ruedas que bajan por una calle inclinada.",
+    "encuadre": "general",
+    "camara": "paneo",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto superpuesto"
+    ]
+   }
+  ],
+  "cortes_por_10s": 1.1,
+  "sincronia_con_la_musica": "Baja; la pista musical es continua y no está editada al ritmo de los cortes.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Ranking Footballers Unexpected New Version",
+    "estilo": "Texto amarillo y rojo centrado arriba"
+   },
+   {
+    "t": "0.0",
+    "texto": "5. Neymar Jr.",
+    "estilo": "Lista del 1 al 5 en el margen izquierdo, fuente blanca"
+   },
+   {
+    "t": "7.5",
+    "texto": "4. Sergio Ramos",
+    "estilo": "Lista en el margen izquierdo"
+   },
+   {
+    "t": "15.5",
+    "texto": "3. Lionel Messi",
+    "estilo": "Lista en el margen izquierdo"
+   },
+   {
+    "t": "25.5",
+    "texto": "2. Kylian Mbappé",
+    "estilo": "Lista en el margen izquierdo"
+   },
+   {
+    "t": "39.0",
+    "texto": "1. Cristiano Ronaldo",
+    "estilo": "Lista en el margen izquierdo"
+   }
+  ],
+  "audio": {
+   "musica": "Melodía instrumental relajada tipo lo-fi/pop",
+   "efectos": [
+    "Gritos de ambiente",
+    "Risas",
+    "Sonido de impacto al golpear la pelota"
+   ],
+   "voz": "Gritos puntuales de los videos originales",
+   "momento_clave_de_audio": "Gritos de sorpresa durante la barrida en el segundo 13"
+  },
+  "estructura": "Planteo (0-8s: Puesto 5 Neymar) → Tensión (8-39s: Puestos 4 a 2 subiendo habilidad) → Remate (39-47s: Puesto 1 con reto extremo de esquivar ruedas)",
+  "giro_o_sorpresa": "Asociar videos virales humorísticos o de destreza con estrellas de fútbol reales.",
+  "final_y_loop": "Finaliza al completar la lista con el puesto 1; reinicia directamente para intentar crear bucle.",
+  "emocion_que_busca": "Risa y asombro por las destrezas/caídas.",
+  "por_que_comentan": "Debate sobre si el ranking humorístico encaja con la personalidad de cada futbolista.",
+  "por_que_comparten_o_repiten": "Es fácil de digerir, gracioso y muestra habilidades sorprendentes en situaciones cotidianas.",
+  "tres_razones_por_las_que_exploto": [
+   "Formato de ranking que genera curiosidad.",
+   "Contenido de alto impacto visual y humorístico.",
+   "Uso de nombres de futbolistas famosos para atraer fans."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "Requiere recopilar clips virales de terceros.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "La gracia y autenticidad de los momentos virales espontáneos."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Buscar 5 clips virales breves de fútbol (caídas, trucos, velocidad).",
+   "Asignar cada clip a un futbolista famoso mediante texto en pantalla.",
+   "Agregar una plantilla de ranking progresivo de 5 a 1.",
+   "Usar un audio o música pegadiza que mantenga la atención."
+  ],
+  "puntaje_produccion_1a10": 4,
+  "puntaje_idea_1a10": 8
+ }
+}

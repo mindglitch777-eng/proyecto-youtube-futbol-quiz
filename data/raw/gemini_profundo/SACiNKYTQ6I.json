@@ -1,0 +1,123 @@
+{
+ "id": "SACiNKYTQ6I",
+ "canal": "DianShorts",
+ "vistas": 3970093,
+ "titulo": "Most Viral Footballer AI Covers Singing No Batidão🎶⚽",
+ "video_del_hit": 3,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: fotos estáticas de futbolistas famosos intervenidas con IA (deepfakes cantando sincronizados al ritmo)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Las caras de los jugadores están claramente generadas/animadas por IA sobre imágenes estáticas, se nota el morphing facial y la compresión vertical de YouTube Shorts, pero el lipsync es sorprendentemente fluido y atrapante.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Cristiano Ronaldo, Lamine Yamal y Erling Haaland en tres columnas",
+    "texto": "CHRISTIANO RONALDO / LAMINE YAMAL / ERLING HAALAND",
+    "sonido": "Empieza funk brasileño 'No Batidão' muy pegadizo",
+    "movimiento_o_efecto": "Rostro de Cristiano empieza a moverse al ritmo"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Banderas de Portugal, España y Noruega abajo de cada uno",
+    "texto": null,
+    "sonido": "Voz IA cantando la letra en portugués",
+    "movimiento_o_efecto": "Corte de grilla a 3 columnas"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Primer plano de los tres jugadores",
+    "texto": null,
+    "sonido": "Continúa la canción",
+    "movimiento_o_efecto": "Lamine Yamal sonríe cantando"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Señaladores de nombres arriba",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Zoom sutil in"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Haaland cantando con auriculares",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Efectos visuales flotantes de letras"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Cambio de personajes en pantalla",
+    "texto": "Gareth Bale / Bruno Fernandes / Pedri",
+    "sonido": "Grito 'ÉÉÉ!' en la música",
+    "movimiento_o_efecto": "Corte al beat en 2.5s"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Nuevos jugadores cantando",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Bale sonriendo"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Ver a los futbolistas más famosos del mundo cantando un funk brasileño viral con perfecta sincronía facial genera un bache cognitivo inmediato que te obliga a frenar y mirar quién viene después.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 14.0,
+    "contenido": "Grilla de 3 futbolistas cantando sincronizados",
+    "encuadre": "primer plano vertical",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "letras flotantes",
+     "banderas nacionales",
+     "nombres en la parte superior"
+    ]
+   }
+  ],
+  "cortes_por_10s": 4,
+  "sincronia_con_la_musica": "Sí, los cambios de personajes y tríos de futbolistas están perfectamente sincronizados con el beat del funk brasileño cada 2.5 a 3 segundos (ej: 0:00, 0:13, 0:32, 0:45, 0:57, 1:10).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "CHRISTIANO RONALDO / LAMINE YAMAL / ERLING HAALAND",
+    "estilo": "Tipografía sans-serif blanca con fondo negro translúcido, arriba de cada columna"
+   }
+  ],
+  "audio": {
+   "musica": "Funk brasileiro ('No Batidão' remix viral), 130 bpm, alta tendencia en TikTok y Shorts",
+   "efectos": [
+    "voces corales de fondo"
+   ],
+   "voz": "Voz de IA cantando la letra en portugués",
+   "momento_clave_de_audio": "El drop inicial del funk en el segundo 0.0 y los gritos vocales en cada transición"
+  },
+  "estructura": "planteo → tensión → remate: 0-3s impacto visual de ver a Ronaldo cantando funk; 3-60s desfile constante de leyendas y estrellas actuales (Bale, Benzema, Mbappé, Bellingham, Ibra, Speed, etc.); final abrupto con CTA de suscripción",
+  "giro_o_sorpresa": "La rotación constante de futbolistas de élite mundial (y streamers como IShowSpeed o MrBeast al final) que aparecen cantando la misma canción",
+  "final_y_loop": "Termina con un cartel rojo clásico de YouTube 'SUBSCRIBE' sobre fondo negro en el segundo 1.22, rompiendo el loop perfecto pero cerrando con conversión",
+  "emocion_que_busca": "asombro / comedia / entretenimiento rápido",
+  "por_que_comentan": "Comentan sobre cuál jugador canta mejor, cuál parece más real, o piden que agreguen a otros jugadores (Messi, Neymar)",
+  "por_que_comparten_o_repiten": "Porque es bizarro, divertido y se lo mandan a amigos futboleros para ver la cara de sus ídolos cantando un género totalmente ajeno a ellos",
+  "tres_razones_por_las_que_exploto": [
+   "Uso masivo de rostros hiperreconocibles (Ronaldo, Haaland, Mbappé, Bellingham)",
+   "Sincronización labial perfecta con IA sobre un tema musical ultra viral (Funk brasileiro)",
+   "Ritmo visual dinámico con cambios de trío exactos al beat que impiden el aburrimiento"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar herramientas de IA de脸-swap o animación de rostros (como HeyGen, Akool o SadTalker) sobre fotos públicas de famosos, combinándolas con templates de grillas de 3 columnas en CapCut",
+   "dificultad_1a10": 6,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento instantáneo de las caras de los futbolistas reales, bajando drásticamente el CTR"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Elegir un audio musical viral en tendencia (ideal funk brasileño o remix rápido)",
+   "Paso 2: Conseguir fotos o clips cortos de 15 a 20 celebridades o futbolistas muy famosos",
+   "Paso 3: Usar una IA de sincronización labial y animación facial para que muevan la boca al ritmo de la canción",
+   "Paso 4: Armar una grilla vertical de 3 columnas en CapCut con nombres y banderas",
+   "Paso 5: Cortar y cambiar los personajes exactamente en cada golpe fuerte del beat de la música"
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}
