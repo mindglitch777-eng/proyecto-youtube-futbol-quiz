@@ -1,0 +1,72 @@
+name: Render runners (uno por máquina)
+
+# Se lanza a mano (o desde Claude): cada guion se renderiza en una máquina separada y en paralelo.
+# Al terminar sube salida/<id>/short.mp4 (+ versión liviana) al repo y también como artifact descargable.
+
+on:
+  workflow_dispatch:
+    inputs:
+      guiones:
+        description: "ids separados por coma (ej: runner_02,runner_03)"
+        default: "runner_02,runner_03"
+
+permissions:
+  contents: write
+
+jobs:
+  lista:
+    runs-on: ubuntu-latest
+    outputs:
+      matriz: ${{ steps.m.outputs.matriz }}
+    steps:
+      - id: m
+        run: echo "matriz=$(echo '${{ inputs.guiones }}' | python3 -c 'import sys,json;print(json.dumps([x.strip() for x in sys.stdin.read().split(",") if x.strip()]))')" >> "$GITHUB_OUTPUT"
+
+  render:
+    needs: lista
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    strategy:
+      fail-fast: false
+      matrix:
+        guion: ${{ fromJson(needs.lista.outputs.matriz) }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - uses: actions/setup-node@v4
+        with: {node-version: "20"}
+      - name: Dependencias del sistema
+        run: sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2 fonts-noto-color-emoji
+      - name: Dependencias de Python
+        run: pip install -q numpy opencv-python-headless pillow cairocffi
+      - name: three.js + Chromium
+        working-directory: produccion/runner
+        run: |
+          npm install --silent three@0.169.0 playwright@1.48.2
+          npx playwright install --with-deps chromium
+      - name: Modelo de detección de caras (YuNet)
+        run: |
+          curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx \
+            https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+      - name: Render
+        working-directory: produccion
+        run: |
+          python3 render_runner.py guiones/${{ matrix.guion }}.json
+          ffmpeg -loglevel error -y -i salida/${{ matrix.guion }}/short.mp4 -c:v libx264 -preset slow -crf 26 -c:a aac -b:a 160k \
+            -movflags +faststart salida/${{ matrix.guion }}/${{ matrix.guion }}_liviano.mp4
+      - uses: actions/upload-artifact@v4
+        with:
+          name: ${{ matrix.guion }}
+          path: |
+            produccion/salida/${{ matrix.guion }}/short.mp4
+            produccion/salida/${{ matrix.guion }}/short_sin_musica.mp4
+            produccion/salida/${{ matrix.guion }}/${{ matrix.guion }}_liviano.mp4
+      - name: Subir al repo
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f produccion/salida/${{ matrix.guion }}/short.mp4 produccion/salida/${{ matrix.guion }}/${{ matrix.guion }}_liviano.mp4 \
+                  produccion/salida/${{ matrix.guion }}/config.json produccion/salida/${{ matrix.guion }}/fotos produccion/salida/${{ matrix.guion }}/memes || true
+          git commit -m "Render ${{ matrix.guion }} (Actions)" || echo "nada nuevo"
+          for i in 1 2 3 4 5 6; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((5 * i)); done
