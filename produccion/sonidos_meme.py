@@ -20,13 +20,22 @@ BUSCAR = {
     "triste_violin": "sad violin", "fail": "fail sound effect", "wow": "anime wow", "money": "money money",
     "rizz": "rizz", "among_us": "among us", "nope": "nope", "yeah_boy": "yeah boiii", "dramatic": "dun dun dun",
     "ronaldo": "cristiano ronaldo", "messi": "messi", "ankara_messi": "ankara messi",
+    "seis_siete": "six seven", "67": "67", "doot_doot": "doot doot 6 7",
+    "parado_bailao": "parado no bailao", "neymar": "neymar", "neymar_risa": "neymar laugh",
+    "messi_chant": "messi messi messi", "la_cabra": "la cabra", "goat": "goat sound", "messi_mundial": "messi campeon del mundo",
+    "que_miras_bobo": "que miras bobo", "andres_cantor": "gooool", "tiki_taka": "tiki taka",
 }
+SOLO = set()  # si tiene claves, baja solo esas (para no repetir todo)
 
 
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    indice = []
+    previo = OUT / "indice.json"
+    indice = json.loads(previo.read_text()) if previo.exists() else []
+    hechos = {x["clave"] for x in indice}
     for clave, q in BUSCAR.items():
+        if clave in hechos:
+            continue
         try:
             r = S.get(f"https://www.myinstants.com/en/search/?name={quote(q)}", timeout=40)
         except requests.RequestException as e:
