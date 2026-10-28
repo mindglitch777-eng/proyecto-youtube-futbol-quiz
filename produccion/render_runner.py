@@ -158,7 +158,7 @@ def bajon():
 
 
 def monedas(n=6, semilla=1):
-    rng = np.random.default_rng(semilla); out = np.zeros(int(0.7 * M.SR), np.float32)
+    rng = np.random.default_rng(semilla); out = np.zeros(int((n * 0.07 + 0.2) * M.SR), np.float32)
     for i in range(n):
         s = M.pluck(rng.choice([1760, 1976, 2349, 2637]), 0.12, 0.12); j = int(i * 0.07 * M.SR)
         out[j:j + len(s)] += s[: len(out) - j]

@@ -270,7 +270,7 @@ function frame(t) {
   actualizarParticulas(t, x, z, r);
   // cámara: detrás y arriba, sigue suave en x
   camX += (x * 0.35 - camX) * 0.08;
-  cam.position.set(camX, 7.6 + r * 0.8, z + 13.5 + r * 1.4); cam.lookAt(camX * 0.5, 1.0, z - 14);
+  cam.position.set(camX, 7.9 + r * 0.3, z + 14.2 + r * 0.4); cam.lookAt(camX * 0.5, 1.0, z - 14);
   sol.position.set(x + 8, 22, z + 10); sol.target.position.set(x, 0, z - 6);
   R.render(scene, cam);
   // ---- composición final
