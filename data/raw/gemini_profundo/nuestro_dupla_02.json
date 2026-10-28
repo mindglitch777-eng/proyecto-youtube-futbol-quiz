@@ -1,0 +1,127 @@
+{
+ "id": "nuestro_dupla_02",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "~1.400",
+ "titulo": "MESSI & NEYMAR age evolution 😳",
+ "archivo": "produccion/entrega/07_mie28-10_23h_dupla_02.mp4",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "fotos reales ordenadas cronológicamente en collage vertical tipo grilla con efectos de escala",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Las imágenes de archivo son de distintas épocas y calidades web variadas (algunas pixeladas como 2013-2015), pero el template oscuro con marcos amarillos y banderas logra cohesión visual.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "MESSI & NEYMAR AGE EVOLUTION 2011 + Fotos 2011",
+    "texto": "MESSI & NEYMAR AGE EVOLUTION 2011",
+    "sonido": "pop electrónico seco",
+    "movimiento_o_efecto": "zoom in inicial rápido"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Año 2011",
+    "texto": "2011",
+    "sonido": "pop",
+    "movimiento_o_efecto": "escala"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Messi 24 / Neymar 19",
+    "texto": "MESSI AGE 24 NEYMAR AGE 19",
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de año"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Año 2012",
+    "texto": "2012",
+    "sonido": "pop",
+    "movimiento_o_efecto": "transición de año"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Messi 25 / Neymar 20",
+    "texto": "MESSI AGE 25 NEYMAR AGE 20",
+    "sonido": "pop",
+    "movimiento_o_efecto": "escala"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Año 2013",
+    "texto": "2013",
+    "sonido": "pop",
+    "movimiento_o_efecto": "transición"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Messi 26 / Neymar 21",
+    "texto": "MESSI AGE 26 NEYMAR AGE 21",
+    "sonido": "pop",
+    "movimiento_o_efecto": "escala"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Muestra inmediatamente a dos íconos mundiales en su juventud con un ritmo ultra rápido de un año por segundo y un efecto sonoro percusivo que genera adicción.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 21.0,
+    "contenido": "Secuencia cronológica año por año desde 2011 hasta 2026 mostrando la evolución física de Messi y Neymar con fotos y edades.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "zoom in",
+     "escala de fotos"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, cada corte de año y foto coincide exactamente con el beat percusivo seco (ej: 0.0s, 1.0s, 2.0s, 3.0s)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "MESSI & NEYMAR AGE EVOLUTION 2011",
+    "estilo": "fuente sans-serif bold, blanco con título en amarillo, centrado arriba, sin animación compleja"
+   },
+   {
+    "t": "21.0",
+    "texto": "WHO AGED BETTER?",
+    "estilo": "fuente bold verde con borde negro, posición inferior centrada, animación de parpadeo/escala"
+   }
+  ],
+  "audio": {
+   "musica": "beats electrónicos cortos y repetitivos estilo TikTok/Shorts a ~120 bpm, con sonido de click o pop por cada año",
+   "efectos": [
+    "pop percusivo por cada cambio de año",
+    "alarma o sonido de cierre al final (21.0s)"
+   ],
+   "voz": "null",
+   "momento_clave_de_audio": "El sonido final tipo ring o alarma en el segundo 21.0 con la pregunta 'WHO AGED BETTER?'"
+  },
+  "estructura": "planteo (2011-2013) → tensión (crecimiento de barbas, paso de los años hasta 2024-2026) → remate (pregunta final 'Who aged better?')",
+  "giro_o_sorpresa": "Llegar al año 2026 y verlos con canas y marcas de la edad, cerrando con un debate abierto en comentarios.",
+  "final_y_loop": "Termina en el segundo 21.5 con la placa final 'WHO AGED BETTER?'. No hace loop perfecto pero invita a reverlo para comparar.",
+  "emocion_que_busca": "asombro / nostalgia / debate",
+  "por_que_comentan": "Para debatir apasionadamente quién envejeció peor o mejor, defendiendo a Messi o a Neymar según fanatismo.",
+  "por_que_comparten_o_repiten": "Porque el formato ultrarrápido obliga a pausar o rever para detallar las caras de los jugadores año por año.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de dos de los futbolistas más populares de la historia reciente.",
+   "Ritmo frenético sincronizado perfectamente con el audio en cada año.",
+   "Pregunta final desafiante que estimula los comentarios."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar fotos de archivo libres de derechos o generadas por IA de otras celebridades con la misma plantilla.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "El atractivo inmediato del reconocimiento de Messi y Neymar por parte de la audiencia masiva."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Recopilar fotos oficiales de los mismos dos personajes año por año desde su juventud hasta la actualidad.",
+   "Paso 2: Diseñar una plantilla vertical oscura con marcos individuales y banderas de sus países.",
+   "Paso 3: Montar las imágenes en un editor de video sincronizando cada cambio de año exactamente a un beat de audio percusivo.",
+   "Paso 4: Añadir una pregunta polémica al final ('Who aged better?') para disparar la sección de comentarios."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 8
+ }
+}

@@ -1,0 +1,180 @@
+{
+ "id": "7SfhrT12V1c",
+ "canal": "Renanzim Futbol ",
+ "vistas": 4241819,
+ "titulo": "SE VA A ACABAR EL ÁLBUM DEL MUNDIAL? 😱⚽",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: videos caseros reales del creador, recortes de revistas/álbumes reales, animaciones de logotipos, gráficos digitales y memes",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Es un formato típico de TikTok/Shorts de creador de fútbol: mezcla clips propios grabados con celular con buena luz, insertos de pantalla de baja resolución, memes estirados y gráficos dinámicos con subtítulos automáticos en colores brillantes. No busca calidad cinematográfica sino impacto y retención visual constante.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Creador con cara pintada comiendo billetes y álbum gigante",
+    "texto": "el álbum",
+    "sonido": "Voz en off acelerada, música de tensión con bajos",
+    "movimiento_o_efecto": "Zoom in rápido, texto grande central con borde"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Manos abriendo sobre del álbum de la Copa del Mundo 2026",
+    "texto": "de la copa del",
+    "sonido": "Efecto de papel rasgándose",
+    "movimiento_o_efecto": "Movimiento de manos rápido mostrando el sobre"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Primer plano de la portada del álbum 2026",
+    "texto": "mundo va a",
+    "sonido": "Continuación de voz en off",
+    "movimiento_o_efecto": "Corte rápido con zoom"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Álbum cayendo o moviéndose con efectos psicodélicos",
+    "texto": "desaparecer",
+    "sonido": "Sonido de transición electrónica",
+    "movimiento_o_efecto": "Fondo abstracto en movimiento"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Paquetes de figuritas cayendo en bucle",
+    "texto": "después de",
+    "sonido": "Voz continua",
+    "movimiento_o_efecto": "Efecto de caída en loop 3D"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Montaña gigante de figuritas y jugadores",
+    "texto": "mucho tiempo",
+    "sonido": "Efecto de estruendo",
+    "movimiento_o_efecto": "Panorámica rápida sobre figuritas"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Logotipo de la FIFA con texto de anuncio",
+    "texto": "la FIFA",
+    "sonido": "Subida de volumen musical",
+    "movimiento_o_efecto": "Corte seco al logo"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina una imagen chocante y bizarra al inicio (comer billetes y álbum), un tema de altísimo interés masivo (el álbum del mundial) y una pregunta implícita de pérdida (\"va a desaparecer\") con estímulos visuales cada medio segundo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.0,
+    "contenido": "Creador comiendo fajos de billetes y álbum",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zoom in",
+     "subtítulos dinámicos"
+    ]
+   },
+   {
+    "desde": 1.0,
+    "hasta": 2.0,
+    "contenido": "Manos abriendo sobre de figuritas",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulos dinámicos"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 3.0,
+    "contenido": "Portada del álbum 2026",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "fondos psicodélicos animados"
+    ]
+   },
+   {
+    "desde": 3.0,
+    "hasta": 5.0,
+    "contenido": "Montaña de figuritas y anuncio FIFA",
+    "encuadre": "general",
+    "camara": "aceleración",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "gráficos en pantalla"
+    ]
+   },
+   {
+    "desde": 5.0,
+    "hasta": 7.0,
+    "contenido": "Logo de Panini y caja del mundial",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "transición de marca"
+    ]
+   },
+   {
+    "desde": 7.0,
+    "hasta": 10.0,
+    "contenido": "Álbum y cartas del mundial 2030",
+    "encuadre": "medio",
+    "camara": "zoom out",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "meme de llanto insertado"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, cada cambio de palabra y corte de plano está perfectamente sincronizado con el beat de la música de fondo y los efectos de sonido de transición (ej. en 0.5, 1.0, 1.5, 3.0).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "ÁLBUM",
+    "estilo": "Fuente bold gruesa tipo Impact o Montserrat, color blanco con borde negro y fondo amarillo, centrado inferior, animación de aparición con rebote"
+   }
+  ],
+  "audio": {
+   "musica": "Hip-hop / Trap instrumental dinámico, aprox 130 bpm, con bajos marcados y sonidos de tensión, estilo viral de YouTube Shorts.",
+   "efectos": [
+    "Whoosh en cada transición",
+    "Sonido de papel rasgándose",
+    "Estruendo grave (bass drop)",
+    "Sonido de clic o flash"
+   ],
+   "voz": "Voz en off masculina en español latino, tono acelerado, enérgico, juvenil y narrativo (tipo influencer de fútbol).",
+   "momento_clave_de_audio": "El drop musical y golpe de efecto cuando aparece el meme llorando en el segundo 9."
+  },
+  "estructura": "planteo (la noticia bomba sobre el fin de Panini y el álbum) → tensión (el último álbum será el de 2030 y quién lo reemplaza) → remate (Topps toma el relevo y las cartas legendarias que se vienen).",
+  "giro_o_sorpresa": "La revelación de que el álbum no muere, sino que pasa a manos de otra empresa (Topps) y tendrá ediciones especiales de estrellas.",
+  "final_y_loop": "Termina con un call to action directo (\"quienes dejen su like y me sigan\") creando un gancho de retención de comunidad, aunque no hace loop perfecto con el segundo 0.",
+  "emocion_que_busca": "asombro / nostalgia / debate",
+  "por_que_comentan": "Dispara debate entre los coleccionistas sobre si Topps será mejor o peor que Panini, la nostalgia de toda la vida coleccionando con Panini y el costo de los álbumes.",
+  "por_que_comparten_o_repiten": "Se comparte masivamente entre amigos futboleros y grupos de WhatsApp de coleccionistas de figuritas porque es una noticia histórica para los fanáticos de los mundiales.",
+  "tres_razones_por_las_que_exploto": [
+   "Toca un nicho gigantesco y apasionado: los coleccionistas de álbumes de los Mundiales de Fútbol.",
+   "Usa una noticia de impacto global (el cambio de marca de Panini a Topps) antes que muchos medios tradicionales.",
+   "Ritmo frenético de edición con estímulos visuales y auditivos constantes cada segundo que impiden hacer scroll."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usando imágenes de stock de mundiales, capturas de pantalla de noticias de la FIFA, gráficos generados o editados en Canva/Photoshop y voz en off propia con IA o grabada con el celular.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde la frescura de los videos caseros del creador, pero la información y el gancho pueden replicarse perfectamente con material de archivo libre."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Investigar una noticia en tendencia y de alto impacto emocional (como un cambio histórico en los mundiales).",
+   "Paso 2: Escribir un guion ultra condensado de menos de 40 segundos donde el gancho ocurra en los primeros 3 segundos con una afirmación impactante.",
+   "Paso 3: Grabar una voz en off con energía alta y ritmo rápido.",
+   "Paso 4: Editar en Premiere, CapCut o DaVinci con cortes cada 1 segundo, subtítulos automáticos grandes con colores llamativos y efectos de sonido (whooshes y golpes) en cada corte.",
+   "Paso 5: Añadir música enérgica de fondo sincronizada con los cortes visuales y cerrar con un llamado a la acción claro."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

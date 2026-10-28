@@ -1,0 +1,179 @@
+{
+ "id": "sNqZ1mdUNSI",
+ "canal": "Rekt Rank",
+ "vistas": 10135632,
+ "titulo": "Ranking Top 5 World Cup Final Funny Moments 🤣 #worldcup",
+ "video_del_hit": 4,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: videos virales reales de internet y partidos de fútbol, editados con memes superpuestos (IA/efectos de recorte)",
+  "calidad_imagen_1a10": 5,
+  "por_que_esa_calidad": "Calidad variada porque recopila videos de distintas fuentes y celulares (resolución irregular), pero la edición de los memes y el orden visual es prolijo y atractivo para el formato vertical.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "niño sosteniendo copa con cabeza del actor The Rock sobrepuesta",
+    "texto": "Ranking World Cup Final Funny Moments (last one is the funniest 😆)",
+    "sonido": "música de tensión en loop, sonido de 'vine boom'",
+    "movimiento_o_efecto": "zoom in rápido con efecto de golpe visual"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "niño con balón",
+    "texto": "1.",
+    "sonido": null,
+    "movimiento_o_efecto": null
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "hinchas en la tribuna",
+    "texto": "2.",
+    "sonido": "grito de público",
+    "movimiento_o_efecto": "corte rápido"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "hinchas en la tribuna",
+    "texto": "3. Fair play",
+    "sonido": null,
+    "movimiento_o_efecto": "corte"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "jugador en cancha",
+    "texto": "4. Bro was prepared",
+    "sonido": null,
+    "movimiento_o_efecto": "corte"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "jugador en cancha",
+    "texto": "5. sussy",
+    "sonido": null,
+    "movimiento_o_efecto": "corte"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "hincha llorando que se quita la camiseta",
+    "texto": "Bro was prepared",
+    "sonido": "música en crescendo",
+    "movimiento_o_efecto": "zoom in"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la promesa explícita de un ranking (con un remate 'el último es el más gracioso') junto a un meme absurdo (The Rock en la cabeza de un niño) en el primer segundo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.5,
+    "contenido": "Niño sosteniendo copa con meme de The Rock",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "meme superpuesto",
+     "texto de ranking"
+    ]
+   },
+   {
+    "desde": 1.5,
+    "hasta": 5.0,
+    "contenido": "Hincha argentino llorando que se saca la camiseta y se pone otra debajo",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "zoom in",
+     "texto superpuesto"
+    ]
+   },
+   {
+    "desde": 5.0,
+    "hasta": 10.0,
+    "contenido": "Jugadas insólitas de partidos de fútbol",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "cámara lenta en momentos clave"
+    ]
+   },
+   {
+    "desde": 10.0,
+    "hasta": 22.0,
+    "contenido": "Compilación de momentos graciosos en finales y premiaciones",
+    "encuadre": "general/medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "efectos de sonido boom"
+    ]
+   },
+   {
+    "desde": 22.0,
+    "hasta": 34.0,
+    "contenido": "Bebé Lamine Yamal y Messi en bañera, fotos icónicas editadas con humor",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "efecto de sonido final"
+    ]
+   }
+  ],
+  "cortes_por_10s": 4,
+  "sincronia_con_la_musica": "Sí, los golpes de los memes (vine boom) y los cambios de clip coinciden exactamente con los beats de la música de fondo en los segundos 1.5, 9.0, 22.0 y 34.0.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Ranking World Cup Final Funny Moments (last one is the funniest 😆)",
+    "estilo": "Título superior fijo con fondo negro y letras rojas y amarillas, fuente bold sans-serif."
+   },
+   {
+    "t": "0.0",
+    "texto": "1. / 2. / 3. Fair play / 4. Bro was prepared / 5. sussy",
+    "estilo": "Lista lateral izquierda numerada, color blanco con borde negro, tipografía limpia sans-serif."
+   },
+   {
+    "t": "3.0",
+    "texto": "Bro was prepared",
+    "estilo": "Texto central en pantalla con fondo semitransparente negro y letras blancas."
+   }
+  ],
+  "audio": {
+   "musica": "Música electrónica de TikTok con ritmo rápido y beats marcados tipo 'vine boom', aprox 130 bpm, formato tendencia humorística.",
+   "efectos": [
+    "Vine boom sound effect",
+    "Grito de sorpresa",
+    "Sonido de golpe/impacto"
+   ],
+   "voz": "No hay voz en off, sólo música y efectos de sonido sincronizados.",
+   "momento_clave_de_audio": "El 'vine boom' en el segundo 1.0 y el grito final en el segundo 34."
+  },
+  "estructura": "planteo (título y gancho con el número 1 al 5) → tensión (clips graciosos y desconcertantes de fútbol) → remate (el clip final absurdo del bebé y Messi en la bañera)",
+  "giro_o_sorpresa": "El último clip del ranking (la foto editada de Lamine Yamal de bebé bañado por Messi), que rompe con la temática de partidos y genera el remate humorístico prometido.",
+  "final_y_loop": "Termina con un sonido fuerte y un gag visual inesperado, lo que corta abruptamente y obliga a reentender el video, favoreciendo el loop automático.",
+  "emocion_que_busca": "risa / asombro / desconcierto",
+  "por_que_comentan": "Comentan sobre lo bizarro del último clip (el bebé Lamine Yamal) y debaten cuál momento del ranking les pareció más gracioso.",
+  "por_que_comparten_or_repiten": "Porque es corto, dinámico, utiliza memes hiperconocidos del mundo del fútbol y el remate final sorprende lo suficiente como para mostrárselo a un amigo.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de formato ranking con promesa cumplida en el final.",
+   "Sincronización perfecta de efectos de sonido (memes) con los clips.",
+   "Inclusión de personajes virales actuales del fútbol (como Lamine Yamal y Messi) editados con humor absurdo."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usando fragmentos de partidos virales libres de derechos, memes populares y edición propia de recortes con efectos de sonido de tendencia.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el impacto inmediato de ver situaciones reales y personajes famosos del fútbol mundial que ya generan complicidad en la audiencia."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Seleccionar 5 videos cortos y absurdos relacionados con una temática viral (en este caso, fútbol/mundial).",
+   "Paso 2: Diseñar una plantilla vertical fija con un título llamativo arriba y un ranking numerado del 1 al 5 en el lateral.",
+   "Paso 3: Sincronizar cortes rápidos en cada cambio de clip con efectos de sonido tipo 'vine boom' o golpes.",
+   "Paso 4: Guardar el mejor meme o el remate más absurdo estrictamente para el puesto número 1 (el final del video).",
+   "Paso 5: Exportar en formato vertical optimizado para bucle (loop sin transición final)."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 8
+ }
+}

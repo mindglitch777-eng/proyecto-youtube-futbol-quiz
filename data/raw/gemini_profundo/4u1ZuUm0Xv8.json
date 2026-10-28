@@ -1,0 +1,188 @@
+{
+ "id": "4u1ZuUm0Xv8",
+ "canal": "Migelftbl",
+ "vistas": 1180576,
+ "titulo": "Ronaldo elige. Messi ganará o perderá el Mundial.",
+ "video_del_hit": 3,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (video real de Cristiano Ronaldo / fotos y videos generados con IA de Messi y celebración de España)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "La integración entre el video real de Cristiano Ronaldo en estudio y las imágenes hiperrealistas de IA de Messi llorando o de España ganando el Mundial está muy bien lograda para un short de fútbol, con buena iluminación y texturas, aunque algunas transiciones delatan el uso de IA.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Ronaldo en estudio con dos fotos de Messi a los lados y pregunta abajo",
+    "texto": "¿GANARÁ MESSI EL ÚLTIMO MUNDIAL DE SU CARRERA?",
+    "sonido": "Música triste de piano y sintetizador, tono grave",
+    "movimiento_o_efecto": "Cámara fija, zoom lento en la cara de Ronaldo que parpadea y sonríe"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Ronaldo",
+    "texto": "¿GANARÁ MESSI...",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Zoom in"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Ronaldo",
+    "texto": "...EL ÚLTIMO MUNDIAL...",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Zoom in"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Ronaldo sonriendo",
+    "texto": "...DE SU CARRERA?",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Zoom in"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Ronaldo cerrando los ojos",
+    "texto": "¿GANARÁ MESSI EL ÚLTIMO MUNDIAL...",
+    "sonido": "Música con eco",
+    "movimiento_o_efecto": "Corte rápido a Messi llorando"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Messi llorando en el campo",
+    "texto": "MESSI ESTÁ LLORANDO",
+    "sonido": "Música melancólica alta",
+    "movimiento_o_efecto": "Cámara lenta, zoom in sobre los ojos de Messi"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina una pregunta altamente debatible y polarizante sobre el GOAT (Messi vs Ronaldo) con una narrativa visual generada por IA que muestra un escenario trágico (Messi perdiendo), generando curiosidad instantánea.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 4.0,
+    "contenido": "Cristiano Ronaldo en estudio preguntando por el mundial de Messi",
+    "encuadre": "medio",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "texto inferior fijo",
+     "recuadros laterales con Messi"
+    ]
+   },
+   {
+    "desde": 4.0,
+    "hasta": 6.0,
+    "contenido": "Messi llorando con camiseta de Argentina",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "texto superior azul MESSI ESTÁ LLORANDO"
+    ]
+   },
+   {
+    "desde": 6.0,
+    "hasta": 13.0,
+    "contenido": "España ganando la copa del mundo, celebración y estadio con bandera",
+    "encuadre": "general y medio",
+    "camara": "aceleración / paneo",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "texto ESPAÑA GANÓ",
+     "copa gigante en primer plano"
+    ]
+   },
+   {
+    "desde": 13.0,
+    "hasta": 25.0,
+    "contenido": "Messi destrozado llorando, primeros planos en blanco y negro con corazón roto",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "emoji de corazón roto en la nariz",
+     "texto parpadeante MESSI PERDIÓ EL MUNDIAL",
+     "escala de grises"
+    ]
+   },
+   {
+    "desde": 25.0,
+    "hasta": 30.0,
+    "contenido": "Cristiano Ronaldo llorando/sonriendo con lágrimas falsas",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "texto *MESSI PERDIÓ*"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, los cambios de escena y texto caen exactamente en los beats del piano melancólico (ej. segundo 4, 6, 13, 22 con el latido/drop).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "¿GANARÁ MESSI EL ÚLTIMO MUNDIAL DE SU CARRERA?",
+    "estilo": "Fuente sans-serif gruesa, amarillo con borde negro, centrado abajo"
+   },
+   {
+    "t": "4.0",
+    "texto": "MESSI ESTÁ LLORANDO",
+    "estilo": "Sans-serif bold, celeste con borde negro, arriba"
+   },
+   {
+    "t": "6.0",
+    "texto": "ESPAÑA GANÓ",
+    "estilo": "Sans-serif bold, verde con borde negro, abajo"
+   },
+   {
+    "t": "13.0",
+    "texto": "MESSI PERDIÓ EL MUNDIAL",
+    "estilo": "Sans-serif bold, rojo con borde negro, arriba"
+   },
+   {
+    "t": "18.0",
+    "texto": "DESTROZADO...",
+    "estilo": "Sans-serif bold, amarillo con borde negro, arriba"
+   },
+   {
+    "t": "26.0",
+    "texto": "*MESSI PERDIÓ*",
+    "estilo": "Sans-serif bold, amarillo con borde negro, entre asteriscos"
+   }
+  ],
+  "audio": {
+   "musica": "Pop orquestal melancólico / slowed reverb, aprox 70 bpm, formato tendencia para edits emocionales de fútbol",
+   "efectos": [
+    "latido de corazón en segundo 22",
+    "suspiro o eco en los drops"
+   ],
+   "voz": "No hay voz en off hablada, solo la música instrumental dramática",
+   "momento_clave_de_audio": "Segundo 22: silencio parcial y latido con el corazón roto en pantalla"
+  },
+  "estructura": "planteo (Ronaldo pregunta si Messi ganará el mundial) → tensión (imágenes de España ganando y Messi sufriendo) → remate (Messi destrozado y Ronaldo 'burlándose' o llorando)",
+  "giro_o_sorpresa": "Que gane España el Mundial de 2026 y ver a Messi completamente derrotado con la reacción final de Ronaldo.",
+  "final_y_loop": "Termina con Ronaldo llorando/sonriendo tras la derrota de Messi; no hace loop perfecto pero conecta bien con la duda inicial.",
+  "emocion_que_busca": "nostalgia / drama / debate fanático (Messi vs Ronaldo)",
+  "por_que_comentan": "Dispara peleas encarnizadas entre fans de Messi y Cristiano sobre quién es el verdadero GOAT y si España ganaría el próximo mundial.",
+  "por_que_comparten_o_repiten": "Porque genera impacto visual ver escenarios alternativos catastróficos para el ídolo máximo (Messi) y por el nivel estético del edit.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de la rivalidad eterna Messi vs Ronaldo con un escenario dramático ficticio.",
+   "Imágenes generadas por IA de alta calidad emocional (lágrimas, celebraciones épicas).",
+   "Edición rítmica impecable sincronizada con música en tendencia de edits."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar herramientas de IA como Midjourney/Runway para generar imágenes y videos de futbolistas llorando o ganando copas, combinadas con videos de archivo de Cristiano Ronaldo.",
+   "dificultad_1a10": 7,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el gancho inmediato de usar al rostro real de Cristiano Ronaldo reaccionando."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Conseguir un video base en estudio de Cristiano Ronaldo o una figura viral.",
+   "Paso 2: Generar con IA videos hiperrealistas de Messi en situaciones dramáticas (llorando, derrotado) y de otra selección ganando la Copa del Mundo.",
+   "Paso 3: Montar en un editor de video (CapCut/Premiere) sincronizando cada corte con los beats de una canción melancólica en tendencia (slowed reverb).",
+   "Paso 4: Añadir textos grandes con colores contrastantes (amarillo, rojo, celeste) y emojis clave como el corazón roto.",
+   "Paso 5: Exportar en formato vertical 9:16 con alta nitidez y subtítulos dinámicos."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

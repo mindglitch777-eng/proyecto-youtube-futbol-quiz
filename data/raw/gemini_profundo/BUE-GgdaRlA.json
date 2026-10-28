@@ -1,0 +1,141 @@
+{
+ "id": "BUE-GgdaRlA",
+ "canal": "UniqueFutbal",
+ "vistas": 1318123,
+ "titulo": "NO WAY 😱 0-3 DOWN… RONALDO DID THIS?! 🐐🔥 (INSANE COMEBACK)#cr7 #sonheungmin #viral #worldcup",
+ "video_del_hit": 3,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "transmisión real de partido",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Buena definición y ajuste de color, aunque con ligera pérdida por reescalado a formato vertical.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Ronaldo caminando y marcador ficticio en 4-3",
+    "texto": "Uniqueeditz",
+    "sonido": "Música melancólica en ruso",
+    "movimiento_o_efecto": "Corte de entrada rápido"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Fanáticos con cartel dedicado a CR7",
+    "texto": "GOA CR7",
+    "sonido": "Vocal principal",
+    "movimiento_o_efecto": "Plano fijo de tribuna"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Son Heung-min sonriendo",
+    "texto": "Uniqueeditz",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Primer plano"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Ronaldo guiñando el ojo",
+    "texto": "Uniqueeditz",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Primer plano"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Trofeo de la Copa del Mundo y marcador reiniciado a 0-0",
+    "texto": "Uniqueeditz",
+    "sonido": "Acento musical",
+    "movimiento_o_efecto": "Cambio de marcador superpuesto"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Ronaldo mirando al frente",
+    "texto": "Uniqueeditz",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Corte seco"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Son Heung-min con máscara protectora",
+    "texto": "Uniqueeditz",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Primer plano"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Plantea una rivalidad épica entre Ronaldo y Son apoyada en un marcador dramático e imprevisto.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 3.0,
+    "contenido": "Presentación de jugadores y marcador ficticio",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Filtro de color",
+     "Marcador superpuesto"
+    ]
+   },
+   {
+    "desde": 3.0,
+    "hasta": 28.0,
+    "contenido": "Goles y festejos de Corea del Sur aumentando la ventaja a 0-3",
+    "encuadre": "general",
+    "camara": "paneo",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Filtro de contraste elevado"
+    ]
+   },
+   {
+    "desde": 28.0,
+    "hasta": 60.0,
+    "contenido": "Remontada de Portugal liderada por Ronaldo hasta el 4-3",
+    "encuadre": "medio",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Cámara lenta",
+     "Aumento del marcador"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Los cambios de marcador y las anotaciones coinciden con los pulsos vocales de la canción alrededor del segundo 28.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Marcador Portugal vs Corea del Sur",
+    "estilo": "Marcador deportivo en la parte superior con banderas e indicadores numéricos"
+   }
+  ],
+  "audio": {
+   "musica": "Tema Pop/Melancólico en ruso, tempo medio (~90 BPM), usado habitualmente en edits deportivos",
+   "efectos": null,
+   "voz": null,
+   "momento_clave_de_audio": "Inflexión melódica en t=0:30 al iniciar la remontada."
+  },
+  "estructura": "Planteo (0-3s): choque de estrellas → Tensión (4-28s): Corea domina 0-3 → Remate (29-60s): Portugal remonta y gana 4-3.",
+  "giro_o_sorpresa": "La remontada completa de Portugal tras ir perdiendo por tres goles.",
+  "final_y_loop": "Concluye con la celebración del 4-3 y enlaza conceptualmente con la imagen inicial.",
+  "emocion_que_busca": "asombro",
+  "por_que_comentan": "Debate sobre el resultado ficticio y la comparación entre Ronaldo y Son.",
+  "por_que_comparten_o_repiten": "Edición ágil con ritmo narrativo de remontada dramática.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de dos figuras globales del fútbol.",
+   "Estructura narrativa de remontada imposible.",
+   "Música nostálgica que incrementa la tensión visual."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el realismo y el valor emotivo de las jugadas oficiales."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Seleccionar clips de jugadas clave de dos estrellas de fútbol.",
+   "Crear un marcador ficticio que establezca una narrativa de remontada.",
+   "Sincronizar cada gol con los momentos culminantes del audio elegido."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 5
+ }
+}
