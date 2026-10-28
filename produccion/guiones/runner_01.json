@@ -21,7 +21,7 @@
    "meme": false
   },
   {
-   "dia": "60",
+   "dia": "67",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2022_0.jpg",
    "meme": false
   },
@@ -29,8 +29,8 @@
    "dia": "-50",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2015_7.jpg",
    "color": "#ff3b4f",
-   "escala": 4.5,
-   "meme": false
+   "meme": false,
+   "cabezon": true
   },
   {
    "dia": "100",
@@ -54,7 +54,8 @@
   {
    "dia": "300",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2023_2.jpg",
-   "meme": false
+   "meme": false,
+   "cabezon": true
   },
   {
    "dia": "-999",
@@ -107,9 +108,9 @@
   {
    "lados": [
     {
-     "txt": "+$20",
+     "txt": "+$67",
      "op": "+",
-     "v": 20
+     "v": 67
     },
     {
      "txt": "-$70",

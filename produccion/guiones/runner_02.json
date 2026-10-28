@@ -1,0 +1,373 @@
+{
+ "id": "runner_02",
+ "formato": "runner",
+ "jugador": "Lionel Messi",
+ "inicio": 15,
+ "puertas": [
+  {
+   "lados": [
+    {
+     "txt": "x4",
+     "op": "x",
+     "v": 4
+    },
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "÷",
+      2
+     ]
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "oprah"
+  },
+  {
+   "lados": [
+    {
+     "txt": "-$30",
+     "op": "-",
+     "v": 30
+    },
+    {
+     "txt": "+$67",
+     "op": "+",
+     "v": 67
+    }
+   ],
+   "elige": 1,
+   "grito": null,
+   "meme": "roll_safe"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x2",
+     "op": "x",
+     "v": 2
+    },
+    {
+     "txt": "-$15",
+     "op": "-",
+     "v": 15
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "xzibit"
+  },
+  {
+   "lados": [
+    {
+     "txt": "÷5",
+     "op": "÷",
+     "v": 5
+    },
+    {
+     "txt": "+$40",
+     "op": "+",
+     "v": 40
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!",
+   "meme": "megamind"
+  },
+  {
+   "lados": [
+    {
+     "txt": "+$150",
+     "op": "+",
+     "v": 150
+    },
+    {
+     "txt": "-$9",
+     "op": "-",
+     "v": 9
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "spongebob"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x3",
+     "op": "x",
+     "v": 3
+    },
+    {
+     "txt": "÷2",
+     "op": "÷",
+     "v": 2
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "laughing_leo"
+  },
+  {
+   "lados": [
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "÷",
+      3
+     ]
+    },
+    {
+     "txt": "+$80",
+     "op": "+",
+     "v": 80
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!",
+   "meme": "harold"
+  },
+  {
+   "lados": [
+    {
+     "txt": "+$67",
+     "op": "+",
+     "v": 67
+    },
+    {
+     "txt": "-$300",
+     "op": "-",
+     "v": 300
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "dafoe"
+  },
+  {
+   "lados": [
+    {
+     "txt": "-$170",
+     "op": "-",
+     "v": 170
+    },
+    {
+     "txt": "x2",
+     "op": "x",
+     "v": 2
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!",
+   "meme": "cheems"
+  },
+  {
+   "lados": [
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "x",
+      40
+     ]
+    },
+    {
+     "txt": "÷4",
+     "op": "÷",
+     "v": 4
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "buff_doge"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x8",
+     "op": "x",
+     "v": 8
+    },
+    {
+     "txt": "-$50",
+     "op": "-",
+     "v": 50
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "handshake"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x250",
+     "op": "x",
+     "v": 250
+    },
+    {
+     "txt": "÷8",
+     "op": "÷",
+     "v": 8
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "dicaprio"
+  }
+ ],
+ "etapas": [
+  {
+   "dia": "1",
+   "foto": "assets/fotos_epoca/lionel_messi_2007_1.jpg",
+   "meme": false
+  },
+  {
+   "dia": "7",
+   "foto": "assets/fotos_epoca/lionel_messi_2012_2.jpg",
+   "meme": false
+  },
+  {
+   "dia": "30",
+   "foto": "assets/fotos_epoca/lionel_messi_2009_0.jpg",
+   "meme": false,
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "67",
+   "foto": "assets/fotos_epoca/lionel_messi_2015_11.jpg",
+   "meme": false
+  },
+  {
+   "dia": "-50",
+   "foto": "assets/fotos_epoca/lionel_messi_2017_10.jpg",
+   "meme": false,
+   "color": "#ff3b4f",
+   "cabezon": true
+  },
+  {
+   "dia": "100",
+   "foto": "assets/fotos_epoca/lionel_messi_2018_9.jpg",
+   "meme": false,
+   "color": "#c86bff"
+  },
+  {
+   "dia": "200",
+   "foto": "assets/fotos_epoca/lionel_messi_2026_8.jpg",
+   "meme": false,
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "-200",
+   "foto": "assets/fotos_epoca/lionel_messi_2017_0.jpg",
+   "meme": false,
+   "color": "#ff3b4f",
+   "cabezon": true
+  },
+  {
+   "dia": "300",
+   "foto": "assets/fotos/lionel_messi_5.jpg",
+   "meme": false
+  },
+  {
+   "dia": "-999",
+   "foto": "assets/fotos_epoca/lionel_messi_2024_4.jpg",
+   "meme": false,
+   "color": "#ff3b4f"
+  },
+  {
+   "dia": "2000",
+   "foto": "assets/fotos_epoca/lionel_messi_2018_0.jpg",
+   "meme": false,
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "50000",
+   "foto": "assets/fotos_epoca/lionel_messi_2026_12.jpg",
+   "meme": false,
+   "color": "#c86bff"
+  },
+  {
+   "dia": "999999",
+   "foto": "assets/fotos_epoca/lionel_messi_2026_2.jpg",
+   "meme": false,
+   "color": "#ffd23a"
+  }
+ ],
+ "sonidos": {
+  "inicio": [
+   [
+    "ankara_messi_1",
+    0,
+    2.6,
+    0.9
+   ]
+  ],
+  "huge": [
+   [
+    "messi_chant_2",
+    0,
+    2.3,
+    0.9
+   ],
+   [
+    "goat_0",
+    0,
+    1.3,
+    0.8
+   ],
+   [
+    "ankara_messi_1",
+    2.6,
+    5.0,
+    0.9
+   ]
+  ],
+  "sinking": [
+   [
+    "que_miras_bobo_0",
+    0,
+    2.4,
+    0.95
+   ],
+   [
+    "bruh_0",
+    0,
+    null,
+    0.8
+   ],
+   [
+    "emotional_damage_0",
+    0,
+    null,
+    0.8
+   ]
+  ],
+  "meta": [
+   [
+    "andres_cantor_0",
+    0,
+    3.2,
+    0.9
+   ],
+   [
+    "ankara_messi_0",
+    6.0,
+    10.5,
+    0.9
+   ]
+  ]
+ },
+ "titulos": [
+  "Lionel Messi Evolution (Day 1 → Day 999999) 🐐",
+  "Messi money run 💸 Day 1 → Day 999999",
+  "Can Messi reach $1,000,000? 🤑🐐"
+ ],
+ "descripcion": "Messi from Day 1 to Day 999999 🐐💸 Did you see it coming? 👍 or 😭",
+ "comentario_fijado": "👍 or 😭 ?"
+}

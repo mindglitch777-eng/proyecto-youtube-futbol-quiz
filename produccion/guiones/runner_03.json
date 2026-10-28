@@ -1,0 +1,356 @@
+{
+ "id": "runner_03",
+ "formato": "runner",
+ "jugador": "Neymar",
+ "inicio": 10,
+ "puertas": [
+  {
+   "lados": [
+    {
+     "txt": "+$67",
+     "op": "+",
+     "v": 67
+    },
+    {
+     "txt": "-$5",
+     "op": "-",
+     "v": 5
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "roll_safe"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x3",
+     "op": "x",
+     "v": 3
+    },
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "÷",
+      2
+     ]
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "xzibit"
+  },
+  {
+   "lados": [
+    {
+     "txt": "-$40",
+     "op": "-",
+     "v": 40
+    },
+    {
+     "txt": "x2",
+     "op": "x",
+     "v": 2
+    }
+   ],
+   "elige": 1,
+   "grito": null,
+   "meme": "oprah"
+  },
+  {
+   "lados": [
+    {
+     "txt": "÷7",
+     "op": "÷",
+     "v": 7
+    },
+    {
+     "txt": "+$60",
+     "op": "+",
+     "v": 60
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!",
+   "meme": "pikachu"
+  },
+  {
+   "lados": [
+    {
+     "txt": "+$120",
+     "op": "+",
+     "v": 120
+    },
+    {
+     "txt": "÷2",
+     "op": "÷",
+     "v": 2
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "dafoe"
+  },
+  {
+   "lados": [
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "x",
+      4
+     ]
+    },
+    {
+     "txt": "-$90",
+     "op": "-",
+     "v": 90
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "buff_doge"
+  },
+  {
+   "lados": [
+    {
+     "txt": "÷5",
+     "op": "÷",
+     "v": 5
+    },
+    {
+     "txt": "+$70",
+     "op": "+",
+     "v": 70
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!",
+   "meme": "this_is_fine"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x2",
+     "op": "x",
+     "v": 2
+    },
+    {
+     "txt": "-$20",
+     "op": "-",
+     "v": 20
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "spongebob"
+  },
+  {
+   "lados": [
+    {
+     "txt": "-$150",
+     "op": "-",
+     "v": 150
+    },
+    {
+     "txt": "+$67",
+     "op": "+",
+     "v": 67
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!",
+   "meme": "pablo"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x67",
+     "op": "x",
+     "v": 67
+    },
+    {
+     "txt": "÷2",
+     "op": "÷",
+     "v": 2
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "laughing_leo"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x7",
+     "op": "x",
+     "v": 7
+    },
+    {
+     "txt": "-$80",
+     "op": "-",
+     "v": 80
+    }
+   ],
+   "elige": 0,
+   "grito": null,
+   "meme": "handshake"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x150",
+     "op": "x",
+     "v": 150
+    },
+    {
+     "txt": "÷6",
+     "op": "÷",
+     "v": 6
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!",
+   "meme": "dicaprio"
+  }
+ ],
+ "etapas": [
+  {
+   "dia": "1",
+   "foto": "assets/fotos_epoca/neymar_2011_13.jpg",
+   "meme": false
+  },
+  {
+   "dia": "7",
+   "foto": "assets/fotos_epoca/neymar_2011_15.jpg",
+   "meme": false
+  },
+  {
+   "dia": "30",
+   "foto": "assets/fotos_epoca/neymar_2016_4.jpg",
+   "meme": false,
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "67",
+   "foto": "assets/fotos_epoca/neymar_2015_4.jpg",
+   "meme": false
+  },
+  {
+   "dia": "-50",
+   "foto": "assets/fotos_epoca/neymar_2011_9.jpg",
+   "meme": false,
+   "color": "#ff3b4f"
+  },
+  {
+   "dia": "100",
+   "foto": "assets/fotos_epoca/neymar_2018_1.jpg",
+   "meme": false,
+   "color": "#c86bff"
+  },
+  {
+   "dia": "200",
+   "foto": "assets/fotos_epoca/neymar_2015_8.jpg",
+   "meme": false,
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "-200",
+   "foto": "assets/fotos_epoca/neymar_2021_2.jpg",
+   "meme": false,
+   "color": "#ff3b4f",
+   "cabezon": true
+  },
+  {
+   "dia": "300",
+   "foto": "assets/fotos_epoca/neymar_2026_6.jpg",
+   "meme": false
+  },
+  {
+   "dia": "-999",
+   "foto": "assets/fotos_epoca/neymar_2015_15.jpg",
+   "meme": false,
+   "color": "#ff3b4f"
+  },
+  {
+   "dia": "2000",
+   "foto": "assets/fotos/neymar_6.jpg",
+   "meme": false,
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "50000",
+   "foto": "assets/fotos_epoca/neymar_2026_2.jpg",
+   "meme": false,
+   "color": "#c86bff"
+  },
+  {
+   "dia": "999999",
+   "foto": "assets/fotos_epoca/neymar_2014_15.jpg",
+   "meme": false,
+   "color": "#ffd23a"
+  }
+ ],
+ "sonidos": {
+  "inicio": [
+   [
+    "neymar_0",
+    0,
+    2.2,
+    0.9
+   ]
+  ],
+  "huge": [
+   [
+    "parado_bailao_0",
+    0,
+    2.6,
+    0.85
+   ],
+   [
+    "parado_bailao_0",
+    2.6,
+    5.2,
+    0.85
+   ]
+  ],
+  "sinking": [
+   [
+    "oh_no_0",
+    1.8,
+    4.0,
+    0.85
+   ],
+   [
+    "bruh_0",
+    0,
+    null,
+    0.8
+   ],
+   [
+    "emotional_damage_0",
+    0,
+    null,
+    0.8
+   ]
+  ],
+  "meta": [
+   [
+    "parado_bailao_0",
+    0,
+    6.0,
+    0.95
+   ]
+  ]
+ },
+ "titulos": [
+  "Neymar Evolution (Day 1 → Day 999999) 🇧🇷🕺",
+  "Neymar money run 💸 Day 1 → Day 999999",
+  "Can Neymar reach $1,000,000? 🤑🕺"
+ ],
+ "descripcion": "Neymar from Day 1 to Day 999999 🇧🇷💸 Parado no bailão 🕺 👍 or 😭",
+ "comentario_fijado": "👍 or 😭 ?"
+}

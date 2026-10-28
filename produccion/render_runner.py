@@ -230,7 +230,7 @@ def armar(g, out):
     etapas[0]["desde"] = 0.0
     t_meta = puertas[-1]["t"] + 1.3
     dur = t_meta + 2.7
-    return dict(fps=FPS, vel=VEL, inicio=g["inicio"], puertas=puertas, etapas=etapas, fotos=fotos, tMeta=t_meta,
+    return dict(sonidos=g.get("sonidos", {}), fps=FPS, vel=VEL, inicio=g["inicio"], puertas=puertas, etapas=etapas, fotos=fotos, tMeta=t_meta,
                 zMeta=-VEL * t_meta - 0.5, duracion=dur, largo=VEL * dur + 40)
 
 
@@ -332,31 +332,45 @@ def sfx(nombre, desde=0.0, hasta=None, vol=1.0):
     return x * vol
 
 
+SONIDOS_CR7 = {   # cada entrada: [archivo, desde, hasta, volumen]
+    "inicio": [["siuuu_1", 0, None, 0.85]], "huge": [["siuuu_1", 0, None, 0.85], ["siuuu_2", 0, None, 0.85]],
+    "meta": [["siuuu_0", 4.2, None, 1.0]], "sinking": [["bruh_0", 0, None, 0.8], ["emotional_damage_0", 0, None, 0.8]],
+}
+
+
 def audio(cfg):
-    """Sonidos según la lógica de cada puerta: gana = caja registradora (+ airhorn y SIUUU si es HUGE),
-    pierde = trombón de fallo (+ vine boom y bruh / emotional damage si es SINKING). Meta: SIUUU con estadio."""
+    """Sonidos según la lógica de cada puerta: gana = caja registradora (+ airhorn y el sonido del jugador si es HUGE),
+    pierde = trombón de fallo (+ vine boom y un meme si es SINKING); puerta con 67 = 'doot doot 6 7'.
+    Meta: el sonido característico del jugador (SIUUU, Ankara Messi, Parado no Bailão)."""
+    son = {**SONIDOS_CR7, **cfg.get("sonidos", {})}
+    lista = {k: [sfx(n, d, h, v) for n, d, h, v in son[k]] for k in son}
     dur = cfg["duracion"]; mez = M.Mezcla(dur)
-    siu, siu2 = sfx("siuuu_1", vol=0.85), sfx("siuuu_2", vol=0.85)
     caja, airhorn, wow = sfx("caja_registradora_0", 0, 1.2, 0.55), sfx("airhorn_1", vol=0.55), sfx("wow_0", 0, 1.6, 0.6)
-    fallo, boom, bruh, dano = sfx("fail_0", vol=0.6), sfx("vine_boom_0", vol=0.9), sfx("bruh_0", vol=0.8), sfx("emotional_damage_0", vol=0.8)
-    mez.add(0.05, siu)
-    malos = 0
+    fallo, boom, seis7 = sfx("fail_0", vol=0.6), sfx("vine_boom_0", vol=0.9), sfx("doot_doot_0", vol=0.95)
+    for x in lista["inicio"]:
+        mez.add(0.05, x)
+    buenos = malos = 0
     for k, p in enumerate(cfg["puertas"]):
         t = p["t"]
         mez.add(t - 0.15, M.whoosh(0.3), 0.3)
+        txt = p["lados"][p["elige"]]["txt"]
+        if "67" in txt:
+            mez.add(t + 0.1, seis7)
         if p["efecto"] == "sube":
             mez.add(t, caja); mez.add(t + 0.05, monedas(7 if p["grito"] else 4, int(t * 10)), 0.8)
             if p["grito"]:
-                mez.add(t + 0.1, airhorn); mez.add(t + 0.45, siu2 if k % 2 else siu)
+                mez.add(t + 0.1, airhorn); mez.add(t + 0.45, lista["huge"][buenos % len(lista["huge"])]); buenos += 1
                 if k == len(cfg["puertas"]) - 4:
                     mez.add(t + 1.2, wow)
         else:
             mez.add(t, fallo)
             if p["grito"]:
-                mez.add(t, boom); mez.add(t + 0.35, dano if malos % 2 else bruh); malos += 1
+                mez.add(t, boom); mez.add(t + 0.35, lista["sinking"][malos % len(lista["sinking"])]); malos += 1
     tm = cfg["tMeta"]
     mez.add(tm, M.boom(), 0.5); mez.add(tm, M.tribuna(2.6), 0.9); mez.add(tm + 0.05, monedas(14, 9))
-    mez.add(tm + 0.1, airhorn); mez.add(tm + 0.3, sfx("siuuu_0", 4.2, None, 1.0))
+    mez.add(tm + 0.1, airhorn)
+    for x in lista["meta"]:
+        mez.add(tm + 0.3, x)
     musica = musica_juego(dur)[: int(dur * M.SR)]
     solo = mez.x[: int(dur * M.SR)]
     return {"short.mp4": np.tanh((solo + musica * 0.6) * 1.05) * 0.92, "short_sin_musica.mp4": np.tanh(solo * 1.05) * 0.85}

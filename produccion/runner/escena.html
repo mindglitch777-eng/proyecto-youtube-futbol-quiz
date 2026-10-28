@@ -292,6 +292,18 @@ function frame(t) {
   const [cx, cy] = proyectar(new THREE.Vector3(x, r * 2 + 1.0, z));
   const pulso = ult && t - ult.t < 0.25 ? 1 + 0.18 * (1 - (t - ult.t) / 0.25) : 1;
   texto(dinero(m), cx, cy, Math.round(84 * pulso), m >= 0 ? "#3dff6e" : "#ff4a5f", "#0d3b17", 13);
+  // meme "6 7": si la puerta elegida tiene 67, el 6 y el 7 suben y bajan alternados (el gesto de las manos) con 🤲
+  for (const p of CFG.puertas) {
+    const d = t - p.t, txt = p.lados[p.elige].revelado || p.lados[p.elige].txt;
+    if (!txt.includes("67") || d < 0 || d > 1.6) continue;
+    const a = Math.min(1, (1.6 - d) / 0.3), osc = Math.sin(d * 14) * 38;
+    O.globalAlpha = a;
+    texto("6", W / 2 - 120, 760 + osc, 230, "#ffe14a", "#111", 20);
+    texto("7", W / 2 + 120, 760 - osc, 230, "#ffe14a", "#111", 20);
+    O.font = "120px 'Noto Color Emoji'"; O.textAlign = "center"; O.textBaseline = "middle";
+    O.fillText("🤲", W / 2, 900 + osc * 0.5);
+    O.globalAlpha = 1;
+  }
   // carteles al pasar puertas
   for (const p of CFG.puertas) {
     const d = t - p.t; if (d < 0 || d > 1.0) continue;
