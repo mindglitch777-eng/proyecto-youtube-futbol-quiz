@@ -149,6 +149,26 @@ def aplicar(m, op, v):
     return {"+": m + v, "-": m - v, "x": m * v, "÷": m / v}[op]
 
 
+# memes de reacción (plantillas famosas bajadas de imgflip por memes.py): (archivo, recorte x0, y0, x1, y1 en fracciones)
+MEMES = {
+    "buff_doge": ("247375501.jpg", (0.02, 0, 0.46, 0.78)), "roll_safe": ("89370399.jpg", (0, 0, 1, 1)), "xzibit": ("101716.jpg", (0, 0, 1, 1)),
+    "dafoe": ("133946291.jpg", (0.33, 0, 0.86, 1)), "laughing_leo": ("259237855.jpg", (0, 0, 1, 1)), "spongebob": ("163573.jpg", (0, 0, 1, 1)),
+    "oprah": ("28251713.jpg", (0, 0, 1, 1)), "handshake": ("135256802.jpg", (0, 0, 1, 1)), "dicaprio": ("5496396.jpg", (0, 0, 1, 1)),
+    "pablo": ("80707627.jpg", (0, 0, 1, 0.5)), "this_is_fine": ("55311130.jpg", (0.5, 0, 1, 1)), "pikachu": ("155067746.jpg", (0, 0, 1, 1)),
+    "megamind": ("371619279.jpg", (0, 0, 1, 1)), "harold": ("27813981.jpg", (0, 0.5, 1, 1)), "cheems": ("247375501.jpg", (0.62, 0, 1, 1)),
+}
+
+
+def preparar_meme(nombre, dst):
+    from PIL import Image
+    archivo, (x0, y0, x1, y1) = MEMES[nombre]
+    im = Image.open(ROOT / "assets" / "memes" / "imgflip" / archivo).convert("RGB")
+    w, h = im.size
+    im = im.crop((int(x0 * w), int(y0 * h), int(x1 * w), int(y1 * h)))
+    im.thumbnail((620, 620), Image.LANCZOS)
+    im.save(dst, quality=92)
+
+
 def armar(g, out):
     fotos_dir = out / "fotos"; fotos_dir.mkdir(parents=True, exist_ok=True)
     fotos, etapas = {}, []
@@ -170,8 +190,13 @@ def armar(g, out):
         lados = [dict(txt=l["txt"], tipo="misterio" if l["txt"] == "???" else ("mas" if l["op"] in "+x" else "menos")) for l in p["lados"]]
         if lado["txt"] == "???":
             lados[p["elige"]]["revelado"] = f"{op}{v}"
+        meme_url = None
+        if p.get("meme"):
+            (out / "memes").mkdir(exist_ok=True)
+            preparar_meme(p["meme"], out / "memes" / f"{p['meme']}.jpg")
+            fotos[f"meme_{k}"] = f"/salida/{out.name}/memes/{p['meme']}.jpg"; meme_url = f"meme_{k}"
         puertas.append(dict(t=t, z=-VEL * t, lados=lados, elige=p["elige"], antes=antes, despues=m,
-                            efecto="sube" if m > antes else "baja", grito=p.get("grito")))
+                            efecto="sube" if m > antes else "baja", grito=p.get("grito"), meme=meme_url))
         etapas[k + 1]["desde"] = t
     etapas[0]["desde"] = 0.0
     t_meta = puertas[-1]["t"] + 1.3

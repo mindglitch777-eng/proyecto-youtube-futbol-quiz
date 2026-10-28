@@ -6,67 +6,80 @@
  "etapas": [
   {
    "dia": "1",
-   "foto": "assets/fotos_epoca/cristiano_ronaldo_2008_4.jpg"
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2008_4.jpg",
+   "meme": false
   },
   {
    "dia": "7",
-   "foto": "assets/fotos_epoca/cristiano_ronaldo_2006_1.jpg"
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2006_1.jpg",
+   "meme": false
   },
   {
    "dia": "30",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2012_13.jpg",
-   "color": "#3fa8ff"
+   "color": "#3fa8ff",
+   "meme": false
   },
   {
    "dia": "60",
-   "foto": "assets/fotos_epoca/cristiano_ronaldo_2022_0.jpg"
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2022_0.jpg",
+   "meme": false
   },
   {
    "dia": "-50",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2015_7.jpg",
    "color": "#ff3b4f",
-   "escala": 4.5
+   "escala": 4.5,
+   "meme": false
   },
   {
    "dia": "100",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2019_1.jpg",
-   "color": "#c86bff"
+   "color": "#c86bff",
+   "meme": false
   },
   {
    "dia": "200",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2018_1.jpg",
-   "color": "#3fa8ff"
+   "color": "#3fa8ff",
+   "meme": false
   },
   {
    "dia": "-200",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2016_0.jpg",
    "color": "#ff3b4f",
-   "escala": 4.5
+   "escala": 4.5,
+   "meme": false
   },
   {
    "dia": "300",
-   "foto": "assets/fotos_epoca/cristiano_ronaldo_2023_2.jpg"
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2023_2.jpg",
+   "meme": false
   },
   {
    "dia": "-999",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2017_0.jpg",
-   "color": "#ff3b4f"
+   "color": "#ff3b4f",
+   "meme": false
   },
   {
    "dia": "2000",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2026_5.jpg",
-   "color": "#3fa8ff"
+   "color": "#3fa8ff",
+   "meme": false
   },
   {
    "dia": "50000",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2016_12.jpg",
-   "color": "#c86bff"
+   "color": "#c86bff",
+   "meme": false
   },
   {
    "dia": "999999",
    "foto": "assets/fotos_epoca/cristiano_ronaldo_2015_1.jpg",
    "color": "#ffd23a",
-   "escala": 6.5
+   "escala": 6.5,
+   "meme": false
   }
  ],
  "puertas": [
@@ -88,7 +101,8 @@
     }
    ],
    "elige": 0,
-   "grito": "HUGE!"
+   "grito": "HUGE!",
+   "meme": "buff_doge"
   },
   {
    "lados": [
@@ -104,7 +118,8 @@
     }
    ],
    "elige": 0,
-   "grito": null
+   "grito": null,
+   "meme": "roll_safe"
   },
   {
    "lados": [
@@ -120,7 +135,8 @@
     }
    ],
    "elige": 1,
-   "grito": null
+   "grito": null,
+   "meme": "xzibit"
   },
   {
    "lados": [
@@ -136,7 +152,8 @@
     }
    ],
    "elige": 0,
-   "grito": "SINKING!"
+   "grito": "SINKING!",
+   "meme": "pablo"
   },
   {
    "lados": [
@@ -152,7 +169,8 @@
     }
    ],
    "elige": 0,
-   "grito": null
+   "grito": null,
+   "meme": "dafoe"
   },
   {
    "lados": [
@@ -168,7 +186,8 @@
     }
    ],
    "elige": 0,
-   "grito": "HUGE!"
+   "grito": "HUGE!",
+   "meme": "laughing_leo"
   },
   {
    "lados": [
@@ -188,7 +207,8 @@
     }
    ],
    "elige": 0,
-   "grito": "SINKING!"
+   "grito": "SINKING!",
+   "meme": "this_is_fine"
   },
   {
    "lados": [
@@ -204,7 +224,8 @@
     }
    ],
    "elige": 1,
-   "grito": null
+   "grito": null,
+   "meme": "spongebob"
   },
   {
    "lados": [
@@ -220,7 +241,8 @@
     }
    ],
    "elige": 0,
-   "grito": "SINKING!"
+   "grito": "SINKING!",
+   "meme": "pikachu"
   },
   {
    "lados": [
@@ -240,7 +262,8 @@
     }
    ],
    "elige": 0,
-   "grito": "HUGE!"
+   "grito": "HUGE!",
+   "meme": "oprah"
   },
   {
    "lados": [
@@ -256,7 +279,8 @@
     }
    ],
    "elige": 0,
-   "grito": null
+   "grito": null,
+   "meme": "handshake"
   },
   {
    "lados": [
@@ -272,7 +296,8 @@
     }
    ],
    "elige": 0,
-   "grito": "HUGE!"
+   "grito": "HUGE!",
+   "meme": "dicaprio"
   }
  ],
  "titulos": [

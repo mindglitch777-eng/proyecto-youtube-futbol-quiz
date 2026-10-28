@@ -276,6 +276,18 @@ function frame(t) {
   // ---- composición final
   O.drawImage(R.domElement, 0, 0);
   const e = etapaEn(t); dibujarFoto(e, t);
+  // meme de reacción al pasar la puerta: gana = meme de festejo, pierde = meme de fracaso (aparece con "pop" y se va)
+  CFG.puertas.forEach((p, k) => {
+    const d = t - p.t, img = p.meme && fotos[p.meme];
+    if (!img || d < 0 || d > 1.25) return;
+    const u = suave(d / 0.14), sale = d > 1.0 ? 1 - suave((d - 1.0) / 0.25) : 1;
+    const mw = Math.min(560, 440 * img.width / img.height), mh = mw * img.height / img.width, esc = (0.55 + 0.45 * u) * (0.9 + 0.1 * sale);
+    O.save(); O.globalAlpha = sale; O.translate(W / 2, 1000); O.rotate((k % 2 ? 1 : -1) * 0.05); O.scale(esc, esc);
+    O.shadowColor = "rgba(0,0,0,.45)"; O.shadowBlur = 30; O.shadowOffsetY = 10;
+    O.fillStyle = "#fff"; O.fillRect(-mw / 2 - 12, -mh / 2 - 12, mw + 24, mh + 24); O.shadowColor = "transparent";
+    O.drawImage(img, -mw / 2, -mh / 2, mw, mh);
+    O.restore(); O.globalAlpha = 1;
+  });
   // contador verde arriba del rollo
   const [cx, cy] = proyectar(new THREE.Vector3(x, r * 2 + 1.0, z));
   const pulso = ult && t - ult.t < 0.25 ? 1 + 0.18 * (1 - (t - ult.t) / 0.25) : 1;
@@ -286,7 +298,7 @@ function frame(t) {
     const a = Math.min(1, (1 - d) / 0.3);
     O.globalAlpha = a;
     texto(p.lados[p.elige].revelado || p.lados[p.elige].txt, cx + 150, cy - 70 - d * 120, 72, p.efecto === "sube" ? "#3dff6e" : "#ff4a5f", "#111", 12);
-    if (p.grito) texto(p.grito, W / 2, 1010 - d * 60, 140 * (0.85 + 0.15 * Math.min(d / 0.12, 1)), p.efecto === "sube" ? "#ffe14a" : "#ff3b55", "#111", 18);
+    if (p.grito) texto(p.grito, W / 2, 1290 - d * 40, 140 * (0.85 + 0.15 * Math.min(d / 0.12, 1)), p.efecto === "sube" ? "#ffe14a" : "#ff3b55", "#111", 18);
     O.globalAlpha = 1;
   }
   // final: cartel de LIKE
