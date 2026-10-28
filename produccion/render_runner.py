@@ -88,6 +88,30 @@ def deformar(dst, fuerza=0.75):
     cv2.imwrite(str(dst), out, [cv2.IMWRITE_JPEG_QUALITY, 94])
 
 
+def cabezon(dst, factor=1.65):
+    """Edición 'cabeza gigante': agranda la cabeza sobre el cuerpo con borde suave (el clásico edit gracioso)."""
+    img = cv2.imread(str(dst)); h, w = img.shape[:2]
+    c = cara(img)
+    if not c:
+        return False
+    x, y, fw, fh = c
+    cx, cy = x + fw / 2, y + fh * 0.42
+    rx, ry = fw * 0.85, fh * 1.05                                                      # cabeza con pelo
+    x0, y0 = int(max(0, cx - rx)), int(max(0, cy - ry)); x1, y1 = int(min(w, cx + rx)), int(min(h, cy + ry))
+    cab = img[y0:y1, x0:x1]
+    grande = cv2.resize(cab, None, fx=factor, fy=factor, interpolation=cv2.INTER_CUBIC)
+    gh, gw = grande.shape[:2]
+    mask = np.zeros((gh, gw), np.float32)
+    cv2.ellipse(mask, (gw // 2, gh // 2), (int(gw * 0.46), int(gh * 0.48)), 0, 0, 360, 1.0, -1)
+    mask = cv2.GaussianBlur(mask, (0, 0), gw * 0.04)[..., None]
+    px, py = int(cx - gw / 2), int(cy - gh * 0.62)                                    # crece hacia arriba (el cuerpo queda)
+    ax0, ay0 = max(0, px), max(0, py); ax1, ay1 = min(w, px + gw), min(h, py + gh)
+    sub = grande[ay0 - py:ay1 - py, ax0 - px:ax1 - px]; m = mask[ay0 - py:ay1 - py, ax0 - px:ax1 - px]
+    img[ay0:ay1, ax0:ax1] = (sub * m + img[ay0:ay1, ax0:ax1] * (1 - m)).astype(np.uint8)
+    cv2.imwrite(str(dst), img, [cv2.IMWRITE_JPEG_QUALITY, 94])
+    return True
+
+
 EMOJI = "/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf"
 
 
@@ -174,7 +198,12 @@ def armar(g, out):
     fotos, etapas = {}, []
     for i, e in enumerate(g["etapas"]):
         dst = fotos_dir / f"e{i:02d}.jpg"
-        recortar(ROOT / e["foto"], dst, e.get("escala", 3.2))
+        origen = ROOT / e["foto"]
+        if e.get("cabezon"):                                   # se agranda la cabeza en la foto entera y después se recorta con más margen
+            tmp = fotos_dir / f"src{i:02d}.jpg"
+            cv2.imwrite(str(tmp), cv2.imread(str(origen)))
+            cabezon(tmp, e.get("factor", 1.65)); origen = tmp
+        recortar(origen, dst, e.get("escala", 3.2) * (1.6 if e.get("cabezon") else 1))
         if i > 0 and e.get("meme", True):
             p = g["puertas"][i - 1]; lado = p["lados"][p["elige"]]
             op = lado["revela"][0] if lado["txt"] == "???" else lado["op"]
