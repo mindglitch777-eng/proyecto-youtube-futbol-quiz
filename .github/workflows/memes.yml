@@ -1,0 +1,28 @@
+name: Bajar memes (imgflip + Reddit)
+
+on:
+  push:
+    paths: [produccion/memes.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  memes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: python3 produccion/memes.py
+      - name: Guardar escudos
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add produccion/assets/memes
+          git commit -m "Memes (imgflip + Reddit)" || echo "nada nuevo"
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
