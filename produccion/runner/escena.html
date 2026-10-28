@@ -1,0 +1,315 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>
+@font-face { font-family: "Anton"; src: url("../assets/fuentes/Anton-Regular.ttf"); }
+html, body { margin: 0; background: #000; }
+canvas { display: block; }
+</style>
+<script type="importmap">{ "imports": { "three": "./node_modules/three/build/three.module.js" } }</script>
+</head><body>
+<script type="module">
+// RUNNER "ROLLO DE PLATA" (réplica del formato FULYON / Suuuuu Shorts):
+// un rollo de billetes 3D baja por una pista nevada, pasa por puertas (+, -, x, ÷, ???) que cambian la plata,
+// y arriba la foto del jugador con "DAY N". Todo determinista: frame(t) dibuja el instante t.
+import * as THREE from "three";
+
+const W = 1080, H = 1920;
+const R = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+R.setSize(W, H); R.setPixelRatio(1);
+R.outputColorSpace = THREE.SRGBColorSpace;
+R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.05;
+R.shadowMap.enabled = true; R.shadowMap.type = THREE.PCFSoftShadowMap;
+const OUT = document.createElement("canvas"); OUT.width = W; OUT.height = H;
+const O = OUT.getContext("2d");
+document.body.appendChild(OUT);
+
+let CFG, scene, cam, sol, rollo, trail, trailGeo, gates = [], particulas = [], fotos = {}, ang = 0, rActual = 1.3, camX = 0;
+const camino = [];               // puntos (x, z) por donde pasó el rollo (para la estela de billetes)
+
+// ------------------------------------------------------------------ texturas por código
+function texBillete() {          // billete de 100 estilizado (verde, guarda, retrato ovalado)
+  const c = document.createElement("canvas"); c.width = 512; c.height = 256; const g = c.getContext("2d");
+  const gr = g.createLinearGradient(0, 0, 512, 256); gr.addColorStop(0, "#8fd16a"); gr.addColorStop(1, "#5daa45");
+  g.fillStyle = gr; g.fillRect(0, 0, 512, 256);
+  g.strokeStyle = "#2f6e2a"; g.lineWidth = 10; g.strokeRect(10, 10, 492, 236);
+  g.lineWidth = 3; g.strokeRect(24, 24, 464, 208);
+  g.fillStyle = "#cfe9b8"; g.beginPath(); g.ellipse(256, 128, 70, 88, 0, 0, 7); g.fill();
+  g.fillStyle = "#3f7f35"; g.beginPath(); g.ellipse(256, 118, 32, 40, 0, 0, 7); g.fill(); g.fillRect(222, 150, 68, 50);
+  g.fillStyle = "#2f6e2a"; g.font = "bold 54px Anton"; g.fillText("100", 40, 84); g.fillText("100", 392, 220);
+  for (let i = 0; i < 14; i++) { g.fillStyle = "rgba(40,90,30,.18)"; g.fillRect(340 + i * 10, 40, 4, 80); }
+  g.strokeStyle = "rgba(35,85,30,.35)"; g.lineWidth = 1.5;                 // guarda ondulada (textura de billete)
+  for (let k = 0; k < 9; k++) { g.beginPath(); for (let x = 30; x < 482; x += 4) g.lineTo(x, 40 + k * 22 + Math.sin(x * 0.05 + k) * 5); g.stroke(); }
+  g.fillStyle = "#2f6e2a"; g.beginPath(); g.arc(120, 170, 30, 0, 7); g.fill();
+  g.fillStyle = "#9bd27a"; g.beginPath(); g.arc(120, 170, 20, 0, 7); g.fill();
+  g.fillStyle = "#2f6e2a"; g.font = "bold 22px Anton"; g.fillText("FOOTBALL DOLLAR", 330, 140);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+function texLateralRollo() {    // dos billetes a lo largo de la circunferencia (el billete se lee entero sobre el rollo)
+  const b = texBillete().image, c = document.createElement("canvas"); c.width = 1024; c.height = 256; const g = c.getContext("2d");
+  g.drawImage(b, 0, 0, 512, 256); g.drawImage(b, 512, 0, 512, 256);
+  g.fillStyle = "rgba(20,60,20,.25)"; for (let i = 0; i < 1024; i += 512) g.fillRect(i, 0, 6, 256);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; t.anisotropy = 8; return t;
+}
+function texEspiral() {          // tapa del rollo: capas de billete enrolladas
+  const c = document.createElement("canvas"); c.width = c.height = 512; const g = c.getContext("2d");
+  g.fillStyle = "#6fbf55"; g.fillRect(0, 0, 512, 512);
+  g.translate(256, 256); g.strokeStyle = "#2e6a28"; g.lineWidth = 5;
+  g.beginPath(); for (let a = 0; a < 40 * Math.PI; a += 0.05) { const r = 8 + a * 1.9; g.lineTo(Math.cos(a) * r, Math.sin(a) * r); } g.stroke();
+  g.fillStyle = "#cfe9b8"; g.beginPath(); g.arc(0, 0, 16, 0, 7); g.fill();
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function texCielo() {
+  const c = document.createElement("canvas"); c.width = 4; c.height = 512; const g = c.getContext("2d");
+  const gr = g.createLinearGradient(0, 0, 0, 512); gr.addColorStop(0, "#4fb8f2"); gr.addColorStop(0.55, "#a9dcfa"); gr.addColorStop(1, "#eaf6ff");
+  g.fillStyle = gr; g.fillRect(0, 0, 4, 512); const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+const COL = { mas: ["#47a6ff", "#1f6fe0"], menos: ["#ff5a72", "#d42345"], misterio: ["#ffd84a", "#f0a91a"] };
+function texPuerta(txt, tipo) {
+  const c = document.createElement("canvas"); c.width = 512; c.height = 420; const g = c.getContext("2d");
+  const [a, b] = COL[tipo]; const gr = g.createLinearGradient(0, 0, 0, 420); gr.addColorStop(0, a); gr.addColorStop(1, b);
+  g.globalAlpha = 0.82; g.fillStyle = gr; g.fillRect(0, 0, 512, 420); g.globalAlpha = 1;
+  g.fillStyle = "rgba(255,255,255,.22)"; g.fillRect(0, 0, 512, 26);
+  let tam = 210; g.font = `${tam}px Anton`; while (g.measureText(txt).width > 470) { tam -= 8; g.font = `${tam}px Anton`; }
+  g.textAlign = "center"; g.textBaseline = "middle"; g.lineJoin = "round";
+  g.lineWidth = 22; g.strokeStyle = "rgba(20,30,60,.85)"; g.strokeText(txt, 256, 222);
+  g.fillStyle = "#fff"; g.fillText(txt, 256, 222);
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function texMeta() {
+  const c = document.createElement("canvas"); c.width = 512; c.height = 64; const g = c.getContext("2d");
+  for (let i = 0; i < 16; i++) for (let j = 0; j < 2; j++) { g.fillStyle = (i + j) % 2 ? "#111" : "#fff"; g.fillRect(i * 32, j * 32, 32, 32); }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+
+// ------------------------------------------------------------------ escena
+function pino(s) {
+  const g = new THREE.Group();
+  const verde = new THREE.MeshLambertMaterial({ color: 0x2f7d4a }), nieve = new THREE.MeshLambertMaterial({ color: 0xf4fbff });
+  const tronco = new THREE.Mesh(new THREE.CylinderGeometry(0.25, 0.32, 1.2, 6), new THREE.MeshLambertMaterial({ color: 0x6b4a2f }));
+  tronco.position.y = 0.6; g.add(tronco);
+  for (let k = 0; k < 3; k++) {
+    const r = 2.2 - k * 0.55, h = 2.6 - k * 0.4, y = 1.4 + k * 1.35;
+    const cono = new THREE.Mesh(new THREE.ConeGeometry(r, h, 7), verde); cono.position.y = y + h / 2; cono.castShadow = true; g.add(cono);
+    const cap = new THREE.Mesh(new THREE.ConeGeometry(r * 0.45, h * 0.32, 7), nieve); cap.position.y = y + h * 0.86; g.add(cap);
+  }
+  g.scale.setScalar(s); return g;
+}
+
+function construir() {
+  scene = new THREE.Scene();
+  scene.background = texCielo();
+  scene.fog = new THREE.Fog(0xdff1ff, 60, 190);
+  cam = new THREE.PerspectiveCamera(58, W / H, 0.1, 400);
+  scene.add(new THREE.HemisphereLight(0xd8efff, 0xffffff, 1.6));
+  sol = new THREE.DirectionalLight(0xfff6e8, 2.2); sol.castShadow = true;
+  sol.shadow.mapSize.set(2048, 2048); Object.assign(sol.shadow.camera, { left: -16, right: 16, top: 16, bottom: -16, near: 1, far: 80 });
+  scene.add(sol); scene.add(sol.target);
+  const largo = CFG.largo + 120;
+  // nieve a los costados con lomas suaves
+  const suelo = new THREE.Mesh(new THREE.PlaneGeometry(260, largo + 200, 60, 80), new THREE.MeshLambertMaterial({ color: 0xf2f8fc }));
+  const pos = suelo.geometry.attributes.position;
+  for (let i = 0; i < pos.count; i++) { const x = pos.getX(i), d = Math.max(0, Math.abs(x) - 9); pos.setZ(i, Math.min(d * 0.35, 9) + Math.sin(pos.getY(i) * 0.05 + x) * 0.25 * (d > 0)); }
+  suelo.geometry.computeVertexNormals(); suelo.rotation.x = -Math.PI / 2; suelo.position.set(0, -0.05, -largo / 2 + 40); suelo.receiveShadow = true; scene.add(suelo);
+  // pista blanca con bordes celestes
+  const pista = new THREE.Mesh(new THREE.PlaneGeometry(12.4, largo + 200), new THREE.MeshLambertMaterial({ color: 0xffffff }));
+  pista.rotation.x = -Math.PI / 2; pista.position.set(0, 0.01, -largo / 2 + 40); pista.receiveShadow = true; scene.add(pista);
+  for (const s of [-1, 1]) {
+    const borde = new THREE.Mesh(new THREE.BoxGeometry(0.5, 0.6, largo + 200), new THREE.MeshLambertMaterial({ color: 0x9fd2f2 }));
+    borde.position.set(s * 6.45, 0.3, -largo / 2 + 40); borde.castShadow = borde.receiveShadow = true; scene.add(borde);
+  }
+  // pinos (semilla fija)
+  let semilla = 7; const rnd = () => (semilla = (semilla * 16807) % 2147483647) / 2147483647;
+  for (let z = 30; z > -largo; z -= 4.2) for (const s of [-1, 1]) {
+    if (rnd() < 0.15) continue;
+    const p = pino(0.8 + rnd() * 0.6); p.position.set(s * (9.5 + rnd() * 16), Math.min((9.5 + rnd() * 16 - 9) * 0.35, 9), z + rnd() * 3); scene.add(p);
+  }
+  // rollo de billetes
+  const billete = texLateralRollo(); billete.wrapS = billete.wrapT = THREE.RepeatWrapping; billete.repeat.set(2, 1);
+  const espiral = texEspiral();
+  rollo = new THREE.Mesh(new THREE.CylinderGeometry(1, 1, 2.7, 64, 1),
+    [new THREE.MeshStandardMaterial({ map: billete, roughness: 0.65 }), new THREE.MeshStandardMaterial({ map: espiral, roughness: 0.8 }),
+     new THREE.MeshStandardMaterial({ map: espiral, roughness: 0.8 })]);
+  rollo.rotation.z = Math.PI / 2; rollo.castShadow = true;
+  const piv = new THREE.Group(); piv.add(rollo); scene.add(piv); rollo.userData.piv = piv;
+  // estela de billetes (cinta que sigue el camino)
+  const bt = texBillete(); bt.wrapS = bt.wrapT = THREE.RepeatWrapping;
+  trailGeo = new THREE.BufferGeometry();
+  trail = new THREE.Mesh(trailGeo, new THREE.MeshLambertMaterial({ map: bt, side: THREE.DoubleSide })); trail.frustumCulled = false;   // la geometría crece cada cuadro: sin esto three.js la descarta
+  scene.add(trail);
+  // puertas
+  for (const p of CFG.puertas) {
+    const g = new THREE.Group(); g.position.z = p.z;
+    p.lados.forEach((l, i) => {
+      const m = new THREE.Mesh(new THREE.BoxGeometry(5.7, 4.6, 0.25),
+        [0, 1, 2, 3].map(() => new THREE.MeshLambertMaterial({ color: COL[l.tipo][1], transparent: true, opacity: 0.85 }))
+          .concat([new THREE.MeshBasicMaterial({ map: texPuerta(l.txt, l.tipo), transparent: true }), new THREE.MeshBasicMaterial({ map: texPuerta(l.txt, l.tipo), transparent: true })]));
+      m.position.set(i === 0 ? -3.05 : 3.05, 2.3, 0); g.add(m); l.mesh = m;
+    });
+    const poste = new THREE.Mesh(new THREE.BoxGeometry(0.3, 4.9, 0.4), new THREE.MeshLambertMaterial({ color: 0x23324a }));
+    poste.position.set(0, 2.45, 0); g.add(poste);
+    scene.add(g); p.grupo = g;
+  }
+  // meta a cuadros
+  const meta = new THREE.Mesh(new THREE.PlaneGeometry(12.4, 2.2), new THREE.MeshLambertMaterial({ map: texMeta() }));
+  meta.rotation.x = -Math.PI / 2; meta.position.set(0, 0.03, CFG.zMeta); scene.add(meta);
+}
+
+// ------------------------------------------------------------------ estado en el tiempo t (determinista)
+const suave = u => (u = Math.min(Math.max(u, 0), 1), u * u * (3 - 2 * u));
+function zEn(t) {             // avance: velocidad constante; frena al llegar a la meta
+  const v = CFG.vel, tf = CFG.tMeta;
+  if (t <= tf) return -v * t;
+  const d = Math.min(t - tf, 1.2); return -v * tf - v * (d - d * d / 2.4);
+}
+function xEn(t) {             // el rollo se corre hacia la puerta elegida antes de cada puerta
+  let x = 0;
+  for (const p of CFG.puertas) {
+    const objetivo = p.elige === 0 ? -3.05 : 3.05, t0 = p.t - 1.15, t1 = p.t - 0.25;
+    if (t < t0) break;
+    x = x + (objetivo - x) * suave((t - t0) / (t1 - t0));
+  }
+  if (t > CFG.tMeta - 1.2) x *= 1 - suave((t - (CFG.tMeta - 1.2)) / 1.0);
+  return x;
+}
+function plataEn(t) {
+  let m = CFG.inicio, ult = null;
+  for (const p of CFG.puertas) { if (t >= p.t) { m = p.despues; ult = p; } }
+  return [m, ult];
+}
+function etapaEn(t) {
+  let e = CFG.etapas[0];
+  for (const x of CFG.etapas) if (t >= x.desde) e = x;
+  return e;
+}
+const radio = m => Math.min(2.7, Math.max(0.85, 0.75 + 0.45 * Math.log10(Math.max(m, 1))));
+
+// ------------------------------------------------------------------ overlay 2D
+function texto(s, x, y, tam, relleno, borde = "#111", ancho = 14, alinear = "center") {
+  O.font = `${tam}px Anton`; O.textAlign = alinear; O.textBaseline = "middle"; O.lineJoin = "round";
+  O.lineWidth = ancho; O.strokeStyle = borde; O.strokeText(s, x, y); O.fillStyle = relleno; O.fillText(s, x, y);
+}
+function dinero(m) {
+  const s = Math.abs(m) >= 1e6 ? (m / 1e6).toFixed(2) + "M" : Math.abs(m) >= 1e4 ? Math.round(m).toLocaleString("en-US") : m.toFixed(2);
+  return (m < 0 ? "-$" : "$") + s.replace("-", "");
+}
+function dibujarFoto(e, t) {
+  const img = fotos[e.foto]; if (!img) return;
+  const bw = 640, bh = 520, x0 = (W - bw) / 2, y0 = 70;
+  const u = suave((t - e.desde) / 0.12), esc = 0.92 + 0.08 * u;      // la foto entra con un "pop" corto
+  O.save(); O.translate(W / 2, y0 + bh / 2); O.scale(esc, esc); O.translate(-W / 2, -(y0 + bh / 2));
+  O.shadowColor = "rgba(0,0,0,.35)"; O.shadowBlur = 24; O.shadowOffsetY = 8;
+  O.fillStyle = "#000"; O.fillRect(x0, y0, bw, bh); O.shadowColor = "transparent";
+  const r = Math.max(bw / img.width, bh / img.height), w = img.width * r, h = img.height * r;
+  O.save(); O.beginPath(); O.rect(x0, y0, bw, bh); O.clip();
+  O.drawImage(img, x0 + (bw - w) / 2, y0 + (bh - h) * (e.ancla ?? 0.3), w, h); O.restore();
+  O.restore();
+  // DAY N: "DAY" blanco y el número de color, con borde negro grueso
+  const num = e.dia, col = e.color || "#2fe36b";
+  O.font = "118px Anton"; const wd = O.measureText("DAY ").width, wn = O.measureText(num).width;
+  const xi = W / 2 - (wd + wn) / 2, yy = y0 + bh + 6;
+  texto("DAY ", xi, yy, 118, "#fff", "#111", 18, "left"); texto(num, xi + wd, yy, 118, col, "#111", 18, "left");
+}
+function proyectar(v) { const p = v.clone().project(cam); return [(p.x + 1) / 2 * W, (1 - p.y) / 2 * H]; }
+
+// ------------------------------------------------------------------ partículas (billetes y monedas que saltan)
+function crearParticulas() {
+  let s = 11; const rnd = () => (s = (s * 16807) % 2147483647) / 2147483647;
+  const geoB = new THREE.PlaneGeometry(0.9, 0.45), matB = new THREE.MeshLambertMaterial({ map: texBillete(), side: THREE.DoubleSide });
+  const geoM = new THREE.CylinderGeometry(0.28, 0.28, 0.08, 20), matM = new THREE.MeshStandardMaterial({ color: 0xffc83a, metalness: 0.7, roughness: 0.3 });
+  for (const p of CFG.puertas) {
+    const n = p.efecto === "sube" ? 26 : 18;
+    for (let i = 0; i < n; i++) {
+      const moneda = p.efecto === "sube" && i % 2 === 0;
+      const m = new THREE.Mesh(moneda ? geoM : geoB, moneda ? matM : matB); m.visible = false; scene.add(m);
+      particulas.push({ m, t0: p.t, vx: (rnd() - 0.5) * 9, vy: 5 + rnd() * 7, vz: (rnd() - 0.2) * 6, rx: rnd() * 9, ry: rnd() * 9, p });
+    }
+  }
+  for (let i = 0; i < 80; i++) {                     // lluvia de billetes en la meta
+    const m = new THREE.Mesh(geoB, matB); m.visible = false; scene.add(m);
+    particulas.push({ m, t0: CFG.tMeta, vx: (rnd() - 0.5) * 14, vy: 6 + rnd() * 10, vz: (rnd() - 0.6) * 10, rx: rnd() * 9, ry: rnd() * 9, meta: true });
+  }
+}
+function actualizarParticulas(t, rx, rz, r) {
+  for (const q of particulas) {
+    const d = t - q.t0;
+    if (d < 0 || d > 1.6) { q.m.visible = false; continue; }
+    q.m.visible = true;
+    q.m.position.set(rx + q.vx * d, r + q.vy * d - 9.8 * d * d, rz + q.vz * d);
+    q.m.rotation.set(q.rx * d, q.ry * d, 0);
+    if (q.m.position.y < 0.05) { q.m.position.y = 0.05; }
+  }
+}
+
+// ------------------------------------------------------------------ cuadro t
+function frame(t) {
+  const dt = 1 / CFG.fps;
+  const z = zEn(t), x = xEn(t);
+  const [m, ult] = plataEn(t);
+  rActual += (radio(m) - rActual) * 0.12;
+  const r = rActual;
+  ang -= (CFG.vel * dt) / r * (t <= CFG.tMeta ? 1 : 0.3);
+  const piv = rollo.userData.piv; piv.position.set(x, r, z); rollo.scale.set(r, 1, r); piv.rotation.x = ang;
+  // estela: puntos del camino detrás del rollo
+  camino.push([x, z]); if (camino.length > 900) camino.shift();
+  const pts = camino.filter((_, i) => i % 3 === 0 || i === camino.length - 1);
+  if (pts.length > 2) {
+    const pos = [], uv = [], nor = [], idx = []; let acc = 0;
+    pts.forEach(([px, pz], i) => {
+      if (i) acc += Math.hypot(px - pts[i - 1][0], pz - pts[i - 1][1]);
+      pos.push(px - 1.25, 0.04, pz, px + 1.25, 0.04, pz); uv.push(0, acc / 1.25, 1, acc / 1.25); nor.push(0, 1, 0, 0, 1, 0);
+      if (i) { const a = (i - 1) * 2; idx.push(a, a + 1, a + 2, a + 1, a + 3, a + 2); }
+    });
+    trailGeo.setAttribute("position", new THREE.Float32BufferAttribute(pos, 3));
+    trailGeo.setAttribute("uv", new THREE.Float32BufferAttribute(uv, 2)); trailGeo.setAttribute("normal", new THREE.Float32BufferAttribute(nor, 3)); trailGeo.setIndex(idx);
+  }
+  // puertas: la elegida destella y se desarma al pasar
+  for (const p of CFG.puertas) {
+    const d = t - p.t, l = p.lados[p.elige].mesh;
+    if (d >= 0) { const u = Math.min(d / 0.25, 1); l.scale.set(1 + 0.2 * u, 1 + 0.2 * u, 1); l.material.forEach(mm => { mm.opacity = 0.85 * (1 - u); }); l.visible = u < 1; }
+  }
+  actualizarParticulas(t, x, z, r);
+  // cámara: detrás y arriba, sigue suave en x
+  camX += (x * 0.35 - camX) * 0.08;
+  cam.position.set(camX, 7.6 + r * 0.8, z + 13.5 + r * 1.4); cam.lookAt(camX * 0.5, 1.0, z - 14);
+  sol.position.set(x + 8, 22, z + 10); sol.target.position.set(x, 0, z - 6);
+  R.render(scene, cam);
+  // ---- composición final
+  O.drawImage(R.domElement, 0, 0);
+  const e = etapaEn(t); dibujarFoto(e, t);
+  // contador verde arriba del rollo
+  const [cx, cy] = proyectar(new THREE.Vector3(x, r * 2 + 1.0, z));
+  const pulso = ult && t - ult.t < 0.25 ? 1 + 0.18 * (1 - (t - ult.t) / 0.25) : 1;
+  texto(dinero(m), cx, cy, Math.round(84 * pulso), m >= 0 ? "#3dff6e" : "#ff4a5f", "#0d3b17", 13);
+  // carteles al pasar puertas
+  for (const p of CFG.puertas) {
+    const d = t - p.t; if (d < 0 || d > 1.0) continue;
+    const a = Math.min(1, (1 - d) / 0.3);
+    O.globalAlpha = a;
+    texto(p.lados[p.elige].revelado || p.lados[p.elige].txt, cx + 150, cy - 70 - d * 120, 72, p.efecto === "sube" ? "#3dff6e" : "#ff4a5f", "#111", 12);
+    if (p.grito) texto(p.grito, W / 2, 1010 - d * 60, 140 * (0.85 + 0.15 * Math.min(d / 0.12, 1)), p.efecto === "sube" ? "#ffe14a" : "#ff3b55", "#111", 18);
+    O.globalAlpha = 1;
+  }
+  // final: cartel de LIKE
+  if (t > CFG.tMeta + 0.6) {
+    const u = suave((t - CFG.tMeta - 0.6) / 0.25);
+    O.save(); O.translate(W / 2, 1180); O.scale(u, u);
+    O.fillStyle = "#b8793c"; O.strokeStyle = "#6e4320"; O.lineWidth = 14;
+    O.beginPath(); O.roundRect(-330, -110, 660, 220, 26); O.fill(); O.stroke();
+    O.font = "120px 'Noto Color Emoji'"; O.textAlign = "center"; O.textBaseline = "middle";
+    O.fillText("👍", -180, 5); O.fillText("😭", 190, 5);
+    texto("or", 5, 5, 80, "#fff", "#5a3416", 12);
+    O.restore();
+  }
+  return OUT.toDataURL("image/jpeg", 0.93);
+}
+
+window.iniciar = async (cfg) => {
+  CFG = cfg;
+  await document.fonts.load("100px Anton"); await document.fonts.load("100px 'Noto Color Emoji'");
+  await Promise.all(Object.entries(cfg.fotos).map(([k, src]) => new Promise(ok => { const i = new Image(); i.onload = () => { fotos[k] = i; ok(); }; i.onerror = ok; i.src = src; })));
+  construir(); crearParticulas();
+  return true;
+};
+window.frame = frame;
+</script>
+</body></html>

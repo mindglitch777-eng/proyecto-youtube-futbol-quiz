@@ -1,0 +1,285 @@
+{
+ "id": "runner_01",
+ "formato": "runner",
+ "jugador": "Cristiano Ronaldo",
+ "inicio": 20,
+ "etapas": [
+  {
+   "dia": "1",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2008_4.jpg",
+   "deformar": true
+  },
+  {
+   "dia": "7",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2006_1.jpg"
+  },
+  {
+   "dia": "30",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2007_0.jpg",
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "60",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2011_0.jpg"
+  },
+  {
+   "dia": "-50",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2015_9.jpg",
+   "color": "#ff3b4f",
+   "deformar": true,
+   "fuerza": 0.6
+  },
+  {
+   "dia": "100",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2012_13.jpg",
+   "color": "#c86bff"
+  },
+  {
+   "dia": "200",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2015_1.jpg",
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "-200",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2026_9.jpg",
+   "color": "#ff3b4f"
+  },
+  {
+   "dia": "300",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2022_0.jpg"
+  },
+  {
+   "dia": "-999",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2017_0.jpg",
+   "color": "#ff3b4f"
+  },
+  {
+   "dia": "2000",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2018_1.jpg",
+   "color": "#3fa8ff"
+  },
+  {
+   "dia": "50000",
+   "foto": "assets/fotos/cristiano_ronaldo_5.jpg",
+   "color": "#c86bff"
+  },
+  {
+   "dia": "999999",
+   "foto": "assets/fotos_epoca/cristiano_ronaldo_2024_6.jpg",
+   "color": "#ffd23a"
+  }
+ ],
+ "puertas": [
+  {
+   "lados": [
+    {
+     "txt": "x5",
+     "op": "x",
+     "v": 5
+    },
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "x",
+      2
+     ]
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!"
+  },
+  {
+   "lados": [
+    {
+     "txt": "+$20",
+     "op": "+",
+     "v": 20
+    },
+    {
+     "txt": "-$70",
+     "op": "-",
+     "v": 70
+    }
+   ],
+   "elige": 0,
+   "grito": null
+  },
+  {
+   "lados": [
+    {
+     "txt": "-$10",
+     "op": "-",
+     "v": 10
+    },
+    {
+     "txt": "x2",
+     "op": "x",
+     "v": 2
+    }
+   ],
+   "elige": 1,
+   "grito": null
+  },
+  {
+   "lados": [
+    {
+     "txt": "÷6",
+     "op": "÷",
+     "v": 6
+    },
+    {
+     "txt": "+$90",
+     "op": "+",
+     "v": 90
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!"
+  },
+  {
+   "lados": [
+    {
+     "txt": "+$100",
+     "op": "+",
+     "v": 100
+    },
+    {
+     "txt": "-$5",
+     "op": "-",
+     "v": 5
+    }
+   ],
+   "elige": 0,
+   "grito": null
+  },
+  {
+   "lados": [
+    {
+     "txt": "x3",
+     "op": "x",
+     "v": 3
+    },
+    {
+     "txt": "-$140",
+     "op": "-",
+     "v": 140
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!"
+  },
+  {
+   "lados": [
+    {
+     "txt": "÷4",
+     "op": "÷",
+     "v": 4
+    },
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "x",
+      2
+     ]
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!"
+  },
+  {
+   "lados": [
+    {
+     "txt": "+$60",
+     "op": "+",
+     "v": 60
+    },
+    {
+     "txt": "x2",
+     "op": "x",
+     "v": 2
+    }
+   ],
+   "elige": 1,
+   "grito": null
+  },
+  {
+   "lados": [
+    {
+     "txt": "-$200",
+     "op": "-",
+     "v": 200
+    },
+    {
+     "txt": "+$55",
+     "op": "+",
+     "v": 55
+    }
+   ],
+   "elige": 0,
+   "grito": "SINKING!"
+  },
+  {
+   "lados": [
+    {
+     "txt": "???",
+     "op": "?",
+     "v": 0,
+     "revela": [
+      "x",
+      50
+     ]
+    },
+    {
+     "txt": "÷2",
+     "op": "÷",
+     "v": 2
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!"
+  },
+  {
+   "lados": [
+    {
+     "txt": "x10",
+     "op": "x",
+     "v": 10
+    },
+    {
+     "txt": "-$87",
+     "op": "-",
+     "v": 87
+    }
+   ],
+   "elige": 0,
+   "grito": null
+  },
+  {
+   "lados": [
+    {
+     "txt": "x200",
+     "op": "x",
+     "v": 200
+    },
+    {
+     "txt": "÷3",
+     "op": "÷",
+     "v": 3
+    }
+   ],
+   "elige": 0,
+   "grito": "HUGE!"
+  }
+ ],
+ "titulos": [
+  "Cristiano Ronaldo Evolution (Day 1 → Day 999999) 🤯",
+  "Ronaldo money run 💸 Day 1 → Day 999999",
+  "Can Ronaldo reach $1,000,000? 🤑"
+ ],
+ "descripcion": "Ronaldo from Day 1 to Day 999999 💸 Did you see it coming? 👍 or 😭",
+ "comentario_fijado": "👍 or 😭 ?"
+}
