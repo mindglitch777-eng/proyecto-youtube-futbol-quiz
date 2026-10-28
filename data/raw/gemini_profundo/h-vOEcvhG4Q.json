@@ -1,0 +1,230 @@
+{
+ "id": "h-vOEcvhG4Q",
+ "canal": "Shiminski Soifer",
+ "vistas": 14138707,
+ "titulo": "Respect moments in football 🥰 #football #soccer #fyp",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "transmisión real de partido",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Compilación de clips de diferentes partidos con resoluciones variadas, desde HD hasta baja calidad de celular, formato vertical recortado.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Jugadoras de fútbol americano en la cancha",
+    "texto": "Respect moments in football",
+    "sonido": "Música triste melancólica con voz femenina",
+    "movimiento_o_efecto": "Cámara lenta inicial"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Jugadora pasa al lado de otra",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Cámara lenta"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Jugadoras caminando",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Jugadora saluda a otra",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Jugadoras en primer plano",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Jugadoras interactuando",
+    "texto": "SILENCE IS MORE POWERFUL THAN STRIKING BACK",
+    "sonido": null,
+    "movimiento_o_efecto": "Subtítulo dinámico"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Jugadoras en el campo",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Corte a siguiente escena"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la promesa emocional de 'Respect moments' con un texto reflexivo y música melancólica que genera intriga inmediata.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 3.7,
+    "contenido": "Jugadoras de fútbol americano en la cancha",
+    "encuadre": "medio",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 3.7,
+    "hasta": 16.5,
+    "contenido": "Jugador realiza chilena y evita pisar al rival",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 16.5,
+    "hasta": 23.5,
+    "contenido": "Jugadores de Manchester City interactúan con asistente",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo",
+     "círculo resaltado"
+    ]
+   },
+   {
+    "desde": 23.5,
+    "hasta": 31.5,
+    "contenido": "Jugadores evitan falta dura",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 31.5,
+    "hasta": 38.5,
+    "contenido": "Portero y rival se saludan tras jugada",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 38.5,
+    "hasta": 44.5,
+    "contenido": "Recrecogepelotas recibe saludo de jugador",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "círculo resaltado",
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 44.5,
+    "hasta": 49.5,
+    "contenido": "Jugador evita chocar contra la publicidad",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 49.5,
+    "hasta": 54.5,
+    "contenido": "Entrenador consuela a jugador lesionado/triste",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "subtítulo"
+    ]
+   },
+   {
+    "desde": 54.5,
+    "hasta": 58.0,
+    "contenido": "Jugador salta para no pisar el escudo en el suelo",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "flecha roja"
+    ]
+   }
+  ],
+  "cortes_por_10s": 2,
+  "sincronia_con_la_musica": "Los cambios de escena y cortes principales están alineados con el ritmo lento y emocional de la canción.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Respect moments in football ⚽",
+    "estilo": "fuente sans-serif bold, texto blanco con borde negro, parte superior, fondo translúcido"
+   },
+   {
+    "t": "2.5",
+    "texto": "SILENCE IS MORE POWERFUL THAN STRIKING BACK.",
+    "estilo": "fuente sans-serif bold, mayúsculas, blanco, centro inferior"
+   },
+   {
+    "t": "8.0",
+    "texto": "This moment embodies the true meaning of sportsmanship.",
+    "estilo": "fuente sans-serif bold, blanco, centro inferior"
+   },
+   {
+    "t": "21.5",
+    "texto": "10/10",
+    "estilo": "fuente sans-serif bold, blanco, centro pantalla"
+   },
+   {
+    "t": "45.0",
+    "texto": "PROTECTING YOU IS MORE IMPORTANT THAN VICTORY.",
+    "estilo": "fuente sans-serif bold, mayúsculas, blanco, centro inferior"
+   }
+  ],
+  "audio": {
+   "musica": "Pop acústico/emocional lento, aprox 70 bpm, voz femenina melancólica, estilo cover viral de TikTok",
+   "efectos": [
+    "silbidos iniciales (emojis)"
+   ],
+   "voz": "canción cantada, no hay locución en off",
+   "momento_clave_de_audio": "El estribillo emocional sostiene toda la compilación sin cortes bruscos de volumen"
+  },
+  "estructura": "planteo (título y primera escena de respeto) → tensión (acciones intensas en la cancha que se desescalan) → remate (gestos finales de honor y respeto profundo al escudo)",
+  "giro_o_sorpresa": "El último clip donde el jugador salta deliberadamente para no pisar el escudo del club rival/propio en el suelo.",
+  "final_y_loop": "Termina con la acción del escudo y corta abruptamente para invitar a volver a ver el inicio.",
+  "emocion_que_busca": "ternura / asombro / nostalgia",
+  "por_que_comentan": "Debaten sobre cuál fue el mejor momento y destacan los valores del fair play en el deporte.",
+  "por_que_comparten_o_repiten": "Porque el contenido evoca valores positivos universales y es altamente emotivo, ideal para compartir con amigos amantes del fútbol.",
+  "tres_razones_por_las_que_exploto": [
+   "Temática universal de valores y respeto en el deporte",
+   "Selección impecable de momentos impactantes y poco comunes",
+   "Música emocional que amplifica la empatía del espectador"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 10,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde la autenticidad y el impacto emocional de jugadas reales de fútbol profesional."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Recopilar clips virales de Fair Play y respeto en el fútbol.",
+   "Paso 2: Editar en formato vertical con subtítulos dinámicos de frases inspiradoras.",
+   "Paso 3: Sincronizar cada corte con una canción pop emocional en tendencia.",
+   "Paso 4: Añadir elementos visuales como círculos y flechas para guiar la atención."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

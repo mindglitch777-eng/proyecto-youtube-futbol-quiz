@@ -1,0 +1,153 @@
+{
+ "id": "nuestro_find_02",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "~1.400",
+ "titulo": "FIND YAMAL MESSI RONALDO 🔎",
+ "archivo": "produccion/entrega/02_lun26-10_10h_find_the_real_02.mp4",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "videojuego / interfaz de minijuego móvil interactivo",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Gráficos limpios estilo UI de juego casual mobile, buena resolución, colores contrastantes (verde oscuro y amarillo) muy legibles para pantallas verticales.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "FIND YAMAL, cuenta regresiva amarilla debajo",
+    "texto": "FIND YAMAL",
+    "sonido": "Beep de cuenta regresiva rápida",
+    "movimiento_o_efecto": "Barra de tiempo decreciente"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Grilla de 25 caras",
+    "texto": "EASY",
+    "sonido": "Beep",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Grilla numerada del 1 al 25",
+    "texto": null,
+    "sonido": "Beep",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Grilla numerada",
+    "texto": null,
+    "sonido": "Beep",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Grilla numerada",
+    "texto": null,
+    "sonido": "Beep",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Grilla numerada",
+    "texto": null,
+    "sonido": "Beep",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Grilla numerada",
+    "texto": "CAN YOU GET 3/3?",
+    "sonido": "Beep final del timer",
+    "movimiento_o_efecto": "Barra casi vacía"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "El desafío visual inmediato ('Find Yamal') combinado con un temporizador sonoro tipo cuenta regresiva genera urgencia y activa el instinto de resolver el acertijo antes de que acabe.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 4.1,
+    "contenido": "Minijuego de encontrar a Lamine Yamal entre caras similares",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "marcador verde de acierto en el casillero 4"
+    ]
+   },
+   {
+    "desde": 4.1,
+    "until": 10.5,
+    "contenido": "Minijuego nivel Hard de encontrar a Messi",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador verde en casillero 19"
+    ]
+   },
+   {
+    "desde": 10.5,
+    "until": 16.0,
+    "contenido": "Minijuego nivel Only 1% de encontrar a Ronaldo",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador verde en casillero 17"
+    ]
+   }
+  ],
+  "cortes_por_10s": 0,
+  "sincronia_con_la_musica": "Los beeps de la cuenta regresiva caen exactamente cada 1 segundo marcando el ritmo de la barra de tiempo.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "FIND YAMAL",
+    "estilo": "Fuente bold gruesa, amarillo brillante con borde negro, centrado arriba, estilo arcade"
+   },
+   {
+    "t": "4.1",
+    "texto": "FIND MESSI",
+    "estilo": "Fuente bold gruesa, amarillo con borde negro, nivel HARD"
+   },
+   {
+    "t": "10.5",
+    "texto": "FIND RONALDO",
+    "estilo": "Fuente bold gruesa, amarillo, nivel ONLY 1%"
+   }
+  ],
+  "audio": {
+   "musica": "Beeps electrónicos de cuenta regresiva repetitivos, tipo juego arcade retro/móvil, 60 bpm aprox",
+   "efectos": [
+    "beep de reloj",
+    "sonido de acierto/éxito al final de cada ronda"
+   ],
+   "voz": "ninguna",
+   "momento_clave_de_audio": "El sonido de acierto al final de cada ronda (segundos 4, 10, 15)."
+  },
+  "estructura": "planteo (Yamal, fácil) → tensión (Messi, difícil) → remate (Ronaldo, 1% / llamado a comentar)",
+  "giro_o_sorpresa": "Aumenta la dificultad de los jugadores (Yamal → Messi → Ronaldo) y los rostros en la grilla son variaciones sutiles generadas o editadas con IA.",
+  "final_y_loop": "Termina con una pantalla estática invitando a comentar ('HOW MANY DID YOU FIND?'), se corta abruptamente invitando a ver el loop.",
+  "emocion_que_busca": "desafío / concentración / atención / debate",
+  "por_que_comentan": "Para presumir si encontraron a todos o cuántos adivinaron antes del tiempo límite.",
+  "por_que_comparten_o_repiten": "Para retar a amigos a ver si tienen mejor vista o velocidad mental.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas hiper populares (Yamal, Messi, Ronaldo).",
+   "Mecánica interactiva de 'busca y encuentra' que retiene la mirada en pantalla.",
+   "Efecto de cuenta regresiva que genera alta retención y finaliza rápido."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Crear grillas de caras usando herramientas de generación de imágenes con IA (Midjourney/Stable Diffusion) y editarlas en CapCut añadiendo una barra de tiempo y efectos de sonido arcade.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "La familiaridad exacta con los rostros de los memes o de los jugadores en tendencia."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Elegir 3 personajes virales o futbolistas del momento.",
+   "Paso 2: Generar o recortar 25 variaciones de rostros similares para la grilla.",
+   "Paso 3: Añadir una barra de progreso inferior de 4 segundos con efectos de sonido de cuenta regresiva.",
+   "Paso 4: Poner la respuesta correcta al final y cerrar con una llamada a la acción en comentarios."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

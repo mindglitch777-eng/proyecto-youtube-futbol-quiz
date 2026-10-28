@@ -1,0 +1,107 @@
+{
+ "id": "hFlJ0deIU8M",
+ "canal": "HappyHM",
+ "vistas": 31466889,
+ "titulo": "Giant Chocolate VS Nutella 😱🍫🤣 #shorts  #haaland #funny #mbappe",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "transmisión real de partido",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "buena iluminación natural, encuadre fijo y claro, aunque la resolución es estándar para video vertical móvil.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Haaland sostiene una barra de chocolate y Mbappé está sentado al lado",
+    "texto": null,
+    "sonido": "música de meme ascendente",
+    "movimiento_o_efecto": "movimiento rápido de manos"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Haaland acerca la barra a un frasco pequeño de Nutella",
+    "texto": null,
+    "sonido": "efecto de sonido 'nope'",
+    "movimiento_o_efecto": "ninguno"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Haaland sostiene un frasco mediano de Nutella",
+    "texto": null,
+    "sonido": "efecto de sonido 'nope'",
+    "movimiento_o_efecto": "ninguno"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Frasco de Nutella más grande",
+    "texto": null,
+    "sonido": "efecto de sonido 'nope'",
+    "movimiento_o_efecto": "ninguno"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Frasco de Nutella aún más grande",
+    "texto": null,
+    "sonido": "efecto de sonido 'nope'",
+    "movimiento_o_efecto": "ninguno"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Frasco gigante de Nutella",
+    "texto": null,
+    "sonido": "efecto de sonido 'yup'",
+    "movimiento_o_efecto": "exclamación y sonrisa"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "La progresión visual rápida y el patrón repetitivo 'nope' que cambia a 'yup' con una escala absurda genera curiosidad inmediata.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 9.0,
+    "contenido": "Haaland probando tamaños de Nutella con una barra gigante de chocolate ante la mirada de Mbappé.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "cambios de objetos sincronizados con audio"
+    ]
+   }
+  ],
+  "cortes_por_10s": 0,
+  "sincronia_con_la_musica": "los cortes de objetos y cambios de frascos caen exactamente en cada beat del audio de voz de meme.",
+  "textos_en_pantalla": [],
+  "audio": {
+   "musica": "audio viral de meme de TikTok (voz diciendo 'nope' repetidamente y 'yup' al final)",
+   "efectos": [
+    "sonido de 'nope'",
+    "sonido de 'yup'"
+   ],
+   "voz": "no hay voz en off directa, solo el audio meme",
+   "momento_clave_de_audio": "el grito o cambio a 'yup' en el segundo 8"
+  },
+  "estructura": "planteo (primeros frascos y 'nope') → tensión (crece el tamaño del frasco) → remate (frasco gigante y 'yup')",
+  "giro_o_sorpresa": "el tamaño exagerado del último frasco de Nutella en el segundo 8.",
+  "final_y_loop": "termina abruptamente en el 'yup' del frasco gigante, invitando a ver el video de nuevo por lo absurdo.",
+  "emocion_que_busca": "risa / asombro",
+  "por_que_comentan": "por la presencia de dos estrellas del fútbol mundial (Haaland y Mbappé) haciendo un meme tonto.",
+  "por_que_comparten_o_repiten": "por el humor visual rápido y absurdo sobre el tamaño de la comida.",
+  "tres_razones_por_las_que_exploto": [
+   "aparición de dos futbolistas de élite mundial (Haaland y Mbappé)",
+   "uso perfecto de un audio meme en tendencia con sincronización exacta",
+   "humor visual absurdo y escalable"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "con dos dobles de riesgo o amigos grabándose con objetos gigantes falsos",
+   "dificultad_1a10": 5,
+   "que_se_pierde_si_no_usamos_ese_material": "el impacto orgánico de ver a las verdaderas celebridades del fútbol"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "conseguir una barra de chocolate gigante y utilería en escala",
+   "grabar en plano fijo con buena iluminación exterior",
+   "sincronizar perfectamente la aparición de objetos con un audio meme viral"
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 8
+ }
+}

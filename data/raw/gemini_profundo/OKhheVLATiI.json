@@ -1,0 +1,173 @@
+{
+ "id": "OKhheVLATiI",
+ "canal": "Football 3D Club",
+ "vistas": 108207474,
+ "titulo": "Ronaldo, Haaland, Vinicius, and the \"Guess the Player\" challenge #3danimation",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "Animación 3D estilo videojuego / brainrot meme",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Renderizado 3D sencillo con iluminación plana y modelos caricaturizados. Estética funcional enfocada en dinamismo y contenido viral.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Futbolistas 3D (Ronaldo, Haaland, Vinicius, Messi) frente a cortina con meme",
+    "texto": null,
+    "sonido": "Voz 'Green Light'",
+    "movimiento_o_efecto": "Revelación inicial de imagen tras la cortina"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Cortina amarilla bajando",
+    "texto": null,
+    "sonido": "Música alegre",
+    "movimiento_o_efecto": "Movimiento de cortina"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Ronaldo intenta bailar",
+    "texto": null,
+    "sonido": "Voz 'Green Light'",
+    "movimiento_o_efecto": "Giro de personajes"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Ronaldo baila al ritmo de meme",
+    "texto": null,
+    "sonido": "Audio 'Tralalero'",
+    "movimiento_o_efecto": "Baile 3D"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Ronaldo es rechazado con un 'No'",
+    "texto": null,
+    "sonido": "Sonido de error",
+    "movimiento_o_efecto": "Detención de personaje"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Haaland toma el turno para bailar",
+    "texto": null,
+    "sonido": "Efecto musical",
+    "movimiento_o_efecto": "Animación de baile"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Haaland acierta y aparece rango",
+    "texto": "RANK 10",
+    "sonido": "Sonido de recompensa",
+    "movimiento_o_efecto": "Aparición de cartel 3D"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina futbolistas de élite con la mecánica de Luz Verde / Luz Roja y memes virales de alto impacto visual.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 33.0,
+    "contenido": "Futbolistas adivinando memes e incrementando su rango en una vista frontal fija.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Aparición de placas 3D de rango",
+     "Efectos de cortina"
+    ]
+   },
+   {
+    "desde": 33.0,
+    "hasta": 39.0,
+    "contenido": "Zoom a Ronaldo pidiendo interacción para salvarse.",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Cartel interactivo emergente",
+     "Cuenta regresiva"
+    ]
+   },
+   {
+    "desde": 39.0,
+    "hasta": 60.0,
+    "contenido": "Ronaldo baila frenéticamente con súper puntaje mientras se completa el mosaico de memes.",
+    "encuadre": "general",
+    "camara": "zoom out",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Lluvia de gemas y billetes",
+     "Mosaico de imágenes en pantalla"
+    ]
+   }
+  ],
+  "cortes_por_10s": 0.5,
+  "sincronia_con_la_musica": "Excelente sincronización: las animaciones de baile y las reacciones se ajustan exactamente a los beats de los audios de memes.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.07",
+    "texto": "RANK 10",
+    "estilo": "Placa hexagonal naranja 3D, texto blanco centrado"
+   },
+   {
+    "t": "0.15",
+    "texto": "RANK 20",
+    "estilo": "Placa hexagonal verde 3D, texto blanco centrado"
+   },
+   {
+    "t": "0.26",
+    "texto": "RANK 90",
+    "estilo": "Placa hexagonal azul 3D, texto blanco centrado"
+   },
+   {
+    "t": "0.32",
+    "texto": "RANK 70",
+    "estilo": "Placa hexagonal morada 3D, texto blanco centrado"
+   },
+   {
+    "t": "0.38",
+    "texto": "HELP ME",
+    "estilo": "Cartel UI emergente rojo con botones de Like y Share"
+   },
+   {
+    "t": "0.40",
+    "texto": "RANK 6974",
+    "estilo": "Placa hexagonal dorada grande con animación brillante"
+   }
+  ],
+  "audio": {
+   "musica": "Recopilación de fragmentos virales de memes (Tralalero, Tung Tung Sahur) a 125 BPM aprox.",
+   "efectos": [
+    "Voz Squid Game Green/Red Light",
+    "Risa de fallo",
+    "Sonido de subida de nivel",
+    "Beeps de cuenta regresiva"
+   ],
+   "voz": "Voz en inglés de Squid Game y Ronaldo diciendo 'Help Me'",
+   "momento_clave_de_audio": "Segundo 38 a 40: cuenta regresiva '3, 2, 1' seguida del estallido musical del baile de Ronaldo."
+  },
+  "estructura": "Planteo (0-33s): Los futbolistas compiten adivinando memes y acumulando rango. Tensión (33-39s): Ronaldo queda rezagado y pide ayuda con una interfaz en pantalla. Remate (40-60s): Ronaldo recibe un rango masivo y realiza un baile descontrolado hasta que cae en Red Light.",
+  "giro_o_sorpresa": "Ronaldo pasa de estar en último lugar a conseguir un puntaje absurdo de 6974 mediante la simulación de interacción del espectador.",
+  "final_y_loop": "Corta de golpe en 'Red Light' mientras Ronaldo baila, fomentando la repetición inmediata del video.",
+  "emocion_que_busca": "Humor absurdo, entretenimiento dinámico y satisfacción por gamificación.",
+  "por_que_comentan": "Los usuarios debaten sobre qué futbolista bailó mejor, la cifra exagerada de Ronaldo o sus memes favoritos.",
+  "por_que_comparten_o_repiten": "Por la combinación frenética de audios virales, animación graciosa y el clímax exagerado del final.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas mundialmente famosos como avatares 3D.",
+   "Integración de la mecánica popular de 'Luz Verde, Luz Roja'.",
+   "Acumulación de memes de tendencia 'brainrot' con ritmo acelerado."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Modelando o adquiriendo personajes 3D en Blender/Unreal y sincronizándolos con sonidos de tendencia.",
+   "dificultad_1a10": 7,
+   "que_se_pierde_si_no_usamos_ese_material": "La tracción masiva inmediata que aportan las caricaturas de futbolistas reales y audios con derechos."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Crear avatares 3D caricaturizados de figuras públicas o de cultura pop.",
+   "Implementar una dinámica de minijuego conocida (como 'Adivina el personaje' o 'Luz verde').",
+   "Añadir una llamada a la acción interactiva simulada en el clímax.",
+   "Rematar con un baile o acción exagerada y corte abrupto."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 9
+ }
+}

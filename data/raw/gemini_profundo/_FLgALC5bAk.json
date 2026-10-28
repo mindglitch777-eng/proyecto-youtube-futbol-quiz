@@ -1,0 +1,167 @@
+{
+ "id": "_FLgALC5bAk",
+ "canal": "EliteKickR7",
+ "vistas": 1386267,
+ "titulo": "RONALDO & MESSI FACE OFF AGAIN 😱 Legendary Match Highlights",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: transmisiones reales de fútbol intervenidas con filtros, reescalado IA, y memes generados/editados",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La resolución es variable, con escalados evidentes de IA y filtros de saturación intensa para llamar la atención en pantallas pequeñas, se ve llamativo y colorido pero de calidad técnica baja/fan-edit.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Marcador 0-0 Inter Miami vs Al Nassr",
+    "texto": "0-0",
+    "sonido": "Beat electrónico fuerte y acelerado con coro melódico",
+    "movimiento_o_efecto": "DT corriendo desesperado hacia la cancha en cámara lenta y flash de corte"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Gol de Inter Miami",
+    "texto": "1-0",
+    "sonido": "Continuación de la música con percusión marcando el gol",
+    "movimiento_o_efecto": "Pelota entrando al arco y festejo"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Gol",
+    "texto": "1-0",
+    "sonido": "Música rítmica",
+    "movimiento_o_efecto": "Arquero tirándose en vano"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Festejo DT",
+    "texto": "1-0",
+    "sonido": "Música rítmica",
+    "movimiento_o_efector": "Entrenador corriendo eufórico"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Ronaldo serio",
+    "texto": "1-0",
+    "sonido": "Música rítmica",
+    "movimiento_o_efecto": "Cristiano protestando con el árbitro"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Messi sonriendo",
+    "texto": "1-0",
+    "sonido": "Música rítmica",
+    "movimiento_o_efecto": "Messi sacando la lengua festejando"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Ronaldo insatisfecho",
+    "texto": "1-0",
+    "sonido": "Música rítmica",
+    "movimiento_o_efecto": "Cristiano señalando el escudo"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina una narrativa de partidazo épico (Messi vs Ronaldo) con acción frenética desde el segundo uno y un marcador cambiante que genera curiosidad inmediata.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.5,
+    "contenido": "DT corriendo",
+    "encuadre": "medio",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "saturación alta"
+    ]
+   },
+   {
+    "desde": 0.5,
+    "hasta": 1.0,
+    "contenido": "Gol de tiro libre",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "ninguno"
+    ]
+   },
+   {
+    "desde": 1.0,
+    "hasta": 2.0,
+    "contenido": "Arquero volando",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "filtro de color"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 3.0,
+    "contenido": "Ronaldo con árbitro",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "ninguno"
+    ]
+   },
+   {
+    "desde": 3.0,
+    "hasta": 4.0,
+    "contenido": "Messi lengua",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "zoom in"
+    ]
+   }
+  ],
+  "cortes_por_10s": 12,
+  "sincronia_con_la_musica": "Sí, cada corte fuerte, gol o cambio de marcador coincide exactamente con el beat del remix de la canción (ej. 0.0, 1.0, 3.0, 4.0)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "0-0",
+    "estilo": "Fuente bold blanca con borde negro, fondo superior central tipo marcador de TV, diseño limpio"
+   }
+  ],
+  "audio": {
+   "musica": "Remix electrónico bailable de tendencia con voces melódicas árabes/occidentales, 130 bpm aprox",
+   "efectos": [
+    "silbidos",
+    "aplausos virtuales",
+    "efectos de transición agudos"
+   ],
+   "voz": "sin voz superpuesta",
+   "momento_clave_de_audio": "El drop principal y cambio de ritmo en cada gol (ej. 0.0, 3.0, 17.0)"
+  },
+  "estructura": "planteo (0-3s: 0-0 y tensión inicial) → tensión (3-30s: intercambio de goles imparable hasta el 3-3) → remate (30-59s: gol definitivo de Al Nassr 4-3, levantando la copa y Cristiano festejando)",
+  "giro_o_sorpresa": "La remontada épica final de Al Nassr para ganar 4-3 un partido que parecía dominado por intercambios constantes.",
+  "final_y_loop": "Termina con Cristiano Ronaldo levantando el trofeo, cortando de golpe justo antes de reiniciar con el 0-0 inicial para enganchar el loop infinito.",
+  "emocion_que_busca": "asombro / debate / nostalgia futbolera / adrenalina",
+  "por_que_comentan": "Discute sobre quién es el goat, si el video es real o IA (ya que mezcla partidos reales con montajes), y puteadas/elogios entre fans de Messi y Cristiano.",
+  "por_que_comparten_o_repiten": "Porque el ritmo frenético y la edición hiperactiva hacen que quieras volver a ver los goles y el resultado final con amigos futboleros.",
+  "tres_razones_por_las_que_exploto": [
+   "El cruce definitivo e imposible Messi vs Ronaldo en un partidazo ficticio de 7 goles.",
+   "Sincronía perfecta de cada gol y cambio de marcador con el beat musical.",
+   "Edición corta tipo TikTok/Shorts altamente adictiva con reacciones de hinchas y famosos."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 10,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el atractivo principal: ver a Messi y Cristiano reales jugando un partido épico."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Recopilar los mejores goles, reacciones y momentos virales de Messi y Cristiano.",
+   "Paso 2: Editar un marcador dinámico superior que cambie en tiempo real con cada gol.",
+   "Paso 3: Sincronizar cada corte de jugada exactamente con el beat de una canción remix en tendencia (130 bpm).",
+   "Paso 4: Añadir reacciones de niños, novias/esposas e influencers para generar empatía y comentarios.",
+   "Paso 5: Asegurar un final triunfal que enganche perfectamente con el inicio para crear loop."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

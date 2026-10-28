@@ -1,0 +1,178 @@
+{
+ "id": "IDg9Y1hvN4Q",
+ "canal": "era7_ai",
+ "vistas": 5583799,
+ "titulo": "Montagem Miau Feat Ronaldo🔥",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "transmisión real de evento (Gala de premios de fútbol) con edición de audio (meme funk)",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Imagen HD de alta calidad de transmisión televisiva con buen color e iluminación de gala.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Primer plano de Cristiano Ronaldo hablando en gala.",
+    "texto": "era7",
+    "sonido": "Voz / canción funk brasilero meme sobre un gato.",
+    "movimiento_o_efecto": "Zoom suave a la cara de Cristiano."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Ronaldo hablando sincronizado con el audio.",
+    "texto": "era7",
+    "sonido": "Audio funk meme continuado.",
+    "movimiento_o_efecto": "Corte suave."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Ronaldo abriendo la boca al ritmo del audio.",
+    "texto": "era7",
+    "sonido": "Música funk acelerada.",
+    "movimiento_o_efecto": "Corte de ritmo."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Corte a Georgina Rodríguez sonriendo en el público.",
+    "texto": "era7",
+    "sonido": "Audio meme en desarrollo.",
+    "movimiento_o_efecto": "Corte seco."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Georgina Rodríguez sonriendo.",
+    "texto": "era7",
+    "sonido": "Vocalización meme funk.",
+    "movimiento_o_efecto": "Fijo."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Vuelta a primer plano de Cristiano Ronaldo.",
+    "texto": "era7",
+    "sonido": "Beat de funk.",
+    "movimiento_o_efecto": "Corte seco."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Ronaldo continúa gesticulando.",
+    "texto": "era7",
+    "sonido": "Beat de funk.",
+    "movimiento_o_efecto": "Fijo."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la figura de Cristiano Ronaldo en una gala seria con un audio meme ridículo totalmente desincronizado con el contexto.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.02,
+    "contenido": "Cristiano Ronaldo hablando en estrado.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": []
+   },
+   {
+    "desde": 0.02,
+    "hasta": 0.03,
+    "contenido": "Georgina Rodríguez sonriendo en el público.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 0.03,
+    "hasta": 0.05,
+    "contenido": "Cristiano Ronaldo hablando de perfil.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 0.05,
+    "hasta": 0.06,
+    "contenido": "Lamine Yamal mirando atento.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 0.06,
+    "hasta": 0.07,
+    "contenido": "Ronaldo hablando.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 0.07,
+    "hasta": 0.09,
+    "contenido": "Cristiano Jr atento en el público.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 0.09,
+    "hasta": 0.1,
+    "contenido": "Ronaldo cerrando su idea.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 0.1,
+    "hasta": 0.12,
+    "contenido": "Khabib Nurmagomedov mirando con seriedad y luego Jude Bellingham aplaudiendo.",
+    "encuadre": "primer plano / plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Los cortes a las reacciones del público caen exactamente en los cambios de verso y el drop de maullidos a los 0:09.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "era7",
+    "estilo": "Watermark blanco translúcido en el centro/abajo."
+   }
+  ],
+  "audio": {
+   "musica": "Brazilian Funk / Montagem Miau remix",
+   "efectos": [],
+   "voz": "Voz cantando canción infantil/meme de gato en portugués.",
+   "momento_clave_de_audio": "El maullido 'Miau Miau' y el drop de funk en 0:09."
+  },
+  "estructura": "Planteo: Ronaldo habla en la gala (0:00-0:03). Tensión: Reacciones intercaladas del público (0:03-0:09). Remate: Drop del funk con maullidos sobre Khabib y Bellingham (0:09-0:13).",
+  "giro_o_sorpresa": "Sustituir el discurso formal de Ronaldo con un tema de funk meme de gatos.",
+  "final_y_loop": "Termina con Jude Bellingham aplaudiendo, listo para reiniciar el discurso de Ronaldo.",
+  "emocion_que_busca": "Risa y absurdo.",
+  "por_que_comentan": "Debate humorístico sobre las reacciones de las celebridades (Khabib serio, Bellingham riendo).",
+  "por_que_comparten_o_repiten": "Es corto, pegadizo y usa figuras súper populares del deporte.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas y celebridades top mundial.",
+   "Audio de tendencia cómica altamente pegadizo.",
+   "Ritmo de edición rápido que mantiene el interés."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 9,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento instantáneo de Ronaldo, Georgina, Khabib y Bellingham."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Descargar clip de transmisión HD de evento masivo de fútbol.",
+   "Seleccionar audio funk en tendencia.",
+   "Sincronizar gestos de habla del protagonista con la letra del tema y alternar reacciones del público en el beat."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 8
+ }
+}

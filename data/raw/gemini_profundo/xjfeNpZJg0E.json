@@ -1,0 +1,141 @@
+{
+ "id": "xjfeNpZJg0E",
+ "canal": "Fantasyball007",
+ "vistas": 1982585,
+ "titulo": "Sorry Haaland, but Mbappe had to do it! 🚗👋#haaland #worldcup #mbappé #funny",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: dobles de futbolistas reales (Haaland y Mbappé) interactuando en sketches humorísticos",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La iluminación y escenografía son correctas de casa moderna, pero los dobles tienen un parecido físico moderado (más actitudinal que de rostro exacto) y se nota el uso de efectos prácticos y edición simple.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Haaland cepillándose los dientes frente al espejo",
+    "texto": null,
+    "sonido": "Golpe seco de puerta y efecto de limpieza",
+    "movimiento_o_efecto": "Corte rápido al espejo donde la espuma forma un corazón"
+   },
+   {
+    "t": "0.5"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Haaland haciendo flexiones sobre el sofá",
+    "texto": null,
+    "sonido": "Grito de esfuerzo",
+    "movimiento_o_efecto": "Plano general"
+   },
+   {
+    "t": "1.5"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Mbappé cruzado de brazos mirando serio",
+    "texto": null,
+    "sonido": null,
+    "movimiento_o_efecto": "Plano medio fijo"
+   },
+   {
+    "t": "2.5"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Haaland cayendo sobre los dulces formando un corazón",
+    "texto": null,
+    "sonido": "Efecto 'Oops'",
+    "movimiento_o_efecto": "Corte rápido al siguiente gag"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina figuras de élite del fútbol mundial (Haaland y Mbappé) en situaciones domésticas absurdas y humorísticas en los primeros dos segundos.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.5,
+    "contenido": "Baño con espejo y espuma de afeitar",
+    "encuadre": "Plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Espuma en forma de corazón en el espejo"
+    ]
+   },
+   {
+    "desde": 1.5,
+    "hasta": 4.0,
+    "contenido": "Flexiones sobre sofá con caramelos 'I LOVE U'",
+    "encuadre": "Plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 4.0,
+    "hasta": 6.5,
+    "contenido": "Líquido oscuro derramado en mesa simulando corazón",
+    "encuadre": "Plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 6.5,
+    "hasta": 9.0,
+    "contenido": "Haaland comiendo chocolate y ensuciándose la cara",
+    "encuadre": "Primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 9.0,
+    "hasta": 14.0,
+    "contenido": "Meten a Haaland al baúl del auto y Mbappé cierra sonriendo",
+    "encuadre": "Plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Gritos y portazo"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "Los cortes de escena van exactamente en cada cambio de gag y efecto sonoro a los 0.0s, 1.5s, 4.0s, 6.5s y 9.0s.",
+  "textos_en_pantalla": [],
+  "audio": {
+   "musica": "Ritmo de comedia / efectos de sonido incidentales estilo cartoon",
+   "efectos": [
+    "Sonidos de golpe, gritos exagerados, efectos de sorpresa tipo pop"
+   ],
+   "voz": "Exclamaciones de los personajes ('Oops', grito final)",
+   "momento_clave_de_audio": "El grito de Haaland cuando lo meten al baúl en el segundo 10"
+  },
+  "estructura": "planteo (obsesión romántica absurda de Haaland) → tensión (mirada seria de Mbappé) → remate (Mbappé encierra a Haaland en el baúl del auto)",
+  "giro_o_sorpresa": "Pasa de sketches románticos absurdos a que Mbappé simplemente se hartó y lo metió a la fuerza en el baúl del auto.",
+  "final_y_loop": "Termina con Mbappé cerrando el baúl del auto y posando; corta de golpe pero no cicla perfectamente con el inicio.",
+  "emocion_que_busca": "risa / asombro / humor absurdo",
+  "por_que_comentan": "Debaten sobre el parecido de los dobles, si es gracioso o cringe, y sobre la rivalidad Haaland vs Mbappé.",
+  "por_que_comparten_o_repiten": "Por la combinación inesperada de dos estrellas del fútbol mundial haciendo comedia física bizarra.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de dobles de dos futbolistas top mundiales actuales (Haaland y Mbappé)",
+   "Humor físico absurdo y visualmente llamativo (corazones de espuma, chocolate, caramelos)",
+   "Ritmo híper dinámico con un remate inesperado y violento en tono de comedia"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usando actores dobles o generadores de video por IA para imitar a famosos en situaciones absurdas",
+   "dificultad_1a10": 6,
+   "que_se_pierde_si_no_usamos_ese_material": "El atractivo inmediato de ver a los rostros reales (o imitadores muy parecidos) de ídolos del fútbol."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Conseguir dos imitadores o dobles físicos de futbolistas famosos actuales",
+   "Diseñar 4 gags visuales cortos y rápidos basados en un tema absurdo (ej. romance, celos)",
+   "Grabar con cámara fija en plano medio/general con iluminación brillante de interiores",
+   "Editar con cortes secos milimétricos al ritmo de efectos de sonido cartoon",
+   "Rematar con un giro drástico y cómico (ej. encerrarlo, escapar)"
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

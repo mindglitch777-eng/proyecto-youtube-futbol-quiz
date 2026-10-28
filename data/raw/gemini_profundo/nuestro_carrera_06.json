@@ -1,0 +1,148 @@
+{
+ "id": "nuestro_carrera_06",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "~1.400",
+ "titulo": "EL CLÁSICO RACE 🏁 Who wins? Pick one!",
+ "archivo": "produccion/entrega/01_dom25-10_23h_carrera_06.mp4",
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "animación 2D / gráficos por código (simulación de física tipo pachinko)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Diseño 2D estilo juego arcade con elementos gráficos legibles y fluidos.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Fichas con rostros de jugadores alineadas",
+    "texto": "MADRID OR BARÇA? PICK ONE",
+    "sonido": "Voz TTS: Madrid or Barca?",
+    "movimiento_o_efecto": "Inicio de caída de fichas"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Caída inicial de fichas",
+    "texto": "PICK ONE NOW",
+    "sonido": "Efecto de sonido arcade",
+    "movimiento_o_efecto": "Simulación física"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Fichas rebotando en clavijas",
+    "texto": "MBAPPÉ TAKES THE LEAD!",
+    "sonido": "Voz TTS: Mbappe takes the lead!",
+    "movimiento_o_efecto": "Rebote de elementos"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Avance de Mbappe y Bellingham",
+    "texto": "MBAPPÉ TAKES THE LEAD!",
+    "sonido": "Beeps de rebote",
+    "movimiento_o_efecto": "Descenso acelerado"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Fichas dispersas en el circuito",
+    "texto": "MBAPPÉ TAKES THE LEAD!",
+    "sonido": "Música retro",
+    "movimiento_o_efecto": "Colisiones continuas"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Fichas atravesando obstáculos",
+    "texto": "MBAPPÉ TAKES THE LEAD!",
+    "sonido": "Efectos sonoros 8-bits",
+    "movimiento_o_efecto": "Movimiento descendente"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Cambio de posiciones en carrera",
+    "texto": "MBAPPÉ TAKES THE LEAD!",
+    "sonido": "Efectos de colisión",
+    "movimiento_o_efecto": "Desplazamiento en mapa"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Propone un juego interactivo inmediato al pedir al espectador elegir un bando.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 22.0,
+    "contenido": "Simulación continua de carrera de fichas con fotos de futbolistas superpuestas",
+    "encuadre": "plano general vertical",
+    "camara": "fija con seguimiento vertical",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Confeti",
+     "Texto animado",
+     "Simulación física 2D"
+    ]
+   }
+  ],
+  "cortes_por_10s": 1,
+  "sincronia_con_la_musica": "Los efectos de voz y texto coinciden con los cambios de liderazgo en la simulación.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "REAL MADRID VS BARÇA RACE",
+    "estilo": "Encabezado superior, azul y blanco, fijo"
+   },
+   {
+    "t": "0.0",
+    "texto": "MADRID OR BARÇA? PICK ONE",
+    "estilo": "Texto inferior en caja azul, animado"
+   },
+   {
+    "t": "0.2",
+    "texto": "MBAPPÉ TAKES THE LEAD!",
+    "estilo": "Texto de estado inferior, color blanco"
+   },
+   {
+    "t": "0.5",
+    "texto": "LEWANDOWSKI TAKES THE LEAD!",
+    "estilo": "Texto de estado inferior, color blanco"
+   },
+   {
+    "t": "1.6",
+    "texto": "PHOTO FINISH!",
+    "estilo": "Texto de tensión inferior, color rojo/blanco"
+   },
+   {
+    "t": "1.8",
+    "texto": "YAMAL WINS!",
+    "estilo": "Anuncio de ganador central grande, azul y amarillo"
+   }
+  ],
+  "audio": {
+   "musica": "Chiptune / Arcade 8-bits alegre, 120 BPM aprox.",
+   "efectos": [
+    "Beeps de rebote",
+    "Fanfarria de victoria",
+    "Aplausos"
+   ],
+   "voz": "Voz sintetizada TTS que narra eventos de la carrera.",
+   "momento_clave_de_audio": "Grito de victoria y fanfarria en 0:18."
+  },
+  "estructura": "Planteo (0-2s): Invitación a elegir equipo. Tensión (2-15s): Cambios de líder en la carrera. Remate (16-22s): Definición ajustada y anuncio del ganador.",
+  "giro_o_sorpresa": "Remontada de Yamal al final superando a Lewandowski.",
+  "final_y_loop": "Finaliza con celebración de confeti y pregunta final para incentivar comentarios.",
+  "emocion_que_busca": "debate",
+  "por_que_comentan": "Los usuarios defienden a su jugador o club preferido.",
+  "por_que_comparten_o_repiten": "Fanáticos lo comparten cuando gana el representante de su equipo.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de la rivalidad Real Madrid vs Barcelona",
+   "Formato interactivo estilo 'Pick One'",
+   "Desenlace rápido con suspenso al final"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Creando un motor de física 2D en Unity o Algodoo con vectores propios.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "El atractivo del reconocimiento inmediato de futbolistas famosos."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Diseñar una pista de física 2D vertical con obstáculos variados.",
+   "Asignar caras de personajes populares a cada ficha.",
+   "Añadir voz narrativa automatizada para los cambios de posición."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 6
+ }
+}

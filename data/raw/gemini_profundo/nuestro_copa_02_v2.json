@@ -1,0 +1,145 @@
+{
+ "id": "nuestro_copa_02_v2",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "sin subir",
+ "titulo": "Kane won the Ballon d'Or… but can he win THIS? 🏆",
+ "archivo": "produccion/salida/copa_02_v2/short.mp4",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "videojuego mobile 2D cenital con HUD superpuesto",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Estética limpia tipo juego casual de hipercrecimiento, colores vibrantes en verde césped y contraste negro/dorado, pero se ve netamente digital y algo repetitivo en los activos visuales.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Tablero Ballon d'Or 2026 Cup, marcador 0-0, Kane vs Vinícius",
+    "texto": "BALLON D'OR 2026 CUP",
+    "sonido": "Efecto de interfaz digital inicial y pitido de inicio",
+    "movimiento_o_efecto": "Cámara estática cenital sobre la cancha circular"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "El balón es golpeado hacia abajo",
+    "texto": "QUARTER-FINAL - MATCH 1/4",
+    "sonido": "Golpe seco de pelota",
+    "movimiento_o_efecto": "Pelota rebotando en la arena circular"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Pelota cruzando hacia la portería superior",
+    "texto": "0 - 0",
+    "sonido": "Silbido sutil de viento",
+    "movimiento_o_efecto": "Pelota acelerando hacia arriba"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Pelota rebotando en el borde superior",
+    "texto": "FIRST TO 1 GOAL",
+    "sonido": "Rebote metálico",
+    "movimiento_o_efecto": "Trayectoria curva de la pelota"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Pelota bajando por el centro",
+    "texto": "KANE WON IT... BUT CAN HE WIN THIS?",
+    "sonido": "Zumbido de tensión de juego",
+    "movimiento_o_efecto": "Pelota cruzando el círculo central"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Pelota dirigiéndose al arco de Kane",
+    "texto": "PICK YOUR WINNER NOW",
+    "sonido": "Clic electrónico",
+    "movimiento_o_efecto": "Desplazamiento rápido de la pelota"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Kane despeja con la cabeza",
+    "texto": "KANE ADVANCES",
+    "sonido": "Golpe de cabeza y estallido de gol",
+    "movimiento_o_efecto": "La pelota entra al arco inferior, marcador 1-0"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la expectativa del Ballon d'Or con formato de torneo bracket rápido de videojuego, desafiando al usuario desde el segundo uno con estrellas del fútbol mundial.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 52.0,
+    "contenido": "Partidos de eliminación directa simulados en una arena circular de fútbol 1v1",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "destellos de gol",
+     "confeti final"
+    ]
+   }
+  ],
+  "cortes_por_10s": 2,
+  "sincronia_con_la_musica": "Los goles y transiciones caen exactamente en los golpes de efectos de sonido y transiciones de texto (ej. 0.03, 0.09, 0.14, 0.18)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "BALLON D'OR 2026 CUP",
+    "estilo": "Fuente sans-serif bold, amarillo dorado con borde negro, parte superior central, estática"
+   },
+   {
+    "t": "0.0",
+    "texto": "KANE VS VINÍCIUS",
+    "estilo": "Fuente blanca sobre fondo negro, avatares circulares"
+   },
+   {
+    "t": "0.0",
+    "texto": "FIRST TO 1 GOAL",
+    "estilo": "Fuente blanca, parte inferior, mayúsculas"
+   },
+   {
+    "t": "0.03",
+    "texto": "GOAL! KANE",
+    "estilo": "Texto gigante verde brillante con contorno blanco y destellos"
+   },
+   {
+    "t": "0.49",
+    "texto": "CHAMPION KANE",
+    "estilo": "Tipografía dorada grande con confeti cayendo"
+   }
+  ],
+  "audio": {
+   "musica": "Loop de música electrónica de arcade móvil, 120 bpm, alegre y competitivo",
+   "efectos": [
+    "Pitidos de interfaz",
+    "golpes de pelota estilo pinball",
+    "gritos de gol estriados",
+    "fanfarria final de victoria"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "El estallido de GOAL y fanfarria final en el segundo 0:49"
+  },
+  "estructura": "planteo → tensión → remate: Presentación de la copa de cuartos de final (0-4s) → Partidos eliminatorios de infarto con remontadas (4-45s) → Gran final y coronación de Kane (45-52s)",
+  "giro_o_sorpresa": "En la final, Kane empieza perdiendo 1-2 contra Yamal y remonta dramáticamente a 3-2 en los últimos segundos.",
+  "final_y_loop": "Termina con la coronación de Harry Kane como campeón y texto interactivo 'DID THE RIGHT MAN WIN? COMMENT YOUR PICK', invitando al loop indirecto por debate.",
+  "emocion_que_busca": "debate y asombro",
+  "por_que_comentan": "Porque pone a Kane, Mbappé, Yamal y Messi en un torneo arcade donde el desempeño genera discusiones sobre quién es el verdadero mejor jugador.",
+  "por_que_comparten_origen": "Porque el formato de torneo bracket con simulación arcade es altamente adictivo y fácil de debatir con amigos en grupos de fútbol.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas de élite actual (Kane, Vinícius, Mbappé, Haaland, Yamal, Messi).",
+   "Formato visual de torneo bracket ('¿Quién gana la copa?').",
+   "Partidas cerradas con remontadas agónicas que generan tensión constante."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puedes": true,
+   "como": "Creando un simulador simple en Unity/Godot o usando gráficos vectoriales animados en After Effects con avatares de futbolistas.",
+   "dificultad_1a10": 5,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho inmediato de los rostros reales de los jugadores de fútbol más famosos del mundo."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Diseñar un bracket de torneo atractivo con 8 futbolistas de máxima actualidad y tendencia.",
+   "Paso 2: Crear una mecánica visual estilo minijuego arcade circular donde los avatares rebotan la pelota.",
+   "Paso 3: Sincronizar cada gol con efectos de sonido contundentes y carteles de 'GOAL!' impactantes.",
+   "Paso 4: Añadir una final dramática con remontada en el último segundo para retener la audiencia hasta el final.",
+   "Paso 5: Cerrar con una pregunta polémica en comentarios para disparar el engagement."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

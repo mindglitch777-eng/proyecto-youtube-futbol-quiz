@@ -1,0 +1,143 @@
+{
+ "id": "-ytjuUk2he4",
+ "canal": "Neroo",
+ "vistas": 2551322,
+ "titulo": "C.Ronaldo Jr x Ronaldo Skills 🤣😑",
+ "video_del_hit": 1,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "video generado con IA (estilo motor gráfico de videojuego de fútbol hiperrealista tipo EA Sports FC o Unreal Engine)",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Texturas de pasto y modelos 3D muy logrados, iluminación de estadio nocturno impecable. Se ve moderno y de altísima gama, aunque los rostros de los jugadores en las cartas y las animaciones exageradas delatan que es IA/motor gráfico.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Kroos con camiseta violeta y número 8 frente a una pelota tapada de nieve. Arriba: 'RONALDO'. Carta FUT de 118 ST de C. Ronaldo.",
+    "texto": "RONALDO / KROOS 8",
+    "sonido": "Beat electrónico pesado ('toma, toma...'), bajo profundo",
+    "movimiento_o_efecto": "Cámara estática detrás del jugador apuntando al arco nevado, efecto de rotura de corazón emoji"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Kroos toma carrera para patear la pelota tapada de nieve",
+    "texto": null,
+    "sonido": "Música sigue con el beat constante",
+    "movimiento_o_efecto": "Cámara acompaña el inicio de la carrera"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Kroos patea violentamente la pelota de nieve",
+    "texto": null,
+    "sonido": "Golpe seco de pelota y música intensa",
+    "movimiento_o_efector": "Cámara hace paneo rápido siguiendo la acción"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "La pelota sale disparada y explota la nieve en el aire",
+    "texto": null,
+    "sonido": "Efecto de estallido / thump",
+    "movimiento_o_efecto": "Cámara lenta al momento del impacto"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Cambio de escena instantáneo: aparece Ronaldo Jr con camiseta negra y short azul frente a la misma pelota de nieve",
+    "texto": "RONALDO-JRS / Carta FUT 86 ST",
+    "sonido": "Transición de beat, cambio de pitch en la voz",
+    "movimiento_o_efecto": "Corte seco al nuevo personaje con animación de corazón vendado"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Ronaldo Jr toma carrera para patear",
+    "texto": null,
+    "sonido": "Beat continúa con fuerza",
+    "movimiento_o_efecto": "Cámara en movimiento lateral"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Ronaldo Jr falla estrepitosamente o resbala al intentar patear la pelota de nieve",
+    "texto": null,
+    "sonido": "Sonido de caída y música en pico",
+    "movimiento_o_efecto": "Cámara lenta y temblor de pantalla (shake)"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina futbolistas famosos en situaciones insólitas (patear nieve), estética visual de Ultimate Team de FIFA/EA FC que atrapa gamers, y un inicio inmediato con música enérgica y meme visual.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.9,
+    "contenido": "Kroos patea una pelota cubierta de nieve frente al arco",
+    "encuadre": "medio",
+    "camara": "fija con zoom in en el impacto",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "emoji de corazón roto animado",
+     "interfaz de carta FUT de Cristiano Ronaldo 118",
+     "marcador superior con nombre"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 4.5,
+    "contenido": "Ronaldo Jr corre hacia la misma pelota de nieve y se cae/falla",
+    "encuadre": "medio",
+    "camara": "cámara lenta en el impacto",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "emoji de corazón vendado animado",
+     "interfaz de carta FUT de Ronaldo Jr 86",
+     "marcador superior con nombre",
+     "flash de pantalla en la caída"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "Sí, el cambio de personaje y la caída de Ronaldo Jr (en 2.0s y 3.8s) caen exactos en los golpes fuertes (beats) del tema phonk/electrónico.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "RONALDO / KROOS 8",
+    "estilo": "Fuente sans-serif gruesa, letras blancas con fondo negro/verde, estilo HUD de videojuego deportivo en la esquina superior izquierda"
+   },
+   {
+    "t": "2.0",
+    "texto": "RONALDO-JR / 86 ST",
+    "estilo": "Idem anterior, cambiando a la carta de Ronaldo Jr"
+   }
+  ],
+  "audio": {
+   "musica": "Phonk electrónico pesado con vocal repetitiva ('toma, toma'), aprox 130 bpm, tendencia en edits de fútbol",
+   "efectos": [
+    "golpe seco de pelota",
+    "estallido de nieve",
+    "sonido de caída/resbalón"
+   ],
+   "voz": "no hay voz hablada, sólo el vocal sample de la canción",
+   "momento_clave_de_audio": "El drop del beat coincide con el segundo 0.0 y el golpe del segundo 2.0"
+  },
+  "estructura": "planteo → tensión → remate: 0.0-1.9s Kroos prepara y patea la nieve; 2.0-4.5s Ronaldo Jr intenta hacer lo mismo pero termina cayendo ridículamente.",
+  "giro_o_sorpresa": "El cambio abrupto de Kroos a Ronaldo Jr en el segundo 2.0 y el fail cómico de este último al intentar patear la nieve.",
+  "final_y_loop": "Termina con la caída de Ronaldo Jr en el suelo y corta de golpe para reiniciar el loop exactamente cuando Kroos empieza el movimiento.",
+  "emocion_que_busca": "risa / asombro / entretenimiento rápido",
+  "por_que_comentan": "Discute sobre si Ronaldo Jr juega mal, comparaciones cómicas entre padre e hijo, o críticas a los stats inflados de las cartas de Ultimate Team.",
+  "por_que_comparten_o_repiten": "Es corto (menos de 5 segundos), hiper dinámico, humorístico y usa elementos reconocibles de EA Sports FC que los gamers de fútbol mandan a sus amigos.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso perfecto de la estética de cartas Ultimate Team (FUT) que atrae a la comunidad gamer",
+   "Humor visual rápido y fail inesperado de Ronaldo Jr",
+   "Sincronización impecable entre los beats de la música phonk y las acciones en pantalla"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Generadores de video por IA (Midjourney/Runway/Pika o herramientas específicas de IA para fútbol) emulando motores gráficos de videojuegos, más editor de video para las cartas FUT.",
+   "dificultad_1a10": 6,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento instantáneo de las caras y cartas de Cristiano Ronaldo y su hijo, vitales para el nicho."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Generar clips cortos con IA o capturas de un motor gráfico de fútbol donde personajes famosos interactúen con objetos absurdos (pelota de nieve).",
+   "Paso 2: Superponer overlays de cartas de Ultimate Team (FUT stats) con diseño idéntico al de EA FC.",
+   "Paso 3: Solar un tema Phonk en tendencia cortando exactamente en los beats de cambio de escena.",
+   "Paso 4: Añadir emojis flotantes (corazón roto/vendado) y mantener la duración total por debajo de los 5 segundos para asegurar loop perfecto."
+  ],
+  "puntaje_produccion_1a10": 9,
+  "puntaje_idea_1a10": 9
+ }
+}

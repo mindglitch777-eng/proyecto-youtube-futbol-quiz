@@ -1,0 +1,158 @@
+{
+ "id": "nuestro_evo_01",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "~1.400",
+ "titulo": "Wait for it… 😳 Age evolution",
+ "archivo": "produccion/entrega/04_mar27-10_10h_evo_01.mp4",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (fotos reales con morfismo y envejecimiento generado por IA)",
+  "calidad_imagen_1a10": 5,
+  "por_que_esa_calidad": "Calidad aceptable aunque con distorsiones perceptibles de la IA en los rostros.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Messi 2005 Edad 18",
+    "texto": "AGE EVOLUTION 2005 - ???? / WAIT FOR IT...",
+    "sonido": "Beat rítmico y tick-tock",
+    "movimiento_o_efecto": "Zoom suave en el rostro de Messi"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Mantenimiento de imagen 2005",
+    "texto": "2005 AGE 18",
+    "sonido": "Beat constante",
+    "movimiento_o_efecto": "Morfismo progresivo"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Transición hacia 2008",
+    "texto": "2008 AGE 21",
+    "sonido": "Golpe de beat",
+    "movimiento_o_efecto": "Cambio de año y envejecimiento"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Rostro 2008",
+    "texto": "2008 AGE 21",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Zoom continuo"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Transición hacia 2011",
+    "texto": "2011 AGE 24",
+    "sonido": "Golpe de beat",
+    "movimiento_o_efecto": "Transición de imagen"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Rostro 2011",
+    "texto": "2011 AGE 24",
+    "sonido": "Beat constante",
+    "movimiento_o_efecto": "Efecto de envejecimiento"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Transición a 2012",
+    "texto": "2012 AGE 25",
+    "sonido": "Golpe de beat",
+    "movimiento_o_efecto": "Cambio rápido"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Usa la figura icónica de Messi y la promesa 'Wait for it' con evolución de edad.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.0,
+    "contenido": "Messi en 2005 (18 años)",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Morfismo por IA"
+    ]
+   },
+   {
+    "desde": 1.0,
+    "hasta": 2.0,
+    "contenido": "Messi en 2008 (21 años)",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Morfismo por IA"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 9.0,
+    "contenido": "Evolución de Messi de 2011 a 2017",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Filtros de envejecimiento"
+    ]
+   },
+   {
+    "desde": 9.0,
+    "hasta": 16.0,
+    "contenido": "Evolución a años futuros 2021-2026",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Generación de IA futura"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Los cambios de año están sincronizados con los golpes del ritmo rítmico.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "AGE EVOLUTION 2005 - ???? / WAIT FOR IT...",
+    "estilo": "Fuente Sans-serif amarilla y blanca, centrado superior e inferior"
+   },
+   {
+    "t": "14.0",
+    "texto": "LIONEL MESSI / WHEN DID YOU RECOGNIZE HIM?",
+    "estilo": "Texto verde y blanco centrado abajo"
+   }
+  ],
+  "audio": {
+   "musica": "Pista rítmica electrónica a 120 BPM aproximadamente",
+   "efectos": [
+    "Sonido de tick de reloj",
+    "Impacto bajo por cambio"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "Incremento de intensidad al llegar a los años futuros (segundo 10)"
+  },
+  "estructura": "Planteo (0-3s): Presentación de Messi joven. Tensión (3-10s): Progreso de años reales. Remate (10-16s): Revelación de aspecto futuro hipotético.",
+  "giro_o_sorpresa": "La proyección de su apariencia en los años futuros 2025 y 2026.",
+  "final_y_loop": "Finaliza con una pregunta directa para generar comentarios; reinicia de forma fluida.",
+  "emocion_que_busca": "nostalgia y asombro",
+  "por_que_comentan": "Debate sobre la precisión de los años futuros o el momento exacto en que lo reconocieron.",
+  "por_que_comparten_o_repiten": "Por curiosidad sobre el cambio físico del jugador a través del tiempo.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de un atleta globalmente reconocido.",
+   "Formato popular de evolución de edad.",
+   "Llamado a la acción que incita el debate en comentarios."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Fotos públicas en combinación con herramientas de morfismo e IA de envejecimiento.",
+   "dificultad_1a10": 5,
+   "que_se_pierde_si_no_usamos_ese_material": "El reconocimiento inmediato de la celebridad."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Recopilar fotos históricas del sujeto año por año.",
+   "Paso 2: Aplicar IA de envejecimiento para proyectar años futuros.",
+   "Paso 3: Sincronizar las transiciones de imagen con una pista rítmica pegajosa."
+  ],
+  "puntaje_produccion_1a10": 5,
+  "puntaje_idea_1a10": 6
+ }
+}

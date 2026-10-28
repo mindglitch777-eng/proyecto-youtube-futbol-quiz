@@ -1,0 +1,138 @@
+{
+ "id": "nuestro_ring_01",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "sin subir",
+ "titulo": "Messi vs Ronaldo: who escapes the rings? 😱",
+ "archivo": "produccion/salida/ring_01/short.mp4",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "videojuego / gráficos por código (simulación arcade minimalista 2D)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Estética limpia tipo arcade móvil moderno, fondos oscuros contrastados con anillos de neón brillantes y avatares circulares nítidos, se ve prolijo y atractivo visualmente sin ser hiperrealista.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "MESSI vs RONALDO, 1-0, 4 RINGS LEFT",
+    "texto": "MESSI vs RONALDO WHO BREAKS MORE RINGS?",
+    "sonido": "música arcade rápida + pitido inicial",
+    "movimiento_o_efecto": "avatares rebotando dentro de círculos concéntricos de neón"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "1-0",
+    "texto": "",
+    "sonido": "efecto de rebote",
+    "movimiento_o_efecto": "avatar de Messi sube hacia el anillo superior"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "1-0",
+    "texto": "",
+    "sonido": "efecto de rebote",
+    "movimiento_o_efecto": "avatar de Ronaldo choca y rompe anillo"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "1-1",
+    "texto": "",
+    "sonido": "beep de puntuación",
+    "movimiento_o_efecto": "marcador cambia a 1-1"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "1-1, 3 RINGS LEFT",
+    "texto": "",
+    "sonido": "efecto arcade de rebote",
+    "movimiento_o_efecto": "avatares rebotando furiosos en círculos menores"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "1-1",
+    "texto": "",
+    "sonido": "rebote rápido",
+    "movimiento_o_efecto": "Ronaldo toma ventaja rompiendo otro anillo"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "1-2, 2 RINGS LEFT",
+    "texto": "",
+    "sonido": "marcador actualizándose",
+    "movimiento_o_efecto": "marcador pasa a 1 - 2"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la rivalidad eterna Messi vs Ronaldo con una simulación visual inmediata, dinámica y competitiva de tipo 'arcade' que genera curiosidad instantánea por saber quién gana.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 22.0,
+    "contenido": "Simulación continua de rebotes de Messi y Ronaldo rompiendo anillos concéntricos hasta definir un ganador.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "destellos de partículas al romper anillos",
+     "confeti final"
+    ]
+   }
+  ],
+  "cortes_por_10s": 0,
+  "sincronia_con_la_musica": "Los efectos de sonido de ruptura de anillos y cambios de marcador están perfectamente sincronizados con el beat electrónico de fondo en cada segundo (ej. segundos 0.7, 1.7, 7.0, 18.0).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "MESSI vs RONALDO WHO BREAKS MORE RINGS?",
+    "estilo": "fuente sans-serif bold, blanco y amarillo, parte superior, estático"
+   },
+   {
+    "t": "0.0",
+    "texto": "1 - 0",
+    "estilo": "fuente arcade grande, blanco, centrado arriba"
+   },
+   {
+    "t": "0.0",
+    "texto": "4 RINGS LEFT - PICK ONE BEFORE IT ENDS",
+    "estilo": "fuente sans-serif bold, blanco y amarillo, parte inferior"
+   },
+   {
+    "t": "20.0",
+    "texto": "WINNER MESSI MESSI 3 - RONALDO 2 THE GOAT DEBATE IS OVER?",
+    "estilo": "fuente bold grande, blanco y amarillo sobre fondo negro con confeti"
+   }
+  ],
+  "audio": {
+   "musica": "electrónica chiptune / arcade rápido, aprox 140 bpm, estilo típico de minijuegos virales de TikTok",
+   "efectos": [
+    "beeps de puntos",
+    "sonido de cristal/metal rompiéndose al chocar con anillos",
+    "fanfarria final de victoria"
+   ],
+   "voz": "ninguna",
+   "momento_clave_de_audio": "explosión de confeti y fanfarria final en el segundo 20.0"
+  },
+  "estructura": "planteo → tensión → remate: 0s-3s presenta el duelo y reglas; 3s-18s tensión de rebotes y marcador cambiante; 18s-22s victoria de Messi y pregunta picante final.",
+  "giro_o_sorpresa": "Ronaldo empieza ganando (1-2), pero Messi remonta en el último anillo ('LAST RING!') para ganar 3-2 en el último segundo.",
+  "final_y_loop": "Termina con la coronación de Messi y la placa de ganador; no hace loop perfecto ya que cierra con pantalla final de victoria.",
+  "emoncion_que_busca": "debate / asombro / bronca (para fans de Ronaldo) o alegría (para fans de Messi)",
+  "por_que_comentan": "Dispara el debate eterno del GOAT entre fans acérrimos de Messi y Cristiano Ronaldo discutiendo quién es mejor.",
+  "por_que_comparten_o_repiten": "Porque los fans quieren enviárselo a sus amigos rivales para demostrar que su ídolo ganó o para revivir la discusión futbolera.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de la rivalidad más grande del fútbol mundial (Messi vs Ronaldo)",
+   "Formato de simulación arcade altamente adictivo y visualmente satisfactorio",
+   "Remontada dramática en el último segundo que genera fuerte interacción"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Programación en Python/Processing (Pygame) o scripts de animación 2D en After Effects",
+   "dificultad_1a10": 6,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho exacto de los rostros de los futbolistas y la tracción del algoritmo con sus nombres."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Diseñar una interfaz minimalista oscura con círculos concéntricos animados.",
+   "Paso 2: Programar o simular físicas de rebote para dos avatares circulares con las caras de Messi y Ronaldo.",
+   "Paso 3: Sincronizar efectos de sonido arcade de ruptura y conteo de puntos en cada impacto.",
+   "Paso 4: Agregar un marcador en tiempo real y un cierre épico con confeti y placa de ganador."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

@@ -1,0 +1,123 @@
+{
+ "id": "nuestro_prime_01",
+ "canal": "Futbol Edition (nuestro)",
+ "vistas": "~1.400",
+ "titulo": "BARCELONA 2015 THEN vs NOW 😳",
+ "archivo": "produccion/entrega/08_jue29-10_10h_prime_01.mp4",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "fotos con movimiento / IA o efecto morphing",
+  "calidad_imagen_1a10": 5,
+  "por_que_esa_calidad": "Las imágenes de los jugadores son fotos estáticas modificadas con efectos digitales que envejecen o rejuvenecen los rostros, notándose a veces deformaciones típicas de IA o filtros de transformación.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "BARCELONA 2015 THEN VS NOW 2015 TER STEGEN 1/8",
+    "texto": "BARCELONA 2015 THEN VS NOW",
+    "sonido": "pop de interfaz / sonido juguetón",
+    "movimiento_o_efecto": "corte seco a la foto de Ter Stegen"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "ter stegen joven",
+    "texto": null,
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de año a 2023"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "ter stegen mayor",
+    "texto": null,
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de foto/año"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "piqué",
+    "texto": null,
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de jugador"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "piqué 2017",
+    "texto": null,
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de año"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "piqué 2026",
+    "texto": null,
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de año y foto comiendo"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "mascherano",
+    "texto": null,
+    "sonido": "pop",
+    "movimiento_o_efecto": "cambio de jugador"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina nostalgia del Barcelona dorado de 2015 con el morbo visual de ver cómo envejecieron o cambiaron las estrellas, con un ritmo ultra rápido de cortes musicales.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 23.0,
+    "contenido": "Secuencia de fotos de jugadores del Barcelona comparando el antes y el después con años ficticios o reales.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "cambio rápido de fotos",
+     "efectos de sonido pop en cada corte"
+    ]
+   }
+  ],
+  "cortes_por_10s": 15,
+  "sincronia_con_la_musica": "Sí, cada corte de imagen y cambio de texto está perfectamente sincronizado con el efecto de sonido tipo 'pop' que marca el ritmo en cada segundo.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "BARCELONA 2015 THEN VS NOW",
+    "estilo": "fuente sans-serif bold, amarillo y blanco, borde negro, parte superior, fijo con subtítulo inferior dinámico"
+   }
+  ],
+  "audio": {
+   "musica": "efectos de sonido de interfaz repetitivos tipo pop/click marcando el ritmo",
+   "efectos": [
+    "pop",
+    "sonido de burbuja o click electrónico"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "El sonido constante de pop cada 0.5 segundos que genera adicción visual y auditiva"
+  },
+  "estructura": "planteo (Ter Stegen en 2015 vs 2023) → tensión (Piqué, Mascherano, Busquets, Iniesta, Suárez, Neymar pasando rápidamente) → remate (Messi al final y pregunta interactiva)",
+  "giro_o_sorpresa": "La aparición de fotos con años futuros (ej. 2026) y la evolución graciosa o extraña generada por IA en algunos jugadores.",
+  "final_y_loop": "Termina con la pregunta 'WHO AGED THE BEST?' sobre Messi, invitando a comentar y reiniciar el short.",
+  "emocion_que_busca": "nostalgia / debate / asombro",
+  "por_que_comentan": "Para discutir cuál jugador envejeció peor o mejor, y debatir sobre las fotos editadas/IA de los años futuros (2026).",
+  "por_que_comparten_o_repiten": "Por la velocidad vertiginosa del contenido y la curiosidad por ver cómo cambiaron todas las leyendas del Barcelona.",
+  "tres_razones_por_las_que_exploto": [
+   "Nostalgia pura del mejor Barcelona de la historia (2015).",
+   "Ritmo frenético con cortes milimétricos al beat.",
+   "Efecto interactivo final ('Who aged the best?') que dispara comentarios masivos."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usando fotos de archivo públicas de futbolistas y aplicando filtros de envejecimiento o herramientas de IA (FaceApp / Midjourney / Photoshop).",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento inmediato de las caras de las leyendas del Barcelona."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Seleccionar 8 jugadores icónicos de un equipo histórico en un año clave (ej. Barcelona 2015).",
+   "Paso 2: Conseguir fotos de su etapa en ese año y fotos actuales o proyectadas (con IA).",
+   "Paso 3: Montar el video en un formato vertical con marco superior e inferior fijo para títulos.",
+   "Paso 4: Sincronizar cada cambio de foto con un efecto de sonido 'pop' exacto cada medio segundo.",
+   "Paso 5: Cerrar con una pregunta picante o de debate en el último frame para forzar comentarios."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}
