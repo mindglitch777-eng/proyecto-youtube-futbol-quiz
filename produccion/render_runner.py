@@ -265,22 +265,47 @@ def vine_boom():
     return ((s + clic) * 0.8).astype(np.float32)
 
 
+SFX = ROOT / "assets" / "sonidos_meme"
+
+
+def sfx(nombre, desde=0.0, hasta=None, vol=1.0):
+    """Sonido de meme (bajado de myinstants por sonidos_meme.py), decodificado a mono 44,1 kHz y normalizado."""
+    cmd = ["ffmpeg", "-loglevel", "error", "-ss", str(desde)] + (["-t", str(hasta - desde)] if hasta else []) + \
+          ["-i", str(SFX / f"{nombre}.mp3"), "-ac", "1", "-ar", str(M.SR), "-f", "f32le", "-"]
+    x = np.frombuffer(subprocess.run(cmd, capture_output=True, check=True).stdout, np.float32).copy()
+    x /= max(1e-6, np.abs(x).max())
+    n = min(len(x), int(0.03 * M.SR)); x[-n:] *= np.linspace(1, 0, n)                     # sin clic al cortar
+    return x * vol
+
+
 def audio(cfg):
+    """Sonidos según la lógica de cada puerta: gana = caja registradora (+ airhorn y SIUUU si es HUGE),
+    pierde = trombón de fallo (+ vine boom y bruh / emotional damage si es SINKING). Meta: SIUUU con estadio."""
     dur = cfg["duracion"]; mez = M.Mezcla(dur)
-    for p in cfg["puertas"]:
+    siu, siu2 = sfx("siuuu_1", vol=0.85), sfx("siuuu_2", vol=0.85)
+    caja, airhorn, wow = sfx("caja_registradora_0", 0, 1.2, 0.55), sfx("airhorn_1", vol=0.55), sfx("wow_0", 0, 1.6, 0.6)
+    fallo, boom, bruh, dano = sfx("fail_0", vol=0.6), sfx("vine_boom_0", vol=0.9), sfx("bruh_0", vol=0.8), sfx("emotional_damage_0", vol=0.8)
+    mez.add(0.05, siu)
+    malos = 0
+    for k, p in enumerate(cfg["puertas"]):
+        t = p["t"]
+        mez.add(t - 0.15, M.whoosh(0.3), 0.3)
         if p["efecto"] == "sube":
-            mez.add(p["t"], kaching()); mez.add(p["t"] + 0.05, monedas(7 if p["grito"] else 4, int(p["t"] * 10)))
+            mez.add(t, caja); mez.add(t + 0.05, monedas(7 if p["grito"] else 4, int(t * 10)), 0.8)
             if p["grito"]:
-                mez.add(p["t"] + 0.08, bocina_mlg(), 0.9)
+                mez.add(t + 0.1, airhorn); mez.add(t + 0.45, siu2 if k % 2 else siu)
+                if k == len(cfg["puertas"]) - 4:
+                    mez.add(t + 1.2, wow)
         else:
-            mez.add(p["t"], trombon_triste(), 1.0)
+            mez.add(t, fallo)
             if p["grito"]:
-                mez.add(p["t"], vine_boom(), 0.9)
-        mez.add(p["t"] - 0.15, M.whoosh(0.3), 0.35)
-    mez.add(cfg["tMeta"], M.boom(), 0.6); mez.add(cfg["tMeta"], M.tribuna(2.6), 1.0); mez.add(cfg["tMeta"] + 0.1, bocina_mlg(), 0.9); mez.add(cfg["tMeta"] + 0.05, monedas(14, 9))
+                mez.add(t, boom); mez.add(t + 0.35, dano if malos % 2 else bruh); malos += 1
+    tm = cfg["tMeta"]
+    mez.add(tm, M.boom(), 0.5); mez.add(tm, M.tribuna(2.6), 0.9); mez.add(tm + 0.05, monedas(14, 9))
+    mez.add(tm + 0.1, airhorn); mez.add(tm + 0.3, sfx("siuuu_0", 4.2, None, 1.0))
     musica = musica_juego(dur)[: int(dur * M.SR)]
     solo = mez.x[: int(dur * M.SR)]
-    return {"short.mp4": np.tanh((solo + musica * 0.85) * 1.1) * 0.9, "short_sin_musica.mp4": np.tanh(solo * 1.1) * 0.8}
+    return {"short.mp4": np.tanh((solo + musica * 0.6) * 1.05) * 0.92, "short_sin_musica.mp4": np.tanh(solo * 1.05) * 0.85}
 
 
 def main(guion, muestra=None):
