@@ -1,0 +1,124 @@
+{
+ "id": "qGxj3RPYcUc",
+ "canal": "yasudsh",
+ "vistas": 7421277,
+ "titulo": "Su padre perdió la vida delante de él pero gracias al fútbol su vida cambió 😱🇨🇴 #historiasreales",
+ "video_del_hit": 5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (video vertical split-screen: izquierda creador actuando con croma/fotos/videos de archivo, derecha videos ASMR de slime, kinetic sand y experimentos químicos)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La mitad izquierda es un video casero de baja resolución con croma verde de fondo mal recortado. La mitad derecha es contenido ASMR reciclado de internet en alta calidad HD.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Creador mirando a cámara en primer plano con fondo de favela",
+    "texto": "NIÑO",
+    "sonido": "Voz en off grave narrando historia dramática + música melancólica de piano",
+    "movimiento_o_efecto": "Corte rápido al segundo 0.5"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Persona encapuchada gesticulando violencia",
+    "texto": "EPOCA",
+    "sonido": "Continuación de voz y música",
+    "movimiento_o_efecto": "Zoom in brusco"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Creador sorprendido",
+    "texto": "VIOLENCIA",
+    "sonido": "Efecto de sonido sordo (whoosh)",
+    "movimiento_o_efecto": "Corte dinámico"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Puerta amarilla",
+    "texto": "PADRES",
+    "sonido": "Voz narrando",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Creador gesticulando",
+    "texto": "DICEN",
+    "sonido": "Narración continua",
+    "movimiento_o_efecto": "Corte"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Manos interactuando con slime",
+    "texto": "ESCUCHAS",
+    "sonido": "Sonido ASMR crujiente",
+    "movimiento_o_efecto": "Split screen activo"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Creador escondido bajo la cama",
+    "texto": "ESCONDAS",
+    "sonido": "Narración dramática",
+    "movimiento_o_efecto": "Corte"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina una narrativa trágica en primera persona con la técnica de pantalla dividida con ASMR visual y táctil, un formato que secuestra la atención visualmente.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 60.0,
+    "contenido": "Relato biográfico de Juan Guillermo Cuadrado mezclado con videos ASMR en la pantalla derecha",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "split screen",
+     "zoom in dinámico",
+     "texto subtitulado palabra por palabra"
+    ]
+   }
+  ],
+  "cortes_por_10s": 22,
+  "sincronia_con_la_musica": "Los cortes de escena y las palabras en pantalla están perfectamente sincronizados con el ritmo de la música y la voz en off, cambiando casi cada segundo.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "NIÑO / ÉPOCA / VIOLENCIA / PADRES...",
+    "estilo": "Fuente Sans-Serif gruesa, color blanco con borde negro, centrado, animación de aparición rápida palabra por palabra (estilo Imanol Landeta/Alex Silva)"
+   }
+  ],
+  "audio": {
+   "musica": "Piano melancólico y dramático, tempo medio-lento, no es un tema comercial viral específico sino instrumental de tensión emocional",
+   "efectos": [
+    "Whooshes en cada corte",
+    "Sonidos ASMR continuos de slime, fuego y líquidos en la pantalla derecha"
+   ],
+   "voz": "Voz en off masculina con acento español, tono grave, narrativo y emotivo",
+   "momento_clave_de_audio": "El giro final al revelar que es la historia de Juan Guillermo Cuadrado en el segundo 56",
+   "estructura": "planteo (infancia difícil en Colombia, 0-17s) → tensión (peregrinaje por equipos y pérdida del padre, 18-50s) → remate (revelación de la identidad del jugador y moraleja, 51-60s)",
+   "giro_o_sorpresa": "No se revela quién es el protagonista hasta el último segundo (Juan Guillermo Cuadrado)",
+   "final_y_loop": "Termina con la foto del jugador sonriendo; el formato invita a ver el inicio de nuevo para conectar los datos",
+   "emocion_que_busca": "nostalgia / asombro / admiración",
+   "por_que_comentan": "Comentan sobre la superación personal del jugador, la dureza de su historia y elogian su resiliencia",
+   "por_que_comparten_o_repiten": "Por la curiosidad de adivinar de qué futbolista famoso se trata a lo largo del relato y por la hipnosis visual del ASMR",
+   "tres_razones_por_las_que_exploto": [
+    "Uso magistral del split-screen con ASMR para retener la atención visual",
+    "Narrativa en primera persona muy emotiva y de superación en formato misterio",
+    "Identificación de un ídolo del fútbol mundial con un plot twist final impactante"
+   ],
+   "replicable_sin_material_ajeno": {
+    "se_puede": true,
+    "como": "Usar IA generativa de voz, banco de videos de archivo gratuitos para la izquierda y videos ASMR stock para la derecha",
+    "dificultad_1a10": 4,
+    "que_se_pierde_si_no_usamos_ese_material": "La empatía inmediata con el creador actuando y el gancho visual exacto del ASMR viral"
+   },
+   "receta_para_hacerlo_igual_o_mejor": [
+    "Paso 1: Elegir una historia real y trágica de superación de un deportista famoso sin nombrarlo hasta el final",
+    "Paso 2: Dividir la pantalla en dos: a la izquierda tu actuación o videos de archivo dramatizados, a la derecha contenido ASMR altamente satisfactorio",
+    "Paso 3: Editar subtítulos palabra por palabra con gran tamaño y colores contrastantes",
+    "Paso 4: Añadir una voz en off pausada y dramática con música de piano envolvente",
+    "Paso 5: Revelar al personaje famoso en los últimos 3 segundos para generar sorpresa y comentarios masivos"
+   ],
+   "puntaje_produccion_1a10": 7,
+   "puntaje_idea_1a10": 9
+  }
+ }
+}

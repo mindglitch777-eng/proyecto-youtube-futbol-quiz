@@ -1,0 +1,131 @@
+{
+ "id": "u2hZCPpgln8",
+ "canal": "3DFC",
+ "vistas": 1748246,
+ "titulo": "The Day A Random Fan Played For West Ham... and SCORED! 🤯⚒️ #football",
+ "video_del_hit": 5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: entrevistas de televisión, fotos reales de archivo e imágenes generadas con IA en estilo fotorealista",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Las fuentes de archivo son variadas (televisión de baja resolución combinada con fotos recortadas y mockups de IA), pero el montaje dinámico y los subtítulos grandes ocultan los saltos de calidad, dando un aspecto pulido tipo TikTok Story.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Harry Redknapp hablando en plató de televisión",
+    "texto": "team",
+    "sonido": "Voz de Redknapp: 'to get change to Oxford City'",
+    "movimiento_o_efecto": "Zoom in rápido y subtítulo dinámico amarillo"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Harry gesticulando",
+    "texto": "for a pre",
+    "sonido": "Voz en off continúa",
+    "movimiento_o_efecto": "Corte de encuadre"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Harry serio",
+    "texto": "I was manager",
+    "sonido": "Voz continúa",
+    "movimiento_o_efecto": "Zoom in"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Foto superpuesta de West Ham",
+    "texto": "and we started",
+    "sonido": "Voz continúa",
+    "movimiento_o_efecto": "Inserción de foto de archivo"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Harry en plató",
+    "texto": "guy next to",
+    "sonido": "Voz continúa",
+    "movimiento_o_efecto": "Corte dinámico"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Hinchas en la grada",
+    "texto": "big West Ham fan",
+    "sonido": "Voz continúa",
+    "movimiento_o_efecto": "Aparición de imagen de fan"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Harry hablando",
+    "texto": "he had hammers",
+    "sonido": "Voz continúa",
+    "movimiento_o_efecto": "Zoom in"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la cara reconocible de Harry Redknapp con una anécdota bizarra contada en primera persona y subtítulos palabra por palabra que obligan a leer.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.2,
+    "contenido": "Harry Redknapp hablando en plató",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "subtítulos dinámicos"
+    ]
+   },
+   {
+    "desde": 1.2,
+    "hasta": 3.0,
+    "contenido": "Foto antigua de West Ham y fan en la grada",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "zoom in de apoyo"
+    ]
+   }
+  ],
+  "cortes_por_10s": 9,
+  "sincronia_con_la_musica": "Los cortes de imagen coinciden con cada frase clave del orador (cada 1.5 a 2 segundos).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "team",
+    "estilo": "Sans-serif gruesa, amarilla, borde negro, centro inferior, animación pop en cada palabra"
+   }
+  ],
+  "audio": {
+   "musica": "Fondo instrumental suave de talk show / late night, bajo volumen para priorizar la voz",
+   "efectos": [
+    "whooshes sutiles en los cambios de imagen"
+   ],
+   "voz": "Harry Redknapp contando una anécdota divertida en inglés británico",
+   "momento_clave_de_audio": "Las risas del público en el segundo 29"
+  },
+  "estructura": "planteo (0-15s: el fan loco que dice que juega mejor que el delantero) → tensión (15-40s: Redknapp le da una oportunidad y le consigue botas) → remate (40-62s: entra al campo, marca un gol y resulta ser un impostor total)",
+  "giro_o_sorpresa": "El fan al que meten a jugar sin botines y con sobrepeso termina marcando un gol en un partido oficial.",
+  "final_y_loop": "Termina con el remate cómico de Redknapp sobre el delantero titular, cerrando la historia con un gag que invita a reincidir.",
+  "emocion_que_busca": "risa y asombro",
+  "por_que_comentan": "Los usuarios discuten si la historia es real o exagerada, y recuerdan anécdotas similares del fútbol inglés.",
+  "por_que_comparten_o_repiten": "Es una de las mejores historias de vestuario del fútbol contado por un personaje carismático como Redknapp.",
+  "tres_razones_por_las_que_exploto": [
+   "El carisma y expresividad de Harry Redknapp como narrador",
+   "La incredulidad del protagonista anónimo que termina jugando un partido profesional",
+   "Edición vertiginosa con fotos de archivo exactas que ilustran cada frase"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar IA de generación de voz o animaciones 3D de estilo caricatura para recrear la anécdota con subtítulos dinámicos.",
+   "dificultad_1a10": 5,
+   "que_se_pierde_si_no_usamos_ese_material": "La autenticidad y el rostro real de Harry Redknapp."
+  },
+  "receta_para_hacer_lo_igual_o_mejor": [
+   "Consseguir un audio de anécdota deportiva graciosa de 60 segundos",
+   "Editar con cortes muy rápidos cada 1.5-2 segundos apoyando visualmente cada palabra clave con fotos o recortes",
+   "Aplicar subtítulos dinámicos estilo Alex Hormozi (amarillos, centrados, resaltando palabra por palabra)",
+   "Mantener la música de fondo en un nivel muy bajo para que la atención esté en la narración"
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 10
+ }
+}

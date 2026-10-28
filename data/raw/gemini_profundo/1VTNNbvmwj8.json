@@ -1,0 +1,129 @@
+{
+ "id": "1VTNNbvmwj8",
+ "canal": "Fire Rankings",
+ "vistas": 5022772,
+ "titulo": "Ranking Messi Ronaldo Neymar Mbappe #football #cr7 #shorts",
+ "video_del_hit": 4,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (videojuego 2D/3D tipo app móvil mezclado con videos de archivo reales de futbolistas en pantalla superior)",
+  "calidad_imagen_1a10": 4,
+  "por_que_esa_calidad": "Gráficos muy simples de app móvil casual con fondos repetitivos y baja resolución en los videos recortados de archivo, se ve bastante amateur y genérico.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Pelota con cara de Messi cayendo por pista de agua",
+    "texto": "Messi",
+    "sonido": "Música electrónica acelerada y locución cantada frenética",
+    "movimiento_o_efecto": "Zoom in rápido con caída de personajes"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Se suman Mbappe y Neymar",
+    "texto": "Mbappé / Neymar",
+    "sonido": "continúa música",
+    "movimiento_o_efecto": "desplazamiento lateral"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Grupo de futbolistas agrupados",
+    "texto": "Messi / Neymar / Mbappé",
+    "sonido": "continúa música",
+    "movimiento_o_efecto": "cámara sigue el circuito"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Se suman más nombres",
+    "texto": "Ronaldo / Yamal",
+    "sonido": "beat fuerte",
+    "movimiento_o_efecto": "giro de pista"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Carrera de personajes en tobogán de agua",
+    "texto": "Mbappé / Ronaldo",
+    "sonido": "efecto de agua",
+    "movimiento_o_efecto": "paneo vertical"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Video superior muestra festejo",
+    "texto": "Neymar / Messi",
+    "sonido": "sube la intensidad",
+    "movimiento_o_efecto": "cambio de carril"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Pelotas compitiendo",
+    "texto": "Yamal",
+    "sonido": "drop musical",
+    "movimiento_o_efecto": "aceleración"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina caras icónicas de futbolistas en formato de juego visualmente hipnótico con música muy acelerada.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 24.0,
+    "contenido": "Simulación de carrera de canicas/pelotas con rostros de futbolistas en un laberinto de agua, acompañado por videos reales arriba.",
+    "encuadre": "general",
+    "camara": "seguimiento vertical con zoom dinámico",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "pantalla dividida",
+     "clips de archivo flotantes",
+     "efecto de agua"
+    ]
+   }
+  ],
+  "cortes_por_10s": 2,
+  "sincronia_con_la_musica": "Sí, los cambios de carril y aparición de nuevos elementos coinciden con los beats principales (ej. 0.3s, 2.1s).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Messi",
+    "estilo": "fuente sans-serif gruesa, blanco con borde negro, centrado sobre el personaje, animación estática"
+   },
+   {
+    "t": "14.0",
+    "texto": "Subscribe and comment your number one player",
+    "estilo": "fuente sans-serif, rojo y blanco, centrado, animación parpadeante"
+   }
+  ],
+  "audio": {
+   "musica": "EDM / Remix latino electrónico acelerado, aprox 140 bpm, estilo tendencia de shorts",
+   "efectos": [
+    "sonido de agua corriendo",
+    "efectos de transición"
+   ],
+   "voz": "voz cantada acelerada (remix de fondo)",
+   "momento_clave_de_audio": "drop musical fuerte en el segundo 0.0"
+  },
+  "estructura": "planteo → tensión → remate: arranca la carrera de futbolistas en el segundo 0 con acumulación caótica, genera tensión constante con adelantamientos y termina abruptamente invitando a comentar.",
+  "giro_o_sorpresa": "Los cambios constantes de liderazgo entre las pelotas de los futbolistas que generan incertidumbre de quién gana.",
+  "final_y_loop": "Termina con llamados a la acción superpuestos sin cierre definitivo, permitiendo un loop imperfecto si se reinicia.",
+  "emocion_que_busca": "debate / asombro",
+  "por_que_comentan": "Pide directamente que comenten su jugador número uno, generando fan wars en los comentarios.",
+  "por_que_comparten_or_repiten": "Por la curiosidad de ver qué jugador gana la carrera y la velocidad visual.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de los futbolistas más populares del mundo (Messi, Ronaldo, Mbappé, Neymar)",
+   "Formato adictivo de carrera/laberinto tipo juego móvil",
+   "Llamado a la acción agresivo que fuerza el debate en comentarios"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar simuladores de carreras 3D (Blender o Unity) con avatares genéricos o memes, agregando música trending de fondo.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento inmediato de los rostros reales de los futbolistas."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Descargar un simulador de carreras de canicas o laberinto de agua.",
+   "Paso 2: Superponer recortes circulares con las caras de los futbolistas más famosos.",
+   "Paso 3: Añadir videos cortos de archivo real de los jugadores en la parte superior para retención.",
+   "Paso 4: Montar música electrónica en tendencia con cortes rápidos en el beat.",
+   "Paso 5: Incluir texto fijo pidiendo que comenten su jugador favorito para disparar el algoritmo."
+  ],
+  "puntaje_produccion_1a10": 4,
+  "puntaje_idea_1a10": 8
+ }
+}

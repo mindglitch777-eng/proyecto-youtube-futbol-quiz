@@ -1,0 +1,235 @@
+{
+ "id": "azkkfnmpae4",
+ "canal": "SUI FC",
+ "vistas": 2421252,
+ "titulo": "Portugal vs France 😳 | Ronaldo vs Mbappé Dream Match  #ronaldo  #soccer#mbappe  #uk #england #usa",
+ "video_del_hit": 4,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (recopilación de videos reales de partidos oficiales y de archivo editados digitalmente)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La resolución es variable y baja en varios clips por ser recopilaciones de distintas fuentes de internet, con compresión visible y colores saturados en el filtro del short.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Marcador 0-0 y banderas Portugal/Francia",
+    "texto": "0-0",
+    "sonido": "Música rap melódica con autotune comienza",
+    "movimiento_o_efecto": "Primer plano de Mbappé inflando las mejillas"
+   },
+   {
+    "t": "0.5"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Marcador 0-0",
+    "texto": "0-0",
+    "sonido": "Voz cantada en árabe/melódica continúa",
+    "movimiento_o_efecto": "Ronaldo caminando triste en túnel"
+   },
+   {
+    "t": "1.5"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Marcador 0-0",
+    "texto": "0-0",
+    "sonido": "Base rítmica constante",
+    "movimiento_o_efecto": "Copa del Mundo abriéndose"
+   },
+   {
+    "t": "2.5"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Marcador 0-0",
+    "texto": "0-0",
+    "sonido": "Entrada de voz principal",
+    "movimiento_o_efecto": "Ronaldo saliendo al campo"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina dos de las máximas figuras del fútbol mundial (Ronaldo y Mbappé) en un enfrentamiento soñado con marcador en vivo, generando curiosidad inmediata sobre el resultado.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 1.1,
+    "contenido": "Mbappé serio inflando mejillas",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "marcador superior"
+    ]
+   },
+   {
+    "desde": 1.1,
+    "hasta": 3.9,
+    "contenido": "Ronaldo en el túnel",
+    "encuadre": "medio",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador superior"
+    ]
+   },
+   {
+    "desde": 3.9,
+    "hasta": 5.0,
+    "contenido": "Apertura de caja de la Copa del Mundo",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador superior"
+    ]
+   },
+   {
+    "desde": 5.0,
+    "hasta": 6.8,
+    "contenido": "Ronaldo saliendo al campo",
+    "encuadre": "medio",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador superior"
+    ]
+   },
+   {
+    "desde": 6.8,
+    "hasta": 11.5,
+    "contenido": "Gol de Mbappé",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador cambia a 0-1"
+    ]
+   },
+   {
+    "desde": 11.5,
+    "hasta": 19.0,
+    "contenido": "Celebración de Mbappé y reacción de Ronaldo",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "texto 'Mbappé scores!'"
+    ]
+   },
+   {
+    "desde": 19.0,
+    "hasta": 26.0,
+    "contenido": "Gol de Griezmann de tiro libre",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador 0-2"
+    ]
+   },
+   {
+    "desde": 26.0,
+    "hasta": 34.0,
+    "contenido": "Gol de Portugal",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador 1-2"
+    ]
+   },
+   {
+    "desde": 34.0,
+    "hasta": 44.0,
+    "contenido": "Gol de Francia (1-3)",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador 1-3"
+    ]
+   },
+   {
+    "desde": 44.0,
+    "hasta": 54.0,
+    "contenido": "Remontada de Portugal hasta 3-3",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador 2-3 y 3-3"
+    ]
+   },
+   {
+    "desde": 54.0,
+    "hasta": 59.0,
+    "contenido": "Gol final, celebración de Portugal y llanto de Mbappé, ganan 4-3",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador 4-3",
+     "cartel 'WINNERS'"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3,
+  "sincronia_con_la_musica": "Sí, los cambios de jugadas y goles caen exactamente en los golpes fuertes del beat (ej. 6.8s, 19.0s, 26.0s)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "0 - 0 (con banderas de Portugal y Francia)",
+    "estilo": "Números blancos grandes con fondo negro, banderas arriba, fijo"
+   },
+   {
+    "t": "12.0",
+    "texto": "Mbappé scores!",
+    "estilo": "Fuente bold blanca con borde negro, centro de pantalla"
+   },
+   {
+    "t": "24.0",
+    "texto": "Griezmann scores!",
+    "estilo": "Fuente bold blanca con borde negro, centro de pantalla"
+   },
+   {
+    "t": "34.0",
+    "texto": "SUBSCRIBE!",
+    "estilo": "Caja roja de YouTube con texto blanco, centro de pantalla"
+   }
+  ],
+  "audio": {
+   "musica": "Remix árabe/melódico con trap beat, aprox 130 bpm, tendencia en edits de fútbol",
+   "efectos": [
+    "silbidos de árbitro",
+    "gritos de gol"
+   ],
+   "voz": "Canción con voz masculina con autotune en idioma árabe o turco",
+   "momento_clave_de_audio": "El beat drop constante en cada gol a los 6.8s, 19s, 26s"
+  },
+  "estructura": "planteo → tensión → remate: Empieza 0-0 con la tensión de las estrellas (0-12s), Francia saca ventaja 0-3 (12-43s), remontada épica de Portugal hasta el 4-3 final (44-59s)",
+  "giro_o_sorpresa": "La remontada masiva de Portugal tras ir perdiendo 0-3, terminando con la victoria 4-3 y Mbappé llorando.",
+  "final_y_loop": "Termina con la celebración de Portugal alzar la copa; no hace loop perfecto pero invita a ver de nuevo por lo épico del resultado ficticio.",
+  "emocion_que_busca": "asombro / debate / pasión futbolera",
+  "por_que_comentan": "Discute sobre si este partido existió realmente, fanatismo por Ronaldo vs Mbappé y debates sobre quién es mejor.",
+  "por_que_comparten_o_repiten": "Por la narrativa épica de remontada y el choque de dos leyendas en un partido que parece real pero es editado.",
+  "tres_razones_por_las_que_exploto": [
+   "Enfrentamiento de máxima rivalidad actual (Ronaldo vs Mbappé)",
+   "Narrativa de remontada ultra dramática (de 0-3 a 4-3)",
+   "Edición altamente sincronizada con música en tendencia"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "Se requieren los clips oficiales de partidos reales de FIFA / UEFA",
+   "dificultad_1a10": 8,
+   "que_se_pierde_si_no_usamos_ese_material": "La autenticidad y el reconocimiento inmediato de las estrellas de fútbol real."
+  },
+  "receta_para_hacer_igual_o_mejor": [
+   "Paso 1: Descargar clips de goles y reacciones de Cristiano Ronaldo y Kylian Mbappé.",
+   "Paso 2: Montar un marcador superior editable que vaya cambiando en tiempo real.",
+   "Paso 3: Sincronizar cada gol y cambio de marcador con los drops de una canción trap/arab remix en tendencia.",
+   "Paso 4: Crear una narrativa de remontada imposible (ej. empezar perdiendo y ganar al final) para retener la audiencia hasta el último segundo."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

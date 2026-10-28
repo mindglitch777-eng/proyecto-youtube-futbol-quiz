@@ -1,0 +1,178 @@
+{
+ "id": "s22zvM44094",
+ "canal": "RankTurtle",
+ "vistas": 1635826,
+ "titulo": "Ranking Funniest Haaland Memes 😭⚽️",
+ "video_del_hit": 5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla de videos virales de TikTok/Instagram reales con filtros de IA superpuestos (filtro de cara de Haaland)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "La calidad de imagen varía según cada meme recopilado, con resoluciones dispares de celular y compresión típica de TikTok, pero unificado por el filtro facial de Haaland y los subtítulos.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Chica rubia imitando la caminata de Haaland",
+    "texto": "Ranking Funniest Haaland Memes",
+    "sonido": "Voz en off hablando en noruego/inglés y arranque de canción viral",
+    "movimiento_o_efecto": "Corte rápido de caminata"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Chica caminando hacia la cámara",
+    "texto": "Ranking Funniest Haaland Memes",
+    "sonido": "Música pop enérgico subiendo",
+    "movimiento_o_efecto": "Zoom in rápido"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Plano de la chica avanzando",
+    "texto": "Ranking Funniest Haaland Memes",
+    "sonido": "Beat de la música",
+    "movimiento_o_efecto": "Cámara en mano"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Corte a Haaland sin remera en la cancha",
+    "texto": "Ranking Funniest Haaland Memes",
+    "sonido": "Música continúa",
+    "movimiento_o_efecto": "Corte seco al meme 2"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Haaland festejando con el cuerpo técnico",
+    "texto": "Ranking Funniest Haaland Memes",
+    "sonido": "Música",
+    "movimiento_o_efecto": "Cámara lenta"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Haaland comiendo y asustándose",
+    "texto": "Ranking Funniest Haaland Memes",
+    "sonido": "Música",
+    "movimiento_o_efecto": "Corte seco"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Haaland gritando con comida en la boca",
+    "texto": "5. Haaland walk",
+    "sonido": "Grito sincronizado con el beat",
+    "movimiento_o_efector": "Efecto de salto de beat"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina una imitación muy precisa del personaje público (Erling Haaland) con un formato de ranking ascendente del 5 al 1 y música viral en alta tendencia.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 2.5,
+    "contenido": "Chica haciendo la caminata de Haaland en la calle",
+    "encuadre": "medio",
+    "camara": "cámara en mano",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zoom in"
+    ]
+   },
+   {
+    "desde": 2.5,
+    "hasta": 6.5,
+    "contenido": "Haaland sin remera festejando en cancha",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 6.5,
+    "hasta": 11.0,
+    "contenido": "Haaland comiendo y asustándose con su propio reflejo/sonido",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 11.0,
+    "hasta": 19.0,
+    "contenido": "Filtro de cara de Haaland en caras de mujeres (madre e hija)",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "filtro cara Haaland"
+    ]
+   },
+   {
+    "desde": 19.0,
+    "hasta": 24.0,
+    "contenido": "Chica con camiseta celeste imitando la carrera de Haaland",
+    "encuadre": "medio",
+    "camara": "cámara en mano",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "filtro rojo de alerta"
+    ]
+   },
+   {
+    "desde": 24.0,
+    "hasta": 36.0,
+    "contenido": "Filtro de TikTok que transforma a una chica asiática en Haaland",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "filtro facial IA"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, los cambios de clips y los memes principales caen exactos en el beat fuerte de la canción (ej: 0.03, 3.2, 11.5)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Ranking Funniest Haaland Memes",
+    "estilo": "Texto superior con fondo negro y letras amarillas/blancas estilo meme viral"
+   },
+   {
+    "t": "0.0",
+    "texto": "1. 2. 3. 4. 5. Haaland walk",
+    "estilo": "Lista numérica vertical a la izquierda con colores primarios y sombra"
+   }
+  ],
+  "audio": {
+   "musica": "Remix viral de TikTok con base electrónica acelerada y voces agudas (Chipmunk style)",
+   "efectos": [
+    "Silbidos",
+    "sonido de golpe o estruendo en los drops"
+   ],
+   "voz": "Voz en off robótica/pitch shift cantando el tema de fondo",
+   "momento_clave_de_audio": "El drop principal al segundo 3.2 que coincide con el inicio del ranking"
+  },
+  "estructura": "planteo (0-3s muestra la caminata y título del ranking) → tensión (3-20s avance regresivo del 5 al 2 con clips cada vez más bizarros) → remate (20-36s revelación del puesto número 1 con filtro hiperrealista)",
+  "giro_o_sorpresa": "El uso del filtro de cara de Haaland aplicado a personas completamente distintas generando un uncanny valley gracioso",
+  "final_y_loop": "Termina de manera abrupta en el puesto número 1 dejando la duda o invitando a ver el siguiente video, sin loop perfecto pero con alta retención",
+  "emocion_que_busca": "risa / asombro / desconcierto",
+  "por_que_comentan": "Etiquetan amigos diciendo 'sos vos' o debaten cuál meme es mejor de todos los que aparecen",
+  "por_que_comparten_o_repiten": "Por la comedia visual absurda y el reconocimiento inmediato de Haaland en situaciones cotidianas o bizarras",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de una figura pública hiper popular (Erling Haaland) en un momento de máxima viralidad",
+   "Formato de ranking ascendente que retiene al espectador hasta el número 1",
+   "Edición dinámica perfectamente sincronizada con un audio en tendencia"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usando clips propios o memes de otro deportista/famoso usando filtros de TikTok e IA",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el carisma y reconocimiento instantáneo de Haaland, bajando el CTR inicial"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Elegir una celebridad o futbolista que sea memeandable actual (ej: Bellingham, Cristiano, etc.)",
+   "Buscar los 5 mejores videos virales o edits de TikTok sobre esa persona",
+   "Montar una lista numérica vertical (5 al 1) a la izquierda de la pantalla",
+   "Sincronizar cada cambio de clip milimétricamente con el beat de una canción en tendencia",
+   "Añadir un gancho visual fuerte en los primeros 3 segundos con la imitación más graciosa"
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

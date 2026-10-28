@@ -1,0 +1,159 @@
+{
+ "id": "IYfmU2SotKU",
+ "canal": "CR7FE",
+ "vistas": 1707437,
+ "titulo": "CR7 Injury Comeback Goal 😱 | Portugal 🇵🇹 vs Argentina 🇦🇷 Full Drama#ronaldo #messi",
+ "video_del_hit": 4,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: videoclips reales de fútbol trucados/modificados con IA, superposiciones de caras, filtros y efectos de meme, combinado con fotos estáticas de reacciones",
+  "calidad_imagen_1a10": 4,
+  "por_que_esa_calidad": "Se ve barato y de baja calidad porque mezcla imágenes de archivo de distintas resoluciones, escaladas a la fuerza, con rostros intercambiados por IA que parpadean o deforman, y compresión extrema propia de re-subidas en TikTok y YouTube Shorts.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Marcador Portugal 0 - 0 Argentina, Ronaldo cae sobre Messi",
+    "texto": "0:0",
+    "sonido": "Música épica dramática en aumento + sonido metálico de impacto",
+    "movimiento_o_efecto": "Cámara lenta y zoom brusco en la caída"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Ronaldo cayendo de espaldas en pirueta",
+    "texto": "0:0",
+    "sonido": "Continúa música y coro operístico",
+    "movimiento_o_efecto": "Cámara lenta extrema"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Messi tendido en el pasto con cara de dolor",
+    "texto": "0:0",
+    "sonido": "Voz operística subiendo de tono",
+    "movimiento_o_efecto": "Zoom in rápido a la cara de Messi"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Primer plano de Ronaldo con expresión seria",
+    "texto": "0:0",
+    "sonido": "Voz operística alta",
+    "movimiento_o_efector": "Efecto de temblor de cámara"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Ambulancia ingresando a la cancha (C112)",
+    "texto": "0:0",
+    "sonido": "Sirena de ambulancia sutil mezclada con música",
+    "movimiento_o_efecto": "Paneo rápido"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Ronaldo agachado lamentándose",
+    "texto": "0:0",
+    "sonido": "Coro coral dramático",
+    "movimiento_o_efecto": "Corte seco y zoom in"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Jugadores en el mediocampo",
+    "texto": "0:0",
+    "sonido": "Beat musical marcando el segundo 3",
+    "movimiento_o_efecto": "Corte al ritmo del beat"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina una narrativa absurda e impactante (Ronaldo lesionando gravemente a Messi al inicio del partido, al punto de requerir ambulancia) con un enfrentamiento épico Portugal vs Argentina y música operística ultra dramática.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 5.0,
+    "contenido": "Lesión ficticia de Messi y llegada de ambulancia",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zoom in",
+     "temblor"
+    ]
+   },
+   {
+    "desde": 5.0,
+    "until": 15.0,
+    "contenido": "Goles ficticios y reacciones exageradas de hinchas y jugadores",
+    "encuadre": "general y primer plano",
+    "camara": "aceleración",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "cambio de marcador",
+     "filtros de color"
+    ]
+   },
+   {
+    "desde": 15.0,
+    "until": 30.0,
+    "contenido": "Secuencia de goles ida y vuelta con festejos y llantos",
+    "encuadre": "medio",
+    "camara": "cámara lenta en goles",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "marcador dinámico"
+    ]
+   },
+   {
+    "desde": 30.0,
+    "until": 58.0,
+    "contenido": "Remontada épica, empate 3-3, gol final de Portugal 4-3 y levantada de copa",
+    "encuadre": "varios",
+    "camara": "dinámica",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "efectos de brillo",
+     "ralentí en goles"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, los cambios de marcador y los goles caen exactamente en los beats fuertes del coro operístico (ej. segundos 10, 17, 30, 42, 53).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Portugal 0 : 0 Argentina",
+    "estilo": "Banderas circulares, números blancos grandes con borde negro, fondo superior centrado, fuente sans-serif gruesa"
+   }
+  ],
+  "audio": {
+   "musica": "Remix viral de TikTok con coro operístico dramático (estilo 'En mi viejo San Juan' o similar versión melancólica épica), aprox 130 bpm, alta tendencia en edits de fútbol",
+   "efectos": [
+    "silbidos",
+    "gritos de tribuna",
+    "sonido de impacto"
+   ],
+   "voz": "No hay voz en off hablada, solo la canción operística con coro potente",
+   "momento_clave_de_audio": "El drop del coro operístico en el segundo 0.0 que arranca con máxima intensidad"
+  },
+  "estructura": "planteo (0-5s: lesión grave de Messi y ambulancia) → tensión (5-30s: Argentina se pone 3-0 arriba y Ronaldo sufre) → remate (30-58s: remontada histórica de Portugal 4-3 y Cristiano levantando la copa)",
+  "giro_o_sorpresa": "Que Argentina empieza ganando 3-0 tras una supuesta lesión de Messi, pero Portugal remonta 4-3 con Cristiano Ronaldo como héroe absoluto.",
+  "final_y_loop": "Termina con Cristiano levantando la copa sonriendo. Corta abruptamente para enganchar de nuevo con el 0-0 y la caída inicial, generando loop infinito.",
+  "emocion_que_busca": "asombro / exageración / debate fanboy (Messi vs Ronaldo)",
+  "por_que_comentan": "Dispara peleas fanáticas sobre si el video es real, si es inteligencia artificial, y debates sobre quién es el GOAT (Messi o Ronaldo).",
+  "por_que_comparten_or_repiten": "Por la narrativa hiperbólica, cinematográfica y ridícula de un partido que nunca existió con giros de guion dignos de anime.",
+  "tres_razones_por_las_que_exploto": [
+   "Enfrentamiento directo y dramático entre las two biggest fanbases del fútbol (Messi y Ronaldo)",
+   "Narrativa estilo anime con remontada imposible 0-3 a 4-3",
+   "Sintonía perfecta entre los goles y el remix operístico viral"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar herramientas de IA generativa de video (Runway, Sora, Pika) para crear jugadas ficticias y montaje con clips de archivo libres de derechos",
+   "dificultad_1a10": 8,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento instantáneo de las caras reales de Messi y Ronaldo, que es lo que frena el scroll."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Descargar un audio remix operístico en tendencia en TikTok.",
+   "Paso 2: Armar una escaleta de goles falsos o exagerados (partido de 7 goles con remontada).",
+   "Paso 3: Sincronizar cada gol y cambio de marcador exactamente con los golpes fuertes del beat musical.",
+   "Paso 4: Añadir reacciones extremas de hinchas llorando y festejando para saturar emocionalmente al espectador.",
+   "Paso 5: Diseñar el final con un loop perfecto hacia el segundo 0."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 9
+ }
+}

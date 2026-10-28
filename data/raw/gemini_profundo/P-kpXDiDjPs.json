@@ -1,0 +1,124 @@
+{
+ "id": "P-kpXDiDjPs",
+ "canal": "FULYON SHORTS",
+ "vistas": 13487527,
+ "titulo": "Cristiano Ronaldo Evolution (Day 1 → Day 999999) 🤯",
+ "video_del_hit": 3,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "videojuego con fotos editadas de Cristiano Ronaldo",
+  "calidad_imagen_1a10": 4,
+  "por_que_esa_calidad": "Gráficos 3D simples de mobile game mezclados con fotos de baja resolución y memes estirados de Cristiano Ronaldo.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Rostro distorsionado de Cristiano Ronaldo",
+    "texto": "DAY 1",
+    "sonido": "Música electrónica acelerada con grito",
+    "movimiento_o_efecto": "Rollo de billetes avanzando"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Rostro distorsionado",
+    "texto": "DAY 1",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Avance rápido"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Rostro distorsionado",
+    "texto": "DAY 1",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Avance rápido"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Cristiano en traje",
+    "texto": "DAY 7",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Cambio de día"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Cristiano en traje",
+    "texto": "DAY 7",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Suma y resta de dinero"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Cristiano en traje",
+    "texto": "DAY 7",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Avance rápido"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Cristiano en traje",
+    "texto": "DAY 7",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Avance rápido"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la cara deformada de Cristiano Ronaldo en el segundo 0 con un juego de celular dinámico y progresión numérica.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 30.0,
+    "contenido": "Carrera de billetes con la evolución de Cristiano Ronaldo y operaciones matemáticas",
+    "encuadre": "general cenital/frontal",
+    "camara": "aceleración",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "pantalla dividida",
+     "contador de dinero",
+     "efectos de sonido de dinero y gritos"
+    ]
+   }
+  ],
+  "cortes_por_10s": 10,
+  "sincronia_con_la_musica": "Sí, los cambios de día y puertas de multiplicación coinciden con los beats de la música.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "DAY 1 / x5 / $36,50",
+    "estilo": "Fuente bold blanca con borde negro, centrada arriba"
+   }
+  ],
+  "audio": {
+   "musica": "Electrónica remix rápida, 140 bpm, estilo meme YouTube",
+   "efectos": [
+    "gritos",
+    "sonido de monedas",
+    "efectos de suma y resta"
+   ],
+   "voz": "no hay voz en off",
+   "momento_clave_de_audio": "grito distorsionado en cada cambio de día"
+  },
+  "estructura": "planteo → tensión → remate: Empieza en Día 1 con $36.50, atraviesa sumas y restas caóticas hasta llegar al Día 999999.",
+  "giro_o_sorpresa": "La progresión absurda de días que salta del día 7 al 30, 60, 90 y llega a 999999.",
+  "final_y_loop": "Termina de golpe en la meta del día 999999 con un rollo de billetes gigante; no hace loop perfecto.",
+  "emocion_que_busca": "risa / asombro",
+  "por_que_comentan": "Debaten sobre las fotos feas de Cristiano Ronaldo usadas en los memes y el absurdo del juego.",
+  "por_que_comparten_o_repiten": "Por la comedia absurda y rápida basada en la imagen de Cristiano Ronaldo.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de Cristiano Ronaldo como personaje central y meme",
+   "Ritmo frenético constante sin un solo segundo de silencio visual",
+   "Evolución numérica exagerada (hasta el día 999999)"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar un motor de juego 3D genérico de carreras y memes descargados de internet de cualquier famoso",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho inmediato que genera la cara de Cristiano Ronaldo"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Grabar gameplay de un juego runner de celular de acumular dinero",
+   "Superponer fotos meme de una celebridad famosa cambiando en cada nivel",
+   "Agregar números de días y operaciones matemáticas dinámicas",
+   "Sincronizar música remix con efectos de gritos y monedas"
+  ],
+  "puntaje_produccion_1a10": 4,
+  "puntaje_idea_1a10": 8
+ }
+}

@@ -1,0 +1,149 @@
+{
+ "id": "BkW4kTb4Gvs",
+ "canal": "BALLDIT",
+ "vistas": 1193831,
+ "titulo": "These Players Have HOW MANY Kids?! 😳 #football",
+ "video_del_hit": 4,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: video de entrevistas en alfombra roja (estilo One Piece) y fotos estáticas editadas en blanco y negro con números verdes superpuestos",
+  "calidad_imagen_1a10": 5,
+  "calidad_imagen_comentario": "nitidez media, iluminación variable entre la alfombra roja y las fotos retocadas, se ve un poco casero y amateur por los recortes de fotos",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "hombre con sombrero de paja sonriendo en alfombra roja con texto grande",
+    "texto": "HOW KIDS DO THESE PLAYERS HAVE",
+    "sonido": "música trap oscura y voz en off con pregunta",
+    "movimiento_o_efecto": "zoom in rápido"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "mismo plano",
+    "texto": "HOW KIDS DO THESE PLAYERS HAVE",
+    "sonido": "continúa música",
+    "movimiento_o_efecto": "ninguno"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "rostro de Lewandowski en B&W con número 2 gigante en verde",
+    "texto": "2",
+    "sonido": "beat drop fuerte con sonido de golpe",
+    "movimiento_o_efecto": "corte seco con zoom in"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "combina una pregunta de trivia sobre ídolos del fútbol mundial con un cambio visual abrupto a los 0.9 segundos y un beat drop contundente.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.9,
+    "contenido": "hombre disfrazado de Luffy preguntando en alfombra roja",
+    "encuadre": "primer plano",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "texto superpuesto"
+    ]
+   },
+   {
+    "desde": 0.9,
+    "hasta": 2.5,
+    "contenido": "foto B&W de Lewandowski sonriendo con un número 2 verde",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "número verde grande"
+    ]
+   },
+   {
+    "desde": 2.5,
+    "hasta": 4.1,
+    "contenido": "foto B&W de Lamine Yamal con número 0 verde",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "número verde grande"
+    ]
+   },
+   {
+    "desde": 4.1,
+    "hasta": 5.9,
+    "contenido": "foto B&W de Messi con número 3 verde",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "número verde grande"
+    ]
+   },
+   {
+    "desde": 5.9,
+    "hasta": 7.8,
+    "contenido": "foto B&W de Neymar con número 4 verde",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "número verde grande"
+    ]
+   },
+   {
+    "desde": 7.8,
+    "hasta": 11.2,
+    "contenido": "foto B&W de Cristiano Ronaldo con texto CR7 y luego número 5 verde",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "texto CR7",
+     "número 5 verde"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "sí, cada cambio de foto y número cae exactamente en el beat principal de la pista (0.9s, 2.5s, 4.1s, 5.9s, 7.8s)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "HOW KIDS DO THESE PLAYERS HAVE",
+    "estilo": "fuente bold sans-serif, verde y blanco, bordes negros, centrado, animación de parpadeo"
+   }
+  ],
+  "audio": {
+   "musica": "trap oscuro, 130 bpm aprox, estilo TikTok edit, no es una canción comercial oficial reconocida",
+   "efectos": [
+    "sonido de golpe o bajo profundo en cada transición de jugador"
+   ],
+   "voz": "voz en off sintética o procesada preguntando 'How many kids do these players have?'",
+   "momento_clave_de_audio": "el beat drop inicial y los golpes secos en cada aparición de número"
+  },
+  "estructura": "planteo (pregunta inicial del entrevistador) → tensión (secuencia rápida de futbolistas en blanco y negro) → remate (CR7 con 5 hijos)",
+  "giro_o_sorpresa": "la inclusión de Lamine Yamal con 0 hijos como contraste cómico frente a las leyendas con familias numerosas",
+  "final_y_loop": "termina abruptamente en el número 5 de Cristiano Ronaldo sin loop perfecto",
+  "emocion_que_busca": "asombro y debate sobre las vidas personales de los futbolistas",
+  "por_que_comentan": "genera debate sobre cuántos hijos tiene cada jugador y errores o aciertos en las estadísticas mostradas",
+  "por_que_comparten_o_repiten": "por el ritmo dinámico y la curiosidad rápida sobre las estrellas del fútbol",
+  "tres_razones_por_las_que_exploto": [
+   "uso de figuras hiperfamosas (Messi, Cristiano, Neymar)",
+   "sincronización perfecta entre los beats de la música y la aparición de los números",
+   "formato dinámico de trivia rápida que retiene la atención hasta el final"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "usando imágenes de dominio público o fotos generadas por IA de futbolistas famosos en blanco y negro",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "el gancho inicial con el entrevistador disfrazado de Luffy en alfombra roja"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Elegir un tema de trivia sobre futbolistas (goles, hijos, trofeos, salarios)",
+   "Conseguir fotos de alta calidad en blanco y negro de los jugadores clave",
+   "Montar una pista de trap con beats muy marcados",
+   "Sincronizar cada corte y número exactamente con el golpe del beat",
+   "Agregar un elemento sorpresa o gracioso en el segundo jugador (como el 0 de Yamal)"
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 8
+ }
+}

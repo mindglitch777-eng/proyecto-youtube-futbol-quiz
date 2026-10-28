@@ -1,0 +1,146 @@
+{
+ "id": "AiwFqa1FpoU",
+ "canal": "MUK FT MIND",
+ "vistas": 1276477,
+ "titulo": "WHO FOUND THE RIGHT FOOTBALLER?#messi #ronaldo #holland",
+ "video_del_hit": 5,
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "fotos con movimiento / deformadas con IA",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Las imágenes de rostros de futbolistas deformados tienen un estilo meme/filtro de baja resolución pero limpia, legible y colorida, adecuada para juegos virales de trivia.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Título FIND MBAPPÉ y 20 fotos de rostros con variaciones",
+    "texto": "FIND MBAPPÉ",
+    "sonido": "Música de misterio/cuenta regresiva, tic-tac rápido",
+    "movimiento_o_efecto": "Barra de tiempo inferior corriendo de izquierda a derecha"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Mismas fotos",
+    "texto": "",
+    "sonido": "Tic-tac",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Mismas fotos",
+    "texto": "",
+    "sonido": "Tic-tac",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Mismas fotos",
+    "texto": "",
+    "sonido": "Tic-tac",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Mismas fotos",
+    "texto": "",
+    "sonido": "Tic-tac",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Mismas fotos",
+    "texto": "",
+    "sonido": "Tic-tac",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Aparece círculo rojo en el número 18",
+    "texto": "",
+    "sonido": "Efecto de acierto / campana o éxito",
+    "movimiento_o_efecto": "Círculo rojo animado sobre la foto 18"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Plantea un reto visual inmediato de 'encuentra al jugador' con una cuenta regresiva que genera FOMO y necesidad de adivinar antes de que se acabe el tiempo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 4.5,
+    "contenido": "Juego de encontrar a Mbappé entre 20 caras deformadas",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "barra de tiempo inferior",
+     "círculo rojo final"
+    ]
+   },
+   {
+    "desde": 4.5,
+    "hasta": 8.0,
+    "contenido": "Juego de encontrar a Vinicius Jr entre 20 caras deformadas",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "barra de tiempo inferior",
+     "círculo rojo final"
+    ]
+   },
+   {
+    "desde": 8.0,
+    "hasta": 11.5,
+    "contenido": "Juego de encontrar a Salah entre 20 caras deformadas",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "barra de tiempo inferior",
+     "círculo rojo final"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3,
+  "sincronia_con_la_musica": "Los aciertos de respuesta caen exactamente cuando termina la barra de tiempo y suena el efecto de éxito (segundos 4, 7.5, etc.).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "FIND MBAPPÉ",
+    "estilo": "Fuente bold gruesa, blanco con borde negro, parte superior, estilo arcade"
+   }
+  ],
+  "audio": {
+   "musica": "Música instrumental de concurso/trivia con ritmo constante y tic-tac, estilo arcade dinámico",
+   "efectos": [
+    "Tic-tac de reloj",
+    "Efecto de sonido de campana/acierto"
+   ],
+   "voz": "No hay voz humana, solo efectos y música",
+   "momento_clave_de_audio": "El sonido de acierto al final de cada cuenta regresiva"
+  },
+  "estructura": "planteo → tensión → remate: Cada 3.5 segundos presenta una trivia distinta con cuenta regresiva visual y sonora, resolviéndose con un círculo rojo en la respuesta correcta.",
+  "giro_o_sorpresa": "Las caras están extremadamente deformadas con filtros divertidos, haciendo que todas parezcan el jugador pero solo una sea la real.",
+  "final_y_loop": "Termina el tercer bloque de trivia y corta abruptamente, invitando a volver a ver el video para adivinar más rápido o ver los demás niveles.",
+  "emocion_que_busca": "asombro / reto / diversión",
+  "por_que_comentan": "Para decir cuánto tardaron en adivinar o si fallaron en todas.",
+  "por_que_comparten_o_repiten": "Para retar a sus amigos a ver quién encuentra al jugador más rápido.",
+  "tres_razones_por_las_que_exploto": [
+   "Formato de juego interactivo que obliga a mirar fijamente la pantalla",
+   "Uso de futbolistas famosos muy queridos (Mbappé, Vinicius, Salah)",
+   "Caras graciosas deformadas que generan humor visual"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar IA de imágenes (Midjourney/DALL-E) para generar rostros deformados de famosos y armar la grilla en CapCut o Canva con un temporizador.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento inmediato de los futbolistas top, pero se puede reemplazar por otras celebridades."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Conseguir o generar 20 variantes con filtros divertidos de la cara de un famoso.",
+   "Paso 2: Armar una grilla 4x5 en un editor de video.",
+   "Paso 3: Agregar una barra de progreso inferior de 3 o 4 segundos con sonido de tic-tac.",
+   "Paso 4: Animar un círculo rojo en la respuesta correcta al finalizar el tiempo."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}
