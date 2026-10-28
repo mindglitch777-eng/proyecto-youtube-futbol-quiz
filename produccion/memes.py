@@ -69,10 +69,57 @@ def reddit(indice):
     print("reddit:", sum(1 for x in indice if x["fuente"] == "reddit"))
 
 
+def imgflip_busqueda(indice):
+    """Plantillas de memes de fútbol de la búsqueda de imgflip (Ronaldo llorando, Siuuu, el busto, Messi...)."""
+    d = OUT / "imgflip_futbol"; d.mkdir(parents=True, exist_ok=True)
+    for q in ["ronaldo", "cristiano ronaldo", "cr7", "siuuu", "messi", "neymar", "mbappe", "haaland", "football", "soccer"]:
+        for pag in (1, 2):
+            try:
+                r = S.get("https://imgflip.com/memesearch", params={"q": q, "page": pag}, timeout=40)
+            except requests.RequestException:
+                continue
+            print("imgflip busqueda", q, pag, r.status_code)
+            for href, titulo in re.findall(r'href="/meme/([^"]+)"[^>]*>(?:<[^>]+>)*\s*([^<]{2,80})<', r.text):
+                pass
+            for ruta, alt in re.findall(r'<img[^>]+src="(//i\.imgflip\.com/[^"]+)"[^>]*alt="([^"]*)"', r.text):
+                url = "https:" + ruta
+                ident = re.sub(r"\W", "", ruta.split("/")[-1].split(".")[0])
+                dst = d / f"{ident}.jpg"
+                if any(x["archivo"].endswith(dst.name) for x in indice):
+                    continue
+                if bajar(url.replace("/4/", "/"), dst) or bajar(url, dst):
+                    indice.append(dict(fuente="imgflip_futbol", archivo=str(dst.relative_to(OUT)), titulo=alt, url=url, busqueda=q))
+            time.sleep(1.5)
+    print("imgflip futbol:", sum(1 for x in indice if x["fuente"] == "imgflip_futbol"))
+
+
+def commons(indice):
+    """Fotos libres que son meme por sí mismas: el busto de Ronaldo del aeropuerto de Madeira, figuras de cera, etc."""
+    d = OUT / "commons"; d.mkdir(parents=True, exist_ok=True)
+    for q in ["Cristiano Ronaldo bust", "Busto Cristiano Ronaldo", "Cristiano Ronaldo wax figure", "Cristiano Ronaldo statue",
+              "Cristiano Ronaldo celebration", "Messi wax figure", "Cristiano Ronaldo crying", "Cristiano Ronaldo funny"]:
+        r = S.get("https://commons.wikimedia.org/w/api.php", params=dict(action="query", generator="search", gsrsearch=q, gsrnamespace=6,
+                  gsrlimit=20, prop="imageinfo", iiprop="url|extmetadata", iiurlwidth=900, format="json"), timeout=40).json()
+        for pg in (r.get("query", {}).get("pages", {}) or {}).values():
+            ii = (pg.get("imageinfo") or [{}])[0]
+            url = ii.get("thumburl") or ii.get("url")
+            if not url or not re.search(r"\.(jpe?g|png)", url, re.I):
+                continue
+            dst = d / f"{pg['pageid']}.jpg"
+            meta = ii.get("extmetadata", {})
+            if bajar(url, dst):
+                indice.append(dict(fuente="commons", archivo=str(dst.relative_to(OUT)), titulo=pg["title"], url=url, busqueda=q,
+                                   autor=re.sub("<[^>]+>", "", meta.get("Artist", {}).get("value", ""))[:120],
+                                   licencia=meta.get("LicenseShortName", {}).get("value", "")))
+        time.sleep(1)
+    print("commons:", sum(1 for x in indice if x["fuente"] == "commons"))
+
+
 def main():
     OUT.mkdir(parents=True, exist_ok=True)
-    indice = []
-    for f in (imgflip, reddit):
+    previo = OUT / "indice.json"
+    indice = [x for x in (json.loads(previo.read_text()) if previo.exists() else []) if x["fuente"] == "imgflip"]
+    for f in (imgflip_busqueda, commons, reddit):
         try:
             f(indice)
         except Exception as e:  # una fuente caída no frena la otra
