@@ -1,0 +1,524 @@
+{
+ "1_concentracion": {
+  "canales": 120,
+  "top10pct_se_lleva_mediana": 0.703,
+  "pct_videos_10x_la_mediana": 0.115
+ },
+ "2_primer_millon_canales_2026": {
+  "n": 61,
+  "mediana_video_n": 2,
+  "p25": 1.0,
+  "p75": 4.0,
+  "en_los_primeros_10": 55,
+  "mediana_dias": 2,
+  "ejemplos": [
+   {
+    "canal": "Football 3D Club",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 108540779
+   },
+   {
+    "canal": "Fantasyball007",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 1983106
+   },
+   {
+    "canal": "Soccer-XD",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 1018551
+   },
+   {
+    "canal": "Renanzim Futbol ",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 4241876
+   },
+   {
+    "canal": "Suuuuu Shorts ",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 4705465
+   },
+   {
+    "canal": "Shiminski Soifer",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 14138709
+   },
+   {
+    "canal": "HappyHM",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 31547258
+   },
+   {
+    "canal": "RHE PATRIOT POST",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 2105218
+   },
+   {
+    "canal": "AI-Mini656",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 1246532
+   },
+   {
+    "canal": "EliteKickR7",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 1386292
+   },
+   {
+    "canal": "Happy Time Ai",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 3803308
+   },
+   {
+    "canal": "Neroo",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 2551322
+   },
+   {
+    "canal": "Sou7biK 〆",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 2518044
+   },
+   {
+    "canal": "Cosmic Editz",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 1471633
+   },
+   {
+    "canal": "MGR←RAbbi→420K",
+    "video_n": 1,
+    "dias": 0,
+    "vistas": 10754810
+   }
+  ]
+ },
+ "3_despues_de_un_hit": {
+  "hits": 1723,
+  "vistas_10_antes_vs_mediana": 2.14,
+  "vistas_10_despues_vs_mediana": 2.29,
+  "parecido_titulo_10_despues": 0.203,
+  "parecido_titulo_10_antes": 0.185
+ },
+ "4_frecuencia": {
+  "vistas_rel_segun_subidas_ese_dia": {
+   "1": {
+    "n": 11723,
+    "mediana": 1.02
+   },
+   "2": {
+    "n": 4044,
+    "mediana": 0.98
+   },
+   "3": {
+    "n": 1218,
+    "mediana": 0.9
+   },
+   "4": {
+    "n": 524,
+    "mediana": 1.09
+   },
+   "5": {
+    "n": 634,
+    "mediana": 0.95
+   }
+  },
+  "subidas_por_dia_mediana": 0.69,
+  "canales_top_subs": [
+   {
+    "canal": "Enaldinho",
+    "por_dia": 1.07,
+    "subs": 48700000
+   },
+   {
+    "canal": "John Nellis",
+    "por_dia": 0.38,
+    "subs": 16900000
+   },
+   {
+    "canal": "Jexs",
+    "por_dia": 0.09,
+    "subs": 13900000
+   },
+   {
+    "canal": "FOOTIEHAWK",
+    "por_dia": 0.88,
+    "subs": 9880000
+   },
+   {
+    "canal": "Hoanftbl",
+    "por_dia": 0.8,
+    "subs": 8130000
+   },
+   {
+    "canal": "Scalpo",
+    "por_dia": 0.95,
+    "subs": 6980000
+   },
+   {
+    "canal": "FlashPass",
+    "por_dia": 0.85,
+    "subs": 6720000
+   },
+   {
+    "canal": "Best Football Shorts",
+    "por_dia": 0.44,
+    "subs": 5720000
+   },
+   {
+    "canal": "Slicx7",
+    "por_dia": 0.81,
+    "subs": 4690000
+   },
+   {
+    "canal": "Erling Haaland",
+    "por_dia": 0.18,
+    "subs": 4570000
+   },
+   {
+    "canal": "217aep",
+    "por_dia": 0.7,
+    "subs": 4550000
+   },
+   {
+    "canal": "BR2",
+    "por_dia": 0.34,
+    "subs": 4180000
+   },
+   {
+    "canal": "Futbol Media",
+    "por_dia": 0.51,
+    "subs": 2730000
+   },
+   {
+    "canal": "@xa07_Editx",
+    "por_dia": 2.19,
+    "subs": 2620000
+   },
+   {
+    "canal": "YEOFTBL",
+    "por_dia": 0.57,
+    "subs": 1940000
+   }
+  ]
+ },
+ "5_hora_utc": {
+  "vistas_rel": {
+   "0": {
+    "n": 435,
+    "mediana": 1.14
+   },
+   "1": {
+    "n": 225,
+    "mediana": 1.16
+   },
+   "2": {
+    "n": 222,
+    "mediana": 0.92
+   },
+   "3": {
+    "n": 391,
+    "mediana": 0.81
+   },
+   "4": {
+    "n": 337,
+    "mediana": 0.94
+   },
+   "5": {
+    "n": 309,
+    "mediana": 0.95
+   },
+   "6": {
+    "n": 493,
+    "mediana": 1.14
+   },
+   "7": {
+    "n": 281,
+    "mediana": 1.28
+   },
+   "8": {
+    "n": 388,
+    "mediana": 0.87
+   },
+   "9": {
+    "n": 640,
+    "mediana": 1.0
+   },
+   "10": {
+    "n": 899,
+    "mediana": 1.06
+   },
+   "11": {
+    "n": 1258,
+    "mediana": 1.0
+   },
+   "12": {
+    "n": 2445,
+    "mediana": 1.06
+   },
+   "13": {
+    "n": 1642,
+    "mediana": 1.03
+   },
+   "14": {
+    "n": 1203,
+    "mediana": 0.86
+   },
+   "15": {
+    "n": 1206,
+    "mediana": 0.9
+   },
+   "16": {
+    "n": 1348,
+    "mediana": 0.94
+   },
+   "17": {
+    "n": 1063,
+    "mediana": 1.1
+   },
+   "18": {
+    "n": 750,
+    "mediana": 1.03
+   },
+   "19": {
+    "n": 688,
+    "mediana": 0.96
+   },
+   "20": {
+    "n": 615,
+    "mediana": 0.96
+   },
+   "21": {
+    "n": 411,
+    "mediana": 1.08
+   },
+   "22": {
+    "n": 611,
+    "mediana": 1.02
+   },
+   "23": {
+    "n": 283,
+    "mediana": 1.1
+   }
+  },
+  "hora_mas_usada_por_canal": {
+   "12": 18,
+   "16": 14,
+   "11": 13,
+   "17": 9,
+   "15": 8,
+   "9": 6,
+   "10": 6,
+   "13": 6
+  }
+ },
+ "6_duracion": {
+  "45-60s": {
+   "n": 2392,
+   "mediana": 0.99,
+   "pct_hits_10x": 0.114
+  },
+  "20-30s": {
+   "n": 4678,
+   "mediana": 1.04,
+   "pct_hits_10x": 0.11
+  },
+  "60-90s": {
+   "n": 1255,
+   "mediana": 1.16,
+   "pct_hits_10x": 0.105
+  },
+  "30-45s": {
+   "n": 3378,
+   "mediana": 1.0,
+   "pct_hits_10x": 0.114
+  },
+  "15-20s": {
+   "n": 2068,
+   "mediana": 0.89,
+   "pct_hits_10x": 0.099
+  },
+  "10-15s": {
+   "n": 1491,
+   "mediana": 0.95,
+   "pct_hits_10x": 0.117
+  },
+  "0-10s": {
+   "n": 2176,
+   "mediana": 1.01,
+   "pct_hits_10x": 0.127
+  },
+  "90-180s": {
+   "n": 705,
+   "mediana": 1.0,
+   "pct_hits_10x": 0.079
+  }
+ },
+ "7_titulos": {
+  "MAYUSCULAS (>60%)": {
+   "n_si": 1266,
+   "con": 1.0,
+   "sin": 1.0,
+   "hits_con": 0.061,
+   "hits_sin": 0.115
+  },
+  "tiene emoji": {
+   "n_si": 13747,
+   "con": 1.0,
+   "sin": 0.98,
+   "hits_con": 0.114,
+   "hits_sin": 0.102
+  },
+  "tiene #hashtag": {
+   "n_si": 9365,
+   "con": 0.99,
+   "sin": 1.02,
+   "hits_con": 0.109,
+   "hits_sin": 0.113
+  },
+  "3+ hashtags": {
+   "n_si": 5889,
+   "con": 1.0,
+   "sin": 1.0,
+   "hits_con": 0.124,
+   "hits_sin": 0.105
+  },
+  "pregunta (?)": {
+   "n_si": 1497,
+   "con": 1.0,
+   "sin": 1.0,
+   "hits_con": 0.094,
+   "hits_sin": 0.113
+  },
+  "'only 1%' / '99%'": {
+   "n_si": 4,
+   "con": 1.05,
+   "sin": 1.0,
+   "hits_con": 0.0,
+   "hits_sin": 0.111
+  },
+  "'vs'": {
+   "n_si": 2804,
+   "con": 1.01,
+   "sin": 1.0,
+   "hits_con": 0.117,
+   "hits_sin": 0.11
+  },
+  "ronaldo/cr7": {
+   "n_si": 6538,
+   "con": 1.01,
+   "sin": 1.0,
+   "hits_con": 0.123,
+   "hits_sin": 0.104
+  },
+  "messi": {
+   "n_si": 2851,
+   "con": 1.01,
+   "sin": 1.0,
+   "hits_con": 0.103,
+   "hits_sin": 0.113
+  },
+  "yamal": {
+   "n_si": 1893,
+   "con": 1.13,
+   "sin": 0.99,
+   "hits_con": 0.141,
+   "hits_sin": 0.108
+  },
+  "neymar": {
+   "n_si": 1503,
+   "con": 1.16,
+   "sin": 0.99,
+   "hits_con": 0.128,
+   "hits_sin": 0.11
+  },
+  "ishowspeed/speed": {
+   "n_si": 543,
+   "con": 1.13,
+   "sin": 1.0,
+   "hits_con": 0.14,
+   "hits_sin": 0.11
+  },
+  "mr beast": {
+   "n_si": 147,
+   "con": 1.24,
+   "sin": 1.0,
+   "hits_con": 0.129,
+   "hits_sin": 0.111
+  },
+  "'find'": {
+   "n_si": 89,
+   "con": 2.14,
+   "sin": 1.0,
+   "hits_con": 0.213,
+   "hits_sin": 0.111
+  },
+  "'evolution'": {
+   "n_si": 166,
+   "con": 1.07,
+   "sin": 1.0,
+   "hits_con": 0.078,
+   "hits_sin": 0.111
+  },
+  "'day'": {
+   "n_si": 159,
+   "con": 1.03,
+   "sin": 1.0,
+   "hits_con": 0.157,
+   "hits_sin": 0.111
+  },
+  "corto (<=30 car.)": {
+   "n_si": 3094,
+   "con": 0.94,
+   "sin": 1.01,
+   "hits_con": 0.094,
+   "hits_sin": 0.115
+  },
+  "largo (>70 car.)": {
+   "n_si": 5236,
+   "con": 1.02,
+   "sin": 0.99,
+   "hits_con": 0.114,
+   "hits_sin": 0.11
+  }
+ },
+ "8_edad": {
+  "90d+": {
+   "n": 10111,
+   "mediana": 0.98
+  },
+  "31-90d": {
+   "n": 5108,
+   "mediana": 1.13
+  },
+  "8-30d": {
+   "n": 2100,
+   "mediana": 0.96
+  },
+  "3-7d": {
+   "n": 466,
+   "mediana": 0.7
+  },
+  "0-2d": {
+   "n": 358,
+   "mediana": 0.49
+  }
+ },
+ "9_engagement": {
+  "hit (10x) likes/vista": 1.069,
+  "hit (10x) coment/vista": 0.005,
+  "normal likes/vista": 1.621,
+  "normal coment/vista": 0.015
+ }
+}
