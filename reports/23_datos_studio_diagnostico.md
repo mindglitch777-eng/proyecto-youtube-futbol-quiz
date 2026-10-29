@@ -26,3 +26,19 @@ Sin advertencias, reclamos ni restricciones. Argentina 27,5 %, Indonesia 8,3 %, 
 2. Las carreras/predicciones se descartan como formato.
 3. Los finales espantan: hay que cortar en el momento de la revelación y hacer loop (que el último cuadro empalme con el primero) para pasar el 100 % visto.
 4. Engagement casi nulo (0 compartidos, 1 sub directo): falta un pedido concreto de comentario dentro del video.
+
+## Segunda ronda de la IA de Studio (29-oct, tarde)
+| Short | Se quedó 1ª hora → día 1 | Vistas interesadas | Vistas 1ª hora / día 1 / total |
+|---|---|---|---|
+| Runner Ronaldo | 50,7 → **60,2 %** | 792 (55,5 %) | 350 / 1.426 / 1.426 |
+| Ballon d'Or rematch | 40,0 → 56,6 % | 779 (58,6 %) | 305 / 1.329 / 1.429 |
+| FIND Ronaldo | 41,0 → 53,6 % | 648 (52,9 %) | 258 / 1.225 / 1.225 |
+| Anillos | 49,8 → 50,6 % | 725 (50,5 %) | 201 / 1.437 / 1.437 |
+| El Clásico Race | 22,9 → 25,0 % | 357 (27,1 %) | 244 / 1.316 / 1.578 |
+| Prediction race | 12,2 → 19,9 % | 237 (21,0 %) | 176 / 1.126 / 1.240 |
+| Who win the Ballón dror | 15,6 → s/d | 161 (14,8 %) | 297 / 1.085 / 1.111 |
+
+- La primera prueba (~200-350 personas en la 1ª hora) es la peor: casi todos mejoran cuando el feed amplía la muestra. Según la IA de Studio, esa primera muestra es mayormente hispanohablante por los hashtags en español (#futbol, #clasico) y porque el canal no tiene idioma predeterminado. Video en inglés + público de prueba en español = descarte.
+- Todos agotan su prueba en el día 1 y no tienen segundo pico: nunca pasaron al siguiente escalón.
+- Pérdida en el segundo 0-1 de los que empiezan: 2-7 %. El descarte pasa antes, en el feed.
+- Interacción casi nula: 1 compartido en todo el canal, 2,4 % de espectadores vio otro video.
