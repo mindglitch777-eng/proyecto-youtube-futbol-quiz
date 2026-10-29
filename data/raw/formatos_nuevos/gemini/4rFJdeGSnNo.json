@@ -1,0 +1,119 @@
+{
+ "id": "4rFJdeGSnNo",
+ "canal": "TrendPick",
+ "vistas": 3009646,
+ "titulo": "Which Neymar Haircut Looks BEST? 😍🔥 #fifa #football #neymar #Soccer #Brazil #FootballShorts #Shorts",
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "Montaje digital 2D sobre fotografía estática",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Imagen principal nítida; recortes de peinados básicos pero funcionales para meme.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Neymar pelado con camiseta de Brasil, lista de emojis a la izquierda",
+    "texto": "1-9 emojis",
+    "sonido": "Música funk brasileño",
+    "movimiento_o_efecto": "Caída de peinado rubio largo"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Peinado encaja en la cabeza de Neymar",
+    "texto": "1-9 emojis",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Ajuste de posición"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Segundo peinado (negro muy largo) cae",
+    "texto": "1-9 emojis",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Desplazamiento vertical"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Peinado negro se posiciona como barba/cabello",
+    "texto": "1-9 emojis",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Transición rápida"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Tercer peinado (pelo corto negro) cae",
+    "texto": "1-9 emojis",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Desplazamiento vertical"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Peinado corto se coloca en la cabeza",
+    "texto": "1-9 emojis",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Encaje visual"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Siguiente peinado cayendo hacia abajo",
+    "texto": "1-9 emojis",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Corte de ritmo rápido"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Ver a Neymar calvo con animación rápida de peinados absurdos genera curiosidad inmediata.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 16.0,
+    "contenido": "Secuencia continua de superposición de diferentes peinados y barbas sobre la foto de Neymar.",
+    "encuadre": "Primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Superposición de PNGs animados",
+     "Overlay de interfaz/emojis"
+    ]
+   }
+  ],
+  "cortes_por_10s": 12,
+  "sincronia_con_la_musica": "Los peinados caen al ritmo de la base del funk brasileño.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "1-9 Lista de Emojis",
+    "estilo": "Columna izquierda, fuente estándar con emojis coloridos"
+   }
+  ],
+  "audio": {
+   "musica": "Funk carioca / Parado no Bailão, ritmo rápido pegadizo",
+   "efectos": [
+    "Efectos de sonido al encajar peinados"
+   ],
+   "voz": "null",
+   "momento_clave_de_audio": "Inicio del beat de funk a los 0.0s"
+  },
+  "estructura": "Planteo (0-3s): Neymar pelado y primer cambio → Tensión (3-12s): Desfile de peinados cómicos/absurdos → Remate (12-16s): Peinado final sutil y reinicio.",
+  "giro_o_sorpresa": "Peinados que terminan colocándose como barba o bigote gigante en vez de cabello.",
+  "final_y_loop": "Termina con un corte rápido que conecta directo con el inicio del video.",
+  "emocion_que_busca": "Risa y curiosidad.",
+  "por_que_comentan": "Debaten cuál número de la lista (1 al 9) le queda mejor a Neymar.",
+  "por_que_comparten_o_repiten": "Duración corta, ritmo dinámico y formato meme de fútbol altamente viral.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de figura ultrafamosa (Neymar).",
+   "Formato interactivo por lista de emojis.",
+   "Edición rítmica con música viral."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Foto recortada de famoso + assets PNG de peinados animados en CapCut/Photoshop.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "Reconocimiento del personaje famoso y el impacto del meme deportivo."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Usar foto recortada de una celebridad en alta resolución.",
+   "Animar caídas de peinados/accesorios al ritmo de un tema viral.",
+   "Incluir call-to-action visual (números o emojis) para incentivar comentarios."
+  ],
+  "puntaje_produccion_1a10": 5,
+  "puntaje_idea_1a10": 8
+ }
+}

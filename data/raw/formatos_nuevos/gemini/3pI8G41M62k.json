@@ -1,0 +1,177 @@
+{
+ "id": "3pI8G41M62k",
+ "canal": "Football Mastery",
+ "vistas": 6768704,
+ "titulo": "Which Football Boot Fits Your Position? Here’s the Answer #football #shorts",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: partidos de fútbol reales + videos de producto grabados en alta calidad con estética comercial",
+  "calidad_imagen_1a10": 9,
+  "por_que_esa_calidad": "producción impecable tipo comercial de Nike/Adidas, iluminación perfecta en césped y estudio, colores vibrantes, nitidez extrema y tomas macro de los botines con cámara lenta profesional",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "jugador gambeteando",
+    "texto": "If you play football",
+    "sonido": "música trap con bajo pesado",
+    "movimiento_o_efecto": "corte rápido a partido"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "pie pisando línea de cal",
+    "texto": "stop wasting your money!",
+    "sonido": "beats golpeando",
+    "movimiento_o_efecto": "macro zoom en botín"
+   },
+   {
+    "t": "1.0"
+   },
+   {
+    "t": "1.5"
+   },
+   {
+    "t": "2.0"
+   },
+   {
+    "t": "2.5"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "jugador rematando al arco",
+    "texto": "Here are the 5 best boots",
+    "sonido": "transición fuerte",
+    "movimiento_o_efecto": "zoom dinámico"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "combina una frase dolorosa para el espectador ('stop wasting your money') con imágenes de alta gama de fútbol en los primeros 2 segundos",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.4,
+    "contenido": "jugador gambeteando en partido",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": []
+   },
+   {
+    "desde": 0.4,
+    "hasta": 1.9,
+    "contenido": "pie pisando línea de cal en campo verde",
+    "encuadre": "primer plano",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "corrección de color cinematográfica"
+    ]
+   },
+   {
+    "desde": 1.9,
+    "hasta": 4.5,
+    "contenido": "jugador pateando al arco",
+    "encuadre": "general",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 4.5,
+    "hasta": 7.5,
+    "contenido": "atando cordones Nike Mercurial azul",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 7.5,
+    "hasta": 10.5,
+    "contenido": "atando cordones Adidas blanco",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 10.5,
+    "hasta": 13.0,
+    "contenido": "sosteniendo Puma Future multicolor",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 13.0,
+    "hasta": 16.5,
+    "contenido": "atando Nike Tiempo bordo",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 16.5,
+    "hasta": 19.5,
+    "contenido": "atando Puma rosa",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   },
+   {
+    "desde": 19.5,
+    "hasta": 21.0,
+    "contenido": "jugador gambeteando",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   }
+  ],
+  "cortes_por_10s": 4,
+  "sincronia_con_la_musica": "sí, cada cambio de botín cae exactamente en el beat del trap (ej: segundos 4.5, 7.5, 10.5, 13.0, 16.5)",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "If you play football stop wasting your money! Here are the 5 best boots you can get right now",
+    "estilo": "fuente sans-serif bold, texto blanco con sombra negra, centrado, animación de aparición rápida palabra por palabra"
+   }
+  ],
+  "audio": {
+   "musica": "trap moderno, 140 bpm, estilo agresivo y comercial, sin voz cantada",
+   "efectos": [
+    "whoosh en cada cambio de plano",
+    "impacto sutil de golpe seco"
+   ],
+   "voz": "sin voz superpuesta (solo texto en pantalla)",
+   "momento_clave_de_audio": "beat drop fuerte en el segundo 1.0 al aparecer 'stop wasting your money'"
+  },
+  "estructura": "planteo (0-4s: problema del dinero y gancho) → tensión (4-19s: listado rápido de 5 botines por posición) → remate (19-21s: llamado a la acción en comentarios)",
+  "giro_o_sorpresa": "la segmentación exacta por posición de juego (striker, winger, midfielder, defender, goalkeeper) en lugar de una lista genérica de mejores botines",
+  "final_y_loop": "termina con jugada en cancha y texto sobre comentarios; el loop funciona porque la transición de la última jugada vuelve al inicio del partido sin corte brusco",
+  "emocion_que_busca": "deseo de compra / asombro / debate sobre qué botín es mejor",
+  "por_que_comentan": "la gente discute si esos botines realmente son los mejores o debate precios y preferencias de marca (Nike vs Adidas vs Puma)",
+  "por_que_comparten_o_repiten": "se comparte entre amigos futbolistas para mostrarles qué botín deberían comprar según su posición en la cancha",
+  "tres_razones_por_las_que_exploto": [
+   "nicho masivo (fútbol) combinado con dolor universal (gastar mal el dinero en equipamiento)",
+   "estructura ultra rápida tipo lista que mantiene la retención al 100%",
+   "calidad visual hiperestética de producto que parece publicidad oficial de marcas"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "usando videos de stock libres de derechos de jugadores entrenando y grabando propias manos atándose botines o usando renders 3D",
+   "dificultad_1a10": 6,
+   "que_se_pierse_si_no_usamos_ese_material": "se pierde la autoridad visual de ver jugadores profesionales de élite y modelos exactos en tendencia"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "empezar con un dolor o advertencia fuerte en los primeros 2 segundos",
+   "usar música trap con beats muy marcados",
+   "sincronizar cada ítem de una lista exactamente con el golpe del beat",
+   "segmentar la lista por categorías específicas (posiciones de fútbol)",
+   "cerrar con llamado a la acción en comentarios"
+  ],
+  "puntaje_produccion_1a10": 9,
+  "puntaje_idea_1a10": 9
+ }
+}

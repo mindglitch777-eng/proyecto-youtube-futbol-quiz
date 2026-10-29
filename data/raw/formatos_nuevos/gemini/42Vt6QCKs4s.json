@@ -1,0 +1,190 @@
+{
+ "id": "42Vt6QCKs4s",
+ "canal": "Motion-f",
+ "vistas": 11909870,
+ "titulo": "Yildij vs Pedri vs Yamal vs Zlatan vs Neymar vs Messi vs Ronaldo",
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (compilación de videos UGC/virales reales con interfaz gráfica superpuesta)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Variedad de resoluciones UGC unificadas con gráficos e interfaz gráfica fluida.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Grupo mirando a la cámara desde abajo e interfaz con futbolistas.",
+    "texto": "Yildiz vs Pedri...",
+    "sonido": "Música electrónica acelerada",
+    "movimiento_o_efecto": "Flecha indicando al primer jugador y tacha con X roja"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Perspectiva en círculo mirando al cielo.",
+    "texto": "null",
+    "sonido": "Beat constante",
+    "movimiento_o_efecto": "Pelota cayendo"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Pelota pasa por el centro del grupo.",
+    "texto": "null",
+    "sonido": "Música fonk/viral",
+    "movimiento_o_efecto": "Reacción del grupo"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Pelota cae al fondo.",
+    "texto": "null",
+    "sonido": "Beat de fondo",
+    "movimiento_o_efecto": "Corte a siguiente escena"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Chico dibujando un círculo perfecto en la pizarra.",
+    "texto": "null",
+    "sonido": "Efectos de sonido de juego",
+    "movimiento_o_efecto": "Flecha sobre Pedri"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Trazado circular en pizarrón.",
+    "texto": "null",
+    "sonido": "Música rítmica",
+    "movimiento_o_efecto": "Pintado de pared"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Tacha de error sobre el jugador Pedri.",
+    "texto": "null",
+    "sonido": "Efecto de fallo",
+    "movimiento_o_efecto": "Aparición de X roja"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Gamificación tipo marcador interactivo que elimina futbolistas famosos según el resultado del truco.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 2.9,
+    "contenido": "Vista cenital de grupo intentando encestar/atrapar pelota.",
+    "encuadre": "primer plano contrapicado",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Interfaz superior",
+     "Animación de flecha y X roja"
+    ]
+   },
+   {
+    "desde": 3.0,
+    "hasta": 5.8,
+    "contenido": "Chico intentando dibujar un círculo perfecto a mano alzada.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Marcador superior",
+     "X roja"
+    ]
+   },
+   {
+    "desde": 5.9,
+    "hasta": 7.8,
+    "contenido": "Truco de embocar aro en botella sobre mesa.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "X roja en interfaz"
+    ]
+   },
+   {
+    "desde": 7.9,
+    "hasta": 12.8,
+    "contenido": "Jugador en campo de fútbol recibiendo balón largo.",
+    "encuadre": "plano general",
+    "camara": "paneo leve",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "X roja en Zlatan"
+    ]
+   },
+   {
+    "desde": 12.9,
+    "hasta": 14.8,
+    "contenido": "Niño desde puf encestando pelota de básquet con el pie.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Icono de calavera con corona en Neymar"
+    ]
+   },
+   {
+    "desde": 14.9,
+    "hasta": 19.8,
+    "contenido": "Saque de vóley de playa que golpea objetivo lejano.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Calavera con corona en Messi",
+     "Zoom digital"
+    ]
+   },
+   {
+    "desde": 19.9,
+    "hasta": 22.0,
+    "contenido": "Chico pateando balón de espaldas hacia aro de básquet mientras camina.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Calavera con auriculares sobre el jugador",
+     "Calavera con corona en Ronaldo"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3.1,
+  "sincronia_con_la_musica": "Los cambios de escena y la actualización de los marcadores coinciden con los golpes del ritmo musical.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Fotos e iconos de Yildiz, Pedri, Yamal, Zlatan, Neymar, Messi, Ronaldo",
+    "estilo": "HUD superior estilo videojuego con avatares e indicadores"
+   }
+  ],
+  "audio": {
+   "musica": "Phonk / Funk brasilerio viral, tempo rápido (125-130 BPM)",
+   "efectos": [
+    "Sonido de fallo (buzz)",
+    "Sonido de éxito/puntos",
+    "Efectos de impacto"
+   ],
+   "voz": "null",
+   "momento_clave_de_audio": "El cambio de ritmo y bajada del beat en el segundo 15 al concretar el truco de vóley."
+  },
+  "estructura": "Planteo: Desafíos visuales fallidos (0-12s) → Tensión: Incremento de dificultad en trucos (13-18s) → Remate: Truco perfecto de espaldas sin mirar (19-22s).",
+  "giro_o_sorpresa": "La precisión absoluta de los últimos trucos caseros y de vóley frente a los fallos iniciales.",
+  "final_y_loop": "Cierra con la calavera del ganador y el balón entrando al aro, incitando a reiniciar el video para comparar participantes.",
+  "emocion_que_busca": "asombro, debate",
+  "por_que_comentan": "Debaten si la asignación de cada truco al futbolista correspondiente es justa o cuál fue el mejor truco.",
+  "por_que_comparten_o_repiten": "Visualmente entretenido, ritmo ágil y trucos imposibles de alta precisión.",
+  "tres_razones_por_las_que_exploto": [
+   "Formato de torneo de eliminación gamificado",
+   "Uso de futbolistas de élite como ganchos visuales",
+   "Compilación de trucos virales de alta destreza"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Recopilando clips virales de trucos de dominio público y diseñando la plantilla HUD en Premiere/After Effects.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "El atractivo masivo que aportan las caras de Messi, Ronaldo y estrellas de fútbol."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Crear una plantilla de interfaz superior con 5-7 personajes famosos.",
+   "Seleccionar 7 clips virales de habilidades/trucos (3 fallos, 4 aciertos épicos).",
+   "Sincronizar cada resolución de truco con la tachadura o coronación en el HUD al ritmo de un tema Phonk viral."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 8
+ }
+}

@@ -1,0 +1,154 @@
+{
+ "id": "Chf1RWbkPps",
+ "canal": "BM Consulting",
+ "vistas": 28069703,
+ "titulo": "🧱FOOTBALL CLUBS KNOCK OUT THE STICKS FOR A LIMITED NUMBER OF HEARTS CHALLENGE! #challenge #football",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "video real con recortes e inserción de gráficos y escudos animados",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Iluminación de gimnasio estándar, resolución HD correcta pero recortes tipo croma con bordes duros y efectos de aura digital sencillos",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Persona imitando grito de furia frente a barra de rack con estacas, escudos arriba",
+    "texto": null,
+    "sonido": "Grito distorsionado con golpe seco al insertar espuma",
+    "movimiento_o_efecto": "Flash rojo de daño, zoom rápido"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Primer intento fallido de pasar el tubo de espuma",
+    "texto": null,
+    "sonido": "Golpe metálico y gruñido",
+    "movimiento_o_efecto": "Borde rojo parpadeante"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Segundo intento empujando la espuma con furia",
+    "texto": null,
+    "sonido": "Impacto seco rítmico",
+    "movimiento_o_efecto": "Cámara tiembla"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Tercer intento avanzando por los niveles",
+    "texto": null,
+    "sonido": "Golpe rítmico",
+    "movimiento_o_efecto": "Borde rojo intenso"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Cuarto intento con máxima tensión facial",
+    "texto": null,
+    "sonido": "Impacto fuerte",
+    "movimiento_o_efecto": "Efecto de muerte (calavera)"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Personaje cae derrotado",
+    "texto": null,
+    "sonido": "Sonido de derrota arcade",
+    "movimiento_o_efecto": "Corte a siguiente participante"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Nuevo participante con camiseta de fútbol entra en acción",
+    "texto": null,
+    "sonido": "Golpe inicial",
+    "movimiento_o_efecto": "Aura roja"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Usa una barra de salud visual con corazones que se rompen, caras exageradas de enojo y acción frenética inmediata combinada con el universo del fútbol.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 7.0,
+    "contenido": "Primer participante intenta superar el obstáculo de barras con un tubo de espuma",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "aura roja de daño",
+     "calaveras sobre corazones",
+     "zoom in dramático"
+    ]
+   },
+   {
+    "desde": 7.0,
+    "hasta": 15.0,
+    "contenido": "Segundo participante compite y pierde",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "aura roja",
+     "pérdida de vidas"
+    ]
+   },
+   {
+    "desde": 15.0,
+    "hasta": 20.0,
+    "contenido": "Tercer participante cae rápidamente",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "pérdida de vidas"
+    ]
+   },
+   {
+    "desde": 20.0,
+    "hasta": 26.0,
+    "contenido": "Cuarta participante logra pasar y gana con corona",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "aura verde",
+     "corona dorada final"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "Sí, cada golpe de la espuma contra las barras metálicas cae exactamente en el beat de la música electrónica.",
+  "textos_en_pantalla": [],
+  "audio": {
+   "musica": "Electrónica con bases pesadas y drops marcados a tiempo de golpes, estilo meme/challenge",
+   "efectos": [
+    "golpes metálicos",
+    "sonido de daño arcade",
+    "gritos de esfuerzo",
+    "sonido de victoria"
+   ],
+   "voz": "No hay voz hablada, solo vocalizaciones y gritos",
+   "momento_clave_de_audio": "El sonido de derrota en el segundo 6 y la victoria verde en el 25"
+  },
+  "estructura": "planteo → tensión → remate: Presenta el reto y los participantes con 4 corazones (0-6s) → Cada uno intenta avanzar fallando sucesivamente (7-20s) → La última participante supera el reto y gana (20-26s)",
+  "giro_o_sorpresa": "La última participante (mujer) es la única que logra superar el desafío cuando todos los hombres habían perdido.",
+  "final_y_loop": "Termina con la victoria de la última participante celebrando con una corona verde, generando ciclo al reiniciar con el primer jugador gritando.",
+  "emocion_que_busca": "asombro / tensión / diversión por el fracaso cómico",
+  "por_que_comentan": "Por el rendimiento de los participantes, burlándose de los que pierden rápido o destacando el triunfo de la chica al final.",
+  "por_que_comparten_o_repiten": "Por el formato de minijuego interactivo tipo arcade aplicado al mundo real con equipos de fútbol populares.",
+  "tres_razones_por_las_que_exploto": [
+   "Dinámica visual estilo videojuego con corazones y barras de vida.",
+   "Inserción de escudos de fútbol muy conocidos (Barça, PSG, Manchester United, Real Madrid).",
+   "Expresiones faciales exageradas y edición rítmica perfecta con los golpes."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Grabándose en un gimnasio con una estructura de rack, usando elementos gráficos superpuestos y efectos de edición estándar.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "La autenticidad de los creadores originales y el reconocimiento inmediato de los escudos de fútbol."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Consigue una estructura de rack de gimnasio y barras metálicas o estacas.",
+   "Diseña una interfaz superior con escudos de equipos de fútbol y corazones de vida que se rompan.",
+   "Sincroniza cada golpe de un tubo de espuma contra las barras con un beat musical potente.",
+   "Agrega efectos visuales de aura roja/verde y expresiones exageradas en cada intento.",
+   "Haz que los primeros fallen cómicamente y el último gane de manera inesperada."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

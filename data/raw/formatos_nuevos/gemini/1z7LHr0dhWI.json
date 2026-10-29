@@ -1,0 +1,162 @@
+{
+ "id": "1z7LHr0dhWI",
+ "canal": "GGsurvival",
+ "vistas": 3253525,
+ "titulo": "Find Leonel Messi | Find Football player Messi, Mbappe, Ronaldo #cr7 #messi #mbappe #shorts",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (gráficos 2D, caricaturas digitalizadas y animaciones de interfaz)",
+  "calidad_imagen_1a10": 5,
+  "por_que_esa_calidad": "Diseño gráfico plano y repetitivo estilo juego móvil básico. Cumple su función visual sin destacar en acabado técnico.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Título 'Find Lionel Messi', nivel 'EASY LEVEL' y cuadrícula de caricaturas de Mbappé.",
+    "texto": "Find Lionel Messi / EASY LEVEL",
+    "sonido": "Voz en bengalí e inicio de temporizador.",
+    "movimiento_o_efecto": "Aparición estática de la cuadrícula."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Cuadrícula de imágenes con labios exagerados.",
+    "texto": "EASY LEVEL",
+    "sonido": "Tic-tac de reloj.",
+    "movimiento_o_efecto": "Ninguno."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Avance de la barra de tiempo inferior.",
+    "texto": "EASY LEVEL",
+    "sonido": "Tic-tac de reloj.",
+    "movimiento_o_efecto": "Llenado de barra de progreso."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Barra de tiempo a la mitad.",
+    "texto": "EASY LEVEL",
+    "sonido": "Tic-tac de reloj.",
+    "movimiento_o_efecto": "Animación de temporizador."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Barra de tiempo casi completa.",
+    "texto": "EASY LEVEL",
+    "sonido": "Tic-tac de reloj.",
+    "movimiento_o_efecto": "Animación de temporizador."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Temporizador al límite.",
+    "texto": "EASY LEVEL",
+    "sonido": "Tic-tac acelerado.",
+    "movimiento_o_efecto": "Barra completándose."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Fin del tiempo en nivel fácil.",
+    "texto": "EASY LEVEL",
+    "sonido": "Efecto sonoro de acierto.",
+    "movimiento_o_efecto": "Aparición de círculo rojo de respuesta."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Plantea un reto visual interactivo inmediato usando caras populares del fútbol mundial.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 9.0,
+    "contenido": "Nivel fácil: encontrar la cara diferente de Mbappé entre caricaturas.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Barra de temporizador",
+     "Círculo y flecha de revelación",
+     "Botón me gusta animado"
+    ]
+   },
+   {
+    "desde": 9.0,
+    "hasta": 19.0,
+    "contenido": "Nivel medio: buscar el Ronaldo diferente entre múltiples opciones.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Barra de temporizador",
+     "Círculo de respuesta",
+     "Botón suscripción animado"
+    ]
+   },
+   {
+    "desde": 19.0,
+    "hasta": 28.0,
+    "contenido": "Nivel difícil: hallar la cara real de Messi entre varias imágenes similares.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Barra de temporizador",
+     "Icono de comentario animado"
+    ]
+   }
+  ],
+  "cortes_por_10s": 1,
+  "sincronia_con_la_musica": "Los efectos de sonido de reloj y acierto coinciden exactamente con la barra de tiempo y las revelaciones visuales.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Find Lionel Messi",
+    "estilo": "Fuente Sans-Serif gruesa, azul y amarillo, superior centrado."
+   },
+   {
+    "t": "0.0",
+    "texto": "EASY LEVEL",
+    "estilo": "Texto blanco sobre cartel rojo inclinado, centro superior."
+   },
+   {
+    "t": "9.0",
+    "texto": "MEDIUM LEVEL",
+    "estilo": "Texto blanco sobre cartel rojo inclinado, centro superior."
+   },
+   {
+    "t": "19.0",
+    "texto": "HARD LEVEL",
+    "estilo": "Texto blanco sobre cartel rojo inclinado, centro superior."
+   }
+  ],
+  "audio": {
+   "musica": "No aplica, ritmo marcado por SFX de temporizador tipo reloj a ~120 BPM",
+   "efectos": [
+    "Tic-tac de reloj",
+    "Campana/Chime de acierto",
+    "Pop de clic de interfaz"
+   ],
+   "voz": "Narración masculina en bengalí guiando cada nivel del reto.",
+   "momento_clave_de_audio": "El sonido de campana a los 0:07 y 0:15 marcando las respuestas correctas."
+  },
+  "estructura": "0:00-0:09 Nivel fácil con llamada a dar Like. 0:09-0:19 Nivel medio con llamada a Suscribirse. 0:19-0:28 Nivel difícil final donde el espectador debe comentar la solución.",
+  "giro_o_sorpresa": "En el nivel difícil no se revela la respuesta en pantalla para forzar la interacción en comentarios.",
+  "final_y_loop": "Termina con un llamado a comentar; no posee continuidad visual para bucle perfecto.",
+  "emocion_que_busca": "Desafío y curiosidad por resolver el rompecabezas visual.",
+  "por_que_comentan": "Para dejar la respuesta del nivel difícil que no se muestra en el video.",
+  "por_que_comparten_o_repiten": "Para retar a amigos o pausar el video intentando ubicar la imagen correcta.",
+  "tres_razones_por_las_que_exploto": [
+   "Mecánica de juego altamente adictiva con tiempo límite.",
+   "Uso de futbolistas súper populares (Messi, Ronaldo, Mbappé).",
+   "Estrategia de retención al dejar el último nivel sin resolver explícitamente."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Creando composiciones en Canva o Photoshop con imágenes libres o editadas, montadas en un editor de video básico.",
+   "dificultad_1a10": 2,
+   "que_se_pierde_si_no_usamos_ese_material": "Reconocimiento inmediato si se cambian los rostros de futbolistas famosos por personajes genéricos."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Diseñar una cuadrícula de 4x5 con una variación sutil en uno de los elementos.",
+   "Agregar barra de tiempo animada de 3-5 segundos con sonido tic-tac.",
+   "Lanzar niveles progresivos y omitir la respuesta del último nivel para incentivar comentarios."
+  ],
+  "puntaje_produccion_1a10": 4,
+  "puntaje_idea_1a10": 8
+ }
+}

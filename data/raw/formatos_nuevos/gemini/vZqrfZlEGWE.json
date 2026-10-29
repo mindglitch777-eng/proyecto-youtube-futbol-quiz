@@ -1,0 +1,133 @@
+{
+ "id": "vZqrfZlEGWE",
+ "canal": "FOOTBALL_UNIVERSE624",
+ "vistas": 5971930,
+ "titulo": "Catch the Right Head! 🤯⚽#shorts #football #challenge #haaland #soccer #worldcup",
+ "modelo": "gemini-flash-latest",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (PNGs recortados y animados en 2D sobre fondo de paisaje estilo Windows Bliss + foto/video de transmisión real al final)",
+  "calidad_imagen_1a10": 4,
+  "por_que_esa_calidad": "Recortes PNG toscos con bordes pixelados, animación por keyframes lineales ultra básicos y fondo genérico de baja resolución. Se ve totalmente barato y artesanal, propio de canales de granja de contenido infantil de fútbol.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Erling Haaland con mueca graciosa (trompa) con la parte superior de la cabeza rebanada; arriba flotan 3 tipos de pelo; a la izquierda una lista '1. 2. 3.' y un Haaland mini animado.",
+    "texto": "1.\n2.\n3.",
+    "sonido": "Comienzo del cántico dance viral de Haaland: 'Haaland, Haaland...'",
+    "movimiento_o_efecto": "Los recortes de pelo flotan en el cielo; el mini Haaland salta a la izquierda."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "El corte de pelo #1 (castaño oscuro engominado) empieza a descender.",
+    "texto": "1.\n2.\n3.",
+    "sonido": "Voz cantando: '...he's a Blue just like his dad...'",
+    "movimiento_o_efecto": "Desplazamiento vertical hacia abajo del pelo 1."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "El pelo #1 se encaja en la cabeza de Haaland; se ve claramente desparejo e incorrecto.",
+    "texto": "1.\n2.\n3.",
+    "sonido": "Cántico continuo.",
+    "movimiento_o_efecto": "El pelo se detiene brevemente en la frente."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "El pelo #1 cae fuera de pantalla y el pelo #2 (rulos castaños/rubios estilo Foden/Grealish) desciende.",
+    "texto": "1.\n2.\n3.",
+    "sonido": "Voz cantando: '...now he's at the Etihad...'",
+    "movimiento_o_efecto": "Movimiento descendente continuo."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "El pelo #2 con rulos se coloca sobre la cara deformada de Haaland, creando una combinación cómica.",
+    "texto": "1.\n2.\n3.",
+    "sonido": "Redoble rítmico antes del estribillo.",
+    "movimiento_o_efecto": "Pausa de medio segundo sobre la cabeza."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "El pelo #2 cae hacia abajo y queda flotando solo el pelo #3 (rodete rubio de Haaland).",
+    "texto": "1.\n2.\n3.",
+    "sonido": "La música sube hacia el drop.",
+    "movimiento_o_efecto": "El pelo 3 inicia su bajada."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "El pelo rubio desciende por el centro del cielo alineándose con la frente.",
+    "texto": "1.\n2.\n3.",
+    "sonido": "Música acelerando hacia el coro.",
+    "movimiento_o_efecto": "Desplazamiento suave hacia la cabeza."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina la cara ridícula de Haaland mutilada estilo puzzle con una dinámica interactiva de adivinanza visual ('Catch the right head') que engancha al instante para ver si encaja el correcto.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 6.8,
+    "contenido": "Minijuego animado donde tres cabelleras distintas bajan secuencialmente hasta encajar sobre el recorte del rostro de Haaland.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "máscara de recorte de pelo",
+     "animación 2D por posición vertical",
+     "recorte PNG superpuesto"
+    ]
+   },
+   {
+    "desde": 6.8,
+    "hasta": 8.8,
+    "contenido": "Foto real de Erling Haaland guiñando un ojo y levantando el pulgar con la camiseta del Manchester City.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "ninguno"
+    ]
+   }
+  ],
+  "cortes_por_10s": 1,
+  "sincronia_con_la_musica": "Total en el clímax: a los 00:07, cuando la canción estalla en 'Ha-ha-ha Haaland, HEY!', el pelo rubio encaja a la perfección y se produce el corte seco a la foto triunfal de Haaland con el pulgar arriba.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "1.\n2.\n3.",
+    "estilo": "Texto negro simple, tipografía sans-serif sin contorno ni animación, ubicado a la izquierda sobre las nubes."
+   }
+  ],
+  "audio": {
+   "musica": "Eurodance / cántico de cancha dance pop, ~128 BPM, 'Haaland Song' (cántico viral de los fans del Manchester City).",
+   "efectos": [
+    null
+   ],
+   "voz": "Voz grabada del cántico: 'Haaland, Haaland, he's a Blue just like his dad, now he's at the Etihad, ha-ha-ha Haaland, hey!'",
+   "momento_clave_de_audio": "El grito festivo 'HEY! Haaland, Haaland!' en 00:07 al completar el puzzle."
+  },
+  "estructura": "Planteo (0.0s - 1.5s: se presenta el desafío de armar la cabeza y falla el pelo 1) → Tensión/Humor (1.5s - 6.5s: falla el pelo 2 con rulos graciosos y baja lentamente el pelo rubio correcto) → Remate (6.8s - 8.8s: encaja perfecto y corte celebratorio a Haaland guiñando el ojo al ritmo del grito 'HEY').",
+  "giro_o_sorpresa": "No hay sorpresa argumental; la satisfacción proviene del cumplimiento predecible del puzzle sincronizado con el estribillo de la canción.",
+  "final_y_loop": "Corta con Haaland con el pulgar arriba; al reproducirse de nuevo se reinicia inmediatamente la canción y la caída de pelos, generando un loop funcional por curiosidad y brevedad extrema.",
+  "emocion_que_busca": "risa",
+  "por_que_comentan": "Comentan adivinando de qué jugadores eran los pelos 1 y 2, se burlan de la cara de trompa de Haaland o dejan emojis de risa y del Manchester City.",
+  "por_que_comparten_o_repiten": "Dura menos de 9 segundos, lo que asegura una tasa de retención superior al 100% y hace que la gente lo vuelva a ver para apreciar las caras bizarras intermedias.",
+  "tres_razones_por_las_que_exploto": [
+   "Duración ultra corta (menos de 9s) combinada con formato interactivo de juego visual, disparando el completion rate por encima del 120%.",
+   "Expresión facial meme de Haaland que genera risa instantánea desde el cuadro 1.",
+   "Uso del cántico viral de Haaland perfectamente sincronizado con el momento eureka de encajar el pelo."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "null",
+   "dificultad_1a10": 2,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde la gracia absoluta: la cara de Haaland, las cabelleras de futbolistas de élite y el cántico con copyright son el único motivo por el que existe y funciona el video."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Recortar en Photoshop o CapCut el rostro de una figura pública/futbolista en una pose cómica, dividiendo la frente/pelo del resto de la cara.",
+   "Recortar peinados reconocibles de otros 2 futbolistas rivales (ej. Messi, Cristiano Ronaldo, Neymar) y el peinado original del protagonista.",
+   "Animar en CapCut o Premiere los tres pelos cayendo uno por uno sobre la cabeza usando keyframes simples de posición Y.",
+   "Montar la pista del cántico viral del jugador y hacer que el pelo correcto calce exactamente en el beat drop / grito más enérgico del tema.",
+   "Rematar con un corte seco a una foto en alta definición del jugador festejando o haciendo un gesto icónico para cerrar el video en menos de 8 segundos."
+  ],
+  "puntaje_produccion_1a10": 3,
+  "puntaje_idea_1a10": 8
+ }
+}

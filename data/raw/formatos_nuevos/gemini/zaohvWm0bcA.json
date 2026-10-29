@@ -1,0 +1,191 @@
+{
+ "id": "zaohvWm0bcA",
+ "canal": "Football Epic",
+ "vistas": 69366673,
+ "titulo": "Yildiz VS Pedri VS Lehmann VS Haaland VS Neymar VS Messi VS Ronaldo",
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (compilación de videos virales reales con overlays gráficos de marcadores y stickers)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Videos virales HD con buena iluminación, gráficos superpuestos nítidos y edición fluida.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Marcador con avatares de futbolistas arriba; chico sobre globos entre dos sillas.",
+    "texto": "Yildiz VS Pedri VS Lehmann...",
+    "sonido": "Música funk brasileña",
+    "movimiento_o_efecto": "Tensión mientras el chico se apoya en los globos"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "El chico intenta sentarse sobre los globos",
+    "texto": "null",
+    "sonido": "Música funk",
+    "movimiento_o_efecto": "Compresión de globos"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "El chico cae al reventarse los globos",
+    "texto": "null",
+    "sonido": "Explosión de globos",
+    "movimiento_o_efecto": "Caída rápida"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Aparece 'X' roja sobre la cara de Yildiz",
+    "texto": "null",
+    "sonido": "Efecto de error",
+    "movimiento_o_efecto": "Icono X animado"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Corte a segundo reto: chico saltando a piscina sobre silueta metálica",
+    "texto": "null",
+    "sonido": "Música funk",
+    "movimiento_o_efecto": "Salto hacia la piscina"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "El chico no encaja en la silueta y choca",
+    "texto": "null",
+    "sonido": "Impacto / agua",
+    "movimiento_o_efecto": "Caída fallida"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Aparece segunda 'X' roja sobre Pedri",
+    "texto": "null",
+    "sonido": "Efecto de error",
+    "movimiento_o_efecto": "Aparición de X"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Acción inmediata de fallo aparatoso combinado con marcador de competencia entre futbolistas conocidos.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 2.8,
+    "contenido": "Chico intentando sentarse en globos inflados entre dos sillas.",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Overlay de avatares",
+     "Icono X roja"
+    ]
+   },
+   {
+    "desde": 2.8,
+    "hasta": 5.8,
+    "contenido": "Chico saltando a silueta recortada sobre piscina.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Icono X roja"
+    ]
+   },
+   {
+    "desde": 5.8,
+    "hasta": 9.2,
+    "contenido": "Chica intentando truco con hula hoop en la cocina.",
+    "encuadre": "plano entero",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Icono X roja"
+    ]
+   },
+   {
+    "desde": 9.2,
+    "hasta": 13.2,
+    "contenido": "Chico haciendo mortal hacia atrás equilibrado sobre un rodillo.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Check verde",
+     "Calavera morada meme"
+    ]
+   },
+   {
+    "desde": 13.2,
+    "hasta": 16.5,
+    "contenido": "Salto mortal de espaldas desde gran altura hacia piscina.",
+    "encuadre": "general",
+    "camara": "paneo descendente",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Check verde",
+     "Calavera morada meme"
+    ]
+   },
+   {
+    "desde": 16.5,
+    "hasta": 20.5,
+    "contenido": "Chico en cama elástica aterriza exactamente dentro de silueta dibujada.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Check verde",
+     "Calavera morada meme"
+    ]
+   },
+   {
+    "desde": 20.5,
+    "hasta": 24.0,
+    "contenido": "Chico salta sobre sube y baja de madera y aterriza de pie.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Check verde",
+     "Calavera morada meme"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3,
+  "sincronia_con_la_musica": "Los cortes y la aparición de la calavera morada caen exactamente en los remates del beat (ej. seg 12, 16, 20, 23).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Iconos de futbolistas (Yildiz, Pedri, Lehmann, Haaland, Neymar, Messi, Ronaldo)",
+    "estilo": "Fotos circulares en la parte superior con marcadores X / Check"
+   }
+  ],
+  "audio": {
+   "musica": "Funk brasileño / Phonk, ~125 BPM",
+   "efectos": [
+    "Sonido de fallo (X)",
+    "Sonido de acierto (Check)",
+    "Efecto sonoro meme sigma"
+   ],
+   "voz": "Vocal de funk brasileño cantando en portugués",
+   "momento_clave_de_audio": "El cambio de beat al segundo 9.2 cuando comienzan los aciertos"
+  },
+  "estructura": "Planteo (0-9s): 3 fallos consecutivos en retos virales → Tensión/Cambio (9s): inicio de aciertos impresiona al espectador → Remate (9-24s): racha de trucos espectaculares ganadores.",
+  "giro_o_sorpresa": "La transición abrupta de fallos cómicos a acrobacias increíbles con el efecto de calavera sigma.",
+  "final_y_loop": "Termina con la última victoria atribuida a Ronaldo; no hace loop continuo perfecto pero impulsa a volver a ver la racha de aciertos.",
+  "emocion_que_busca": "asombro",
+  "por_que_comentan": "Debaten si la asignación de futbolistas es justa o cuál truco fue el más impresionante.",
+  "por_que_comparten_o_repiten": "Por la espectacularidad de los trucos exitosos y el tono humorístico estilo meme sigma.",
+  "tres_razones_por_las_que_exploto": [
+   "Formato de eliminación/comparación muy adictivo",
+   "Acrobacias reales de alto impacto visual",
+   "Uso de futbolistas populares combinados con estética meme sigma"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "Requiere derechos o curaduría de clips virales reales de acrobacias extremas.",
+   "dificultad_1a10": 8,
+   "que_se_pierde_si_no_usamos_ese_material": "El impacto y credibilidad de los trucos físicos reales."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Recopilar 3 clips virales de fallos y 4 clips de acrobacias espectaculares",
+   "Diseñar una barra superior con avatares de celebridades o deportistas populares",
+   "Sincronizar los aciertos con la calavera morada sigma y música Phonk/Funk pegadiza"
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

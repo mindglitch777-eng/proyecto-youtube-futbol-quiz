@@ -1,0 +1,109 @@
+{
+ "id": "sfMpf5YrkCY",
+ "canal": "HappyHM",
+ "vistas": 198205358,
+ "titulo": "Mbappé Gave Haaland the TINIEST Lollipop… His Reaction Says It All 😂🍭 #haaland #mbappe",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "video real",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Buena iluminación interior, colores vivos en camisetas, nitidez alta, aunque es un sketch con dobles o aspecto algo paródico, la factura técnica es limpia y corporativa de canal de humor.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Mbappé sostiene cubo de Nutella gigante con chupetines gigantes de M&M's",
+    "texto": "HappyHM",
+    "sonido": "Música alegre estilo comedia física",
+    "movimiento_o_efecto": "Lamine Yamal aplaude emocionado"
+   },
+   {
+    "t": "0.5"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Mbappé saca un chupetín gigante",
+    "texto": null,
+    "sonido": "Sonido pop/silbido",
+    "movimiento_o_efecto": "Se lo da a Yamal"
+   },
+   {
+    "t": "1.5"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Yamal recibe feliz un chupetín enorme",
+    "texto": null,
+    "sonido": "Efecto de sorpresa",
+    "movimiento_o_efecto": "Zoom in rápido"
+   },
+   {
+    "t": "2.5"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Bellingham pasa al frente sorprendido",
+    "texto": null,
+    "sonido": "Música continúa juguetona",
+    "movimiento_o_efecto": "Corte rápido"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina futbolistas top mundial reconocibles (Mbappé, Yamal, Haaland, Bellingham) en una situación absurda y exagerada (comida gigante).",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 24.0,
+    "contenido": "Sketch humorístico donde Mbappé reparte chupetines gigantes de Nutella a otros futbolistas hasta darle uno minúsculo a Haaland.",
+    "encuadre": "plano medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zoom in",
+     "sonidos caricaturescos"
+    ]
+   }
+  ],
+  "cortes_por_10s": 2,
+  "sincronia_con_la_musica": "Los chistes físicos y reacciones de sorpresa están sincronizados con los golpes musicales (ej. 0:15 en el gag del chupetín pequeño).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "HappyHM",
+    "estilo": "Fuente sans-serif gruesa, color rosa brillante, posición superior central, estática con marca de agua semitransparente"
+   }
+  ],
+  "audio": {
+   "musica": "Música alegre instrumental de comedia slapstick, 120 bpm, estilo goofy cartoon.",
+   "efectos": [
+    "Sonido de chupetín ridículamente pequeño (pop agudo)",
+    "risas o exclamaciones"
+   ],
+   "voz": "No hay diálogo hablado inteligible, solo reacciones vocales.",
+   "momento_clave_de_audio": "El sonido agudo y seco del chupetín diminuto en el segundo 0:15."
+  },
+  "estructura": "planteo (0:00-0:05: Mbappé ofrece chupetines gigantes) → tensión (0:06-0:14: Todos reciben premios gigantes y celulares) → remate (0:15-0:24: Haaland recibe un chupetín microscópico y se enoja).",
+  "giro_o_sorpresa": "A Haaland, el más grande físicamente, le toca un chupetín microscópico tras ver a los demás recibir enormes.",
+  "final_y_loop": "Termina con la cara de frustración de Haaland tras comer el chupetín diminuto, no engancha perfectamente en loop pero es corto y re-viciable.",
+  "emocion_que_busca": "risa / asombro",
+  "por_que_comentan": "Debaten sobre el parecido de los dobles con los futbolistas reales y la cara graciosa de Haaland.",
+  "por_que_comparten_o_repiten": "Por el contraste cómico y absurdo entre el tamaño de las estrellas de fútbol y el premio final.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de imitadores o figuras de futbolistas virales muy populares (Mbappé, Haaland, Bellingham, Yamal).",
+   "Humor visual universal sin barreras de idioma.",
+   "Efecto sorpresa muy bien medido en el remate del video."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usar dobles de riesgo/imitadores o creadores de contenido vestidos de futbolistas con utilería exagerada.",
+   "dificultad_1a10": 4,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho inmediato del reconocimiento facial de las estrellas top."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Conseguir imitadores convincentes de 4 figuras virales del momento.",
+   "Preparar utilería gigante y desproporcionada (comida gigante).",
+   "Diseñar un gag final con un contraste brutal (algo gigante que termina siendo diminuto).",
+   "Mantener el ritmo ágil con reacciones exageradas y música de comedia clásica."
+  ],
+  "puntaje_produccion_1a10": 7,
+  "puntaje_idea_1a10": 9
+ }
+}

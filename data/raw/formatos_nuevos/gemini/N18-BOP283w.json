@@ -1,0 +1,196 @@
+{
+ "id": "N18-BOP283w",
+ "canal": "Rumeftbl",
+ "vistas": 17262658,
+ "titulo": "Baby Yamal & Thiago Messi & Ronaldo Jr Biggest Trophies...❤️‍🩹",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "mezcla: fotos de archivo reales con IA generativa de estilo hiperrealista y filtros de mejora facial",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Las fotos de los niños con trofeos están retocadas con IA para mejorar nitidez y contraste, se nota en las texturas de piel suavizadas artificialmente y fondos cambiados.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Yamal y niño con trofeo",
+    "texto": "YAMAL",
+    "sonido": "Música pop melancólica bailable con beat fuerte, inicio de canción",
+    "movimiento_o_efecto": "Zoom in rápido con shake"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Texto rojo sobre Yamal bebé",
+    "texto": "BABY YAMAL CELEBRATING WITH TROPHY",
+    "sonido": "Continúa beat",
+    "movimiento_o_efecto": "Corte al primer plano del niño"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Keyne con chupete",
+    "texto": "KEYNE",
+    "sonido": "Sube el volumen del beat",
+    "movimiento_o_efecto": "Zoom in sobre la cara del niño"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Yamal sonriendo con lentes",
+    "texto": "YAMAL",
+    "sonido": "Golpe de beat",
+    "movimiento_o_efecto": "Corte rápido"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Yamal sonriendo",
+    "texto": "LAUGHING",
+    "sonido": "Continúa canción",
+    "movimiento_o_efecto": "Efecto de sonrisa exagerada/caricatura"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Niño corriendo en la cancha",
+    "texto": "KEYNE'S CELEBRATION",
+    "sonido": "Beat continuo",
+    "movimiento_o_efecto": "Cámara lenta con estela brillante"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Niño corriendo con banderas",
+    "texto": "KEYNE'S CELEBRATION",
+    "sonido": "Transición de golpe",
+    "movimiento_o_efecto": "Corte seco"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina futbolistas famosos actuales (Yamal) con niños virales ('Baby Yamal'/Keyne), colores saturados y un ritmo frenético con texto grande en el primer segundo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 5.0,
+    "contenido": "Yamal y Keyne celebrando con trofeo y balón",
+    "encuadre": "medio",
+    "camara": "zoom in",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zoom rápido",
+     "shake",
+     "texto dinámico"
+    ]
+   },
+   {
+    "desde": 5.0,
+    "hasta": 13.0,
+    "contenido": "Keyne corriendo en el campo de juego y celebrando con Yamal",
+    "encuadre": "general",
+    "camara": "cámara lenta",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "estela luminosa",
+     "texto verde brillante"
+    ]
+   },
+   {
+    "desde": 13.0,
+    "hasta": 17.0,
+    "contenido": "Thiago Messi sosteniendo el Balón de Oro",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "círculo rojo de foco",
+     "texto descriptivo"
+    ]
+   },
+   {
+    "desde": 17.0,
+    "hasta": 32.0,
+    "contenido": "Ronaldo Jr tomando su primer trofeo y reacción de Cristiano",
+    "encuadre": "medio",
+    "camara": "zoom in",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "cámara lenta",
+     "zoom dramático",
+     "texto verde"
+    ]
+   },
+   {
+    "desde": 32.0,
+    "hasta": 36.0,
+    "contenido": "Messi con cara de orgullo y collage final",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "corazón con bandera"
+    ]
+   }
+  ],
+  "cortes_por_10s": 7,
+  "sincronia_con_la_musica": "Sí, los cortes principales y los zooms caen exactamente en cada golpe (beat) fuerte de la canción, por ejemplo en 0.0, 0.9, 1.8, 3.4, 5.2, 10.1, 14.2.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "YAMAL / BABY YAMAL CELEBRATING WITH TROPHY",
+    "estilo": "Arial Black gruesa, amarillo y blanco con borde negro, centrada, animación de aparición con zoom"
+   },
+   {
+    "t": "1.0",
+    "texto": "KEYNE",
+    "estilo": "Amarillo con flecha indicadora superior, fuente sans-serif bold"
+   },
+   {
+    "t": "5.0",
+    "texto": "KEYNE'S CELEBRATION",
+    "estilo": "Verde brillante con contorno negro, parte inferior"
+   },
+   {
+    "t": "14.0",
+    "texto": "THIAGO / BALLON D'OR / +1 TROPHY",
+    "estilo": "Verde neón y blanco, estilo meme viral de YouTube Shorts"
+   },
+   {
+    "t": "19.0",
+    "texto": "RONALDO JR TAKING HIS FIRST TROPHY",
+    "estilo": "Verde neón, parte inferior"
+   },
+   {
+    "t": "25.0",
+    "texto": "I WANT TROPHY",
+    "estilo": "Verde neón central grande"
+   }
+  ],
+  "audio": {
+   "musica": "Pop electrónico/hip-hop melódico, aprox 128 bpm, canción viral de edits de fútbol en TikTok",
+   "efectos": [
+    "whooshes en cada corte",
+    "golpes de bajo (bass drops)"
+   ],
+   "voz": "No hay voz en off, sólo la música con letra cantada de fondo",
+   "momento_clave_de_audio": "El drop principal ocurre en el segundo 0.0 con la entrada del beat pesado"
+  },
+  "estructura": "planteo (0-5s: presentación de Yamal y Baby Yamal) → tensión (5-17s: celebraciones de Keyne y Thiago Messi) → remate (17-36s: la historia emotiva de Ronaldo Jr queriendo el trofeo y reacción de Cristiano + cierre emotivo)",
+  "giro_o_sorpresa": "El cambio de tercio hacia Ronaldo Jr mostrando su timidez y deseo por ganar el trofeo igual que su padre",
+  "final_y_loop": "Termina con un collage comparativo de Baby Yamal y Ronaldo Jr con sus trofeos y un corazón. Conecta visualmente con el inicio si el espectador vuelve a empezar el short.",
+  "emocion_que_busca": "ternura y asombro combinado con la grandeza del legado futbolístico",
+  "por_que_comentan": "Discute sobre quién es mejor heredero o si 'Baby Yamal' es realmente familia de Lamine Yamal, y la ternura de Ronaldo Jr.",
+  "por_que_comparten_or_repiten": "Por la alta carga emocional de ver a los hijos de las máximas leyendas (Messi y Cristiano) junto a la nueva joya (Yamal) en formato rápido y aesthetic.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de figuras hiper populares actuales (Lamine Yamal, Messi, Cristiano Ronaldo)",
+   "Narrativa emotiva de los hijos de futbolistas con trofeos icónicos",
+   "Edición ultra dinámica sincronizada perfectamente con un audio en tendencia"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": "Se requieren imágenes oficiales y videos virales protegidos por copyright de futbolistas y sus hijos",
+   "dificultad_1a10": 9,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho emocional instantáneo que generan las caras reales de Messi, Cristiano y Yamal de pequeños o con sus hijos"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Recopilar 4 o 5 momentos virales de hijos de futbolistas famosos con trofeos.",
+   "Paso 2: Elegir un audio en tendencia de edits de fútbol con un beat muy marcado.",
+   "Paso 3: Cortar cada 1-2 segundos exactamente en cada golpe de la música.",
+   "Paso 4: Añadir textos grandes de colores llamativos (verde neón y amarillo) con flechas indicadoras.",
+   "Paso 5: Aplicar efectos de zoom in, shake y cámara lenta en los momentos climáticos."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

@@ -1,0 +1,172 @@
+{
+ "id": "eMDHaS9mgg8",
+ "canal": "Footballer zone 61",
+ "vistas": 4962299,
+ "titulo": "Spanish colors, sporty confidence, and football’s greatest prize. 🇪🇸🏆",
+ "modelo": "gemini-flash-latest",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (video casero de celular extraído de redes sociales de Lamine Yamal + imágenes estáticas PNG de productos recortados sobre fondo blanco)",
+  "calidad_imagen_1a10": 5,
+  "por_que_esa_calidad": "El metraje inicial tiene compresión notable de repost de TikTok/Instagram con luz de interior doméstica sin corrección de color. La segunda mitad son imágenes PNG de catálogo genéricas montadas en CapCut con tipografía básica con sombra simulando líquido, viéndose como contenido de baja producción pero altamente nativo de redes.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Lamine Yamal en el fondo mirando a su hermanito Keyne, ambos vestidos con la equipación de España con el dorsal 19. Una réplica de la Copa del Mundo en el piso.",
+    "texto": "WAIT KEYNE YAMAL 👦",
+    "sonido": "Voz de audio viral de funk/phonk ('Now the bouncer...') con base rítmica.",
+    "movimiento_o_efecto": "Flecha rosa animada señalando al hermanito; texto estilo graffiti goteando."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Keyne da unos pasos de baile descoordinados y graciosos hacia la réplica de la Copa del Mundo.",
+    "texto": "WAIT KEYNE YAMAL 👦",
+    "sonido": "Continúa el beat de funk.",
+    "movimiento_o_efecto": "Círculo blanco dibujándose alrededor del trofeo en el piso."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Keyne se agacha a buscar el trofeo mientras Yamal observa divertido.",
+    "texto": "WAIT KEYNE YAMAL 👦",
+    "sonido": "Beat rítmico acelerando hacia el corte.",
+    "movimiento_o_efecto": "Keyne agarra la copa dorada."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Keyne levanta el trofeo emocionado, riendo a la cámara.",
+    "texto": null,
+    "sonido": "Transición de audio con corte abrupto.",
+    "movimiento_o_efecto": "Zoom leve hacia el rostro de Keyne levantando el trofeo."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Keyne sonríe sosteniendo la copa dorada con ambas manos frente a Yamal.",
+    "texto": null,
+    "sonido": "Voz sampleada de reggaetón/dembo: '¿Y qué fue?'",
+    "movimiento_o_efecto": "Corte a negro o transición rápida."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Keyne celebra con el trofeo antes del corte al desglose de precios.",
+    "texto": null,
+    "sonido": "Sample vocal: '¿Y qué fue? Quisiste más...'",
+    "movimiento_o_efecto": "Freeze frame previo al corte comercial."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Corte abrupto a fondo blanco con la imagen PNG aislada del trofeo de la Copa del Mundo.",
+    "texto": "US 17,000$",
+    "sonido": "Voz en loop rítmico: '¿Y qué fue?'",
+    "movimiento_o_efecto": "Aparición instantánea del producto y precio."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Lamine Yamal es una de las figuras más virales del fútbol mundial. Ver su faceta íntima y familiar con su carismático hermanito Keyne interactuando con la Copa del Mundo genera ternura inmediata y retención de curiosidad.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 4.2,
+    "contenido": "Video casero en el living: Keyne Yamal baila y levanta la Copa del Mundo junto a Lamine Yamal.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "flecha animada",
+     "círculo blanco resaltador",
+     "texto dripping"
+    ]
+   },
+   {
+    "desde": 4.2,
+    "hasta": 5.4,
+    "contenido": "Trofeo de la Copa del Mundo sobre fondo blanco con valor estimado.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "recorte PNG",
+     "texto central con sombra"
+    ]
+   },
+   {
+    "desde": 5.4,
+    "hasta": 6.5,
+    "contenido": "Camiseta oficial de España 2024 de Lamine Yamal (dorsal 19) sobre fondo blanco.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "recorte PNG",
+     "texto central"
+    ]
+   },
+   {
+    "desde": 6.5,
+    "hasta": 7.5,
+    "contenido": "Pantalón corto oficial de España con el dorsal 19.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "recorte PNG",
+     "texto central"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5.3,
+  "sincronia_con_la_musica": "Los cambios de prendas en el desglose final (a partir del segundo 4.2) están sincronizados con los compases repetitivos del sample vocal ('¿Y qué fue?').",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "WAIT KEYNE YAMAL 👦",
+    "estilo": "fuente estilo graffiti/slime amarilla con borde negro y goteo, posición inferior central"
+   },
+   {
+    "t": "4.2",
+    "texto": "US 17,000$",
+    "estilo": "fuente estilo slime amarilla con contorno negro, centrada sobre el trofeo"
+   },
+   {
+    "t": "5.4",
+    "texto": "US 120$",
+    "estilo": "fuente idéntica amarilla con goteo y borde negro, centrada en la camiseta"
+   },
+   {
+    "t": "6.5",
+    "texto": "US 70$",
+    "estilo": "fuente idéntica amarilla con goteo y borde negro, centrada en el short"
+   }
+  ],
+  "audio": {
+   "musica": "Mashup viral de TikTok: inicio con Brazilian Funk/Phonk acelerado (aprox 130 BPM) que corta hacia un sample rítmico urbano latino ('¿Y qué fue?')",
+   "efectos": [
+    "ninguno añadido aparte de la pista musical mezclada"
+   ],
+   "voz": "Sample vocal procesado repitiendo '¿Y qué fue? Quisiste más...'",
+   "momento_clave_de_audio": "El corte de audio en el segundo 4.2 que rompe el video casero y arranca el loop del sample con el precio del trofeo."
+  },
+  "estructura": "Planteo (0.0-2.0s): Lamine y Keyne en casa con la copa en el piso. Tensión/Acción (2.0-4.2s): Keyne recoge el trofeo y celebra con gracia. Remate/Formato de valor (4.2-7.5s): Desglose rápido del costo del 'outfit + trofeo' estilo drip check.",
+  "giro_o_sorpresa": "La transición inesperada de un clip tierno de hermanos futboleros a un formato comercial de 'cuánto cuesta el outfit/trofeo'.",
+  "final_y_loop": "Termina de golpe en el short de 70$, generando un bucle imperfecto pero rápido que invita a reiniciar si no se llegaron a leer los precios.",
+  "emocion_que_busca": "ternura",
+  "por_que_comentan": "Debaten si el precio de la réplica de la copa es real ($17,000 parece exagerado o inventado), elogian lo simpático que es el hermanito de Yamal y comentan sobre el futuro de España.",
+  "por_que_comparten_o_repiten": "Por la ternura de Keyne Yamal y para mostrarle a amigos futboleros el video viral del hermano de la estrella del Barcelona.",
+  "tres_razones_por_las_que_exploto": [
+   "Aprovechamiento total del pico mediático de Lamine Yamal tras la Eurocopa 2024.",
+   "El factor tierno y cómico de Keyne Yamal levantando una réplica de la Copa del Mundo.",
+   "Fusión de formato clip viral familiar con formato 'precio del outfit' (drip price check), que genera alta retención."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 9,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el 100% del atractivo; el éxito depende pura y exclusivamente de la identidad de Lamine Yamal y su hermano real en un momento íntimo."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Monitorear historias de Instagram y TikTok de futbolistas top del momento (Yamal, Bellingham, Mbappé) en busca de momentos familiares graciosos o espontáneos.",
+   "Montar en los primeros 3-4 segundos el momento de mayor impacto o ternura con un gancho gráfico llamativo (flecha o texto que guíe la mirada al protagonista secundario).",
+   "Cortar abruptamente en el clímax hacia un desglose de precios del outfit ('Drip check') o ficha de estadísticas.",
+   "Colocar precios deliberadamente debatibles (ej. poner un valor absurdo a un objeto como la réplica del trofeo) para forzar comentarios corrigiendo el precio."
+  ],
+  "puntaje_produccion_1a10": 3,
+  "puntaje_idea_1a10": 7
+ }
+}

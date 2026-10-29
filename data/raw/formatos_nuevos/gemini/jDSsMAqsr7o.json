@@ -1,0 +1,119 @@
+{
+ "id": "jDSsMAqsr7o",
+ "canal": "RanKing",
+ "vistas": 8060436,
+ "titulo": "Ranking Iconic Football Haircuts ✂️⚽",
+ "modelo": "gemini-3.5-flash-lite",
+ "analisis": {
+  "tipo_de_imagen": "animación 2D estilo caricatura con diseño digital limpio",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Ilustraciones limpias, personajes reconocibles al instante, colores vivos y estilo caricaturesco consistente en todo el video.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Neymar cortando el pelo a Cristiano",
+    "texto": "Ranking Iconic Football Haircuts",
+    "sonido": "Zumbido de maquinilla y efecto de tensión",
+    "movimiento_o_efecto": "Corte de pelo rápido con maquinilla"
+   },
+   {
+    "t": "0.5"
+   },
+   {
+    "t": "1.0"
+   },
+   {
+    "t": "1.5"
+   },
+   {
+    "t": "2.0"
+   },
+   {
+    "t": "2.5"
+   },
+   {
+    "t": "3.0"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Ver a Neymar como barbero cortándole el pelo a Cristiano Ronaldo genera curiosidad inmediata y humor.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 0.3,
+    "contenido": "Neymar con capa de barbero preparando la maquinilla frente a un cliente con camiseta de Portugal",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "zumbido maquinilla"
+    ]
+   },
+   {
+    "desde": 0.3,
+    "hasta": 1.5,
+    "contenido": "Neymar pasa la maquinilla a Cristiano Ronaldo",
+    "encuadre": "medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "sonido de corte"
+    ]
+   },
+   {
+    "desde": 1.5,
+    "hasta": 3.0,
+    "contenido": "Cristiano aparece con su corte clásico y se muestra en cancha",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "grito de gol"
+    ]
+   }
+  ],
+  "cortes_por_10s": 4,
+  "sincronia_con_la_musica": "Los cortes de cambio de corte de pelo coinciden exactamente con los golpes de la música en cada segundo clave.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Ranking Iconic Football Haircuts",
+    "estilo": "fuente bold sans-serif, amarillo con borde negro, arriba al centro, animación fija"
+   }
+  ],
+  "audio": {
+   "musica": "Ritmo pop/hip-hop rítmico de fondo con efectos de sonido de maquinilla y transiciones",
+   "efectos": [
+    "zumbido de cortadora de pelo",
+    "efectos de transición agudos",
+    "gritos de celebración"
+   ],
+   "voz": "no hay voz",
+   "momento_clave_de_audio": "El zumbido de la maquinilla al inicio de cada corte de pelo en 0.0, 0.4, 0.8"
+  },
+  "estructura": "planteo → tensión → remate: Plantea el ranking de cortes icónicos mostrando a futbolistas famosos cortando el pelo a otros, revelando el resultado en la cancha.",
+  "giro_o_sorpresa": "La transformación humorística de los futbolistas y cómo Neymar actúa como el barbero de todos.",
+  "final_y_loop": "Termina con la última revelación del corte y se reinicia el ranking desde el inicio.",
+  "emocion_que_busca": "risa / asombro / nostalgia",
+  "por_que_comentan": "Para debatir cuál corte es el más icónico o burlarse de las caricaturas de los jugadores.",
+  "por_que_comparten_o_repiten": "Por el humor visual rápido y el reconocimiento inmediato de las leyendas del fútbol.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas mundialmente famosos (Ronaldo, Neymar, Messi, Pogba)",
+   "Animación divertida y dinámica con transiciones rápidas",
+   "Concepto original de ranking combinando humor y fútbol"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Animación 2D en software como After Effects o herramientas de IA de imagen/video estilo caricatura",
+   "dificultad_1a10": 7,
+   "que_se_pierde_si_no_usamos_ese_material": "El reconocimiento facial exacto de las caricaturas de futbolistas famosos"
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Diseñar caricaturas de futbolistas famosos reconocibles al instante.",
+   "Paso 2: Crear una narrativa visual donde un jugador barbero le corta el pelo a otro.",
+   "Paso 3: Sincronizar perfectamente los efectos de sonido de barbería con los cortes de edición.",
+   "Paso 4: Añadir una lista de ranking progresiva que mantenga la expectativa."
+  ],
+  "puntaje_produccion_1a10": 9,
+  "puntaje_idea_1a10": 9
+ }
+}

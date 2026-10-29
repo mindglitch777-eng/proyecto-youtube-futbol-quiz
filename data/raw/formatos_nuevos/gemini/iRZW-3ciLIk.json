@@ -1,0 +1,164 @@
+{
+ "id": "iRZW-3ciLIk",
+ "canal": "Global Outfit",
+ "vistas": 8735173,
+ "titulo": "Lamine Yamal Formal Gala Drip: $3,250 Designer Tuxedo & Patent Leather Shoes Breakdown! 🇺🇸✨",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (video real de alfombra roja con superposiciones de gráficos y fotos de catálogo de ropa sobre fondo blanco)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "El video original de la gala tiene una resolución estándar de red social vertical con buena iluminación, y las fotos del catálogo de prendas se ven limpias y de buena definición.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Lamine Yamal posando con su familia en la alfombra roja del Ballon d'Or con una flecha azul señalando su saco",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton ('Y qué fue')",
+    "movimiento_o_efecto": "Flecha gráfica azul fija sobre el hombro"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Lamine sonriendo junto a sus familiares en la alfombra roja",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton",
+    "movimiento_o_efecto": "Reproducción fluida del video"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Lamine Yamal en traje formal posando para la prensa",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton ('Ni hiciste na')",
+    "movimiento_o_efecto": "Movimiento corporal de pose"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Familia de Lamine posando juntas en el evento",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton",
+    "movimiento_o_efecto": "Corte veloz"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Parpadeo rápido a negro",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton",
+    "movimiento_o_efecto": "Transición de destello/fundido corto"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Toma de la alfombra roja con un círculo blanco enfocando los zapatos de Lamine",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton ('Con tanta chapa')",
+    "movimiento_o_efecto": "Círculo gráfico destacando el calzado"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Enfoque continúo en los pies y calzado de la familia",
+    "texto": "null",
+    "sonido": "Música dembow/reggaeton",
+    "movimiento_o_efecto": "Imagen congelada / destacada"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Aprovecha la imagen viral de Lamine Yamal en la gala del Balón de Oro y utiliza indicadores visuales (flecha y círculo) para despertar curiosidad inmediata sobre el costo de su vestimenta.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 2.0,
+    "contenido": "Lamine Yamal y su familia en la alfombra roja del Ballon d'Or con flecha azul apuntando a su saco.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Flecha gráfica superpuesta"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 4.5,
+    "contenido": "Misma escena de la gala pero con un círculo blanco resaltando el calzado de Lamine.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "flash",
+    "efectos": [
+     "Círculo gráfico superpuesto"
+    ]
+   },
+   {
+    "desde": 4.5,
+    "hasta": 5.5,
+    "contenido": "Saco de esmoquin cruzado negro sobre fondo blanco con su precio en dólares.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto animado de precio"
+    ]
+   },
+   {
+    "desde": 5.5,
+    "hasta": 6.5,
+    "contenido": "Pantalón formal negro de vestir sobre fondo blanco con su precio en dólares.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Texto animado de precio"
+    ]
+   },
+   {
+    "desde": 6.5,
+    "hasta": 8.0,
+    "contenido": "Zapatos Oxford de charol negro sobre fondo blanco.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": []
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "La transición de las prendas en los segundos 4.5, 5.5 y 6.5 entra exactamente sincronizada con el golpe del bombo y la caja del dembow.",
+  "textos_en_pantalla": [
+   {
+    "t": "4.5",
+    "texto": "US 850$",
+    "estilo": "Tipografía cursiva amarilla dorada con sombra negra, ubicada en el centro de la imagen"
+   },
+   {
+    "t": "5.5",
+    "texto": "US 750$",
+    "estilo": "Tipografía cursiva amarilla dorada con sombra negra, ubicada sobre la parte superior del pantalón"
+   }
+  ],
+  "audio": {
+   "musica": "Dembow / Reggaeton urbano caribeño, ~110 BPM",
+   "efectos": null,
+   "voz": "null",
+   "momento_clave_de_audio": "El cambio de compás en el segundo 4.5 cuando arranca la exhibición de las fotos de prendas e importes."
+  },
+  "estructura": "Planteo (0.0s-4.0s): Muestra la toma viral del evento marcando los elementos del atuendo con flechas y círculos. Tensión/Desglose (4.5s-6.5s): Revelación rápida de cada prenda de catálogo junto con su costo individual. Remate (6.5s-8.0s): Presentación del calzado de charol para completar el costo total del outfit.",
+  "giro_o_sorpresa": "Pasar de un video informal de evento deportivo a un desglose estético tipo e-commerce con precios exactos de marcas de lujo.",
+  "final_y_loop": "Cierra mostrando los zapatos de charol negros. Engancha bien en loop directo al reiniciar en la alfombra roja.",
+  "emocion_que_busca": "asombro",
+  "por_que_comentan": "Debaten si el precio de la ropa es exageradamente caro o si es adecuado para un jugador estrella de nivel mundial.",
+  "por_que_comparten_o_repiten": "Lo comparten fanáticos del fútbol y del estilo urbano para mostrar el valor del vestuario de Lamine Yamal.",
+  "tres_razones_por_las_que_exploto": [
+   "Inclusión de una estrella del fútbol mundial en máxima tendencia (Lamine Yamal).",
+   "El formato popular 'Outfit Breakdown / Drip Check' que causa mucha curiosidad.",
+   "Sincronización rítmica precisa con música urbana pegadiza."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Descargando imágenes públicas de alfombras rojas y buscando los productos correspondientes en tiendas online.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "La relevancia mediática inmediata de contar con el metaje real del evento del Ballon d'Or."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Elegir un personaje famoso que haya asistido recientemente a un evento importante.",
+   "Identificar y recortar las piezas de su vestuario desde catálogos de e-commerce.",
+   "Usar flechas y círculos llamativos en los primeros segundos para captar la atención visual.",
+   "Sincronizar las apariciones de cada prenda y precio al golpe de ritmo de una pista urbana popular."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 8
+ }
+}

@@ -1,0 +1,178 @@
+{
+ "id": "BkgMJShPtdI",
+ "canal": "FootyPivot",
+ "vistas": 11602127,
+ "titulo": "🇧🇷 2002 WORLD CUP WINNERS THEN VS NOW #football #shorts",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (archivo histórico de TV con clips modernos de redes sociales y entrevistas)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Clips de 2002 en baja definición y formato 4:3 estirado, contrastados con videos modernos en HD y filtros de nitidez agresivos.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Cafu festejando con la copa del mundo en 2002",
+    "texto": "2002 WORLD CUP WINNERS THEN VS NOW / CAFU 2002",
+    "sonido": "Música 'Spirits' (remix)",
+    "movimiento_o_efecto": "Zoom in lento"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Cafu besando la copa",
+    "texto": "CAFU 2002",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Corte rápido"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Cafu besando la copa",
+    "texto": "CAFU 2002",
+    "sonido": "Beat de la música",
+    "movimiento_o_efecto": "Fijo"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Transición a Cafu en la actualidad frente a McDonald's",
+    "texto": "CAFU 2026",
+    "sonido": "Cambio de ritmo / Beat drop",
+    "movimiento_o_efecto": "Corte en el beat"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Cafu actual sonriendo",
+    "texto": "CAFU 2026",
+    "sonido": "Vocal 'Spirits in my head'",
+    "movimiento_o_efecto": "Gesto manual"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Cafu actual señalando a cámara",
+    "texto": "CAFU 2026",
+    "sonido": "Música continua",
+    "movimiento_o_efecto": "Corte inminente"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Transición a Kaká en 2002 sosteniendo medalla",
+    "texto": "KAKA 2002",
+    "sonido": "Cambio de sección musical",
+    "movimiento_o_efecto": "Corte seco"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Combina nostalgia inmediata del Mundial 2002 con la curiosidad de ver el cambio físico actual.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 3.0,
+    "contenido": "Cafu 2002 (campeón) vs Cafu actual",
+    "encuadre": "primer plano / medio",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Filtro de nitidez",
+     "Header banner fijo"
+    ]
+   },
+   {
+    "desde": 3.0,
+    "hasta": 6.0,
+    "contenido": "Kaká 2002 (joven) vs Kaká actual",
+    "encuadre": "primer plano / medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Header banner fijo"
+    ]
+   },
+   {
+    "desde": 6.0,
+    "hasta": 9.0,
+    "contenido": "Ronaldinho 2002 vs Ronaldinho actual",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Header banner fijo"
+    ]
+   },
+   {
+    "desde": 9.0,
+    "hasta": 12.0,
+    "contenido": "Rivaldo 2002 festejando vs Rivaldo actual",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Header banner fijo"
+    ]
+   },
+   {
+    "desde": 12.0,
+    "hasta": 15.0,
+    "contenido": "Roberto Carlos 2002 vs Roberto Carlos actual",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Header banner fijo"
+    ]
+   },
+   {
+    "desde": 15.0,
+    "hasta": 18.0,
+    "contenido": "Ronaldo Nazário 2002 vs Ronaldo actual con IShowSpeed",
+    "encuadre": "primer plano / medio",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Header banner fijo"
+    ]
+   }
+  ],
+  "cortes_por_10s": 3.3,
+  "sincronia_con_la_musica": "Total. Cada cambio de jugador (2002 a actual) coincide exactamente con los golpes de batería y cambios de voz de la canción.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "2002 WORLD CUP WINNERS THEN VS NOW",
+    "estilo": "Banner superior, texto blanco y verde en negrita, fuente sans-serif"
+   },
+   {
+    "t": "0.0",
+    "texto": "CAFU 2002 / 2026",
+    "estilo": "Subtítulo central, fuente sans-serif blanca con borde negro"
+   }
+  ],
+  "audio": {
+   "musica": "Fitz and the Tantrums - Spirits (Sped up remix)",
+   "efectos": null,
+   "voz": null,
+   "momento_clave_de_audio": "Drop en cada transición de 'Antes' a 'Ahora'."
+  },
+  "estructura": "Planteo (0-3s) con Cafu. Desarrollo (3-15s) con Kaká, Ronaldinho, Rivaldo y Roberto Carlos. Remate (15-18s) con Ronaldo 'El Fenómeno'.",
+  "giro_o_sorpresa": "Ver el cambio físico impactante de Ronaldo Nazário al final.",
+  "final_y_loop": "Cierre abrupto tras Ronaldo que reinicia perfectamente el ciclo con el festejo inicial de Cafu.",
+  "emocion_que_busca": "Nostalgia y asombro.",
+  "por_que_comentan": "Debaten quién se mantiene mejor conservado física y estéticamente.",
+  "por_que_comparten_o_repiten": "Homenaje rápido a leyendas del fútbol ideal para compartir entre fanáticos.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de futbolistas legendarios e icónicos de Brasil 2002.",
+   "Estructura rítmica y clara de comparación Antes vs Ahora.",
+   "Edición sincronizada a la perfección con un tema musical viral."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": false,
+   "como": null,
+   "dificultad_1a10": 9,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el impacto nostálgico real y el reconocimiento inmediato de los futbolistas."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Seleccionar un equipo legendario con fuerte valor de nostalgia.",
+   "Recopilar un clip icónico del pasado y uno reciente representativo para cada jugador.",
+   "Elegir un track de audio viral con ritmo claro de 2 tiempos por segmento.",
+   "Sincronizar milimétricamente el corte 'Antes/Ahora' con el beat."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 8
+ }
+}

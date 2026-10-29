@@ -1,0 +1,101 @@
+{
+ "id": "HLALMlt9u7E",
+ "canal": "Eddy Kicks ",
+ "vistas": 20252673,
+ "titulo": "Legendary Football Stop Challenge ⚽️🛑 #messi #ronaldo #haaland #mbappe  #challenge#football #shorts",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "Fotos estáticas con efectos digitales de filtro interactivo (4 cuadrantes)",
+  "calidad_imagen_1a10": 6,
+  "por_que_esa_calidad": "Edición simple en cuadrícula con filtros de deformación interactivos sobre fotos de futbolistas.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Cuadrícula de 4 futbolistas (Ronaldo, Messi, Neymar, Haaland) con porcentajes.",
+    "texto": "1%, 49%, 69%, 99%",
+    "sonido": "Voz distorsionada en bucle ('Gilian dictador')",
+    "movimiento_o_efecto": "Filtro de deformación facial moviéndose en cada imagen"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Máscaras faciales alternando posiciones sobre los rostros.",
+    "texto": "1%, 49%, 69%, 99%",
+    "sonido": "Base Phonk continua",
+    "movimiento_o_efecto": "Movimiento continuo del filtro"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Alineación casi perfecta en la cara de Haaland.",
+    "texto": "99%",
+    "sonido": "Voz repetitiva",
+    "movimiento_o_efecto": "Deformación del filtro interactivo"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Ajuste de la figura en el cuadrante inferior derecho.",
+    "texto": "99%",
+    "sonido": "Ritmo constante",
+    "movimiento_o_efecto": "Calce visual del filtro"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Uso de futbolistas hiperfamosos en un formato de reto/filtro visual de alineación.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 5.0,
+    "contenido": "Pantalla dividida en 4 cuadrantes con un filtro de encaje facial en movimiento.",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Filtro de distorsión facial interactivo",
+     "Overlay de texto con porcentajes"
+    ]
+   }
+  ],
+  "cortes_por_10s": 0,
+  "sincronia_con_la_musica": "El bucle visual coincide con el ritmo repetitivo del audio.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "1%, 49%, 69%, 99%",
+    "estilo": "Texto en negrilla blanca con sombra, ubicado en la parte inferior de cada cuadrante"
+   },
+   {
+    "t": "0.0",
+    "texto": "Eddy Kicks",
+    "estilo": "Marca de agua circular en el centro"
+   }
+  ],
+  "audio": {
+   "musica": "Phonk / Slowed bass remix con vocal sample repetitivo (~110 BPM)",
+   "efectos": [],
+   "voz": "Voz grave distorsionada repitiendo 'Gilian dictador'",
+   "momento_clave_de_audio": "Audio en bucle uniforme durante todo el video"
+  },
+  "estructura": "Planteo: Desafío de calzar la cara (0s) -> Tensión: Movimiento errático del filtro (1-3s) -> Remate: Haaland logra el calce casi perfecto al 99% (4-5s).",
+  "giro_o_sorpresa": "Haaland obtiene 99% de precisión mientras que Ronaldo se queda en 1%.",
+  "final_y_loop": "Corta de forma limpia para reiniciar el bucle y la música sin interrupción.",
+  "emocion_que_busca": "Curiosidad y entretenimiento",
+  "por_que_comentan": "Debate entre fanáticos sobre los porcentajes asignados a cada futbolista.",
+  "por_que_comparten_o_repiten": "Para intentar pausar el video justo cuando el filtro calza al 100%.",
+  "tres_razones_por_las_que_exploto": [
+   "Presencia de las mayores estrellas del fútbol mundial",
+   "Formato de juego/reto interactivo de pausar en el momento exacto",
+   "Loop fluido con audio hipnótico en tendencia"
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Usando fotos de libre uso, un editor como CapCut/After Effects y un track audio Phonk sin copyright.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "El gancho masivo que generan las caras reconocibles de Messi y Ronaldo."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Crear una plantilla de 4 cuadrantes con fotos de alta resolución.",
+   "Animar máscaras/filtros faciales moviéndose en bucle continuo.",
+   "Agregar porcentajes llamativos y sincronizar con música viral."
+  ],
+  "puntaje_produccion_1a10": 5,
+  "puntaje_idea_1a10": 8
+ }
+}

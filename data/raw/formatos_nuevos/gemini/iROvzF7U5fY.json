@@ -1,0 +1,122 @@
+{
+ "id": "iROvzF7U5fY",
+ "canal": "DuoWave ",
+ "vistas": 138173966,
+ "titulo": "SAVE THE FOOTBALLER BY STOPPING THE DISCS FROM FALLING | WHO WON?😱🙏",
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (video real en gimnasio con superposición de CGI 3D y edición estilo videojuego)",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Buena iluminación, nitidez en video real y elementos CGI bien integrados estilo caricatura.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Hombre sosteniendo torre de discos coloridos y jaula 3D con Haaland.",
+    "texto": "UI de puntuación arriba (9-9-9-9)",
+    "sonido": "Música de fondo y cuenta regresiva",
+    "movimiento_o_efecto": "Los discos caen al soltar el soporte"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Discos cayendo rápidamente",
+    "texto": "Puntaje de Haaland baja a 6",
+    "sonido": "Efectos de sonido de caída",
+    "movimiento_o_efecto": "Animación de números cambiando"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Caen más discos al suelo",
+    "texto": "Puntaje baja a 1",
+    "sonido": "SFX de impacto",
+    "movimiento_o_efecto": "Movimiento rápido de cámara fija"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Últimos discos caen",
+    "texto": "Puntaje llega a 0",
+    "sonido": "Efecto de fallo/error",
+    "movimiento_o_efecto": "Haaland CGI llora en la jaula"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Participante cruza los brazos en señal de derrota",
+    "texto": "0 en contador de Haaland",
+    "sonido": "Música continúa",
+    "movimiento_o_efecto": "Entra segundo participante corriendo"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Segundo jugador toma el juguete de discos",
+    "texto": "Ronaldo aparece en la jaula CGI",
+    "sonido": "SFX de transición",
+    "movimiento_o_efecto": "Cambio de personaje en la jaula"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Segundo jugador listo para intentar el reto",
+    "texto": "Contador de Ronaldo en 9",
+    "sonido": "Beat musical marcado",
+    "movimiento_o_efecto": "Posición de preparación"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Formato visual dinámico de juego físico combinado con íconos populares del fútbol.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 25.0,
+    "contenido": "Plano general fijo de dos personas turnándose para equilibrar discos y liberar futbolistas CGI de una jaula.",
+    "encuadre": "general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "CGI de jaula 3D",
+     "caras caricaturizadas",
+     "UI de contadores"
+    ]
+   }
+  ],
+  "cortes_por_10s": 0,
+  "sincronia_con_la_musica": "Alta. Las caídas de discos y cambios de turno coinciden con los golpes de ritmo (0:01, 0:06, 0:11, 0:24).",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Contadores numéricos (9, 9, 9, 9) y rostros de Haaland, Ronaldo, Yamal, Messi",
+    "estilo": "UI de videojuego superior con borde de color"
+   }
+  ],
+  "audio": {
+   "musica": "Remix funk/pop uptempo, ~125 BPM, muy popular en tendencias de Shorts/TikTok.",
+   "efectos": [
+    "Caída de bloques",
+    "zumbador de falla",
+    "campana de victoria"
+   ],
+   "voz": "null",
+   "momento_clave_de_audio": "0:24 sonido de victoria cuando Messi es liberado."
+  },
+  "estructura": "Planteo (0-4s: fallo con Haaland) → Tensión (5-13s: fallos consecutivos con Ronaldo y Yamal) → Remate (14-25s: Messi es salvado con éxito).",
+  "giro_o_sorpresa": "Al final el jugador logra mantener todos los discos usando la llave para liberar a Messi.",
+  "final_y_loop": "Celebración final con luz verde en Messi. Conecta bien para repetición rápida por la música continua.",
+  "emocion_que_busca": "Entretenimiento, tensión de juego y debate futbolístico.",
+  "por_que_comentan": "Fanáticos discuten la rivalidad entre Messi, Ronaldo, Haaland y Yamal.",
+  "por_que_comparten_o_repiten": "Dinámica de reto física fácil de entender y satisfactoria de ver.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso estratégico de figuras de fútbol mundial altamente virales.",
+   "Formato de reto/juego con progresión visual clara.",
+   "Edición CGI colorida y llamativa para retención de audiencia joven."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Grabación de reto físico real + assets 3D/CGI propios trackeados al video.",
+   "dificultad_1a10": 6,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el gancho masivo que generan los rostros de futbolistas famosos."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Grabar reto físico de destreza con encuadre vertical fijo.",
+   "Superponer elemento 3D (jaula/personaje) con tracking de movimiento básico.",
+   "Agregar marcador UI arriba y sincronizar efectos de sonido a cada intento."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}

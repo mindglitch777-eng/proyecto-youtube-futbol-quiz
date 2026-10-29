@@ -1,0 +1,186 @@
+{
+ "id": "OVgfkHJKKfA",
+ "canal": "Watch Later",
+ "vistas": 9102350,
+ "titulo": "KID VERSION of World’s Famous Footballers With A Twist ⚽️ #Football #DaiDai #WorldCup2026",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "video generado con IA (edición fotográfica e hiperrealismo con cambio de género y edad)",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Limpia, buena iluminación y textura, aunque con acabado sintético típico de IA.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Erling Haaland y su versión niña con la camiseta de Noruega",
+    "texto": null,
+    "sonido": "Música pop vocal de inicio",
+    "movimiento_o_efecto": "Imagen estática vertical dividida"
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Misma imagen de Haaland",
+    "texto": null,
+    "sonido": "Voz cantada",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Misma imagen de Haaland",
+    "texto": null,
+    "sonido": "Voz cantada",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Misma imagen de Haaland",
+    "texto": null,
+    "sonido": "Voz cantada",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Transición a Jude Bellingham y su versión niña",
+    "texto": null,
+    "sonido": "Cambio en compás musical",
+    "movimiento_o_efecto": "Corte seco"
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Misma imagen de Bellingham",
+    "texto": null,
+    "sonido": "Voz cantada",
+    "movimiento_o_efecto": "Ninguno"
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Misma imagen de Bellingham",
+    "texto": null,
+    "sonido": "Voz cantada",
+    "movimiento_o_efecto": "Ninguno"
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "La transformación de Haaland en una niña resulta visualmente curiosa e inesperada.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 2.0,
+    "contenido": "Erling Haaland y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Edición por IA"
+    ]
+   },
+   {
+    "desde": 2.0,
+    "hasta": 4.0,
+    "contenido": "Jude Bellingham y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Edición por IA"
+    ]
+   },
+   {
+    "desde": 4.0,
+    "hasta": 6.0,
+    "contenido": "Cristiano Ronaldo y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Edición por IA"
+    ]
+   },
+   {
+    "desde": 6.0,
+    "hasta": 8.0,
+    "contenido": "Neymar Jr y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Edición por IA"
+    ]
+   },
+   {
+    "desde": 8.0,
+    "hasta": 10.0,
+    "contenido": "Kylian Mbappé y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Edición por IA"
+    ]
+   },
+   {
+    "desde": 10.0,
+    "hasta": 12.0,
+    "contenido": "Lionel Messi y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Edición por IA"
+    ]
+   },
+   {
+    "desde": 12.0,
+    "hasta": 14.5,
+    "contenido": "Lamine Yamal y versión niña",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Edición por IA",
+     "Superposición de botón de suscripción"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "Los cambios de foto se ejecutan exactamente cada dos segundos al compás del ritmo.",
+  "textos_en_pantalla": [
+   {
+    "t": "12.0",
+    "texto": "SUBSCRIBE",
+    "estilo": "Botón rojo interactivo animado con icono de ratón y campana"
+   }
+  ],
+  "audio": {
+   "musica": "Pop alegre mid-tempo vocal",
+   "efectos": [
+    "Sonido de click de ratón en 00:13"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "El click de la suscripción al final en 00:13"
+  },
+  "estructura": "Planteo (0-2s: Gancho con Haaland) → Tensión/Desarrollo (2-12s: Secuencia fluida de estrellas) → Remate (12-14s: Cierre con Yamal y call to action).",
+  "giro_o_sorpresa": "La versión infantil creada por IA es de género femenino.",
+  "final_y_loop": "Cierra con la imagen de Yamal y la animación de suscripción; no es loop infinito continuo.",
+  "emocion_que_busca": "ternura / curiosidad",
+  "por_que_comentan": "Los usuarios debaten cuál versión niña es la más idéntica al futbolista original.",
+  "por_que_comparten_o_repiten": "Por la gracia de ver a ídolos masculinos transformados en niñas tiernas.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de los futbolistas más famosos del mundo.",
+   "Concepto visual novedoso usando IA.",
+   "Edición ágil de dos segundos por personaje."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Generar imágenes de futbolistas en versión niña mediante FaceApp, Midjourney o Photoshop.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento inmediato del público si no son atletas famosos."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Paso 1: Seleccionar imágenes en alta calidad de deportistas populares.",
+   "Paso 2: Aplicar filtro de IA para rejuvenecer y cambiar género.",
+   "Paso 3: Montar la imagen original arriba y la versión IA abajo.",
+   "Paso 4: Sincronizar transiciones rápidas con música pegadiza."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 7
+ }
+}

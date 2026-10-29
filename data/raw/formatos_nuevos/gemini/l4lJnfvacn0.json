@@ -1,0 +1,136 @@
+{
+ "id": "l4lJnfvacn0",
+ "canal": "FootyDuelX",
+ "vistas": 1252522,
+ "titulo": "🔥 Cristiano Ronaldo vs Ronaldo Jr. Height Comparison! 😱⚽",
+ "modelo": "gemini-3.5-flash",
+ "analisis": {
+  "tipo_de_imagen": "mezcla (fotomontaje digital sobre fotos reales de futbolistas)",
+  "calidad_imagen_1a10": 7,
+  "por_que_esa_calidad": "Montaje gráfico limpio con buen contraste de color, aunque con recortes digitales evidentes.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Comparación en 2015: Ronaldo Jr (niño) vs Cristiano Ronaldo.",
+    "texto": "2015 😔",
+    "sonido": "Inicio de pista musical ritmo urbano/phonk.",
+    "movimiento_o_efecto": "Imagen estática dividida al medio."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Aparecen las mediciones de altura en pantalla.",
+    "texto": "137Cm / 187Cm",
+    "sonido": "Música continua.",
+    "movimiento_o_efecto": "Aparición emergente de texto."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Vista continua de la comparación de 2015.",
+    "texto": "137Cm / 187Cm / 2015 😔",
+    "sonido": "Música en progresión.",
+    "movimiento_o_efecto": "Ninguno."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Detalle de los textos de altura.",
+    "texto": "137Cm / 187Cm",
+    "sonido": "Música.",
+    "movimiento_o_efecto": "Estático."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Transición hacia el cambio de año.",
+    "texto": "137Cm / 187Cm",
+    "sonido": "Pre-drop musical.",
+    "movimiento_o_efecto": "Corte de transición."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Cambio a 2026: Cristiano vs Ronaldo Jr más alto.",
+    "texto": "2026 💀 / 187Cm / 190Cm",
+    "sonido": "Drop de bajo grave.",
+    "movimiento_o_efecto": "Corte seco con efecto de impacto musical."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Ronaldo Jr (190cm) superando a Cristiano (187cm).",
+    "texto": "187Cm / 190Cm",
+    "sonido": "Música con bajo potente.",
+    "movimiento_o_efecto": "Estático."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Aprovecha la curiosidad masiva sobre el crecimiento y futuro futbolístico del hijo de Cristiano Ronaldo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 2.5,
+    "contenido": "Comparación de estatura en 2015 entre Cristiano Ronaldo y su hijo niño.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "Líneas de medición laterales",
+     "Texto superpuesto con emoji"
+    ]
+   },
+   {
+    "desde": 2.5,
+    "hasta": 5.5,
+    "contenido": "Proyección futurista para 2026 donde Ronaldo Jr supera en altura a su padre.",
+    "encuadre": "plano general",
+    "camara": "fija",
+    "transicion_de_entrada": "corte seco",
+    "efectos": [
+     "Líneas de medición rojas",
+     "Edición de vestimenta Al-Nassr"
+    ]
+   }
+  ],
+  "cortes_por_10s": 2,
+  "sincronia_con_la_musica": "Sí, el corte del segundo 2.5 coincide exactamente con el golpe de bajo de la pista.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.1",
+    "texto": "137Cm / 187Cm / 2015 😔",
+    "estilo": "Fuente Sans-Serif gruesa, blanco y amarillo, centrado e inferior con emoji."
+   },
+   {
+    "t": "2.5",
+    "texto": "187Cm / 190Cm / 2026 💀",
+    "estilo": "Fuente Sans-Serif gruesa, amarillo/blanco, indicadores de altura superiores."
+   }
+  ],
+  "audio": {
+   "musica": "Remix estilo Phonk/Urbano, ~125 BPM, tendencia en Shorts de fútbol.",
+   "efectos": [
+    "Golpe de bajo/impacto en la transición"
+   ],
+   "voz": null,
+   "momento_clave_de_audio": "Drop de bajo en 0:02.5 al mostrar la predicción de 2026."
+  },
+  "estructura": "Planteo (0:00-0:02: Pasado 2015 con diferencia física abismal) → Remate (0:02.5-0:05: Futuro 2026 donde el hijo supera al padre).",
+  "giro_o_sorpresa": "La proyección de que Ronaldo Jr mida 190 cm y sea más alto que Cristiano.",
+  "final_y_loop": "Termina en la imagen de 2026; al reiniciarse inmediatamente crea un bucle continuo de contraste.",
+  "emocion_que_busca": "asombro",
+  "por_que_comentan": "Debate sobre si la altura proyectada es genéticamente realista o exagerada.",
+  "por_que_comparten_o_repiten": "Formato ultra corto de 5 segundos que incentiva repeticiones automáticas para analizar los detalles.",
+  "tres_razones_por_las_que_exploto": [
+   "Uso de dos figuras mediáticas globales (Cristiano y su hijo).",
+   "Duración optimizada de 5 segundos para maximizar retención y retención superior al 100%.",
+   "Estímulo visual claro y directo sin relleno."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Mediante software de edición fotográfica (Photoshop/Canva) uniendo imágenes y agregando gráficos.",
+   "dificultad_1a10": 3,
+   "que_se_pierde_si_no_usamos_ese_material": "Se pierde el reconocimiento instantáneo de las figuras públicas reales."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Seleccionar dos figuras públicas populares con relación padre/hijo o rivalidad.",
+   "Crear una composición gráfica simple 'Pasado vs Futuro' con indicadores numéricos.",
+   "Sincronizar el cambio de imagen exactamente con un drop musical fuerte a los 2-3 segundos."
+  ],
+  "puntaje_produccion_1a10": 6,
+  "puntaje_idea_1a10": 8
+ }
+}

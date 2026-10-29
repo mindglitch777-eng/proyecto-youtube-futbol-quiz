@@ -1,0 +1,182 @@
+{
+ "id": "Z0NHrmBymBg",
+ "canal": "Era2Era",
+ "vistas": 9488328,
+ "titulo": "Argentina 2026 World Cup Squad — Then vs Now (Part 1) 🇦🇷🏆",
+ "modelo": "gemini-3.6-flash",
+ "analisis": {
+  "tipo_de_imagen": "video generado con IA (transición de morphing entre fotos reales de jugadores jóvenes y actuales)",
+  "calidad_imagen_1a10": 8,
+  "por_que_esa_calidad": "Transiciones fluidas de morphing por IA, integración limpia de camisetas y excelente nitidez de personajes.",
+  "gancho_0_a_3s": [
+   {
+    "t": "0.0",
+    "en_pantalla": "Lionel Messi a los 13 años con camiseta gris.",
+    "texto": "Then Age 13 Lionel Messi",
+    "sonido": "Cántico festivo de hinchada argentina en ritmo cumbia.",
+    "movimiento_o_efecto": "Primer plano fijo del jugador joven."
+   },
+   {
+    "t": "0.5",
+    "en_pantalla": "Inicio del morphing de Messi joven a adulto.",
+    "texto": "Then Age 13 Lionel Messi",
+    "sonido": "Música continua.",
+    "movimiento_o_efecto": "Efecto de deformación/transición fluida IA."
+   },
+   {
+    "t": "1.0",
+    "en_pantalla": "Lionel Messi actual con la camiseta de Argentina.",
+    "texto": "Now Age 39 Lionel Messi",
+    "sonido": "Cántico de la canción.",
+    "movimiento_o_efecto": "Reconocimiento de Messi adulto sonriendo."
+   },
+   {
+    "t": "1.5",
+    "en_pantalla": "Transición hacia el costado fuera de campo.",
+    "texto": "Lionel Messi",
+    "sonido": "Música continua.",
+    "movimiento_o_efecto": "Desplazamiento lateral de cámara hacia la derecha."
+   },
+   {
+    "t": "2.0",
+    "en_pantalla": "Emiliano 'Dibu' Martínez a los 14 años.",
+    "texto": "Then Age 14 Emiliano Martínez",
+    "sonido": "Letra del tema de hinchada.",
+    "movimiento_o_efecto": "Entrada de nuevo personaje."
+   },
+   {
+    "t": "2.5",
+    "en_pantalla": "Morphing de Dibu Martínez de joven a adulto.",
+    "texto": "Emiliano Martínez",
+    "sonido": "Música continua.",
+    "movimiento_o_efecto": "Transición de edad con IA."
+   },
+   {
+    "t": "3.0",
+    "en_pantalla": "Dibu Martínez adulto sonriendo.",
+    "texto": "Now Age 33 Emiliano Martínez",
+    "sonido": "Música continua.",
+    "movimiento_o_efecto": "Plano medio sonriendo a cámara."
+   }
+  ],
+  "por_que_el_gancho_frena_el_scroll": "Arranca inmediatamente con el rostro de Messi de niño transformándose en adulto al ritmo de un cántico argentino pegadizo.",
+  "tomas": [
+   {
+    "desde": 0.0,
+    "hasta": 3.0,
+    "contenido": "Comparativa Antes vs Ahora de Lionel Messi",
+    "encuadre": "primer plano",
+    "camara": "fija",
+    "transicion_de_entrada": "ninguna",
+    "efectos": [
+     "morphing IA"
+    ]
+   },
+   {
+    "desde": 3.0,
+    "hasta": 7.0,
+    "contenido": "Comparativa Antes vs Ahora de Emiliano Martínez",
+    "encuadre": "primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "barrido",
+    "efectos": [
+     "morphing IA"
+    ]
+   },
+   {
+    "desde": 7.0,
+    "hasta": 11.0,
+    "contenido": "Comparativa Antes vs Ahora de Enzo Fernández",
+    "encuadre": "primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "barrido",
+    "efectos": [
+     "morphing IA"
+    ]
+   },
+   {
+    "desde": 11.0,
+    "hasta": 15.0,
+    "contenido": "Comparativa Antes vs Ahora de Cristian Romero",
+    "encuadre": "primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "barrido",
+    "efectos": [
+     "morphing IA"
+    ]
+   },
+   {
+    "desde": 15.0,
+    "hasta": 19.0,
+    "contenido": "Comparativa Antes vs Ahora de Thiago Almada",
+    "encuadre": "primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "barrido",
+    "efectos": [
+     "morphing IA"
+    ]
+   },
+   {
+    "desde": 19.0,
+    "hasta": 23.0,
+    "contenido": "Comparativa Antes vs Ahora de Nicolás Tagliafico",
+    "encuadre": "primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "barrido",
+    "efectos": [
+     "morphing IA"
+    ]
+   },
+   {
+    "desde": 23.0,
+    "hasta": 27.0,
+    "contenido": "Comparativa Antes vs Ahora de Nico Paz",
+    "encuadre": "primer plano",
+    "camara": "paneo",
+    "transicion_de_entrada": "barrido",
+    "efectos": [
+     "morphing IA"
+    ]
+   }
+  ],
+  "cortes_por_10s": 5,
+  "sincronia_con_la_musica": "Los cambios de jugador suceden al ritmo del pulso de la música en cada compás principal.",
+  "textos_en_pantalla": [
+   {
+    "t": "0.0",
+    "texto": "Then Age 13 Lionel Messi / Now Age 39 Lionel Messi",
+    "estilo": "Texto en negrita amarillo y blanco con borde negro, posicionado en el centro inferior."
+   }
+  ],
+  "audio": {
+   "musica": "Cumbia / Cántico de hinchada de la selección argentina (~105 BPM)",
+   "efectos": [],
+   "voz": "Canto de hinchada con letra futbolera en español",
+   "momento_clave_de_audio": "Inicio directo con ritmo alto y lírica de cancha desde el segundo 0."
+  },
+  "estructura": "Planteo (0-3s): Transformación impactante de Messi de niño a adulto. Tensión (3-23s): Sucesión rápida de figuras de la Selección Argentina mostrando su cambio físico. Remate (23-27s): Cierre con la joven promesa Nico Paz preparando el llamado a la Parte 2.",
+  "giro_o_sorpresa": "La fluidez del efecto visual de envejecimiento/morphing que une la foto de la infancia con la camiseta oficial actual.",
+  "final_y_loop": "Termina de forma continua en el último jugador, invitando al loop o a ver la siguiente parte.",
+  "emocion_que_busca": "Nostalgia, asombro y orgullo futbolístico.",
+  "por_que_comentan": "Debaten sobre la proyección de edades para el Mundial 2026 y los parecidos físicos de los jugadores.",
+  "por_que_comparten_o_repiten": "Es un formato dinámico, estéticamente vistoso y con música identitaria muy compartible entre aficionados.",
+  "tres_razones_por_las_que_exploto": [
+   "Messi en el primer segundo asegura alta retención.",
+   "Excelente calidad de morphing visual con IA.",
+   "Banda sonora futbolera con alto engagement emocional."
+  ],
+  "replicable_sin_material_ajeno": {
+   "se_puede": true,
+   "como": "Recopilando imágenes públicas de archivo y procesándolas con herramientas de video morphing IA como Runway o Luma.",
+   "dificultad_1a10": 5,
+   "que_se_pierde_si_no_usamos_ese_material": "Se perdería el valor nostálgico de las fotos infantiles reales de los deportistas."
+  },
+  "receta_para_hacerlo_igual_o_mejor": [
+   "Seleccionar fotos claras de infancia y adultez de figuras populares.",
+   "Generar el morphing entre ambas fotos usando una herramienta de IA de video.",
+   "Sincronizar cada transición al beat de un tema viral de cancha o cumbia."
+  ],
+  "puntaje_produccion_1a10": 8,
+  "puntaje_idea_1a10": 9
+ }
+}
