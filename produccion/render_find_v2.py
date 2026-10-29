@@ -30,7 +30,9 @@ F_TIT = str(ROOT / "assets" / "fuentes" / "ArchivoBlack-Regular.ttf")
 F_NUM = str(ROOT / "assets" / "fuentes" / "Anton-Regular.ttf")
 N, TILE, GAP, PAD = 5, 194, 8, 14
 PX, PY = (W - (N * TILE + (N - 1) * GAP + 2 * PAD)) // 2, 330
-T_INTRO, T_POP, T_BUSCAR, T_REVELA = 0.5, 0.35, 3.0, 0.9
+T_INTRO, T_POP, T_BUSCAR, T_REVELA = 0.95, 0.35, 3.0, 0.9
+T_QUIETA, T_FLASH = 0.45, 0.3              # la cara gigante se queda quieta con la frase; el flash se apaga en 0,3 s
+FRASE = "99% FAIL THIS"
 NIVEL = {"facil": ("EASY", (61, 200, 110)), "medio": ("MEDIUM", (255, 176, 32)), "dificil": ("ONLY 1%", (235, 64, 52))}
 
 
@@ -194,15 +196,31 @@ def cuadro(fnd, R, t, k):
         circulo_mano(d, x + TILE / 2, y + TILE / 2, TILE * 0.68, ease_out(pr / 0.3))
     # intro: cara gigante que se achica hasta su casillero
     if k == 0 and lt < T_INTRO:
-        e = ease_out(lt / T_INTRO)
+        e = ease_out((lt - T_QUIETA) / (T_INTRO - T_QUIETA))
         x1, y1 = pos(12)
-        lado = int(700 * (1 - e) + TILE * e)
+        golpe = 1 + 0.14 * math.exp(-lt * 14) * math.cos(lt * 40)                # zoom de impacto al arrancar
+        lado = int(700 * golpe * (1 - e) + TILE * e)
         cx = W / 2 * (1 - e) + (x1 + TILE / 2) * e; cy = 860 * (1 - e) + (y1 + TILE / 2) * e
         h = R["heroe"].resize((lado, lado), Image.BICUBIC)
         m = Image.new("L", (lado, lado), 0); ImageDraw.Draw(m).rounded_rectangle([0, 0, lado - 1, lado - 1], int(18 + 40 * (1 - e)), fill=255)
         bor = Image.new("RGB", (lado + 16, lado + 16), (255, 255, 255))
         im.paste(bor, (int(cx - lado / 2 - 8), int(cy - lado / 2 - 8)))
         im.paste(h, (int(cx - lado / 2), int(cy - lado / 2)), m)
+        if lt < T_QUIETA + 0.12:                                               # frase fuerte arriba de la cara
+            z = 0.8 + 0.2 * resorte(lt / 0.22) if lt < 0.22 else 1.0
+            fade = 1 - max(0, (lt - T_QUIETA) / 0.12)
+            capa = Image.new("RGBA", (W, 260), (0, 0, 0, 0)); dc = ImageDraw.Draw(capa)
+            texto(dc, (W // 2, 130), FRASE, 108, (255, 40, 40), 16, (255, 255, 255))
+            capa = capa.rotate(6, resample=Image.BICUBIC)
+            cw, ch = int(W * z), int(260 * z)
+            capa = capa.resize((cw, ch), Image.BICUBIC)
+            if fade < 1:
+                capa.putalpha(capa.split()[3].point(lambda v: int(v * fade)))
+            im.paste(capa, ((W - cw) // 2, int(1180 - ch / 2)), capa)
+    if t < T_FLASH:                                                            # flash blanco que se apaga
+        a = 0.45 * (1 - t / T_FLASH) ** 2
+        im = Image.blend(im.convert("RGB"), Image.new("RGB", (W, H), (255, 255, 255)), a)
+        d = ImageDraw.Draw(im)
     # barra de tiempo + cuenta
     bx0, bx1, by = 70, W - 70, 1392
     d.rounded_rectangle([bx0, by, bx1, by + 38], 19, fill=(16, 32, 72))
@@ -226,7 +244,13 @@ def audio(rondas, dur):
     tic = np.sin(2 * np.pi * 1900 * np.arange(int(0.035 * M.SR)) / M.SR) * np.exp(-np.arange(int(0.035 * M.SR)) / M.SR * 90) * 0.35
     drama = RR.sfx("dramatic_0", 0, 1.6, 0.55)
     wow = RR.sfx("wow_0", 0, 1.4, 0.5)
-    mez.add(0.0, M.whoosh(0.45), 0.6)
+    n = int(0.09 * M.SR); ruido = np.random.default_rng(9).standard_normal(n).astype(np.float32)
+    obturador = np.diff(ruido, prepend=0) * np.exp(-np.arange(n) / M.SR * 45) * 0.5          # "clic" de cámara (ruido agudo)
+    tt = np.arange(int(0.6 * M.SR)) / M.SR
+    zumbido = np.sin(2 * np.pi * 3200 * tt) * np.exp(-tt * 7) * 0.12                          # pitido del flash
+    mez.add(0.0, obturador); mez.add(0.0, zumbido)
+    mez.add(0.0, RR.sfx("vine_boom_0", 0, 1.2, 0.9))
+    mez.add(T_QUIETA - 0.05, M.whoosh(0.45), 0.6)
     for k, R in enumerate(rondas):
         if k:
             mez.add(R["t0"] - 0.05, M.whoosh(0.4), 0.5)
