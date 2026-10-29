@@ -1,0 +1,33 @@
+name: Rescatar videos de un render anterior
+
+# Baja los artifacts de un run de render_runner.yml (id en produccion/rescatar_run.txt) y los sube al repo, sin volver a renderizar.
+
+on:
+  push:
+    paths: [produccion/rescatar_run.txt]
+
+permissions:
+  contents: write
+  actions: read
+
+jobs:
+  rescatar:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - id: r
+        run: echo "id=$(tr -d '[:space:]' < produccion/rescatar_run.txt)" >> "$GITHUB_OUTPUT"
+      - uses: actions/download-artifact@v4
+        with:
+          run-id: ${{ steps.r.outputs.id }}
+          github-token: ${{ github.token }}
+          path: rescate
+      - name: Subir al repo
+        run: |
+          for d in rescate/*/; do g=$(basename "$d"); mkdir -p produccion/salida/$g; cp "$d"short.mp4 "$d${g}_liviano.mp4" produccion/salida/$g/; done
+          ls -la produccion/salida/runner_0*/
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f produccion/salida/*/short.mp4 produccion/salida/*/*_liviano.mp4
+          git commit -m "Videos rescatados del run ${{ steps.r.outputs.id }}"
+          for i in 1 2 3 4; do git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((5 * i)); done

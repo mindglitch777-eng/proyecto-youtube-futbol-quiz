@@ -68,4 +68,4 @@ jobs:
           git add -f produccion/salida/${{ matrix.guion }}/short.mp4 produccion/salida/${{ matrix.guion }}/${{ matrix.guion }}_liviano.mp4 \
                   produccion/salida/${{ matrix.guion }}/config.json produccion/salida/${{ matrix.guion }}/fotos produccion/salida/${{ matrix.guion }}/memes || true
           git commit -m "Render ${{ matrix.guion }} (Actions)" || echo "nada nuevo"
-          for i in 1 2 3 4 5 6; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((5 * i)); done
+          for i in 1 2 3 4 5 6; do git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((5 * i)); done
