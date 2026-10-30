@@ -1,0 +1,47 @@
+{
+ "id": "stop_03",
+ "duracion": 6.0,
+ "cuadrantes": [
+  {
+   "nombre": "Messi",
+   "foto": "lionel_messi_4",
+   "color": "violeta",
+   "pct": "1%",
+   "forma": "rombo",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "fase": 0.7
+  },
+  {
+   "nombre": "Haaland",
+   "foto": "erling_haaland_0",
+   "color": "amarillo",
+   "pct": "33%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 2,
+   "fase": 2.9
+  },
+  {
+   "nombre": "Vinícius",
+   "foto": "vin_cius_j_nior_0",
+   "color": "verde",
+   "pct": "69%",
+   "forma": "corazon",
+   "rasgo": "ojo_izq",
+   "vueltas": 2,
+   "fase": 5.0
+  },
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "rojo",
+   "pct": "99%",
+   "forma": "circulo",
+   "rasgo": "ojo_der",
+   "vueltas": 1,
+   "fase": 1.5
+  }
+ ],
+ "dopamina": true
+}
