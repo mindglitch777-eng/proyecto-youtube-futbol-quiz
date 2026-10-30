@@ -21,7 +21,7 @@ jobs:
         with: {python-version: "3.12"}
       - name: Chromium
         run: |
-          pip install -q playwright==1.48.2
+          pip install -q playwright==1.48.0
           python -m playwright install --with-deps chromium
       - name: Ver
         run: python pipeline/ver_virales.py
