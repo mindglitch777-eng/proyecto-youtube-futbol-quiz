@@ -1,0 +1,60 @@
+{
+ "id": "s1_21_jue05_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "azul",
+   "pct": "3%",
+   "forma": "rombo",
+   "rasgo": "boca",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 2,
+   "fase": 4.52,
+   "tam": 68
+  },
+  {
+   "nombre": "Ronaldinho",
+   "foto": "ronaldinho_1",
+   "color": "rojo",
+   "pct": "29%",
+   "forma": "corazon",
+   "rasgo": "ojo_der",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 5.36,
+   "tam": 68
+  },
+  {
+   "nombre": "Messi",
+   "foto": "lionel_messi_4",
+   "color": "violeta",
+   "pct": "49%",
+   "forma": "triangulo",
+   "rasgo": "ojo_der",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 5.07,
+   "tam": 68
+  },
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "color": "amarillo",
+   "pct": "69%",
+   "forma": "rombo",
+   "rasgo": "nariz",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 3,
+   "fase": 0.82,
+   "tam": 68
+  }
+ ]
+}

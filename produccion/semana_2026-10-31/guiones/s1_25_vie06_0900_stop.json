@@ -1,0 +1,60 @@
+{
+ "id": "s1_25_vie06_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Vinícius",
+   "foto": "vin_cius_j_nior_0",
+   "color": "azul",
+   "pct": "2%",
+   "forma": "rombo",
+   "rasgo": "ojo_izq",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 2,
+   "fase": 5.39,
+   "tam": 64
+  },
+  {
+   "nombre": "Messi",
+   "foto": "lionel_messi_4",
+   "color": "amarillo",
+   "pct": "17%",
+   "forma": "triangulo",
+   "rasgo": "ojo_izq",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 3,
+   "fase": 5.53,
+   "tam": 64
+  },
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "color": "violeta",
+   "pct": "43%",
+   "forma": "corazon",
+   "rasgo": "ojo_izq",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 2.01,
+   "tam": 60
+  },
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "rojo",
+   "pct": "99%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 0,
+   "fase": 5.15,
+   "tam": 60
+  }
+ ]
+}

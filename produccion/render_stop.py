@@ -143,14 +143,32 @@ def encajes(c, dur):
 DOPA = False      # modo "más dopamina": estela, chispas, PERFECT!, % que salta, temblor y fondo que late con el bajo
 
 
-def desde_encaje(c, t, dur):
-    """Segundos desde el último encaje de esta pieza (cíclico), o None si pasó más de 0,6 s."""
+HIPER = False     # modo "hiper": además explosión de emojis, golpe de zoom, borde dorado, "SO CLOSE!" y aro giratorio
+EMOJIS = [["🔥", "😱", "💯"], ["🤯", "⚽", "🐐"], ["😤", "🔥", "👑"], ["💀", "😂", "💯"]]
+_emo = {}
+
+
+def emoji(e, tam):
+    if e not in _emo:
+        f = ImageFont.truetype("/usr/share/fonts/truetype/noto/NotoColorEmoji.ttf", 109)
+        im = Image.new("RGBA", (136, 128), (0, 0, 0, 0))
+        ImageDraw.Draw(im).text((0, 0), e, font=f, embedded_color=True)
+        _emo[e] = im.crop(im.getbbox())
+    return _emo[e].resize((tam, tam), Image.BICUBIC)
+
+
+def desde(lista, t, dur, ventana=0.6):
+    """Segundos desde el último evento de la lista (cíclico), o None si pasó más que la ventana."""
     mejor = None
-    for te in c["encajes"]:
+    for te in lista:
         dt = (t - te) % dur
-        if dt < 0.6 and (mejor is None or dt < mejor):
+        if dt < ventana and (mejor is None or dt < mejor):
             mejor = dt
     return mejor
+
+
+def desde_encaje(c, t, dur):
+    return desde(c["encajes"], t, dur)
 
 
 def cuadro(fnd, cuads, t, dur):
@@ -201,16 +219,61 @@ def cuadro(fnd, cuads, t, dur):
             texto(d, (c["x0"] + QW // 2, y_pct), c["q"]["pct"], int(118 * (1 + 0.35 * (1 - p))), (255, 230, 40), 12, (20, 20, 30))
             if de < 0.1:
                 temblor = 9
+            if HIPER:                                                         # emojis que vuelan desde el hueco
+                fila = EMOJIS[(c["x0"] // QW + 2 * (c["y0"] // QH)) % len(EMOJIS)]
+                for j, e in enumerate(fila):
+                    ang = math.radians(-120 + j * 30)
+                    dist = 60 + 300 * (1 - (1 - p) ** 2)
+                    ex, ey = hx + dist * math.cos(ang), hy + dist * math.sin(ang) + 260 * p * p
+                    tam = int(95 + 70 * min(1, p * 4))
+                    em = emoji(e, tam)
+                    if p > 0.6:
+                        em.putalpha(em.split()[3].point(lambda v, k=(1 - p) / 0.4: int(v * k)))
+                    im.alpha_composite(em, (int(ex - tam / 2), int(ey - tam / 2)))
+                x, y = c["pos"]                                               # borde dorado en la foto
+                d.rounded_rectangle([x - 6, y - 6, x + LADO + 5, y + LADO + 5], 32, outline=(255, 215, 0), width=int(14 * (1 - p)) + 2)
+        if HIPER:
+            for c in cuads:
+                dc = desde(c["casi"], t, dur, 0.45)
+                if dc is not None:
+                    z = 0.7 + 0.3 * min(1, dc / 0.1)
+                    texto(d, (c["x0"] + QW // 2, c["pos"][1] + LADO // 2 + 160), "SO CLOSE!", int(64 * z), (255, 70, 70), 9, (255, 255, 255))
     pulso = 1 + 0.06 * max(0, math.cos(2 * math.pi * t * 2))                  # late con la negra (120 BPM)
     r = int(110 * pulso)
+    if HIPER:                                                                 # aro giratorio alrededor del STOP
+        base = 360.0 * t / 1.5
+        for j in range(12):
+            a0 = base + j * 30
+            d.arc([W // 2 - r - 22, H // 2 - r - 22, W // 2 + r + 22, H // 2 + r + 22], a0, a0 + 16,
+                  fill=(255, 230, 40) if j % 2 else (255, 255, 255), width=12)
     d.ellipse([W // 2 - r, H // 2 - r, W // 2 + r, H // 2 + r], fill=(255, 255, 255), outline=(20, 20, 30), width=10)
     texto(d, (W // 2, H // 2 - 18), "STOP", int(62 * pulso), (230, 30, 30), 0)
     texto(d, (W // 2, H // 2 + 42), "AT 100%", int(26 * pulso), (20, 20, 30), 0)
     im = im.convert("RGB")
+    if HIPER:                                                                 # golpe de zoom en el cuadrante que encajó
+        for c in cuads:
+            de = desde_encaje(c, t, dur)
+            if de is not None and de < 0.2:
+                k = 1 + 0.07 * (1 - de / 0.2)
+                caja = (c["x0"], c["y0"], c["x0"] + QW, c["y0"] + QH)
+                q = im.crop(caja).resize((int(QW * k), int(QH * k)), Image.BICUBIC)
+                q = q.crop(((q.width - QW) // 2, (q.height - QH) // 2, (q.width - QW) // 2 + QW, (q.height - QH) // 2 + QH))
+                im.paste(q, caja[:2])
+        d2 = ImageDraw.Draw(im)
+        d2.line([(QW, 0), (QW, H)], fill=(20, 20, 30), width=10); d2.line([(0, QH), (W, QH)], fill=(20, 20, 30), width=10)
+        r = int(110 * pulso)
+        d2.ellipse([W // 2 - r, H // 2 - r, W // 2 + r, H // 2 + r], fill=(255, 255, 255), outline=(20, 20, 30), width=10)
+        texto(d2, (W // 2, H // 2 - 18), "STOP", int(62 * pulso), (230, 30, 30), 0)
+        texto(d2, (W // 2, H // 2 + 42), "AT 100%", int(26 * pulso), (20, 20, 30), 0)
     if temblor:
         dx, dy = (temblor, -temblor // 2) if int(t * 30) % 2 else (-temblor, temblor // 2)
         im = im.transform(im.size, Image.AFFINE, (1, 0, -dx, 0, 1, -dy), fillcolor=(20, 20, 30))
     return im
+
+
+def musica_67(dur):
+    """Solo la música 6 7 (beat drill + voces del meme), cíclica, para otros formatos."""
+    return audio_67([], dur)[0]
 
 
 def audio_67(cuads, dur):
@@ -243,9 +306,9 @@ def audio_67(cuads, dur):
         for k in range(sub * (2 if b % 4 == 3 else 1)):
             add(t + k * negra / (sub * (2 if b % 4 == 3 else 1)), hat)
     musica = x.copy(); x[:] = 0
-    voces = [("doot_doot_0", 0.0), ("seis_siete_0", 2.0), ("seis_siete_2", 4.0)]
-    for nom, t0 in voces:
-        add(t0, RR.sfx(nom, vol=0.95))
+    voces = ["doot_doot_0", "seis_siete_0", "seis_siete_2"]                  # una voz del meme por compás, en ciclo
+    for j in range(int(dur // 2)):
+        add(j * 2.0, RR.sfx(voces[j % len(voces)], vol=0.95))
     musica += x; x[:] = 0
     efectos(cuads, dur, add)
     fx = x.copy()
@@ -303,8 +366,9 @@ def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
     dur = g.get("duracion", 6.0)
-    global DOPA
-    DOPA = bool(g.get("dopamina"))
+    global DOPA, HIPER
+    HIPER = bool(g.get("hiper"))
+    DOPA = bool(g.get("dopamina")) or HIPER
     cuads = armar(g); fnd = fondo(cuads)
     for c in cuads:
         pasadas = encajes(c, dur)

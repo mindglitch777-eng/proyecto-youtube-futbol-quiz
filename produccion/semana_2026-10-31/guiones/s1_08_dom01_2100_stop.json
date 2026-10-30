@@ -1,0 +1,60 @@
+{
+ "id": "s1_08_dom01_2100_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Mbappé",
+   "foto": "kylian_mbapp_0",
+   "color": "verde",
+   "pct": "2%",
+   "forma": "rombo",
+   "rasgo": "ojo_izq",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 5.98,
+   "tam": 64
+  },
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "color": "violeta",
+   "pct": "6%",
+   "forma": "corazon",
+   "rasgo": "boca",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 2,
+   "fase": 3.85,
+   "tam": 60
+  },
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "azul",
+   "pct": "55%",
+   "forma": "triangulo",
+   "rasgo": "boca",
+   "vueltas": 3,
+   "giros": 2,
+   "encaje_bueno": 1,
+   "fase": 3.01,
+   "tam": 60
+  },
+  {
+   "nombre": "Haaland",
+   "foto": "erling_haaland_0",
+   "color": "rojo",
+   "pct": "67%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 2,
+   "giros": 2,
+   "encaje_bueno": 3,
+   "fase": 1.82,
+   "tam": 68
+  }
+ ]
+}

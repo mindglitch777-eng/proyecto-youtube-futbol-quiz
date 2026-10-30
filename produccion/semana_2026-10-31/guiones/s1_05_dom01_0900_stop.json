@@ -1,0 +1,60 @@
+{
+ "id": "s1_05_dom01_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "violeta",
+   "pct": "3%",
+   "forma": "corazon",
+   "rasgo": "ojo_izq",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 3,
+   "fase": 2.4,
+   "tam": 60
+  },
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "rojo",
+   "pct": "9%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 3.16,
+   "tam": 64
+  },
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "color": "amarillo",
+   "pct": "56%",
+   "forma": "rombo",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 2,
+   "fase": 0.61,
+   "tam": 64
+  },
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "color": "verde",
+   "pct": "67%",
+   "forma": "estrella",
+   "rasgo": "ojo_izq",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 3,
+   "fase": 4.27,
+   "tam": 68
+  }
+ ]
+}

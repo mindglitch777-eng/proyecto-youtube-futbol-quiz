@@ -1,0 +1,60 @@
+{
+ "id": "s1_13_mar03_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "color": "amarillo",
+   "pct": "3%",
+   "forma": "triangulo",
+   "rasgo": "ojo_der",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 2.72,
+   "tam": 60
+  },
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "violeta",
+   "pct": "13%",
+   "forma": "corazon",
+   "rasgo": "ojo_der",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 3.88,
+   "tam": 64
+  },
+  {
+   "nombre": "Vinícius",
+   "foto": "vin_cius_j_nior_0",
+   "color": "azul",
+   "pct": "50%",
+   "forma": "corazon",
+   "rasgo": "ojo_izq",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 0.21,
+   "tam": 68
+  },
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "color": "verde",
+   "pct": "67%",
+   "forma": "corazon",
+   "rasgo": "ojo_der",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 2,
+   "fase": 5.31,
+   "tam": 68
+  }
+ ]
+}

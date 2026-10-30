@@ -1,0 +1,60 @@
+{
+ "id": "s1_24_jue05_2100_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "verde",
+   "pct": "3%",
+   "forma": "rombo",
+   "rasgo": "ojo_der",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 5.86,
+   "tam": 64
+  },
+  {
+   "nombre": "Ronaldinho",
+   "foto": "ronaldinho_1",
+   "color": "amarillo",
+   "pct": "5%",
+   "forma": "corazon",
+   "rasgo": "boca",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 1.04,
+   "tam": 68
+  },
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "color": "violeta",
+   "pct": "37%",
+   "forma": "triangulo",
+   "rasgo": "ojo_izq",
+   "vueltas": 3,
+   "giros": 2,
+   "encaje_bueno": 0,
+   "fase": 0.1,
+   "tam": 68
+  },
+  {
+   "nombre": "Zlatan",
+   "foto": "zlatan_ibrahimovi_2",
+   "color": "azul",
+   "pct": "69%",
+   "forma": "rombo",
+   "rasgo": "ojo_der",
+   "vueltas": 2,
+   "giros": 2,
+   "encaje_bueno": 0,
+   "fase": 4.76,
+   "tam": 60
+  }
+ ]
+}

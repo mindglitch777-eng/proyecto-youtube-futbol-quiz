@@ -210,7 +210,10 @@ def cuadro(fnd, R, t, k):
             z = 0.8 + 0.2 * resorte(lt / 0.22) if lt < 0.22 else 1.0
             fade = 1 - max(0, (lt - T_QUIETA) / 0.12)
             capa = Image.new("RGBA", (W, 260), (0, 0, 0, 0)); dc = ImageDraw.Draw(capa)
-            texto(dc, (W // 2, 130), FRASE, 108, (255, 40, 40), 16, (255, 255, 255))
+            fr = R.get("frase", FRASE); tf = 108
+            while dc.textlength(fr, font=fuente(F_TIT, tf)) > W - 140:
+                tf -= 4
+            texto(dc, (W // 2, 130), fr, tf, (255, 40, 40), 16, (255, 255, 255))
             capa = capa.rotate(6, resample=Image.BICUBIC)
             cw, ch = int(W * z), int(260 * z)
             capa = capa.resize((cw, ch), Image.BICUBIC)
@@ -268,7 +271,8 @@ def audio(rondas, dur):
         if k == len(rondas) - 1:
             mez.add(R["t_rev"] + 0.15, wow)
     solo = mez.x[: int(dur * M.SR)]
-    musica = RR.musica_juego(dur)[: len(solo)]
+    import render_stop as RS
+    musica = RS.musica_67(dur)[: len(solo)]
     return {"short.mp4": np.tanh((solo + musica * 0.55) * 1.05) * 0.92, "short_sin_musica.mp4": np.tanh(solo * 1.05) * 0.85}
 
 
@@ -276,6 +280,7 @@ def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
     rondas, dur = armar(g)
+    rondas[0]["frase"] = g.get("frase", FRASE)
     fnd = fondo()
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),

@@ -1,0 +1,60 @@
+{
+ "id": "s1_16_mar03_2100_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "amarillo",
+   "pct": "1%",
+   "forma": "corazon",
+   "rasgo": "ojo_izq",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 3,
+   "fase": 0.76,
+   "tam": 64
+  },
+  {
+   "nombre": "Ronaldinho",
+   "foto": "ronaldinho_1",
+   "color": "violeta",
+   "pct": "5%",
+   "forma": "corazon",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 2,
+   "fase": 4.8,
+   "tam": 68
+  },
+  {
+   "nombre": "Haaland",
+   "foto": "erling_haaland_0",
+   "color": "rojo",
+   "pct": "41%",
+   "forma": "estrella",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "giros": 2,
+   "encaje_bueno": 1,
+   "fase": 2.41,
+   "tam": 60
+  },
+  {
+   "nombre": "Salah",
+   "foto": "mohamed_salah_0",
+   "color": "azul",
+   "pct": "99%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 2,
+   "giros": 2,
+   "encaje_bueno": 0,
+   "fase": 4.89,
+   "tam": 60
+  }
+ ]
+}

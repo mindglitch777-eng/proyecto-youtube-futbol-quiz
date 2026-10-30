@@ -1,0 +1,60 @@
+{
+ "id": "s1_09_lun02_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Neymar",
+   "foto": "neymar_1",
+   "color": "amarillo",
+   "pct": "2%",
+   "forma": "triangulo",
+   "rasgo": "nariz",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 2.19,
+   "tam": 68
+  },
+  {
+   "nombre": "Lewandowski",
+   "foto": "robert_lewandowski_0",
+   "color": "verde",
+   "pct": "26%",
+   "forma": "corazon",
+   "rasgo": "boca",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 3,
+   "fase": 0.43,
+   "tam": 68
+  },
+  {
+   "nombre": "Ronaldinho",
+   "foto": "ronaldinho_1",
+   "color": "azul",
+   "pct": "42%",
+   "forma": "estrella",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 2.5,
+   "tam": 68
+  },
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "rojo",
+   "pct": "88%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 3,
+   "fase": 0.4,
+   "tam": 68
+  }
+ ]
+}

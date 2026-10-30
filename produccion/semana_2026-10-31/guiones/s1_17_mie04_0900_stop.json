@@ -1,0 +1,60 @@
+{
+ "id": "s1_17_mie04_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Messi",
+   "foto": "lionel_messi_4",
+   "color": "azul",
+   "pct": "3%",
+   "forma": "rombo",
+   "rasgo": "nariz",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 1.27,
+   "tam": 64
+  },
+  {
+   "nombre": "Kane",
+   "foto": "harry_kane_1",
+   "color": "violeta",
+   "pct": "8%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 3.71,
+   "tam": 60
+  },
+  {
+   "nombre": "Salah",
+   "foto": "mohamed_salah_0",
+   "color": "rojo",
+   "pct": "34%",
+   "forma": "estrella",
+   "rasgo": "boca",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 4.27,
+   "tam": 60
+  },
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "color": "amarillo",
+   "pct": "67%",
+   "forma": "rombo",
+   "rasgo": "boca",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 2,
+   "fase": 4.7,
+   "tam": 60
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "id": "s1_01_sab31_0900_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "color": "verde",
+   "pct": "3%",
+   "forma": "corazon",
+   "rasgo": "nariz",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 4.29,
+   "tam": 64
+  },
+  {
+   "nombre": "Kane",
+   "foto": "harry_kane_1",
+   "color": "rojo",
+   "pct": "20%",
+   "forma": "estrella",
+   "rasgo": "ojo_izq",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 2.52,
+   "tam": 68
+  },
+  {
+   "nombre": "Henry",
+   "foto": "thierry_henry_0",
+   "color": "amarillo",
+   "pct": "52%",
+   "forma": "triangulo",
+   "rasgo": "boca",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 3,
+   "fase": 4.08,
+   "tam": 68
+  },
+  {
+   "nombre": "Yamal",
+   "foto": "lamine_yamal_0",
+   "color": "azul",
+   "pct": "69%",
+   "forma": "rombo",
+   "rasgo": "nariz",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 1,
+   "fase": 6.11,
+   "tam": 68
+  }
+ ]
+}
