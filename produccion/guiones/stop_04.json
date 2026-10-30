@@ -1,0 +1,12 @@
+{
+ "id": "stop_04",
+ "duracion": 6.0,
+ "dopamina": true,
+ "musica": "67",
+ "cuadrantes": [
+  {"nombre": "Ronaldo", "foto": "cristiano_ronaldo_0", "color": "rojo", "pct": "1%", "forma": "estrella", "rasgo": "boca", "vueltas": 5, "giros": 1, "encaje_bueno": 3, "fase": 0.9, "tam": 62},
+  {"nombre": "Yamal", "foto": "lamine_yamal_0", "color": "azul", "pct": "6%", "forma": "triangulo", "rasgo": "ojo_der", "vueltas": 4, "giros": 1, "encaje_bueno": 1, "fase": 2.4, "tam": 62},
+  {"nombre": "Messi", "foto": "lionel_messi_4", "color": "amarillo", "pct": "41%", "forma": "corazon", "rasgo": "nariz", "vueltas": 3, "giros": 1, "encaje_bueno": 2, "fase": 4.1},
+  {"nombre": "Neymar", "foto": "neymar_1", "color": "verde", "pct": "67%", "forma": "rombo", "rasgo": "ojo_izq", "vueltas": 4, "giros": 2, "encaje_bueno": 0, "fase": 5.3}
+ ]
+}

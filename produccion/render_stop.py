@@ -80,7 +80,7 @@ def armar(g):
         fx, fy = x0 + (QW - LADO) // 2, y0 + (190 if abajo else 120)
         lado_orbita = 1 if cx < LADO / 2 else -1                             # la órbita gira hacia el centro de la foto
         cuads.append(dict(encajes=[], q=q, cara=cara, pieza=pieza, r=r, hueco=(fx + cx, fy + cy), pos=(fx, fy), x0=x0, y0=y0, abajo=abajo, dir=lado_orbita,
-                          vueltas=q["vueltas"], fase=q.get("fase", 0.0), col=COLORES[q["color"]]))
+                          vueltas=q["vueltas"], fase=q.get("fase", 0.0), col=COLORES[q["color"]], giros=q.get("giros", 0), t_giro=0.0, casi=[]))
     return cuads
 
 
@@ -89,6 +89,24 @@ def pieza_en(c, t, dur):
     th = 2 * math.pi * c["vueltas"] * t / dur + c["fase"]
     hx, hy = c["hueco"]
     return hx + c["dir"] * (RADIO + RADIO * math.cos(th)), hy + RADIO * 0.75 * math.sin(th), th
+
+
+def giro(c, t, dur):
+    """Ángulo (grados) de la pieza girando sobre sí misma; 0 en el encaje bueno."""
+    return (360.0 * c["giros"] * (t - c["t_giro"]) / dur) % 360.0
+
+
+def derecha(c, t, dur, tol=10.0):
+    a = giro(c, t, dur)
+    return min(a, 360 - a) < tol
+
+
+def pieza_img(c, t, dur):
+    if not c["giros"]:
+        return c["pieza"]
+    g = c["pieza"].rotate(giro(c, t, dur), resample=Image.BICUBIC, expand=True)
+    return g.crop(((g.width - c["pieza"].width) // 2, (g.height - c["pieza"].height) // 2,
+                   (g.width + c["pieza"].width) // 2, (g.height + c["pieza"].height) // 2))
 
 
 def alineado(c, t, dur):
@@ -144,16 +162,20 @@ def cuadro(fnd, cuads, t, dur):
         if DOPA:                                                              # estela de la pieza
             for k, a in ((3, 50), (2, 85), (1, 130)):
                 gx, gy, _ = pieza_en(c, t - k * 0.03, dur)
-                fant = c["pieza"].copy(); fant.putalpha(c["pieza"].split()[3].point(lambda v, a=a: v * a // 255))
+                pz = pieza_img(c, t - k * 0.03, dur)
+                fant = pz.copy(); fant.putalpha(pz.split()[3].point(lambda v, a=a: v * a // 255))
                 capa = Image.new("RGBA", (LADO, LADO), (0, 0, 0, 0))
                 capa.alpha_composite(fant, (int(gx - c["r"] - c["pos"][0]), int(gy - c["r"] - c["pos"][1])))
                 im.alpha_composite(capa, c["pos"])
         x, y, _ = pieza_en(c, t, dur)
         capa = Image.new("RGBA", (LADO, LADO), (0, 0, 0, 0))                     # la pieza no sale de su foto
-        capa.alpha_composite(c["pieza"], (int(x - c["r"] - c["pos"][0]), int(y - c["r"] - c["pos"][1])))
+        capa.alpha_composite(pieza_img(c, t, dur), (int(x - c["r"] - c["pos"][0]), int(y - c["r"] - c["pos"][1])))
         im.alpha_composite(capa, c["pos"])
         dist = alineado(c, t, dur)
-        if dist < 26:                                                         # encajó: destello en el cuadrante
+        if dist < 26 and not derecha(c, t, dur, 25):                          # pasó por el hueco pero torcida: "casi"
+            a = int(90 * (1 - dist / 26))
+            capa = Image.new("RGBA", (QW, QH), (255, 40, 40, a)); im.alpha_composite(capa, (c["x0"], c["y0"]))
+        elif dist < 26:                                                       # encajó: destello en el cuadrante
             a = int(110 * (1 - dist / 26))
             capa = Image.new("RGBA", (QW, QH), (255, 255, 255, a)); im.alpha_composite(capa, (c["x0"], c["y0"]))
     d = ImageDraw.Draw(im)
@@ -191,6 +213,60 @@ def cuadro(fnd, cuads, t, dur):
     return im
 
 
+def audio_67(cuads, dur):
+    """Beat tipo drill (808 con caída, hi-hats con redobles, snare en el 3) + voces del meme '6 7' al ritmo.
+    Devuelve (música + efectos, solo efectos)."""
+    import render_runner as RR
+    sr = M.SR; n = int(dur * sr); x = np.zeros(n, np.float32)
+    def add(t0, sig, vol=1.0):
+        i = int(t0 * sr) % n; sig = sig * vol
+        fin = min(n, i + len(sig)); x[i:fin] += sig[: fin - i]
+        if i + len(sig) > n:
+            x[: min(n, i + len(sig) - n)] += sig[fin - i: fin - i + min(n, i + len(sig) - n)]
+    tt = np.arange(int(0.9 * sr)) / sr
+    def ocho(f0, f1):
+        f = f1 + (f0 - f1) * np.exp(-tt * 3)
+        return np.tanh(np.sin(2 * np.pi * np.cumsum(f) / sr) * 2.2) * np.exp(-tt * 2.2) * 0.42
+    nz = np.random.default_rng(5).standard_normal(int(0.04 * sr)).astype(np.float32)
+    hat = np.diff(nz, prepend=0) * np.exp(-np.arange(len(nz)) / sr * 90) * 0.07
+    sn = np.convolve(np.random.default_rng(6).standard_normal(int(0.2 * sr)), np.ones(3) / 3, "same") * np.exp(-np.arange(int(0.2 * sr)) / sr * 18) * 0.28
+    negra = 0.5
+    for b in range(int(dur / negra)):
+        t = b * negra
+        if b % 8 in (0, 5):
+            add(t, ocho(55, 41))
+        if b % 8 == 3:
+            add(t + 0.25, ocho(62, 46))
+        if b % 4 == 2:
+            add(t, sn)
+        sub = 3 if b % 4 == 3 else 2                                           # redoble de hi-hats en el último tiempo
+        for k in range(sub * (2 if b % 4 == 3 else 1)):
+            add(t + k * negra / (sub * (2 if b % 4 == 3 else 1)), hat)
+    musica = x.copy(); x[:] = 0
+    voces = [("doot_doot_0", 0.0), ("seis_siete_0", 2.0), ("seis_siete_2", 4.0)]
+    for nom, t0 in voces:
+        add(t0, RR.sfx(nom, vol=0.95))
+    musica += x; x[:] = 0
+    efectos(cuads, dur, add)
+    fx = x.copy()
+    return np.tanh((musica * 0.9 + fx) * 1.1) * 0.9, np.tanh(fx * 1.1) * 0.85
+
+
+def efectos(cuads, dur, add):
+    """'tic' (+ campana y golpe en modo dopamina) en cada encaje bueno; 'nope' en cada 'casi'."""
+    import render_runner as RR
+    sr = M.SR
+    tic = np.sin(2 * np.pi * 1600 * np.arange(int(0.06 * sr)) / sr) * np.exp(-np.arange(int(0.06 * sr)) / sr * 50) * 0.3
+    nope = RR.sfx("nope_0", 0, 0.7, 0.45)
+    for c in cuads:
+        for te in c["encajes"]:
+            add(te, tic)
+            if DOPA:
+                add(te, M.ding(0.5), 0.35); add(te, M.boom(0.4), 0.25)
+        for te in c["casi"]:
+            add(te, nope)
+
+
 def audio(cuads, dur):
     sr = M.SR; n = int(dur * sr); x = np.zeros(n, np.float32)
     def add(t0, sig, vol=1.0):                                                # cíclico: lo que sobra vuelve al principio
@@ -219,16 +295,7 @@ def audio(cuads, dur):
         add(t, hat); add(t + negra / 2, hat)
         add(t, cowbell(mel[k % len(mel)])); add(t + negra / 2, cowbell(mel[(k * 3 + 1) % len(mel)]), 0.7)
         t += negra; k += 1
-    tic = np.sin(2 * np.pi * 1600 * np.arange(int(0.06 * sr)) / sr) * np.exp(-np.arange(int(0.06 * sr)) / sr * 50) * 0.3
-    pasos = np.linspace(0, dur, int(dur * 200), endpoint=False)
-    for c in cuads:                                                           # "tic" cada vez que una pieza encaja
-        ds = [alineado(c, s, dur) for s in pasos]
-        for j in range(len(ds)):
-            if ds[j] < ds[j - 1] and ds[j] <= ds[(j + 1) % len(ds)] and ds[j] < 26:
-                add(pasos[j], tic)
-                if DOPA:
-                    add(pasos[j], M.ding(0.5), 0.35)
-                    add(pasos[j], M.boom(0.4), 0.25)
+    efectos(cuads, dur, add)
     return np.tanh(x * 1.2) * 0.9
 
 
@@ -240,7 +307,10 @@ def main(guion):
     DOPA = bool(g.get("dopamina"))
     cuads = armar(g); fnd = fondo(cuads)
     for c in cuads:
-        c["encajes"] = encajes(c, dur)
+        pasadas = encajes(c, dur)
+        c["t_giro"] = pasadas[c["q"].get("encaje_bueno", 0) % len(pasadas)] if pasadas else 0.0
+        c["encajes"] = [te for te in pasadas if derecha(c, te, dur)]
+        c["casi"] = [te for te in pasadas if not derecha(c, te, dur)]
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
@@ -250,7 +320,11 @@ def main(guion):
         if f in (0, 45):
             im.save(out / f"muestra_{f:03d}.jpg", quality=85)
     p.stdin.close(); p.wait()
-    M.mezclar(out, mudo, {"short.mp4": audio(cuads, dur)})
+    if g.get("musica") == "67":
+        con, solo = audio_67(cuads, dur)
+        M.mezclar(out, mudo, {"short.mp4": con, "short_solo_efectos.mp4": solo})
+    else:
+        M.mezclar(out, mudo, {"short.mp4": audio(cuads, dur)})
     print(out / "short.mp4", dur, "s")
 
 
