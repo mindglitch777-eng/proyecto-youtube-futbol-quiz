@@ -1,0 +1,28 @@
+{
+  "cuadro_0": "Grilla 2x2. Arriba-izq: Messi con fondo rojo, '1%' y triángulo negro en cara. Arriba-der: Ronaldo con fondo verde, '17%' y boca negra. Abajo-izq: Mbappé con fondo amarillo, '69%' y ojo negro. Abajo-der: Haaland con fondo azul, '99%' y corazón negro. Logo central circular 'Eddy Kicks'.",
+  "linea_de_tiempo": [
+    {"t": "0.0", "que_pasa": "Inicia la animación con las piezas faciales orbitando sus respectivos huecos negros.", "sonido": "Voz grave rítmica diciendo 'Kylian dictador'."},
+    {"t": "0.5", "que_pasa": "Los recortes completan un cuarto de giro en trayectoria elíptica.", "sonido": "Base rítmica con bajo marcado."},
+    {"t": "1.0", "que_pasa": "La boca de Ronaldo y el ojo de Mbappé pasan cerca de sus siluetas sin encajar.", "sonido": "Voz grave repitiendo la frase en loop."},
+    {"t": "1.5", "que_pasa": "Las piezas alcanzan el punto exterior más alejado de sus caras.", "sonido": "Continuación de la pista vocal y percusión."},
+    {"t": "2.0", "que_pasa": "El corazón de Haaland y el triángulo de Messi inician retorno hacia el centro.", "sonido": "Repetición del patrón rítmico."},
+    {"t": "2.5", "que_pasa": "Segundo ciclo de rotación elíptica sincronizada en los 4 cuadrantes.", "sonido": "Voz 'Kylian dictador'."},
+    {"t": "3.0", "que_pasa": "Las 4 piezas rozan brevemente los contornos negros.", "sonido": "Voz y bajo continuo."},
+    {"t": "3.5", "que_pasa": "Las piezas vuelven a separarse en trayectoria circular.", "sonido": "Beat constante."},
+    {"t": "4.0", "que_pasa": "Tercer ciclo de órbita; ningún elemento se detiene ni encaja.", "sonido": "Vocal loop."},
+    {"t": "4.5", "que_pasa": "Los fragmentos continúan girando a velocidad constante.", "sonido": "Beat constante."},
+    {"t": "5.0", "que_pasa": "Las piezas completan el ciclo y regresan a la posición del cuadro 0.", "sonido": "Remate del compás para loop sin cortes."}
+  ],
+  "el_filtro_o_mecanica": "Recortes de rasgos faciales (ojo, boca, nariz) que orbitan en trayectorias elípticas fijas y velocidad constante alrededor de un área enmascarada en negro sobre el rostro del jugador.",
+  "porcentajes": "Texto estático centrado en el tercio inferior de cada cuadrante: '1%' verde (Messi), '17%' amarillo (Ronaldo), '69%' violeta (Mbappé), '99%' celeste (Haaland).",
+  "layout": "Formato vertical 9:16 dividido en grilla 2x2 simétrica con fondos planos saturados (rojo, verde, amarillo, azul) y logo circular superpuesto en la intersección central.",
+  "audio": "Loop vocal grave y procesado rapeando rítmicamente 'Kylian dictador' sobre un beat de hip hop minimalista con bombo seco y tempo medio.",
+  "loop": "Perfecto; la rotación de las piezas y el compás musical se alinean exactamente al final para empalmar con el segundo 0.",
+  "por_que_la_gente_comenta": "Usuarios intentando pausar el video en el momento exacto en que encaja la pieza, debates sobre qué jugador es mejor o menciones al '69%' de Mbappé.",
+  "detalles_que_suman_dopamina": [
+    "Movimiento orbital perpetuo que incita a pausar",
+    "Colores primarios altamente saturados en contraste con las caras",
+    "Audio rítmico repetitivo y pegadizo",
+    "Figuras geométricas simples (corazón, triángulo, círculo) asociadas a caras reales"
+  ]
+}

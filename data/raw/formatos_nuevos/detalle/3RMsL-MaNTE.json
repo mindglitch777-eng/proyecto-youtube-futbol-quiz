@@ -1,0 +1,71 @@
+{
+  "cuadro_0": "Grilla de 4 cuadrantes con futbolistas: Ronaldo (1%, verde), Haaland (19%, amarillo), Messi (89%, rojo) y Pulisic (99%, azul), con parches flotantes y textos.",
+  "linea_de_tiempo": [
+    {
+      "t": "0.0",
+      "que_pasa": "Inicia la animación con un parche facial flotando entre los cuatro cuadrantes de futbolistas.",
+      "sonido": "Voz grave repitiendo 'Gillian dictador' sobre ritmo musical suave."
+    },
+    {
+      "t": "0.5",
+      "que_pasa": "El parche se mueve hacia Messi (cuadrante inferior izquierdo), alterando su rostro.",
+      "sonido": "Música continua con ritmo sostenido."
+    },
+    {
+      "t": "1.0",
+      "que_pasa": "El parche se desplaza hacia Ronaldo (superior izquierdo) y Haaland (superior derecho).",
+      "sonido": "Continuación de la pista vocal y bajo."
+    },
+    {
+      "t": "1.5",
+      "que_pasa": "Un contorno negro resalta la cara de Messi mientras el parche sigue su trayectoria.",
+      "sonido": "Audio constante sin cambios bruscos."
+    },
+    {
+      "t": "2.0",
+      "que_pasa": "El parche se posiciona sobre Pulisic (inferior derecho), distorsionando su imagen.",
+      "sonido": "Repetición del bucle vocal 'Gillian dictador'."
+    },
+    {
+      "t": "2.5",
+      "que_pasa": "El elemento flotante regresa al cuadrante de Haaland.",
+      "sonido": "Ritmo musical fluido."
+    },
+    {
+      "t": "3.0",
+      "que_pasa": "Transición rápida del parche pasando por la zona central con la marca 'Eddy Kicks'.",
+      "sonido": "Música en bucle."
+    },
+    {
+      "t": "3.5",
+      "que_pasa": "Messi vuelve a ser afectado por la deformación facial interactiva.",
+      "sonido": "Línea de bajo y voz repetitiva."
+    },
+    {
+      "t": "4.0",
+      "que_pasa": "El parche se mueve hacia el cuadrante azul de Pulisic.",
+      "sonido": "Continuación del tema musical."
+    },
+    {
+      "t": "4.5",
+      "que_pasa": "Movimiento final del parche orbitando entre Ronaldo y Haaland.",
+      "sonido": "Coincidencia de audio para empalme."
+    },
+    {
+      "t": "5.0",
+      "que_pasa": "Reorganización de los elementos gráficos para reiniciar el ciclo.",
+      "sonido": "Inicio del ciclo de audio para seamless loop."
+    }
+  ],
+  "el_filtro_o_mecanica": "Un parche con recortes de rostros/ojos flota continuamente sobre la pantalla, deformando dinámicamente la cara del jugador donde se posa.",
+  "porcentajes": "Fijos en cada cuadrante con fondo blanco y borde rojo: Ronaldo 1%, Haaland 19%, Messi 89%, Pulisic 99%.",
+  "layout": "Grilla 2x2: Arriba-izq verde (Ronaldo), Arriba-der amarillo (Haaland), Abajo-izq rojo (Messi), Abajo-der azul (Pulisic). Marca de agua 'Eddy Kicks' al centro.",
+  "audio": "Pista hip-hop/trap corta con voz masculina distorsionada repitiendo 'Gillian dictador' en bucle infinito.",
+  "loop": "Perfecto; la trayectoria del parche y el bucle de audio coinciden al final con el segundo 0.0.",
+  "por_que_la_gente_comenta": "Debaten sobre la veracidad/sentido de los porcentajes asignados a cada jugador y el efecto visual de distorsión.",
+  "detalles_que_suman_dopamina": [
+    "Movimiento fluido y caótico del parche.",
+    "Deformaciones faciales cómicas e inesperadas.",
+    "Colores primarios saturados y contraste alto."
+  ]
+}

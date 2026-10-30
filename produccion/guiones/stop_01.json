@@ -1,0 +1,10 @@
+{
+ "id": "stop_01",
+ "duracion": 6.0,
+ "cuadrantes": [
+  {"nombre": "Ronaldo", "foto": "cristiano_ronaldo_0", "color": "verde", "pct": "1%", "forma": "triangulo", "rasgo": "boca", "vueltas": 3, "fase": 0.4},
+  {"nombre": "Messi", "foto": "lionel_messi_4", "color": "amarillo", "pct": "17%", "forma": "estrella", "rasgo": "ojo_izq", "vueltas": 2, "fase": 1.9},
+  {"nombre": "Neymar", "foto": "neymar_1", "color": "rojo", "pct": "69%", "forma": "corazon", "rasgo": "nariz", "vueltas": 2, "fase": 4.4},
+  {"nombre": "Haaland", "foto": "erling_haaland_0", "color": "azul", "pct": "99%", "forma": "circulo", "rasgo": "ojo_der", "vueltas": 1, "fase": 0.0}
+ ]
+}

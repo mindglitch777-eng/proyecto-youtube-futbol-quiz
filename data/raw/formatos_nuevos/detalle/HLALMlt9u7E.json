@@ -1,0 +1,51 @@
+{
+  "cuadro_0": "Grilla 2x2 con cuatro futbolistas: Ronaldo (arriba-izq, fondo verde), Messi (arriba-der, fondo amarillo), Neymar (abajo-izq, fondo rojo) y Haaland (abajo-der, fondo azul). Cada cuadrante tiene un porcentaje en la parte inferior y distorsiones faciales o máscaras animadas.",
+  "linea_de_tiempo": [
+    {
+      "t": "0.0",
+      "que_pasa": "Inicia la animación de deformación facial y movimiento de figuras sobre los rostros.",
+      "sonido": "Voz grave en loop diciendo 'Kilian dictador'."
+    },
+    {
+      "t": "0.5",
+      "que_pasa": "La figura negra tipo gota se mueve en el rostro de Messi; la estrella rota en Neymar.",
+      "sonido": "Música rítmica continua con voz distorsionada."
+    },
+    {
+      "t": "1.0",
+      "que_pasa": "Efecto de deformación de boca/barbilla rota en Ronaldo y Haaland se expande.",
+      "sonido": "Continuación de la pista de audio base."
+    },
+    {
+      "t": "1.5",
+      "que_pasa": "Las figuras de alineación regresan a su punto de origen parcial.",
+      "sonido": "Loop de voz 'Kilian dictador'."
+    },
+    {
+      "t": "2.0",
+      "que_pasa": "La deformación de Haaland se ajusta a las líneas de la barbilla.",
+      "sonido": "Pista musical rítmica sin variaciones."
+    },
+    {
+      "t": "2.5",
+      "que_pasa": "Máscara de estrella en Neymar se distorsiona sobre la mejilla.",
+      "sonido": "Voz grave repetitiva."
+    },
+    {
+      "t": "3.0",
+      "que_pasa": "Mástiles visuales se reinician al punto inicial del bucle.",
+      "sonido": "Final del ciclo de audio listo para empalme."
+    }
+  ],
+  "el_filtro_o_mecanica": "Filtro de deformación facial tipo espiral/warp combinado con máscaras geométricas (estrella negra, gota negra, trazo de corazón) que se desplazan de forma continua sobre los rostros.",
+  "porcentajes": "Fijos en cada cuadrante: Ronaldo 1% (rojo), Messi 49% (amarillo), Neymar 69% (verde), Haaland 99% (celeste). No cambian durante el video.",
+  "layout": "Cuadrícula simétrica 2x2, bordes negros delgados, logotipo 'Eddy Kicks' en el centro. Fondos de colores sólidos brillantes.",
+  "audio": "Audio viral en bucle con voz grave sintetizada repitiendo 'Kilian dictador' sobre una base musical rítmica.",
+  "loop": "Perfecto; el movimiento de los filtros faciales y el audio coinciden exactamente al inicio y al final.",
+  "por_que_la_gente_comenta": "Debaten sobre la elección de los porcentajes de los jugadores y las deformaciones graciosas en los rostros.",
+  "detalles_que_suman_dopamina": [
+    "Animación fluida e hipnótica de los rostros deformados",
+    "Colores de alto contraste e iluminación saturada",
+    "Ritmo de audio pegajoso en loop"
+  ]
+}
