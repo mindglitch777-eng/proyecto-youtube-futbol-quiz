@@ -1,0 +1,21 @@
+{
+ "canal_id": "UCm4YQbIIPoKyvDAPRx9kIFw",
+ "zona_horaria": "America/Argentina/Buenos_Aires",
+ "horas": ["09:00", "13:00", "17:00", "21:00"],
+ "videos_por_dia": 4,
+ "formatos": {
+  "stop": {"nombre": "STOP CHALLENGE", "min": 4, "max": 12},
+  "find": {"nombre": "FIND", "min": 4, "max": 10},
+  "look": {"nombre": "¿CUÁL LOOK?", "min": 3, "max": 9},
+  "cabeza": {"nombre": "CATCH THE RIGHT HEAD", "min": 3, "max": 9}
+ },
+ "radar": {
+  "dias": 7,
+  "busquedas": ["football shorts", "ronaldo shorts", "messi shorts", "yamal shorts", "football challenge", "football quiz",
+                "find the real ronaldo", "stop challenge football", "football edit", "football funny", "neymar shorts",
+                "football game shorts", "which footballer", "football players as"],
+  "minimo_vistas": 300000,
+  "analizar_top": 12
+ },
+ "subida": {"categoria": "17", "idioma": "en", "privacidad_hasta_publicar": "private"}
+}
