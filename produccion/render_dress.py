@@ -29,11 +29,15 @@ W, H, FPS = 1080, 1920, 30
 FONDO = (255, 228, 0)
 ANCHO_B = 960
 Y_BUSTO = 0                                     # se calcula: el busto apoya abajo de la pantalla
-T_ITEM, T_CAE = 1.45, 0.32
+T_ITEM, T_CAE = 2.2, 0.45
+T_DECIDE = T_CAE + 0.5                          # cuándo sale ✅/❌
+# accesorios del video original (assets/dress): ancho en caras (A) y qué fracción de su alto va a la altura de las cejas
+PNG = {"anteojos": (1.12, None), "cadena": (1.3, None), "payaso": (1.75, 0.50), "pelo_azul": (1.6, 0.62),
+       "peluca_rosa": (1.62, 0.40), "pelo_verde": (1.55, 0.60)}
 EMOJI = {"anteojos": "sunglasses_3d", "lentes": "glasses_3d", "antiparras": "goggles_3d", "corona": "crown_3d", "gorra": "billed_cap_3d",
          "galera": "top_hat_3d", "birrete": "graduation_cap_3d", "casco": "military_helmet_3d", "sombrero": "womans_hat_3d",
          "moño": "ribbon_3d", "medalla": "sports_medal_3d", "diamante": "gem_stone_3d"}
-NOMBRE = {"anteojos": "SHADES", "lentes": "GLASSES", "antiparras": "GOGGLES", "corona": "CROWN", "gorra": "CAP", "galera": "TOP HAT",
+NOMBRE = {"pelo_verde": "HAIR", "payaso": "WIG", "pelo_azul": "HAIR", "peluca_rosa": "WIG", "anteojos": "SHADES", "lentes": "GLASSES", "antiparras": "GOGGLES", "corona": "CROWN", "gorra": "CAP", "galera": "TOP HAT",
           "birrete": "GRAD CAP", "casco": "HELMET", "sombrero": "HAT", "moño": "BOW", "medalla": "MEDAL", "diamante": "ICE",
           "cadena": "CHAIN", "pelo": "HAIR"}
 
@@ -56,6 +60,21 @@ def geo(b, dx, dy):
 def pieza(item, b, g):
     """Imagen RGBA del accesorio para ese jugador + su posición final (x, y de la esquina) en pantalla."""
     n = item["n"]; A = g["A"]; p = g["p"]
+    if n.split("~")[0] in PNG:
+        base_n, _, tono = n.partition("~")
+        fw, fy = PNG[base_n]
+        im = Image.open(ROOT / "assets" / "dress" / f"{base_n}.png").convert("RGBA")
+        if tono:
+            im = PE.teñir(im, int(tono), 0.8, 0.15)
+        w = A * fw; im = im.resize((int(w), int(im.height * w / im.width)), Image.LANCZOS)
+        if base_n == "anteojos":
+            oi, od = p[36:42].mean(0), p[42:48].mean(0)
+            im = im.rotate(-math.degrees(math.atan2(od[1] - oi[1], od[0] - oi[0])), expand=True, resample=Image.BICUBIC)
+            c = (oi + od) / 2
+            return im, (c[0] - im.width / 2, c[1] - im.height * 0.45)
+        if base_n == "cadena":
+            return im, (g["cx"] - im.width / 2, p[8, 1] - A * 0.12)
+        return im, (g["cx"] - im.width / 2, g["cejas"] - im.height * fy)
     if n.startswith("pelo:"):
         _, donante, tono = n.split(":")
         h = PE.pelo(donante); s = A / h["A"]
@@ -118,10 +137,12 @@ def cuadro(g, A, t, dur):
         base = b["img"] if (final and t > t_fin + 1.2) else b["pelado"]
         im.alpha_composite(base, (int(dxs[i]), Y_BUSTO))
     k_act = min(n - 1, int(t // T_ITEM)); lt = t - k_act * T_ITEM
-    quedan = [j for j in range(n) if items[j]["ok"] and (j < k_act or (j == k_act and lt > T_CAE + 0.45) or final)]
+    quedan = [j for j in range(n) if items[j]["ok"] and (j < k_act or (j == k_act and lt > T_DECIDE) or final)]
     # orden de capas: pelo → gorros/corona → anteojos → cadena/medalla
-    orden = lambda j: 0 if items[j]["n"].startswith("pelo") else (1 if items[j]["n"] in ("corona", "gorra", "galera", "birrete", "casco", "sombrero", "moño") else 2)
+    orden = lambda j: 0 if items[j]["n"].split("~")[0] in ("payaso", "pelo_azul", "peluca_rosa", "pelo_verde") or items[j]["n"].startswith("pelo") else (1 if items[j]["n"] in ("corona", "gorra", "galera", "birrete", "casco", "sombrero", "moño") else 2)
     activos = sorted(quedan + ([k_act] if not final and k_act not in quedan else []), key=orden)
+    if final and t > t_fin + 1.2:                                             # cierre: vuelven a ser ellos, sin accesorios
+        activos = []
     for j in activos:
         for i in range(2):
             img, (x, y) = piezas[j][i]
@@ -129,13 +150,13 @@ def cuadro(g, A, t, dur):
                 if lt < T_CAE:                                                # cae con rebote
                     u = lt / T_CAE
                     y += -900 * (1 - u) ** 2 + 40 * math.sin(u * math.pi) * (1 - u)
-                elif not items[j]["ok"] and lt > T_CAE + 0.35:                # ✗: tiembla y se cae
-                    e = lt - T_CAE - 0.35
-                    if e < 0.25:
+                elif not items[j]["ok"] and lt > T_DECIDE + 0.05:              # ✗: tiembla y se cae
+                    e = lt - T_DECIDE - 0.05
+                    if e < 0.35:
                         x += 18 * math.sin(e * 80)
                     else:
-                        y += 2600 * (e - 0.25) ** 2; x += (i * 2 - 1) * 300 * (e - 0.25)
-                        img = img.rotate((i * 2 - 1) * -140 * (e - 0.25), expand=True, resample=Image.BICUBIC)
+                        y += 2200 * (e - 0.35) ** 2; x += (i * 2 - 1) * 260 * (e - 0.35)
+                        img = img.rotate((i * 2 - 1) * -120 * (e - 0.35), expand=True, resample=Image.BICUBIC)
             im.alpha_composite(img, (int(x), int(y)))
     d = ImageDraw.Draw(im)
     # lista 1-4 con los accesorios que quedaron
@@ -152,9 +173,9 @@ def cuadro(g, A, t, dur):
     P.texto(d, (W / 2 + 120, 110), g.get("titulo", "DRIP CHALLENGE"), 84, (255, 255, 255), 11, (20, 20, 30))
     P.texto(d, (W / 2 + 120, 200), " VS ".join(P.nombre_corto(k).upper() for k in g["jugadores"]), 56, (230, 40, 60), 8, (255, 255, 255))
     # ✓ / ✗
-    if not final and lt >= T_CAE + 0.3:
-        e = lt - T_CAE - 0.3
-        if e < 0.6:
+    if not final and lt >= T_DECIDE:
+        e = lt - T_DECIDE
+        if e < 0.8:
             esc = min(1.0, e / 0.08)
             if e < 0.15:                                                      # golpe de color en toda la pantalla
                 col = (60, 230, 90) if items[k_act]["ok"] else (255, 40, 40)
@@ -172,7 +193,7 @@ def cuadro(g, A, t, dur):
                 em = "🔥💎😎🥶💯"[q % 5]
                 P.RR.pegar_emoji(im, em, int((q * 211 + 70) % W), int((e * 900 + q * 300) % (H + 200) - 100), 90)
         else:
-            P.texto(d, (W / 2, 590), "WHO WORE IT BETTER?", 78, (255, 255, 255), 12, (20, 20, 30))
+            P.texto(d, (W / 2, 780), "WHO WORE IT BETTER?", 78, (255, 255, 255), 12, (20, 20, 30))
     return im.convert("RGB")
 
 
@@ -191,9 +212,9 @@ def audio(g, dur):
         t0 = k * T_ITEM
         add(t0, M.whoosh(0.35), 0.6); add(t0 + T_CAE, M.golpe(0.12), 0.8)
         if it["ok"]:
-            add(t0 + T_CAE + 0.3, M.ding(0.6), 0.7); add(t0 + T_CAE + 0.3, P.cargar("moneda_0", 0.5))
+            add(t0 + T_DECIDE, M.ding(0.6), 0.7); add(t0 + T_DECIDE, P.cargar("moneda_0", 0.5))
         else:
-            add(t0 + T_CAE + 0.3, nope if k % 2 else bruh); add(t0 + T_CAE + 0.6, boing)
+            add(t0 + T_DECIDE, nope if k % 2 else bruh); add(t0 + T_DECIDE + 0.4, boing)
     tf = len(g["items"]) * T_ITEM
     add(tf, M.boom(0.8), 0.7); add(tf, P.cargar("airhorn_0", 0.5)); add(tf + 0.2, P.cargar("rizz_0", 0.7))
     add(tf + 1.2, wow)
