@@ -134,5 +134,11 @@ def token_canal():
                                                                      refresh_token=v["YT_REFRESH_TOKEN"], grant_type="refresh_token"), timeout=60)
     if r.status_code != 200:
         print("PERMISO DEL CANAL RECHAZADO:", r.status_code, r.text[:300], flush=True)
+        cid, sec, ref = v["YT_CLIENT_ID"], v["YT_CLIENT_SECRET"], v["YT_REFRESH_TOKEN"]
+        print("diagnóstico (sin mostrar secretos):", flush=True)
+        print("  ID del cliente:", " ".join(cid), flush=True)                  # el ID no es secreto (va en los links de Google)
+        print("  secreto: largo", len(sec), "| empieza con GOCSPX-:", sec.startswith("GOCSPX-"), "| espacios adentro:", " " in sec, flush=True)
+        print("  token: largo", len(ref), "| empieza con 1//:", ref.startswith("1//"), "| empieza con ya29:", ref.startswith("ya29"),
+              "| espacios adentro:", " " in ref, flush=True)
     r.raise_for_status()
     return r.json()["access_token"]
