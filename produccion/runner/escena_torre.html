@@ -1,0 +1,124 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<style>html, body { margin: 0; background: #000; } canvas { display: block; }</style>
+<script type="importmap">{ "imports": { "three": "./node_modules/three/build/three.module.js" } }</script>
+</head><body>
+<script type="module">
+// BALL TOWER (satisfying 3D): llueven pelotas de fútbol de colores sobre una rejilla, se ordenan formando una torre con
+// los colores de una bandera (franjas por capas o por sectores), la torre gira y después se derrumba (loop).
+// Todo determinista: frame(t). Python compone textos/caras arriba y el audio.
+import * as THREE from "three";
+
+const W = 1080, H = 1920;
+const R = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+R.setSize(W, H); R.setPixelRatio(1);
+R.outputColorSpace = THREE.SRGBColorSpace;
+R.toneMapping = THREE.ACESFilmicToneMapping; R.toneMappingExposure = 1.1;
+R.shadowMap.enabled = true; R.shadowMap.type = THREE.PCFSoftShadowMap;
+document.body.appendChild(R.domElement);
+
+let CFG, scene, cam, bolas, N, datos = [];
+const tmp = new THREE.Object3D(), col = new THREE.Color();
+
+function rnd(s) { let x = Math.sin(s * 12.9898) * 43758.5453; return x - Math.floor(x); }
+function suave(u) { u = Math.min(Math.max(u, 0), 1); return u * u * (3 - 2 * u); }
+
+function texPelota() {
+  const c = document.createElement("canvas"); c.width = 512; c.height = 256; const g = c.getContext("2d");
+  g.fillStyle = "#ffffff"; g.fillRect(0, 0, 512, 256); g.fillStyle = "#151515";
+  for (const [x, y] of [[64, 64], [192, 64], [320, 64], [448, 64], [0, 170], [128, 170], [256, 170], [384, 170], [512, 170], [64, 245], [320, 245]]) {
+    g.beginPath(); for (let k = 0; k < 5; k++) { const a = -Math.PI / 2 + k * 2 * Math.PI / 5; g.lineTo(x + Math.cos(a) * 30, y + Math.sin(a) * 26); } g.closePath(); g.fill();
+  }
+  const t = new THREE.CanvasTexture(c); t.colorSpace = THREE.SRGBColorSpace; return t;
+}
+function texRejilla() {
+  const c = document.createElement("canvas"); c.width = c.height = 256; const g = c.getContext("2d");
+  g.clearRect(0, 0, 256, 256); g.fillStyle = "#f4fbf8";
+  g.fillRect(0, 0, 256, 34); g.fillRect(0, 0, 34, 256);
+  const t = new THREE.CanvasTexture(c); t.wrapS = t.wrapT = THREE.RepeatWrapping; t.repeat.set(24, 24); t.anisotropy = 8; return t;
+}
+
+function armar(cfg) {
+  scene = new THREE.Scene();
+  scene.background = new THREE.Color(cfg.fondo || "#2fb59a");
+  scene.fog = new THREE.Fog(new THREE.Color(cfg.fondo || "#2fb59a"), 30, 70);
+  cam = new THREE.PerspectiveCamera(50, W / H, 0.1, 200);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x2a6a5a, 1.3));
+  const sol = new THREE.DirectionalLight(0xffffff, 2.2); sol.position.set(8, 25, 12); sol.castShadow = true;
+  sol.shadow.mapSize.set(2048, 2048); Object.assign(sol.shadow.camera, { left: -15, right: 15, top: 15, bottom: -15, near: 1, far: 60 });
+  scene.add(sol);
+  const fondo = new THREE.Mesh(new THREE.PlaneGeometry(200, 200), new THREE.MeshStandardMaterial({ color: new THREE.Color(cfg.piso || "#1f8f78"), roughness: 1 }));
+  fondo.rotation.x = -Math.PI / 2; fondo.position.y = -1.6; fondo.receiveShadow = true; scene.add(fondo);
+  const rej = new THREE.Mesh(new THREE.PlaneGeometry(120, 120), new THREE.MeshStandardMaterial({ map: texRejilla(), transparent: true, alphaTest: .5, roughness: .6 }));
+  rej.rotation.x = -Math.PI / 2; rej.receiveShadow = true; scene.add(rej);
+  // pelotas instanciadas
+  N = cfg.n;
+  bolas = new THREE.InstancedMesh(new THREE.SphereGeometry(cfg.r, 24, 16), new THREE.MeshStandardMaterial({ map: texPelota(), roughness: .4 }), N);
+  bolas.castShadow = true; bolas.receiveShadow = true; bolas.frustumCulled = false; scene.add(bolas);
+  // torre: anillos de `porAnillo` pelotas, capas apiladas (escalonadas)
+  const pa = cfg.por_anillo, capas = Math.ceil(N / pa), rT = cfg.r * pa / Math.PI * 1.02;
+  for (let i = 0; i < N; i++) {
+    const capa = Math.floor(i / pa), k = i % pa;
+    const ang = (k + (capa % 2) * 0.5) / pa * Math.PI * 2;
+    const tx = Math.cos(ang) * rT, tz = Math.sin(ang) * rT, ty = cfg.r + capa * cfg.r * 1.75;
+    // color de bandera: franjas por capas (horizontal) o por sectores (vertical)
+    const f = cfg.franjas; let c;
+    if (cfg.vertical) c = f[Math.floor(((ang / (Math.PI * 2)) % 1) * f.length) % f.length];
+    else c = f[Math.min(f.length - 1, Math.floor((1 - capa / capas) * f.length))];
+    // lluvia: cae desde arriba a un lugar al azar de la rejilla
+    const rx = (rnd(i * 3.1 + cfg.semilla) - .5) * 16, rz = (rnd(i * 7.7 + cfg.semilla) - .5) * 12 - 2;
+    const tCae = rnd(i * 1.3 + cfg.semilla) * cfg.t_lluvia, tJunta = cfg.t_junta0 + (capa / capas) * cfg.t_junta + rnd(i * 5.1) * 0.25;
+    datos.push({ tx, ty, tz, rx, rz, tCae, tJunta, c, ang, capa });
+    bolas.setColorAt(i, col.set(c));
+  }
+  bolas.instanceColor.needsUpdate = true;
+}
+
+function pos(d, t, i) {
+  const c = CFG, r = c.r;
+  // 1) lluvia
+  if (t < d.tJunta) {
+    const e = t - d.tCae;
+    if (e < 0) return [d.rx, 30, d.rz, 0];
+    const caida = 28 - 0.5 * 40 * e * e;                                       // cae con gravedad
+    if (caida > r) return [d.rx, caida, d.rz, 1];
+    const tb = Math.sqrt(2 * (28 - r) / 40);                                   // rebotes amortiguados
+    const eb = e - tb; const b = Math.abs(Math.sin(eb * 9)) * Math.exp(-eb * 4) * 1.6;
+    return [d.rx, r + b, d.rz, 1];
+  }
+  // 2) vuela a su lugar en la torre (arco)
+  const u = suave((t - d.tJunta) / 0.7);
+  if (t < c.t_derrumbe) {
+    const x = d.rx + (d.tx - d.rx) * u, z = d.rz + (d.tz - d.rz) * u, y = r + (d.ty - r) * u + Math.sin(u * Math.PI) * 3;
+    return [x, y, z, 1];
+  }
+  // 3) derrumbe: salen disparadas hacia afuera y caen por la rejilla
+  const e = t - c.t_derrumbe, dir = d.ang, v = 3 + rnd(i * 2.2) * 5;
+  return [d.tx + Math.cos(dir) * v * e, d.ty + 6 * e - 0.5 * 30 * e * e, d.tz + Math.sin(dir) * v * e, 1];
+}
+
+function frame(k) {
+  const t = k / CFG.fps;
+  const giro = t > CFG.t_junta0 ? (t - CFG.t_junta0) * 0.35 : 0;
+  for (let i = 0; i < N; i++) {
+    const p = pos(datos[i], t, i);
+    let x = p[0], z = p[2];
+    if (t > CFG.t_junta0 + 1.0 && t < CFG.t_derrumbe) {                       // la torre gira armada
+      const a = giro, cx = x * Math.cos(a) - z * Math.sin(a), cz = x * Math.sin(a) + z * Math.cos(a); x = cx; z = cz;
+    }
+    tmp.position.set(x, p[1], z); tmp.rotation.set(t * 2 + i, t * 1.3 + i * 0.5, 0); tmp.scale.setScalar(p[3] > 0 ? 1 : 0.0001);
+    tmp.updateMatrix(); bolas.setMatrixAt(i, tmp.matrix);
+  }
+  bolas.instanceMatrix.needsUpdate = true;
+  const h = CFG.r * 1.75 * Math.ceil(N / CFG.por_anillo);
+  const ang = 0.25 + t * 0.06, dist = 33 - Math.min(t, 6) * 0.4;               // órbita lenta que se acerca
+  cam.position.set(Math.sin(ang) * dist, h * 0.55, Math.cos(ang) * dist);
+  cam.lookAt(0, h * 0.66, 0);
+  R.render(scene, cam);
+  return R.domElement.toDataURL("image/jpeg", 0.93);
+}
+
+window.iniciar = async (cfg) => { CFG = cfg; armar(cfg); };
+window.frame = (t) => frame(Math.round(t * CFG.fps));
+</script>
+</body></html>
