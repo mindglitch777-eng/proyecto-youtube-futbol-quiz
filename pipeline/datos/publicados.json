@@ -38,5 +38,15 @@
   "video_id": null,
   "manual": true,
   "nota": "programado a mano"
+ },
+ {
+  "id": "s1_29_sab31_2100_plinko",
+  "tipo": "plinko",
+  "fecha": "2026-10-31",
+  "hora": "21:00",
+  "titulo": "Who Gets The 99 GOAT Card? 🐐 Ronaldo, Messi, Neymar or Yamal?",
+  "video_id": null,
+  "error": "400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n ",
+  "subido": "2026-10-31T21:11:39+00:00"
  }
 ]
