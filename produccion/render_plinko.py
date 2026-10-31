@@ -139,19 +139,26 @@ def simular(semilla, n=4, demora=0.55, dt=1 / 240, tmax=12.0):
 
 
 def buscar(semilla0, n=4):
-    """Prueba semillas hasta un resultado con suspenso: un solo 99, casi-acierto, ganador último y todo en < 7,5 s."""
-    for s in range(semilla0, semilla0 + 4000):
+    """Prueba semillas hasta un resultado con suspenso: un solo 99, casi-acierto, ganador último; si no aparece, afloja reglas."""
+    try:
+        return _buscar(semilla0, n, estricto=True)
+    except RuntimeError:
+        return _buscar(semilla0 + 9000, n, estricto=False)
+
+
+def _buscar(semilla0, n=4, estricto=True):
+    for s in range(semilla0, semilla0 + (6000 if estricto else 20000)):
         r = simular(s, n)
         if any(q is None for q in r["quieto"]):
             continue
         c = r["casillero"]
-        if c.count(GANA) != 1 or not 5.6 < max(r["quieto"]) < 7.0:
+        if c.count(GANA) != 1 or not (5.6 if estricto else 4.5) < max(r["quieto"]) < (7.0 if estricto else 8.0):
             continue
         g = c.index(GANA)
         otros = max(q for k, q in enumerate(r["quieto"]) if k != g)
         if r["quieto"][g] - otros < 0.9 or not any(x in (GANA - 1, GANA + 1) for x in c):
             continue
-        if len(set(c)) < 3 or not any(VALORES[x] == "67" for x in c):
+        if len(set(c)) < 3 or (estricto and not any(VALORES[x] == "67" for x in c)):
             continue
         r["semilla"] = s; r["ganador"] = g
         return r

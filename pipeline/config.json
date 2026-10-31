@@ -19,11 +19,6 @@
    "min": 3,
    "max": 10
   },
-  "look": {
-   "nombre": "¿CUÁL LOOK?",
-   "min": 3,
-   "max": 9
-  },
   "cabeza": {
    "nombre": "CATCH THE RIGHT HEAD",
    "min": 3,
@@ -33,11 +28,6 @@
    "nombre": "PLINKO GOAT",
    "min": 4,
    "max": 9
-  },
-  "hoyo": {
-   "nombre": "BALL TO THE HOLE",
-   "min": 3,
-   "max": 8
   }
  },
  "radar": {
@@ -65,5 +55,15 @@
   "categoria": "17",
   "idioma": "en",
   "privacidad_hasta_publicar": "private"
+ },
+ "descartados": {
+  "look": {
+   "nombre": "¿CUÁL LOOK?",
+   "motivo": "no rinde ni genera reacción (decisión 31/10)"
+  },
+  "hoyo": {
+   "nombre": "BALL TO THE HOLE",
+   "motivo": "no convence (decisión 31/10)"
+  }
  }
 }
