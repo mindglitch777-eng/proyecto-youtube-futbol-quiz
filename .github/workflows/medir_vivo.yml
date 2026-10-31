@@ -1,0 +1,43 @@
+name: MEDIR en vivo (cada hora)
+
+# Cada hora junta vistas, likes, comentarios, suscriptores y retención del canal y los deja en la rama
+# "datos-vivos" (un solo commit que se reemplaza, para no llenar el historial). La app del tablero los lee de ahí.
+
+on:
+  schedule:
+    - cron: "17 * * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: {group: medir, cancel-in-progress: true}
+
+jobs:
+  medir:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - name: Traer la medición anterior (para seguir la serie)
+        run: |
+          mkdir -p _vivo
+          git fetch -q origin datos-vivos 2>/dev/null && git show origin/datos-vivos:vivo.json > _vivo/vivo.json 2>/dev/null || true
+      - name: Medir
+        run: cd pipeline && python medir_vivo.py ../_vivo
+      - name: Guardar en la rama datos-vivos
+        run: |
+          cd _vivo
+          git init -q && git checkout -q -b datos-vivos
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add vivo.json && git commit -q -m "datos en vivo"
+          git push -q -f "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" datos-vivos

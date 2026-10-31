@@ -1,0 +1,415 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0f0d">
+<title>Fábrica Futbol Edition</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@500;600&display=swap">
+<style>
+/* App de sala de control: barra superior con "EN VIVO", tarjeta de estado con barra de progreso, mapa animado de la fábrica,
+   KPIs, curva de vistas, cola de hoy, ranking con mini-curvas, rendimiento por formato y radar. Oscuro por diseño (uso diario). */
+:root{
+  --bg:#0b0f0d; --panel:#131a16; --panel2:#18211c; --line:#24302a; --ink:#eef4ef; --muted:#8fa197;
+  --lime:#c6ff3d; --amber:#ffb020; --ok:#38d97a; --err:#ff5a4e; --idle:#4a5a51; --blue:#4da3ff;
+  --stop:#ff5a5a; --find:#4da3ff; --look:#ffb020; --cabeza:#b48cff; --otro:#8fa197;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:Inter,"Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
+}
+*{box-sizing:border-box}
+html,body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:15px;line-height:1.4;margin:0}
+.app{max-width:1180px;margin:0 auto;padding:0 max(14px,env(safe-area-inset-right,0px)) 40px max(14px,env(safe-area-inset-left,0px))}
+.top{position:sticky;top:0;z-index:5;background:rgba(11,15,13,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  padding:calc(10px + env(safe-area-inset-top,0px)) max(14px,env(safe-area-inset-right,0px)) 10px max(14px,env(safe-area-inset-left,0px));display:flex;align-items:center;gap:12px}
+.logo{font-family:var(--display);font-weight:800;font-size:24px;letter-spacing:.02em}
+.logo b{color:var(--lime)}
+.vivo{margin-left:auto;display:flex;align-items:center;gap:8px;font-family:var(--mono);font-size:11px;color:var(--muted)}
+.dot{width:9px;height:9px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 rgba(56,217,122,.6);animation:ping 1.8s infinite}
+.dot.off{background:var(--idle);animation:none}
+@keyframes ping{0%{box-shadow:0 0 0 0 rgba(56,217,122,.55)}70%{box-shadow:0 0 0 9px rgba(56,217,122,0)}100%{box-shadow:0 0 0 0 rgba(56,217,122,0)}}
+.grid{display:grid;gap:12px;margin-top:12px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(300px,1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:16px;padding:14px;min-width:0}
+.ph{display:flex;align-items:baseline;gap:8px;margin-bottom:10px}
+.ph h2{font-family:var(--display);font-weight:700;font-size:21px;margin:0;letter-spacing:.01em}
+.ph span{margin-left:auto;font-family:var(--mono);font-size:11px;color:var(--muted)}
+/* estado */
+.estado{background:linear-gradient(135deg,#17251b,#121a16);border-color:#2b3e31}
+.est-t{font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--lime)}
+.est-n{font-family:var(--display);font-weight:800;font-size:clamp(30px,7vw,44px);line-height:1;margin:6px 0 4px}
+.est-s{color:var(--muted);font-size:14px}
+.barra{height:14px;border-radius:8px;background:#0e1411;border:1px solid var(--line);overflow:hidden;margin-top:14px;position:relative}
+.barra i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--lime),#7dff9e);border-radius:8px;transition:width .8s ease}
+.barra.activa i{background-image:linear-gradient(90deg,var(--lime),#7dff9e),repeating-linear-gradient(45deg,rgba(0,0,0,.18) 0 10px,transparent 10px 20px);
+  background-blend-mode:multiply;background-size:100% 100%,28px 28px;animation:mover 1s linear infinite}
+@keyframes mover{to{background-position:0 0,28px 0}}
+.barra-l{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--muted);margin-top:6px}
+.pasos{display:flex;flex-wrap:wrap;gap:6px;margin-top:10px}
+.paso{font-family:var(--mono);font-size:11px;padding:4px 8px;border-radius:999px;background:#0e1411;border:1px solid var(--line);color:var(--muted)}
+.paso.ok{color:var(--ok);border-color:#24553a}.paso.run{color:var(--bg);background:var(--lime);border-color:var(--lime)}.paso.err{color:var(--err);border-color:#5a2a26}
+/* mapa */
+.mapa{width:100%;height:auto;display:block}
+.nodo rect{fill:var(--panel2);stroke:var(--line);stroke-width:1.5}
+.nodo.ok rect{stroke:var(--ok)}.nodo.run rect{stroke:var(--lime);stroke-width:2.5}.nodo.err rect{stroke:var(--err)}
+.nodo .t{fill:var(--ink);font-family:var(--display);font-weight:700;font-size:17px}
+.nodo .s{fill:var(--muted);font-family:var(--mono);font-size:10.5px}
+.nodo .n{fill:var(--muted);font-family:var(--mono);font-size:10px}
+.nodo .luz{fill:var(--idle)}.nodo.ok .luz{fill:var(--ok)}.nodo.run .luz{fill:var(--lime)}.nodo.err .luz{fill:var(--err)}
+.nodo.run rect{animation:brillo 1.4s ease-in-out infinite}
+@keyframes brillo{50%{stroke-opacity:.35}}
+.cable{fill:none;stroke:var(--line);stroke-width:3}
+.cable.ok{stroke:#2d6b45}
+.flujo{fill:none;stroke:var(--lime);stroke-width:3;stroke-dasharray:6 10;animation:flujo .8s linear infinite;opacity:0}
+.flujo.on{opacity:1}
+@keyframes flujo{to{stroke-dashoffset:-16}}
+/* kpis */
+.kpi .v{font-family:var(--display);font-weight:800;font-size:34px;line-height:1;font-variant-numeric:tabular-nums}
+.kpi .l{font-size:12px;color:var(--muted);margin-top:2px}
+.kpi .d{font-family:var(--mono);font-size:12px;margin-top:6px}
+.up{color:var(--ok)}.down{color:var(--err)}.muted{color:var(--muted)}
+/* listas */
+.fila{display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:9px 0;border-top:1px solid var(--line)}
+.fila:first-child{border-top:0}
+.fila>div{min-width:0}
+.fila .tit{display:block;max-width:100%}
+.hora{font-family:var(--display);font-weight:800;font-size:22px;font-variant-numeric:tabular-nums}
+.tit{font-size:14px;font-weight:600;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.sub{font-size:12px;color:var(--muted)}
+.chip{display:inline-block;font-family:var(--mono);font-size:10px;letter-spacing:.04em;text-transform:uppercase;padding:2px 7px;border-radius:999px;background:var(--c,var(--idle));color:#0b0f0d;font-weight:600}
+.estchip{font-family:var(--mono);font-size:10px;padding:3px 8px;border-radius:999px;border:1px solid var(--line);color:var(--muted);white-space:nowrap}
+.estchip.ok{color:var(--ok);border-color:#24553a}.estchip.prog{color:var(--amber);border-color:#5a4520}
+.num{font-family:var(--mono);font-variant-numeric:tabular-nums;text-align:right}
+.bars .b{display:grid;grid-template-columns:110px 1fr auto;gap:8px;align-items:center;margin:7px 0;font-size:13px}
+.track{height:12px;background:#0e1411;border-radius:6px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--c,var(--ok));border-radius:6px}
+svg text{font-family:var(--mono)}
+.aviso{font-size:12px;color:var(--amber);margin-top:8px}
+a{color:var(--blue);text-decoration:none}
+.tarea li{margin:5px 0;font-size:14px}
+.radar{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:10px;overflow-x:auto;padding-bottom:4px}
+.rcard{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}
+.rcard .big{font-family:var(--display);font-weight:800;font-size:24px}
+button{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
+button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
+</style>
+</head>
+<body>
+<div class="top">
+  <div class="logo">FÁBRICA <b>·</b> Futbol Edition</div>
+  <div class="vivo"><i class="dot" id="dot"></i><span id="vivo-t">conectando…</span></div>
+</div>
+<div class="app">
+  <div class="grid g2">
+    <div class="panel estado">
+      <div class="est-t" id="est-t">Estado del sistema</div>
+      <div class="est-n" id="est-n">—</div>
+      <div class="est-s" id="est-s"></div>
+      <div class="barra" id="barra"><i id="barra-i"></i></div>
+      <div class="barra-l"><span id="barra-a"></span><span id="barra-b"></span></div>
+      <div class="pasos" id="pasos"></div>
+    </div>
+    <div class="grid g4" style="margin-top:0">
+      <div class="panel kpi"><div class="v" id="k-vistas">—</div><div class="l">vistas del canal</div><div class="d" id="k-vistas-d"></div></div>
+      <div class="panel kpi"><div class="v" id="k-subs">—</div><div class="l">suscriptores</div><div class="d" id="k-subs-d"></div></div>
+      <div class="panel kpi"><div class="v" id="k-ret">—</div><div class="l">% promedio visto</div><div class="d muted" id="k-ret-d"></div></div>
+      <div class="panel kpi"><div class="v" id="k-hoy">—</div><div class="l">videos de hoy listos</div><div class="d muted" id="k-hoy-d"></div></div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
+    <div class="ph"><h2>Mapa de la fábrica</h2><span id="mapa-s"></span></div>
+    <svg class="mapa" id="mapa" viewBox="0 0 1000 300" role="img" aria-label="Mapa del flujo de la fábrica"></svg>
+  </div>
+
+  <div class="grid g2">
+    <div class="panel">
+      <div class="ph"><h2>Vistas del canal</h2><span id="curva-s">por hora</span></div>
+      <svg id="curva" viewBox="0 0 600 200" style="width:100%;height:auto" role="img" aria-label="Curva de vistas del canal"></svg>
+    </div>
+    <div class="panel">
+      <div class="ph"><h2>Hoy</h2><span id="hoy-s"></span></div>
+      <div id="hoy"></div>
+    </div>
+  </div>
+
+  <div class="grid g2">
+    <div class="panel">
+      <div class="ph"><h2>Videos en marcha</h2><span>vistas · curva · retención</span></div>
+      <div id="ranking"></div>
+    </div>
+    <div class="panel">
+      <div class="ph"><h2>Rendimiento por formato</h2><span>mediana de vistas</span></div>
+      <div class="bars" id="formatos"></div>
+      <div class="ph" style="margin-top:14px"><h2>Retención por formato</h2><span id="ret-s">% promedio visto</span></div>
+      <div class="bars" id="retencion"></div>
+      <div class="aviso" id="ret-aviso"></div>
+    </div>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
+    <div class="ph"><h2>Radar · lo más viral de la semana</h2><span id="radar-s"></span></div>
+    <div class="radar" id="radar"></div>
+  </div>
+
+  <div class="panel tarea" style="margin-top:12px">
+    <div class="ph"><h2>Lo que te toca</h2></div>
+    <ol id="tarea"></ol>
+  </div>
+</div>
+
+<script src="datos.js"></script>
+<script>
+const CFG = {repo: "mindglitch777-eng/proyecto-youtube-futbol-quiz", rama: "ccr-a2c8fa85-10k0an"};
+const RAW = (rama, p) => `https://raw.githubusercontent.com/${CFG.repo}/${rama}/${p}?t=${Math.floor(Date.now() / 60000)}`;
+const COL = {stop: "var(--stop)", find: "var(--find)", look: "var(--look)", cabeza: "var(--cabeza)"};
+const NOM = {stop: "STOP", find: "FIND", look: "¿CUÁL LOOK?", cabeza: "CATCH HEAD", runner: "RUNNER", ring: "ANILLOS", carrera: "CARRERA", otros: "OTROS"};
+const ETAPAS = [["radar","Radar","virales"],["analisis","Análisis","Gemini"],["rendimiento","Rendimiento","canal"],["plan","Plan","semana"],["produccion","Producción","fábrica"],["control","Control","calidad"],["publicacion","Publicación","diaria"]];
+const $ = id => document.getElementById(id);
+const el = (t, c, x) => { const e = document.createElement(t); if (c) e.className = c; if (x != null) e.textContent = x; return e; };
+const fmt = n => n == null ? "—" : n >= 1e6 ? (n / 1e6).toFixed(1) + " M" : n >= 1e4 ? (n / 1e3).toFixed(1) + " K" : n.toLocaleString("es-AR");
+const SVGNS = "http://www.w3.org/2000/svg";
+const sv = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
+const hace = iso => { if (!iso) return "—"; const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "recién" : m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : `hace ${Math.round(m / 1440)} d`; };
+let D = {}, CORRIDA = null;
+
+async function traer(url) { try { const r = await fetch(url, {cache: "no-store"}); return r.ok ? await r.json() : null; } catch (e) { return null; } }
+
+async function cargar() {
+  const s = window.SNAPSHOT || {};
+  const [estado, radar, analisis, plan, semana, publicados, vivo] = await Promise.all([
+    traer(RAW(CFG.rama, "pipeline/datos/estado.json")), traer(RAW(CFG.rama, "pipeline/datos/radar.json")),
+    traer(RAW(CFG.rama, "pipeline/datos/analisis.json")), traer(RAW(CFG.rama, "pipeline/datos/plan.json")),
+    traer(RAW(CFG.rama, "pipeline/datos/semana_actual.json")), traer(RAW(CFG.rama, "pipeline/datos/publicados.json")),
+    traer(RAW("datos-vivos", "vivo.json"))]);
+  D = {estado: estado || s.estado || {}, radar: (radar && radar.virales) || s.radar || [], analisis: analisis || s.analisis || {},
+       plan: plan || s.plan || {}, semana: semana || s.semana || {}, publicados: publicados || s.publicados || [], vivo: vivo || s.vivo || null,
+       en_vivo: !!estado};
+  pintar();
+}
+
+async function corridas() {
+  const r = await traer(`https://api.github.com/repos/${CFG.repo}/actions/runs?per_page=6`);
+  CORRIDA = null;
+  if (r && r.workflow_runs) {
+    const act = r.workflow_runs.find(x => ["in_progress", "queued"].includes(x.status) && /FÁBRICA|PUBLICAR|MEDIR/.test(x.name));
+    if (act) {
+      const j = await traer(act.jobs_url);
+      const pasos = j && j.jobs && j.jobs[0] ? j.jobs[0].steps : [];
+      CORRIDA = {nombre: act.name, inicio: act.run_started_at, url: act.html_url, pasos};
+    } else CORRIDA = {ultima: r.workflow_runs.find(x => /FÁBRICA|PUBLICAR|MEDIR/.test(x.name))};
+  }
+  pintarEstado();
+  setTimeout(corridas, CORRIDA && CORRIDA.pasos ? 20000 : 90000);
+}
+
+function pintarEstado() {
+  const et = (D.estado && D.estado.etapas) || {};
+  const ok = ETAPAS.filter(([k]) => (et[k] || {}).estado === "ok").length;
+  $("pasos").innerHTML = "";
+  if (CORRIDA && CORRIDA.pasos) {
+    const utiles = CORRIDA.pasos.filter(p => !/^(Set up|Post |Complete|Run actions)/.test(p.name));
+    const hechos = utiles.filter(p => p.status === "completed").length;
+    const actual = utiles.find(p => p.status === "in_progress");
+    $("est-t").textContent = "TRABAJANDO AHORA · " + CORRIDA.nombre;
+    $("est-n").textContent = actual ? actual.name : "Arrancando…";
+    $("est-s").textContent = `empezó ${hace(CORRIDA.inicio)}`;
+    $("barra").classList.add("activa");
+    $("barra-i").style.width = Math.max(4, 100 * hechos / Math.max(1, utiles.length)) + "%";
+    $("barra-a").textContent = `paso ${Math.min(hechos + 1, utiles.length)} de ${utiles.length}`;
+    $("barra-b").textContent = Math.round(100 * hechos / Math.max(1, utiles.length)) + "%";
+    utiles.forEach(p => $("pasos").append(el("span", "paso " + (p.status !== "completed" ? (p.status === "in_progress" ? "run" : "") : p.conclusion === "success" ? "ok" : "err"), p.name)));
+  } else {
+    $("barra").classList.remove("activa");
+    const pub = et.publicacion || {};
+    $("est-t").textContent = "EN ESPERA";
+    $("est-n").textContent = proxima();
+    const ult = CORRIDA && CORRIDA.ultima;
+    $("est-s").textContent = ult ? `Última corrida: ${ult.name} · ${ult.conclusion === "success" ? "terminó bien" : ult.conclusion || ult.status} · ${hace(ult.updated_at)}` : "";
+    $("barra-i").style.width = (100 * ok / ETAPAS.length) + "%";
+    $("barra-a").textContent = `semana ${D.semana.inicio || "—"}`;
+    $("barra-b").textContent = `${ok} de ${ETAPAS.length} estaciones listas`;
+    if (pub.resumen && pub.resumen.aviso) $("est-s").textContent += " · ⚠ " + pub.resumen.aviso;
+  }
+  pintarMapa();
+}
+
+function proxima() {
+  const ahora = new Date(); const ar = new Date(ahora.toLocaleString("en-US", {timeZone: "America/Argentina/Buenos_Aires"}));
+  const cand = [];
+  for (let d = 0; d < 8; d++) {
+    const base = new Date(ar); base.setDate(ar.getDate() + d);
+    const pub = new Date(base); pub.setHours(7, 30, 0, 0); cand.push(["Publicación del día", pub]);
+    if (base.getDay() === 0) { const f = new Date(base); f.setHours(9, 0, 0, 0); cand.push(["Fábrica semanal", f]); }
+  }
+  const sig = cand.filter(c => c[1] > ar).sort((a, b) => a[1] - b[1])[0];
+  const m = Math.round((sig[1] - ar) / 60000);
+  return `${sig[0]} en ${m >= 60 ? Math.floor(m / 60) + " h " + (m % 60) + " min" : m + " min"}`;
+}
+
+function resumenCorto(k, e) {
+  const r = (e || {}).resumen || {};
+  if (k === "radar") return r.virales != null ? `${r.virales} virales` : "";
+  if (k === "analisis") return r.analizados != null ? `${r.analizados} analizados` : "";
+  if (k === "rendimiento") return r.videos != null ? `${r.videos} videos` : "";
+  if (k === "plan") return r.cupos ? Object.values(r.cupos).reduce((a, b) => a + b, 0) + " videos" : (r.semana || "").slice(0, 10);
+  if (k === "produccion") return r.videos != null ? `${r.videos} videos` : "";
+  if (k === "control") return r.pasan || "";
+  if (k === "publicacion") return r.subidos != null ? `${r.subidos} subidos hoy` : (r.aviso ? "falta permiso" : "");
+  return "";
+}
+
+function pintarMapa() {
+  const svg = $("mapa"); svg.innerHTML = "";
+  const angosto = svg.clientWidth && svg.clientWidth < 560;
+  const et = (D.estado && D.estado.etapas) || {};
+  let activa = null;
+  if (CORRIDA && CORRIDA.pasos) {
+    const actual = (CORRIDA.pasos.find(p => p.status === "in_progress") || {}).name || "";
+    const mapa = [["Radar","radar"],["Análisis","analisis"],["rendimiento","rendimiento"],["Plan","plan"],["Producción","produccion"],["Release","produccion"],["Subir","publicacion"],["Medir","rendimiento"]];
+    activa = (mapa.find(([t]) => actual.includes(t)) || [])[1] || null;
+  }
+  const cols = angosto ? 1 : 4, W = angosto ? 420 : 1000, nodoW = angosto ? 360 : 210, nodoH = angosto ? 78 : 92;
+  const pos = ETAPAS.map((_, i) => { const fila = Math.floor(i / cols), col = fila % 2 ? cols - 1 - (i % cols) : i % cols;
+    const paso = angosto ? 96 : 130;
+    return [cols === 1 ? 30 : 30 + col * ((W - 60 - nodoW) / Math.max(1, cols - 1)), 12 + fila * paso]; });
+  svg.setAttribute("viewBox", `0 0 ${W} ${Math.ceil(ETAPAS.length / cols) * (angosto ? 96 : 130) + (angosto ? 0 : -16)}`);
+  for (let i = 0; i < ETAPAS.length - 1; i++) {
+    const [x1, y1] = pos[i], [x2, y2] = pos[i + 1];
+    const a = [x1 + nodoW / 2, y1 + nodoH / 2], b = [x2 + nodoW / 2, y2 + nodoH / 2];
+    const d = `M${a[0]},${a[1]} L${b[0]},${b[1]}`;
+    const hecho = (et[ETAPAS[i][0]] || {}).estado === "ok";
+    svg.append(sv("path", {d, class: "cable" + (hecho ? " ok" : "")}));
+    svg.append(sv("path", {d, class: "flujo" + (activa === ETAPAS[i + 1][0] ? " on" : "")}));
+  }
+  ETAPAS.forEach(([k, t, s], i) => {
+    const e = et[k] || {estado: "pendiente"};
+    const cls = activa === k ? "run" : e.estado === "ok" ? "ok" : e.estado === "error" ? "err" : e.estado === "en_curso" ? "run" : "";
+    const g = sv("g", {class: "nodo " + cls, transform: `translate(${pos[i][0]},${pos[i][1]})`});
+    g.append(sv("rect", {width: nodoW, height: nodoH, rx: 14}));
+    g.append(sv("circle", {class: "luz", cx: nodoW - 18, cy: 18, r: 7}));
+    const n = sv("text", {class: "n", x: 14, y: 22}); n.textContent = `ESTACIÓN ${i + 1}`; g.append(n);
+    const tt = sv("text", {class: "t", x: 14, y: angosto ? 44 : 50}); tt.textContent = t; g.append(tt);
+    const ss = sv("text", {class: "s", x: 14, y: angosto ? 64 : 74}); ss.textContent = resumenCorto(k, e) || s; g.append(ss);
+    svg.append(g);
+  });
+  $("mapa-s").textContent = `actualizado ${hace(D.estado && D.estado.actualizado)}`;
+}
+
+function curva(svg, puntos, color) {
+  svg.innerHTML = ""; if (!puntos || puntos.length < 2) { const t = sv("text", {x: 10, y: 100, fill: "#8fa197", "font-size": 13}); t.textContent = "Se llena con la medición de cada hora"; svg.append(t); return; }
+  const W = 600, H = 200, p = 30;
+  const ys = puntos.map(x => x[1]); const mn = Math.min(...ys), mx = Math.max(...ys) || 1;
+  const X = i => p + (W - 2 * p) * i / (puntos.length - 1), Y = v => H - p - (H - 2 * p) * (v - mn) / Math.max(1, mx - mn);
+  for (let g = 0; g <= 3; g++) { const yy = p + (H - 2 * p) * g / 3; svg.append(sv("line", {x1: p, x2: W - p, y1: yy, y2: yy, stroke: "#24302a"}));
+    const t = sv("text", {x: W - p + 4, y: yy + 4, fill: "#8fa197", "font-size": 10}); t.textContent = fmt(Math.round(mx - (mx - mn) * g / 3)); svg.append(t); }
+  const d = puntos.map((q, i) => `${i ? "L" : "M"}${X(i)},${Y(q[1])}`).join(" ");
+  svg.append(sv("path", {d: d + ` L${X(puntos.length - 1)},${H - p} L${X(0)},${H - p} Z`, fill: color, "fill-opacity": .12}));
+  svg.append(sv("path", {d, fill: "none", stroke: color, "stroke-width": 2.5}));
+  svg.append(sv("circle", {cx: X(puntos.length - 1), cy: Y(ys[ys.length - 1]), r: 5, fill: color}));
+}
+
+function mini(serie, color) {
+  const s = sv("svg", {viewBox: "0 0 90 28", width: 90, height: 28});
+  if (!serie || serie.length < 2) return s;
+  const ys = serie.map(x => x[1]); const mn = Math.min(...ys), mx = Math.max(...ys);
+  const d = serie.map((q, i) => `${i ? "L" : "M"}${2 + 86 * i / (serie.length - 1)},${26 - 24 * (q[1] - mn) / Math.max(1, mx - mn)}`).join(" ");
+  s.append(sv("path", {d, fill: "none", stroke: color, "stroke-width": 2})); return s;
+}
+
+function pintar() {
+  $("dot").classList.toggle("off", !D.en_vivo);
+  $("vivo-t").textContent = D.en_vivo ? `EN VIVO · ${hace(D.vivo && D.vivo.actualizado)}` : "sin conexión · mostrando la última foto";
+  const v = D.vivo;
+  if (v) {
+    $("k-vistas").textContent = fmt(v.canal.vistas); $("k-subs").textContent = fmt(v.canal.suscriptores);
+    const cs = v.canal_serie || [];
+    const hace24 = cs.filter(x => Date.now() - new Date(x[0] + "Z") <= 864e5)[0];
+    if (hace24) { const dv = v.canal.vistas - hace24[1], ds = v.canal.suscriptores - hace24[2];
+      $("k-vistas-d").innerHTML = `<span class="${dv >= 0 ? "up" : "down"}">${dv >= 0 ? "+" : ""}${fmt(dv)}</span> <span class="muted">en 24 h</span>`;
+      $("k-subs-d").innerHTML = `<span class="${ds >= 0 ? "up" : "down"}">${ds >= 0 ? "+" : ""}${ds}</span> <span class="muted">en 24 h</span>`; }
+    curva($("curva"), cs.map(x => [x[0], x[1]]), "#c6ff3d");
+  }
+  // retención (Analytics)
+  const an = v && v.analytics; const porVid = {};
+  if (an && Array.isArray(an.por_video)) an.por_video.forEach(r => porVid[r.video] = r);
+  const rets = Object.values(porVid).filter(r => r.averageViewPercentage != null);
+  if (rets.length) { const tot = rets.reduce((a, r) => a + r.views, 0) || 1;
+    $("k-ret").textContent = (rets.reduce((a, r) => a + r.averageViewPercentage * r.views, 0) / tot).toFixed(0) + "%";
+    $("k-ret-d").textContent = an.periodo || ""; $("ret-aviso").textContent = "Analytics llega con 1-2 días de demora."; }
+  else { $("k-ret").textContent = "—"; $("k-ret-d").textContent = "falta permiso"; $("ret-aviso").textContent = (an && an.aviso) || "Se activa con el permiso de estadísticas."; }
+
+  // hoy
+  const hoyAR = new Date().toLocaleDateString("en-CA", {timeZone: "America/Argentina/Buenos_Aires"});
+  const vids = (D.semana.videos || []).filter(x => x.fecha === hoyAR);
+  const pubs = {}; (D.publicados || []).forEach(p => pubs[p.id] = p);
+  const porId = {}; ((v && v.videos) || []).forEach(x => porId[x.id] = x);
+  $("hoy").innerHTML = ""; let pubHoy = 0;
+  vids.forEach(x => {
+    const p = pubs[x.id]; const yt = p && p.video_id && porId[p.video_id];
+    const f = el("div", "fila"); f.append(el("div", "hora", x.hora));
+    const mid = el("div"); const ch = el("span", "chip", NOM[x.tipo] || x.tipo); ch.style.setProperty("--c", COL[x.tipo]);
+    const t = el("div", "tit", x.titulo); mid.append(ch, t, el("div", "sub", yt ? `${fmt(yt.vistas)} vistas · ${yt.likes} likes` : (p && p.manual ? "programado a mano" : p && p.video_id ? "programado por la API" : "en cola")));
+    f.append(mid);
+    const ya = p && (p.video_id || p.manual); if (ya) pubHoy++;
+    f.append(el("span", "estchip " + (yt ? "ok" : ya ? "prog" : ""), yt ? "publicado" : ya ? "programado" : "en cola"));
+    $("hoy").append(f);
+  });
+  if (!vids.length) $("hoy").append(el("div", "sub", "No hay videos planificados para hoy."));
+  $("k-hoy").textContent = `${pubHoy}/${vids.length || 0}`; $("k-hoy-d").textContent = hoyAR; $("hoy-s").textContent = hoyAR;
+
+  // ranking de videos (últimos 10 publicados)
+  $("ranking").innerHTML = "";
+  ((v && v.videos) || []).slice(0, 10).forEach(x => {
+    const f = el("div", "fila"); const c = COL[x.tipo] || "var(--otro)";
+    const ch = el("span", "chip", NOM[x.tipo] || x.tipo); ch.style.setProperty("--c", c);
+    const mid = el("div"); const a = el("a", "tit", x.titulo); a.href = "https://www.youtube.com/shorts/" + x.id; a.target = "_blank"; a.rel = "noopener"; a.style.display = "block";
+    const r = porVid[x.id]; mid.append(a, el("div", "sub", `${hace(x.publicado)}${r ? ` · ${r.averageViewPercentage.toFixed(0)}% visto · +${r.subscribersGained} subs` : ""}`));
+    const der = el("div", "num"); der.append(el("div", null, fmt(x.vistas)), mini(x.serie, getComputedStyle(document.documentElement).getPropertyValue("--" + (COL[x.tipo] ? x.tipo : "otro")).trim() || "#8fa197"));
+    f.append(ch, mid, der); $("ranking").append(f);
+  });
+
+  // por formato
+  const grupos = {}; ((v && v.videos) || []).forEach(x => { if (Date.now() - new Date(x.publicado) > 864e5) (grupos[x.tipo] = grupos[x.tipo] || []).push(x.vistas); });
+  const med = a => { const s = [...a].sort((p, q) => p - q); return s[Math.floor(s.length / 2)]; };
+  const filas = Object.entries(grupos).map(([k, a]) => [k, med(a), a.length]).sort((a, b) => b[1] - a[1]);
+  const mx = Math.max(1, ...filas.map(f => f[1]));
+  $("formatos").innerHTML = "";
+  filas.forEach(([k, m, n]) => { const b = el("div", "b"); b.style.setProperty("--c", COL[k] || "var(--otro)");
+    const tr = el("div", "track"); const i = el("i"); i.style.width = (100 * m / mx) + "%"; tr.append(i);
+    b.append(el("span", null, NOM[k] || k), tr, el("span", "num", `${fmt(m)} · ${n}`)); $("formatos").append(b); });
+  const rf = {}; ((v && v.videos) || []).forEach(x => { const r = porVid[x.id]; if (r) (rf[x.tipo] = rf[x.tipo] || []).push(r.averageViewPercentage); });
+  $("retencion").innerHTML = "";
+  Object.entries(rf).map(([k, a]) => [k, a.reduce((p, q) => p + q, 0) / a.length]).sort((a, b) => b[1] - a[1]).forEach(([k, pct]) => {
+    const b = el("div", "b"); b.style.setProperty("--c", COL[k] || "var(--otro)");
+    const tr = el("div", "track"); const i = el("i"); i.style.width = Math.min(100, pct / 2) + "%"; tr.append(i);
+    b.append(el("span", null, NOM[k] || k), tr, el("span", "num", pct.toFixed(0) + "%")); $("retencion").append(b); });
+
+  // radar
+  $("radar").innerHTML = "";
+  (D.radar || []).slice(0, 10).forEach(x => {
+    const c = el("a", "rcard"); c.href = "https://www.youtube.com/shorts/" + x.id; c.target = "_blank"; c.rel = "noopener";
+    c.append(el("div", "big", fmt(x.vistas)), el("div", "sub", `${fmt(x.vistas_por_hora)} por hora${x.canal_nuevo ? " · canal nuevo" : ""}`), el("div", "tit", x.titulo), el("div", "sub", x.canal || ""));
+    $("radar").append(c);
+  });
+  $("radar-s").textContent = `${(D.radar || []).length} virales`;
+
+  // tareas
+  const t = $("tarea"); t.innerHTML = "";
+  const et = (D.estado && D.estado.etapas) || {};
+  if (((et.publicacion || {}).resumen || {}).aviso) t.append(el("li", null, "Configurar el permiso del canal y los secretos (pipeline/README.md) para que se suba solo."));
+  t.append(el("li", null, "Grabar 5-6 virales del radar y subirlos a pipeline/grabaciones/ (opcional, mejora la copia)."));
+  t.append(el("li", null, "Fijar el comentario de cada video de hoy y responder los primeros comentarios."));
+  pintarEstado();
+}
+
+cargar(); corridas();
+setInterval(cargar, 60000);
+setInterval(() => { if (!(CORRIDA && CORRIDA.pasos)) $("est-n").textContent = proxima(); }, 30000);
+window.addEventListener("resize", () => pintarMapa());
+</script>
+</body>
+</html>

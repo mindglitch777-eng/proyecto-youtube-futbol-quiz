@@ -1,0 +1,24 @@
+name: TABLERO (publicar la app)
+
+# Publica la app del tablero en GitHub Pages cuando cambia. La app se actualiza sola leyendo los datos en vivo.
+
+on:
+  push:
+    paths: [pipeline/tablero/**]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  tablero:
+    runs-on: ubuntu-latest
+    environment: {name: github-pages}
+    steps:
+      - uses: actions/checkout@v4
+      - run: python pipeline/tablero.py
+      - uses: actions/upload-pages-artifact@v3
+        with: {path: _tablero}
+      - uses: actions/deploy-pages@v4

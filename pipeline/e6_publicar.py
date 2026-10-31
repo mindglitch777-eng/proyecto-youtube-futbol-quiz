@@ -46,7 +46,7 @@ def main():
     hoy = date.fromisoformat(sys.argv[2]) if len(sys.argv) > 2 else datetime.now(ART).date()
     videos = json.loads((carpeta / "videos.json").read_text())
     publicados = cargar("publicados.json", [])
-    hechos = {p["id"] for p in publicados if p.get("video_id")}
+    hechos = {p["id"] for p in publicados if p.get("video_id") or p.get("manual")}
     del_dia = [m for m in videos if m["fecha"] == hoy.isoformat() and m["id"] not in hechos]
     tok = token_canal()
     if not tok:
