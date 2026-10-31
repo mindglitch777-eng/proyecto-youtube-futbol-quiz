@@ -32,8 +32,18 @@ COLORES = ["rojo", "verde", "amarillo", "azul", "violeta"]
 LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena", "cabezon", "alien", "bigote"]
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
-FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD"}
-SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py"}
+FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
+           "hoyo": "BALL TO THE HOLE"}
+SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
+          "plinko": "render_plinko.py", "hoyo": "render_hoyo.py"}
+TIT_PLINKO = ["Who Gets The 99 GOAT Card? 🐐 {a}, {b}, {c} or {d}?", "Only ONE lands on 99 🎯 {a} vs {b} vs {c} vs {d}",
+              "Plinko decides the GOAT 🐐 {a}, {b}, {c} or {d}?", "{a}, {b}, {c} or {d}... who gets 99? 👇",
+              "4 balls, 1 GOAT card 🐐 Pick yours: {a}, {b}, {c} or {d}"]
+PANT_PLINKO = ["WHO GETS 99?", "WHO'S THE GOAT?", "WHO LANDS 99?"]
+TIT_HOYO = ["Which ball goes in? ⚽🕳️ {a}, {b}, {c} or {d}", "Only ONE ball goes in 😳 {a}, {b}, {c} or {d}?",
+            "{a} vs {b} vs {c} vs {d} ⚽ who gets the hole-in-one?", "Ball to the hole 🕳️ {a}, {b}, {c} or {d}... who wins?",
+            "Pick a ball before it rolls 👇 {a}, {b}, {c} or {d}"]
+PANT_HOYO = ["WHO WINS?", "WHO GETS IN?", "PICK A BALL"]
 FRASES = ["99% FAIL THIS", "YOUR EYES WILL LIE", "ONLY 1% GET 3/3", "IMPOSSIBLE LEVEL"]
 TIT_CABEZA = ["Catch the right head 🤯 {n} edition", "Which head is {n}'s? 1, 2 or 3 😳", "Give {n} his head back 💀 1, 2 or 3?"]
 COLORES_CABEZA = [[60, 170, 255], [255, 120, 40], [120, 210, 70], [170, 90, 255], [255, 70, 140]]
@@ -95,6 +105,19 @@ def guion_cabeza(gid, rng, usados_cab):
     return dict(id=gid, nombre=real[0], foto=FOTOS[real[1]], opciones=opciones, color=rng.choice(COLORES_CABEZA))
 
 
+def guion_plinko(gid, rng, V, fecha):
+    grupo = V.grupo("plinko", 4, rng, JUGADORES, fecha)
+    return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], semilla=V.semilla(rng) * 5000,
+                titulo=V.titulo("plinko_pantalla", PANT_PLINKO, rng), musica=V.musica(rng))
+
+
+def guion_hoyo(gid, rng, V, fecha):
+    grupo = V.grupo("hoyo", 4, rng, JUGADORES, fecha)
+    nombres = [n for n, _, _ in grupo]
+    return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=nombres, ganador=V.ganador(nombres, rng), semilla=V.semilla(rng),
+                titulo=V.titulo("hoyo_pantalla", PANT_HOYO, rng), musica=V.musica(rng))
+
+
 def creditos(claves):
     return "\n".join(f'- {CRED[k]["jugador"]}: "{CRED[k]["archivo"].replace("File:", "")}" by {CRED[k]["autor"]}, {CRED[k]["licencia"]} '
                      f'({CRED[k]["pagina"]}). Edited.' for k in claves if k in CRED)
@@ -124,12 +147,27 @@ def slots_por_defecto(inicio, dias):
 def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
     """Genera, renderiza y deja en `sem` un video por slot (dict fecha, hora, tipo, dificil) + su .txt + videos.json."""
     (sem / "guiones").mkdir(parents=True, exist_ok=True)
-    usados, usados_look, usados_cab, trabajos, filas, manifiesto = set(), set(), set(), [], [], []
+    from variedad import Variedad
+    V = Variedad.cargar()                                                     # memoria permanente: nada se repite entre semanas
+    usados = V.grupos.setdefault("stop_find", set())
+    usados_look, usados_cab, trabajos, filas, manifiesto = set(), set(), [], [], []
     for n, sl in enumerate(slots, 1):
         dia = date.fromisoformat(sl["fecha"]); tipo = sl["tipo"]; hora = sl["hora"]
         et = f"{DIAS[dia.weekday()]}{dia.day:02d}"
         gid = f"{prefijo}_{n:02d}_{et}_{hora.replace(':', '')}_{tipo}"
-        if tipo == "find":
+        if tipo in ("plinko", "hoyo"):
+            g = (guion_plinko if tipo == "plinko" else guion_hoyo)(gid, rng, V, sl["fecha"])
+            ns = g["nombres"]
+            titulo = V.titulo(tipo, TIT_PLINKO if tipo == "plinko" else TIT_HOYO, rng).format(a=ns[0], b=ns[1], c=ns[2], d=ns[3])
+            if tipo == "plinko":
+                desc = "4 balls, 1 card. Only one lands on 99 🎯 Comment your pick BEFORE the end 👇"
+                fijado = "Who did you pick? 👀 Be honest 😂"
+            else:
+                desc = "4 balls, 1 hole. Only one goes in 🕳️ Comment your pick BEFORE they roll 👇"
+                fijado = f"I was sure {ns[(g['ganador'] + 1) % 4]} had it 😭 who did you pick?"
+            desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
+            fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
+        elif tipo == "find":
             g = guion_find(gid, rng, usados)
             titulo = "FIND " + " ".join(r["nombre"].upper() for r in g["rondas"])
             desc = "Find the REAL one in every round 🔎 Round 3 is only for the 1%\nComment the numbers 👇\n" + " ".join(tag(r["nombre"]) for r in g["rondas"])
@@ -137,19 +175,19 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             fotos = [r["foto"] for r in g["rondas"]]; nombres = [r["nombre"] for r in g["rondas"]]
         elif tipo == "cabeza":
             g = guion_cabeza(gid, rng, usados_cab)
-            titulo = rng.choice(TIT_CABEZA).format(n=g["nombre"])
+            titulo = V.titulo("cabeza", TIT_CABEZA, rng).format(n=g["nombre"])
             desc = f"Only one head fits {g['nombre']} 🤯 Did you guess it before the end? 1, 2 or 3 👇\n{tag(g['nombre'])} #football #shorts"
             fijado = "Be honest… did you get it before it landed? 👀"
             fotos = g["opciones"]; nombres = [g["nombre"]]
         elif tipo == "look":
             g = guion_look(gid, rng, usados_look)
-            titulo = rng.choice(TIT_LOOK).format(n=g["nombre"])
+            titulo = V.titulo("look", TIT_LOOK, rng).format(n=g["nombre"])
             desc = f"Which one fits {g['nombre']} best? Comment 1, 2, 3 or 4 👇\n{tag(g['nombre'])} #football #shorts"
             fijado = f"I'm going with number {rng.randint(1, 4)} 😂 what about you?"
             fotos = [g["foto"]]; nombres = [g["nombre"]]
         else:
             g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True))
-            titulo = rng.choice(TIT_STOP)
+            titulo = V.titulo("stop", TIT_STOP, rng)
             desc = "It only fits ONCE per loop 🛑 Pause at the perfect moment. Which one did you get?\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"])
             q0 = g["cuadrantes"][0]
             fijado = f"{q0['nombre']} {q0['pct']} only fits ONE time... did you get it? 😤"
@@ -177,6 +215,9 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
         for f, suf in (("short.mp4", ""), ("short_solo_efectos.mp4", "_solo_efectos"), ("short_sin_musica.mp4", "_solo_efectos")):
             if (sal / f).exists():
                 (sal / f).replace(sem / f"{ruta.stem}{suf}.mp4")
+        if tipo == "plinko" and (sal / "resultado.json").exists():             # el ganador del PLINKO lo decide la física
+            gk = json.loads((sal / "resultado.json").read_text())["ganador"]
+            V.anotar_ganador(next(n for n, c, _ in JUGADORES if c == gk))
         if tipo == "find" and (sal / "resultado.json").exists():               # soluciones del FIND
             res = json.loads((sal / "resultado.json").read_text())
             m["soluciones"] = " · ".join(f'{x["nombre"].title()} #{x["real"]}' for x in res["rondas"])
@@ -185,6 +226,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
         import shutil
         shutil.rmtree(sal, ignore_errors=True)
         m["listo"] = (sem / m["archivo"]).exists()
+    V.guardar()
     (sem / "videos.json").write_text(json.dumps(manifiesto, ensure_ascii=False, indent=1))
     (sem / "CALENDARIO.md").write_text("# Calendario de la semana\n\n| # | Día | Hora (ARG) | Formato | Título | Archivo |\n|---|---|---|---|---|---|\n" + "\n".join(filas) + "\n")
     return manifiesto, errores

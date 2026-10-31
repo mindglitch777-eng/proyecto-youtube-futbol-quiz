@@ -21,7 +21,7 @@ concurrency: {group: fabrica, cancel-in-progress: false}
 jobs:
   fabrica:
     runs-on: ubuntu-latest
-    timeout-minutes: 120
+    timeout-minutes: 300
     env:
       YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
       GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
@@ -37,6 +37,7 @@ jobs:
         run: |
           sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2 fonts-noto-color-emoji
           pip install -q -r pipeline/requirements.txt
+          cd produccion/runner && npm install --no-audit --no-fund three@0.169.0 playwright@1.48.0 && npx playwright install --with-deps chromium && cd ../..
           curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
           curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
       - name: 1 · Radar de virales
