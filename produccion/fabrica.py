@@ -110,65 +110,90 @@ def render(args):
     return ruta, r.returncode, r.stderr[-400:]
 
 
-def main():
-    inicio = date.fromisoformat(sys.argv[1]); dias = int(sys.argv[2]); rng = random.Random(int(sys.argv[3]) if len(sys.argv) > 3 else 67)
-    sem = ROOT / f"semana_{inicio.isoformat()}"; (sem / "guiones").mkdir(parents=True, exist_ok=True)
-    usados, usados_look, usados_cab, trabajos, filas = set(), set(), set(), [], []
-    n = 0
+def slots_por_defecto(inicio, dias):
+    """La grilla fija: 09 STOP difícil · 13 FIND · 17 ¿CUÁL LOOK? · 21 CATCH o STOP medio (alternando)."""
+    out = []
     for d in range(dias):
-        dia = inicio + timedelta(days=d); et = f"{DIAS[dia.weekday()]}{dia.day:02d}"
+        dia = inicio + timedelta(days=d)
         for slot in ("stopA", "find", "look", "noche"):
-            n += 1
             tipo = {"stopA": "stop", "find": "find", "look": "look", "noche": "cabeza" if d % 2 == 0 else "stop"}[slot]
-            gid = f"s1_{n:02d}_{et}_{HORAS[slot].replace(':', '')}_{tipo}"
-            if tipo == "find":
-                g = guion_find(gid, rng, usados)
-                titulo = "FIND " + " ".join(r["nombre"].upper() for r in g["rondas"])
-                desc = "Find the REAL one in every round 🔎 Round 3 is only for the 1%\nComment the numbers 👇\n" + " ".join(tag(r["nombre"]) for r in g["rondas"])
-                fijado = "Answers in the video 👀 Which round did you get wrong? 1, 2 or 3?"
-                fotos = [r["foto"] for r in g["rondas"]]
-            elif tipo == "cabeza":
-                g = guion_cabeza(gid, rng, usados_cab)
-                titulo = rng.choice(TIT_CABEZA).format(n=g["nombre"])
-                desc = f"Only one head fits {g['nombre']} 🤯 Did you guess it before the end? 1, 2 or 3 👇\n{tag(g['nombre'])} #football #shorts"
-                fijado = "Be honest… did you get it before it landed? 👀"
-                fotos = g["opciones"]
-            elif tipo == "look":
-                g = guion_look(gid, rng, usados_look)
-                titulo = rng.choice(TIT_LOOK).format(n=g["nombre"])
-                desc = f"Which one fits {g['nombre']} best? Comment 1, 2, 3 or 4 👇\n{tag(g['nombre'])} #football #shorts"
-                fijado = f"I'm going with number {rng.randint(1, 4)} 😂 what about you?"
-                fotos = [g["foto"]]
-            else:
-                g = guion_stop(gid, rng, usados, dificil=(slot == "stopA"))
-                titulo = rng.choice(TIT_STOP)
-                desc = "It only fits ONCE per loop 🛑 Pause at the perfect moment. Which one did you get?\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"])
-                q0 = g["cuadrantes"][0]
-                fijado = f"{q0['nombre']} {q0['pct']} only fits ONE time... did you get it? 😤"
-                fotos = [q["foto"] for q in g["cuadrantes"]]
-            ruta = sem / "guiones" / f"{gid}.json"
-            ruta.write_text(json.dumps(g, ensure_ascii=False, indent=1))
-            (sem / f"{gid}.txt").write_text(
-                f"=== PROGRAMAR ===\n{dia.isoformat()} a las {HORAS[slot]} (hora de Argentina)\n\n=== TÍTULO ===\n{titulo}\n\n=== DESCRIPCIÓN ===\n{desc}\n\n"
-                f"Photo credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n{creditos(fotos)}\n\n"
-                f"=== COMENTARIO PARA FIJAR ===\n{fijado}\n\n=== AL SUBIR ===\n- Idioma del video: Inglés. Solo hashtags en inglés.\n"
-                f"- Si podés, usá el archivo _solo_efectos y agregá desde la app el sonido '6 7' en tendencia.\n")
-            trabajos.append((tipo, ruta))
-            filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {HORAS[slot]} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
-    with ProcessPoolExecutor(3) as ex:
+            out.append(dict(fecha=dia.isoformat(), hora=HORAS[slot], tipo=tipo, dificil=slot == "stopA"))
+    return out
+
+
+def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
+    """Genera, renderiza y deja en `sem` un video por slot (dict fecha, hora, tipo, dificil) + su .txt + videos.json."""
+    (sem / "guiones").mkdir(parents=True, exist_ok=True)
+    usados, usados_look, usados_cab, trabajos, filas, manifiesto = set(), set(), set(), [], [], []
+    for n, sl in enumerate(slots, 1):
+        dia = date.fromisoformat(sl["fecha"]); tipo = sl["tipo"]; hora = sl["hora"]
+        et = f"{DIAS[dia.weekday()]}{dia.day:02d}"
+        gid = f"{prefijo}_{n:02d}_{et}_{hora.replace(':', '')}_{tipo}"
+        if tipo == "find":
+            g = guion_find(gid, rng, usados)
+            titulo = "FIND " + " ".join(r["nombre"].upper() for r in g["rondas"])
+            desc = "Find the REAL one in every round 🔎 Round 3 is only for the 1%\nComment the numbers 👇\n" + " ".join(tag(r["nombre"]) for r in g["rondas"])
+            fijado = "Answers in the video 👀 Which round did you get wrong? 1, 2 or 3?"
+            fotos = [r["foto"] for r in g["rondas"]]; nombres = [r["nombre"] for r in g["rondas"]]
+        elif tipo == "cabeza":
+            g = guion_cabeza(gid, rng, usados_cab)
+            titulo = rng.choice(TIT_CABEZA).format(n=g["nombre"])
+            desc = f"Only one head fits {g['nombre']} 🤯 Did you guess it before the end? 1, 2 or 3 👇\n{tag(g['nombre'])} #football #shorts"
+            fijado = "Be honest… did you get it before it landed? 👀"
+            fotos = g["opciones"]; nombres = [g["nombre"]]
+        elif tipo == "look":
+            g = guion_look(gid, rng, usados_look)
+            titulo = rng.choice(TIT_LOOK).format(n=g["nombre"])
+            desc = f"Which one fits {g['nombre']} best? Comment 1, 2, 3 or 4 👇\n{tag(g['nombre'])} #football #shorts"
+            fijado = f"I'm going with number {rng.randint(1, 4)} 😂 what about you?"
+            fotos = [g["foto"]]; nombres = [g["nombre"]]
+        else:
+            g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True))
+            titulo = rng.choice(TIT_STOP)
+            desc = "It only fits ONCE per loop 🛑 Pause at the perfect moment. Which one did you get?\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"])
+            q0 = g["cuadrantes"][0]
+            fijado = f"{q0['nombre']} {q0['pct']} only fits ONE time... did you get it? 😤"
+            fotos = [q["foto"] for q in g["cuadrantes"]]; nombres = [q["nombre"] for q in g["cuadrantes"]]
+        ruta = sem / "guiones" / f"{gid}.json"
+        ruta.write_text(json.dumps(g, ensure_ascii=False, indent=1))
+        desc_completa = (f"{desc}\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n"
+                         f"{creditos(fotos)}")
+        (sem / f"{gid}.txt").write_text(
+            f"=== PROGRAMAR ===\n{dia.isoformat()} a las {hora} (hora de Argentina)\n\n=== TÍTULO ===\n{titulo}\n\n=== DESCRIPCIÓN ===\n{desc_completa}\n\n"
+            f"=== COMENTARIO PARA FIJAR ===\n{fijado}\n\n=== AL SUBIR ===\n- Idioma del video: Inglés. Solo hashtags en inglés.\n")
+        manifiesto.append(dict(id=gid, n=n, fecha=dia.isoformat(), hora=hora, tipo=tipo, formato=FORMATO[tipo], titulo=titulo,
+                               descripcion=desc_completa, fijado=fijado, jugadores=nombres,
+                               tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4"))
+        trabajos.append((tipo, ruta))
+        filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
+    errores = []
+    with ProcessPoolExecutor(procesos) as ex:
         for ruta, rc, err in ex.map(render, trabajos):
             print("ok" if rc == 0 else "ERROR", ruta.stem, "" if rc == 0 else err, flush=True)
-    for tipo, ruta in trabajos:                                               # mover los videos a la carpeta de la semana
+            if rc:
+                errores.append(dict(id=ruta.stem, error=err))
+    for (tipo, ruta), m in zip(trabajos, manifiesto):                        # mover los videos a la carpeta de la semana
         sal = ROOT / "salida" / ruta.stem
         for f, suf in (("short.mp4", ""), ("short_solo_efectos.mp4", "_solo_efectos"), ("short_sin_musica.mp4", "_solo_efectos")):
             if (sal / f).exists():
                 (sal / f).replace(sem / f"{ruta.stem}{suf}.mp4")
-        if tipo == "find" and (sal / "resultado.json").exists():               # soluciones del FIND al .txt
+        if tipo == "find" and (sal / "resultado.json").exists():               # soluciones del FIND
             res = json.loads((sal / "resultado.json").read_text())
-            sol = " · ".join(f'{x["nombre"].title()} #{x["real"]}' for x in res["rondas"])
+            m["soluciones"] = " · ".join(f'{x["nombre"].title()} #{x["real"]}' for x in res["rondas"])
             with open(sem / f"{ruta.stem}.txt", "a") as fh:
-                fh.write(f"\n=== SOLUCIONES (para vos) ===\n{sol}\n")
+                fh.write(f"\n=== SOLUCIONES (para vos) ===\n{m['soluciones']}\n")
+        import shutil
+        shutil.rmtree(sal, ignore_errors=True)
+        m["listo"] = (sem / m["archivo"]).exists()
+    (sem / "videos.json").write_text(json.dumps(manifiesto, ensure_ascii=False, indent=1))
     (sem / "CALENDARIO.md").write_text("# Calendario de la semana\n\n| # | Día | Hora (ARG) | Formato | Título | Archivo |\n|---|---|---|---|---|---|\n" + "\n".join(filas) + "\n")
+    return manifiesto, errores
+
+
+def main():
+    inicio = date.fromisoformat(sys.argv[1]); dias = int(sys.argv[2]); rng = random.Random(int(sys.argv[3]) if len(sys.argv) > 3 else 67)
+    sem = ROOT / f"semana_{inicio.isoformat()}"
+    fabricar(slots_por_defecto(inicio, dias), sem, rng)
     print(sem)
 
 

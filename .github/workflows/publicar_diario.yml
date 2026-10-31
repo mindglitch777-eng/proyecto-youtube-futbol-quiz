@@ -1,0 +1,65 @@
+name: PUBLICAR diario (4 videos por API)
+
+# Todos los días 07:30 de Argentina sube los 4 videos del día, programados a su hora. También mide el rendimiento
+# del canal y actualiza el tablero. Se puede lanzar a mano desde Actions.
+
+on:
+  schedule:
+    - cron: "30 10 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency: {group: publicar, cancel-in-progress: false}
+
+jobs:
+  publicar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - name: Bajar los videos de esta semana
+        run: |
+          HOY=$(TZ=America/Argentina/Buenos_Aires date +%F)
+          mkdir -p _hoy
+          for TAG in $(gh release list --limit 6 --json tagName -q '.[].tagName' | grep '^semana-'); do
+            gh release download "$TAG" -p videos.json -D _tmp_$TAG 2>/dev/null || continue
+            if grep -q "\"fecha\": \"$HOY\"" _tmp_$TAG/videos.json; then
+              cp _tmp_$TAG/videos.json _hoy/
+              for F in $(python -c "import json;print(' '.join(m['archivo'] for m in json.load(open('_hoy/videos.json')) if m['fecha']=='$HOY'))"); do
+                gh release download "$TAG" -p "$F" -D _hoy
+              done
+              break
+            fi
+          done
+          ls -la _hoy || true
+      - name: Subir a YouTube
+        run: |
+          if [ -f _hoy/videos.json ]; then cd pipeline && python e6_publicar.py ../_hoy; else echo "No hay videos para hoy"; fi
+      - name: Medir rendimiento del canal
+        run: cd pipeline && python e3_rendimiento.py
+        continue-on-error: true
+      - name: Guardar avance
+        if: always()
+        run: bash pipeline/guardar_avance.sh "Publicación diaria"
+      - name: Armar tablero
+        if: always()
+        run: python pipeline/tablero.py
+      - uses: actions/upload-pages-artifact@v3
+        if: always()
+        with: {path: _tablero}
+      - uses: actions/deploy-pages@v4
+        if: always()
+        continue-on-error: true

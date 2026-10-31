@@ -1,0 +1,71 @@
+name: FÁBRICA semanal (radar → análisis → plan → videos)
+
+# Todos los domingos 09:00 de Argentina arma la semana siguiente completa (28 videos, lunes a domingo).
+# También se puede lanzar a mano: Actions → "FÁBRICA semanal" → Run workflow (o editando pipeline/lanzar.txt).
+# Los videos quedan en un Release "semana-<lunes>" y el tablero (GitHub Pages) se actualiza solo.
+
+on:
+  schedule:
+    - cron: "0 12 * * 0"
+  workflow_dispatch:
+  push:
+    paths: [pipeline/lanzar.txt]
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+concurrency: {group: fabrica, cancel-in-progress: false}
+
+jobs:
+  fabrica:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Herramientas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2 fonts-noto-color-emoji
+          pip install -q -r pipeline/requirements.txt
+          curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+          curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
+      - name: 1 · Radar de virales
+        run: cd pipeline && python e1_radar.py
+      - name: 2 · Análisis con Gemini (+ grabaciones)
+        run: cd pipeline && python e2_analisis.py
+      - name: 3 · Nuestro rendimiento
+        run: cd pipeline && python e3_rendimiento.py
+      - name: 4 · Plan de la semana
+        run: cd pipeline && python e4_plan.py
+      - name: Guardar avance
+        run: bash pipeline/guardar_avance.sh "Fábrica: radar, análisis y plan"
+      - name: 5-6 · Producción + control
+        run: cd pipeline && python e5_produccion.py
+      - name: Publicar la semana como Release
+        run: |
+          INICIO=$(python -c "import json;print(json.load(open('pipeline/datos/plan.json'))['inicio'])")
+          cd produccion/semana_$INICIO
+          gh release delete "semana-$INICIO" -y --cleanup-tag 2>/dev/null || true
+          gh release create "semana-$INICIO" --target "$GITHUB_REF_NAME" -t "Semana $INICIO" -n "28 videos de la fábrica" ./*.mp4 videos.json CALENDARIO.md
+      - name: Guardar avance
+        if: always()
+        run: bash pipeline/guardar_avance.sh "Fábrica: semana producida"
+      - name: Armar tablero
+        if: always()
+        run: python pipeline/tablero.py
+      - uses: actions/upload-pages-artifact@v3
+        if: always()
+        with: {path: _tablero}
+      - uses: actions/deploy-pages@v4
+        if: always()
+        continue-on-error: true

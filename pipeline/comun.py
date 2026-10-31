@@ -121,3 +121,14 @@ def gemini_subir(ruta, mime="video/mp4"):
         time.sleep(5)
         f = requests.get(f"https://generativelanguage.googleapis.com/v1beta/{f['name']}?key={key}", timeout=60).json()
     return None
+
+
+# ------------------------------------------------------------------ OAuth del canal (subida y estadísticas)
+def token_canal():
+    """Access token a partir del refresh token guardado como secreto (YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN)."""
+    if not all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")):
+        return None
+    r = requests.post("https://oauth2.googleapis.com/token", data=dict(client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"],
+                                                                     refresh_token=os.environ["YT_REFRESH_TOKEN"], grant_type="refresh_token"), timeout=60)
+    r.raise_for_status()
+    return r.json()["access_token"]

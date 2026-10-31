@@ -1,0 +1,258 @@
+<title>Fábrica Futbol Edition</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700;800&family=Source+Sans+3:wght@400;600;700&family=JetBrains+Mono:wght@500&display=swap">
+<style>
+/* Layout: sala de control de una fábrica — cinta de 7 estaciones arriba (luz de estado por estación), debajo los "productos" de cada estación */
+:root{
+  --bg:#eef1ec; --surface:#ffffff; --ink:#141c17; --muted:#5a665e; --line:#d5dbd3; --steel:#26332c; --steel-ink:#e9f1eb;
+  --amber:#d08a00; --ok:#1f8a4c; --err:#c23a2e; --idle:#9aa59d; --chip:#e7ece6;
+  --stop:#e23b3b; --find:#2f80ed; --look:#d58a00; --cabeza:#8a4fd6; --nuevo:#0f9b8e;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif; --body:"Source Sans 3","Segoe UI",system-ui,sans-serif; --mono:"JetBrains Mono",ui-monospace,Menlo,monospace;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0e1311; --surface:#171f1b; --ink:#e6eee8; --muted:#9aaba0; --line:#2a3630; --steel:#0b100d; --steel-ink:#e6eee8;
+  --amber:#f2aa3a; --ok:#4cc884; --err:#f07a6f; --idle:#5f6b64; --chip:#22302a;
+  --stop:#f06a6a; --find:#6aa8ff; --look:#f2b84b; --cabeza:#b48cf0; --nuevo:#3fd0c1; color-scheme:dark}}
+:root[data-theme="dark"]{
+  --bg:#0e1311; --surface:#171f1b; --ink:#e6eee8; --muted:#9aaba0; --line:#2a3630; --steel:#0b100d; --steel-ink:#e6eee8;
+  --amber:#f2aa3a; --ok:#4cc884; --err:#f07a6f; --idle:#5f6b64; --chip:#22302a;
+  --stop:#f06a6a; --find:#6aa8ff; --look:#f2b84b; --cabeza:#b48cf0; --nuevo:#3fd0c1; color-scheme:dark}
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--ink);font-family:var(--body);font-size:16px;line-height:1.45;margin:0}
+.wrap{max-width:1100px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+header{background:var(--steel);color:var(--steel-ink)}
+header .wrap{padding-block:26px 22px}
+.eyebrow{font-family:var(--mono);font-size:12px;letter-spacing:.12em;text-transform:uppercase;opacity:.75}
+h1{font-family:var(--display);font-weight:800;font-size:clamp(38px,7vw,62px);line-height:.95;margin:.2em 0 .25em}
+h1 span{color:var(--amber)}
+.meta{display:flex;flex-wrap:wrap;gap:8px 22px;font-family:var(--mono);font-size:13px;opacity:.85}
+/* cinta */
+.cinta{display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:10px;margin-top:20px;position:relative}
+.est{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:12px;padding:12px;min-width:0}
+.est .n{font-family:var(--mono);font-size:11px;opacity:.7}
+.est b{display:block;font-family:var(--display);font-size:21px;line-height:1.05;margin:3px 0}
+.luz{display:inline-flex;align-items:center;gap:6px;font-family:var(--mono);font-size:11px;text-transform:uppercase;letter-spacing:.06em}
+.luz i{width:11px;height:11px;border-radius:50%;background:var(--idle);display:inline-block}
+.luz.ok i{background:var(--ok);box-shadow:0 0 10px var(--ok)}
+.luz.en_curso i{background:var(--amber);box-shadow:0 0 12px var(--amber);animation:lat 1s infinite}
+.luz.error i{background:var(--err);box-shadow:0 0 10px var(--err)}
+@keyframes lat{50%{opacity:.35}}
+@media (prefers-reduced-motion:reduce){.luz.en_curso i{animation:none}}
+.est small{display:block;font-size:12px;opacity:.75;margin-top:6px;overflow-wrap:anywhere}
+.barra{height:8px;border-radius:5px;background:rgba(255,255,255,.15);margin-top:16px;overflow:hidden}
+.barra i{display:block;height:100%;background:var(--amber)}
+section{padding-block:28px;border-bottom:1px solid var(--line)}
+h2{font-family:var(--display);font-weight:800;font-size:clamp(26px,4.5vw,34px);line-height:1.05;margin:0 0 4px}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--amber);margin-bottom:4px}
+.nota{color:var(--muted);font-size:14px;margin:4px 0 0;max-width:70ch}
+.tarea{background:var(--surface);border:2px solid var(--amber);border-radius:14px;padding:16px;margin-top:14px}
+.tarea ol{margin:8px 0 0;padding-left:20px}
+.tarea li{margin:4px 0}
+a{color:var(--find)}
+.tbl{overflow-x:auto;margin-top:12px}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
+th,td{padding:7px 9px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+th{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-weight:500}
+td.num{font-family:var(--mono);white-space:nowrap;font-variant-numeric:tabular-nums}
+.chip{display:inline-block;font-family:var(--mono);font-size:11px;letter-spacing:.04em;text-transform:uppercase;padding:3px 8px;border-radius:999px;background:var(--chip);color:var(--ink);white-space:nowrap}
+.chip.c{background:var(--c);color:#fff}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:12px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:12px;padding:14px;min-width:0}
+.card h3{font-size:16px;margin:6px 0 4px;line-height:1.25}
+.card p{margin:6px 0;font-size:14px}
+.card ul{margin:6px 0 0;padding-left:18px;font-size:14px}
+.bars{display:grid;gap:8px;margin-top:12px}
+.row{display:grid;grid-template-columns:minmax(120px,190px) 1fr auto;gap:10px;align-items:center;font-size:14px}
+.track{height:16px;background:var(--chip);border-radius:4px;overflow:hidden}
+.track i{display:block;height:100%;background:var(--c,var(--ok))}
+.val{font-family:var(--mono);font-size:12px;font-variant-numeric:tabular-nums}
+.dia h3{font-family:var(--display);font-size:24px;margin:18px 0 6px;text-transform:capitalize}
+.vid{display:grid;grid-template-columns:120px 1fr;gap:12px;background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--c);border-radius:12px;padding:10px;margin:8px 0}
+.vid video{width:120px;aspect-ratio:9/16;max-width:100%;background:#000;border-radius:8px}
+.vid .t{display:flex;flex-wrap:wrap;gap:8px;align-items:center}
+.vid .hora{font-family:var(--display);font-weight:800;font-size:24px}
+.vid .tit{font-weight:600;margin:6px 0;overflow-wrap:anywhere}
+.ok{color:var(--ok)}.err{color:var(--err)}.muted{color:var(--muted)}
+button{font-family:var(--mono);font-size:11px;text-transform:uppercase;border:0;border-radius:7px;padding:7px 10px;background:var(--steel);color:var(--steel-ink);cursor:pointer}
+button:focus-visible{outline:3px solid var(--amber);outline-offset:2px}
+.vacio{background:var(--surface);border:1px dashed var(--line);border-radius:12px;padding:18px;color:var(--muted);margin-top:12px}
+footer{padding-block:22px 40px;color:var(--muted);font-size:13px}
+@media (max-width:560px){.vid{grid-template-columns:1fr}.vid video{width:100%;max-width:240px}.row{grid-template-columns:100px 1fr auto}}
+</style>
+
+<header><div class="wrap">
+  <div class="eyebrow">Futbol Edition · sistema automático</div>
+  <h1>La <span>fábrica</span> de shorts</h1>
+  <div class="meta"><span id="m-semana">Semana —</span><span id="m-act">Actualizado —</span><span id="m-prox">Domingo 09:00: nueva semana · Todos los días 07:30: subida</span></div>
+  <div class="cinta" id="cinta"></div>
+  <div class="barra" aria-label="Progreso de la semana"><i id="prog"></i></div>
+</div></header>
+
+<main class="wrap">
+  <section id="s-tarea">
+    <div class="kicker">Lo único que te toca</div>
+    <h2>Esta semana</h2>
+    <div class="tarea" id="tarea"></div>
+  </section>
+  <section>
+    <div class="kicker">Estación 1 · Radar</div>
+    <h2>Lo más viral de la semana</h2>
+    <p class="nota">Ordenado por velocidad (vistas por hora desde que salió), con bonus a canales nuevos y chicos.</p>
+    <div class="tbl"><table><thead><tr><th>#</th><th>Short</th><th>Canal</th><th>Vistas</th><th>Por hora</th></tr></thead><tbody id="radar"></tbody></table></div>
+  </section>
+  <section>
+    <div class="kicker">Estación 2 · Análisis con Gemini</div>
+    <h2>Qué hacen y cómo lo copiamos mejor</h2>
+    <div id="nuevos"></div>
+    <div class="grid" id="analisis"></div>
+  </section>
+  <section>
+    <div class="kicker">Estación 3 · Nuestro canal</div>
+    <h2>Cómo rinde cada formato</h2>
+    <p class="nota">Vistas llevadas a la misma edad (48 h) para comparar justo. Solo videos con más de 24 h.</p>
+    <div class="bars" id="rend"></div>
+    <div class="tbl"><table><thead><tr><th>Video</th><th>Formato</th><th>Vistas</th><th>Edad</th></tr></thead><tbody id="rend-top"></tbody></table></div>
+  </section>
+  <section>
+    <div class="kicker">Estación 4 · Plan</div>
+    <h2>Cómo se reparten los videos</h2>
+    <p class="nota">60 % lo que rinde en nuestro canal + 40 % lo que está de moda en el radar. Siempre un mínimo de cada formato para seguir probando.</p>
+    <div class="bars" id="plan"></div>
+  </section>
+  <section>
+    <div class="kicker">Estaciones 5 a 7 · Producción, control y publicación</div>
+    <h2>Calendario de la semana</h2>
+    <div id="cal"></div>
+  </section>
+</main>
+<footer class="wrap" id="pie">Fábrica Futbol Edition. Los videos usan fotos de Wikimedia Commons (créditos en cada descripción).</footer>
+
+<script>
+const D = window.DATOS || {};
+const NOMBRES = {stop: "STOP CHALLENGE", find: "FIND", look: "¿CUÁL LOOK?", cabeza: "CATCH THE RIGHT HEAD", nuevo: "FORMATO NUEVO"};
+const COL = {stop: "var(--stop)", find: "var(--find)", look: "var(--look)", cabeza: "var(--cabeza)", nuevo: "var(--nuevo)"};
+const ETAPAS = [["radar","Radar de virales"],["analisis","Análisis Gemini"],["rendimiento","Nuestro rendimiento"],["plan","Plan"],["produccion","Producción"],["control","Control de calidad"],["publicacion","Publicación diaria"]];
+const TXT = {pendiente: "pendiente", en_curso: "trabajando", ok: "listo", error: "con error"};
+const $ = id => document.getElementById(id);
+const el = (tag, cls, txt) => { const e = document.createElement(tag); if (cls) e.className = cls; if (txt != null) e.textContent = txt; return e; };
+const num = n => (n ?? 0).toLocaleString("es-AR");
+const hora = iso => iso ? new Date(iso).toLocaleString("es-AR", {weekday: "short", day: "numeric", month: "numeric", hour: "2-digit", minute: "2-digit"}) : "—";
+function resumen(r) {
+  if (!r) return "";
+  return Object.entries(r).slice(0, 3).map(([k, v]) => {
+    if (Array.isArray(v)) v = v.length + "";
+    else if (v && typeof v === "object") v = Object.entries(v).map(([a, b]) => `${a}: ${b}`).join(" · ");
+    return `${k.replace(/_/g, " ")}: ${v}`;
+  }).join(" | ");
+}
+
+const est = (D.estado && D.estado.etapas) || {};
+$("m-semana").textContent = "Semana " + (D.semana && D.semana.inicio ? D.semana.inicio : "—");
+$("m-act").textContent = "Actualizado " + hora(D.estado && D.estado.actualizado);
+let hechas = 0;
+ETAPAS.forEach(([k, n], i) => {
+  const e = est[k] || {estado: "pendiente"};
+  if (e.estado === "ok") hechas++;
+  const c = el("div", "est");
+  c.append(el("span", "n", `ESTACIÓN ${i + 1}`), el("b", null, n));
+  const l = el("span", "luz " + e.estado); l.append(el("i"), document.createTextNode(TXT[e.estado] || e.estado)); c.append(l);
+  c.append(el("small", null, (e.fin ? hora(e.fin) + " · " : "") + resumen(e.resumen)));
+  $("cinta").append(c);
+});
+$("prog").style.width = (100 * hechas / ETAPAS.length) + "%";
+
+// lo que te toca
+const t = $("tarea");
+const pub = est.publicacion || {};
+const radar = D.radar || [];
+const p1 = el("p"); p1.innerHTML = "<b>1. Grabá estos virales con el celular</b> (opcional, mejora la copia) y subilos al repo en <code>pipeline/grabaciones/</code> desde la app de GitHub: <i>Add file → Upload files</i>. El domingo se analizan cuadro por cuadro.";
+t.append(p1);
+const ol = el("ol");
+radar.slice(0, 6).forEach(v => { const li = el("li"); const a = el("a", null, v.titulo); a.href = "https://www.youtube.com/shorts/" + v.id; a.target = "_blank"; a.rel = "noopener"; li.append(a, document.createTextNode(` · ${num(v.vistas)} vistas`)); ol.append(li); });
+if (!radar.length) ol.append(el("li", "muted", "El radar todavía no corrió."));
+t.append(ol);
+const p2 = el("p"); p2.innerHTML = "<b>2. Cada día:</b> fijá el comentario de cada video (está en su ficha del calendario) y respondé los primeros comentarios.";
+t.append(p2);
+if (pub.resumen && pub.resumen.aviso) { const p3 = el("p", "err"); p3.textContent = "⚠ " + pub.resumen.aviso; t.append(p3); }
+
+// radar
+radar.forEach((v, i) => {
+  const tr = el("tr"); const a = el("a", null, v.titulo); a.href = "https://www.youtube.com/shorts/" + v.id; a.target = "_blank"; a.rel = "noopener";
+  const td = el("td"); td.append(a);
+  const canal = el("td", null, v.canal || ""); if (v.canal_nuevo) canal.append(" ", el("span", "chip", "nuevo"));
+  tr.append(el("td", "num", i + 1), td, canal, el("td", "num", num(v.vistas)), el("td", "num", num(v.vistas_por_hora)));
+  $("radar").append(tr);
+});
+if (!radar.length) $("radar").append(el("tr")).append(el("td", "muted", "Sin datos todavía"));
+
+// análisis
+const nuevos = D.formatos_nuevos || [];
+if (nuevos.length) {
+  const b = el("div", "tarea"); b.style.borderColor = "var(--nuevo)";
+  b.append(el("b", null, "Formatos nuevos detectados (candidatos para sumar a la fábrica)"));
+  const ul = el("ul"); nuevos.slice(0, 6).forEach(n => ul.append(el("li", null, `${n.nombre} — ${n.mecanica || ""} (${num(n.vistas)} vistas)${n.replicable ? "" : " · necesita material que no tenemos"}`)));
+  b.append(ul); $("nuevos").append(b);
+}
+(D.analisis || []).forEach(a => {
+  const c = el("div", "card");
+  const ch = el("span", "chip c", NOMBRES[a.formato] || a.nombre || a.formato); ch.style.setProperty("--c", COL[a.formato] || "var(--nuevo)");
+  const h = el("h3"); const l = el("a", null, a.titulo); l.href = "https://www.youtube.com/shorts/" + a.id; l.target = "_blank"; l.rel = "noopener"; h.append(l);
+  c.append(ch, h, el("p", "muted", `${a.canal || ""} · ${num(a.vistas)} vistas`), el("p", null, a.mecanica || ""));
+  if (a.gancho) c.append(el("p", null, "Gancho: " + a.gancho));
+  if ((a.mejoras || []).length) { const ul = el("ul"); a.mejoras.forEach(m => ul.append(el("li", null, m))); c.append(el("b", null, "Cómo lo mejoramos"), ul); }
+  $("analisis").append(c);
+});
+if (!(D.analisis || []).length) $("analisis").append(el("div", "vacio", "El análisis todavía no corrió."));
+
+// rendimiento
+const pf = (D.rendimiento && D.rendimiento.por_formato) || {};
+const maxR = Math.max(1, ...Object.values(pf).map(x => x.mediana_48h));
+Object.entries(pf).sort((a, b) => b[1].mediana_48h - a[1].mediana_48h).forEach(([k, x]) => {
+  const r = el("div", "row"); r.style.setProperty("--c", COL[k] || "var(--idle)");
+  const tr = el("div", "track"); const i = el("i"); i.style.width = (100 * x.mediana_48h / maxR) + "%"; tr.append(i);
+  r.append(el("span", null, NOMBRES[k] || k), tr, el("span", "val", `${num(x.mediana_48h)} · ${x.videos} videos`)); $("rend").append(r);
+});
+((D.rendimiento && D.rendimiento.videos) || []).slice(0, 8).forEach(v => {
+  const tr = el("tr"); const a = el("a", null, v.titulo); a.href = "https://www.youtube.com/shorts/" + v.id; a.target = "_blank"; a.rel = "noopener";
+  const td = el("td"); td.append(a);
+  tr.append(td, el("td", null, NOMBRES[v.tipo] || v.tipo), el("td", "num", num(v.vistas)), el("td", "num", Math.round(v.horas / 24) + " d")); $("rend-top").append(tr);
+});
+
+// plan
+const cup = (D.plan && D.plan.cupos) || {}; const pun = (D.plan && D.plan.puntaje) || {};
+const tot = Object.values(cup).reduce((a, b) => a + b, 0) || 1;
+Object.entries(cup).sort((a, b) => b[1] - a[1]).forEach(([k, n]) => {
+  const r = el("div", "row"); r.style.setProperty("--c", COL[k] || "var(--idle)");
+  const tr = el("div", "track"); const i = el("i"); i.style.width = (100 * n / tot) + "%"; tr.append(i);
+  r.append(el("span", null, NOMBRES[k] || k), tr, el("span", "val", `${n} videos · puntaje ${pun[k] ?? "—"}`)); $("plan").append(r);
+});
+
+// calendario
+const vids = (D.semana && D.semana.videos) || [];
+const pubs = {}; (D.publicados || []).forEach(p => pubs[p.id] = p);
+const DIAS = ["domingo","lunes","martes","miércoles","jueves","viernes","sábado"];
+let dia = "", bloque;
+vids.forEach(v => {
+  if (v.fecha !== dia) { dia = v.fecha; const f = new Date(v.fecha + "T12:00:00"); bloque = el("div", "dia"); bloque.append(el("h3", null, `${DIAS[f.getDay()]} ${f.getDate()}/${f.getMonth() + 1}`)); $("cal").append(bloque); }
+  const c = el("div", "vid"); c.style.setProperty("--c", COL[v.tipo]);
+  const vd = el("video"); vd.controls = true; vd.preload = "none"; vd.playsInline = true; vd.src = (D.base_videos || "") + v.archivo; c.append(vd);
+  const info = el("div"); const top = el("div", "t");
+  const ch = el("span", "chip c", v.formato); ch.style.setProperty("--c", COL[v.tipo]);
+  top.append(el("span", "hora", v.hora), ch);
+  const p = pubs[v.id];
+  if (p && p.video_id) { const a = el("a", "chip", "subido ✓"); a.href = "https://www.youtube.com/shorts/" + p.video_id; a.target = "_blank"; a.rel = "noopener"; top.append(a); }
+  else if (p && p.error) top.append(el("span", "chip err", "error al subir"));
+  else top.append(el("span", "chip", "en espera"));
+  info.append(top, el("div", "tit", v.titulo));
+  info.append(el("div", (v.control || "").startsWith("PASA") ? "ok" : "err", "Control: " + (v.control || "—")));
+  const fij = el("div", "muted", "Comentario para fijar: " + v.fijado); info.append(fij);
+  const b = el("button", null, "Copiar comentario"); b.type = "button";
+  b.addEventListener("click", () => { try { navigator.clipboard.writeText(v.fijado).then(() => { b.textContent = "Copiado"; setTimeout(() => b.textContent = "Copiar comentario", 1400); }); } catch (e) {} });
+  info.append(b);
+  if (v.soluciones) info.append(el("div", "muted", "Soluciones: " + v.soluciones));
+  c.append(info); bloque.append(c);
+});
+if (!vids.length) $("cal").append(el("div", "vacio", "Todavía no hay una semana producida."));
+</script>
