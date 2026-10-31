@@ -128,7 +128,10 @@ def token_canal():
     """Access token a partir del refresh token guardado como secreto (YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN)."""
     if not all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")):
         return None
-    r = requests.post("https://oauth2.googleapis.com/token", data=dict(client_id=os.environ["YT_CLIENT_ID"], client_secret=os.environ["YT_CLIENT_SECRET"],
-                                                                     refresh_token=os.environ["YT_REFRESH_TOKEN"], grant_type="refresh_token"), timeout=60)
+    v = {k: os.environ[k].strip().strip('"').strip("'") for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}   # sin espacios ni comillas pegadas
+    r = requests.post("https://oauth2.googleapis.com/token", data=dict(client_id=v["YT_CLIENT_ID"], client_secret=v["YT_CLIENT_SECRET"],
+                                                                     refresh_token=v["YT_REFRESH_TOKEN"], grant_type="refresh_token"), timeout=60)
+    if r.status_code != 200:
+        print("PERMISO DEL CANAL RECHAZADO:", r.status_code, r.text[:300], flush=True)
     r.raise_for_status()
     return r.json()["access_token"]
