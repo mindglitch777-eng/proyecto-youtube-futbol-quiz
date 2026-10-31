@@ -48,7 +48,10 @@ def main():
             nuevo, _ = fabrica.fabricar([dict(fecha=m["fecha"], hora=m["hora"], tipo=m["tipo"], dificil=True)], sem,
                                         random.Random(f"{m['id']}-{intento}"), prefijo=m["id"].rsplit("_", 3)[0] + f"r{intento}")
             n = nuevo[0]
-            (sem / n["archivo"]).replace(ruta)
+            if (sem / n["archivo"]).exists():
+                (sem / n["archivo"]).replace(ruta)
+            for resto in sem.glob(f"{Path(n['archivo']).stem}*"):              # restos del reintento
+                resto.unlink()
             for k in ("titulo", "descripcion", "fijado", "jugadores", "tags", "soluciones"):
                 if k in n:
                     m[k] = n[k]

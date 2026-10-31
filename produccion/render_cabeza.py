@@ -89,15 +89,17 @@ def armar(g):
     return dict(abajo=abajo, corte=corte, cx=cx, cabezas=cabezas, real=g["opciones"].index(g["foto"]))
 
 
-def fondo(col):
+def fondo(col, t=0.0):
+    """Rayas que bajan todo el tiempo: movimiento en toda la pantalla desde el cuadro 0."""
     im = Image.new("RGB", (W, H), col); d = ImageDraw.Draw(im)
-    for j in range(0, H, 90):
-        d.rectangle([0, j, W, j + 45], fill=tuple(min(255, v + 18) for v in col))
+    off = int(t * 270) % 90
+    for j in range(-90, H, 90):
+        d.rectangle([0, j + off, W, j + off + 45], fill=tuple(min(255, v + 28) for v in col))
     return im
 
 
 def cuadro(g, A, t, dur):
-    im = fondo(tuple(g.get("color", (60, 170, 255)))).convert("RGBA"); d = ImageDraw.Draw(im)
+    im = fondo(tuple(g.get("color", (60, 170, 255))), t).convert("RGBA"); d = ImageDraw.Draw(im)
     texto(d, (W // 2, 105), "CATCH THE RIGHT HEAD", 74, (255, 230, 40), 12)
     texto(d, (W // 2, 200), g["nombre"].upper(), 92, (255, 255, 255), 12)
     i = min(int(t // T_INTENTO), A["real"]); lt = t - i * T_INTENTO

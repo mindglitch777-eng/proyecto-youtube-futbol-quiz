@@ -250,7 +250,8 @@ vids.forEach(v => {
   const fij = el("div", "muted", "Comentario para fijar: " + v.fijado); info.append(fij);
   const b = el("button", null, "Copiar comentario"); b.type = "button";
   b.addEventListener("click", () => { try { navigator.clipboard.writeText(v.fijado).then(() => { b.textContent = "Copiado"; setTimeout(() => b.textContent = "Copiar comentario", 1400); }); } catch (e) {} });
-  info.append(b);
+  const ab = el("a", "chip", "abrir video"); ab.href = (D.base_videos || "") + v.archivo; ab.target = "_blank"; ab.rel = "noopener";
+  info.append(b, document.createTextNode(" "), ab);
   if (v.soluciones) info.append(el("div", "muted", "Soluciones: " + v.soluciones));
   c.append(info); bloque.append(c);
 });

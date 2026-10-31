@@ -34,7 +34,10 @@ jobs:
         run: |
           HOY=$(TZ=America/Argentina/Buenos_Aires date +%F)
           mkdir -p _hoy
-          for TAG in $(gh release list --limit 6 --json tagName -q '.[].tagName' | grep '^semana-'); do
+          for VJ in produccion/semana_*/videos.json; do                       # semanas guardadas en el repo
+            if grep -q "\"fecha\": \"$HOY\"" "$VJ"; then cp "$(dirname $VJ)"/*.mp4 "$VJ" _hoy/ 2>/dev/null; echo "desde el repo: $VJ"; fi
+          done
+          [ -f _hoy/videos.json ] || for TAG in $(gh release list --limit 6 --json tagName -q '.[].tagName' | grep '^semana-'); do
             gh release download "$TAG" -p videos.json -D _tmp_$TAG 2>/dev/null || continue
             if grep -q "\"fecha\": \"$HOY\"" _tmp_$TAG/videos.json; then
               cp _tmp_$TAG/videos.json _hoy/

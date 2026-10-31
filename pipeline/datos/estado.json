@@ -1,5 +1,5 @@
 {
- "semana": null,
+ "semana": "2026-10-31",
  "etapas": {
   "radar": {
    "estado": "ok",
@@ -43,26 +43,74 @@
    }
   },
   "analisis": {
-   "estado": "en_curso",
-   "inicio": "2026-10-31T00:02:41+00:00"
+   "estado": "ok",
+   "inicio": "2026-10-31T00:02:41+00:00",
+   "fin": "2026-10-31T00:16:53+00:00",
+   "resumen": {
+    "analizados": 12,
+    "grabaciones": 0,
+    "por_formato": {
+     "stop": 2,
+     "find": 3,
+     "nuevo": 6,
+     "cabeza": 1
+    },
+    "formatos_nuevos": [
+     "Parodia animación 3D surrealista (4,597,069 vistas)",
+     "CARRERA DE PELOTAS AL HOYO (BALL DROP RACE) (14,589,691 vistas)",
+     "carrera transformaciones de futbolistas (12,423,234 vistas)",
+     "Parodia IA con Reacción (4,997,055 vistas)",
+     "Comparativa de Humor / Edición Meme (1,573,708 vistas)",
+     "edit emotivo / tributo (7,300,854 vistas)"
+    ]
+   }
   },
   "rendimiento": {
-   "estado": "pendiente"
+   "estado": "ok",
+   "inicio": "2026-10-31T00:16:53+00:00",
+   "fin": "2026-10-31T00:16:54+00:00",
+   "resumen": {
+    "videos": 11,
+    "vistas_totales": 32461,
+    "por_formato": {
+     "stop": "1 videos · mediana 16,888 · mejor 16,888",
+     "find": "2 videos · mediana 1,766 · mejor 2,520",
+     "runner": "1 videos · mediana 1,458 · mejor 1,458",
+     "ring": "1 videos · mediana 1,719 · mejor 1,719",
+     "otros": "2 videos · mediana 1,238 · mejor 1,723",
+     "carrera": "2 videos · mediana 1,108 · mejor 1,329"
+    }
+   }
   },
   "plan": {
-   "estado": "pendiente"
+   "estado": "ok",
+   "resumen": {
+    "semana": "2026-10-31 → 2026-11-06 (semana 1, hecha a mano)",
+    "proxima": "el domingo planifica desde el 2026-11-07"
+   }
   },
   "produccion": {
-   "estado": "pendiente"
+   "estado": "ok",
+   "resumen": {
+    "videos": 28,
+    "prueba_del_sistema": "4 videos de prueba generados de punta a punta"
+   }
   },
   "control": {
-   "estado": "pendiente"
+   "estado": "ok",
+   "resumen": {
+    "pasan": "28 de 28",
+    "corregido": "CATCH THE RIGHT HEAD ahora con fondo en movimiento"
+   }
   },
   "publicacion": {
-   "estado": "pendiente"
+   "estado": "pendiente",
+   "resumen": {
+    "aviso": "Falta el permiso del canal (secretos YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN). Seguí la guía en pipeline/README.md."
+   }
   }
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-10-31T00:02:41+00:00"
+ "actualizado": "2026-10-31T00:18:40+00:00"
 }

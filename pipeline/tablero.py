@@ -17,6 +17,17 @@ def cargar(n, defecto):
     return json.loads(p.read_text()) if p.exists() else defecto
 
 
+def base_videos(repo, semana):
+    """Semanas guardadas en el repo → link directo al archivo; semanas de la fábrica → Release de esa semana."""
+    if not semana.get("inicio"):
+        return ""
+    carpeta = RAIZ / "produccion" / f"semana_{semana['inicio']}"
+    if semana["videos"] and (carpeta / semana["videos"][0]["archivo"]).exists():
+        rama = os.environ.get("GITHUB_REF_NAME", "ccr-a2c8fa85-10k0an")
+        return f"https://raw.githubusercontent.com/{repo}/{rama}/produccion/semana_{semana['inicio']}/"
+    return f"https://github.com/{repo}/releases/download/semana-{semana['inicio']}/"
+
+
 def main():
     OUT.mkdir(exist_ok=True)
     repo = os.environ.get("GITHUB_REPOSITORY", "mindglitch777-eng/proyecto-youtube-futbol-quiz")
@@ -35,7 +46,7 @@ def main():
         rendimiento=cargar("rendimiento.json", {}),
         plan=cargar("plan.json", {}),
         semana=semana,
-        base_videos=f"https://github.com/{repo}/releases/download/semana-{semana['inicio']}/" if semana["inicio"] else "",
+        base_videos=base_videos(repo, semana),
         publicados=cargar("publicados.json", []),
     )
     (OUT / "datos.js").write_text("window.DATOS = " + json.dumps(datos, ensure_ascii=False) + ";\n")
