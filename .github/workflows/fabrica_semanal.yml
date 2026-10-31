@@ -48,7 +48,7 @@ jobs:
       - name: 4 · Plan de la semana
         run: cd pipeline && python e4_plan.py
       - name: Guardar avance
-        run: bash pipeline/guardar_avance.sh "Fábrica: radar, análisis y plan"
+        run: bash pipeline/guardar_avance.sh "Fábrica - radar, análisis y plan"
       - name: 5-6 · Producción + control
         run: cd pipeline && python e5_produccion.py
       - name: Publicar la semana como Release
@@ -59,7 +59,7 @@ jobs:
           gh release create "semana-$INICIO" --target "$GITHUB_REF_NAME" -t "Semana $INICIO" -n "28 videos de la fábrica" ./*.mp4 videos.json CALENDARIO.md
       - name: Guardar avance
         if: always()
-        run: bash pipeline/guardar_avance.sh "Fábrica: semana producida"
+        run: bash pipeline/guardar_avance.sh "Fábrica - semana producida"
       - name: Armar tablero
         if: always()
         run: python pipeline/tablero.py
