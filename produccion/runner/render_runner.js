@@ -19,7 +19,7 @@ const TIPOS = { ".html": "text/html", ".js": "text/javascript", ".ttf": "font/tt
   const nav = await chromium.launch({ args: ["--use-gl=angle", "--use-angle=swiftshader", "--enable-unsafe-swiftshader"] });
   const pag = await nav.newPage({ viewport: { width: 1080, height: 1920 } });
   pag.on("pageerror", e => console.error("error en la página:", e.message));
-  await pag.goto(`http://127.0.0.1:${puerto}/runner/escena.html`);
+  await pag.goto(`http://127.0.0.1:${puerto}/runner/${cfg.escena || "escena.html"}`);
   await pag.waitForFunction(() => window.iniciar);
   await pag.evaluate(c => window.iniciar(c), cfg);
   if (muestra) {                                        // cuadros sueltos para revisar (renderiza todo el tramo para que la estela sea real)
