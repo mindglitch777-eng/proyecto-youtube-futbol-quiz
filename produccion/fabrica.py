@@ -80,26 +80,30 @@ def guion_stop(gid, rng, usados, dificil):
     return dict(id=gid, duracion=6.0, hiper=True, musica="67", cuadrantes=cuads)
 
 
-def guion_look(gid, rng, usados_look):
-    while True:
+def guion_look(gid, rng, usados_look, V=None):
+    hechos = V.grupos.setdefault("look", set()) if V else set()
+    for intento in range(500):
         n, clave, _ = rng.choices(JUGADORES, [w for *_, w in JUGADORES])[0]
         looks = rng.sample(LOOKS, 4)
-        if n not in usados_look:                                              # un jugador distinto cada día
-            usados_look.add(n); break
+        combo = tuple([n] + sorted(looks))
+        if (n not in usados_look or intento > 300) and combo not in hechos:   # un jugador distinto cada día; combo nunca repetido
+            usados_look.add(n); hechos.add(combo); break
     return dict(id=gid, foto=FOTOS[clave], nombre=n, looks=looks, color0=rng.randint(0, 5), titulo_pantalla=rng.choice(PANT_LOOK))
 
 
-def guion_find(gid, rng, usados):
+def guion_find(gid, rng, usados, V=None):
     grupo = elegir(rng, 3, usados)
     rondas = [dict(nombre=n, foto=FOTOS[c], nivel=nv) for (n, c, _), nv in zip(grupo, ["facil", "medio", "dificil"])]
-    return dict(id=gid, semilla=rng.randint(1, 999), frase=rng.choice(FRASES), rondas=rondas)
+    return dict(id=gid, semilla=V.semilla(rng) if V else rng.randint(1, 999), frase=rng.choice(FRASES), rondas=rondas)
 
 
-def guion_cabeza(gid, rng, usados_cab):
-    while True:
+def guion_cabeza(gid, rng, usados_cab, V=None):
+    hechos = V.grupos.setdefault("cabeza", set()) if V else set()
+    for intento in range(500):
         grupo = elegir(rng, 3, set())
-        if grupo[0][0] not in usados_cab:
-            usados_cab.add(grupo[0][0]); break
+        combo = tuple([grupo[0][0]] + sorted(n for n, *_ in grupo[1:]))
+        if (grupo[0][0] not in usados_cab or intento > 300) and combo not in hechos:
+            usados_cab.add(grupo[0][0]); hechos.add(combo); break
     real = grupo[0]; opciones = [FOTOS[c] for _, c, _ in grupo[1:]]
     opciones.insert(rng.choice([1, 2]), FOTOS[real[1]])                       # la correcta nunca es la primera
     return dict(id=gid, nombre=real[0], foto=FOTOS[real[1]], opciones=opciones, color=rng.choice(COLORES_CABEZA))
@@ -168,19 +172,19 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
         elif tipo == "find":
-            g = guion_find(gid, rng, usados)
+            g = guion_find(gid, rng, usados, V)
             titulo = "FIND " + " ".join(r["nombre"].upper() for r in g["rondas"])
             desc = "Find the REAL one in every round 🔎 Round 3 is only for the 1%\nComment the numbers 👇\n" + " ".join(tag(r["nombre"]) for r in g["rondas"])
             fijado = "Answers in the video 👀 Which round did you get wrong? 1, 2 or 3?"
             fotos = [r["foto"] for r in g["rondas"]]; nombres = [r["nombre"] for r in g["rondas"]]
         elif tipo == "cabeza":
-            g = guion_cabeza(gid, rng, usados_cab)
+            g = guion_cabeza(gid, rng, usados_cab, V)
             titulo = V.titulo("cabeza", TIT_CABEZA, rng).format(n=g["nombre"])
             desc = f"Only one head fits {g['nombre']} 🤯 Did you guess it before the end? 1, 2 or 3 👇\n{tag(g['nombre'])} #football #shorts"
             fijado = "Be honest… did you get it before it landed? 👀"
             fotos = g["opciones"]; nombres = [g["nombre"]]
         elif tipo == "look":
-            g = guion_look(gid, rng, usados_look)
+            g = guion_look(gid, rng, usados_look, V)
             titulo = V.titulo("look", TIT_LOOK, rng).format(n=g["nombre"])
             desc = f"Which one fits {g['nombre']} best? Comment 1, 2, 3 or 4 👇\n{tag(g['nombre'])} #football #shorts"
             fijado = f"I'm going with number {rng.randint(1, 4)} 😂 what about you?"
