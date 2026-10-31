@@ -32,10 +32,11 @@ F_TIT = str(ROOT / "assets" / "fuentes" / "ArchivoBlack-Regular.ttf")
 FRONT = json.loads((ROOT / "assets" / "fotos" / "frontales.json").read_text())
 
 # --- tablero
-FILAS, Y0, DY, DX = 6, 720, 126, 148
-R_PEG, R_BOLA = 12, 56
-Y_SLOT0, Y_PISO = Y0 + (FILAS - 1) * DY, Y0 + (FILAS - 1) * DY + 215
-VALORES = ["💀", "75", "85", "99", "85", "75", "💀"]
+FILAS, Y0, DY, DX = 8, 650, 110, 148                                         # tablero rectangular escalonado (Plinko clásico)
+R_PEG, R_BOLA = 11, 50
+Y_SLOT0, Y_PISO = Y0 + (FILAS - 1) * DY, Y0 + (FILAS - 1) * DY + 205
+VALORES = ["💀", "67", "85", "99", "85", "67", "💀"]
+GRAVEDAD = 1650
 GANA = 3
 OVR0 = 40                                                                  # OVR inicial; cada rebote +1 (al pasar por 67 → "six seven")
 Y_CARTEL = Y_PISO + 120
@@ -47,7 +48,7 @@ SONIDO_JUGADOR = {"cristiano_ronaldo": ["siuuu_0", "siu_estadio_0"], "lionel_mes
 def clavos():
     out = []
     for r in range(FILAS):
-        n = r + 3
+        n = 6 if r % 2 == 0 else 7                                              # filas alternadas: 6 y 7 clavos
         for k in range(n):
             out.append((W / 2 + (k - (n - 1) / 2) * DX, Y0 + r * DY, r))
     return out
@@ -55,20 +56,19 @@ def clavos():
 
 PEGS = clavos()
 PEGS_FILA = [[p for p in PEGS if p[2] == r] for r in range(FILAS)]
-ORO = {(p[0], p[1]) for p in PEGS if (p[2], round((p[0] - W / 2) / DX * 2)) in {(1, -1), (2, 2), (3, -3), (4, 0), (2, -2)}}   # clavos dorados: +5
-X_DIV = [W / 2 + (k - (FILAS + 1) / 2) * DX for k in range(FILAS + 2)]       # palitos de los casilleros (= clavos de la última fila)
+ORO = {(p[0], p[1]) for p in PEGS if (p[2], round((p[0] - W / 2) / DX * 2)) in {(0, -1), (2, 3), (3, -2), (4, 1), (5, 0), (6, -3)}}   # clavos dorados: +5
+X_DIV = [W / 2 + (k - 3.5) * DX for k in range(8)]                           # 7 casilleros de DX de ancho
 
 
 def borde_x(y):
-    """Paredes en diagonal siguiendo la pirámide (para que nada se escape por los costados)."""
-    filas = max(0.0, (y - Y0) / DY)
-    return (filas + 2) / 2 * DX + 20
+    """Paredes laterales del tablero."""
+    return 3.5 * DX
 
 
 # ------------------------------------------------------------------ física
-def simular(semilla, n=4, demora=0.38, dt=1 / 240, tmax=9.0):
+def simular(semilla, n=4, demora=0.55, dt=1 / 240, tmax=12.0):
     rng = np.random.default_rng(semilla)
-    pos = np.array([[W / 2 + rng.uniform(-30, 30), Y0 - 170] for i in range(n)], float)
+    pos = np.array([[W / 2 + rng.uniform(-200, 200), Y0 - 160] for i in range(n)], float)
     vel = np.array([[rng.uniform(-60, 60), 0.0] for _ in range(n)])
     salida = [i * demora for i in range(n)]
     activo = [False] * n; quieto = [None] * n; casillero = [None] * n
@@ -81,7 +81,7 @@ def simular(semilla, n=4, demora=0.38, dt=1 / 240, tmax=9.0):
                 activo[i] = True
             if not activo[i] or quieto[i] is not None:
                 continue
-            vel[i, 1] += 2500 * dt
+            vel[i, 1] += GRAVEDAD * dt
             pos[i] += vel[i] * dt
             x, y = pos[i]
             rf = int(round((y - Y0) / DY))
@@ -100,7 +100,7 @@ def simular(semilla, n=4, demora=0.38, dt=1 / 240, tmax=9.0):
                             golpes.append((t, i, px, py, fila)); ultimo[clave] = t
             x, y = pos[i]
             lim = borde_x(y)
-            if abs(x - W / 2) > lim - R_BOLA and y < Y_SLOT0:
+            if abs(x - W / 2) > lim - R_BOLA:
                 pos[i, 0] = W / 2 + math.copysign(lim - R_BOLA, x - W / 2); vel[i, 0] *= -0.5
             if y > Y_SLOT0:                                                   # dentro de los casilleros: paredes verticales
                 for xd in X_DIV:
@@ -145,13 +145,13 @@ def buscar(semilla0, n=4):
         if any(q is None for q in r["quieto"]):
             continue
         c = r["casillero"]
-        if c.count(GANA) != 1 or max(r["quieto"]) > 6.0:
+        if c.count(GANA) != 1 or not 5.6 < max(r["quieto"]) < 7.0:
             continue
         g = c.index(GANA)
         otros = max(q for k, q in enumerate(r["quieto"]) if k != g)
         if r["quieto"][g] - otros < 0.9 or not any(x in (GANA - 1, GANA + 1) for x in c):
             continue
-        if len(set(c)) < 3:
+        if len(set(c)) < 3 or not any(VALORES[x] == "67" for x in c):
             continue
         r["semilla"] = s; r["ganador"] = g
         return r
@@ -167,16 +167,9 @@ def ovr_en(r, i, t):
 
 
 def momento67(r, i):
-    """Momento en que el OVR en vivo del jugador i pasa por 67."""
-    v = OVR0
-    for gl in r["golpes"]:
-        if gl[1] != i:
-            continue
-        v2 = v + puntos(gl)
-        if v < 67 <= v2:
-            return gl[0] if (r["quieto"][i] is None or gl[0] < r["quieto"][i]) else None
-        v = v2
-    return None
+    """Si el jugador i cae en el casillero 67: el momento en que cae (ahí suena el meme)."""
+    c = r["casillero"][i]
+    return r["quieto"][i] if c is not None and VALORES[c] == "67" else None
 
 
 def posicion(r, i, t):
@@ -429,7 +422,7 @@ def cuadro(g, r, tv, dur, reloj_):
         elif VALORES[c] == "💀":
             texto(d, (W / 2, Y_CARTEL), "BENCHED", int(110 * esc) + 1, (210, 210, 220), 13)
             RR.pegar_emoji(im, "💀", int(W / 2 + 330), Y_CARTEL, int(100 * esc) + 1)
-        else:
+        elif VALORES[c] != "67":
             texto(d, (W / 2, Y_CARTEL), f"{nombre_corto(js[i]).upper()} {VALORES[c]}", int(90 * esc) + 1, (255, 255, 255), 11)
         d = ImageDraw.Draw(im)
     # 6 7
@@ -440,7 +433,7 @@ def cuadro(g, r, tv, dur, reloj_):
             im.alpha_composite(Image.new("RGBA", (W, H), (255, 60, 200, int(120 * max(0, 1 - e / 0.3)))))
             d = ImageDraw.Draw(im)
             texto(d, (W / 2, 1000), "6 7", int(180 + 120 * min(1, e / 0.08)), (255, 255, 255), 16, (255, 40, 170))
-            texto(d, (W / 2, 1180), nombre_corto(js[i]).upper() + " HIT 67", 64, COLORES[i], 9)
+            texto(d, (W / 2, 1180), nombre_corto(js[i]).upper() + " = 67", 70, COLORES[i], 9)
     otros = [r["quieto"][i] for i in range(n) if i != gan]
     if max(otros) + 0.6 < t < t_gana:
         texto(d, (W / 2, Y_CARTEL), "LAST ONE...", 100, (255, 235, 40), 13)
