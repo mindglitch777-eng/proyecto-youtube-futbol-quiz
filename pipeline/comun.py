@@ -128,7 +128,8 @@ def token_canal():
     """Access token a partir del refresh token guardado como secreto (YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN)."""
     if not all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")):
         return None
-    v = {k: os.environ[k].strip().strip('"').strip("'") for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}   # sin espacios ni comillas pegadas
+    v = {k: os.environ[k].strip().strip('"').strip("'").strip() for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}   # sin espacios ni comillas pegadas
+    v["YT_CLIENT_ID"] = v["YT_CLIENT_ID"].removeprefix("https://").removeprefix("http://").rstrip("/")   # el cel lo convierte en link
     r = requests.post("https://oauth2.googleapis.com/token", data=dict(client_id=v["YT_CLIENT_ID"], client_secret=v["YT_CLIENT_SECRET"],
                                                                      refresh_token=v["YT_REFRESH_TOKEN"], grant_type="refresh_token"), timeout=60)
     if r.status_code != 200:
