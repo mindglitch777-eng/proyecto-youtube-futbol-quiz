@@ -24,6 +24,14 @@ BUSCAR = {
     "parado_bailao": "parado no bailao", "neymar": "neymar", "neymar_risa": "neymar laugh",
     "messi_chant": "messi messi messi", "la_cabra": "la cabra", "goat": "goat sound", "messi_mundial": "messi campeon del mundo",
     "que_miras_bobo": "que miras bobo", "andres_cantor": "gooool", "tiki_taka": "tiki taka",
+    # brainrot italiano + efectos de juego (formatos PLINKO GOAT, transformaciones, pelotas al hoyo)
+    "trallallero": "tralalero tralala", "bombardiro": "bombardiro crocodilo", "tung_tung": "tung tung tung sahur",
+    "patapim": "brr brr patapim", "cappuccina": "ballerina cappuccina", "chimpanzini": "chimpanzini bananini",
+    "lirili": "lirili larila", "chipi_chapa": "chipi chipi chapa chapa", "walkout": "fifa walkout",
+    "pack_opening": "fifa pack opening", "boing": "boing", "pop": "pop sound effect", "moneda": "mario coin",
+    "level_up": "level up", "power_up": "power up", "power_down": "power down", "jackpot": "jackpot",
+    "crowd_cheer": "crowd cheer", "explosion": "explosion meme", "ding": "ding sound effect",
+    "suuu_remix": "siuuu remix", "messi_ankara_remix": "ankara messi remix", "neymar_samba": "neymar samba",
 }
 SOLO = set()  # si tiene claves, baja solo esas (para no repetir todo)
 
