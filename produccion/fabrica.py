@@ -33,9 +33,15 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE"}
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "hoyo": "render_hoyo.py"}
+          "plinko": "render_plinko.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
+TIT_DRESS = ["Pause when it fits 😂 {a} & {b} drip challenge", "Dress them up 😎 Can you stop at the right time? {a} & {b}",
+             "Make {a} and {b} DRIP 🥶 Pause it!", "{a} & {b} bald edition 😂 Pause to dress them", "Stop it when it fits 🛑😂 {a} vs {b}"]
+TIT_TORRE = ["Whose country is this? 🏳️ {a}, {b} or {c} 👇", "Guess the flag before it's revealed 😳 {a}, {b} or {c}?",
+             "Satisfying ball tower ⚽ whose country? {a}, {b} or {c}", "Only real fans get this 🤯 {a}, {b} or {c}?",
+             "Wait for the colors... 👀 {a}, {b} or {c}?"]
+FONDOS_TORRE = [("#2fb59a", "#1f8f78"), ("#7b5cff", "#5a3fd6"), ("#ff8a3d", "#d9682a"), ("#3da9ff", "#2a82d1"), ("#ff5c8a", "#d63f6d")]
 TIT_PLINKO = ["Who Gets The 99 GOAT Card? 🐐 {a}, {b}, {c} or {d}?", "Only ONE lands on 99 🎯 {a} vs {b} vs {c} vs {d}",
               "Plinko decides the GOAT 🐐 {a}, {b}, {c} or {d}?", "{a}, {b}, {c} or {d}... who gets 99? 👇",
               "4 balls, 1 GOAT card 🐐 Pick yours: {a}, {b}, {c} or {d}"]
@@ -115,6 +121,32 @@ def guion_plinko(gid, rng, V, fecha):
                 titulo=V.titulo("plinko_pantalla", PANT_PLINKO, rng), musica=V.musica(rng))
 
 
+def guion_dress(gid, rng, V, fecha):
+    grupo = V.grupo("dress", 2, rng, JUGADORES, fecha)
+    malos = [{"n": "payaso", "ok": False}, {"n": "pelo_azul~" + str(rng.choice([220, 280, 30, 0])), "ok": False},
+             {"n": "peluca_rosa~" + str(rng.choice([320, 190, 50])), "ok": False}]
+    rng.shuffle(malos)
+    pelo = {"n": "pelo_verde" + rng.choice(["", "~0", "~45", "~270", "~200"]), "ok": True}
+    medio = [{"n": "cadena", "ok": True}] + malos
+    rng.shuffle(medio)
+    return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], musica=V.musica(rng),
+                items=[{"n": "anteojos", "ok": True}] + medio + [pelo])
+
+
+def guion_torre(gid, rng, V, fecha):
+    import cartas
+    import render_torre as RT
+    pool = [j for j in JUGADORES if cartas.datos(j[1])[2] in RT.BANDERAS]
+    for _ in range(300):
+        grupo = V.grupo("torre", 3, rng, pool, fecha)
+        if len({cartas.datos(c)[2] for _, c, _ in grupo}) == 3:
+            break
+    nombres = [n for n, _, _ in grupo]
+    fondo, piso = rng.choice(FONDOS_TORRE)
+    return dict(id=gid, opciones=[c for _, c, _ in grupo], nombres=nombres, correcta=V.ganador(nombres, rng), semilla=V.semilla(rng),
+                musica=V.musica(rng), fondo=fondo, piso=piso)
+
+
 def guion_hoyo(gid, rng, V, fecha):
     grupo = V.grupo("hoyo", 4, rng, JUGADORES, fecha)
     nombres = [n for n, _, _ in grupo]
@@ -159,7 +191,23 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
         dia = date.fromisoformat(sl["fecha"]); tipo = sl["tipo"]; hora = sl["hora"]
         et = f"{DIAS[dia.weekday()]}{dia.day:02d}"
         gid = f"{prefijo}_{n:02d}_{et}_{hora.replace(':', '')}_{tipo}"
-        if tipo in ("plinko", "hoyo"):
+        if tipo == "dress":
+            g = guion_dress(gid, rng, V, sl["fecha"])
+            ns = g["nombres"]
+            titulo = V.titulo("dress", TIT_DRESS, rng).format(a=ns[0], b=ns[1])
+            desc = ("Pause when the accessory fits 😂 How many did you get? 1, 2, 3 or 4 👇\n" + " ".join(tag(n) for n in ns)
+                    + " #football #soccer #challenge #pausechallenge #shorts")
+            fijado = "Be honest… how many did you stop on time? 😂"
+            fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
+        elif tipo == "torre":
+            g = guion_torre(gid, rng, V, sl["fecha"])
+            ns = g["nombres"]
+            titulo = V.titulo("torre", TIT_TORRE, rng).format(a=ns[0], b=ns[1], c=ns[2])
+            desc = ("Watch the balls build the flag 🏳️ Comment your guess BEFORE the colors show 👇\n" + " ".join(tag(n) for n in ns)
+                    + " #football #soccer #satisfying #quiz #shorts")
+            fijado = "Did you get it before the colors changed? 👀"
+            fotos = [FOTOS[c] for c in g["opciones"]]; nombres = ns
+        elif tipo in ("plinko", "hoyo"):
             g = (guion_plinko if tipo == "plinko" else guion_hoyo)(gid, rng, V, sl["fecha"])
             ns = g["nombres"]
             titulo = V.titulo(tipo, TIT_PLINKO if tipo == "plinko" else TIT_HOYO, rng).format(a=ns[0], b=ns[1], c=ns[2], d=ns[3])

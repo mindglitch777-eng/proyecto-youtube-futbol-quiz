@@ -12,7 +12,7 @@ from datetime import datetime, timezone
 
 from comun import CONFIG, cargar, etapa, guardar, yt, yt_videos
 
-PATRONES = [("plinko", r"99|plinko|goat card"), ("hoyo", r"ball goes in|hole|ball to the|pick a ball"), ("stop", r"stop challenge"), ("find", r"^find |find the real|can find"), ("look", r"look"),
+PATRONES = [("dress", r"pause when it fits|dress them|drip|bald edition|stop it when it fits"), ("torre", r"whose country|guess the flag|ball tower|wait for the colors"), ("plinko", r"99|plinko|goat card"), ("hoyo", r"ball goes in|hole|ball to the|pick a ball"), ("stop", r"stop challenge"), ("find", r"^find |find the real|can find"), ("look", r"look"),
             ("cabeza", r"right head|head back|which head"), ("runner", r"day 1|day 999"), ("ring", r"rings"),
             ("carrera", r"race"), ("otros", r".")]
 

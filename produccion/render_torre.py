@@ -46,19 +46,19 @@ def capa(g, t):
     P.texto(d, (W / 2 - 40, 200), "IS THIS?", 96, (255, 235, 40), 12)
     P.RR.pegar_emoji(im, "👇", int(W / 2 + 200), 200, 90)
     for i, k in enumerate(ops):
-        cx, cy = 190 + i * 350, 440
-        tam = 320
+        cx, cy = 182 + i * 358, 450
+        tam = 350
         pulso = 1 + 0.06 * math.sin(t * 6 + i)                                 # respiran (movimiento)
         if t >= T_REVELA:
             e = t - T_REVELA
-            pulso = 1 + (0.25 * math.exp(-e * 5) if i == ok else 0) ; tam = 340 if i == ok else 270
+            pulso = 1 + (0.25 * math.exp(-e * 5) if i == ok else 0) ; tam = 365 if i == ok else 290
         tt = int(tam * pulso)
         cara = P.cara(k, tt)
         if t >= T_REVELA and i != ok:
             cara = Image.blend(cara, cara.convert("LA").convert("RGBA"), 0.85)
         im.alpha_composite(P.con_aro(cara, (60, 220, 90) if (t >= T_REVELA and i == ok) else (255, 255, 255), 10), (int(cx - tt / 2 - 10), int(cy - tt / 2 - 10)))
         d = ImageDraw.Draw(im)
-        P.texto(d, (cx, cy + 205), P.nombre_corto(k).upper(), 50, (255, 255, 255), 8)
+        P.texto(d, (cx, cy + 215), P.nombre_corto(k).upper(), 50, (255, 255, 255), 8)
         if t >= T_REVELA:
             P.RR.pegar_emoji(im, "✅" if i == ok else "❌", int(cx + 100), int(cy - 110), 110)
             d = ImageDraw.Draw(im)
