@@ -26,6 +26,7 @@ def main():
                 plan=cargar(D / "plan.json", {}), semana=cargar(D / "semana_actual.json", {}), publicados=cargar(D / "publicados.json", []), vivo=vivo)
     (OUT / "datos.js").write_text("window.SNAPSHOT = " + json.dumps(foto, ensure_ascii=False) + ";\n")
     shutil.copy(RAIZ / "pipeline" / "tablero" / "app.html", OUT / "index.html")
+    shutil.copy(RAIZ / "pipeline" / "tablero" / "privacidad.html", OUT / "privacidad.html")
     print(OUT)
 
 
