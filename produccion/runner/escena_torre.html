@@ -68,8 +68,10 @@ function armar(cfg) {
     // lluvia: cae desde arriba a un lugar al azar de la rejilla
     const rx = (rnd(i * 3.1 + cfg.semilla) - .5) * 16, rz = (rnd(i * 7.7 + cfg.semilla) - .5) * 12 - 2;
     const tCae = rnd(i * 1.3 + cfg.semilla) * cfg.t_lluvia, tJunta = cfg.t_junta0 + (capa / capas) * cfg.t_junta + rnd(i * 5.1) * 0.25;
-    datos.push({ tx, ty, tz, rx, rz, tCae, tJunta, c, ang, capa });
-    bolas.setColorAt(i, col.set(c));
+    const SEN = ["#e53935", "#43a047", "#1e88e5", "#fdd835", "#fafafa", "#212121", "#8e24aa", "#fb8c00", "#74acdf"];
+    const falso = SEN[Math.floor(rnd(i * 9.3 + cfg.semilla) * SEN.length)];      // color de mentira hasta la ola
+    datos.push({ tx, ty, tz, rx, rz, tCae, tJunta, c, ang, capa, capas, falso, cF: new THREE.Color(falso), cV: new THREE.Color(c) });
+    bolas.setColorAt(i, col.set(falso));
   }
   bolas.instanceColor.needsUpdate = true;
 }
@@ -108,8 +110,10 @@ function frame(k) {
     }
     tmp.position.set(x, p[1], z); tmp.rotation.set(t * 2 + i, t * 1.3 + i * 0.5, 0); tmp.scale.setScalar(p[3] > 0 ? 1 : 0.0001);
     tmp.updateMatrix(); bolas.setMatrixAt(i, tmp.matrix);
+    const d = datos[i], u = suave((t - (CFG.t_ola + (d.capa / d.capas) * CFG.d_ola)) / 0.22);   // ola de color de abajo hacia arriba
+    bolas.setColorAt(i, col.copy(d.cF).lerp(d.cV, u));
   }
-  bolas.instanceMatrix.needsUpdate = true;
+  bolas.instanceMatrix.needsUpdate = true; bolas.instanceColor.needsUpdate = true;
   const h = CFG.r * 1.75 * Math.ceil(N / CFG.por_anillo);
   const ang = 0.25 + t * 0.06, dist = 33 - Math.min(t, 6) * 0.4;               // órbita lenta que se acerca
   cam.position.set(Math.sin(ang) * dist, h * 0.55, Math.cos(ang) * dist);

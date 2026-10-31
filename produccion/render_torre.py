@@ -32,7 +32,7 @@ BANDERAS = {
     "ENG": (["#FFFFFF", "#CE1124", "#FFFFFF"], False), "NL": (["#AE1C28", "#FFFFFF", "#21468B"], False),
     "HR": (["#FF0000", "#FFFFFF", "#171796"], False), "SE": (["#006AA7", "#FECC02", "#006AA7"], False),
 }
-T_LLUVIA, T_JUNTA0, T_JUNTA, T_REVELA, T_DERRUMBE, DUR = 1.6, 1.9, 2.4, 5.2, 7.6, 9.0
+T_LLUVIA, T_JUNTA0, T_JUNTA, T_OLA, D_OLA, T_REVELA, T_DERRUMBE, DUR = 1.6, 1.9, 2.4, 4.9, 1.2, 6.3, 8.4, 9.8
 
 
 def pais(clave):
@@ -77,7 +77,9 @@ def capa(g, t):
             im.alpha_composite(fl, (int(W / 2 - fl.width / 2), 1560 - fl.height // 2))
         d = ImageDraw.Draw(im)
         P.texto(d, (W / 2, 1760), P.nombre_corto(ops[ok]).upper() + "!", 110, (255, 235, 40), 13)
-    elif t < T_REVELA and t > T_JUNTA0 + 1.0:
+    elif T_OLA <= t < T_REVELA:
+        P.texto(d, (W / 2, 1720), "LOOK AT THE COLORS...", 76, (255, 255, 255), 12)
+    elif t < T_OLA and t > T_JUNTA0 + 1.0:
         P.texto(d, (W / 2, 1720), "WAIT FOR IT...", 90, (255, 255, 255), 12)
     return im
 
@@ -101,6 +103,8 @@ def audio(g, dur):
         u = j / 140; t0 = T_JUNTA0 + 0.5 + u * T_JUNTA + rng.uniform(0, 0.1); f = 600 + 900 * u
         add(t0, np.sin(2 * np.pi * f * tt) * np.exp(-tt * 60) * 0.2)
     add(T_JUNTA0, M.whoosh(1.0), 0.5)
+    for j in range(24):                                                        # ola de color: barrido que sube
+        add(T_OLA + j * D_OLA / 24, np.sin(2 * np.pi * (400 + 60 * j) * tt) * np.exp(-tt * 40) * 0.25)
     add(T_REVELA, M.boom(0.8), 0.7); add(T_REVELA, M.ding(0.9), 0.6); add(T_REVELA + 0.05, P.cargar("crowd_cheer_0", 0.5))
     for s in P.SONIDO_JUGADOR.get(g["opciones"][g["correcta"]], ["goat_0"])[:1]:
         add(T_REVELA + 0.25, P.cargar(s, 0.9))
@@ -114,7 +118,7 @@ def main(guion):
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
     franjas, vertical = BANDERAS[pais(g["opciones"][g["correcta"]])]
     cfg = dict(escena="escena_torre.html", fps=FPS, duracion=DUR, n=420, por_anillo=20, r=0.5, franjas=franjas, vertical=vertical,
-               semilla=g.get("semilla", 1), t_lluvia=T_LLUVIA, t_junta0=T_JUNTA0, t_junta=T_JUNTA, t_derrumbe=T_DERRUMBE,
+               semilla=g.get("semilla", 1), t_lluvia=T_LLUVIA, t_junta0=T_JUNTA0, t_junta=T_JUNTA, t_derrumbe=T_DERRUMBE, t_ola=T_OLA, d_ola=D_OLA,
                fondo=g.get("fondo", "#2fb59a"), piso=g.get("piso", "#1f8f78"))
     (out / "cfg3d.json").write_text(json.dumps(cfg))
     tres = out / "tres.mp4"
