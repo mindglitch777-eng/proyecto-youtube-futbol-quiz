@@ -29,6 +29,7 @@ class Variedad:
         self.musicas = d.get("musicas", [])
         self.titulos = {k: v for k, v in d.get("titulos", {}).items()}
         self.semillas = set(d.get("semillas", []))
+        self.contadores = d.get("contadores", {})
 
     @classmethod
     def cargar(cls):
@@ -38,7 +39,7 @@ class Variedad:
         RUTA.parent.mkdir(parents=True, exist_ok=True)
         RUTA.write_text(json.dumps(dict(grupos={k: sorted(map(list, v)) for k, v in self.grupos.items()}, protagonistas=self.protas[-400:],
                                         ganadores=dict(self.ganadores), ult_ganador=self.ult_ganador, musicas=self.musicas[-200:],
-                                        titulos=self.titulos, semillas=sorted(self.semillas)[-5000:]), ensure_ascii=False, indent=1))
+                                        titulos=self.titulos, semillas=sorted(self.semillas)[-5000:], contadores=self.contadores), ensure_ascii=False, indent=1))
 
     # ---------------------------------------------------------------- jugadores
     def grupo(self, formato, k, rng, jugadores, fecha=None):
@@ -90,6 +91,14 @@ class Variedad:
         i = rng.choice([i for i in cand if c[i] == minimo])
         uso.append(i); self.titulos[formato] = uso[-100:]
         return plantillas[i]
+
+    def siguiente(self, nombre, inicio=1):
+        """Contador permanente (número de nivel de una serie)."""
+        c = getattr(self, "contadores", None)
+        if c is None:
+            self.contadores = c = {}
+        c[nombre] = c.get(nombre, inicio - 1) + 1
+        return c[nombre]
 
     def semilla(self, rng):
         while True:

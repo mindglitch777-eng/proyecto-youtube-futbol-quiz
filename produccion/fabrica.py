@@ -72,18 +72,60 @@ def elegir(rng, k, usados):
             usados.add(clave); return grupo
 
 
-def guion_stop(gid, rng, usados, dificil):
-    grupo = elegir(rng, 4, usados)
+NOMBRE = {"kak": "Kaká", "ousmane_demb_l": "Dembélé", "son_heung_min": "Son", "arda_g_ler": "Güler", "vin_cius_j_nior": "Vinícius",
+          "kylian_mbapp": "Mbappé", "zlatan_ibrahimovi": "Zlatan", "federico_valverde": "Valverde", "jamal_musiala": "Musiala",
+          "florian_wirtz": "Wirtz", "bukayo_saka": "Saka", "phil_foden": "Foden", "declan_rice": "Rice", "kevin_de_bruyne": "De Bruyne",
+          "marcus_rashford": "Rashford", "david_beckham": "Beckham", "toni_kroos": "Kroos", "gareth_bale": "Bale", "karim_benzema": "Benzema",
+          "sergio_ramos": "Ramos", "rodrygo": "Rodrygo", "gavi": "Gavi", "pedri": "Pedri", "robert_lewandowski": "Lewandowski"}
+TEMAS_STOP = {   # B1: misma mecánica, temas que rotan
+    "GOATS": ["lionel_messi", "cristiano_ronaldo", "neymar", "ronaldinho", "zinedine_zidane", "kylian_mbapp"],
+    "LEGENDS": ["ronaldinho", "zinedine_zidane", "thierry_henry", "david_beckham", "kak", "zlatan_ibrahimovi", "sergio_ramos", "toni_kroos",
+                "gareth_bale", "karim_benzema"],
+    "BALLON D'OR": ["lamine_yamal", "kylian_mbapp", "erling_haaland", "vin_cius_j_nior", "jude_bellingham", "mohamed_salah", "harry_kane",
+                    "pedri", "ousmane_demb_l"],
+    "BARÇA vs MADRID": ["lamine_yamal", "pedri", "robert_lewandowski", "gavi", "kylian_mbapp", "vin_cius_j_nior", "jude_bellingham",
+                        "federico_valverde", "rodrygo", "arda_g_ler"],
+    "PREMIER LEAGUE": ["erling_haaland", "mohamed_salah", "bukayo_saka", "phil_foden", "declan_rice", "son_heung_min", "kevin_de_bruyne",
+                       "marcus_rashford", "florian_wirtz"],
+    "YOUNG STARS": ["lamine_yamal", "jude_bellingham", "jamal_musiala", "florian_wirtz", "arda_g_ler", "gavi", "pedri", "bukayo_saka"],
+}
+TEMA_TITULO = {"GOATS": "GOATs", "LEGENDS": "Legends", "BALLON D'OR": "Ballon d'Or", "BARÇA vs MADRID": "Barça vs Madrid",
+               "PREMIER LEAGUE": "Premier League", "YOUNG STARS": "Young Stars"}
+TIT_STOP_SERIE = ["Football Stop Challenge #{n} ⚽🛑 {tema} edition", "Stop at 100% ⚽🛑 Level {n}: {tema}",
+                  "Football Stop Challenge Level {n} 🛑 {tema} — only 1% can stop it", "Can you stop at 100%? ⚽🛑 #{n} {tema}"]
+
+
+def nombre_de(clave):
+    for n, c, _ in JUGADORES:
+        if c == clave:
+            return n
+    return NOMBRE.get(clave, clave.split("_")[0].title())
+
+
+def guion_stop(gid, rng, usados, dificil, V=None, fecha=None):
+    """STOP en serie (#nivel), con tema rotativo (B1) y cada 3er nivel HARD: más vueltas, giro doble y 5 s (B2)."""
+    tema = nivel = None
+    if V is not None:
+        tema = V.titulo("stop_tema", list(TEMAS_STOP), rng)
+        nivel = V.siguiente("stop_nivel", 13)
+        pool = [(nombre_de(c), FOTOS.get(c) and c, 3) for c in TEMAS_STOP[tema] if c in FOTOS]
+        grupo = V.grupo("stop_" + tema, 4, rng, pool, fecha)
+        dificil = nivel % 3 == 0
+    else:
+        grupo = elegir(rng, 4, usados)
     pcts = [f"{rng.choice([1, 1, 2, 3])}%", f"{rng.randint(5, 29)}%", f"{rng.randint(33, 61)}%", f"{rng.choice([67, 67, 69, 88, 99])}%"]
-    vueltas = [5, 4, 3, 4] if dificil else [4, 3, 3, 2]
-    giros = [1, 1, 1, 2] if dificil else [1, 1, 2, 2]
+    vueltas = ([6, 5, 5, 6] if nivel and nivel % 3 == 0 else [5, 4, 3, 4]) if dificil else [4, 3, 3, 2]
+    giros = ([2, 2, 1, 2] if nivel and nivel % 3 == 0 else [1, 1, 1, 2]) if dificil else [1, 1, 2, 2]
     colores = rng.sample(COLORES, 4); formas = [rng.choice(FORMAS) for _ in range(4)]
     cuads = []
     for k, (n, clave, _) in enumerate(grupo):
         cuads.append(dict(nombre=n, foto=FOTOS[clave], color=colores[k], pct=pcts[k], forma=formas[k], rasgo=rng.choice(RASGOS),
                           vueltas=vueltas[k], giros=giros[k], encaje_bueno=rng.randint(0, 3), fase=round(rng.uniform(0, 6.28), 2),
                           tam=rng.choice([60, 64, 68])))
-    return dict(id=gid, duracion=6.0, hiper=True, musica="67", cuadrantes=cuads)
+    g = dict(id=gid, duracion=5.0 if (nivel and nivel % 3 == 0) else 6.0, hiper=True, musica="67", cuadrantes=cuads)
+    if nivel:
+        g.update(tema=(tema + " · HARD") if nivel % 3 == 0 else tema, nivel=nivel, pregunta="WHICH ONE DID YOU STOP? 1-4", tema_base=tema)
+    return g
 
 
 def guion_look(gid, rng, usados_look, V=None):
@@ -238,9 +280,10 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             fijado = f"I'm going with number {rng.randint(1, 4)} 😂 what about you?"
             fotos = [g["foto"]]; nombres = [g["nombre"]]
         else:
-            g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True))
-            titulo = V.titulo("stop", TIT_STOP, rng)
-            desc = "It only fits ONCE per loop 🛑 Pause at the perfect moment. Which one did you get?\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"])
+            g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True), V=V, fecha=sl["fecha"])
+            titulo = V.titulo("stop_serie", TIT_STOP_SERIE, rng).format(n=g["nivel"], tema=TEMA_TITULO.get(g["tema_base"], g["tema_base"].title()))
+            desc = (f"Level {g['nivel']} 🛑 It only fits ONCE per loop. Pause at 100%!\nWhich one did you stop? Comment 1, 2, 3 or 4 👇\n"
+                    f"Follow for Level {g['nivel'] + 1} 🔥\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"]) + " #stopchallenge #football #shorts")
             q0 = g["cuadrantes"][0]
             fijado = f"{q0['nombre']} {q0['pct']} only fits ONE time... did you get it? 😤"
             fotos = [q["foto"] for q in g["cuadrantes"]]; nombres = [q["nombre"] for q in g["cuadrantes"]]

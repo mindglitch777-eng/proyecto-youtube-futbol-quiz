@@ -11,8 +11,8 @@
  "formatos": {
   "stop": {
    "nombre": "STOP CHALLENGE",
-   "min": 4,
-   "max": 12
+   "min": 14,
+   "max": 16
   },
   "find": {
    "nombre": "FIND",
@@ -21,22 +21,22 @@
   },
   "cabeza": {
    "nombre": "CATCH THE RIGHT HEAD",
-   "min": 3,
+   "min": 2,
    "max": 9
   },
   "plinko": {
    "nombre": "PLINKO GOAT",
-   "min": 4,
+   "min": 3,
    "max": 9
   },
   "dress": {
    "nombre": "DRESS UP",
-   "min": 4,
+   "min": 3,
    "max": 9
   },
   "torre": {
    "nombre": "BALL TOWER",
-   "min": 4,
+   "min": 3,
    "max": 9
   }
  },

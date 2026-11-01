@@ -140,6 +140,30 @@ def encajes(c, dur):
     return [float(pasos[j]) for j in range(len(ds)) if ds[j] < ds[j - 1] and ds[j] <= ds[(j + 1) % len(ds)] and ds[j] < 26]
 
 
+CARTEL = {}       # tema / nivel / pregunta (serie numerada): se dibuja arriba y abajo del círculo central
+
+
+def pill(d, cx, cy, txt, tam, fill, fondo=(20, 20, 30)):
+    f = ImageFont.truetype(str(ROOT / "assets" / "fuentes" / "ArchivoBlack-Regular.ttf"), tam)
+    w = f.getlength(txt); h = tam * 1.25
+    d.rounded_rectangle([cx - w / 2 - 22, cy - h / 2 - 4, cx + w / 2 + 22, cy + h / 2 + 4], int(h / 2), fill=fondo, outline=(255, 255, 255), width=4)
+    d.text((cx, cy), txt, font=f, fill=fill, anchor="mm")
+
+
+def cartel(im, t):
+    """Franja libre de abajo: 'LEVEL N · TEMA' y, alternando cada 2 s, la pregunta para comentar o 'FOLLOW FOR LEVEL N+1'."""
+    if not CARTEL:
+        return im
+    d = ImageDraw.Draw(im)
+    l1 = " · ".join(x for x in (f"LEVEL {CARTEL['nivel']}" if CARTEL.get("nivel") else "", CARTEL.get("tema", "")) if x)
+    if l1:
+        pill(d, W // 2, H - 150, l1, 44, (255, 255, 255), (230, 30, 30))
+    alt = [x for x in (CARTEL.get("pregunta"), f"FOLLOW FOR LEVEL {CARTEL['nivel'] + 1}" if CARTEL.get("nivel") else None) if x]
+    if alt:
+        pill(d, W // 2, H - 68, alt[int(t // 2) % len(alt)], 34, (255, 230, 40))
+    return im
+
+
 DOPA = False      # modo "más dopamina": estela, chispas, PERFECT!, % que salta, temblor y fondo que late con el bajo
 
 
@@ -366,7 +390,8 @@ def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
     dur = g.get("duracion", 6.0)
-    global DOPA, HIPER
+    global DOPA, HIPER, CARTEL
+    CARTEL = {k: g[k] for k in ("tema", "nivel", "pregunta") if g.get(k)}
     HIPER = bool(g.get("hiper"))
     DOPA = bool(g.get("dopamina")) or HIPER
     cuads = armar(g); fnd = fondo(cuads)
@@ -379,7 +404,7 @@ def main(guion):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
     for f in range(int(round(dur * FPS))):
-        im = cuadro(fnd, cuads, f / FPS, dur)
+        im = cartel(cuadro(fnd, cuads, f / FPS, dur), f / FPS)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
         if f in (0, 45):
             im.save(out / f"muestra_{f:03d}.jpg", quality=85)
