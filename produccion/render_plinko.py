@@ -160,9 +160,28 @@ def _buscar(semilla0, n=4, estricto=True):
             continue
         if len(set(c)) < 3 or (estricto and not any(VALORES[x] == "67" for x in c)):
             continue
+        r["ganador"] = g
+        if estricto and len(cambios_lider(r, n)) < 2:                           # al menos 2 "NEW LEADER" (evento grande cada < 4 s)
+            continue
         r["semilla"] = s; r["ganador"] = g
         return r
     raise RuntimeError("no encontré una semilla con suspenso")
+
+
+def cambios_lider(r, n):
+    """Momentos (física) en que cambia el que va primero en OVR: evento grande 'NEW LEADER'."""
+    out, prev = [], None
+    for gl in sorted(r["golpes"]):
+        t = gl[0]
+        if t >= r["quieto"][r["ganador"]]:
+            break
+        ov = [ovr_en(r, i, t) for i in range(n)]
+        lid = max(range(n), key=lambda i: ov[i]) if len(set(ov)) > 1 else None
+        if lid is not None and lid != prev:
+            if prev is not None and (not out or t - out[-1][0] > 1.2):
+                out.append((t, lid))
+            prev = lid
+    return out
 
 
 def puntos(gl):
@@ -441,6 +460,14 @@ def cuadro(g, r, tv, dur, reloj_):
             d = ImageDraw.Draw(im)
             texto(d, (W / 2, 1000), "6 7", int(180 + 120 * min(1, e / 0.08)), (255, 255, 255), 16, (255, 40, 170))
             texto(d, (W / 2, 1180), nombre_corto(js[i]).upper() + " = 67", 70, COLORES[i], 9)
+    for tl, lid in r.setdefault("_lideres", cambios_lider(r, n)):                # NEW LEADER: banda + tinte del color del jugador
+        e = t - tl
+        if 0 <= e < 0.7:
+            im.alpha_composite(Image.new("RGBA", (W, H), COLORES[lid] + (int(70 * max(0, 1 - e / 0.25)),)))
+            d = ImageDraw.Draw(im)
+            texto(d, (W / 2, 590), "NEW LEADER: " + nombre_corto(js[lid]).upper(), int(64 * min(1, e / 0.08 + 0.4)), (255, 255, 255), 9, COLORES[lid])
+            RR.pegar_emoji(im, "👑", int(W / 2), 520, int(70 * min(1, e / 0.08 + 0.4)))
+            d = ImageDraw.Draw(im)
     otros = [r["quieto"][i] for i in range(n) if i != gan]
     if max(otros) + 0.6 < t < t_gana:
         texto(d, (W / 2, Y_CARTEL), "LAST ONE...", 100, (255, 235, 40), 13)
@@ -521,6 +548,8 @@ def audio(g, r, dur, reloj_):
         if (px, py) in ORO:
             add(t, cargar("moneda_0", 0.6))
     add(0, M.boom(0.6), 0.7, True); add(0, M.whoosh(0.6), 0.6, True)
+    for tl, lid in cambios_lider(r, len(g["jugadores"])):
+        add(tl, M.ding(0.4), 0.45); add(tl, M.whoosh(0.3), 0.4)
     pop = cargar("pop_0", 0.8)
     for i in range(len(g["jugadores"])):                                      # cada cara entra con un "pop"
         add(i * 0.16, pop if pop is not None else M.golpe(0.1), 0.9, True)
