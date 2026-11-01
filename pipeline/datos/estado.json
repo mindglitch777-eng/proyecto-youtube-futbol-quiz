@@ -3,91 +3,106 @@
  "etapas": {
   "radar": {
    "estado": "ok",
-   "inicio": "2026-10-31T00:02:11+00:00",
-   "fin": "2026-10-31T00:02:31+00:00",
+   "inicio": "2026-11-01T12:19:16+00:00",
    "resumen": {
-    "virales": 374,
-    "canales_nuevos": 132,
+    "virales": 370,
+    "canales_nuevos": 144,
     "top": [
+     {
+      "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥 #viral",
+      "canal": "Mr Muzu",
+      "vistas": 20157041,
+      "vph": 336970
+     },
+     {
+      "titulo": "Mbappe vs Lamine Yamal or Neymar stop challenge 🔥#mbappe #shorts #vira",
+      "canal": "Dipa Das",
+      "vistas": 6157811,
+      "vph": 154649
+     },
      {
       "titulo": "Ronaldo vs Mrbeast or Mbappe stop challenge 🔥#ronaldo #shorts #viral",
       "canal": "Vfx__priya",
-      "vistas": 9752470,
-      "vph": 260655
+      "vistas": 11711672,
+      "vph": 158910
      },
      {
-      "titulo": "Find Ronaldo Neymar Yamal Football Challenge",
-      "canal": "GOALPREDICT",
-      "vistas": 5415652,
-      "vph": 181591
+      "titulo": "haaland VS Ronaldo or Messi 🔥#haaland #ronaldo #shorts #viral",
+      "canal": "VFX SHORTS 01",
+      "vistas": 9709653,
+      "vph": 101864
      },
      {
-      "titulo": "Ronaldo vs Mbappe or Messi stop challenge 🔥#ronaldo #shorts #viral",
-      "canal": "Vfx__priya",
-      "vistas": 13443778,
-      "vph": 177747
-     },
-     {
-      "titulo": "What Happened to Ronaldo & IShowSpeed's Plane?! 😱✈️ #ronaldo #messi #a",
-      "canal": "3DAnimLiga",
-      "vistas": 4597069,
-      "vph": 153073
-     },
-     {
-      "titulo": "FIND NEYMAR RONALDO YAMAL",
-      "canal": "FULYON SHORTS",
-      "vistas": 8722844,
-      "vph": 151889
+      "titulo": "who won ? messi x ronaldo xnaymar 🤣💔Skills#viralvideo #ronaldo#shorts",
+      "canal": "Fcmagarx70",
+      "vistas": 14597025,
+      "vph": 101554
      }
     ]
-   }
+   },
+   "fin": "2026-11-01T12:19:26+00:00"
   },
   "analisis": {
    "estado": "ok",
-   "inicio": "2026-10-31T00:02:41+00:00",
-   "fin": "2026-10-31T00:16:53+00:00",
+   "inicio": "2026-11-01T12:19:26+00:00",
    "resumen": {
     "analizados": 12,
     "grabaciones": 0,
     "por_formato": {
-     "stop": 2,
-     "find": 3,
-     "nuevo": 6,
-     "cabeza": 1
+     "dress": 2,
+     "stop": 3,
+     "cabeza": 1,
+     "nuevo": 3,
+     "find": 3
     },
     "formatos_nuevos": [
-     "Parodia animación 3D surrealista (4,597,069 vistas)",
      "CARRERA DE PELOTAS AL HOYO (BALL DROP RACE) (14,589,691 vistas)",
-     "carrera transformaciones de futbolistas (12,423,234 vistas)",
-     "Parodia IA con Reacción (4,997,055 vistas)",
-     "Comparativa de Humor / Edición Meme (1,573,708 vistas)",
-     "edit emotivo / tributo (7,300,854 vistas)"
+     "Parodia animación 3D surrealista (4,597,069 vistas)",
+     "carrera transformaciones de futbolistas (12,423,234 vistas)"
     ]
-   }
+   },
+   "fin": "2026-11-01T12:21:05+00:00"
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-01T11:17:51+00:00",
+   "inicio": "2026-11-01T12:21:05+00:00",
    "resumen": {
-    "videos": 14,
-    "vistas_totales": 64130,
+    "videos": 16,
+    "vistas_totales": 68204,
     "por_formato": {
-     "stop": "3 videos · mediana 3,899 · mejor 23,858",
-     "find": "2 videos · mediana 2,054 · mejor 3,250",
-     "plinko": "1 videos · mediana 1,180 · mejor 1,180",
-     "ring": "1 videos · mediana 1,447 · mejor 1,447",
-     "otros": "2 videos · mediana 1,068 · mejor 1,467",
-     "carrera": "2 videos · mediana 955 · mejor 1,150"
+     "stop": "4 videos · mediana 10,652 · mejor 23,644",
+     "find": "2 videos · mediana 2,038 · mejor 3,224",
+     "plinko": "1 videos · mediana 1,172 · mejor 1,172",
+     "ring": "1 videos · mediana 1,440 · mejor 1,440",
+     "otros": "2 videos · mediana 1,062 · mejor 1,459",
+     "carrera": "2 videos · mediana 950 · mejor 1,144"
     }
    },
-   "fin": "2026-11-01T11:17:51+00:00"
+   "fin": "2026-11-01T12:21:06+00:00"
   },
   "plan": {
    "estado": "ok",
    "resumen": {
-    "semana": "2026-10-31 → 2026-11-06 (semana 1, hecha a mano)",
-    "proxima": "el domingo planifica desde el 2026-11-07"
-   }
+    "semana": "2026-11-07 → 2026-11-13",
+    "cupos": {
+     "STOP CHALLENGE": 9,
+     "FIND": 4,
+     "CATCH THE RIGHT HEAD": 3,
+     "PLINKO GOAT": 4,
+     "DRESS UP": 4,
+     "BALL TOWER": 4
+    },
+    "por_que": {
+     "STOP CHALLENGE": 1.05,
+     "FIND": 0.56,
+     "CATCH THE RIGHT HEAD": 0.18,
+     "PLINKO GOAT": 0.12,
+     "DRESS UP": 0.32,
+     "BALL TOWER": 0.05
+    }
+   },
+   "inicio": "2026-11-01T12:21:06+00:00",
+   "fin": "2026-11-01T12:21:06+00:00"
   },
   "produccion": {
    "estado": "ok",
@@ -117,5 +132,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-01T11:17:51+00:00"
+ "actualizado": "2026-11-01T12:21:06+00:00"
 }

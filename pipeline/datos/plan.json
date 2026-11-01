@@ -1,146 +1,170 @@
 {
- "inicio": "2026-10-31",
- "nota": "semana 1, hecha a mano antes del sistema",
+ "inicio": "2026-11-07",
+ "puntaje": {
+  "stop": 1.05,
+  "find": 0.565,
+  "cabeza": 0.183,
+  "plinko": 0.116,
+  "dress": 0.317,
+  "torre": 0.05
+ },
+ "cupos": {
+  "stop": 9,
+  "find": 4,
+  "cabeza": 3,
+  "plinko": 4,
+  "dress": 4,
+  "torre": 4
+ },
  "slots": [
   {
-   "fecha": "2026-10-31",
+   "fecha": "2026-11-07",
    "hora": "09:00",
-   "tipo": "stop"
+   "tipo": "stop",
+   "dificil": true
   },
   {
-   "fecha": "2026-10-31",
+   "fecha": "2026-11-07",
+   "hora": "13:00",
+   "tipo": "torre"
+  },
+  {
+   "fecha": "2026-11-07",
+   "hora": "17:00",
+   "tipo": "stop",
+   "dificil": false
+  },
+  {
+   "fecha": "2026-11-07",
+   "hora": "21:00",
+   "tipo": "plinko"
+  },
+  {
+   "fecha": "2026-11-08",
+   "hora": "09:00",
+   "tipo": "stop",
+   "dificil": true
+  },
+  {
+   "fecha": "2026-11-08",
+   "hora": "13:00",
+   "tipo": "dress"
+  },
+  {
+   "fecha": "2026-11-08",
+   "hora": "17:00",
+   "tipo": "stop",
+   "dificil": false
+  },
+  {
+   "fecha": "2026-11-08",
+   "hora": "21:00",
+   "tipo": "find"
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "09:00",
+   "tipo": "torre"
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "13:00",
+   "tipo": "cabeza"
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "17:00",
+   "tipo": "stop",
+   "dificil": true
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "21:00",
+   "tipo": "torre"
+  },
+  {
+   "fecha": "2026-11-10",
+   "hora": "09:00",
+   "tipo": "find"
+  },
+  {
+   "fecha": "2026-11-10",
+   "hora": "13:00",
+   "tipo": "dress"
+  },
+  {
+   "fecha": "2026-11-10",
+   "hora": "17:00",
+   "tipo": "stop",
+   "dificil": false
+  },
+  {
+   "fecha": "2026-11-10",
+   "hora": "21:00",
+   "tipo": "torre"
+  },
+  {
+   "fecha": "2026-11-11",
+   "hora": "09:00",
+   "tipo": "plinko"
+  },
+  {
+   "fecha": "2026-11-11",
    "hora": "13:00",
    "tipo": "find"
   },
   {
-   "fecha": "2026-10-31",
+   "fecha": "2026-11-11",
    "hora": "17:00",
-   "tipo": "look"
+   "tipo": "plinko"
   },
   {
-   "fecha": "2026-10-31",
+   "fecha": "2026-11-11",
    "hora": "21:00",
    "tipo": "cabeza"
   },
   {
-   "fecha": "2026-11-01",
+   "fecha": "2026-11-12",
    "hora": "09:00",
-   "tipo": "stop"
+   "tipo": "stop",
+   "dificil": true
   },
   {
-   "fecha": "2026-11-01",
+   "fecha": "2026-11-12",
    "hora": "13:00",
-   "tipo": "find"
+   "tipo": "plinko"
   },
   {
-   "fecha": "2026-11-01",
+   "fecha": "2026-11-12",
    "hora": "17:00",
-   "tipo": "look"
+   "tipo": "stop",
+   "dificil": false
   },
   {
-   "fecha": "2026-11-01",
+   "fecha": "2026-11-12",
    "hora": "21:00",
-   "tipo": "stop"
+   "tipo": "dress"
   },
   {
-   "fecha": "2026-11-02",
+   "fecha": "2026-11-13",
    "hora": "09:00",
-   "tipo": "stop"
-  },
-  {
-   "fecha": "2026-11-02",
-   "hora": "13:00",
-   "tipo": "find"
-  },
-  {
-   "fecha": "2026-11-02",
-   "hora": "17:00",
-   "tipo": "look"
-  },
-  {
-   "fecha": "2026-11-02",
-   "hora": "21:00",
    "tipo": "cabeza"
   },
   {
-   "fecha": "2026-11-03",
-   "hora": "09:00",
-   "tipo": "stop"
+   "fecha": "2026-11-13",
+   "hora": "13:00",
+   "tipo": "dress"
   },
   {
-   "fecha": "2026-11-03",
-   "hora": "13:00",
+   "fecha": "2026-11-13",
+   "hora": "17:00",
    "tipo": "find"
   },
   {
-   "fecha": "2026-11-03",
-   "hora": "17:00",
-   "tipo": "look"
-  },
-  {
-   "fecha": "2026-11-03",
+   "fecha": "2026-11-13",
    "hora": "21:00",
-   "tipo": "stop"
-  },
-  {
-   "fecha": "2026-11-04",
-   "hora": "09:00",
-   "tipo": "stop"
-  },
-  {
-   "fecha": "2026-11-04",
-   "hora": "13:00",
-   "tipo": "find"
-  },
-  {
-   "fecha": "2026-11-04",
-   "hora": "17:00",
-   "tipo": "look"
-  },
-  {
-   "fecha": "2026-11-04",
-   "hora": "21:00",
-   "tipo": "cabeza"
-  },
-  {
-   "fecha": "2026-11-05",
-   "hora": "09:00",
-   "tipo": "stop"
-  },
-  {
-   "fecha": "2026-11-05",
-   "hora": "13:00",
-   "tipo": "find"
-  },
-  {
-   "fecha": "2026-11-05",
-   "hora": "17:00",
-   "tipo": "look"
-  },
-  {
-   "fecha": "2026-11-05",
-   "hora": "21:00",
-   "tipo": "stop"
-  },
-  {
-   "fecha": "2026-11-06",
-   "hora": "09:00",
-   "tipo": "stop"
-  },
-  {
-   "fecha": "2026-11-06",
-   "hora": "13:00",
-   "tipo": "find"
-  },
-  {
-   "fecha": "2026-11-06",
-   "hora": "17:00",
-   "tipo": "look"
-  },
-  {
-   "fecha": "2026-11-06",
-   "hora": "21:00",
-   "tipo": "cabeza"
+   "tipo": "stop",
+   "dificil": true
   }
  ]
 }
