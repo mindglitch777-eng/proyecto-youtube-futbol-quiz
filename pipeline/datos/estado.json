@@ -67,20 +67,20 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-10-31T21:11:39+00:00",
+   "inicio": "2026-11-01T11:17:51+00:00",
    "resumen": {
     "videos": 14,
-    "vistas_totales": 50794,
+    "vistas_totales": 64130,
     "por_formato": {
-     "stop": "2 videos · mediana 14,152 · mejor 26,338",
-     "find": "2 videos · mediana 2,175 · mejor 3,433",
-     "runner": "1 videos · mediana 1,274 · mejor 1,274",
-     "ring": "1 videos · mediana 1,548 · mejor 1,548",
-     "otros": "2 videos · mediana 1,134 · mejor 1,568",
-     "carrera": "2 videos · mediana 1,008 · mejor 1,213"
+     "stop": "3 videos · mediana 3,899 · mejor 23,858",
+     "find": "2 videos · mediana 2,054 · mejor 3,250",
+     "plinko": "1 videos · mediana 1,180 · mejor 1,180",
+     "ring": "1 videos · mediana 1,447 · mejor 1,447",
+     "otros": "2 videos · mediana 1,068 · mejor 1,467",
+     "carrera": "2 videos · mediana 955 · mejor 1,150"
     }
    },
-   "fin": "2026-10-31T21:11:39+00:00"
+   "fin": "2026-11-01T11:17:51+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -104,20 +104,18 @@
    }
   },
   "publicacion": {
-   "estado": "error",
+   "estado": "ok",
    "resumen": {
-    "hoy": "2026-10-31",
-    "subidos": 0,
-    "errores": [
-     "s1_29_sab31_2100_plinko: 400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n "
-    ],
-    "total_publicados": 0
+    "hoy": "2026-11-01",
+    "subidos": 5,
+    "errores": [],
+    "total_publicados": 5
    },
-   "inicio": "2026-10-31T21:11:39+00:00",
-   "fin": "2026-10-31T21:11:39+00:00"
+   "inicio": "2026-11-01T11:17:41+00:00",
+   "fin": "2026-11-01T11:17:50+00:00"
   }
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-10-31T21:11:39+00:00"
+ "actualizado": "2026-11-01T11:17:51+00:00"
 }
