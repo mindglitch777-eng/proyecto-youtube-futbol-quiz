@@ -5,7 +5,11 @@ name: PUBLICAR diario (4 videos por API)
 
 on:
   schedule:
-    - cron: "30 10 * * *"
+    - cron: "30 10 * * *"      # GitHub a veces atrasa o saltea los horarios: reintentos (no sube dos veces el mismo video)
+    - cron: "17 11 * * *"
+    - cron: "47 12 * * *"
+    - cron: "23 15 * * *"
+    - cron: "53 18 * * *"
   workflow_dispatch:
   push:
     paths: [pipeline/probar.txt]

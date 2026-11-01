@@ -6,7 +6,9 @@ name: FÁBRICA semanal (radar → análisis → plan → videos)
 
 on:
   schedule:
-    - cron: "0 12 * * 0"
+    - cron: "0 12 * * 0"       # reintentos el domingo si GitHub saltea el horario (no rehace una semana ya fabricada)
+    - cron: "37 15 * * 0"
+    - cron: "41 19 * * 0"
   workflow_dispatch:
   push:
     paths: [pipeline/lanzar.txt]
@@ -19,7 +21,21 @@ permissions:
 concurrency: {group: fabrica, cancel-in-progress: false}
 
 jobs:
+  guardia:                                      # los reintentos del domingo no rehacen una semana ya fabricada hoy
+    runs-on: ubuntu-latest
+    outputs:
+      hecho: ${{ steps.g.outputs.hecho }}
+    steps:
+      - uses: actions/checkout@v4
+      - id: g
+        run: |
+          H=$(python3 -c "import json,datetime;e=json.load(open('pipeline/datos/estado.json'))['etapas'].get('produccion',{});print('true' if e.get('estado')=='ok' and (e.get('fin') or '')[:10]==datetime.date.today().isoformat() else 'false')")
+          if [ "${{ github.event_name }}" != "schedule" ]; then H=false; fi
+          echo "hecho=$H" >> "$GITHUB_OUTPUT"; echo "ya fabricado hoy: $H"
+
   fabrica:
+    needs: guardia
+    if: needs.guardia.outputs.hecho != 'true'
     runs-on: ubuntu-latest
     timeout-minutes: 300
     env:
