@@ -1,5 +1,5 @@
 {
- "semana": "2026-10-31",
+ "semana": "2026-11-07",
  "etapas": {
   "radar": {
    "estado": "ok",
@@ -105,18 +105,22 @@
    "fin": "2026-11-01T12:21:06+00:00"
   },
   "produccion": {
-   "estado": "ok",
+   "estado": "error",
    "resumen": {
-    "videos": 28,
-    "prueba_del_sistema": "4 videos de prueba generados de punta a punta"
-   }
+    "videos": 4,
+    "errores": 24
+   },
+   "inicio": "2026-11-01T12:21:09+00:00",
+   "fin": "2026-11-01T12:47:09+00:00"
   },
   "control": {
    "estado": "ok",
    "resumen": {
-    "pasan": "28 de 28",
-    "corregido": "CATCH THE RIGHT HEAD ahora con fondo en movimiento"
-   }
+    "pasan": "4 de 28",
+    "rehechos": 48
+   },
+   "inicio": "2026-11-01T12:47:09+00:00",
+   "fin": "2026-11-01T13:13:06+00:00"
   },
   "publicacion": {
    "estado": "ok",
@@ -132,5 +136,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-01T12:21:06+00:00"
+ "actualizado": "2026-11-01T13:13:06+00:00"
 }

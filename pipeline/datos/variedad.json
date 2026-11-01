@@ -3,9 +3,21 @@
   "plinko": [
    [
     "Bellingham",
+    "Haaland",
+    "Messi",
+    "Yamal"
+   ],
+   [
+    "Bellingham",
     "Henry",
     "Neymar",
     "Ronaldo"
+   ],
+   [
+    "Bellingham",
+    "Lewandowski",
+    "Messi",
+    "Neymar"
    ],
    [
     "Bellingham",
@@ -15,15 +27,69 @@
    ],
    [
     "Bellingham",
+    "Mbappé",
+    "Ronaldinho",
+    "Salah"
+   ],
+   [
+    "Bellingham",
+    "Messi",
+    "Neymar",
+    "Ronaldo"
+   ],
+   [
+    "Bellingham",
     "Messi",
     "Ronaldo",
     "Zlatan"
+   ],
+   [
+    "Haaland",
+    "Kane",
+    "Messi",
+    "Neymar"
+   ],
+   [
+    "Haaland",
+    "Kane",
+    "Ronaldinho",
+    "Ronaldo"
+   ],
+   [
+    "Haaland",
+    "Mbappé",
+    "Ronaldinho",
+    "Ronaldo"
+   ],
+   [
+    "Haaland",
+    "Messi",
+    "Neymar",
+    "Ronaldo"
+   ],
+   [
+    "Haaland",
+    "Messi",
+    "Ronaldinho",
+    "Yamal"
+   ],
+   [
+    "Haaland",
+    "Messi",
+    "Ronaldo",
+    "Vinícius"
    ],
    [
     "Henry",
     "Neymar",
     "Ronaldo",
     "Zidane"
+   ],
+   [
+    "Mbappé",
+    "Messi",
+    "Neymar",
+    "Vinícius"
    ],
    [
     "Mbappé",
@@ -36,6 +102,12 @@
     "Neymar",
     "Ronaldo",
     "Yamal"
+   ],
+   [
+    "Ronaldo",
+    "Yamal",
+    "Zidane",
+    "Zlatan"
    ]
   ],
   "stop_find": [
@@ -48,8 +120,54 @@
    [
     "Bellingham",
     "Haaland",
+    "Neymar",
+    "Ronaldinho"
+   ],
+   [
+    "Bellingham",
+    "Haaland",
     "Ronaldinho",
     "Salah"
+   ],
+   [
+    "Bellingham",
+    "Haaland",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Bellingham",
+    "Kane",
+    "Salah",
+    "Yamal"
+   ],
+   [
+    "Bellingham",
+    "Mbappé",
+    "Neymar",
+    "Ronaldo"
+   ],
+   [
+    "Bellingham",
+    "Messi",
+    "Neymar",
+    "Ronaldinho"
+   ],
+   [
+    "Bellingham",
+    "Messi",
+    "Ronaldo"
+   ],
+   [
+    "Bellingham",
+    "Messi",
+    "Salah",
+    "Zlatan"
+   ],
+   [
+    "Bellingham",
+    "Messi",
+    "Vinícius"
    ],
    [
     "Bellingham",
@@ -65,8 +183,19 @@
    ],
    [
     "Bellingham",
+    "Neymar",
+    "Salah"
+   ],
+   [
+    "Bellingham",
     "Ronaldinho",
     "Ronaldo"
+   ],
+   [
+    "Bellingham",
+    "Ronaldinho",
+    "Salah",
+    "Yamal"
    ],
    [
     "Bellingham",
@@ -74,14 +203,105 @@
     "Yamal"
    ],
    [
+    "Bellingham",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Haaland",
+    "Henry",
+    "Messi",
+    "Ronaldo"
+   ],
+   [
+    "Haaland",
+    "Kane",
+    "Salah",
+    "Yamal"
+   ],
+   [
+    "Haaland",
+    "Lewandowski",
+    "Yamal"
+   ],
+   [
+    "Haaland",
+    "Mbappé",
+    "Ronaldinho"
+   ],
+   [
+    "Haaland",
+    "Mbappé",
+    "Ronaldo",
+    "Yamal"
+   ],
+   [
     "Haaland",
     "Messi",
+    "Neymar",
+    "Ronaldo"
+   ],
+   [
+    "Haaland",
+    "Messi",
+    "Ronaldo"
+   ],
+   [
+    "Haaland",
+    "Messi",
+    "Ronaldo",
+    "Zlatan"
+   ],
+   [
+    "Haaland",
+    "Messi",
+    "Yamal"
+   ],
+   [
+    "Haaland",
+    "Ronaldinho",
+    "Ronaldo",
+    "Vinícius"
+   ],
+   [
+    "Haaland",
+    "Ronaldinho",
+    "Ronaldo",
+    "Yamal"
+   ],
+   [
+    "Henry",
+    "Kane",
+    "Ronaldinho",
     "Yamal"
    ],
    [
     "Henry",
     "Kane",
     "Ronaldo",
+    "Yamal"
+   ],
+   [
+    "Henry",
+    "Kane",
+    "Zidane"
+   ],
+   [
+    "Henry",
+    "Messi",
+    "Neymar",
+    "Ronaldo"
+   ],
+   [
+    "Henry",
+    "Ronaldo",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Kane",
+    "Messi",
+    "Neymar",
     "Yamal"
    ],
    [
@@ -92,6 +312,11 @@
    ],
    [
     "Lewandowski",
+    "Mbappé",
+    "Neymar"
+   ],
+   [
+    "Lewandowski",
     "Neymar",
     "Ronaldinho",
     "Yamal"
@@ -102,10 +327,39 @@
     "Yamal"
    ],
    [
+    "Lewandowski",
+    "Ronaldinho",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Mbappé",
+    "Neymar",
+    "Ronaldo",
+    "Salah"
+   ],
+   [
+    "Mbappé",
+    "Neymar",
+    "Salah",
+    "Yamal"
+   ],
+   [
+    "Mbappé",
+    "Ronaldinho",
+    "Ronaldo"
+   ],
+   [
     "Messi",
     "Neymar",
     "Ronaldinho",
     "Yamal"
+   ],
+   [
+    "Messi",
+    "Neymar",
+    "Ronaldo",
+    "Vinícius"
    ],
    [
     "Messi",
@@ -115,6 +369,34 @@
    ],
    [
     "Messi",
+    "Ronaldinho",
+    "Yamal"
+   ],
+   [
+    "Messi",
+    "Ronaldo",
+    "Salah",
+    "Zidane"
+   ],
+   [
+    "Messi",
+    "Ronaldo",
+    "Yamal"
+   ],
+   [
+    "Messi",
+    "Ronaldo",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Messi",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Neymar",
+    "Ronaldinho",
     "Ronaldo",
     "Yamal"
    ],
@@ -133,6 +415,18 @@
     "Neymar",
     "Salah",
     "Vinícius"
+   ],
+   [
+    "Neymar",
+    "Salah",
+    "Yamal",
+    "Zidane"
+   ],
+   [
+    "Neymar",
+    "Salah",
+    "Yamal",
+    "Zlatan"
    ],
    [
     "Ronaldinho",
@@ -218,9 +512,126 @@
     "Salah"
    ],
    [
+    "Lewandowski",
+    "Yamal",
+    "Zlatan"
+   ],
+   [
+    "Mbappé",
+    "Messi",
+    "Salah"
+   ],
+   [
+    "Mbappé",
+    "Neymar",
+    "Ronaldo"
+   ],
+   [
+    "Neymar",
+    "Henry",
+    "Mbappé"
+   ],
+   [
+    "Neymar",
+    "Messi",
+    "Salah"
+   ],
+   [
     "Ronaldinho",
     "Haaland",
     "Salah"
+   ],
+   [
+    "Salah",
+    "Yamal",
+    "Zidane"
+   ],
+   [
+    "Vinícius",
+    "Haaland",
+    "Henry"
+   ],
+   [
+    "Yamal",
+    "Henry",
+    "Zlatan"
+   ],
+   [
+    "Zidane",
+    "Haaland",
+    "Mbappé"
+   ]
+  ],
+  "torre": [
+   [
+    "Bellingham",
+    "Haaland",
+    "Vinícius"
+   ],
+   [
+    "Haaland",
+    "Neymar",
+    "Zlatan"
+   ],
+   [
+    "Mbappé",
+    "Neymar",
+    "Zlatan"
+   ],
+   [
+    "Ronaldo",
+    "Vinícius",
+    "Zlatan"
+   ]
+  ],
+  "dress": [
+   [
+    "Bellingham",
+    "Haaland"
+   ],
+   [
+    "Bellingham",
+    "Mbappé"
+   ],
+   [
+    "Bellingham",
+    "Messi"
+   ],
+   [
+    "Haaland",
+    "Yamal"
+   ],
+   [
+    "Haaland",
+    "Zlatan"
+   ],
+   [
+    "Kane",
+    "Yamal"
+   ],
+   [
+    "Lewandowski",
+    "Salah"
+   ],
+   [
+    "Lewandowski",
+    "Vinícius"
+   ],
+   [
+    "Lewandowski",
+    "Yamal"
+   ],
+   [
+    "Messi",
+    "Ronaldinho"
+   ],
+   [
+    "Messi",
+    "Ronaldo"
+   ],
+   [
+    "Messi",
+    "Zidane"
    ]
   ]
  },
@@ -260,6 +671,118 @@
   [
    "2026-11-05",
    "Bellingham"
+  ],
+  [
+   "2026-11-07",
+   "Vinícius"
+  ],
+  [
+   "2026-11-07",
+   "Mbappé"
+  ],
+  [
+   "2026-11-08",
+   "Salah"
+  ],
+  [
+   "2026-11-09",
+   "Zlatan"
+  ],
+  [
+   "2026-11-09",
+   "Neymar"
+  ],
+  [
+   "2026-11-10",
+   "Messi"
+  ],
+  [
+   "2026-11-10",
+   "Zlatan"
+  ],
+  [
+   "2026-11-11",
+   "Messi"
+  ],
+  [
+   "2026-11-11",
+   "Bellingham"
+  ],
+  [
+   "2026-11-12",
+   "Messi"
+  ],
+  [
+   "2026-11-12",
+   "Haaland"
+  ],
+  [
+   "2026-11-13",
+   "Kane"
+  ],
+  [
+   "2026-11-07",
+   "Yamal"
+  ],
+  [
+   "2026-11-07",
+   "Mbappé"
+  ],
+  [
+   "2026-11-08",
+   "Bellingham"
+  ],
+  [
+   "2026-11-08",
+   "Messi"
+  ],
+  [
+   "2026-11-10",
+   "Bellingham"
+  ],
+  [
+   "2026-11-10",
+   "Messi"
+  ],
+  [
+   "2026-11-11",
+   "Kane"
+  ],
+  [
+   "2026-11-11",
+   "Neymar"
+  ],
+  [
+   "2026-11-11",
+   "Ronaldo"
+  ],
+  [
+   "2026-11-11",
+   "Neymar"
+  ],
+  [
+   "2026-11-12",
+   "Messi"
+  ],
+  [
+   "2026-11-12",
+   "Zlatan"
+  ],
+  [
+   "2026-11-12",
+   "Ronaldinho"
+  ],
+  [
+   "2026-11-12",
+   "Yamal"
+  ],
+  [
+   "2026-11-13",
+   "Zlatan"
+  ],
+  [
+   "2026-11-13",
+   "Lewandowski"
   ]
  ],
  "ganadores": {
@@ -268,9 +791,12 @@
   "Salah": 1,
   "Mbappé": 2,
   "Henry": 1,
-  "Ronaldo": 1
+  "Ronaldo": 1,
+  "Haaland": 2,
+  "Vinícius": 1,
+  "Zlatan": 1
  },
- "ult_ganador": "Mbappé",
+ "ult_ganador": "Haaland",
  "musicas": [
   "trallallero_2",
   "patapim_0",
@@ -280,7 +806,35 @@
   "bombardiro_0",
   "patapim_0",
   "chipi_chapa_0",
-  "trallallero_2"
+  "trallallero_2",
+  "bombardiro_0",
+  "trallallero_1",
+  "tung_tung_0",
+  "chipi_chapa_0",
+  "bombardiro_0",
+  "trallallero_1",
+  "trallallero_2",
+  "tung_tung_0",
+  "patapim_0",
+  "bombardiro_0",
+  "chipi_chapa_0",
+  "trallallero_1",
+  "trallallero_2",
+  "patapim_0",
+  "tung_tung_0",
+  "chipi_chapa_0",
+  "bombardiro_0",
+  "patapim_0",
+  "trallallero_1",
+  "trallallero_2",
+  "tung_tung_0",
+  "bombardiro_0",
+  "trallallero_1",
+  "trallallero_2",
+  "chipi_chapa_0",
+  "tung_tung_0",
+  "patapim_0",
+  "trallallero_1"
  ],
  "titulos": {
   "plinko": [
@@ -289,14 +843,38 @@
    3,
    2,
    4,
-   0
+   0,
+   4,
+   2,
+   1,
+   3,
+   4,
+   1,
+   2,
+   3,
+   0,
+   4,
+   0,
+   3
   ],
   "plinko_pantalla": [
    0,
    2,
    1,
    2,
-   0
+   0,
+   1,
+   2,
+   1,
+   0,
+   2,
+   0,
+   1,
+   0,
+   2,
+   1,
+   0,
+   2
   ],
   "hoyo_pantalla": [
    2,
@@ -310,18 +888,104 @@
   ],
   "cabeza": [
    0,
+   2,
+   1,
+   0,
+   2,
+   1,
+   0,
+   1,
+   2,
+   0,
+   2
+  ],
+  "stop": [
+   0,
+   2,
+   1,
+   2,
+   0,
+   1,
+   2,
+   0,
+   1,
+   0,
+   2,
+   1,
+   2,
+   0,
+   1,
+   2,
+   1,
+   0,
+   2,
+   1,
+   0,
+   1,
+   2,
+   0,
+   1,
+   2,
+   0
+  ],
+  "torre": [
+   1,
+   4,
+   0,
+   3
+  ],
+  "dress": [
+   0,
+   2,
+   4,
+   3,
+   1,
+   0,
+   3,
+   1,
+   2,
+   4,
+   3,
    2
   ]
  },
  "semillas": [
+  25729,
+  48466,
+  71377,
+  98757,
   111192,
+  133986,
+  142459,
+  160393,
   160692,
+  203379,
+  256796,
+  298993,
+  318239,
+  320884,
+  367823,
   390501,
+  395168,
+  446464,
+  527541,
+  529547,
+  534128,
+  554677,
   557436,
+  645342,
   696982,
+  789651,
+  812499,
   817418,
   869814,
+  893142,
+  903908,
   922228,
-  928051
+  928051,
+  928343,
+  957092,
+  981541,
+  981580
  ]
 }
