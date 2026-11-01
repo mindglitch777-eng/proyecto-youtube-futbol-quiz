@@ -10,6 +10,11 @@ on:
     - cron: "37 15 * * 0"
     - cron: "41 19 * * 0"
   workflow_dispatch:
+    inputs:
+      solo_produccion:
+        description: "Rehacer solo los videos del plan actual (sin radar, análisis ni plan nuevo)"
+        type: boolean
+        default: false
   push:
     paths: [pipeline/lanzar.txt]
 
@@ -57,14 +62,19 @@ jobs:
           curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
           curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
       - name: 1 · Radar de virales
+        if: ${{ !inputs.solo_produccion }}
         run: cd pipeline && python e1_radar.py
       - name: 2 · Análisis con Gemini (+ grabaciones)
+        if: ${{ !inputs.solo_produccion }}
         run: cd pipeline && python e2_analisis.py
       - name: 3 · Nuestro rendimiento
+        if: ${{ !inputs.solo_produccion }}
         run: cd pipeline && python e3_rendimiento.py
       - name: 4 · Plan de la semana
+        if: ${{ !inputs.solo_produccion }}
         run: cd pipeline && python e4_plan.py
       - name: Guardar avance
+        if: ${{ !inputs.solo_produccion }}
         run: bash pipeline/guardar_avance.sh "Fábrica - radar, análisis y plan"
       - name: 5-6 · Producción + control
         run: cd pipeline && python e5_produccion.py

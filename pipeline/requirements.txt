@@ -1,5 +1,5 @@
 numpy
-opencv-contrib-python-headless
+opencv-contrib-python-headless==4.10.0.84
 pillow
 cairocffi
 requests

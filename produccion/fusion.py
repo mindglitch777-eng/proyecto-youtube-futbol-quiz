@@ -36,7 +36,7 @@ def puntos(img, caja=None):
             raise ValueError("no encontré cara")
         cara = max(caras, key=lambda c: c[2] * c[3])
     ok, lm = _facemark().fit(gris, np.array([cara]))
-    return lm[0][0].astype(np.float32)
+    return np.asarray(lm[0], np.float32).reshape(-1, 2)[:68]
 
 
 def alinear(path, espejar=False, cara=None):

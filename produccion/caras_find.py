@@ -36,7 +36,7 @@ def base(clave, zoom=1.45):
     k = LADO / s
     rect = np.array([[(x - cx + s / 2) * k, (y - cy + s / 2) * k, fw * k, fh * k]], np.int32)
     ok, pts = _lbf.fit(crop, rect)
-    return crop, pts[0][0].astype(np.float32)
+    return crop, np.asarray(pts[0], np.float32).reshape(-1, 2)[:68]          # mismo formato en cualquier versión de OpenCV
 
 
 # ------------------------------------------------------------------ deformaciones geométricas

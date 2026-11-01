@@ -26,7 +26,7 @@ def landmarks(img):
     _, f = CF._det.detect(img)
     x, y, fw, fh = max(f, key=lambda c: c[2] * c[3])[:4]
     ok, pts = CF._lbf.fit(img, np.array([[[x, y, fw, fh]]], np.int32))
-    return pts[0][0]
+    return np.asarray(pts[0], np.float32).reshape(-1, 2)[:68]
 
 
 @lru_cache(maxsize=32)
