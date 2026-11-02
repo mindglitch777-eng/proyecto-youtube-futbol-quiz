@@ -2,7 +2,7 @@ name: Buscar recortes PNG de jugadores (internet)
 
 on:
   push:
-    paths: [pipeline/pedido_recortes.json, pipeline/buscar_recortes.py, pipeline/buscar_fondos.py]
+    paths: [pipeline/pedido_recortes.json, pipeline/buscar_recortes.py, pipeline/buscar_fondos.py, pipeline/pedido_extras.json, pipeline/buscar_extras.py]
   workflow_dispatch:
 
 permissions:
@@ -19,6 +19,7 @@ jobs:
       - run: pip install -q ddgs requests pillow numpy opencv-contrib-python-headless==4.10.0.84
       - run: curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
       - run: '[ -n "$(ls produccion/assets/fondos/estadio_*.jpg 2>/dev/null)" ] || python pipeline/buscar_fondos.py'
+      - run: python pipeline/buscar_extras.py
       - run: python pipeline/buscar_recortes.py
       - name: Guardar
         if: always()
