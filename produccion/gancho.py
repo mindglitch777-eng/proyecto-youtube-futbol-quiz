@@ -44,7 +44,10 @@ FIJADO = {"stop": "How many tries did it take you? 😤 I read them all 👇",
           "plinko": "Who did you pick? 👀 I read them all 👇",
           "cabeza": "Did you get it before it landed? 👀 I read them all 👇",
           "dress": "How many did you stop on time? 😂 I read them all 👇",
-          "torre": "Did you guess it before the colors? 👀 I read them all 👇"}
+          "torre": "Did you guess it before the colors? 👀 I read them all 👇",
+          "siuu": "What number did you stop on? Be honest 😤 I read them all 👇",
+          "penal": "Did you hit the top corner? ⚽ How many tries? I read them all 👇",
+          "balon": "Did you give him the Ballon d'Or? 🏆 How many tries? I read them all 👇"}
 
 
 def elegir(tipo, semilla, nombre="", dificil=False):

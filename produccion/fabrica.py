@@ -229,6 +229,44 @@ def guion_rueda(gid, rng, V, fecha):
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(2, 6), otros=otros)
 
 
+# Formatos nuevos con la mecánica STOP (ideas de la IA de YouTube Studio, 02/11)
+TIT_SIUU = ["Pause Ronaldo at 67 😱 SIUUU challenge", "Only 1% stop CR7 at 67 🛑 SIUUU", "Stop at 67 = SIUUU 🔥 Can you do it?",
+            "SIUUU at 67 🛑 Pause it at the top!"]
+TIT_PENAL = ["Can {n} score at 100%? ⚽🛑 Stop it in the top corner", "Stop the penalty at 100% ⚽ {n} edition",
+             "{n} penalty challenge 🛑 Only 1% hit the top corner"]
+TIT_BALON = ["Freeze the Ballon d'Or in {n}'s hands 🏆 Stop at 100%", "Give {n} the Ballon d'Or 🏆🛑 Only 1% can",
+             "Stop the Ballon d'Or at 100% 🏆 {n} edition"]
+
+
+def extra_mejor(prefijo, defecto):
+    """El primer recorte aprobado de assets/recortes/extras (aprobados.json), o el de respaldo."""
+    ap = ROOT / "assets" / "recortes" / "extras" / "aprobados.json"
+    lista = json.loads(ap.read_text()).get(prefijo, []) if ap.exists() else []
+    return lista, defecto
+
+
+def guion_siuu(gid, rng, V, fecha):
+    lista, defecto = extra_mejor("siuu", "cuerpos/cristiano_ronaldo_11")
+    img = rng.choice(["extras/" + x for x in lista] or [defecto])
+    return dict(id=gid, imagen=img, dur=6.0, ciclo=round(rng.uniform(1.3, 1.6), 2), musica=V.musica(rng), desfase=round(rng.uniform(0.15, 0.3), 2))
+
+
+def guion_penal(gid, rng, V, fecha):
+    estrellas = [(nombre_de(c), c) for c in SUPERESTRELLAS if c in FOTOS]
+    hechos = V.grupos.setdefault("penal", set())
+    n, c = min(estrellas, key=lambda e: (sum(1 for x in hechos if x[0] == e[1]), rng.random()))
+    hechos.add((c, str(len(hechos))))
+    lista, _ = extra_mejor("arquero", None)
+    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=3, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"))
+
+
+def guion_balon(gid, rng, V, fecha):
+    cuerpo = rng.choice(sorted(CUERPOS_RUEDA))
+    lista, _ = extra_mejor("balon_oro", None)
+    return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], trofeo=(rng.choice(lista) if lista else "balon_oro_0"),
+                dur=6.0, vueltas=3, musica=V.musica(rng))
+
+
 def guion_plinko(gid, rng, V, fecha):
     grupo = con_estrella(V.grupo("plinko", 4, rng, JUGADORES, fecha), rng)
     return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], semilla=V.semilla(rng) * 5000,
@@ -341,6 +379,18 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo in ("siuu", "penal", "balon"):
+            g = {"siuu": guion_siuu, "penal": guion_penal, "balon": guion_balon}[tipo](gid, rng, V, sl["fecha"])
+            n = g.get("nombre", "Ronaldo")
+            plant = {"siuu": TIT_SIUU, "penal": TIT_PENAL, "balon": TIT_BALON}[tipo]
+            titulo = V.titulo(tipo, plant, rng).format(n=n)
+            etiquetas_ = {"siuu": "#ronaldo #cr7 #siuu", "penal": f"{tag(n)} #penalty", "balon": f"{tag(n)} #ballondor"}[tipo]
+            if len(titulo) + len(etiquetas_) + 1 <= 100:
+                titulo += " " + etiquetas_
+            meta = {"siuu": "Pause it EXACTLY at 67 🛑 (Ronaldo at the top = SIUUU)", "penal": "Pause when the target is in the top corner (100%) ⚽",
+                    "balon": f"Pause when the Ballon d'Or fits in {n}'s hands (100%) 🏆"}[tipo]
+            desc = f"{meta}\nComment your number 👇 Follow for part 2 🔥\n{etiquetas_} #football #soccer #stopchallenge #shorts"
+            fijado = ""; fotos = [FOTOS[g["pateador"]]] if tipo == "penal" and g.get("pateador") in FOTOS else []; nombres = [n]
         elif tipo == "find":
             g = guion_find(gid, rng, usados, V)
             titulo = "FIND " + " ".join(r["nombre"].upper() for r in g["rondas"])
