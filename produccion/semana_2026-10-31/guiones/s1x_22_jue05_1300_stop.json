@@ -1,0 +1,60 @@
+{
+ "id": "s1x_22_jue05_1300_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "verde",
+   "pct": "1%",
+   "forma": "rombo",
+   "rasgo": "ojo_izq",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 0.88,
+   "tam": 68
+  },
+  {
+   "nombre": "Haaland",
+   "foto": "erling_haaland_0",
+   "color": "azul",
+   "pct": "8%",
+   "forma": "triangulo",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 5.71,
+   "tam": 60
+  },
+  {
+   "nombre": "Henry",
+   "foto": "thierry_henry_0",
+   "color": "violeta",
+   "pct": "34%",
+   "forma": "estrella",
+   "rasgo": "ojo_der",
+   "vueltas": 3,
+   "giros": 2,
+   "encaje_bueno": 1,
+   "fase": 5.56,
+   "tam": 64
+  },
+  {
+   "nombre": "Ronaldinho",
+   "foto": "ronaldinho_1",
+   "color": "amarillo",
+   "pct": "67%",
+   "forma": "estrella",
+   "rasgo": "nariz",
+   "vueltas": 2,
+   "giros": 2,
+   "encaje_bueno": 0,
+   "fase": 0.28,
+   "tam": 60
+  }
+ ]
+}

@@ -1,0 +1,60 @@
+{
+ "id": "s1x_23_jue05_1700_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Zlatan",
+   "foto": "zlatan_ibrahimovi_2",
+   "color": "azul",
+   "pct": "1%",
+   "forma": "triangulo",
+   "rasgo": "ojo_der",
+   "vueltas": 5,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 4.47,
+   "tam": 60
+  },
+  {
+   "nombre": "Ronaldo",
+   "foto": "cristiano_ronaldo_0",
+   "color": "rojo",
+   "pct": "28%",
+   "forma": "rombo",
+   "rasgo": "ojo_der",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 0,
+   "fase": 4.97,
+   "tam": 68
+  },
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "violeta",
+   "pct": "59%",
+   "forma": "corazon",
+   "rasgo": "ojo_izq",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 3,
+   "fase": 4.55,
+   "tam": 64
+  },
+  {
+   "nombre": "Kane",
+   "foto": "harry_kane_1",
+   "color": "amarillo",
+   "pct": "88%",
+   "forma": "triangulo",
+   "rasgo": "ojo_der",
+   "vueltas": 4,
+   "giros": 2,
+   "encaje_bueno": 2,
+   "fase": 0.9,
+   "tam": 64
+  }
+ ]
+}

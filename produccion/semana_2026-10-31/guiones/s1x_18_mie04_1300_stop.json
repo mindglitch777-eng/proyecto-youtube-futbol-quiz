@@ -1,0 +1,60 @@
+{
+ "id": "s1x_18_mie04_1300_stop",
+ "duracion": 6.0,
+ "hiper": true,
+ "musica": "67",
+ "cuadrantes": [
+  {
+   "nombre": "Messi",
+   "foto": "lionel_messi_4",
+   "color": "azul",
+   "pct": "2%",
+   "forma": "estrella",
+   "rasgo": "nariz",
+   "vueltas": 4,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 5.74,
+   "tam": 68
+  },
+  {
+   "nombre": "Salah",
+   "foto": "mohamed_salah_0",
+   "color": "verde",
+   "pct": "7%",
+   "forma": "triangulo",
+   "rasgo": "nariz",
+   "vueltas": 3,
+   "giros": 1,
+   "encaje_bueno": 1,
+   "fase": 4.63,
+   "tam": 64
+  },
+  {
+   "nombre": "Zidane",
+   "foto": "zinedine_zidane_7",
+   "color": "violeta",
+   "pct": "61%",
+   "forma": "corazon",
+   "rasgo": "ojo_der",
+   "vueltas": 3,
+   "giros": 2,
+   "encaje_bueno": 3,
+   "fase": 4.18,
+   "tam": 68
+  },
+  {
+   "nombre": "Bellingham",
+   "foto": "jude_bellingham_1",
+   "color": "rojo",
+   "pct": "88%",
+   "forma": "triangulo",
+   "rasgo": "ojo_izq",
+   "vueltas": 2,
+   "giros": 2,
+   "encaje_bueno": 2,
+   "fase": 1.49,
+   "tam": 60
+  }
+ ]
+}
