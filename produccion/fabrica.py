@@ -118,6 +118,24 @@ def con_estrella(grupo, rng, pool=None):
     return grupo
 
 
+# Fórmula de título de STOP (datos de YouTube Studio: el más visto llevaba nombre de estrella + meta exacta "100";
+# el peor, un título genérico sin nombres). Siempre: marca + superestrella + meta numérica + hashtags de los jugadores.
+TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Can you stop {a} at 100%?",
+                    "Football Stop Challenge ⚽🛑 Only 1% can stop {a} 6️⃣7️⃣",
+                    "Can you stop at 100%? ⚽🛑 {a} vs {b}",
+                    "Stop {a} at 100% ⚽🛑 Only 1% can do it"]
+
+
+def titulo_stop(V, rng, nombres, nivel=None):
+    base = (V.titulo("stop_formula", TIT_STOP_FORMULA, rng) if V else rng.choice(TIT_STOP_FORMULA)).format(a=nombres[0], b=nombres[1])
+    if nivel:
+        base += f" · Level {nivel}"
+    for n in nombres[:3]:                                                      # hashtags de jugadores (los del top los tenían)
+        if len(base) + len(tag(n)) + 1 <= 100:
+            base += " " + tag(n)
+    return base
+
+
 def nombre_de(clave):
     for n, c, _ in JUGADORES:
         if c == clave:
@@ -307,7 +325,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             fotos = [g["foto"]]; nombres = [g["nombre"]]
         else:
             g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True), V=V, fecha=sl["fecha"])
-            titulo = V.titulo("stop_serie", TIT_STOP_SERIE, rng).format(n=g["nivel"], tema=TEMA_TITULO.get(g["tema_base"], g["tema_base"].title()))
+            titulo = titulo_stop(V, rng, [q["nombre"] for q in g["cuadrantes"]], g["nivel"])
             desc = (f"Level {g['nivel']} 🛑 It only fits ONCE per loop. Pause at 100%!\nWhich one did you stop? Comment 1, 2, 3 or 4 👇\n"
                     f"Follow for Level {g['nivel'] + 1} 🔥\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"]) + " #stopchallenge #football #shorts")
             q0 = g["cuadrantes"][0]
