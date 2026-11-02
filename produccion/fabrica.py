@@ -164,7 +164,8 @@ def guion_stop(gid, rng, usados, dificil, V=None, fecha=None):
         cuads.append(dict(nombre=n, foto=FOTOS[clave], color=colores[k], pct=pcts[k], forma=formas[k], rasgo=rng.choice(RASGOS),
                           vueltas=vueltas[k], giros=giros[k], encaje_bueno=rng.randint(0, 3), fase=round(rng.uniform(0, 6.28), 2),
                           tam=rng.choice([60, 64, 68])))
-    g = dict(id=gid, duracion=5.0 if (nivel and nivel % 3 == 0) else 6.0, hiper=True, musica="67", cuadrantes=cuads)
+    g = dict(id=gid, duracion=5.0 if (nivel and nivel % 3 == 0) else 6.0, hiper=True, musica="67", cuadrantes=cuads,
+             arranque=rng.choice(["estrella", "grilla"]))                    # prueba A/B: arranque tipo FIND (zoom a la estrella) vs. grilla
     if nivel:
         g.update(tema=(tema + " · HARD") if nivel % 3 == 0 else tema, nivel=nivel, pregunta="WHICH ONE DID YOU STOP? 1-4", tema_base=tema)
     return g
@@ -342,7 +343,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             f"=== COMENTARIO PARA FIJAR ===\n{fijado}\n\n=== AL SUBIR ===\n- Idioma del video: Inglés. Solo hashtags en inglés.\n")
         manifiesto.append(dict(id=gid, n=n, fecha=dia.isoformat(), hora=hora, tipo=tipo, formato=FORMATO[tipo], titulo=titulo,
                                descripcion=desc_completa, fijado=fijado, jugadores=nombres,
-                               tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4"))
+                               tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4",
+                               **({"variante": g["arranque"]} if g.get("arranque") else {})))
         trabajos.append((tipo, ruta))
         filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
     errores = []

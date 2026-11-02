@@ -549,7 +549,8 @@
    "henry"
   ],
   "archivo": "s1x_20_mie04_2100_stop.mp4",
-  "control": "PASA"
+  "control": "PASA",
+  "variante": "estrella"
  },
  {
   "id": "s1_21_jue05_0900_stop",
@@ -578,7 +579,8 @@
    "ronaldinho",
    "messi",
    "neymar"
-  ]
+  ],
+  "variante": "grilla"
  },
  {
   "id": "s1x_22_jue05_1300_stop",
@@ -606,7 +608,8 @@
    "bellingham"
   ],
   "archivo": "s1x_22_jue05_1300_stop.mp4",
-  "control": "PASA"
+  "control": "PASA",
+  "variante": "estrella"
  },
  {
   "id": "s1x_23_jue05_1700_stop",
@@ -634,7 +637,8 @@
    "kane"
   ],
   "archivo": "s1x_23_jue05_1700_stop.mp4",
-  "control": "PASA"
+  "control": "PASA",
+  "variante": "grilla"
  },
  {
   "id": "s1_24_jue05_2100_stop",
@@ -663,7 +667,8 @@
    "ronaldinho",
    "bellingham",
    "zlatan"
-  ]
+  ],
+  "variante": "estrella"
  },
  {
   "id": "s1_25_vie06_0900_stop",
@@ -692,7 +697,8 @@
    "vinícius",
    "neymar",
    "yamal"
-  ]
+  ],
+  "variante": "grilla"
  },
  {
   "id": "s1x_26_vie06_1300_stop",
@@ -720,7 +726,8 @@
    "yamal"
   ],
   "archivo": "s1x_26_vie06_1300_stop.mp4",
-  "control": "PASA"
+  "control": "PASA",
+  "variante": "estrella"
  },
  {
   "id": "s1x_27_vie06_1700_stop",
@@ -748,7 +755,8 @@
    "salah"
   ],
   "archivo": "s1x_27_vie06_1700_stop.mp4",
-  "control": "PASA"
+  "control": "PASA",
+  "variante": "grilla"
  },
  {
   "id": "s1x_28_vie06_2100_stop",
@@ -776,6 +784,7 @@
    "ronaldinho"
   ],
   "archivo": "s1x_28_vie06_2100_stop.mp4",
-  "control": "PASA"
+  "control": "PASA",
+  "variante": "estrella"
  }
 ]

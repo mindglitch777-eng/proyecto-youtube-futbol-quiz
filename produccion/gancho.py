@@ -72,16 +72,24 @@ def cartel(im, txt, cy, ancho_max=1000, tam=88, pop=1.0, fondo=(10, 10, 16, 215)
     return im
 
 
-def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88):
-    """Dibuja el texto que toca en el segundo t: gancho (0-1,5 s), apuesta (medio) o CTA (último 1,2 s)."""
-    if t < T_GANCHO:
+def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False):
+    """Dibuja el texto que toca en el segundo t: gancho (0-1,5 s), apuesta (medio) o CTA (último 1,2 s).
+    sin_fin=True (loops cortos): gancho → apuesta → CTA en el medio → el gancho vuelve 0,9 s antes de la costura,
+    así el final no se nota (los datos de Studio mostraban la caída justo cuando "terminaba" el reto)."""
+    if sin_fin:
+        cortes = [(0.0, "gancho"), (T_GANCHO, "apuesta"), (dur * 0.5, "cta"), (dur - 0.9, "gancho")]
+        t0, k = [c for c in cortes if t >= c[0]][-1]
+        txt = tx[k]
+        if k == "gancho" and t0 > 0:
+            t0 = -1.0                                                          # sin golpe: sigue igual del otro lado de la costura
+    elif t < T_GANCHO:
         txt, t0 = tx["gancho"], 0.0
     elif t >= dur - T_CTA:
         txt, t0 = tx["cta"], dur - T_CTA
     else:
         txt, t0 = tx["apuesta"], T_GANCHO
     e = t - t0
-    pop = 1.0 + 0.18 * math.exp(-e * 14) * (e > 0.0)                    # golpe chiquito al cambiar de texto
+    pop = 1.0 + 0.18 * math.exp(-e * 14) * (e > 0.0) * (t0 > 0)            # el golpe solo en los cambios del medio                    # golpe chiquito al cambiar de texto
     col = (255, 255, 255) if txt == tx["cta"] else (255, 230, 40)
     return cartel(im, txt, cy, ancho_max, tam, pop, color=col)
 

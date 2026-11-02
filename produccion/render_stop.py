@@ -386,6 +386,25 @@ def audio(cuads, dur):
     return np.tanh(x * 1.2) * 0.9
 
 
+T_ZOOM = 0.55        # arranque "estrella": el cuadrante de la superestrella a pantalla completa y se abre a la grilla
+
+
+def nivel_zoom(t, dur):
+    """0 = grilla normal; 1 = cuadrante 1 a pantalla completa. Vale 1 en la costura del loop (cuadro 0 y último)."""
+    u = min(t, dur - t)
+    k = max(0.0, 1.0 - u / T_ZOOM)
+    return k * k * (3 - 2 * k)
+
+
+def zoom(im, s):
+    if s <= 0.001:
+        return im
+    z = 1 + s; cx, cy = W / 2 + (QW / 2 - W / 2) * s, H / 2 + (QH / 2 - H / 2) * s
+    w, h = W / z, H / z
+    x0 = min(max(0, cx - w / 2), W - w); y0 = min(max(0, cy - h / 2), H - h)
+    return im.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + w, y0 + h))
+
+
 def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
@@ -397,18 +416,29 @@ def main(guion):
     cuads = armar(g); fnd = fondo(cuads)
     import gancho as G
     tx = g.get("textos") or G.elegir("stop", g["id"], dificil=" HARD" in (g.get("tema") or "") or dur <= 5.0)
+    estrella = g.get("arranque") == "estrella"
+    if estrella:                                                              # el gancho nombra a la estrella que se ve (como FIND)
+        tx = dict(tx, gancho=f"STOP {cuads[0]['q']['nombre'].upper()} AT 100%")
+    c0 = cuads[0]; t_costura = 0.45                                          # la estrella encaja a los 0,45 s: la costura del loop cae en plena tensión (a punto de encajar)
+    c0["fase"] = (math.pi - 2 * math.pi * c0["vueltas"] * t_costura / dur) % (2 * math.pi)
     for c in cuads:
         pasadas = encajes(c, dur)
-        c["t_giro"] = pasadas[c["q"].get("encaje_bueno", 0) % len(pasadas)] if pasadas else 0.0
+        bueno = c["q"].get("encaje_bueno", 0) % len(pasadas) if pasadas else 0
+        if c is c0 and pasadas:
+            bueno = min(range(len(pasadas)), key=lambda j: min(abs(pasadas[j] - t_costura), dur - abs(pasadas[j] - t_costura)))
+        c["t_giro"] = pasadas[bueno] if pasadas else 0.0
         c["encajes"] = [te for te in pasadas if derecha(c, te, dur)]
         c["casi"] = [te for te in pasadas if not derecha(c, te, dur)]
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
     for f in range(int(round(dur * FPS))):
-        im = G.capa(cartel(cuadro(fnd, cuads, f / FPS, dur), f / FPS), f / FPS, dur, tx, H // 2)
+        t = f / FPS
+        s = nivel_zoom(t, dur) if estrella else 0.0
+        base = zoom(cuadro(fnd, cuads, t, dur), s)
+        im = G.capa(cartel(base, t), t, dur, tx, int(H // 2 + s * 800), sin_fin=True)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
-        if f in (0, 45):
+        if f in (0, 9, 45, int(dur * FPS) - 4):
             im.save(out / f"muestra_{f:03d}.jpg", quality=85)
     p.stdin.close(); p.wait()
     pit = G.silbato(M.SR)                                                     # pitazo en el segundo 0

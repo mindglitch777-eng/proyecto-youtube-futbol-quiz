@@ -58,6 +58,8 @@ def main():
     for v in por_video:
         vid = v["video"]
         v["tipo"] = (tipos.get(vid) or {}).get("tipo") or (rend.get(vid) or {}).get("tipo") or "otros"
+        if (tipos.get(vid) or {}).get("variante"):                             # pruebas A/B: se comparan por separado (ej. stop/estrella vs stop/grilla)
+            v["tipo"] += "/" + tipos[vid]["variante"]
         v["titulo"] = (rend.get(vid) or {}).get("titulo", "")
         v["subs_cada_1000"] = round(1000 * v["subscribersGained"] / v["views"], 2) if v["views"] else 0
 
