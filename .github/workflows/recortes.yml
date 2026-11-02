@@ -1,0 +1,29 @@
+name: Buscar recortes PNG de jugadores (internet)
+
+on:
+  push:
+    paths: [pipeline/pedido_recortes.json, pipeline/buscar_recortes.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  recortes:
+    runs-on: ubuntu-latest
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q ddgs requests pillow numpy opencv-contrib-python-headless==4.10.0.84
+      - run: curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+      - run: python pipeline/buscar_recortes.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add produccion/assets/recortes
+          git commit -m "Recortes PNG de jugadores (internet)" || echo "nada nuevo"
+          for i in 1 2 3 4; do git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
