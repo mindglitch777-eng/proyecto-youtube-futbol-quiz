@@ -178,5 +178,25 @@
   "video_id": "pJj39920AVE",
   "error": null,
   "subido": "2026-11-02T19:17:34+00:00"
+ },
+ {
+  "id": "s1x_19_mie04_1700_stop",
+  "tipo": "stop",
+  "fecha": "2026-11-04",
+  "hora": "17:00",
+  "titulo": "Football Stop Challenge ⚽🛑 Pause at the perfect moment",
+  "video_id": "DnIwUK895mc",
+  "error": null,
+  "subido": "2026-11-02T19:38:02+00:00"
+ },
+ {
+  "id": "s1x_20_mie04_2100_stop",
+  "tipo": "stop",
+  "fecha": "2026-11-04",
+  "hora": "21:00",
+  "titulo": "Stop it at 100% 🛑 Football edition ⚽",
+  "video_id": null,
+  "error": "400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n ",
+  "subido": "2026-11-02T19:38:03+00:00"
  }
 ]
