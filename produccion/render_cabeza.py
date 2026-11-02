@@ -175,11 +175,13 @@ def main(guion):
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
+    import gancho as G
+    tx = G.textos_de(g, "cabeza", g.get("nombre", ""), con_gancho=False)
     for f in range(int(round(dur * FPS))):
-        p.stdin.write(np.asarray(cuadro(g, A, f / FPS, dur), np.uint8).tobytes())
+        p.stdin.write(np.asarray(G.capa(cuadro(g, A, f / FPS, dur), f / FPS, dur, tx, 1740), np.uint8).tobytes())
     p.stdin.close(); p.wait()
     con, solo = audio(A, dur)
-    M.mezclar(out, mudo, {"short.mp4": con, "short_solo_efectos.mp4": solo})
+    M.mezclar(out, mudo, G.con_pito({"short.mp4": con, "short_solo_efectos.mp4": solo}))
     print(out / "short.mp4", dur, "s")
 
 

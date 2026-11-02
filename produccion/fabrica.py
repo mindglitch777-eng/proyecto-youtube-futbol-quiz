@@ -287,6 +287,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             q0 = g["cuadrantes"][0]
             fijado = f"{q0['nombre']} {q0['pct']} only fits ONE time... did you get it? 😤"
             fotos = [q["foto"] for q in g["cuadrantes"]]; nombres = [q["nombre"] for q in g["cuadrantes"]]
+        import gancho as G
+        fijado = G.FIJADO.get(tipo, fijado)                                    # comentario fijado que invita a responder (guía YouTube)
         ruta = sem / "guiones" / f"{gid}.json"
         ruta.write_text(json.dumps(g, ensure_ascii=False, indent=1))
         desc_completa = (f"{desc}\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n"

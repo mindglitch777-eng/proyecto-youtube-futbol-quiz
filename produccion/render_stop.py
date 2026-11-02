@@ -395,6 +395,8 @@ def main(guion):
     HIPER = bool(g.get("hiper"))
     DOPA = bool(g.get("dopamina")) or HIPER
     cuads = armar(g); fnd = fondo(cuads)
+    import gancho as G
+    tx = g.get("textos") or G.elegir("stop", g["id"], dificil=" HARD" in (g.get("tema") or "") or dur <= 5.0)
     for c in cuads:
         pasadas = encajes(c, dur)
         c["t_giro"] = pasadas[c["q"].get("encaje_bueno", 0) % len(pasadas)] if pasadas else 0.0
@@ -404,16 +406,19 @@ def main(guion):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
     for f in range(int(round(dur * FPS))):
-        im = cartel(cuadro(fnd, cuads, f / FPS, dur), f / FPS)
+        im = G.capa(cartel(cuadro(fnd, cuads, f / FPS, dur), f / FPS), f / FPS, dur, tx, H // 2)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
         if f in (0, 45):
             im.save(out / f"muestra_{f:03d}.jpg", quality=85)
     p.stdin.close(); p.wait()
+    pit = G.silbato(M.SR)                                                     # pitazo en el segundo 0
+    def con_pito(a):
+        a = a.copy(); a[:len(pit)] = np.tanh(a[:len(pit)] + pit); return a
     if g.get("musica") == "67":
         con, solo = audio_67(cuads, dur)
-        M.mezclar(out, mudo, {"short.mp4": con, "short_solo_efectos.mp4": solo})
+        M.mezclar(out, mudo, {"short.mp4": con_pito(con), "short_solo_efectos.mp4": con_pito(solo)})
     else:
-        M.mezclar(out, mudo, {"short.mp4": audio(cuads, dur)})
+        M.mezclar(out, mudo, {"short.mp4": con_pito(audio(cuads, dur))})
     print(out / "short.mp4", dur, "s")
 
 

@@ -286,15 +286,17 @@ def main(guion):
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "20", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
     nf = int(round(dur * FPS))
+    import gancho as G
+    tx = G.textos_de(g, "find", rondas[0]["nombre"], con_gancho=False)
     for f in range(nf):
         t = f / FPS
         k = max(i for i, R in enumerate(rondas) if t >= R["t0"])
-        im = cuadro(fnd, rondas[k], t, k)
+        im = G.capa(cuadro(fnd, rondas[k], t, k), t, dur, tx, 1790)
         p.stdin.write(np.asarray(im.convert("RGB"), np.uint8).tobytes())
         if f in (0, int(0.25 * FPS), int((rondas[0]["t_rev"] + 0.4) * FPS), int((rondas[2]["t0"] + 1.5) * FPS)):
             im.convert("RGB").save(out / f"muestra_{f:03d}.jpg", quality=85)
     p.stdin.close(); p.wait()
-    M.mezclar(out, mudo, audio(rondas, dur))
+    M.mezclar(out, mudo, G.con_pito(audio(rondas, dur)))
     json.dump(dict(duracion=dur, rondas=[dict(nombre=R["nombre"], real=R["real"] + 1, nivel=R["nivel"]) for R in rondas]),
               open(out / "resultado.json", "w"), indent=1)
     print(out / "short.mp4", round(dur, 2), "s", [R["real"] + 1 for R in rondas])

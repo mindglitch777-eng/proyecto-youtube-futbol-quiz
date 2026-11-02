@@ -134,7 +134,7 @@ def cuadro(g, A, t, enc):
         im.alpha_composite(rot, (int(px - rot.width / 2), int(py - rot.height / 2)))
     d = ImageDraw.Draw(im)
     num = int(((a0 - angulo(g, A, 0)) % 360) // paso) % n + 1
-    P.texto(d, (110, 150), f"{num}.", 160, (255, 255, 255), 13, (230, 30, 30))
+    P.texto(d, (110, 260), f"{num}.", 150, (255, 255, 255), 13, (230, 30, 30))
     for te in enc:
         e = t - te
         if -0.05 <= e < 0.55:
@@ -142,6 +142,8 @@ def cuadro(g, A, t, enc):
                 im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(55 * (1 - max(e, 0) / 0.15)))))
                 d = ImageDraw.Draw(im)
             P.texto(d, (W / 2, 1860), "PERFECT!", int(110 * min(1, (e + 0.05) / 0.1)) + 1, (255, 230, 40), 12)
+    import gancho as G
+    G.capa(im, t, g["dur"], A["textos"], 95, ancho_max=1000, tam=80)
     return im.convert("RGB")
 
 
@@ -156,6 +158,8 @@ def audio(g, A, enc, dur):
         add(k, M.golpe(0.05), 0.35); k += paso / vel
     for te in enc:
         add(te, M.ding(0.6), 0.6); add(te, M.boom(0.5), 0.4)
+    import gancho as G
+    add(0, G.silbato(sr), 1.0)                                                 # pitazo en el segundo 0
     mu = P.musica(g, dur)
     return np.tanh((mu * 0.75 + fx) * 1.1) * 0.9, np.tanh(fx * 1.1) * 0.85
 
@@ -164,6 +168,8 @@ def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
     A = armar(g); dur = g["dur"]; enc = encajes(g, A)
+    import gancho as G
+    A["textos"] = g.get("textos") or G.elegir("rueda", g["id"], g.get("nombre", ""))
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

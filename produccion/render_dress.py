@@ -181,15 +181,17 @@ def main(guion):
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
-    inicio = cuadro(g, A, 0.0, dur)
+    import gancho as G
+    tx = G.textos_de(g, "dress")
+    inicio = G.capa(cuadro(g, A, 0.0, dur), 0.0, dur, tx, 110)
     for f in range(int(round(dur * FPS))):
-        t = f / FPS; im = cuadro(g, A, t, dur)
+        t = f / FPS; im = G.capa(cuadro(g, A, t, dur), t, dur, tx, 110)
         if t > dur - 0.3:
             im = Image.blend(im, inicio, (t - (dur - 0.3)) / 0.3)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
     p.stdin.close(); p.wait()
     con, solo = audio(g, dur)
-    M.mezclar(out, mudo, {"short.mp4": con, "short_solo_efectos.mp4": solo})
+    M.mezclar(out, mudo, G.con_pito({"short.mp4": con, "short_solo_efectos.mp4": solo}))
     print(out / "short.mp4", round(dur, 2), "s")
 
 

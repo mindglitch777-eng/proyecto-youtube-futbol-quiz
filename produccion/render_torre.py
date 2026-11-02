@@ -132,13 +132,15 @@ def main(guion):
     esc = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                             "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
     inicio = None
+    import gancho as G
+    tx = G.textos_de(g, "torre", con_gancho=False)
     for f in range(int(round(DUR * FPS))):
         crudo = lee.stdout.read(W * H * 3)
         if len(crudo) < W * H * 3:
             break
         t = f / FPS
         base = Image.frombytes("RGB", (W, H), crudo).convert("RGBA"); base.alpha_composite(capa(g, t))
-        im = base.convert("RGB")
+        im = G.capa(base, t, DUR, tx, 1850).convert("RGB")
         if inicio is None:
             inicio = im
         if t > DUR - 0.35:
@@ -146,7 +148,7 @@ def main(guion):
         esc.stdin.write(np.asarray(im, np.uint8).tobytes())
     esc.stdin.close(); esc.wait(); lee.wait(); tres.unlink()
     con, solo = audio(g, DUR)
-    M.mezclar(out, mudo, {"short.mp4": con, "short_solo_efectos.mp4": solo})
+    M.mezclar(out, mudo, G.con_pito({"short.mp4": con, "short_solo_efectos.mp4": solo}))
     print(out / "short.mp4", DUR, "s")
 
 

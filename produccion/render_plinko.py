@@ -598,15 +598,17 @@ def main(guion):
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
-    inicio = cuadro(g, r, 0.0, dur, rl)
+    import gancho as G
+    tx = G.textos_de(g, "plinko", con_gancho=False)
+    inicio = G.capa(cuadro(g, r, 0.0, dur, rl), 0.0, dur, tx, 1800)
     for f in range(int(round(dur * FPS))):
-        t = f / FPS; im = cuadro(g, r, t, dur, rl)
+        t = f / FPS; im = G.capa(cuadro(g, r, t, dur, rl), t, dur, tx, 1800)
         if t > dur - 0.3:                                                      # loop: funde con el cuadro 0
             im = Image.blend(im, inicio, (t - (dur - 0.3)) / 0.3)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
     p.stdin.close(); p.wait()
     con, solo = audio(g, r, dur, rl)
-    M.mezclar(out, mudo, {"short.mp4": con, "short_solo_efectos.mp4": solo})
+    M.mezclar(out, mudo, G.con_pito({"short.mp4": con, "short_solo_efectos.mp4": solo}))
     (out / "resultado.json").write_text(json.dumps(dict(semilla=r["semilla"], ganador=g["jugadores"][r["ganador"]],
                                                          casilleros=r["casillero"], dur=dur), ensure_ascii=False))
     print(out / "short.mp4", round(dur, 2), "s")
