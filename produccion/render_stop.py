@@ -60,6 +60,33 @@ def texto(d, xy, s, tam, fill, stroke=10, sc=(255, 255, 255)):
     d.text(xy, s, font=ImageFont.truetype(F_TIT, tam), fill=fill, anchor="mm", stroke_width=stroke, stroke_fill=sc)
 
 
+ETIQUETAS = ["IMPOSSIBLE", "67%", "1%💀"]      # pedido del dueño: un IMPOSSIBLE en rojo, un 67 % y un 1 % con calavera
+
+
+def etiquetas(g):
+    """Reparte IMPOSSIBLE / 67% / 1%💀 / un % común entre los 4 cuadrantes (estable por id)."""
+    import random
+    r = random.Random(g["id"]); et = ETIQUETAS + [f"{r.randint(12, 49)}%"]; r.shuffle(et)
+    for q, e in zip(g["cuadrantes"], et):
+        q["pct"] = e
+
+
+def dibujar_pct(d, im, xy, pct, escala=1.0, salto=False):
+    """El porcentaje del cuadrante con su estilo: IMPOSSIBLE rojo, 67% dorado, 1% + calavera, el resto blanco."""
+    x, y = xy
+    if pct == "IMPOSSIBLE":
+        texto(d, (x, y), "IMPOSSIBLE", int(70 * escala), (235, 25, 25), 11, (255, 255, 255))
+    elif pct.endswith("💀"):
+        n = pct[:-1]; tam = int(118 * escala)
+        w = ImageFont.truetype(F_TIT, tam).getlength(n)
+        texto(d, (x - tam * 0.45, y), n, tam, (255, 230, 40) if salto else (255, 255, 255), 12, (20, 20, 30))
+        e = emoji("💀", int(tam * 0.95)); im.alpha_composite(e, (int(x - tam * 0.45 + w / 2 + 12), int(y - e.height / 2)))
+    elif pct == "67%":
+        texto(d, (x, y), "67%", int(118 * escala), (255, 200, 20), 12, (90, 30, 0))
+    else:
+        texto(d, (x, y), pct, int(118 * escala), (255, 230, 40) if salto else (255, 255, 255), 12, (20, 20, 30))
+
+
 def armar(g):
     cuads = []
     for k, q in enumerate(g["cuadrantes"]):
@@ -128,7 +155,9 @@ def fondo(cuads):
         ImageDraw.Draw(im).rounded_rectangle([x - 4, y - 4, x + LADO + 3, y + LADO + 3], 30, outline=(255, 255, 255), width=8)
         y_nom, y_pct = (c["y0"] + 730, c["y0"] + 100) if c["abajo"] else (c["y0"] + 62, c["y0"] + 735)
         texto(d, (c["x0"] + QW // 2, y_nom), c["q"]["nombre"].upper(), 50, (255, 255, 255), 8, (20, 20, 30))
-        texto(d, (c["x0"] + QW // 2, y_pct), c["q"]["pct"], 118, (255, 255, 255), 12, (20, 20, 30))
+        imr = im.convert("RGBA"); dr = ImageDraw.Draw(imr)
+        dibujar_pct(dr, imr, (c["x0"] + QW // 2, y_pct), c["q"]["pct"])
+        im.paste(imr.convert("RGB")); d = ImageDraw.Draw(im)
     d.line([(QW, 0), (QW, H)], fill=(20, 20, 30), width=10); d.line([(0, QH), (W, QH)], fill=(20, 20, 30), width=10)
     return im
 
@@ -240,7 +269,7 @@ def cuadro(fnd, cuads, t, dur):
             z = 0.6 + 0.5 * min(1, p / 0.25) - 0.1 * max(0, p - 0.25)
             texto(d, (c["x0"] + QW // 2, c["pos"][1] + LADO // 2 + 150), "PERFECT!", int(78 * z), (255, 230, 40), 10, (20, 20, 30))
             y_pct = c["y0"] + (100 if c["abajo"] else 735)                     # el % salta
-            texto(d, (c["x0"] + QW // 2, y_pct), c["q"]["pct"], int(118 * (1 + 0.35 * (1 - p))), (255, 230, 40), 12, (20, 20, 30))
+            dibujar_pct(d, im, (c["x0"] + QW // 2, y_pct), c["q"]["pct"], 1 + 0.35 * (1 - p), salto=True)
             if de < 0.1:
                 temblor = 9
             if HIPER:                                                         # emojis que vuelan desde el hueco
@@ -330,9 +359,7 @@ def audio_67(cuads, dur):
         for k in range(sub * (2 if b % 4 == 3 else 1)):
             add(t + k * negra / (sub * (2 if b % 4 == 3 else 1)), hat)
     musica = x.copy(); x[:] = 0
-    voces = ["doot_doot_0", "seis_siete_0", "seis_siete_2"]                  # una voz del meme por compás, en ciclo
-    for j in range(int(dur // 2)):
-        add(j * 2.0, RR.sfx(voces[j % len(voces)], vol=0.95))
+    add(dur * 0.5, RR.sfx("seis_siete_0", vol=0.9))                          # UNA sola voz "6 7" por video (antes 3: aturdía)
     musica += x; x[:] = 0
     efectos(cuads, dur, add)
     fx = x.copy()
@@ -396,13 +423,45 @@ def nivel_zoom(t, dur):
     return k * k * (3 - 2 * k)
 
 
+def caja_zoom(s):
+    z = 1 + s; cx, cy = W / 2 + (QW / 2 - W / 2) * s, H / 2 + (QH / 2 - H / 2) * s
+    w, h = W / z, H / z
+    return min(max(0, cx - w / 2), W - w), min(max(0, cy - h / 2), H - h), z
+
+
 def zoom(im, s):
     if s <= 0.001:
         return im
-    z = 1 + s; cx, cy = W / 2 + (QW / 2 - W / 2) * s, H / 2 + (QH / 2 - H / 2) * s
-    w, h = W / z, H / z
-    x0 = min(max(0, cx - w / 2), W - w); y0 = min(max(0, cy - h / 2), H - h)
-    return im.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + w, y0 + h))
+    x0, y0, z = caja_zoom(s)
+    return im.resize((W, H), Image.BICUBIC, box=(x0, y0, x0 + W / z, y0 + H / z))
+
+
+def foco(im, xy, r, k, t):
+    """Gancho visual: oscurece todo menos un círculo sobre el hueco de la estrella + aro amarillo + flecha que rebota."""
+    if k <= 0.01:
+        return im
+    x, y = xy
+    base = im.convert("RGBA")
+    m = Image.new("L", (W, H), int(150 * k)); ImageDraw.Draw(m).ellipse([x - r, y - r, x + r, y + r], fill=0)
+    m = m.filter(ImageFilter.GaussianBlur(10))
+    sombra = Image.new("RGBA", (W, H), (0, 0, 0, 255)); sombra.putalpha(m); base.alpha_composite(sombra)
+    d = ImageDraw.Draw(base)
+    a = int(255 * k)
+    d.ellipse([x - r, y - r, x + r, y + r], outline=(255, 225, 0, a), width=12)
+    b = 26 * abs(math.sin(t * 2 * math.pi * 2.2))                            # la flecha rebota hacia el hueco
+    ux, uy = -0.62, -0.78                                                      # viene de arriba a la izquierda... o derecha si no entra
+    if x + ux * (r + 260) < 40:
+        ux = -ux
+    px, py = x + ux * (r + 18 + b), y + uy * (r + 18 + b)                      # punta
+    L, A = 210, 62
+    nx, ny = -uy, ux
+    cola = (px + ux * L, py + uy * L)
+    cuerpo = [(px + ux * 90 + nx * 26, py + uy * 90 + ny * 26), (cola[0] + nx * 26, cola[1] + ny * 26),
+              (cola[0] - nx * 26, cola[1] - ny * 26), (px + ux * 90 - nx * 26, py + uy * 90 - ny * 26)]
+    punta = [(px, py), (px + ux * 100 + nx * A, py + uy * 100 + ny * A), (px + ux * 100 - nx * A, py + uy * 100 - ny * A)]
+    for poly in (cuerpo, punta):
+        d.polygon(poly, fill=(255, 225, 0, a), outline=(0, 0, 0, a), width=8)
+    return base.convert("RGB")
 
 
 def main(guion):
@@ -413,6 +472,8 @@ def main(guion):
     CARTEL = {k: g[k] for k in ("tema", "nivel", "pregunta") if g.get(k)}
     HIPER = bool(g.get("hiper"))
     DOPA = bool(g.get("dopamina")) or HIPER
+    if not g.get("pcts_originales"):
+        etiquetas(g)
     cuads = armar(g); fnd = fondo(cuads)
     import gancho as G
     tx = g.get("textos") or G.elegir("stop", g["id"], dificil=" HARD" in (g.get("tema") or "") or dur <= 5.0)
@@ -436,7 +497,16 @@ def main(guion):
         t = f / FPS
         s = nivel_zoom(t, dur) if estrella else 0.0
         base = zoom(cuadro(fnd, cuads, t, dur), s)
-        im = G.capa(cartel(base, t), t, dur, tx, int(H // 2 + s * 800), sin_fin=True)
+        if t < 1.5:                                                           # foco en el gancho del arranque…
+            k_foco = min(1.0, (1.5 - t) / 0.3)
+        elif t > dur - 0.9:                                                   # …y vuelve antes de la costura (loop sin final)
+            k_foco = min(1.0, (t - (dur - 0.9)) / 0.25)
+        else:
+            k_foco = 0.0
+        if k_foco:                                                            # foco + flecha sobre el hueco de la estrella (cuadrante 1)
+            hx, hy = c0["hueco"]; bx, by, z = caja_zoom(s)
+            base = foco(base, ((hx - bx) * z, (hy - by) * z), c0["r"] * z * 1.25, k_foco, t)
+        im = G.capa(cartel(base, t), t, dur, tx, int(H // 2 + s * 760), sin_fin=True)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
         if f in (0, 9, 45, int(dur * FPS) - 4):
             im.save(out / f"muestra_{f:03d}.jpg", quality=85)

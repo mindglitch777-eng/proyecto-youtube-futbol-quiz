@@ -20,11 +20,11 @@ FUENTE = ROOT / "assets" / "fuentes" / "ArchivoBlack-Regular.ttf"
 T_GANCHO, T_CTA = 1.5, 1.2
 
 TEXTOS = {
-    "stop": dict(gancho=["ONLY 1% STOP AT 100%", "CAN YOU STOP AT 100%?", "STOP IT AT 100%"],
+    "stop": dict(gancho=["STOP AT 100%", "ONLY 1% CAN", "STOP IT AT 100%"],
                  apuesta=["STOP AT 100% OR LOSE", "MISS IT = YOUR TEAM LOSES", "ONLY 3 TRIES"],
                  dificil=["IMPOSSIBLE LEVEL: 3 TRIES", "HARD MODE: ONLY 3 TRIES"],
                  cta=["COMMENT 1-4 · FOLLOW FOR PART 2"]),
-    "rueda": dict(gancho=["STOP IT ON {n}'S BODY", "FIND {n}'S REAL BODY", "ONLY 1% STOP IT ON {n}"],
+    "rueda": dict(gancho=["STOP ON {n}", "FIND {n}'S BODY", "STOP ON {n}'S BODY"],
                   apuesta=["PERFECT FIT OR YOU LOSE", "ONLY 3 TRIES", "STOP ON THE PERFECT ONE"],
                   cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
     "find": dict(gancho=["FIND THE REAL {n}", "ONLY 1% FIND THEM ALL"], apuesta=["3 ROUNDS · NO MISTAKES"],
@@ -72,6 +72,48 @@ def cartel(im, txt, cy, ancho_max=1000, tam=88, pop=1.0, fondo=(10, 10, 16, 215)
     return im
 
 
+@lru_cache(maxsize=8)
+def icono_stop(r):
+    """Cartel de tránsito STOP (octógono rojo con borde blanco): se entiende sin leer."""
+    from PIL import Image
+    im = Image.new("RGBA", (2 * r + 8, 2 * r + 8), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
+    c = r + 4
+    pts = lambda rr: [(c + rr * math.cos(math.radians(22.5 + 45 * k)), c + rr * math.sin(math.radians(22.5 + 45 * k))) for k in range(8)]
+    d.polygon(pts(r + 3), fill=(0, 0, 0)); d.polygon(pts(r), fill=(255, 255, 255)); d.polygon(pts(r * 0.86), fill=(225, 20, 30))
+    f = _fuente(int(r * 0.62)); d.text((c, c), "STOP", font=f, fill=(255, 255, 255), anchor="mm")
+    return im
+
+
+def cartel_gancho(im, txt, cy, pop=1.0):
+    """Gancho GRANDE (pedido: que se entienda en el menor tiempo posible): franja oscura de lado a lado,
+    cartel STOP rojo a la izquierda y 3-4 palabras enormes en amarillo con borde negro grueso, latiendo."""
+    from PIL import Image
+    W = im.width; alto = 230
+    base = im if im.mode == "RGBA" else im.convert("RGBA")
+    banda = Image.new("RGBA", (W, alto), (8, 8, 12, 225))
+    ImageDraw.Draw(banda).rectangle([0, 0, W, 7], fill=(255, 220, 0)); ImageDraw.Draw(banda).rectangle([0, alto - 8, W, alto], fill=(255, 220, 0))
+    base.alpha_composite(banda, (0, int(cy - alto / 2)))
+    ic = icono_stop(int(88 * pop)); base.alpha_composite(ic, (34, int(cy - ic.height / 2)))
+    d = ImageDraw.Draw(base)
+    x0 = 34 + ic.width + 22; ancho = W - x0 - 30
+    palabras = txt.split(); lineas = [txt]
+    tam = int(132 * pop)
+    while tam > 70 and _fuente(tam).getlength(txt) > ancho:
+        tam -= 3
+    if _fuente(tam).getlength(txt) > ancho and len(palabras) > 1:            # no entra: dos renglones grandes
+        m = (len(palabras) + 1) // 2; lineas = [" ".join(palabras[:m]), " ".join(palabras[m:])]
+        tam = int(96 * pop)
+        while tam > 50 and max(_fuente(tam).getlength(l) for l in lineas) > ancho:
+            tam -= 3
+    f = _fuente(tam); xc = x0 + ancho / 2
+    for i, l in enumerate(lineas):
+        y = cy + (i - (len(lineas) - 1) / 2) * tam * 1.02
+        d.text((xc, y), l, font=f, fill=(255, 225, 0), anchor="mm", stroke_width=max(6, tam // 11), stroke_fill=(0, 0, 0))
+    if base is not im:
+        im.paste(base.convert(im.mode))
+    return im
+
+
 def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False):
     """Dibuja el texto que toca en el segundo t: gancho (0-1,5 s), apuesta (medio) o CTA (último 1,2 s).
     sin_fin=True (loops cortos): gancho → apuesta → CTA en el medio → el gancho vuelve 0,9 s antes de la costura,
@@ -90,8 +132,10 @@ def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False):
         txt, t0 = tx["apuesta"], T_GANCHO
     e = t - t0
     pop = 1.0 + 0.18 * math.exp(-e * 14) * (e > 0.0) * (t0 > 0)            # el golpe solo en los cambios del medio                    # golpe chiquito al cambiar de texto
+    if txt == tx["gancho"]:
+        return cartel_gancho(im, txt, cy, 1.0 + 0.045 * math.sin(t * 2 * math.pi * 2.2))   # late a 2,2 Hz
     col = (255, 255, 255) if txt == tx["cta"] else (255, 230, 40)
-    return cartel(im, txt, cy, ancho_max, tam, pop, color=col)
+    return cartel(im, txt, cy, ancho_max, max(tam, 92), pop, color=col)
 
 
 def silbato(sr, dur=0.42):
