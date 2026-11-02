@@ -67,6 +67,9 @@ jobs:
       - name: Medir rendimiento del canal
         run: cd pipeline && python e3_rendimiento.py
         continue-on-error: true
+      - name: Analytics de cada video (retención, suscriptores, tráfico)
+        run: cd pipeline && python e3b_analytics.py
+        continue-on-error: true
       - name: Guardar avance
         if: always()
         run: bash pipeline/guardar_avance.sh "Publicación diaria"
