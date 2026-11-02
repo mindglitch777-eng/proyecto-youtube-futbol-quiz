@@ -34,7 +34,7 @@ def arco_img():
     f = EXT / "arco_1.png"
     if f.exists():
         im = Image.open(f).convert("RGBA")
-        return im.resize((GX1 - GX0 + 80, int((GX1 - GX0 + 80) * im.height / im.width)), Image.LANCZOS)
+        return im.resize((GX1 - GX0 + 80, GY1 - GY0 + 60), Image.LANCZOS)      # los palos coinciden con la zona de juego
     im = Image.new("RGBA", (GX1 - GX0 + 80, GY1 - GY0 + 60), (0, 0, 0, 0)); d = ImageDraw.Draw(im)
     for x in range(40, im.width - 40, 34):                                     # red
         d.line([(x, 40), (x, im.height)], fill=(255, 255, 255, 90), width=3)

@@ -204,7 +204,7 @@ def guion_cabeza(gid, rng, usados_cab, V=None):
 
 
 # WHEEL STOP: piernas de una superestrella (foto de cuerpo entero de frente) + rueda de 8 torsos. Solo recortes aprobados a ojo.
-CUERPOS_RUEDA = {"lionel_messi_3": "Messi", "lamine_yamal_10": "Yamal"}
+CUERPOS_RUEDA = {"lionel_messi_3": "Messi", "lamine_yamal_10": "Yamal", "kylian_mbapp_12": "Mbappé"}
 TORSOS_RUEDA = ["cristiano_ronaldo_0", "lionel_messi_0", "kylian_mbapp_0", "lamine_yamal_0", "neymar_2", "erling_haaland_1",
                 "vin_cius_j_nior_0", "vin_cius_j_nior_3", "jude_bellingham_0", "jude_bellingham_1", "mohamed_salah_0", "harry_kane_1",
                 "pedri_2", "ronaldinho_0", "phil_foden_0", "bukayo_saka_2", "cole_palmer_1", "raphinha_0", "lautaro_mart_nez_1"]

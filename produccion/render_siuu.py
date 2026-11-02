@@ -26,7 +26,7 @@ W, H, FPS = 1080, 1920, 30
 PICO = 67
 
 
-def jugador(ruta, alto=1050):
+def jugador(ruta, alto=900):
     im = Image.open(R.REC / f"{ruta}.png").convert("RGBA")
     s = alto / im.height
     return im.resize((int(im.width * s), alto), Image.LANCZOS)
@@ -63,7 +63,7 @@ def main(guion):
         sombra = Image.new("RGBA", (int(cr.width * (0.7 - 0.3 * h)), 60), (0, 0, 0, 0))
         ImageDraw.Draw(sombra).ellipse([0, 0, sombra.width - 1, 59], fill=(0, 0, 0, int(120 * (1 - 0.6 * h))))
         im.alpha_composite(sombra, (int(W / 2 - sombra.width / 2), 1800))
-        y = int(1830 - cr.height - h * 330)
+        y = int(1830 - cr.height - h * 230)
         giro = cr.rotate(0, expand=False)
         im.alpha_composite(giro, (int(W / 2 - cr.width / 2), y))
         d = ImageDraw.Draw(im)
@@ -85,7 +85,7 @@ def main(guion):
             if tras < 0.1:
                 im.alpha_composite(Image.new("RGBA", (W, H), (255, 205, 0, int(80 * (1 - tras / 0.1)))))
                 d = ImageDraw.Draw(im)
-            P.texto(d, (W / 2, 830), "SIUUU!", int(150 * min(1, 0.6 + tras * 4)), (255, 230, 40), 14)
+            P.texto(d, (W / 2, 1700), "SIUUU!", int(150 * min(1, 0.6 + tras * 4)), (255, 230, 40), 14)
         im = G.capa(im, t, dur, tx, 120, sin_fin=True)
         p.stdin.write(np.asarray(im.convert("RGB"), np.uint8).tobytes())
     p.stdin.close(); p.wait()
