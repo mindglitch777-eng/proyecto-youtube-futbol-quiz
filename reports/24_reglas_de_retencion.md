@@ -53,3 +53,13 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
 1. **Antes de subir:** `python3 produccion/control_retencion.py <video.mp4>` revisa las reglas medibles (1, 2, 3, 5, 9, 14, 17) y dice PASA / NO PASA y por qué. Un video que no pasa no se sube.
 2. **Revisión a mano** (lo que la máquina no mide): reglas 4, 6, 7, 8, 10, 11, 12, 15, 16, 18.
 3. **Ciclo:** después de cada subida se anota en `data/medicion/registro_subidas.csv` el "se quedó a mirar" de la primera hora. Con 10-15 videos más se recalibran los umbrales: lo que no se correlacione se saca y lo que sí, se ajusta.
+
+## Reglas fijas del canal (no se negocian)
+
+1. **Superestrella en el primer cuadro, siempre.** Todo video muestra en el cuadro 0 a Cristiano Ronaldo, Messi, Mbappé, Yamal o Neymar,
+   en el lugar más visible del formato: STOP = cuadrante 1; FIND = ronda 1; CABEZA = la cabeza a encontrar; PLINKO/HOYO/TORRE/DRESS =
+   primer jugador; LOOK = protagonista; WHEEL = el torso que está abajo, sobre las piernas. Objetivo: que el ~50% que hoy desliza se quede
+   (la cara conocida frena el scroll en <0,4 s). Código: `SUPERESTRELLAS` y `con_estrella()` en `produccion/fabrica.py`,
+   `estrella_al_frente()` en `produccion/render_rueda.py`.
+2. **Guía de YouTube por formato** (`produccion/gancho.py`): gancho grande 0-1,5 s, apuesta durante el reto, CTA en el último 1,2 s sin cortar
+   el loop, pitazo en el segundo 0 y comentario fijado que invita a responder.

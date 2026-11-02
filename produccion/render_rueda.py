@@ -106,6 +106,21 @@ def angulo(g, A, t):
     return base + vel * t
 
 
+ESTRELLAS = ("cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar")
+
+
+def estrella_al_frente(g, A):
+    """REGLA: en el primer cuadro, el torso que queda abajo (centrado, sobre las piernas) es de una superestrella."""
+    n = len(A["piezas"]); paso = 360 / n
+    k0 = int(round((90 - angulo(g, A, 0)) / paso)) % n
+    if k0 == A["correcto"]:
+        return
+    nombres = list(g["torsos"]); nombres.insert(A["correcto"], g["cuerpo"])
+    est = [k for k, nm in enumerate(nombres) if k != A["correcto"] and nm.rsplit("_", 1)[0] in ESTRELLAS]
+    if est and k0 not in est:
+        k = est[0]; A["piezas"][k0], A["piezas"][k] = A["piezas"][k], A["piezas"][k0]
+
+
 def encajes(g, A):
     n = len(A["piezas"]); paso = 360 / n; out = []
     for f in range(int(round(g["dur"] * FPS))):
@@ -167,7 +182,7 @@ def audio(g, A, enc, dur):
 def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
-    A = armar(g); dur = g["dur"]; enc = encajes(g, A)
+    A = armar(g); estrella_al_frente(g, A); dur = g["dur"]; enc = encajes(g, A)
     import gancho as G
     A["textos"] = g.get("textos") or G.elegir("rueda", g["id"], g.get("nombre", ""))
     mudo = out / "mudo.mp4"

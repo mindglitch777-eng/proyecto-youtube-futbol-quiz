@@ -95,6 +95,29 @@ TIT_STOP_SERIE = ["Football Stop Challenge #{n} ⚽🛑 {tema} edition", "Stop a
                   "Football Stop Challenge Level {n} 🛑 {tema} — only 1% can stop it", "Can you stop at 100%? ⚽🛑 #{n} {tema}"]
 
 
+# REGLA PARA SIEMPRE (pedido del dueño del canal): en el primer cuadro de TODOS los videos aparece una superestrella
+# (la cara más conocida frena el scroll: el 49% que hoy desliza decide en <0,4 s). Va en el lugar más visible de cada formato.
+SUPERESTRELLAS = ["cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar"]
+_uso_estrellas = {}
+
+
+def con_estrella(grupo, rng, pool=None):
+    """Devuelve el grupo con una superestrella en el lugar 0. Si no hay ninguna, entra la menos usada (reemplaza al último)."""
+    grupo = list(grupo)
+    idx = [i for i, (_, c, _) in enumerate(grupo) if c in SUPERESTRELLAS]
+    if idx:
+        i = idx[0]
+    else:
+        cand = [j for j in (pool or JUGADORES) if j[1] in SUPERESTRELLAS and j[1] not in {c for _, c, _ in grupo}]
+        cand = cand or [j for j in JUGADORES if j[1] in SUPERESTRELLAS and j[1] not in {c for _, c, _ in grupo}]
+        minimo = min(_uso_estrellas.get(j[1], 0) for j in cand)
+        grupo[-1] = rng.choice([j for j in cand if _uso_estrellas.get(j[1], 0) == minimo])
+        i = len(grupo) - 1
+    grupo.insert(0, grupo.pop(i))
+    _uso_estrellas[grupo[0][1]] = _uso_estrellas.get(grupo[0][1], 0) + 1
+    return grupo
+
+
 def nombre_de(clave):
     for n, c, _ in JUGADORES:
         if c == clave:
@@ -113,6 +136,7 @@ def guion_stop(gid, rng, usados, dificil, V=None, fecha=None):
         dificil = nivel % 3 == 0
     else:
         grupo = elegir(rng, 4, usados)
+    grupo = con_estrella(grupo, rng)                                           # cuadrante 1 (arriba a la izquierda) = superestrella
     pcts = [f"{rng.choice([1, 1, 2, 3])}%", f"{rng.randint(5, 29)}%", f"{rng.randint(33, 61)}%", f"{rng.choice([67, 67, 69, 88, 99])}%"]
     vueltas = ([6, 5, 5, 6] if nivel and nivel % 3 == 0 else [5, 4, 3, 4]) if dificil else [4, 3, 3, 2]
     giros = ([2, 2, 1, 2] if nivel and nivel % 3 == 0 else [1, 1, 1, 2]) if dificil else [1, 1, 2, 2]
@@ -131,7 +155,7 @@ def guion_stop(gid, rng, usados, dificil, V=None, fecha=None):
 def guion_look(gid, rng, usados_look, V=None):
     hechos = V.grupos.setdefault("look", set()) if V else set()
     for intento in range(500):
-        n, clave, _ = rng.choices(JUGADORES, [w for *_, w in JUGADORES])[0]
+        n, clave, _ = rng.choice([j for j in JUGADORES if j[1] in SUPERESTRELLAS])
         looks = rng.sample(LOOKS, 4)
         combo = tuple([n] + sorted(looks))
         if (n not in usados_look or intento > 300) and combo not in hechos:   # un jugador distinto cada día; combo nunca repetido
@@ -140,7 +164,7 @@ def guion_look(gid, rng, usados_look, V=None):
 
 
 def guion_find(gid, rng, usados, V=None):
-    grupo = elegir(rng, 3, usados)
+    grupo = con_estrella(elegir(rng, 3, usados), rng)                          # la ronda 1 (primer cuadro) es una superestrella
     rondas = [dict(nombre=n, foto=FOTOS[c], nivel=nv) for (n, c, _), nv in zip(grupo, ["facil", "medio", "dificil"])]
     return dict(id=gid, semilla=V.semilla(rng) if V else rng.randint(1, 999), frase=rng.choice(FRASES), rondas=rondas)
 
@@ -152,19 +176,20 @@ def guion_cabeza(gid, rng, usados_cab, V=None):
         combo = tuple([grupo[0][0]] + sorted(n for n, *_ in grupo[1:]))
         if (grupo[0][0] not in usados_cab or intento > 300) and combo not in hechos:
             usados_cab.add(grupo[0][0]); hechos.add(combo); break
+    grupo = con_estrella(grupo, rng)                                           # la cabeza a encontrar es de una superestrella
     real = grupo[0]; opciones = [FOTOS[c] for _, c, _ in grupo[1:]]
     opciones.insert(rng.choice([1, 2]), FOTOS[real[1]])                       # la correcta nunca es la primera
     return dict(id=gid, nombre=real[0], foto=FOTOS[real[1]], opciones=opciones, color=rng.choice(COLORES_CABEZA))
 
 
 def guion_plinko(gid, rng, V, fecha):
-    grupo = V.grupo("plinko", 4, rng, JUGADORES, fecha)
+    grupo = con_estrella(V.grupo("plinko", 4, rng, JUGADORES, fecha), rng)
     return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], semilla=V.semilla(rng) * 5000,
                 titulo=V.titulo("plinko_pantalla", PANT_PLINKO, rng), musica=V.musica(rng))
 
 
 def guion_dress(gid, rng, V, fecha):
-    grupo = V.grupo("dress", 2, rng, JUGADORES, fecha)
+    grupo = con_estrella(V.grupo("dress", 2, rng, JUGADORES, fecha), rng)
     malos = [{"n": "payaso", "ok": False}, {"n": "pelo_azul~" + str(rng.choice([220, 280, 30, 0])), "ok": False},
              {"n": "peluca_rosa~" + str(rng.choice([320, 190, 50])), "ok": False}]
     rng.shuffle(malos)
@@ -181,6 +206,7 @@ def guion_torre(gid, rng, V, fecha):
     pool = [j for j in JUGADORES if cartas.datos(j[1])[2] in RT.BANDERAS]
     for _ in range(300):
         grupo = V.grupo("torre", 3, rng, pool, fecha)
+        grupo = con_estrella(grupo, rng, pool)
         if len({cartas.datos(c)[2] for _, c, _ in grupo}) == 3:
             break
     nombres = [n for n, _, _ in grupo]
@@ -190,7 +216,7 @@ def guion_torre(gid, rng, V, fecha):
 
 
 def guion_hoyo(gid, rng, V, fecha):
-    grupo = V.grupo("hoyo", 4, rng, JUGADORES, fecha)
+    grupo = con_estrella(V.grupo("hoyo", 4, rng, JUGADORES, fecha), rng)
     nombres = [n for n, _, _ in grupo]
     return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=nombres, ganador=V.ganador(nombres, rng), semilla=V.semilla(rng),
                 titulo=V.titulo("hoyo_pantalla", PANT_HOYO, rng), musica=V.musica(rng))
