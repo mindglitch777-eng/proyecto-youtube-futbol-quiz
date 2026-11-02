@@ -1,21 +1,23 @@
-name: PUBLICAR diario (4 videos por API)
+name: PUBLICAR (sube con 3 días de margen + vigía)
 
-# Todos los días 07:30 de Argentina sube los 4 videos del día, programados a su hora. También mide el rendimiento
+# Sube por adelantado (hoy + 3 días) cada video programado a su hora: YouTube los publica solo. También mide el rendimiento
 # del canal y actualiza el tablero. Se puede lanzar a mano desde Actions.
 
 on:
-  schedule:
-    - cron: "30 10 * * *"      # GitHub a veces atrasa o saltea los horarios: reintentos (no sube dos veces el mismo video)
-    - cron: "17 11 * * *"
-    - cron: "47 12 * * *"
-    - cron: "23 15 * * *"
-    - cron: "53 18 * * *"
+  schedule:                    # varias corridas por día: cada una llena el margen de 3 días. Si GitHub saltea alguna, no pasa nada
+    - cron: "30 10 * * *"      # (los videos ya están programados dentro de YouTube). Nunca sube dos veces el mismo video.
+    - cron: "17 13 * * *"
+    - cron: "47 16 * * *"
+    - cron: "23 19 * * *"
+    - cron: "53 22 * * *"
+    - cron: "11 2 * * *"
   workflow_dispatch:
   push:
     paths: [pipeline/probar.txt]
 
 permissions:
   contents: write
+  issues: write
   pages: write
   id-token: write
 
@@ -36,27 +38,32 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: pip install -q requests
-      - name: Bajar los videos de esta semana
+      - name: Juntar lo que falta subir (hoy + próximos 3 días)
+        run: python pipeline/e6_bajar.py _subir
+      - name: Subir a YouTube, cada uno programado a su hora, y vigía
+        run: cd pipeline && python e6_publicar.py ../_subir
+      - name: Avisar si hay problemas (Issue ALERTA subida, llega por mail y lo ve Claude)
+        if: always()
         run: |
-          HOY=$(TZ=America/Argentina/Buenos_Aires date +%F)
-          mkdir -p _hoy
-          for VJ in produccion/semana_*/videos.json; do                       # semanas guardadas en el repo
-            if grep -q "\"fecha\": \"$HOY\"" "$VJ"; then cp "$(dirname $VJ)"/*.mp4 "$VJ" _hoy/ 2>/dev/null; echo "desde el repo: $VJ"; fi
-          done
-          [ -f _hoy/videos.json ] || for TAG in $(gh release list --limit 6 --json tagName -q '.[].tagName' | grep '^semana-'); do
-            gh release download "$TAG" -p videos.json -D _tmp_$TAG 2>/dev/null || continue
-            if grep -q "\"fecha\": \"$HOY\"" _tmp_$TAG/videos.json; then
-              cp _tmp_$TAG/videos.json _hoy/
-              for F in $(python -c "import json;print(' '.join(m['archivo'] for m in json.load(open('_hoy/videos.json')) if m['fecha']=='$HOY'))"); do
-                gh release download "$TAG" -p "$F" -D _hoy
-              done
-              break
-            fi
-          done
-          ls -la _hoy || true
-      - name: Subir a YouTube
-        run: |
-          if [ -f _hoy/videos.json ]; then cd pipeline && python e6_publicar.py ../_hoy; else echo "No hay videos para hoy"; fi
+          gh label create alerta-subida --color d73a4a --description "Falla en la subida a YouTube" --force >/dev/null 2>&1 || true
+          ABIERTO=$(gh issue list --label alerta-subida --state open --json number -q '.[0].number')
+          if [ ! -f pipeline/datos/alerta.json ]; then
+            echo "La subida se cortó antes de la vigía." > _alerta.md
+            OK=False
+          else
+            OK=$(python -c "import json;print(json.load(open('pipeline/datos/alerta.json'))['ok'])")
+            python -c "import json;a=json.load(open('pipeline/datos/alerta.json'));print('Corrida: '+a['hora']+'\n\n'+'\n'.join('- '+p for p in a['problemas'])+'\n\nEn cola: '+', '.join(a['en_cola']))" > _alerta.md
+          fi
+          echo "$RUN_URL" >> _alerta.md
+          if [ "$OK" = "True" ]; then
+            [ -n "$ABIERTO" ] && gh issue close "$ABIERTO" -c "Resuelto: la última corrida subió todo bien. $RUN_URL" || true
+          elif [ -n "$ABIERTO" ]; then
+            gh issue comment "$ABIERTO" -F _alerta.md
+          else
+            gh issue create -t "ALERTA subida a YouTube" -l alerta-subida -F _alerta.md
+          fi
+        env:
+          RUN_URL: ${{ github.server_url }}/${{ github.repository }}/actions/runs/${{ github.run_id }}
       - name: Medir rendimiento del canal
         run: cd pipeline && python e3_rendimiento.py
         continue-on-error: true

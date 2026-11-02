@@ -42,39 +42,64 @@ def subir(tok, ruta, m):
 
 
 def main():
+    """Sube TODO lo que dejó e6_bajar.py (hoy + próximos días), cada uno programado a su hora. Al final deja el parte de la
+    vigía en datos/alerta.json: si algo que sale en las próximas 12 h no quedó en YouTube, es una ALERTA."""
     carpeta = Path(sys.argv[1]) if len(sys.argv) > 1 else Path(".")
-    hoy = date.fromisoformat(sys.argv[2]) if len(sys.argv) > 2 else datetime.now(ART).date()
-    videos = json.loads((carpeta / "videos.json").read_text())
+    ahora = datetime.now(timezone.utc)
+    videos = json.loads((carpeta / "videos.json").read_text()) if (carpeta / "videos.json").exists() else []
+    vencidos = json.loads((carpeta / "vencidos.json").read_text()) if (carpeta / "vencidos.json").exists() else []
     publicados = cargar("publicados.json", [])
     hechos = {p["id"] for p in publicados if p.get("video_id") or p.get("manual")}
-    manana = (hoy + timedelta(days=1)).isoformat()
-    del_dia = [m for m in videos if (m["fecha"] == hoy.isoformat() or (m["fecha"] == manana and m["hora"] < "03:00"))  # los de medianoche suben el día antes
-               and m["id"] not in hechos]
-    tok = token_canal()
+    cola = [m for m in videos if m["id"] not in hechos]
+    problemas = [f"Se pasó la hora y NO se subió: {v}" for v in vencidos]
+
+    def urgente(m):
+        return datetime.fromisoformat(f"{m['fecha']}T{m['hora']}:00").replace(tzinfo=ART) < ahora + timedelta(hours=12)
+
+    try:
+        tok = token_canal()
+    except Exception as e:
+        tok = None; problemas.append(f"Google rechazó el permiso del canal: {e}")
     if not tok:
-        etapa("publicacion", "pendiente", aviso="Falta el permiso del canal (secretos YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN). "
-                                                "Mientras tanto, los videos del día se programan a mano desde el tablero.", hoy=hoy.isoformat(),
-               del_dia=len(del_dia))
-        return
-    etapa("publicacion", "en_curso", hoy=hoy.isoformat(), del_dia=len(del_dia))
-    subidos, errores = 0, []
-    for m in del_dia:
+        problemas.append("Sin permiso del canal (secretos YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN).")
+        etapa("publicacion", "error", errores=problemas[:4])
+        return vigia(problemas, cola, 0)
+    etapa("publicacion", "en_curso", en_cola=len(cola))
+    subidos, errores, freno = 0, [], None
+    for m in cola:
         ruta = carpeta / m["archivo"]
         if not ruta.exists():
             errores.append(f"{m['id']}: no está el archivo"); continue
-        vid, err = subir(tok, ruta, m)
+        try:
+            vid, err = subir(tok, ruta, m)
+        except Exception as e:                                                # corte de red, etc.: se reintenta en la próxima corrida
+            vid, err = None, f"excepción: {e}"
         publicados.append(dict(id=m["id"], tipo=m["tipo"], fecha=m["fecha"], hora=m["hora"], titulo=m["titulo"], video_id=vid, error=err,
                                subido=datetime.now(timezone.utc).isoformat(timespec="seconds")))
         guardar("publicados.json", publicados)
         if vid:
-            subidos += 1
-            print("subido", m["id"], vid, flush=True)
+            subidos += 1; print("subido", m["fecha"], m["hora"], m["id"], vid, flush=True)
         else:
             errores.append(f"{m['id']}: {err}")
             if "quota" in (err or "").lower() or "uploadLimitExceeded" in (err or ""):
-                break                                                         # límite de YouTube: mañana sigue
-    etapa("publicacion", "ok" if not errores else "error", hoy=hoy.isoformat(), subidos=subidos, errores=errores[:4],
+                freno = "límite diario de YouTube"; break                    # normal: la próxima corrida sigue
+    hechos = {p["id"] for p in publicados if p.get("video_id") or p.get("manual")}
+    faltan = [m for m in cola if m["id"] not in hechos]
+    for m in faltan:
+        if urgente(m):
+            problemas.append(f"{m['fecha']} {m['hora']} {m['id']} no quedó programado" + (f" ({freno})" if freno else ""))
+    problemas += [e for e in errores if "quota" not in e.lower() and "uploadLimitExceeded" not in e]
+    etapa("publicacion", "ok" if not problemas else "error", subidos=subidos, en_cola=len(faltan), freno=freno, errores=problemas[:4],
           total_publicados=sum(1 for p in publicados if p.get("video_id")))
+    return vigia(problemas, faltan, subidos)
+
+
+def vigia(problemas, faltan, subidos):
+    """Parte para el aviso: datos/alerta.json (el workflow abre un Issue 'ALERTA subida' si hay problemas y lo cierra si no)."""
+    problemas = list(dict.fromkeys(problemas))
+    guardar("alerta.json", dict(hora=datetime.now(ART).isoformat(timespec="minutes"), ok=not problemas, problemas=problemas,
+                                subidos_ahora=subidos, en_cola=[m["id"] for m in faltan]))
+    print("VIGÍA:", "todo en orden" if not problemas else "PROBLEMAS:\n- " + "\n- ".join(problemas), flush=True)
 
 
 if __name__ == "__main__":
