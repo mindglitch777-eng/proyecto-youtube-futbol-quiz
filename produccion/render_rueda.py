@@ -28,8 +28,10 @@ import render_plinko as P
 ROOT = Path(__file__).resolve().parent
 REC = ROOT / "assets" / "recortes"
 W, H, FPS = 1080, 1920, 30
-CARA = 118                    # alto de cara (px) de todos los torsos, para que queden parejos
-K_CINTURA = 2.45             # la cintura está a 3,35 caras debajo del borde de arriba de la cara
+CARA = 104                    # alto de cara (px) de todos los torsos, para que queden parejos
+K_CINTURA = 4.0               # los torsos llegan hasta la cadera (4 caras debajo del borde de arriba de la cara)
+K_PIERNA = 4.45               # las piernas arrancan en el short: no se ve la camiseta del dueño (no delata quién es)
+CHICO = 0.92                  # el torso correcto, un poco más chico (que no salte a la vista)
 HUECO = 105                   # radio del agujero del centro
 PIE_Y = 1830                 # dónde apoyan los botines
 
@@ -47,11 +49,11 @@ def cara(im):
 
 
 @lru_cache(maxsize=64)
-def torso(nombre, desde_cuerpo=False):
+def torso(nombre, desde_cuerpo=False, escala=1.0):
     """Torso (de la cabeza a la cintura) escalado para que la cara mida CARA px. Devuelve (img, fx_centro_cara)."""
     im = Image.open(REC / ("cuerpos" if desde_cuerpo else "torsos") / f"{nombre}.png").convert("RGBA")
     x, y, fw, fh = cara(im)
-    s = CARA / fh
+    s = CARA * escala / fh
     im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
     x, y, fw, fh = x * s, y * s, fw * s, fh * s
     corte = int(y + K_CINTURA * fh)
@@ -68,7 +70,7 @@ def piernas(nombre):
     s = CARA / fh
     im = im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
     x, y, fw, fh = x * s, y * s, fw * s, fh * s
-    corte = int(y + K_CINTURA * fh) - 6
+    corte = int(y + K_PIERNA * fh) - 6
     p = im.crop((0, corte, im.width, im.height))
     bb = p.getbbox()
     return p.crop((bb[0], 0, bb[2], bb[3])), (x + fw / 2) - bb[0]
@@ -85,7 +87,7 @@ def fondo(nombre=None):
 
 def armar(g):
     pz = [torso(n) for n in g["torsos"]]
-    correcto = torso(g["cuerpo"], True)
+    correcto = torso(g["cuerpo"], True, g.get("chico", CHICO))
     k = g.get("pos_correcto", 3)
     pz.insert(k, correcto)
     leg, leg_cx = piernas(g["cuerpo"])

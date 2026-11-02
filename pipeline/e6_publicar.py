@@ -47,7 +47,9 @@ def main():
     videos = json.loads((carpeta / "videos.json").read_text())
     publicados = cargar("publicados.json", [])
     hechos = {p["id"] for p in publicados if p.get("video_id") or p.get("manual")}
-    del_dia = [m for m in videos if m["fecha"] == hoy.isoformat() and m["id"] not in hechos]
+    manana = (hoy + timedelta(days=1)).isoformat()
+    del_dia = [m for m in videos if (m["fecha"] == hoy.isoformat() or (m["fecha"] == manana and m["hora"] < "03:00"))  # los de medianoche suben el día antes
+               and m["id"] not in hechos]
     tok = token_canal()
     if not tok:
         etapa("publicacion", "pendiente", aviso="Falta el permiso del canal (secretos YT_CLIENT_ID, YT_CLIENT_SECRET, YT_REFRESH_TOKEN). "
