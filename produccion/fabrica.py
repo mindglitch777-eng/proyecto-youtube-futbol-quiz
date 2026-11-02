@@ -262,8 +262,8 @@ def guion_penal(gid, rng, V, fecha):
 
 def guion_balon(gid, rng, V, fecha):
     cuerpo = rng.choice(sorted(CUERPOS_RUEDA))
-    lista, _ = extra_mejor("balon_oro", None)
-    return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], trofeo=(rng.choice(lista) if lista else "balon_oro_0"),
+    lista, _ = extra_mejor("trofeo_bo", None)
+    return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], trofeo=(rng.choice(lista) if lista else "trofeo_bo_1"),
                 dur=6.0, vueltas=3, musica=V.musica(rng))
 
 
@@ -313,7 +313,9 @@ def creditos(claves):
 
 
 def tag(n):
-    return "#" + n.lower().replace("é", "e").replace("í", "i").replace("á", "a")
+    import unicodedata
+    n = unicodedata.normalize("NFKD", n).encode("ascii", "ignore").decode()
+    return "#" + "".join(ch for ch in n.lower() if ch.isalnum())
 
 
 def render(args):

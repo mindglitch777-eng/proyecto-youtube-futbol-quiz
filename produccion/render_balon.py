@@ -58,10 +58,10 @@ def main(guion):
     cu, info = cuerpo(g["cuerpo"])
     x0 = int(W / 2 - info["cx"]); y0 = 1840 - cu.height
     fondo.alpha_composite(cu, (x0, y0))
-    tr = trofeo(g.get("trofeo", "balon_oro_0"))
+    tr = trofeo(g.get("trofeo", "trofeo_bo_1"))
     tx, ty = W / 2, y0 + info["cara_y"] + info["fh"] * 3.6                    # a la altura de las manos
     sil = silueta(tr)
-    RX, RY = 300, 230
+    RX, RY = 215, 270
     fase = math.pi - 2 * math.pi * vueltas * T_ENCAJE / dur                   # calza a los 0,45 s (la costura cae en plena tensión)
 
     def pos(t):
@@ -95,8 +95,9 @@ def main(guion):
         col = (255, 215, 0) if pct >= 98 else ((255, 255, 255) if pct < 80 else (255, 150, 40))
         P.texto(d, (W / 2, 420), f"{pct}%", 190, col, 14, (20, 20, 30))
         P.texto(d, (W / 2, 1880 - 30), g["nombre"].upper(), 64, (255, 255, 255), 9, (20, 20, 30))
-        if de < 0.5 and pct >= 0:
-            e = de
+        tras = min(((t - x_) % dur) for x_ in encajes)                       # solo DESPUÉS del encaje (no delata)
+        if tras < 0.4:
+            e = tras
             if e < 0.12:
                 im.alpha_composite(Image.new("RGBA", (W, H), (255, 215, 0, int(70 * (1 - e / 0.12)))))
                 d = ImageDraw.Draw(im)
