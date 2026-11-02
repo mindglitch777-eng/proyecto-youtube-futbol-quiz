@@ -33,9 +33,11 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER"}
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "siuu": "SIUUU 67",
+           "penal": "PENALTY 100", "balon": "BALLON D'OR 100%"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "siuu": "render_siuu.py",
+          "penal": "render_penal.py", "balon": "render_balon.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
 TIT_DRESS = ["Pause when it fits 😂 {a} & {b} drip challenge", "Dress them up 😎 Can you stop at the right time? {a} & {b}",
              "Make {a} and {b} DRIP 🥶 Pause it!", "{a} & {b} bald edition 😂 Pause to dress them", "Stop it when it fits 🛑😂 {a} vs {b}"]
 TIT_TORRE = ["Whose country is this? 🏳️ {a}, {b} or {c} 👇", "Guess the flag before it's revealed 😳 {a}, {b} or {c}?",
@@ -143,31 +145,31 @@ def nombre_de(clave):
     return NOMBRE.get(clave, clave.split("_")[0].title())
 
 
-def guion_stop(gid, rng, usados, dificil, V=None, fecha=None):
+def guion_stop(gid, rng, usados, dificil, V=None, fecha=None, hard_pedido=False):
     """STOP en serie (#nivel), con tema rotativo (B1) y cada 3er nivel HARD: más vueltas, giro doble y 5 s (B2)."""
-    tema = nivel = None
+    tema = nivel = None; hard = False
     if V is not None:
         tema = V.titulo("stop_tema", list(TEMAS_STOP), rng)
         nivel = V.siguiente("stop_nivel", 13)
         pool = [(nombre_de(c), FOTOS.get(c) and c, 3) for c in TEMAS_STOP[tema] if c in FOTOS]
         grupo = V.grupo("stop_" + tema, 4, rng, pool, fecha)
-        dificil = nivel % 3 == 0
+        hard = bool(hard_pedido)                                               # el lugar de las 21:00 es el HARD (grilla nueva)
     else:
         grupo = elegir(rng, 4, usados)
     grupo = con_estrella(grupo, rng)                                           # cuadrante 1 (arriba a la izquierda) = superestrella
     pcts = [f"{rng.choice([1, 1, 2, 3])}%", f"{rng.randint(5, 29)}%", f"{rng.randint(33, 61)}%", f"{rng.choice([67, 67, 69, 88, 99])}%"]
-    vueltas = ([6, 5, 5, 6] if nivel and nivel % 3 == 0 else [5, 4, 3, 4]) if dificil else [4, 3, 3, 2]
-    giros = ([2, 2, 1, 2] if nivel and nivel % 3 == 0 else [1, 1, 1, 2]) if dificil else [1, 1, 2, 2]
+    vueltas = ([6, 5, 5, 6] if hard else [5, 4, 3, 4]) if dificil else [4, 3, 3, 2]
+    giros = ([2, 2, 1, 2] if hard else [1, 1, 1, 2]) if dificil else [1, 1, 2, 2]
     colores = rng.sample(COLORES, 4); formas = [rng.choice(FORMAS) for _ in range(4)]
     cuads = []
     for k, (n, clave, _) in enumerate(grupo):
         cuads.append(dict(nombre=n, foto=FOTOS[clave], color=colores[k], pct=pcts[k], forma=formas[k], rasgo=rng.choice(RASGOS),
                           vueltas=vueltas[k], giros=giros[k], encaje_bueno=rng.randint(0, 3), fase=round(rng.uniform(0, 6.28), 2),
                           tam=rng.choice([60, 64, 68])))
-    g = dict(id=gid, duracion=5.0 if (nivel and nivel % 3 == 0) else 6.0, hiper=True, musica="67", cuadrantes=cuads,
+    g = dict(id=gid, duracion=5.0 if hard else 6.0, hiper=True, musica="67", cuadrantes=cuads,
              arranque=rng.choice(["estrella", "grilla"]))                    # prueba A/B: arranque tipo FIND (zoom a la estrella) vs. grilla
     if nivel:
-        g.update(tema=(tema + " · HARD") if nivel % 3 == 0 else tema, nivel=nivel, pregunta="WHICH ONE DID YOU STOP? 1-4", tema_base=tema)
+        g.update(tema=(tema + " · HARD") if hard else tema, nivel=nivel, pregunta="WHICH ONE DID YOU STOP? 1-4", tema_base=tema)
     return g
 
 
@@ -199,6 +201,32 @@ def guion_cabeza(gid, rng, usados_cab, V=None):
     real = grupo[0]; opciones = [FOTOS[c] for _, c, _ in grupo[1:]]
     opciones.insert(rng.choice([1, 2]), FOTOS[real[1]])                       # la correcta nunca es la primera
     return dict(id=gid, nombre=real[0], foto=FOTOS[real[1]], opciones=opciones, color=rng.choice(COLORES_CABEZA))
+
+
+# WHEEL STOP: piernas de una superestrella (foto de cuerpo entero de frente) + rueda de 8 torsos. Solo recortes aprobados a ojo.
+CUERPOS_RUEDA = {"lionel_messi_3": "Messi", "lamine_yamal_10": "Yamal"}
+TORSOS_RUEDA = ["cristiano_ronaldo_0", "lionel_messi_0", "kylian_mbapp_0", "lamine_yamal_0", "neymar_2", "erling_haaland_1",
+                "vin_cius_j_nior_0", "vin_cius_j_nior_3", "jude_bellingham_0", "jude_bellingham_1", "mohamed_salah_0", "harry_kane_1",
+                "pedri_2", "ronaldinho_0", "phil_foden_0", "bukayo_saka_2", "cole_palmer_1", "raphinha_0", "lautaro_mart_nez_1"]
+TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "Stop the wheel on {n} 🛑 Only 1% get it", "Find {n}'s real body 🛑🔥 {a} or {b}?",
+             "{n} wheel stop challenge 🛑 Can you do it first try?"]
+
+
+def guion_rueda(gid, rng, V, fecha):
+    usados = V.grupos.setdefault("rueda", set())
+    for _ in range(300):
+        cuerpo = rng.choice(sorted(CUERPOS_RUEDA)); base = cuerpo.rsplit("_", 1)[0]
+        pool = [t for t in TORSOS_RUEDA if t.rsplit("_", 1)[0] != base]
+        estrellas = [t for t in pool if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
+        torsos = rng.sample(estrellas, 2) + rng.sample([t for t in pool if t not in estrellas], 5)
+        rng.shuffle(torsos)
+        clave = (cuerpo,) + tuple(sorted(torsos))
+        if clave not in usados:
+            usados.add(clave); break
+    nombre = CUERPOS_RUEDA[cuerpo]
+    otros = [nombre_de(t.rsplit("_", 1)[0]) for t in torsos if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
+    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=8.8, vueltas=2, sentido=rng.choice([1, -1]),
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(2, 6), otros=otros)
 
 
 def guion_plinko(gid, rng, V, fecha):
@@ -306,6 +334,13 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
                 fijado = f"I was sure {ns[(g['ganador'] + 1) % 4]} had it 😭 who did you pick?"
             desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
+        elif tipo == "rueda":
+            g = guion_rueda(gid, rng, V, sl["fecha"])
+            a, b = (g["otros"] + ["Ronaldo", "Mbappé"])[:2]
+            titulo = V.titulo("rueda", TIT_RUEDA, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
+            desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
+                    + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
+            fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
         elif tipo == "find":
             g = guion_find(gid, rng, usados, V)
             titulo = "FIND " + " ".join(r["nombre"].upper() for r in g["rondas"])
@@ -325,7 +360,9 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             fijado = f"I'm going with number {rng.randint(1, 4)} 😂 what about you?"
             fotos = [g["foto"]]; nombres = [g["nombre"]]
         else:
-            g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True), V=V, fecha=sl["fecha"])
+            g = guion_stop(gid, rng, usados, dificil=sl.get("dificil", True), V=V, fecha=sl["fecha"], hard_pedido=sl.get("hard", False))
+            if sl.get("arranque"):
+                g["arranque"] = sl["arranque"]
             titulo = titulo_stop(V, rng, [q["nombre"] for q in g["cuadrantes"]], g["nivel"])
             desc = (f"Level {g['nivel']} 🛑 It only fits ONCE per loop. Pause at 100%!\nWhich one did you stop? Comment 1, 2, 3 or 4 👇\n"
                     f"Follow for Level {g['nivel'] + 1} 🔥\n" + " ".join(tag(q["nombre"]) for q in g["cuadrantes"]) + " #stopchallenge #football #shorts")

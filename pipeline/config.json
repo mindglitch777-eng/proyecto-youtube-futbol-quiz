@@ -3,41 +3,57 @@
  "zona_horaria": "America/Argentina/Buenos_Aires",
  "horas": [
   "09:00",
-  "13:00",
-  "17:00",
+  "12:00",
+  "15:00",
+  "18:00",
   "21:00"
  ],
- "videos_por_dia": 4,
+ "videos_por_dia": 5,
  "formatos": {
   "stop": {
    "nombre": "STOP CHALLENGE",
-   "min": 14,
-   "max": 16
+   "min": 21,
+   "max": 21
+  },
+  "rueda": {
+   "nombre": "WHEEL STOP",
+   "min": 0,
+   "max": 7
+  },
+  "siuu": {
+   "nombre": "SIUUU 67",
+   "min": 0,
+   "max": 7
+  },
+  "penal": {
+   "nombre": "PENALTY 100",
+   "min": 0,
+   "max": 7
+  },
+  "balon": {
+   "nombre": "BALLON D'OR 100%",
+   "min": 0,
+   "max": 7
   },
   "find": {
    "nombre": "FIND",
-   "min": 3,
-   "max": 10
-  },
-  "cabeza": {
-   "nombre": "CATCH THE RIGHT HEAD",
-   "min": 2,
-   "max": 9
+   "min": 0,
+   "max": 7
   },
   "plinko": {
    "nombre": "PLINKO GOAT",
-   "min": 3,
-   "max": 9
+   "min": 0,
+   "max": 7
   },
   "dress": {
    "nombre": "DRESS UP",
-   "min": 3,
-   "max": 9
+   "min": 0,
+   "max": 7
   },
   "torre": {
    "nombre": "BALL TOWER",
-   "min": 3,
-   "max": 9
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -74,6 +90,48 @@
   "hoyo": {
    "nombre": "BALL TO THE HOLE",
    "motivo": "no convence (decisión 31/10)"
+  },
+  "cabeza": {
+   "nombre": "CATCH THE RIGHT HEAD",
+   "motivo": "47% eligió ver, 0 comentarios (datos Studio 02/11)"
+  },
+  "carrera": {
+   "nombre": "CARRERAS",
+   "motivo": "21-28% eligió ver: el peor del canal (datos Studio 02/11)"
+  },
+  "ring": {
+   "nombre": "ESCAPE THE RINGS",
+   "motivo": "no se acerca al STOP (02/11)"
+  },
+  "otros": {
+   "nombre": "DEBATES / BALLON D'OR REMATCH",
+   "motivo": "no se acerca al STOP (02/11)"
+  }
+ },
+ "pruebas": {
+  "rueda": {
+   "listo": true
+  },
+  "siuu": {
+   "listo": false
+  },
+  "penal": {
+   "listo": false
+  },
+  "balon": {
+   "listo": false
+  },
+  "find": {
+   "listo": true
+  },
+  "plinko": {
+   "listo": true
+  },
+  "dress": {
+   "listo": true
+  },
+  "torre": {
+   "listo": true
   }
  }
 }

@@ -1,14 +1,25 @@
 #!/usr/bin/env python3
 """
-Etapa 4 · PLAN DE LA SEMANA: reparte 28 lugares (7 días x 4) entre los formatos que la fábrica sabe hacer.
-Puntaje de cada formato = 60 % cómo rinde en NUESTRO canal (mediana de vistas a 48 h) + 40 % cuánto aparece en los virales
-de la semana (radar + Gemini). Siempre respeta un mínimo y un máximo por formato (para seguir probando y no caer en plantilla).
-Salida: datos/plan.json con la grilla día por día (sin dos videos seguidos del mismo formato).
+Etapa 4 · PLAN DE LA SEMANA (grilla "volumen con intención", decisión del 02/11):
+5 videos por día = 3 STOP distintos (lo que funciona) intercalados con 2 PRUEBAS (formatos nuevos que rotan).
+
+  09:00 STOP grilla · 12:00 PRUEBA · 15:00 STOP estrella (arranque tipo FIND) · 18:00 PRUEBA · 21:00 STOP HARD
+
+Pruebas: config["pruebas"] (solo las que tienen "listo": true). Cada día dos pruebas DISTINTAS; las que rinden mejor
+salen más seguido y las que nunca se probaron tienen prioridad (todas tienen su chance).
+PODA AUTOMÁTICA (datos/analytics.json): una prueba con ≥4 videos medidos que rinde menos de la mitad que el STOP
+(puntaje = % visto x suscriptores cada 1.000 vistas) queda podada y deja su lugar. Si le gana al STOP, se marca "promovida"
+y pasa a salir todos los días. Todo queda anotado en datos/poda.json (y se ve en el tablero).
+Salida: datos/plan.json
 """
 import random
 from datetime import date, datetime, timedelta, timezone
 
 from comun import CONFIG, cargar, etapa, guardar
+
+GRILLA = [("09:00", "stop", "grilla"), ("12:00", "prueba", None), ("15:00", "stop", "estrella"),
+          ("18:00", "prueba", None), ("21:00", "stop", "hard")]
+MIN_VIDEOS_PODA = 4
 
 
 def fechas(inicio, dias):
@@ -25,38 +36,76 @@ def fechas(inicio, dias):
     return inicio, dias
 
 
+def puntajes():
+    """Puntaje por formato desde Analytics: mediana de % visto x (0,5 + subs cada 1.000). Devuelve (puntajes, videos medidos)."""
+    an = cargar("analytics.json", {}).get("por_formato", {})
+    pts, n = {}, {}
+    for k, x in an.items():
+        base = k.split("/")[0]
+        p = x["mediana_pct_visto"] * (0.5 + x["mediana_subs_cada_1000"])
+        if base not in pts or x["videos"] > n[base]:
+            pts[base], n[base] = p, x["videos"]
+    return pts, n
+
+
+def podar():
+    """Decide podas y promociones con los datos; las guarda en datos/poda.json (persisten entre semanas)."""
+    poda = cargar("poda.json", {"podadas": {}, "promovidas": {}})
+    pts, n = puntajes()
+    stop = pts.get("stop")
+    hoy = datetime.now(timezone.utc).date().isoformat()
+    for k in CONFIG["pruebas"]:
+        if k not in pts or n.get(k, 0) < MIN_VIDEOS_PODA or not stop:
+            continue
+        rel = pts[k] / stop
+        if rel < 0.5 and k not in poda["podadas"]:
+            poda["podadas"][k] = dict(fecha=hoy, rinde=f"{rel:.0%} del STOP", videos=n[k])
+        elif rel >= 1.0:
+            poda["promovidas"][k] = dict(fecha=hoy, rinde=f"{rel:.0%} del STOP", videos=n[k])
+    guardar("poda.json", poda)
+    return poda, pts
+
+
 def main(inicio=None, dias=7):
     etapa("plan", "en_curso")
     inicio, dias = fechas(inicio, dias)
-    fmts = CONFIG["formatos"]; horas = CONFIG["horas"]
-    total = dias * CONFIG["videos_por_dia"]
-    rend = cargar("rendimiento.json", {}).get("por_formato", {})
-    conteo = cargar("analisis.json", {}).get("conteo_formatos", {})
-    med = {k: rend.get(k, {}).get("mediana_48h", 0) for k in fmts}
-    tope_r = max(med.values()) or 1; tope_m = max([conteo.get(k, 0) for k in fmts] + [1])
-    puntaje = {k: 0.6 * med[k] / tope_r + 0.4 * conteo.get(k, 0) / tope_m + 0.05 for k in fmts}
-    cupos = {k: max(1, round(fmts[k]["min"] * dias / 7)) for k in fmts}
-    resto = total - sum(cupos.values())
-    while resto > 0:                                                           # el resto, proporcional al puntaje
-        k = max((k for k in fmts if cupos[k] < max(1, round(fmts[k]["max"] * dias / 7))), key=lambda k: puntaje[k] / (cupos[k] + 1))
-        cupos[k] += 1; resto -= 1
-    rng_inicio = inicio
-    rng = random.Random(rng_inicio.toordinal())
-    bolsa = [k for k, n in cupos.items() for _ in range(n)]
-    for _ in range(200):                                                       # mezclar sin repetir formato seguido
-        rng.shuffle(bolsa)
-        if all(bolsa[i] != bolsa[i + 1] for i in range(len(bolsa) - 1)):
-            break
-    slots, dificil = [], True
-    for i, tipo in enumerate(bolsa):
-        d, h = divmod(i, len(horas))
-        sl = dict(fecha=(inicio + timedelta(days=d)).isoformat(), hora=horas[h], tipo=tipo)
-        if tipo == "stop":
-            sl["dificil"] = dificil; dificil = not dificil
-        slots.append(sl)
-    guardar("plan.json", dict(inicio=inicio.isoformat(), puntaje={k: round(v, 3) for k, v in puntaje.items()}, cupos=cupos, slots=slots))
-    etapa("plan", "ok", semana=f"{inicio.isoformat()} → {(inicio + timedelta(days=dias - 1)).isoformat()}",
-          cupos={fmts[k]["nombre"]: n for k, n in cupos.items()}, por_que={fmts[k]["nombre"]: round(v, 2) for k, v in puntaje.items()})
+    poda, pts = podar()
+    activas = [k for k, v in CONFIG["pruebas"].items() if v.get("listo") and k not in poda["podadas"]]
+    promovidas = [k for k in activas if k in poda["promovidas"]]
+    rng = random.Random(inicio.toordinal())
+    usos = {k: 0 for k in activas}
+    hist = cargar("publicados.json", [])
+    for p in hist:                                                              # lo que ya salió cuenta (las nuevas van primero)
+        if p.get("tipo") in usos:
+            usos[p["tipo"]] += 1
+    peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
+    slots = []
+    for d in range(dias):
+        dia = (inicio + timedelta(days=d)).isoformat()
+        hoy_pruebas = []
+        for hora, tipo, estilo in GRILLA:
+            if tipo == "stop":
+                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=estilo == "hard",
+                                  arranque="estrella" if estilo == "estrella" else ("grilla" if estilo == "grilla" else rng.choice(["estrella", "grilla"]))))
+                continue
+            cand = [k for k in activas if k not in hoy_pruebas] or activas
+            if not cand:
+                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
+            fijas = [k for k in promovidas if k not in hoy_pruebas]
+            if fijas and not hoy_pruebas:                                       # una promovida sale todos los días
+                k = fijas[0]
+            else:                                                               # la menos usada (pesada por rendimiento)
+                k = min(cand, key=lambda k: (usos[k] / peso[k], rng.random()))
+            usos[k] += 1; hoy_pruebas.append(k)
+            slots.append(dict(fecha=dia, hora=hora, tipo=k))
+    guardar("plan.json", dict(inicio=inicio.isoformat(), grilla=[f"{h} {t}{'/' + e if e else ''}" for h, t, e in GRILLA],
+                              pruebas_activas=activas, podadas=poda["podadas"], promovidas=poda["promovidas"],
+                              puntaje={k: round(v, 1) for k, v in pts.items()}, slots=slots))
+    cupos = {}
+    for s in slots:
+        cupos[s["tipo"]] = cupos.get(s["tipo"], 0) + 1
+    etapa("plan", "ok", semana=f"{inicio.isoformat()} → {(inicio + timedelta(days=dias - 1)).isoformat()}", cupos=cupos,
+          podadas=list(poda["podadas"]), promovidas=list(poda["promovidas"]))
     return inicio
 
 
