@@ -82,13 +82,18 @@ def evaluar(im, det):
 
 def main():
     pedido = json.loads((RAIZ / "pipeline" / "pedido_recortes.json").read_text())
+    global CONSULTAS
+    solo_cuerpos = pedido.get("solo_cuerpos", False)
+    if solo_cuerpos:                                                          # piernas: cuerpo entero, parado y de frente
+        CONSULTAS = ["{n} full body png", "{n} standing full body png transparent", "{n} png full body front",
+                     "{n} posing full body png", "{n} render png full body"]
     n_max = pedido.get("por_jugador", 4)
     (OUT / "torsos").mkdir(parents=True, exist_ok=True); (OUT / "cuerpos").mkdir(parents=True, exist_ok=True)
     det = cv2.FaceDetectorYN.create(str(MODELO), "", (320, 320), 0.7)
     idx_path = OUT / "indice.json"
     indice = json.loads(idx_path.read_text()) if idx_path.exists() else {}
     for clave, nombre in pedido["jugadores"].items():
-        if len([k for k in indice if k.startswith(clave + "_")]) >= n_max:
+        if not solo_cuerpos and len([k for k in indice if k.startswith(clave + "_")]) >= n_max:
             continue
         vistos, cand = set(), []
         for q in CONSULTAS:
@@ -100,13 +105,15 @@ def main():
                 if im is None:
                     continue
                 ev = evaluar(im, det)
+                if ev and solo_cuerpos and ev["abajo"] < 6.3:
+                    ev = None
                 if ev:
                     cand.append((ev["score"], url, im, ev))
             time.sleep(2)
             if len(cand) >= n_max * 3:
                 break
         cand.sort(key=lambda c: -c[0])
-        k = 0
+        k = 10 if solo_cuerpos else 0                                          # los cuerpos nuevos van como _10, _11...
         for score, url, im, ev in cand[:n_max]:
             x, y, fw, fh = ev["cara"]
             bb = im.getbbox()
