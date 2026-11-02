@@ -1,20 +1,24 @@
 #!/usr/bin/env python3
 """
-WHEEL STOP (réplica de "X vs Y or Z stop challenge", 45 M+ en una semana): abajo las piernas de UN jugador, arriba una
-rueda de 8 torsos que gira. Hay que frenar el video cuando cae el torso que le corresponde a esas piernas.
-Contador arriba a la izquierda (1, 2, 3… cada torso que pasa). Cuando calza el correcto: destello verde, PERFECT!, ding.
-Loop perfecto: 2 vueltas completas.
+WHEEL STOP (réplica de "X vs Y or Z stop challenge", 45 M+ en una semana).
+Abajo: las piernas de UN jugador (de un PNG de cuerpo entero, de frente). Arriba: rueda de 8 torsos PNG sin fondo
+(cabeza hacia el centro) que gira; el de abajo se apoya sobre las piernas. Uno solo es el del dueño de las piernas
+(sale de la MISMA foto, así que calza perfecto). Contador 1-8 arriba. Cuando calza el correcto: destello, PERFECT!, ding.
+Loop: 2 vueltas completas.
 
-Los recortes (rueda + piernas) salen de capturas en alta resolución del video de referencia: assets/rueda/<set>/.
+Recortes: assets/recortes/torsos/*.png y assets/recortes/cuerpos/*.png (los baja GitHub: pipeline/buscar_recortes.py).
 Uso: python3 produccion/render_rueda.py produccion/guiones/rueda_01.json
-guion: {"id": "rueda_01", "set": "vfx1", "vueltas": 2, "dur": 8.4, "sentido": 1, "musica": "trallallero_2"}
+guion: {"id": "rueda_01", "cuerpo": "lionel_messi_3", "torsos": ["cristiano_ronaldo_0", ...7], "nombre": "Messi",
+        "dur": 8.8, "sentido": 1, "musica": "trallallero_2", "fondo": "estadio_0"}
 """
 import json
 import math
 import subprocess
 import sys
+from functools import lru_cache
 from pathlib import Path
 
+import cv2
 import numpy as np
 from PIL import Image, ImageDraw
 
@@ -22,82 +26,120 @@ import motor as M
 import render_plinko as P
 
 ROOT = Path(__file__).resolve().parent
+REC = ROOT / "assets" / "recortes"
 W, H, FPS = 1080, 1920, 30
+CARA = 118                    # alto de cara (px) de todos los torsos, para que queden parejos
+K_CINTURA = 2.45             # la cintura está a 3,35 caras debajo del borde de arriba de la cara
+HUECO = 105                   # radio del agujero del centro
+PIE_Y = 1830                 # dónde apoyan los botines
+
+_det = cv2.FaceDetectorYN.create(str(ROOT / "assets" / "modelos" / "face_detection_yunet_2023mar.onnx"), "", (320, 320), 0.6)
 
 
-def fondo():
-    """Cielo + estadio + cancha (como el original), dibujado por nosotros."""
-    y = np.linspace(0, 1, H)[:, None]
-    cielo = np.array([70, 150, 230]) * (1 - y) + np.array([190, 225, 250]) * y
-    arr = np.repeat(cielo[:, None, :], W, 1)
-    im = Image.fromarray(arr.astype(np.uint8)).convert("RGBA"); d = ImageDraw.Draw(im)
-    for k in range(9):                                                         # nubes
-        cx, cy, r = (k * 263) % W, 120 + (k * 97) % 520, 70 + (k * 31) % 60
-        for j in range(5):
-            d.ellipse((cx + j * r * 0.6 - r, cy - r * 0.5 + (j % 2) * 20, cx + j * r * 0.6 + r, cy + r * 0.5 + (j % 2) * 20), fill=(255, 255, 255, 170))
-    d.rectangle((0, 900, W, 1180), fill=(70, 80, 95, 255))                       # tribunas
-    rng = np.random.default_rng(3)
-    for _ in range(5000):
-        x, yy = rng.uniform(0, W), rng.uniform(910, 1170)
-        d.rectangle((x, yy, x + 3, yy + 4), fill=tuple(int(v) for v in rng.choice([[230, 60, 60], [240, 240, 240], [60, 120, 230], [250, 210, 60]])) + (200,))
-    d.rectangle((0, 1180, W, H), fill=(60, 150, 60, 255))                         # cancha con franjas
-    for k in range(12):
-        y0 = 1180 + k * 70
-        if k % 2:
-            d.rectangle((0, y0, W, y0 + 70), fill=(75, 168, 70, 255))
-    d.polygon([(W / 2 - 18, 1180), (W / 2 + 18, 1180), (W / 2 + 160, H), (W / 2 - 160, H)], fill=(245, 245, 245, 255))
-    return im
+def cara(im):
+    a = np.asarray(im)
+    bgr = cv2.cvtColor(a[..., :3], cv2.COLOR_RGB2BGR); bgr[a[..., 3] < 30] = 255
+    _det.setInputSize((bgr.shape[1], bgr.shape[0]))
+    _, f = _det.detect(bgr)
+    if f is None or not len(f):
+        raise ValueError("sin cara")
+    return max(f, key=lambda c: c[2] * c[3])[:4]
+
+
+@lru_cache(maxsize=64)
+def torso(nombre, desde_cuerpo=False):
+    """Torso (de la cabeza a la cintura) escalado para que la cara mida CARA px. Devuelve (img, fx_centro_cara)."""
+    im = Image.open(REC / ("cuerpos" if desde_cuerpo else "torsos") / f"{nombre}.png").convert("RGBA")
+    x, y, fw, fh = cara(im)
+    s = CARA / fh
+    im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
+    x, y, fw, fh = x * s, y * s, fw * s, fh * s
+    corte = int(y + K_CINTURA * fh)
+    t = im.crop((0, 0, im.width, min(im.height, corte)))
+    bb = t.getbbox()
+    t = t.crop((bb[0], bb[1], bb[2], t.height))
+    return t, (x + fw / 2) - bb[0]
+
+
+@lru_cache(maxsize=8)
+def piernas(nombre):
+    im = Image.open(REC / "cuerpos" / f"{nombre}.png").convert("RGBA")
+    x, y, fw, fh = cara(im)
+    s = CARA / fh
+    im = im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
+    x, y, fw, fh = x * s, y * s, fw * s, fh * s
+    corte = int(y + K_CINTURA * fh) - 6
+    p = im.crop((0, corte, im.width, im.height))
+    bb = p.getbbox()
+    return p.crop((bb[0], 0, bb[2], bb[3])), (x + fw / 2) - bb[0]
+
+
+@lru_cache(maxsize=4)
+def fondo(nombre=None):
+    f = ROOT / "assets" / "fondos" / f"{nombre}.jpg" if nombre else None
+    if f and f.exists():
+        return Image.open(f).convert("RGBA").resize((W, H))
+    import render_rueda_fondo as RF
+    return RF.dibujado()
 
 
 def armar(g):
-    base = ROOT / "assets" / "rueda" / g.get("set", "vfx1")
-    meta = json.loads((base / "meta.json").read_text())
-    return dict(meta=meta, rueda=Image.open(base / "rueda.png").convert("RGBA"), piernas=Image.open(base / "piernas.png").convert("RGBA"),
-                fondo=fondo())
+    pz = [torso(n) for n in g["torsos"]]
+    correcto = torso(g["cuerpo"], True)
+    k = g.get("pos_correcto", 3)
+    pz.insert(k, correcto)
+    leg, leg_cx = piernas(g["cuerpo"])
+    alto = max(p[0].height for p in pz)
+    r = HUECO + alto / 2                                                       # radio hasta el centro de cada torso
+    cint_y = PIE_Y - leg.height                                                # cintura de las piernas
+    cy = cint_y - pz[k][0].height / 2 - r + 8                                  # el torso de abajo apoya en la cintura
+    return dict(piezas=pz, correcto=k, piernas=leg, leg_cx=leg_cx, r=r, centro=(W / 2, cy), cint_y=cint_y, fondo=fondo(g.get("fondo")))
 
 
-def angulo(g, t):
-    """El arranque se corre para que el torso correcto calce recién a los ~2,5 s (y otra vez en la 2ª vuelta)."""
-    return g.get("fase", 0.0) + g.get("sentido", 1) * 360.0 * g.get("vueltas", 2) * t / g["dur"]
+def angulo(g, A, t):
+    """Ángulo de la pieza 0 (90° = abajo). Arranca corrido para que el correcto calce recién a ~2,5 s."""
+    n = len(A["piezas"]); paso = 360 / n
+    vel = g.get("sentido", 1) * 360.0 * g.get("vueltas", 2) / g["dur"]
+    base = 90 - A["correcto"] * paso - vel * g.get("t_encaje", 2.5)
+    return base + vel * t
 
 
 def encajes(g, A):
-    """Momentos en que el torso correcto queda abajo (ángulo 90° en pantalla)."""
-    meta = A["meta"]; out = []
-    n = int(round(g["dur"] * FPS))
-    prev = None
-    for f in range(n + 1):
+    n = len(A["piezas"]); paso = 360 / n; out = []
+    for f in range(int(round(g["dur"] * FPS))):
         t = f / FPS
-        a = (meta["correcto_ang"] + angulo(g, t) - 90) % 360
-        d = min(a, 360 - a)
-        if prev is not None and d < 1.6 * 360 * g.get("vueltas", 2) / g["dur"] / FPS and (not out or t - out[-1] > 1):
+        a = (angulo(g, A, t) + A["correcto"] * paso - 90) % 360
+        if min(a, 360 - a) < 360 * g.get("vueltas", 2) / g["dur"] / FPS / 1.9 and (not out or t - out[-1] > 1):
             out.append(t)
-        prev = d
     return out
 
 
 def cuadro(g, A, t, enc):
-    meta = A["meta"]
     im = A["fondo"].copy()
-    px, py = meta["piernas_xy"]
-    pw = A["piernas"]
-    im.alpha_composite(pw, (int(meta["rueda_centro"][0] - pw.width / 2 + 18), int(py)))
-    rot = A["rueda"].rotate(-angulo(g, t), resample=Image.BICUBIC)
-    L = meta["lado"]
-    cx, cy = meta["rueda_centro"]
-    im.alpha_composite(rot, (int(cx - L / 2), int(cy - L / 2)))
+    cx, cy = A["centro"]
+    leg = A["piernas"]
+    im.alpha_composite(leg, (int(cx - A["leg_cx"]), int(A["cint_y"])))
+    n = len(A["piezas"]); paso = 360 / n; a0 = angulo(g, A, t)
+    capas = []
+    for k, (img, fx) in enumerate(A["piezas"]):
+        th = a0 + k * paso
+        rad = math.radians(th)
+        px, py = cx + A["r"] * math.cos(rad), cy + A["r"] * math.sin(rad)
+        rot = img.rotate(90 - th, expand=True, resample=Image.BICUBIC)
+        abajo = math.sin(rad)                                                  # la de abajo se dibuja última (adelante)
+        capas.append((abajo, rot, px, py))
+    for _, rot, px, py in sorted(capas, key=lambda c: c[0]):
+        im.alpha_composite(rot, (int(px - rot.width / 2), int(py - rot.height / 2)))
     d = ImageDraw.Draw(im)
-    paso = 360 / meta["piezas"]
-    n = int(abs(angulo(g, t) - g.get("fase", 0.0)) // paso) % meta["piezas"] + 1
-    P.texto(d, (95, 150), f"{n}.", 150, (255, 255, 255), 12, (230, 30, 30))
-    P.texto(d, (W / 2 + 90, 1840), "STOP WHEN IT FITS!", 60, (255, 230, 40), 9)
+    num = int(((a0 - angulo(g, A, 0)) % 360) // paso) % n + 1
+    P.texto(d, (110, 150), f"{num}.", 160, (255, 255, 255), 13, (230, 30, 30))
     for te in enc:
         e = t - te
-        if -0.05 <= e < 0.5:
+        if -0.05 <= e < 0.55:
             if e < 0.15:
-                im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(90 * (1 - max(e, 0) / 0.15)))))
-            d = ImageDraw.Draw(im)
-            P.texto(d, (W / 2, 1740), "PERFECT!", int(110 * min(1, (e + 0.05) / 0.1)) + 1, (255, 230, 40), 12)
+                im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(55 * (1 - max(e, 0) / 0.15)))))
+                d = ImageDraw.Draw(im)
+            P.texto(d, (W / 2, 1860), "PERFECT!", int(110 * min(1, (e + 0.05) / 0.1)) + 1, (255, 230, 40), 12)
     return im.convert("RGB")
 
 
@@ -105,13 +147,10 @@ def audio(g, A, enc, dur):
     sr = M.SR; n = int(dur * sr); fx = np.zeros(n, np.float32)
 
     def add(t0, sig, v=1.0):
-        if sig is None:
-            return
         a = int(t0 * sr) % n; b = min(n, a + len(sig)); fx[a:b] += sig[: b - a] * v
-    paso = 360 / A["meta"]["piezas"]
-    vel = 360 * g.get("vueltas", 2) / g["dur"]
+    paso = 360 / len(A["piezas"]); vel = 360 * g.get("vueltas", 2) / g["dur"]
     k = 0.0
-    while k < dur:                                                             # tic por cada torso que pasa
+    while k < dur:
         add(k, M.golpe(0.05), 0.35); k += paso / vel
     for te in enc:
         add(te, M.ding(0.6), 0.6); add(te, M.boom(0.5), 0.4)
@@ -122,10 +161,7 @@ def audio(g, A, enc, dur):
 def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
-    A = armar(g); dur = g["dur"]
-    vel = 360.0 * g.get("vueltas", 2) / dur * g.get("sentido", 1)
-    g["fase"] = (90 - A["meta"]["correcto_ang"] - vel * g.get("t_encaje", 2.5)) % 360
-    enc = encajes(g, A)
+    A = armar(g); dur = g["dur"]; enc = encajes(g, A)
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

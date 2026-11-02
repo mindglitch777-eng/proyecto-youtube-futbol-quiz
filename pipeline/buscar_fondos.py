@@ -7,11 +7,28 @@ import requests
 from PIL import Image
 RAIZ = Path(__file__).resolve().parents[1]; OUT = RAIZ / "produccion" / "assets" / "fondos"
 UA = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) Chrome/124 Safari/537.36"}
-QS = ["football stadium pitch background 4k", "soccer stadium grass wallpaper vertical", "empty football stadium pitch hd",
-      "stadium background for editing football", "soccer field stadium lights wallpaper 4k"]
+QS = ["empty football stadium", "empty soccer stadium pitch wide angle", "stadium interior empty seats green pitch",
+      "Camp Nou empty stadium", "Santiago Bernabeu empty stadium", "Wembley stadium empty pitch", "empty stadium night lights football",
+      "football stadium pitch from center circle empty"]
+import cv2, numpy as np
+_det = cv2.FaceDetectorYN.create(str(RAIZ / "produccion" / "assets" / "modelos" / "face_detection_yunet_2023mar.onnx"), "", (320, 320), 0.6)
+
+
+def hay_gente(im):
+    a = cv2.cvtColor(np.asarray(im.resize((im.width // 2, im.height // 2))), cv2.COLOR_RGB2BGR)
+    _det.setInputSize((a.shape[1], a.shape[0])); _, f = _det.detect(a)
+    return f is not None and len(f) > 0
+
+
+def tiene_cancha(im):
+    """Verde de pasto en la mitad de abajo (descarta pelotas, fútbol americano en primer plano, etc.)."""
+    a = np.asarray(im.resize((90, 160)))[80:].astype(int)
+    verde = (a[..., 1] > a[..., 0] + 15) & (a[..., 1] > a[..., 2] + 10)
+    return verde.mean() > 0.35
 def main():
     from ddgs import DDGS
     OUT.mkdir(parents=True, exist_ok=True); idx = {}; k = 0
+    for v in OUT.glob("estadio_*.jpg"): v.unlink()
     for q in QS:
         try:
             res = DDGS().images(q, max_results=40, size="Wallpaper", type_image="photo")
@@ -24,7 +41,7 @@ def main():
                 im = Image.open(io.BytesIO(b.content)).convert("RGB")
             except Exception:
                 continue
-            if min(im.size) < 1000: continue
+            if min(im.size) < 1000 or hay_gente(im) or not tiene_cancha(im): continue
             w, h = im.size; nw = min(w, int(h * 9 / 16))                          # recorte 9:16 del centro
             im = im.crop(((w - nw) // 2, 0, (w - nw) // 2 + nw, h)).resize((1080, 1920), Image.LANCZOS)
             im.save(OUT / f"estadio_{k}.jpg", quality=90); idx[f"estadio_{k}"] = r["image"]; k += 1
