@@ -65,21 +65,22 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-03T17:57:52+00:00",
+   "inicio": "2026-11-03T20:18:51+00:00",
    "resumen": {
-    "videos": 21,
-    "vistas_totales": 146369,
+    "videos": 22,
+    "vistas_totales": 149994,
     "por_formato": {
-     "stop": "6 videos · mediana 11,134 · mejor 23,752",
-     "cabeza": "1 videos · mediana 1,358 · mejor 1,358",
-     "find": "3 videos · mediana 1,557 · mejor 2,445",
-     "plinko": "1 videos · mediana 957 · mejor 957",
-     "ring": "1 videos · mediana 1,173 · mejor 1,173",
-     "otros": "2 videos · mediana 888 · mejor 1,197",
-     "carrera": "2 videos · mediana 810 · mejor 978"
+     "rueda": "1 videos · mediana 9,668 · mejor 9,668",
+     "stop": "6 videos · mediana 11,035 · mejor 23,251",
+     "cabeza": "1 videos · mediana 1,339 · mejor 1,339",
+     "find": "3 videos · mediana 1,533 · mejor 2,420",
+     "plinko": "1 videos · mediana 949 · mejor 949",
+     "ring": "1 videos · mediana 1,164 · mejor 1,164",
+     "otros": "2 videos · mediana 882 · mejor 1,188",
+     "carrera": "2 videos · mediana 805 · mejor 972"
     }
    },
-   "fin": "2026-11-03T17:57:52+00:00"
+   "fin": "2026-11-03T20:18:52+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -124,33 +125,33 @@
   "publicacion": {
    "estado": "ok",
    "resumen": {
-    "subidos": 0,
-    "en_cola": 6,
-    "freno": "límite diario de YouTube",
+    "subidos": 6,
+    "en_cola": 0,
+    "freno": null,
     "errores": [],
-    "total_publicados": 16
+    "total_publicados": 22
    },
-   "inicio": "2026-11-03T17:57:49+00:00",
-   "fin": "2026-11-03T17:57:49+00:00"
+   "inicio": "2026-11-03T20:18:40+00:00",
+   "fin": "2026-11-03T20:18:50+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-03T17:57:58+00:00",
+   "fin": "2026-11-03T20:18:58+00:00",
    "resumen": {
-    "videos": 14,
+    "videos": 16,
     "por_formato": {
-     "stop": "4 videos · 181.7% visto · 0.99 subs/1000",
-     "find": "3 videos · 104.7% visto · 0.0 subs/1000",
-     "otros": "2 videos · 70.2% visto · 0.65 subs/1000",
-     "ring": "1 videos · 74.8% visto · 0.99 subs/1000",
+     "stop": "6 videos · 188.2% visto · 0.93 subs/1000",
+     "find": "3 videos · 111.8% visto · 0.0 subs/1000",
+     "otros": "2 videos · 70.0% visto · 0.65 subs/1000",
+     "ring": "1 videos · 74.9% visto · 0.98 subs/1000",
      "carrera": "2 videos · 77.2% visto · 0.26 subs/1000",
-     "plinko": "1 videos · 74.2% visto · 0.65 subs/1000",
-     "cabeza": "1 videos · 158.3% visto · 0.71 subs/1000"
+     "plinko": "1 videos · 74.2% visto · 0.62 subs/1000",
+     "cabeza": "1 videos · 158.5% visto · 0.7 subs/1000"
     }
    }
   }
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-03T17:57:58+00:00"
+ "actualizado": "2026-11-03T20:18:58+00:00"
 }
