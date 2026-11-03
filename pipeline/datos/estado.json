@@ -65,21 +65,21 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-03T01:41:55+00:00",
+   "inicio": "2026-11-03T03:46:14+00:00",
    "resumen": {
-    "videos": 18,
-    "vistas_totales": 107396,
+    "videos": 19,
+    "vistas_totales": 109833,
     "por_formato": {
-     "stop": "6 videos · mediana 11,839 · mejor 25,229",
-     "cabeza": "1 videos · mediana 1,505 · mejor 1,505",
-     "find": "3 videos · mediana 1,709 · mejor 2,620",
-     "plinko": "1 videos · mediana 1,013 · mejor 1,013",
-     "ring": "1 videos · mediana 1,239 · mejor 1,239",
-     "otros": "2 videos · mediana 929 · mejor 1,259",
-     "carrera": "2 videos · mediana 842 · mejor 1,016"
+     "stop": "6 videos · mediana 11,746 · mejor 25,159",
+     "cabeza": "1 videos · mediana 1,468 · mejor 1,468",
+     "find": "3 videos · mediana 1,693 · mejor 2,593",
+     "plinko": "1 videos · mediana 1,005 · mejor 1,005",
+     "ring": "1 videos · mediana 1,229 · mejor 1,229",
+     "otros": "2 videos · mediana 923 · mejor 1,250",
+     "carrera": "2 videos · mediana 837 · mejor 1,010"
     }
    },
-   "fin": "2026-11-03T01:41:56+00:00"
+   "fin": "2026-11-03T03:46:15+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -125,17 +125,17 @@
    "estado": "ok",
    "resumen": {
     "subidos": 0,
-    "en_cola": 5,
+    "en_cola": 6,
     "freno": "límite diario de YouTube",
     "errores": [],
     "total_publicados": 15
    },
-   "inicio": "2026-11-03T01:41:53+00:00",
-   "fin": "2026-11-03T01:41:54+00:00"
+   "inicio": "2026-11-03T03:46:12+00:00",
+   "fin": "2026-11-03T03:46:12+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-03T01:42:07+00:00",
+   "fin": "2026-11-03T03:46:21+00:00",
    "resumen": {
     "videos": 14,
     "por_formato": {
@@ -152,5 +152,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-03T01:42:07+00:00"
+ "actualizado": "2026-11-03T03:46:21+00:00"
 }
