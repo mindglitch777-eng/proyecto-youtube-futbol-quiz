@@ -253,5 +253,16 @@
   "video_id": null,
   "error": "400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n ",
   "subido": "2026-11-03T09:28:51+00:00"
+ },
+ {
+  "id": "s1_21_jue05_0900_stop",
+  "tipo": "stop",
+  "variante": "grilla",
+  "fecha": "2026-11-05",
+  "hora": "09:00",
+  "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop Yamal 6️⃣7️⃣ #yamal #ronaldinho #messi",
+  "video_id": null,
+  "error": "400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n ",
+  "subido": "2026-11-03T17:57:49+00:00"
  }
 ]
