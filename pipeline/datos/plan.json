@@ -15,7 +15,10 @@
   "find",
   "plinko",
   "dress",
-  "torre"
+  "torre",
+  "cabezas",
+  "pared",
+  "circulo"
  ],
  "podadas": {},
  "promovidas": {},
@@ -31,26 +34,13 @@
  "slots": [
   {
    "fecha": "2026-11-07",
-   "hora": "08:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-07",
-   "hora": "11:00",
-   "tipo": "penal"
-  },
-  {
-   "fecha": "2026-11-07",
    "hora": "14:00",
    "tipo": "rueda"
   },
   {
    "fecha": "2026-11-07",
    "hora": "17:00",
-   "tipo": "siuu"
+   "tipo": "dress"
   },
   {
    "fecha": "2026-11-07",
@@ -63,7 +53,7 @@
   {
    "fecha": "2026-11-07",
    "hora": "23:00",
-   "tipo": "dress"
+   "tipo": "pared"
   },
   {
    "fecha": "2026-11-08",
@@ -76,7 +66,7 @@
   {
    "fecha": "2026-11-08",
    "hora": "11:00",
-   "tipo": "torre"
+   "tipo": "siuu"
   },
   {
    "fecha": "2026-11-08",
@@ -86,7 +76,7 @@
   {
    "fecha": "2026-11-08",
    "hora": "17:00",
-   "tipo": "plinko"
+   "tipo": "penal"
   },
   {
    "fecha": "2026-11-08",
@@ -99,7 +89,7 @@
   {
    "fecha": "2026-11-08",
    "hora": "23:00",
-   "tipo": "siuu"
+   "tipo": "torre"
   },
   {
    "fecha": "2026-11-09",
@@ -112,7 +102,7 @@
   {
    "fecha": "2026-11-09",
    "hora": "11:00",
-   "tipo": "penal"
+   "tipo": "cabezas"
   },
   {
    "fecha": "2026-11-09",
@@ -122,7 +112,7 @@
   {
    "fecha": "2026-11-09",
    "hora": "17:00",
-   "tipo": "torre"
+   "tipo": "plinko"
   },
   {
    "fecha": "2026-11-09",
@@ -135,7 +125,7 @@
   {
    "fecha": "2026-11-09",
    "hora": "23:00",
-   "tipo": "dress"
+   "tipo": "pared"
   },
   {
    "fecha": "2026-11-10",
@@ -158,7 +148,7 @@
   {
    "fecha": "2026-11-10",
    "hora": "17:00",
-   "tipo": "plinko"
+   "tipo": "cabezas"
   },
   {
    "fecha": "2026-11-10",
@@ -171,7 +161,7 @@
   {
    "fecha": "2026-11-10",
    "hora": "23:00",
-   "tipo": "find"
+   "tipo": "torre"
   },
   {
    "fecha": "2026-11-11",
@@ -184,7 +174,7 @@
   {
    "fecha": "2026-11-11",
    "hora": "11:00",
-   "tipo": "dress"
+   "tipo": "penal"
   },
   {
    "fecha": "2026-11-11",
@@ -207,7 +197,7 @@
   {
    "fecha": "2026-11-11",
    "hora": "23:00",
-   "tipo": "penal"
+   "tipo": "dress"
   },
   {
    "fecha": "2026-11-12",
@@ -220,7 +210,7 @@
   {
    "fecha": "2026-11-12",
    "hora": "11:00",
-   "tipo": "balon"
+   "tipo": "circulo"
   },
   {
    "fecha": "2026-11-12",
@@ -230,7 +220,7 @@
   {
    "fecha": "2026-11-12",
    "hora": "17:00",
-   "tipo": "torre"
+   "tipo": "plinko"
   },
   {
    "fecha": "2026-11-12",
@@ -243,7 +233,7 @@
   {
    "fecha": "2026-11-12",
    "hora": "23:00",
-   "tipo": "plinko"
+   "tipo": "find"
   },
   {
    "fecha": "2026-11-13",
@@ -256,7 +246,7 @@
   {
    "fecha": "2026-11-13",
    "hora": "11:00",
-   "tipo": "find"
+   "tipo": "circulo"
   },
   {
    "fecha": "2026-11-13",
@@ -266,7 +256,7 @@
   {
    "fecha": "2026-11-13",
    "hora": "17:00",
-   "tipo": "penal"
+   "tipo": "cabezas"
   },
   {
    "fecha": "2026-11-13",
@@ -279,7 +269,7 @@
   {
    "fecha": "2026-11-13",
    "hora": "23:00",
-   "tipo": "dress"
+   "tipo": "torre"
   }
  ]
 }

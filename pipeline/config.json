@@ -55,6 +55,21 @@
    "nombre": "BALL TOWER",
    "min": 0,
    "max": 7
+  },
+  "cabezas": {
+   "nombre": "HEAD FIT",
+   "min": 0,
+   "max": 7
+  },
+  "pared": {
+   "nombre": "WALL BALANCE",
+   "min": 0,
+   "max": 7
+  },
+  "circulo": {
+   "nombre": "GOAT CIRCLE",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -129,6 +144,15 @@
    "listo": true
   },
   "torre": {
+   "listo": true
+  },
+  "cabezas": {
+   "listo": true
+  },
+  "pared": {
+   "listo": true
+  },
+  "circulo": {
    "listo": true
   }
  }

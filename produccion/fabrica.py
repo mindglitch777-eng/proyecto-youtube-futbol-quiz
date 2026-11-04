@@ -34,10 +34,12 @@ DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
            "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "siuu": "SIUUU 67",
-           "penal": "PENALTY 100", "balon": "BALLON D'OR 100%"}
+           "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "pared": "WALL BALANCE",
+           "circulo": "GOAT CIRCLE"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
           "plinko": "render_plinko.py", "rueda": "render_rueda.py", "siuu": "render_siuu.py",
-          "penal": "render_penal.py", "balon": "render_balon.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
+          "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py",
+          "pared": "render_pared.py", "circulo": "render_circulo.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
 TIT_DRESS = ["Pause when it fits 😂 {a} & {b} drip challenge", "Dress them up 😎 Can you stop at the right time? {a} & {b}",
              "Make {a} and {b} DRIP 🥶 Pause it!", "{a} & {b} bald edition 😂 Pause to dress them", "Stop it when it fits 🛑😂 {a} vs {b}"]
 TIT_TORRE = ["Whose country is this? 🏳️ {a}, {b} or {c} 👇", "Guess the flag before it's revealed 😳 {a}, {b} or {c}?",
@@ -267,6 +269,45 @@ def guion_balon(gid, rng, V, fecha):
                 dur=6.0, vueltas=3, musica=V.musica(rng))
 
 
+# Tendencias de la semana del 04/11 (radar + Gemini): FIT challenge 6,6 M · balance at the wall 6,9 M · "who is the best" 6 M
+CUERPOS_FIT = {"kylian_mbapp_13": "kylian_mbapp", "kylian_mbapp_12": "kylian_mbapp", "lionel_messi_3": "lionel_messi",
+               "cristiano_ronaldo_14": "cristiano_ronaldo", "lamine_yamal_10": "lamine_yamal", "neymar_3": "neymar"}
+CUERPOS_PARED = ["lionel_messi_3", "kylian_mbapp_10", "cristiano_ronaldo_14", "bukayo_saka_3", "ousmane_demb_l_3",
+                 "lautaro_mart_nez_3", "kylian_mbapp_11", "mohamed_salah_1"]
+TIT_CABEZAS = ["99.9% WILL FAIL the FIT challenge 💀 {n} edition", "Fit {n}'s head 🛑 Only 1% can", "{n} head fit challenge 😱 Pause it!"]
+TIT_PARED = ["Who has the best balance? 👀⚽ {a}, {b}, {c} or {d}", "Who won't fall? 😱 {a} vs {b} vs {c} vs {d}",
+             "Only one stays up 🤯 {a}, {b}, {c} or {d}?"]
+TIT_CIRCULO = ["Pause on your GOAT 🐐 {a}, {b} or {c}?", "Who is the BEST footballer? 🐐 Pause it!", "Stop the ball on your GOAT 🐐⚽"]
+
+
+def guion_cabezas(gid, rng, V, fecha):
+    cuerpo = rng.choice(sorted(CUERPOS_FIT)); clave = CUERPOS_FIT[cuerpo]
+    otras = [c for c in FOTOS if c != clave]
+    est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
+    cab = rng.sample(est, 3) + rng.sample([c for c in otras if c not in est], 4); rng.shuffle(cab)
+    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=8.0, vueltas=2,
+                sentido=rng.choice([1, -1]), pos_correcto=rng.randint(2, 6), musica=f"rueda_original_{rng.randint(0, 2)}")
+
+
+def guion_pared(gid, rng, V, fecha):
+    estrellas = [c for c in CUERPOS_PARED if c.rsplit("_", 1)[0] in SUPERESTRELLAS]
+    otros = [c for c in CUERPOS_PARED if c not in estrellas]
+    for _ in range(50):
+        cs = rng.sample(estrellas, 2) + rng.sample(otros, 2)
+        if len({c.rsplit("_", 1)[0] for c in cs}) == 4:
+            break
+    rng.shuffle(cs)
+    nombres = [nombre_de(c.rsplit("_", 1)[0]) for c in cs]
+    return dict(id=gid, cuerpos=cs, nombres=nombres, ganador=V.ganador(nombres, rng), dur=7.0, musica=V.musica(rng))
+
+
+def guion_circulo(gid, rng, V, fecha):
+    est = [c for c in SUPERESTRELLAS if c in FOTOS]
+    resto = rng.sample([c for c in FOTOS if c not in est], 3)
+    cl = est + resto; rng.shuffle(cl)
+    return dict(id=gid, claves=cl, nombres=[nombre_de(c) for c in cl], dur=8.0, musica=V.musica(rng))
+
+
 def guion_plinko(gid, rng, V, fecha):
     grupo = con_estrella(V.grupo("plinko", 4, rng, JUGADORES, fecha), rng)
     return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], semilla=V.semilla(rng) * 5000,
@@ -381,6 +422,19 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo in ("cabezas", "pared", "circulo"):
+            g = {"cabezas": guion_cabezas, "pared": guion_pared, "circulo": guion_circulo}[tipo](gid, rng, V, sl["fecha"])
+            ns = [g["nombre"]] if tipo == "cabezas" else g["nombres"]
+            ns4 = (ns + ["Messi", "Ronaldo", "Mbappé", "Yamal"])[:4]
+            plant = {"cabezas": TIT_CABEZAS, "pared": TIT_PARED, "circulo": TIT_CIRCULO}[tipo]
+            titulo = V.titulo(tipo, plant, rng).format(n=ns[0], a=ns4[0], b=ns4[1], c=ns4[2], d=ns4[3])
+            for x in ns4[:3]:
+                if len(titulo) + len(tag(x)) + 1 <= 100:
+                    titulo += " " + tag(x)
+            meta = {"cabezas": f"Pause when {ns[0]}'s head fits PERFECTLY 🛑", "pared": "Pick who won't fall BEFORE the countdown ends 👀",
+                    "circulo": "Pause when the ball touches YOUR GOAT 🐐"}[tipo]
+            desc = f"{meta}\nComment your pick 👇 Follow for part 2 🔥\n" + " ".join(tag(x) for x in ns4) + " #football #soccer #challenge #shorts"
+            fijado = ""; fotos = []; nombres = ns4
         elif tipo in ("siuu", "penal", "balon"):
             g = {"siuu": guion_siuu, "penal": guion_penal, "balon": guion_balon}[tipo](gid, rng, V, sl["fecha"])
             n = g.get("nombre", "Ronaldo")
