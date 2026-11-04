@@ -1,11 +1,17 @@
 {
- "hora": "2026-11-04T06:06-03:00",
- "ok": true,
- "problemas": [],
- "subidos_ahora": 2,
+ "hora": "2026-11-04T14:31-03:00",
+ "ok": false,
+ "problemas": [
+  "2026-11-04 15:30 s1y_01_mie04_1530_rueda no quedó programado (límite diario de YouTube)",
+  "2026-11-04 23:00 s1y_02_mie04_2300_dress no quedó programado (límite diario de YouTube)"
+ ],
+ "subidos_ahora": 0,
  "en_cola": [
-  "s1107_03_sab07_1500_stop",
-  "s1107_04_sab07_1800_penal",
-  "s1107_05_sab07_2100_stop"
+  "s1y_01_mie04_1530_rueda",
+  "s1y_02_mie04_2300_dress",
+  "s1y_03_jue05_1500_rueda",
+  "s1y_04_jue05_2300_cabezas",
+  "s1y_05_vie06_1500_rueda",
+  "s1y_06_vie06_2300_pared"
  ]
 }

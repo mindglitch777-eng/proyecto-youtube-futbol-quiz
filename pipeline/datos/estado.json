@@ -65,22 +65,22 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-04T09:06:12+00:00",
+   "inicio": "2026-11-04T17:31:34+00:00",
    "resumen": {
-    "videos": 23,
-    "vistas_totales": 160517,
+    "videos": 25,
+    "vistas_totales": 176617,
     "por_formato": {
-     "rueda": "2 videos · mediana 8,934 · mejor 14,081",
-     "stop": "7 videos · mediana 16,121 · mejor 28,781",
-     "cabeza": "1 videos · mediana 1,249 · mejor 1,249",
-     "find": "3 videos · mediana 1,435 · mejor 2,304",
-     "plinko": "1 videos · mediana 909 · mejor 909",
-     "ring": "1 videos · mediana 1,118 · mejor 1,118",
-     "otros": "2 videos · mediana 852 · mejor 1,145",
-     "carrera": "2 videos · mediana 780 · mejor 942"
+     "stop": "9 videos · mediana 4,660 · mejor 28,817",
+     "rueda": "2 videos · mediana 9,506 · mejor 15,137",
+     "cabeza": "1 videos · mediana 1,194 · mejor 1,194",
+     "find": "3 videos · mediana 1,392 · mejor 2,235",
+     "plinko": "1 videos · mediana 885 · mejor 885",
+     "ring": "1 videos · mediana 1,092 · mejor 1,092",
+     "otros": "2 videos · mediana 834 · mejor 1,119",
+     "carrera": "2 videos · mediana 764 · mejor 923"
     }
    },
-   "fin": "2026-11-04T09:06:13+00:00"
+   "fin": "2026-11-04T17:31:34+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -123,20 +123,23 @@
    "fin": "2026-11-01T22:06:24+00:00"
   },
   "publicacion": {
-   "estado": "ok",
+   "estado": "error",
    "resumen": {
-    "subidos": 2,
-    "en_cola": 3,
+    "subidos": 0,
+    "en_cola": 6,
     "freno": "límite diario de YouTube",
-    "errores": [],
+    "errores": [
+     "2026-11-04 15:30 s1y_01_mie04_1530_rueda no quedó programado (límite diario de YouTube)",
+     "2026-11-04 23:00 s1y_02_mie04_2300_dress no quedó programado (límite diario de YouTube)"
+    ],
     "total_publicados": 26
    },
-   "inicio": "2026-11-04T09:06:06+00:00",
-   "fin": "2026-11-04T09:06:11+00:00"
+   "inicio": "2026-11-04T17:31:31+00:00",
+   "fin": "2026-11-04T17:31:31+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-04T09:06:18+00:00",
+   "fin": "2026-11-04T17:31:41+00:00",
    "resumen": {
     "videos": 16,
     "por_formato": {
@@ -153,5 +156,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-04T09:06:18+00:00"
+ "actualizado": "2026-11-04T17:31:41+00:00"
 }
