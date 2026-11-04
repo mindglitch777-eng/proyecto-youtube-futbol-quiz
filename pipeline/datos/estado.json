@@ -65,22 +65,22 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-04T17:31:34+00:00",
+   "inicio": "2026-11-04T18:08:59+00:00",
    "resumen": {
     "videos": 25,
-    "vistas_totales": 176617,
+    "vistas_totales": 177892,
     "por_formato": {
-     "stop": "9 videos · mediana 4,660 · mejor 28,817",
-     "rueda": "2 videos · mediana 9,506 · mejor 15,137",
-     "cabeza": "1 videos · mediana 1,194 · mejor 1,194",
-     "find": "3 videos · mediana 1,392 · mejor 2,235",
+     "stop": "9 videos · mediana 4,649 · mejor 28,825",
+     "rueda": "2 videos · mediana 9,554 · mejor 15,226",
+     "cabeza": "1 videos · mediana 1,192 · mejor 1,192",
+     "find": "3 videos · mediana 1,395 · mejor 2,233",
      "plinko": "1 videos · mediana 885 · mejor 885",
-     "ring": "1 videos · mediana 1,092 · mejor 1,092",
-     "otros": "2 videos · mediana 834 · mejor 1,119",
+     "ring": "1 videos · mediana 1,090 · mejor 1,090",
+     "otros": "2 videos · mediana 834 · mejor 1,118",
      "carrera": "2 videos · mediana 764 · mejor 923"
     }
    },
-   "fin": "2026-11-04T17:31:34+00:00"
+   "fin": "2026-11-04T18:08:59+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -129,17 +129,17 @@
     "en_cola": 6,
     "freno": "límite diario de YouTube",
     "errores": [
-     "2026-11-04 15:30 s1y_01_mie04_1530_rueda no quedó programado (límite diario de YouTube)",
+     "2026-11-04 22:00 s1y_01_mie04_1530_rueda no quedó programado (límite diario de YouTube)",
      "2026-11-04 23:00 s1y_02_mie04_2300_dress no quedó programado (límite diario de YouTube)"
     ],
     "total_publicados": 26
    },
-   "inicio": "2026-11-04T17:31:31+00:00",
-   "fin": "2026-11-04T17:31:31+00:00"
+   "inicio": "2026-11-04T18:08:55+00:00",
+   "fin": "2026-11-04T18:08:55+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-04T17:31:41+00:00",
+   "fin": "2026-11-04T18:09:08+00:00",
    "resumen": {
     "videos": 16,
     "por_formato": {
@@ -156,5 +156,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-04T17:31:41+00:00"
+ "actualizado": "2026-11-04T18:09:08+00:00"
 }
