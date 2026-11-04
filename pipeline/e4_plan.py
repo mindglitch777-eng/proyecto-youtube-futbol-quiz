@@ -3,7 +3,9 @@
 Etapa 4 · PLAN DE LA SEMANA (grilla "volumen con intención", decisión del 02/11):
 5 videos por día = 3 STOP distintos (lo que funciona) intercalados con 2 PRUEBAS (formatos nuevos que rotan).
 
-  09:00 STOP grilla · 12:00 PRUEBA · 15:00 STOP estrella (arranque tipo FIND) · 18:00 PRUEBA · 21:00 STOP HARD
+  (v2, 04/11) 6 por día = 3 que FUNCIONAN + 3 NUEVOS intercalados:
+  08:00 STOP grilla · 11:00 PRUEBA · 14:00 WHEEL (14.081 vistas en 37 h: fijo) · 17:00 PRUEBA · 20:00 STOP estrella (HARD día por medio) · 23:00 PRUEBA
+  Los dos STOP del día nunca se parecen (uno grilla, otro con zoom a la estrella), para que YouTube no lo vea repetitivo.
 
 Pruebas: config["pruebas"] (solo las que tienen "listo": true). Cada día dos pruebas DISTINTAS; las que rinden mejor
 salen más seguido y las que nunca se probaron tienen prioridad (todas tienen su chance).
@@ -17,8 +19,8 @@ from datetime import date, datetime, timedelta, timezone
 
 from comun import CONFIG, cargar, etapa, guardar
 
-GRILLA = [("09:00", "stop", "grilla"), ("12:00", "prueba", None), ("15:00", "stop", "estrella"),
-          ("18:00", "prueba", None), ("21:00", "stop", "hard")]
+GRILLA = [("08:00", "stop", "grilla"), ("11:00", "prueba", None), ("14:00", "rueda", None),
+          ("17:00", "prueba", None), ("20:00", "stop", "estrella"), ("23:00", "prueba", None)]
 MIN_VIDEOS_PODA = 4
 
 
@@ -84,8 +86,10 @@ def main(inicio=None, dias=7):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []
         for hora, tipo, estilo in GRILLA:
+            if tipo == "rueda":                                               # formato que ya funciona: lugar fijo
+                slots.append(dict(fecha=dia, hora=hora, tipo="rueda")); continue
             if tipo == "stop":
-                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=estilo == "hard",
+                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "estrella" and d % 2 == 1),
                                   arranque="estrella" if estilo == "estrella" else ("grilla" if estilo == "grilla" else rng.choice(["estrella", "grilla"]))))
                 continue
             cand = [k for k in activas if k not in hoy_pruebas] or activas

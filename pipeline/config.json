@@ -2,13 +2,14 @@
  "canal_id": "UCm4YQbIIPoKyvDAPRx9kIFw",
  "zona_horaria": "America/Argentina/Buenos_Aires",
  "horas": [
-  "09:00",
-  "12:00",
-  "15:00",
-  "18:00",
-  "21:00"
+  "08:00",
+  "11:00",
+  "14:00",
+  "17:00",
+  "20:00",
+  "23:00"
  ],
- "videos_por_dia": 5,
+ "videos_por_dia": 6,
  "formatos": {
   "stop": {
    "nombre": "STOP CHALLENGE",
@@ -109,9 +110,6 @@
   }
  },
  "pruebas": {
-  "rueda": {
-   "listo": true
-  },
   "siuu": {
    "listo": true
   },
