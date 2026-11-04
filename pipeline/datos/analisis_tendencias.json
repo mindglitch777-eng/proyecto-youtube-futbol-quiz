@@ -1,0 +1,795 @@
+[
+ {
+  "id": "kw03h3YsWJU",
+  "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥 #viral",
+  "vistas": 20157041,
+  "horas": 59.8,
+  "canal": "Mr Muzu",
+  "canal_subs": 39700,
+  "canal_creado": "2026-10-02",
+  "analisis": {
+   "nombre_formato": "Dressing Challenge con Personajes",
+   "mecanica": "Dos personajes idénticos o dos versiones de jugadores famosos (Cristiano y Lamine Yamal) se visten de forma sincronizada con accesorios que van apareciendo enumerados (1, 2, 3), sumando un check verde al seleccionarlos.",
+   "que_hace_el_espectador": "Mira la transición rápida y adivina o espera el accesorio final de moda.",
+   "cuadro_0": "Fondo azul plano, arriba a la izquierda números rojos 1, 2, 3 verticalmente, arriba a la derecha dos collares dorados, abajo dos avatares tipo meme (Ronaldo y Lamine Yamal con carita graciosa sacando la lengua) pulgar arriba/señas.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Fondo azul, 2 avatares de futbolistas abajo, números 1, 2, 3 arriba izquierda, collares flotando arriba derecha.",
+     "sonido": "Beat trap animado inicial con voz cantando 'ranquiti kinking kang'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Los collares dorados caen y se colocan mágicamente en el cuello de ambos avatares. Aparece check verde en 1.",
+     "sonido": "Efecto de sonido de chasquido / colocación"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Aparecen anteojos negros arriba, caen a los ojos de ambos. Check verde en 2.",
+     "sonido": "Efecto 'whoosh' + click"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Aparece pelo naranja despeinado arriba, cae sobre las cabezas. El número 3 sigue sin check.",
+     "sonido": "Sonido juguetón de transiciones"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Cambio rápido de pelo: peluca rubia con moño.",
+     "sonido": "Beat continuo"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Cambio rápido de pelo: pelo corto fucsia punky.",
+     "sonido": "Beat continuo"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Cambio rápido de pelo: peluca payaso multicolor con anteojos ocultos.",
+     "sonido": "Sonido cómico de bocina"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Cambio rápido de pelo: peinado afro negro grande.",
+     "sonido": "Corte de música final"
+    }
+   ],
+   "duracion_s": 4.0,
+   "loop": "si, reinicia al primer cuadro al terminar el afro.",
+   "gancho": "El cambio dinámico y rápido de accesorios bizarros en caras conocidas de futbolistas memes.",
+   "dopamina": [
+    "Check verde instantáneo al completar ítem 1 y 2",
+    "Secuencia vertiginosa de cambios estéticos a partir del segundo 2"
+   ],
+   "audio": "Música trap viral de TikTok con letra rítmica pegadiza y efectos de colocación y chistes cortos.",
+   "por_que_comentan": "Debaten cuál jugador se ve mejor con cada peluca y cuál accesorio fue el más gracioso.",
+   "assets_necesarios": [
+    "Fondo azul sólido",
+    "Avatares PNG de Cristiano y Lamine Yamal con gestos divertidos",
+    "Números 1, 2, 3 en rojo con fuente bold",
+    "Checks verdes PNG",
+    "Accesorios PNG: collares dorados, lentes negros, varios estilos de pelo/pelucas"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Inicializar pantalla vertical 9:16 con fondo azul.",
+    "2. Renderizar avatares fijos abajo y numeración 1, 2, 3 en la esquina superior izquierda.",
+    "3. Programar animación de coordenadas (Y) para que las imágenes de accesorios bajen desde la parte superior hasta encajar en las coordenadas de los avatares según el tiempo (t).",
+    "4. Dibujar sprite de check verde sobre el número correspondiente al completarse la animación del accesorio."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar reacciones faciales animadas (ojos que parpadean) sincronizadas con los cambios.",
+    "Incluir una barra de progreso que muestre cuánto falta para el look final.",
+    "Permitir votación interactiva en comentarios con palabras clave."
+   ]
+  }
+ },
+ {
+  "id": "Fs9_ZVGvhbQ",
+  "titulo": "😂 Ronaldo Cartoon Game 🤣⚽ Funny Gameplay & Crazy Moments! 🔥 #Shorts",
+  "vistas": 12764548,
+  "horas": 122.3,
+  "canal": "LiQUiD OP LIVE",
+  "canal_subs": 33100,
+  "canal_creado": "2021-09-08",
+  "analisis": {
+   "nombre_formato": "Eleccion Binaria de Transformacion",
+   "mecanica": "El personaje se encuentra frente a dos puertas o opciones representadas por iconos (bateria cargada/descargada). Al avanzar, elige una opcion que transforma su aspecto fisico e incluso su expresion facial (de debil a musculoso o viceversa). Se repite varias veces con distintas combinaciones.",
+   "que_hace_el_espectador": "Elegir anticipadamente que puerta elegira el personaje o ver su transformacion repentina.",
+   "cuadro_0": "Arriba: un portal oscuro con dos personajes estaticos. Al medio: dos barreras verticales, una roja con bateria descargada y otra verde con bateria cargada. Abajo: un personaje hipermusculoso con cara enojada, usando uniforme blanco y pantalon rojo, listo para moverse.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Personaje musculoso frente a barrera roja y verde",
+     "sonido": "Musica alegre tipo cumbia remix con ritmo constante"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El personaje corre hacia la izquierda",
+     "sonido": "Efecto de corrida rapida"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El personaje se transforma en version flaca con cara feliz",
+     "sonido": "Efecto de sonido 'pop'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Personaje flaco frente a las baterias",
+     "sonido": "Musica continua"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El personaje se desplaza hacia la derecha",
+     "sonido": "Efecto deslizamiento"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "El personaje se transforma de nuevo en musculoso brillante",
+     "sonido": "Sonido de energia electrica"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Personaje musculoso en pantalla completa",
+     "sonido": "Musica en loop"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Se desplaza hacia la izquierda",
+     "sonido": "Sonido de pasos rapidos"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Cambio a version flaca con cara triste",
+     "sonido": "Efecto triste 'wah-wah'"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Personaje flaco triste frente a baterias",
+     "sonido": "Musica continua"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Se mueve a la derecha",
+     "sonido": "Efecto deslizamiento"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Se transforma en personaje musculoso con aura de fuego",
+     "sonido": "Sonido de fuego/explosion"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Personaje envuelto en llamas en primer plano",
+     "sonido": "Musica continua"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Pantalla de votacion 'Like vs Share' con temporizador",
+     "sonido": "Cuenta regresiva con pitidos"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Cuenta atras en numero 3",
+     "sonido": "Pitido 1"
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Cuenta atras en numero 2, aparece cursor animado",
+     "sonido": "Pitido 2"
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Cuenta atras en numero 1, cursor hace clic en compartir",
+     "sonido": "Pitido final y sonido de click"
+    }
+   ],
+   "duracion_s": 8.0,
+   "loop": "Empalma al volver a mostrar el personaje musculoso inicial del cuadro 0 usando un corte directo en loop continuo.",
+   "gancho": "La transformacion repentina e hiperbolica combinada con memes virales muy conocidos.",
+   "dopamina": [
+    "Cambios de estado visuales rapidos cada 1 o 2 segundos",
+    "Efectos de fuego y energia brillante",
+    "Cuenta regresiva final interactiva"
+   ],
+   "audio": "Cumbia remix pegadiza con efectos de sonido caricaturescos sincronizados a cada movimiento.",
+   "por_que_comentan": "Debaten sobre cual opcion es mejor o se burlan de las expresiones faciales exageradas de los personajes.",
+   "assets_necesarios": [
+    "Fondo de pista de carreras estilo videojuego movil",
+    "Iconos de bateria verde y bateria roja",
+    "Sprite de personaje musculoso enojado",
+    "Sprite de personaje flaco sonriente",
+    "Sprite de personaje flaco triste",
+    "Sprite de personaje envuelto en fuego",
+    "Overlay de votacion 'Like vs Share' con temporizador y cursor"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "Configurar bucle principal en Pygame o Manim de 8 segundos a 60 FPS.",
+    "Renderizar fondo estatico con desplazamiento vertical simulando movimiento hacia adelante.",
+    "Posicionar sprite central del personaje y alternar entre las 4 variantes de textura segun el tiempo (t).",
+    "Aplicar animaciones de interpolacion lineal (lerp) para los desplazamientos laterales de izquierda a derecha.",
+    "Superponer la UI final de cuenta regresiva con elementos graficos basicos y textos animados."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Incluir mas reacciones faciales exageradas estilo meme actual.",
+    "Añadir vibracion de pantalla (screen shake) en cada transformacion de fuego.",
+    "Permitir votacion dinamica real con graficas de porcentaje en tiempo de reproduccion."
+   ]
+  }
+ },
+ {
+  "id": "WkZZJhChb7M",
+  "titulo": "🍿 KANE LOS SACÓ A BAILAR #balondeoro #mbappe #lamineyamal #ia #shorts",
+  "vistas": 11372849,
+  "horas": 107.8,
+  "canal": "El Balón de Icaro ",
+  "canal_subs": 352000,
+  "canal_creado": "2019-07-03",
+  "analisis": {
+   "nombre_formato": "duelo_baile_humoristico",
+   "mecanica": "Un jugador en smoking gambetea en el centro del escenario mientras otros jugadores caen o bailan alrededor simulando ser regateados con estilo cómic.",
+   "que_hace_el_espectador": "solo mirar y reírse de las caídas graciosas",
+   "cuadro_0": "Fondo dorado con logo de galardón, suelo reflectante oscuro, jugador central con traje elegante dominando un balón dorado.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Jugador en smoking domina balón con contrincante cayendo.",
+     "sonido": "Música operística épica y tensión"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El rival cae al suelo mientras el protagonista sigue regateando.",
+     "sonido": "Efecto de swoosh"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El balón vuela y el protagonista corre hacia él.",
+     "sonido": "Crescendo operístico"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Giro elegante del protagonista esquivando a otro rival.",
+     "sonido": "Música dramática"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El segundo rival cae sentado al piso.",
+     "sonido": "Golpe suave y risa de fondo"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Jugador corriendo hacia el balón dorado brillante.",
+     "sonido": "Canto lírico alto"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Tercer rival aparece deslizándose.",
+     "sonido": "Sonido de resbalón"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Gran choque cómico, el tercer rival rueda por el suelo.",
+     "sonido": "Impacto y coro épico"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "El protagonista sigue firme controlando el balón.",
+     "sonido": "Clímax de ópera"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Preparación para el tiro final.",
+     "sonido": "Silencio breve"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Patada final hacia la cámara con logo de premiación.",
+     "sonido": "¡Golazo/Fanfarria final"
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "si, la música y el movimiento del balón reinician en bucle continuo",
+   "gancho": "humor futbolístico inesperado con futbolistas famosos en situación surrealista",
+   "dopamina": [
+    "humor visual inmediato en t=2.0 y t=3.5 con las caídas",
+    "explosión musical épica en el clímax"
+   ],
+   "audio": "Mezcla de ópera dramática exagerada con efectos de sonido de dibujos animados (resbalones)",
+   "por_que_comentan": "Etiquetan amigos riéndose de la animación de los jugadores cayendo",
+   "assets_necesarios": [
+    "fondo_dorado_estadio.png",
+    "suelo_reflejo.png",
+    "jugador_smoking_animado.png",
+    "rivales_cayendo_sprites.png",
+    "balon_dorado.png"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Configurar canvas de 1080x1920 con fondo y suelo reflectante.",
+    "2. Animar posición X e Y del jugador principal con rebote suave del balón.",
+    "3. Programar eventos de caída de sprites rivales en t=2.0s y t=3.5s con rotación y traslación.",
+    "4. Sincronizar efectos de sonido con los momentos de impacto."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar partículas de oro brillantes al golpear el balón",
+    "Poner textos flotantes con memes tipo 'Ankara Messi' durante los regates",
+    "Incluir un contador de 'Rivalidades vencidas' en la esquina superior"
+   ]
+  }
+ },
+ {
+  "id": "J4wFLSIlUn0",
+  "titulo": "Satisfying Football Face Ball Falling😱#roblox #3danimation  #shorts",
+  "vistas": 9574065,
+  "horas": 144.6,
+  "canal": "3D Club",
+  "canal_subs": 97500,
+  "canal_creado": "2025-11-20",
+  "analisis": {
+   "nombre_formato": "Torre de balones arcade",
+   "mecanica": "Caída masiva y ordenada de múltiples balones de fútbol de colores sobre una grilla tridimensional perforada, seguida de su succión hacia arriba y repetición en bucle.",
+   "que_hace_el_espectador": "solo mirar...",
+   "cuadro_0": "Grilla en perspectiva isométrica de color turquesa/verde agua con huecos cuadrados regulares y fondo blanco inferior; un único balón morado con cara expresiva en la parte inferior izquierda.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Grilla turquesa y un balón morado solitario.",
+     "sonido": "pop suave"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Aparecen más balones de colores (rojo, amarillo, verde, morado).",
+     "sonido": "múltiples pops rítmicos"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Avalancha de decenas de balones cayendo y rebotando.",
+     "sonido": "estampida de rebotes y música arcade retro"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Los balones forman un montón gigante sobre la grilla.",
+     "sonido": "caos de rebotes pesados"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Los balones se alinean verticalmente en una torre perfecta.",
+     "sonido": "succión y zumbido mecánico"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La torre de balones se mantiene firme hacia arriba.",
+     "sonido": "zumbido constante"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Vista lejana de la grilla vacía.",
+     "sonido": "silencio momentáneo"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Un balón dorado cae desde la parte superior.",
+     "sonido": "silbido de caída"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La torre vuelve a formarse rápidamente.",
+     "sonido": "succión y pops acelerados"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Avalancha rápida de balones cayendo de nuevo.",
+     "sonido": "rebotes frenéticos"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Los balones se dispersan por la grilla.",
+     "sonido": "rebotes finales"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Quedan pocos balones dispersos en los huecos.",
+     "sonido": "pops aislados"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "La grilla queda casi vacía, preparándose para el loop.",
+     "sonido": "pop final listo para reiniciar"
+    }
+   ],
+   "duracion_s": 6.0,
+   "loop": "si empalma con el inicio y cómo",
+   "gancho": "El inicio inmediato con un solo objeto y la explosión caótica repentina de colores en menos de un segundo.",
+   "dopamina": [
+    "explosión visual de balones al segundo 1",
+    "ordenamiento automático en torre al segundo 2",
+    "efectos de sonido ASMR sincronizados con cada rebote"
+   ],
+   "audio": "Música chiptune estilo arcade con efectos de sonido de pops, rebotes y zumbidos mecánicos hiper sincronizados.",
+   "por_que_comentan": "Los usuarios comentan sobre qué color de balón es su favorito o si lograron ver el momento exacto en que se forma la torre.",
+   "assets_necesarios": [
+    "Textura de grilla 3D perforada en tono turquesa",
+    "Imágenes PNG de balones de fútbol texturizados con rostros y colores (morado, rojo, amarillo, verde)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 4,
+   "receta_para_programarlo": [
+    "Paso 1: Configurar motor de física 3D (Pygame / Three.js / Blender Python) con gravedad vertical y suelo de grilla perforada.",
+    "Paso 2: Generar esferas texturizadas con físicas de rebote (restitución 0.7, fricción 0.3).",
+    "Paso 3: Programar eventos de atracción magnética hacia el centro en t=2.0s para formar la columna vertical.",
+    "Paso 4: Sincronizar efectos de audio procedurales con las colisiones físicas."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir física de destrucción de la torre por una bola de demolición gigante",
+    "Permitir que los espectadores elijan en los comentarios qué color gana la carrera de caída",
+    "Incluir micro-recompensas visuales (destellos y partículas) cada vez que un balón encaja perfectamente en un hueco"
+   ]
+  }
+ },
+ {
+  "id": "gQt4XA0WDyY",
+  "titulo": "99.9% WILL FAIL The FIT challenge 👽💀🔥 Ronaldo R7 Lionel Messi Neymar Mbappé football challenge video",
+  "vistas": 6592854,
+  "horas": 94.3,
+  "canal": "Somu rox Official ",
+  "canal_subs": 124000,
+  "canal_creado": "2016-12-22",
+  "analisis": {
+   "nombre_formato": "ruleta_giratoria_target",
+   "mecanica": "Un círculo de caras recortadas gira rápidamente en la parte superior. Abajo hay un jugador fijo ('Target'). Las caras siguen girando hasta detenerse en una de ellas para ver si coincide con el objetivo.",
+   "que_hace_el_espectador": "pausar",
+   "cuadro_0": "Fondo de estadio de fútbol con atardecer. Arriba, círculo con 6 caras de futbolistas recortadas. Abajo, jugador central con brazos cruzados y etiqueta 'Target' roja apuntando con flecha. Título superior y música remix latina rápida.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicia la rotación rápida del círculo de caras sobre fondo de estadio.",
+     "sonido": "Beat de trap latino y efecto zumbido."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Continúa el giro constante de las caras en sentido horario.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El círculo empieza a desacelerar levemente.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Las caras se acercan a la posición de la meta.",
+     "sonido": "Sonido de reloj/ticks acelerados."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "La ruleta se detiene exactamente en el Mbappé objetivo, coincidiendo con el target inferior.",
+     "sonido": "Efecto de acierto (ding) y explosión de confeti visual."
+    }
+   ],
+   "duracion_s": 2.0,
+   "loop": "si, el último cuadro conecta con el giro inicial reiniciando la velocidad al 100%",
+   "gancho": "La velocidad del círculo y el reto visual inmediato de adivinar en qué cara frenará.",
+   "dopamina": [
+    "Efecto visual de giro infinito",
+    "Suspenso con cuenta regresiva sonora",
+    "Premio visual (confeti o destello) al coincidir"
+   ],
+   "audio": "Remix de trap en tendencia con graves potenciados + efectos de sonido de rotación rápida y ding de acierto",
+   "por_que_comentan": "Comentan si acertaron la pausa, cuántas veces fallaron o debaten sobre los jugadores.",
+   "assets_necesarios": [
+    "Fondo de estadio de fútbol",
+    "6 recortes PNG de caras de futbolistas",
+    "PNG de jugador objetivo (Target)",
+    "Efecto de sonido de giro",
+    "Efecto de acierto"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Cargar fondo de estadio y escalar a resolución vertical 1080x1920.",
+    "2. Posicionar el jugador Target y la etiqueta en la parte inferior (Y=1300).",
+    "3. Disponer 6 imágenes de rostros en círculo usando trigonometría (seno y coseno) con radio r=300 en la parte superior (Y=400).",
+    "4. Animar la rotación del ángulo theta sumando velocidad decreciente durante 2 segundos.",
+    "5. Detener la rotación en el ángulo exacto del target al segundo 2.0 y disparar partículas de confeti."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar una barra de progreso circular o de tiempo para aumentar el suspenso.",
+    "Incluir reacciones de emojis flotantes (fuego, calaveras) según el nivel de dificultad.",
+    "Permitir elegir la dificultad (fácil con 3 caras, imposible con 12 caras)."
+   ]
+  }
+ },
+ {
+  "id": "0kLMvDmLG9Y",
+  "titulo": "Who has the best balance at the wall? 👀⚽",
+  "vistas": 6914032,
+  "horas": 160.2,
+  "canal": "GOATZVERSE",
+  "canal_subs": 219000,
+  "canal_creado": "2012-03-02",
+  "analisis": {
+   "nombre_formato": "desafio_equilibrio_pared",
+   "mecanica": "Cinco jugadores de fútbol están formados contra una pared imitando la prueba de equilibrio de Michael Jackson (Lean). A la cuenta regresiva, caen todos al mismo tiempo menos uno. El usuario ve quién sobrevive.",
+   "que_hace_el_espectador": "solo mirar y adivinar quién se mantiene en pie",
+   "cuadro_0": "Fondo de ladrillo rojo, cartel verde arriba '@GOATZVERSE', 5 jugadores en fila india apoyados contra la pared inclinados. Arriba de cada uno su escudo correspondiente. Números grandes con cuenta regresiva en el centro.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Cinco jugadores alineados con escudos arriba y cuenta regresiva en 3.",
+     "sonido": "musica_bass_boosted y pitido_cuenta"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Cuenta regresiva en 2.",
+     "sonido": "pitido_cuenta"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Cuenta regresiva en 1.",
+     "sonido": "pitido_cuenta"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Los primeros jugadores empiezan a deslizarse.",
+     "sonido": "efecto_caida"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Todos caen al piso excepto el último de la derecha (Mbappé).",
+     "sonido": "impacto_golpe"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Jugador final sonríe solo contra la pared.",
+     "sonido": "musica_triunfo"
+    }
+   ],
+   "duracion_s": 3,
+   "loop": "si, reinicia la cuenta regresiva al fundir a negro",
+   "gancho": "La tensión visual de ver quién se cae primero en una postura físicamente imposible",
+   "dopamina": [
+    {
+     "momento": "t=0s",
+     "recurso": "cuenta regresiva grande"
+    },
+    {
+     "momento": "t=2s",
+     "recurso": "caída masiva simultánea inesperada"
+    }
+   ],
+   "audio": "Musica bass boosted rap/trap viral con efectos de sonido de golpes secos en la caída",
+   "por_que_comentan": "Debaten sobre cuál jugador es el mejor o si el truco está editado",
+   "assets_necesarios": [
+    "fondo_ladrillo.png",
+    "cartel_goat.png",
+    "jugador_1.png",
+    "jugador_2.png",
+    "jugador_3.png",
+    "jugador_4.png",
+    "jugador_5.png",
+    "escudos_equipos.png",
+    "audio_base.mp3"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Cargar imagen de fondo de ladrillo y posicionar 5 sprites de jugadores en fila.",
+    "2. Agregar escudos flotantes sobre cada sprite.",
+    "3. Animar la inclinación (rotate/skew) de los 4 primeros jugadores hacia el suelo entre t=1.5s y t=2.0s.",
+    "4. Mantener estático al 5to jugador.",
+    "5. Sincronizar efectos de sonido de caída exactamente en t=1.8s."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Incluir streamers o personajes de anime además de futbolistas para ampliar el nicho",
+    "Permitir votar al usuario con una encuesta interactiva de YouTube antes de la caída",
+    "Agregar efecto de cámara lenta justo en el instante en que empiezan a caer"
+   ]
+  }
+ },
+ {
+  "id": "8PNWa7ygzuQ",
+  "titulo": "Which footballer is the BEST?! ⚽️ #football",
+  "vistas": 6013244,
+  "horas": 164.8,
+  "canal": "Goal Clash",
+  "canal_subs": 229000,
+  "canal_creado": "2025-03-28",
+  "analisis": {
+   "nombre_formato": "Circle Soccer Gaze",
+   "mecanica": "Vista en primer plano contrapicado hacia el cielo formando un círculo de jugadores alrededor de un balón en el centro que baja y sube, con caras reales pegadas en cuerpos animados o fotos editadas.",
+   "que_hace_el_espectador": "Solo mirar la rotación y el chiste visual del balón moviéndose entre las caras.",
+   "cuadro_0": "Vista contrapicado 360: alrededor de un cielo con nubes hay 6 caras de futbolistas famosos recortadas mirando hacia abajo con una pelota de fútbol flotando justo en medio.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Vista circular de futbolistas mirando hacia abajo, balón en el centro",
+     "sonido": "Música pop rítmica de fondo"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Zoom sutil hacia el centro de la escena circular",
+     "sonido": "Música continúa"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El balón se desplaza levemente hacia arriba",
+     "sonido": "Efecto de viento/subida"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Los jugadores parpadean/mueven la cabeza",
+     "sonido": "Música sigue"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El balón baja y pasa cerca de Messi y Neymar",
+     "sonido": "Sonido de silbido/movimiento rápido"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Balón sube hacia Bellingham y Cristiano",
+     "sonido": "Sonido de rebote suave"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Transición rápida de ángulo",
+     "sonido": "Giro de audio"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "El balón vuelve a centrarse",
+     "sonido": "Música en peak"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Zoom out final mostrando el círculo completo",
+     "sonido": "Cierre musical"
+    }
+   ],
+   "duracion_s": 4.0,
+   "loop": "si, el último cuadro coincide con el ángulo y posición del cuadro cero",
+   "gancho": "La perspectiva inusual contrapicada y caras hiperconocidas de futbolistas en formato meme/animación rápida",
+   "dopamina": [
+    "Movimiento constante del balón",
+    "Cambios de escala rítmicos sincronizados con la música"
+   ],
+   "audio": "Música pop en loop acelerado con efectos de aire y rebotes de pelota",
+   "por_que_comentan": "Debaten quién es el mejor jugador del mundo y comentan sobre lo gracioso del montaje",
+   "assets_necesarios": [
+    "Fondo de cielo con nubes",
+    "Imagen PNG de balón de fútbol clásico",
+    "Recortes PNG de rostros de futbolistas (Messi, Neymar, Bellingham, Cristiano, etc.)",
+    "Cuerpo o camisetas recortadas en perspectiva circular"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Generar un canvas vertical 1080x1920 con fondo de cielo animado con desplazamiento de nubes.",
+    "2. Posicionar 6 avatares de rostros en círculo mediante coordenadas polares (sen/cos) orientados hacia el centro (0,0).",
+    "3. Colocar un sprite de balón en el centro exacto de la pantalla.",
+    "4. Animar la posición Y del balón con función senoidal para simular que sube y baja.",
+    "5. Sincronizar efectos de sonido de rebote con cada pico del movimiento del balón."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Permitir que el espectador vote en pantalla tocando la pantalla para elegir su jugador favorito.",
+    "Incluir reacciones exageradas de los jugadores (ojos que se mueven siguiendo el balón).",
+    "Agregar efectos de partículas de luz solar directa para dar realismo a la toma contrapicada."
+   ]
+  }
+ },
+ {
+  "id": "qQj-wtSN-5w",
+  "titulo": "99.9%WILL FAIL To FIT challenge 👽💀🔥 Ronaldo R7 Lionel Messi Neimar lamin football challenge video ⚽🏆",
+  "vistas": 1920462,
+  "horas": 153.9,
+  "canal": "gamin kaji",
+  "canal_subs": 62400,
+  "canal_creado": "2024-08-29",
+  "analisis": {
+   "nombre_formato": "Head Wheel Fit Challenge",
+   "mecanica": "Un cuerpo musculoso fijo en un estadio mientras una rueda con cabezas de futbolistas gira rápidamente. El objetivo es pausar el video cuando la cabeza correcta encaje en el cuello.",
+   "que_hace_el_espectador": "Pausar la pantalla para intentar encajar la cabeza en el cuerpo y comentar el resultado.",
+   "cuadro_0": "Arriba: Rueda con 5 cabezas giratorias de futbolistas (Ronaldo, Messi, Zlatan, Yamal). Abajo: Torso musculoso sin cabeza. Fondo: Estadio de fútbol con césped e iluminación.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Rueda de cabezas comienza a girar sobre el cuerpo musculoso.",
+     "sonido": "Música de tendencia parodia sobre futbolistas."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La rueda gira, la cabeza de Zlatan se posiciona brevemente en el cuello.",
+     "sonido": "Continúa ritmo musical."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La rueda gira, aparece la cabeza caricaturizada de Mbappé/Yamal.",
+     "sonido": "Voz de la canción alineada al ritmo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La rueda gira, pasa la cara deformada de Cristiano Ronaldo.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "La rueda gira, la cabeza normal de Ronaldo se alinea con el cuello.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La rueda completa una vuelta, reaparece la cabeza de Zlatan.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Giro rápido mostrando a Messi y la cara deformada.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Cabeza de Ronaldo vuelve a cruzar sobre el cuerpo.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Giro continuo de la rueda de cabezas en el centro.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Pasa la cabeza caricaturizada sobre el torso.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Giro final de la rueda preparando el empalme de bucle.",
+     "sonido": "Continúa música."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "La rueda vuelve a la posición inicial.",
+     "sonido": "Remate del loop musical."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Transición imperceptible hacia el inicio.",
+     "sonido": "Loop perfecto de audio."
+    }
+   ],
+   "duracion_s": 6.5,
+   "loop": "Sí, la velocidad de rotación constante y el audio en bucle permiten un empalme perfecto entre el final y el inicio.",
+   "gancho": "El aspecto bizarro de las caras deformadas y el movimiento rápido captan la atención de inmediato.",
+   "dopamina": [
+    "Reto de pausa e interacción rápida",
+    "Humor visual por las caras caricaturizadas"
+   ],
+   "audio": "Música viral de fútbol estilo parodia/remix con ritmo constante.",
+   "por_que_comentan": "Para compartir la captura de pantalla del jugador que lograron encajar o quejarse de la dificultad.",
+   "assets_necesarios": [
+    "Fondo de estadio vertical (1080x1920 PNG)",
+    "PNG recortado de torso musculoso sin cabeza",
+    "5-6 PNGs recortados de cabezas de futbolistas en alta calidad/caricatura",
+    "Pista de audio mp3 en bucle perfecto"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Cargar imagen de fondo y torso fijo en posición inferior.",
+    "Calcular un círculo virtual centrado arriba del cuello para ubicar las cabezas.",
+    "En cada frame, incrementar el ángulo global de rotación (ej. 360° cada 2 segundos).",
+    "Calcular las coordenadas (x,y) e inclinación de cada cabeza distribuida equitativamente en el círculo.",
+    "Renderizar el frame combinando fondo + torso + cabezas rotadas y exportar con MoviePy/OpenCV a 60 FPS."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar contador de intentos o temporizador en pantalla.",
+    "Usar efectos de sonido de 'click' o victoria cuando una cabeza se alinee.",
+    "Incluir un filtro de velocidad variable que alterne entre rápido y lento."
+   ]
+  }
+ }
+]
