@@ -273,7 +273,7 @@ def guion_balon(gid, rng, V, fecha):
 CUERPOS_FIT = {"kylian_mbapp_13": "kylian_mbapp", "kylian_mbapp_12": "kylian_mbapp", "lionel_messi_3": "lionel_messi",
                "cristiano_ronaldo_14": "cristiano_ronaldo", "lamine_yamal_10": "lamine_yamal", "neymar_3": "neymar"}
 CUERPOS_PARED = ["lionel_messi_3", "kylian_mbapp_10", "cristiano_ronaldo_14", "bukayo_saka_3", "ousmane_demb_l_3",
-                 "lautaro_mart_nez_3", "kylian_mbapp_11", "mohamed_salah_1"]
+                 "lautaro_mart_nez_3", "kylian_mbapp_11"]                          # (sin mohamed_salah_1: tiene marca de agua)
 TIT_CABEZAS = ["99.9% WILL FAIL the FIT challenge 💀 {n} edition", "Fit {n}'s head 🛑 Only 1% can", "{n} head fit challenge 😱 Pause it!"]
 TIT_PARED = ["Who has the best balance? 👀⚽ {a}, {b}, {c} or {d}", "Who won't fall? 😱 {a} vs {b} vs {c} vs {d}",
              "Only one stays up 🤯 {a}, {b}, {c} or {d}?"]
