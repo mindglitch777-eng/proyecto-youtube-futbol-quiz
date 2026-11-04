@@ -63,3 +63,10 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
    `estrella_al_frente()` en `produccion/render_rueda.py`.
 2. **Guía de YouTube por formato** (`produccion/gancho.py`): gancho grande 0-1,5 s, apuesta durante el reto, CTA en el último 1,2 s sin cortar
    el loop, pitazo en el segundo 0 y comentario fijado que invita a responder.
+3. **Todo cambio se aplica a la SEMANA ACTUAL, en el momento** (decisión del dueño, 04/11), hasta que el sistema encuentre el
+   equilibrio y se maneje solo. No se espera a la semana siguiente: se producen y suben los videos nuevos para los días que quedan
+   de esta semana (si ya hay videos subidos que no se pueden borrar, se agregan los nuevos en lugares libres hasta 6 por día).
+4. **Siempre en español** con el dueño (chat, explicaciones, textos de los archivos que se le mandan). Lo que va adentro de los
+   videos (títulos, carteles, hashtags) sigue en inglés porque el público del canal es internacional.
+5. **Grilla v2: 6 por día = 3 que funcionan + 3 nuevos intercalados** (08 STOP grilla · 11 prueba · 14 WHEEL · 17 prueba ·
+   20 STOP estrella/HARD · 23 prueba). Los 2 STOP del día nunca se parecen; títulos siempre únicos.
