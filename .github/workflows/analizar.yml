@@ -1,0 +1,30 @@
+name: Analizar shorts puntuales con Gemini
+
+on:
+  push:
+    paths: [pipeline/analizar_ids.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  analizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: cd pipeline && python analizar_ids.py
+      - name: Guardar
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add pipeline/datos/analisis_tendencias.json
+          git commit -m "Análisis de tendencias (Gemini)" || echo "nada nuevo"
+          for i in 1 2 3 4; do git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
