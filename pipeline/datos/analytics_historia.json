@@ -397,149 +397,169 @@
  "2026-11-05": {
   "por_formato": {
    "stop": {
-    "videos": 7,
-    "mediana_pct_visto": 184.2,
-    "mediana_subs_cada_1000": 1.13,
-    "mediana_vistas": 6752
+    "videos": 9,
+    "mediana_pct_visto": 182.9,
+    "mediana_subs_cada_1000": 1.24,
+    "mediana_vistas": 7247
    },
    "rueda": {
     "videos": 2,
-    "mediana_pct_visto": 142.0,
-    "mediana_subs_cada_1000": 1.48,
-    "mediana_vistas": 3718
+    "mediana_pct_visto": 156.4,
+    "mediana_subs_cada_1000": 2.15,
+    "mediana_vistas": 9011
    },
    "find": {
     "videos": 3,
     "mediana_pct_visto": 111.8,
     "mediana_subs_cada_1000": 0.0,
-    "mediana_vistas": 1908
+    "mediana_vistas": 1967
    },
    "otros": {
     "videos": 2,
-    "mediana_pct_visto": 70.0,
-    "mediana_subs_cada_1000": 0.65,
-    "mediana_vistas": 1694
+    "mediana_pct_visto": 69.9,
+    "mediana_subs_cada_1000": 0.64,
+    "mediana_vistas": 1702
    },
    "ring": {
     "videos": 1,
     "mediana_pct_visto": 74.9,
-    "mediana_subs_cada_1000": 0.98,
-    "mediana_vistas": 2050
+    "mediana_subs_cada_1000": 0.97,
+    "mediana_vistas": 2059
    },
    "carrera": {
     "videos": 2,
-    "mediana_pct_visto": 77.2,
+    "mediana_pct_visto": 77.3,
     "mediana_subs_cada_1000": 0.26,
-    "mediana_vistas": 1598
+    "mediana_vistas": 1608
+   },
+   "cabeza": {
+    "videos": 1,
+    "mediana_pct_visto": 159.2,
+    "mediana_subs_cada_1000": 1.23,
+    "mediana_vistas": 1628
    },
    "plinko": {
     "videos": 1,
     "mediana_pct_visto": 74.2,
     "mediana_subs_cada_1000": 0.62,
-    "mediana_vistas": 1611
-   },
-   "cabeza": {
-    "videos": 1,
-    "mediana_pct_visto": 158.3,
-    "mediana_subs_cada_1000": 1.27,
-    "mediana_vistas": 1576
+    "mediana_vistas": 1622
    }
   },
   "videos": {
+   "6BfaFDHJJqY": [
+    28901,
+    185.39,
+    46
+   ],
    "1WF6cOYl2KY": [
-    26503,
-    182.88,
+    26518,
+    182.86,
     33
    ],
    "gYhBrVIMFsg": [
-    25248,
-    173.4,
+    25279,
+    173.37,
     23
    ],
    "22mMQE-D3wg": [
-    23462,
-    193.42,
+    23481,
+    193.43,
     22
    ],
-   "zue81ISnQYY": [
-    6752,
-    192.41,
-    5
-   ],
    "N5c8YbQJrtQ": [
-    5845,
-    149.37,
-    10
+    14200,
+    170.68,
+    35
    ],
-   "6BfaFDHJJqY": [
-    4440,
-    212.68000000000004,
-    5
+   "zue81ISnQYY": [
+    7247,
+    189.83,
+    6
    ],
    "GEc5NWKr7Q4": [
-    3831,
-    112.16,
+    3851,
+    112.15000000000002,
     0
    ],
-   "Z_AD82k7E7k": [
-    2734,
-    170.86,
-    4
+   "k7cIc4tdmaU": [
+    3822,
+    142.1,
+    7
    ],
    "LlAaPMQzAeg": [
-    2206,
-    184.17,
-    5
+    3547,
+    175.95,
+    7
+   ],
+   "gz_4UDbG-C8": [
+    3512,
+    176.29,
+    6
+   ],
+   "s-jVXLj-ixU": [
+    3302,
+    205.72999999999996,
+    2
+   ],
+   "Z_AD82k7E7k": [
+    2819,
+    170.65,
+    4
    ],
    "ueXld_AOgyM": [
-    2179,
-    65.28,
+    2188,
+    65.23,
     1
    ],
    "RSZcrb-cV0g": [
-    2050,
-    74.92,
+    2059,
+    74.89,
     2
    ],
-   "WiMHxlF_UdE": [
-    1946,
-    81.15,
-    1
-   ],
    "AFu3sIrQy-o": [
-    1908,
+    1967,
     111.77999999999999,
     0
    ],
-   "uYDjLVmCG8o": [
-    1611,
-    74.25,
+   "WiMHxlF_UdE": [
+    1957,
+    80.98,
     1
    ],
-   "k7cIc4tdmaU": [
-    1590,
-    134.68,
+   "mvvb_5fN2Yk": [
+    1628,
+    159.17,
     2
    ],
-   "mvvb_5fN2Yk": [
-    1576,
-    158.29,
-    2
+   "uYDjLVmCG8o": [
+    1622,
+    74.22,
+    1
    ],
    "9xYrjovb0Ao": [
-    1295,
+    1301,
     81.43,
     1
    ],
    "hEOAm9MvhJc": [
-    1250,
-    73.16,
+    1259,
+    73.57,
     0
    ],
    "dUK8ZLuAzdM": [
-    1209,
-    74.74,
+    1215,
+    74.63,
     1
+   ],
+   "wDxr4u26r4E": [
+    16,
+    75.78,
+    0
+   ],
+   "OU5RfBxkzis": [
+    15,
+    288.3,
+    0
    ]
   }
  }
