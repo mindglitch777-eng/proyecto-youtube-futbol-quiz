@@ -79,7 +79,7 @@ def main(guion):
         return cx + rx * math.cos(th), cy + ry * math.sin(th)
 
     goles = sorted(((T_ENCAJE + k * dur / vueltas) % dur) for k in range(vueltas))
-    tx = dict(gancho="SHOOT AT 100%", apuesta=f"{g['nombre'].upper()} NEVER MISSES?", cta="COMMENT YOUR % · FOLLOW FOR PART 2")
+    tx = dict(gancho="SHOOT AT 100%", apuesta="99% IMPOSSIBLE", cta="COMMENT YOUR % · FOLLOW FOR PART 2")
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

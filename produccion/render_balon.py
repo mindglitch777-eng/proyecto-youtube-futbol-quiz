@@ -71,7 +71,7 @@ def main(guion):
     encajes = [((math.pi - fase) / (2 * math.pi) + k) * dur / vueltas for k in range(vueltas)]
     encajes = [e % dur for e in encajes]
     tx_g = G.elegir("rueda", g["id"], g["nombre"])
-    tx_g = dict(tx_g, gancho=f"FREEZE IT AT 100%", apuesta=f"BALLON D'OR FOR {g['nombre'].upper()}?",
+    tx_g = dict(tx_g, gancho=f"FREEZE IT AT 100%", apuesta="99% IMPOSSIBLE",
                 cta="COMMENT YOUR % · FOLLOW FOR PART 2")
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),

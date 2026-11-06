@@ -21,11 +21,11 @@ T_GANCHO, T_CTA = 1.5, 1.2
 
 TEXTOS = {
     "stop": dict(gancho=["STOP AT 100%", "ONLY 1% CAN", "STOP IT AT 100%"],
-                 apuesta=["STOP AT 100% OR LOSE", "MISS IT = YOUR TEAM LOSES", "ONLY 3 TRIES"],
+                 apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "NOBODY STOPS IT AT 100%"],
                  dificil=["IMPOSSIBLE LEVEL: 3 TRIES", "HARD MODE: ONLY 3 TRIES"],
                  cta=["COMMENT 1-4 · FOLLOW FOR PART 2"]),
     "rueda": dict(gancho=["STOP ON {n}", "FIND {n}'S BODY", "STOP ON {n}'S BODY"],
-                  apuesta=["PERFECT FIT OR YOU LOSE", "ONLY 3 TRIES", "STOP ON THE PERFECT ONE"],
+                  apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "ONLY 1% GET IT"],
                   cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
     "find": dict(gancho=["FIND THE REAL {n}", "ONLY 1% FIND THEM ALL"], apuesta=["3 ROUNDS · NO MISTAKES"],
                  cta=["COMMENT YOUR NUMBERS · FOLLOW FOR PART 2"]),
@@ -50,7 +50,9 @@ FIJADO = {"stop": "How many tries did it take you? 😤 I read them all 👇",
           "balon": "Did you give him the Ballon d'Or? 🏆 How many tries? I read them all 👇",
           "cabezas": "What number did you stop on? 💀 I read them all 👇",
           "pared": "Who did you pick BEFORE the fall? Be honest 👀 I read them all 👇",
-          "circulo": "Who's your GOAT? 🐐 I read them all 👇"}
+          "circulo": "Who's your GOAT? 🐐 I read them all 👇",
+          "trayectoria": "Did you guess him before 3 seconds? Be honest 👀 I read them all 👇",
+          "tridente": "What was your total? Did you go bankrupt? 💸 I read them all 👇"}
 
 
 def elegir(tipo, semilla, nombre="", dificil=False):

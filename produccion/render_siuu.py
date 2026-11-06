@@ -52,7 +52,7 @@ def main(guion):
         return ((t / ciclo + off) % 1.0) * 100
 
     picos = sorted(((PICO / 100 - off) % 1.0) * ciclo + k * ciclo for k in range(n_ciclos))
-    tx = dict(gancho="PAUSE AT 67", apuesta="CR7 AT THE TOP = 67", cta="COMMENT YOUR NUMBER · FOLLOW FOR PART 2")
+    tx = dict(gancho="PAUSE AT 67", apuesta="99% IMPOSSIBLE", cta="COMMENT YOUR NUMBER · FOLLOW FOR PART 2")
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

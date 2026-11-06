@@ -84,7 +84,7 @@ def main(guion):
     vel = g.get("sentido", 1) * 360.0 * vueltas / dur
     base = 90 - k_ok * paso - vel * T_ENCAJE
     encajes = [(T_ENCAJE + j * dur / vueltas) % dur for j in range(vueltas)]
-    tx = dict(gancho=f"FIT {g['nombre'].upper()}'S HEAD", apuesta="99.9% WILL FAIL", cta="COMMENT YOUR NUMBER · FOLLOW FOR PART 2")
+    tx = dict(gancho=f"FIT {g['nombre'].upper()}'S HEAD", apuesta="99.9% IMPOSSIBLE", cta="COMMENT YOUR NUMBER · FOLLOW FOR PART 2")
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

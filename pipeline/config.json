@@ -70,6 +70,16 @@
    "nombre": "GOAT CIRCLE",
    "min": 0,
    "max": 7
+  },
+  "trayectoria": {
+   "nombre": "GUESS BY CAREER",
+   "min": 0,
+   "max": 7
+  },
+  "tridente": {
+   "nombre": "TRIDENT €150M",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -153,6 +163,12 @@
    "listo": true
   },
   "circulo": {
+   "listo": true
+  },
+  "trayectoria": {
+   "listo": true
+  },
+  "tridente": {
    "listo": true
   }
  }

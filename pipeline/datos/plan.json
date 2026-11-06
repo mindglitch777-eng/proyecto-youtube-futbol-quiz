@@ -18,103 +18,24 @@
   "torre",
   "cabezas",
   "pared",
-  "circulo"
+  "circulo",
+  "trayectoria",
+  "tridente"
  ],
  "podadas": {},
  "promovidas": {},
  "puntaje": {
-  "stop": 269.1,
+  "stop": 320.1,
+  "rueda": 414.5,
   "find": 55.9,
-  "otros": 80.5,
-  "ring": 110.9,
+  "otros": 79.7,
+  "ring": 110.1,
   "carrera": 58.7,
-  "plinko": 83.1,
-  "cabeza": 190.2
+  "cabeza": 275.4,
+  "plinko": 83.1
  },
  "slots": [
   {
-   "fecha": "2026-11-07",
-   "hora": "14:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-07",
-   "hora": "17:00",
-   "tipo": "dress"
-  },
-  {
-   "fecha": "2026-11-07",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "estrella"
-  },
-  {
-   "fecha": "2026-11-07",
-   "hora": "23:00",
-   "tipo": "pared"
-  },
-  {
-   "fecha": "2026-11-08",
-   "hora": "08:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-08",
-   "hora": "11:00",
-   "tipo": "siuu"
-  },
-  {
-   "fecha": "2026-11-08",
-   "hora": "14:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-08",
-   "hora": "17:00",
-   "tipo": "penal"
-  },
-  {
-   "fecha": "2026-11-08",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": true,
-   "arranque": "estrella"
-  },
-  {
-   "fecha": "2026-11-08",
-   "hora": "23:00",
-   "tipo": "torre"
-  },
-  {
-   "fecha": "2026-11-09",
-   "hora": "08:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-09",
-   "hora": "11:00",
-   "tipo": "cabezas"
-  },
-  {
-   "fecha": "2026-11-09",
-   "hora": "14:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-09",
-   "hora": "17:00",
-   "tipo": "plinko"
-  },
-  {
    "fecha": "2026-11-09",
    "hora": "20:00",
    "tipo": "stop",
@@ -125,105 +46,33 @@
   {
    "fecha": "2026-11-09",
    "hora": "23:00",
-   "tipo": "pared"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "08:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "11:00",
-   "tipo": "balon"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "14:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "17:00",
-   "tipo": "cabezas"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": true,
-   "arranque": "estrella"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "23:00",
-   "tipo": "torre"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "08:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "11:00",
-   "tipo": "penal"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "14:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "17:00",
-   "tipo": "siuu"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "estrella"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "23:00",
-   "tipo": "dress"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "08:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "11:00",
    "tipo": "circulo"
   },
   {
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-10",
+   "hora": "08:00",
+   "tipo": "stop",
+   "dificil": true,
+   "hard": false,
+   "arranque": "grilla"
+  },
+  {
+   "fecha": "2026-11-10",
+   "hora": "11:00",
+   "tipo": "torre"
+  },
+  {
+   "fecha": "2026-11-10",
    "hora": "14:00",
    "tipo": "rueda"
   },
   {
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-10",
    "hora": "17:00",
    "tipo": "plinko"
   },
   {
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-10",
    "hora": "20:00",
    "tipo": "stop",
    "dificil": true,
@@ -231,11 +80,83 @@
    "arranque": "estrella"
   },
   {
-   "fecha": "2026-11-12",
+   "fecha": "2026-11-10",
    "hora": "23:00",
    "tipo": "find"
   },
   {
+   "fecha": "2026-11-11",
+   "hora": "08:00",
+   "tipo": "stop",
+   "dificil": true,
+   "hard": false,
+   "arranque": "grilla"
+  },
+  {
+   "fecha": "2026-11-11",
+   "hora": "11:00",
+   "tipo": "tridente"
+  },
+  {
+   "fecha": "2026-11-11",
+   "hora": "14:00",
+   "tipo": "rueda"
+  },
+  {
+   "fecha": "2026-11-11",
+   "hora": "17:00",
+   "tipo": "circulo"
+  },
+  {
+   "fecha": "2026-11-11",
+   "hora": "20:00",
+   "tipo": "stop",
+   "dificil": true,
+   "hard": false,
+   "arranque": "estrella"
+  },
+  {
+   "fecha": "2026-11-11",
+   "hora": "23:00",
+   "tipo": "pared"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "08:00",
+   "tipo": "stop",
+   "dificil": true,
+   "hard": false,
+   "arranque": "grilla"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "11:00",
+   "tipo": "torre"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "14:00",
+   "tipo": "rueda"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "17:00",
+   "tipo": "balon"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "20:00",
+   "tipo": "stop",
+   "dificil": true,
+   "hard": true,
+   "arranque": "estrella"
+  },
+  {
+   "fecha": "2026-11-12",
+   "hora": "23:00",
+   "tipo": "siuu"
+  },
+  {
    "fecha": "2026-11-13",
    "hora": "08:00",
    "tipo": "stop",
@@ -246,7 +167,7 @@
   {
    "fecha": "2026-11-13",
    "hora": "11:00",
-   "tipo": "circulo"
+   "tipo": "trayectoria"
   },
   {
    "fecha": "2026-11-13",
@@ -256,7 +177,7 @@
   {
    "fecha": "2026-11-13",
    "hora": "17:00",
-   "tipo": "cabezas"
+   "tipo": "dress"
   },
   {
    "fecha": "2026-11-13",
@@ -269,7 +190,7 @@
   {
    "fecha": "2026-11-13",
    "hora": "23:00",
-   "tipo": "torre"
+   "tipo": "cabezas"
   }
  ]
 }

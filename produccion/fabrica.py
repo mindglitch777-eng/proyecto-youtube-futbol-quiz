@@ -35,11 +35,12 @@ HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}  
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
            "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "pared": "WALL BALANCE",
-           "circulo": "GOAT CIRCLE"}
+           "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
           "plinko": "render_plinko.py", "rueda": "render_rueda.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py",
-          "pared": "render_pared.py", "circulo": "render_circulo.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
+          "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
+          "tridente": "render_tridente.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
 TIT_DRESS = ["Pause when it fits 😂 {a} & {b} drip challenge", "Dress them up 😎 Can you stop at the right time? {a} & {b}",
              "Make {a} and {b} DRIP 🥶 Pause it!", "{a} & {b} bald edition 😂 Pause to dress them", "Stop it when it fits 🛑😂 {a} vs {b}"]
 TIT_TORRE = ["Whose country is this? 🏳️ {a}, {b} or {c} 👇", "Guess the flag before it's revealed 😳 {a}, {b} or {c}?",
@@ -160,14 +161,15 @@ def guion_stop(gid, rng, usados, dificil, V=None, fecha=None, hard_pedido=False)
         grupo = elegir(rng, 4, usados)
     grupo = con_estrella(grupo, rng)                                           # cuadrante 1 (arriba a la izquierda) = superestrella
     pcts = [f"{rng.choice([1, 1, 2, 3])}%", f"{rng.randint(5, 29)}%", f"{rng.randint(33, 61)}%", f"{rng.choice([67, 67, 69, 88, 99])}%"]
-    vueltas = ([6, 5, 5, 6] if hard else [5, 4, 3, 4]) if dificil else [4, 3, 3, 2]
-    giros = ([2, 2, 1, 2] if hard else [1, 1, 1, 2]) if dificil else [1, 1, 2, 2]
+    # MODO IMPOSIBLE (06/11): el viejo HARD es ahora el nivel normal y el HARD es casi imposible. Más difícil = más intentos = más loops.
+    vueltas = ([8, 7, 7, 8] if hard else [6, 5, 5, 6]) if dificil else [5, 4, 4, 5]
+    giros = ([3, 2, 2, 3] if hard else [2, 2, 1, 2]) if dificil else [2, 1, 1, 2]
     colores = rng.sample(COLORES, 4); formas = [rng.choice(FORMAS) for _ in range(4)]
     cuads = []
     for k, (n, clave, _) in enumerate(grupo):
         cuads.append(dict(nombre=n, foto=FOTOS[clave], color=colores[k], pct=pcts[k], forma=formas[k], rasgo=rng.choice(RASGOS),
                           vueltas=vueltas[k], giros=giros[k], encaje_bueno=rng.randint(0, 3), fase=round(rng.uniform(0, 6.28), 2),
-                          tam=rng.choice([60, 64, 68])))
+                          tam=rng.choice([54, 58, 62])))
     g = dict(id=gid, duracion=5.0 if hard else 6.0, hiper=True, musica="67", cuadrantes=cuads,
              arranque=rng.choice(["estrella", "grilla"]))                    # prueba A/B: arranque tipo FIND (zoom a la estrella) vs. grilla
     if nivel:
@@ -227,7 +229,7 @@ def guion_rueda(gid, rng, V, fecha):
             usados.add(clave); break
     nombre = CUERPOS_RUEDA[cuerpo]
     otros = [nombre_de(t.rsplit("_", 1)[0]) for t in torsos if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
-    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=8.8, vueltas=2, sentido=rng.choice([1, -1]),
+    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=6.6, vueltas=4, sentido=rng.choice([1, -1]),
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(2, 6), otros=otros)
 
 
@@ -250,7 +252,7 @@ def extra_mejor(prefijo, defecto):
 def guion_siuu(gid, rng, V, fecha):
     lista, defecto = extra_mejor("siuu", "cuerpos/cristiano_ronaldo_11")
     img = rng.choice(["extras/" + x for x in lista] or [defecto])
-    return dict(id=gid, imagen=img, dur=6.0, ciclo=round(rng.uniform(1.3, 1.6), 2), musica=V.musica(rng), desfase=round(rng.uniform(0.15, 0.3), 2))
+    return dict(id=gid, imagen=img, dur=6.0, ciclo=round(rng.uniform(0.85, 1.05), 2), musica=V.musica(rng), desfase=round(rng.uniform(0.15, 0.3), 2))
 
 
 def guion_penal(gid, rng, V, fecha):
@@ -259,14 +261,14 @@ def guion_penal(gid, rng, V, fecha):
     n, c = min(estrellas, key=lambda e: (sum(1 for x in hechos if x[0] == e[1]), rng.random()))
     hechos.add((c, str(len(hechos))))
     lista, _ = extra_mejor("arquero", None)
-    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=3, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"))
+    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=5, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"))
 
 
 def guion_balon(gid, rng, V, fecha):
     cuerpo = rng.choice(sorted(CUERPOS_RUEDA))
     lista, _ = extra_mejor("trofeo_bo", None)
     return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], trofeo=(rng.choice(lista) if lista else "trofeo_bo_1"),
-                dur=6.0, vueltas=3, musica=V.musica(rng))
+                dur=6.0, vueltas=5, musica=V.musica(rng))
 
 
 # Tendencias de la semana del 04/11 (radar + Gemini): FIT challenge 6,6 M · balance at the wall 6,9 M · "who is the best" 6 M
@@ -285,7 +287,7 @@ def guion_cabezas(gid, rng, V, fecha):
     otras = [c for c in FOTOS if c != clave]
     est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
     cab = rng.sample(est, 3) + rng.sample([c for c in otras if c not in est], 4); rng.shuffle(cab)
-    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=8.0, vueltas=2,
+    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=4,
                 sentido=rng.choice([1, -1]), pos_correcto=rng.randint(2, 6), musica=f"rueda_original_{rng.randint(0, 2)}")
 
 
@@ -306,6 +308,33 @@ def guion_circulo(gid, rng, V, fecha):
     resto = rng.sample([c for c in FOTOS if c not in est], 3)
     cl = est + resto; rng.shuffle(cl)
     return dict(id=gid, claves=cl, nombres=[nombre_de(c) for c in cl], dur=8.0, musica=V.musica(rng))
+
+
+# Ideas aprobadas el 05/11 (IA de YouTube Studio), en modo imposible
+TIT_TRAYECTORIA = ["Guess him in 3 seconds ⏱️ 99% can't", "Who is this player? 🤔 Only real fans know", "Guess the player by his clubs ⏱️"]
+TIT_TRIDENTE = ["Build your trident with €150M 💰 99% go bankrupt", "Pause to pick your 3 ⚽ Can you stay under €150M?",
+                "€150M budget challenge 💸 Pause it!"]
+RODILLOS = [[["vin_cius_j_nior", "Vinícius", 120], ["kylian_mbapp", "Mbappé", 150], ["neymar", "Neymar", 20], ["khvicha_kvaratskhelia", "Kvara", 70],
+             ["marcus_rashford", "Rashford", 30], ["rodrygo", "Rodrygo", 60]],
+            [["erling_haaland", "Haaland", 150], ["harry_kane", "Kane", 70], ["robert_lewandowski", "Lewandowski", 10],
+             ["lautaro_mart_nez", "Lautaro", 80], ["cristiano_ronaldo", "Ronaldo", 10], ["juli_n_lvarez", "Julián", 75]],
+            [["lamine_yamal", "Yamal", 160], ["mohamed_salah", "Salah", 40], ["bukayo_saka", "Saka", 100], ["lionel_messi", "Messi", 15],
+             ["ousmane_demb_l", "Dembélé", 60], ["phil_foden", "Foden", 80]]]
+
+
+def guion_trayectoria(gid, rng, V, fecha):
+    import render_trayectoria as RT
+    hechos = V.grupos.setdefault("trayectoria", set())
+    cand = [k for k in RT.CARRERAS if (k,) not in hechos] or list(RT.CARRERAS)
+    k = rng.choice(cand); hechos.add((k,))
+    n, clubes = RT.CARRERAS[k]
+    return dict(id=gid, clave=k, nombre=n, clubes=clubes, dur=5.5, musica=V.musica(rng))
+
+
+def guion_tridente(gid, rng, V, fecha):
+    rod = [rng.sample(r, 5) for r in RODILLOS]
+    return dict(id=gid, presupuesto=150, rodillos=rod, dur=7.0, musica=V.musica(rng),
+                vueltas=[rng.randint(14, 17), rng.randint(11, 13), rng.randint(15, 18)])
 
 
 def guion_plinko(gid, rng, V, fecha):
@@ -422,6 +451,15 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo in ("trayectoria", "tridente"):
+            g = (guion_trayectoria if tipo == "trayectoria" else guion_tridente)(gid, rng, V, sl["fecha"])
+            titulo = V.titulo(tipo, TIT_TRAYECTORIA if tipo == "trayectoria" else TIT_TRIDENTE, rng)
+            ns = [g["nombre"]] if tipo == "trayectoria" else [r[0][1] for r in g["rodillos"]]
+            titulo += " " + " ".join(tag(x) for x in (["football", "quiz"] if tipo == "trayectoria" else ns))
+            meta = ("Guess the player from his career BEFORE the 3 seconds are up ⏱️" if tipo == "trayectoria"
+                    else "Pause to build your attacking trident. Stay under €150M or go bankrupt 💸")
+            desc = f"{meta}\nComment your answer 👇 Follow for part 2 🔥\n#football #soccer #challenge #shorts"
+            fijado = ""; fotos = []; nombres = ns
         elif tipo in ("cabezas", "pared", "circulo"):
             g = {"cabezas": guion_cabezas, "pared": guion_pared, "circulo": guion_circulo}[tipo](gid, rng, V, sl["fecha"])
             ns = [g["nombre"]] if tipo == "cabezas" else g["nombres"]

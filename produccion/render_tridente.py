@@ -50,13 +50,13 @@ def main(guion):
     dur = g.get("dur", 7.0); pres = g.get("presupuesto", 150)
     rod = g["rodillos"]
     cartas = [[carta(*x) for x in r] for r in rod]
-    vueltas = g.get("vueltas", [9, 7, 8])                                       # cartas que avanza cada rodillo en todo el video (enteras)
+    vueltas = g.get("vueltas", [16, 13, 15])                                    # modo imposible: rodillos rápidos                                       # cartas que avanza cada rodillo en todo el video (enteras)
     fondo = Image.new("RGBA", (W, H), (12, 14, 26, 255)); d = ImageDraw.Draw(fondo)
     for i, x in enumerate(COLS):
         d.rounded_rectangle([x - CW / 2 - 14, 520, x + CW / 2 + 14, 1480], 30, fill=(22, 24, 40), outline=(70, 75, 110), width=4)
         P.texto(d, (x, 480), TITULOS[i], 40, (255, 255, 255), 6, (10, 10, 16))
     P.texto(d, (W / 2, 330), f"BUDGET €{pres}M", 96, (255, 210, 0), 11, (10, 10, 16))
-    tx = dict(gancho=f"BUILD YOUR TRIDENT €{pres}M", apuesta="PAUSE TO PICK YOUR 3", cta="COMMENT YOUR TRIDENT · FOLLOW FOR PART 2")
+    tx = dict(gancho=f"BUILD YOUR TRIDENT €{pres}M", apuesta="99% GO BANKRUPT", cta="COMMENT YOUR TRIDENT · FOLLOW FOR PART 2")
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

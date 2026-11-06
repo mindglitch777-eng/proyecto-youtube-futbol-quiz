@@ -24,8 +24,8 @@ import render_rueda as R
 ROOT = Path(__file__).resolve().parent
 W, H, FPS = 1080, 1920, 30
 ESC = ROOT / "assets" / "escudos"
-T_REVELA = 5.2
-T_ESCUDO = 0.55
+T_REVELA = 3.6          # modo imposible: 3 segundos para adivinar
+T_ESCUDO = 0.42
 
 CARRERAS = {   # solo clubes con escudo en assets/escudos
     "cristiano_ronaldo": ("Ronaldo", ["sporting", "man_united", "real_madrid", "juventus", "al_nassr"]),
@@ -68,7 +68,7 @@ def fondo():
 def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
-    dur = g.get("dur", 7.0); clubes = g["clubes"]; n = len(clubes)
+    dur = g.get("dur", 5.5); clubes = g["clubes"]; n = len(clubes)
     base = fondo()
     escs = [escudo(c, 290 if n <= 4 else 260) for c in clubes]
     cara = RC.cabeza(g["clave"])[0]; cara = cara.resize((int(cara.width * 1.55), int(cara.height * 1.55)), Image.LANCZOS)
@@ -83,7 +83,7 @@ def main(guion):
         en_fila = min(cols, n - f * cols)
         x0 = W / 2 - (en_fila - 1) * paso_x / 2
         pos.append((x0 + c * paso_x if not (f % 2) else W / 2 + (en_fila - 1) * paso_x / 2 - (cols - 1 - c) * paso_x, 470 + f * 290))
-    tx = dict(gancho="GUESS HIM IN 5 SECONDS", apuesta="PAUSE BEFORE TIME RUNS OUT", cta="COMMENT IF YOU GOT IT · FOLLOW FOR PART 2")
+    tx = dict(gancho="GUESS HIM IN 3 SECONDS", apuesta="99% CAN'T GUESS HIM", cta="COMMENT IF YOU GOT IT · FOLLOW FOR PART 2")
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
@@ -107,9 +107,9 @@ def main(guion):
             im.alpha_composite(silueta, (int(cx - silueta.width / 2), int(cy - silueta.height / 2)))
             d = ImageDraw.Draw(im)
             P.texto(d, (cx, cy), "?", 260, (255, 225, 0), 14, (20, 20, 30))
-            resto = max(0.0, T_REVELA - 0.2 - t); seg = math.ceil(resto)              # cuenta 5-4-3-2-1 y barra que se vacía
+            resto = max(0.0, T_REVELA - 0.6 - t); seg = math.ceil(resto)              # cuenta 5-4-3-2-1 y barra que se vacía
             d.rounded_rectangle([140, 1770, W - 140, 1810], 20, fill=(20, 20, 30))
-            d.rounded_rectangle([144, 1774, 144 + (W - 288) * resto / (T_REVELA - 0.2), 1806], 16,
+            d.rounded_rectangle([144, 1774, 144 + (W - 288) * resto / (T_REVELA - 0.6), 1806], 16,
                                 fill=(255, 225, 0) if seg > 2 else (235, 40, 40))
             P.texto(d, (W - 110, 1700), str(max(1, seg)), 120, (255, 255, 255), 12, (235, 40, 40))
         else:
@@ -130,8 +130,8 @@ def main(guion):
         a_ = int(t0 * sr) % nm; b = min(nm, a_ + len(sig)); fx[a_:b] += sig[: b - a_] * v
     for i in range(n):
         add(0.15 + i * T_ESCUDO, M.golpe(0.07), 0.7)
-    for k in range(5):
-        add(T_REVELA - 0.2 - (k + 1), M.golpe(0.03), 0.35)                      # tic-tac de la cuenta
+    for k in range(3):
+        add(T_REVELA - 0.6 - k, M.golpe(0.03), 0.35)                      # tic-tac de la cuenta
     add(T_REVELA, M.ding(0.7), 0.8); add(T_REVELA, M.boom(0.5), 0.5)
     add(0, G.silbato(sr), 1.0)
     mu = P.musica(g, dur)
