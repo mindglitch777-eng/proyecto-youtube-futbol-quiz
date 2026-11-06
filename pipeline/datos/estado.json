@@ -65,23 +65,23 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-06T02:56:12+00:00",
+   "inicio": "2026-11-06T09:21:09+00:00",
    "resumen": {
     "videos": 35,
-    "vistas_totales": 275999,
+    "vistas_totales": 290311,
     "por_formato": {
-     "dress": "1 videos · mediana 7,605 · mejor 7,605",
-     "rueda": "3 videos · mediana 14,595 · mejor 15,433",
-     "stop": "15 videos · mediana 6,629 · mejor 26,643",
-     "cabeza": "1 videos · mediana 1,034 · mejor 1,034",
-     "find": "3 videos · mediana 1,212 · mejor 2,015",
-     "plinko": "1 videos · mediana 808 · mejor 808",
-     "ring": "1 videos · mediana 1,000 · mejor 1,000",
-     "otros": "2 videos · mediana 774 · mejor 1,032",
-     "carrera": "2 videos · mediana 714 · mejor 863"
+     "dress": "1 videos · mediana 9,990 · mejor 9,990",
+     "rueda": "3 videos · mediana 14,108 · mejor 18,620",
+     "stop": "15 videos · mediana 6,465 · mejor 25,311",
+     "cabeza": "1 videos · mediana 1,008 · mejor 1,008",
+     "find": "3 videos · mediana 1,186 · mejor 1,979",
+     "plinko": "1 videos · mediana 796 · mejor 796",
+     "ring": "1 videos · mediana 985 · mejor 985",
+     "otros": "2 videos · mediana 764 · mejor 1,017",
+     "carrera": "2 videos · mediana 705 · mejor 852"
     }
    },
-   "fin": "2026-11-06T02:56:12+00:00"
+   "fin": "2026-11-06T09:21:09+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -126,18 +126,18 @@
   "publicacion": {
    "estado": "ok",
    "resumen": {
-    "subidos": 0,
-    "en_cola": 0,
-    "freno": null,
+    "subidos": 4,
+    "en_cola": 2,
+    "freno": "límite diario de YouTube",
     "errores": [],
-    "total_publicados": 42
+    "total_publicados": 46
    },
-   "inicio": "2026-11-06T02:56:10+00:00",
-   "fin": "2026-11-06T02:56:10+00:00"
+   "inicio": "2026-11-06T09:20:55+00:00",
+   "fin": "2026-11-06T09:21:07+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-06T02:56:21+00:00",
+   "fin": "2026-11-06T09:21:17+00:00",
    "resumen": {
     "videos": 23,
     "por_formato": {
@@ -155,5 +155,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-06T02:56:21+00:00"
+ "actualizado": "2026-11-06T09:21:17+00:00"
 }
