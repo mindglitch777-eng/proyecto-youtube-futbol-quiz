@@ -70,3 +70,5 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
    videos (títulos, carteles, hashtags) sigue en inglés porque el público del canal es internacional.
 5. **Grilla v2: 6 por día = 3 que funcionan + 3 nuevos intercalados** (08 STOP grilla · 11 prueba · 14 WHEEL · 17 prueba ·
    20 STOP estrella/HARD · 23 prueba). Los 2 STOP del día nunca se parecen; títulos siempre únicos.
+6. **Modo IMPOSIBLE en todos los formatos de pausa** (06/11): los comentarios decían "first try"; más difícil = más intentos = más
+   loops = más empuje. HEAD FIT pasa a lugar fijo (17:00). Afuera TORRE y PLINKO. FIND y WALL BALANCE: 1 por semana como máximo.

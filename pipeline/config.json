@@ -132,6 +132,14 @@
   "otros": {
    "nombre": "DEBATES / BALLON D'OR REMATCH",
    "motivo": "no se acerca al STOP (02/11)"
+  },
+  "torre": {
+   "nombre": "BALL TOWER",
+   "motivo": "no es de pausar, +20 s, mercado con mediana de 12.000 (06/11)"
+  },
+  "plinko": {
+   "nombre": "PLINKO GOAT",
+   "motivo": "no es de pausar, +20 s, mercado frío (06/11)"
   }
  },
  "pruebas": {
@@ -145,22 +153,15 @@
    "listo": true
   },
   "find": {
-   "listo": true
-  },
-  "plinko": {
-   "listo": true
+   "listo": true,
+   "max_semana": 1
   },
   "dress": {
    "listo": true
   },
-  "torre": {
-   "listo": true
-  },
-  "cabezas": {
-   "listo": true
-  },
   "pared": {
-   "listo": true
+   "listo": true,
+   "max_semana": 1
   },
   "circulo": {
    "listo": true

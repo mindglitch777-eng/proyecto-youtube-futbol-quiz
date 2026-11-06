@@ -20,7 +20,8 @@ from datetime import date, datetime, timedelta, timezone
 from comun import CONFIG, cargar, etapa, guardar
 
 GRILLA = [("08:00", "stop", "grilla"), ("11:00", "prueba", None), ("14:00", "rueda", None),
-          ("17:00", "prueba", None), ("20:00", "stop", "estrella"), ("23:00", "prueba", None)]
+          ("17:00", "cabezas", None), ("20:00", "stop", "estrella"), ("23:00", "prueba", None)]   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
+FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
 MIN_VIDEOS_PODA = 4
 
 
@@ -81,18 +82,20 @@ def main(inicio=None, dias=7):
         if p.get("tipo") in usos:
             usos[p["tipo"]] += 1
     peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
-    slots = []
+    slots = []; semana = {}
     for d in range(dias):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []
         for hora, tipo, estilo in GRILLA:
-            if tipo == "rueda":                                               # formato que ya funciona: lugar fijo
-                slots.append(dict(fecha=dia, hora=hora, tipo="rueda")); continue
+            if tipo in FIJOS:                                                 # formato que ya funciona: lugar fijo
+                slots.append(dict(fecha=dia, hora=hora, tipo=tipo)); continue
             if tipo == "stop":
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "estrella" and d % 2 == 1),
                                   arranque="estrella" if estilo == "estrella" else ("grilla" if estilo == "grilla" else rng.choice(["estrella", "grilla"]))))
                 continue
-            cand = [k for k in activas if k not in hoy_pruebas] or activas
+            tope = {k: CONFIG["pruebas"][k].get("max_semana", 99) for k in activas}  # algunos formatos solo N por semana
+            cand = [k for k in activas if k not in hoy_pruebas and semana.get(k, 0) < tope[k]] or \
+                   [k for k in activas if semana.get(k, 0) < tope[k]] or activas
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
             fijas = [k for k in promovidas if k not in hoy_pruebas]
@@ -100,7 +103,7 @@ def main(inicio=None, dias=7):
                 k = fijas[0]
             else:                                                               # la menos usada (pesada por rendimiento)
                 k = min(cand, key=lambda k: (usos[k] / peso[k], rng.random()))
-            usos[k] += 1; hoy_pruebas.append(k)
+            usos[k] += 1; hoy_pruebas.append(k); semana[k] = semana.get(k, 0) + 1
             slots.append(dict(fecha=dia, hora=hora, tipo=k))
     guardar("plan.json", dict(inicio=inicio.isoformat(), grilla=[f"{h} {t}{'/' + e if e else ''}" for h, t, e in GRILLA],
                               pruebas_activas=activas, podadas=poda["podadas"], promovidas=poda["promovidas"],
