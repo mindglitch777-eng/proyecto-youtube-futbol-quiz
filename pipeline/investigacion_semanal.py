@@ -124,6 +124,13 @@ def main():
     res = dict(fecha=hoy, recomendaciones=recs, canal=canal, nuevas=[dict(id=c["id"], titulo=c["titulo"], vistas=c["vistas"]) for c in cands],
                comentarios=dict(total=sum(c["comentarios"] for c in com), facil=sum(c["facil"] for c in com), dificil=sum(c["dificil"] for c in com)),
                preguntas_ia=preguntas_ia(recs, canal))
+    hrs = {}
+    rend = {v["id"]: v for v in cargar("rendimiento.json", {}).get("videos", [])}
+    for p in cargar("publicados.json", []):
+        v = rend.get(p.get("video_id"))
+        if v and v["horas"] >= 24:
+            hrs.setdefault(p["hora"][:2], []).append(v["vistas_48h"])
+    res["horas"] = {h: dict(mediana=round(st.median(x)), videos=len(x)) for h, x in sorted(hrs.items())}
     guardar("investigacion.json", res)
     L = [f"# Investigación {hoy}", "", "## Olas del mercado (7 días)", "", "| Mecánica | Videos | +1 M | Mediana | Vistas/hora | Duración |", "|---|---|---|---|---|---|"]
     for k, r in list(o7.items())[:14]:

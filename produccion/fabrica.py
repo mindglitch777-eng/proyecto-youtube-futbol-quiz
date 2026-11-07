@@ -125,8 +125,8 @@ def con_estrella(grupo, rng, pool=None):
 
 # Fórmula de título de STOP (datos de YouTube Studio: el más visto llevaba nombre de estrella + meta exacta "100";
 # el peor, un título genérico sin nombres). Siempre: marca + superestrella + meta numérica + hashtags de los jugadores.
-TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣7️⃣",          # (Studio 07/11: la familia clásica es la mejor;
-                    "Football Stop Challenge ⚽🛑 Pause at the perfect moment",       #  "X vs Y" en el STOP fue lo peor: 36-38 %)
+TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣7️⃣",          # 15.800 de mediana (Studio 07/11)
+                    "Football Stop Challenge ⚽🛑 Can you stop {a} at 100%?",         # 14.000 ("Pause at the perfect moment": 5.000, afuera)
                     "Football Stop Challenge ⚽🛑 Can you stop at 100%?",
                     "Football Stop Challenge ⚽🛑 Only 1% can stop {a} 6️⃣7️⃣"]
 
@@ -255,7 +255,7 @@ TORSOS_RUEDA = ["cristiano_ronaldo_0", "lionel_messi_0", "kylian_mbapp_0", "lami
                 "pedri_2", "ronaldinho_0", "phil_foden_0", "bukayo_saka_2", "cole_palmer_1", "raphinha_0", "lautaro_mart_nez_1"]
 # WHEEL: SIEMPRE la fórmula del mercado "X vs Y or Z stop challenge" (07/11: con ella 18-26k vistas; "Stop the wheel on Messi" 3,4k)
 TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "{n} vs {a} or {b} stop challenge 😱🔥", "{n} vs {a} or {b} stop challenge 🛑🤯",
-             "{n} vs {a} or {b} stop challenge 🔥 Only 1% can"]
+             "Find {n}'s real body 🛑🔥 {a} or {b}?"]                                 # 15.641: también funciona
 
 
 def guion_rueda(gid, rng, V, fecha):

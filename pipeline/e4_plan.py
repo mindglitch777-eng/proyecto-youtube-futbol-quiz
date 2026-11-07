@@ -19,8 +19,8 @@ from datetime import date, datetime, timedelta, timezone
 
 from comun import CONFIG, cargar, etapa, guardar
 
-GRILLA = [("08:00", "stop", "grilla"), ("11:00", "prueba", None), ("14:00", "rueda", None),
-          ("17:00", "cabezas", None), ("20:00", "stop", "grilla2"), ("23:00", "prueba", None)]   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
+GRILLA = [("09:00", "stop", "grilla"), ("13:00", "prueba", None), ("17:00", "prueba", None),
+          ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "stop", "grilla2")]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
 MIN_VIDEOS_PODA = 4
 
@@ -87,11 +87,25 @@ def main(inicio=None, dias=7):
         for k in r["nuestros"]:
             if k in peso:
                 peso[k] *= f
+    # Horarios que aprenden solos: los formatos fijos van a las horas con mejor mediana (si hay ≥2 videos de esa hora)
+    hrs = cargar("investigacion.json", {}).get("horas", {})
+    def rinde(h):
+        x = hrs.get(h[:2]); return x["mediana"] if x and x["videos"] >= 2 else 8000
+    grilla = list(GRILLA)
+    fijos = sorted([g for g in grilla if g[1] != "prueba"], key=lambda g: g[1] == "stop")   # rueda/cabezas primero
+    horas_orden = sorted([g[0] for g in grilla], key=rinde, reverse=True)
+    nueva = []
+    for g_, h_ in zip(fijos, horas_orden):
+        nueva.append((h_, g_[1], g_[2]))
+    for h_ in horas_orden[len(fijos):]:
+        nueva.append((h_, "prueba", None))
+    con_datos = sum(1 for g in grilla if (hrs.get(g[0][:2]) or {}).get("videos", 0) >= 2)
+    GRILLA_SEMANA = sorted(nueva) if con_datos >= 4 else grilla                 # sin datos suficientes: la grilla de noche fija
     slots = []; semana = {}
     for d in range(dias):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []
-        for hora, tipo, estilo in GRILLA:
+        for hora, tipo, estilo in GRILLA_SEMANA:
             if tipo in FIJOS:                                                 # formato que ya funciona: lugar fijo
                 slots.append(dict(fecha=dia, hora=hora, tipo=tipo)); continue
             if tipo == "stop":
