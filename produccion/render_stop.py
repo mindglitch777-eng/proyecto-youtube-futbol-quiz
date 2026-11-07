@@ -503,10 +503,10 @@ def main(guion):
             k_foco = min(1.0, (t - (dur - 0.9)) / 0.25)
         else:
             k_foco = 0.0
-        if k_foco:                                                            # foco + flecha sobre el hueco de la estrella (cuadrante 1)
+        if k_foco and g.get("foco"):                                          # (apagado por defecto: oscurecer el arranque bajó el "eligió ver")
             hx, hy = c0["hueco"]; bx, by, z = caja_zoom(s)
             base = foco(base, ((hx - bx) * z, (hy - by) * z), c0["r"] * z * 1.25, k_foco, t)
-        im = G.capa(cartel(base, t), t, dur, tx, int(H // 2 + s * 760), sin_fin=True)
+        im = G.capa(cartel(base, t), t, dur, tx, int(H // 2 + s * 760), sin_fin=True, grande=g.get("gancho_grande", False))
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
         if f in (0, 9, 45, int(dur * FPS) - 4):
             im.save(out / f"muestra_{f:03d}.jpg", quality=85)

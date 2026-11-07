@@ -102,7 +102,7 @@ TIT_STOP_SERIE = ["Football Stop Challenge #{n} ⚽🛑 {tema} edition", "Stop a
 
 # REGLA PARA SIEMPRE (pedido del dueño del canal): en el primer cuadro de TODOS los videos aparece una superestrella
 # (la cara más conocida frena el scroll: el 49% que hoy desliza decide en <0,4 s). Va en el lugar más visible de cada formato.
-SUPERESTRELLAS = ["cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar"]
+SUPERESTRELLAS = ["cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar", "vin_cius_j_nior"]
 _uso_estrellas = {}
 
 
@@ -125,15 +125,15 @@ def con_estrella(grupo, rng, pool=None):
 
 # Fórmula de título de STOP (datos de YouTube Studio: el más visto llevaba nombre de estrella + meta exacta "100";
 # el peor, un título genérico sin nombres). Siempre: marca + superestrella + meta numérica + hashtags de los jugadores.
-TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Can you stop {a} at 100%?",
-                    "Football Stop Challenge ⚽🛑 Only 1% can stop {a} 6️⃣7️⃣",
-                    "Can you stop at 100%? ⚽🛑 {a} vs {b}",
-                    "Stop {a} at 100% ⚽🛑 Only 1% can do it"]
+TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣7️⃣",          # (Studio 07/11: la familia clásica es la mejor;
+                    "Football Stop Challenge ⚽🛑 Pause at the perfect moment",       #  "X vs Y" en el STOP fue lo peor: 36-38 %)
+                    "Football Stop Challenge ⚽🛑 Can you stop at 100%?",
+                    "Football Stop Challenge ⚽🛑 Only 1% can stop {a} 6️⃣7️⃣"]
 
 
 def titulo_stop(V, rng, nombres, nivel=None):
     base = (V.titulo("stop_formula", TIT_STOP_FORMULA, rng) if V else rng.choice(TIT_STOP_FORMULA)).format(a=nombres[0], b=nombres[1])
-    if nivel:
+    if nivel and False:                                                        # el nivel queda en pantalla, no en el título
         base += f" · Level {nivel}"
     for n in nombres[:3]:                                                      # hashtags de jugadores (los del top los tenían)
         if len(base) + len(tag(n)) + 1 <= 100:
@@ -229,7 +229,7 @@ def guion_rueda(gid, rng, V, fecha):
             usados.add(clave); break
     nombre = CUERPOS_RUEDA[cuerpo]
     otros = [nombre_de(t.rsplit("_", 1)[0]) for t in torsos if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
-    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=6.6, vueltas=4, sentido=rng.choice([1, -1]),
+    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=6.6, vueltas=4, t_encaje=0.45, sentido=rng.choice([1, -1]),
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(2, 6), otros=otros)
 
 

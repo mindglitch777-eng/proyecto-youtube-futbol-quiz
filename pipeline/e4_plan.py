@@ -20,7 +20,7 @@ from datetime import date, datetime, timedelta, timezone
 from comun import CONFIG, cargar, etapa, guardar
 
 GRILLA = [("08:00", "stop", "grilla"), ("11:00", "prueba", None), ("14:00", "rueda", None),
-          ("17:00", "cabezas", None), ("20:00", "stop", "estrella"), ("23:00", "prueba", None)]   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
+          ("17:00", "cabezas", None), ("20:00", "stop", "grilla2"), ("23:00", "prueba", None)]   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
 MIN_VIDEOS_PODA = 4
 
@@ -95,8 +95,8 @@ def main(inicio=None, dias=7):
             if tipo in FIJOS:                                                 # formato que ya funciona: lugar fijo
                 slots.append(dict(fecha=dia, hora=hora, tipo=tipo)); continue
             if tipo == "stop":
-                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "estrella" and d % 2 == 1),
-                                  arranque="estrella" if estilo == "estrella" else ("grilla" if estilo == "grilla" else rng.choice(["estrella", "grilla"]))))
+                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "grilla2" and d % 2 == 1),
+                                  arranque="grilla"))                    # 07/11: el zoom estrella no mejoró el "eligió ver"
                 continue
             tope = {k: CONFIG["pruebas"][k].get("max_semana", 99) for k in activas}  # algunos formatos solo N por semana
             cand = [k for k in activas if k not in hoy_pruebas and semana.get(k, 0) < tope[k]] or \

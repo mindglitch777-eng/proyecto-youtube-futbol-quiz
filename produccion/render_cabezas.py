@@ -27,7 +27,7 @@ ROOT = Path(__file__).resolve().parent
 W, H, FPS = 1080, 1920, 30
 FOTOS = json.loads((ROOT / "assets" / "fotos" / "frontales.json").read_text())
 ALTO_CABEZA = 255
-T_ENCAJE = 2.2
+T_ENCAJE = 0.45          # encaje en la costura del loop: nunca hay un "ya se resolvió" (Studio 07/11)
 
 
 @lru_cache(maxsize=32)

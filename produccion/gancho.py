@@ -122,7 +122,7 @@ def cartel_gancho(im, txt, cy, pop=1.0):
     return im
 
 
-def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False):
+def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False, grande=True):
     """Dibuja el texto que toca en el segundo t: gancho (0-1,5 s), apuesta (medio) o CTA (último 1,2 s).
     sin_fin=True (loops cortos): gancho → apuesta → CTA en el medio → el gancho vuelve 0,9 s antes de la costura,
     así el final no se nota (los datos de Studio mostraban la caída justo cuando "terminaba" el reto)."""
@@ -140,7 +140,7 @@ def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False):
         txt, t0 = tx["apuesta"], T_GANCHO
     e = t - t0
     pop = 1.0 + 0.18 * math.exp(-e * 14) * (e > 0.0) * (t0 > 0)            # el golpe solo en los cambios del medio                    # golpe chiquito al cambiar de texto
-    if txt == tx["gancho"]:
+    if txt == tx["gancho"] and grande:
         return cartel_gancho(im, txt, cy, 1.0 + 0.045 * math.sin(t * 2 * math.pi * 2.2))   # late a 2,2 Hz
     col = (255, 255, 255) if txt == tx["cta"] else (255, 230, 40)
     return cartel(im, txt, cy, ancho_max, max(tam, 92), pop, color=col)

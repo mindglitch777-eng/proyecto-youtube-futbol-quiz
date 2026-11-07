@@ -72,3 +72,7 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
    20 STOP estrella/HARD · 23 prueba). Los 2 STOP del día nunca se parecen; títulos siempre únicos.
 6. **Modo IMPOSIBLE en todos los formatos de pausa** (06/11): los comentarios decían "first try"; más difícil = más intentos = más
    loops = más empuje. HEAD FIT pasa a lugar fijo (17:00). Afuera TORRE y PLINKO. FIND y WALL BALANCE: 1 por semana como máximo.
+7. **Datos de Studio 07/11:** el arranque oscurecido con foco y flecha del STOP bajó el "eligió ver" (52-58 % → 36-46 %): el STOP vuelve
+   a la grilla brillante con cartel chico. Títulos del STOP: familia clásica "Football Stop Challenge ⚽🛑 …" (los "X vs Y" fueron los
+   peores). HEAD FIT y WHEEL encajan en la costura del loop (la gente se iba en el seg. 2,2 cuando se resolvía). WHEEL es el que más
+   suscriptores trae (2,6-2,9 cada 1.000). Vinícius pasa a superestrella.
