@@ -60,6 +60,8 @@ def recomendar(olas7, olas3, canal):
             acc = "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
         elif (nos_med or 0) >= 8_000:
             acc = "MANTENER: nos rinde aunque el mercado esté tibio"
+        elif nos_med is None:
+            acc = "PROBAR POCO: todavía no tenemos datos propios"
         else:
             acc = "BAJAR: sin ola y sin resultado propio"
         recs.append(dict(familia=fam, nuestros=nuestros, mercado_mediana=m7["mediana"], mercado_1M=m7["mas_1M"], subiendo=bool(sube),
@@ -70,7 +72,7 @@ def recomendar(olas7, olas3, canal):
 def nuevas_tendencias(olas3, filas7):
     """Videos +1 M de canales chicos en familias que no tenemos o que no son de clips reales: candidatos a formato nuevo."""
     cand = [f for f in filas7 if f["vistas"] >= 1_000_000 and f["dur"] <= 20 and f["familia"] not in ("skills", "meme")
-            and f["subs"] < 300_000]
+            and f["subs"] < 2_000_000]
     vistos = {a["id"] for a in cargar("analisis_tendencias.json", [])}
     return [c for c in cand if c["id"] not in vistos][:6]
 
