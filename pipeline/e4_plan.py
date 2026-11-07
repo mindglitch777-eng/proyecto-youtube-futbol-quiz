@@ -82,6 +82,11 @@ def main(inicio=None, dias=7):
         if p.get("tipo") in usos:
             usos[p["tipo"]] += 1
     peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
+    for r in cargar("investigacion.json", {}).get("recomendaciones", []):        # la investigación del sábado/miércoles manda
+        f = 1.6 if r["accion"].startswith(("SUBIR", "PROBAR MÁS")) else (0.5 if r["accion"].startswith("BAJAR") else 1.0)
+        for k in r["nuestros"]:
+            if k in peso:
+                peso[k] *= f
     slots = []; semana = {}
     for d in range(dias):
         dia = (inicio + timedelta(days=d)).isoformat()
