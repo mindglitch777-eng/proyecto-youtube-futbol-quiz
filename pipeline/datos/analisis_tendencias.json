@@ -1570,5 +1570,761 @@
     "Incluir un sistema de líneas de colores trazando la trayectoria de cada pelota para que sea aún más vistoso y fácil de seguir."
    ]
   }
+ },
+ {
+  "id": "uGw41Z67lSc",
+  "titulo": "Can Anyone Solve This? Fit All Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "Football Challenge HQ",
+  "subs": 329000,
+  "creado": "2026-08-24",
+  "vistas": 16520291,
+  "horas": 117,
+  "vph": 141048,
+  "dur": 6,
+  "likes": 230423,
+  "coment": 1869,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Pause Challenge / Ruleta de Calce",
+   "mecanica": "Un anillo de recortes de Neymar gira arriba. En el centro, una figura de Neymar rota y cambia de postura rápidamente dentro de una silueta objetivo fija.",
+   "que_hace_el_espectador": "Pausar el video en el momento exacto en que la figura central encaja perfectamente en la silueta.",
+   "cuadro_0": "Fondo: cancha de fútbol. Arriba: anillo circular de 8 cutouts de Neymar. Centro: silueta amarilla con figura en movimiento. Abajo izquierda: mini Neymar estático.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Anillo superior empieza a girar. Figura central se mueve rápido cambiando ángulo dentro de la silueta.",
+     "sonido": "Voz procesada de meme en español ('Empréstame tu caballo...')"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Continuación de la rotación del anillo y cambios rápidos de pose de la figura central.",
+     "sonido": "Voz de meme continúa"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La figura central pasa por posiciones incorrectas a alta velocidad.",
+     "sonido": "Voz de meme continúa"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "El anillo superior mantiene velocidad constante de giro.",
+     "sonido": "Voz de meme continúa"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Transición de audio; la figura central sigue alternando poses dinámicamente.",
+     "sonido": "Remate de voz meme"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Cambio de ritmo; el movimiento se acelera ligeramente.",
+     "sonido": "Entrada de música festiva / corneta de circo"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La figura central encaja brevemente por 1-2 cuadros antes de desalinearse.",
+     "sonido": "Música alegre ritmada"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Rotación continua del conjunto superior y central.",
+     "sonido": "Música alegre continua"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Última secuencia rápida de poses en el centro.",
+     "sonido": "Música alegre continua"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Preparación para el bucle del video.",
+     "sonido": "Corte final de música"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Reinicio al primer cuadro sin interrupción visual.",
+     "sonido": "Fin del audio / empalme directo"
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, el audio y la animación de rotación coinciden en el inicio y final para repetición infinita.",
+   "gancho": "Desafío de precisión visual interactivo ('Pause Game') con un jugador de alto impacto popular.",
+   "dopamina": [
+    "Gamificación instantánea mediante pausa",
+    "Movimiento circular rítmico y acelerado",
+    "Audio pegadizo de alta retención"
+   ],
+   "audio": "Meme de voz en español distorsionada seguido de música festiva con cornetas.",
+   "por_que_comentan": "Usuarios publican si lograron pausar en el frame correcto o compiten en intentos.",
+   "assets_necesarios": [
+    "PNG recortado de Neymar Jr. con camiseta de Brasil",
+    "PNG de silueta con borde amarillo brillante",
+    "Imagen de fondo de estadio de fútbol desenfocada",
+    "Archivo de audio meme trending"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo 1080x1920 a 60 fps con imagen de estadio al fondo.",
+    "2. Renderizar 8 instancias del PNG del jugador dispuestas en círculo en Y:300, aplicando rotación continua sobre su centro.",
+    "3. Colocar la silueta fija en el centro (Y:1000) y superponer el PNG de Neymar variando escala y rotación aleatoriamente por frame, coincidiendo solo en 2 frames específicos.",
+    "4. Exportar video de 5s en bucle con el audio alineado."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir un contador de 'Nivel de Dificultad' en texto brillante superior.",
+    "Incluir una confirmación de destello verde cuando el espectador logre pausar en el frame exacto.",
+    "Alternar múltiples futbolistas de élite (Messi, Ronaldo, Mbappé) cada 2 segundos."
+   ]
+  }
+ },
+ {
+  "id": "tIuzAMJljjs",
+  "titulo": "This Is Almost Impossible! Fit All Ronaldinho Legends 🎯⚽ | Football Challenge HQ",
+  "canal": "HUNT LIKE A PRO 56",
+  "subs": 761000,
+  "creado": "2025-01-12",
+  "vistas": 5853352,
+  "horas": 31,
+  "vph": 191562,
+  "dur": 6,
+  "likes": 92089,
+  "coment": 272,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Ruleta de Encaje / Puzzle de Jugador",
+   "mecanica": "Una rueda de recortes de caras/torsos de una leyenda del fútbol gira en círculo arriba. Abajo hay un cuerpo estático con una silueta amarilla. El objetivo es encajar o pausar la cara justa sobre el cuerpo en el momento exacto.",
+   "que_hace_el_espectador": "Intentar pausar el video en el momento exacto donde la pieza encaja perfectamente en la silueta del jugador.",
+   "cuadro_0": "Arriba/Centro: Anillo circular de 8 recortes de Ronaldinho con la camiseta de Brasil. Centro/Abajo: Piernas de Ronaldinho en el césped con balón y una silueta amarilla fluorescente vacía del torso. Fondo: Estadio de fútbol iluminado.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Comienza la rueda de 8 Ronaldinhos a girar rápidamente en círculo sobre la silueta.",
+     "sonido": "Voz cantando en español 'Amor, préstame tu caballo...'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La rueda gira 45 grados, mostrando distintos ángulos y expresiones de Ronaldinho.",
+     "sonido": "Continúa el audio vocal de fondo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La rueda sigue girando velozmente. La silueta amarilla resplandece en el centro.",
+     "sonido": "Continúa el audio vocal."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Rotación continua de las caras de Ronaldinho alrededor del eje central.",
+     "sonido": "Transición sonora hacia el remate del audio."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "La rueda acelera ligeramente la rotación mostrando las camisetas amarillas de Brasil.",
+     "sonido": "Música acelerándose."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Una de las imágenes se posiciona justo arriba de la apertura del cuello de la silueta.",
+     "sonido": "Audio se intensifica."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La rueda se detiene/alinea bruscamente desplazando el torso correcto hacia abajo.",
+     "sonido": "Corte de voz y beat drop."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "¡Encaje perfecto! El torso encaja 100% dentro del borde amarillo completando el cuerpo.",
+     "sonido": "Efecto de sonido de acierto / remate musical fuerte."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Ronaldinho completo en pantalla sobre el balón en el estadio.",
+     "sonido": "Música festiva de fondo."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Mantiene la figura completa un instante antes del reinicio instantáneo del video.",
+     "sonido": "Cierre del clip de audio."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Reinicio inmediato al cuadro 0 (Loop).",
+     "sonido": "Reinicio del track de audio."
+    }
+   ],
+   "duracion_s": 5.0,
+   "loop": "Sí, al coincidir el encaje al final del segundo 3.5, el video vuelve inmediatamente al inicio para hacer que la gente intente pausarlo justo ahí.",
+   "gancho": "El reto de coordinación visual ('Pause at the right moment') y la figura reconocible de una leyenda del fútbol (Ronaldinho).",
+   "dopamina": [
+    "Satisfacción al ver la pieza encajar perfectamente",
+    "Reto interactivo de pausar en el milisegundo exacto",
+    "Nostalgia por ver distintas épocas de Ronaldinho"
+   ],
+   "audio": "Audio meme en español que pasa de una voz cómica a un beat contagioso justo en el instante del encaje.",
+   "por_que_comentan": "Escriben si lo lograron pausar, en cuántos intentos lo consiguieron, o debaten cuál época de Ronaldinho es la mejor.",
+   "assets_necesarios": [
+    "Fondo en alta resolución de un estadio de fútbol (1080x1920)",
+    "8 recortes PNG sin fondo de Ronaldinho (diferentes caras/torsos)",
+    "1 PNG de piernas de futbolista con balón",
+    "Overlay SVG/PNG de silueta amarilla neón",
+    "Audio de tendencia de TikTok/Shorts (canción + beat drop)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Canvas vertical 1080x1920 en MoviePy/Python (PIL + OpenCV).",
+    "2. Colocar la imagen estática del estadio como fondo.",
+    "3. Colocar en la posición inferior (y=1100) la imagen de las piernas con el balón y encima la silueta amarilla.",
+    "4. Crear un array con las 8 imágenes de torsos recortados distribuidos en un círculo de radio R=320px alrededor del centro (540, 500).",
+    "5. Animar la rotación del grupo de 8 imágenes calculando (x, y) con funciones seno/coseno según el tiempo `t`.",
+    "6. En t=3.2s, animar la pieza victoriosa descendiendo verticalmente hasta posarse dentro de la silueta en t=3.5s.",
+    "7. Renderizar a 60 FPS para que el desafío de pausa sea preciso al milisegundo."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir un contador visual de 'Intento #1' y un botón falso de PAUSE para incrementar el engagement táctil.",
+    "Agregar efectos de destellos neón y confeti digital cuando la pieza encaja.",
+    "Hacer variaciones automáticas con código para generar versiones de Messi, Ronaldo y Neymar sin trabajo manual extra."
+   ]
+  }
+ },
+ {
+  "id": "luMqNq90B3c",
+  "titulo": "Can Anyone Solve This? Fit All Lionel Messi Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "Football Challenge HQ",
+  "subs": 329000,
+  "creado": "2026-08-24",
+  "vistas": 3871872,
+  "horas": 156,
+  "vph": 24799,
+  "dur": 6,
+  "likes": 65301,
+  "coment": 357,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Desafío de Encastre y Ruleta Giratoria (Messi Pause Challenge)",
+   "mecanica": "Una ruleta circular con múltiples fotos recortadas de Messi gira en la parte superior sobre un eje dorado. En la parte inferior hay un cuerpo de Messi jugando con una silueta de cabeza delimitada por una línea amarilla de neón. El espectador debe pausar el video en el momento exacto en que la cabeza correspondiente se alinea con el cuerpo.",
+   "que_hace_el_espectador": "Intentar pausar el video en el segundo exacto para encajar la cabeza en el cuerpo de Messi, adivinar la combinación correcta y comentar su logro en la publicación.",
+   "cuadro_0": "Fondo de estadio/césped verde con cielo azul desenfocado. Arriba centro: 7 retratos recortados de Lionel Messi dispuestos en círculo radial alrededor de una corona/emblema dorado. Abajo centro: Messi con la camiseta de Argentina corriendo con balón, con su cabeza resaltada con trazo amarillo fluorescente y flechas punteadas guiando el encuadre.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Comienza la rotación de la ruleta de cabezas de Messi en sentido horario. Messi en posición inferior con contorno amarillo neón.",
+     "sonido": "Música alegre de cumbia/cuarteto de fondo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta gira fluidamente mostrando diferentes expresiones de Messi con la Copa del Mundo y festejos.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La rotación se mantiene a velocidad constante. La silueta inferior parpadea levemente.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Continúa el giro circular. Las distintas caras recortadas pasan sobre el eje central.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Giro de ruleta continuo. El cuerpo de Messi abajo mantiene la pelota en movimiento.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La ruleta aproxima una de las caras principales hacia la zona de alineación.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Transición rápida en la ruleta; el foco visual salta hacia la coincidencia del rostro.",
+     "sonido": "Música de fondo mezclada con remate."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Efecto cómico de sonido / corneta de circo suena justo cuando se produce un intento de encaje.",
+     "sonido": "SFX corneta / 'clown horn' de meme."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La cara se alinea brevemente sobre la silueta resaltada.",
+     "sonido": "Música reanudando el ritmo."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "La ruleta retoma la velocidad para enlazar suavemente el ciclo.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Último tramo de rotación preparando el empalme continuo con el segundo 0.0.",
+     "sonido": "Música en bucle perfecto."
+    }
+   ],
+   "duracion_s": 5.4,
+   "loop": "Sí, la velocidad de rotación y la pista de audio están sincronizadas para repetirse indefinidamente sin cortes perceptibles.",
+   "gancho": "La silueta neón brillante y el movimiento circular ininterrumpido captan la atención de inmediato, invitando a interactuar con el botón de pausa.",
+   "dopamina": [
+    "Estética dorada con la figura de Messi y la Copa del Mundo",
+    "Movimiento continuo y fluido tipo tragamonedas/ruleta",
+    "Efecto de sonido gracioso (corneta meme) en el momento de alineación",
+    "Sensación de juego o reto de habilidad inmediata"
+   ],
+   "audio": "Canción popular bailable / cumbia argentina ('Empréstame tu caballo') complementada con efecto de sonido de corneta cómica (clown horn) en el remate.",
+   "por_que_comentan": "Los usuarios comentan 'Lo logré al primer intento', 'Pausé justo en el segundo 3.5', o desafían a sus amigos a lograr el encaje exacto.",
+   "assets_necesarios": [
+    "Imagen de fondo desenfocada de cancha de fútbol (1080x1920)",
+    "7 recortes PNG de alta calidad de la cabeza/busto de Lionel Messi en distintas poses",
+    "1 recorte PNG del cuerpo de Messi corriendo con balón",
+    "Gráfico vectorial de rueda/corona dorada para el centro de giro",
+    "Gráficos vectoriales de línea punteada y silueta amarillo neón",
+    "Audio musical en loop",
+    "Efecto de sonido (SFX) de corneta de circo"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Usar Python con Pillow y MoviePy (o OpenCV) definiendo un lienzo vertical de 1080x1920 píxeles a 60 fps.",
+    "2. Cargar la imagen de fondo y aplicarle un filtro Blur (Gaussian blur radius=15).",
+    "3. Posicionar el recorte del cuerpo de Messi en la coordenada inferior (y=1300, x=540) y aplicar una máscara de contorno amarillo (stroke=8px) alrededor de la cabeza.",
+    "4. Crear el elemento giratorio: calcular las posiciones angulares (θ = 360° / 7) para disponer radialmente los 7 recortes PNG a un radio R=320px respecto al centro (x=540, y=550).",
+    "5. En cada frame, incrementar el ángulo de rotación global en `d_theta = (360 * fps_actual / tiempo_total)` para lograr una rotación completa de 360° en 5.4s.",
+    "6. Superponer el ícono dorado central en (540, 550) y dibujar las flechas amarillas punteadas.",
+    "7. Renderizar el audio principal junto con la inserción del SFX de corneta en t=3.5s y exportar en MP4 H.264."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador o barra de tiempo con luz neón que indique el tiempo límite para intentar la pausa.",
+    "Añadir un efecto visual deslumbrante (destello de luz dorada y explosión de confeti) en el frame exacto donde la cara coincide perfectamente.",
+    "Crear una versión multi-nivel donde la ruleta empiece lenta y acelere gradualmente en cada ciclo de loop."
+   ]
+  }
+ },
+ {
+  "id": "dm3ZW2xlckk",
+  "titulo": "😂 Ronaldo Cartoon Game ⚽ Funny Gameplay & Crazy Moments! #Shorts",
+  "canal": "graceislive",
+  "subs": 8980,
+  "creado": "2025-01-14",
+  "vistas": 3563611,
+  "horas": 98,
+  "vph": 36495,
+  "dur": 20,
+  "likes": 72339,
+  "coment": 33,
+  "familia": "3d_ia",
+  "analisis": {
+   "nombre_formato": "Runner 2D con Cristiano Ronaldo y Elección de Puertas",
+   "mecanica": "Personaje de Ronaldo avanza por una pista en 2D, cruza puertas de baterías (verde/roja) que cambian su transformación (Musculoso/Fuego, Normal, Triste) hasta un minijuego final de votación.",
+   "que_hace_el_espectador": "Mira la carrera, evalúa las elecciones de transformación y decide interaccionar votando con Like o Share al final.",
+   "cuadro_0": "Arriba: cielo azul con nubes y sol. Fondo: marco oscuro con jefes estilo robot/troll. Centro: dos puertas con icono de batería (roja con rayo amarillo a la izquierda, verde con rayo a la derecha). Abajo: avatar 2D de Ronaldo musculoso con traje cibernético.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Ronaldo musculoso frente a puertas de batería roja y verde.",
+     "sonido": "Música rítmica de fondo"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Transición rápida, Ronaldo pasa a camiseta blanca.",
+     "sonido": "Efecto de transformación / música alegre"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Ronaldo normal alegre cruza la batería verde.",
+     "sonido": "Voz / canción 'Trala'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Ronaldo cambia a versión cibernética musculosa.",
+     "sonido": "Canción continua"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Ronaldo musculoso avanza hacia nuevo par de baterías.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Ronaldo se teletransporta / cambia de lado.",
+     "sonido": "Canción rítmica"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Ronaldo en versión alegre con camiseta blanca en lado verde.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Ronaldo cambia a estado triste en lado rojo. Boss Trollface en el fondo.",
+     "sonido": "Sonido triste / desaprobación"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Ronaldo triste avanza con batería roja.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Ronaldo vuelve a estado alegre en la batería verde.",
+     "sonido": "Música alegre"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Ronaldo musculoso avanza hacia siguiente par de puertas.",
+     "sonido": "Efecto de poder"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Ronaldo musculoso cruza la batería verde.",
+     "sonido": "Canción continua"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Ronaldo musculoso se mueve a la derecha cruzando puerta roja.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Ronaldo se transforma en forma de Fuego / Super Saiyajin.",
+     "sonido": "Efecto de encendido de llama"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Ronaldo en llamas avanza, aparece signo de interrogación.",
+     "sonido": "Música en aumento"
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Pantalla de decisión final: 'Like (Verde) vs Share (Rojo)' con contador 3.",
+     "sonido": "Beep de cuenta regresiva"
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Contador baja a 2 con animación de cursor haciendo clic en Share.",
+     "sonido": "Beep de cuenta regresiva"
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Contador baja a 1 mientras finaliza la elección.",
+     "sonido": "Beep final / remate de canción"
+    }
+   ],
+   "duracion_s": 9.0,
+   "loop": "No empalma en loop infinito continuo; está estructurado con llamado a la acción final.",
+   "gancho": "Reconocimiento inmediato del personaje (Ronaldo) en estilo caricatura y transformaciones visuales llamativas.",
+   "dopamina": [
+    "Cambios instantáneos de transformación (normal, musculoso, fuego)",
+    "Sonidos de progreso y rítmicos",
+    "Minijuego interactivo con cuenta regresiva final"
+   ],
+   "audio": "Canción infantil/meme pegadiza ('Tralala/Cappuccino') combinada con efectos de voz y beeps de temporizador.",
+   "por_que_comentan": "Debaten sobre qué batería elegir (Like vs Share) y cuál transformación de Ronaldo es la más fuerte.",
+   "assets_necesarios": [
+    "PNG Pista de carreras en perspectiva 2D",
+    "PNG Fondo de cielo y portal de jefes",
+    "PNG Avatares de Ronaldo (Normal alegre, Triste, Musculoso cibernético, Fuego)",
+    "PNG Iconos de batería verde y roja",
+    "PNG Botones Like / Share y cursor de mano",
+    "SFX Cuenta regresiva, transformaciones y música meme"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Crear canvas vertical 1080x1920 con fondo estático de cielo y pista en perspectiva.",
+    "Crear clase Jugador para alternar sprites de Ronaldo según la posición X/Y.",
+    "Generar objetos 'Batería' que se desplacen hacia abajo simulando avance.",
+    "Aplicar eventos de transformación al colisionar con las puertas de baterías.",
+    "Desplegar overlay final de votación con temporizador de 3 segundos usando capas superpuestas."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar barra de energía/nivel que suba al tomar baterías verdes.",
+    "Incluir animaciones de choque al elegir la batería equivocada.",
+    "Añadir más personajes reconocibles (Messi, Mbappe) para aumentar el engagement."
+   ]
+  }
+ },
+ {
+  "id": "PmAlXnhIvoQ",
+  "titulo": "#shorts #shortsviral #soccer #futbol #ballmastery #ballcontrol #djiosmo360ii #djiosmo360",
+  "canal": "BMO ",
+  "subs": 20000,
+  "creado": "2023-09-19",
+  "vistas": 3359954,
+  "horas": 150,
+  "vph": 22423,
+  "dur": 12,
+  "likes": 20865,
+  "coment": 395,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "POV Ball Control 360",
+   "mecanica": "Vista en primera persona (POV) de un jugador realizando toques de fútbol consecutivos contra un muro de entrenamiento sin perder el control.",
+   "que_hace_el_espectador": "Mirar el ritmo fluido, apreciar la técnica de control de balón y seguir la secuencia hipnótica.",
+   "cuadro_0": "Perspectiva POV de piernas y sombra en cancha sintética verde con bordes rojos, muro blanco al centro, cielo azul con pocas nubes y marca de agua DJI OSMO 360 II arriba a la izquierda.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicio del toque con el pie derecho hacia la pared.",
+     "sonido": "Música chill con beat y sonido de pateo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El balón rebota en la pared y regresa hacia el suelo/pie.",
+     "sonido": "Impacto de balón contra la pared."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Recepción y pase de volea con el pie izquierdo.",
+     "sonido": "Toque de pie y beat continuo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "El balón golpea el muro en ángulo elevado.",
+     "sonido": "Rebote metálico/concreto."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Control descendente con empeine derecho.",
+     "sonido": "Impacto de calzado con balón."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Toque sutil contra el piso y pared.",
+     "sonido": "Doble rebote rápido."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Retorno del balón hacia la pierna izquierda.",
+     "sonido": "Beat musical en ritmo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Pase preciso de zurda a la base del muro.",
+     "sonido": "Golpe de balón."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Rebote rápido en el piso de la cancha.",
+     "sonido": "Rebote en superficie sintética."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Control de taco / parte interna con movimiento de pierna.",
+     "sonido": "Toque leve de pie."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Balón sale despedido al muro alto.",
+     "sonido": "Golpe fuerte y música."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Caída del balón controlada con la pierna derecha.",
+     "sonido": "Freno de balón."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Toque fluido sin dejar picar el balón.",
+     "sonido": "Toque de volea."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Rebote medio en la pared central.",
+     "sonido": "Impacto en muro."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Ajuste de posición y perfilado del jugador.",
+     "sonido": "Pasos y beat."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Impacto directo con empeine izquierdo.",
+     "sonido": "Golpe seco al balón."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Balón regresa a baja altura.",
+     "sonido": "Sonido de rodamiento/aire."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Toque suave para elevar la pelota.",
+     "sonido": "Toque sutil."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Volea alta hacia el muro blanco.",
+     "sonido": "Impacto en parte alta del muro."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Caída parabólica del balón hacia la sombra del jugador.",
+     "sonido": "Beat de fondo."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Control de suela/empeine y preparación de siguiente toque.",
+     "sonido": "Toque de pie."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Pase final contra la pared.",
+     "sonido": "Impacto muro."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Recepción limpia con el pie derecho.",
+     "sonido": "Control suave."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Posición inicial para reiniciar la secuencia.",
+     "sonido": "Cierre de compás musical."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "El balón queda listo para repetirse el ciclo.",
+     "sonido": "Fade suave de audio."
+    }
+   ],
+   "duracion_s": 12,
+   "loop": "Sí, el movimiento constante y el ritmo del balón permiten conectar el final con el inicio de manera fluida.",
+   "gancho": "Ángulo POV 360° gran angular con sombra dinámica y movimiento de balón altamente rítmico.",
+   "dopamina": [
+    "Sincronía de impactos con el beat del audio",
+    "Física de rebotes fluidos e ininterrumpidos",
+    "Estética visual de sol y sombras marcadas"
+   ],
+   "audio": "Track lo-fi / chillhop con ritmo constante y SFX realistas de pateo y rebote de balón.",
+   "por_que_comentan": "Preguntan qué cámara se utilizó, dónde queda la cancha o elogian el control de balón.",
+   "assets_necesarios": [
+    "Sprite/PNG de piernas en POV (varios ángulos)",
+    "Sprite/PNG de balón de fútbol en rotación",
+    "Imagen de fondo con proyección distorsionada tipo gran angular (muro + cancha)",
+    "Efectos de sonido de impactos de balón y música chill"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 4,
+   "receta_para_programarlo": [
+    "1. Crear escena 2D/3D con distorsión fisheye/gran angular sobre la cancha y muro.",
+    "2. Programar trayectoria parabólica e interpolación de escala del balón simular alejamientos/acercamientos.",
+    "3. Animar sprites de pies sincronizados a la posición final de llegada del balón.",
+    "4. Disparar SFX de impacto justo en el frame donde la pelota colisiona con el pie o muro."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de toques continuo en pantalla con animaciones de combo.",
+    "Aumentar la velocidad del juego progresivamente para generar mayor tensión.",
+    "Incluir efectos visuales de rastro o partículas en cada impacto perfecto."
+   ]
+  }
+ },
+ {
+  "id": "uuRoi1CbWpw",
+  "titulo": "Can Anyone Solve This? FitAll Kylian Mbappé Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "HUNT LIKE A PRO 56",
+  "subs": 761000,
+  "creado": "2025-01-12",
+  "vistas": 3080575,
+  "horas": 75,
+  "vph": 41283,
+  "dur": 6,
+  "likes": 41737,
+  "coment": 230,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Desafío de Calce / Pause Challenge",
+   "mecanica": "Una rueda con 8 recortes de Mbappé gira en círculo. En el centro hay una silueta fija con contorno amarillo neón. El usuario debe pausar el video en el segundo exacto donde un recorte encaje en la silueta.",
+   "que_hace_el_espectador": "Pausar para intentar hacer encajar la figura central y comentar el resultado.",
+   "cuadro_0": "Fondo de césped vertical. Círculo de 8 recortes de Mbappé (Francia/Real Madrid) girando. En el centro inferior, una silueta con borde neón amarillo.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Ruleta circular de recortes de Mbappé girando sobre césped; silueta amarilla al centro.",
+     "sonido": "Voz a capela cantando melódicamente."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta sigue rotando de forma continua.",
+     "sonido": "Continuación de voz cantada."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Los recortes de Mbappé pasan por la zona de la silueta central.",
+     "sonido": "Voz cantada."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Rotación constante mostrando distintas camisetas.",
+     "sonido": "Voz cantada."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Giro continuo de la ruleta visual.",
+     "sonido": "Transición musical a ritmo meme."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Cambio de pose central y movimiento de la rueda.",
+     "sonido": "Golpe de bajo / efecto sonoro meme."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Continuación del movimiento circular rápido.",
+     "sonido": "Base de ritmo acelerado."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Los recortes se alinean temporalmente con el eje vertical.",
+     "sonido": "Audio meme en bucle."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La rueda completa la rotación cerca del punto inicial.",
+     "sonido": "Ritmo de alta intensidad."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Aproximación a la posición del cuadro 0.",
+     "sonido": "Cierre de frase musical."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Posición idéntica al inicio para loop infinito.",
+     "sonido": "Reinicio exacto del audio."
+    }
+   ],
+   "duracion_s": 5.0,
+   "loop": "Sí, el cuadro final empalma perfectamente con el inicial tanto en posición como en audio.",
+   "gancho": "Movimiento continuo que incita al espectador a intentar pausar en el momento correcto.",
+   "dopamina": [
+    "Desafío de precisión al pausar",
+    "Reconocimiento de figura deportiva famosa",
+    "Contraste de color amarillo neón"
+   ],
+   "audio": "Voz a capela inicial que pasa a un ritmo acelerado de tipo meme.",
+   "por_que_comentan": "Publican si lograron encajar la imagen o comparten captura del intento.",
+   "assets_necesarios": [
+    "Fondo de césped de fútbol (1080x1920)",
+    "8 recortes PNG de Mbappé en varias poses",
+    "Silueta central con borde amarillo neón",
+    "Archivo de audio meme en bucle"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo 1080x1920 con fondo de césped.",
+    "2. Cargar recortes PNG y posicionarlos en círculo a 45° cada uno.",
+    "3. Superponer la silueta central con borde amarillo en capa fija.",
+    "4. Animar la rotación del grupo circular a velocidad constante (360° en 5s).",
+    "5. Exportar a 30 FPS combinando el audio en bucle."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir efectos visuales de destello al lograr la pausa correcta.",
+    "Variar la velocidad de rotación para aumentar la dificultad.",
+    "Incluir un marcador de aciertos/fallos interactivo."
+   ]
+  }
  }
 ]
