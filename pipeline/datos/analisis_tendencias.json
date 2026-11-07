@@ -791,5 +791,784 @@
     "Incluir un filtro de velocidad variable que alterne entre rápido y lento."
    ]
   }
+ },
+ {
+  "id": "zDr2q81J5tU",
+  "titulo": "99.9% Will Fail to Fit challenge 🔥 Haaland, Harry Kane, Ronaldo #shorts",
+  "canal": "KickSack",
+  "subs": 61300,
+  "creado": "2023-02-12",
+  "vistas": 11408091,
+  "horas": 126,
+  "vph": 90208,
+  "dur": 6,
+  "likes": 0,
+  "coment": 413,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Fit the Face Challenge / Football Wheel",
+   "mecanica": "Rueda circular con caras de futbolistas gira arriba mientras el cuerpo de Haaland abajo cambia de cabeza rápidamente. El jugador debe pausar cuando coincidan.",
+   "que_hace_el_espectador": "Pausar el video para intentar encajar la cabeza correcta en el cuerpo.",
+   "cuadro_0": "Estadio nocturno con luna. Arriba izq número '3.'. Rueda con 6 caras girando. Abajo cuerpo de Haaland con camiseta Man City y cabeza intercambiable.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Nivel 3. Rueda girando. Cuerpo de Haaland con cabeza de Di María.",
+     "sonido": "Beat musical pegadizo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Nivel 5. Rueda gira. Cuerpo cambia a cabeza de Ronaldo.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Nivel 6. Rueda gira. Cuerpo cambia a cabeza de Kane.",
+     "sonido": "Vocal de la canción."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Nivel 8. Rueda gira. Cuerpo cambia a cabeza de Speed.",
+     "sonido": "Transición de ritmo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Transición rápida de caras y rotación acelerada.",
+     "sonido": "Efecto de sonido de golpe."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Nivel 4. Rueda gira. Cabeza de Di María en el cuerpo.",
+     "sonido": "Ritmo acelerado."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Nivel 5. Rueda gira. Cabeza de Ronaldo en el cuerpo.",
+     "sonido": "Beat continuo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Secuencia rápida de cambio de rostros.",
+     "sonido": "Música Phonk / Remix."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Alternancia a gran velocidad entre jugadores.",
+     "sonido": "Punto alto del audio."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Rotación continua de la rueda superior.",
+     "sonido": "Música en loop."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Último cambio de rostro previo al reinicio.",
+     "sonido": "Cierre de compás."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Alineación final para enganchar con el inicio.",
+     "sonido": "Transición suave al segundo 0."
+    }
+   ],
+   "duracion_s": 5.8,
+   "loop": "Sí, empalma perfectamente en ritmo y posición visual para repetición infinita.",
+   "gancho": "Reto visual interactivo de pausar en el momento exacto con futbolistas virales.",
+   "dopamina": [
+    "Gamificación por pausa a tiempo",
+    "Reconocimiento de figuras famosas",
+    "Ritmo de audio dinámico"
+   ],
+   "audio": "Remix Phonk / dance viral con ritmo acelerado.",
+   "por_que_comentan": "Comentan si lograron pausarlo a tiempo y comparten en qué intento lo consiguieron.",
+   "assets_necesarios": [
+    "Fondo de estadio nocturno 1080x1920",
+    "PNGs recortados de cabezas (Haaland, Ronaldo, Kane, Speed, Di María)",
+    "PNG del cuerpo de Haaland",
+    "Audio remix viral"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear canvas 1080x1920 con imagen de fondo.",
+    "2. Renderizar rueda superior con N caras en distribución circular y aplicar rotación constante.",
+    "3. Posicionar cuerpo fijo abajo y alternar la cabeza central cada X fotogramas.",
+    "4. Exportar video a 60 fps sincronizado con el track de audio."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir efectos visuales (brillo/rayos) cuando la cabeza encaja correctamente.",
+    "Cambiar el cuerpo del jugador objetivo a mitad del video.",
+    "Incluir marcador visual de dificultad o tiempo restante."
+   ]
+  }
+ },
+ {
+  "id": "TWGol-_hX8Y",
+  "titulo": "Legendary Football Stop Challenge ⚽🛑 ​#neymar #haland #ronaldo #messi #shorts",
+  "canal": "Artisan Craft",
+  "subs": 55900,
+  "creado": "2025-04-09",
+  "vistas": 9844087,
+  "horas": 162,
+  "vph": 60783,
+  "dur": 6,
+  "likes": 115533,
+  "coment": 330,
+  "familia": "stop",
+  "analisis": {
+   "nombre_formato": "Stop Motion Face Puzzle Challenge",
+   "mecanica": "Grilla 2x2 con 4 futbolistas. Partes de sus rostros se mueven o rotan continuamente. El usuario debe pausar en el momento exacto para encajar la cara perfectamente.",
+   "que_hace_el_espectador": "Intenta pausar el video en el fotograma exacto donde los rostros quedan alineados.",
+   "cuadro_0": "Grilla 2x2: Arriba-izq (Neymar, fondo azul, 99%), Arriba-der (Haaland, fondo amarillo-verde, 69%), Abajo-izq (Ronaldo, fondo verde, 49%), Abajo-der (Messi, fondo rojo, 89%). Logo circular 'FV' al centro. Fragmentos de caras desplazados.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Grilla 2x2 visible. Piezas faciales de Neymar, Haaland, Ronaldo y Messi comienzan a deformarse y moverse.",
+     "sonido": "Vocal 'Kilian dictador' con base de música Phonk."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Pieza de Neymar rota 180°. Ojo de Ronaldo se desplaza lateralmente. Rostro de Haaland se contrae.",
+     "sonido": "Ritmo Phonk continuo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Boca de Messi se deforma en círculo. Pieza de Neymar adopta forma de corazón y gira.",
+     "sonido": "Vocal 'Kilian dictador' repetida."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Ronaldo muestra franja desplazada sobre los ojos. Haaland muestra distorsión vertical en la nariz.",
+     "sonido": "Base Phonk en bucle."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Neymar alinea brevemente el rostro y vuelve a rotar. Messi expande la deformación facial.",
+     "sonido": "Vocal Phonk resonante."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Ronaldo desplaza su ojo hacia la derecha. Haaland estira el centro de la cara.",
+     "sonido": "Ritmo Phonk continuo."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Pieza de Neymar se encoge en el centro. Messi contrae sus facciones hacia la boca.",
+     "sonido": "Vocal 'Kilian dictador'."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Franja del rostro de Ronaldo se mueve rápidamente. Haaland oscila verticalmente.",
+     "sonido": "Base Phonk en bucle."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Las 4 imágenes pasan por su punto de alineación casi correcta durante 1-2 fotogramas.",
+     "sonido": "Remate del loop de audio."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Transición rápida hacia el estado inicial para reiniciar el bucle sin interrupción visible.",
+     "sonido": "Conexión fluida de audio al inicio."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, la animación y la pista musical coinciden exactamente al inicio y final para permitir reproducciones infinitas.",
+   "gancho": "El reto de precisión de pausar justo cuando la cara queda perfecta motiva al espectador a interactuar de inmediato.",
+   "dopamina": [
+    "Reto de pausa exacta",
+    "Estética visual bizarra y graciosa",
+    "Sensación de triunfo al lograr capturar el frame correcto"
+   ],
+   "audio": "Audio Phonk ralentizado con el sample vocal 'Kilian dictador'.",
+   "por_que_comentan": "Comparten capturas de pantalla de sus intentos o debaten si lograron alinear a su jugador favorito.",
+   "assets_necesarios": [
+    "PNG recortado de Neymar (Camiseta Brasil)",
+    "PNG recortado de Haaland (Camiseta Man City)",
+    "PNG recortado de Ronaldo (Camiseta Portugal)",
+    "PNG recortado de Messi (Camiseta Inter Miami)",
+    "Máscaras/recortes de piezas faciales (ojos, nariz, boca)",
+    "Logo circular 'FV'",
+    "Archivo de audio Phonk 'Kilian Dictador'"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo vertical 1080x1920 dividido en 4 cuadrantes con colores de fondo base (Azul, Amarillo, Verde, Rojo).",
+    "2. Colocar la foto del jugador fija en el centro de cada cuadrante con el texto de porcentaje abajo.",
+    "3. Crear capa superior con un fragmento recortado del rostro usando una máscara (círculo, rectángulo u óvalo).",
+    "4. Aplicar transformaciones sinusoidales de posición, escala y rotación a la capa recortada a 60 fps.",
+    "5. Configurar el ciclo para que en el segundo 4.0 las transformaciones equivalgan a origen (0 px, 0deg) durante 2 frames.",
+    "6. Renderizar video de 5 segundos exportando audio Phonk sincronizado."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de intentos e indicador de 'PERFECT!' cuando el usuario logra pausar a tiempo.",
+    "Incluir efectos de sonido (SFX pop/click) cada vez que una pieza cruza el centro perfecto.",
+    "Usar combinaciones de futbolistas actuales en tendencia como Mbappé, Bellingham o Vinicius."
+   ]
+  }
+ },
+ {
+  "id": "ts6WQKI7WPs",
+  "titulo": "FAKE GOATS VS REAL GOATS💀 #football #shorts #skill",
+  "canal": "BryanzyYT",
+  "subs": 13300,
+  "creado": "2023-09-10",
+  "vistas": 5942141,
+  "horas": 139,
+  "vph": 42608,
+  "dur": 16,
+  "likes": 63294,
+  "coment": 1844,
+  "familia": "goat",
+  "analisis": {
+   "nombre_formato": "Comparativa irónica Fake vs Real GOATs",
+   "mecanica": "Presenta estrellas consagradas como 'Fake GOATs' y luego muestra futbolistas criticados por sus fallos como 'Real GOATs' seguidos de clips cómicos.",
+   "que_hace_el_espectador": "Mira por entretenimiento y humor sarcástico sobre fallos de futbolistas.",
+   "cuadro_0": "Fondo verde chroma key. Lionel Messi al centro vistiendo la camiseta de Argentina, sosteniendo un cartel con su nombre y número. Texto superior: 'Fake GOATS'.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Messi sosteniendo cartel. Texto 'Fake GOATS'.",
+     "sonido": "Voz TTS: 'Lionel Messi' + Música de fondo"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Messi en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Transición a Neymar Jr sosteniendo cartel. Texto 'Fake GOATS'.",
+     "sonido": "Voz TTS: 'Neymar Jr'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Neymar Jr en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Transición a Kylian Mbappé sosteniendo cartel. Texto 'Fake GOATS'.",
+     "sonido": "Voz TTS: 'Kylian Mbappé'"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Mbappé en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Mbappé en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Transición a Cristiano Ronaldo sosteniendo cartel (fondo azul). Texto 'Fake GOATS'.",
+     "sonido": "Voz TTS: 'Cristiano Ronaldo'"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Cristiano Ronaldo en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Corte a Nicolas Jackson. Texto 'Real GOATS'.",
+     "sonido": "Voz TTS: 'Nicolas Jackson'"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Nicolas Jackson en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Clip de jugada fallida de Nicolas Jackson.",
+     "sonido": "Música Phonk ritmica"
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Clip de jugada fallida de Nicolas Jackson.",
+     "sonido": "Música Phonk ritmica"
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Corte a Darwin Núñez. Texto 'Real GOATS'.",
+     "sonido": "Voz TTS: 'Darwin Núñez'"
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Clip de errada de Darwin Núñez.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Clip de errada de Darwin Núñez.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "12.5",
+     "pantalla": "Corte a Antony. Texto 'Real GOATS'.",
+     "sonido": "Voz TTS: 'Antony'"
+    },
+    {
+     "t": "13.5",
+     "pantalla": "Antony en pantalla.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "14.5",
+     "pantalla": "Clip de la famosa pirueta/giro de Antony con el Manchester United.",
+     "sonido": "Música de fondo"
+    },
+    {
+     "t": "15.5",
+     "pantalla": "Clip de Antony girando.",
+     "sonido": "Música de fondo"
+    }
+   ],
+   "duracion_s": 16,
+   "loop": "Recomienza directamente con Messi sin transición abrupta de audio.",
+   "gancho": "La ironía de clasificar a astros mundiales como 'falsos' y a jugadores memificados como 'reales'.",
+   "dopamina": [
+    "Remate cómico tras la presentación formal",
+    "Clips de jugadas insólitas o jugadas meme con música pegadiza"
+   ],
+   "audio": "Voz loquendo/TTS neutra enunciando nombres y pista de música Phonk/Remix de fondo.",
+   "por_que_comentan": "Debaten sobre los fallos de los jugadores meme (Antony, Jackson, Núñez) y se ríen del sarcasmo.",
+   "assets_necesarios": [
+    "Imágenes/recortes PNG de los jugadores sosteniendo carteles",
+    "Clips de video de jugadas meme (Jackson, Núñez, Antony)",
+    "Audio de locución TTS",
+    "Pista de audio Phonk"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Cargar imágenes de plantilla de jugadores sobre fondo de color plano.",
+    "Programar secuencias de entrada de 1 a 1.5 segundos por jugador 'Fake'.",
+    "Sincronizar el cambio al bloque 'Real GOATS' con la caída del ritmo musical.",
+    "Superponer texto 'Fake GOATS' / 'Real GOATS' centrado y reproducir los clips de video recortados."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar contador de 'goles errados' en pantalla durante las jugadas.",
+    "Añadir efectos de sonido de comedia (boing, fail horn) en el momento exacto del fallo.",
+    "Incluir a Harry Maguire u otros íconos del meme futbolístico para aumentar retención."
+   ]
+  }
+ },
+ {
+  "id": "2LCzwf_VXoA",
+  "titulo": "😂 Ronaldo Cartoon Game ⚽ Funny Gameplay & Crazy Moments! #Shorts",
+  "canal": "XKING IS LIVE",
+  "subs": 59900,
+  "creado": "2024-12-24",
+  "vistas": 5226069,
+  "horas": 97,
+  "vph": 53613,
+  "dur": 20,
+  "likes": 0,
+  "coment": 119,
+  "familia": "3d_ia",
+  "analisis": {
+   "nombre_formato": "Runner 2D Interactive Choice Animation",
+   "mecanica": "Un personaje (Ronaldo) avanza por una pista en 2D y elige puertas con baterías (verde=upgrade/potencia, roja=downgrade/fracaso). Al final del recorrido se activa un temporizador interactivo donde el espectador debe elegir una opción.",
+   "que_hace_el_espectador": "Adivinar la transformación correcta, interactuar en la encuesta final (Like o Share) y pausar para ver la respuesta.",
+   "cuadro_0": "Fondo azul con nubes y arco oscuro. Ronaldo en versión súper armadura dorada abajo. Puertas con baterías verde y roja en el centro. Boss robótico al fondo.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Ronaldo armadura dorada frente a puertas verde/roja.",
+     "sonido": "Música rítmica meme / voz acelerada"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Ronaldo pasa a camiseta blanca y avanza.",
+     "sonido": "Música rítmica meme"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Elige batería verde y se transforma en armadura.",
+     "sonido": "Efecto de transformación / power up"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Avanza hacia la siguiente puerta de baterías.",
+     "sonido": "Música continua"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Pasa por la puerta verde y mantiene la armadura.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Las puertas cambian de posición de lado.",
+     "sonido": "Efecto de cambio"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Elige batería roja y pierde la armadura.",
+     "sonido": "Efecto de error / fail"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Ronaldo en camiseta blanca sonríe.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Camina triste tras recibir daño en batería roja.",
+     "sonido": "Voz triste / lamento"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Avanza triste hacia el siguiente conjunto de puertas.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Trollface aparece en el boss al fondo.",
+     "sonido": "Risa de Trollface"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Ronaldo elige verde y recupera la sonrisa.",
+     "sonido": "Power up sound"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Sigue avanzando con batería verde equipada.",
+     "sonido": "Música continua"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Cambio de lado de las baterías.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Ronaldo se transforma en modo super saiyajin de fuego.",
+     "sonido": "Efecto de fuego / aura"
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Avanza ardiendo en llamas hacia la puerta final.",
+     "sonido": "Ruido de llamas y música"
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Las puertas se agrandan frente al personaje.",
+     "sonido": "Música rítmica"
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Aparece overlay con contador '3' e íconos Like/Share.",
+     "sonido": "Beep de cuenta regresiva"
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Contador baja a '2', ícono Share resaltado.",
+     "sonido": "Beep de cuenta regresiva"
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Contador baja a '1', animación de clic en Share.",
+     "sonido": "Beep final"
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Ronaldo en llamas realiza pose victoriosa final.",
+     "sonido": "Fanfarria corta / remate"
+    }
+   ],
+   "duracion_s": 10.0,
+   "loop": "Sí, el personaje vuelve a la posición inicial en camiseta blanca al reiniciar el video.",
+   "gancho": "Transformación visual impactante del personaje en los primeros 0.5 segundos y sonido meme continuo.",
+   "dopamina": [
+    "Feedback visual de upgrades inmediatos (0.5s, 1.0s).",
+    "Humor con la cara triste y Trollface (4.0s, 5.0s).",
+    "Efecto de fuego y cuenta regresiva final (7.0s, 8.5s)."
+   ],
+   "audio": "Track viral de voz acelerada (canción meme italiana/rusa) combinada con efectos de sonido retro (power-up, fail, countdown).",
+   "por_que_comentan": "Debaten sobre la elección de la batería correcta, comentan los íconos de Like vs Share y la versión favorita de Ronaldo.",
+   "assets_necesarios": [
+    "PNG Ronaldo (normal, armadura, triste, fuego)",
+    "PNG Batería Verde y Roja",
+    "PNG Bosses de fondo (Trollface, bailarina robot)",
+    "PNG UI (Manito de Like, Flecha de Share, números 3-2-1)",
+    "Fondo de pista 2D en perspectiva",
+    "Audio meme viral y FX (power-up, fail, timer)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Crear un canvas 1080x1920 en Pygame o MoviePy.",
+    "Dibujar el fondo estático con la pista en perspectiva.",
+    "Renderizar el personaje según el estado (normal, armadura, triste, fuego).",
+    "Mover las puertas verticales hacia abajo para simular avance.",
+    "Detectar colisiones lógicas con puertas para cambiar sprite de personaje y activar FX.",
+    "Superponer overlay de UI (contador 3-2-1 y botones) en los últimos 2 segundos."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar más personajes populares (Messi, Neymar) compitiendo al lado.",
+    "Incluir efectos de partículas más detallados en la transformación de fuego.",
+    "Añadir un giro inesperado en el segundo 9 con una tercera puerta secreta."
+   ]
+  }
+ },
+ {
+  "id": "-YoNhyyhCp4",
+  "titulo": "Neymar does it again 😮‍💨",
+  "canal": "Mirian Palavandishvili",
+  "subs": 55500,
+  "creado": "2022-04-10",
+  "vistas": 4156762,
+  "horas": 49,
+  "vph": 85377,
+  "dur": 9,
+  "likes": 67088,
+  "coment": 464,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Jugada de habilidad de superestrella (Skill Show)",
+   "mecanica": "Neymar recibe la pelota en cancha reducida, gambetea a dos defensores con una maniobra rápida, mete gol en arco mini y festeja riendo.",
+   "que_hace_el_espectador": "Solo mirar, maravillarse con la gambeta y comentar sobre el talento del jugador.",
+   "cuadro_0": "Layout vertical 9:16. Arriba: pared blanca y cerca. Centro: Neymar con camiseta de Brasil verde/azul, gorra blanca y pelota en cancha sintética verde.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Neymar controla la pelota en la pared lateral.",
+     "sonido": "Música de fondo alegre / ambiente."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Dos defensores se acercan a presionar.",
+     "sonido": "Música alegre."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Neymar prepara la gambeta con pie derecho.",
+     "sonido": "Música alegre."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Hace el regate rápido descolocando a los defensores.",
+     "sonido": "Música alegre."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Supera a los dos defensores en un movimiento.",
+     "sonido": "Música alegre."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Patea directo al arco pequeño.",
+     "sonido": "Música alegre."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La pelota entra al arco pequeño.",
+     "sonido": "Sonido de gol / impacto en red."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Rebote de la pelota dentro de la red.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Neymar se da vuelta festejando.",
+     "sonido": "Canto/música en portugués."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Neymar corre sonriendo.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Neymar se ríe mientras camina.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Primer plano de Neymar riendo.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Neymar camina hacia sus compañeros.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Neymar sonríe a la cámara.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Continúa el festejo relajado.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Finalización de la toma de festejo.",
+     "sonido": "Música en portugués."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Corte final.",
+     "sonido": "Fade out de música."
+    }
+   ],
+   "duracion_s": 8,
+   "loop": "No empalma perfectamente en loop directo, pero la fluidez invita a reinterpretar la jugada.",
+   "gancho": "La presencia de Neymar haciendo magias en espacio reducido capta la atención en los primeros 2 segundos.",
+   "dopamina": [
+    "Gambeta espectacular a los 1.5s",
+    "Gol preciso a los 3.0s",
+    "Risa contagiosa del jugador a los 5.0s"
+   ],
+   "audio": "Música brasileña alegre y fluida combinada con ambiente de entrenamiento.",
+   "por_que_comentan": "Debaten sobre la calidad técnica de Neymar y lo divertido del fútbol informal.",
+   "assets_necesarios": [
+    "Sprites/PNGs de jugadores recortados",
+    "Fondo de cancha sintética",
+    "Pelota de fútbol PNG",
+    "Efectos de sonido de pateo y gol",
+    "Track musical festivo"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "Crear canvas 1080x1920 con fondo estático de cancha sintética y pared.",
+    "Animar sprites recortados de los 2 defensores acercándose al centro entre t=0.0s y t=1.0s.",
+    "Interpolar posición de la pelota hacia el arco con trayectoria parabólica/recta de t=2.0s a t=3.0s.",
+    "Activar efecto de vibración en red del arco a t=3.0s y reproducir sonido de gol.",
+    "Cambiar sprite de Neymar a secuencia de animación de festejo/caminata entre t=4.0s y t=8.0s."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar contador de 'Skills' flotante tipo videojuego con efectos visuales deslumbrantes.",
+    "Incluir cámara lenta (slow-motion) justo en el momento exacto del regate.",
+    "Añadir barra de potencia y trayectoria trazada con luces neón al patear."
+   ]
+  }
+ },
+ {
+  "id": "py0dDDZUV6M",
+  "titulo": "Who touch the world cup ⚽🏆💀",
+  "canal": "ASIM FC",
+  "subs": 2060,
+  "creado": "2026-04-21",
+  "vistas": 3755462,
+  "horas": 151,
+  "vph": 24804,
+  "dur": 7,
+  "likes": 0,
+  "coment": 1934,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Desafío Bola al Trofeo / Who Touched the Trophy",
+   "mecanica": "Cinco futbolistas populares con cabezas gigantes animadas patean simultáneamente una pelota hacia la Copa del Mundo situada en el frente. El espectador debe seguir la trayectoria rápida de las pelotas para adivinar cuál de los jugadores logra tocar el trofeo antes de que aparezca una carta de jugador misterioso tapando la pantalla.",
+   "que_hace_el_espectador": "Pausar el video frame por frame para ver qué pelota tocó el trofeo, comentar el nombre del jugador ganador y votar por su futbolista favorito.",
+   "cuadro_0": "Arriba: 5 futbolistas en fila (Neymar, Haaland, Messi, Mbappé, Ronaldo) con cabezas caricaturizadas gigantes y uniformes de selección/club. Medio/Abajo: Suelo de parquet de madera con un trofeo de la Copa del Mundo en primer plano inferior centrado y 5 pelotas alineadas frente a los jugadores.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Los 5 jugadores alineados en el fondo con pelotas a sus pies frente al trofeo del mundial.",
+     "sonido": "Música de ritmo funk brasileño/montagem iniciando."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Los jugadores levantan la pierna y patean las pelotas al mismo tiempo hacia adelante.",
+     "sonido": "Beat musical acelerado."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Las 5 pelotas ruedan rápidamente por el suelo acercándose a la Copa del Mundo.",
+     "sonido": "Música continua con ritmo marcado."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Las pelotas rebotan y convergen peligrosamente cerca del trofeo.",
+     "sonido": "Tensión en la melodía del audio."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Las pelotas cruzan el área central alrededor de la base del trofeo.",
+     "sonido": "Pre-drop del tema musical."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Dos pelotas pasan raspando el trofeo a alta velocidad.",
+     "sonido": "Redoble de batería / build-up."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Una de las pelotas hace contacto directo con la base de la Copa del Mundo.",
+     "sonido": "Efecto de impacto 'Boom' / Golpe de bajo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Aparece una carta de jugador de carta misteriosa ('120 WHO?') cubriendo el centro de la pantalla.",
+     "sonido": "Drop fuerte de Funk Montagem."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La carta 'WHO?' vibra en pantalla mientras los jugadores celebran al fondo.",
+     "sonido": "Beat funk constante a volumen alto."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Ligero efecto de zoom a la carta incitando a comentar la respuesta.",
+     "sonido": "Remate del bucle musical."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Fin del video / Reinicio inmediato del bucle.",
+     "sonido": "Transición limpia de retorno al segundo 0.0."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, empalma limpiamente ya que el compás del audio es de 4 tiempos y la posición de reinicio concuerda con la pose inicial de patear.",
+   "gancho": "Reconocimiento visual instantáneo de 5 estrellas del fútbol mundial con cabezas gigantes cómicas y una dinámica de reto físico veloz en el primer segundo.",
+   "dopamina": [
+    "Física rápida con múltiples objetos en movimiento simultáneo (0.5s - 2.0s)",
+    "Suspenso visual de trayectoria casi aleatoria cerca del objetivo (2.5s)",
+    "Interrupción repentina justo en el clímax con la carta misteriosa 'WHO?' (3.0s)",
+    "Reto de atención que incentiva a pausar y comprobar (3.5s - 5.0s)"
+   ],
+   "audio": "Remix de Funk Brasileño estilo Montagem agresivo de ritmo rápido con efecto de impacto en el drop.",
+   "por_que_comentan": "Debaten acaloradamente sobre qué jugador tocó el trofeo (ej. 'Fue Messi', 'No, fue Ronaldo'), acusan la velocidad del tiro o declaran su fanatismo por uno de los jugadores.",
+   "assets_necesarios": [
+    "PNGs recortados transparentes de las cabezas de Messi, Ronaldo, Neymar, Mbappé y Haaland",
+    "PNGs de cuerpos vistiendo uniformes de fútbol",
+    "PNG de pelota de fútbol",
+    "PNG del trofeo de la Copa del Mundo",
+    "PNG de carta misteriosa estilo EA FC / FIFA con texto 'WHO?'",
+    "Fondo de habitación con piso de madera",
+    "Track de audio Funk Montagem (5 segundos)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Configurar un lienzo vertical de 1080x1920 a 60 FPS con la imagen de fondo estática.",
+    "2. Colocar el PNG del trofeo en la posición inferior central (X: 540, Y: 1450).",
+    "3. Crear 5 instancias de jugadores en la parte superior (X: 108, 324, 540, 756, 972, Y: 500) combinando cabeza + cuerpo.",
+    "4. Crear 5 pelotas en las coordenadas Y: 750 alineadas con cada jugador.",
+    "5. En t=0.5s, animar la rotación de pierna y proyectar las pelotas mediante vectores de física hacia la zona del trofeo con pequeñas variaciones aleatorias de ángulo.",
+    "6. Detectar la colisión por BoundingBox entre cada pelota y el trofeo.",
+    "7. En t=3.0s (al colisionar), mostrar con animación de escala (pop-in) el PNG de la carta 'WHO?' en el centro del lienzo (X: 540, Y: 960).",
+    "8. Exportar el video procesado y mezclar con el track de audio sincronizado en el momento del impacto."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un efecto de cámara lenta extrema (bullet time) de 0.5s justo cuando la pelota está a milímetros del trofeo.",
+    "Revelar la cara del jugador ganador al final en el último segundo con un destello brillante de recompensa.",
+    "Incluir un sistema de líneas de colores trazando la trayectoria de cada pelota para que sea aún más vistoso y fácil de seguir."
+   ]
+  }
  }
 ]
