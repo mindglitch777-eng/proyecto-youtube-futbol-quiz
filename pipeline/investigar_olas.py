@@ -88,6 +88,8 @@ def main():
         for k, r in salida[nombre]["familias"].items():
             print(f"{k:<15} {r['videos']:>4} videos | +1M: {r['mas_1M']:>3} | +100k: {r['mas_100k']:>3} | mediana {r['mediana']:>9,} | "
                   f"vph {r['vph_mediana']:>7,} | chicos+1M {r['canales_chicos_1M']:>2} | dur {r['dur_mediana']}s | likes/1000 {r['like_ratio']}")
+    if salida.get("3d", {}).get("videos", 0) < 200 or salida.get("7d", {}).get("videos", 0) < 200:
+        print("búsqueda incompleta (¿cuota de la API agotada?): NO se pisan los datos buenos"); return
     # ---- DETECTOR DE OLAS: cada mecánica comparada con los días anteriores (ventana de 3 días)
     from comun import cargar
     hist = cargar("olas_historia.json", {})
@@ -100,6 +102,12 @@ def main():
         antes = [p[k]["vph"] for p in previos if k in p]
         base = sum(antes) / len(antes) if antes else None
         ratio = (r["vph"] / base) if base else None
+        r7 = salida.get("7d", {}).get("familias", {}).get(k)
+        if base is None and r7:                                                 # sin historia: últimos 3 días vs. últimos 7
+            cuota = r["m1M"] / max(1, r7["mas_1M"])                             # lo normal es ~3/7 = 0,43 de los +1M en 3 días
+            # (los de 3 días tuvieron menos tiempo para llegar al millón: lo "normal" es ~0,2-0,3)
+            ratio = 1.5 if (cuota >= 0.4 and r["m1M"] >= 2) else (0.5 if (r7["mas_1M"] >= 3 and cuota <= 0.1) else 1.0)
+            base = r["vph"] / ratio
         if r["med"] < 15_000 and r["m1M"] == 0:
             e = "muerta"
         elif base is None:
