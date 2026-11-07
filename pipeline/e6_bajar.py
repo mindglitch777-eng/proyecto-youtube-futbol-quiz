@@ -25,11 +25,17 @@ def hechos():
     return {x["id"] for x in pub if (x.get("video_id") and not x.get("reemplazado")) or x.get("manual")}
 
 
-def dias_con_viejos(ids_actuales):
-    """Días que todavía tienen videos subidos de un plan anterior (no reemplazados): ahí no se sube nada nuevo (sin duplicados)."""
+def horarios_con_viejos(ids_actuales):
+    """Horarios que ya tienen un video subido de un plan anterior (no reemplazado): ahí no se sube otro (sin duplicados).
+    Bloquea solo ese horario (±1 h), no el día entero."""
     p = RAIZ / "pipeline" / "datos" / "publicados.json"
     pub = json.loads(p.read_text()) if p.exists() else []
-    return {x["fecha"] for x in pub if x.get("video_id") and not x.get("reemplazado") and x["id"] not in ids_actuales}
+    return [(x["fecha"], x["hora"]) for x in pub if x.get("video_id") and not x.get("reemplazado") and x["id"] not in ids_actuales]
+
+
+def choca(m, viejos):
+    mins = lambda h: int(h[:2]) * 60 + int(h[3:5])
+    return any(f == m["fecha"] and abs(mins(h) - mins(m["hora"])) <= 60 for f, h in viejos)
 
 
 def manifiestos():
@@ -58,8 +64,8 @@ def main():
     ahora = datetime.now(ART); hoy = ahora.date()
     limite = (hoy + timedelta(days=DIAS_ADELANTE)).isoformat()
     ya = hechos(); todos = manifiestos()
-    viejos = dias_con_viejos(set(todos))
-    pend = sorted((m for m, _ in todos.values() if hoy.isoformat() <= m["fecha"] <= limite and m["id"] not in ya and m["fecha"] not in viejos),
+    viejos = horarios_con_viejos(set(todos))
+    pend = sorted((m for m, _ in todos.values() if hoy.isoformat() <= m["fecha"] <= limite and m["id"] not in ya and not choca(m, viejos)),
                   key=lambda m: (m["fecha"], m["hora"]))
     vencidos = sorted(m["id"] for m, _ in todos.values() if m["fecha"] < hoy.isoformat() and m["id"] not in ya
                       and m["fecha"] >= (hoy - timedelta(days=3)).isoformat())
