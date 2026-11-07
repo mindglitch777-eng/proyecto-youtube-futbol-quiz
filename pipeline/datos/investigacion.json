@@ -1,99 +1,6 @@
 {
  "fecha": "2026-11-07",
- "recomendaciones": [
-  {
-   "familia": "wheel",
-   "nuestros": [
-    "rueda"
-   ],
-   "mercado_mediana": 560893,
-   "mercado_1M": 6,
-   "subiendo": false,
-   "nuestra_mediana_48h": 12053,
-   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
-  },
-  {
-   "familia": "fit",
-   "nuestros": [
-    "cabezas"
-   ],
-   "mercado_mediana": 248276,
-   "mercado_1M": 12,
-   "subiendo": false,
-   "nuestra_mediana_48h": 27271,
-   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
-  },
-  {
-   "familia": "stop",
-   "nuestros": [
-    "stop",
-    "siuu",
-    "penal",
-    "balon"
-   ],
-   "mercado_mediana": 236623,
-   "mercado_1M": 10,
-   "subiendo": false,
-   "nuestra_mediana_48h": 3929,
-   "accion": "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
-  },
-  {
-   "familia": "goat",
-   "nuestros": [
-    "circulo"
-   ],
-   "mercado_mediana": 112209,
-   "mercado_1M": 4,
-   "subiendo": false,
-   "nuestra_mediana_48h": null,
-   "accion": "PROBAR POCO: todavía no tenemos datos propios"
-  },
-  {
-   "familia": "dress",
-   "nuestros": [
-    "dress"
-   ],
-   "mercado_mediana": 98499,
-   "mercado_1M": 6,
-   "subiendo": false,
-   "nuestra_mediana_48h": 18863,
-   "accion": "MANTENER: nos rinde aunque el mercado esté tibio"
-  },
-  {
-   "familia": "quiz",
-   "nuestros": [
-    "trayectoria",
-    "tridente"
-   ],
-   "mercado_mediana": 63452,
-   "mercado_1M": 1,
-   "subiendo": false,
-   "nuestra_mediana_48h": null,
-   "accion": "PROBAR POCO: todavía no tenemos datos propios"
-  },
-  {
-   "familia": "find",
-   "nuestros": [
-    "find"
-   ],
-   "mercado_mediana": 38437,
-   "mercado_1M": 2,
-   "subiendo": false,
-   "nuestra_mediana_48h": 1072,
-   "accion": "BAJAR: sin ola y sin resultado propio"
-  },
-  {
-   "familia": "balance",
-   "nuestros": [
-    "pared"
-   ],
-   "mercado_mediana": 6860,
-   "mercado_1M": 0,
-   "subiendo": false,
-   "nuestra_mediana_48h": null,
-   "accion": "PROBAR POCO: todavía no tenemos datos propios"
-  }
- ],
+ "recomendaciones": [],
  "canal": {
   "stop": {
    "videos": 21,
@@ -206,38 +113,7 @@
    }
   }
  },
- "nuevas": [
-  {
-   "id": "uGw41Z67lSc",
-   "titulo": "Can Anyone Solve This? Fit All Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 16520291
-  },
-  {
-   "id": "tIuzAMJljjs",
-   "titulo": "This Is Almost Impossible! Fit All Ronaldinho Legends 🎯⚽ | Football Challenge HQ",
-   "vistas": 5853352
-  },
-  {
-   "id": "luMqNq90B3c",
-   "titulo": "Can Anyone Solve This? Fit All Lionel Messi Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 3871872
-  },
-  {
-   "id": "dm3ZW2xlckk",
-   "titulo": "😂 Ronaldo Cartoon Game ⚽ Funny Gameplay & Crazy Moments! #Shorts",
-   "vistas": 3563611
-  },
-  {
-   "id": "PmAlXnhIvoQ",
-   "titulo": "#shorts #shortsviral #soccer #futbol #ballmastery #ballcontrol #djiosmo360ii #djiosmo360",
-   "vistas": 3359954
-  },
-  {
-   "id": "uuRoi1CbWpw",
-   "titulo": "Can Anyone Solve This? FitAll Kylian Mbappé Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 3080575
-  }
- ],
+ "nuevas": [],
  "comentarios": {
   "total": 19,
   "facil": 2,
@@ -251,5 +127,39 @@
   "¿Qué formatos interactivos de fútbol (pausar, encajar, adivinar) están creciendo esta semana en canales chicos? Dame 5 ideas nuevas de menos de 8 segundos que mi audiencia también mire.",
   "¿Qué jugadores, partidos o memes de fútbol son tendencia esta semana entre mi público? 10 ideas de título.",
   "¿Qué videos me trajeron más suscriptores por cada 1.000 vistas esta semana y qué tienen en común?"
- ]
+ ],
+ "horas": {
+  "00": {
+   "mediana": 3431,
+   "videos": 1
+  },
+  "09": {
+   "mediana": 3202,
+   "videos": 4
+  },
+  "13": {
+   "mediana": 9258,
+   "videos": 4
+  },
+  "15": {
+   "mediana": 9526,
+   "videos": 2
+  },
+  "17": {
+   "mediana": 3160,
+   "videos": 4
+  },
+  "21": {
+   "mediana": 13115,
+   "videos": 5
+  },
+  "22": {
+   "mediana": 22627,
+   "videos": 1
+  },
+  "23": {
+   "mediana": 23067,
+   "videos": 2
+  }
+ }
 }
