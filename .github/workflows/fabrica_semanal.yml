@@ -5,10 +5,6 @@ name: FÁBRICA semanal (radar → análisis → plan → videos)
 # Los videos quedan en un Release "semana-<lunes>" y el tablero (GitHub Pages) se actualiza solo.
 
 on:
-  schedule:
-    - cron: "0 12 * * 0"       # reintentos el domingo si GitHub saltea el horario (no rehace una semana ya fabricada)
-    - cron: "37 15 * * 0"
-    - cron: "41 19 * * 0"
   workflow_dispatch:
     inputs:
       solo_produccion:

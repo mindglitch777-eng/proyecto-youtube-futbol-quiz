@@ -82,6 +82,13 @@ def main(inicio=None, dias=7):
         if p.get("tipo") in usos:
             usos[p["tipo"]] += 1
     peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
+    OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["cabezas"], "find": ["find"],
+                     "dress": ["dress"], "quiz": ["trayectoria", "tridente"], "goat": ["circulo"]}
+    FACTOR_OLA = {"naciente": 2.0, "subiendo": 1.8, "estable": 1.0, "bajando": 0.6, "muerta": 0.2}
+    for fam, e in cargar("olas.json", {}).get("estado", {}).items():              # detector diario de olas: subirse y soltar a tiempo
+        for k in OLA_A_FORMATO.get(fam, []):
+            if k in peso:
+                peso[k] *= FACTOR_OLA.get(e["estado"], 1.0)
     for r in cargar("investigacion.json", {}).get("recomendaciones", []):        # la investigación del sábado/miércoles manda
         f = 1.6 if r["accion"].startswith(("SUBIR", "PROBAR MÁS")) else (0.5 if r["accion"].startswith("BAJAR") else 1.0)
         for k in r["nuestros"]:

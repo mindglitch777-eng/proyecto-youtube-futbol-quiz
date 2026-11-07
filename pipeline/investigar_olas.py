@@ -88,6 +88,32 @@ def main():
         for k, r in salida[nombre]["familias"].items():
             print(f"{k:<15} {r['videos']:>4} videos | +1M: {r['mas_1M']:>3} | +100k: {r['mas_100k']:>3} | mediana {r['mediana']:>9,} | "
                   f"vph {r['vph_mediana']:>7,} | chicos+1M {r['canales_chicos_1M']:>2} | dur {r['dur_mediana']}s | likes/1000 {r['like_ratio']}")
+    # ---- DETECTOR DE OLAS: cada mecánica comparada con los días anteriores (ventana de 3 días)
+    from comun import cargar
+    hist = cargar("olas_historia.json", {})
+    hoy = ahora.date().isoformat()
+    hist[hoy] = {k: dict(vph=r["vph_mediana"], med=r["mediana"], m1M=r["mas_1M"], n=r["videos"]) for k, r in salida["3d"]["familias"].items()}
+    hist = dict(sorted(hist.items())[-30:])
+    previos = [v for d, v in hist.items() if d < hoy][-4:]
+    estado = {}
+    for k, r in hist[hoy].items():
+        antes = [p[k]["vph"] for p in previos if k in p]
+        base = sum(antes) / len(antes) if antes else None
+        ratio = (r["vph"] / base) if base else None
+        if r["med"] < 15_000 and r["m1M"] == 0:
+            e = "muerta"
+        elif base is None:
+            e = "naciente" if r["m1M"] >= 2 else "estable"
+        elif ratio >= 1.3:
+            e = "subiendo"
+        elif ratio <= 0.7:
+            e = "bajando"
+        else:
+            e = "estable"
+        estado[k] = dict(estado=e, vph=r["vph"], vph_antes=round(base) if base else None, m1M_3d=r["m1M"], mediana_3d=r["med"])
+    guardar("olas_historia.json", hist)
+    salida["estado"] = estado
+    print("\nESTADO DE LAS OLAS:", {k: v["estado"] for k, v in estado.items()})
     guardar("olas.json", dict(fecha=ahora.isoformat(timespec="seconds"), **salida))
 
 

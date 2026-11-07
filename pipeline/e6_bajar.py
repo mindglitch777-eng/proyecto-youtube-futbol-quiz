@@ -36,7 +36,7 @@ def manifiestos():
     """{id: (video, origen)} de todas las semanas; el repo manda sobre el Release (ahí van los cambios a mano)."""
     out = {}
     try:
-        tags = subprocess.run(["gh", "release", "list", "--limit", "8", "--json", "tagName", "-q", ".[].tagName"],
+        tags = subprocess.run(["gh", "release", "list", "--limit", "30", "--json", "tagName", "-q", ".[].tagName"],
                               capture_output=True, text=True, timeout=120).stdout.split()
     except Exception as e:
         print("no pude listar los Releases:", e); tags = []

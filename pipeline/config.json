@@ -140,6 +140,10 @@
   "plinko": {
    "nombre": "PLINKO GOAT",
    "motivo": "no es de pausar, +20 s, mercado frío (06/11)"
+  },
+  "pared": {
+   "nombre": "WALL BALANCE",
+   "motivo": "muy malo: 683-924 vistas y 43 % eligió ver (decisión del dueño 07/11)"
   }
  },
  "pruebas": {
@@ -158,10 +162,6 @@
   },
   "dress": {
    "listo": true
-  },
-  "pared": {
-   "listo": true,
-   "max_semana": 1
   },
   "circulo": {
    "listo": true

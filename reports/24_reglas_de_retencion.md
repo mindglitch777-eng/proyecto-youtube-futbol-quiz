@@ -79,3 +79,6 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
 8. **Títulos (07/11):** cada formato usa la fórmula que gana en el mercado (WHEEL siempre "X vs Y or Z stop challenge"; STOP la familia
    "Football Stop Challenge ⚽🛑 …") y **nunca dos títulos parecidos**: la fábrica compara cada título con los ya subidos y los de la
    semana (parecido > 80 % = se varía con otros jugadores, frase y emojis). Código: `titulo_unico()` en `produccion/fabrica.py`.
+9. **Olas en tiempo real (07/11):** la fábrica ya no arma semanas: cada madrugada el **detector de olas** mide cada mecánica
+   (naciente / subiendo / estable / bajando / muerta) y la **fábrica diaria** produce los videos de dentro de 3 días repartiendo las
+   pruebas según la ola (naciente x2, subiendo x1,8, bajando x0,6, muerta x0,2). WALL BALANCE descartado para siempre.

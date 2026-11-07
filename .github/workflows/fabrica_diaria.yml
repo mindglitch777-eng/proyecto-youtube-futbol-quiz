@@ -1,0 +1,52 @@
+name: FÁBRICA diaria (detector de olas → videos de dentro de 3 días)
+
+# Cada madrugada: detecta las olas del día, rinde el plan de dentro de 3 días según el estado de cada ola y lo produce.
+on:
+  schedule:
+    - cron: "17 6 * * *"       # 03:17 de Argentina
+    - cron: "47 9 * * *"       # reintento (no rehace un día ya fabricado)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: {group: fabrica, cancel-in-progress: false}
+
+jobs:
+  dia:
+    runs-on: ubuntu-latest
+    timeout-minutes: 120
+    env:
+      YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Herramientas
+        run: |
+          sudo apt-get update -qq && sudo apt-get install -y -qq ffmpeg libcairo2 fonts-noto-color-emoji
+          pip install -q -r pipeline/requirements.txt
+          cd produccion/runner && npm install --no-audit --no-fund three@0.169.0 playwright@1.48.0 && npx playwright install --with-deps chromium && cd ../..
+          curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+          curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
+      - name: Detector de olas (API de YouTube)
+        run: cd pipeline && python investigar_olas.py
+        continue-on-error: true
+      - name: Plan del día objetivo
+        id: plan
+        run: cd pipeline && echo "dia=$(python fabrica_dia.py 3 | tail -1)" >> "$GITHUB_OUTPUT"
+      - name: Producción + control
+        if: steps.plan.outputs.dia != 'nada'
+        run: cd pipeline && python e5_produccion.py
+      - name: Publicar el día como Release
+        if: steps.plan.outputs.dia != 'nada'
+        run: |
+          D=${{ steps.plan.outputs.dia }}
+          cd produccion/semana_$D
+          gh release delete "semana-$D" -y --cleanup-tag 2>/dev/null || true
+          gh release create "semana-$D" --target "$GITHUB_REF_NAME" -t "Día $D" -n "Videos del $D (fábrica diaria)" ./*.mp4 videos.json CALENDARIO.md
+      - name: Guardar avance
+        if: always()
+        run: python3 pipeline/guardar_avance.py "Fábrica diaria"
