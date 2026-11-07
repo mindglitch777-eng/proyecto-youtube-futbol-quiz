@@ -40,7 +40,7 @@ def ocupado(fecha):
 
 
 def main():
-    dias = int(sys.argv[1]) if len(sys.argv) > 1 else 3
+    dias = int(sys.argv[1]) if len(sys.argv) > 1 else 2
     objetivo = (datetime.now(ART).date() + timedelta(days=dias))
     if ocupado(objetivo.isoformat()):
         print("nada"); return

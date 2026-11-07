@@ -1,4 +1,4 @@
-name: FÁBRICA diaria (detector de olas → videos de dentro de 3 días)
+name: FÁBRICA diaria (detector de olas → videos de dentro de 2 días)
 
 # Cada madrugada: detecta las olas del día, rinde el plan de dentro de 3 días según el estado de cada ola y lo produce.
 on:
@@ -36,7 +36,7 @@ jobs:
         continue-on-error: true
       - name: Plan del día objetivo
         id: plan
-        run: cd pipeline && echo "dia=$(python fabrica_dia.py 3 | tail -1)" >> "$GITHUB_OUTPUT"
+        run: cd pipeline && echo "dia=$(python fabrica_dia.py 2 | tail -1)" >> "$GITHUB_OUTPUT"   # 2 días: reaccionar antes a las olas
       - name: Producción + control
         if: steps.plan.outputs.dia != 'nada'
         run: cd pipeline && python e5_produccion.py
