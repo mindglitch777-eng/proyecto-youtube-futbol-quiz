@@ -76,3 +76,6 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
    a la grilla brillante con cartel chico. Títulos del STOP: familia clásica "Football Stop Challenge ⚽🛑 …" (los "X vs Y" fueron los
    peores). HEAD FIT y WHEEL encajan en la costura del loop (la gente se iba en el seg. 2,2 cuando se resolvía). WHEEL es el que más
    suscriptores trae (2,6-2,9 cada 1.000). Vinícius pasa a superestrella.
+8. **Títulos (07/11):** cada formato usa la fórmula que gana en el mercado (WHEEL siempre "X vs Y or Z stop challenge"; STOP la familia
+   "Football Stop Challenge ⚽🛑 …") y **nunca dos títulos parecidos**: la fábrica compara cada título con los ya subidos y los de la
+   semana (parecido > 80 % = se varía con otros jugadores, frase y emojis). Código: `titulo_unico()` en `produccion/fabrica.py`.

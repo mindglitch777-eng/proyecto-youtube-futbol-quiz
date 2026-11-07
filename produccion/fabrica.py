@@ -131,6 +131,47 @@ TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣
                     "Football Stop Challenge ⚽🛑 Only 1% can stop {a} 6️⃣7️⃣"]
 
 
+import difflib
+import re as _re
+
+FRASES_EXTRA = ["Only 1% can", "99% fail", "Impossible level", "First try?", "Only legends can", "Be honest", "Level 99",
+                "You won't get it", "Nobody gets it", "Try it"]
+EMOJIS_EXTRA = ["🔥", "🛑", "😱", "🤯", "💀", "⚽", "😤", "👀"]
+
+
+def _norm(t):
+    t = _re.sub(r"#\w+", "", t.lower())
+    return _re.sub(r"[^a-z0-9áéíóúñü%' ]+", " ", t).split()
+
+
+def parecido(a, b):
+    return difflib.SequenceMatcher(None, _norm(a), _norm(b)).ratio()
+
+
+def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.8):
+    """REGLA (07/11): nunca dos títulos parecidos. Si se parece > umbral a uno ya usado, varía jugadores, frase y emojis."""
+    def ok(t):
+        return all(parecido(t, p) < umbral for p in previos)
+    if ok(titulo):
+        return titulo
+    tags = " ".join(w for w in titulo.split() if w.startswith("#"))
+    base = " ".join(w for w in titulo.split() if not w.startswith("#"))
+    nucleo = _re.sub(r"(Only 1% can stop it|Pause at the perfect moment|Can you stop at 100%\\?)", "", base).strip()
+    for k in range(150):
+        ns = list(nombres)
+        t = _re.sub(r"[🔥🛑😱🤯💀⚽😤👀]+", " ", nucleo if k > 20 else base)
+        if len(ns) >= 2 and k % 2 == 0:                                            # otro orden de jugadores
+            a, b = rng.sample(ns, 2)
+            t = t.replace(a, "\x00").replace(b, a).replace("\x00", b)
+        if ns and k > 20:                                                          # sumar jugadores del video al título
+            elegidos = rng.sample(ns, min(len(ns), rng.choice([1, 2, 3])))
+            t += " " + rng.choice([" vs ".join(elegidos), ", ".join(elegidos), "with " + " & ".join(elegidos)])
+        t = " ".join(f"{t} {rng.choice(FRASES_EXTRA)} {''.join(rng.sample(EMOJIS_EXTRA, 2))}".split())
+        if ok(t):
+            return (t + " " + tags).strip()[:100]
+    return (base + " " + tags).strip()[:100]
+
+
 def titulo_stop(V, rng, nombres, nivel=None):
     base = (V.titulo("stop_formula", TIT_STOP_FORMULA, rng) if V else rng.choice(TIT_STOP_FORMULA)).format(a=nombres[0], b=nombres[1])
     if nivel and False:                                                        # el nivel queda en pantalla, no en el título
@@ -212,8 +253,9 @@ CUERPOS_RUEDA = {"lionel_messi_3": "Messi", "lamine_yamal_10": "Yamal", "kylian_
 TORSOS_RUEDA = ["cristiano_ronaldo_0", "lionel_messi_0", "kylian_mbapp_0", "lamine_yamal_0", "neymar_2", "erling_haaland_1",
                 "vin_cius_j_nior_0", "vin_cius_j_nior_3", "jude_bellingham_0", "jude_bellingham_1", "mohamed_salah_0", "harry_kane_1",
                 "pedri_2", "ronaldinho_0", "phil_foden_0", "bukayo_saka_2", "cole_palmer_1", "raphinha_0", "lautaro_mart_nez_1"]
-TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "Stop the wheel on {n} 🛑 Only 1% get it", "Find {n}'s real body 🛑🔥 {a} or {b}?",
-             "{n} wheel stop challenge 🛑 Can you do it first try?"]
+# WHEEL: SIEMPRE la fórmula del mercado "X vs Y or Z stop challenge" (07/11: con ella 18-26k vistas; "Stop the wheel on Messi" 3,4k)
+TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "{n} vs {a} or {b} stop challenge 😱🔥", "{n} vs {a} or {b} stop challenge 🛑🤯",
+             "{n} vs {a} or {b} stop challenge 🔥 Only 1% can"]
 
 
 def guion_rueda(gid, rng, V, fecha):
@@ -412,6 +454,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
     V = Variedad.cargar()                                                     # memoria permanente: nada se repite entre semanas
     usados = V.grupos.setdefault("stop_find", set())
     usados_look, usados_cab, trabajos, filas, manifiesto = set(), set(), [], [], []
+    pub_p = ROOT.parent / "pipeline" / "datos" / "publicados.json"                  # títulos ya usados en el canal (regla: nunca parecidos)
+    previos_titulos = [x["titulo"] for x in (json.loads(pub_p.read_text()) if pub_p.exists() else []) if x.get("video_id")][-150:]
     for n, sl in enumerate(slots, 1):
         dia = date.fromisoformat(sl["fecha"]); tipo = sl["tipo"]; hora = sl["hora"]
         et = f"{DIAS[dia.weekday()]}{dia.day:02d}"
@@ -446,7 +490,9 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
         elif tipo == "rueda":
             g = guion_rueda(gid, rng, V, sl["fecha"])
-            a, b = (g["otros"] + ["Ronaldo", "Mbappé"])[:2]
+            otros_ = [nombre_de(t.rsplit("_", 1)[0]) for t in g["torsos"]]               # cualquiera de la rueda (varía el título)
+            est_ = [o for o in g["otros"]] + [o for o in otros_ if o not in g["otros"]]
+            a, b = rng.sample(est_[:4], 2) if len(est_) >= 2 else (est_ + ["Ronaldo", "Mbappé"])[:2]
             titulo = V.titulo("rueda", TIT_RUEDA, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
             desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
@@ -522,6 +568,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
         (sem / f"{gid}.txt").write_text(
             f"=== PROGRAMAR ===\n{dia.isoformat()} a las {hora} (hora de Argentina)\n\n=== TÍTULO ===\n{titulo}\n\n=== DESCRIPCIÓN ===\n{desc_completa}\n\n"
             f"=== COMENTARIO PARA FIJAR ===\n{fijado}\n\n=== AL SUBIR ===\n- Idioma del video: Inglés. Solo hashtags en inglés.\n")
+        titulo = titulo_unico(titulo, previos_titulos, rng, [x for x in nombres if isinstance(x, str)][:4])
+        previos_titulos.append(titulo)
         manifiesto.append(dict(id=gid, n=n, fecha=dia.isoformat(), hora=hora, tipo=tipo, formato=FORMATO[tipo], titulo=titulo,
                                descripcion=desc_completa, fijado=fijado, jugadores=nombres,
                                tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4",
