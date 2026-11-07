@@ -49,7 +49,7 @@ def main():
     videos = json.loads((carpeta / "videos.json").read_text()) if (carpeta / "videos.json").exists() else []
     vencidos = json.loads((carpeta / "vencidos.json").read_text()) if (carpeta / "vencidos.json").exists() else []
     publicados = cargar("publicados.json", [])
-    hechos = {p["id"] for p in publicados if p.get("video_id") or p.get("manual")}
+    hechos = {p["id"] for p in publicados if (p.get("video_id") and not p.get("reemplazado")) or p.get("manual")}
     cola = [m for m in videos if m["id"] not in hechos]
     problemas = [f"Se pasó la hora y NO se subió: {v}" for v in vencidos]
 
@@ -79,6 +79,14 @@ def main():
         guardar("publicados.json", publicados)
         if vid:
             subidos += 1; print("subido", m["fecha"], m["hora"], m["id"], vid, flush=True)
+            if m.get("fijado"):
+                try:
+                    c = requests.post("https://www.googleapis.com/youtube/v3/commentThreads?part=snippet",
+                                      headers={"Authorization": f"Bearer {tok}"}, timeout=60,
+                                      json={"snippet": {"videoId": vid, "topLevelComment": {"snippet": {"textOriginal": m["fijado"]}}}})
+                    print("  comentario", "ok" if c.ok else f"no ({c.status_code}: falta permiso youtube.force-ssl?)", flush=True)
+                except Exception as e:
+                    print("  comentario falló", e)
         else:
             errores.append(f"{m['id']}: {err}")
             if "quota" in (err or "").lower() or "uploadLimitExceeded" in (err or ""):

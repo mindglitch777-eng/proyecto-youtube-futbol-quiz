@@ -1,0 +1,28 @@
+name: Reemplazar videos programados
+
+on:
+  push:
+    paths: [pipeline/reemplazar.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency: {group: publicar, cancel-in-progress: false}
+
+jobs:
+  reemplazar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    env:
+      YT_CLIENT_ID: ${{ secrets.YT_CLIENT_ID }}
+      YT_CLIENT_SECRET: ${{ secrets.YT_CLIENT_SECRET }}
+      YT_REFRESH_TOKEN: ${{ secrets.YT_REFRESH_TOKEN }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: cd pipeline && python reemplazar.py
+      - if: always()
+        run: python3 pipeline/guardar_avance.py "Reemplazo de programados"
