@@ -134,8 +134,6 @@ TIT_STOP_FORMULA = ["Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣
 import difflib
 import re as _re
 
-FRASES_EXTRA = ["Only 1% can", "99% fail", "Impossible level", "First try?", "Only legends can", "Be honest", "Level 99",
-                "You won't get it", "Nobody gets it", "Try it"]
 EMOJIS_EXTRA = ["🔥", "🛑", "😱", "🤯", "💀", "⚽", "😤", "👀"]
 
 
@@ -148,28 +146,68 @@ def parecido(a, b):
     return difflib.SequenceMatcher(None, _norm(a), _norm(b)).ratio()
 
 
-def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.8):
-    """REGLA (07/11): nunca dos títulos parecidos. Si se parece > umbral a uno ya usado, varía jugadores, frase y emojis."""
+# Variantes COMPLETAS y naturales por formato (07/11): cuando un título se parece a otro, se elige otra de estas con otros jugadores.
+VARIANTES = {
+    "stop": ["Football Stop Challenge ⚽🛑 Only 1% can stop {a} 6️⃣7️⃣", "Football Stop Challenge ⚽🛑 Can you stop {a} at 100%?",
+             "Football Stop Challenge ⚽🛑 {a} or {b}: who can you stop?", "Football Stop Challenge ⚽🛑 Stop {a} at 100% if you can",
+             "Football Stop Challenge ⚽🛑 Impossible level: {a} vs {b}", "Football Stop Challenge ⚽🛑 Only legends stop {a} 💀",
+             "Football Stop Challenge ⚽🛑 {a}, {b} or {c} at 100%?", "Football Stop Challenge ⚽🛑 99% fail with {a} 😤",
+             "Football Stop Challenge ⚽🛑 Stop {a} before {b} 6️⃣7️⃣", "Football Stop Challenge ⚽🛑 Can you beat {a}'s level?"],
+    "rueda": ["{a} vs {b} or {c} stop challenge 🔥🛑", "{a} vs {b} or {c} stop challenge 😱🔥", "{a} vs {b} or {c} stop challenge 🛑🤯",
+              "{a} vs {b} or {c} stop challenge 💀🔥", "Find {a}'s real body 🛑🔥 {b} or {c}?"],
+    "cabezas": ["99.9% WILL FAIL the FIT challenge 💀 {a} edition", "Fit {a}'s head 🛑 Only 1% can", "{a} head fit challenge 😱 Pause it!",
+                "Can you fit {a}'s head perfectly? 🤯", "Only 1% can fit {a}'s face 🎯", "This is almost impossible! Fit {a} 🎯⚽"],
+}
+EMOJIS_EXTRA = ["🔥", "🛑", "😱", "🤯", "💀", "⚽", "😤", "👀"]
+
+
+def _norm(t):
+    t = _re.sub(r"#\w+", "", t.lower())
+    return _re.sub(r"[^a-z0-9áéíóúñü%' ]+", " ", t).split()
+
+
+def parecido(a, b):
+    return difflib.SequenceMatcher(None, _norm(a), _norm(b)).ratio()
+
+
+def _con_tags(base, tags):
+    """Título final sin cortar palabras: los hashtags entran solo si caben en 100 caracteres."""
+    out = base.strip()
+    for t in tags:
+        if len(out) + len(t) + 1 <= 100:
+            out += " " + t
+    return out
+
+
+def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.8, tipo=None):
+    """REGLA (07/11): nunca dos títulos parecidos. Si se parece > umbral a uno ya usado, elige otra variante COMPLETA del
+    formato (VARIANTES) con otros jugadores; nunca pega frases sueltas ni corta palabras."""
+    tags = [w for w in titulo.split() if w.startswith("#")]
+    base = " ".join(w for w in titulo.split() if not w.startswith("#"))
     def ok(t):
         return all(parecido(t, p) < umbral for p in previos)
-    if ok(titulo):
-        return titulo
-    tags = " ".join(w for w in titulo.split() if w.startswith("#"))
-    base = " ".join(w for w in titulo.split() if not w.startswith("#"))
-    nucleo = _re.sub(r"(Only 1% can stop it|Pause at the perfect moment|Can you stop at 100%\\?)", "", base).strip()
-    for k in range(150):
-        ns = list(nombres)
-        t = _re.sub(r"[🔥🛑😱🤯💀⚽😤👀]+", " ", nucleo if k > 20 else base)
-        if len(ns) >= 2 and k % 2 == 0:                                            # otro orden de jugadores
-            a, b = rng.sample(ns, 2)
-            t = t.replace(a, "\x00").replace(b, a).replace("\x00", b)
-        if ns and k > 20:                                                          # sumar jugadores del video al título
-            elegidos = rng.sample(ns, min(len(ns), rng.choice([1, 2, 3])))
-            t += " " + rng.choice([" vs ".join(elegidos), ", ".join(elegidos), "with " + " & ".join(elegidos)])
-        t = " ".join(f"{t} {rng.choice(FRASES_EXTRA)} {''.join(rng.sample(EMOJIS_EXTRA, 2))}".split())
+    if ok(base):
+        return _con_tags(base, tags)
+    ns = [n for n in nombres if n] or ["Messi", "Ronaldo", "Mbappé"]
+    while len(ns) < 3:
+        ns.append(rng.choice(["Messi", "Ronaldo", "Mbappé", "Yamal", "Neymar"]))
+    pool = VARIANTES.get(tipo, [])
+    for _ in range(200):
+        if not pool:
+            break
+        resto = ns[1:]
+        if tipo in ("rueda", "cabezas") or rng.random() < 0.6:                      # el protagonista (estrella / dueño del cuerpo) va primero
+            a = ns[0]; b, c = (rng.sample(resto, 2) if len(resto) >= 2 else (resto + ns)[:2])
+        else:
+            a, b, c = rng.sample(ns, 3) if len(set(ns)) >= 3 else (ns[0], ns[1], ns[2])
+        t = rng.choice(pool).format(a=a, b=b, c=c)
         if ok(t):
-            return (t + " " + tags).strip()[:100]
-    return (base + " " + tags).strip()[:100]
+            return _con_tags(t, tags)
+    for _ in range(100):                                                       # último recurso: mismo título con otro par de emojis
+        t = _re.sub(r"[🔥🛑😱🤯💀⚽😤👀]+", "", base).strip() + " " + "".join(rng.sample(EMOJIS_EXTRA, 2))
+        if ok(t):
+            return _con_tags(t, tags)
+    return _con_tags(base, tags)
 
 
 def titulo_stop(V, rng, nombres, nivel=None):
@@ -568,7 +606,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
         (sem / f"{gid}.txt").write_text(
             f"=== PROGRAMAR ===\n{dia.isoformat()} a las {hora} (hora de Argentina)\n\n=== TÍTULO ===\n{titulo}\n\n=== DESCRIPCIÓN ===\n{desc_completa}\n\n"
             f"=== COMENTARIO PARA FIJAR ===\n{fijado}\n\n=== AL SUBIR ===\n- Idioma del video: Inglés. Solo hashtags en inglés.\n")
-        titulo = titulo_unico(titulo, previos_titulos, rng, [x for x in nombres if isinstance(x, str)][:4])
+        titulo = titulo_unico(titulo, previos_titulos, rng, [x for x in nombres if isinstance(x, str)][:4], tipo=tipo)
         previos_titulos.append(titulo)
         manifiesto.append(dict(id=gid, n=n, fecha=dia.isoformat(), hora=hora, tipo=tipo, formato=FORMATO[tipo], titulo=titulo,
                                descripcion=desc_completa, fijado=fijado, jugadores=nombres,
