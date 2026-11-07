@@ -1,13 +1,106 @@
 {
  "fecha": "2026-11-07",
- "recomendaciones": [],
+ "recomendaciones": [
+  {
+   "familia": "wheel",
+   "nuestros": [
+    "rueda"
+   ],
+   "mercado_mediana": 623318,
+   "mercado_1M": 7,
+   "subiendo": false,
+   "nuestra_mediana_48h": 11824,
+   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
+  },
+  {
+   "familia": "fit",
+   "nuestros": [
+    "cabezas"
+   ],
+   "mercado_mediana": 247651,
+   "mercado_1M": 12,
+   "subiendo": false,
+   "nuestra_mediana_48h": 27338,
+   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
+  },
+  {
+   "familia": "stop",
+   "nuestros": [
+    "stop",
+    "siuu",
+    "penal",
+    "balon"
+   ],
+   "mercado_mediana": 239306,
+   "mercado_1M": 10,
+   "subiendo": false,
+   "nuestra_mediana_48h": 4135,
+   "accion": "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
+  },
+  {
+   "familia": "goat",
+   "nuestros": [
+    "circulo"
+   ],
+   "mercado_mediana": 116299,
+   "mercado_1M": 5,
+   "subiendo": false,
+   "nuestra_mediana_48h": null,
+   "accion": "PROBAR POCO: todavía no tenemos datos propios"
+  },
+  {
+   "familia": "dress",
+   "nuestros": [
+    "dress"
+   ],
+   "mercado_mediana": 96748,
+   "mercado_1M": 7,
+   "subiendo": false,
+   "nuestra_mediana_48h": 18282,
+   "accion": "MANTENER: nos rinde aunque el mercado esté tibio"
+  },
+  {
+   "familia": "quiz",
+   "nuestros": [
+    "trayectoria",
+    "tridente"
+   ],
+   "mercado_mediana": 84849,
+   "mercado_1M": 2,
+   "subiendo": false,
+   "nuestra_mediana_48h": null,
+   "accion": "PROBAR POCO: todavía no tenemos datos propios"
+  },
+  {
+   "familia": "find",
+   "nuestros": [
+    "find"
+   ],
+   "mercado_mediana": 38067,
+   "mercado_1M": 2,
+   "subiendo": false,
+   "nuestra_mediana_48h": 1057,
+   "accion": "BAJAR: sin ola y sin resultado propio"
+  },
+  {
+   "familia": "balance",
+   "nuestros": [
+    "pared"
+   ],
+   "mercado_mediana": 6862,
+   "mercado_1M": 0,
+   "subiendo": false,
+   "nuestra_mediana_48h": null,
+   "accion": "PROBAR POCO: todavía no tenemos datos propios"
+  }
+ ],
  "canal": {
   "stop": {
-   "videos": 21,
-   "mediana_48h": 3929,
-   "mejor": 29656,
-   "pct_visto": 181,
-   "mas_10k": 8,
+   "videos": 22,
+   "mediana_48h": 4135,
+   "mejor": 29674,
+   "pct_visto": 179,
+   "mas_10k": 9,
    "imposible": {
     "videos": 0,
     "mediana_48h": null
@@ -15,9 +108,9 @@
   },
   "cabezas": {
    "videos": 1,
-   "mediana_48h": 27271,
-   "mejor": 27271,
-   "pct_visto": null,
+   "mediana_48h": 27338,
+   "mejor": 27338,
+   "pct_visto": 136,
    "mas_10k": 1,
    "imposible": {
     "videos": 0,
@@ -26,9 +119,9 @@
   },
   "rueda": {
    "videos": 5,
-   "mediana_48h": 12053,
-   "mejor": 26341,
-   "pct_visto": 146,
+   "mediana_48h": 11824,
+   "mejor": 26463,
+   "pct_visto": 159,
    "mas_10k": 3,
    "imposible": {
     "videos": 0,
@@ -37,9 +130,9 @@
   },
   "dress": {
    "videos": 1,
-   "mediana_48h": 18863,
-   "mejor": 21789,
-   "pct_visto": 112,
+   "mediana_48h": 18282,
+   "mejor": 21895,
+   "pct_visto": 109,
    "mas_10k": 1,
    "imposible": {
     "videos": 0,
@@ -48,7 +141,7 @@
   },
   "find": {
    "videos": 3,
-   "mediana_48h": 1072,
+   "mediana_48h": 1057,
    "mejor": 3857,
    "pct_visto": 112,
    "mas_10k": 0,
@@ -59,7 +152,7 @@
   },
   "otros": {
    "videos": 2,
-   "mediana_48h": 716,
+   "mediana_48h": 710,
    "mejor": 2194,
    "pct_visto": 70,
    "mas_10k": 0,
@@ -70,7 +163,7 @@
   },
   "ring": {
    "videos": 1,
-   "mediana_48h": 917,
+   "mediana_48h": 908,
    "mejor": 2067,
    "pct_visto": 75,
    "mas_10k": 0,
@@ -81,7 +174,7 @@
   },
   "carrera": {
    "videos": 2,
-   "mediana_48h": 664,
+   "mediana_48h": 658,
    "mejor": 1965,
    "pct_visto": 77,
    "mas_10k": 0,
@@ -92,9 +185,9 @@
   },
   "cabeza": {
    "videos": 1,
-   "mediana_48h": 904,
+   "mediana_48h": 891,
    "mejor": 1661,
-   "pct_visto": 160,
+   "pct_visto": 161,
    "mas_10k": 0,
    "imposible": {
     "videos": 0,
@@ -103,7 +196,7 @@
   },
   "plinko": {
    "videos": 1,
-   "mediana_48h": 739,
+   "mediana_48h": 732,
    "mejor": 1630,
    "pct_visto": 74,
    "mas_10k": 0,
@@ -113,7 +206,38 @@
    }
   }
  },
- "nuevas": [],
+ "nuevas": [
+  {
+   "id": "TfW1GcmYP2E",
+   "titulo": "Mbappé y el niño del balonazo ❤❤ #shorts #futbol #realmadrid",
+   "vistas": 3032440
+  },
+  {
+   "id": "EEiBW-LI0Vo",
+   "titulo": "Neymar Picked the Wrong Hair Joke 🧢",
+   "vistas": 2992770
+  },
+  {
+   "id": "CTGmjkQ_1Sc",
+   "titulo": "Can Anyone Solve This? Fit All Kaka Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 2760577
+  },
+  {
+   "id": "tDRZaSojq8E",
+   "titulo": "Ronaldo & IShowSpeed Destroyed The Rock! 😱💀 #cr7 #ishowspeed #therock",
+   "vistas": 2597780
+  },
+  {
+   "id": "YJpydRXwtGg",
+   "titulo": "Legendary Football Stop Challenge ⚽️🛑 #messi #ronaldo #haaland #mbappe  #challenge#football #shorts",
+   "vistas": 2586658
+  },
+  {
+   "id": "vW__fUMZJQY",
+   "titulo": "😂 Ronaldo Cartoon Game ⚽ Funny Gameplay & Crazy Moments! #Shorts",
+   "vistas": 2569860
+  }
+ ],
  "comentarios": {
   "total": 19,
   "facil": 2,
@@ -130,35 +254,35 @@
  ],
  "horas": {
   "00": {
-   "mediana": 3431,
+   "mediana": 3361,
    "videos": 1
   },
   "09": {
-   "mediana": 3202,
+   "mediana": 3236,
    "videos": 4
   },
   "13": {
-   "mediana": 9258,
+   "mediana": 9067,
    "videos": 4
   },
   "15": {
-   "mediana": 9526,
+   "mediana": 13434,
    "videos": 2
   },
   "17": {
-   "mediana": 3160,
-   "videos": 4
+   "mediana": 3829,
+   "videos": 5
   },
   "21": {
-   "mediana": 13115,
+   "mediana": 12825,
    "videos": 5
   },
   "22": {
-   "mediana": 22627,
+   "mediana": 21937,
    "videos": 1
   },
   "23": {
-   "mediana": 23067,
+   "mediana": 22810,
    "videos": 2
   }
  }
