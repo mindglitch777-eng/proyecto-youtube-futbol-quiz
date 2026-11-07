@@ -600,6 +600,11 @@
    [
     "Messi",
     "Ronaldinho",
+    "Ronaldo"
+   ],
+   [
+    "Messi",
+    "Ronaldinho",
     "Yamal"
    ],
    [
@@ -932,6 +937,10 @@
    ],
    [
     "Haaland",
+    "Henry"
+   ],
+   [
+    "Haaland",
     "Mbappé"
    ],
    [
@@ -967,6 +976,10 @@
     "Yamal"
    ],
    [
+    "Mbappé",
+    "Yamal"
+   ],
+   [
     "Messi",
     "Ronaldinho"
    ],
@@ -997,6 +1010,10 @@
    [
     "Vinícius",
     "Yamal"
+   ],
+   [
+    "Yamal",
+    "Zlatan"
    ]
   ],
   "stop_YOUNG STARS": [
@@ -1027,6 +1044,12 @@
    [
     "Güler",
     "Musiala",
+    "Wirtz",
+    "Yamal"
+   ],
+   [
+    "Güler",
+    "Saka",
     "Wirtz",
     "Yamal"
    ],
@@ -1063,6 +1086,18 @@
     "Ronaldinho"
    ],
    [
+    "Benzema",
+    "Henry",
+    "Kroos",
+    "Ronaldinho"
+   ],
+   [
+    "Henry",
+    "Kroos",
+    "Ramos",
+    "Zlatan"
+   ],
+   [
     "Kroos",
     "Ronaldinho",
     "Zidane",
@@ -1075,6 +1110,18 @@
     "Foden",
     "Haaland",
     "Rice"
+   ],
+   [
+    "De Bruyne",
+    "Foden",
+    "Rice",
+    "Salah"
+   ],
+   [
+    "De Bruyne",
+    "Foden",
+    "Salah",
+    "Son"
    ],
    [
     "Foden",
@@ -1127,6 +1174,12 @@
     "Valverde"
    ],
    [
+    "Gavi",
+    "Mbappé",
+    "Valverde",
+    "Vinícius"
+   ],
+   [
     "Güler",
     "Lewandowski",
     "Mbappé",
@@ -1140,6 +1193,12 @@
    ]
   ],
   "stop_GOATS": [
+   [
+    "Mbappé",
+    "Messi",
+    "Neymar",
+    "Ronaldinho"
+   ],
    [
     "Mbappé",
     "Messi",
@@ -1200,6 +1259,12 @@
     "Dembélé",
     "Mbappé",
     "Pedri",
+    "Salah"
+   ],
+   [
+    "Dembélé",
+    "Mbappé",
+    "Pedri",
     "Vinícius"
    ],
    [
@@ -1225,6 +1290,16 @@
     "lamine_yamal_0",
     "lautaro_mart_nez_1",
     "mohamed_salah_0"
+   ],
+   [
+    "kylian_mbapp_12",
+    "bukayo_saka_2",
+    "cole_palmer_1",
+    "cristiano_ronaldo_0",
+    "jude_bellingham_0",
+    "raphinha_0",
+    "ronaldinho_0",
+    "vin_cius_j_nior_0"
    ],
    [
     "kylian_mbapp_12",
@@ -1259,6 +1334,26 @@
    [
     "kylian_mbapp_12",
     "bukayo_saka_2",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "jude_bellingham_1",
+    "lamine_yamal_0",
+    "lautaro_mart_nez_1",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "kylian_mbapp_12",
+    "bukayo_saka_2",
+    "erling_haaland_1",
+    "lautaro_mart_nez_1",
+    "lionel_messi_0",
+    "pedri_2",
+    "phil_foden_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "kylian_mbapp_12",
+    "bukayo_saka_2",
     "harry_kane_1",
     "jude_bellingham_0",
     "lautaro_mart_nez_1",
@@ -1278,6 +1373,26 @@
    ],
    [
     "kylian_mbapp_12",
+    "bukayo_saka_2",
+    "lautaro_mart_nez_1",
+    "mohamed_salah_0",
+    "pedri_2",
+    "raphinha_0",
+    "vin_cius_j_nior_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "kylian_mbapp_12",
+    "cole_palmer_1",
+    "cristiano_ronaldo_0",
+    "erling_haaland_1",
+    "harry_kane_1",
+    "jude_bellingham_0",
+    "lamine_yamal_0",
+    "ronaldinho_0"
+   ],
+   [
+    "kylian_mbapp_12",
     "cole_palmer_1",
     "cristiano_ronaldo_0",
     "erling_haaland_1",
@@ -1300,6 +1415,16 @@
     "kylian_mbapp_12",
     "cole_palmer_1",
     "cristiano_ronaldo_0",
+    "erling_haaland_1",
+    "jude_bellingham_1",
+    "lautaro_mart_nez_1",
+    "neymar_2",
+    "phil_foden_0"
+   ],
+   [
+    "kylian_mbapp_12",
+    "cole_palmer_1",
+    "cristiano_ronaldo_0",
     "harry_kane_1",
     "jude_bellingham_0",
     "mohamed_salah_0",
@@ -1309,11 +1434,31 @@
    [
     "kylian_mbapp_12",
     "cole_palmer_1",
+    "cristiano_ronaldo_0",
+    "harry_kane_1",
+    "lautaro_mart_nez_1",
+    "mohamed_salah_0",
+    "raphinha_0",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "kylian_mbapp_12",
+    "cole_palmer_1",
     "erling_haaland_1",
     "jude_bellingham_1",
     "neymar_2",
     "pedri_2",
     "phil_foden_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "kylian_mbapp_12",
+    "cole_palmer_1",
+    "erling_haaland_1",
+    "lautaro_mart_nez_1",
+    "mohamed_salah_0",
+    "ronaldinho_0",
+    "vin_cius_j_nior_0",
     "vin_cius_j_nior_3"
    ],
    [
@@ -1328,6 +1473,16 @@
    ],
    [
     "kylian_mbapp_12",
+    "cristiano_ronaldo_0",
+    "jude_bellingham_0",
+    "jude_bellingham_1",
+    "lamine_yamal_0",
+    "lautaro_mart_nez_1",
+    "mohamed_salah_0",
+    "raphinha_0"
+   ],
+   [
+    "kylian_mbapp_12",
     "erling_haaland_1",
     "jude_bellingham_0",
     "lamine_yamal_0",
@@ -1335,6 +1490,26 @@
     "pedri_2",
     "raphinha_0",
     "vin_cius_j_nior_0"
+   ],
+   [
+    "kylian_mbapp_12",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "lautaro_mart_nez_1",
+    "lionel_messi_0",
+    "pedri_2",
+    "ronaldinho_0",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "kylian_mbapp_12",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "lautaro_mart_nez_1",
+    "pedri_2",
+    "ronaldinho_0",
+    "vin_cius_j_nior_0",
+    "vin_cius_j_nior_3"
    ],
    [
     "kylian_mbapp_12",
@@ -1365,6 +1540,36 @@
     "phil_foden_0",
     "raphinha_0",
     "vin_cius_j_nior_3"
+   ],
+   [
+    "kylian_mbapp_12",
+    "jude_bellingham_0",
+    "jude_bellingham_1",
+    "lamine_yamal_0",
+    "lautaro_mart_nez_1",
+    "raphinha_0",
+    "ronaldinho_0",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "bukayo_saka_2",
+    "cole_palmer_1",
+    "cristiano_ronaldo_0",
+    "erling_haaland_1",
+    "pedri_2",
+    "phil_foden_0",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "bukayo_saka_2",
+    "cole_palmer_1",
+    "cristiano_ronaldo_0",
+    "lautaro_mart_nez_1",
+    "mohamed_salah_0",
+    "neymar_2",
+    "ronaldinho_0"
    ],
    [
     "lamine_yamal_10",
@@ -1399,6 +1604,16 @@
    [
     "lamine_yamal_10",
     "bukayo_saka_2",
+    "cole_palmer_1",
+    "kylian_mbapp_0",
+    "lautaro_mart_nez_1",
+    "mohamed_salah_0",
+    "phil_foden_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "lamine_yamal_10",
+    "bukayo_saka_2",
     "cristiano_ronaldo_0",
     "erling_haaland_1",
     "lautaro_mart_nez_1",
@@ -1439,11 +1654,41 @@
    [
     "lamine_yamal_10",
     "bukayo_saka_2",
+    "erling_haaland_1",
+    "lautaro_mart_nez_1",
+    "pedri_2",
+    "raphinha_0",
+    "vin_cius_j_nior_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "lamine_yamal_10",
+    "bukayo_saka_2",
     "harry_kane_1",
     "jude_bellingham_1",
     "neymar_2",
     "pedri_2",
     "raphinha_0",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "bukayo_saka_2",
+    "jude_bellingham_0",
+    "jude_bellingham_1",
+    "kylian_mbapp_0",
+    "lautaro_mart_nez_1",
+    "neymar_2",
+    "ronaldinho_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "cole_palmer_1",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "lionel_messi_0",
+    "mohamed_salah_0",
+    "pedri_2",
     "vin_cius_j_nior_0"
    ],
    [
@@ -1455,6 +1700,26 @@
     "lautaro_mart_nez_1",
     "phil_foden_0",
     "vin_cius_j_nior_3"
+   ],
+   [
+    "lamine_yamal_10",
+    "cole_palmer_1",
+    "erling_haaland_1",
+    "kylian_mbapp_0",
+    "lionel_messi_0",
+    "mohamed_salah_0",
+    "raphinha_0",
+    "ronaldinho_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "cole_palmer_1",
+    "erling_haaland_1",
+    "kylian_mbapp_0",
+    "mohamed_salah_0",
+    "neymar_2",
+    "pedri_2",
+    "raphinha_0"
    ],
    [
     "lamine_yamal_10",
@@ -1500,11 +1765,31 @@
     "lamine_yamal_10",
     "erling_haaland_1",
     "harry_kane_1",
+    "jude_bellingham_0",
+    "kylian_mbapp_0",
+    "neymar_2",
+    "pedri_2",
+    "raphinha_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "erling_haaland_1",
+    "harry_kane_1",
     "lionel_messi_0",
     "mohamed_salah_0",
     "pedri_2",
     "raphinha_0",
     "vin_cius_j_nior_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "jude_bellingham_1",
+    "lautaro_mart_nez_1",
+    "lionel_messi_0",
+    "neymar_2",
+    "phil_foden_0"
    ],
    [
     "lamine_yamal_10",
@@ -1609,6 +1894,26 @@
    [
     "lionel_messi_3",
     "cole_palmer_1",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "mohamed_salah_0",
+    "neymar_2",
+    "phil_foden_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "lionel_messi_3",
+    "cole_palmer_1",
+    "erling_haaland_1",
+    "jude_bellingham_0",
+    "mohamed_salah_0",
+    "neymar_2",
+    "ronaldinho_0",
+    "vin_cius_j_nior_0"
+   ],
+   [
+    "lionel_messi_3",
+    "cole_palmer_1",
     "harry_kane_1",
     "jude_bellingham_0",
     "jude_bellingham_1",
@@ -1669,10 +1974,19 @@
   ],
   "trayectoria": [
    [
+    "cristiano_ronaldo"
+   ],
+   [
     "david_beckham"
    ],
    [
     "kak"
+   ],
+   [
+    "lionel_messi"
+   ],
+   [
+    "neymar"
    ],
    [
     "robert_lewandowski"
@@ -2130,6 +2444,50 @@
   [
    "2026-11-13",
    "Gavi"
+  ],
+  [
+   "2026-11-10",
+   "Henry"
+  ],
+  [
+   "2026-11-10",
+   "Haaland"
+  ],
+  [
+   "2026-11-10",
+   "Rice"
+  ],
+  [
+   "2026-11-11",
+   "Benzema"
+  ],
+  [
+   "2026-11-11",
+   "Gavi"
+  ],
+  [
+   "2026-11-12",
+   "Neymar"
+  ],
+  [
+   "2026-11-12",
+   "Pedri"
+  ],
+  [
+   "2026-11-13",
+   "Güler"
+  ],
+  [
+   "2026-11-13",
+   "Foden"
+  ],
+  [
+   "2026-11-10",
+   "Mbappé"
+  ],
+  [
+   "2026-11-10",
+   "Yamal"
   ]
  ],
  "ganadores": {
@@ -2255,7 +2613,14 @@
   "trallallero_2",
   "trallallero_1",
   "patapim_0",
-  "bombardiro_0"
+  "bombardiro_0",
+  "tung_tung_0",
+  "chipi_chapa_0",
+  "trallallero_2",
+  "patapim_0",
+  "tung_tung_0",
+  "chipi_chapa_0",
+  "trallallero_1"
  ],
  "titulos": {
   "plinko": [
@@ -2434,7 +2799,10 @@
    1,
    3,
    2,
-   4
+   4,
+   1,
+   0,
+   3
   ],
   "stop_tema": [
    5,
@@ -2470,7 +2838,15 @@
    2,
    0,
    5,
-   3
+   3,
+   1,
+   4,
+   1,
+   3,
+   0,
+   2,
+   5,
+   4
   ],
   "stop_serie": [
    3,
@@ -2519,6 +2895,14 @@
    1,
    2,
    3,
+   0,
+   3,
+   1,
+   2,
+   0,
+   2,
+   3,
+   1,
    0
   ],
   "tridente": [
@@ -2577,7 +2961,31 @@
    1,
    3,
    2,
-   1
+   1,
+   2,
+   3,
+   0,
+   3,
+   1,
+   0,
+   2,
+   1,
+   0,
+   3,
+   2,
+   1,
+   3,
+   0,
+   2,
+   1,
+   2,
+   3,
+   0,
+   2,
+   1,
+   0,
+   3,
+   2
   ],
   "cabezas": [
    2,
@@ -2609,17 +3017,33 @@
    2,
    0,
    2,
-   1
+   1,
+   2,
+   1,
+   0,
+   2,
+   1,
+   0,
+   1,
+   2,
+   0,
+   2,
+   1,
+   0
   ],
   "circulo": [
    0,
    1,
-   2
+   2,
+   1
   ],
   "trayectoria": [
    0,
    2,
    1,
+   0,
+   1,
+   2,
    0,
    1,
    2
@@ -2654,6 +3078,7 @@
   226557,
   256796,
   285084,
+  286352,
   298993,
   318239,
   320884,
@@ -2708,6 +3133,6 @@
   981580
  ],
  "contadores": {
-  "stop_nivel": 22
+  "stop_nivel": 30
  }
 }

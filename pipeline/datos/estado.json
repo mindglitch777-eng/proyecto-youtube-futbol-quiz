@@ -111,20 +111,20 @@
   "produccion": {
    "estado": "ok",
    "resumen": {
-    "videos": 30,
+    "videos": 24,
     "errores": 0
    },
-   "inicio": "2026-11-07T21:40:09+00:00",
-   "fin": "2026-11-07T21:47:53+00:00"
+   "inicio": "2026-11-07T23:16:19+00:00",
+   "fin": "2026-11-07T23:22:45+00:00"
   },
   "control": {
    "estado": "ok",
    "resumen": {
-    "pasan": "12 de 30",
-    "rehechos": 37
+    "pasan": "11 de 24",
+    "rehechos": 28
    },
-   "inicio": "2026-11-07T21:47:53+00:00",
-   "fin": "2026-11-07T22:04:08+00:00"
+   "inicio": "2026-11-07T23:22:45+00:00",
+   "fin": "2026-11-07T23:35:46+00:00"
   },
   "publicacion": {
    "estado": "ok",
@@ -162,5 +162,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-07T22:51:03+00:00"
+ "actualizado": "2026-11-07T23:35:46+00:00"
 }
