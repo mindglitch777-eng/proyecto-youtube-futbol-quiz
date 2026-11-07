@@ -37,12 +37,13 @@ def combinar(nombre, mio, suyo):
         out.update({k: v for k, v in mio.items() if k != "etapas"}); out["etapas"] = et
         return out
     if nombre == "publicados.json":
-        visto, out = set(), []
-        for x in suyo + mio:
-            clave = (x.get("id"), x.get("subido"), x.get("video_id"))
-            if clave not in visto:
-                visto.add(clave); out.append(x)
-        return sorted(out, key=lambda x: x.get("subido") or "")
+        por = {}
+        for x in suyo:
+            por[(x.get("id"), x.get("subido"), x.get("video_id"))] = x
+        for x in mio:                                                          # lo de esta corrida gana (ej. marca "reemplazado")
+            k = (x.get("id"), x.get("subido"), x.get("video_id"))
+            por[k] = {**por.get(k, {}), **x}
+        return sorted(por.values(), key=lambda x: x.get("subido") or "")
     if nombre == "analytics_historia.json":
         return {**suyo, **mio}
     return mio
