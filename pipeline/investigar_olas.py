@@ -52,6 +52,13 @@ def buscar(desde):
 
 def main():
     ahora = datetime.now(timezone.utc)
+    import os
+    from comun import cargar
+    previo = cargar("olas.json", {}).get("fecha")                              # cada corrida gasta ~7.000 de las 10.000 unidades diarias:
+    if previo and not os.environ.get("FORZAR_OLAS"):                           # si ya hay datos de las últimas 18 h, se reusan
+        edad = (ahora - datetime.fromisoformat(previo)).total_seconds() / 3600     # (el 07/11 se agotó la cuota con 3 corridas en un día)
+        if edad < 18:
+            print(f"olas de hace {edad:.0f} h: se reusan (ahorro de cuota)"); return
     salida = {}
     for nombre, dias in (("7d", 7), ("3d", 3)):
         desde = (ahora - timedelta(days=dias)).strftime("%Y-%m-%dT%H:%M:%SZ")

@@ -173,13 +173,13 @@ def parecido(a, b):
 def _con_tags(base, tags):
     """Título final sin cortar palabras: los hashtags entran solo si caben en 100 caracteres."""
     out = base.strip()
-    for t in tags:
+    for t in dict.fromkeys(x.lower() for x in tags):                           # sin hashtags repetidos (#messi #messi)
         if len(out) + len(t) + 1 <= 100:
             out += " " + t
     return out
 
 
-def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.8, tipo=None):
+def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.7, tipo=None):
     """REGLA (07/11): nunca dos títulos parecidos. Si se parece > umbral a uno ya usado, elige otra variante COMPLETA del
     formato (VARIANTES) con otros jugadores; nunca pega frases sueltas ni corta palabras."""
     tags = [w for w in titulo.split() if w.startswith("#")]
@@ -196,7 +196,7 @@ def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.8, tipo=None):
         if not pool:
             break
         resto = ns[1:]
-        if tipo in ("rueda", "cabezas") or rng.random() < 0.6:                      # el protagonista (estrella / dueño del cuerpo) va primero
+        if tipo in ("rueda", "cabezas", "stop"):                                # el protagonista (la superestrella) SIEMPRE va primero
             a = ns[0]; b, c = (rng.sample(resto, 2) if len(resto) >= 2 else (resto + ns)[:2])
         else:
             a, b, c = rng.sample(ns, 3) if len(set(ns)) >= 3 else (ns[0], ns[1], ns[2])
@@ -298,8 +298,11 @@ TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "{n} vs {a} or {b} sto
 
 def guion_rueda(gid, rng, V, fecha):
     usados = V.grupos.setdefault("rueda", set())
+    ult = V.contadores.setdefault("rueda_ult", [])                            # rota el dueño del cuerpo (antes: Mbappé 6 de 8)
+    cuerpo = min(sorted(CUERPOS_RUEDA), key=lambda c: (c == (ult[-1] if ult else None), ult[-6:].count(c), rng.random()))
+    ult.append(cuerpo); del ult[:-12]
     for _ in range(300):
-        cuerpo = rng.choice(sorted(CUERPOS_RUEDA)); base = cuerpo.rsplit("_", 1)[0]
+        base = cuerpo.rsplit("_", 1)[0]
         pool = [t for t in TORSOS_RUEDA if t.rsplit("_", 1)[0] != base]
         estrellas = [t for t in pool if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
         torsos = rng.sample(estrellas, 2) + rng.sample([t for t in pool if t not in estrellas], 5)

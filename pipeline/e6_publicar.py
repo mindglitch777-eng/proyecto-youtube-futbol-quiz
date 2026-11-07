@@ -66,10 +66,16 @@ def main():
         return vigia(problemas, cola, 0)
     etapa("publicacion", "en_curso", en_cola=len(cola))
     subidos, errores, freno = 0, [], None
+    import auditor
+    previos = [p["titulo"] for p in publicados if p.get("video_id") and p.get("titulo")][-60:]
     for m in cola:
         ruta = carpeta / m["archivo"]
-        if not ruta.exists():
-            errores.append(f"{m['id']}: no está el archivo"); continue
+        m, avisos = auditor.auditar(m, previos, carpeta)                      # última revisión antes de subir (no se edita después)
+        for a in avisos:
+            print("AUDITOR", a, flush=True)
+        if m.get("_roto"):
+            errores.append(avisos[-1]); continue
+        previos.append(m["titulo"])
         try:
             vid, err = subir(tok, ruta, m)
         except Exception as e:                                                # corte de red, etc.: se reintenta en la próxima corrida
