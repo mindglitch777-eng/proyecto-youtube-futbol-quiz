@@ -141,6 +141,12 @@ def main():
                  f"{r['imposible']['mediana_48h'] or '-'} ({r['imposible']['videos']}) |")
     L += ["", "## Qué hacer", ""] + [f"- **{r['familia']}** ({', '.join(r['nuestros'])}): {r['accion']} — mercado {r['mercado_mediana']:,}, "
                                      f"nosotros {r['nuestra_mediana_48h'] or '-'}" for r in recs]
+    import diagnostico
+    diag = diagnostico.main()
+    L += ["", "## Por qué falló / qué repetir (diagnóstico por formato)", ""]
+    for tipo, d in diag.items():
+        L.append(f"- **{tipo}** ({d['videos']} videos, mediana 48 h {d['mediana_48h']:,}): " +
+                 ("; ".join(f"{f['accion']} {f['campo']} «{f['valor']}» ({f['rinde']})" for f in d["factores"]) or "sin diferencias claras todavía"))
     L += ["", "## Tendencias nuevas para recrear (Gemini)", ""]
     for a in cargar("analisis_tendencias.json", []):
         if a["id"] in {c["id"] for c in cands}:

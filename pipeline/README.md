@@ -25,7 +25,8 @@ El tablero queda en `https://mindglitch777-eng.github.io/proyecto-youtube-futbol
 3. **Credenciales → Crear credenciales → ID de cliente de OAuth** → tipo **Aplicación web** → en *URI de redireccionamiento autorizados* poné `https://developers.google.com/oauthplayground`. Guardá el **ID de cliente** y el **secreto**.
 4. Entrá a [OAuth Playground](https://developers.google.com/oauthplayground) → engranaje ⚙ → **Use your own OAuth credentials** → pegá ID y secreto.
 5. En *Input your own scopes* pegá (separados por espacio):
-   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly`
+   `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly https://www.googleapis.com/auth/youtube.force-ssl`
+   (el último, `youtube.force-ssl`, deja publicar el comentario fijado automático y arreglar títulos ya subidos)
    → **Authorize APIs** → entrá con la cuenta del canal → **Exchange authorization code for tokens** → copiá el **Refresh token**.
 
 ### 4. Secretos en GitHub

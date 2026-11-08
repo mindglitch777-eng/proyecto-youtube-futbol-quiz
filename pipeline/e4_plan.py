@@ -45,7 +45,8 @@ def puntajes():
     pts, n = {}, {}
     for k, x in an.items():
         base = k.split("/")[0]
-        p = x["mediana_pct_visto"] * (0.5 + x["mediana_subs_cada_1000"])
+        alcance = min(2.0, max(0.5, (x.get("mediana_vistas", 10_000) / 10_000) ** 0.5))   # 08/11: también cuenta cuánta gente llegó
+        p = x["mediana_pct_visto"] * (0.5 + x["mediana_subs_cada_1000"]) * alcance
         if base not in pts or x["videos"] > n[base]:
             pts[base], n[base] = p, x["videos"]
     return pts, n
