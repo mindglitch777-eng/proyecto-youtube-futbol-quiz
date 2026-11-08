@@ -65,25 +65,25 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-08T01:56:11+00:00",
+   "inicio": "2026-11-08T08:56:50+00:00",
    "resumen": {
-    "videos": 45,
-    "vistas_totales": 429585,
+    "videos": 46,
+    "vistas_totales": 442403,
     "por_formato": {
-     "pared": "1 videos · mediana 927 · mejor 927",
-     "stop": "23 videos · mediana 4,471 · mejor 25,175",
-     "rueda": "5 videos · mediana 11,684 · mejor 25,643",
-     "cabezas": "1 videos · mediana 27,369 · mejor 27,369",
-     "dress": "1 videos · mediana 17,910 · mejor 17,910",
-     "cabeza": "1 videos · mediana 883 · mejor 883",
-     "find": "3 videos · mediana 1,048 · mejor 1,791",
-     "plinko": "1 videos · mediana 727 · mejor 727",
-     "ring": "1 videos · mediana 903 · mejor 903",
-     "otros": "2 videos · mediana 706 · mejor 936",
-     "carrera": "2 videos · mediana 654 · mejor 791"
+     "pared": "1 videos · mediana 936 · mejor 936",
+     "stop": "23 videos · mediana 4,613 · mejor 23,633",
+     "rueda": "5 videos · mediana 11,374 · mejor 31,209",
+     "cabezas": "1 videos · mediana 25,732 · mejor 25,732",
+     "dress": "1 videos · mediana 17,312 · mejor 17,312",
+     "cabeza": "1 videos · mediana 865 · mejor 865",
+     "find": "3 videos · mediana 1,028 · mejor 1,763",
+     "plinko": "1 videos · mediana 717 · mejor 717",
+     "ring": "1 videos · mediana 890 · mejor 890",
+     "otros": "2 videos · mediana 698 · mejor 924",
+     "carrera": "2 videos · mediana 648 · mejor 783"
     }
    },
-   "fin": "2026-11-08T01:56:11+00:00"
+   "fin": "2026-11-08T08:56:50+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -131,23 +131,23 @@
    "estado": "ok",
    "resumen": {
     "subidos": 0,
-    "en_cola": 2,
+    "en_cola": 6,
     "freno": "límite diario de YouTube",
     "errores": [],
     "total_publicados": 66
    },
-   "inicio": "2026-11-08T01:56:08+00:00",
-   "fin": "2026-11-08T01:56:08+00:00"
+   "inicio": "2026-11-08T08:56:48+00:00",
+   "fin": "2026-11-08T08:56:48+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-08T01:56:17+00:00",
+   "fin": "2026-11-08T08:56:56+00:00",
    "resumen": {
     "videos": 35,
     "por_formato": {
      "stop": "14 videos · 180.1% visto · 1.23 subs/1000",
      "cabezas": "1 videos · 136.0% visto · 0.5 subs/1000",
-     "rueda": "4 videos · 159.1% visto · 2.81 subs/1000",
+     "rueda": "4 videos · 159.1% visto · 2.82 subs/1000",
      "dress": "1 videos · 108.6% visto · 1.54 subs/1000",
      "find": "3 videos · 112.2% visto · 0.0 subs/1000",
      "stop/estrella": "3 videos · 180.4% visto · 1.51 subs/1000",
@@ -163,5 +163,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-08T01:56:17+00:00"
+ "actualizado": "2026-11-08T08:56:56+00:00"
 }
