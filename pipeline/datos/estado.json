@@ -65,24 +65,25 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-07T23:51:32+00:00",
+   "inicio": "2026-11-08T01:56:11+00:00",
    "resumen": {
     "videos": 45,
-    "vistas_totales": 425552,
+    "vistas_totales": 429585,
     "por_formato": {
-     "stop": "23 videos · mediana 4,447 · mejor 25,655",
-     "rueda": "5 videos · mediana 11,776 · mejor 22,238",
-     "cabezas": "1 videos · mediana 27,338 · mejor 27,338",
-     "dress": "1 videos · mediana 18,159 · mejor 18,159",
-     "cabeza": "1 videos · mediana 888 · mejor 888",
-     "find": "3 videos · mediana 1,054 · mejor 1,799",
-     "plinko": "1 videos · mediana 730 · mejor 730",
-     "ring": "1 videos · mediana 906 · mejor 906",
-     "otros": "2 videos · mediana 709 · mejor 940",
-     "carrera": "2 videos · mediana 656 · mejor 794"
+     "pared": "1 videos · mediana 927 · mejor 927",
+     "stop": "23 videos · mediana 4,471 · mejor 25,175",
+     "rueda": "5 videos · mediana 11,684 · mejor 25,643",
+     "cabezas": "1 videos · mediana 27,369 · mejor 27,369",
+     "dress": "1 videos · mediana 17,910 · mejor 17,910",
+     "cabeza": "1 videos · mediana 883 · mejor 883",
+     "find": "3 videos · mediana 1,048 · mejor 1,791",
+     "plinko": "1 videos · mediana 727 · mejor 727",
+     "ring": "1 videos · mediana 903 · mejor 903",
+     "otros": "2 videos · mediana 706 · mejor 936",
+     "carrera": "2 videos · mediana 654 · mejor 791"
     }
    },
-   "fin": "2026-11-07T23:51:32+00:00"
+   "fin": "2026-11-08T01:56:11+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -135,12 +136,12 @@
     "errores": [],
     "total_publicados": 66
    },
-   "inicio": "2026-11-07T23:51:30+00:00",
-   "fin": "2026-11-07T23:51:30+00:00"
+   "inicio": "2026-11-08T01:56:08+00:00",
+   "fin": "2026-11-08T01:56:08+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-07T23:51:36+00:00",
+   "fin": "2026-11-08T01:56:17+00:00",
    "resumen": {
     "videos": 35,
     "por_formato": {
@@ -162,5 +163,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-07T23:51:36+00:00"
+ "actualizado": "2026-11-08T01:56:17+00:00"
 }
