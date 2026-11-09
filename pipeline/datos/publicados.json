@@ -1117,5 +1117,16 @@
   "video_id": null,
   "error": "400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n ",
   "subido": "2026-11-09T09:43:06+00:00"
+ },
+ {
+  "id": "s1107_15_jue12_1700_find",
+  "tipo": "find",
+  "variante": null,
+  "fecha": "2026-11-12",
+  "hora": "17:00",
+  "titulo": "FIND RONALDO RONALDINHO MESSI",
+  "video_id": null,
+  "error": "400 {\n  \"error\": {\n    \"code\": 400,\n    \"message\": \"The user has exceeded the number of videos they may upload.\",\n    \"errors\": [\n      {\n        \"message\": \"The user has exceeded the number of videos they may upload.\",\n        \"domain\": \"youtube.video\",\n        \"reason\": \"uploadLimitExceeded\"\n      }\n ",
+  "subido": "2026-11-09T20:55:07+00:00"
  }
 ]

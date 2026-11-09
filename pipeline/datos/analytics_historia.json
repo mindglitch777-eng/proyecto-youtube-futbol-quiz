@@ -1318,41 +1318,41 @@
  },
  "2026-11-09": {
   "por_formato": {
+   "rueda": {
+    "videos": 6,
+    "mediana_pct_visto": 156.0,
+    "mediana_subs_cada_1000": 2.56,
+    "mediana_vistas": 12952
+   },
    "stop": {
     "videos": 14,
-    "mediana_pct_visto": 180.1,
-    "mediana_subs_cada_1000": 1.34,
-    "mediana_vistas": 13112
+    "mediana_pct_visto": 179.8,
+    "mediana_subs_cada_1000": 1.36,
+    "mediana_vistas": 13494
    },
    "cabezas": {
     "videos": 1,
-    "mediana_pct_visto": 132.4,
-    "mediana_subs_cada_1000": 0.63,
-    "mediana_vistas": 26891
-   },
-   "rueda": {
-    "videos": 5,
-    "mediana_pct_visto": 154.1,
-    "mediana_subs_cada_1000": 2.75,
-    "mediana_vistas": 5219
+    "mediana_pct_visto": 132.0,
+    "mediana_subs_cada_1000": 0.65,
+    "mediana_vistas": 27551
    },
    "stop/estrella": {
-    "videos": 5,
-    "mediana_pct_visto": 187.8,
-    "mediana_subs_cada_1000": 0.99,
-    "mediana_vistas": 2691
+    "videos": 6,
+    "mediana_pct_visto": 187.4,
+    "mediana_subs_cada_1000": 0.93,
+    "mediana_vistas": 2835
    },
    "dress": {
     "videos": 1,
-    "mediana_pct_visto": 106.0,
-    "mediana_subs_cada_1000": 1.37,
-    "mediana_vistas": 21131
+    "mediana_pct_visto": 105.5,
+    "mediana_subs_cada_1000": 1.35,
+    "mediana_vistas": 22265
    },
    "stop/grilla": {
-    "videos": 4,
-    "mediana_pct_visto": 190.6,
-    "mediana_subs_cada_1000": 0.79,
-    "mediana_vistas": 3060
+    "videos": 5,
+    "mediana_pct_visto": 183.6,
+    "mediana_subs_cada_1000": 0.66,
+    "mediana_vistas": 2273
    },
    "find": {
     "videos": 3,
@@ -1360,9 +1360,15 @@
     "mediana_subs_cada_1000": 0.0,
     "mediana_vistas": 2017
    },
+   "balon": {
+    "videos": 1,
+    "mediana_pct_visto": 153.2,
+    "mediana_subs_cada_1000": 0.0,
+    "mediana_vistas": 2288
+   },
    "otros": {
     "videos": 2,
-    "mediana_pct_visto": 70.2,
+    "mediana_pct_visto": 70.1,
     "mediana_subs_cada_1000": 0.64,
     "mediana_vistas": 1708
    },
@@ -1376,7 +1382,7 @@
     "videos": 2,
     "mediana_pct_visto": 77.1,
     "mediana_subs_cada_1000": 0.26,
-    "mediana_vistas": 1616
+    "mediana_vistas": 1618
    },
    "cabeza": {
     "videos": 1,
@@ -1388,49 +1394,54 @@
     "videos": 1,
     "mediana_pct_visto": 74.3,
     "mediana_subs_cada_1000": 0.61,
-    "mediana_vistas": 1630
+    "mediana_vistas": 1631
    },
    "pared": {
-    "videos": 1,
-    "mediana_pct_visto": 126.4,
-    "mediana_subs_cada_1000": 1.5,
-    "mediana_vistas": 667
+    "videos": 2,
+    "mediana_pct_visto": 132.5,
+    "mediana_subs_cada_1000": 0.54,
+    "mediana_vistas": 1106
    }
   },
   "videos": {
+   "0qIFGj-Qf0c": [
+    31253,
+    176.22,
+    74
+   ],
    "wDxr4u26r4E": [
-    29641,
-    209.35000000000002,
+    29683,
+    209.36000000000004,
     41
    ],
    "6BfaFDHJJqY": [
-    28804,
-    185.23,
+    28829,
+    185.19,
     47
    ],
    "myDZJPIBuMQ": [
-    26891,
-    132.4,
-    17
+    27551,
+    131.98,
+    18
+   ],
+   "zgM3yB3pktk": [
+    26694,
+    149.25,
+    51
    ],
    "1WF6cOYl2KY": [
-    26380,
+    26385,
     182.88,
     33
    ],
-   "zgM3yB3pktk": [
-    26190,
-    149.8,
-    48
-   ],
-   "gYhBrVIMFsg": [
-    25240,
-    173.33,
+   "1MOCpefbZZw": [
+    25757,
+    187.03,
     24
    ],
-   "1MOCpefbZZw": [
-    24128,
-    187.8,
+   "gYhBrVIMFsg": [
+    25244,
+    173.3,
     24
    ],
    "22mMQE-D3wg": [
@@ -1439,119 +1450,124 @@
     22
    ],
    "CCJLnw_evdY": [
-    21131,
-    105.96,
-    29
+    22265,
+    105.52999999999999,
+    30
+   ],
+   "daDLuYk6Y9g": [
+    21115,
+    220.30000000000004,
+    14
    ],
    "pJj39920AVE": [
-    19550,
-    181.32,
-    29
+    19748,
+    180.84,
+    30
    ],
    "N5c8YbQJrtQ": [
-    18900,
-    170.02,
+    18930,
+    169.91,
     52
    ],
    "s-jVXLj-ixU": [
-    17574,
-    202.88,
-    13
-   ],
-   "daDLuYk6Y9g": [
-    13779,
-    210.58000000000004,
-    9
+    18025,
+    202.36,
+    14
    ],
    "gz_4UDbG-C8": [
-    8651,
-    175.56,
-    11
+    8962,
+    174.99,
+    12
    ],
    "zue81ISnQYY": [
     7225,
     189.95,
     6
    ],
+   "KyIfRMvDzmM": [
+    6973,
+    146.06,
+    11
+   ],
    "k7cIc4tdmaU": [
-    5219,
-    146.95,
+    5222,
+    146.97,
     15
    ],
+   "i2UtWrrEh98": [
+    4975,
+    187.72,
+    1
+   ],
+   "Yli3risHh_U": [
+    4962,
+    162.67,
+    19
+   ],
    "DnIwUK895mc": [
-    4574,
-    174.44,
+    4904,
+    173.71,
     6
    ],
+   "U0Jahqvsgxc": [
+    4627,
+    211.23,
+    4
+   ],
    "LlAaPMQzAeg": [
-    4191,
+    4195,
     178.8,
     7
-   ],
-   "U0Jahqvsgxc": [
-    3952,
-    219.3,
-    4
    ],
    "GEc5NWKr7Q4": [
     3857,
     112.25,
     0
    ],
-   "i2UtWrrEh98": [
-    3297,
-    197.72,
-    1
-   ],
    "OU5RfBxkzis": [
-    3215,
-    167.36,
+    3384,
+    166.32,
     5
+   ],
+   "cAuwbsgO24k": [
+    2859,
+    192.57,
+    4
+   ],
+   "_0NJWRBJx1E": [
+    2811,
+    189.28,
+    2
    ],
    "Z_AD82k7E7k": [
     2810,
     170.81,
     4
    ],
-   "Yli3risHh_U": [
-    2759,
-    156.69,
-    10
+   "KwDUOD8dcfE": [
+    2320,
+    179.6,
+    3
    ],
-   "cAuwbsgO24k": [
-    2691,
-    168.97,
-    4
+   "-suhVJXyJTI": [
+    2288,
+    153.24,
+    0
    ],
-   "_0NJWRBJx1E": [
-    2541,
-    191.41,
+   "VEihORW20T0": [
+    2273,
+    170.71,
     2
    ],
-   "0qIFGj-Qf0c": [
-    2382,
-    154.12,
-    3
-   ],
-   "KwDUOD8dcfE": [
-    2281,
-    180.09,
-    3
+   "xYW0Lx_vzjo": [
+    2272,
+    176.93,
+    4
    ],
    "ueXld_AOgyM": [
     2194,
     65.12,
     1
-   ],
-   "xYW0Lx_vzjo": [
-    2189,
-    178.36,
-    4
-   ],
-   "VEihORW20T0": [
-    2169,
-    170.68,
-    2
    ],
    "RSZcrb-cV0g": [
     2067,
@@ -1563,9 +1579,14 @@
     111.9,
     0
    ],
+   "ctgSWeRrdcU": [
+    1981,
+    183.64,
+    1
+   ],
    "WiMHxlF_UdE": [
-    1965,
-    80.83,
+    1966,
+    80.8,
     1
    ],
    "mvvb_5fN2Yk": [
@@ -1574,33 +1595,43 @@
     2
    ],
    "uYDjLVmCG8o": [
-    1630,
+    1631,
     74.26,
     1
+   ],
+   "k4hy4vIV7rY": [
+    1319,
+    168.13,
+    0
    ],
    "9xYrjovb0Ao": [
     1307,
     81.49,
     1
    ],
-   "k4hy4vIV7rY": [
-    1269,
-    167.82,
+   "R_AhsbjpPWk": [
+    1276,
+    135.69,
     0
    ],
    "hEOAm9MvhJc": [
-    1268,
+    1269,
     73.36,
     0
    ],
    "dUK8ZLuAzdM": [
-    1222,
-    75.24,
+    1223,
+    75.05,
+    1
+   ],
+   "XkjhL-Umqeg": [
+    1087,
+    154.27,
     1
    ],
    "uXrgqExbxXw": [
-    667,
-    126.38000000000001,
+    936,
+    129.3,
     1
    ]
   }
