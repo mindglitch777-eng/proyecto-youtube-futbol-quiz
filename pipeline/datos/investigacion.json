@@ -9,18 +9,19 @@
    "mercado_mediana": 373699,
    "mercado_1M": 4,
    "subiendo": false,
-   "nuestra_mediana_48h": 14376,
+   "nuestra_mediana_48h": 13748,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
    "familia": "fit",
    "nuestros": [
+    "fitall",
     "cabezas"
    ],
    "mercado_mediana": 300558,
    "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 22777,
+   "nuestra_mediana_48h": 21344,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -34,7 +35,7 @@
    "mercado_mediana": 229934,
    "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 12943,
+   "nuestra_mediana_48h": 16353,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -68,7 +69,7 @@
    "mercado_mediana": 122795,
    "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 15936,
+   "nuestra_mediana_48h": 15145,
    "accion": "MANTENER: nos rinde aunque el mercado esté tibio"
   },
   {
@@ -79,7 +80,7 @@
    "mercado_mediana": 39105,
    "mercado_1M": 2,
    "subiendo": false,
-   "nuestra_mediana_48h": 968,
+   "nuestra_mediana_48h": 943,
    "accion": "BAJAR: sin ola y sin resultado propio"
   },
   {
@@ -90,16 +91,16 @@
    "mercado_mediana": 4872,
    "mercado_1M": 0,
    "subiendo": false,
-   "nuestra_mediana_48h": 1295,
+   "nuestra_mediana_48h": 1447,
    "accion": "BAJAR: sin ola y sin resultado propio"
   }
  ],
  "canal": {
   "rueda": {
    "videos": 6,
-   "mediana_48h": 14376,
-   "mejor": 32856,
-   "pct_visto": 154,
+   "mediana_48h": 13748,
+   "mejor": 33095,
+   "pct_visto": 156,
    "mas_10k": 4,
    "imposible": {
     "videos": 0,
@@ -108,9 +109,9 @@
   },
   "stop": {
    "videos": 25,
-   "mediana_48h": 3376,
-   "mejor": 29767,
-   "pct_visto": 181,
+   "mediana_48h": 3314,
+   "mejor": 29782,
+   "pct_visto": 183,
    "mas_10k": 9,
    "imposible": {
     "videos": 0,
@@ -119,8 +120,8 @@
   },
   "cabezas": {
    "videos": 1,
-   "mediana_48h": 22777,
-   "mejor": 29352,
+   "mediana_48h": 21344,
+   "mejor": 29374,
    "pct_visto": 132,
    "mas_10k": 1,
    "imposible": {
@@ -130,8 +131,8 @@
   },
   "dress": {
    "videos": 1,
-   "mediana_48h": 15936,
-   "mejor": 23425,
+   "mediana_48h": 15145,
+   "mejor": 23433,
    "pct_visto": 106,
    "mas_10k": 1,
    "imposible": {
@@ -141,9 +142,9 @@
   },
   "balon": {
    "videos": 1,
-   "mediana_48h": 12943,
-   "mejor": 12943,
-   "pct_visto": null,
+   "mediana_48h": 16353,
+   "mejor": 17330,
+   "pct_visto": 153,
    "mas_10k": 1,
    "imposible": {
     "videos": 0,
@@ -152,8 +153,8 @@
   },
   "find": {
    "videos": 3,
-   "mediana_48h": 968,
-   "mejor": 3861,
+   "mediana_48h": 943,
+   "mejor": 3862,
    "pct_visto": 112,
    "mas_10k": 0,
    "imposible": {
@@ -163,7 +164,7 @@
   },
   "otros": {
    "videos": 2,
-   "mediana_48h": 670,
+   "mediana_48h": 658,
    "mejor": 2197,
    "pct_visto": 70,
    "mas_10k": 0,
@@ -174,7 +175,7 @@
   },
   "ring": {
    "videos": 1,
-   "mediana_48h": 853,
+   "mediana_48h": 837,
    "mejor": 2073,
    "pct_visto": 75,
    "mas_10k": 0,
@@ -185,7 +186,7 @@
   },
   "carrera": {
    "videos": 2,
-   "mediana_48h": 624,
+   "mediana_48h": 614,
    "mejor": 1971,
    "pct_visto": 77,
    "mas_10k": 0,
@@ -194,9 +195,20 @@
     "mediana_48h": null
    }
   },
+  "pared": {
+   "videos": 2,
+   "mediana_48h": 1447,
+   "mejor": 1881,
+   "pct_visto": 132,
+   "mas_10k": 0,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
   "cabeza": {
    "videos": 1,
-   "mediana_48h": 813,
+   "mediana_48h": 792,
    "mejor": 1667,
    "pct_visto": 161,
    "mas_10k": 0,
@@ -207,20 +219,9 @@
   },
   "plinko": {
    "videos": 1,
-   "mediana_48h": 685,
+   "mediana_48h": 671,
    "mejor": 1634,
    "pct_visto": 74,
-   "mas_10k": 0,
-   "imposible": {
-    "videos": 0,
-    "mediana_48h": null
-   }
-  },
-  "pared": {
-   "videos": 2,
-   "mediana_48h": 1295,
-   "mejor": 1494,
-   "pct_visto": 126,
    "mas_10k": 0,
    "imposible": {
     "videos": 0,
@@ -230,34 +231,34 @@
  },
  "nuevas": [
   {
-   "id": "9gwJ4QV-ZDk",
-   "titulo": "Haaland Shows Lamine Yamal Fun Oreo Magic 🍪",
-   "vistas": 80498725
+   "id": "dV-pO8oB-N4",
+   "titulo": "Can Anyone Solve This? Fit All Erling Haaland Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 3546119
   },
   {
-   "id": "q39V5hKnOdM",
+   "id": "Eq93_4mzrxE",
+   "titulo": "Can Anyone Solve This? Fit All Rodrygo Goes Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 3312237
+  },
+  {
+   "id": "Uzyzq9vXEhA",
+   "titulo": "BARCELONA 3-0 ASTON VILLA! 🔥 Joan García Saves Barça! 😱 Yamal, Raphinha & Fermín Show! #barcelona",
+   "vistas": 3306730
+  },
+  {
+   "id": "-aa3hdyI25k",
    "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 8528963
+   "vistas": 3149575
   },
   {
-   "id": "J0lyEfKXfz8",
-   "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥#viral #cr7  #lamineyamal",
-   "vistas": 5815557
+   "id": "K5Z7SxIuMEA",
+   "titulo": "Ishowspeed Vs Lamine Yamal Vs Lionel Messi Vs Cristiano Ronaldo Vs Mbappe Eps.48 #carcrash #shorts",
+   "vistas": 2897430
   },
   {
-   "id": "Z4lM14tMeH8",
-   "titulo": "Neymar vs Ronaldo or Messi stop challenge 🔥#ronaldo #shorts #viral #trending",
-   "vistas": 5490334
-  },
-  {
-   "id": "xUDwGUsShME",
-   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 4593793
-  },
-  {
-   "id": "7REhaPFUSBA",
-   "titulo": "Can Anyone Solve This? Fit All Cristiano Ronaldo Goes Stars 🎯⚽ | Football Challenge HQ #viral",
-   "vistas": 3736991
+   "id": "TtNOo_D02ak",
+   "titulo": "99.9% WILL FAIL The FIT challenge 👽💀🔥 Ronaldo R7 Lionel Messi Neymar Mbappé football challenge video",
+   "vistas": 2849543
   }
  ],
  "comentarios": {
@@ -267,7 +268,7 @@
  },
  "preguntas_ia": [
   "Hacé una tabla con mis videos de los últimos 7 días: título, vistas, porcentaje que eligió ver (visto vs. descartado), % promedio visto y suscriptores. Ordenala por porcentaje que eligió ver.",
-  "Comparame mis formatos cabezas, dress, rueda: ¿cuál tiene mejor 'eligió ver' en el primer segundo y por qué? Dame 3 cambios concretos para el cuadro 0.",
+  "Comparame mis formatos cabezas, balon, dress: ¿cuál tiene mejor 'eligió ver' en el primer segundo y por qué? Dame 3 cambios concretos para el cuadro 0.",
   "Mis videos desde el 9/11 son más difíciles (modo imposible). ¿Subió la cantidad de repeticiones y el % visto respecto de la semana anterior?",
   "¿En qué momento exacto se van los espectadores en mis 3 videos con menos % visto de esta semana?",
   "¿Qué formatos interactivos de fútbol (pausar, encajar, adivinar) están creciendo esta semana en canales chicos? Dame 5 ideas nuevas de menos de 8 segundos que mi audiencia también mire.",
@@ -276,47 +277,47 @@
  ],
  "horas": {
   "00": {
-   "mediana": 2950,
+   "mediana": 2846,
    "videos": 1
   },
   "09": {
-   "mediana": 3085,
+   "mediana": 3314,
    "videos": 5
   },
   "12": {
-   "mediana": 12943,
+   "mediana": 16353,
    "videos": 1
   },
   "13": {
-   "mediana": 7760,
+   "mediana": 7438,
    "videos": 4
   },
   "14": {
-   "mediana": 28350,
+   "mediana": 28872,
    "videos": 1
   },
   "15": {
-   "mediana": 16126,
+   "mediana": 15012,
    "videos": 2
   },
   "17": {
-   "mediana": 3376,
+   "mediana": 3215,
    "videos": 5
   },
   "20": {
-   "mediana": 1255,
+   "mediana": 1404,
    "videos": 1
   },
   "21": {
-   "mediana": 7898,
+   "mediana": 7552,
    "videos": 6
   },
   "22": {
-   "mediana": 18296,
+   "mediana": 17394,
    "videos": 1
   },
   "23": {
-   "mediana": 8715,
+   "mediana": 8513,
    "videos": 4
   }
  }

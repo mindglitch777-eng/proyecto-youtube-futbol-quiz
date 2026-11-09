@@ -1,74 +1,80 @@
 {
  "rueda": {
   "videos": 6,
-  "mediana_48h": 14376,
+  "mediana_48h": 13748,
   "factores": [],
   "flojos": [
    {
     "titulo": "Yamal vs Messi or Ronaldo stop challenge 🔥🛑",
-    "v48": 2950,
+    "v48": 2846,
     "hora": "00 h",
-    "pct": 146.95
+    "pct": 146.97
    },
    {
     "titulo": "Stop the wheel on Messi 🛑 Only 1% get it #messi #mbappe #yamal",
-    "v48": 3733,
+    "v48": 3532,
     "hora": "15 h",
-    "pct": 156.69
+    "pct": 162.67
    }
   ]
  },
  "stop": {
   "videos": 20,
-  "mediana_48h": 3230,
+  "mediana_48h": 3264,
   "factores": [
    {
     "campo": "hora",
     "valor": "13 h",
     "videos": 4,
-    "rinde": "240% de la mediana",
+    "rinde": "228% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "hora",
     "valor": "21 h",
     "videos": 6,
-    "rinde": "244% de la mediana",
+    "rinde": "231% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "estrella",
     "valor": "sin estrella",
     "videos": 9,
-    "rinde": "162% de la mediana",
+    "rinde": "154% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "variante",
     "valor": "-",
     "videos": 9,
-    "rinde": "162% de la mediana",
+    "rinde": "154% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Stop Ronaldo at 100% ⚽🛑 Only 1% can do it #ronaldo #zlatan #bellingham",
-    "v48": 995,
+    "v48": 941,
     "hora": "17 h",
-    "pct": 167.82
-   },
-   {
-    "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop Mbappé 6️⃣7️⃣ · Level 27 #",
-    "v48": 1255,
-    "hora": "20 h",
-    "pct": null
+    "pct": 168.13
    },
    {
     "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣7️⃣",
-    "v48": 1453,
+    "v48": 1388,
     "hora": "09 h",
-    "pct": 178.36
+    "pct": 176.93
+   },
+   {
+    "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop Mbappé 6️⃣7️⃣ · Level 27 #",
+    "v48": 1404,
+    "hora": "20 h",
+    "pct": 154.27
+   },
+   {
+    "titulo": "Can you stop at 100%? ⚽🛑 Yamal vs Haaland #yamal #haaland #henry",
+    "v48": 1603,
+    "hora": "13 h",
+    "pct": 179.6
    }
   ]
  }

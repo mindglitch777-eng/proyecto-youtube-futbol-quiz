@@ -3928,5 +3928,606 @@
     "Añadir un contador de velocidad que vaya acelerando para forzar al usuario a ver el video 4 o 5 veces antes de lograr capturarlo."
    ]
   }
+ },
+ {
+  "id": "dV-pO8oB-N4",
+  "titulo": "Can Anyone Solve This? Fit All Erling Haaland Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "Football Challenge HQ",
+  "subs": 374000,
+  "creado": "2026-08-24",
+  "vistas": 3546119,
+  "horas": 152,
+  "vph": 23291,
+  "dur": 6,
+  "likes": 46392,
+  "coment": 211,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Ruleta Silhouette Puzzle / Stop Challenge",
+   "mecanica": "Un círculo de recortes de un futbolista (Erling Haaland) rota continuamente en sentido horario alrededor de un centro. En primer plano hay una silueta con contorno amarillo brillante. Un clon del jugador se desplaza o rota a alta velocidad y el espectador debe pausar el video en el fotograma exacto donde la imagen encaja perfectamente en el contorno.",
+   "que_hace_el_espectador": "Pausar la pantalla repetidamente intentando encajar la silueta, comentar 'lo logré al intento X' o quejarse de la velocidad.",
+   "cuadro_0": "Arriba/centro: 8 recortes de caras/torsos de Haaland organizados en círculo rotatorio alrededor de una estrella de Champions League en alambre fino. Abajo/centro: Haaland de rodillas festejando con los brazos abiertos, rodeado de un trazo amarillo neón grueso (silueta objetivo). Fondo: campo de fútbol desenfocado con césped verde y cielo azul brillante.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Comienza la rotación de los 8 bustos de Haaland en la ruleta superior. Haaland de rodillas fijo en la parte inferior dentro del contorno amarillo neón.",
+     "sonido": "Voz cómica cantada en español/meme: 'Señor...' con eco."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta gira 45 grados. Una versión de Haaland se desplaza o titila buscando coincidencia con la silueta inferior.",
+     "sonido": "Voz continúa cantando: '...préstame...'"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Giro continuo a velocidad constante (~1 vuelta cada 1.5 segundos). Los recortes cambian levemente de escala para generar dinamismo.",
+     "sonido": "Voz continúa: '...tu caballo...'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La ruleta completa una vuelta completa. El Haaland objetivo pasa momentáneamente por el centro.",
+     "sonido": "Remate de la frase vocal meme."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Rotación fluida ininterrumpida. La silueta inferior con borde amarillo parpadea o vibra levemente para captar atención.",
+     "sonido": "Bucle vocal / respiración cómica."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Continúa el giro de la rueda de bustos. A la izquierda aparece un mini Haaland arrodillado de referencia.",
+     "sonido": "Voz meme reinicia modulación."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Se mantiene la animación en bucle circular constante sin pistas obvias de cuándo frenar.",
+     "sonido": "Vocalización aguda exagerada de fondo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Cuadro clave: por 2-3 frames el recorte exacto coincide matemáticamente con la silueta amarilla.",
+     "sonido": "Pico de volumen en la voz meme."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "El recorte se desfasa nuevamente de la silueta. La rueda sigue rotando a 60 fps.",
+     "sonido": "Corte abrupto o eco final."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "La rueda vuelve a la posición angular inicial cerrando la cinemática del loop.",
+     "sonido": "Transición suave de audio al inicio."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Fotograma idéntico al cuadro 0.0 para generar repetición infinita sin salto visual.",
+     "sonido": "Empalme directo con el inicio del audio."
+    }
+   ],
+   "duracion_s": 5.0,
+   "loop": "Totalmente fluido: la rotación angular del carrusel de bustos es un múltiplo exacto de 360 grados dividido por la duración, y el audio corta en el punto exacto de repetición rítmica.",
+   "gancho": "La figura geométrica reconocible (ruleta de caras bizarras/gritando de Haaland) junto al contorno neón interactivo dispara inmediatamente el reflejo de querer pausar para 'ganar'.",
+   "dopamina": [
+    "La ilusión de control al pausar la pantalla táctil en el instante correcto.",
+    "Comprobar en la barra de tiempo si la imagen coincidió píxel a píxel con el borde amarillo.",
+    "El humor absurdo de las expresiones faciales recortadas de Haaland girando en círculo."
+   ],
+   "audio": "Audio meme viral de voz cómica/cantada acelerada ('Señor, préstame tu caballo...') que genera familiaridad instantánea y retención por humor.",
+   "por_que_comentan": "Para presumir si lo lograron al primer intento ('Lo logré al 1er intento 🎯'), acusar que es imposible ('Estuve 10 minutos y no se puede'), o pedir que lo hagan con Messi/Cristiano Ronaldo.",
+   "assets_necesarios": [
+    "Fondo estático de estadio/cancha de fútbol en resolución 1080x1920 (PNG).",
+    "8 a 10 fotos PNG sin fondo de caras o festejos de Erling Haaland con expresiones exageradas.",
+    "1 PNG de Haaland festejando de rodillas a cuerpo completo.",
+    "1 máscara PNG del contorno vectorial con resplandor (stroke amarillo neón exterior de 15px).",
+    "1 gráfico vectorial de estrellas estilo UEFA Champions League para el centro de la rueda.",
+    "Pista de audio meme en formato WAV/MP3 de 5 segundos."
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Cargar canvas vertical de 1080x1920 en Python (usando Pillow + MoviePy o OpenCV).",
+    "Generar el contorno amarillo: tomar el canal alfa del PNG de Haaland, aplicar dilatación morfológica (cv2.dilate) de 12px, restar la máscara original para dejar solo el borde, y pintar en amarillo (#FFEE00) con desenfoque gaussiano suave para el glow.",
+    "Crear la ruleta: disponer N recortes de caras en coordenadas polares (x = cx + r*cos(theta), y = cy + r*sin(theta)) con radio r=380px y centro (cx=540, cy=650).",
+    "Para cada fotograma t (0 a duracion, 60 FPS): calcular ángulo theta(t) = (2 * PI * t / T_periodo) y rotar cada recorte sobre su propio eje radial o mantenerlo vertical.",
+    "Componer por capas: Fondo -> Icono Champions central -> Ruleta giratoria -> Haaland estático con contorno -> Exportar con MoviePy uniendo el audio a 60 fps para que la pausa sea precisa."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de intentos fallidos o barra de 'Dificultad: Imposible' en la parte superior para aumentar el reto.",
+    "Introducir un solo frame perfecto donde salten partículas doradas o fuegos artificiales si la persona logra pausar ahí (easter egg comprobable con screenshot).",
+    "Crear una serie temática automatizada comparando duplas (ej. Mbappé vs Haaland o Messi vs Ronaldo) donde la audiencia elija en comentarios cuál completar."
+   ]
+  }
+ },
+ {
+  "id": "Eq93_4mzrxE",
+  "titulo": "Can Anyone Solve This? Fit All Rodrygo Goes Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "Football Challenge HQ",
+  "subs": 374000,
+  "creado": "2026-08-24",
+  "vistas": 3312237,
+  "horas": 128,
+  "vph": 25826,
+  "dur": 6,
+  "likes": 48107,
+  "coment": 202,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Ruleta de Silueta / Player Fit Challenge",
+   "mecanica": "Una ruleta circular con recortes del jugador gira arriba mientras la silueta central cambia constantemente de cuerpo/cabeza hasta alinearse.",
+   "que_hace_el_espectador": "Pausar el video para intentar hacer encajar la cabeza correcta en la silueta.",
+   "cuadro_0": "Fondo desenfocado de cancha verde. Arriba: ruleta circular de 8 caras de Rodrygo. Centro/Abajo: silueta con contorno amarillo brillante y camiseta #10.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicia rotación de ruleta superior. La silueta central conmuta rápidamente de imagen.",
+     "sonido": "Música tropical/viral iniciando."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Ruleta girando en sentido horario. Silueta cambia a rostro de Rodrygo sonriendo.",
+     "sonido": "Ritmo musical continuo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Rotación constante. Silueta alterna recorte de cabeza.",
+     "sonido": "Ritmo musical continuo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Giro de ruleta fluido. Silueta cambia a pose con mirada fija.",
+     "sonido": "Ritmo musical continuo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Ruleta mantiene velocidad. Silueta muestra pose lateral.",
+     "sonido": "Ritmo musical continuo."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Transición continua de imágenes en ruleta y silueta.",
+     "sonido": "Ritmo musical continuo."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Ruleta comienza a desacelerar. Silueta cambia a pose de Neymar/Rodrygo.",
+     "sonido": "Corte de audio y entrada de SFX relincho de caballo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "La silueta se detiene encajando una cara específica.",
+     "sonido": "Remate de música meme."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Imagen central fija completa con borde amarillo encajado.",
+     "sonido": "Audio meme final."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Cuadro final congelado con resultado.",
+     "sonido": "Fin del clip de audio."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Reinicio de bucle.",
+     "sonido": "Reinicio de audio sin interrupción."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, empalma directamente el final congelado con la rotación inicial sin saltos bruscos.",
+   "gancho": "Desafío visual de pausa y velocidad que incita a interactuar con la pantalla.",
+   "dopamina": [
+    "Cambios de imagen ultra rápidos a 15-30 fps",
+    "Coincidencia visual perfecta en el segundo final con remate humorístico"
+   ],
+   "audio": "Track de cumbia/edit viral con remate de efecto de sonido de caballo (relincho/trompeta meme).",
+   "por_que_comentan": "Comentan si lograron pausar a tiempo o debaten sobre qué jugador o cara encajó al final.",
+   "assets_necesarios": [
+    "Fondo 1080x1920 desenfocado de cancha de fútbol",
+    "8 recortes PNG transparente de caras/torsos del jugador",
+    "Overlay PNG de silueta con contorno amarillo fluorescente",
+    "Audio MP3 de cumbia viral con SFX de relincho"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo 1080x1920 en MoviePy/OpenCV con fondo de cancha.",
+    "2. Renderizar 8 PNGs dispuestos en círculo (radio 300px) en la zona superior y rotar la matriz angularmente a X deg/frame.",
+    "3. En la silueta inferior, intercambiar aleatoriamente o secuencialmente la capa interna cada 2-3 frames.",
+    "4. Congelar la animación en t=3.5s coincidiendo con la pista de audio."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un temporizador o marcador de 'TAP TO PAUSE' en la parte superior.",
+    "Añadir efectos de destello verde/rojo si el encaje es correcto o incorrecto.",
+    "Utilizar un drop de bajo más potente en el momento exacto del encaje final."
+   ]
+  }
+ },
+ {
+  "id": "Uzyzq9vXEhA",
+  "titulo": "BARCELONA 3-0 ASTON VILLA! 🔥 Joan García Saves Barça! 😱 Yamal, Raphinha & Fermín Show! #barcelona",
+  "canal": "Sportscrazzzzz ",
+  "subs": 4100,
+  "creado": "2019-11-07",
+  "vistas": 3306730,
+  "horas": 126,
+  "vph": 26296,
+  "dur": 8,
+  "likes": 13831,
+  "coment": 210,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Héroe del Partido Animado",
+   "mecanica": "Se muestra un marcador de partido ficticio o histórico, luego se hace zoom y efecto de cámara lenta sobre el portero/jugador estrella celebrando con overlay de texto llamativo y música épica sincronizada.",
+   "que_hace_el_espectador": "solo mirar y emocionarse con el edit dinámico",
+   "cuadro_0": "Arriba: marcador digital estilo TV (Barcelona 3 - 0 Aston Villa, goleadores L. Yamal 7', Raphinha 52', 64'). Abajo: portero en primer plano con guantes, fondo en blanco y negro con filtro granulado, texto central grande 'THE REAL HERO' en tipografía gruesa blanca con borde negro.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Marcador superior visible, portero en primer plano con filtros en B/N, texto 'THE REAL HERO' parpadeando",
+     "sonido": "Música trap épica con beat pesado inicia, efecto de latido de fondo"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Zoom in sutil sobre la cara del jugador, partículas de brillo flotando",
+     "sonido": "Continuación de beat"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Efecto flash blanco rápido en la pantalla, cambio leve de tono de color",
+     "sonido": "Golpe seco (impacto de bajo)"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Jugador se lleva las manos a las orejas celebrando en cámara lenta",
+     "sonido": "Música en crescendo"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Texto 'THE REAL HERO' vibra con animación de escala",
+     "sonido": "Efecto de swoosh rápido"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Fade out del texto secundario, se mantiene al jugador celebrando",
+     "sonido": "Último golpe de bajo y fade de música"
+    }
+   ],
+   "duracion_s": 3,
+   "loop": "si, el fade out del último segundo conecta perfectamente con el reinicio del beat en 0.0",
+   "gancho": "El marcador abultado (3-0) y la mención a estrellas como Yamal y Raphinha combinados con un portero en rol de héroe inesperado.",
+   "dopamina": [
+    "Flash visual al segundo 1.0",
+    "Texto grande central en negrita con sombra",
+    "Efecto de cámara lenta estilizada"
+   ],
+   "audio": "Trap remix épico de fútbol con graves profundos y efectos de impacto en cada golpe visual.",
+   "por_que_comentan": "Debaten si el verdadero héroe fue el delantero o el arquero, o discuten sobre el resultado del partido.",
+   "assets_necesarios": [
+    "HUD de marcador de fútbol vectorial PNG",
+    "Imagen recortada de arquero celebrando",
+    "Tipografía bold tipo Impact o Montserrat Black",
+    "Audio trap_epico.mp3"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Configurar video vertical 1080x1920 a 30fps en Python con OpenCV o MoviePy.",
+    "2. Cargar imagen de fondo, aplicar filtro escala de grises y contraste alto.",
+    "3. Superponer HUD de marcador en la parte superior (Y: 50 a 300).",
+    "4. Animar el texto 'THE REAL HERO' en el centro con escala variable usando keyframes de 0.5s.",
+    "5. Exportar video corto en bucle."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar estadísticas en tiempo real flotando junto al jugador (atajadas, pases clave).",
+    "Incluir un mini confeti de colores del equipo al cumplirse el segundo 1.5.",
+    "Permitir votación interactiva mediante comentarios fijados en pantalla."
+   ]
+  }
+ },
+ {
+  "id": "-aa3hdyI25k",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "NoXen",
+  "subs": 13000,
+  "creado": "2026-11-07",
+  "vistas": 3149575,
+  "horas": 38,
+  "vph": 83803,
+  "dur": 6,
+  "likes": 61018,
+  "coment": 59,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Ruleta de Cuerpos / Fit All Challenge",
+   "mecanica": "Un carrusel circular compuesto por torsos de diversos personajes y futbolistas gira a gran velocidad sobre un cuerpo base fijo (piernas sentadas con las piernas cruzadas). La rueda desacelera gradualmente hasta que el torso correcto coincide con la posición y vestimenta del cuerpo base, completando la figura.",
+   "que_hace_el_espectador": "Intentar pausar en el momento exacto del encastre o adivinar qué personaje coincidirá con las piernas antes de que la ruleta se detenga.",
+   "cuadro_0": "Layout vertical 9:16. Fondo de estadio de fútbol iluminado con gradas azules y césped verde. En el tercio inferior, a los costados, dos avatares idénticos de pie sosteniendo balones (izq: uniforme Brasil amarillo #7; der: uniforme Portugal rojo #7). En el centro medio, un par de piernas sentadas en posición de loto con short azul y medias brasileñas. Justo encima, una corona circular de 8 torsos apuntando hacia el centro (Neymar, Mario Bros, Puyol, Messi, Cristiano Ronaldo, Wembanyama, etc.) girando a velocidad.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "La ruleta de torsos gira a máxima velocidad sobre el cuerpo base.",
+     "sonido": "Voz a capela cantando tema meme ('...préstame tu caballo...')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Giro continuo a alta velocidad; desfilan siluetas de Messi, Mario Bros y Ronaldo.",
+     "sonido": "Continuación del canto popular mexicano cómico."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La rueda mantiene velocidad angular constante. Los jugadores laterales permanecen estáticos.",
+     "sonido": "Canto meme continúa sin interrupción."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La rueda completa varias vueltas sin perder ritmo.",
+     "sonido": "Canto meme en clímax melódico."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Rotación fluida; se aprecian Neymar y Wembanyama pasando por el eje inferior.",
+     "sonido": "Canto meme en desarrollo."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Comienza una sutil desaceleración en el giro de la rueda.",
+     "sonido": "Voz cantando la frase final ('...tu caballo...')."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Frenado más pronunciado; los torsos se vuelven claramente identificables.",
+     "sonido": "Voz remata la frase musical."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Pasan lentamente Puyol y Mario sobre el cuerpo sentado.",
+     "sonido": "Voz finaliza y se corta el audio cantado."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "El torso de Neymar Jr con la camiseta de Brasil #10 entra en el eje vertical.",
+     "sonido": "Silencio breve de anticipación."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "El torso de Neymar calza a la perfección sobre las piernas sentadas.",
+     "sonido": "Golpe seco / SFX de encaje o resolución."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Imagen congelada del personaje completado (Neymar completo en pose de loto).",
+     "sonido": "Silencio final breve."
+    }
+   ],
+   "duracion_s": 5.2,
+   "loop": "No posee un seamless loop perfecto, pero al ser un video de solo 5 segundos, la repetición automática de YouTube Shorts multiplica la retención si el usuario intenta pausarlo.",
+   "gancho": "La combinación bizarra de personajes icónicos (Mario Bros, Messi, Wembanyama de la NBA, Neymar) girando a velocidad y la curiosidad instintiva de ver cuál encaja.",
+   "dopamina": [
+    "Tensión de anticipación generada por la desaceleración mecánica entre 2.5s y 4.0s.",
+    "Sensación de satisfacción ('oddly satisfying') al ver el encastre exacto a los 4.5s."
+   ],
+   "audio": "Audio meme viral latino cantado a capela con tono cómico y desafinado ('préstame tu caballo'), rematado con un golpe de detención seco.",
+   "por_que_comentan": "Comentan diciendo si lograron pausar a la primera, debaten por la presencia absurda de Mario Bros o Wembanyama en un Short de fútbol, o escriben el nombre del jugador que querían que saliera.",
+   "assets_necesarios": [
+    "Fondo PNG 1080x1920 de estadio de fútbol con reflectores y césped.",
+    "PNG de piernas sentadas en posición de loto (shorts y medias recortadas).",
+    "8 a 10 PNGs recortados de torsos con cabeza (Neymar, Ronaldo, Messi, Puyol, Wembanyama, Mario Bros, etc.).",
+    "2 PNGs de cuerpo entero sosteniendo balones para los bordes inferiores.",
+    "Pista de audio meme a capela + SFX de parada o clic metálico."
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear un canvas vertical de 1080x1920 a 30 o 60 fps.",
+    "2. Superponer en capas estáticas: fondo de estadio en z=0, dos futbolistas laterales en (x=150, y=1400) y (x=930, y=1400) en z=1, y las piernas cruzadas en el centro (x=540, y=1200) en z=2.",
+    "3. Crear una superficie circular transparente (rueda) de 900x900 px. Distribuir N torsos en círculo con radio R (~350 px), rotando cada sprite con ángulo theta_i = (360/N)*i de forma que sus cabezas apunten radialmente hacia afuera.",
+    "4. Animar el ángulo de la rueda central con una función de rotación: velocidad angular constante durante los primeros 2.5s (ej. 720 deg/s) y luego aplicar una curva Ease-Out (cúbica o exponencial) de 2.5s a 4.5s hasta que el ángulo final alinee el torso de Neymar exactamente en el ángulo inferior (270° o -90°).",
+    "5. Mantener fotograma congelado de 4.5s a 5.2s.",
+    "6. Sincronizar con MoviePy o FFmpeg la pista de audio y exportar en MP4 H.264."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Hacerlo un verdadero juego de 'Pause Challenge' dejando que la ruleta gire rápido sin detenerse nunca, retando al usuario en pantalla con texto ('Pause at the right moment!') para disparar comentarios y reproducciones.",
+    "Agregar efectos sonoros tipo 'ticking' de ruleta de casino en cada cambio de torso para aumentar la tensión auditiva.",
+    "Añadir efectos visuales gratificantes al encajar (partículas de confeti, vibración de pantalla 'screen shake' y sonido de éxito 'ding')."
+   ]
+  }
+ },
+ {
+  "id": "K5Z7SxIuMEA",
+  "titulo": "Ishowspeed Vs Lamine Yamal Vs Lionel Messi Vs Cristiano Ronaldo Vs Mbappe Eps.48 #carcrash #shorts",
+  "canal": "ARA WORLDPLAY",
+  "subs": 27700,
+  "creado": "2025-05-26",
+  "vistas": 2897430,
+  "horas": 155,
+  "vph": 18664,
+  "dur": 8,
+  "likes": 0,
+  "coment": 5,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Carrera de Supervivencia de Carros con Caras",
+   "mecanica": "Cinco carros con diferentes colores avanzan por una carretera siendo perseguidos por una luna monstruosa. Una mano gigante gigante va aplastando los carros uno a uno cada medio segundo. Arriba se muestran 5 cabezas de futbolistas (Ishowspeed, Lamine Yamal, Cristiano Ronaldo, Messi, Mbappe) donde a cada carro eliminado se le marca una cruz roja sobre la cara correspondiente, dejando al ganador con un visto verde.",
+   "que_hace_el_espectador": "Adivinar o esperar qué jugador/carro se salva al final.",
+   "cuadro_0": "Arriba 5 círculos con rostros de futbolistas sobre fondo blanco. Al centro una carretera asfaltada en perspectiva 3D, tres carros en fila (verde, naranja, azul), atrás una gran luna con cara de monstruo malvado. Una mano gigante flotando a la izquierda sobre la pista.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Vista cenital-frontal de 5 carros en fila en la carretera, luna monstruo atrás, 5 caras arriba. Mano lista para golpear.",
+     "sonido": "Música movida de fondo y sonido de motor acelerando"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La mano aplasta violentamente al carro verde. Aparece una cruz roja sobre la primera cara (Ishowspeed).",
+     "sonido": "Golpe seco fuerte (crash) + sonido de lata aplastándose"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El carro naranja avanza, la mano se prepara para golpear el siguiente.",
+     "sonido": "Zumbido de aire"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La mano aplasta el carro naranja. Aparece un visto verde sobre la segunda cara (Lamine Yamal).",
+     "sonido": "Golpe seco fuerte (crash)"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El carro azul avanza solitario hacia adelante escapando de la luna.",
+     "sonido": "Sonido de motor acelerado a fondo"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La mano aplasta el carro azul contra el asfalto. Se marcan cruces en las siguientes caras.",
+     "sonido": "Golpe seco final (crash)"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La luna gigante se acerca y devora la pantalla.",
+     "sonido": "Rugido monstruoso"
+    }
+   ],
+   "duracion_s": 3,
+   "loop": "si, la luna se traga la pantalla y vuelve a empezar con los carros en fila.",
+   "gancho": "La velocidad del impacto al segundo 0.5 y la curiosidad por ver cuál famoso gana.",
+   "dopamina": [
+    "Efecto de aplastamiento inmediato a los 0.5s",
+    "Cruces rojas y vistos verdes como feedback visual instantáneo",
+    "Ritmo acelerado cada medio segundo"
+   ],
+   "audio": "Música rítmica de videojuegos y efectos SFX exagerados de golpes metálicos y motores.",
+   "por_que_comentan": "Debaten sobre quién debió ganar o insultan al jugador que perdió primero.",
+   "assets_necesarios": [
+    "Fondo de carretera 3D en bucle",
+    "Modelos 3D o PNGs de 3 carros coloridos (verde, naranja, azul)",
+    "PNG de luna con cara monstruosa",
+    "PNGs circulares de las caras de Ishowspeed, Lamine Yamal, Cristiano Ronaldo, Messi, Mbappe",
+    "PNGs de mano gigante, cruz roja y visto verde",
+    "Efectos de sonido de impacto y motores"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Configurar un escenario 3D con Three.js o Pygame con una carretera infinita.",
+    "2. Cargar las texturas de los carros, la luna monstruo y posicionarlos en fila z.",
+    "3. Añadir la interfaz superior 2D con las 5 caras de los jugadores recortadas en círculo.",
+    "4. Programar animación keyframe para que la mano baje en y=0.5s, 1.5s y 2.5s haciendo escala en Y del carro a 0.1.",
+    "5. Sincronizar la aparición de las cruces rojas y los sonidos de impacto exactamente en los timestamps."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar vibración de cámara (screen shake) más intensa en cada impacto.",
+    "Incluir barras de vida o puntaje flotantes sobre cada carro.",
+    "Hacer que la luna reaccione con expresiones faciales dinámicas según el carro que aplasta."
+   ]
+  }
+ },
+ {
+  "id": "TtNOo_D02ak",
+  "titulo": "99.9% WILL FAIL The FIT challenge 👽💀🔥 Ronaldo R7 Lionel Messi Neymar Mbappé football challenge video",
+  "canal": "KIRTON CHANNEL",
+  "subs": 32200,
+  "creado": "2025-09-11",
+  "vistas": 2849543,
+  "horas": 62,
+  "vph": 46033,
+  "dur": 6,
+  "likes": 0,
+  "coment": 81,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "FIT Head Swap Challenge / Rueda de Caras",
+   "mecanica": "Una rueda de cabezas recortadas gira en círculo sobre un cuerpo fijo. El espectador debe pausar el video en el segundo exacto donde la cabeza coincide correctamente con el cuerpo objetivo.",
+   "que_hace_el_espectador": "Intenta pausar el video para hacer encajar la cabeza correcta en el cuerpo.",
+   "cuadro_0": "Fondo verde con franjas verticales. Arriba: Rueda circular en rotación con 8 cabezas recortadas de Ronaldo. Centro: Cuerpo de Ronaldo sosteniendo un balón, sin cabeza. Abajo derecha: Miniatura 'Target' con el resultado correcto. Abajo izquierda: Texto 'Kirton channel'.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0s",
+     "pantalla": "Inicia la rueda de cabezas girando rápidamente en sentido horario sobre la figura sin cabeza.",
+     "sonido": "Canción de fondo en español tipo parodia/meme."
+    },
+    {
+     "t": "0.5s",
+     "pantalla": "La rueda continúa girando; aparecen caras alternativas y memes entre los frames.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.0s",
+     "pantalla": "Rotación constante, la cabeza objetivo pasa cerca de la posición del cuello.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.5s",
+     "pantalla": "Giro de la rueda mostrando expresiones faciales variadas de Ronaldo.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "2.0s",
+     "pantalla": "La rueda completa una vuelta; las caras siguen rotando circularmente a velocidad fija.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "2.5s",
+     "pantalla": "Paso de trofeo/meme entre la secuencia de cabezas recortadas.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "3.0s",
+     "pantalla": "La rueda mantiene el ciclo continuo de alineación de piezas.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "3.5s",
+     "pantalla": "Segunda rotación completa; las caras pasan sobre la zona de acople.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "4.0s",
+     "pantalla": "Continúa la rotación continua de ritmo acelerado.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "4.5s",
+     "pantalla": "La rueda se aproxima al punto de reinicio del loop.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "5.0s",
+     "pantalla": "Cierre del ciclo circular en sincronización perfecta con el inicio.",
+     "sonido": "Reinicio del bucle de audio."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, la velocidad de rotación constante y la canción corta están sincronizadas para repetirse infinitamente sin interrupción visible.",
+   "gancho": "Reto visual de alta velocidad ('99.9% fallará') que incita al espectador a interactuar pausando la pantalla.",
+   "dopamina": [
+    "Desafío de precisión al intentar pausar",
+    "Humor por caras memes mezcladas en la rueda",
+    "Satisfacción al lograr la coincidencia perfecta"
+   ],
+   "audio": "Música meme pegadiza con letra en español acelerada/remix.",
+   "por_que_comentan": "Comparten capturas de pantalla de su intento de pausa o discuten lo difícil que es alinearlo correctamente.",
+   "assets_necesarios": [
+    "Fondo animado/estático de rayas verdes",
+    "PNG sin fondo del cuerpo de Ronaldo con balón",
+    "8-10 PNGs recortados de cabezas/memes",
+    "PNG miniatura de referencia (Target)",
+    "Pista de audio meme"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo vertical (1080x1920) y colocar el fondo verde con el cuerpo sin cabeza en (Y=1200).",
+    "2. Definir un punto central de rotación (X=540, Y=700) y radio R=350px.",
+    "3. Distribuir N cabezas PNG angularmente equiespaciadas sobre el círculo.",
+    "4. Incrementar el ángulo global en cada frame (ej. 360° cada 2.5s) para animar la rueda con OpenCV/MoviePy.",
+    "5. Renderizar a 60 FPS y exportar en bucle de 5 segundos con el audio superpuesto."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar efectos sonoros (SFX) de 'click' o 'fail' en momentos clave",
+    "Variar la velocidad de rotación (acelerar y frenar) para mayor dificultad",
+    "Incluir un contador visual de intentos o barra de tiempo"
+   ]
+  }
  }
 ]
