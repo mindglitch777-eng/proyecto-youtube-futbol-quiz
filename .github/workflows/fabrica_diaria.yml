@@ -48,6 +48,18 @@ jobs:
           cd produccion/semana_$D
           gh release delete "semana-$D" -y --cleanup-tag 2>/dev/null || true
           gh release create "semana-$D" --target "$GITHUB_REF_NAME" -t "Día $D" -n "Videos del $D (fábrica diaria)" ./*.mp4 videos.json CALENDARIO.md
+      - name: REGLA 10 · refuerzo de ola (la ola caliente sale HOY y MAÑANA, no en 2 días)
+        id: ola
+        run: cd pipeline && echo "dir=$(python refuerzo_ola.py | tail -1)" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+      - name: Publicar el refuerzo como Release
+        if: steps.ola.outputs.dir != 'nada' && steps.ola.outputs.dir != ''
+        run: |
+          D=${{ steps.ola.outputs.dir }}
+          T="semana-ola-${D#semana_ola_}"
+          cd produccion/$D
+          gh release delete "$T" -y --cleanup-tag 2>/dev/null || true
+          gh release create "$T" --target "$GITHUB_REF_NAME" -t "Refuerzo de ola ${D#semana_ola_}" -n "Videos extra de la ola caliente" ./*.mp4 videos.json
       - name: Guardar avance
         if: always()
         run: python3 pipeline/guardar_avance.py "Fábrica diaria"

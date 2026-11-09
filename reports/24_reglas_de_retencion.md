@@ -82,3 +82,10 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
 9. **Olas en tiempo real (07/11):** la fábrica ya no arma semanas: cada madrugada el **detector de olas** mide cada mecánica
    (naciente / subiendo / estable / bajando / muerta) y la **fábrica diaria** produce los videos de dentro de 3 días repartiendo las
    pruebas según la ola (naciente x2, subiendo x1,8, bajando x0,6, muerta x0,2). WALL BALANCE descartado para siempre.
+10. **UNA OLA QUE FUNCIONA AHORA SE SUBE AHORA (09/11, regla del dueño).** No se espera a la grilla de dentro de 2 días:
+    si una mecánica está naciente/subiendo (o hay un formato promovido por ola), ese formato sale **el mismo día y el siguiente**
+    como video EXTRA a las 22:15 (se suma a los 6, no reemplaza a nadie), y desde el día +2 entra en la grilla en la mejor hora.
+    Formato nuevo para una ola = se construye, se prueba y se sube **en el día**, no "desde el sábado".
+    Código: `pipeline/refuerzo_ola.py` (paso "REGLA 10" de la fábrica diaria, Release `semana-ola-<fecha>`), videos con
+    `"extra": true` (`e6_bajar.py` no los bloquea, `fabrica_dia.py` no los cuenta como día ocupado). Primer caso: FIT ALL
+    (ola FIT, 18 videos +1 M en 7 días): 9 extras del lunes 09 al viernes 13 + todos los días a las 23:00 desde el sábado 14.

@@ -1,0 +1,21 @@
+{
+ "id": "o1109_06_jue12_1500_fitall",
+ "cuerpo": "vin_cius_j_nior_11",
+ "senuelos": [
+  "cuerpos/vin_cius_j_nior_14",
+  "torsos/vin_cius_j_nior_3",
+  "cuerpos/vin_cius_j_nior_13",
+  "torsos/vin_cius_j_nior_0",
+  "cuerpos/vin_cius_j_nior_14:espejo",
+  "torsos/vin_cius_j_nior_3:espejo",
+  "cuerpos/vin_cius_j_nior_13:espejo"
+ ],
+ "nombre": "Vinícius",
+ "dur": 4.0,
+ "vueltas": 3,
+ "t_encaje": 0.45,
+ "sentido": -1,
+ "musica": "walkout_0",
+ "fondo": "estadio_0",
+ "pos_correcto": 5
+}

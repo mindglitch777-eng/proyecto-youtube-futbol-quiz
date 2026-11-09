@@ -18,10 +18,10 @@ ART = timezone(timedelta(hours=-3))
 
 
 def ocupado(fecha):
-    if any(p["fecha"] == fecha and p.get("video_id") and not p.get("reemplazado") for p in cargar("publicados.json", [])):
+    if any(p["fecha"] == fecha and p.get("video_id") and not p.get("reemplazado") and not __import__("re").match(r"o\d{4}_", p["id"]) for p in cargar("publicados.json", [])):
         return True
     for vj in (RAIZ / "produccion").glob("semana_*/videos.json"):
-        if any(m["fecha"] == fecha for m in json.loads(vj.read_text())):
+        if any(m["fecha"] == fecha and not m.get("extra") for m in json.loads(vj.read_text())):
             return True
     try:
         tags = subprocess.run(["gh", "release", "list", "--limit", "30", "--json", "tagName", "-q", ".[].tagName"],
@@ -32,7 +32,7 @@ def ocupado(fecha):
         if t.startswith("semana-"):
             r = subprocess.run(["gh", "release", "download", t, "-p", "videos.json", "-O", "-"], capture_output=True, text=True, timeout=120)
             try:
-                if any(m["fecha"] == fecha for m in json.loads(r.stdout or "[]")):
+                if any(m["fecha"] == fecha and not m.get("extra") for m in json.loads(r.stdout or "[]")):
                     return True
             except Exception:
                 pass

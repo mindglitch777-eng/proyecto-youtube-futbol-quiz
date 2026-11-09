@@ -1,0 +1,21 @@
+{
+ "id": "o1109_08_vie13_1500_fitall",
+ "cuerpo": "kylian_mbapp_12",
+ "senuelos": [
+  "cuerpos/kylian_mbapp_10",
+  "torsos/kylian_mbapp_1",
+  "torsos/kylian_mbapp_11",
+  "cuerpos/kylian_mbapp_13",
+  "cuerpos/kylian_mbapp_10:espejo",
+  "torsos/kylian_mbapp_1:espejo",
+  "torsos/kylian_mbapp_11:espejo"
+ ],
+ "nombre": "Mbappé",
+ "dur": 4.0,
+ "vueltas": 3,
+ "t_encaje": 0.45,
+ "sentido": 1,
+ "musica": "rueda_original_1",
+ "fondo": "estadio_0",
+ "pos_correcto": 3
+}

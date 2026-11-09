@@ -34,6 +34,7 @@ def horarios_con_viejos(ids_actuales):
 
 
 def choca(m, viejos):
+    """(Los videos "extra" de una ola caliente se suman a la grilla: no reemplazan a nadie, así que no se bloquean.)"""
     mins = lambda h: int(h[:2]) * 60 + int(h[3:5])
     return any(f == m["fecha"] and abs(mins(h) - mins(m["hora"])) <= 60 for f, h in viejos)
 
@@ -65,7 +66,7 @@ def main():
     limite = (hoy + timedelta(days=DIAS_ADELANTE)).isoformat()
     ya = hechos(); todos = manifiestos()
     viejos = horarios_con_viejos(set(todos))
-    pend = sorted((m for m, _ in todos.values() if hoy.isoformat() <= m["fecha"] <= limite and m["id"] not in ya and not choca(m, viejos)),
+    pend = sorted((m for m, _ in todos.values() if hoy.isoformat() <= m["fecha"] <= limite and m["id"] not in ya and (m.get("extra") or not choca(m, viejos))),
                   key=lambda m: (m["fecha"], m["hora"]))
     vencidos = sorted(m["id"] for m, _ in todos.values() if m["fecha"] < hoy.isoformat() and m["id"] not in ya
                       and m["fecha"] >= (hoy - timedelta(days=3)).isoformat())

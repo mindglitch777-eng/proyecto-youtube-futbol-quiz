@@ -157,7 +157,9 @@ VARIANTES = {
               "{a} vs {b} or {c} stop challenge 💀🔥", "Find {a}'s real body 🛑🔥 {b} or {c}?"],
     "fitall": ["Can Anyone Solve This? Fit All {a} Heads 🎯⚽", "Fit {a}'s REAL head 🎯 Only 1 of 8 is real",
                "Can you find {a}'s real head? 🎯⚽ Only 1% can", "8 {a} heads, only 1 fits 😱🎯 Can you solve this?",
-               "Only 1 of these {a} heads is real 🎯 Pause it!"],
+               "Only 1 of these {a} heads is real 🎯 Pause it!", "{a} fit all challenge 🎯 Which head is the real one?",
+               "Pause on the REAL {a} 😤🎯 7 are fake", "Nobody solves this {a} puzzle 💀🎯", "Which {a} is real? 🎯⚽ Stop it on the right head",
+               "IMPOSSIBLE {a} head puzzle 🤯 Can anyone solve this?", "Real or fake {a}? 🎯 Fit the right head", "{a} lost his head 😂🎯 Find the real one"],
     "cabezas": ["99.9% WILL FAIL the FIT challenge 💀 {a} edition", "Fit {a}'s head 🛑 Only 1% can", "{a} head fit challenge 😱 Pause it!",
                 "Can you fit {a}'s head perfectly? 🤯", "Only 1% can fit {a}'s face 🎯", "This is almost impossible! Fit {a} 🎯⚽"],
 }
@@ -195,6 +197,7 @@ def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.7, tipo=None):
     while len(ns) < 3:
         ns.append(rng.choice(["Messi", "Ronaldo", "Mbappé", "Yamal", "Neymar"]))
     pool = VARIANTES.get(tipo, [])
+    mejor = (2.0, base)                                                        # si nada queda bajo el umbral: la MENOS parecida (nunca la repetida)
     for _ in range(200):
         if not pool:
             break
@@ -206,11 +209,14 @@ def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.7, tipo=None):
         t = rng.choice(pool).format(a=a, b=b, c=c)
         if ok(t):
             return _con_tags(t, tags)
+        pm = max((parecido(t, p) for p in previos), default=0)
+        if pm < mejor[0]:
+            mejor = (pm, t)
     for _ in range(100):                                                       # último recurso: mismo título con otro par de emojis
         t = _re.sub(r"[🔥🛑😱🤯💀⚽😤👀]+", "", base).strip() + " " + "".join(rng.sample(EMOJIS_EXTRA, 2))
         if ok(t):
             return _con_tags(t, tags)
-    return _con_tags(base, tags)
+    return _con_tags(mejor[1], tags)
 
 
 def titulo_stop(V, rng, nombres, nivel=None):
@@ -371,7 +377,9 @@ TIT_CIRCULO = ["Pause on your GOAT 🐐 {a}, {b} or {c}?", "Who is the BEST foot
 
 # FIT ALL (ola del 09/11: 18 videos +1 M en 7 días, canales chicos): 8 cabezas de la MISMA estrella, solo una es la real.
 TIT_FITALL = ["Can Anyone Solve This? Fit All {n} Heads 🎯⚽", "Fit {n}'s REAL head 🎯 Only 1 of 8 is real",
-              "Can you find {n}'s real head? 🎯⚽ Only 1% can", "8 {n} heads, only 1 fits 😱🎯 Can you solve this?"]
+              "Can you find {n}'s real head? 🎯⚽ Only 1% can", "8 {n} heads, only 1 fits 😱🎯 Can you solve this?",
+              "{n} fit all challenge 🎯 Which head is the real one?", "Pause on the REAL {n} 😤🎯 7 are fake",
+              "IMPOSSIBLE {n} head puzzle 🤯 Can anyone solve this?", "Real or fake {n}? 🎯 Fit the right head"]
 MUSICA_FITALL = {"cristiano_ronaldo": ["suuu_remix_0", "suuu_remix_1", "walkout_0"], "neymar": ["neymar_samba_0", "neymar_samba_1"],
                  "lionel_messi": ["messi_ankara_remix_0", "ankara_messi_0"]}
 
