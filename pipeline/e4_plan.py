@@ -75,7 +75,7 @@ def main(inicio=None, dias=7):
     inicio, dias = fechas(inicio, dias)
     poda, pts = podar()
     activas = [k for k, v in CONFIG["pruebas"].items() if v.get("listo") and k not in poda["podadas"]]
-    promovidas = [k for k in activas if k in poda["promovidas"]]
+    promovidas = sorted([k for k in activas if k in poda["promovidas"]], key=lambda k: k in FIJOS)   # las que no tienen lugar fijo primero
     rng = random.Random(inicio.toordinal())
     usos = {k: 0 for k in activas}
     hist = cargar("publicados.json", [])
@@ -83,7 +83,7 @@ def main(inicio=None, dias=7):
         if p.get("tipo") in usos:
             usos[p["tipo"]] += 1
     peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
-    OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["cabezas"], "find": ["find"],
+    OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"],
                      "dress": ["dress"], "quiz": ["trayectoria", "tridente"], "goat": ["circulo"]}
     FACTOR_OLA = {"naciente": 2.0, "subiendo": 1.8, "estable": 1.0, "bajando": 0.6, "muerta": 0.2}
     for fam, e in cargar("olas.json", {}).get("estado", {}).items():              # detector diario de olas: subirse y soltar a tiempo
@@ -100,7 +100,11 @@ def main(inicio=None, dias=7):
     def rinde(h):
         x = hrs.get(h[:2]); return x["mediana"] if x and x["videos"] >= 2 else 8000
     grilla = list(GRILLA)
-    fijos = sorted([g for g in grilla if g[1] != "prueba"], key=lambda g: g[1] == "stop")   # rueda/cabezas primero
+    ola_fija = [k for k in promovidas if k not in FIJOS][:1]                      # la promovida de la ola toma un lugar fijo (y compite por las mejores horas)
+    if ola_fija:
+        i = next(i for i, g in enumerate(grilla) if g[1] == "prueba")
+        grilla[i] = (grilla[i][0], ola_fija[0], None)
+    fijos = sorted([g for g in grilla if g[1] != "prueba"], key=lambda g: (g[1] == "stop", g[1] not in ola_fija))   # ola, rueda/cabezas primero
     horas_orden = sorted([g[0] for g in grilla], key=rinde, reverse=True)
     nueva = []
     for g_, h_ in zip(fijos, horas_orden):
@@ -114,19 +118,19 @@ def main(inicio=None, dias=7):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []
         for hora, tipo, estilo in GRILLA_SEMANA:
-            if tipo in FIJOS:                                                 # formato que ya funciona: lugar fijo
+            if tipo in FIJOS or tipo in ola_fija:                             # formato que ya funciona / ola del momento: lugar fijo
                 slots.append(dict(fecha=dia, hora=hora, tipo=tipo)); continue
             if tipo == "stop":
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "grilla2" and d % 2 == 1),
                                   arranque="grilla"))                    # 07/11: el zoom estrella no mejoró el "eligió ver"
                 continue
             tope = {k: CONFIG["pruebas"][k].get("max_semana", 99) for k in activas}  # algunos formatos solo N por semana
-            cand = [k for k in activas if k not in hoy_pruebas and semana.get(k, 0) < tope[k]] or \
+            cand = [k for k in activas if k not in hoy_pruebas and k not in ola_fija and semana.get(k, 0) < tope[k]] or \
                    [k for k in activas if semana.get(k, 0) < tope[k]] or activas
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
             fijas = [k for k in promovidas if k not in hoy_pruebas]
-            if fijas and not hoy_pruebas:                                       # una promovida sale todos los días
+            if fijas and not hoy_pruebas and not ola_fija:                     # una promovida sale todos los días
                 k = fijas[0]
             else:                                                               # la menos usada (pesada por rendimiento)
                 k = min(cand, key=lambda k: (usos[k] / peso[k], rng.random()))

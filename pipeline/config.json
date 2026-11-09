@@ -80,6 +80,11 @@
    "nombre": "TRIDENT €150M",
    "min": 0,
    "max": 7
+  },
+  "fitall": {
+   "nombre": "FIT ALL",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -176,6 +181,9 @@
    "listo": true
   },
   "rueda": {
+   "listo": true
+  },
+  "fitall": {
    "listo": true
   }
  }

@@ -34,11 +34,11 @@ DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
            "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "siuu": "SIUUU 67",
-           "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "pared": "WALL BALANCE",
+           "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
           "plinko": "render_plinko.py", "rueda": "render_rueda.py", "siuu": "render_siuu.py",
-          "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py",
+          "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
 TIT_DRESS = ["Pause when it fits 😂 {a} & {b} drip challenge", "Dress them up 😎 Can you stop at the right time? {a} & {b}",
@@ -155,6 +155,9 @@ VARIANTES = {
              "Football Stop Challenge ⚽🛑 Stop {a} before {b} 6️⃣7️⃣", "Football Stop Challenge ⚽🛑 Can you beat {a}'s level?"],
     "rueda": ["{a} vs {b} or {c} stop challenge 🔥🛑", "{a} vs {b} or {c} stop challenge 😱🔥", "{a} vs {b} or {c} stop challenge 🛑🤯",
               "{a} vs {b} or {c} stop challenge 💀🔥", "Find {a}'s real body 🛑🔥 {b} or {c}?"],
+    "fitall": ["Can Anyone Solve This? Fit All {a} Heads 🎯⚽", "Fit {a}'s REAL head 🎯 Only 1 of 8 is real",
+               "Can you find {a}'s real head? 🎯⚽ Only 1% can", "8 {a} heads, only 1 fits 😱🎯 Can you solve this?",
+               "Only 1 of these {a} heads is real 🎯 Pause it!"],
     "cabezas": ["99.9% WILL FAIL the FIT challenge 💀 {a} edition", "Fit {a}'s head 🛑 Only 1% can", "{a} head fit challenge 😱 Pause it!",
                 "Can you fit {a}'s head perfectly? 🤯", "Only 1% can fit {a}'s face 🎯", "This is almost impossible! Fit {a} 🎯⚽"],
 }
@@ -196,7 +199,7 @@ def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.7, tipo=None):
         if not pool:
             break
         resto = ns[1:]
-        if tipo in ("rueda", "cabezas", "stop"):                                # el protagonista (la superestrella) SIEMPRE va primero
+        if tipo in ("rueda", "cabezas", "stop", "fitall"):                                # el protagonista (la superestrella) SIEMPRE va primero
             a = ns[0]; b, c = (rng.sample(resto, 2) if len(resto) >= 2 else (resto + ns)[:2])
         else:
             a, b, c = rng.sample(ns, 3) if len(set(ns)) >= 3 else (ns[0], ns[1], ns[2])
@@ -364,6 +367,25 @@ TIT_CABEZAS = ["99.9% WILL FAIL the FIT challenge 💀 {n} edition", "Fit {n}'s 
 TIT_PARED = ["Who has the best balance? 👀⚽ {a}, {b}, {c} or {d}", "Who won't fall? 😱 {a} vs {b} vs {c} vs {d}",
              "Only one stays up 🤯 {a}, {b}, {c} or {d}?"]
 TIT_CIRCULO = ["Pause on your GOAT 🐐 {a}, {b} or {c}?", "Who is the BEST footballer? 🐐 Pause it!", "Stop the ball on your GOAT 🐐⚽"]
+
+
+# FIT ALL (ola del 09/11: 18 videos +1 M en 7 días, canales chicos): 8 cabezas de la MISMA estrella, solo una es la real.
+TIT_FITALL = ["Can Anyone Solve This? Fit All {n} Heads 🎯⚽", "Fit {n}'s REAL head 🎯 Only 1 of 8 is real",
+              "Can you find {n}'s real head? 🎯⚽ Only 1% can", "8 {n} heads, only 1 fits 😱🎯 Can you solve this?"]
+MUSICA_FITALL = {"cristiano_ronaldo": ["suuu_remix_0", "suuu_remix_1", "walkout_0"], "neymar": ["neymar_samba_0", "neymar_samba_1"],
+                 "lionel_messi": ["messi_ankara_remix_0", "ankara_messi_0"]}
+
+
+def guion_fitall(gid, rng, V, fecha):
+    import render_fitall as RF
+    ult = V.contadores.setdefault("fitall_ult", [])
+    cand = [c for c in RF.LISTAS if c in RF.CUERPOS]
+    est = min(sorted(cand), key=lambda c: (c == (ult[-1] if ult else None), ult[-6:].count(c), rng.random()))
+    ult.append(est); del ult[:-12]
+    cuerpo = rng.choice(RF.CUERPOS[est])
+    mus = MUSICA_FITALL.get(est) or ["walkout_0", "walkout_1", "parado_bailao_0", "rueda_original_1"]
+    return dict(id=gid, cuerpo=cuerpo, senuelos=RF.senuelos(cuerpo, rng), nombre=RF.NOMBRES[est], dur=4.0, vueltas=3, t_encaje=0.45,
+                sentido=rng.choice([1, -1]), musica=rng.choice(mus), fondo="estadio_0", pos_correcto=rng.randint(1, 6))
 
 
 def guion_cabezas(gid, rng, V, fecha):
@@ -561,6 +583,16 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
                     "circulo": "Pause when the ball touches YOUR GOAT 🐐"}[tipo]
             desc = f"{meta}\nComment your pick 👇 Follow for part 2 🔥\n" + " ".join(tag(x) for x in ns4) + " #football #soccer #challenge #shorts"
             fijado = ""; fotos = []; nombres = ns4
+        elif tipo == "fitall":
+            g = guion_fitall(gid, rng, V, sl["fecha"])
+            n = g["nombre"]
+            titulo = V.titulo("fitall", TIT_FITALL, rng).format(n=n)
+            for x in (tag(n), "#fitchallenge"):
+                if len(titulo) + len(x) + 1 <= 100:
+                    titulo += " " + x
+            desc = (f"8 heads of {n}… only ONE is real 🎯 Pause when the REAL head fits!\nComment your number 👇 Follow for part 2 🔥\n"
+                    f"{tag(n)} #fitchallenge #football #soccer #challenge #shorts")
+            fijado = ""; fotos = []; nombres = [n]
         elif tipo in ("siuu", "penal", "balon"):
             g = {"siuu": guion_siuu, "penal": guion_penal, "balon": guion_balon}[tipo](gid, rng, V, sl["fecha"])
             n = g.get("nombre", "Ronaldo")
