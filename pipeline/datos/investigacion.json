@@ -1,15 +1,15 @@
 {
- "fecha": "2026-11-07",
+ "fecha": "2026-11-09",
  "recomendaciones": [
   {
    "familia": "wheel",
    "nuestros": [
     "rueda"
    ],
-   "mercado_mediana": 623318,
-   "mercado_1M": 7,
+   "mercado_mediana": 373699,
+   "mercado_1M": 4,
    "subiendo": false,
-   "nuestra_mediana_48h": 11824,
+   "nuestra_mediana_48h": 14376,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -17,10 +17,10 @@
    "nuestros": [
     "cabezas"
    ],
-   "mercado_mediana": 247651,
-   "mercado_1M": 12,
+   "mercado_mediana": 300558,
+   "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 27338,
+   "nuestra_mediana_48h": 22777,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -31,19 +31,31 @@
     "penal",
     "balon"
    ],
-   "mercado_mediana": 239306,
-   "mercado_1M": 10,
+   "mercado_mediana": 229934,
+   "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 4135,
-   "accion": "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
+   "nuestra_mediana_48h": 12943,
+   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
    "familia": "goat",
    "nuestros": [
     "circulo"
    ],
-   "mercado_mediana": 116299,
-   "mercado_1M": 5,
+   "mercado_mediana": 185495,
+   "mercado_1M": 6,
+   "subiendo": false,
+   "nuestra_mediana_48h": null,
+   "accion": "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
+  },
+  {
+   "familia": "quiz",
+   "nuestros": [
+    "trayectoria",
+    "tridente"
+   ],
+   "mercado_mediana": 148804,
+   "mercado_1M": 1,
    "subiendo": false,
    "nuestra_mediana_48h": null,
    "accion": "PROBAR POCO: todavía no tenemos datos propios"
@@ -53,33 +65,21 @@
    "nuestros": [
     "dress"
    ],
-   "mercado_mediana": 96748,
-   "mercado_1M": 7,
+   "mercado_mediana": 122795,
+   "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 18282,
+   "nuestra_mediana_48h": 15936,
    "accion": "MANTENER: nos rinde aunque el mercado esté tibio"
-  },
-  {
-   "familia": "quiz",
-   "nuestros": [
-    "trayectoria",
-    "tridente"
-   ],
-   "mercado_mediana": 84849,
-   "mercado_1M": 2,
-   "subiendo": false,
-   "nuestra_mediana_48h": null,
-   "accion": "PROBAR POCO: todavía no tenemos datos propios"
   },
   {
    "familia": "find",
    "nuestros": [
     "find"
    ],
-   "mercado_mediana": 38067,
+   "mercado_mediana": 39105,
    "mercado_1M": 2,
    "subiendo": false,
-   "nuestra_mediana_48h": 1057,
+   "nuestra_mediana_48h": 968,
    "accion": "BAJAR: sin ola y sin resultado propio"
   },
   {
@@ -87,19 +87,30 @@
    "nuestros": [
     "pared"
    ],
-   "mercado_mediana": 6862,
+   "mercado_mediana": 4872,
    "mercado_1M": 0,
    "subiendo": false,
-   "nuestra_mediana_48h": null,
-   "accion": "PROBAR POCO: todavía no tenemos datos propios"
+   "nuestra_mediana_48h": 1295,
+   "accion": "BAJAR: sin ola y sin resultado propio"
   }
  ],
  "canal": {
+  "rueda": {
+   "videos": 6,
+   "mediana_48h": 14376,
+   "mejor": 32856,
+   "pct_visto": 154,
+   "mas_10k": 4,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
   "stop": {
-   "videos": 22,
-   "mediana_48h": 4135,
-   "mejor": 29674,
-   "pct_visto": 179,
+   "videos": 25,
+   "mediana_48h": 3376,
+   "mejor": 29767,
+   "pct_visto": 181,
    "mas_10k": 9,
    "imposible": {
     "videos": 0,
@@ -108,21 +119,10 @@
   },
   "cabezas": {
    "videos": 1,
-   "mediana_48h": 27338,
-   "mejor": 27338,
-   "pct_visto": 136,
+   "mediana_48h": 22777,
+   "mejor": 29352,
+   "pct_visto": 132,
    "mas_10k": 1,
-   "imposible": {
-    "videos": 0,
-    "mediana_48h": null
-   }
-  },
-  "rueda": {
-   "videos": 5,
-   "mediana_48h": 11824,
-   "mejor": 26463,
-   "pct_visto": 159,
-   "mas_10k": 3,
    "imposible": {
     "videos": 0,
     "mediana_48h": null
@@ -130,9 +130,20 @@
   },
   "dress": {
    "videos": 1,
-   "mediana_48h": 18282,
-   "mejor": 21895,
-   "pct_visto": 109,
+   "mediana_48h": 15936,
+   "mejor": 23425,
+   "pct_visto": 106,
+   "mas_10k": 1,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
+  "balon": {
+   "videos": 1,
+   "mediana_48h": 12943,
+   "mejor": 12943,
+   "pct_visto": null,
    "mas_10k": 1,
    "imposible": {
     "videos": 0,
@@ -141,8 +152,8 @@
   },
   "find": {
    "videos": 3,
-   "mediana_48h": 1057,
-   "mejor": 3857,
+   "mediana_48h": 968,
+   "mejor": 3861,
    "pct_visto": 112,
    "mas_10k": 0,
    "imposible": {
@@ -152,8 +163,8 @@
   },
   "otros": {
    "videos": 2,
-   "mediana_48h": 710,
-   "mejor": 2194,
+   "mediana_48h": 670,
+   "mejor": 2197,
    "pct_visto": 70,
    "mas_10k": 0,
    "imposible": {
@@ -163,8 +174,8 @@
   },
   "ring": {
    "videos": 1,
-   "mediana_48h": 908,
-   "mejor": 2067,
+   "mediana_48h": 853,
+   "mejor": 2073,
    "pct_visto": 75,
    "mas_10k": 0,
    "imposible": {
@@ -174,8 +185,8 @@
   },
   "carrera": {
    "videos": 2,
-   "mediana_48h": 658,
-   "mejor": 1965,
+   "mediana_48h": 624,
+   "mejor": 1971,
    "pct_visto": 77,
    "mas_10k": 0,
    "imposible": {
@@ -185,8 +196,8 @@
   },
   "cabeza": {
    "videos": 1,
-   "mediana_48h": 891,
-   "mejor": 1661,
+   "mediana_48h": 813,
+   "mejor": 1667,
    "pct_visto": 161,
    "mas_10k": 0,
    "imposible": {
@@ -196,9 +207,20 @@
   },
   "plinko": {
    "videos": 1,
-   "mediana_48h": 732,
-   "mejor": 1630,
+   "mediana_48h": 685,
+   "mejor": 1634,
    "pct_visto": 74,
+   "mas_10k": 0,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
+  "pared": {
+   "videos": 2,
+   "mediana_48h": 1295,
+   "mejor": 1494,
+   "pct_visto": 126,
    "mas_10k": 0,
    "imposible": {
     "videos": 0,
@@ -208,39 +230,39 @@
  },
  "nuevas": [
   {
-   "id": "TfW1GcmYP2E",
-   "titulo": "Mbappé y el niño del balonazo ❤❤ #shorts #futbol #realmadrid",
-   "vistas": 3032440
+   "id": "9gwJ4QV-ZDk",
+   "titulo": "Haaland Shows Lamine Yamal Fun Oreo Magic 🍪",
+   "vistas": 80498725
   },
   {
-   "id": "EEiBW-LI0Vo",
-   "titulo": "Neymar Picked the Wrong Hair Joke 🧢",
-   "vistas": 2992770
+   "id": "q39V5hKnOdM",
+   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 8528963
   },
   {
-   "id": "CTGmjkQ_1Sc",
-   "titulo": "Can Anyone Solve This? Fit All Kaka Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 2760577
+   "id": "J0lyEfKXfz8",
+   "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥#viral #cr7  #lamineyamal",
+   "vistas": 5815557
   },
   {
-   "id": "tDRZaSojq8E",
-   "titulo": "Ronaldo & IShowSpeed Destroyed The Rock! 😱💀 #cr7 #ishowspeed #therock",
-   "vistas": 2597780
+   "id": "Z4lM14tMeH8",
+   "titulo": "Neymar vs Ronaldo or Messi stop challenge 🔥#ronaldo #shorts #viral #trending",
+   "vistas": 5490334
   },
   {
-   "id": "YJpydRXwtGg",
-   "titulo": "Legendary Football Stop Challenge ⚽️🛑 #messi #ronaldo #haaland #mbappe  #challenge#football #shorts",
-   "vistas": 2586658
+   "id": "xUDwGUsShME",
+   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 4593793
   },
   {
-   "id": "vW__fUMZJQY",
-   "titulo": "😂 Ronaldo Cartoon Game ⚽ Funny Gameplay & Crazy Moments! #Shorts",
-   "vistas": 2569860
+   "id": "7REhaPFUSBA",
+   "titulo": "Can Anyone Solve This? Fit All Cristiano Ronaldo Goes Stars 🎯⚽ | Football Challenge HQ #viral",
+   "vistas": 3736991
   }
  ],
  "comentarios": {
-  "total": 19,
-  "facil": 2,
+  "total": 29,
+  "facil": 5,
   "dificil": 1
  },
  "preguntas_ia": [
@@ -254,36 +276,48 @@
  ],
  "horas": {
   "00": {
-   "mediana": 3361,
+   "mediana": 2950,
    "videos": 1
   },
   "09": {
-   "mediana": 3236,
-   "videos": 4
+   "mediana": 3085,
+   "videos": 5
+  },
+  "12": {
+   "mediana": 12943,
+   "videos": 1
   },
   "13": {
-   "mediana": 9067,
+   "mediana": 7760,
    "videos": 4
   },
+  "14": {
+   "mediana": 28350,
+   "videos": 1
+  },
   "15": {
-   "mediana": 13434,
+   "mediana": 16126,
    "videos": 2
   },
   "17": {
-   "mediana": 3829,
+   "mediana": 3376,
    "videos": 5
+  },
+  "20": {
+   "mediana": 1255,
+   "videos": 1
   },
   "21": {
-   "mediana": 12825,
-   "videos": 5
+   "mediana": 7898,
+   "videos": 6
   },
   "22": {
-   "mediana": 21937,
+   "mediana": 18296,
    "videos": 1
   },
   "23": {
-   "mediana": 22810,
-   "videos": 2
+   "mediana": 8715,
+   "videos": 4
   }
  }
 }
