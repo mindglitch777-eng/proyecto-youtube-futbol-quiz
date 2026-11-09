@@ -33,6 +33,8 @@ def main():
             continue
         a = gemini([{"file_data": {"file_uri": f"https://www.youtube.com/watch?v={v['id']}"}},
                     {"text": PROMPT.format(titulo=v["titulo"], vistas=v["vistas"])}])
+        if isinstance(a, list):                                                # a veces Gemini devuelve [ {...} ]
+            a = next((x for x in a if isinstance(x, dict)), None)
         if a:
             previos[v["id"]] = {**v, "analisis": a}
             print("ok", v["id"], a.get("nombre_formato"), flush=True)

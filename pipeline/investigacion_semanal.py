@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-INVESTIGACIÓN AUTOMÁTICA (sábados y miércoles): qué está funcionando, cómo recrearlo y qué cambiar.
+INVESTIGACIÓN AUTOMÁTICA (cada 2 días): qué está funcionando, cómo recrearlo y qué cambiar.
 1. Mercado (API de YouTube): olas por mecánica en 7 y 3 días (investigar_olas.py).
 2. Nuestro canal: vistas, % visto y suscriptores por formato (rendimiento.json + analytics.json) y comentarios (comentarios.py).
 3. Cruce mercado vs. canal: qué ola tiene mercado y nosotros no explotamos, y qué formato nuestro rinde sin ola.
@@ -88,6 +88,8 @@ def gemini_recetas(cands):
                         {"text": A.PROMPT.format(titulo=v["titulo"], vistas=v["vistas"])}])
         except Exception as e:
             print("gemini falló", v["id"], e); a = None
+        if isinstance(a, list):                                                # a veces Gemini devuelve [ {...} ] (rompió la del 08/11)
+            a = next((x for x in a if isinstance(x, dict)), None)
         if a:
             previos[v["id"]] = {**v, "analisis": a}; print("receta", v["id"], a.get("nombre_formato"), flush=True)
     guardar("analisis_tendencias.json", list(previos.values()))

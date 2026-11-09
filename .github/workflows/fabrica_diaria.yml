@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: "17 6 * * *"       # 03:17 de Argentina
     - cron: "47 9 * * *"       # reintento (no rehace un día ya fabricado)
+    - cron: "37 15 * * *"      # 2.º reintento: GitHub a veces atrasa o se saltea las tareas programadas
   workflow_dispatch:
 
 permissions:

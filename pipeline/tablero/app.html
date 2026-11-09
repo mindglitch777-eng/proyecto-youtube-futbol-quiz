@@ -90,6 +90,10 @@ svg text{font-family:var(--mono)}
 a{color:var(--blue);text-decoration:none}
 .tarea li{margin:5px 0;font-size:14px}
 .radar{display:grid;grid-auto-flow:column;grid-auto-columns:minmax(220px,1fr);gap:10px;overflow-x:auto;padding-bottom:4px}
+.olas{display:flex;flex-wrap:wrap;gap:8px}
+.ola{background:var(--panel2);border:1px solid var(--line);border-radius:10px;padding:8px 10px;font-size:13px;min-width:130px}
+.ola b{display:block;font-family:var(--display);font-size:15px}
+.ola .e{font-family:var(--mono);font-size:11px;text-transform:uppercase}
 .rcard{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:10px;min-width:0}
 .rcard .big{font-family:var(--display);font-weight:800;font-size:24px}
 button{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
@@ -151,7 +155,13 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
   </div>
 
   <div class="panel" style="margin-top:12px">
-    <div class="ph"><h2>Radar · lo más viral de la semana</h2><span id="radar-s"></span></div>
+    <div class="ph"><h2>Olas de hoy · qué mecánica sube y cuál se muere</h2><span id="olas-s"></span></div>
+    <div class="olas" id="olas"></div>
+    <div class="sub" id="olas-cuando" style="margin-top:10px;line-height:1.6"></div>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
+    <div class="ph"><h2>Radar · lo más viral de los últimos 3 días</h2><span id="radar-s"></span></div>
     <div class="radar" id="radar"></div>
   </div>
 
@@ -174,7 +184,7 @@ const fmt = n => n == null ? "—" : n >= 1e6 ? (n / 1e6).toFixed(1) + " M" : n 
 const SVGNS = "http://www.w3.org/2000/svg";
 const sv = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
 const hace = iso => { if (!iso) return "—"; const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "recién" : m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : `hace ${Math.round(m / 1440)} d`; };
-let D = {}, CORRIDA = null;
+let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null;
 
 async function traer(url) { try { const r = await fetch(url, {cache: "no-store"}); return r.ok ? await r.json() : null; } catch (e) { return null; } }
 
@@ -185,6 +195,8 @@ async function cargar() {
     traer(RAW(CFG.rama, "pipeline/datos/analisis.json")), traer(RAW(CFG.rama, "pipeline/datos/plan.json")),
     traer(RAW(CFG.rama, "pipeline/datos/semana_actual.json")), traer(RAW(CFG.rama, "pipeline/datos/publicados.json")),
     traer(RAW("datos-vivos", "vivo.json"))]);
+  const [olas, inv] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/olas.json")), traer(RAW(CFG.rama, "pipeline/datos/investigacion.json"))]);
+  D_OLAS = olas; D_INV = inv;
   D = {estado: estado || s.estado || {}, radar: (radar && radar.virales) || s.radar || [], analisis: analisis || s.analisis || {},
        plan: plan || s.plan || {}, semana: semana || s.semana || {}, publicados: publicados || s.publicados || [], vivo: vivo || s.vivo || null,
        en_vivo: !!estado};
@@ -230,7 +242,7 @@ function pintarEstado() {
     const ult = CORRIDA && CORRIDA.ultima;
     $("est-s").textContent = ult ? `Última corrida: ${ult.name} · ${ult.conclusion === "success" ? "terminó bien" : ult.conclusion || ult.status} · ${hace(ult.updated_at)}` : "";
     $("barra-i").style.width = (100 * ok / ETAPAS.length) + "%";
-    $("barra-a").textContent = `semana ${D.semana.inicio || "—"}`;
+    $("barra-a").textContent = `semana ${(D.semana || {}).inicio || "—"}`;
     $("barra-b").textContent = `${ok} de ${ETAPAS.length} estaciones listas`;
     if (pub.resumen && pub.resumen.aviso) $("est-s").textContent += " · ⚠ " + pub.resumen.aviso;
   }
@@ -388,20 +400,46 @@ function pintar() {
     const tr = el("div", "track"); const i = el("i"); i.style.width = Math.min(100, pct / 2) + "%"; tr.append(i);
     b.append(el("span", null, NOM[k] || k), tr, el("span", "num", pct.toFixed(0) + "%")); $("retencion").append(b); });
 
-  // radar
+  // olas (detector diario: pipeline/investigar_olas.py)
+  const EST = {naciente: ["🚀 naciente", "var(--lime)"], subiendo: ["📈 subiendo", "var(--ok)"], estable: ["➖ estable", "var(--muted)"],
+               bajando: ["📉 bajando", "var(--amber)"], muerta: ["💀 muerta", "var(--err)"]};
+  const ORD = {naciente: 0, subiendo: 1, estable: 2, bajando: 3, muerta: 4};
+  const NUES = {stop: "STOP · SIUUU · PENALTY · BALLON", wheel: "WHEEL", fit: "HEAD FIT", find: "FIND", dress: "DRESS", quiz: "Trayectoria · Tridente", goat: "GOAT CIRCLE"};
+  $("olas").innerHTML = "";
+  const est = (D_OLAS && D_OLAS.estado) || {};
+  Object.entries(est).sort((a, b) => ORD[a[1].estado] - ORD[b[1].estado] || (b[1].vph || 0) - (a[1].vph || 0)).forEach(([k, v]) => {
+    const [txt, col] = EST[v.estado] || [v.estado, "var(--muted)"];
+    const c = el("div", "ola"); c.style.borderColor = col;
+    const e = el("div", "e", txt); e.style.color = col;
+    c.append(e, el("b", null, k), el("div", "sub", `${fmt(v.vph)}/h · ${v.m1M_3d} con +1 M`), el("div", "sub", NUES[k] ? "nuestro: " + NUES[k] : "no lo hacemos"));
+    $("olas").append(c);
+  });
+  $("olas-s").textContent = D_OLAS ? `actualizado ${hace(D_OLAS.fecha)}` : "sin datos";
+  const inf = D_INV && D_INV.fecha ? `<a href="https://github.com/${CFG.repo}/blob/${CFG.rama}/reports/investigacion_${D_INV.fecha}.md" target="_blank" rel="noopener">informe del ${D_INV.fecha}</a>` : "—";
+  $("olas-cuando").innerHTML = `<b>Cómo se actualiza (solo, sin que hagas nada):</b><br>
+    · <b>Todos los días</b> a la madrugada: el detector mide las olas (esta sección y el radar) y la fábrica arma los 6 videos de dentro de 2 días dándole más lugar a lo que sube.<br>
+    · <b>Cada 2 días</b> a las 17 h: investigación completa (mercado + nuestro canal + qué evitar + recetas de Gemini). Último: ${inf}.<br>
+    · <b>6 veces por día</b>: sube a YouTube lo que falta y mide las vistas.<br>
+    · <b>Lunes y jueves</b>: el ingeniero de formatos construye o mejora un formato según la ola que esté naciendo.<br>
+    <span style="color:var(--amber)">Ojo: GitHub a veces atrasa estas tareas varias horas; por eso todo se prepara con 2-3 días de margen.</span>`;
+
+  // radar: lo más visto de los últimos 3 días (sale del detector diario; si no hay, el radar viejo)
   $("radar").innerHTML = "";
-  (D.radar || []).slice(0, 10).forEach(x => {
+  const filasR = ((D_OLAS && D_OLAS["3d"] && D_OLAS["3d"].filas) || []).slice().sort((a, b) => b.vph - a.vph);
+  const lista = filasR.length ? filasR.slice(0, 15).map(x => ({id: x.id, vistas: x.vistas, vph: x.vph, titulo: x.titulo, canal: `${x.canal} · ${fmt(x.subs)} subs`, extra: x.familia}))
+                             : (D.radar || []).slice(0, 10).map(x => ({id: x.id, vistas: x.vistas, vph: x.vistas_por_hora, titulo: x.titulo, canal: x.canal, extra: ""}));
+  lista.forEach(x => {
     const c = el("a", "rcard"); c.href = "https://www.youtube.com/shorts/" + x.id; c.target = "_blank"; c.rel = "noopener";
-    c.append(el("div", "big", fmt(x.vistas)), el("div", "sub", `${fmt(x.vistas_por_hora)} por hora${x.canal_nuevo ? " · canal nuevo" : ""}`), el("div", "tit", x.titulo), el("div", "sub", x.canal || ""));
+    c.append(el("div", "big", fmt(x.vistas)), el("div", "sub", `${fmt(x.vph)} por hora${x.extra ? " · " + x.extra : ""}`), el("div", "tit", x.titulo), el("div", "sub", x.canal || ""), el("div", "sub", "▶ ver en YouTube"));
     $("radar").append(c);
   });
-  $("radar-s").textContent = `${(D.radar || []).length} virales`;
+  $("radar-s").textContent = filasR.length ? `${filasR.length} videos medidos · ${hace(D_OLAS.fecha)}` : `${(D.radar || []).length} virales (radar viejo)`;
 
   // tareas
   const t = $("tarea"); t.innerHTML = "";
   const et = (D.estado && D.estado.etapas) || {};
   if (((et.publicacion || {}).resumen || {}).aviso) t.append(el("li", null, "Configurar el permiso del canal y los secretos (pipeline/README.md) para que se suba solo."));
-  t.append(el("li", null, "Grabar 5-6 virales del radar y subirlos a pipeline/grabaciones/ (opcional, mejora la copia)."));
+  t.append(el("li", null, "Mirar «Olas de hoy»: si algo dice 🚀 naciente o 📈 subiendo y «no lo hacemos», avisale a Claude para construir ese formato."));
   t.append(el("li", null, "Fijar el comentario de cada video de hoy y responder los primeros comentarios."));
   pintarEstado();
 }

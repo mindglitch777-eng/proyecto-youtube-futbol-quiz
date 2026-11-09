@@ -24,7 +24,7 @@ CONSULTAS = [
     "mbappe shorts", "neymar shorts", "football challenge shorts", "football edit shorts",
 ]
 FAMILIAS = [
-    ("wheel", r"\bvs\b.+\bor\b|wheel|spin"), ("fit", r"\bfit\b"), ("stop", r"stop|pause"), ("find", r"\bfind\b|spot the"),
+    ("wheel", r"\bvs\b.+\bor\b|wheel|spin"), ("fit", r"\bfit|solve this"), ("stop", r"stop|pause"), ("find", r"\bfind\b|spot the"),
     ("dress", r"dress|drip|outfit|style"), ("quiz", r"guess|quiz|who is this|which club|name the"),
     ("goat", r"best|goat|who would win|who wins|who is better"), ("balance", r"balance|wall"),
     ("3d_ia", r"animation|3d|roblox|cartoon|parody|\bai\b|\bia\b|game"), ("transformacion", r"day 1|transform|evolution|then and now|before"),

@@ -2,8 +2,7 @@ name: Investigación automática (mercado + canal + Gemini)
 
 on:
   schedule:
-    - cron: "7 20 * * 6"       # sábados 17:07 (Argentina): antes de que arranque la semana
-    - cron: "7 20 * * 3"       # miércoles 17:07: control de mitad de semana
+    - cron: "7 20 */2 * *"     # cada 2 días a las 17:07 (Argentina): las olas pasan rápido (pedido 09/11)
   push:
     paths: [pipeline/investigacion_semanal.py]
   workflow_dispatch:
