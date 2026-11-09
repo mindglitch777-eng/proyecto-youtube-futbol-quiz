@@ -3193,5 +3193,317 @@
     "Hacer que el final tenga una consecuencia cómica según la elección mostrada."
    ]
   }
+ },
+ {
+  "id": "xUDwGUsShME",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "vistas": 4594350,
+  "horas": 39,
+  "canal": "CURSED SOUL ",
+  "canal_subs": 21100,
+  "canal_creado": "2026-11-05",
+  "analisis": {
+   "nombre_formato": "Círculo Giratorio de Cabezas de Futbolistas (Fit All Challenge)",
+   "mecanica": "Un círculo formado por bustos de futbolistas (Cristiano Ronaldo/Portugal) gira continuamente. Abaixo, un cuerpo sin cabeza en un campo de fútbol espera la cabeza correcta. En el momento indicado, se selecciona o encaja la cabeza para completar al personaje.",
+   "que_hace_el_espectador": "Pausar la pantalla para encajar la cabeza perfecta en el cuerpo o adivinar cuál es la combinación correcta.",
+   "cuadro_0": "Arriba: círculo de 8 bustos de Cristiano Ronaldo girando alrededor de un sol/aro dorado. Centro: cuerpo sin cabeza con camiseta de Portugal y flecha blanca indicadora. Abajo: miniaturas de Cristiano Ronaldo sobre césped en un estadio 3D azul.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "El ruleta de cabezas gira en sentido antihorario arriba; abajo se ve el cuerpo sin cabeza.",
+     "sonido": "Voz/música dramática 'amor... empéztame tu caballo'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta continúa girando velozmente. Las cabezas cambian de posición.",
+     "sonido": "Continuación del tema vocal en español / remix balada"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Círculo giratorio constante. La flecha blanca señala hacia el cuerpo acéfalo.",
+     "sonido": "Música vocal melancólica"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Giro de 180 grados del aro de cabezas de Cristiano.",
+     "sonido": "Música vocal en tono bajo"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Las cabezas siguen rotando en bucle. La postura del cuerpo central permanece estática.",
+     "sonido": "Transición melódica"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La ruleta se detiene de golpe y una cabeza se alinea con el cuello del cuerpo.",
+     "sonido": "Efecto de impacto / corte repentino"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Cambio a animación rápida / beat drop con ritmo funk brasileño / phonk.",
+     "sonido": "Beat funk brasileño pesado"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Animación acelerada de la ruleta sincronizada con los graves.",
+     "sonido": "Música funk / phonk a gran volumen"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Rotación continua de alta velocidad sobre el fondo de estadio de fútbol.",
+     "sonido": "Ritmo de bajo continuo"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Las caras giran velozmente alrededor del aro dorado.",
+     "sonido": "Percusión funk acelerada"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Reenfoque en la cabeza alineada justo antes del reinicio instantáneo del video.",
+     "sonido": "Remate del beat funk"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Corte final para enganchar en loop perfecto al segundo 0.0.",
+     "sonido": "Corte de audio perfecto"
+    }
+   ],
+   "duracion_s": 5.5,
+   "loop": "Sí, el giro ininterrumpido y el corte de audio empalman directo con el frame inicial.",
+   "gancho": "El desafío visual de coincidencia de cabeza y el cambio abrupto de balada a funk con ritmo frenético.",
+   "dopamina": [
+    "Efecto de alineación espacial exacta al pausar",
+    "Cambio de ritmo musical (beat drop) al segundo 3.0",
+    "Movimiento circular continuo de alta velocidad"
+   ],
+   "audio": "Intro vocal triste/dramática en español que rompe abruptamente a un Funk Brasileño / Phonk saturado.",
+   "por_que_comentan": "Debaten en qué milisegundo pausar para acertar el encaje exacto o comentan la canción del meme.",
+   "assets_necesarios": [
+    "PNG del cuerpo de Cristiano Ronaldo sin cabeza con uniforme de Portugal",
+    "8 PNGs cutout de expresiones/posas de cabeza de Cristiano Ronaldo",
+    "PNG de estadio de fútbol iluminado (fondo)",
+    "PNG de césped en perspectiva 3D",
+    "PNG de sol/anillo dorado central y flecha curva blanca",
+    "Audio MP3: Intro melancólica + Beat drop Funk"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Cargar canvas vertical (1080x1920) con fondo de estadio y césped.",
+    "Posicionar cuerpo PNG en coordenadas centrales (x: 540, y: 1300).",
+    "Crear un grupo de 8 cabezas distribuidas radialmente a r=300px con centro en (540, 500).",
+    "Rotar la matriz circular a w=120 deg/s en los primeros 3 segundos usando MoviePy/OpenCV.",
+    "Al segundo 3.0, aplicar cambio de velocidad (w=360 deg/s) y sincronizar el audio con la pista funk."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir un contador de 'Puntaje de Precisión' al pausar en la cabeza exacta.",
+    "Incluir efectos de partículas de fuego o chispas cuando encaje perfecto.",
+    "Variar los jugadores (ej. Messi vs CR7) en la misma ruleta para aumentar la dificultad."
+   ]
+  }
+ },
+ {
+  "id": "7REhaPFUSBA",
+  "titulo": "Can Anyone Solve This? Fit All Cristiano Ronaldo Goes Stars 🎯⚽ | Football Challenge HQ #viral",
+  "vistas": 3736991,
+  "horas": 47,
+  "canal": "MrMuzan",
+  "canal_subs": 10400,
+  "canal_creado": "2026-10-08",
+  "analisis": {
+   "nombre_formato": "Ronaldo Orbit Puzzle",
+   "mecanica": "Un personaje central con pelota en los pies rodeado por un círculo giratorio de recortes flotantes de Ronaldo, acompañado de música viral latina y efectos rítmicos.",
+   "que_hace_el_espectador": "solo mirar y cantar/tararear el tema pegadizo.",
+   "cuadro_0": "Estadio de fútbol de fondo con iluminación de atardecer, césped verde brillante, un Ronaldo central en primer plano dominando un balón, y arriba un anillo flotante con 8 recortes de Cristiano Ronaldo en diferentes ángulos rotando, más un sticker extra de Real Madrid abajo a la izquierda.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicio de la animación con el círculo de Ronaldos flotando en el cielo y el central abajo con pelota.",
+     "sonido": "Voz melódica cantando 'empréstame tu caballo' con ritmo bailable."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El anillo superior rota ligeramente en sentido horario.",
+     "sonido": "Continúa la melodía de voz."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Efecto visual de brillo sobre los rostros flotantes.",
+     "sonido": "Sigue la canción."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "El Ronaldo central parpadea o realiza leve movimiento de balón.",
+     "sonido": "Continúa el estribillo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Rotación continua de los elementos superiores.",
+     "sonido": "Ritmo musical constante."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Refuerzo visual con zoom sutil en el personaje principal.",
+     "sonido": "Últimos acordes de la pista viral."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Cierre del ciclo visual listo para repetir loop.",
+     "sonido": "Fin del loop musical."
+    }
+   ],
+   "duracion_s": 3,
+   "loop": "si empalma perfectamente reiniciando la rotación de los PNGs en círculo a los 3 segundos",
+   "gancho": "La cantidad desmesurada de caras de Cristiano Ronaldo flotando y la música pegadiza inmediata.",
+   "dopamina": [
+    "Sincronización rítmica exacta entre los giros visuales y el beat de la canción a los 0.0s",
+    "Efecto visual dinámico de múltiples avatares flotantes en bucle"
+   ],
+   "audio": "Tema musical viral en bucle con voz melódica y ritmo latino bailable.",
+   "por_que_comentan": "Los usuarios comentan sobre la cantidad de Ronaldos distintos o sobre el meme del caballo.",
+   "assets_necesarios": [
+    "Fondo de estadio de fútbol iluminado (PNG/JPG)",
+    "Recortes PNG de Cristiano Ronaldo con camiseta Juventus y Portugal",
+    "Recorte PNG de Ronaldo en Real Madrid",
+    "Balón de fútbol en PNG",
+    "Pista de audio viral en formato .mp3"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Cargar el fondo del estadio en pantalla completa.",
+    "2. Colocar al Ronaldo principal estático con pelota en la parte inferior central (y = 600px).",
+    "3. Generar un bucle matemático para posicionar 8 recortes de Ronaldo formando una circunferencia de radio 250px en la parte superior.",
+    "4. Animar la rotación del ángulo de cada elemento sumando delta_theta en cada frame.",
+    "5. Sincronizar la pista de audio de 3 segundos para reiniciar el loop exactamente al terminar."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar una cuenta regresiva opcional para que parezca un juego interactivo de encontrar al diferente.",
+    "Incluir partículas brillantes alrededor del círculo giratorio para mayor retención visual.",
+    "Cambiar dinámicamente las camisetas de los jugadores flotantes cada 3 segundos en formato carrusel."
+   ]
+  }
+ },
+ {
+  "id": "5IuZs-CiH6o",
+  "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥#viral",
+  "vistas": 1741793,
+  "horas": 15,
+  "canal": "Mr Muzu",
+  "canal_subs": 53400,
+  "canal_creado": "2026-10-02",
+  "analisis": {
+   "nombre_formato": "Ronaldo Dressing Challenge",
+   "mecanica": "Desafío de vestir a Cristiano Ronaldo paso a paso eligiendo accesorios aleatorios mediante un conteo vertical de 3 opciones donde se selecciona una al azar.",
+   "que_hace_el_espectador": "Mira la elección aleatoria y espera ver cómo evoluciona el atuendo cómico del personaje.",
+   "cuadro_0": "Fondo verde croma sólido. Arriba a la izquierda, la lista numérica '1 2 3' vertical en amarillo con check verde. A la derecha, dos pares de gafas de sol flotando como opciones. Abajo, dos avatares idénticos de Ronaldo calvo, con frenos dentales, sacando la lengua, cruzados de brazos (izq: chaleco negro, der: campera de jean).",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Fondo verde, 2 avatares de Ronaldo calvo y 2 pares de gafas flotando arriba.",
+     "sonido": "Música rítmica trap/reguetón con voces procesadas."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Check verde aparece al lado del número 1, gafas se colocan en los avatares.",
+     "sonido": "Efecto de selección (click/pop)."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Opción de cadenas de oro arriba, número 2 con check verde.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Cadenas de oro colocadas sobre ambos avatares.",
+     "sonido": "Efecto de colocación."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Pelo Super Saiyan rubio arriba, número 3 seleccionado con check.",
+     "sonido": "Música sigue."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Pelo rubio colocado sobre las cabezas calvas.",
+     "sonido": "Efecto especial de poder."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Cambio a pelo multicolor azul y rosa.",
+     "sonido": "Música sigue."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Pelo multicolor aplicado.",
+     "sonido": "Efecto."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Cambio a pelo rojo estilo cresta.",
+     "sonido": "Música sigue."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Pelo rojo aplicado.",
+     "sonido": "Efecto."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Pelo rosa fucsia.",
+     "sonido": "Música sigue."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Pelo rosa aplicado.",
+     "sonido": "Efecto."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Pelo afro morado (Doggy style).",
+     "sonido": "Música sigue."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Pelo afro morado aplicado en las cabezas.",
+     "sonido": "Efecto gracioso."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Pelo gris moderno seleccionado y aplicado.",
+     "sonido": "Fin del loop musical y visual."
+    }
+   ],
+   "duracion_s": 7.0,
+   "loop": "Empalma reiniciando la pantalla a Ronaldo calvo para ciclar infinitamente.",
+   "gancho": "Ver a una celebridad (Ronaldo) con transformaciones absurdas y graciosas al ritmo de la música.",
+   "dopamina": [
+    "Efectos de sonido de selección sincronizados cada 0.5s",
+    "Transformación visual inmediata"
+   ],
+   "audio": "Beat trap urbano pegadizo con voces rítmicas repetitivas y efectos de pop/clicks.",
+   "por_que_comentan": "Para debatir cuál fue el peinado o accesorio más gracioso.",
+   "assets_necesarios": [
+    "Fondo verde croma",
+    "Avatar base de Ronaldo calvo recortado en PNG",
+    "Accesorios PNG (gafas, cadenas, 6 tipos de peinados locos)",
+    "Gráficos de números 1, 2, 3 con ticks verdes",
+    "Efectos de sonido de selección y transición"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Cargar fondo verde en un canvas vertical de 1080x1920.",
+    "2. Posicionar dos copias del avatar base de Ronaldo abajo en Y=1000.",
+    "3. Renderizar textos numéricos 1, 2, 3 y ticks animados a intervalos de 0.5 segundos.",
+    "4. Superponer capas de accesorios PNG sobre las cabezas y pechos de los avatares según el tiempo del beat."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar expresiones faciales dinámicas en cada cambio de accesorio",
+    "Incluir reacciones exageradas de zoom en momentos clave",
+    "Permitir votación interactiva en tiempo real simulada o real"
+   ]
+  }
  }
 ]
