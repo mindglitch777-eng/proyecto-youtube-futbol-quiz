@@ -65,26 +65,26 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-10T04:24:39+00:00",
+   "inicio": "2026-11-10T09:43:38+00:00",
    "resumen": {
     "videos": 53,
-    "vistas_totales": 508492,
+    "vistas_totales": 520728,
     "por_formato": {
-     "pared": "2 videos · mediana 1,484 · mejor 1,989",
-     "stop": "25 videos · mediana 3,242 · mejor 17,974",
-     "rueda": "6 videos · mediana 13,374 · mejor 27,310",
-     "balon": "1 videos · mediana 15,367 · mejor 15,367",
-     "cabezas": "1 videos · mediana 20,533 · mejor 20,533",
-     "dress": "1 videos · mediana 14,682 · mejor 14,682",
-     "cabeza": "1 videos · mediana 778 · mejor 778",
-     "find": "3 videos · mediana 928 · mejor 1,619",
-     "plinko": "1 videos · mediana 663 · mejor 663",
-     "ring": "1 videos · mediana 826 · mejor 826",
-     "otros": "2 videos · mediana 651 · mejor 859",
-     "carrera": "2 videos · mediana 607 · mejor 734"
+     "pared": "2 videos · mediana 1,481 · mejor 2,008",
+     "stop": "25 videos · mediana 3,160 · mejor 17,509",
+     "rueda": "6 videos · mediana 13,124 · mejor 26,292",
+     "balon": "1 videos · mediana 14,760 · mejor 14,760",
+     "cabezas": "1 videos · mediana 20,035 · mejor 20,035",
+     "dress": "1 videos · mediana 14,373 · mejor 14,373",
+     "cabeza": "1 videos · mediana 769 · mejor 769",
+     "find": "3 videos · mediana 917 · mejor 1,604",
+     "plinko": "1 videos · mediana 657 · mejor 657",
+     "ring": "1 videos · mediana 819 · mejor 819",
+     "otros": "2 videos · mediana 646 · mejor 852",
+     "carrera": "2 videos · mediana 602 · mejor 728"
     }
    },
-   "fin": "2026-11-10T04:24:40+00:00"
+   "fin": "2026-11-10T09:43:39+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -137,12 +137,12 @@
     "errores": [],
     "total_publicados": 86
    },
-   "inicio": "2026-11-10T04:24:37+00:00",
-   "fin": "2026-11-10T04:24:37+00:00"
+   "inicio": "2026-11-10T09:43:35+00:00",
+   "fin": "2026-11-10T09:43:36+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-10T04:24:46+00:00",
+   "fin": "2026-11-10T09:43:48+00:00",
    "resumen": {
     "videos": 46,
     "por_formato": {
@@ -166,5 +166,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-10T04:24:46+00:00"
+ "actualizado": "2026-11-10T09:43:48+00:00"
 }
