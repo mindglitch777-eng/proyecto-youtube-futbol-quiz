@@ -7027,7 +7027,18 @@
     "views": 48412
    }
   ],
-  "suscripcion": [],
+  "suscripcion": [
+   {
+    "subscribedStatus": "SUBSCRIBED",
+    "views": 1548,
+    "averageViewPercentage": 129.58
+   },
+   {
+    "subscribedStatus": "UNSUBSCRIBED",
+    "views": 483697,
+    "averageViewPercentage": 155.49
+   }
+  ],
   "por_dia": [
    {
     "day": "2026-10-20",
