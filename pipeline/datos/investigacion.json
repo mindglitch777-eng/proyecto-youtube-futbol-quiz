@@ -9,7 +9,7 @@
    "mercado_mediana": 373699,
    "mercado_1M": 4,
    "subiendo": false,
-   "nuestra_mediana_48h": 13748,
+   "nuestra_mediana_48h": 13476,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -21,7 +21,7 @@
    "mercado_mediana": 300558,
    "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 21344,
+   "nuestra_mediana_48h": 20756,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -35,7 +35,7 @@
    "mercado_mediana": 229934,
    "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 16353,
+   "nuestra_mediana_48h": 15626,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -69,7 +69,7 @@
    "mercado_mediana": 122795,
    "mercado_1M": 11,
    "subiendo": false,
-   "nuestra_mediana_48h": 15145,
+   "nuestra_mediana_48h": 14805,
    "accion": "MANTENER: nos rinde aunque el mercado esté tibio"
   },
   {
@@ -80,7 +80,7 @@
    "mercado_mediana": 39105,
    "mercado_1M": 2,
    "subiendo": false,
-   "nuestra_mediana_48h": 943,
+   "nuestra_mediana_48h": 932,
    "accion": "BAJAR: sin ola y sin resultado propio"
   },
   {
@@ -91,15 +91,15 @@
    "mercado_mediana": 4872,
    "mercado_1M": 0,
    "subiendo": false,
-   "nuestra_mediana_48h": 1447,
+   "nuestra_mediana_48h": 1508,
    "accion": "BAJAR: sin ola y sin resultado propio"
   }
  ],
  "canal": {
   "rueda": {
    "videos": 6,
-   "mediana_48h": 13748,
-   "mejor": 33095,
+   "mediana_48h": 13476,
+   "mejor": 33374,
    "pct_visto": 156,
    "mas_10k": 4,
    "imposible": {
@@ -109,8 +109,8 @@
   },
   "stop": {
    "videos": 25,
-   "mediana_48h": 3314,
-   "mejor": 29782,
+   "mediana_48h": 3228,
+   "mejor": 29780,
    "pct_visto": 183,
    "mas_10k": 9,
    "imposible": {
@@ -120,8 +120,8 @@
   },
   "cabezas": {
    "videos": 1,
-   "mediana_48h": 21344,
-   "mejor": 29374,
+   "mediana_48h": 20756,
+   "mejor": 29398,
    "pct_visto": 132,
    "mas_10k": 1,
    "imposible": {
@@ -131,8 +131,8 @@
   },
   "dress": {
    "videos": 1,
-   "mediana_48h": 15145,
-   "mejor": 23433,
+   "mediana_48h": 14805,
+   "mejor": 23437,
    "pct_visto": 106,
    "mas_10k": 1,
    "imposible": {
@@ -142,8 +142,8 @@
   },
   "balon": {
    "videos": 1,
-   "mediana_48h": 16353,
-   "mejor": 17330,
+   "mediana_48h": 15626,
+   "mejor": 17367,
    "pct_visto": 153,
    "mas_10k": 1,
    "imposible": {
@@ -153,7 +153,7 @@
   },
   "find": {
    "videos": 3,
-   "mediana_48h": 943,
+   "mediana_48h": 932,
    "mejor": 3862,
    "pct_visto": 112,
    "mas_10k": 0,
@@ -164,7 +164,7 @@
   },
   "otros": {
    "videos": 2,
-   "mediana_48h": 658,
+   "mediana_48h": 654,
    "mejor": 2197,
    "pct_visto": 70,
    "mas_10k": 0,
@@ -175,7 +175,7 @@
   },
   "ring": {
    "videos": 1,
-   "mediana_48h": 837,
+   "mediana_48h": 829,
    "mejor": 2073,
    "pct_visto": 75,
    "mas_10k": 0,
@@ -184,9 +184,20 @@
     "mediana_48h": null
    }
   },
+  "pared": {
+   "videos": 2,
+   "mediana_48h": 1508,
+   "mejor": 2037,
+   "pct_visto": 132,
+   "mas_10k": 0,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
   "carrera": {
    "videos": 2,
-   "mediana_48h": 614,
+   "mediana_48h": 608,
    "mejor": 1971,
    "pct_visto": 77,
    "mas_10k": 0,
@@ -195,20 +206,9 @@
     "mediana_48h": null
    }
   },
-  "pared": {
-   "videos": 2,
-   "mediana_48h": 1447,
-   "mejor": 1881,
-   "pct_visto": 132,
-   "mas_10k": 0,
-   "imposible": {
-    "videos": 0,
-    "mediana_48h": null
-   }
-  },
   "cabeza": {
    "videos": 1,
-   "mediana_48h": 792,
+   "mediana_48h": 782,
    "mejor": 1667,
    "pct_visto": 161,
    "mas_10k": 0,
@@ -219,7 +219,7 @@
   },
   "plinko": {
    "videos": 1,
-   "mediana_48h": 671,
+   "mediana_48h": 665,
    "mejor": 1634,
    "pct_visto": 74,
    "mas_10k": 0,
@@ -231,38 +231,38 @@
  },
  "nuevas": [
   {
-   "id": "dV-pO8oB-N4",
-   "titulo": "Can Anyone Solve This? Fit All Erling Haaland Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 3546119
+   "id": "4pAsKasC0BE",
+   "titulo": "Can Anyone Solve This? FitAll  Christiano Ronaldo Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 2817688
   },
   {
-   "id": "Eq93_4mzrxE",
-   "titulo": "Can Anyone Solve This? Fit All Rodrygo Goes Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 3312237
+   "id": "pZJDBqpaC4w",
+   "titulo": "Ronaldo vs Messi vs Haaland vs Benzema Stop Challenge #ronaldo #messi #haaland #challenge #shorts",
+   "vistas": 2734440
   },
   {
-   "id": "Uzyzq9vXEhA",
-   "titulo": "BARCELONA 3-0 ASTON VILLA! 🔥 Joan García Saves Barça! 😱 Yamal, Raphinha & Fermín Show! #barcelona",
-   "vistas": 3306730
+   "id": "wCYPpO6q-_k",
+   "titulo": "Where Is the Dirt?! Nobody Can Find It 🧐🔍 #shorts#funny#mbappe#yamal #football #comedy",
+   "vistas": 2654117
   },
   {
-   "id": "-aa3hdyI25k",
-   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 3149575
+   "id": "4rwkaANAr8w",
+   "titulo": "we all love you CR7#ronaldo #efootball #shorts",
+   "vistas": 2480982
   },
   {
-   "id": "K5Z7SxIuMEA",
-   "titulo": "Ishowspeed Vs Lamine Yamal Vs Lionel Messi Vs Cristiano Ronaldo Vs Mbappe Eps.48 #carcrash #shorts",
-   "vistas": 2897430
+   "id": "Aeh-2R6RdRE",
+   "titulo": "Legendary Football Stop Challenge ⚽🛑 #messi #ronaldo #haland #neymar #shorts",
+   "vistas": 2463756
   },
   {
-   "id": "TtNOo_D02ak",
-   "titulo": "99.9% WILL FAIL The FIT challenge 👽💀🔥 Ronaldo R7 Lionel Messi Neymar Mbappé football challenge video",
-   "vistas": 2849543
+   "id": "LltltCNrWY0",
+   "titulo": "The Art Of Satisfying Nutmegs #footballshorts #nutmegs #football #soccer",
+   "vistas": 2385375
   }
  ],
  "comentarios": {
-  "total": 29,
+  "total": 30,
   "facil": 5,
   "dificil": 1
  },
@@ -277,47 +277,47 @@
  ],
  "horas": {
   "00": {
-   "mediana": 2846,
+   "mediana": 2800,
    "videos": 1
   },
   "09": {
-   "mediana": 3314,
+   "mediana": 3228,
    "videos": 5
   },
   "12": {
-   "mediana": 16353,
+   "mediana": 15626,
    "videos": 1
   },
   "13": {
-   "mediana": 7438,
+   "mediana": 7288,
    "videos": 4
   },
   "14": {
-   "mediana": 28872,
+   "mediana": 27716,
    "videos": 1
   },
   "15": {
-   "mediana": 15012,
+   "mediana": 14622,
    "videos": 2
   },
   "17": {
-   "mediana": 3215,
+   "mediana": 3148,
    "videos": 5
   },
   "20": {
-   "mediana": 1404,
+   "mediana": 1386,
    "videos": 1
   },
   "21": {
-   "mediana": 7552,
+   "mediana": 7415,
    "videos": 6
   },
   "22": {
-   "mediana": 17394,
+   "mediana": 17007,
    "videos": 1
   },
   "23": {
-   "mediana": 8513,
+   "mediana": 8418,
    "videos": 4
   }
  }

@@ -4529,5 +4529,851 @@
     "Incluir un contador visual de intentos o barra de tiempo"
    ]
   }
+ },
+ {
+  "id": "4pAsKasC0BE",
+  "titulo": "Can Anyone Solve This? FitAll  Christiano Ronaldo Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "HUNT LIKE A PRO 56",
+  "subs": 817000,
+  "creado": "2025-01-12",
+  "vistas": 2817688,
+  "horas": 123,
+  "vph": 22967,
+  "dur": 6,
+  "likes": 34635,
+  "coment": 188,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Wheel Match Puzzle - Ronaldo",
+   "mecanica": "Una rueda de recortes de Ronaldo gira sobre un cuerpo sin cabeza con borde neón. En el beat drop, la cabeza correcta se ensambla completando al jugador.",
+   "que_hace_el_espectador": "Pausar para hacer coincidir la cabeza exacta con el cuerpo o adivinar el momento del encaje.",
+   "cuadro_0": "Fondo: Césped verde. Arriba/Centro: Rueda de 8 recortes de Ronaldo en círculo. Centro abajo: Cuerpo de Ronaldo (Portugal #7) con borde neón amarillo sin cabeza.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Rueda circular de Ronaldo girando sobre el cuerpo con borde neón.",
+     "sonido": "Voz dramática en español ('Señor...')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Continúa la rotación continua de la rueda de recortes.",
+     "sonido": "Voz hablada en desarrollo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La rueda mantiene velocidad de giro constante.",
+     "sonido": "Voz dramática continúa."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Alineación progresiva de la rueda hacia el punto de match.",
+     "sonido": "Crescendo del audio."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "La rueda acelera brevemente antes del impacto.",
+     "sonido": "Transición previa al drop."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La cabeza encaja perfectamente en el cuerpo con destello neón.",
+     "sonido": "Drop de bajo pesado estilo Phonk."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Figura completada con ligero efecto de vibración/shake.",
+     "sonido": "Ritmo Phonk continuo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Brillo resaltado en el cuerpo armado de Ronaldo.",
+     "sonido": "Beat Phonk en marcha."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Reinicio sutil de la animación en ciclo.",
+     "sonido": "Base musical constante."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Transición suave hacia la posición del cuadro inicial.",
+     "sonido": "Outro del beat."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Retorno exacto a la posición inicial (0.0s).",
+     "sonido": "Bucle continuo de audio."
+    }
+   ],
+   "duracion_s": 5.0,
+   "loop": "Sí, el cuadro final empalma exactamente con el inicio creando un bucle infinito de video y audio.",
+   "gancho": "Movimiento circular constante de una estrella de fútbol con contorno neón llamativo.",
+   "dopamina": [
+    "Encaje perfecto de la pieza visual en el segundo 2.5",
+    "Coincidencia exacta con el drop de bajo pesado"
+   ],
+   "audio": "Audio viral en tendencia: sample de voz dramático que remata en Phonk bass drop.",
+   "por_que_comentan": "Escriben 'SIUUU', comentan en qué segundo pausaron o desafían a otros a encajarlo.",
+   "assets_necesarios": [
+    "PNG fondo de césped",
+    "PNG cuerpo Ronaldo sin cabeza con trazo neón",
+    "8 PNGs recortados de Ronaldo",
+    "Audio Phonk remix"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear canvas 1080x1920 con imagen de fondo de césped.",
+    "2. Colocar cuerpo PNG sin cabeza con borde amarillo neón en (540, 1400).",
+    "3. Crear grupo circular de 8 PNGs de Ronaldo a r=350px y rotar a 1.5 rad/s.",
+    "4. En t=2.5s, animar interpolación de la cabeza correcta hacia el cuerpo y activar shake de 5px."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar barra de tiempo o contador regresivo de presión.",
+    "Incluir efectos de partículas de fuego al momento del encaje.",
+    "Hacer variaciones de velocidad en la rueda para dificultar el pausado."
+   ]
+  }
+ },
+ {
+  "id": "pZJDBqpaC4w",
+  "titulo": "Ronaldo vs Messi vs Haaland vs Benzema Stop Challenge #ronaldo #messi #haaland #challenge #shorts",
+  "canal": "Fatan Hansel",
+  "subs": 10200,
+  "creado": "2019-02-01",
+  "vistas": 2734440,
+  "horas": 54,
+  "vph": 50395,
+  "dur": 6,
+  "likes": 37467,
+  "coment": 333,
+  "familia": "stop",
+  "analisis": {
+   "nombre_formato": "Stop Challenge 2x2 Face Align",
+   "mecanica": "Cuatro cuadros con futbolistas e imágenes recortadas (estrellas/corazones) moviéndose sobre sus rostros. El usuario debe pausar en el milisegundo exacto para alinear la cara.",
+   "que_hace_el_espectador": "Pausar repetidamente para intentar alinear la imagen recortada con la cara correcta.",
+   "cuadro_0": "Cuadrícula 2x2. Arriba-izq: Ronaldo (verde, 0.1%). Arriba-der: Benzema (azul, 99%). Abajo-izq: Haaland (celeste, 99%). Abajo-der: Messi (amarillo, 96%). Centro: calavera. Piezas con forma de corazón/estrella flotando.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicio con cuadrícula 2x2. Piezas recortadas empiezan a desplazarse velozmente.",
+     "sonido": "Beat Phonk en loop ('Kilian dictador')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Piezas de Benzema y Messi se mueven desalineadas.",
+     "sonido": "Ritmo Phonk continuo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Pieza de Haaland oscila sobre su rostro.",
+     "sonido": "Vocal loop sobre el bajo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Pieza de estrella sobre ojo de Ronaldo se desplaza hacia la izquierda.",
+     "sonido": "Beat continuo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Movimiento rápido general de los recortes.",
+     "sonido": "Loop musical."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Frame clave: la pieza de Messi pasa casi alineada por 1-2 frames.",
+     "sonido": "Pico de batería Phonk."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Las piezas se vuelven a deslinear rápidamente.",
+     "sonido": "Vocal loop continuo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Oscilación extrema de las piezas recortadas.",
+     "sonido": "Beat constante."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Pieza de Benzema cruza la posición correcta momentáneamente.",
+     "sonido": "Frase musical repetida."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Trayectoria final acelerada antes de reiniciar el ciclo.",
+     "sonido": "Transición sonora continua."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Retorno al frame inicial sin interrupción visual.",
+     "sonido": "Empalme perfecto de audio."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, la animación y el audio están en ciclo continuo sin cortes perceptibles.",
+   "gancho": "Porcentajes provocativos (0.1% vs 99%) y el reto visual interactivo de encajar las piezas.",
+   "dopamina": [
+    "Sensación de juego/reto al intentar pausar",
+    "Polémica por los porcentajes asignados a cada jugador"
+   ],
+   "audio": "Phonk brasileño en loop corto con vocales repetitivas.",
+   "por_que_comentan": "Debaten sobre los porcentajes (CR7 0.1%) o presumen habiendo logrado el pause exacto.",
+   "assets_necesarios": [
+    "PNGs recortados de Ronaldo, Benzema, Haaland y Messi",
+    "Máscaras en PNG (formas de corazón, estrella y círculos)",
+    "Icono PNG de calavera",
+    "Audio Phonk loop de 5s"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Layout 1080x1920 dividido en 4 cuadrantes con colores de fondo sólidos.",
+    "2. Superponer retratos base de los futbolistas con textos de porcentaje e ícono central.",
+    "3. Crear capas recortadas (máscaras) y animar su posición/rotación con OpenCV o MoviePy a 60 FPS, haciendo coincidir las caras solo en 2 cuadros exactos.",
+    "4. Exportar video en 5 segundos ajustado para loop con pista de audio sincronizada."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir un destello o efecto sonoro victorioso exacto en el frame donde encaja.",
+    "Colocar una barra de progreso de tiempo límite para aumentar la urgencia.",
+    "Hacer variaciones de dificultad donde las piezas giren además de desplazarse."
+   ]
+  }
+ },
+ {
+  "id": "wCYPpO6q-_k",
+  "titulo": "Where Is the Dirt?! Nobody Can Find It 🧐🔍 #shorts#funny#mbappe#yamal #football #comedy",
+  "canal": "HappyHM",
+  "subs": 1150000,
+  "creado": "2026-03-10",
+  "vistas": 2654117,
+  "horas": 40,
+  "vph": 66447,
+  "dur": 17,
+  "likes": 13223,
+  "coment": 6,
+  "familia": "find",
+  "analisis": {
+   "nombre_formato": "Skit de Comedia Visual - La Mancha en los Lentes",
+   "mecanica": "Un personaje intenta limpiar obsesivamente una mancha en un vidrio hasta que otro le quita los lentes y descubre que la mancha estaba en su visera.",
+   "que_hace_el_espectador": "Solo mirar el desarrollo cómico y esperar el remate absurdo.",
+   "cuadro_0": "Mbappe (camiseta #10 Francia) con lentes tácticos limpiando efusivamente un vidrio con un trapo blanco en un balcón.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Mbappe limpia el vidrio frenéticamente.",
+     "sonido": "Efecto de limpieza (squeak)"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Mbappe mira su teléfono confundido por la mancha.",
+     "sonido": "Sonido de confusión"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Mbappe vuelve a refregar el vidrio.",
+     "sonido": "Frotado rápido"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Mbappe limpia con más intensidad.",
+     "sonido": "Efecto de fricción"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Mbappe mira la puerta de cristal al lado.",
+     "sonido": "Pasos cortos"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Mbappe se desplaza hacia la puerta corrediza.",
+     "sonido": "Desplazamiento"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Mbappe abre la puerta de vidrio.",
+     "sonido": "Puerta corrediza abriéndose"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Yamal (camiseta #19 España) aparece sentado al fondo.",
+     "sonido": "Música de suspense cómico"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Yamal se levanta del sillón.",
+     "sonido": "Pasos de Yamal"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Yamal abre del todo la puerta.",
+     "sonido": "Deslizar puerta"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Mbappe ingresa al departamento.",
+     "sonido": "Pasos al entrar"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Mbappe se gira hacia el cristal desde adentro.",
+     "sonido": "Giro de personaje"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Mbappe refriega el vidrio desde el interior.",
+     "sonido": "Frotado intenso"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "La mancha persiste y Mbappe se frustra.",
+     "sonido": "Gruñido gracioso"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Mbappe hace cara de enojo e incredulidad.",
+     "sonido": "Tensión cómica"
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Mantiene una mueca exagerada.",
+     "sonido": "Silencio de expectativa"
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Yamal entra en plano y lo observa.",
+     "sonido": "Pasos lentos"
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Yamal señala la cara de Mbappe.",
+     "sonido": "Efecto ding"
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Yamal toca los lentes de Mbappe.",
+     "sonido": "Toque leve"
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Yamal le retira los lentes de la cara.",
+     "sonido": "Whoosh de extracción"
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Primer plano de los lentes transparentes.",
+     "sonido": "Coro celestial (Hallelujah)"
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Se observa la mancha naranja pegada al lente.",
+     "sonido": "Música dramática/religiosa"
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Mbappe mira fijamente los lentes extraídos.",
+     "sonido": "Impacto cómico"
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Mbappe comprende su error y reacciona.",
+     "sonido": "Grito de sorpresa"
+    },
+    {
+     "t": "12.0",
+     "pantalla": "Mbappe empieza a bailar y saltar descolocado.",
+     "sonido": "Ritmo alegre de comedia"
+    },
+    {
+     "t": "12.5",
+     "pantalla": "Mbappe hace gestos de locura y vergüenza.",
+     "sonido": "Efecto boing de caricatura"
+    },
+    {
+     "t": "13.0",
+     "pantalla": "Yamal sostiene la visera riéndose.",
+     "sonido": "Risas de fondo"
+    },
+    {
+     "t": "13.5",
+     "pantalla": "Mbappe realiza poses cómica en el fondo.",
+     "sonido": "Música festiva"
+    },
+    {
+     "t": "14.0",
+     "pantalla": "Mbappe continúa su celebración absurda.",
+     "sonido": "Remate musical"
+    },
+    {
+     "t": "14.5",
+     "pantalla": "Reacción final de ambos personajes.",
+     "sonido": "Risa de remate"
+    },
+    {
+     "t": "15.0",
+     "pantalla": "Pose final y congelado de Mbappe.",
+     "sonido": "Fade out de audio"
+    },
+    {
+     "t": "15.5",
+     "pantalla": "Cierre de escena.",
+     "sonido": "Silencio"
+    },
+    {
+     "t": "16.0",
+     "pantalla": "Fin del video.",
+     "sonido": "Click final"
+    }
+   ],
+   "duracion_s": 16.0,
+   "loop": "No es un loop continuo perfecto, pero la resolución rápida invita a volver a verlo.",
+   "gancho": "La acción absurda de fregar obsesivamente un vidrio capta la atención en el primer segundo.",
+   "dopamina": [
+    "Revelación de la mancha en los lentes (09.5s)",
+    "Reacción y baile descontrolado de Mbappe (12.0s)"
+   ],
+   "audio": "Efectos foley de limpieza/caricatura combinados con un coro celestial para la revelación y un track festivo al final.",
+   "por_que_comentan": "La interacción graciosa entre Mbappe y Yamal y la ridiculez del malentendido.",
+   "assets_necesarios": [
+    "Sprite recortado de Mbappe con camiseta #10",
+    "Sprite recortado de Yamal con camiseta #19",
+    "PNG de gafas/visera con mancha naranja",
+    "Fondo de departamento con balcón y puerta de cristal",
+    "Efectos de sonido: fregar vidrio, pop, whoosh y coro celestial"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Crear escena con lienzo 1080x1920 y colocar fondo de cristalera.",
+    "2. Superponer sprite de Mbappe moviendo brazo con trapo en bucle (0 a 6s).",
+    "3. Añadir overlay fija de mancha naranja sobre los ojos de Mbappe.",
+    "4. Trasladar sprite de Yamal desde el fondo al frente a los 4s.",
+    "5. Interpolar separación de la visera del rostro hacia primer plano a los 9.5s con cambio de pista de audio."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de 'limpieza 99%' en pantalla que nunca suba.",
+    "Utilizar un zoom digital dramático tipo anime en la cara de sorpresa.",
+    "Añadir subtítulos cómicos de pensamiento en cada personaje."
+   ]
+  }
+ },
+ {
+  "id": "4rwkaANAr8w",
+  "titulo": "we all love you CR7#ronaldo #efootball #shorts",
+  "canal": "DREAMER_efb",
+  "subs": 6200,
+  "creado": "2023-03-03",
+  "vistas": 2480982,
+  "horas": 78,
+  "vph": 31926,
+  "dur": 11,
+  "likes": 8262,
+  "coment": 2,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "ASMR Slime Pulling eFootball Unlocking",
+   "mecanica": "Se presenta una fila superior con 4 cartas de eFootball de Cristiano Ronaldo con media ascendente (104, 105, 107, 109). Abajo, una mano estira una figura de slime con ojitos locos y cada estiramiento desbloquea/activa la siguiente carta de Ronaldo acompañada de audios icónicos (SIUUU, risa, discurso del Balón de Oro).",
+   "que_hace_el_espectador": "Mira con satisfacción ASMR la textura del slime al estirarse y espera ver cuál es la última carta (la de 109) y qué audio sonará.",
+   "cuadro_0": "Arriba: banner horizontal dividido en 4 columnas mostrando cartas de Cristiano Ronaldo (104 Al-Nassr iluminada/seleccionada, 105 Portugal, 107 Man Utd, 109 Man Utd). Centro/Abajo: slime azul con googly eyes siendo estirado verticalmente hacia abajo por una espátula/imán negro sobre fondo blanco.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Slime azul con ojos estirándose hacia abajo. Carta 104 seleccionada arriba a la izquierda.",
+     "sonido": "Sonido de slime estirándose / fricción suave."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El slime azul completa la deformación y desaparece de la pantalla.",
+     "sonido": "Grito de fondo / transición corta."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Aparece slime rojo circular con ojitos. Se activa/resalta la carta 105 de Portugal.",
+     "sonido": "Grito icónico de Cristiano Ronaldo 'SIUUU'."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La espátula engancha la boca del slime rojo y empieza a tirarlo hacia abajo.",
+     "sonido": "Continuación del grito SIUUU."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El slime rojo se estira casi al límite inferior.",
+     "sonido": "Efecto de audio retumbante / eco."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Se revela la cara de slime rosa con ojitos. Transición a la carta 107 de Man Utd.",
+     "sonido": "Risa editada de Cristiano Ronaldo."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La espátula empieza a deformar el slime rosa jalándolo hacia abajo.",
+     "sonido": "Efecto de deformación elástica."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "El slime rosa se desgarra mostrando la capa verde al fondo.",
+     "sonido": "Efecto de deslizamiento ASMR."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Slime rosa casi extendido por completo.",
+     "sonido": "Grito ahogado de Ronaldo de fondo."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Transición al slime rosa estirándose completamente al final.",
+     "sonido": "Efecto de sonido de estiramiento."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Entra en plano un slime verde con pelo de regaliz de colores y ojos locos.",
+     "sonido": "Silencio breve / expectación."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Una peladora violeta se posiciona sobre la boca del slime verde.",
+     "sonido": "Silencio de preparación."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "La peladora empieza a bajar sobre la cara verde.",
+     "sonido": "Ronaldo hablando: 'Muchas gracias afición...'"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "La peladora engancha el slime verde y lo deforma verticalmente hacia abajo.",
+     "sonido": "Ronaldo: '...esto es para vosotros...'"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "El slime verde se alarga dramáticamente.",
+     "sonido": "Continuación de la voz de Ronaldo."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Se resalta la carta final de 109 de Ronaldo en la esquina superior derecha.",
+     "sonido": "Inicio del clímax del audio."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "La boca del slime verde se abre de par en par con la peladora.",
+     "sonido": "Ruido de multitud / estadio de fondo."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "El slime verde llega a su máxima elongación.",
+     "sonido": "Grito masivo 'SIUUUUUU'."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Efecto visual de brillo en la carta 109 superior derecha.",
+     "sonido": "SIUUU con eco prolongado."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "El slime verde termina de deslizarse fuera de marco.",
+     "sonido": "Desenlace del grito."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Pantalla final con las cartas destacadas eFootball de CR7.",
+     "sonido": "Voz final / desvanecimiento de audio."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Último fotograma listo para reiniciar en bucle.",
+     "sonido": "Silencio / corte."
+    }
+   ],
+   "duracion_s": 10.8,
+   "loop": "Corta inmediatamente cuando el slime verde sale de pantalla y reengancha con el slime azul del segundo 0.0 sin pausa.",
+   "gancho": "Combinación del estímulo visual ASMR (deformación de slime de colores vivos) con el tema viral de Ronaldo y eFootball, activando curiosidad por ver la carta con mayor media.",
+   "dopamina": [
+    "Satisfacción táctil ASMR al ver estirar el slime (t=0.0, t=1.5, t=6.5)",
+    "Recompensa de sonido icónico 'SIUUU' (t=1.0, t=8.5)",
+    "Progresión de nivel (cartas 104 -> 105 -> 107 -> 109)"
+   ],
+   "audio": "Efectos de sonido ASMR de slime + audios de voz virales de Cristiano Ronaldo ('SIUUU', 'Muchas gracias afición...').",
+   "por_que_comentan": "Debaten sobre qué carta de Ronaldo es mejor en eFootball, imitan el 'SIUUU' en los comentarios o comentan sobre lo gracioso/satisfactorio del slime con cara.",
+   "assets_necesarios": [
+    "4 imágenes recortadas PNG de cartas eFootball de Cristiano Ronaldo (104, 105, 107, 109)",
+    "Texturas/gráficos 2D o simulaciones de slime (azul, rojo, rosa, verde)",
+    "Sprites de ojitos locos (googly eyes)",
+    "Efectos de audio ASMR de estiramiento/goma",
+    "Audios virales de Cristiano Ronaldo (SIUUU, risa, discurso Balón de Oro)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Crear layout en Python (MoviePy / OpenCV): header fijo arriba (20% alto) con las 4 cartas PNG ordenadas por media.",
+    "2. Área principal (80% alto): instanciar objetos gráficos (círculos rellenos con física de malla / deformación de vértices usando Shapely/OpenCV o Skia).",
+    "3. Para cada color (azul, rojo, rosa, verde): dibujar cuerpo plano + 2 círculos blancos/negros para los ojitos.",
+    "4. Animar la deformación bezier/mesh bajando la parte inferior del círculo hacia y=bottom a una velocidad constante v(t) simulando el jalón de la herramienta.",
+    "5. Sincronizar eventos de iluminación en la carta superior correspondiente cuando empiece la deformación del slime de ese color.",
+    "6. Superponer la pista de audio combinando el clip de voz de CR7 con el SFX de estiramiento en cada marca de tiempo (t=0, t=1.0, t=2.5, t=5.5)."
+   ],
+   "como_lo_hacemos_mejor": [
+    "1. Reemplazar las caras estáticas por animaciones interactivas donde la pupila siga la herramienta de jalón.",
+    "2. Agregar una barra de progreso de media (rating) que suba con un contador digital animado (ej: 104 -> 109) en lugar de solo iluminar la carta.",
+    "3. Incluir un minijuego o llamada a la acción en pantalla ('¿Cuál es tu versión favorita? Comenta 104, 105, 107 o 109') para disparar el engagement."
+   ]
+  }
+ },
+ {
+  "id": "Aeh-2R6RdRE",
+  "titulo": "Legendary Football Stop Challenge ⚽🛑 #messi #ronaldo #haland #neymar #shorts",
+  "canal": "Artisan Craft",
+  "subs": 72400,
+  "creado": "2025-04-09",
+  "vistas": 2463756,
+  "horas": 134,
+  "vph": 18352,
+  "dur": 6,
+  "likes": 47703,
+  "coment": 149,
+  "familia": "stop",
+  "analisis": {
+   "nombre_formato": "Football Face Puzzle Stop Challenge",
+   "mecanica": "Grilla de 4 cuadrantes con futbolistas cuyos rasgos faciales se deforman o desplazan continuamente a alta velocidad. El usuario debe pausar el video en el segundo exacto para encajar la cara correctamente.",
+   "que_hace_el_espectador": "Pausar el video repetidamente para intentar alinear perfectamente el rostro recortado de su jugador favorito.",
+   "cuadro_0": "Grilla 2x2. Arriba Izq (Amarillo): Messi (49%). Arriba Der (Rosa): Ronaldo (1%). Abajo Izq (Azul): Haaland (99%). Abajo Der (Morado): Neymar (69%). Piezas faciales desplazadas y deformadas con animaciones rápidas.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Grilla 2x2 visible. Ojos y bocas distorsionados comienzan a moverse sobre las caras de Messi, Ronaldo, Haaland y Neymar.",
+     "sonido": "Vocal Phonk distorsionada ('Dictador')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Animación de parche/máscara sobre la nariz de Messi y la boca de Ronaldo cambiando de forma.",
+     "sonido": "Continuación de base Phonk en bucle."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Haaland muestra deformación de ojos agigantados. Neymar tiene una estrella/parche en el ojo derecho.",
+     "sonido": "Vocal Phonk continua."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Piezas flotantes cambian de posición a 30 FPS generando dificultad para congelar la imagen.",
+     "sonido": "Vocal Phonk continua."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Ronaldo muestra sonrisa totalmente desalineada. Messi altera forma del pómulo.",
+     "sonido": "Vocal Phonk continua."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Haaland vuelve a alinearse por 1 frame. Neymar alterna parches sobre la cara.",
+     "sonido": "Vocal Phonk continua."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Ciclo rápido de deformaciones extremas en las 4 esquinas.",
+     "sonido": "Vocal Phonk continua."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Messi y Ronaldo cambian elementos faciales recortados.",
+     "sonido": "Vocal Phonk continua."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Fase final de deformación acelerada antes de reiniciar el bucle.",
+     "sonido": "Vocal Phonk remata compás."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Último frame con alineación casi perfecta previa al loop.",
+     "sonido": "Corte de audio sincronizado con frame 0."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, empalma de manera infinita tanto en audio como en animación de 30 FPS.",
+   "gancho": "Curiosidad visual y desafío interactivo de alineación rápida.",
+   "dopamina": [
+    "Sensación de reto al intentar pausar",
+    "Humor por las caras deformes",
+    "Recompensa visual al lograr el pause perfecto"
+   ],
+   "audio": "Track Phonk viral 'Dictador' en velocidad ajustada y bucle continuo.",
+   "por_que_comentan": "Comparten capturas de pantalla de sus intentos fallidos o dicen a quién lograron pausar correctamente.",
+   "assets_necesarios": [
+    "4 Fotos PNG recortadas de jugadores (Messi, Ronaldo, Haaland, Neymar)",
+    "Recortes PNG de rasgos faciales (ojos, nariz, boca, parches)",
+    "Fuente tipográfica en negrita para los porcentajes",
+    "Archivo de audio Phonk en bucle"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Crear un lienzo 1080x1920 dividido en 4 cuadrantes con colores sólidos de fondo.",
+    "Posicionar las fotos base de los 4 jugadores en cada cuadrante.",
+    "Definir una lista de Sprites de recortes faciales (ojos, bocas, narices).",
+    "Mediante MoviePy u OpenCV, iterar frame a frame (30 fps) aplicando transformaciones aleatorias (escala, posición, rotación) a los recortes.",
+    "Colocar un frame 'correcto' alineado cada N frames aleatorios.",
+    "Agregar los textos de porcentajes en la parte inferior de cada cuadrante.",
+    "Exportar en loop de 5 segundos renderizando el audio Phonk sincronizado."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de intentos o temporizador en pantalla.",
+    "Incluir efectos de sonido (SFX) cómicos cuando la cara se deforme.",
+    "Añadir un sistema de 'nivel imposible' con velocidades variables de fotogramas."
+   ]
+  }
+ },
+ {
+  "id": "LltltCNrWY0",
+  "titulo": "The Art Of Satisfying Nutmegs #footballshorts #nutmegs #football #soccer",
+  "canal": "Kingofpov80",
+  "subs": 496000,
+  "creado": "2025-02-03",
+  "vistas": 2385375,
+  "horas": 48,
+  "vph": 49687,
+  "dur": 10,
+  "likes": 12040,
+  "coment": 72,
+  "familia": "satisfying",
+  "analisis": {
+   "nombre_formato": "POV Nutmeg Montage Triple Split",
+   "mecanica": "Compilación hiperdinámica de caños/túneles (nutmegs) en fútbol amateur en primera persona (cámara POV gran angular). La pantalla está dividida en tres franjas horizontales sincronizadas. En cada corte se ejecuta un caño humillante a un rival, acompañado de un efecto de sonido meme cómico y exagerado justo en el momento del impacto.",
+   "que_hace_el_espectador": "Solo mirar hipnotizado por la fluidez, el ángulo inmersivo y el morbo de ver a defensores quedar en ridículo.",
+   "cuadro_0": "Layout vertical 9:16 dividido en 3 franjas horizontales. Arriba: repetición/espejo borroso o vista cenital del rival. Centro: toma principal POV ojo de pez del campo sintético verde, balón amarillo con negro y texto blanco central 'The Art Of...'. Abajo: piernas y zapatillas del jugador con short lila/azul claro.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Triple split POV. Balón amarillo en los pies. Texto centrado: 'The Art Of...'. Se ve un arquero de remera celeste al fondo.",
+     "sonido": "Vocal melódica en loop agudo ('Weee-ooo-weee')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El jugador avanza con la pelota hacia el arquero.",
+     "sonido": "Continúa la base vocal rítmica."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El arquero abre las piernas intentando achicar el espacio.",
+     "sonido": "Vocal en crescendo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Toque sutil de balón que pasa justo entre las piernas del arquero.",
+     "sonido": "Golpe seco del balón."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El arquero mira hacia atrás desconcertado mientras el balón entra al arco.",
+     "sonido": "Vocal se corta bruscamente."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Cámara se acerca a la cara de resignación del arquero.",
+     "sonido": "Grito meme ahogado / eco cómico."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Transición rápida. Zoom in a la cara del arquero congelada.",
+     "sonido": "Risas de fondo distorsionadas."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Flash/corte. Texto cambia a 'Satisfying nutmegs'.",
+     "sonido": "Efecto de impacto (Whoosh/Boom)."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Clip 2: Cancha abierta al atardecer. Rival de negro corre de frente a presionar.",
+     "sonido": "Sonido de tensión / beat rítmico."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Rival estira la pierna derecha para robar la pelota.",
+     "sonido": "Silencio de anticipación."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "El balón pasa milimétricamente entre los pies del rival de negro.",
+     "sonido": "Efecto de sonido de resorte 'Boing' de caricatura."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "El rival queda congelado en pose torpe mientras el POV sigue avanzando.",
+     "sonido": "Grito de multitud/meme 'OOOOHHH!'."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "El jugador corre libre hacia el arco rival con la pelota.",
+     "sonido": "Continúa el festejo vocal."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Corte rápido al Clip 3. Otro defensor con pechera azul y vincha negra corre directo a chocar.",
+     "sonido": "Whoosh de cambio de escena."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "El defensor llega a toda velocidad con zancada abierta.",
+     "sonido": "Tensión musical corta."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Pase suave con el empeine entre los dos muslos del defensor.",
+     "sonido": "Efecto de cachetada/bofetada seca (Slap meme)."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "El defensor se frena en seco y gira en cámara lenta viendo pasar la pelota.",
+     "sonido": "Voz grave en slow motion 'DAMN!' o gemido cómico."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "El jugador recupera la pelota tras el caño y encara al arco libre.",
+     "sonido": "Aplausos / risas del público."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Remate final o avance continuo que empalma con el inicio.",
+     "sonido": "Filtro pasa bajos y transición limpia de audio."
+    }
+   ],
+   "duracion_s": 9.5,
+   "loop": "Perfecto: el último frame termina corriendo hacia adelante con el balón, conectando directamente con la carrera inicial del primer clip.",
+   "gancho": "La perspectiva POV ultra envolvente (ojo de pez) y la inmediatez de la acción: en menos de 1.5 segundos ya ocurrió el primer caño con humillación visual.",
+   "dopamina": [
+    "La precisión milimétrica del balón pasando entre las piernas en cámara rápida.",
+    "El efecto de sonido slap/boing perfectamente sincronizado con el cuadro exacto del túnel.",
+    "La cara o postura ridícula del rival al quedar desairado."
+   ],
+   "audio": "Vocalización aguda pegadiza estilo TikTok/meme que corta abruptamente en cada túnel para dar lugar a efectos de comedia (boing de resortes, cachetadas, gritos de sorpresa).",
+   "por_que_comentan": "Debaten si los defensores son malos o actores, celebran la limpieza del caño ('lo mandó a comprar pan'), o etiquetan a amigos que siempre caen en esa jugada.",
+   "assets_necesarios": [
+    "Sprites PNG recortados de piernas en primera persona (patada, conducción).",
+    "Sprites de balón de fútbol en rotación y perspectiva.",
+    "Sprites de siluetas de defensores con piernas abiertas (frontal y lateral).",
+    "Fondo de textura de césped sintético con líneas de cal en perspectiva distorsionada (fisheye).",
+    "SFX: golpe de pelota, resorte boing de caricatura, slap bofetada, grito de multitud 'OHHH'."
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "Crear canvas vertical 1080x1920 con MoviePy o Pygame/Pillow.",
+    "Dividir el layout en 3 bandas: banda central (y=480 a y=1440, alto 960px) con el juego principal; banda superior (y=0 a 480) con un mirror desenfocado o zoom de la cabeza del rival; banda inferior (y=1440 a 1920) con zoom fijo a los botines.",
+    "Renderizar el suelo con una cuadrícula o textura de césped con transformación proyectiva / homografía para dar sensación de perspectiva 3D acelerada hacia adelante (scroll en Y a 60 fps).",
+    "Colocar el sprite del defensor escalando su tamaño de 10% a 100% en 1.2 segundos para simular acercamiento frontal.",
+    "Cuando el rival alcanza el 70% de escala, cambiar su frame a 'piernas abiertas'.",
+    "Animar el balón avanzando en línea recta por el centro hacia el fondo (reduciendo escala) o pasando a través del hueco de las piernas del defensor.",
+    "Disparar en ese frame exacto el audio de 'boing' o 'slap' y agregar un micro-temblor de pantalla (screen shake de 8px por 3 frames).",
+    "Repetir el bucle con 3 defensores distintos en 9 segundos y exportar en H.264."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador en pantalla tipo 'Nutmeg Combo x1, x2, x3' con animación arcade y fuegos artificiales.",
+    "Incluir un freeze-frame de 0.2s justo cuando la pelota cruza la entrepierna con un círculo rojo y texto de humillación (ej. 'RIP').",
+    "Hacer que el rival pierda fragmentos de 'armadura' o caiga un emoji de calavera sobre su cabeza al recibir el túnel."
+   ]
+  }
  }
 ]
