@@ -98,6 +98,68 @@ a{color:var(--blue);text-decoration:none}
 .rcard .big{font-family:var(--display);font-weight:800;font-size:24px}
 button{font-family:var(--mono);font-size:11px;border:1px solid var(--line);background:var(--panel2);color:var(--ink);border-radius:8px;padding:6px 10px;cursor:pointer}
 button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offset:2px}
+/* pestañas */
+.tabs{position:sticky;top:var(--toph,53px);z-index:4;background:rgba(11,15,13,.95);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);
+  display:flex;gap:4px;overflow-x:auto;padding:6px max(14px,env(safe-area-inset-left,0px));scrollbar-width:none}
+.tabs::-webkit-scrollbar{display:none}
+.tab{flex:0 0 auto;font-family:var(--display);font-weight:700;font-size:16px;letter-spacing:.02em;padding:7px 12px;border-radius:10px;border:0;background:transparent;color:var(--muted);position:relative}
+.tab[aria-selected=true]{background:var(--panel2);color:var(--ink);box-shadow:inset 0 -2px 0 var(--lime)}
+.tab .badge{position:absolute;top:2px;right:2px;min-width:16px;height:16px;border-radius:8px;background:var(--err);color:#fff;font:600 10px/16px var(--mono);text-align:center;padding:0 4px}
+[data-tab]{display:none}[data-tab].on{display:block}
+/* resumen */
+.hero{border-radius:20px;padding:20px;border:1px solid var(--line);background:linear-gradient(140deg,var(--hc,#1a2a1f),#111814 70%)}
+.hero .k{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--hk,var(--lime))}
+.hero h1{font-family:var(--display);font-weight:800;font-size:clamp(26px,5.5vw,40px);line-height:1.05;margin:8px 0 10px}
+.hero p{margin:0;color:#cfdad3;font-size:15px;line-height:1.55;max-width:820px}
+.meta{margin-top:16px}.meta .barra{height:18px;margin-top:6px}
+.trio{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:12px}
+.trio .panel h3{margin:0 0 8px;font-family:var(--display);font-size:19px}
+.trio ul{margin:0;padding-left:18px}.trio li{margin:5px 0;font-size:14px;line-height:1.45}
+.sem{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:1px}
+/* mapa del sistema */
+.smapa{width:100%;height:auto;display:block;touch-action:manipulation}
+.capa{fill:#0f1512;stroke:#1d2822;stroke-width:1}
+.capa-t{fill:var(--muted);font-family:var(--mono);font-size:11px;letter-spacing:.12em}
+.sn{cursor:pointer}
+.sn rect{fill:var(--panel2);stroke:var(--line);stroke-width:1.5;transition:stroke .2s}
+.sn:hover rect,.sn:focus rect{stroke:var(--blue)}
+.sn.ok rect{stroke:#2d6b45}.sn.run rect{stroke:var(--lime);stroke-width:2.5;animation:brillo 1.4s ease-in-out infinite}.sn.err rect{stroke:var(--err);stroke-width:2.2}.sn.warn rect{stroke:var(--amber)}
+.sn.sel rect{stroke:var(--blue);stroke-width:3}
+.sn .t{fill:var(--ink);font-family:var(--display);font-weight:700;font-size:15px}
+.sn .s{fill:var(--muted);font-family:var(--mono);font-size:10px}
+.sn .ia{fill:#b48cff;font-family:var(--mono);font-size:9px;font-weight:600}
+.sn .luz{fill:var(--idle)}.sn.ok .luz{fill:var(--ok)}.sn.run .luz{fill:var(--lime)}.sn.err .luz{fill:var(--err)}.sn.warn .luz{fill:var(--amber)}
+.arista{fill:none;stroke:#2a3a31;stroke-width:2}
+.arista.on{stroke:var(--lime);stroke-dasharray:6 8;animation:flujo .8s linear infinite}
+.leyenda{display:flex;flex-wrap:wrap;gap:12px;font-size:12px;color:var(--muted);margin-top:8px}
+.detalle{margin-top:12px;border-left:3px solid var(--blue)}
+.detalle h3{margin:0 0 4px;font-family:var(--display);font-size:22px}
+.detalle .op{background:#0e1411;border:1px solid var(--line);border-radius:10px;padding:10px;margin-top:10px;font-size:14px;line-height:1.5}
+/* cerebro / análisis */
+.fila2{display:grid;grid-template-columns:120px 1fr auto;gap:8px;align-items:center;margin:8px 0;font-size:13px}
+.pb{height:8px;background:#0e1411;border-radius:4px;overflow:hidden;margin-top:3px}.pb i{display:block;height:100%;background:var(--blue)}
+.conf{font-family:var(--mono);font-size:10px;padding:1px 6px;border-radius:999px;border:1px solid var(--line)}
+.conf.alta{color:var(--ok);border-color:#24553a}.conf.media{color:var(--amber);border-color:#5a4520}.conf.baja{color:var(--muted)}
+.div{display:grid;grid-template-columns:52px 1fr 1fr 48px;gap:0;align-items:center;margin:5px 0;font-size:12px}
+.div .neg{display:flex;justify-content:flex-end}.div .neg i{height:12px;background:var(--err);border-radius:6px 0 0 6px;display:block}
+.div .pos i{height:12px;background:var(--ok);border-radius:0 6px 6px 0;display:block}
+.div .neg,.div .pos{border-left:1px solid transparent}.div .pos{border-left:1px solid var(--muted)}
+.ab{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px;margin-top:10px}
+.tiles{display:grid;gap:10px;grid-template-columns:repeat(auto-fit,minmax(160px,1fr))}
+.tile{background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:12px}
+.tile .v{font-family:var(--display);font-weight:800;font-size:26px;line-height:1.05}
+.tile .l{font-size:12px;color:var(--muted);margin-top:2px}.tile .n{font-size:11px;color:var(--muted);margin-top:6px;font-family:var(--mono)}
+.hall{border-radius:14px;padding:14px;border:1px solid var(--line);background:var(--panel2);border-left:4px solid var(--hcol)}
+.hall h3{margin:6px 0;font-family:var(--display);font-size:20px}
+.hall .q{font-size:14px;line-height:1.5;margin:6px 0}.hall .q b{color:var(--hcol)}
+.hall .tg{font-family:var(--mono);font-size:10px;text-transform:uppercase;letter-spacing:.08em;color:var(--hcol)}
+/* propuestas */
+.iss{display:grid;grid-template-columns:auto 1fr auto;gap:12px;align-items:center;padding:12px;border:1px solid var(--line);border-radius:12px;background:var(--panel2);margin-top:8px}
+.iss .ic{font-size:22px}.iss .tt{font-weight:600;font-size:15px}
+.iss.nuevo{border-color:var(--lime);box-shadow:0 0 0 1px var(--lime)}
+.btn{display:inline-block;font-family:var(--mono);font-size:12px;border:1px solid var(--lime);color:var(--lime);background:transparent;border-radius:10px;padding:8px 12px;cursor:pointer}
+.btn.on{background:var(--lime);color:var(--bg)}
+@media (max-width:480px){.logo{font-size:19px}.vivo{font-size:10px}}
 @media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important}}
 </style>
 </head>
@@ -106,7 +168,89 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
   <div class="logo">FÁBRICA <b>·</b> Futbol Edition</div>
   <div class="vivo"><i class="dot" id="dot"></i><span id="vivo-t">conectando…</span></div>
 </div>
+<nav class="tabs" role="tablist" aria-label="Secciones">
+  <button class="tab" role="tab" data-ir="resumen">Resumen</button>
+  <button class="tab" role="tab" data-ir="mapa">Mapa en vivo</button>
+  <button class="tab" role="tab" data-ir="cerebro">Cerebro</button>
+  <button class="tab" role="tab" data-ir="analisis">Análisis</button>
+  <button class="tab" role="tab" data-ir="propuestas">Propuestas<span class="badge" id="badge" hidden></span></button>
+  <button class="tab" role="tab" data-ir="canal">Canal</button>
+</nav>
 <div class="app">
+ <section data-tab="resumen">
+  <div class="hero" id="hero" style="margin-top:12px">
+    <div class="k" id="hero-k">Cómo está el canal</div>
+    <h1 id="hero-t">Cargando…</h1>
+    <p id="hero-p"></p>
+    <div class="meta"><div class="barra-l"><span>Camino a monetizar · vistas de Shorts en 90 días</span><span id="mon-v"></span></div>
+      <div class="barra"><i id="mon-i"></i></div>
+      <div class="barra-l"><span id="mon-a"></span><span id="mon-b"></span></div></div>
+  </div>
+  <div class="trio">
+    <div class="panel"><h3><span class="sem" style="background:var(--ok)"></span>Lo que funciona</h3><ul id="r-si"></ul></div>
+    <div class="panel"><h3><span class="sem" style="background:var(--err)"></span>Lo que no</h3><ul id="r-no"></ul></div>
+    <div class="panel"><h3><span class="sem" style="background:var(--lime)"></span>Para vos</h3><ul id="r-vos"></ul></div>
+  </div>
+  <div class="grid g4">
+    <div class="panel kpi"><div class="v" id="r-sis">—</div><div class="l">partes del sistema sanas</div><div class="d muted" id="r-sis-d"></div></div>
+    <div class="panel kpi"><div class="v" id="r-orig">—</div><div class="l">originalidad (meta ≥ 75)</div><div class="d muted" id="r-orig-d"></div></div>
+    <div class="panel kpi"><div class="v" id="r-racha">—</div><div class="l">días seguidos con 6 videos</div><div class="d muted">meta 14</div></div>
+    <div class="panel kpi"><div class="v" id="r-res">—</div><div class="l">videos de reserva</div><div class="d muted">meta 12</div></div>
+  </div>
+ </section>
+
+ <section data-tab="mapa">
+  <div class="panel" style="margin-top:12px">
+    <div class="ph"><h2>Mapa del sistema · en vivo</h2><span id="smapa-s"></span></div>
+    <div class="sub" style="margin-bottom:8px">Tocá cualquier parte para ver qué hace, cómo está y qué opina. Las líneas verdes que se mueven = está pasando ahora.</div>
+    <svg class="smapa" id="smapa" role="img" aria-label="Mapa interactivo del sistema"></svg>
+    <div class="leyenda"><span><span class="sem" style="background:var(--ok)"></span>anda bien</span><span><span class="sem" style="background:var(--lime)"></span>trabajando ahora</span>
+      <span><span class="sem" style="background:var(--amber)"></span>para mirar</span><span><span class="sem" style="background:var(--err)"></span>falló</span><span><span class="sem" style="background:var(--idle)"></span>esperando su turno</span>
+      <span style="color:#b48cff">IA = usa inteligencia artificial · el resto son máquinas</span></div>
+  </div>
+  <div class="panel detalle" id="det"></div>
+ </section>
+
+ <section data-tab="cerebro">
+  <div class="grid g2">
+    <div class="panel"><div class="ph"><h2>Qué formato rinde más</h2><span id="cer-s"></span></div>
+      <div class="sub" style="margin-bottom:6px">Vistas esperadas a las 48 h (con estadística: pocos videos = se acerca al promedio). La barra azul es la probabilidad de ser el mejor: con eso el cerebro decide cuánto mostrar cada uno.</div>
+      <div id="cer-f"></div></div>
+    <div class="panel"><div class="ph"><h2>Qué hora rinde más</h2><span>vs lo esperado por su formato</span></div>
+      <div id="cer-h"></div></div>
+  </div>
+  <div class="grid g2">
+    <div class="panel"><div class="ph"><h2>Originalidad · últimos 7 días</h2><span>tope 35 % por formato</span></div>
+      <div class="sub" style="margin-bottom:6px">Para no parecer "de plantilla" (lo que YouTube no monetiza), ningún formato puede pasar la línea.</div>
+      <div id="cer-o"></div></div>
+    <div class="panel"><div class="ph"><h2>Pruebas A/B en curso</h2><span>gana con 90 % y 4 videos por lado</span></div>
+      <div id="cer-ab"></div></div>
+  </div>
+  <div class="panel" style="margin-top:12px"><div class="ph"><h2>Meta de la Fase 2</h2><span>+25 % en 3 semanas</span></div><div id="cer-meta"></div></div>
+ </section>
+
+ <section data-tab="analisis">
+  <div class="hero" id="an-hero" style="margin-top:12px"><div class="k" id="an-k"></div><h1 id="an-t"></h1><p id="an-p"></p></div>
+  <div class="tiles" id="an-n" style="margin-top:12px"></div>
+  <div class="grid g2" id="an-h"></div>
+  <div class="grid g2">
+    <div class="panel"><div class="ph"><h2>Reglas matemáticas que usamos</h2></div><ul id="an-r" style="margin:0;padding-left:18px;line-height:1.6"></ul></div>
+    <div class="panel"><div class="ph"><h2>Qué hacemos con esto</h2></div><div id="an-a"></div></div>
+  </div>
+ </section>
+
+ <section data-tab="propuestas">
+  <div class="panel" style="margin-top:12px">
+    <div class="ph"><h2>Propuestas, consultas y alarmas</h2><span id="pr-s"></span></div>
+    <div class="sub" style="line-height:1.6">Acá llega todo lo que necesita tu decisión. Para responder: abrí la propuesta y comentá <b>aprobado</b> o <b>rechazado</b> (o lo que quieras cambiar). El Gerente IA lo lee cada día a las 15:41.</div>
+    <div style="margin-top:10px;display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+      <button class="btn" id="alarma">🔔 Activar alarma en este dispositivo</button><span class="sub" id="alarma-s"></span></div>
+    <div id="pr"></div>
+    <div class="sub" style="margin-top:14px;line-height:1.6"><b>Para que te suene en el celular aunque esta página esté cerrada:</b> instalá la app de GitHub, entrá al repositorio y tocá <b>Watch → Custom → Issues</b>. Cada propuesta, consulta o alarma nueva es un Issue, así que te llega como notificación. El parte diario del Gerente IA también te llega al celular por la app de Claude.</div>
+  </div>
+ </section>
+
+ <section data-tab="canal">
   <div class="grid g2">
     <div class="panel estado">
       <div class="est-t" id="est-t">Estado del sistema</div>
@@ -124,10 +268,6 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
     </div>
   </div>
 
-  <div class="panel" style="margin-top:12px">
-    <div class="ph"><h2>Mapa de la fábrica</h2><span id="mapa-s"></span></div>
-    <svg class="mapa" id="mapa" viewBox="0 0 1000 300" role="img" aria-label="Mapa del flujo de la fábrica"></svg>
-  </div>
 
   <div class="grid g2">
     <div class="panel">
@@ -176,6 +316,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
     <div class="ph"><h2>Lo que te toca</h2></div>
     <ol id="tarea"></ol>
   </div>
+ </section>
 </div>
 
 <script src="datos.js"></script>
@@ -191,7 +332,7 @@ const fmt = n => n == null ? "—" : n >= 1e6 ? (n / 1e6).toFixed(1) + " M" : n 
 const SVGNS = "http://www.w3.org/2000/svg";
 const sv = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
 const hace = iso => { if (!iso) return "—"; const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "recién" : m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : `hace ${Math.round(m / 1440)} d`; };
-let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null, D_GER = null;
+let D_RES = null, D_VIG = null; let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null, D_GER = null, D_CER = null, D_AN = null, RUNS = [], ISSUES = null, SEL = "cerebro";
 
 async function traer(url) { try { const r = await fetch(url, {cache: "no-store"}); return r.ok ? await r.json() : null; } catch (e) { return null; } }
 
@@ -203,7 +344,11 @@ async function cargar() {
     traer(RAW(CFG.rama, "pipeline/datos/semana_actual.json")), traer(RAW(CFG.rama, "pipeline/datos/publicados.json")),
     traer(RAW("datos-vivos", "vivo.json"))]);
   const [olas, inv] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/olas.json")), traer(RAW(CFG.rama, "pipeline/datos/investigacion.json"))]);
-  D_OLAS = olas; D_INV = inv; D_GER = await traer(RAW(CFG.rama, "pipeline/datos/gerente.json"));
+  D_OLAS = olas; D_INV = inv;
+  [D_GER, D_CER, D_AN] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/gerente.json")), traer(RAW(CFG.rama, "pipeline/datos/cerebro.json")),
+                                            traer(RAW(CFG.rama, "pipeline/datos/analisis_ia.json"))]);
+  [D_RES, D_VIG] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/reserva.json")), traer(RAW(CFG.rama, "pipeline/datos/vigilancia.json"))]);
+  D_GER = D_GER || s.gerente || null; D_CER = D_CER || s.cerebro || null; D_AN = D_AN || s.analisis_ia || null;
   D = {estado: estado || s.estado || {}, radar: (radar && radar.virales) || s.radar || [], analisis: analisis || s.analisis || {},
        plan: plan || s.plan || {}, semana: semana || s.semana || {}, publicados: publicados || s.publicados || [], vivo: vivo || s.vivo || null,
        en_vivo: !!estado};
@@ -211,9 +356,9 @@ async function cargar() {
 }
 
 async function corridas() {
-  const r = await traer(`https://api.github.com/repos/${CFG.repo}/actions/runs?per_page=6`);
+  const r = await traer(`https://api.github.com/repos/${CFG.repo}/actions/runs?per_page=40`);
   CORRIDA = null;
-  if (r && r.workflow_runs) {
+  if (r && r.workflow_runs) { RUNS = r.workflow_runs;
     const act = r.workflow_runs.find(x => ["in_progress", "queued"].includes(x.status) && /FÁBRICA|PUBLICAR|MEDIR/.test(x.name));
     if (act) {
       const j = await traer(act.jobs_url);
@@ -222,7 +367,7 @@ async function corridas() {
     } else CORRIDA = {ultima: r.workflow_runs.find(x => /FÁBRICA|PUBLICAR|MEDIR/.test(x.name))};
   }
   pintarEstado();
-  setTimeout(corridas, CORRIDA && CORRIDA.pasos ? 20000 : 90000);
+  setTimeout(corridas, CORRIDA && CORRIDA.pasos ? 30000 : 120000);
 }
 
 function pintarEstado() {
@@ -281,42 +426,325 @@ function resumenCorto(k, e) {
   return "";
 }
 
-function pintarMapa() {
-  const svg = $("mapa"); svg.innerHTML = "";
-  const angosto = svg.clientWidth && svg.clientWidth < 560;
-  const et = (D.estado && D.estado.etapas) || {};
-  let activa = null;
-  if (CORRIDA && CORRIDA.pasos) {
-    const actual = (CORRIDA.pasos.find(p => p.status === "in_progress") || {}).name || "";
-    const mapa = [["Radar","radar"],["Análisis","analisis"],["rendimiento","rendimiento"],["Plan","plan"],["Producción","produccion"],["Release","produccion"],["Subir","publicacion"],["Medir","rendimiento"]];
-    activa = (mapa.find(([t]) => actual.includes(t)) || [])[1] || null;
-  }
-  const cols = angosto ? 1 : 4, W = angosto ? 420 : 1000, nodoW = angosto ? 360 : 210, nodoH = angosto ? 78 : 92;
-  const pos = ETAPAS.map((_, i) => { const fila = Math.floor(i / cols), col = fila % 2 ? cols - 1 - (i % cols) : i % cols;
-    const paso = angosto ? 96 : 130;
-    return [cols === 1 ? 30 : 30 + col * ((W - 60 - nodoW) / Math.max(1, cols - 1)), 12 + fila * paso]; });
-  svg.setAttribute("viewBox", `0 0 ${W} ${Math.ceil(ETAPAS.length / cols) * (angosto ? 96 : 130) + (angosto ? 0 : -16)}`);
-  for (let i = 0; i < ETAPAS.length - 1; i++) {
-    const [x1, y1] = pos[i], [x2, y2] = pos[i + 1];
-    const a = [x1 + nodoW / 2, y1 + nodoH / 2], b = [x2 + nodoW / 2, y2 + nodoH / 2];
-    const d = `M${a[0]},${a[1]} L${b[0]},${b[1]}`;
-    const hecho = (et[ETAPAS[i][0]] || {}).estado === "ok";
-    svg.append(sv("path", {d, class: "cable" + (hecho ? " ok" : "")}));
-    svg.append(sv("path", {d, class: "flujo" + (activa === ETAPAS[i + 1][0] ? " on" : "")}));
-  }
-  ETAPAS.forEach(([k, t, s], i) => {
-    const e = et[k] || {estado: "pendiente"};
-    const cls = activa === k ? "run" : e.estado === "ok" ? "ok" : e.estado === "error" ? "err" : e.estado === "en_curso" ? "run" : "";
-    const g = sv("g", {class: "nodo " + cls, transform: `translate(${pos[i][0]},${pos[i][1]})`});
-    g.append(sv("rect", {width: nodoW, height: nodoH, rx: 14}));
-    g.append(sv("circle", {class: "luz", cx: nodoW - 18, cy: 18, r: 7}));
-    const n = sv("text", {class: "n", x: 14, y: 22}); n.textContent = `ESTACIÓN ${i + 1}`; g.append(n);
-    const tt = sv("text", {class: "t", x: 14, y: angosto ? 44 : 50}); tt.textContent = t; g.append(tt);
-    const ss = sv("text", {class: "s", x: 14, y: angosto ? 64 : 74}); ss.textContent = resumenCorto(k, e) || s; g.append(ss);
-    svg.append(g);
-  });
-  $("mapa-s").textContent = `actualizado ${hace(D.estado && D.estado.actualizado)}`;
+// ===================== pestañas =====================
+function tabs() {
+  let ini = (location.hash || "").slice(1);
+  try { ini = ini || localStorage.getItem("pestana") || "resumen"; } catch (e) { ini = ini || "resumen"; }
+  const ir = t => {
+    document.querySelectorAll("[data-tab]").forEach(x => x.classList.toggle("on", x.dataset.tab === t));
+    document.querySelectorAll(".tab").forEach(b => b.setAttribute("aria-selected", b.dataset.ir === t));
+    try { localStorage.setItem("pestana", t); } catch (e) {}
+    if (location.hash !== "#" + t) history.replaceState(null, "", "#" + t);
+    if (t === "mapa") pintarMapa();
+    if (t === "propuestas") { marcarVistas(); }
+  };
+  document.querySelectorAll(".tab").forEach(b => b.addEventListener("click", () => ir(b.dataset.ir)));
+  window.irA = ir;
+  ir(document.querySelector(`[data-tab="${ini}"]`) ? ini : "resumen");
 }
+const esc = x => String(x == null ? "" : x).replace(/[&<>"]/g, c => ({"&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;"}[c]));
+
+// ===================== estado de cada parte =====================
+const ultimaDe = wf => RUNS.filter(r => (r.path || "").endsWith("/" + wf));
+function estadoWF(wf, horasMax) {
+  const rs = ultimaDe(wf); if (!rs.length) return {cls: "", txt: "sin corridas recientes"};
+  const a = rs[0];
+  if (["in_progress", "queued", "waiting"].includes(a.status)) return {cls: "run", txt: `trabajando ahora (empezó ${hace(a.run_started_at)})`, url: a.html_url};
+  const ok = rs.find(r => r.conclusion === "success");
+  if (a.conclusion === "failure") return {cls: "err", txt: `la última corrida falló ${hace(a.updated_at)}`, url: a.html_url};
+  if (horasMax && ok && (Date.now() - new Date(ok.updated_at)) / 36e5 > horasMax) return {cls: "warn", txt: `terminó bien por última vez ${hace(ok.updated_at)}`, url: ok.html_url};
+  return {cls: "ok", txt: `terminó bien ${hace(a.updated_at)}`, url: a.html_url};
+}
+function frescura(iso, horas) { if (!iso) return {cls: "", txt: "sin datos todavía"};
+  const h = (Date.now() - new Date(iso)) / 36e5; return {cls: h > horas ? "warn" : "ok", txt: `actualizado ${hace(iso)}`}; }
+
+const G_ = () => D_GER || {};
+const reservaLibre = () => D_RES ? (D_RES.videos || []).filter(v => !v.usado).length : (G_().blindaje || {}).reserva;
+const vigUltimo = () => (D_VIG && D_VIG.ultimo) || (G_().blindaje || {}).vigilancia || {};
+const NODOS = [
+  // capa 0 · OJOS
+  {id: "olas", capa: 0, t: "Detector de olas", s: "qué mecánica sube hoy", wf: "fabrica_diaria.yml",
+   que: "Mide cada día qué tipo de Short de fútbol está explotando en el mundo (vistas por hora de los virales de 3 días) y si una ola nace, sube o se muere.",
+   cuando: "Todos los días a la madrugada, dentro de la fábrica.",
+   est: () => frescura(D_OLAS && D_OLAS.fecha, 30),
+   op: () => { const e = (D_OLAS && D_OLAS.estado) || {}; const c = Object.entries(e).filter(([, v]) => ["naciente", "subiendo"].includes(v.estado)).map(([k, v]) => `${k} (${v.estado})`);
+     return c.length ? `Hay ola en: ${c.join(", ")}. Le doy más lugar a esos formatos en la grilla.` : "Ninguna ola nueva hoy: el cerebro decide solo con nuestros datos."; }},
+  {id: "investigacion", capa: 0, t: "Investigación", s: "mercado + canal + recetas", wf: "investigar.yml",
+   que: "Cada 2 días mira el mercado, nuestro canal y qué evitar, y deja recomendaciones (subir, probar más, bajar) para cada formato.",
+   cuando: "Cada 2 días a las 17:07.", est: () => estadoWF("investigar.yml", 60),
+   op: () => { const r = (D_INV && D_INV.recomendaciones) || []; return r.length ? r.slice(0, 3).map(x => `${x.accion}: ${(x.nuestros || []).join(", ")}`).join(" · ") : "Sin recomendaciones nuevas."; }},
+  {id: "medicion", capa: 0, t: "Medición", s: "vistas, % visto, suscriptores", wf: "medir_vivo.yml",
+   que: "Junta las vistas de cada video hora por hora y las estadísticas de YouTube (% visto, suscriptores). Es la materia prima del cerebro.",
+   cuando: "Varias veces por día.", est: () => estadoWF("medir_vivo.yml", 8),
+   op: () => { const m = G_().monetizacion; return m ? `Canal: ${fmt(m.vistas_shorts_90d)} vistas de Shorts en 90 días y ${m.suscriptores ?? "—"} suscriptores.` : "Esperando datos."; }},
+  // capa 1 · CEREBRO
+  {id: "cerebro", capa: 1, t: "Cerebro", s: "estadística · arma la grilla", data: true,
+   que: "Máquina sin IA: aprende de cada video a las 48 h, calcula qué formato y qué hora rinden más (con estadística bayesiana), reparte los 6 videos del día, cuida que ningún formato pase el 35 % y corre pruebas A/B que declaran ganador solas.",
+   cuando: "Cada vez que se planifica un día (todas las madrugadas) y en el parte del Gerente.",
+   est: () => frescura(D_CER && D_CER.fecha, 30),
+   op: () => { if (!D_CER) return "Todavía no corrió."; const f = Object.entries(D_CER.formatos || {}); const top = f.sort((a, b) => b[1].prob_mejor - a[1].prob_mejor)[0];
+     const ab = (D_CER.experimentos || {}).activos || [];
+     return `El mejor hoy: ${NOMB(top[0])} (${Math.round(top[1].prob_mejor * 100)} % de chances, ~${fmt(top[1].vistas_48h_esperadas)} a 48 h). ${ab.length ? "Prueba A/B en curso: " + ab[0].pregunta : ""}`; }},
+  {id: "gerente", capa: 1, t: "Gerente IA", s: "decide lo chico, te informa", ia: true,
+   que: "Lee todos los números, el manual de criterios y la bitácora; arregla lo que falla, hace 1-2 cambios chicos por día, responde tus consultas y te presenta propuestas con prototipo para lo grande.",
+   cuando: "Todos los días a las 15:41 (te llega el parte al celular).",
+   est: () => { const p = (G_().parte || {}).fecha; return p ? frescura(p + "T18:41:00Z", 30) : {cls: "warn", txt: "parte pendiente"}; },
+   op: () => (G_().parte || {}).titular || "Todavía no escribió su parte de hoy."},
+  {id: "ingeniero", capa: 1, t: "Ingeniero IA", s: "construye formatos", ia: true,
+   que: "Construye formatos nuevos o arregla los que tienen defectos, siempre con prueba visual antes de que salgan.",
+   cuando: "Lunes y jueves a las 15:13 (o cuando el Gerente lo llama).", est: () => ({cls: "ok", txt: "programado lunes y jueves"}),
+   op: () => "Trabajando en los formatos nuevos p002 y p003."},
+  {id: "ceo", capa: 1, t: "Vos · CEO", s: "aprobás lo grande",
+   que: "Decidís lo que cambia la identidad del canal: sacar formatos fijos, formatos nuevos, cuántos videos por día. Todo te llega con prueba visual.",
+   cuando: "Cuando quieras: en la pestaña Propuestas.",
+   est: () => { const n = (ISSUES || []).filter(i => tipoIssue(i) === "propuesta").length; return n ? {cls: "warn", txt: `${n} propuesta${n > 1 ? "s" : ""} esperando tu decisión`} : {cls: "ok", txt: "nada pendiente"}; },
+   op: () => { const n = (ISSUES || []).length; return n ? `Tenés ${n} cosa${n > 1 ? "s" : ""} abierta${n > 1 ? "s" : ""}: mirá la pestaña Propuestas.` : "Nada para vos hoy."; }},
+  // capa 2 · FÁBRICA
+  {id: "fabrica", capa: 2, t: "Fábrica diaria", s: "hace los 6 videos de D+2", wf: "fabrica_diaria.yml",
+   que: "Con la grilla del cerebro arma los guiones, títulos y voces, renderiza los 6 videos de dentro de 2 días y repone la reserva.",
+   cuando: "03:17 todos los días, con 2 reintentos (06:47 y 12:37).", est: () => estadoWF("fabrica_diaria.yml", 30),
+   op: () => { const pl = D.plan && D.plan.slots; return pl ? `Última grilla: ${pl.slice(-6).map(x => x.hora + " " + NOMB(x.tipo)).join(" · ")}` : ""; }},
+  {id: "inspector", capa: 2, t: "Inspector visual", s: "defectos antes de salir", data: true,
+   que: "Máquina sin IA: revisa cada video cuadro por cuadro (rectángulos negros, pantalla congelada, cuadros vacíos). Si falla, el video se rehace.",
+   cuando: "Cada video, antes de subirlo.",
+   est: () => { const i = G_().inspeccion; return i ? {cls: i.con_defectos ? "warn" : "ok", txt: `${i.revisados} revisados en 7 días, ${i.con_defectos} con defectos`} : {cls: "", txt: "sin datos"}; },
+   op: () => { const i = G_().inspeccion; return i && i.ejemplos && i.ejemplos.length ? "Vi: " + i.ejemplos.join(" · ") : "Todo lo que revisé salió limpio."; }},
+  {id: "originalidad", capa: 2, t: "Originalidad", s: "que no parezca plantilla", data: true,
+   que: "Máquina sin IA: compara las imágenes y los títulos de todos los videos para medir cuánto se parecen entre sí. Es el riesgo n.º 1 para monetizar.",
+   cuando: "En cada video y en el parte diario.",
+   est: () => { const o = G_().originalidad; return o ? {cls: o.indice >= 75 ? "ok" : "warn", txt: `índice ${o.indice}/100`} : {cls: "", txt: "sin datos"}; },
+   op: () => { const o = G_().originalidad; return o ? `${o.lectura}${o.alertas && o.alertas.length ? ". " + o.alertas.join(" ") : ""}` : ""; }},
+  {id: "prototipos", capa: 2, t: "Prototipos", s: "muestra visual para vos", wf: "prototipo.yml",
+   que: "Cuando hay una propuesta grande, renderiza 2-4 videos de muestra y te los deja en la propuesta para que veas cómo quedaría antes de decidir.",
+   cuando: "Cada vez que el Gerente o el Ingeniero hacen una propuesta.", est: () => estadoWF("prototipo.yml"),
+   op: () => "Muestras listas en las propuestas abiertas."},
+  // capa 3 · SALIDA
+  {id: "reserva", capa: 3, t: "Reserva", s: "12 videos de emergencia", data: true,
+   que: "Videos de formatos fijos ya hechos y sin fecha. Si a un horario le falta video, se usa uno de acá: el canal nunca queda vacío.",
+   cuando: "Se repone en cada corrida de la fábrica (4 por vez).",
+   est: () => { const n = reservaLibre(); return n == null ? {cls: "", txt: "sin datos"} : {cls: n >= 4 ? "ok" : "warn", txt: `${n}/12 videos listos`}; },
+   op: () => { const n = reservaLibre(); return n == null ? "" : n >= 12 ? "Reserva completa." : `Tengo ${n}; la fábrica repone 4 por corrida hasta 12.`; }},
+  {id: "publicar", capa: 3, t: "Publicación", s: "sube y programa", wf: "publicar_diario.yml",
+   que: "Sube los videos a YouTube con 2-3 días de margen, respetando el límite de ~10 subidas cada 24 h, y completa con la reserva los horarios vacíos.",
+   cuando: "6 veces por día.", est: () => estadoWF("publicar_diario.yml", 12),
+   op: () => { const sal = (G_().salud || {}).subidas_programadas; return sal ? "Programados: " + Object.entries(sal).map(([f, n]) => `${f.slice(5)}: ${n}`).join(" · ") : "Subiendo según la grilla."; }},
+  {id: "youtube", capa: 3, t: "YouTube", s: "el canal", data: true,
+   que: "Donde está el público. Desde acá vuelven las vistas a la medición, y el ciclo empieza otra vez.",
+   cuando: "Siempre.", est: () => ({cls: "ok", txt: D.vivo && D.vivo.canal ? `${fmt(D.vivo.canal.vistas)} vistas totales` : "en línea"}),
+   op: () => { const b = G_().blindaje; return b ? `${b.dias_seguidos_con_6} días seguidos con 6 o más videos (meta 14).` : ""; }},
+  // capa 4 · GUARDIANES
+  {id: "vigilancia", capa: 4, t: "Vigilancia", s: "relanza y avisa", wf: "vigilancia.yml",
+   que: "Máquina sin IA: cada 2 h revisa que todo haya corrido, relanza una vez lo que falló, arregla datos rotos y, si no puede, te abre una alarma.",
+   cuando: "Cada 2 horas.", est: () => { const e = estadoWF("vigilancia.yml", 5); const v = vigUltimo();
+     return e.cls === "ok" && (v.problemas || []).length ? {cls: "warn", txt: `${v.problemas.length} cosa(s) para mirar`, url: e.url} : e; },
+   op: () => { const v = vigUltimo(); return (v.problemas || []).length ? "Encontré: " + v.problemas.join(" · ") : "Todo sano en mi última vuelta."; }},
+  {id: "humo", capa: 4, t: "Prueba de humo", s: "prueba todo antes de cambiar", wf: "pruebas.yml",
+   que: "Máquina sin IA: cada vez que alguien cambia el código, prueba toda la cadena (guiones, títulos, plan, cerebro, un video real) antes de que llegue a producción.",
+   cuando: "En cada cambio de código.", est: () => estadoWF("pruebas.yml"),
+   op: () => { const e = estadoWF("pruebas.yml"); return e.cls === "err" ? "El último cambio rompió algo: ya abrí una alarma." : "El último cambio pasó todas las pruebas."; }},
+  {id: "vigia", capa: 4, t: "Vigía IA", s: "lo que la máquina no pudo", ia: true,
+   que: "Si la vigilancia no pudo resolver algo, la Vigía lee los registros, encuentra la causa y la arregla.",
+   cuando: "Todos los días a las 20:47.", est: () => ({cls: "ok", txt: "programada 20:47"}),
+   op: () => "Solo entra cuando hay una alarma abierta."},
+];
+const CAPAS = ["OJOS · mira el mundo", "CEREBRO · decide", "FÁBRICA · hace", "SALIDA · publica", "GUARDIANES · cuidan"];
+const ARISTAS = [["olas", "cerebro"], ["investigacion", "cerebro"], ["medicion", "cerebro"], ["gerente", "cerebro"], ["gerente", "ceo"], ["cerebro", "fabrica"],
+  ["ingeniero", "fabrica"], ["fabrica", "inspector"], ["inspector", "publicar"], ["fabrica", "originalidad"], ["fabrica", "reserva"], ["reserva", "publicar"],
+  ["publicar", "youtube"], ["youtube", "medicion"], ["prototipos", "ceo"], ["vigia", "vigilancia"]];   // los guardianes miran todo: sin cables para no ensuciar
+const NOMB = k => ({stop: "STOP", rueda: "WHEEL", cabezas: "HEAD FIT", balon: "BALLON D'OR", siuu: "SIUUU", penal: "PENALTY", fitall: "FIT ALL", dress: "DRESS",
+  q20fichaje: "WHO IS THIS", q20costo: "PRICE TAG", q20balon: "BALLON Q", trayectoria: "CAREER", tridente: "TRIDENT", circulo: "GOAT CIRCLE", find: "FIND", pared: "WALL"}[k] || NOM[k] || k);
+
+function calcEstados() { const est = {}; NODOS.forEach(n => { try { est[n.id] = n.est() || {cls: "", txt: ""}; } catch (e) { est[n.id] = {cls: "", txt: "sin datos"}; } });
+  ESTADOS = est; pintarSistemaResumen(); return est; }
+function pintarMapa() {
+  const est = calcEstados();
+  const svg = $("smapa"); if (!svg || !svg.closest("[data-tab]").classList.contains("on")) return;
+  svg.innerHTML = "";
+  const ancho = svg.clientWidth || 1000, angosto = ancho < 700;
+  const pos = {}; let W, H;
+  if (!angosto) {
+    W = 1000; const nw = 178, nh = 66, gap = 200, top = 34;
+    CAPAS.forEach((c, i) => { const x = 12 + i * gap;
+      svg.append(sv("rect", {class: "capa", x: x - 6, y: 4, width: nw + 12, height: 4 * 82 + top - 2, rx: 14}));
+      const t = sv("text", {class: "capa-t", x: x + 2, y: 22}); t.textContent = c.split(" · ")[0]; svg.append(t); });
+    NODOS.forEach(n => { const j = NODOS.filter(m => m.capa === n.capa).indexOf(n); pos[n.id] = {x: 12 + n.capa * gap, y: top + j * 82, w: nw, h: nh}; });
+    H = 4 * 82 + top + 6;
+  } else {
+    W = 420; const nw = 196, nh = 60; let y = 4;
+    CAPAS.forEach((c, i) => { const ns = NODOS.filter(m => m.capa === i); const filas = Math.ceil(ns.length / 2);
+      svg.append(sv("rect", {class: "capa", x: 2, y, width: W - 4, height: 26 + filas * 68, rx: 12}));
+      const t = sv("text", {class: "capa-t", x: 12, y: y + 17}); t.textContent = c; svg.append(t);
+      ns.forEach((n, j) => { pos[n.id] = {x: 10 + (j % 2) * (nw + 8), y: y + 24 + Math.floor(j / 2) * 68, w: nw, h: nh}; });
+      y += 26 + filas * 68 + 8; });
+    H = y;
+  }
+  svg.setAttribute("viewBox", `0 0 ${W} ${H}`);
+  const capaA = document.createElementNS(SVGNS, "g"); svg.append(capaA);
+  ARISTAS.forEach(([a, b]) => { const p = pos[a], q = pos[b]; if (!p || !q) return;
+    let d;
+    if (!angosto) { const x1 = p.x + p.w, y1 = p.y + p.h / 2, x2 = q.x, y2 = q.y + q.h / 2;
+      if (q.x > p.x) d = `M${x1},${y1} C${x1 + 14},${y1} ${x2 - 14},${y2} ${x2},${y2}`;
+      else if (q.x < p.x) { const xa = p.x + p.w / 2, xb = q.x + q.w / 2; d = `M${xa},${p.y + p.h} C${xa},${H + 10} ${xb},${H + 10} ${xb},${q.y + q.h}`; }
+      else d = `M${p.x + 8},${p.y + p.h / 2} C${p.x - 10},${p.y + p.h / 2} ${q.x - 10},${q.y + q.h / 2} ${q.x + 8},${q.y + q.h / 2}`; }
+    else { const x1 = p.x + p.w / 2, y1 = p.y + p.h, x2 = q.x + q.w / 2, y2 = q.y;
+      d = y2 > y1 ? `M${x1},${y1} C${x1},${y1 + 20} ${x2},${y2 - 20} ${x2},${y2}` : `M${p.x},${p.y + p.h / 2} C${-30},${p.y} ${-30},${q.y + q.h} ${q.x},${q.y + q.h / 2}`; }
+    const on = est[a].cls === "run" || est[b].cls === "run";
+    capaA.append(sv("path", {d, class: "arista" + (on ? " on" : "")})); });
+  NODOS.forEach(n => { const p = pos[n.id], e = est[n.id];
+    const g = sv("g", {class: `sn ${e.cls} ${SEL === n.id ? "sel" : ""}`, transform: `translate(${p.x},${p.y})`, tabindex: 0, role: "button", "aria-label": n.t});
+    g.append(sv("rect", {width: p.w, height: p.h, rx: 12}));
+    g.append(sv("circle", {class: "luz", cx: p.w - 14, cy: 14, r: 6}));
+    const corta = (x, k) => (x || "").length > k ? x.slice(0, k - 1) + "…" : (x || "");
+    const t = sv("text", {class: "t", x: 12, y: 24}); t.textContent = n.t; g.append(t);
+    const s1 = sv("text", {class: "s", x: 12, y: 41}); s1.textContent = corta(n.s, 27); g.append(s1);
+    const s2 = sv("text", {class: "s", x: 12, y: angosto ? 54 : 57}); s2.textContent = corta(e.txt, 27); g.append(s2);
+    const tt = sv("title"); tt.textContent = `${n.t}: ${e.txt || ""}`; g.append(tt);
+    if (n.ia) { const ia = sv("text", {class: "ia", x: p.w - 40, y: 18}); ia.textContent = "IA"; g.append(ia); }
+    const elegir = () => { SEL = n.id; pintarMapa(); detalle(); if (angosto) $("det").scrollIntoView({behavior: "smooth", block: "nearest"}); };
+    g.addEventListener("click", elegir); g.addEventListener("keydown", ev => { if (ev.key === "Enter" || ev.key === " ") { ev.preventDefault(); elegir(); } });
+    svg.append(g); });
+  const sanos = NODOS.filter(n => ["ok", "run"].includes(est[n.id].cls)).length, malos = NODOS.filter(n => est[n.id].cls === "err").length;
+  $("smapa-s").textContent = `${sanos}/${NODOS.length} sanas${malos ? ` · ${malos} con falla` : ""} · ${RUNS.length ? "en vivo" : "sin conexión a GitHub"}`;
+  detalle();
+}
+let ESTADOS = {};
+function detalle() {
+  const n = NODOS.find(x => x.id === SEL) || NODOS[0]; const e = ESTADOS[n.id] || {}; let op = ""; try { op = n.op() || ""; } catch (x) {}
+  const COLS = {ok: "var(--ok)", run: "var(--lime)", err: "var(--err)", warn: "var(--amber)"};
+  $("det").style.borderLeftColor = COLS[e.cls] || "var(--blue)";
+  $("det").innerHTML = `<div class="sub">${n.ia ? '<span style="color:#b48cff">IA</span> · agente' : "máquina sin IA"} · ${esc(CAPAS[n.capa])}</div>
+    <h3>${esc(n.t)}</h3><div style="font-size:14px;line-height:1.55">${esc(n.que)}</div>
+    <div class="sub" style="margin-top:8px"><b>Cuándo:</b> ${esc(n.cuando)}</div>
+    <div class="sub" style="margin-top:4px"><b>Estado:</b> <span style="color:${COLS[e.cls] || "var(--muted)"}">${esc(e.txt || "—")}</span>${e.url ? ` · <a href="${e.url}" target="_blank" rel="noopener">ver la corrida</a>` : ""}</div>
+    ${op ? `<div class="op"><b>Qué opina:</b> ${esc(op)}</div>` : ""}`;
+}
+
+// ===================== resumen =====================
+function pintarSistemaResumen() {
+  const vals = Object.values(ESTADOS); if (!vals.length) return;
+  const sanos = vals.filter(e => ["ok", "run"].includes(e.cls)).length; $("r-sis").textContent = `${sanos}/${vals.length}`;
+  const malos = NODOS.filter(n => ESTADOS[n.id] && ["err", "warn"].includes(ESTADOS[n.id].cls)).map(n => n.t);
+  $("r-sis-d").textContent = malos.length ? "mirar: " + malos.join(", ") : "todo en orden";
+}
+function pintarResumen() {
+  const G = D_GER || {}, A = D_AN || {}, p = G.parte || {}, v = A.veredicto || {};
+  const HC = {green: ["#17301f", "var(--ok)"], amber: ["#2e2614", "var(--amber)"], red: ["#33191a", "var(--err)"]}[v.color] || ["#1a2a1f", "var(--lime)"];
+  $("hero").style.setProperty("--hc", HC[0]); $("hero").style.setProperty("--hk", HC[1]);
+  $("hero-k").textContent = p.fecha ? `Parte del Gerente · ${p.fecha}` : `Análisis · ${A.fecha || ""}`;
+  $("hero-t").textContent = p.titular || v.titulo || "Cargando…";
+  $("hero-p").textContent = v.frase || "";
+  const m = G.monetizacion;
+  if (m) { const pct = Math.min(100, 100 * (m.vistas_shorts_90d || 0) / 1e7);
+    $("mon-i").style.width = Math.max(1.5, pct) + "%"; $("mon-v").textContent = `${fmt(m.vistas_shorts_90d)} / 10 M`;
+    $("mon-a").textContent = `suscriptores ${m.suscriptores ?? "—"} / 1.000`; $("mon-b").textContent = m.semanas_a_10M ? `${m.semanas_a_10M} semanas al ritmo actual` : ""; }
+  const hall = A.hallazgos || [];
+  const li = (id, xs) => { $(id).innerHTML = ""; (xs.length ? xs : ["—"]).slice(0, 4).forEach(x => $(id).append(el("li", null, x))); };
+  li("r-si", p.funciona && p.funciona.length ? p.funciona : hall.filter(h => h.tipo === "funciona").map(h => `${h.titulo}: ${h.dato.split(";")[0]}`));
+  li("r-no", p.no_funciona && p.no_funciona.length ? p.no_funciona : hall.filter(h => h.tipo !== "funciona").map(h => h.titulo));
+  const vos = [...(p.para_el_ceo || [])];
+  (ISSUES || []).filter(i => tipoIssue(i) === "propuesta").forEach(i => vos.push(`Decidir: ${i.title} (#${i.number})`));
+  li("r-vos", vos.length ? vos : ["Nada para vos hoy."]);
+  if (G.originalidad) { $("r-orig").textContent = G.originalidad.indice; $("r-orig-d").textContent = G.originalidad.lectura || ""; }
+  if (G.blindaje) $("r-racha").textContent = G.blindaje.dias_seguidos_con_6;
+  if (reservaLibre() != null) $("r-res").textContent = `${reservaLibre()}/12`;
+  calcEstados();
+}
+
+// ===================== cerebro =====================
+function pintarCerebro() {
+  const C = D_CER; if (!C) { $("cer-f").textContent = "El cerebro todavía no corrió."; return; }
+  $("cer-s").textContent = `${C.videos_medidos} videos medidos · ${hace(C.fecha)}`;
+  const f = Object.entries(C.formatos || {}); const mx = Math.max(1, ...f.map(([, x]) => x.vistas_48h_esperadas));
+  $("cer-f").innerHTML = "";
+  f.slice(0, 10).forEach(([k, x]) => { const r = el("div", "fila2");
+    const der = el("div"); const tr = el("div", "track"); const i = el("i"); i.style.width = (100 * x.vistas_48h_esperadas / mx) + "%"; i.style.background = "var(--lime)"; tr.append(i);
+    const pb = el("div", "pb"); const j = el("i"); j.style.width = (100 * x.prob_mejor) + "%"; pb.append(j); der.append(tr, pb);
+    const n = el("div", "num"); n.innerHTML = `${fmt(x.vistas_48h_esperadas)}<div class="sub">${Math.round(100 * x.prob_mejor)} % · <span class="conf ${x.confianza}">${x.confianza}</span></div>`;
+    r.append(el("span", null, `${NOMB(k)} (${x.videos})`), der, n); $("cer-f").append(r); });
+  const h = Object.entries(C.horas || {}).filter(([, x]) => x.videos >= 2); const val = x => parseInt(x.efecto) || 0;
+  const hm = Math.max(10, ...h.map(([, x]) => Math.abs(val(x))));
+  $("cer-h").innerHTML = '<div class="sub" style="margin-bottom:6px">Verde = rinde más de lo esperado a esa hora; rojo = menos. Solo horas con 2 o más videos.</div>';
+  h.forEach(([k, x]) => { const r = el("div", "div"); const v = val(x);
+    const ng = el("div", "neg"); const i1 = el("i"); i1.style.width = (v < 0 ? 100 * -v / hm : 0) + "%"; ng.append(i1);
+    const ps = el("div", "pos"); const i2 = el("i"); i2.style.width = (v > 0 ? 100 * v / hm : 0) + "%"; ps.append(i2);
+    r.append(el("span", "num", k), ng, ps, el("span", "num " + (v >= 0 ? "up" : "down"), x.efecto + "")); r.children[0].style.textAlign = "left"; $("cer-h").append(r); });
+  const o = (C.originalidad || {}).ultimos_7_dias || {};
+  $("cer-o").innerHTML = "";
+  Object.entries(o).forEach(([k, pct]) => { const v = parseInt(pct); const r = el("div", "b"); r.style.cssText = "display:grid;grid-template-columns:110px 1fr auto;gap:8px;align-items:center;margin:7px 0;font-size:13px";
+    const tr = el("div", "track"); tr.style.position = "relative"; const i = el("i"); i.style.width = Math.min(100, v / 0.6) + "%"; i.style.background = v > 35 ? "var(--err)" : "var(--ok)"; tr.append(i);
+    const lin = el("span"); lin.style.cssText = `position:absolute;left:${35 / 0.6}%;top:-2px;bottom:-2px;width:2px;background:var(--amber)`; tr.append(lin);
+    r.append(el("span", null, NOMB(k)), tr, el("span", "num", pct)); $("cer-o").append(r); });
+  if (!Object.keys(o).length) $("cer-o").textContent = "Sin videos en los últimos 7 días.";
+  const ex = C.experimentos || {}; $("cer-ab").innerHTML = "";
+  (ex.activos || []).forEach(e => { const b = el("div", "ab"); b.append(el("div", null, e.pregunta));
+    Object.entries(e.medicion || {}).forEach(([k, m]) => { const r = el("div", "fila2"); const pb = el("div", "track"); const i = el("i"); i.style.width = (100 * m.p_mejor) + "%"; i.style.background = "var(--blue)"; pb.append(i);
+      const lin = el("span"); pb.style.position = "relative"; lin.style.cssText = "position:absolute;left:90%;top:-2px;bottom:-2px;width:2px;background:var(--lime)"; pb.append(lin);
+      r.append(el("span", null, `${JSON.parse(k) === true ? "sí" : JSON.parse(k) === false ? "no" : JSON.parse(k)} · ${m.videos}/4 videos`), pb, el("span", "num", Math.round(100 * m.p_mejor) + " %")); b.append(r); });
+    $("cer-ab").append(b); });
+  (ex.terminados || []).forEach(e => $("cer-ab").append(el("div", "sub", `✔ ${e.id}: ${e.estado}${e.ganador != null ? " → " + e.ganador : ""} (${e.fin})`)));
+  if (!(ex.activos || []).length && !(ex.terminados || []).length) $("cer-ab").textContent = "Sin pruebas.";
+  const mt = C.meta || {}; const ini = mt.mediana_48h_inicial, hoy = mt.mediana_48h_ultimos_7_dias, obj = ini ? Math.round(ini * 1.25) : null;
+  $("cer-meta").innerHTML = ini ? `<div class="tiles"><div class="tile"><div class="v">${fmt(ini)}</div><div class="l">mediana 48 h al empezar (${mt.inicio})</div></div>
+    <div class="tile"><div class="v">${fmt(hoy)}</div><div class="l">mediana 48 h de los últimos días</div></div>
+    <div class="tile"><div class="v" style="color:var(--lime)">${fmt(obj)}</div><div class="l">objetivo (+25 %)</div></div></div>
+    <div class="barra" style="margin-top:12px"><i style="width:${Math.min(100, 100 * (hoy || 0) / obj)}%"></i></div>` : "Se calcula con los primeros videos medidos.";
+}
+
+// ===================== análisis =====================
+function pintarAnalisis() {
+  const A = D_AN; if (!A) { $("an-t").textContent = "El análisis todavía no está."; return; }
+  const v = A.veredicto || {}; const HC = {green: ["#17301f", "var(--ok)"], amber: ["#2e2614", "var(--amber)"], red: ["#33191a", "var(--err)"]}[v.color] || ["#1a2a1f", "var(--lime)"];
+  $("an-hero").style.setProperty("--hc", HC[0]); $("an-hero").style.setProperty("--hk", HC[1]);
+  $("an-k").textContent = `${A.autor || "Análisis"} · ${A.fecha}`; $("an-t").textContent = v.titulo || ""; $("an-p").textContent = v.frase || "";
+  $("an-n").innerHTML = ""; (A.numeros_clave || []).forEach(n => { const t = el("div", "tile"); t.append(el("div", "v", n.valor), el("div", "l", n.label), el("div", "n", n.nota)); $("an-n").append(t); });
+  const COL_H = {funciona: ["var(--ok)", "✅ funciona"], no: ["var(--err)", "❌ no funciona"], ojo: ["var(--amber)", "👀 ojo"]};
+  $("an-h").innerHTML = ""; (A.hallazgos || []).forEach(h => { const [c, tg] = COL_H[h.tipo] || COL_H.ojo; const d = el("div", "hall"); d.style.setProperty("--hcol", c);
+    d.innerHTML = `<div class="tg">${tg} · confianza ${esc(h.confianza)}</div><h3>${esc(h.titulo)}</h3><div class="q"><b>Dato:</b> ${esc(h.dato)}</div>
+      <div class="q"><b>Por qué:</b> ${esc(h.por_que)}</div><div class="q"><b>Qué hacemos:</b> ${esc(h.accion)}</div>`; $("an-h").append(d); });
+  $("an-r").innerHTML = ""; (A.reglas_matematicas || []).forEach(r => $("an-r").append(el("li", null, r)));
+  $("an-a").innerHTML = ""; (A.acciones || []).forEach(a => { const f = el("div", "fila"); f.style.gridTemplateColumns = "auto 1fr"; f.append(el("span", "chip", a.quien), el("div", null, a.que)); $("an-a").append(f); });
+}
+
+// ===================== propuestas + alarma =====================
+const tipoIssue = i => { const l = (i.labels || []).map(x => x.name); return l.includes("alerta-sistema") ? "alerta" : l.includes("propuesta") ? "propuesta" : l.includes("consulta") ? "consulta" : null; };
+function vistas() { try { return JSON.parse(localStorage.getItem("issues_vistos") || "[]"); } catch (e) { return []; } }
+function marcarVistas() { try { localStorage.setItem("issues_vistos", JSON.stringify((ISSUES || []).map(i => i.id + ":" + i.comments))); } catch (e) {} badge(); }
+function badge() { const v = vistas(); const n = (ISSUES || []).filter(i => !v.includes(i.id + ":" + i.comments)).length;
+  $("badge").hidden = !n; $("badge").textContent = n; document.title = (n ? `(${n}) ` : "") + "Fábrica Futbol Edition"; return n; }
+async function issues() {
+  const r = await traer(`https://api.github.com/repos/${CFG.repo}/issues?state=open&per_page=30`);
+  if (!Array.isArray(r)) { $("pr-s").textContent = "sin conexión con GitHub"; return; }
+  const antes = vistas(); const prev = ISSUES;
+  ISSUES = r.filter(i => !i.pull_request && tipoIssue(i));
+  const nuevos = ISSUES.filter(i => !antes.includes(i.id + ":" + i.comments));
+  const ICON = {propuesta: "💡", consulta: "❓", alerta: "🚨"}, QUE = {propuesta: "propuesta para decidir", consulta: "tu consulta", alerta: "alarma del sistema"};
+  $("pr").innerHTML = ""; $("pr-s").textContent = `${ISSUES.length} abiertas · ${hace(new Date().toISOString())}`;
+  if (!ISSUES.length) $("pr").append(el("div", "sub", "No hay nada abierto. Todo resuelto ✅"));
+  ISSUES.sort((a, b) => ["alerta", "propuesta", "consulta"].indexOf(tipoIssue(a)) - ["alerta", "propuesta", "consulta"].indexOf(tipoIssue(b)));
+  ISSUES.forEach(i => { const t = tipoIssue(i); const a = el("a", "iss" + (nuevos.includes(i) ? " nuevo" : "")); a.href = i.html_url; a.target = "_blank"; a.rel = "noopener";
+    const mid = el("div"); mid.append(el("div", "sub", `${QUE[t]} · #${i.number} · abierta ${hace(i.created_at)} · ${i.comments} comentario${i.comments === 1 ? "" : "s"}`), el("div", "tt", i.title));
+    a.append(el("span", "ic", ICON[t]), mid, el("span", "estchip " + (nuevos.includes(i) ? "prog" : ""), nuevos.includes(i) ? "NUEVO" : "abrir")); $("pr").append(a); });
+  const n = badge();
+  if (prev && nuevos.some(i => !(prev || []).some(p => p.id === i.id && p.comments === i.comments))) sonar(nuevos[0]);
+  pintarResumen(); if (document.querySelector('[data-tab="propuestas"]').classList.contains("on")) marcarVistas();
+  if (document.querySelector('[data-tab="mapa"]').classList.contains("on")) pintarMapa();
+}
+function sonar(i) {
+  try { const c = new (window.AudioContext || window.webkitAudioContext)(); [0, .18, .36].forEach((t, k) => { const o = c.createOscillator(), g = c.createGain();
+    o.frequency.value = [880, 1175, 1568][k]; g.gain.setValueAtTime(.2, c.currentTime + t); g.gain.exponentialRampToValueAtTime(.001, c.currentTime + t + .16);
+    o.connect(g); g.connect(c.destination); o.start(c.currentTime + t); o.stop(c.currentTime + t + .17); }); } catch (e) {}
+  try { if ("Notification" in window && Notification.permission === "granted") new Notification("Futbol Edition: algo nuevo para vos", {body: i ? i.title : "Mirá Propuestas", tag: "fe-" + (i && i.id)}); } catch (e) {}
+  if (navigator.vibrate) navigator.vibrate([200, 100, 200]);
+}
+function alarmaUI() {
+  const b = $("alarma"); const ok = "Notification" in window && Notification.permission === "granted";
+  b.classList.toggle("on", ok); b.textContent = ok ? "🔔 Alarma activada" : "🔔 Activar alarma en este dispositivo";
+  $("alarma-s").textContent = !("Notification" in window) ? "Este navegador no permite avisos: usá la app de GitHub (abajo)." : ok ? "Te aviso con sonido mientras la página esté abierta (revisa cada 5 min)." : "";
+}
+document.addEventListener("DOMContentLoaded", () => {});
+$("alarma") && $("alarma").addEventListener("click", async () => { try { if ("Notification" in window) await Notification.requestPermission(); } catch (e) {} alarmaUI(); sonar(null); });
+alarmaUI();
+
 
 function curva(svg, puntos, color) {
   svg.innerHTML = ""; if (!puntos || puntos.length < 2) { const t = sv("text", {x: 10, y: 100, fill: "#8fa197", "font-size": 13}); t.textContent = "Se llena con la medición de cada hora"; svg.append(t); return; }
@@ -469,13 +897,16 @@ function pintar() {
   if (((et.publicacion || {}).resumen || {}).aviso) t.append(el("li", null, "Configurar el permiso del canal y los secretos (pipeline/README.md) para que se suba solo."));
   t.append(el("li", null, "Mirar «Olas de hoy»: si algo dice 🚀 naciente o 📈 subiendo y «no lo hacemos», avisale a Claude para construir ese formato."));
   t.append(el("li", null, "Fijar el comentario de cada video de hoy y responder los primeros comentarios."));
-  pintarEstado();
+  pintarEstado(); pintarResumen(); pintarCerebro(); pintarAnalisis();
 }
 
-cargar(); corridas();
+const altoTop = () => document.documentElement.style.setProperty("--toph", document.querySelector(".top").offsetHeight + "px");
+altoTop(); window.addEventListener("resize", altoTop);
+cargar(); corridas(); issues(); tabs();
+setInterval(issues, 300000);
 setInterval(cargar, 60000);
 setInterval(() => { if (!(CORRIDA && CORRIDA.pasos)) $("est-n").textContent = proxima(); }, 30000);
-window.addEventListener("resize", () => pintarMapa());
+let _rz; window.addEventListener("resize", () => { clearTimeout(_rz); _rz = setTimeout(pintarMapa, 150); });
 </script>
 </body>
 </html>

@@ -23,7 +23,8 @@ def main():
     OUT.mkdir(exist_ok=True)
     vivo = cargar(sys.argv[1], None) if len(sys.argv) > 1 else None
     foto = dict(estado=cargar(D / "estado.json", {}), radar=cargar(D / "radar.json", {}).get("virales", [])[:20],
-                plan=cargar(D / "plan.json", {}), semana=cargar(D / "semana_actual.json", {}), publicados=cargar(D / "publicados.json", []), vivo=vivo)
+                plan=cargar(D / "plan.json", {}), gerente=cargar(D / "gerente.json", None), cerebro=cargar(D / "cerebro.json", None),
+                analisis_ia=cargar(D / "analisis_ia.json", None), semana=cargar(D / "semana_actual.json", {}), publicados=cargar(D / "publicados.json", []), vivo=vivo)
     (OUT / "datos.js").write_text("window.SNAPSHOT = " + json.dumps(foto, ensure_ascii=False) + ";\n")
     shutil.copy(RAIZ / "pipeline" / "tablero" / "app.html", OUT / "index.html")
     shutil.copy(RAIZ / "pipeline" / "tablero" / "privacidad.html", OUT / "privacidad.html")
