@@ -155,6 +155,13 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
   </div>
 
   <div class="panel" style="margin-top:12px">
+    <div class="ph"><h2>Parte del Gerente IA</h2><span id="ger-s"></span></div>
+    <div id="ger-parte" style="font-size:15px;line-height:1.6"></div>
+    <div class="olas" id="ger-form" style="margin-top:12px"></div>
+    <div class="sub" style="margin-top:10px"><a id="ger-bit" target="_blank" rel="noopener">Bitácora completa de decisiones</a></div>
+  </div>
+
+  <div class="panel" style="margin-top:12px">
     <div class="ph"><h2>Olas de hoy · qué mecánica sube y cuál se muere</h2><span id="olas-s"></span></div>
     <div class="olas" id="olas"></div>
     <div class="sub" id="olas-cuando" style="margin-top:10px;line-height:1.6"></div>
@@ -184,7 +191,7 @@ const fmt = n => n == null ? "—" : n >= 1e6 ? (n / 1e6).toFixed(1) + " M" : n 
 const SVGNS = "http://www.w3.org/2000/svg";
 const sv = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
 const hace = iso => { if (!iso) return "—"; const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "recién" : m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : `hace ${Math.round(m / 1440)} d`; };
-let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null;
+let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null, D_GER = null;
 
 async function traer(url) { try { const r = await fetch(url, {cache: "no-store"}); return r.ok ? await r.json() : null; } catch (e) { return null; } }
 
@@ -196,7 +203,7 @@ async function cargar() {
     traer(RAW(CFG.rama, "pipeline/datos/semana_actual.json")), traer(RAW(CFG.rama, "pipeline/datos/publicados.json")),
     traer(RAW("datos-vivos", "vivo.json"))]);
   const [olas, inv] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/olas.json")), traer(RAW(CFG.rama, "pipeline/datos/investigacion.json"))]);
-  D_OLAS = olas; D_INV = inv;
+  D_OLAS = olas; D_INV = inv; D_GER = await traer(RAW(CFG.rama, "pipeline/datos/gerente.json"));
   D = {estado: estado || s.estado || {}, radar: (radar && radar.virales) || s.radar || [], analisis: analisis || s.analisis || {},
        plan: plan || s.plan || {}, semana: semana || s.semana || {}, publicados: publicados || s.publicados || [], vivo: vivo || s.vivo || null,
        en_vivo: !!estado};
@@ -399,6 +406,25 @@ function pintar() {
     const b = el("div", "b"); b.style.setProperty("--c", COL[k] || "var(--otro)");
     const tr = el("div", "track"); const i = el("i"); i.style.width = Math.min(100, pct / 2) + "%"; tr.append(i);
     b.append(el("span", null, NOM[k] || k), tr, el("span", "num", pct.toFixed(0) + "%")); $("retencion").append(b); });
+
+  // parte del gerente (pipeline/gerente.py + Gerente IA diario)
+  const G = D_GER || {};
+  const SEM = {ESTRELLA: "var(--lime)", SANO: "var(--ok)", FLOJO: "var(--amber)", MUERTO: "var(--err)", "SIN DATOS": "var(--muted)"};
+  const p = G.parte || {};
+  const lst = (t, xs) => xs && xs.length ? `<b>${t}</b><ul style="margin:4px 0 10px 18px;padding:0">` + xs.map(x => `<li>${String(x).replace(/</g, "&lt;")}</li>`).join("") + "</ul>" : "";
+  $("ger-parte").innerHTML = (p.titular ? `<div style="font-size:18px;font-weight:700;margin-bottom:6px">${p.titular.replace(/</g, "&lt;")}</div>` : "") +
+    lst("Qué funciona", p.funciona) + lst("Qué no funciona", p.no_funciona) + lst("Qué decidí e hice", p.hice) +
+    lst("Para vos (CEO)", p.para_el_ceo && p.para_el_ceo.length ? p.para_el_ceo : ["Nada: todo dentro de lo que puedo resolver yo."]) +
+    (G.canal ? `<div class="sub">Canal: mediana a las 48 h ${fmt(G.canal.mediana_48h_semana)} (semana anterior ${fmt(G.canal.mediana_48h_semana_anterior)}, ${G.canal.cambio || "s/d"})</div>` : "");
+  $("ger-s").textContent = p.fecha ? `parte del ${p.fecha}` : (G.fecha ? `números del ${G.fecha} · parte pendiente` : "sin datos");
+  $("ger-form").innerHTML = "";
+  Object.entries(G.formatos || {}).sort((a, b) => (b[1].mediana_48h || 0) - (a[1].mediana_48h || 0)).forEach(([k, v]) => {
+    const c = el("div", "ola"); c.style.borderColor = SEM[v.semaforo] || "var(--muted)";
+    const e = el("div", "e", v.semaforo); e.style.color = SEM[v.semaforo] || "var(--muted)";
+    c.append(e, el("b", null, NOM[k] || k), el("div", "sub", `48 h: ${fmt(v.mediana_48h)} · ${v.vs_canal}`), el("div", "sub", `tendencia ${v.tendencia || "—"}`));
+    $("ger-form").append(c);
+  });
+  $("ger-bit").href = `https://github.com/${CFG.repo}/blob/${CFG.rama}/reports/gerente/bitacora.md`;
 
   // olas (detector diario: pipeline/investigar_olas.py)
   const EST = {naciente: ["🚀 naciente", "var(--lime)"], subiendo: ["📈 subiendo", "var(--ok)"], estable: ["➖ estable", "var(--muted)"],

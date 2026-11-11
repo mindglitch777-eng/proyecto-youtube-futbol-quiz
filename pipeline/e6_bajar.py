@@ -69,7 +69,8 @@ def main():
     pend = sorted((m for m, _ in todos.values() if hoy.isoformat() <= m["fecha"] <= limite and m["id"] not in ya and (m.get("extra") or not choca(m, viejos))),
                   key=lambda m: (m["fecha"], m["hora"]))
     vencidos = sorted(m["id"] for m, _ in todos.values() if m["fecha"] < hoy.isoformat() and m["id"] not in ya
-                      and m["fecha"] >= (hoy - timedelta(days=3)).isoformat())
+                      and m["fecha"] >= (hoy - timedelta(days=3)).isoformat()
+                      and not choca(m, viejos))                               # ese horario ya lo cubrió un video subido antes (no es falta)
     elegidos = []
     for m in pend[:MAX_POR_CORRIDA]:
         _, (tipo, lugar) = todos[m["id"]]

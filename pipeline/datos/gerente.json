@@ -1,0 +1,288 @@
+{
+ "fecha": "2026-11-11",
+ "hora": "13:37",
+ "canal": {
+  "mediana_48h_semana": 3590,
+  "mediana_48h_semana_anterior": 1938,
+  "videos_semana": 30,
+  "pct_visto_semana": 175,
+  "cambio": "+85%"
+ },
+ "formatos": {
+  "balon": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 12696,
+   "mejor": 17414,
+   "pct_visto": 153,
+   "subs_cada_1000": 1.55,
+   "tendencia": null,
+   "vs_canal": "3.5x",
+   "semaforo": "ESTRELLA"
+  },
+  "cabezas": {
+   "videos": 3,
+   "medidos": 1,
+   "mediana_48h": 18219,
+   "mejor": 29671,
+   "pct_visto": 135,
+   "subs_cada_1000": 0.92,
+   "tendencia": null,
+   "vs_canal": "5.1x",
+   "semaforo": "ESTRELLA"
+  },
+  "dress": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 13208,
+   "mejor": 23451,
+   "pct_visto": 109,
+   "subs_cada_1000": 1.45,
+   "tendencia": null,
+   "vs_canal": "3.7x",
+   "semaforo": "ESTRELLA"
+  },
+  "fitall": {
+   "videos": 3,
+   "medidos": 0,
+   "mediana_48h": null,
+   "mejor": 2541,
+   "pct_visto": null,
+   "subs_cada_1000": null,
+   "tendencia": null,
+   "vs_canal": "0.0x",
+   "semaforo": "SIN DATOS"
+  },
+  "pared": {
+   "videos": 2,
+   "medidos": 2,
+   "mediana_48h": 1328,
+   "mejor": 2324,
+   "pct_visto": 134,
+   "subs_cada_1000": 0.42,
+   "tendencia": null,
+   "vs_canal": "0.4x",
+   "semaforo": "FLOJO"
+  },
+  "rueda": {
+   "videos": 10,
+   "medidos": 6,
+   "mediana_48h": 12171,
+   "mejor": 33536,
+   "pct_visto": 162,
+   "subs_cada_1000": 2.54,
+   "tendencia": "+140%",
+   "vs_canal": "3.4x",
+   "semaforo": "ESTRELLA"
+  },
+  "siuu": {
+   "videos": 1,
+   "medidos": 0,
+   "mediana_48h": null,
+   "mejor": 1207,
+   "pct_visto": null,
+   "subs_cada_1000": null,
+   "tendencia": null,
+   "vs_canal": "0.0x",
+   "semaforo": "SIN DATOS"
+  },
+  "stop": {
+   "videos": 24,
+   "medidos": 20,
+   "mediana_48h": 2772,
+   "mejor": 29788,
+   "pct_visto": 183,
+   "subs_cada_1000": 1.31,
+   "tendencia": "-33%",
+   "vs_canal": "0.8x",
+   "semaforo": "SANO"
+  },
+  "tridente": {
+   "videos": 1,
+   "medidos": 0,
+   "mediana_48h": null,
+   "mejor": 1651,
+   "pct_visto": null,
+   "subs_cada_1000": null,
+   "tendencia": null,
+   "vs_canal": "0.0x",
+   "semaforo": "SIN DATOS"
+  }
+ },
+ "horas": {
+  "00:00": {
+   "mediana": 2574,
+   "videos": 1
+  },
+  "09:00": {
+   "mediana": 2723,
+   "videos": 5
+  },
+  "12:00": {
+   "mediana": 12696,
+   "videos": 1
+  },
+  "13:00": {
+   "mediana": 6526,
+   "videos": 4
+  },
+  "14:00": {
+   "mediana": 22657,
+   "videos": 1
+  },
+  "15:00": {
+   "mediana": 12526,
+   "videos": 2
+  },
+  "17:00": {
+   "mediana": 2822,
+   "videos": 5
+  },
+  "20:00": {
+   "mediana": 1164,
+   "videos": 1
+  },
+  "21:00": {
+   "mediana": 6620,
+   "videos": 6
+  },
+  "22:00": {
+   "mediana": 15176,
+   "videos": 1
+  },
+  "23:00": {
+   "mediana": 7508,
+   "videos": 4
+  }
+ },
+ "mejores": [
+  {
+   "fecha": "2026-11-09",
+   "hora": "23:00",
+   "tipo": "cabezas",
+   "titulo": "Yamal head fit challenge 😱 Pause it! #yamal #messi #ronaldo",
+   "vistas": 22011,
+   "v48": null,
+   "horas": 31,
+   "vph": 710,
+   "pct": null,
+   "subs1000": null,
+   "id": "MNrWpaRuLcc"
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "21:30",
+   "tipo": "rueda",
+   "titulo": "Mbappé vs Yamal or Vinícius stop challenge 🔥🛑 #mbappe #yamal #vinicius",
+   "vistas": 23295,
+   "v48": null,
+   "horas": 33,
+   "vph": 706,
+   "pct": null,
+   "subs1000": null,
+   "id": "e9LAjWa_pdQ"
+  },
+  {
+   "fecha": "2026-11-10",
+   "hora": "23:00",
+   "tipo": "cabezas",
+   "titulo": "Fit Ronaldo's head 🛑 Only 1% can #ronaldo #messi",
+   "vistas": 4320,
+   "v48": null,
+   "horas": 7,
+   "vph": 617,
+   "pct": null,
+   "subs1000": null,
+   "id": "4RGjtopNTjY"
+  }
+ ],
+ "peores": [
+  {
+   "fecha": "2026-11-09",
+   "hora": "17:00",
+   "tipo": "tridente",
+   "titulo": "Pause to pick your 3 Can you stay under €150M? Rodrygo vs Yamal vs Haa",
+   "vistas": 1651,
+   "v48": null,
+   "horas": 37,
+   "vph": 45,
+   "pct": null,
+   "subs1000": null,
+   "id": "RnEqq6Ce5hs"
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "22:15",
+   "tipo": "fitall",
+   "titulo": "Ronaldo fit all challenge 🎯 Which head is the real one? #ronaldo #fitc",
+   "vistas": 1718,
+   "v48": null,
+   "horas": 32,
+   "vph": 54,
+   "pct": null,
+   "subs1000": null,
+   "id": "_J71okhhaKw"
+  },
+  {
+   "fecha": "2026-11-09",
+   "hora": "20:00",
+   "tipo": "stop",
+   "titulo": "Football Stop Challenge 6️⃣7️⃣ Gavi Be honest 😤🛑 #neymar #saka #gavi",
+   "vistas": 2022,
+   "v48": null,
+   "horas": 34,
+   "vph": 59,
+   "pct": null,
+   "subs1000": null,
+   "id": "4EF63yoOhn0"
+  }
+ ],
+ "olas_calientes": [
+  {
+   "mecanica": "fit",
+   "estado": "subiendo",
+   "vph": 5508,
+   "nuestros": [
+    "fitall",
+    "cabezas"
+   ]
+  }
+ ],
+ "salud": {
+  "subidas_programadas": {
+   "2026-11-11": 8,
+   "2026-11-12": 8,
+   "2026-11-13": 8,
+   "2026-11-14": 0
+  },
+  "alerta_ok": false,
+  "alerta_problemas": [
+   "Se pasó la hora y NO se subió: s1107_01_mar10_0900_rueda",
+   "Se pasó la hora y NO se subió: s1107_02_mar10_1300_stop",
+   "Se pasó la hora y NO se subió: s1107_03_mar10_1700_dress",
+   "Se pasó la hora y NO se subió: s1107_04_mar10_2000_stop"
+  ],
+  "en_cola": 0,
+  "etapas_con_error": {
+   "publicacion": [
+    "Se pasó la hora y NO se subió: s1107_01_mar10_0900_rueda",
+    "Se pasó la hora y NO se subió: s1107_02_mar10_1300_stop",
+    "Se pasó la hora y NO se subió: s1107_03_mar10_1700_dress",
+    "Se pasó la hora y NO se subió: s1107_04_mar10_2000_stop"
+   ]
+  },
+  "olas_hace_h": 26,
+  "investigacion": "2026-11-10",
+  "poda": {
+   "podadas": {},
+   "promovidas": {
+    "rueda": {
+     "fecha": "2026-11-07",
+     "rinde": "169% del STOP",
+     "videos": 4
+    }
+   }
+  }
+ },
+ "parte": null
+}
