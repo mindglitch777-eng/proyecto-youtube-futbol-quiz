@@ -1,12 +1,7 @@
 {
- "hora": "2026-11-11T06:18-03:00",
- "ok": false,
- "problemas": [
-  "Se pasó la hora y NO se subió: s1107_01_mar10_0900_rueda",
-  "Se pasó la hora y NO se subió: s1107_02_mar10_1300_stop",
-  "Se pasó la hora y NO se subió: s1107_03_mar10_1700_dress",
-  "Se pasó la hora y NO se subió: s1107_04_mar10_2000_stop"
- ],
- "subidos_ahora": 0,
+ "hora": "2026-11-11T14:58-03:00",
+ "ok": true,
+ "problemas": [],
+ "subidos_ahora": 1,
  "en_cola": []
 }

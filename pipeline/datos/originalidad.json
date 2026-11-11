@@ -1,10 +1,10 @@
 {
  "fecha": "2026-11-11",
- "indice": 65,
- "subidas_semana": 53,
+ "indice": 67,
+ "subidas_semana": 54,
  "formato_mas_usado": "stop",
- "concentracion": 0.42,
- "parecido_titulos": 0.67,
+ "concentracion": 0.41,
+ "parecido_titulos": 0.66,
  "casi_identicos": 0,
  "medidos": 0,
  "musicas_distintas": 0,
@@ -20,11 +20,12 @@
   "torre": 1,
   "tridente": 1,
   "circulo": 1,
-  "fitall": 5
+  "fitall": 5,
+  "q20fichaje": 1
  },
  "alertas": [
-  "stop es el 42% de las subidas de la semana: demasiado de la misma plantilla.",
-  "Los títulos se parecen 67% en promedio: falta variedad de frases."
+  "stop es el 41% de las subidas de la semana: demasiado de la misma plantilla.",
+  "Los títulos se parecen 66% en promedio: falta variedad de frases."
  ],
  "lectura": "OJO: se empieza a ver repetitivo"
 }
