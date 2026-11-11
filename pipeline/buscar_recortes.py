@@ -92,9 +92,14 @@ def main():
     det = cv2.FaceDetectorYN.create(str(MODELO), "", (320, 320), 0.7)
     idx_path = OUT / "indice.json"
     indice = json.loads(idx_path.read_text()) if idx_path.exists() else {}
+    extra = pedido.get("por_jugador_extra", {})
+    hechos = 0
     for clave, nombre in pedido["jugadores"].items():
-        if not solo_cuerpos and len([k for k in indice if k.startswith(clave + "_")]) >= n_max:
+        tiene = len(list((OUT / "torsos").glob(clave + "_*.png")))
+        n_max = extra.get(clave, pedido.get("por_jugador", 4))
+        if not solo_cuerpos and tiene >= n_max:
             continue
+        n_max = n_max - (0 if solo_cuerpos else tiene)                          # solo lo que falta
         vistos, cand = set(), []
         for q in CONSULTAS:
             for url in buscar(q.format(n=nombre)):
@@ -114,6 +119,8 @@ def main():
                 break
         cand.sort(key=lambda c: -c[0])
         k = 10 if solo_cuerpos else 0                                          # los cuerpos nuevos van como _10, _11...
+        while (OUT / "torsos" / f"{clave}_{k}.png").exists() or (OUT / "cuerpos" / f"{clave}_{k}.png").exists():
+            k += 1                                                             # nunca se pisa un recorte que ya existe
         for score, url, im, ev in cand[:n_max]:
             x, y, fw, fh = ev["cara"]
             bb = im.getbbox()
@@ -124,9 +131,25 @@ def main():
             indice[f"{clave}_{k}"] = dict(jugador=nombre, url=url, score=round(score, 1), abajo=round(ev["abajo"], 1),
                                           cuerpo_entero=ev["abajo"] >= 6.0)
             k += 1
-        print(clave, "candidatos:", len(cand), "guardados:", k, flush=True)
+        print(clave, "candidatos:", len(cand), "guardados:", min(len(cand), n_max), flush=True)
         idx_path.write_text(json.dumps(indice, ensure_ascii=False, indent=1))
+        hechos += 1
+        if hechos % 8 == 0 and __import__("os").environ.get("GITHUB_ACTIONS"):   # guarda de a 8 jugadores (si se corta, no se pierde)
+            guardar_parcial(f"Recortes: {hechos} jugadores")
     hoja()
+
+
+def guardar_parcial(msg):
+    import subprocess
+    r = lambda *a: subprocess.run(list(a), cwd=RAIZ, capture_output=True, text=True)
+    r("git", "config", "user.name", "github-actions[bot]"); r("git", "config", "user.email", "41898282+github-actions[bot]@users.noreply.github.com")
+    r("git", "add", "produccion/assets/recortes")
+    if r("git", "commit", "-q", "-m", msg).returncode == 0:
+        rama = __import__("os").environ.get("GITHUB_REF_NAME", "")
+        for _ in range(4):
+            if r("git", "pull", "--rebase", "-q", "origin", rama).returncode == 0 and r("git", "push", "-q", "origin", f"HEAD:{rama}").returncode == 0:
+                print("  guardado parcial:", msg, flush=True); return
+            time.sleep(6)
 
 
 def hoja():
