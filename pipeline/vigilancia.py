@@ -5,7 +5,7 @@ VIGILANCIA Y AUTORREPARACIÓN (máquina sin IA · Fase 1, 11/11). Corre cada 2 h
 Revisa:
 1. Automatizaciones clave (fábrica, publicación, investigación, prototipos): si la última corrida FALLÓ, la relanza UNA vez
    (receta de reparación) y lo anota; si vuelve a fallar, avisa.
-2. Que hayan corrido: publicación sin éxito hace más de 8 h o fábrica hace más de 30 h → aviso.
+2. Que hayan corrido: publicación sin éxito hace más de 12 h (de noche hay 8 h sin corridas) o fábrica hace más de 30 h → aviso.
 3. Datos: cada datos/*.json tiene que poder leerse. Si uno está roto, lo restaura desde la última versión buena del repo.
 4. Cobertura: videos subidos para hoy y mañana (≥6 por día) y stock de la reserva.
 Avisos: un Issue con la etiqueta "alerta-sistema" (llega al celular por la app de GitHub). Si todo vuelve a estar sano, lo cierra.
@@ -20,7 +20,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 DATOS = RAIZ / "pipeline" / "datos"
 ART = timezone(timedelta(hours=-3))
 REPO = "mindglitch777-eng/proyecto-youtube-futbol-quiz"
-CLAVE = {"fabrica_diaria.yml": 30, "publicar_diario.yml": 8, "investigar.yml": 60, "prototipo.yml": None}   # horas máximas sin éxito
+CLAVE = {"fabrica_diaria.yml": 30, "publicar_diario.yml": 12, "investigar.yml": 60, "prototipo.yml": None}   # horas máximas sin éxito
 
 
 def gh(*a, ok=True):

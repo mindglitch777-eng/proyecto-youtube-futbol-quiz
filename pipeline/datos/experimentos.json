@@ -1,0 +1,53 @@
+{
+ "activos": [
+  {
+   "id": "e1_stop_arranque",
+   "tipo": "stop",
+   "param": "arranque",
+   "brazos": [
+    "grilla",
+    "estrella"
+   ],
+   "pregunta": "¿El STOP rinde más arrancando con la grilla de 4 o con zoom a la estrella?",
+   "inicio": "2026-11-11",
+   "estado": "en curso",
+   "medicion": {
+    "\"grilla\"": {
+     "videos": 6,
+     "vistas_48h_esperadas": 3496,
+     "p_mejor": 0.6
+    },
+    "\"estrella\"": {
+     "videos": 6,
+     "vistas_48h_esperadas": 3155,
+     "p_mejor": 0.4
+    }
+   }
+  },
+  {
+   "id": "e2_stop_hard",
+   "tipo": "stop",
+   "param": "hard",
+   "brazos": [
+    false,
+    true
+   ],
+   "pregunta": "¿El STOP de la noche rinde más en modo HARD (grilla nueva, más difícil) o normal?",
+   "inicio": "2026-11-11",
+   "estado": "en curso",
+   "medicion": {
+    "false": {
+     "videos": 0,
+     "vistas_48h_esperadas": 4051,
+     "p_mejor": 0.5
+    },
+    "true": {
+     "videos": 0,
+     "vistas_48h_esperadas": 4051,
+     "p_mejor": 0.5
+    }
+   }
+  }
+ ],
+ "terminados": []
+}

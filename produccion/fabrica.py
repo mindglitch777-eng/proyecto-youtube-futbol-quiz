@@ -666,7 +666,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
         manifiesto.append(dict(id=gid, n=n, fecha=dia.isoformat(), hora=hora, tipo=tipo, formato=FORMATO[tipo], titulo=titulo,
                                descripcion=desc_completa, fijado=fijado, jugadores=nombres,
                                tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4",
-                               **({"variante": g["arranque"]} if g.get("arranque") else {})))
+                               **({"variante": g["arranque"]} if g.get("arranque") else {}),
+                               **({"exp": sl["exp"]} if sl.get("exp") else {})))      # Fase 2: prueba A/B del cerebro (se mide sola)
         trabajos.append((tipo, ruta))
         filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
     if not renderizar:                                                          # prueba de humo: solo guiones y títulos (sin video ni memoria)

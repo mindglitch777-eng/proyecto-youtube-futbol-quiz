@@ -1,0 +1,212 @@
+{
+ "fecha": "2026-11-11T15:00-03:00",
+ "videos_medidos": 48,
+ "formatos": {
+  "rueda": {
+   "vistas_48h_esperadas": 9017,
+   "mediana_48h": 14747,
+   "videos": 7,
+   "peso_datos": 5.3,
+   "prob_mejor": 0.54,
+   "confianza": "media"
+  },
+  "cabezas": {
+   "vistas_48h_esperadas": 6001,
+   "mediana_48h": 17647,
+   "videos": 1,
+   "peso_datos": 0.7,
+   "prob_mejor": 0.17,
+   "confianza": "baja"
+  },
+  "balon": {
+   "vistas_48h_esperadas": 5659,
+   "mediana_48h": 12124,
+   "videos": 1,
+   "peso_datos": 0.8,
+   "prob_mejor": 0.14,
+   "confianza": "baja"
+  },
+  "dress": {
+   "vistas_48h_esperadas": 5514,
+   "mediana_48h": 12846,
+   "videos": 1,
+   "peso_datos": 0.7,
+   "prob_mejor": 0.13,
+   "confianza": "baja"
+  },
+  "stop": {
+   "vistas_48h_esperadas": 4051,
+   "mediana_48h": 3209,
+   "videos": 26,
+   "peso_datos": 18.3,
+   "prob_mejor": 0.0,
+   "confianza": "alta"
+  },
+  "ring": {
+   "vistas_48h_esperadas": 2900,
+   "mediana_48h": 779,
+   "videos": 1,
+   "peso_datos": 0.5,
+   "prob_mejor": 0.01,
+   "confianza": "baja"
+  },
+  "cabeza": {
+   "vistas_48h_esperadas": 2695,
+   "mediana_48h": 719,
+   "videos": 1,
+   "peso_datos": 0.6,
+   "prob_mejor": 0.01,
+   "confianza": "baja"
+  },
+  "plinko": {
+   "vistas_48h_esperadas": 2690,
+   "mediana_48h": 624,
+   "videos": 1,
+   "peso_datos": 0.5,
+   "prob_mejor": 0.01,
+   "confianza": "baja"
+  },
+  "pared": {
+   "vistas_48h_esperadas": 2343,
+   "mediana_48h": 1721,
+   "videos": 2,
+   "peso_datos": 1.6,
+   "prob_mejor": 0.0,
+   "confianza": "baja"
+  },
+  "otros": {
+   "vistas_48h_esperadas": 2216,
+   "mediana_48h": 812,
+   "videos": 2,
+   "peso_datos": 0.9,
+   "prob_mejor": 0.0,
+   "confianza": "baja"
+  },
+  "carrera": {
+   "vistas_48h_esperadas": 2120,
+   "mediana_48h": 697,
+   "videos": 2,
+   "peso_datos": 0.9,
+   "prob_mejor": 0.0,
+   "confianza": "baja"
+  },
+  "find": {
+   "vistas_48h_esperadas": 2030,
+   "mediana_48h": 860,
+   "videos": 3,
+   "peso_datos": 1.6,
+   "prob_mejor": 0.0,
+   "confianza": "baja"
+  }
+ },
+ "horas": {
+  "00:00": {
+   "efecto": "-17%",
+   "videos": 1
+  },
+  "09:00": {
+   "efecto": "-16%",
+   "videos": 6
+  },
+  "12:00": {
+   "efecto": "+22%",
+   "videos": 1
+  },
+  "13:00": {
+   "efecto": "+16%",
+   "videos": 5
+  },
+  "14:00": {
+   "efecto": "+27%",
+   "videos": 1
+  },
+  "15:00": {
+   "efecto": "+8%",
+   "videos": 2
+  },
+  "17:00": {
+   "efecto": "-10%",
+   "videos": 5
+  },
+  "20:00": {
+   "efecto": "-22%",
+   "videos": 1
+  },
+  "21:00": {
+   "efecto": "+25%",
+   "videos": 6
+  },
+  "22:00": {
+   "efecto": "+14%",
+   "videos": 1
+  },
+  "23:00": {
+   "efecto": "+10%",
+   "videos": 4
+  }
+ },
+ "originalidad": {
+  "tope": "35%",
+  "ultimos_7_dias": {
+   "stop": "37%",
+   "rueda": "20%",
+   "fitall": "11%",
+   "cabezas": "10%",
+   "pared": "4%",
+   "siuu": "2%",
+   "tridente": "2%",
+   "penal": "2%",
+   "balon": "2%",
+   "dress": "2%",
+   "find": "1%",
+   "torre": "1%",
+   "plinko": "1%",
+   "trayectoria": "1%",
+   "circulo": "1%",
+   "q20fichaje": "1%"
+  }
+ },
+ "experimentos": {
+  "activos": [
+   {
+    "id": "e1_stop_arranque",
+    "pregunta": "¿El STOP rinde más arrancando con la grilla de 4 o con zoom a la estrella?",
+    "medicion": {
+     "\"grilla\"": {
+      "videos": 6,
+      "vistas_48h_esperadas": 3496,
+      "p_mejor": 0.6
+     },
+     "\"estrella\"": {
+      "videos": 6,
+      "vistas_48h_esperadas": 3155,
+      "p_mejor": 0.4
+     }
+    }
+   },
+   {
+    "id": "e2_stop_hard",
+    "pregunta": "¿El STOP de la noche rinde más en modo HARD (grilla nueva, más difícil) o normal?",
+    "medicion": {
+     "false": {
+      "videos": 0,
+      "vistas_48h_esperadas": 4051,
+      "p_mejor": 0.5
+     },
+     "true": {
+      "videos": 0,
+      "vistas_48h_esperadas": 4051,
+      "p_mejor": 0.5
+     }
+    }
+   }
+  ],
+  "terminados": []
+ },
+ "meta": {
+  "inicio": "2026-11-11",
+  "mediana_48h_inicial": 4423,
+  "objetivo": "+25 % en 3 semanas con originalidad ≥75",
+  "mediana_48h_ultimos_7_dias": 4423
+ }
+}

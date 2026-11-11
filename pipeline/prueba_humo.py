@@ -81,6 +81,20 @@ def main():
             assert len(p["slots"]) == 6
             return " · ".join(f"{s['hora']} {s['tipo']}" for s in p["slots"])
 
+        @prueba("cerebro: aprende, elige con tope de originalidad y mide las pruebas A/B")
+        def _():
+            import cerebro
+            M = cerebro.modelo()
+            rng = random.Random(3)
+            cands = list(M["formatos"]) or ["stop", "rueda"]
+            k = cerebro.elegir(M, cands, rng, {}, ["rueda"] * 7, ["rueda"] * 3)
+            assert k in cands
+            assert not cerebro.permite("x", ["x"] * 5, ["y"] * 5) and cerebro.permite("z", ["x"] * 5, ["y"] * 5)
+            ex = cerebro.evaluar(M)
+            p = json.loads((datos / "plan.json").read_text())
+            assert p.get("motor") == "cerebro", "el plan no usó el cerebro"
+            return f"{M['n']} videos medidos · {len(ex['activos'])} pruebas A/B activas · elegiría {k}"
+
         @prueba("planificador de subidas y reserva")
         def _():
             import e6_bajar, reserva

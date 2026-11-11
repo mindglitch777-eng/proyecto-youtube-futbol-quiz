@@ -80,7 +80,7 @@ def main():
             vid, err = subir(tok, ruta, m)
         except Exception as e:                                                # corte de red, etc.: se reintenta en la próxima corrida
             vid, err = None, f"excepción: {e}"
-        publicados.append(dict(id=m["id"], tipo=m["tipo"], variante=m.get("variante"), fecha=m["fecha"], hora=m["hora"], titulo=m["titulo"], video_id=vid, error=err,
+        publicados.append(dict(id=m["id"], tipo=m["tipo"], variante=m.get("variante"), exp=m.get("exp"), fecha=m["fecha"], hora=m["hora"], titulo=m["titulo"], video_id=vid, error=err,
                                subido=datetime.now(timezone.utc).isoformat(timespec="seconds")))
         guardar("publicados.json", publicados)
         if vid:

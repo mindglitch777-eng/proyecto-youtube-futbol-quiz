@@ -23,6 +23,7 @@ GRILLA = [("09:00", "stop", "grilla"), ("13:00", "prueba", None), ("17:00", "pru
           ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "stop", "grilla2")]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
 MIN_VIDEOS_PODA = 4
+MAX_PRUEBA_SEMANA = 3                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
 
 
 def fechas(inicio, dias):
@@ -83,35 +84,47 @@ def main(inicio=None, dias=7):
         if p.get("tipo") in usos:
             usos[p["tipo"]] += 1
     peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
+    factor = {k: 1.0 for k in activas}                                          # solo olas + investigación (para el cerebro)
+    try:                                                                        # FASE 2: el cerebro estadístico decide (si falla, plan clásico)
+        import cerebro
+        M = cerebro.modelo()
+        cerebro.evaluar(M)
+        previos = cerebro.recientes()
+    except Exception as e:
+        print("cerebro no disponible, uso el plan clásico:", e, flush=True)
+        cerebro = M = None; previos = []
     OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"],
                      "dress": ["dress"], "quiz": ["trayectoria", "tridente", "q20fichaje", "q20costo"], "goat": ["circulo"]}
     FACTOR_OLA = {"naciente": 2.0, "subiendo": 1.8, "estable": 1.0, "bajando": 0.6, "muerta": 0.2}
     for fam, e in cargar("olas.json", {}).get("estado", {}).items():              # detector diario de olas: subirse y soltar a tiempo
         for k in OLA_A_FORMATO.get(fam, []):
             if k in peso:
-                peso[k] *= FACTOR_OLA.get(e["estado"], 1.0)
+                peso[k] *= FACTOR_OLA.get(e["estado"], 1.0); factor[k] *= FACTOR_OLA.get(e["estado"], 1.0)
     for r in cargar("investigacion.json", {}).get("recomendaciones", []):        # la investigación del sábado/miércoles manda
         f = 1.6 if r["accion"].startswith(("SUBIR", "PROBAR MÁS")) else (0.5 if r["accion"].startswith("BAJAR") else 1.0)
         for k in r["nuestros"]:
             if k in peso:
-                peso[k] *= f
+                peso[k] *= f; factor[k] *= f
     # Horarios que aprenden solos: los formatos fijos van a las horas con mejor mediana (si hay ≥2 videos de esa hora)
     hrs = cargar("investigacion.json", {}).get("horas", {})
     def rinde(h):
-        x = hrs.get(h[:2]); return x["mediana"] if x and x["videos"] >= 2 else 8000
+        if M and (M["horas"].get(h[:5]) or {}).get("videos", 0) >= 2:
+            return M["horas"][h[:5]]["efecto"]                                  # cerebro: efecto de la hora descontando el formato
+        x = hrs.get(h[:2]); return (x["mediana"] / 8000 - 1) if x and x["videos"] >= 2 else 0.0
     grilla = list(GRILLA)
     ola_fija = [k for k in promovidas if k not in FIJOS][:1]                      # la promovida de la ola toma un lugar fijo (y compite por las mejores horas)
     if ola_fija:
         i = next(i for i, g in enumerate(grilla) if g[1] == "prueba")
         grilla[i] = (grilla[i][0], ola_fija[0], None)
-    fijos = sorted([g for g in grilla if g[1] != "prueba"], key=lambda g: (g[1] == "stop", g[1] not in ola_fija))   # ola, rueda/cabezas primero
+    esperado = lambda t: (M["formatos"].get(t) or {}).get("media", M["mu0"]) if M else 0
+    fijos = sorted([g for g in grilla if g[1] != "prueba"], key=lambda g: (g[1] == "stop", g[1] not in ola_fija, -esperado(g[1])))   # ola, rueda/cabezas primero
     horas_orden = sorted([g[0] for g in grilla], key=rinde, reverse=True)
     nueva = []
     for g_, h_ in zip(fijos, horas_orden):
         nueva.append((h_, g_[1], g_[2]))
     for h_ in horas_orden[len(fijos):]:
         nueva.append((h_, "prueba", None))
-    con_datos = sum(1 for g in grilla if (hrs.get(g[0][:2]) or {}).get("videos", 0) >= 2)
+    con_datos = sum(1 for g in grilla if (hrs.get(g[0][:2]) or {}).get("videos", 0) >= 2 or (M and (M["horas"].get(g[0][:5]) or {}).get("videos", 0) >= 2))
     GRILLA_SEMANA = sorted(nueva) if con_datos >= 4 else grilla                 # sin datos suficientes: la grilla de noche fija
     slots = []; semana = {}
     for d in range(dias):
@@ -121,24 +134,31 @@ def main(inicio=None, dias=7):
             if tipo in FIJOS or tipo in ola_fija:                             # formato que ya funciona / ola del momento: lugar fijo
                 slots.append(dict(fecha=dia, hora=hora, tipo=tipo)); continue
             if tipo == "stop":
-                slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "grilla2" and d % 2 == 1),
-                                  arranque="grilla"))                    # 07/11: el zoom estrella no mejoró el "eligió ver"
+                sl = dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "grilla2" and d % 2 == 1),
+                          arranque="grilla")                             # 07/11: el zoom estrella no mejoró el "eligió ver"
+                if cerebro:                                                   # Fase 2: lo que ganó una prueba A/B + la prueba A/B en curso
+                    sl.update(cerebro.parametros_ganadores("stop"))
+                    sl.update(cerebro.brazo_para("stop", sum(1 for x in slots if x["tipo"] == "stop") + d))
+                slots.append(sl)
                 continue
-            tope = {k: CONFIG["pruebas"][k].get("max_semana", 99) for k in activas}  # algunos formatos solo N por semana
-            cand = [k for k in activas if k not in hoy_pruebas and k not in ola_fija and semana.get(k, 0) < tope[k]] or \
+            tope = {k: CONFIG["pruebas"][k].get("max_semana", MAX_PRUEBA_SEMANA) for k in activas}  # algunos formatos solo N por semana
+            del_dia = ({x["tipo"] for x in slots if x["fecha"] == dia} |        # variedad: nunca el mismo formato dos veces en el día
+                       {t for _, t, _ in GRILLA_SEMANA if t != "prueba"} | FIJOS)  # (los fijos ya tienen su lugar más tarde)
+            cand = [k for k in activas if k not in del_dia and k not in ola_fija and semana.get(k, 0) < tope[k]] or \
                    [k for k in activas if semana.get(k, 0) < tope[k]] or activas
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
-            fijas = [k for k in promovidas if k not in hoy_pruebas]
+            fijas = [k for k in promovidas if k not in hoy_pruebas and k not in FIJOS and k not in del_dia]   # las fijas ya tienen su lugar
             if fijas and not hoy_pruebas and not ola_fija:                     # una promovida sale todos los días
                 k = fijas[0]
             else:                                                               # la menos usada (pesada por rendimiento)
-                k = min(cand, key=lambda k: (usos[k] / peso[k], rng.random()))
+                k = (cerebro.elegir(M, cand, rng, factor, previos, [x["tipo"] for x in slots]) if cerebro
+                     else min(cand, key=lambda k: (usos[k] / peso[k], rng.random())))   # Fase 2: Thompson + tope de originalidad
             usos[k] += 1; hoy_pruebas.append(k); semana[k] = semana.get(k, 0) + 1
             slots.append(dict(fecha=dia, hora=hora, tipo=k))
     guardar("plan.json", dict(inicio=inicio.isoformat(), grilla=[f"{h} {t}{'/' + e if e else ''}" for h, t, e in GRILLA],
                               pruebas_activas=activas, podadas=poda["podadas"], promovidas=poda["promovidas"],
-                              puntaje={k: round(v, 1) for k, v in pts.items()}, slots=slots))
+                              puntaje={k: round(v, 1) for k, v in pts.items()}, motor="cerebro" if cerebro else "clásico", slots=slots))
     cupos = {}
     for s in slots:
         cupos[s["tipo"]] = cupos.get(s["tipo"], 0) + 1

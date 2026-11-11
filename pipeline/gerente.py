@@ -146,6 +146,11 @@ def main():
     vig = cargar("vigilancia.json", {}).get("ultimo", {})
     reserva_libre = sum(1 for v in cargar("reserva.json", {"videos": []})["videos"] if not v.get("usado"))
     blindaje = dict(dias_seguidos_con_6=racha, meta=14, reserva=reserva_libre, vigilancia=vig)
+    try:                                                                       # Fase 2: el cerebro estadístico (sin IA)
+        import cerebro
+        cer = cerebro.main()
+    except Exception as e:
+        cer = dict(error=str(e))
     import originalidad                                                        # auditor sin IA: ¿se ve "plantilla"?
     orig = originalidad.reporte()
     # ---- ADVERTENCIAS (manual del gerente, errores 1, 2, 9 y 10): cuándo un número NO alcanza o el dato puede estar roto
@@ -178,7 +183,7 @@ def main():
         adv.append("Menos de 10 videos medidos en la semana: las comparaciones de canal son débiles.")
     salud["advertencias"] = adv
     previo = cargar("gerente.json", {})
-    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, blindaje=blindaje, historia=historia,
+    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, blindaje=blindaje, cerebro=cer, historia=historia,
                oportunidades=oportunidades, cansados=cansados, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
@@ -197,6 +202,13 @@ def main():
          + (": " + " · ".join(inspeccion["ejemplos"]) if inspeccion["ejemplos"] else ""), "",
          f"**Fase 1 · Blindaje:** {racha}/14 días seguidos con 6 o más videos · reserva {reserva_libre}/12 · vigilancia: "
          + (("; ".join(vig.get("problemas", [])) or "sin problemas") + f" ({vig.get('hora', 's/d')})" if vig else "todavía no corrió"), "",
+         "**Fase 2 · Cerebro (estadística sin IA):** " + (
+             f"error: {cer['error']}" if cer.get("error") else
+             " · ".join(f"{t} esperado {f['vistas_48h_esperadas']:,} ({f['confianza']}, {f['prob_mejor']:.0%} de ser el mejor)" for t, f in list(cer["formatos"].items())[:6])
+             + " | Pruebas A/B en curso: " + ("; ".join(f"{e['id']}: " + ", ".join(f"{k} {v['videos']} videos {v['p_mejor']:.0%}" for k, v in (e.get("medicion") or {}).items())
+                                                       for e in cer["experimentos"]["activos"]) or "ninguna")
+             + " | Terminadas: " + ("; ".join(f"{e['id']} → {e['estado']} {e.get('ganador')}" for e in cer["experimentos"]["terminados"]) or "ninguna")
+             + f" | Meta: mediana 48 h {cer['meta'].get('mediana_48h_inicial')} → {cer['meta'].get('mediana_48h_ultimos_7_dias')} (objetivo +25 % en 3 semanas)"), "",
          "**ADVERTENCIAS (leer antes de decidir):** " + (" · ".join(adv) if adv else "ninguna"), "",
          f"**Canal:** mediana a las 48 h esta semana {canal['mediana_48h_semana'] or '-'} (antes {canal['mediana_48h_semana_anterior'] or '-'}, "
          f"{canal.get('cambio', 's/d')}) · {canal['videos_semana']} videos · % visto {canal['pct_visto_semana'] or '-'}", "",
