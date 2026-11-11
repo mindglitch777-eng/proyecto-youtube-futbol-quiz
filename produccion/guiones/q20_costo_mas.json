@@ -7,5 +7,56 @@
   "Round two. Almost nobody gets this one. Haaland or Kane?",
   "Kane! A hundred million!",
   "Final round. Mbappe or Neymar? Comment your answer before you see it!"
+ ],
+ "formato": "costo",
+ "rondas": [
+  [
+   {
+    "ref": "torsos/vin_cius_j_nior_13",
+    "nombre": "Vinícius",
+    "precio": 45,
+    "txt": "€45M",
+    "detalle": "Flamengo → Real Madrid · 2018"
+   },
+   {
+    "ref": "torsos/jude_bellingham_0",
+    "nombre": "Bellingham",
+    "precio": 103,
+    "txt": "€103M",
+    "detalle": "Dortmund → Real Madrid · 2023"
+   }
+  ],
+  [
+   {
+    "ref": "torsos/erling_haaland_1",
+    "nombre": "Haaland",
+    "precio": 60,
+    "txt": "€60M",
+    "detalle": "Dortmund → Man City · 2022"
+   },
+   {
+    "ref": "torsos/harry_kane_1",
+    "nombre": "Kane",
+    "precio": 100,
+    "txt": "€100M",
+    "detalle": "Tottenham → Bayern · 2023"
+   }
+  ],
+  [
+   {
+    "ref": "torsos/kylian_mbapp_1",
+    "nombre": "Mbappé",
+    "precio": 180,
+    "txt": "€180M",
+    "detalle": "Monaco → PSG · 2018"
+   },
+   {
+    "ref": "torsos/neymar_1",
+    "nombre": "Neymar",
+    "precio": 222,
+    "txt": "€222M",
+    "detalle": "Barcelona → PSG · 2017"
+   }
+  ]
  ]
 }
