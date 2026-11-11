@@ -1,5 +1,6 @@
 name: Buscar recortes PNG de jugadores (internet)
 
+# 6 grupos en paralelo (cada uno ~12 jugadores) + un paso final que junta los índices y arma la hoja de control.
 on:
   push:
     paths: [pipeline/pedido_recortes.json, pipeline/buscar_recortes.py, pipeline/buscar_fondos.py, pipeline/pedido_extras.json, pipeline/buscar_extras.py]
@@ -8,18 +9,26 @@ on:
 permissions:
   contents: write
 
+concurrency: {group: recortes, cancel-in-progress: true}
+
 jobs:
-  recortes:
+  grupo:
     runs-on: ubuntu-latest
-    timeout-minutes: 330
+    timeout-minutes: 120
+    strategy:
+      fail-fast: false
+      matrix: {shard: [0, 1, 2, 3, 4, 5]}
+    env: {SHARD: "${{ matrix.shard }}", SHARDS: "6"}
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: pip install -q ddgs requests pillow numpy opencv-contrib-python-headless==4.10.0.84
       - run: curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
-      - run: '[ -n "$(ls produccion/assets/fondos/estadio_*.jpg 2>/dev/null)" ] || python pipeline/buscar_fondos.py'
-      - run: python pipeline/buscar_extras.py
+      - if: matrix.shard == 0
+        run: |
+          [ -n "$(ls produccion/assets/fondos/estadio_*.jpg 2>/dev/null)" ] || python pipeline/buscar_fondos.py
+          python pipeline/buscar_extras.py
       - run: python pipeline/buscar_recortes.py
       - name: Guardar
         if: always()
@@ -27,5 +36,23 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add produccion/assets/recortes produccion/assets/fondos
-          git commit -m "Recortes PNG de jugadores (internet)" || echo "nada nuevo"
-          for i in 1 2 3 4; do git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
+          git commit -m "Recortes PNG de jugadores (grupo ${{ matrix.shard }})" || echo "nada nuevo"
+          for i in 1 2 3 4 5 6; do git pull --rebase --autostash -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep $((5 + RANDOM % 10)); done
+
+  unir:
+    needs: grupo
+    if: always()
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with: {ref: "${{ github.ref_name }}"}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q ddgs requests pillow numpy opencv-contrib-python-headless==4.10.0.84
+      - run: python pipeline/buscar_recortes.py --unir
+      - run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -A produccion/assets/recortes
+          git commit -m "Recortes: índice unido + hoja de control" || echo "nada nuevo"
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done

@@ -90,11 +90,17 @@ def main():
     n_max = pedido.get("por_jugador", 4)
     (OUT / "torsos").mkdir(parents=True, exist_ok=True); (OUT / "cuerpos").mkdir(parents=True, exist_ok=True)
     det = cv2.FaceDetectorYN.create(str(MODELO), "", (320, 320), 0.7)
-    idx_path = OUT / "indice.json"
-    indice = json.loads(idx_path.read_text()) if idx_path.exists() else {}
+    import os
+    shard, shards = int(os.environ.get("SHARD", 0)), int(os.environ.get("SHARDS", 1))   # descarga en paralelo (6 grupos)
+    idx_path = OUT / ("indice.json" if shards == 1 else f"indice_{shard}.json")
+    indice = json.loads((OUT / "indice.json").read_text()) if (OUT / "indice.json").exists() else {}
+    if shards > 1:
+        indice = {}
     extra = pedido.get("por_jugador_extra", {})
     hechos = 0
-    for clave, nombre in pedido["jugadores"].items():
+    for i_j, (clave, nombre) in enumerate(pedido["jugadores"].items()):
+        if i_j % shards != shard:
+            continue
         tiene = len(list((OUT / "torsos").glob(clave + "_*.png")))
         n_max = extra.get(clave, pedido.get("por_jugador", 4))
         if not solo_cuerpos and tiene >= n_max:
@@ -135,8 +141,9 @@ def main():
         idx_path.write_text(json.dumps(indice, ensure_ascii=False, indent=1))
         hechos += 1
         if hechos % 8 == 0 and __import__("os").environ.get("GITHUB_ACTIONS"):   # guarda de a 8 jugadores (si se corta, no se pierde)
-            guardar_parcial(f"Recortes: {hechos} jugadores")
-    hoja()
+            guardar_parcial(f"Recortes (grupo {shard + 1}/{shards}): {hechos} jugadores")
+    if shards == 1:
+        hoja()
 
 
 def guardar_parcial(msg):
@@ -175,5 +182,15 @@ def hoja():
     hoja_im.save(OUT / "hoja.jpg", quality=80)
 
 
+def unir():
+    """Paso final de la descarga en paralelo: junta los índices de cada grupo y arma la hoja de control."""
+    idx = OUT / "indice.json"
+    indice = json.loads(idx.read_text()) if idx.exists() else {}
+    for p in sorted(OUT.glob("indice_*.json")):
+        indice.update(json.loads(p.read_text())); p.unlink()
+    idx.write_text(json.dumps(indice, ensure_ascii=False, indent=1))
+    hoja()
+
+
 if __name__ == "__main__":
-    main()
+    unir() if "--unir" in sys.argv else main()
