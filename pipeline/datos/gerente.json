@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-11",
- "hora": "13:56",
+ "hora": "14:04",
  "canal": {
   "mediana_48h_semana": 3590,
   "mediana_48h_semana_anterior": 1938,
@@ -53,6 +53,214 @@
   ],
   "lectura": "OJO: se empieza a ver repetitivo"
  },
+ "historia": {
+  "balon": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 12696,
+   "mejor": 17414,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {
+    "2026-S43": 12696
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "cabeza": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 731,
+   "mejor": 1667,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {
+    "2026-S43": 731
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "cabezas": {
+   "videos": 3,
+   "medidos": 1,
+   "mediana_48h": 18219,
+   "mejor": 29671,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.05,
+   "por_semana": {
+    "2026-S43": 18219
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "carrera": {
+   "videos": 2,
+   "medidos": 2,
+   "mediana_48h": 582,
+   "mejor": 1971,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.03,
+   "por_semana": {
+    "2026-S43": 582
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "dress": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 13208,
+   "mejor": 23451,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {
+    "2026-S43": 13208
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "find": {
+   "videos": 3,
+   "medidos": 3,
+   "mediana_48h": 874,
+   "mejor": 3863,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.05,
+   "por_semana": {
+    "2026-S43": 874
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "fitall": {
+   "videos": 3,
+   "medidos": 0,
+   "mediana_48h": null,
+   "mejor": 2541,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.05,
+   "por_semana": {},
+   "cansancio": null,
+   "cansado": false
+  },
+  "otros": {
+   "videos": 2,
+   "medidos": 2,
+   "mediana_48h": 624,
+   "mejor": 2197,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.03,
+   "por_semana": {
+    "2026-S43": 624
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "pared": {
+   "videos": 2,
+   "medidos": 2,
+   "mediana_48h": 1328,
+   "mejor": 2324,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.03,
+   "por_semana": {
+    "2026-S43": 1328
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "plinko": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 632,
+   "mejor": 1634,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {
+    "2026-S43": 632
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "ring": {
+   "videos": 1,
+   "medidos": 1,
+   "mediana_48h": 789,
+   "mejor": 2073,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {
+    "2026-S43": 789
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "rueda": {
+   "videos": 10,
+   "medidos": 6,
+   "mediana_48h": 12171,
+   "mejor": 33536,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.16,
+   "por_semana": {
+    "2026-S43": 12171
+   },
+   "cansancio": null,
+   "cansado": false
+  },
+  "siuu": {
+   "videos": 1,
+   "medidos": 0,
+   "mediana_48h": null,
+   "mejor": 1207,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {},
+   "cansancio": null,
+   "cansado": false
+  },
+  "stop": {
+   "videos": 29,
+   "medidos": 25,
+   "mediana_48h": 3021,
+   "mejor": 29788,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.48,
+   "por_semana": {
+    "2026-S43": 3021
+   },
+   "cansancio": 0.77,
+   "cansado": false
+  },
+  "tridente": {
+   "videos": 1,
+   "medidos": 0,
+   "mediana_48h": null,
+   "mejor": 1651,
+   "primero": "2026-10-20",
+   "ultimo": "2026-10-20",
+   "peso_en_el_canal": 0.02,
+   "por_semana": {},
+   "cansancio": null,
+   "cansado": false
+  }
+ },
+ "oportunidades": [],
+ "cansados": [],
  "formatos": {
   "balon": {
    "videos": 1,
