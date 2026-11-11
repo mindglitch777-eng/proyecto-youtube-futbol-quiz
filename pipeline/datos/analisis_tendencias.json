@@ -5375,5 +5375,611 @@
     "Hacer que el rival pierda fragmentos de 'armadura' o caiga un emoji de calavera sobre su cabeza al recibir el túnel."
    ]
   }
+ },
+ {
+  "id": "IFo79-DouqM",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "NoXen",
+  "subs": 21800,
+  "creado": "2026-11-07",
+  "vistas": 3375122,
+  "horas": 36,
+  "vph": 93008,
+  "dur": 6,
+  "likes": 46440,
+  "coment": 18,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Body Head Match Roulette",
+   "mecanica": "Una ruleta circular en la parte superior contiene múltiples cabezas/bustos recortados de un jugador de fútbol (Ronaldinho) girando en bucle. En la parte inferior se encuentra el cuerpo completo del jugador decapitado sobre un campo de juego con una flecha punteada indicando el ensamble. Una pelota salta entre los bustos mientras el espectador intenta pausar o anticipar qué cabeza encajará exactamente en el cuerpo.",
+   "que_hace_el_espectador": "Pausar el video en el momento exacto en que la cabeza correcta encaja sobre el cuerpo, o ver la sincronización hipnótica en loop.",
+   "cuadro_0": "Formato vertical 9:16. Fondo de estadio con césped verde saturado, gradas y cielo azul con nubes. Arriba: anillo circular compuesto por 8 bustos de Ronaldinho con camisetas amarillas de Brasil (#10 y #20) orbitando alrededor de un sol/engranaje dorado central. Abajo: cuerpo de Ronaldinho cortado al cuello con pelota entre los pies y línea blanca divisoria. A la izquierda: flecha curva blanca señalando al cuello y miniatura de Ronaldinho de cuerpo entero.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Comienza la ruleta superior girando en sentido horario con 8 bustos de Ronaldinho. Abajo el cuerpo esperando la cabeza.",
+     "sonido": "Voz cómica cantada: 'Ohhh...'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta rota continuamente; una pelota de fútbol aparece fijada a una de las cabezas giratorias.",
+     "sonido": "Voz cómica continúa: '...préstame...'"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La rotación continúa a velocidad constante de aprox. 45° por segundo.",
+     "sonido": "Voz cómica: '...tu caballo...'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La pelota salta a otra cabeza de la rueda mientras las cabezas alternan orientación.",
+     "sonido": "Efecto de resorte / boing agudo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Alineación vertical de una de las cabezas inferiores con el torso recortado.",
+     "sonido": "Música rítmica de fondo con ritmo rápido."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La ruleta completa medio ciclo, la flecha curva resalta la zona de ensamble.",
+     "sonido": "Sonido cómico de deslizamiento / swoosh."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Pelota de fútbol rebota en la cabeza superior derecha de la rueda.",
+     "sonido": "Efecto de rebote de pelota (kick / thud)."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "El cuerpo inferior se mantiene estático mientras la rotación superior genera efecto hipnótico.",
+     "sonido": "Beat musical repetitivo acelerado."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Busto invertido pasa por la parte inferior rozando la línea de corte del cuello.",
+     "sonido": "Sonido de reloj / tick."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "La ruleta entra en su fase final de ciclo para reconectar la posición inicial.",
+     "sonido": "Efecto sonoro cómico 'pop'."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "La cabeza original vuelve a la posición de las 6 en punto sobre el cuello.",
+     "sonido": "Remate del audio cómico."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Frame idéntico al cuadro inicial para cierre de bucle.",
+     "sonido": "Silencio o corte para enganche directo con el inicio."
+    }
+   ],
+   "duracion_s": 5.6,
+   "loop": "Sí, empalma perfecto porque la ruleta rota exactamente 360 grados en múltiplos sincronizados con el audio, volviendo a la pose inicial sin saltos.",
+   "gancho": "La composición surrealista con cabezas flotantes en rotación, colores hiper saturados y la promesa visual de un rompecabezas instantáneo que invita a pausar de inmediato.",
+   "dopamina": [
+    "Movimiento circular hipnótico constante desde el frame 0",
+    "Expectativa de ensamble perfecto entre la cabeza y el cuerpo",
+    "Audio meme viral cómico y rítmico que mantiene la atención"
+   ],
+   "audio": "Audio meme viral latino/brasileño acelerado ('Oh préstame tu caballo') con efectos de sonido de caricatura (boing, pop, swoosh).",
+   "por_que_comentan": "Comentan si lograron pausar en la cabeza exacta ('Lo logré al primer intento'), debaten qué número de camiseta es la correcta o bromean con el audio cómico.",
+   "assets_necesarios": [
+    "Fondo de estadio de fútbol en perspectiva vertical 1080x1920",
+    "1 PNG del cuerpo sin cabeza de Ronaldinho",
+    "6 a 8 PNGs de bustos recortados de Ronaldinho con diferentes expresiones/ángulos",
+    "1 PNG de pelota de fútbol",
+    "1 PNG de engranaje/sol central decorativo",
+    "1 PNG/Vector de flecha curva blanca punteada",
+    "Audio meme cómico en MP3 y SFX de rebote/swoosh"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Crear lienzo 1080x1920 con MoviePy o Pygame/Pillow.",
+    "Colocar fondo de estadio escalado a pantalla completa.",
+    "Pegar el cuerpo sin cabeza en posición centrada inferior: X=540, Y=1300 con escala adaptada.",
+    "Definir centro de ruleta en X=540, Y=450 y radio R=350 px.",
+    "Calcular posiciones de los 8 bustos usando coordenadas polares: x = cx + R * cos(theta + omega*t), y = cy + R * sin(theta + omega*t).",
+    "Rotar cada imagen de cabeza con su ángulo tangente para que miren hacia afuera o hacia el centro del círculo.",
+    "Colocar elemento central decorativo y flecha estática apuntando al cuello.",
+    "Renderizar a 30 o 60 fps durante 5.6 segundos y acoplar pista de audio con MoviePy."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un desafío real de interacción: pantalla con cuenta regresiva 'PAUSA AQUÍ' y solo 1 frame donde encaja al 100%, premiando con efecto confetti al acertar.",
+    "Hacer que la ruleta cambie de velocidad o haga un amago (frenada en seco con sonido de freno de auto) para dificultar el pausado y aumentar repeticiones.",
+    "Usar un enfrentamiento de dos leyendas (ej. Messi vs Cristiano) donde cada pausa define quién gana la ronda, multiplicando los comentarios y debate."
+   ]
+  }
+ },
+ {
+  "id": "Qnnr-JkQ-us",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "MR. ARCHAI",
+  "subs": 11200,
+  "creado": "2026-11-05",
+  "vistas": 3242075,
+  "horas": 37,
+  "vph": 87019,
+  "dur": 6,
+  "likes": 36259,
+  "coment": 63,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Head Match Wheel Challenge",
+   "mecanica": "Una rueda con 8 recortes de cabeza/torso rota circularmente arriba de un cuerpo sin cabeza. El espectador busca el momento exacto en que la pieza correcta se alinea con el cuerpo.",
+   "que_hace_el_espectador": "Pausar el video en el momento exacto para hacer coincidir la cabeza con el cuerpo.",
+   "cuadro_0": "Fondo de estadio de fútbol azul/verde. Arriba: Rueda con 8 cabezas de Cristiano Ronaldo. Centro: Cuerpo sin cabeza con camiseta de Portugal #7. Abajo izquierda: Imagen completa de referencia con flecha blanca.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Rueda de 8 cabezas girando rápidamente en sentido horario sobre el cuerpo sin cabeza.",
+     "sonido": "Vocal melódica de introducción suave."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Rotación continua de la rueda de cabezas a velocidad constante.",
+     "sonido": "Música vocal continua."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Mano de la rueda pasa por la posición superior del cuerpo.",
+     "sonido": "Transición hacia el beat."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Giro de la rueda manteniendo el patrón circular.",
+     "sonido": "Entrada del ritmo de bajo (funk/remix)."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Continuidad del movimiento giratorio con alineación variable.",
+     "sonido": "Beat musical acelerado."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La rueda se aproxima a la posición de encaje perfecto.",
+     "sonido": "Ritmo musical constante."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Detención/calce rápido de la cabeza correcta sobre el cuerpo.",
+     "sonido": "Golpe de efecto sonoro / drop del beat."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Visualización del personaje completo alineado correctamente.",
+     "sonido": "Música festiva en punto alto."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Mantenimiento del resultado final antes del reinicio.",
+     "sonido": "Cierre del ciclo de audio en loop."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Empalme directo con la animación inicial.",
+     "sonido": "Inicio del audio nuevamente."
+    }
+   ],
+   "duracion_s": 4.5,
+   "loop": "Sí, la velocidad constante y la estructura del audio permiten un reinicio continuo e imperceptible.",
+   "gancho": "La velocidad del giro genera el deseo inmediato de pausar para resolver el acertijo visual.",
+   "dopamina": [
+    "Satisfacción visual al lograr congelar la imagen encajada",
+    "Estímulo del ritmo musical en el momento del acierto"
+   ],
+   "audio": "Remix viral de tendencia (intro melódica seguida de beat funk de alto ritmo).",
+   "por_que_comentan": "Para compartir capturas de pantalla con el encaje perfecto o competir sobre cuántos intentos les tomó.",
+   "assets_necesarios": [
+    "Fondo PNG de estadio de fútbol",
+    "PNG recortado del cuerpo sin cabeza (Portugal)",
+    "8 PNGs de cabezas/torsos de Ronaldo",
+    "PNG de referencia completa + flecha",
+    "Audio MP3 viral"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear canvas de 1080x1920 con imagen de estadio de fondo.",
+    "2. Colocar el PNG del cuerpo fijo en coordenadas inferiores (X: 540, Y: 1200).",
+    "3. Crear grupo circular con 8 sprites distribuidos a 45 grados en un radio de 300px.",
+    "4. Aplicar matriz de rotación al grupo a 360 deg/seg durante 3 segundos.",
+    "5. Detener rotación en ángulo 0° en t=3.2s para mostrar el encaje por 1.3s.",
+    "6. Renderizar a 60 FPS y exportar MP4."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar efecto visual de destello y sonido 'ding' al encajar la pieza",
+    "Incluir un cronómetro de cuenta regresiva para aumentar la urgencia",
+    "Rotar entre 3 futbolistas famosos en el mismo Short"
+   ]
+  }
+ },
+ {
+  "id": "ImRdH9Vx2ig",
+  "titulo": "Legendary Football Stop Challenge ⚽🛑 ​#neymar #ronaldo #haland #messi #shorts",
+  "canal": "Artisan Craft",
+  "subs": 79200,
+  "creado": "2025-04-09",
+  "vistas": 2864972,
+  "horas": 133,
+  "vph": 21546,
+  "dur": 6,
+  "likes": 59442,
+  "coment": 194,
+  "familia": "stop",
+  "analisis": {
+   "nombre_formato": "Stop Challenge 2x2 de Caras Distorsionadas",
+   "mecanica": "Una retícula de 4 cuadrantes (2x2) muestra a 4 futbolistas famosos (Neymar, Ronaldo, Haaland, Messi) con piezas de sus rostros (ojos, boca, nariz) tapadas o distorsionadas. Pequeños recortes de las partes faltantes flotan o giran rápidamente por la pantalla. El objetivo es pausar el video en el segundo exacto donde la pieza encaja perfectamente sobre el rostro del jugador.",
+   "que_hace_el_espectador": "Intenta pausar (toque en pantalla) repetidamente para encajar la pieza del rostro de su jugador favorito y comenta su porcentaje de acierto o dificultad.",
+   "cuadro_0": "Layout 2x2 vertical (9:16). Cuadrante superior izquierdo: Fondo rojo, Neymar con parche de estrella en la cara y texto '69%'. Cuadrante superior derecho: Fondo verde, Ronaldo con boca deformada y texto '1%'. Cuadrante inferior izquierdo: Fondo azul, Haaland con ojos hipertrofiados/deformados y texto '99%'. Cuadrante inferior derecho: Fondo cian, Messi con circulo negro en la nariz y texto '49%'. En el centro un logo circular 'FV'.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0s",
+     "pantalla": "Se muestra la grilla 2x2 con los 4 jugadores y porcentajes. Las piezas faltantes del rostro comienzan a girar/mover rápido.",
+     "sonido": "Beat viral de TikTok / Funk / vocal 'Kilian Dictador'."
+    },
+    {
+     "t": "0.5s",
+     "pantalla": "La pieza de la estrella de Neymar y el recorte de nariz de Messi se desplazan en trayectoria aleatoria.",
+     "sonido": "Continúa la música ritmica en bucle."
+    },
+    {
+     "t": "1.0s",
+     "pantalla": "Las piezas siguen orbitando alrededor de los rostros a gran velocidad.",
+     "sonido": "Base musical constante."
+    },
+    {
+     "t": "1.5s",
+     "pantalla": "Las partes móviles cruzan brevemente sobre las posiciones correctas durante 1 frame.",
+     "sonido": "Base musical constante."
+    },
+    {
+     "t": "2.0s",
+     "pantalla": "Piezas continúan girando velozmente alrededor de cada cuadrante.",
+     "sonido": "Base musical constante."
+    },
+    {
+     "t": "2.5s",
+     "pantalla": "Nuevamente las piezas rozan la posición alineada en ciclos ultra rápidos.",
+     "sonido": "Vocal 'Kilian Dictador' se repite."
+    },
+    {
+     "t": "3.0s",
+     "pantalla": "El movimiento aleatorio de las partes del rostro se acelera/mantiene ritmo acelerado.",
+     "sonido": "Base musical ritmica."
+    },
+    {
+     "t": "3.5s",
+     "pantalla": "Cruza otra oportunidad instantánea de pausar con la cara completa.",
+     "sonido": "Base musical ritmica."
+    },
+    {
+     "t": "4.0s",
+     "pantalla": "Las piezas se desplazan hacia las esquinas exteriores de la pantalla.",
+     "sonido": "Base musical ritmica."
+    },
+    {
+     "t": "4.5s",
+     "pantalla": "Reinicio del ciclo de movimiento rápido hacia el punto inicial.",
+     "sonido": "Remate del loop de audio."
+    },
+    {
+     "t": "5.0s",
+     "pantalla": "Retorno exacto a la posición del cuadro 0 para empalme invisible de loop.",
+     "sonido": "Reinicio continuo del tema musical."
+    }
+   ],
+   "duracion_s": 5.0,
+   "loop": "Sí, empalma de manera perfecta ya que la pista de audio y las trayectorias de las piezas animadas están sincronizadas en un bucle cerrado de 5 segundos.",
+   "gancho": "Imágenes grotescas/divertidas de futbolistas de élite combinadas con un desafío interactivo visual que invita a presionar la pantalla.",
+   "dopamina": [
+    "Reto de precisión visual (gamificación inmediata)",
+    "Recompensa de satisfacción al lograr pausar en el frame exacto alineado",
+    "Humor por las caritas deformadas"
+   ],
+   "audio": "Funk / Remix vocal urbano pegadizo ('Kilian Dictador') de ritmo acelerado ideal para loops cortos.",
+   "por_que_comentan": "La gente comenta cuántos intentos les tomó acertar, a quién intentaron alinear (ej. 'Logré a Messi al 100%') o disputas entre fans de Cristiano vs. Messi.",
+   "assets_necesarios": [
+    "4 imágenes PNG de alta resolución de futbolistas (Neymar, Ronaldo, Haaland, Messi)",
+    "4 máscaras o recortes PNG de las partes del rostro (nariz, ojos, boca, estrella)",
+    "Fondos de colores sólidos (rojo, verde, azul, cian)",
+    "Tipografía bold con borde para los porcentajes ('69%', '1%', '99%', '49%')",
+    "Archivo de audio MP3/WAV con el loop musical de 5 segundos"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo de 1080x1920 en MoviePy/OpenCV y dividirlo en 4 rectángulos de 540x960 con colores sólidos.",
+    "2. Superponer las imágenes PNG de los 4 jugadores centradas en cada cuadrante.",
+    "3. Añadir el texto de los porcentajes en la parte inferior de cada cuadrante con Pillow/OpenCV.",
+    "4. Definir las piezas de rostro móviles (PNG recortados) y programar una función paramétrica de posición (x(t), y(t), rotación(t)) que pase por la posición objetivo en frames específicos (ej. frame 45, 90) y se mueva erráticamente en los demás.",
+    "5. Renderizar a 60 fps para asegurar frames limpios de pausa y acoplar el audio en loop."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un efecto visual deslumbrante (destello de luz/dorado y sonido de victoria 'ding!') justo en el frame donde la cara queda perfecta para premiar al espectador.",
+    "Crear una barra de dificultad o temporizador dinámico en la parte superior que aumente la tensión.",
+    "Usar animaciones con deformación fluida mediante Shaders o Mesh Warp para que las piezas parezcan líquidas al moverse."
+   ]
+  }
+ },
+ {
+  "id": "mOtqtNwluds",
+  "titulo": "The winner will shock you! 🤯 Messi vs Ronaldo vs Yamal vs Neymar!",
+  "canal": "FunBall",
+  "subs": 572000,
+  "creado": "2026-08-16",
+  "vistas": 2659906,
+  "horas": 133,
+  "vph": 20003,
+  "dur": 5,
+  "likes": 6389,
+  "coment": 39,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Juego de Reacción de Futbolistas",
+   "mecanica": "Cuatro futbolistas imitan movimientos cómicos al ritmo de la música, luego se detienen en una pose final y aparecen números de ranking sobre sus cabezas indicando quién ganó.",
+   "que_hace_el_espectador": "Adivinar o debatir en los comentarios quién ganará o si el orden es correcto.",
+   "cuadro_0": "Arriba: 4 caras recortadas en círculo (Messi, Ronaldo, Yamal, Neymar) sobre fondo blanco. Al medio: los 4 jugadores sentados en sillas imitando el baile, cada uno con la camiseta de su selección respectiva y tiras de papel de diario en el piso frente a sus pies. Abajo: piso de madera claro. A la izquierda un número 1 gigante azul de inicio.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicia la música movida, los 4 jugadores saltan y bailan sentados golpeando el diario.",
+     "sonido": "Música rítmica urbana enérgica y efectos de pisotones"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Continúa el baile dinámico de los cuatro personajes con movimiento rápido de piernas.",
+     "sonido": "Ritmo musical constante"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Sigue la acción rápida de zapateo sobre el papel de diario con efecto de velocidad.",
+     "sonido": "Efecto de velocidad/whoosh"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Continúa el baile intenso, los jugadores mueven brazos y piernas simultáneamente.",
+     "sonido": "Música enérgica con bajo acentuado"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Los jugadores frenan de golpe en una pose estática final celebrando o sorprendidos.",
+     "sonido": "Sonido de frenada de disco / impacto"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Aparecen números de ranking flotantes sobre las cabezas: 1 (Messi), 3 (Ronaldo), 4 (Yamal), 2 (Neymar). Messi levanta los brazos festejando.",
+     "sonido": "Fanfarria de victoria corta y aplausos"
+    }
+   ],
+   "duracion_s": 2.5,
+   "loop": "si, el último cuadro corta directo al cuadro 0 donde la música vuelve a empezar de cero reiniciando el baile",
+   "gancho": "Ver a estrellas del fútbol mundial bailando de forma graciosa y un ranking final inesperado",
+   "dopamina": [
+    "Aparición de números de ranking coloridos con animación de escala",
+    "Sorpresa al ver el orden del podio en el segundo final"
+   ],
+   "audio": "Beat urbano enérgico de tendencia viral, efectos de whoosh y sonido final de victoria",
+   "por_que_comentan": "Debaten si el primer puesto de Messi es justo o si Neymar merecía ganar, y eligen a su favorito",
+   "assets_necesarios": [
+    "Fondo de habitación/estudio en perspectiva",
+    "4 avatares circulares de Messi, Ronaldo, Yamal y Neymar",
+    "Imágenes de cuerpos sentados con camisetas de Argentina, Portugal, España y Brasil",
+    "Números de ranking grandes 1, 2, 3, 4 con estilo animado",
+    "Efectos de sonido de música urbana, whoosh y aplausos"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Configurar lienzo vertical de 1080x1920 a 60fps con fondo de habitación.",
+    "2. Posicionar las 4 imágenes de los jugadores sentados en sillas a lo ancho del centro de la pantalla.",
+    "3. Programar animación de rebote y vibración vertical en las piernas de los 4 personajes de t=0.0 a t=2.0.",
+    "4. En t=2.0 detener las animaciones y fijar la pose de festejo de Messi con los brazos arriba.",
+    "5. En t=2.5 hacer aparecer con efecto pop-up los números de ranking (1, 3, 4, 2) sobre cada cabeza."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar partículas de confeti o destellos cuando aparece el número 1 del ganador",
+    "Incluir una barra de progreso invisible que genere intriga sobre quién ganará",
+    "Hacer que los avatares superiores cambien de expresión facial según el ritmo"
+   ]
+  }
+ },
+ {
+  "id": "7_YEjSKj1s0",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "NoXen",
+  "subs": 21800,
+  "creado": "2026-11-07",
+  "vistas": 2615472,
+  "horas": 84,
+  "vph": 31029,
+  "dur": 5,
+  "likes": 52778,
+  "coment": 59,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Puzzle Circular Rodante de Neymar",
+   "mecanica": "Un personaje central estático de Neymar rodeado por un anillo de cabezas de Neymar en distintas poses que rotan lentamente alrededor de un círculo solar decorativo superior. Abajo a la izquierda hay un clon de Neymar en miniatura con flecha indicativa hacia el centro.",
+   "que_hace_el_espectador": "solo mirar y cantar mentalmente el meme musical",
+   "cuadro_0": "Estadio de futbol 3D iluminado de fondo con gradas llenas. En primer plano centro, Neymar grande en pose firme con camiseta amarilla Brasil #10. Arriba formando un arco circular, 8 recortes de Neymar en diferentes actitudes. Alrededor del sol central decorativo se distribuyen las cabezas rotando. Abajo izquierda, Neymar en miniatura con flecha blanca apuntando al centro. Colores vibrantes amarillo y verde.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Neymar central grande, círculo superior con 8 cabezas rotando, Neymar miniatura izquierda con flecha",
+     "sonido": "Voz cantando melodía rítmica meme"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Inicio de rotación sutil del anillo superior y parpadeo de luces en estadio",
+     "sonido": "Continuación voz meme musical"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Zoom sutil al Neymar principal y pulso del círculo solar",
+     "sonido": "Corte de voz y efecto de sonido digital punch"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Estabilización de imagen con vibración de bajo",
+     "sonido": "Beat de música urbana rítmica"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Loop listo para repetir desde cero",
+     "sonido": "Cierre de compás musical"
+    }
+   ],
+   "duracion_s": 2.0,
+   "loop": "sí empalma perfectamente porque el fotograma 2.0 es idéntico en posición al 0.0",
+   "gancho": "La combinación de meme musical pegadizo con la cantidad masiva de clones de un jugador famoso en círculo",
+   "dopamina": [
+    "efectos sonoros en los beats",
+    "animación circular continua que atrapa la mirada"
+   ],
+   "audio": "Meme de audio remixado 'empréstame tu caballo' con graves reforzados",
+   "por_que_comentan": "Comentan sobre la cantidad de Neymars clonados y la gracia del meme musical",
+   "assets_necesarios": [
+    "fondo de estadio de futbol",
+    "PNG de Neymar cuerpo entero con camiseta Brasil 10",
+    "8 PNGs recortados de cabezas y rostros de Neymar",
+    "PNG de sol decorativo",
+    "PNG de flecha blanca",
+    "audio remix meme"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Cargar fondo de estadio en resolución vertical 1080x1920",
+    "2. Posicionar Neymar central en coordenadas (540, 1100)",
+    "3. Generar 8 recortes de Neymar distribuidos en ángulo trigonométrico alrededor del centro (540, 350) con radio 350",
+    "4. Añadir Neymar miniatura en (200, 1500) con flecha blanca en (280, 1400)",
+    "5. Animar rotación del grupo circular sumando grados por frame en bucle de 2 segundos"
+   ],
+   "como_lo_hacemos_mejor": [
+    "1. Agregar un mini juego donde el usuario deba tocar el Neymar correcto que coincide con el de abajo",
+    "2. Hacer que el círculo gire más rápido con cada loop para generar tensión",
+    "3. Incorporar efectos de partículas brillantes al completar cada rotación"
+   ]
+  }
+ },
+ {
+  "id": "RlrAsrDngTs",
+  "titulo": "Mrbeast vs Ronaldo or Messi stop challenge 🔥#ronaldo #shorts #viral",
+  "canal": "Dipa Das",
+  "subs": 63800,
+  "creado": "2026-08-24",
+  "vistas": 2470830,
+  "horas": 162,
+  "vph": 15208,
+  "dur": 6,
+  "likes": 32389,
+  "coment": 66,
+  "familia": "wheel",
+  "analisis": {
+   "nombre_formato": "Stop Challenge Ruleta de Cabezas (Torso Match)",
+   "mecanica": "Un torso fijo de un futbolista (Cristiano Ronaldo con la camiseta de Portugal) se ubica en la mitad inferior de la pantalla. Arriba, una ruleta circular de 8 torsos/cabezas de personajes famosos y memes (Ronaldo, Messi, Haaland, MrBeast, IShowSpeed, Vini Jr, etc.) gira a velocidad constante. En el centro de la rueda, un contador de números avanza en cada vuelta/tiempo. El reto invita a pausar el video en el fotograma exacto en el que la cabeza correcta (Ronaldo) encaja a la perfección sobre su torso.",
+   "que_hace_el_espectador": "Pausar la pantalla frenéticamente intentando coincidir el torso de Ronaldo con su cabeza correcta, y comentar cuántos intentos le tomó o si lo logró.",
+   "cuadro_0": "Fondo de estadio de fútbol desenfocado con césped verde en degradé. En la mitad inferior, piernas y pantalón rojo con el dorsal 7 de Cristiano Ronaldo. Arriba del torso, una rueda giratoria de 8 figuras recortadas con borde blanco (Speed, Messi, Haaland, MrBeast, etc.). En el centro de la rueda, el número '1' en amarillo con borde negro. En la base, dos botones flotantes azules: 'Like' a la izquierda y 'Comment' a la derecha.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicia la rotación de la ruleta. Contador en '1'. El torso de Ronaldo espera abajo.",
+     "sonido": "Voz cómica cantando en español: 'Señor...'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta gira aproximadamente 90 grados. Contador pasa a '2'.",
+     "sonido": "Continuación de la voz: '...préstame...'"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La ruleta sigue girando rápido. Contador marca '3'. La cabeza de Ronaldo pasa cerca del torso.",
+     "sonido": "Voz: '...tu caballo...'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Contador en '4'. La cabeza de Vini Jr y MrBeast giran por el sector inferior.",
+     "sonido": "Música meme preparándose para el drop."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Contador en '5'. Speed y Haaland rotan hacia la posición inferior.",
+     "sonido": "Remate de la frase vocal cómica."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Contador en '6'. El busto de Haaland queda temporalmente sobre el torso de Ronaldo.",
+     "sonido": "Transición de audio previa al beat."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Contador en '7'. La rueda acelera ligeramente; Messi y el meme canoso pasan por la base.",
+     "sonido": "Beat drop rítmico y enérgico."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Contador en '8'. MrBeast con sombrero de paja se aproxima al torso.",
+     "sonido": "Música rítmica continua del beat."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Contador en '9'. MrBeast encaja en el torso de Ronaldo momentáneamente.",
+     "sonido": "Música meme en loop rítmico."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Contador en '10'. Vini Jr y Ronaldo se aproximan al corte inferior.",
+     "sonido": "Música meme rítmica."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "La rueda completa ciclos continuos a gran velocidad creando efecto estroboscópico.",
+     "sonido": "Loop de percusión meme."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Último giro antes del corte abrupto para forzar la repetición inmediata.",
+     "sonido": "Corte seco del audio."
+    }
+   ],
+   "duracion_s": 5.6,
+   "loop": "Perfecto: el giro continuo y la duración ultra corta hacen que el espectador repita el video 4 o 5 veces tratando de pausarlo a tiempo sin darse cuenta.",
+   "gancho": "La combinación de caras ultra conocidas (Ronaldo, Messi, MrBeast, Speed) girando a alta velocidad sobre un cuerpo decapitado activa el reflejo lúdico de querer 'completar' la figura.",
+   "dopamina": [
+    "Reto de habilidad táctil inmediata (gamificación del pause)",
+    "Reconocimiento instantáneo de ídolos de la cultura de internet y fútbol",
+    "Frustración positiva de fallar por milisegundos que incita a volver a probar"
+   ],
+   "audio": "Audio meme viral en español ('Señor préstame tu caballo') seguido de un drop electro/funk brasilero o phonk con corte abrupto.",
+   "por_que_comentan": "Comentan si lo lograron en el intento 1, cuántos intentos necesitaron ('lo logré al intento 4'), o bromean con el personaje que les tocó al pausar ('me tocó MrBeast Ronaldo').",
+   "assets_necesarios": [
+    "Fondo vertical de estadio de fútbol desenfocado (1080x1920)",
+    "PNG recortado del torso/piernas de Cristiano Ronaldo (camiseta roja, shorts y medias)",
+    "8 PNGs circulares recortados con borde blanco (Ronaldo, Messi, Haaland, Speed, MrBeast, Vini Jr, etc.)",
+    "Iconos vectoriales de Like y Comentario con texto abajo",
+    "Fuente tipográfica gruesa con borde (ej. Impact o Anton) para los números centrales",
+    "Audio meme viral de 5 a 6 segundos"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Definir canvas 1080x1920 a 30 o 60 fps.",
+    "Colocar fondo estático y renderizar las piernas de Ronaldo fijas en posición (x=540, y=1450).",
+    "Crear un nodo/contenedor giratorio centrado en (x=540, y=650) con radio de giro R = 320 px.",
+    "Distribuir los 8 recortes a ángulos theta_i = (i * 360 / 8) + rotation_angle. Ajustar el ángulo de rotación de cada recorte para que siempre apunte o se oriente armónicamente.",
+    "Aplicar rotación continua con velocidad angular omega (ej. 1 a 1.5 vueltas completas por segundo).",
+    "Programar un contador en el centro (540, 650) que incremente de 1 en 1 cada intervalo fijo de tiempo (aprox cada 0.5 s).",
+    "Superponer overlays de UI (Like, Comment) en la parte inferior sobre un punto blanco guía.",
+    "Exportar video con ffmpeg concatenando el track de audio meme sincronizado."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Efecto de impacto (sonido 'ding' o partículas doradas) en el fotograma exacto donde Ronaldo coincide, para premiar al que pause justo ahí.",
+    "Añadir variaciones temáticas dinámicas (ej. 'Nivel Fácil: gira lento' -> 'Nivel Imposible: velocidad x3').",
+    "Incorporar una barra de 'precisión' o mira telescópica visual que aumente la sensación de juego arcade competitivo."
+   ]
+  }
  }
 ]

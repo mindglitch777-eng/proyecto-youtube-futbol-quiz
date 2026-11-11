@@ -1,27 +1,27 @@
 {
- "fecha": "2026-11-09",
+ "fecha": "2026-11-10",
  "recomendaciones": [
-  {
-   "familia": "wheel",
-   "nuestros": [
-    "rueda"
-   ],
-   "mercado_mediana": 373699,
-   "mercado_1M": 4,
-   "subiendo": false,
-   "nuestra_mediana_48h": 13476,
-   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
-  },
   {
    "familia": "fit",
    "nuestros": [
     "fitall",
     "cabezas"
    ],
-   "mercado_mediana": 300558,
-   "mercado_1M": 11,
+   "mercado_mediana": 623444,
+   "mercado_1M": 23,
    "subiendo": false,
-   "nuestra_mediana_48h": 20756,
+   "nuestra_mediana_48h": 18805,
+   "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
+  },
+  {
+   "familia": "wheel",
+   "nuestros": [
+    "rueda"
+   ],
+   "mercado_mediana": 218647,
+   "mercado_1M": 4,
+   "subiendo": false,
+   "nuestra_mediana_48h": 15587,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -32,10 +32,10 @@
     "penal",
     "balon"
    ],
-   "mercado_mediana": 229934,
-   "mercado_1M": 11,
+   "mercado_mediana": 183587,
+   "mercado_1M": 14,
    "subiendo": false,
-   "nuestra_mediana_48h": 15626,
+   "nuestra_mediana_48h": 13395,
    "accion": "SUBIR: ola fuerte y a nosotros nos rinde"
   },
   {
@@ -43,20 +43,8 @@
    "nuestros": [
     "circulo"
    ],
-   "mercado_mediana": 185495,
-   "mercado_1M": 6,
-   "subiendo": false,
-   "nuestra_mediana_48h": null,
-   "accion": "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
-  },
-  {
-   "familia": "quiz",
-   "nuestros": [
-    "trayectoria",
-    "tridente"
-   ],
-   "mercado_mediana": 148804,
-   "mercado_1M": 1,
+   "mercado_mediana": 149265,
+   "mercado_1M": 7,
    "subiendo": false,
    "nuestra_mediana_48h": null,
    "accion": "PROBAR POCO: todavía no tenemos datos propios"
@@ -66,63 +54,77 @@
    "nuestros": [
     "dress"
    ],
-   "mercado_mediana": 122795,
-   "mercado_1M": 11,
+   "mercado_mediana": 113576,
+   "mercado_1M": 7,
    "subiendo": false,
-   "nuestra_mediana_48h": 14805,
+   "nuestra_mediana_48h": 13628,
    "accion": "MANTENER: nos rinde aunque el mercado esté tibio"
+  },
+  {
+   "familia": "quiz",
+   "nuestros": [
+    "trayectoria",
+    "tridente",
+    "q20fichaje",
+    "q20costo"
+   ],
+   "mercado_mediana": 72754,
+   "mercado_1M": 2,
+   "subiendo": false,
+   "nuestra_mediana_48h": 1584,
+   "accion": "BAJAR: sin ola y sin resultado propio"
   },
   {
    "familia": "find",
    "nuestros": [
     "find"
    ],
-   "mercado_mediana": 39105,
-   "mercado_1M": 2,
-   "subiendo": false,
-   "nuestra_mediana_48h": 932,
-   "accion": "BAJAR: sin ola y sin resultado propio"
+   "mercado_mediana": 38367,
+   "mercado_1M": 1,
+   "subiendo": true,
+   "nuestra_mediana_48h": 890,
+   "accion": "BAJAR: sin ola y sin resultado propio · en subida"
   },
   {
    "familia": "balance",
    "nuestros": [
     "pared"
    ],
-   "mercado_mediana": 4872,
+   "mercado_mediana": 1462,
    "mercado_1M": 0,
    "subiendo": false,
-   "nuestra_mediana_48h": 1508,
+   "nuestra_mediana_48h": 1393,
    "accion": "BAJAR: sin ola y sin resultado propio"
   }
  ],
  "canal": {
   "rueda": {
-   "videos": 6,
-   "mediana_48h": 13476,
-   "mejor": 33374,
-   "pct_visto": 156,
-   "mas_10k": 4,
+   "videos": 8,
+   "mediana_48h": 15587,
+   "mejor": 33536,
+   "pct_visto": 162,
+   "mas_10k": 6,
    "imposible": {
-    "videos": 0,
-    "mediana_48h": null
+    "videos": 1,
+    "mediana_48h": 23235
    }
   },
   "stop": {
-   "videos": 25,
-   "mediana_48h": 3228,
-   "mejor": 29780,
+   "videos": 27,
+   "mediana_48h": 3073,
+   "mejor": 29783,
    "pct_visto": 183,
    "mas_10k": 9,
    "imposible": {
-    "videos": 0,
-    "mediana_48h": null
+    "videos": 1,
+    "mediana_48h": 1978
    }
   },
   "cabezas": {
    "videos": 1,
-   "mediana_48h": 20756,
-   "mejor": 29398,
-   "pct_visto": 132,
+   "mediana_48h": 18805,
+   "mejor": 29500,
+   "pct_visto": 135,
    "mas_10k": 1,
    "imposible": {
     "videos": 0,
@@ -131,9 +133,9 @@
   },
   "dress": {
    "videos": 1,
-   "mediana_48h": 14805,
-   "mejor": 23437,
-   "pct_visto": 106,
+   "mediana_48h": 13628,
+   "mejor": 23450,
+   "pct_visto": 109,
    "mas_10k": 1,
    "imposible": {
     "videos": 0,
@@ -142,8 +144,8 @@
   },
   "balon": {
    "videos": 1,
-   "mediana_48h": 15626,
-   "mejor": 17367,
+   "mediana_48h": 13395,
+   "mejor": 17414,
    "pct_visto": 153,
    "mas_10k": 1,
    "imposible": {
@@ -153,9 +155,20 @@
   },
   "find": {
    "videos": 3,
-   "mediana_48h": 932,
-   "mejor": 3862,
+   "mediana_48h": 890,
+   "mejor": 3863,
    "pct_visto": 112,
+   "mas_10k": 0,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
+  "pared": {
+   "videos": 2,
+   "mediana_48h": 1393,
+   "mejor": 2294,
+   "pct_visto": 134,
    "mas_10k": 0,
    "imposible": {
     "videos": 0,
@@ -164,7 +177,7 @@
   },
   "otros": {
    "videos": 2,
-   "mediana_48h": 654,
+   "mediana_48h": 632,
    "mejor": 2197,
    "pct_visto": 70,
    "mas_10k": 0,
@@ -175,7 +188,7 @@
   },
   "ring": {
    "videos": 1,
-   "mediana_48h": 829,
+   "mediana_48h": 800,
    "mejor": 2073,
    "pct_visto": 75,
    "mas_10k": 0,
@@ -184,20 +197,9 @@
     "mediana_48h": null
    }
   },
-  "pared": {
-   "videos": 2,
-   "mediana_48h": 1508,
-   "mejor": 2037,
-   "pct_visto": 132,
-   "mas_10k": 0,
-   "imposible": {
-    "videos": 0,
-    "mediana_48h": null
-   }
-  },
   "carrera": {
    "videos": 2,
-   "mediana_48h": 608,
+   "mediana_48h": 590,
    "mejor": 1971,
    "pct_visto": 77,
    "mas_10k": 0,
@@ -208,7 +210,7 @@
   },
   "cabeza": {
    "videos": 1,
-   "mediana_48h": 782,
+   "mediana_48h": 745,
    "mejor": 1667,
    "pct_visto": 161,
    "mas_10k": 0,
@@ -219,9 +221,20 @@
   },
   "plinko": {
    "videos": 1,
-   "mediana_48h": 665,
+   "mediana_48h": 641,
    "mejor": 1634,
    "pct_visto": 74,
+   "mas_10k": 0,
+   "imposible": {
+    "videos": 0,
+    "mediana_48h": null
+   }
+  },
+  "tridente": {
+   "videos": 1,
+   "mediana_48h": 1584,
+   "mejor": 1584,
+   "pct_visto": null,
    "mas_10k": 0,
    "imposible": {
     "videos": 0,
@@ -231,44 +244,44 @@
  },
  "nuevas": [
   {
-   "id": "4pAsKasC0BE",
-   "titulo": "Can Anyone Solve This? FitAll  Christiano Ronaldo Stars 🎯⚽ | Football Challenge HQ",
-   "vistas": 2817688
+   "id": "IFo79-DouqM",
+   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 3375122
   },
   {
-   "id": "pZJDBqpaC4w",
-   "titulo": "Ronaldo vs Messi vs Haaland vs Benzema Stop Challenge #ronaldo #messi #haaland #challenge #shorts",
-   "vistas": 2734440
+   "id": "Qnnr-JkQ-us",
+   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 3242075
   },
   {
-   "id": "wCYPpO6q-_k",
-   "titulo": "Where Is the Dirt?! Nobody Can Find It 🧐🔍 #shorts#funny#mbappe#yamal #football #comedy",
-   "vistas": 2654117
+   "id": "ImRdH9Vx2ig",
+   "titulo": "Legendary Football Stop Challenge ⚽🛑 ​#neymar #ronaldo #haland #messi #shorts",
+   "vistas": 2864972
   },
   {
-   "id": "4rwkaANAr8w",
-   "titulo": "we all love you CR7#ronaldo #efootball #shorts",
-   "vistas": 2480982
+   "id": "mOtqtNwluds",
+   "titulo": "The winner will shock you! 🤯 Messi vs Ronaldo vs Yamal vs Neymar!",
+   "vistas": 2659906
   },
   {
-   "id": "Aeh-2R6RdRE",
-   "titulo": "Legendary Football Stop Challenge ⚽🛑 #messi #ronaldo #haland #neymar #shorts",
-   "vistas": 2463756
+   "id": "7_YEjSKj1s0",
+   "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+   "vistas": 2615472
   },
   {
-   "id": "LltltCNrWY0",
-   "titulo": "The Art Of Satisfying Nutmegs #footballshorts #nutmegs #football #soccer",
-   "vistas": 2385375
+   "id": "RlrAsrDngTs",
+   "titulo": "Mrbeast vs Ronaldo or Messi stop challenge 🔥#ronaldo #shorts #viral",
+   "vistas": 2470830
   }
  ],
  "comentarios": {
-  "total": 30,
-  "facil": 5,
+  "total": 31,
+  "facil": 4,
   "dificil": 1
  },
  "preguntas_ia": [
   "Hacé una tabla con mis videos de los últimos 7 días: título, vistas, porcentaje que eligió ver (visto vs. descartado), % promedio visto y suscriptores. Ordenala por porcentaje que eligió ver.",
-  "Comparame mis formatos cabezas, balon, dress: ¿cuál tiene mejor 'eligió ver' en el primer segundo y por qué? Dame 3 cambios concretos para el cuadro 0.",
+  "Comparame mis formatos cabezas, rueda, dress: ¿cuál tiene mejor 'eligió ver' en el primer segundo y por qué? Dame 3 cambios concretos para el cuadro 0.",
   "Mis videos desde el 9/11 son más difíciles (modo imposible). ¿Subió la cantidad de repeticiones y el % visto respecto de la semana anterior?",
   "¿En qué momento exacto se van los espectadores en mis 3 videos con menos % visto de esta semana?",
   "¿Qué formatos interactivos de fútbol (pausar, encajar, adivinar) están creciendo esta semana en canales chicos? Dame 5 ideas nuevas de menos de 8 segundos que mi audiencia también mire.",
@@ -277,47 +290,47 @@
  ],
  "horas": {
   "00": {
-   "mediana": 2800,
+   "mediana": 2635,
    "videos": 1
   },
   "09": {
-   "mediana": 3228,
-   "videos": 5
+   "mediana": 3166,
+   "videos": 6
   },
   "12": {
-   "mediana": 15626,
+   "mediana": 13395,
    "videos": 1
   },
   "13": {
-   "mediana": 7288,
-   "videos": 4
+   "mediana": 6515,
+   "videos": 5
   },
   "14": {
-   "mediana": 27716,
+   "mediana": 23927,
    "videos": 1
   },
   "15": {
-   "mediana": 14622,
+   "mediana": 13064,
    "videos": 2
   },
   "17": {
-   "mediana": 3148,
-   "videos": 5
-  },
-  "20": {
-   "mediana": 1386,
-   "videos": 1
-  },
-  "21": {
-   "mediana": 7415,
+   "mediana": 2350,
    "videos": 6
   },
+  "20": {
+   "mediana": 1606,
+   "videos": 2
+  },
+  "21": {
+   "mediana": 9638,
+   "videos": 7
+  },
   "22": {
-   "mediana": 17007,
+   "mediana": 15653,
    "videos": 1
   },
   "23": {
-   "mediana": 8418,
+   "mediana": 7763,
    "videos": 4
   }
  }

@@ -1,80 +1,80 @@
 {
  "rueda": {
-  "videos": 6,
-  "mediana_48h": 13476,
+  "videos": 8,
+  "mediana_48h": 15587,
   "factores": [],
   "flojos": [
    {
     "titulo": "Yamal vs Messi or Ronaldo stop challenge 🔥🛑",
-    "v48": 2800,
+    "v48": 2635,
     "hora": "00 h",
-    "pct": 146.97
+    "pct": 147.05
    },
    {
     "titulo": "Stop the wheel on Messi 🛑 Only 1% get it #messi #mbappe #yamal",
-    "v48": 3441,
+    "v48": 3136,
     "hora": "15 h",
-    "pct": 162.67
+    "pct": 161.79
    }
   ]
  },
  "stop": {
-  "videos": 20,
-  "mediana_48h": 3188,
+  "videos": 22,
+  "mediana_48h": 2888,
   "factores": [
    {
     "campo": "hora",
     "valor": "13 h",
-    "videos": 4,
-    "rinde": "229% de la mediana",
+    "videos": 5,
+    "rinde": "226% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "hora",
     "valor": "21 h",
     "videos": 6,
-    "rinde": "233% de la mediana",
+    "rinde": "237% de la mediana",
     "accion": "REPETIR"
    },
    {
-    "campo": "estrella",
-    "valor": "sin estrella",
-    "videos": 9,
-    "rinde": "155% de la mediana",
+    "campo": "plantilla",
+    "valor": "football stop challenge can you stop {x}",
+    "videos": 4,
+    "rinde": "183% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "variante",
     "valor": "-",
     "videos": 9,
-    "rinde": "155% de la mediana",
+    "rinde": "161% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Stop Ronaldo at 100% ⚽🛑 Only 1% can do it #ronaldo #zlatan #bellingham",
-    "v48": 917,
+    "v48": 840,
     "hora": "17 h",
-    "pct": 168.13
-   },
-   {
-    "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣7️⃣",
-    "v48": 1361,
-    "hora": "09 h",
-    "pct": 176.93
+    "pct": 169.53
    },
    {
     "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop Mbappé 6️⃣7️⃣ · Level 27 #",
-    "v48": 1386,
+    "v48": 1233,
     "hora": "20 h",
-    "pct": 154.27
+    "pct": 151.68
+   },
+   {
+    "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop it 6️⃣7️⃣",
+    "v48": 1264,
+    "hora": "09 h",
+    "pct": 177.04
    },
    {
     "titulo": "Can you stop at 100%? ⚽🛑 Yamal vs Haaland #yamal #haaland #henry",
-    "v48": 1562,
+    "v48": 1426,
     "hora": "13 h",
-    "pct": 179.6
+    "pct": 179.4
    }
   ]
  }
