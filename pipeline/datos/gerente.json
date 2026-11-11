@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-11",
- "hora": "14:35",
+ "hora": "14:54",
  "canal": {
   "mediana_48h_semana": 3590,
   "mediana_48h_semana_anterior": 1938,
@@ -57,6 +57,12 @@
   "revisados": 0,
   "con_defectos": 0,
   "ejemplos": []
+ },
+ "blindaje": {
+  "dias_seguidos_con_6": 7,
+  "meta": 14,
+  "reserva": 0,
+  "vigilancia": {}
  },
  "historia": {
   "balon": {
