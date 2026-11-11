@@ -2014,6 +2014,42 @@
     "lamine_yamal",
     "0"
    ]
+  ],
+  "q20_pares": [
+   [
+    "alvarez_2024",
+    "neymar_2017"
+   ],
+   [
+    "bellingham_2023",
+    "vinicius_2018"
+   ],
+   [
+    "haaland_2020",
+    "lukaku_2021"
+   ]
+  ],
+  "q20_balon": [
+   [
+    "lamine_yamal",
+    "kevin_de_bruyne",
+    [
+     "ajax",
+     "dortmund",
+     "monaco",
+     "porto",
+     "psg",
+     "real_madrid"
+    ],
+    [
+     "cristiano_ronaldo",
+     "harry_kane",
+     "jude_bellingham",
+     "kylian_mbapp",
+     "lionel_messi",
+     "pedri"
+    ]
+   ]
   ]
  },
  "protagonistas": [
@@ -3155,6 +3191,20 @@
    "cristiano_ronaldo",
    "kylian_mbapp",
    "cristiano_ronaldo"
+  ],
+  "q20_fichajes": [
+   "felix_2019"
+  ],
+  "q20_ult": [
+   "jo_o_f_lix",
+   "erling_haaland",
+   "romelu_lukaku",
+   "neymar",
+   "julian_alvarez",
+   "jude_bellingham",
+   "vin_cius_j_nior",
+   "lamine_yamal",
+   "kevin_de_bruyne"
   ]
  }
 }
