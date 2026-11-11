@@ -136,6 +136,16 @@ def main():
     insp = [x for x in cargar("inspeccion.json", []) if x.get("fecha", "")[:10] >= (hoy - timedelta(days=7)).isoformat()]
     inspeccion = dict(revisados=len(insp), con_defectos=sum(1 for x in insp if x["defectos"]),
                       ejemplos=[f"{x['id']}: {'; '.join(x['defectos'])}" for x in insp if x["defectos"]][-5:])
+    # ---- FASE 1 · BLINDAJE: días seguidos (hasta ayer) con ≥6 videos subidos, reserva y vigilancia
+    racha, d = 0, hoy - timedelta(days=1)
+    while racha < 60:
+        if sum(1 for p in pub if p["fecha"] == d.isoformat()) >= 6:
+            racha += 1; d -= timedelta(days=1)
+        else:
+            break
+    vig = cargar("vigilancia.json", {}).get("ultimo", {})
+    reserva_libre = sum(1 for v in cargar("reserva.json", {"videos": []})["videos"] if not v.get("usado"))
+    blindaje = dict(dias_seguidos_con_6=racha, meta=14, reserva=reserva_libre, vigilancia=vig)
     import originalidad                                                        # auditor sin IA: ¿se ve "plantilla"?
     orig = originalidad.reporte()
     # ---- ADVERTENCIAS (manual del gerente, errores 1, 2, 9 y 10): cuándo un número NO alcanza o el dato puede estar roto
@@ -168,7 +178,7 @@ def main():
         adv.append("Menos de 10 videos medidos en la semana: las comparaciones de canal son débiles.")
     salud["advertencias"] = adv
     previo = cargar("gerente.json", {})
-    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, historia=historia,
+    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, blindaje=blindaje, historia=historia,
                oportunidades=oportunidades, cansados=cansados, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
@@ -185,6 +195,8 @@ def main():
          "**Cansancio (los últimos 4 rinden < 60 % de los 4 anteriores):** " + (", ".join(f"{c['formato']} ({c['ultimos4_vs_4anteriores']:.0%})" for c in cansados) or "ninguno"), "",
          f"**Inspector visual (7 días):** {inspeccion['revisados']} videos revisados, {inspeccion['con_defectos']} con defectos"
          + (": " + " · ".join(inspeccion["ejemplos"]) if inspeccion["ejemplos"] else ""), "",
+         f"**Fase 1 · Blindaje:** {racha}/14 días seguidos con 6 o más videos · reserva {reserva_libre}/12 · vigilancia: "
+         + (("; ".join(vig.get("problemas", [])) or "sin problemas") + f" ({vig.get('hora', 's/d')})" if vig else "todavía no corrió"), "",
          "**ADVERTENCIAS (leer antes de decidir):** " + (" · ".join(adv) if adv else "ninguna"), "",
          f"**Canal:** mediana a las 48 h esta semana {canal['mediana_48h_semana'] or '-'} (antes {canal['mediana_48h_semana_anterior'] or '-'}, "
          f"{canal.get('cambio', 's/d')}) · {canal['videos_semana']} videos · % visto {canal['pct_visto_semana'] or '-'}", "",

@@ -521,7 +521,7 @@ def slots_por_defecto(inicio, dias):
     return out
 
 
-def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
+def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
     """Genera, renderiza y deja en `sem` un video por slot (dict fecha, hora, tipo, dificil) + su .txt + videos.json."""
     (sem / "guiones").mkdir(parents=True, exist_ok=True)
     from variedad import Variedad
@@ -669,6 +669,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
                                **({"variante": g["arranque"]} if g.get("arranque") else {})))
         trabajos.append((tipo, ruta))
         filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
+    if not renderizar:                                                          # prueba de humo: solo guiones y títulos (sin video ni memoria)
+        return manifiesto, []
     if voces_pendientes:                                                        # locución de los formatos de 20 s (edge-tts)
         try:
             import voz_edge

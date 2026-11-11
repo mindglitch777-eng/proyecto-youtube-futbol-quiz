@@ -1,0 +1,42 @@
+name: PRUEBA DE HUMO (en cada cambio de código)
+
+# Corre toda la cadena en seco + un render real con el inspector visual. Si falla, abre un aviso "alerta-sistema".
+on:
+  push:
+    paths: [pipeline/**.py, produccion/*.py, pipeline/config.json, .github/workflows/**]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  issues: write
+
+concurrency: {group: pruebas, cancel-in-progress: true}
+
+jobs:
+  humo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Herramientas
+        run: |
+          for i in 1 2 3 4 5; do sudo apt-get update -qq -o Acquire::Retries=3 && sudo apt-get install -y -qq -o Acquire::Retries=5 --fix-missing ffmpeg libcairo2 fonts-noto-color-emoji && break; sleep $((i * 20)); done
+          pip install -q -r pipeline/requirements.txt
+          curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+          curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
+      - name: Prueba de humo
+        run: python pipeline/prueba_humo.py --render 2>&1 | tee "$RUNNER_TEMP/humo.txt"; exit ${PIPESTATUS[0]}
+      - name: Avisar si falló
+        if: failure()
+        run: |
+          cuerpo="**La prueba de humo falló** después del cambio ${GITHUB_SHA::7}. Arreglalo antes de la próxima fábrica.
+
+          \`\`\`
+          $(tail -40 "$RUNNER_TEMP/humo.txt")
+          \`\`\`
+          ${GITHUB_SERVER_URL}/${GITHUB_REPOSITORY}/actions/runs/${GITHUB_RUN_ID}"
+          gh issue create --title "ALERTA: la prueba de humo falló (${GITHUB_SHA::7})" --label alerta-sistema --body "$cuerpo" || true

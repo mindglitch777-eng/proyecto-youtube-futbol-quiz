@@ -17,6 +17,7 @@ RAIZ = Path(__file__).resolve().parents[1]
 ART = timezone(timedelta(hours=-3))
 DIAS_ADELANTE = 3          # margen: con 3 días cargados, aunque GitHub no corra 2 días seguidos no se pierde ninguna subida
 MAX_POR_CORRIDA = 6        # 6 x 1.600 = 9.600 unidades (cuota diaria 10.000)
+LIMITE_24H = 10            # YouTube deja ~10 subidas cada 24 h por canal: el planificador no intenta más que eso (F1, 11/11)
 
 
 def hechos():
@@ -37,6 +38,15 @@ def choca(m, viejos):
     """(Los videos "extra" de una ola caliente se suman a la grilla: no reemplazan a nadie, así que no se bloquean.)"""
     mins = lambda h: int(h[:2]) * 60 + int(h[3:5])
     return any(f == m["fecha"] and abs(mins(h) - mins(m["hora"])) <= 60 for f, h in viejos)
+
+
+def cupo_24h():
+    """Subidas libres en las últimas 24 h (cada intento que choca con el límite gasta cuota y no sirve)."""
+    p = RAIZ / "pipeline" / "datos" / "publicados.json"
+    pub = json.loads(p.read_text()) if p.exists() else []
+    hace = datetime.now(timezone.utc) - timedelta(hours=24)
+    n = sum(1 for x in pub if x.get("video_id") and x.get("subido") and datetime.fromisoformat(x["subido"]) > hace)
+    return max(0, LIMITE_24H - n), n
 
 
 def manifiestos():
@@ -71,8 +81,23 @@ def main():
     vencidos = sorted(m["id"] for m, _ in todos.values() if m["fecha"] < hoy.isoformat() and m["id"] not in ya
                       and m["fecha"] >= (hoy - timedelta(days=3)).isoformat()
                       and not choca(m, viejos))                               # ese horario ya lo cubrió un video subido antes (no es falta)
+    # RESERVA (F1): si a un horario de las próximas 30 h le falta video (la fábrica falló), se completa con la reserva
+    import reserva
+    ocupados = [(m["fecha"], m["hora"]) for m, _ in todos.values() if not m.get("extra")] + list(viejos) + \
+               [(x["fecha"], x["hora"]) for x in json.loads((RAIZ / "pipeline" / "datos" / "publicados.json").read_text())
+                if x.get("video_id") and not x.get("reemplazado")]
+    for f, h in reserva.huecos(ocupados):
+        r = reserva.tomar(f, h)
+        if r:
+            print(f"RESERVA: {f} {h} sin video → {r['id']} ({r['tipo']})", flush=True)
+            todos[r["id"]] = (r, ("release", r["release"]))
+            pend.append(r)
+    pend.sort(key=lambda m: (m["fecha"], m["hora"]))
     elegidos = []
-    for m in pend[:MAX_POR_CORRIDA]:
+    cupo, usadas = cupo_24h()
+    tope = min(MAX_POR_CORRIDA, cupo)
+    print(f"planificador: {usadas} subidas en las últimas 24 h · cupo libre {cupo} · esta corrida sube hasta {tope}")
+    for m in pend[:tope]:                                                       # los más urgentes primero (fecha y hora)
         _, (tipo, lugar) = todos[m["id"]]
         archivo = dest / m["archivo"]
         if tipo == "repo":

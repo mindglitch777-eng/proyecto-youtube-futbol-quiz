@@ -1,0 +1,29 @@
+name: VIGILANCIA (cada 2 h · relanza lo que falla y avisa)
+
+on:
+  schedule:
+    - cron: "23 */2 * * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  actions: write
+  issues: write
+
+concurrency: {group: vigilancia, cancel-in-progress: false}
+
+jobs:
+  vigilar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 30}
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: python pipeline/vigilancia.py
+      - name: Guardar
+        if: always()
+        run: python3 pipeline/guardar_avance.py "Vigilancia"

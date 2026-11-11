@@ -66,6 +66,16 @@ jobs:
           cd produccion/$D
           gh release delete "$T" -y --cleanup-tag 2>/dev/null || true
           gh release create "$T" --target "$GITHUB_REF_NAME" -t "Refuerzo de ola ${D#semana_ola_}" -n "Videos extra de la ola caliente" ./*.mp4 videos.json
+      - name: Reserva (F1) · mantener 12 videos listos por si la fábrica falla
+        id: reserva
+        run: cd pipeline && echo "r=$(python reserva.py producir | tail -1)" >> "$GITHUB_OUTPUT"
+        continue-on-error: true
+      - name: Publicar la reserva como Release
+        if: steps.reserva.outputs.r != 'nada' && steps.reserva.outputs.r != ''
+        run: |
+          set -- ${{ steps.reserva.outputs.r }}
+          cd "produccion/$1"
+          gh release create "$2" --target "$GITHUB_REF_NAME" -t "Reserva $2" -n "Videos de reserva (se usan solo si la fábrica falla)" ./*.mp4
       - name: Guardar avance
         if: always()
         run: python3 pipeline/guardar_avance.py "Fábrica diaria"

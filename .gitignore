@@ -27,3 +27,10 @@ produccion/salida/q20_*/
 produccion/salida/tq_*/
 produccion/prototipos/
 _prototipos.jsonl
+# F1 · Blindaje: los videos viven en Releases, nunca en el repo (el repo llegó a 3,8 GB)
+produccion/semana_*/*.mp4
+produccion/semana_*/guiones/
+produccion/*.zip
+produccion/reserva_*/
+produccion/semana_ola_*/*
+!produccion/semana_ola_*/videos.json
