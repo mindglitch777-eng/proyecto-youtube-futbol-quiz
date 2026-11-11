@@ -1142,6 +1142,12 @@
     "Wirtz"
    ],
    [
+    "Haaland",
+    "Rice",
+    "Salah",
+    "Son"
+   ],
+   [
     "Rashford",
     "Salah",
     "Son",
@@ -1260,6 +1266,12 @@
     "Haaland",
     "Mbappé",
     "Salah"
+   ],
+   [
+    "Bellingham",
+    "Haaland",
+    "Salah",
+    "Vinícius"
    ],
    [
     "Dembélé",
@@ -1606,6 +1618,16 @@
     "lionel_messi_0",
     "pedri_2",
     "vin_cius_j_nior_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "bukayo_saka_2",
+    "cole_palmer_1",
+    "erling_haaland_1",
+    "mohamed_salah_0",
+    "neymar_2",
+    "ronaldinho_0",
+    "vin_cius_j_nior_3"
    ],
    [
     "lamine_yamal_10",
@@ -2544,6 +2566,14 @@
   [
    "2099-01-01",
    "Kaká"
+  ],
+  [
+   "2099-01-01",
+   "Vinícius"
+  ],
+  [
+   "2099-01-01",
+   "Haaland"
   ]
  ],
  "ganadores": {
@@ -2903,7 +2933,9 @@
    2,
    5,
    4,
-   1
+   1,
+   2,
+   4
   ],
   "stop_serie": [
    3,
@@ -2961,7 +2993,9 @@
    3,
    1,
    0,
-   3
+   3,
+   2,
+   1
   ],
   "tridente": [
    2,
@@ -3044,7 +3078,8 @@
    0,
    3,
    2,
-   1
+   1,
+   3
   ],
   "cabezas": [
    2,
@@ -3090,7 +3125,8 @@
    1,
    0,
    1,
-   0
+   0,
+   2
   ],
   "circulo": [
    0,
@@ -3205,7 +3241,7 @@
   981580
  ],
  "contadores": {
-  "stop_nivel": 31,
+  "stop_nivel": 33,
   "fitall_ult": [
    "cristiano_ronaldo",
    "kylian_mbapp",
@@ -3232,7 +3268,8 @@
    "kevin_de_bruyne"
   ],
   "rueda_ult": [
-   "cristiano_ronaldo_14"
+   "cristiano_ronaldo_14",
+   "lamine_yamal_10"
   ]
  }
 }
