@@ -224,8 +224,8 @@ def camara(im, t, cortes, shake=0.0):
     cortes = sorted(cortes)
     k = sum(1 for c in cortes if c <= t)
     z = 1.12 if k % 2 else 1.0
-    if t < 0.4:                                                                # gancho: entra con zoom que se abre
-        z = 1.0 + 0.25 * (1 - t / 0.4) ** 2
+    if t < 0.45:                                                               # gancho: golpe de zoom (el cuadro 0 queda completo)
+        z = 1.0 + 0.09 * math.sin(math.pi * t / 0.45)
     if cortes and k:
         e = t - cortes[k - 1]
         if e < 0.12:
@@ -653,10 +653,10 @@ def balon(g):
             cartel(d, (W / 2, 430), "TO WIN THE BALLON D'OR", 66, BLA)
             pu = 1 + 0.1 * math.sin(e * 10)                                     # botón de pausa: la tarea, sin leer nada
             cx_, cy_ = W / 2, 1610
-            d.rounded_rectangle((cx_ - 250 * pu, cy_ - 70 * pu, cx_ + 250 * pu, cy_ + 70 * pu), 40, fill=AMA)
-            d.rectangle((cx_ - 200 * pu, cy_ - 36 * pu, cx_ - 182 * pu, cy_ + 36 * pu), fill=(15, 15, 22))
-            d.rectangle((cx_ - 165 * pu, cy_ - 36 * pu, cx_ - 147 * pu, cy_ + 36 * pu), fill=(15, 15, 22))
-            d.text((cx_ + 30 * pu, cy_), "PAUSE TO PICK", font=P.fuente(int(56 * pu)), fill=(15, 15, 22), anchor="mm")
+            d.rounded_rectangle((cx_ - 300 * pu, cy_ - 70 * pu, cx_ + 300 * pu, cy_ + 70 * pu), 40, fill=AMA)
+            d.rectangle((cx_ - 250 * pu, cy_ - 36 * pu, cx_ - 232 * pu, cy_ + 36 * pu), fill=(15, 15, 22))
+            d.rectangle((cx_ - 215 * pu, cy_ - 36 * pu, cx_ - 197 * pu, cy_ + 36 * pu), fill=(15, 15, 22))
+            d.text((cx_ + 45 * pu, cy_), "PAUSE TO PICK", font=P.fuente(int(54 * pu)), fill=(15, 15, 22), anchor="mm")
         elif t < I["academia"]:
             e = t - I["pie"]
             sel = int(e / 0.32) % 2                                            # la luz salta entre las dos opciones (pausá)
