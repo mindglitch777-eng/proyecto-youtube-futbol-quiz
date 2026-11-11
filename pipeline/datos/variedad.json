@@ -1098,6 +1098,12 @@
     "Zlatan"
    ],
    [
+    "Kaká",
+    "Kroos",
+    "Ramos",
+    "Zidane"
+   ],
+   [
     "Kroos",
     "Ronaldinho",
     "Zidane",
@@ -1281,6 +1287,16 @@
    ]
   ],
   "rueda": [
+   [
+    "cristiano_ronaldo_14",
+    "harry_kane_1",
+    "jude_bellingham_1",
+    "lionel_messi_0",
+    "mohamed_salah_0",
+    "neymar_2",
+    "pedri_2",
+    "ronaldinho_0"
+   ],
    [
     "kylian_mbapp_12",
     "bukayo_saka_2",
@@ -2524,6 +2540,10 @@
   [
    "2026-11-10",
    "Yamal"
+  ],
+  [
+   "2099-01-01",
+   "Kaká"
   ]
  ],
  "ganadores": {
@@ -2882,7 +2902,8 @@
    0,
    2,
    5,
-   4
+   4,
+   1
   ],
   "stop_serie": [
    3,
@@ -2939,7 +2960,8 @@
    2,
    3,
    1,
-   0
+   0,
+   3
   ],
   "tridente": [
    2,
@@ -3021,7 +3043,8 @@
    1,
    0,
    3,
-   2
+   2,
+   1
   ],
   "cabezas": [
    2,
@@ -3064,6 +3087,8 @@
    2,
    0,
    2,
+   1,
+   0,
    1,
    0
   ],
@@ -3180,7 +3205,7 @@
   981580
  ],
  "contadores": {
-  "stop_nivel": 30,
+  "stop_nivel": 31,
   "fitall_ult": [
    "cristiano_ronaldo",
    "kylian_mbapp",
@@ -3205,6 +3230,9 @@
    "vin_cius_j_nior",
    "lamine_yamal",
    "kevin_de_bruyne"
+  ],
+  "rueda_ult": [
+   "cristiano_ronaldo_14"
   ]
  }
 }
