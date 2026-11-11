@@ -32,7 +32,7 @@ jobs:
           curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
       - name: Renderizar prototipos pendientes
         id: proto
-        run: python pipeline/prototipo.py | tee "$RUNNER_TEMP/proto.jsonl"
+        run: PROTO_SALIDA="$RUNNER_TEMP/proto.jsonl" python pipeline/prototipo.py
       - name: Releases + comentario en cada Issue
         run: |
           while read -r linea; do
@@ -56,4 +56,5 @@ jobs:
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add reports/propuestas pipeline/propuestas
           git commit -m "Prototipos de propuestas" || echo "nada nuevo"
+          git stash -u -q || true                                              # voces y restos del render: no se guardan acá
           for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done

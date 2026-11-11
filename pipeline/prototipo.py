@@ -96,9 +96,12 @@ def procesar(p):
 
 
 def main():
+    import os
     hechos = [x for x in (procesar(p) for p in sorted(PROP.glob("*.json"))) if x]
-    for pr in hechos:
-        print(json.dumps(dict(id=pr["id"], issue=pr.get("issue"), videos=pr["prototipo"]["videos"], hoja=pr["prototipo"]["hoja"]), ensure_ascii=False))
+    salida = Path(os.environ.get("PROTO_SALIDA", RAIZ / "_prototipos.jsonl"))       # resultado aparte (la fábrica imprime otras cosas)
+    salida.write_text("".join(json.dumps(dict(id=pr["id"], issue=pr.get("issue"), videos=pr["prototipo"]["videos"],
+                                               hoja=pr["prototipo"]["hoja"]), ensure_ascii=False) + "\n" for pr in hechos))
+    print(f"prototipos hechos: {len(hechos)}")
 
 
 if __name__ == "__main__":
