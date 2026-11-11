@@ -67,6 +67,8 @@ No hace falta reinventar todo; hace falta que cada video se note hecho por NOSOT
 | Auditor de originalidad | Huella visual, concentración de plantilla, títulos, música | en cada video y cada día |
 | Tablero de números | gerente.py: canal, monetización, formatos, horas, olas, salud | cada día |
 | Alarma de subida | alerta.json + Issue en GitHub si algo no subió | en cada subida |
+| Fábrica de prototipos | Renderiza la muestra de cada propuesta, arma la hoja visual y la cuelga en el Issue | cuando el Gerente escribe una propuesta |
+| Historia del canal | gerente.py: todos los videos desde el primero, por semana, cansancio y oportunidades | cada día |
 
 **IA (Claude), solo donde hace falta juicio:**
 | Quién | Para qué | Cuándo |
@@ -84,6 +86,15 @@ cambia todos los días o necesita entender contexto.
 Lo chico lo resolvés vos. Lo grande se presenta como PROYECTO en un Issue de GitHub con la etiqueta `propuesta`
 (el CEO lo ve y responde desde la app de GitHub en el celular). Máximo 3 propuestas abiertas a la vez.
 
+**Toda propuesta llega con PRUEBA VISUAL** (el CEO decide viendo, no leyendo):
+1. Abrí el Issue (etiqueta `propuesta`) con la plantilla de abajo.
+2. Escribí `pipeline/propuestas/<id>.json` (id: p001, p002…) con el número de Issue, las muestras a renderizar
+   (`"slots": [{"tipo": "..."}]`, 2-4 videos que muestren el cambio) y, si cambia el día, `"grilla": {"antes": [...], "despues": [...]}`.
+   Si el formato todavía no existe, primero lo construye el Ingeniero con `"listo": false` en config.json (fuera de la rotación).
+3. Push. La máquina `prototipo.yml` renderiza, arma `reports/propuestas/<id>/hoja.jpg`, sube los videos al Release
+   `propuesta-<id>` y comenta en el Issue con la imagen y los links. Revisá la hoja vos también: si se ve mal, corregilo antes.
+4. Cuando el CEO aprueba: lo ponés en marcha (`listo: true`, grilla, etc.), lo medís con su fecha de revisión y cerrás el Issue.
+
 Plantilla del Issue (título: "Propuesta: <nombre corto>"):
 - **Qué propongo** (en 2 líneas).
 - **Por qué** (los números que lo justifican y la confianza de esos números).
@@ -95,6 +106,10 @@ Plantilla del Issue (título: "Propuesta: <nombre corto>"):
 Cada día revisás los Issues `propuesta`: si el CEO comentó "aprobado", lo ejecutás (o se lo pasás al Ingeniero), lo anotás en
 la bitácora y cerrás el Issue al terminar; si comentó "rechazado", lo cerrás y anotás por qué en la bitácora para no volver a
 proponerlo igual. Sin respuesta en 5 días: se lo recordás una vez en el parte.
+
+Fuentes para encontrar proyectos (todas propias): la historia completa del canal (cansancio y oportunidades), el índice
+de originalidad, las olas, los comentarios y el calendario del fútbol. No dependemos de la IA de YouTube Studio: si el CEO
+pasa datos de Studio ("eligió ver"), sumalos, pero las decisiones salen de nuestros números.
 
 Los LUNES presentás hasta 2 proyectos nuevos SOLO si los números lo justifican (por ejemplo: bajar el formato que satura
 la semana, una serie nueva para una ola, un cambio de estilo para subir la originalidad, sumar un idioma).

@@ -1,0 +1,59 @@
+name: Prototipos de propuestas (muestra visual para el CEO)
+
+# Máquina sin IA: el Gerente escribe pipeline/propuestas/<id>.json; esto renderiza la muestra, arma la hoja visual,
+# sube los videos a un Release y comenta en el Issue de la propuesta.
+on:
+  push:
+    paths: [pipeline/propuestas/*.json]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency: {group: prototipo, cancel-in-progress: false}
+
+jobs:
+  prototipo:
+    runs-on: ubuntu-latest
+    timeout-minutes: 90
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - name: Herramientas
+        run: |
+          for i in 1 2 3 4 5; do sudo apt-get update -qq -o Acquire::Retries=3 && sudo apt-get install -y -qq -o Acquire::Retries=5 --fix-missing ffmpeg libcairo2 fonts-noto-color-emoji fonts-dejavu-core && break; sleep $((i * 20)); done
+          pip install -q -r pipeline/requirements.txt
+          cd produccion/runner && npm install --no-audit --no-fund three@0.169.0 playwright@1.48.0 && npx playwright install --with-deps chromium && cd ../..
+          curl -sSL -o produccion/assets/modelos/face_detection_yunet_2023mar.onnx https://github.com/opencv/opencv_zoo/raw/main/models/face_detection_yunet/face_detection_yunet_2023mar.onnx
+          curl -sSL -o produccion/assets/modelos/lbfmodel.yaml https://raw.githubusercontent.com/kurnianggoro/GSOC2017/master/data/lbfmodel.yaml
+      - name: Renderizar prototipos pendientes
+        id: proto
+        run: python pipeline/prototipo.py | tee "$RUNNER_TEMP/proto.jsonl"
+      - name: Releases + comentario en cada Issue
+        run: |
+          while read -r linea; do
+            [ -z "$linea" ] && continue
+            id=$(echo "$linea" | python3 -c "import json,sys;print(json.load(sys.stdin)['id'])")
+            issue=$(echo "$linea" | python3 -c "import json,sys;print(json.load(sys.stdin).get('issue') or '')")
+            videos=$(echo "$linea" | python3 -c "import json,sys;print(' '.join(json.load(sys.stdin)['videos']))")
+            gh release delete "propuesta-$id" -y --cleanup-tag 2>/dev/null || true
+            gh release create "propuesta-$id" --target "$GITHUB_REF_NAME" -t "Prototipo de la propuesta $id" -n "Muestras para el CEO (no se suben al canal)" $videos
+            if [ -n "$issue" ]; then
+              base="https://github.com/${GITHUB_REPOSITORY}/releases/download/propuesta-$id"
+              links=""; for v in $videos; do n=$(basename "$v"); links="$links"$'\n'"- ▶️ [$n]($base/$n)"; done
+              cuerpo="### Prototipo listo ✅"$'\n\n'"![hoja](https://raw.githubusercontent.com/${GITHUB_REPOSITORY}/${GITHUB_REF_NAME}/reports/propuestas/$id/hoja.jpg)"$'\n\n'"**Videos de muestra** (no se suben al canal):$links"$'\n\n'"Respondé **aprobado** o **rechazado** (o qué cambiarías)."
+              gh issue comment "$issue" --body "$cuerpo"
+            fi
+          done < "$RUNNER_TEMP/proto.jsonl"
+      - name: Guardar hoja y estado
+        if: always()
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add reports/propuestas pipeline/propuestas
+          git commit -m "Prototipos de propuestas" || echo "nada nuevo"
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
