@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-11",
- "hora": "14:04",
+ "hora": "14:35",
  "canal": {
   "mediana_48h_semana": 3590,
   "mediana_48h_semana_anterior": 1938,
@@ -52,6 +52,11 @@
    "Los títulos se parecen 67% en promedio: falta variedad de frases."
   ],
   "lectura": "OJO: se empieza a ver repetitivo"
+ },
+ "inspeccion": {
+  "revisados": 0,
+  "con_defectos": 0,
+  "ejemplos": []
  },
  "historia": {
   "balon": {
@@ -499,17 +504,7 @@
    "id": "4EF63yoOhn0"
   }
  ],
- "olas_calientes": [
-  {
-   "mecanica": "fit",
-   "estado": "subiendo",
-   "vph": 5508,
-   "nuestros": [
-    "fitall",
-    "cabezas"
-   ]
-  }
- ],
+ "olas_calientes": [],
  "salud": {
   "subidas_programadas": {
    "2026-11-11": 8,
@@ -533,15 +528,15 @@
     "Se pasó la hora y NO se subió: s1107_04_mar10_2000_stop"
    ]
   },
-  "olas_hace_h": 26,
+  "olas_hace_h": 1,
   "investigacion": "2026-11-10",
   "poda": {
    "podadas": {},
    "promovidas": {
     "rueda": {
-     "fecha": "2026-11-07",
-     "rinde": "169% del STOP",
-     "videos": 4
+     "fecha": "2026-11-11",
+     "rinde": "190% del STOP",
+     "videos": 6
     }
    }
   },

@@ -20,6 +20,13 @@ def controlar(ruta, det):
     from medir_gancho import medir
     r = medir(dict(id=Path(ruta).stem, ruta=str(ruta), grupo="control"), det)
     fallas = [txt for clave, txt, ok, _ in REGLAS if r is None or r.get(clave) is None or not ok(r.get(clave))]
+    try:                                                                       # inspector visual (sin IA): defectos que ve un humano
+        import inspector_visual as IV
+        defectos = IV.inspeccionar(ruta)
+        IV.anotar(Path(ruta).stem, None, defectos)
+        fallas += [f"inspector: {x}" for x in defectos]
+    except Exception as e:
+        print("inspector no corrió:", e)
     return fallas, r
 
 

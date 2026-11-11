@@ -211,8 +211,9 @@ def subtitulos(im, palabras, t, y=1300, caja=True, ancho=980, cx=W / 2):
     while tam > 46 and sum(P.fuente(tam).getlength(x + " ") for x in txts) > ancho:
         tam -= 4
     tot = sum(P.fuente(tam).getlength(x + " ") for x in txts); x = max(50, cx - tot / 2)
-    if caja:                                                                   # franja oscura detrás: siempre legible
-        d.rounded_rectangle((x - 30, y - tam * 0.75, x + tot + 10, y + tam * 0.75), 28, fill=(10, 10, 16, 200))
+    if caja:                                                                   # franja oscura detrás: crece con las palabras que ya sonaron
+        vis = sum(P.fuente(tam).getlength(g[0].upper() + " ") for g in grupo if g[1] - 0.05 <= t)
+        d.rounded_rectangle((x - 30, y - tam * 0.75, x + vis + 10, y + tam * 0.75), 28, fill=(10, 10, 16, 200))
     for k, (p, a, b) in enumerate(grupo):
         s = p.upper(); w = P.fuente(tam).getlength(s + " ")
         if a - 0.05 > t:

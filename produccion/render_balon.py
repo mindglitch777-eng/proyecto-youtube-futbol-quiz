@@ -34,20 +34,22 @@ def cuerpo(nombre, alto=1180):
     return im, dict(cx=(x + fw / 2) * s, cara_y=y * s, fh=fh * s)
 
 
-def trofeo(nombre, alto=330):
-    im = Image.open(EXT / f"{nombre}.png").convert("RGBA")
-    s = alto / im.height
-    return im.resize((int(im.width * s), alto), Image.LANCZOS)
+def trofeo(nombre=None, alto=330):
+    """Trofeo PROPIO dibujado (11/11: los PNG de bancos de imágenes traían marca de agua)."""
+    import render_q20 as Q
+    return Q.balon_dorado(int(alto))
 
 
 def silueta(tr):
     """Hueco con la forma del trofeo: negro translúcido + borde blanco punteado que late."""
     a = tr.split()[3].point(lambda v: 255 if v > 60 else 0)
-    hueco = Image.new("RGBA", tr.size, (10, 10, 10, 0)); hueco.putalpha(a.point(lambda v: int(v * 0.72)))
-    borde = a.filter(ImageFilter.MaxFilter(9)); arr = np.asarray(borde).astype(int) - np.asarray(a).astype(int)
+    # 11/11: antes era un hueco oscuro (parecía un agujero en las manos); ahora es un trofeo FANTASMA dorado con borde que brilla
+    fantasma = Image.new("RGBA", tr.size, (255, 214, 60, 0)); fantasma.putalpha(a.point(lambda v: int(v * 0.30)))
+    borde = a.filter(ImageFilter.MaxFilter(11)); arr = np.asarray(borde).astype(int) - np.asarray(a).astype(int)
     b = Image.new("RGBA", tr.size, (255, 255, 255, 0)); b.putalpha(Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)))
-    hueco.alpha_composite(b)
-    return hueco
+    glow = Image.new("RGBA", tr.size, (255, 220, 80, 0)); glow.putalpha(Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(6)))
+    fantasma.alpha_composite(glow); fantasma.alpha_composite(b)
+    return fantasma
 
 
 def main(guion):

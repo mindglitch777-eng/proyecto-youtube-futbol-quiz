@@ -67,6 +67,7 @@ No hace falta reinventar todo; hace falta que cada video se note hecho por NOSOT
 | Auditor de originalidad | Huella visual, concentración de plantilla, títulos, música | en cada video y cada día |
 | Tablero de números | gerente.py: canal, monetización, formatos, horas, olas, salud | cada día |
 | Alarma de subida | alerta.json + Issue en GitHub si algo no subió | en cada subida |
+| Inspector visual | Revisa cada video antes de que salga: parches negros lisos, pantalla congelada, cuadros vacíos. Si falla, la fábrica lo rehace | en cada video y en cada prototipo |
 | Fábrica de prototipos | Renderiza la muestra de cada propuesta, arma la hoja visual y la cuelga en el Issue | cuando el Gerente escribe una propuesta |
 | Historia del canal | gerente.py: todos los videos desde el primero, por semana, cansancio y oportunidades | cada día |
 
@@ -102,6 +103,10 @@ Plantilla del Issue (título: "Propuesta: <nombre corto>"):
 - **Riesgos y cómo se deshace.**
 - **Cómo sabremos si funcionó** (número y fecha).
 - **Qué necesito del CEO:** responder "aprobado" o "rechazado" (o lo que cambiaría).
+
+**Consultas del CEO** (Issues con etiqueta `consulta`): el CEO te pregunta algo (por ejemplo "¿sacamos DRESS UP?").
+Respondés en el mismo Issue con tu análisis completo (vistas, % visto, suscriptores, originalidad, calidad visual, cansancio,
+confianza de los datos) y una recomendación clara. Si recomendás un cambio grande, va como propuesta con prototipo.
 
 Cada día revisás los Issues `propuesta`: si el CEO comentó "aprobado", lo ejecutás (o se lo pasás al Ingeniero), lo anotás en
 la bitácora y cerrás el Issue al terminar; si comentó "rechazado", lo cerrás y anotás por qué en la bitácora para no volver a

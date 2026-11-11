@@ -83,7 +83,13 @@ def procesar(p):
                 mp4 = sem / m["archivo"]
                 if mp4.exists():
                     ims, dur = cuadros(mp4)
-                    tit = "".join(ch for ch in m["titulo"] if ord(ch) < 0x2190)[:60]          # sin emojis (la fuente de la hoja no los tiene)
+                    try:                                                       # inspector visual: el CEO ve también si tiene defectos
+                        import inspector_visual as IV
+                        dfx = IV.inspeccionar(mp4, m["tipo"])
+                    except Exception:
+                        dfx = []
+                    m["titulo"] = m["titulo"] + ("  [inspector: OK]" if not dfx else "  [inspector: " + "; ".join(dfx) + "]")
+                    tit = "".join(ch for ch in m["titulo"] if ord(ch) < 0x2190)[:110]          # sin emojis (la fuente de la hoja no los tiene)
                     filas.append((f"{m['formato']} · \"{tit}\"", ims, dur)); videos.append(str(mp4.relative_to(RAIZ)))
     finally:
         for n, b in resguardo.items():                                         # el prototipo no gasta la memoria anti-repetición

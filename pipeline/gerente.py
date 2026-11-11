@@ -133,6 +133,9 @@ def main():
                      for t, h in historia.items() if h["medidos"] >= 3 and (h["mediana_48h"] or 0) >= 1.5 * base_h
                      and len([x for x in f(hoy - timedelta(days=7), hoy + timedelta(days=4)) if x["tipo"] == t]) / max(1, len(f(hoy - timedelta(days=7), hoy + timedelta(days=4)))) < 0.15]
     cansados = [dict(formato=t, ultimos4_vs_4anteriores=h["cansancio"]) for t, h in historia.items() if h["cansado"]]
+    insp = [x for x in cargar("inspeccion.json", []) if x.get("fecha", "")[:10] >= (hoy - timedelta(days=7)).isoformat()]
+    inspeccion = dict(revisados=len(insp), con_defectos=sum(1 for x in insp if x["defectos"]),
+                      ejemplos=[f"{x['id']}: {'; '.join(x['defectos'])}" for x in insp if x["defectos"]][-5:])
     import originalidad                                                        # auditor sin IA: ¿se ve "plantilla"?
     orig = originalidad.reporte()
     # ---- ADVERTENCIAS (manual del gerente, errores 1, 2, 9 y 10): cuándo un número NO alcanza o el dato puede estar roto
@@ -165,7 +168,7 @@ def main():
         adv.append("Menos de 10 videos medidos en la semana: las comparaciones de canal son débiles.")
     salud["advertencias"] = adv
     previo = cargar("gerente.json", {})
-    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, historia=historia,
+    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, historia=historia,
                oportunidades=oportunidades, cansados=cansados, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
@@ -180,6 +183,8 @@ def main():
                                                                          for t, h in sorted(historia.items(), key=lambda kv: -(kv[1]['mediana_48h'] or 0))), "",
          "**Oportunidades (funcionan y los usamos poco):** " + (", ".join(f"{o_['formato']} ({o_['vs_canal']}x el canal, {o_['peso']:.0%} de los videos)" for o_ in oportunidades) or "ninguna"),
          "**Cansancio (los últimos 4 rinden < 60 % de los 4 anteriores):** " + (", ".join(f"{c['formato']} ({c['ultimos4_vs_4anteriores']:.0%})" for c in cansados) or "ninguno"), "",
+         f"**Inspector visual (7 días):** {inspeccion['revisados']} videos revisados, {inspeccion['con_defectos']} con defectos"
+         + (": " + " · ".join(inspeccion["ejemplos"]) if inspeccion["ejemplos"] else ""), "",
          "**ADVERTENCIAS (leer antes de decidir):** " + (" · ".join(adv) if adv else "ninguna"), "",
          f"**Canal:** mediana a las 48 h esta semana {canal['mediana_48h_semana'] or '-'} (antes {canal['mediana_48h_semana_anterior'] or '-'}, "
          f"{canal.get('cambio', 's/d')}) · {canal['videos_semana']} videos · % visto {canal['pct_visto_semana'] or '-'}", "",
