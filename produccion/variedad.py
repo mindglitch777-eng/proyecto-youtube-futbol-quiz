@@ -19,10 +19,15 @@ RUTA = Path(__file__).resolve().parents[1] / "pipeline" / "datos" / "variedad.js
 MUSICAS = ["trallallero_2", "bombardiro_0", "tung_tung_0", "patapim_0", "chipi_chapa_0", "trallallero_1"]
 
 
+def _tupla(x):
+    """JSON guarda tuplas como listas (también las anidadas): se vuelven a tuplas para poder usarlas en conjuntos."""
+    return tuple(_tupla(i) if isinstance(i, list) else i for i in x)
+
+
 class Variedad:
     def __init__(self, datos=None):
         d = datos or {}
-        self.grupos = {k: set(tuple(x) for x in v) for k, v in d.get("grupos", {}).items()}
+        self.grupos = {k: set(_tupla(x) for x in v) for k, v in d.get("grupos", {}).items()}
         self.protas = d.get("protagonistas", [])                     # [[fecha, jugador], ...]
         self.ganadores = Counter(d.get("ganadores", {}))
         self.ult_ganador = d.get("ult_ganador")
