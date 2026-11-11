@@ -1,12 +1,57 @@
 {
  "fecha": "2026-11-11",
- "hora": "13:51",
+ "hora": "13:56",
  "canal": {
   "mediana_48h_semana": 3590,
   "mediana_48h_semana_anterior": 1938,
   "videos_semana": 30,
   "pct_visto_semana": 175,
   "cambio": "+85%"
+ },
+ "monetizacion": {
+  "suscriptores": null,
+  "vistas_shorts_90d": 587488,
+  "meta_completa": {
+   "suscriptores": 1000,
+   "vistas_90d": 10000000
+  },
+  "meta_inicial": {
+   "suscriptores": 500,
+   "vistas_90d": 3000000
+  },
+  "avance_vistas": "6%",
+  "ritmo_semanal": 365688,
+  "semanas_a_10M": 25.7
+ },
+ "originalidad": {
+  "fecha": "2026-11-11",
+  "indice": 65,
+  "subidas_semana": 53,
+  "formato_mas_usado": "stop",
+  "concentracion": 0.42,
+  "parecido_titulos": 0.67,
+  "casi_identicos": 0,
+  "medidos": 0,
+  "musicas_distintas": 0,
+  "reparto_semana": {
+   "stop": 22,
+   "balon": 1,
+   "rueda": 11,
+   "dress": 2,
+   "cabezas": 4,
+   "pared": 2,
+   "siuu": 2,
+   "penal": 1,
+   "torre": 1,
+   "tridente": 1,
+   "circulo": 1,
+   "fitall": 5
+  },
+  "alertas": [
+   "stop es el 42% de las subidas de la semana: demasiado de la misma plantilla.",
+   "Los títulos se parecen 67% en promedio: falta variedad de frases."
+  ],
+  "lectura": "OJO: se empieza a ver repetitivo"
  },
  "formatos": {
   "balon": {

@@ -96,6 +96,19 @@ def main():
                  en_cola=len(alerta.get("en_cola", [])), etapas_con_error=errores,
                  olas_hace_h=edad(cargar("olas.json", {}).get("fecha", "")), investigacion=cargar("investigacion.json", {}).get("fecha"),
                  poda=cargar("poda.json", {}))
+    # ---- CAMINO A LA MONETIZACIÓN (Programa de Socios: 1.000 suscriptores + 10 M de vistas de Shorts en 90 días;
+    #      nivel inicial: 500 suscriptores + 3 M de vistas de Shorts en 90 días). Vistas de 90 días ≈ suma de los videos de los últimos 90 días.
+    rdat = cargar("rendimiento.json", {})
+    c90 = (hoy - timedelta(days=90)).isoformat()
+    v90 = sum(v["vistas"] for v in rdat.get("videos", []) if v.get("publicado", "9999") >= c90)
+    subs = (rdat.get("canal") or {}).get("suscriptores")
+    v7 = sum(x["vistas"] for x in f(hoy - timedelta(days=7), hoy + timedelta(days=1)))
+    monet = dict(suscriptores=subs, vistas_shorts_90d=v90, meta_completa=dict(suscriptores=1000, vistas_90d=10_000_000),
+                 meta_inicial=dict(suscriptores=500, vistas_90d=3_000_000),
+                 avance_vistas=f"{v90 / 10_000_000:.0%}", ritmo_semanal=v7,
+                 semanas_a_10M=round((10_000_000 - v90) / v7, 1) if v7 and v90 < 10_000_000 else None)
+    import originalidad                                                        # auditor sin IA: ¿se ve "plantilla"?
+    orig = originalidad.reporte()
     # ---- ADVERTENCIAS (manual del gerente, errores 1, 2, 9 y 10): cuándo un número NO alcanza o el dato puede estar roto
     adv = []
     for t, r in formatos.items():
@@ -126,11 +139,16 @@ def main():
         adv.append("Menos de 10 videos medidos en la semana: las comparaciones de canal son débiles.")
     salud["advertencias"] = adv
     previo = cargar("gerente.json", {})
-    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, formatos=formatos, horas=horas,
+    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
     guardar("gerente.json", out)
     L = [f"# Números del día · {hoy.isoformat()}", "",
+         f"**Monetización:** suscriptores {monet['suscriptores'] if monet['suscriptores'] is not None else 's/d'} / 1.000 · vistas de Shorts 90 días "
+         f"{monet['vistas_shorts_90d']:,} / 10.000.000 ({monet['avance_vistas']}) · ritmo de la semana {monet['ritmo_semanal']:,} · "
+         f"semanas para 10 M al ritmo actual: {monet['semanas_a_10M'] or '-'}", "",
+         f"**Originalidad (riesgo de 'contenido inauténtico'):** índice {orig['indice']}/100 · {orig['lectura']} · "
+         + ("; ".join(orig["alertas"]) or "sin alertas"), "",
          "**ADVERTENCIAS (leer antes de decidir):** " + (" · ".join(adv) if adv else "ninguna"), "",
          f"**Canal:** mediana a las 48 h esta semana {canal['mediana_48h_semana'] or '-'} (antes {canal['mediana_48h_semana_anterior'] or '-'}, "
          f"{canal.get('cambio', 's/d')}) · {canal['videos_semana']} videos · % visto {canal['pct_visto_semana'] or '-'}", "",

@@ -696,6 +696,13 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
                 fh.write(f"\n=== SOLUCIONES (para vos) ===\n{m['soluciones']}\n")
         import shutil
         shutil.rmtree(sal, ignore_errors=True)
+        try:                                                                   # huella para el auditor de originalidad (sin IA)
+            sys.path.insert(0, str(ROOT.parent / "pipeline"))
+            import originalidad
+            gj = json.loads(ruta.read_text()) if ruta.exists() else {}
+            originalidad.registrar(m["id"], sem / m["archivo"], tipo, m["fecha"], gj.get("musica"))
+        except Exception as e:
+            print("huella no registrada:", m["id"], e, flush=True)
         m["listo"] = (sem / m["archivo"]).exists()
     V.guardar()
     (sem / "videos.json").write_text(json.dumps(manifiesto, ensure_ascii=False, indent=1))

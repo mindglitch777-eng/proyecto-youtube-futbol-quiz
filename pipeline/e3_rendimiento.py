@@ -40,14 +40,20 @@ def main():
         horas = max(1.0, (ahora - pub).total_seconds() / 3600)
         vistas = int(v["statistics"].get("viewCount", 0))
         tipo = publicados.get(v["id"]) or formato_por_titulo(v["snippet"]["title"])
-        videos.append(dict(id=v["id"], titulo=v["snippet"]["title"], tipo=tipo, vistas=vistas, horas=round(horas),
+        videos.append(dict(id=v["id"], titulo=v["snippet"]["title"], tipo=tipo, vistas=vistas, horas=round(horas), publicado=pub.date().isoformat(),
                            likes=int(v["statistics"].get("likeCount", 0) or 0), vistas_48h=round(vistas * min(1.0, (48 / horas)) ** 0.5)))
     por = {}
     for v in videos:
         if v["horas"] >= 24:                                                   # todavía no terminó su prueba
             por.setdefault(v["tipo"], []).append(v["vistas_48h"])
     resumen = {k: dict(videos=len(x), mediana_48h=round(st.median(x)), mejor=max(x)) for k, x in por.items()}
-    guardar("rendimiento.json", dict(fecha=ahora.isoformat(timespec="seconds"), videos=sorted(videos, key=lambda v: -v["vistas"]), por_formato=resumen))
+    canal = {}
+    try:                                                                       # para medir el camino a la monetización (1 unidad de cuota)
+        st_ = yt("channels", part="statistics", id=CONFIG["canal_id"])["items"][0]["statistics"]
+        canal = dict(suscriptores=int(st_.get("subscriberCount", 0)), vistas_totales=int(st_.get("viewCount", 0)), videos=int(st_.get("videoCount", 0)))
+    except Exception as e:
+        print("no pude leer el canal:", e)
+    guardar("rendimiento.json", dict(fecha=ahora.isoformat(timespec="seconds"), canal=canal, videos=sorted(videos, key=lambda v: -v["vistas"]), por_formato=resumen))
     etapa("rendimiento", "ok", videos=len(videos), vistas_totales=sum(v["vistas"] for v in videos),
           por_formato={k: f"{x['videos']} videos · mediana {x['mediana_48h']:,} · mejor {x['mejor']:,}" for k, x in resumen.items()})
 
