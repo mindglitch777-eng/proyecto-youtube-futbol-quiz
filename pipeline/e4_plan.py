@@ -84,7 +84,7 @@ def main(inicio=None, dias=7):
             usos[p["tipo"]] += 1
     peso = {k: 1.0 + (pts.get(k, 0) / max(pts.values() or [1])) for k in activas}
     OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"],
-                     "dress": ["dress"], "quiz": ["trayectoria", "tridente"], "goat": ["circulo"]}
+                     "dress": ["dress"], "quiz": ["trayectoria", "tridente", "q20fichaje", "q20costo"], "goat": ["circulo"]}
     FACTOR_OLA = {"naciente": 2.0, "subiendo": 1.8, "estable": 1.0, "bajando": 0.6, "muerta": 0.2}
     for fam, e in cargar("olas.json", {}).get("estado", {}).items():              # detector diario de olas: subirse y soltar a tiempo
         for k in OLA_A_FORMATO.get(fam, []):

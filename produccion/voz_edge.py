@@ -42,5 +42,27 @@ async def main():
     indice_p.write_text(json.dumps(indice, ensure_ascii=False, indent=1))
 
 
+async def _generar(lineas):
+    indice_p = OUT / "indice.json"
+    indice = json.loads(indice_p.read_text()) if indice_p.exists() else {}
+    for t in dict.fromkeys(lineas):
+        k = clave(t)
+        if t in indice and (OUT / indice[t]["archivo"]).exists():
+            continue
+        for intento in range(3):
+            try:
+                await edge_tts.Communicate(t, VOZ, rate=VELOCIDAD, pitch=TONO).save(str(OUT / f"{k}.mp3")); break
+            except Exception as e:
+                print("edge-tts falló", t, e, flush=True); await asyncio.sleep(3)
+        if (OUT / f"{k}.mp3").exists():
+            indice[t] = {"archivo": f"{k}.mp3", "voz": VOZ, "velocidad": VELOCIDAD, "tono": TONO}
+    indice_p.write_text(json.dumps(indice, ensure_ascii=False, indent=1))
+
+
+def generar(lineas):
+    """Genera (si faltan) las locuciones de estas frases. La usa la fábrica antes de renderizar los formatos con voz."""
+    asyncio.run(_generar(list(lineas)))
+
+
 if __name__ == "__main__":
     asyncio.run(main())

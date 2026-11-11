@@ -44,6 +44,8 @@ def voz(linea):
                             "-ac", "1", "-ar", str(M.SR), "-f", "f32le", "-"], capture_output=True, check=True).stdout
         s = np.frombuffer(x, np.float32).copy()
         return s / max(1e-6, np.abs(s).max()) * 0.95, len(s) / M.SR
+    if __import__("os").environ.get("GITHUB_ACTIONS"):
+        raise SystemExit(f"falta la locución: {linea!r}")
     d = 0.33 * len(linea.split()) + 0.3
     return np.zeros(int(d * M.SR), np.float32), d
 

@@ -21,7 +21,7 @@ from comun import CONFIG, RAIZ, cargar
 ART = timezone(timedelta(hours=-3))
 HORA_EXTRA = "22:15"
 OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"],
-                 "dress": ["dress"], "quiz": ["trayectoria", "tridente"], "goat": ["circulo"]}
+                 "dress": ["dress"], "quiz": ["trayectoria", "tridente", "q20fichaje", "q20costo"], "goat": ["circulo"]}
 
 
 def ola_caliente():

@@ -18,7 +18,7 @@ from comun import RAIZ, cargar, gemini, guardar
 ART = timezone(timedelta(hours=-3))
 NUESTRO = {  # familia del mercado -> nuestros formatos de esa familia
     "stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"], "dress": ["dress"],
-    "quiz": ["trayectoria", "tridente"], "goat": ["circulo"], "balance": ["pared"],
+    "quiz": ["trayectoria", "tridente", "q20fichaje", "q20costo"], "goat": ["circulo"], "balance": ["pared"],
 }
 CONOCIDAS = set(NUESTRO) | {"skills", "meme", "otros", "3d_ia", "transformacion", "satisfying"}
 

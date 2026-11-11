@@ -35,12 +35,14 @@ HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}  
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
            "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
-           "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M"}
+           "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
+           "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
           "plinko": "render_plinko.py", "rueda": "render_rueda.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
-          "tridente": "render_tridente.py", "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
+          "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
+          "hoyo": "render_hoyo.py", "dress": "render_dress.py", "torre": "render_torre.py"}
 TIT_DRESS = ["Pause when it fits 😂 {a} & {b} drip challenge", "Dress them up 😎 Can you stop at the right time? {a} & {b}",
              "Make {a} and {b} DRIP 🥶 Pause it!", "{a} & {b} bald edition 😂 Pause to dress them", "Stop it when it fits 🛑😂 {a} vs {b}"]
 TIT_TORRE = ["Whose country is this? 🏳️ {a}, {b} or {c} 👇", "Guess the flag before it's revealed 😳 {a}, {b} or {c}?",
@@ -528,6 +530,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
     usados_look, usados_cab, trabajos, filas, manifiesto = set(), set(), [], [], []
     pub_p = ROOT.parent / "pipeline" / "datos" / "publicados.json"                  # títulos ya usados en el canal (regla: nunca parecidos)
     previos_titulos = [x["titulo"] for x in (json.loads(pub_p.read_text()) if pub_p.exists() else []) if x.get("video_id")][-150:]
+    voces_pendientes = []
     for n, sl in enumerate(slots, 1):
         dia = date.fromisoformat(sl["fecha"]); tipo = sl["tipo"]; hora = sl["hora"]
         et = f"{DIAS[dia.weekday()]}{dia.day:02d}"
@@ -591,6 +594,14 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
                     "circulo": "Pause when the ball touches YOUR GOAT 🐐"}[tipo]
             desc = f"{meta}\nComment your pick 👇 Follow for part 2 🔥\n" + " ".join(tag(x) for x in ns4) + " #football #soccer #challenge #shorts"
             fijado = ""; fotos = []; nombres = ns4
+        elif tipo in ("q20fichaje", "q20costo", "q20balon"):                     # formatos de 20 s con voz (anti-repetición propia)
+            import q20_guiones as Q20
+            g, titulo, fijado, nombres = Q20.TIPOS[tipo](gid, rng, V)
+            titulo += " " + " ".join(tag(x) for x in nombres[:2])
+            desc = (f"{g['voz_lineas'][0]}\nComment your answer 👇 Follow for part 2 🔥\n"
+                    + " ".join(tag(x) for x in nombres[:4]) + " #football #soccer #quiz #shorts")
+            fotos = []
+            voces_pendientes += g["voz_lineas"]
         elif tipo == "fitall":
             g = guion_fitall(gid, rng, V, sl["fecha"])
             n = g["nombre"]
@@ -658,6 +669,12 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3):
                                **({"variante": g["arranque"]} if g.get("arranque") else {})))
         trabajos.append((tipo, ruta))
         filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
+    if voces_pendientes:                                                        # locución de los formatos de 20 s (edge-tts)
+        try:
+            import voz_edge
+            voz_edge.generar(voces_pendientes)
+        except Exception as e:
+            print("no pude generar las voces:", e, flush=True)
     errores = []
     with ProcessPoolExecutor(procesos) as ex:
         for ruta, rc, err in ex.map(render, trabajos):

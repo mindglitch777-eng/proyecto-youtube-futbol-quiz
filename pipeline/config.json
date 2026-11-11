@@ -85,6 +85,21 @@
    "nombre": "FIT ALL",
    "min": 0,
    "max": 7
+  },
+  "q20fichaje": {
+   "nombre": "HIDDEN TRANSFER",
+   "min": 0,
+   "max": 7
+  },
+  "q20costo": {
+   "nombre": "WHO COST MORE",
+   "min": 0,
+   "max": 7
+  },
+  "q20balon": {
+   "nombre": "BALLON D'OR PICKS",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -184,6 +199,15 @@
    "listo": true
   },
   "fitall": {
+   "listo": true
+  },
+  "q20fichaje": {
+   "listo": true
+  },
+  "q20costo": {
+   "listo": true
+  },
+  "q20balon": {
    "listo": true
   }
  }
