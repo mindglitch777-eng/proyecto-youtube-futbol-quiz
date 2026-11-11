@@ -91,14 +91,54 @@ def rayos(im, t, cx=W / 2, cy=H * 0.45, color=(255, 255, 255), alfa=26, n=16):
     im.alpha_composite(capa)
 
 
+@lru_cache(maxsize=4)
+def balon_dorado(alto=760):
+    """Trofeo propio (sin fotos de stock): pelota dorada con brillo metálico y costuras, sobre una base de mármol negro."""
+    r = int(alto * 0.36); w = int(alto * 0.8); im = Image.new("RGBA", (w, alto), (0, 0, 0, 0))
+    yy, xx = np.mgrid[-r:r, -r:r].astype(np.float32) / r
+    z2 = 1 - xx ** 2 - yy ** 2; m = z2 > 0; z = np.sqrt(np.clip(z2, 0, 1))
+    luz = np.clip(0.25 + 0.75 * (-0.45 * xx - 0.55 * yy + 0.7 * z), 0, 1)
+    esp = np.clip((-0.4 * xx - 0.5 * yy + 0.77 * z), 0, 1) ** 28
+    oro = np.stack([150 + 105 * luz, 95 + 125 * luz, 15 + 70 * luz], -1) + 255 * esp[..., None]
+    a = np.dstack([np.clip(oro, 0, 255), m * 255]).astype(np.uint8)
+    bola = Image.fromarray(a, "RGBA"); d = ImageDraw.Draw(bola)
+    cx0, cy0 = r * 1.04, r * 1.06                                               # pelota clásica: pentágono central + costuras
+    pent = [(cx0 + r * 0.24 * math.cos(j * 2 * math.pi / 5 - math.pi / 2), cy0 + r * 0.24 * math.sin(j * 2 * math.pi / 5 - math.pi / 2)) for j in range(5)]
+    d.polygon(pent, fill=(150, 100, 15, 120))
+    for j, (px, py) in enumerate(pent):
+        a = j * 2 * math.pi / 5 - math.pi / 2
+        qx, qy = cx0 + r * 0.52 * math.cos(a), cy0 + r * 0.52 * math.sin(a)
+        d.line([(px, py), (qx, qy)], fill=(130, 85, 10, 120), width=max(2, r // 60))
+        for s_ in (-1, 1):
+            b = a + s_ * 0.55
+            d.line([(qx, qy), (cx0 + r * 0.8 * math.cos(b), cy0 + r * 0.8 * math.sin(b))], fill=(130, 85, 10, 110), width=max(2, r // 60))
+    bola.putalpha(Image.fromarray((m * 255).astype(np.uint8)).filter(ImageFilter.GaussianBlur(1.2)))
+    db = ImageDraw.Draw(im)
+    by = 2 * r - 10
+    db.polygon([(w / 2 - r * 0.35, by), (w / 2 + r * 0.35, by), (w / 2 + r * 0.6, alto * 0.82), (w / 2 - r * 0.6, alto * 0.82)], fill=(30, 28, 34))
+    db.rounded_rectangle((w / 2 - r * 0.85, alto * 0.8, w / 2 + r * 0.85, alto - 4), 18, fill=(18, 16, 22), outline=(200, 160, 50), width=6)
+    db.rectangle((w / 2 - r * 0.5, alto * 0.86, w / 2 + r * 0.5, alto * 0.93), fill=(215, 175, 60))
+    im.alpha_composite(bola, (int(w / 2 - r), 0))
+    return im
+
+
 def silueta(im_rgba, color=(8, 8, 14)):
     a = np.asarray(im_rgba).copy(); a[..., :3] = color
     return Image.fromarray(a)
 
 
-@lru_cache(maxsize=64)
+_NEON = {}
+
+
 def neon(im_rgba, color, grosor=10, brillo=1.0):
-    """Contorno de neón alrededor de un recorte."""
+    """Contorno de neón alrededor de un recorte (con memoria por imagen: se dibuja en cada cuadro)."""
+    k = (id(im_rgba), color, grosor, brillo)
+    if k not in _NEON:
+        _NEON[k] = _neon(im_rgba, color, grosor, brillo)
+    return _NEON[k]
+
+
+def _neon(im_rgba, color, grosor=10, brillo=1.0):
     al = im_rgba.split()[3]
     borde = al.filter(ImageFilter.MaxFilter(grosor * 2 + 1))
     glow = Image.new("RGBA", im_rgba.size, color + (0,)); glow.putalpha(borde.point(lambda v: int(v * brillo)))
@@ -143,12 +183,19 @@ def subtitulos(im, palabras, t, y=1300, caja=True, ancho=980, cx=W / 2):
     if not act or t > palabras[-1][2] + 0.6:
         return
     i = len(act) - 1
-    ini = (i // 4) * 4; grupo = palabras[ini:ini + 4]                          # de a 4 palabras (se lee de un vistazo)
+    grupos, cur = [], []                                                      # de a 4 palabras como máximo, cortando en . ! ?
+    for k, p in enumerate(palabras):
+        cur.append(k)
+        if len(cur) == 4 or p[0][-1] in ".!?" or (k + 1 < len(palabras) and palabras[k + 1][1] - p[2] > 0.25):
+            grupos.append(cur); cur = []
+    if cur:
+        grupos.append(cur)
+    gi = next(gr for gr in grupos if i in gr); ini = gi[0]; grupo = [palabras[k] for k in gi]
     d = ImageDraw.Draw(im); tam = 84
     txts = [g[0].upper() for g in grupo]
     while tam > 46 and sum(P.fuente(tam).getlength(x + " ") for x in txts) > ancho:
         tam -= 4
-    tot = sum(P.fuente(tam).getlength(x + " ") for x in txts); x = cx - tot / 2
+    tot = sum(P.fuente(tam).getlength(x + " ") for x in txts); x = max(50, cx - tot / 2)
     if caja:                                                                   # franja oscura detrás: siempre legible
         d.rounded_rectangle((x - 30, y - tam * 0.75, x + tot + 10, y + tam * 0.75), 28, fill=(10, 10, 16, 200))
     for k, (p, a, b) in enumerate(grupo):
@@ -383,9 +430,12 @@ def fichaje(g):
             rayos(im, t * 3, color=AMA, alfa=40)
             pegar(im, cuerpo, W / 2, 1000, rebote(e, 7, 16, 0.2))
             d = ImageDraw.Draw(im)
-            P.texto(d, (W / 2, 330), g["nombre"].upper() + "!", int(170 * rebote(e, 8, 18, 0.3)), AMA, 16)
+            tn = 160
+            while P.fuente(tn).getlength(g["nombre"].upper() + "!") > 860:
+                tn -= 6
+            P.texto(d, (W / 2, 340), g["nombre"].upper() + "!", int(tn * rebote(e, 8, 18, 0.3)), AMA, 16)
             if e > 0.9:
-                cartel(d, (W / 2, 1450), "WHAT SECOND DID YOU GET IT?", 60, (15, 15, 22), caja=AMA + (255,))
+                cartel(d, (W / 2, 1400), "WHAT SECOND DID YOU GET IT?", 58, (15, 15, 22), caja=AMA + (255,))
             destello(im, e)
         return im, shake
 
@@ -439,7 +489,7 @@ def costo(g):
                 tl(d, (80, cy + 5), j["txt"], int(120 * rebote(e - revela, 8, 18, 0.3)), VER if gana else ROJ, 10)
             else:
                 tl(d, (80, cy + 5), "€ ???", 120, AMA, 10)
-            tl(d, (80, cy + 150), j["detalle"], 38, (205, 205, 215), 5)
+            tl(d, (80, cy + 150), j["detalle"], 31, (205, 205, 215), 5)
         d = ImageDraw.Draw(im)
         d.ellipse((W - 190, 990 - 80, W - 30, 990 + 80), fill=ROJ, outline=BLA, width=7)
         if cuenta:
@@ -454,7 +504,7 @@ def costo(g):
             billetera(im, t)
             d = ImageDraw.Draw(im)
             f = R[2]                                                          # cuadro 0: las superestrellas de la final
-            pegar(im, caras[f[0]["ref"]], 290, 1250, 0.8); pegar(im, caras[f[1]["ref"]], W - 290, 1250, 0.8)
+            pegar(im, caras[f[0]["ref"]], 270, 1180, 1.05); pegar(im, caras[f[1]["ref"]], W - 270, 1180, 1.05)
             d = ImageDraw.Draw(im)
             cartel(d, (W / 2, 420), "WHO COST MORE?", int(120 * rebote(t, 6, 16, 0.2)), AMA)
             cartel(d, (W / 2, 580), "3 ROUNDS · NO GOOGLE", 64, BLA)
@@ -501,7 +551,7 @@ def balon(g):
     pies = [(recorte(r, 820), n) for r, n in g["pies"]]
     acad = [(escudo(c, 380) if c != "x" else None, n) for c, n in g["academias"]]
     socios = [(recorte(r, 620), n) for r, n in g["socios"]]
-    trofeo = recorte(g.get("trofeo", "extras/trofeo_bo_1"), 760) if (REC / f"{g.get('trofeo', 'extras/trofeo_bo_1')}.png").exists() else None
+    trofeo = balon_dorado(760)
     mx = V.mix
     mx.add(0.0, arranque_consola(), 1.0); mx.add(0.05, M.silbato(), 0.8)
     for s in range(3):
