@@ -474,13 +474,17 @@ def fichaje(g):
             u = min(1.0, e / 1.25); u = 1 - (1 - u) ** 3
             val = int(g["precio"] * u)
             col = VER if e >= 1.25 else BLA
-            tam = int(150 * rebote(e - 1.25, 8, 18, 0.25)) if e >= 1.25 else 150
-            P.texto(ImageDraw.Draw(im), (W / 2, 800), f"€{val:,}".replace(",", "."), tam, col, 14)
+            txt_ = f"€{val:,}".replace(",", ".") if g["precio"] else "FREE"
+            base_t = 150
+            while base_t > 60 and P.fuente(base_t).getlength(f"€{g['precio']:,}".replace(",", ".")) > 820:   # que nunca toque los bordes
+                base_t -= 6
+            tam = int(base_t * rebote(e - 1.25, 8, 18, 0.25)) if e >= 1.25 else base_t
+            P.texto(ImageDraw.Draw(im), (W / 2, 800), txt_, tam, col, 14)
             if e >= 1.9:
                 cartel(ImageDraw.Draw(im), (W / 2, 1010), f"IN {g['anio']}", int(90 * rebote(e - 1.9)), (15, 15, 22), caja=AMA + (255,))
         elif t < I["revela"]:                                                 # PISTA 3: silueta con neón
             e = t - I["silueta"]; u = e / (I["revela"] - I["silueta"])
-            cartel(d, (W / 2, 300), "CLUE 3 · HIS CELEBRATION", 64, AMA)
+            cartel(d, (W / 2, 300), "CLUE 3 · HIS SILHOUETTE", 64, AMA)
             parpadeo = 0.55 + 0.45 * abs(math.sin(e * (6 + 10 * u)))
             pegar(im, neon(cuerpo, (60, 220, 255), 9, round(parpadeo, 1)), W / 2, 1000, 1 + 0.05 * u)
             pegar(im, sil, W / 2, 1000, 1 + 0.05 * u)

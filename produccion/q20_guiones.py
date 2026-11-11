@@ -151,7 +151,7 @@ def costo(gid, rng, V):
     w = gana(R[2])
     fijado = f"Answer: {w['nombre']} ({w['txt']}, {w['detalle']}) 💰 Did you get all 3? 👇"
     return dict(id=gid, formato="costo", rondas=[[{k: v for k, v in j.items() if k not in ("clave", "id")} for j in r] for r in R],
-                voz_lineas=lineas), titulo, fijado, [j["nombre"] for r in R for j in r]
+                voz_lineas=lineas), titulo, fijado, [f0["nombre"], f1["nombre"]] + [j["nombre"] for r in R[:2] for j in r]   # hashtags = los del título
 
 
 # ------------------------------------------------------------------ 3 · BUILD YOUR BALLON D'OR PLAYER
