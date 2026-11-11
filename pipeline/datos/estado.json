@@ -65,28 +65,29 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-11T17:58:18+00:00",
+   "inicio": "2026-11-11T20:12:35+00:00",
    "resumen": {
-    "videos": 63,
-    "vistas_totales": 594425,
+    "videos": 65,
+    "vistas_totales": 597649,
     "por_formato": {
-     "fitall": "2 videos · mediana 2,778 · mejor 3,776",
-     "stop": "28 videos · mediana 2,861 · mejor 15,360",
-     "rueda": "9 videos · mediana 14,747 · mejor 23,315",
-     "cabezas": "2 videos · mediana 19,840 · mejor 22,034",
-     "tridente": "1 videos · mediana 1,654 · mejor 1,654",
-     "pared": "2 videos · mediana 1,268 · mejor 1,721",
-     "balon": "1 videos · mediana 12,124 · mejor 12,124",
-     "dress": "1 videos · mediana 12,846 · mejor 12,846",
-     "cabeza": "1 videos · mediana 719 · mejor 719",
-     "find": "3 videos · mediana 860 · mejor 1,518",
-     "plinko": "1 videos · mediana 624 · mejor 624",
-     "ring": "1 videos · mediana 779 · mejor 779",
-     "otros": "2 videos · mediana 617 · mejor 812",
-     "carrera": "2 videos · mediana 576 · mejor 697"
+     "siuu": "1 videos · mediana 1,220 · mejor 1,220",
+     "fitall": "2 videos · mediana 3,098 · mejor 4,395",
+     "stop": "28 videos · mediana 2,846 · mejor 15,239",
+     "rueda": "9 videos · mediana 14,452 · mejor 23,326",
+     "cabezas": "2 videos · mediana 19,772 · mejor 22,034",
+     "tridente": "1 videos · mediana 1,651 · mejor 1,651",
+     "pared": "2 videos · mediana 1,258 · mejor 1,707",
+     "balon": "1 videos · mediana 11,990 · mejor 11,990",
+     "dress": "1 videos · mediana 12,758 · mejor 12,758",
+     "cabeza": "1 videos · mediana 716 · mejor 716",
+     "find": "3 videos · mediana 856 · mejor 1,513",
+     "plinko": "1 videos · mediana 622 · mejor 622",
+     "ring": "1 videos · mediana 777 · mejor 777",
+     "otros": "2 videos · mediana 615 · mejor 809",
+     "carrera": "2 videos · mediana 574 · mejor 695"
     }
    },
-   "fin": "2026-11-11T17:58:19+00:00"
+   "fin": "2026-11-11T20:12:36+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -133,40 +134,42 @@
   "publicacion": {
    "estado": "ok",
    "resumen": {
-    "subidos": 1,
+    "subidos": 0,
     "en_cola": 0,
     "freno": null,
     "errores": [],
     "total_publicados": 96
    },
-   "inicio": "2026-11-11T17:58:12+00:00",
-   "fin": "2026-11-11T17:58:14+00:00"
+   "inicio": "2026-11-11T20:12:33+00:00",
+   "fin": "2026-11-11T20:12:33+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-11T17:58:27+00:00",
+   "fin": "2026-11-11T20:12:41+00:00",
    "resumen": {
-    "videos": 46,
+    "videos": 53,
     "por_formato": {
-     "rueda": "6 videos · 162.3% visto · 2.54 subs/1000",
+     "rueda": "8 videos · 165.8% visto · 2.42 subs/1000",
      "stop": "14 videos · 179.8% visto · 1.38 subs/1000",
-     "cabezas": "1 videos · 135.1% visto · 0.92 subs/1000",
-     "stop/estrella": "6 videos · 187.0% visto · 1.11 subs/1000",
+     "cabezas": "2 videos · 163.3% visto · 0.89 subs/1000",
+     "stop/estrella": "6 videos · 186.2% visto · 1.12 subs/1000",
      "dress": "1 videos · 108.7% visto · 1.45 subs/1000",
-     "stop/grilla": "5 videos · 192.0% visto · 0.66 subs/1000",
-     "balon": "1 videos · 153.0% visto · 1.55 subs/1000",
+     "stop/grilla": "7 videos · 171.3% visto · 0.66 subs/1000",
+     "balon": "1 videos · 151.5% visto · 1.38 subs/1000",
      "find": "3 videos · 112.0% visto · 0.0 subs/1000",
      "otros": "2 videos · 70.1% visto · 1.04 subs/1000",
+     "pared": "2 videos · 134.7% visto · 0.41 subs/1000",
      "ring": "1 videos · 75.0% visto · 1.45 subs/1000",
      "carrera": "2 videos · 77.1% visto · 0.26 subs/1000",
      "cabeza": "1 videos · 160.6% visto · 1.2 subs/1000",
      "plinko": "1 videos · 74.3% visto · 0.61 subs/1000",
-     "pared": "2 videos · 134.0% visto · 0.42 subs/1000"
+     "tridente": "1 videos · 133.0% visto · 0.0 subs/1000",
+     "fitall": "1 videos · 170.7% visto · 2.96 subs/1000"
     }
    }
   }
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-11T17:58:27+00:00"
+ "actualizado": "2026-11-11T20:12:41+00:00"
 }
