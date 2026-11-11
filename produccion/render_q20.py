@@ -72,6 +72,19 @@ def escudo(nombre, lado):
     return im.resize((max(1, int(im.width * k)), max(1, int(im.height * k))), Image.LANCZOS)
 
 
+@lru_cache(maxsize=32)
+def escudo_disco(nombre, lado):
+    """Escudo sobre un disco blanco con brillo: se lee sobre cualquier fondo (los escudos oscuros se perdían)."""
+    pad = 40; d_ = lado + 2 * pad
+    im = Image.new("RGBA", (d_, d_), (0, 0, 0, 0))
+    glow = Image.new("RGBA", (d_, d_), (0, 0, 0, 0)); ImageDraw.Draw(glow).ellipse((10, 10, d_ - 10, d_ - 10), fill=(255, 230, 120, 200))
+    im.alpha_composite(glow.filter(ImageFilter.GaussianBlur(14)))
+    ImageDraw.Draw(im).ellipse((pad - 6, pad - 6, d_ - pad + 6, d_ - pad + 6), fill=(255, 255, 255, 255), outline=(255, 210, 0, 255), width=8)
+    es = escudo(nombre, int(lado * 0.72))
+    im.alpha_composite(es, ((d_ - es.width) // 2, (d_ - es.height) // 2))
+    return im
+
+
 @lru_cache(maxsize=8)
 def fondo(c1, c2):
     yy = np.linspace(0, 1, H)[:, None, None]
@@ -397,7 +410,7 @@ def fichaje(g):
     base = fondo((150, 0, 30), (20, 0, 90))
     cuerpo = recorte(g["cuerpo"], 860)
     sil = silueta(cuerpo); neo = neon(cuerpo, (60, 220, 255), 9)
-    escs = [escudo(c, 330) for c in g["clubes"]]
+    escs = [escudo_disco(c, 330) for c in g["clubes"]]
     estrellas = [recorte(r, 250) for r in g.get("no_son", ["torsos/cristiano_ronaldo_0", "torsos/lionel_messi_0", "torsos/kylian_mbapp_0"])]
     T_FIN = I["revela"]                                                       # la barra se vacía justo antes de la respuesta
     mx = V.mix
