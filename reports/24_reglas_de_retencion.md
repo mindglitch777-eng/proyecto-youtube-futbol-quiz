@@ -89,3 +89,8 @@ Hoy: canal 40,5 %; mejor video 50,7 % (runner); peor 12,2 % (carrera).
     Código: `pipeline/refuerzo_ola.py` (paso "REGLA 10" de la fábrica diaria, Release `semana-ola-<fecha>`), videos con
     `"extra": true` (`e6_bajar.py` no los bloquea, `fabrica_dia.py` no los cuenta como día ocupado). Primer caso: FIT ALL
     (ola FIT, 18 videos +1 M en 7 días): 9 extras del lunes 09 al viernes 13 + todos los días a las 23:00 desde el sábado 14.
+11. **Gerente IA (11/11, decisión del CEO).** Todos los días a las 15:41 (Argentina) corre el Gerente IA (tarea programada
+    "Gerente IA Futbol Edition"): lee la bitácora (`reports/gerente/bitacora.md`), corre `pipeline/gerente.py` (números del día),
+    revisa la salud del sistema, analiza qué funciona y qué no, ejecuta lo que está dentro de su autoridad (pruebas, horarios,
+    extras, arreglos) y escala al CEO solo lo grande (formatos fijos, cantidad por día, credenciales, borrar videos, plata).
+    Deja el parte en la página del tablero ("Parte del Gerente IA") y manda un resumen de 6 líneas al celular del CEO.
