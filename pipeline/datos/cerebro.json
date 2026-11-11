@@ -1,106 +1,106 @@
 {
- "fecha": "2026-11-11T17:12-03:00",
- "videos_medidos": 49,
+ "fecha": "2026-11-11T20:06-03:00",
+ "videos_medidos": 50,
  "formatos": {
   "rueda": {
-   "vistas_48h_esperadas": 9184,
-   "mediana_48h": 14452,
+   "vistas_48h_esperadas": 9043,
+   "mediana_48h": 14124,
    "videos": 7,
    "peso_datos": 5.3,
-   "prob_mejor": 0.56,
+   "prob_mejor": 0.57,
    "confianza": "media"
   },
   "cabezas": {
-   "vistas_48h_esperadas": 5907,
-   "mediana_48h": 17510,
+   "vistas_48h_esperadas": 5788,
+   "mediana_48h": 17341,
    "videos": 1,
    "peso_datos": 0.7,
    "prob_mejor": 0.16,
    "confianza": "baja"
   },
   "balon": {
-   "vistas_48h_esperadas": 5534,
-   "mediana_48h": 11990,
+   "vistas_48h_esperadas": 5417,
+   "mediana_48h": 11824,
    "videos": 1,
    "peso_datos": 0.8,
    "prob_mejor": 0.13,
    "confianza": "baja"
   },
   "dress": {
-   "vistas_48h_esperadas": 5424,
-   "mediana_48h": 12758,
+   "vistas_48h_esperadas": 5315,
+   "mediana_48h": 12646,
    "videos": 1,
    "peso_datos": 0.7,
    "prob_mejor": 0.12,
    "confianza": "baja"
   },
   "stop": {
-   "vistas_48h_esperadas": 4043,
-   "mediana_48h": 3182,
-   "videos": 26,
-   "peso_datos": 18.3,
+   "vistas_48h_esperadas": 3895,
+   "mediana_48h": 2948,
+   "videos": 27,
+   "peso_datos": 19.2,
    "prob_mejor": 0.0,
    "confianza": "alta"
   },
   "tridente": {
-   "vistas_48h_esperadas": 2935,
-   "mediana_48h": 1651,
+   "vistas_48h_esperadas": 2864,
+   "mediana_48h": 1610,
    "videos": 1,
    "peso_datos": 0.9,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "ring": {
-   "vistas_48h_esperadas": 2853,
-   "mediana_48h": 777,
+   "vistas_48h_esperadas": 2795,
+   "mediana_48h": 773,
    "videos": 1,
    "peso_datos": 0.5,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "cabeza": {
-   "vistas_48h_esperadas": 2651,
-   "mediana_48h": 716,
+   "vistas_48h_esperadas": 2599,
+   "mediana_48h": 712,
    "videos": 1,
    "peso_datos": 0.6,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "plinko": {
-   "vistas_48h_esperadas": 2646,
-   "mediana_48h": 622,
+   "vistas_48h_esperadas": 2593,
+   "mediana_48h": 619,
    "videos": 1,
    "peso_datos": 0.5,
-   "prob_mejor": 0.01,
+   "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "pared": {
-   "vistas_48h_esperadas": 2307,
-   "mediana_48h": 1707,
+   "vistas_48h_esperadas": 2267,
+   "mediana_48h": 1692,
    "videos": 2,
    "peso_datos": 1.6,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "otros": {
-   "vistas_48h_esperadas": 2184,
-   "mediana_48h": 809,
+   "vistas_48h_esperadas": 2145,
+   "mediana_48h": 806,
    "videos": 2,
    "peso_datos": 0.9,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "carrera": {
-   "vistas_48h_esperadas": 2089,
-   "mediana_48h": 695,
+   "vistas_48h_esperadas": 2052,
+   "mediana_48h": 692,
    "videos": 2,
    "peso_datos": 0.9,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "find": {
-   "vistas_48h_esperadas": 2005,
-   "mediana_48h": 856,
+   "vistas_48h_esperadas": 1974,
+   "mediana_48h": 852,
    "videos": 3,
    "peso_datos": 1.6,
    "prob_mejor": 0.0,
@@ -113,7 +113,7 @@
    "videos": 1
   },
   "09:00": {
-   "efecto": "-14%",
+   "efecto": "-13%",
    "videos": 6
   },
   "12:00": {
@@ -121,7 +121,7 @@
    "videos": 1
   },
   "13:00": {
-   "efecto": "+17%",
+   "efecto": "+19%",
    "videos": 5
   },
   "14:00": {
@@ -133,23 +133,23 @@
    "videos": 2
   },
   "17:00": {
-   "efecto": "-16%",
+   "efecto": "-15%",
    "videos": 6
   },
   "20:00": {
-   "efecto": "-21%",
-   "videos": 1
+   "efecto": "-26%",
+   "videos": 2
   },
   "21:00": {
-   "efecto": "+25%",
+   "efecto": "+27%",
    "videos": 6
   },
   "22:00": {
-   "efecto": "+13%",
+   "efecto": "+14%",
    "videos": 1
   },
   "23:00": {
-   "efecto": "+10%",
+   "efecto": "+11%",
    "videos": 4
   }
  },
@@ -161,17 +161,17 @@
    "fitall": "11%",
    "cabezas": "10%",
    "pared": "4%",
+   "tridente": "2%",
+   "balon": "2%",
    "siuu": "2%",
    "dress": "2%",
-   "balon": "2%",
    "penal": "2%",
-   "tridente": "2%",
+   "plinko": "1%",
    "circulo": "1%",
    "q20fichaje": "1%",
    "torre": "1%",
-   "plinko": "1%",
-   "trayectoria": "1%",
-   "find": "1%"
+   "find": "1%",
+   "trayectoria": "1%"
   }
  },
  "experimentos": {
@@ -181,14 +181,14 @@
     "pregunta": "¿El STOP rinde más arrancando con la grilla de 4 o con zoom a la estrella?",
     "medicion": {
      "\"grilla\"": {
-      "videos": 6,
-      "vistas_48h_esperadas": 3522,
-      "p_mejor": 0.61
+      "videos": 7,
+      "vistas_48h_esperadas": 3266,
+      "p_mejor": 0.56
      },
      "\"estrella\"": {
       "videos": 6,
-      "vistas_48h_esperadas": 3149,
-      "p_mejor": 0.39
+      "vistas_48h_esperadas": 3090,
+      "p_mejor": 0.44
      }
     }
    },
@@ -198,12 +198,12 @@
     "medicion": {
      "false": {
       "videos": 0,
-      "vistas_48h_esperadas": 4043,
+      "vistas_48h_esperadas": 3895,
       "p_mejor": 0.5
      },
      "true": {
       "videos": 0,
-      "vistas_48h_esperadas": 4043,
+      "vistas_48h_esperadas": 3895,
       "p_mejor": 0.5
      }
     }
@@ -215,6 +215,6 @@
   "inicio": "2026-11-11",
   "mediana_48h_inicial": 4423,
   "objetivo": "+25 % en 3 semanas con originalidad ≥75",
-  "mediana_48h_ultimos_7_dias": 3674
+  "mediana_48h_ultimos_7_dias": 3629
  }
 }
