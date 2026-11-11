@@ -18,7 +18,7 @@ ART = timezone(timedelta(hours=-3))
 
 
 def ocupado(fecha):
-    if any(p["fecha"] == fecha and p.get("video_id") and not p.get("reemplazado") and not __import__("re").match(r"o\d{4}_", p["id"]) for p in cargar("publicados.json", [])):
+    if any(p["fecha"] == fecha and p.get("video_id") and not p.get("reemplazado") and not __import__("re").match(r"o\d{4,8}_", p["id"]) for p in cargar("publicados.json", [])):
         return True
     for vj in (RAIZ / "produccion").glob("semana_*/videos.json"):
         if any(m["fecha"] == fecha and not m.get("extra") for m in json.loads(vj.read_text())):

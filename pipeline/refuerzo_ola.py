@@ -47,6 +47,9 @@ def tiene(fecha, tipo, todos):
 
 
 def main():
+    import os
+    if os.environ.get("EXTRA_SLOTS", "").strip():                              # pedido a mano: videos extra ya mismo (regla 3)
+        slots = json.loads(os.environ["EXTRA_SLOTS"]); return fabricar_extra(slots, "pedido a mano")
     tipo, por = ola_caliente()
     if not tipo:
         print("sin ola caliente", file=sys.stderr); print("nada"); return
@@ -61,16 +64,21 @@ def main():
     slots = [dict(fecha=d.isoformat(), hora=HORA_EXTRA, tipo=tipo) for d in dias if not tiene(d.isoformat(), tipo, todos)]
     if not slots:
         print(f"{tipo} ({por}) ya está hoy y mañana", file=sys.stderr); print("nada"); return
+    return fabricar_extra(slots, f"{tipo} ({por})")
+
+
+def fabricar_extra(slots, por):
     sys.path.insert(0, str(RAIZ / "produccion"))
     import fabrica
-    sem = RAIZ / "produccion" / f"semana_ola_{hoy.isoformat()}"
-    man, errores = fabrica.fabricar(slots, sem, random.Random(f"ola-{hoy}"), prefijo=f"o{hoy.strftime('%m%d')}", procesos=2)
+    ahora = datetime.now(ART); hoy = ahora.date()
+    sem = RAIZ / "produccion" / f"semana_ola_{hoy.isoformat()}_{ahora.strftime('%H%M')}"
+    man, errores = fabrica.fabricar(slots, sem, random.Random(f"ola-{ahora.isoformat()}"), prefijo=f"o{ahora.strftime('%m%d%H%M')}", procesos=3)
     for m in man:
         m["extra"] = True
     (sem / "videos.json").write_text(json.dumps([m for m in man if (sem / m["archivo"]).exists()], ensure_ascii=False, indent=1))
     for f in sem.glob("*_solo_efectos.mp4"):
         f.unlink()
-    print(f"refuerzo de ola: {tipo} ({por}) → " + ", ".join(f"{s['fecha']} {s['hora']}" for s in slots), file=sys.stderr)
+    print(f"extra: {por} → " + ", ".join(f"{s['fecha']} {s['hora']} {s['tipo']}" for s in slots), file=sys.stderr)
     print(sem.name)
 
 
