@@ -415,6 +415,8 @@ function pintar() {
   $("ger-parte").innerHTML = (p.titular ? `<div style="font-size:18px;font-weight:700;margin-bottom:6px">${p.titular.replace(/</g, "&lt;")}</div>` : "") +
     lst("Qué funciona", p.funciona) + lst("Qué no funciona", p.no_funciona) + lst("Qué decidí e hice", p.hice) +
     lst("Para vos (CEO)", p.para_el_ceo && p.para_el_ceo.length ? p.para_el_ceo : ["Nada: todo dentro de lo que puedo resolver yo."]) +
+    (G.monetizacion ? `<div style="margin:6px 0"><b>Camino a monetizar:</b> ${fmt(G.monetizacion.vistas_shorts_90d)} / 10 M vistas de Shorts en 90 días (${G.monetizacion.avance_vistas}) · suscriptores ${G.monetizacion.suscriptores ?? "—"} / 1.000 · al ritmo actual: ${G.monetizacion.semanas_a_10M ?? "—"} semanas</div>` : "") +
+    (G.originalidad ? `<div style="margin:6px 0"><b>Originalidad:</b> ${G.originalidad.indice}/100 · ${G.originalidad.lectura}${G.originalidad.alertas.length ? " · " + G.originalidad.alertas.join(" ") : ""}</div>` : "") +
     (G.canal ? `<div class="sub">Canal: mediana a las 48 h ${fmt(G.canal.mediana_48h_semana)} (semana anterior ${fmt(G.canal.mediana_48h_semana_anterior)}, ${G.canal.cambio || "s/d"})</div>` : "");
   $("ger-s").textContent = p.fecha ? `parte del ${p.fecha}` : (G.fecha ? `números del ${G.fecha} · parte pendiente` : "sin datos");
   $("ger-form").innerHTML = "";
