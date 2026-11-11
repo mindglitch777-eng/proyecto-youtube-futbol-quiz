@@ -19,3 +19,11 @@ Formato de cada entrada:
 - **Revisar el 2026-11-14:** FIT ALL con ≥4 videos medidos (si < 0,5x del STOP, la poda lo saca). Los 3 de 20 s a las 48 h: ¿superan 3.000?
   STOP: si sigue < 0,7x del canal una semana más, proponer al CEO bajar de 2 a 1 por día y darle el lugar a WHEEL/HEAD FIT.
 - **Para el CEO:** nada.
+
+## 2026-11-11 (tarde) · primera propuesta con prototipo
+- **Vi:** la fábrica de prototipos funciona de punta a punta (Issue #3, hoja en reports/propuestas/p001/hoja.jpg).
+  En las muestras se ven 2 defectos visuales de formatos viejos: DRESS UP tiene un rectángulo negro sobre el pecho del
+  jugador de la izquierda, y BALLON D'OR 100 % deja un hueco transparente en las manos del jugador antes de que llegue el trofeo.
+- **Decidí e hice:** nada en la grilla (la propuesta espera al CEO).
+- **Revisar el 2026-11-12:** pedirle al Ingeniero (jueves) que arregle esos 2 defectos antes de que DRESS o BALLON D'OR vuelvan a salir.
+- **Para el CEO:** Issue #3 (bajar el STOP a 1 por día) con su prueba visual.

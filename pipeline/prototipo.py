@@ -83,7 +83,8 @@ def procesar(p):
                 mp4 = sem / m["archivo"]
                 if mp4.exists():
                     ims, dur = cuadros(mp4)
-                    filas.append((f"{m['formato']} · \"{m['titulo'][:60]}\"", ims, dur)); videos.append(str(mp4.relative_to(RAIZ)))
+                    tit = "".join(ch for ch in m["titulo"] if ord(ch) < 0x2190)[:60]          # sin emojis (la fuente de la hoja no los tiene)
+                    filas.append((f"{m['formato']} · \"{tit}\"", ims, dur)); videos.append(str(mp4.relative_to(RAIZ)))
     finally:
         for n, b in resguardo.items():                                         # el prototipo no gasta la memoria anti-repetición
             (DATOS / n).write_bytes(b)
