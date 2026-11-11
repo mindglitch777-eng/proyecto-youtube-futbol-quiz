@@ -224,6 +224,8 @@ def camara(im, t, cortes, shake=0.0):
     cortes = sorted(cortes)
     k = sum(1 for c in cortes if c <= t)
     z = 1.12 if k % 2 else 1.0
+    if t < 0.4:                                                                # gancho: entra con zoom que se abre
+        z = 1.0 + 0.25 * (1 - t / 0.4) ** 2
     if cortes and k:
         e = t - cortes[k - 1]
         if e < 0.12:
@@ -275,6 +277,41 @@ def suspenso(d=6.0):
     t = np.arange(int(d * M.SR)) / M.SR
     f = 110 * 2 ** (t / d * 1.5)
     return np.sin(2 * np.pi * np.cumsum(f) / M.SR) * (0.05 + 0.18 * t / d) + np.sin(2 * np.pi * np.cumsum(f * 1.5) / M.SR) * 0.06 * t / d
+
+
+def zumbido(d, f=55.0, pulso=2.0):
+    """Zumbido grave de tensión: dos senos (fundamental + quinta) con un pulso lento de volumen y un sub que respira."""
+    t = np.arange(int(d * M.SR)) / M.SR
+    env = np.minimum(t / 0.4, 1) * np.minimum((d - t) / 0.15, 1)
+    lfo = 0.6 + 0.4 * np.sin(2 * np.pi * pulso * t) ** 2
+    x = np.sin(2 * np.pi * f * t) + 0.5 * np.sin(2 * np.pi * f * 1.5 * t) + 0.3 * np.sin(2 * np.pi * f * 0.5 * t)
+    return (x * lfo * env * 0.22).astype(np.float32)
+
+
+def subida(d=1.6):
+    """Riser antes de cada respuesta: tono que sube + ruido que se abre, y corta seco (el golpe lo da el stinger)."""
+    t = np.arange(int(d * M.SR)) / M.SR; u = t / d
+    f = 90 * 2 ** (u * 2.2)
+    tono = np.sin(2 * np.pi * np.cumsum(f) / M.SR) + 0.4 * np.sin(2 * np.pi * np.cumsum(f * 2) / M.SR)
+    nz = np.random.default_rng(5).standard_normal(len(t))
+    ruido = np.convolve(nz, np.ones(9) / 9, mode="same") * u ** 2
+    return ((tono * 0.16 + ruido * 0.35) * u ** 1.5).astype(np.float32)
+
+
+def stinger(d=1.2):
+    """Golpe de revelación: bombo grave + platillo suave."""
+    t = np.arange(int(d * M.SR)) / M.SR
+    bombo = np.sin(2 * np.pi * (40 + 90 * np.exp(-14 * t)) * t) * np.exp(-3.2 * t)
+    nz = np.random.default_rng(9).standard_normal(len(t)) * np.exp(-5 * t)
+    return (bombo * 0.9 + np.convolve(nz, np.ones(4) / 4, mode="same") * 0.12).astype(np.float32)
+
+
+def reloj(d, paso=0.5):
+    """Tic-tac grave (madera), no agudo."""
+    out = np.zeros(int(d * M.SR), np.float32); k = 0
+    while k * paso < d:
+        s_ = tic(0.06, 900 if k % 2 else 700) * 1.2; a = int(k * paso * M.SR); out[a:a + len(s_)] += s_[: len(out) - a]; k += 1
+    return out
 
 
 def arranque_consola(d=0.9):
@@ -329,7 +366,7 @@ class Video:
             t = f / FPS
             im, shake = cuadro(t)
             im = camara(im, t, self.cortes, shake)
-            subtitulos(im, self.palabras, t, self.y_sub, ancho=self.sub_ancho, cx=W / 2 - (W - 40 - self.sub_ancho) / 2 + 20 if self.sub_ancho < 980 else W / 2)
+            subtitulos(im, self.palabras, t, self.y_sub(t) if callable(self.y_sub) else self.y_sub, ancho=self.sub_ancho, cx=W / 2 - (W - 40 - self.sub_ancho) / 2 + 20 if self.sub_ancho < 980 else W / 2)
             p.stdin.write(np.asarray(im.convert("RGB"), np.uint8).tobytes())
         p.stdin.close(); p.wait()
         n = int(self.dur * M.SR)
@@ -355,13 +392,18 @@ class Video:
 def fichaje(g):
     V = Video(g, [("gancho", 3.0, 0), ("clubes", 4.6, 1), ("precio", 4.6, 2), ("silueta", 4.8, 3), ("revela", 3.2, 4)]); V.y_sub = 1560
     I = V.ini; V.cortes = [I["clubes"], I["precio"], I["silueta"], I["revela"]] + [I["clubes"] + 2.4, I["precio"] + 2.5, I["silueta"] + 2.6]
-    base = fondo((26, 8, 12), (8, 6, 22))
+    base = fondo((150, 0, 30), (20, 0, 90))
     cuerpo = recorte(g["cuerpo"], 860)
     sil = silueta(cuerpo); neo = neon(cuerpo, (60, 220, 255), 9)
     escs = [escudo(c, 330) for c in g["clubes"]]
+    estrellas = [recorte(r, 250) for r in g.get("no_son", ["torsos/cristiano_ronaldo_0", "torsos/lionel_messi_0", "torsos/kylian_mbapp_0"])]
     T_FIN = I["revela"]                                                       # la barra se vacía justo antes de la respuesta
     mx = V.mix
     mx.add(0.0, sirena(1.0), 0.9); mx.add(0.0, M.silbato(), 0.8)
+    for k in range(3):
+        mx.add(0.35 + k * 0.3, M.golpe(0.12), 1.0); mx.add(0.35 + k * 0.3, M.boom(0.4), 0.5)       # cada X
+    mx.add(I["clubes"], zumbido(I["revela"] - I["clubes"], 49, 1.6), 1.0)                       # tensión de fondo hasta la respuesta
+    mx.add(I["revela"] - 1.6, subida(1.6), 1.0); mx.add(I["revela"], stinger(), 1.0)
     for k in range(len(escs)):
         mx.add(I["clubes"] + 0.35 + k * 0.7, M.boom(0.5), 0.6); mx.add(I["clubes"] + 0.35 + k * 0.7, M.golpe(), 0.8)
     for k in range(18):                                                       # contador de plata acelerado
@@ -376,7 +418,7 @@ def fichaje(g):
 
     def cuadro(t):
         im = base.copy(); d = ImageDraw.Draw(im); shake = 0.0
-        rayos(im, t, color=(255, 60, 60) if t < I["clubes"] else (255, 255, 255), alfa=20)
+        rayos(im, t, color=(255, 70, 70) if t < I["clubes"] else (90, 200, 255), alfa=34)
         d = ImageDraw.Draw(im)
         barra_tiempo(d, max(0.0, 1 - t / T_FIN))
         pista = sum(1 for k in ("clubes", "precio", "silueta") if t >= I[k])
@@ -388,13 +430,19 @@ def fichaje(g):
             pulso = 0.5 + 0.5 * math.sin(t * 2 * math.pi * 2.2)
             im.alpha_composite(Image.new("RGBA", (W, H), (255, 20, 30, int(50 * pulso))))
             d = ImageDraw.Draw(im)
-            pegar(im, sil, W / 2, 1000, 0.95 * rebote(t, 6, 14, 0.15))
-            pegar(im, neon(cuerpo, ROJ, 9), W / 2, 1000, 0.95 * rebote(t, 6, 14, 0.15))
-            pegar(im, sil, W / 2, 1000, 0.95 * rebote(t, 6, 14, 0.15))
+            for k, es in enumerate(estrellas):                                 # NO es Ronaldo, NO es Messi, NO es Mbappé…
+                x = W / 2 + (k - 1) * 330
+                pegar(im, es, x, 700, rebote(t - k * 0.12, 9, 18, 0.25))
+                if t > 0.35 + k * 0.3:
+                    d = ImageDraw.Draw(im); r_ = 105; ex = rebote(t - 0.35 - k * 0.3, 10, 20, 0.3)
+                    d.line((x - r_ * ex, 640 - r_ * ex, x + r_ * ex, 640 + r_ * ex), fill=ROJ, width=24)
+                    d.line((x - r_ * ex, 640 + r_ * ex, x + r_ * ex, 640 - r_ * ex), fill=ROJ, width=24)
+            pegar(im, neon(cuerpo, ROJ, 9), W / 2, 1180, 0.72 * rebote(t, 6, 14, 0.15))
+            pegar(im, silueta(cuerpo), W / 2, 1180, 0.72 * rebote(t, 6, 14, 0.15))
             d = ImageDraw.Draw(im)
-            P.texto(d, (W / 2, 1000), "?", 300, AMA, 16)
-            cartel(d, (W / 2, 330), "ONLY 1% GUESS", 112, AMA)
-            cartel(d, (W / 2, 470), "THIS TRANSFER", 112, BLA)
+            P.texto(d, (W / 2, 1180), "?", int(280 * (1 + 0.08 * math.sin(t * 14))), AMA, 16)
+            cartel(d, (W / 2, 290), "WHO IS HE? ONLY 1% KNOW", 86, AMA)
+            cartel(d, (W / 2, 410), "GUESS BEFORE THE TIMER ENDS", 56, BLA)
         elif t < I["precio"]:                                                 # PISTA 1: clubes
             e = t - I["clubes"]
             cartel(d, (W / 2, 300), "CLUE 1 · HIS CLUBS", 70, AMA)
@@ -446,13 +494,17 @@ def fichaje(g):
 def costo(g):
     R = g["rondas"]
     V = Video(g, [("gancho", 2.6, 0), ("r1", 3.4, 1), ("r1b", 1.8, 2), ("r2", 4.2, 3), ("r2b", 1.8, 4), ("final", 6.4, 5)])
-    I = V.ini; V.cortes = [I["r1"], I["r1b"], I["r2"], I["r2b"], I["final"], I["final"] + 3.0]; V.y_sub = 990; V.sub_ancho = 820
-    base = fondo((6, 40, 22), (6, 10, 26))
+    I = V.ini; V.cortes = [I["r1"], I["r1b"], I["r2"], I["r2b"], I["final"], I["final"] + 3.0]; V.y_sub = lambda t: 1660 if t < I["r1"] else 990; V.sub_ancho = 820
+    base = fondo((0, 150, 70), (0, 30, 110))
     caras = {r[k]["ref"]: recorte(r[k]["ref"], 560) for r in R for k in (0, 1)}
     billetes = [(np.random.default_rng(i).uniform(0, W), np.random.default_rng(i + 50).uniform(-H, 0), np.random.default_rng(i + 99).uniform(-0.6, 0.6),
                  np.random.default_rng(i + 7).uniform(500, 900)) for i in range(26)]
     mx = V.mix
-    mx.add(0.0, meme("caja_registradora_0", 0.8), 0.9); mx.add(0.0, M.silbato(), 0.8)
+    mx.add(0.0, meme("caja_registradora_0", 0.8), 0.9); mx.add(0.0, M.silbato(), 0.8); mx.add(0.0, M.boom(0.6), 0.7)
+    for nombre, rev in (("r1", "r1b"), ("r2", "r2b")):                       # tensión en cada ronda: zumbido + subida + golpe
+        mx.add(I[nombre], zumbido(I[rev] - I[nombre], 52, 2.2), 1.0)
+        mx.add(I[rev] - 1.3, subida(1.3), 0.9); mx.add(I[rev], stinger(), 0.9)
+    mx.add(I["final"], zumbido(V.dur - I["final"], 46, 3.0), 1.2); mx.add(I["final"], reloj(V.dur - I["final"], 0.42), 0.9)
     for k in range(14):
         mx.add(0.05 + k * 0.11, obturador(0.05, k), 0.8)
     for nombre, rev in (("r1", "r1b"), ("r2", "r2b")):
@@ -499,15 +551,21 @@ def costo(g):
 
     def cuadro(t):
         im = base.copy(); shake = 0.0
-        rayos(im, t, color=(120, 255, 150), alfa=16)
+        rayos(im, t, color=(170, 255, 120), alfa=32)
         if t < I["r1"]:
             billetera(im, t)
             d = ImageDraw.Draw(im)
             f = R[2]                                                          # cuadro 0: las superestrellas de la final
-            pegar(im, caras[f[0]["ref"]], 270, 1180, 1.05); pegar(im, caras[f[1]["ref"]], W - 270, 1180, 1.05)
+            for k, xx in ((0, 280), (1, W - 280)):
+                pegar(im, neon(caras[f[k]["ref"]], AMA, 7), xx, 1060, 1.25 * rebote(t - k * 0.1, 8, 16, 0.2))
+                pegar(im, caras[f[k]["ref"]], xx, 1060, 1.25 * rebote(t - k * 0.1, 8, 16, 0.2))
             d = ImageDraw.Draw(im)
-            cartel(d, (W / 2, 420), "WHO COST MORE?", int(120 * rebote(t, 6, 16, 0.2)), AMA)
-            cartel(d, (W / 2, 580), "3 ROUNDS · NO GOOGLE", 64, BLA)
+            for k, xx in ((0, 280), (1, W - 280)):
+                cartel(d, (xx, 1480), "€ ???", int(96 * (1 + 0.06 * math.sin(t * 12 + k))), (15, 15, 22), caja=AMA + (255,))
+            d.ellipse((W / 2 - 90, 1060 - 90, W / 2 + 90, 1060 + 90), fill=ROJ, outline=BLA, width=8)
+            P.texto(d, (W / 2, 1060), "VS", 76, BLA, 6)
+            cartel(d, (W / 2, 330), "WHO COST MORE?", int(120 * rebote(t, 6, 16, 0.2)), AMA)
+            cartel(d, (W / 2, 470), "3 ROUNDS · NO GOOGLE", 60, BLA)
         elif t < I["r2"]:
             ronda = R[0]; e = t - I["r1"]; rv = I["r1b"] - I["r1"]
             n = 3 - int((e - 0.5) / 0.6) if (t < I["r1b"] and e > 0.5) else 0
@@ -547,13 +605,18 @@ def costo(g):
 def balon(g):
     V = Video(g, [("gancho", 3.0, 0), ("pie", 5.6, 1), ("academia", 5.4, 2), ("socio", 4.6, 3), ("final", 3.6, 4)])
     I = V.ini; V.cortes = [I["pie"], I["academia"], I["socio"], I["final"], I["pie"] + 2.8, I["academia"] + 2.7, I["socio"] + 2.3]; V.y_sub = 1430
-    base = fondo((40, 26, 4), (10, 8, 30))
+    base = fondo((190, 110, 0), (70, 0, 140))
     pies = [(recorte(r, 820), n) for r, n in g["pies"]]
     acad = [(escudo(c, 380) if c != "x" else None, n) for c, n in g["academias"]]
     socios = [(recorte(r, 620), n) for r, n in g["socios"]]
+    caras_gancho = [recorte(r, 700) for r in g.get("gancho", ["torsos/lionel_messi_0", "torsos/cristiano_ronaldo_0"])]
     trofeo = balon_dorado(760)
     mx = V.mix
-    mx.add(0.0, arranque_consola(), 1.0); mx.add(0.05, M.silbato(), 0.8)
+    mx.add(0.0, arranque_consola(), 1.0); mx.add(0.05, M.silbato(), 0.8); mx.add(0.0, M.boom(0.6), 0.7)
+    for nombre in ("pie", "academia", "socio"):                              # cada decisión: zumbido grave y subida al final
+        mx.add(I[nombre], zumbido(V.fin(nombre) - I[nombre], 50 + 4 * ["pie", "academia", "socio"].index(nombre), 2.4), 1.0)
+        mx.add(V.fin(nombre) - 1.2, subida(1.2), 0.8)
+    mx.add(I["final"], stinger(), 1.0)
     for s in range(3):
         mx.add(I["pie"] + 2.6 + s * 0.65, bip(0.12, 1000 if s < 2 else 1500), 1.0)
     tl = I["pie"] + 0.2
@@ -570,7 +633,7 @@ def balon(g):
 
     def cuadro(t):
         im = base.copy(); shake = 0.0
-        rayos(im, t, color=AMA, alfa=18)
+        rayos(im, t, color=(255, 240, 120), alfa=34)
         d = ImageDraw.Draw(im)
         paso = sum(1 for k in ("pie", "academia", "socio") if t >= I[k])
         for k in range(3):                                                     # 3 decisiones (estilo videojuego)
@@ -579,13 +642,21 @@ def balon(g):
             P.texto(d, (x, 140), f"PICK {k + 1}", 30, (15, 15, 22) if k < paso else (150, 150, 160), 0)
         if t < I["pie"]:
             e = t
+            for k, img in enumerate(caras_gancho):                           # cuadro 0: Messi y Ronaldo grandes, el trofeo al medio
+                xx = 250 if k == 0 else W - 250
+                pegar(im, neon(img, AMA, 8), xx, 1050, rebote(e - k * 0.1, 8, 16, 0.2))
+                pegar(im, img, xx, 1050, rebote(e - k * 0.1, 8, 16, 0.2))
             if trofeo is not None:
-                pegar(im, trofeo, W / 2, 1050, 0.85 * rebote(e, 6, 14, 0.2))
-            for k, (img, _) in enumerate(pies[:2]):                          # cuadro 0: Messi y Ronaldo a los costados
-                pegar(im, img.resize((img.width * 6 // 10, img.height * 6 // 10)), 170 + k * (W - 340), 1180)
+                pegar(im, trofeo, W / 2, 1180, 0.62 * rebote(e - 0.2, 6, 14, 0.25))
             d = ImageDraw.Draw(im)
-            cartel(d, (W / 2, 330), "BUILD YOUR PLAYER", int(100 * rebote(e, 6, 16, 0.2)), AMA)
-            cartel(d, (W / 2, 470), "TO WIN THE BALLON D'OR", 70, BLA)
+            cartel(d, (W / 2, 300), "BUILD YOUR PLAYER", int(100 * rebote(e, 6, 16, 0.2)), AMA)
+            cartel(d, (W / 2, 430), "TO WIN THE BALLON D'OR", 66, BLA)
+            pu = 1 + 0.1 * math.sin(e * 10)                                     # botón de pausa: la tarea, sin leer nada
+            cx_, cy_ = W / 2, 1610
+            d.rounded_rectangle((cx_ - 250 * pu, cy_ - 70 * pu, cx_ + 250 * pu, cy_ + 70 * pu), 40, fill=AMA)
+            d.rectangle((cx_ - 200 * pu, cy_ - 36 * pu, cx_ - 182 * pu, cy_ + 36 * pu), fill=(15, 15, 22))
+            d.rectangle((cx_ - 165 * pu, cy_ - 36 * pu, cx_ - 147 * pu, cy_ + 36 * pu), fill=(15, 15, 22))
+            d.text((cx_ + 30 * pu, cy_), "PAUSE TO PICK", font=P.fuente(int(56 * pu)), fill=(15, 15, 22), anchor="mm")
         elif t < I["academia"]:
             e = t - I["pie"]
             sel = int(e / 0.32) % 2                                            # la luz salta entre las dos opciones (pausá)
