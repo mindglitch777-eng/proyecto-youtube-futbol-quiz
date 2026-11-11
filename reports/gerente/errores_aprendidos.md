@@ -14,3 +14,5 @@ Lo que salió mal, por qué, y qué cambió para que no vuelva a pasar. El Geren
 | 11/11 | La fábrica no corrió | Corte de DNS de los servidores de Ubuntu | Reintentos en la instalación |
 | 11/11 | Falsa alarma de "no subidos" | La vigía no sabía que esos horarios ya estaban cubiertos | La vigía descuenta los horarios cubiertos |
 | 11/11 | Un recorte de "Ronaldo Nazário" era Cristiano; fotos con marca de agua | Se confió en el nombre del archivo | Revisión a ojo obligatoria + assets/recortes/descartados.json |
+| 11/11 | La memoria anti-repetición quedó ilegible (habría frenado TODA la fábrica al día siguiente) | El Ballon d'Or guardaba listas dentro de listas y la carga solo convertía un nivel | Carga recursiva; lección: todo formato nuevo se prueba también cargando la memoria guardada, no solo generando |
+| 11/11 | La fábrica de prototipos falló 2 veces al terminar | Mezclaba mensajes de la fábrica con su resultado; no podía guardar con voces nuevas sin guardar | Resultado en archivo aparte y guardado con stash |
