@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-11",
- "hora": "13:37",
+ "hora": "13:51",
  "canal": {
   "mediana_48h_semana": 3590,
   "mediana_48h_semana_anterior": 1938,
@@ -18,7 +18,8 @@
    "subs_cada_1000": 1.55,
    "tendencia": null,
    "vs_canal": "3.5x",
-   "semaforo": "ESTRELLA"
+   "semaforo": "ESTRELLA",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   },
   "cabezas": {
    "videos": 3,
@@ -29,7 +30,8 @@
    "subs_cada_1000": 0.92,
    "tendencia": null,
    "vs_canal": "5.1x",
-   "semaforo": "ESTRELLA"
+   "semaforo": "ESTRELLA",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   },
   "dress": {
    "videos": 1,
@@ -40,7 +42,8 @@
    "subs_cada_1000": 1.45,
    "tendencia": null,
    "vs_canal": "3.7x",
-   "semaforo": "ESTRELLA"
+   "semaforo": "ESTRELLA",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   },
   "fitall": {
    "videos": 3,
@@ -51,7 +54,8 @@
    "subs_cada_1000": null,
    "tendencia": null,
    "vs_canal": "0.0x",
-   "semaforo": "SIN DATOS"
+   "semaforo": "SIN DATOS",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   },
   "pared": {
    "videos": 2,
@@ -62,7 +66,8 @@
    "subs_cada_1000": 0.42,
    "tendencia": null,
    "vs_canal": "0.4x",
-   "semaforo": "FLOJO"
+   "semaforo": "FLOJO",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   },
   "rueda": {
    "videos": 10,
@@ -73,7 +78,8 @@
    "subs_cada_1000": 2.54,
    "tendencia": "+140%",
    "vs_canal": "3.4x",
-   "semaforo": "ESTRELLA"
+   "semaforo": "ESTRELLA",
+   "confianza": "MEDIA"
   },
   "siuu": {
    "videos": 1,
@@ -84,7 +90,8 @@
    "subs_cada_1000": null,
    "tendencia": null,
    "vs_canal": "0.0x",
-   "semaforo": "SIN DATOS"
+   "semaforo": "SIN DATOS",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   },
   "stop": {
    "videos": 24,
@@ -95,7 +102,8 @@
    "subs_cada_1000": 1.31,
    "tendencia": "-33%",
    "vs_canal": "0.8x",
-   "semaforo": "SANO"
+   "semaforo": "SANO",
+   "confianza": "ALTA · ojo: un solo video muy por encima del resto (outlier)"
   },
   "tridente": {
    "videos": 1,
@@ -106,7 +114,8 @@
    "subs_cada_1000": null,
    "tendencia": null,
    "vs_canal": "0.0x",
-   "semaforo": "SIN DATOS"
+   "semaforo": "SIN DATOS",
+   "confianza": "BAJA: menos de 4 videos medidos, no decidir con esto"
   }
  },
  "horas": {
@@ -282,7 +291,8 @@
      "videos": 4
     }
    }
-  }
+  },
+  "advertencias": []
  },
  "parte": null
 }

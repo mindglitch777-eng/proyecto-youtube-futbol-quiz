@@ -5,8 +5,9 @@ Antes de decidir, lee las últimas entradas: así no repite decisiones, sigue lo
 
 Formato de cada entrada:
 ## AAAA-MM-DD
-- **Vi:** (3-5 hechos con números)
-- **Decidí e hice:** (cambio · motivo · cómo lo voy a medir)
+- **Vi:** (3-5 hechos con números; aclarar la confianza de cada uno y las ADVERTENCIAS del día)
+- **Decidí e hice:** (cambio · motivo · las 6 preguntas del manual: n datos / dato sano / otra explicación / peor caso y cómo se deshace / cómo se mide / mío o del CEO)
+- **No toqué (a propósito):** (lo que esperé por falta de datos o porque un cambio anterior todavía está en evaluación)
 - **Revisar el AAAA-MM-DD:** (qué y con qué número se confirma o se revierte)
 - **Para el CEO:** (solo lo que necesita su decisión; si no hay nada, "nada")
 

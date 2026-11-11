@@ -96,17 +96,47 @@ def main():
                  en_cola=len(alerta.get("en_cola", [])), etapas_con_error=errores,
                  olas_hace_h=edad(cargar("olas.json", {}).get("fecha", "")), investigacion=cargar("investigacion.json", {}).get("fecha"),
                  poda=cargar("poda.json", {}))
+    # ---- ADVERTENCIAS (manual del gerente, errores 1, 2, 9 y 10): cuándo un número NO alcanza o el dato puede estar roto
+    adv = []
+    for t, r in formatos.items():
+        if r["medidos"] < 4:
+            r["confianza"] = "BAJA: menos de 4 videos medidos, no decidir con esto"
+        else:
+            xs = sorted(x["v48"] for x in filas if x["tipo"] == t and x["v48"] is not None)
+            r["confianza"] = "MEDIA" if r["medidos"] < 8 else "ALTA"
+            if xs and max(xs) > 3 * (st.median(xs) or 1):
+                r["confianza"] += " · ojo: un solo video muy por encima del resto (outlier)"
+    if (salud["olas_hace_h"] or 99) > 30:
+        adv.append(f"Las olas tienen {salud['olas_hace_h']} h: el detector no corrió; no concluyas nada de olas hoy.")
+    o_ = cargar("olas.json", {})
+    if o_.get("3d", {}).get("videos", 999) < 200:
+        adv.append("El detector de olas trajo menos de 200 videos (¿cuota agotada?): datos de olas incompletos.")
+    fa = cargar("analytics.json", {}).get("fecha")
+    if fa and (hoy - date.fromisoformat(str(fa)[:10])).days >= 2:
+        adv.append(f"Analytics es del {fa}: % visto y suscriptores están atrasados (YouTube tarda 1-2 días).")
+    if not rend:
+        adv.append("rendimiento.json vacío: sin vistas no se puede evaluar nada.")
+    manana = (hoy + timedelta(days=1)).isoformat()
+    if prox.get(manana, 0) < 6:
+        adv.append(f"Mañana ({manana}) tiene {prox.get(manana, 0)} videos subidos de 6: revisá producción y subida YA.")
+    pasado = (hoy + timedelta(days=2)).isoformat()
+    if prox.get(pasado, 0) == 0:
+        adv.append(f"Pasado mañana ({pasado}) no tiene videos subidos todavía (normal si la fábrica de hoy aún no corrió; si ya corrió, es un problema).")
+    if canal["videos_semana"] < 10:
+        adv.append("Menos de 10 videos medidos en la semana: las comparaciones de canal son débiles.")
+    salud["advertencias"] = adv
     previo = cargar("gerente.json", {})
     out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
     guardar("gerente.json", out)
     L = [f"# Números del día · {hoy.isoformat()}", "",
+         "**ADVERTENCIAS (leer antes de decidir):** " + (" · ".join(adv) if adv else "ninguna"), "",
          f"**Canal:** mediana a las 48 h esta semana {canal['mediana_48h_semana'] or '-'} (antes {canal['mediana_48h_semana_anterior'] or '-'}, "
          f"{canal.get('cambio', 's/d')}) · {canal['videos_semana']} videos · % visto {canal['pct_visto_semana'] or '-'}", "",
-         "| Formato | Semáforo | Videos (medidos) | Mediana 48 h | vs canal | Mejor | % visto | Subs/1000 | Tendencia |", "|---|---|---|---|---|---|---|---|---|"]
+         "| Formato | Semáforo | Confianza | Videos (medidos) | Mediana 48 h | vs canal | Mejor | % visto | Subs/1000 | Tendencia |", "|---|---|---|---|---|---|---|---|---|---|"]
     for t, r in sorted(formatos.items(), key=lambda kv: -(kv[1]["mediana_48h"] or 0)):
-        L.append(f"| {t} | {r['semaforo']} | {r['videos']} ({r['medidos']}) | {r['mediana_48h'] or '-'} | {r['vs_canal']} | {r['mejor']:,} | "
+        L.append(f"| {t} | {r['semaforo']} | {r.get('confianza', '-')} | {r['videos']} ({r['medidos']}) | {r['mediana_48h'] or '-'} | {r['vs_canal']} | {r['mejor']:,} | "
                  f"{r['pct_visto'] or '-'} | {r['subs_cada_1000'] if r['subs_cada_1000'] is not None else '-'} | {r['tendencia'] or '-'} |")
     L += ["", "**Horas (mediana 48 h):** " + " · ".join(f"{h} {v['mediana']:,} ({v['videos']})" for h, v in horas.items()), "",
           "**Mejores últimas 72 h:** " + " · ".join(f"{x['tipo']} {x['hora']} {x['vistas']:,} ({x['vph']}/h)" for x in out["mejores"]),
