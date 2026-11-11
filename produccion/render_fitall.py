@@ -85,12 +85,12 @@ def cuerpo(nombre):
     return p.crop((bb[0], 0, bb[2], bb[3])), (x + fw / 2) - bb[0]
 
 
-MALAS = {"vin_cius_j_nior_12", "vin_cius_j_nior_10", "cristiano_ronaldo_3"}        # revisadas a ojo: dedo en la cara, cabeza para arriba, color raro
+MALAS = set(json.loads((REC / "descartados.json").read_text())["descartados"])   # revisados a ojo (assets/recortes/descartados.json)
 CUERPOS = {"cristiano_ronaldo": ["cristiano_ronaldo_14", "cristiano_ronaldo_12", "cristiano_ronaldo_10", "cristiano_ronaldo_1"],
            "vin_cius_j_nior": ["vin_cius_j_nior_14", "vin_cius_j_nior_11", "vin_cius_j_nior_13"],
            "kylian_mbapp": ["kylian_mbapp_12", "kylian_mbapp_13", "kylian_mbapp_10"],
            "lamine_yamal": ["lamine_yamal_10"], "neymar": ["neymar_1", "neymar_3"], "lionel_messi": ["lionel_messi_3", "lionel_messi_2"]}
-LISTAS = ["cristiano_ronaldo", "vin_cius_j_nior", "kylian_mbapp"]   # con ≥7 cabezas distintas (Messi/Neymar/Yamal: faltan fotos)
+LISTAS = ["cristiano_ronaldo", "vin_cius_j_nior", "kylian_mbapp", "lionel_messi"]   # 11/11: entra Messi (Neymar/Yamal: faltan fotos distintas)
 NOMBRES = {"cristiano_ronaldo": "Ronaldo", "vin_cius_j_nior": "Vinícius", "kylian_mbapp": "Mbappé", "lamine_yamal": "Yamal",
            "neymar": "Neymar", "lionel_messi": "Messi"}
 

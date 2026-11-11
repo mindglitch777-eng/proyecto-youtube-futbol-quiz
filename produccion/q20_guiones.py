@@ -19,7 +19,7 @@ ROOT = Path(__file__).resolve().parent
 REC = ROOT / "assets" / "recortes"
 DATOS = json.loads((ROOT / "assets" / "fichajes.json").read_text())
 CLUB = DATOS["clubes"]
-MALAS = {"cristiano_ronaldo_2", "vin_cius_j_nior_12", "cristiano_ronaldo_3"}            # marca de agua / recorte malo (revisadas a ojo)
+MALAS = set(json.loads((REC / "descartados.json").read_text())["descartados"])     # revisados a ojo (marca de agua, otra persona…)
 ESTRELLAS = {"cristiano_ronaldo": "Ronaldo", "lionel_messi": "Messi", "kylian_mbapp": "Mbappé", "neymar": "Neymar",
              "lamine_yamal": "Yamal", "vin_cius_j_nior": "Vinícius"}
 ZURDOS = {"lionel_messi": "MESSI", "lamine_yamal": "YAMAL", "mohamed_salah": "SALAH", "bukayo_saka": "SAKA", "erling_haaland": "HAALAND",
