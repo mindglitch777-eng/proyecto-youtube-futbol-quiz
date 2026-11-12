@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-07",
+ "inicio": "2026-11-14",
  "grilla": [
   "09:00 stop/grilla",
   "13:00 prueba",
@@ -13,175 +13,83 @@
   "penal",
   "balon",
   "find",
-  "dress",
   "circulo",
   "trayectoria",
   "tridente",
   "cabezas",
-  "rueda"
+  "rueda",
+  "fitall",
+  "q20fichaje",
+  "q20costo",
+  "q20balon"
  ],
  "podadas": {},
  "promovidas": {
   "rueda": {
-   "fecha": "2026-11-07",
-   "rinde": "169% del STOP",
-   "videos": 4
+   "fecha": "2026-11-12",
+   "rinde": "140% del STOP",
+   "videos": 8
   }
  },
  "puntaje": {
-  "stop": 311.6,
-  "cabezas": 136.0,
-  "rueda": 526.6,
-  "dress": 221.5,
-  "find": 56.1,
-  "otros": 80.0,
-  "ring": 110.0,
-  "carrera": 58.6,
-  "cabeza": 274.6,
-  "plinko": 82.4
+  "rueda": 550.1,
+  "stop": 392.9,
+  "cabezas": 297.3,
+  "dress": 324.6,
+  "balon": 376.1,
+  "find": 28.0,
+  "otros": 54.0,
+  "pared": 61.3,
+  "ring": 73.1,
+  "carrera": 29.3,
+  "cabeza": 136.5,
+  "plinko": 41.2,
+  "tridente": 33.2,
+  "fitall": 295.3
  },
+ "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-14",
    "hora": "09:00",
-   "tipo": "rueda"
+   "tipo": "stop",
+   "dificil": true,
+   "hard": false,
+   "arranque": "grilla",
+   "exp": {
+    "id": "e1_stop_arranque",
+    "brazo": "grilla"
+   }
   },
   {
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-14",
    "hora": "13:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
+   "tipo": "rueda"
   },
   {
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-14",
    "hora": "17:00",
-   "tipo": "dress"
+   "tipo": "balon"
   },
   {
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-14",
    "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": true,
-   "arranque": "grilla"
+   "tipo": "q20balon"
   },
   {
-   "fecha": "2026-11-10",
+   "fecha": "2026-11-14",
    "hora": "21:30",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-10",
-   "hora": "23:00",
-   "tipo": "cabezas"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "09:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "13:00",
    "tipo": "stop",
    "dificil": true,
    "hard": false,
-   "arranque": "grilla"
+   "arranque": "estrella",
+   "exp": {
+    "id": "e1_stop_arranque",
+    "brazo": "estrella"
+   }
   },
   {
-   "fecha": "2026-11-11",
-   "hora": "17:00",
-   "tipo": "circulo"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "21:30",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-11",
-   "hora": "23:00",
-   "tipo": "cabezas"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "09:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "13:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "17:00",
-   "tipo": "find"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": true,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "21:30",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-12",
-   "hora": "23:00",
-   "tipo": "cabezas"
-  },
-  {
-   "fecha": "2026-11-13",
-   "hora": "09:00",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-13",
-   "hora": "13:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-13",
-   "hora": "17:00",
-   "tipo": "trayectoria"
-  },
-  {
-   "fecha": "2026-11-13",
-   "hora": "20:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla"
-  },
-  {
-   "fecha": "2026-11-13",
-   "hora": "21:30",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-13",
+   "fecha": "2026-11-14",
    "hora": "23:00",
    "tipo": "cabezas"
   }

@@ -1,5 +1,5 @@
 {
- "semana": "2026-11-07",
+ "semana": "2026-11-14",
  "etapas": {
   "radar": {
    "estado": "ok",
@@ -92,44 +92,39 @@
   "plan": {
    "estado": "ok",
    "resumen": {
-    "semana": "2026-11-07 → 2026-11-13",
+    "semana": "2026-11-14 → 2026-11-14",
     "cupos": {
-     "STOP CHALLENGE": 9,
-     "FIND": 4,
-     "CATCH THE RIGHT HEAD": 3,
-     "PLINKO GOAT": 4,
-     "DRESS UP": 4,
-     "BALL TOWER": 4
+     "stop": 2,
+     "rueda": 1,
+     "balon": 1,
+     "q20balon": 1,
+     "cabezas": 1
     },
-    "por_que": {
-     "STOP CHALLENGE": 1.05,
-     "FIND": 0.56,
-     "CATCH THE RIGHT HEAD": 0.18,
-     "PLINKO GOAT": 0.12,
-     "DRESS UP": 0.32,
-     "BALL TOWER": 0.05
-    }
+    "podadas": [],
+    "promovidas": [
+     "rueda"
+    ]
    },
-   "inicio": "2026-11-01T12:21:06+00:00",
-   "fin": "2026-11-01T12:21:06+00:00"
+   "inicio": "2026-11-12T15:13:12+00:00",
+   "fin": "2026-11-12T15:13:12+00:00"
   },
   "produccion": {
    "estado": "ok",
    "resumen": {
-    "videos": 24,
+    "videos": 6,
     "errores": 0
    },
-   "inicio": "2026-11-07T23:16:19+00:00",
-   "fin": "2026-11-07T23:22:45+00:00"
+   "inicio": "2026-11-12T15:13:12+00:00",
+   "fin": "2026-11-12T15:15:38+00:00"
   },
   "control": {
    "estado": "ok",
    "resumen": {
-    "pasan": "11 de 24",
-    "rehechos": 28
+    "pasan": "2 de 6",
+    "rehechos": 8
    },
-   "inicio": "2026-11-07T23:22:45+00:00",
-   "fin": "2026-11-07T23:35:46+00:00"
+   "inicio": "2026-11-12T15:15:38+00:00",
+   "fin": "2026-11-12T15:21:10+00:00"
   },
   "publicacion": {
    "estado": "ok",
@@ -171,5 +166,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-12T09:45:06+00:00"
+ "actualizado": "2026-11-12T15:21:10+00:00"
 }
