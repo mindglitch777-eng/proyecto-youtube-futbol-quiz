@@ -5981,5 +5981,941 @@
     "Incorporar una barra de 'precisión' o mira telescópica visual que aumente la sensación de juego arcade competitivo."
    ]
   }
+ },
+ {
+  "id": "FTuSt0R0dr8",
+  "titulo": "POV: Neymar was unstoppable in Paris 🇧🇷⚽🔥",
+  "canal": "AZFOOK | Football POV ⚽",
+  "subs": 10800,
+  "creado": "2018-07-02",
+  "vistas": 3635175,
+  "horas": 135,
+  "vph": 26901,
+  "dur": 16,
+  "likes": 0,
+  "coment": 56,
+  "familia": "stop",
+  "analisis": {
+   "nombre_formato": "POV Animación Fútbol 3D/2.5D",
+   "mecanica": "Simulación en primera persona (POV) de regate y gol espectacular en cancha virtual utilizando gráficos tipo videojuego.",
+   "que_hace_el_espectador": "Solo mirar la secuencia de regates dinámicos y la celebración del gol.",
+   "cuadro_0": "POV de piernas azules con balón, dos defensores blancos al frente en estadio lleno con luces y humo.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "POV del jugador iniciando el regate ante defensor desequilibrado.",
+     "sonido": "Música funk/viral de fondo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El jugador avanza con la pelota pegada a los pies.",
+     "sonido": "Música y gritos de cancha."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Aparecen dos defensores blancos interceptando.",
+     "sonido": "Música en ritmo acelerado."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Ambos defensores quedan atrás mientras el jugador amaga.",
+     "sonido": "Efectos vocales y música."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El jugador eleva levemente la pelota esquivando barrida.",
+     "sonido": "Beat de la música."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Un defensor cae al suelo tras el amague.",
+     "sonido": "Música constante."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Nuevos defensores caen derribados por el regate.",
+     "sonido": "Grito de efecto sonoro."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Balón controlado en carrera recta hacia el área.",
+     "sonido": "Música subiendo de intensidad."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "El jugador se prepara para el remate frente al arco.",
+     "sonido": "Transición musical."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Lanzamiento fuerte hacia la portería.",
+     "sonido": "Sonido de disparo/patada."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "El arquero se lanza pero la pelota entra cruzada.",
+     "sonido": "Música y ambiente de estadio."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "La pelota red dentro de la red del arco.",
+     "sonido": "Rugido del estadio por gol."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "POV de carrera de celebración abriendo los brazos.",
+     "sonido": "Festejo fuerte del público."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Giro hacia la tribuna saludando al público.",
+     "sonido": "Música en climax y ovación."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "El jugador levanta los brazos frente a la hinchada.",
+     "sonido": "Música se mantiene viva."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Celebración con saltos y gestos de victoria.",
+     "sonido": "Gritos de gol masivos."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Perspectiva dinámica hacia las luces del estadio.",
+     "sonido": "Música ritmada."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Enfoca la tribuna llena festejando.",
+     "sonido": "Ambiente festivo."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Cierre de la celebración mirando a la cámara POV.",
+     "sonido": "Cierre del tema musical."
+    }
+   ],
+   "duracion_s": 15,
+   "loop": "No empalma de forma continua; finaliza en el festejo.",
+   "gancho": "La perspectiva POV inmersiva y la fluidez exagerada de las gambetas.",
+   "dopamina": [
+    "Caída exagerada de rivales (t: 2.0s y 3.0s)",
+    "Entrada impecable del gol (t: 5.5s)",
+    "Celebración eufórica frente a la tribuna (t: 6.5s - 9.0s)"
+   ],
+   "audio": "Música funk urbana brasileña combinada con ambiente de estadio y efectos de impacto.",
+   "por_que_comentan": "Debaten si los movimientos son realistas o comentan sobre la habilidad recreada del futbolista.",
+   "assets_necesarios": [
+    "Modelo 3D de piernas/botas POV",
+    "Modelos de defensores y arquero con animaciones",
+    "Estadio 3D con público y luces",
+    "Textura de balón de fútbol",
+    "Pista de audio funk y FX de estadio"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 5,
+   "receta_para_programarlo": [
+    "Crear escena 3D en Blender/Three.js con estadio, cancha y balón.",
+    "Animar cámara en primera persona atada a la posición del jugador.",
+    "Programar trayectorias interpoladas para defensores y animaciones de caída.",
+    "Renderizar el tiro al arco con físicas de red y sincronizar pista de audio."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar barra de energía/habilidad al estilo videojuego en pantalla.",
+    "Incluir efectos visuales de velocidad (líneas de fuego/viento) durante las gambetas.",
+    "Hacer el loop perfecto conectando la corrida final con el inicio del regate."
+   ]
+  }
+ },
+ {
+  "id": "g9TLgpjsJF8",
+  "titulo": "Yamal really took Haaland's secret chip🍟😜#parody #haaland #yamal",
+  "canal": "scaryteacher3d",
+  "subs": 4340,
+  "creado": "2026-10-21",
+  "vistas": 3499987,
+  "horas": 96,
+  "vph": 36509,
+  "dur": 14,
+  "likes": 15089,
+  "coment": 3,
+  "familia": "3d_ia",
+  "analisis": {
+   "nombre_formato": "Comedia Parodia Face-Swap",
+   "mecanica": "Haaland intenta comer un Dorito con salsa verde picante pero lo rechaza. Yamal le quita el chip, se lo da a Haaland a escondidas y Yamal termina sufriendo el picante.",
+   "que_hace_el_espectador": "Solo mirar y reírse de las expresiones exageradas.",
+   "cuadro_0": "Arriba: Fondo de estudio con luces LED verdes y moradas. Centro: Haaland con camiseta del Man City sosteniendo un Dorito. Abajo: Bolsa de Doritos y cuenco de salsa verde sobre mesa de madera.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Haaland sostiene un Dorito frente a su cara con expresión de asco.",
+     "sonido": "Efecto de sonido cómico / risas de fondo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Haaland unta salsa verde picante en el Dorito.",
+     "sonido": "Música alegre de ritmo rápido."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Muestra la salsa verde cayendo sobre el Dorito en primer plano.",
+     "sonido": "Efectos de sonido de caricatura."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Haaland reacciona con asco y se limpia la cara.",
+     "sonido": "Sonido de estornudo o rechazo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Haaland sigue haciendo muecas de asco.",
+     "sonido": "Efectos sonoros acelerados."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Plano general: Yamal (con camiseta del Barcelona) aparece junto a Haaland.",
+     "sonido": "Música de fondo continua."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Yamal agarra un chip Dorito del paquete.",
+     "sonido": "Efecto de agarrar/crujido."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Primer plano de la mano untando el chip en la salsa verde.",
+     "sonido": "Efecto líquido / squishy."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Yamal le acerca el chip con salsa a la boca de Haaland.",
+     "sonido": "Efecto dramático."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Haaland abre la boca y come el chip que le da Yamal.",
+     "sonido": "Efecto de mordisco crujiente (munch)."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Haaland mastica complacido mientras empieza a sonar ritmo pegadizo.",
+     "sonido": "Música reggaetón/dance de moda."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Yamal sonríe a la cámara satisfecho.",
+     "sonido": "Beat musical marcado."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Yamal baila y disfruta del éxito del truco.",
+     "sonido": "Música bailable en auge."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Primer plano de la silla: el chip picante original sigue escondido allí.",
+     "sonido": "Efecto de revelación / suspenso."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Haaland mira sospechoso hacia un lado con cara divertida.",
+     "sonido": "Efecto cómico de duda."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Ambos sentados a la mesa, Yamal le ruega/agradece.",
+     "sonido": "Música de ritmo urbano."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Yamal sonríe confiado frente a la cámara.",
+     "sonido": "Base musical."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Yamal empieza a sentir el efecto del picante inesperadamente.",
+     "sonido": "Efecto de fuego / impacto picante."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Yamal abre la boca sorprendido por el picante.",
+     "sonido": "Grito ahogado de caricatura."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Yamal se infla las mejillas intentando aguantar el ardor.",
+     "sonido": "Sonido de hinchazón / tensión."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Yamal arruga la cara completamente por el picante Extremo.",
+     "sonido": "Efecto de explosión de picante."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Yamal junta las manos pidiendo auxilio por el picor.",
+     "sonido": "Gritos cómicos distorsionados."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Rostro de Yamal deformado sufriendo el picante.",
+     "sonido": "Música cómica de remate."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Expresión final de agonía cómica de Yamal.",
+     "sonido": "Efecto sonoro final cómico."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "Corte final a la cara deformada de Yamal sufriendo.",
+     "sonido": "Fin del audio con risa corta."
+    },
+    {
+     "t": "12.5",
+     "pantalla": "Pantalla se congela en el gesto cómico final de Yamal.",
+     "sonido": "Silencio / eco."
+    },
+    {
+     "t": "13.0",
+     "pantalla": "Fin del video / reinicio automático.",
+     "sonido": "Reinicio de pista."
+    }
+   ],
+   "duracion_s": 13,
+   "loop": "No conecta perfectamente en loop, termina en el climax cómico de la reacción.",
+   "gancho": "Caras deformadas por filtro face-swap de futbolistas famosos en una situación absurda.",
+   "dopamina": [
+    "Expresiones faciales grotescas y cómicas en t=0.0, 2.0 y 10.0",
+    "Resolución cómica del engaño entre futbolistas rivales en t=8.5"
+   ],
+   "audio": "Efectos de sonido estilo caricatura (ASMR de comida, chillidos, mordiscos) combinados con track urbano/trend.",
+   "por_que_comentan": "Debaten sobre la rivalidad Barça-City, las caras deformadas y cuál futbolista actúa peor.",
+   "assets_necesarios": [
+    "Recortes de cuerpos de Haaland y Yamal con camisetas oficiales",
+    "Máscaras faciales para face-swap/deepfake",
+    "PNGs de bolsa de Doritos, chips y salsa verde",
+    "SFX de caricatura (crunch, squishy, screaming)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 4,
+   "receta_para_programarlo": [
+    "1. Crear escena 2D/3D con plano de mesa, fondo de estudio y capas para cada personaje.",
+    "2. Superponer mallas faciales animadas (blendshapes/face-tracking) sobre los cuerpos recortados.",
+    "3. Programar interpolación de posiciones para brazos y chips usando Keyframes cada 0.5s.",
+    "4. Sincronizar triggers de audio con los eventos clave de mordisco y reaccion de picante."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de nivel de picante (Scoville meter) animado en pantalla.",
+    "Incluir a MBappé o Messi haciendo una aparición sorpresa al final.",
+    "Hacer que el loop sea perfecto conectando el grito final con el inicio del video."
+   ]
+  }
+ },
+ {
+  "id": "WPieHX_ip5E",
+  "titulo": "Haaland Has Never Seen a Lollipop 😭🍭 #parody #football #haaland #yamal #mbappe #bellingham",
+  "canal": "MusMusTV",
+  "subs": 150000,
+  "creado": "2026-07-06",
+  "vistas": 2796351,
+  "horas": 78,
+  "vph": 35858,
+  "dur": 14,
+  "likes": 12248,
+  "coment": 13,
+  "familia": "3d_ia",
+  "analisis": {
+   "nombre_formato": "Parodia Animada de Futbolistas (Efecto ASMR / Fail de Haaland)",
+   "mecanica": "Cuatro futbolistas famosos (Mbappé, Vinícius Jr, Haaland, Bellingham) intentan comer una paleta gigante sumergida en salsa de crema sobre un plato. Haaland está distraído con su celular y comete errores absurdos: primero mete el palo en la crema al revés, Vinícius se lo corrige, y luego Haaland da vuelta la paleta pero intenta chupar el extremo superior del palo mientras la paleta se sumerge, dejando a Vinícius completamente desorientado y cubriéndose la cara.",
+   "que_hace_el_espectador": "Mirar el chiste absurdo, reírse del comportamiento de Haaland, comentar la reacción de Vinícius y re-mirar el loop.",
+   "cuadro_0": "Layout vertical 9:16. Fondo con arcos/columnas doradas e iluminación cálida naranja/dorada. En primer plano, una mesa de mármol blanco con 4 platos negros con salsa crema blanca. Tres figuras visibles al centro/derecha: Vinícius (camiseta Real Madrid), Haaland (camiseta Man City sosteniendo celular y paleta), Bellingham (Real Madrid). Arriba/centro marcas de agua ('musmusplay'). Abajo texto superpuesto: 'Watch Haaland's lollipop 👀'.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Haaland sostiene la paleta al revés, sumergiendo la punta del palo en la salsa mientras mira su celular. Texto: 'Watch Haaland's lollipop 👀'.",
+     "sonido": "Música funk/baile de fondo en portugués/latina ritmica pegajosa."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Vinícius y Bellingham mojan sus paletas correctamente. Haaland sigue distraído con el palo sumergido.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Mbappé asoma por la izquierda. Vinícius observa a Haaland con cara de desconcierto.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Vinícius mira fijamente a Haaland mientras este mueve la paleta invertida en el plato.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Haaland sigue mirando su teléfono, completamente ajeno a lo que hace.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Vinícius mira a Haaland con cara de desaprobación/confusión creciente.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Vinícius se inclina hacia Haaland para ver bien el error.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Vinícius no puede creer lo que ve, mantiene la mirada fija.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Aparece texto en pantalla: 'Wrong side, bro!' 😂.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Vinícius le hace un gesto o indicación a Haaland señalando la paleta.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Haaland voltea a ver a Vinícius mientras sostiene la paleta invertida.",
+     "sonido": "Efecto de sonido de voz / murmullo o interrupción breve."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Haaland leveling/volteando el palo de la paleta en el aire.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Haaland da vuelta la paleta para que la bola de caramelo quede abajo.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Haaland apoya la bola dulce sobre la crema del plato.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Haaland parece haber corregido la paleta, Vinícius mira atentamente.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Haaland mantiene la paleta sumergida en la crema blanca.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Cambio de texto en pantalla: 'He did it AGAIN 💀'.",
+     "sonido": "Efecto de sonido de sorpresa / cambio de ritmo."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Haaland, en lugar de comer el caramelo, mete la punta del palo plástico en su boca y chupa el palo.",
+     "sonido": "Música continúa con corte humorístico."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Vinícius abre los ojos gigantescos de shock viendo a Haaland succionar el palo.",
+     "sonido": "Efecto de sonido gracioso de succión / 'plop'."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Haaland sigue succionando el palo de la paleta muy concentrado mirando el celular.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Vinícius pone la mano en la cara (facepalm) de la vergüenza ajena.",
+     "sonido": "Efecto de golpe cómico o suspiro."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Vinícius agacha la cabeza lamentándose mientras Haaland sigue chupando el palo.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Haaland sigue en lo suyo sin darse cuenta de su torpeza.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Zoom ligero en la cara de frustración de Vinícius y la distracción de Haaland.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "El ciclo se completa con la pose cómica de Vinícius tapándose los ojos.",
+     "sonido": "Música remata para enganchar el loop."
+    },
+    {
+     "t": "12.5",
+     "pantalla": "Transición limpia regresando a la posición inicial de preparación.",
+     "sonido": "El beat de la canción se reinicia fluidamente."
+    }
+   ],
+   "duracion_s": 12.8,
+   "loop": "Sí, la música de fondo está perfectamente editada en un compás continuo y Haaland vuelve a la posición inicial, generando un bucle infinito imperceptible.",
+   "gancho": "La curiosidad visual que genera la frase inicial 'Watch Haaland's lollipop 👀' sumada a ver personajes ultra conocidos de fútbol actuando de manera absurda e hiperrealista (generado por IA/animación 3D).",
+   "dopamina": [
+    "Recompensa de humor absurdo cuando Haaland comete el error por primera vez (segundo 4.0).",
+    "Segunda recompensa rematada (punchline doble) cuando corrige la paleta pero comete un error aún peor succionando el palo (segundo 8.5).",
+    "Exageración extrema de las expresiones faciales de Vinícius Jr (ojos desorbitados y facepalm)."
+   ],
+   "audio": "Track de Funk Brasileño / Tik Tok Trend pegajoso con bpm alto y efectos de sonido de cartoon/memes (succión, golpecito de facepalm).",
+   "por_que_comentan": "Los fans comentan sobre el 'IQ de Haaland', bromas de que Haaland solo piensa en goles y no sabe comer una paleta, y la cara exagerada de Vinícius Jr.",
+   "assets_necesarios": [
+    "Modelos 3D / Recortes IA de cabezas y cuerpos de Erling Haaland, Vinícius Jr, Kylian Mbappé y Jude Bellingham.",
+    "Assets 3D de paletas gigantes (lollipop), platos con salsa de crema blanca fluida y smartphone.",
+    "Fondo 3D con estética de salón elegante naranja/dorado.",
+    "Efectos de sonido de meme (shock, succión, facepalm) y canción trend de Funk."
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 4,
+   "receta_para_programarlo": [
+    "1. Setup de Canvas 1080x1920 (9:16) en MoviePy o PyGame / BlendRender via script en Python.",
+    "2. Renderizar o cargar el background renderizado de la sala dorada.",
+    "3. Posicionar los personajes (PNGs con canal Alfa o mallas 3D interpoladas) en posiciones X fijas: Mbappé (-300), Vinícius (-100), Haaland (center), Bellingham (+200).",
+    "4. Crear objeto 'Lollipop' compuesto por un cilindro (palo) y esfera (caramelo) con puntos de pivote en la mano de Haaland.",
+    "5. Animar la rotación del Lollipop: 0s-5s (rotación 180 deg - al revés), 5s-6s (keyframes de interpolación lineal para girar 180 deg), 6s-12s (rotación normal pero desplazamiento Y hacia arriba para conectar la punta del palo a la boca de Haaland).",
+    "6. Animar la escala y Sprite Sheet de la cara de Vinícius: Frame neutral -> Frame ceño fruncido (4.0s) -> Frame ojos desorbitados (8.5s) -> Frame mano en cara / facepalm (10.0s).",
+    "7. Superponer capas de texto con tipografía Impact/Bold amarilla y blanca con contorno negro en Y=1600.",
+    "8. Mezclar pista de audio principal con SFX disparados en t=4.0, t=8.5 y t=10.0 s."
+   ],
+   "como_lo_hacemos_mejor": [
+    "1. Agregar interacción de Mbappé intentando robarle la paleta a Haaland mientras este chupa el palo.",
+    "2. Hacer que la paleta cambie de color/sabor mágicamente cada vez que la sumergen en la crema para añadir un elemento visual imprevisto.",
+    "3. Poner un contador de 'IQ de Haaland' que baje de 200 a -50 en tiempo real a medida que comete los errores."
+   ]
+  }
+ },
+ {
+  "id": "IXLNzO1or5g",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "KaiZen X",
+  "subs": 13100,
+  "creado": "2026-11-06",
+  "vistas": 2759582,
+  "horas": 39,
+  "vph": 70040,
+  "dur": 6,
+  "likes": 34617,
+  "coment": 31,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Desafío de Encastre Circular (Fit All)",
+   "mecanica": "Una rueda giratoria con recortes de jugadores gira continuamente buscando la alineación y encastre del personaje correcto.",
+   "que_hace_el_espectador": "Intentar pausar el video en el milisegundo exacto donde la figura encaja perfectamente.",
+   "cuadro_0": "Fondo de estadio. Arriba: rueda circular con 8 recortes de Ronaldinho con camiseta de Brasil. Centro: busto intercambiable. Abajo: cuerpo completo con flecha indicadora.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Rueda circular girando con recortes de Brasil. Cabeza central cambiando rápidamente.",
+     "sonido": "Audio cantado: 'Amor préstame tu caballo...'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Rotación continua de la rueda superior y variación de piezas centrales.",
+     "sonido": "Voz melódica de fondo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Giro sincronizado de la rueda de personajes sobre el estadio.",
+     "sonido": "Voz melódica continuando."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Movimiento fluido de rotación circular.",
+     "sonido": "Cierre de la frase cantada."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Alineación momentánea de las piezas en la estructura vertical.",
+     "sonido": "Efecto de sonido de transición / corte."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Cambio brusco de ritmo en la animación con destello visual.",
+     "sonido": "Inicio de beat de funk brasileño (Drop)."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Rotación rápida de figuras alineándose con el cuerpo inferior.",
+     "sonido": "Ritmo de funk acelerado."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Encaje de los sprites en posición correcta.",
+     "sonido": "Beat de funk continuo."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Sincronización de cuerpo y cabeza en pantalla.",
+     "sonido": "Beat de funk continuo."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Posición final alineada lista para reiniciar ciclo.",
+     "sonido": "Final del audio."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Reinicio exacto al fotograma inicial.",
+     "sonido": "Bucle continuo de audio."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, el último fotograma empalma perfectamente con el primero visual y auditivamente.",
+   "gancho": "La velocidad del movimiento circular genera la necesidad instantánea de pausar para 'resolver' el acertijo visual.",
+   "dopamina": [
+    "Cambio de ritmo musical (drop) a los 2.5s",
+    "Sensación de reto al intentar pausar en el encaje perfecto"
+   ],
+   "audio": "Voz intro 'Amor préstame tu caballo' seguida de un drop de funk brasileño bass boosted.",
+   "por_que_comentan": "Para presumir si lograron pausar el video en el encaje perfecto o pedir ayuda.",
+   "assets_necesarios": [
+    "Imagen de fondo de estadio iluminado",
+    "Sprites PNG recortados de Ronaldinho (varias poses y camisetas)",
+    "Icono/Logo central",
+    "Archivo de audio con el remix del trend"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Crear canvas 1080x1920 con fondo de estadio fijo en MoviePy/OpenCV.",
+    "Calcular posiciones circulares usando Math.cos() y Math.sin() para rotar 8 sprites alrededor del centro.",
+    "Intercambiar el sprite central cada N fotogramas a velocidad fija.",
+    "Exportar render a 60 FPS y acoplar pista de audio."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar efecto de vibración/pantallazo verde al pausar correctamente.",
+    "Incluir un temporizador o marcador de intentos en pantalla.",
+    "Usar personajes de rivalidades famosas (ej. Messi vs CR7) para generar más debate en comentarios."
+   ]
+  }
+ },
+ {
+  "id": "3o-l5wpEjPM",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "MR. SHADOW ZONE",
+  "subs": 11700,
+  "creado": "2026-11-05",
+  "vistas": 2586927,
+  "horas": 39,
+  "vph": 66226,
+  "dur": 6,
+  "likes": 25717,
+  "coment": 38,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Puzzle de Ruleta de Jugador",
+   "mecanica": "Una ruleta circular con torsos recortados de Cristiano Ronaldo gira rápidamente en la parte superior. Abajo hay un cuerpo sin cabeza/torso. El objetivo visual es encajar la pieza correcta en el cuerpo inferior cuando se detiene o mediante pausa.",
+   "que_hace_el_espectador": "Pausar la pantalla para encajar la pieza exacta, intentar adivinar cuál es el torso correcto y observar el remate de la animación.",
+   "cuadro_0": "Arriba: Ruleta circular con 8 torsos de Ronaldo (camiseta roja de Portugal #7) rotando sobre fondo de estadio. Centro: Flecha blanca indicadora apuntando hacia abajo. Abajo: Campo de fútbol con un cuerpo central incompleto sobre un balón y dos figuras laterales de Ronaldo.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Comienza la ruleta a girar rápidamente con torsos de Ronaldo. Música lenta/desordenada de fondo.",
+     "sonido": "Vocal melódica previa al beat drop."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La ruleta continúa girando a alta velocidad. Los torsos cambian de posición rápidamente.",
+     "sonido": "Canto vocal continuo."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Segunda vuelta de la ruleta. Flecha indicadora señala la pieza activa en la base de la rueda.",
+     "sonido": "Sigue la melodía vocal."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La ruleta desacelera ligeramente mostrando diferentes poses del jugador.",
+     "sonido": "Melodía ascendente antes del impacto."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Transición inminente hacia el encaje de la pieza correcta en el cuerpo inferior.",
+     "sonido": "Efecto de transición sonora / risa o grito breve."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Corte rápido al impacto del beat drop. La pieza correcta baja y encaja en el cuerpo.",
+     "sonido": "Golpe seco / Beat drop de música electrónica acelerada (Phonk/Remix)."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "El cuerpo completo de Ronaldo se ensambla y destella con un ligero marco o animación.",
+     "sonido": "Música Phonk a ritmo alto."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Bucle continuo de la ruleta superior mientras la figura ensamblada permanece fija.",
+     "sonido": "Ritmo de bajo rápido continuo."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La animación se mantiene estable mostrando el resultado correcto completado.",
+     "sonido": "Base musical constante."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Fin del ciclo de audio preparándose para reiniciar sin interrupción visual.",
+     "sonido": "Remate del compás musical."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Reinicio inmediato al frame inicial para bucle infinito.",
+     "sonido": "Conexión directa con el inicio del track."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, el audio corta justo en el pulso musical y la rueda retoma el giro continuo, incentivando la reproducción en bucle.",
+   "gancho": "Movimiento circular acelerado en el primer segundo combinado con la imagen reconocible de Cristiano Ronaldo.",
+   "dopamina": [
+    "Satisfacción visual inmediata al encajar la pieza en el segundo 2.5",
+    "Estímulo auditivo sincronizado con el beat drop"
+   ],
+   "audio": "Remix Phonk/TikTok con introducción vocal corta seguida de un beat drop agresivo con bajo potente.",
+   "por_que_comentan": "Debaten si lograron pausarlo en el momento exacto o comentan su fanatismo por el jugador.",
+   "assets_necesarios": [
+    "Fondo de cancha de fútbol HD (PNG/JPG)",
+    "8 recortes PNG de alta calidad de torsos/cabezas de Cristiano Ronaldo",
+    "1 PNG de piernas y cuerpo inferior sobre balón",
+    "1 PNG de flecha indicadora blanca",
+    "Track de audio Phonk editado a 5 segundos"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo vertical 1080x1920 con MoviePy/OpenCV y colocar fondo de cancha.",
+    "2. Posicionar la imagen base del cuerpo inferior en (x=540, y=1400).",
+    "3. Generar una rueda circular con los 8 PNGs alineados angularmente a 45 grados de distancia alrededor de un centro (x=540, y=500).",
+    "4. Aplicar rotación continua a la rueda (360 deg/s) de t=0 a t=2.5s.",
+    "5. En t=2.5s, trasladar el PNG del torso correcto en y hasta colisionar con la base y congelar el encaje hasta t=5.0s.",
+    "6. Sincronizar el renderizado final con la pista de audio y exportar a 60 fps."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de tiempo o barra de progreso para aumentar el sentido de urgencia.",
+    "Incluir efectos de partículas de fuego o rayos dorados en el momento justo del encaje perfecto.",
+    "Variar los jugadores creando un reto multinivel en el mismo Short (ej. Messi, Mbappé, Ronaldo)."
+   ]
+  }
+ },
+ {
+  "id": "rP762MPjfTY",
+  "titulo": "Scary Teacher x Ronaldo × Mr Beast3D funny candy #scaryteacher3d #funny #familyfun #gamespeed",
+  "canal": "Dr. Suplex",
+  "subs": 16600,
+  "creado": "2026-07-16",
+  "vistas": 2444865,
+  "horas": 121,
+  "vph": 20207,
+  "dur": 16,
+  "likes": 9722,
+  "coment": 4,
+  "familia": "3d_ia",
+  "analisis": {
+   "nombre_formato": "Carrera 3D y Atracón de Helados",
+   "mecanica": "Personajes 3D populares corren hacia una mesa con helados, los devoran rápidamente con sonidos exagerados y continúan su camino o reaccionan al llegar tarde.",
+   "que_hace_el_espectador": "Solo mirar el absurdo de las animaciones y anticipar qué personaje comerá qué helado.",
+   "cuadro_0": "Fondo de carretera 3D con árboles. En primer plano una mesa amarilla con 6 paletas de colores y un cono de helado en el centro. El Oso de Masha corre desde al fondo.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0s",
+     "pantalla": "El Oso corre por la carretera hacia la mesa con paletas.",
+     "sonido": "Pasos pesados de carrera."
+    },
+    {
+     "t": "0.5s",
+     "pantalla": "El Oso se aproxima velozmente a la mesa.",
+     "sonido": "Pasos de carrera."
+    },
+    {
+     "t": "1.0s",
+     "pantalla": "El Oso llega a la mesa y se inclina.",
+     "sonido": "Pasos deteniéndose."
+    },
+    {
+     "t": "1.5s",
+     "pantalla": "El Oso devora la paleta roja y la azul.",
+     "sonido": "Efectos de masticar crujiente."
+    },
+    {
+     "t": "2.0s",
+     "pantalla": "El Oso se come el cono de helado del centro.",
+     "sonido": "Masticado rápido."
+    },
+    {
+     "t": "2.5s",
+     "pantalla": "El Oso termina de comer las paletas de la izquierda.",
+     "sonido": "Voz aguda diciendo 'Thank you, thank you'."
+    },
+    {
+     "t": "3.0s",
+     "pantalla": "El Oso come paleta lila y se da vuelta.",
+     "sonido": "Risas y masticado."
+    },
+    {
+     "t": "3.5s",
+     "pantalla": "El Oso corre de regreso por la calle vacía.",
+     "sonido": "Pasos de carrera alejándose."
+    },
+    {
+     "t": "4.0s",
+     "pantalla": "El Oso se aleja en el horizonte.",
+     "sonido": "Pasos continuos."
+    },
+    {
+     "t": "4.5s",
+     "pantalla": "Cambio de escena. Carretera con palmeras. Mesa de madera redonda con 3 conos de helado.",
+     "sonido": "Silencio breve / transición."
+    },
+    {
+     "t": "5.0s",
+     "pantalla": "Scary Teacher aparece en moto a lo lejos en la carretera.",
+     "sonido": "Motor de motocicleta acelerando."
+    },
+    {
+     "t": "5.5s",
+     "pantalla": "Scary Teacher en moto avanza rápido hacia la mesa.",
+     "sonido": "Rugido de motor intenso."
+    },
+    {
+     "t": "6.0s",
+     "pantalla": "Scary Teacher llega a la mesa en su moto.",
+     "sonido": "Frenada de moto."
+    },
+    {
+     "t": "6.5s",
+     "pantalla": "Scary Teacher agarra y come el helado verde y el rojo.",
+     "sonido": "Sonido de masticado cómico."
+    },
+    {
+     "t": "7.0s",
+     "pantalla": "Scary Teacher agarra el helado rosa restante.",
+     "sonido": "Voz acelerada diciendo 'Thank you, thank you'."
+    },
+    {
+     "t": "7.5s",
+     "pantalla": "Scary Teacher se traga el helado y acelera.",
+     "sonido": "Risa de la profesora y motor."
+    },
+    {
+     "t": "8.0s",
+     "pantalla": "Scary Teacher se aleja en moto dejando la mesa vacía.",
+     "sonido": "Motor alejándose."
+    },
+    {
+     "t": "8.5s",
+     "pantalla": "Mesa vacía. A lo lejos aparece el Oso corriendo.",
+     "sonido": "Pasos de carrera."
+    },
+    {
+     "t": "9.0s",
+     "pantalla": "El Oso corre hacia la mesa de madera.",
+     "sonido": "Pasos rápidos."
+    },
+    {
+     "t": "9.5s",
+     "pantalla": "El Oso se aproxima a la mesa.",
+     "sonido": "Pasos acelerados."
+    },
+    {
+     "t": "10.0s",
+     "pantalla": "El Oso llega a la mesa vacía.",
+     "sonido": "Pasos frenando."
+    },
+    {
+     "t": "10.5s",
+     "pantalla": "El Oso ve que no hay helados.",
+     "sonido": "Efecto de decepción / silencio."
+    },
+    {
+     "t": "11.0s",
+     "pantalla": "El Oso mira al suelo decepcionado.",
+     "sonido": "Gruñido o suspiro triste."
+    },
+    {
+     "t": "11.5s",
+     "pantalla": "El Oso se da la vuelta triste.",
+     "sonido": "Pasos lentos."
+    },
+    {
+     "t": "12.0s",
+     "pantalla": "El Oso empieza a correr de regreso.",
+     "sonido": "Pasos de carrera."
+    },
+    {
+     "t": "12.5s",
+     "pantalla": "El Oso corre alejándose por la carretera.",
+     "sonido": "Pasos continuos."
+    },
+    {
+     "t": "13.0s",
+     "pantalla": "El Oso continúa corriendo hacia el fondo.",
+     "sonido": "Pasos alejándose."
+    },
+    {
+     "t": "13.5s",
+     "pantalla": "El Oso está casi al final del camino.",
+     "sonido": "Pasos lejanos."
+    },
+    {
+     "t": "14.0s",
+     "pantalla": "El Oso desaparece en la distancia.",
+     "sonido": "Desvanecimiento del audio."
+    },
+    {
+     "t": "14.5s",
+     "pantalla": "Carretera vacía con la mesa en primer plano.",
+     "sonido": "Silencio final."
+    },
+    {
+     "t": "15.0s",
+     "pantalla": "Fin de la escena.",
+     "sonido": "Silencio."
+    }
+   ],
+   "duracion_s": 15,
+   "loop": "No empalma perfectamente en loop continuo, pero la carretera vacía del final conecta visualmente con la del inicio.",
+   "gancho": "La carrera acelerada de personajes 3D reconocibles (Oso de Masha, Scary Teacher) hacia comida colorida genera curiosidad visual inmediata.",
+   "dopamina": [
+    "ASMR de masticado rápido y voces agudas en t=1.5s y t=6.5s",
+    "Comedia física cuando el Oso llega a la mesa vacía en t=10.0s"
+   ],
+   "audio": "Efectos de sonido ASMR acelerados (masticar, 'Thank you' agudo, motores de moto y pasos).",
+   "por_que_comentan": "Comentan sobre sus personajes 3D favoritos o se ríen de la decepción del Oso al quedarse sin helado.",
+   "assets_necesarios": [
+    "Modelos 3D animados o sprites (Oso, Scary Teacher en moto)",
+    "Fondo 3D de carretera con árboles/palmeras",
+    "Maza/Mesa 3D",
+    "PNGs de helados y paletas coloridas",
+    "SFX masticar, motor moto, pasos, voces pitch-shifted"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 4,
+   "receta_para_programarlo": [
+    "Configurar escenario 3D en Pygame/Three.js con perspectiva de carretera.",
+    "Interpólese la escala Y y X de los personajes desde 0.1 hasta 1.0 para simular acercamiento.",
+    "Programar la desaparición secuencial de los helados con detención de movimiento y activación de SFX de masticado.",
+    "Invertir la interpolación de escala para animar la retirada del personaje."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de puntos o helados devorados en pantalla.",
+    "Incluir una barra de tiempo limite para hacerlo ver como un minijuego interactivo.",
+    "Agregar reacciones en pantalla tipo emojis 3D cuando el personaje falla en conseguir helado."
+   ]
+  }
  }
 ]
