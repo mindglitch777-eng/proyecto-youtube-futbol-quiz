@@ -13,14 +13,14 @@
    "estado": "en curso",
    "medicion": {
     "\"grilla\"": {
-     "videos": 7,
-     "vistas_48h_esperadas": 3117,
-     "p_mejor": 0.55
+     "videos": 8,
+     "vistas_48h_esperadas": 2871,
+     "p_mejor": 0.5
     },
     "\"estrella\"": {
      "videos": 6,
-     "vistas_48h_esperadas": 2991,
-     "p_mejor": 0.45
+     "vistas_48h_esperadas": 2881,
+     "p_mejor": 0.5
     }
    }
   },
@@ -38,12 +38,12 @@
    "medicion": {
     "false": {
      "videos": 0,
-     "vistas_48h_esperadas": 3784,
+     "vistas_48h_esperadas": 3590,
      "p_mejor": 0.5
     },
     "true": {
      "videos": 0,
-     "vistas_48h_esperadas": 3784,
+     "vistas_48h_esperadas": 3590,
      "p_mejor": 0.5
     }
    }

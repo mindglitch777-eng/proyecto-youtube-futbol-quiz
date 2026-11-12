@@ -6,8 +6,8 @@
  "concentracion": 0.35,
  "parecido_titulos": 0.64,
  "casi_identicos": 0,
- "medidos": 8,
- "musicas_distintas": 4,
+ "medidos": 26,
+ "musicas_distintas": 7,
  "reparto_semana": {
   "stop": 20,
   "balon": 1,
@@ -25,8 +25,6 @@
   "q20fichaje": 1,
   "q20costo": 1
  },
- "alertas": [
-  "Solo 4 pistas de música distintas en los últimos 8 videos."
- ],
+ "alertas": [],
  "lectura": "BIEN: variado"
 }
