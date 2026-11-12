@@ -1,32 +1,32 @@
 {
- "fecha": "2026-11-11",
- "indice": 67,
- "subidas_semana": 54,
+ "fecha": "2026-11-12",
+ "indice": 80,
+ "subidas_semana": 57,
  "formato_mas_usado": "stop",
- "concentracion": 0.41,
- "parecido_titulos": 0.66,
+ "concentracion": 0.35,
+ "parecido_titulos": 0.64,
  "casi_identicos": 0,
  "medidos": 8,
  "musicas_distintas": 4,
  "reparto_semana": {
-  "stop": 22,
+  "stop": 20,
   "balon": 1,
-  "rueda": 11,
-  "dress": 2,
-  "cabezas": 4,
+  "rueda": 12,
+  "cabezas": 5,
   "pared": 2,
+  "dress": 1,
   "siuu": 2,
   "penal": 1,
   "torre": 1,
   "tridente": 1,
   "circulo": 1,
-  "fitall": 5,
-  "q20fichaje": 1
+  "fitall": 7,
+  "find": 1,
+  "q20fichaje": 1,
+  "q20costo": 1
  },
  "alertas": [
-  "stop es el 41% de las subidas de la semana: demasiado de la misma plantilla.",
-  "Los títulos se parecen 66% en promedio: falta variedad de frases.",
   "Solo 4 pistas de música distintas en los últimos 8 videos."
  ],
- "lectura": "OJO: se empieza a ver repetitivo"
+ "lectura": "BIEN: variado"
 }
