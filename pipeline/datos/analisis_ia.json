@@ -1,48 +1,108 @@
 {
- "fecha": "2026-11-11",
- "autor": "Claude · análisis completo de los 63 videos del canal (48 con 48 h medidas)",
+ "fecha": "2026-11-13",
+ "autor": "Claude · diagnóstico del freno del crecimiento (13/11)",
  "veredicto": {
   "color": "amber",
-  "titulo": "El canal funciona, pero está gastando lugares en el formato que más se cansó",
-  "frase": "WHEEL es el mejor formato (mediana 14.700 vistas a las 48 h, 2,5 suscriptores cada 1.000). STOP retiene muy bien, pero el mismo día un STOP se come a los otros: el mejor STOP del día hace ~10.500 y el resto ~2.350. Pasar de 2-4 STOP diarios a 1-2 y darle ese lugar a WHEEL, HEAD FIT o BALLON D'OR es la mejora con más números a favor."
+  "titulo": "El crecimiento se frenó a la mitad porque subimos de más y repetimos WHEEL",
+  "frase": "Del 5 al 8/11 el canal sumaba ~70 K vistas y ~90 suscriptores por día; del 9 al 12/11, ~42 K y ~40. En esos días subimos 9 a 15 videos por día en vez de 6 (FIT ALL y los de 20 s como extras) y WHEEL salió 2 veces por día. El público se repartió entre más videos flojos y WHEEL se cansó. Desde el 14/11 vuelve a ser 6 por día con un solo WHEEL."
  },
  "numeros_clave": [
-  {"label": "Mejor formato", "valor": "WHEEL 14,7 K", "nota": "mediana a 48 h · 7 videos · confianza media"},
-  {"label": "STOP: el mejor del día", "valor": "10,5 K", "nota": "6 días con 2 o más STOP"},
-  {"label": "STOP: los demás del día", "valor": "2,35 K", "nota": "16 videos: 4,5 veces menos"},
-  {"label": "Lo que más predice las vistas", "valor": "% visto", "nota": "correlación 0,57; los likes 0,42; las vistas comprometidas ~0"},
-  {"label": "Piso para sobrevivir", "valor": "> 130 % visto", "nota": "todo lo que quedó por debajo de 100 % murió con < 1.100 vistas"},
-  {"label": "Mejores horas", "valor": "13-15 h y 21-23 h", "nota": "09 h y 17 h rinden ~2.800 (a igual formato también)"}
+  {
+   "label": "Vistas por día (5-8/11)",
+   "valor": "~70 K",
+   "nota": "con 6 videos por día"
+  },
+  {
+   "label": "Vistas por día (9-12/11)",
+   "valor": "~42 K",
+   "nota": "con 9 a 15 videos por día"
+  },
+  {
+   "label": "Suscriptores por día",
+   "valor": "~90 → ~40",
+   "nota": "mismo período"
+  },
+  {
+   "label": "WHEEL 2 por día",
+   "valor": "1,4-3 K",
+   "nota": "sus últimos 4; antes 9-23 K"
+  },
+  {
+   "label": "Formatos de 20 s",
+   "valor": "0,2-1,1 K",
+   "nota": "WHO IS THIS 172, PRICE TAG 1.073"
+  },
+  {
+   "label": "FIT ALL (7 videos)",
+   "valor": "2,7 K",
+   "nota": "mediana; WHEEL/HEAD FIT los mismos días 5-6 K"
+  }
  ],
  "hallazgos": [
-  {"tipo": "funciona", "titulo": "WHEEL (rueda) es el motor del canal",
+  {
+   "tipo": "no",
+   "titulo": "Subir de más bajó el canal",
+   "dato": "9/11: 15 videos, 10/11: 14, 11 al 13/11: 9 por día. En esos días las vistas diarias cayeron de ~70 K a ~42 K y los suscriptores de ~90 a ~40 por día.",
+   "por_que": "YouTube reparte la audiencia del canal entre todos los videos del día: más videos flojos = menos empuje para los buenos, y el promedio del canal baja.",
+   "confianza": "media (la medición horaria tiene huecos y 14 de 47 videos todavía no cumplieron 48 h)",
+   "accion": "Volver a 6 por día desde el 14/11 (ya está así). Los extras solo con un formato que ya probó rendir en NUESTRO canal, no solo en el mercado."
+  },
+  {
+   "tipo": "no",
+   "titulo": "WHEEL se cansó al salir 2 veces por día",
+   "dato": "11 al 13/11 salió a las 09:00 y a las 21:30: sus últimos videos hicieron 1.404, 1.809, 2.686 y 3.100, cuando antes hacía 9.000-23.000.",
+   "por_que": "El mejor formato pierde fuerza si se repite: la misma gente lo ve dos veces el mismo día.",
+   "confianza": "media",
+   "accion": "Desde el 14/11 el cerebro pone WHEEL una sola vez por día (regla nueva: nunca dos iguales el mismo día)."
+  },
+  {
+   "tipo": "no",
+   "titulo": "Los formatos de 20 s y FIT ALL no rindieron",
+   "dato": "WHO IS THIS 172 vistas, PRICE TAG 1.073; FIT ALL mediana 2.723 en 7 videos.",
+   "por_que": "Eran olas del mercado, no de nuestro público. Una ola ajena justifica PROBAR, no llenar la grilla.",
+   "confianza": "baja para los de 20 s (1 video cada uno) · media para FIT ALL",
+   "accion": "Quedan como prueba, con un máximo de 3 por semana; el cerebro los baja solo si siguen así."
+  },
+  {
+   "tipo": "funciona",
+   "titulo": "WHEEL (rueda) es el motor del canal",
    "dato": "Mediana 14.747 a las 48 h; 4 de los 8 mejores videos del canal; 2,54 suscriptores cada 1.000 vistas (el doble del promedio).",
    "por_que": "Combina el reto del STOP (parar en el momento justo) con una decisión entre superestrellas: el espectador elige y se queda a ver si acertó.",
-   "confianza": "media (7 videos)", "accion": "Mantener fijo todos los días en una hora fuerte. Es el candidato natural a ocupar el lugar que libere STOP."},
-  {"tipo": "no", "titulo": "STOP se canibaliza a sí mismo el mismo día",
+   "confianza": "media (7 videos)",
+   "accion": "Mantener fijo todos los días en una hora fuerte. Es el candidato natural a ocupar el lugar que libere STOP."
+  },
+  {
+   "tipo": "no",
+   "titulo": "STOP se canibaliza a sí mismo el mismo día",
    "dato": "26 videos. Los días con 2 o más STOP, el mejor hace 10.534 (mediana) y los demás 2.350. Un solo STOP por día casi siempre pega; el 2.º, 3.º y 4.º casi nunca.",
    "por_que": "YouTube le muestra el formato a la misma audiencia; el que ya vio uno hoy desliza el siguiente. No es mala calidad: el % visto del STOP es el más alto del canal (183 %).",
-   "confianza": "alta (26 videos, patrón repetido en 6 días)", "accion": "Bajar STOP a 1 por día (propuesta #3, espera tu aprobación). El cerebro ya le da 0 % de chances de ser el mejor formato."},
-  {"tipo": "funciona", "titulo": "HEAD FIT y BALLON D'OR arrancaron muy arriba",
+   "confianza": "alta (26 videos, patrón repetido en 6 días)",
+   "accion": "Bajar STOP a 1 por día (propuesta #3, espera tu aprobación). El cerebro ya le da 0 % de chances de ser el mejor formato."
+  },
+  {
+   "tipo": "funciona",
+   "titulo": "HEAD FIT y BALLON D'OR arrancaron muy arriba",
    "dato": "HEAD FIT 17.647 y BALLON D'OR 12.124 en su primer video medido.",
    "por_que": "Formato nuevo con superestrella reconocible en el primer cuadro + reto claro (regla 1 del canal).",
-   "confianza": "baja (1 video cada uno: puede ser suerte)", "accion": "Seguir probándolos: el cerebro les da 17 % y 14 % de chances de ser el mejor y los va a mostrar más hasta tener 4 videos."},
-  {"tipo": "no", "titulo": "Los formatos de octubre con menos de 100 % visto murieron todos",
+   "confianza": "baja (1 video cada uno: puede ser suerte)",
+   "accion": "Seguir probándolos: el cerebro les da 17 % y 14 % de chances de ser el mejor y los va a mostrar más hasta tener 4 videos."
+  },
+  {
+   "tipo": "no",
+   "titulo": "Los formatos de octubre con menos de 100 % visto murieron todos",
    "dato": "Carrera, anillos, plinko, FIND, 'otros': entre 420 y 1.100 vistas, con 70-112 % visto.",
    "por_que": "El % visto es lo que más predice las vistas (correlación 0,57). Si la gente no lo ve más de una vez, YouTube no lo empuja.",
-   "confianza": "alta (11 videos)", "accion": "Regla matemática: un formato de prueba que en sus 2 primeros videos queda debajo de 120 % visto no se sigue probando."},
-  {"tipo": "ojo", "titulo": "Messi en el título ya no suma",
+   "confianza": "alta (11 videos)",
+   "accion": "Regla matemática: un formato de prueba que en sus 2 primeros videos queda debajo de 120 % visto no se sigue probando."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Messi en el título ya no suma",
    "dato": "18 videos con Messi en el título: mediana 2.955. Con Neymar 8.727 (2) y con Mbappé 7.250 (4).",
    "por_que": "Lo usamos en casi la mitad de los títulos: la audiencia ya lo vio. Igual Messi sigue sirviendo en la imagen del primer cuadro.",
-   "confianza": "media (mezclado con el formato: muchos Messi fueron STOP de relleno)", "accion": "Rotar la estrella del título: Messi como máximo 1 de cada 4 títulos; más Neymar, Mbappé, Vinícius."},
-  {"tipo": "ojo", "titulo": "Los títulos con pregunta rinden menos",
-   "dato": "Con '?': mediana 1.687 (20 videos). Sin '?': 2.955 (28).",
-   "por_que": "Una afirmación-reto ('99.9% WILL FAIL…', 'Only 1% can…') promete algo; la pregunta suena a duda.",
-   "confianza": "baja-media (mezclado con formato y fecha)", "accion": "Prueba A/B de títulos cuando termine la del STOP: reto afirmativo contra pregunta."},
-  {"tipo": "ojo", "titulo": "Las 09 h y las 17 h son las horas flojas",
-   "dato": "09 h: 2.907 · 17 h: 2.747 contra 13 h: 6.491, 21 h: 6.436, 15 h: 12.070.",
-   "por_que": "Para EE. UU., México y Argentina (60 % del público) las 9 de Argentina es de madrugada o muy temprano.",
-   "confianza": "media", "accion": "El cerebro ya manda los formatos fuertes a las mejores horas y deja las flojas para las pruebas."}
+   "confianza": "media (mezclado con el formato: muchos Messi fueron STOP de relleno)",
+   "accion": "Rotar la estrella del título: Messi como máximo 1 de cada 4 títulos; más Neymar, Mbappé, Vinícius."
+  }
  ],
  "reglas_matematicas": [
   "Se compara siempre a la misma edad: vistas a las 48 h, con medianas (un viral no tapa todo).",
@@ -52,8 +112,17 @@
   "Una prueba A/B gana con ≥ 90 % de seguridad y ≥ 4 videos por lado."
  ],
  "acciones": [
-  {"quien": "CEO", "que": "Aprobar o rechazar la propuesta #3 (STOP a 1 por día): es la mejora con más números a favor."},
-  {"quien": "Cerebro", "que": "Ya reparte las pruebas con estadística, tope de 35 % y prueba A/B del arranque del STOP."},
-  {"quien": "Gerente IA", "que": "Rotar la estrella del título (Messi ≤ 1 de cada 4) y actualizar este análisis cada día."}
+  {
+   "quien": "Sistema",
+   "que": "Desde el 14/11: 6 videos por día, un solo WHEEL, máximo 3 por semana por formato de prueba."
+  },
+  {
+   "quien": "Gerente IA",
+   "que": "No pedir extras de un formato con menos de 4 videos propios medidos; medir el 16/11 si las vistas diarias vuelven a ~70 K."
+  },
+  {
+   "quien": "CEO",
+   "que": "Nada urgente: solo responder la consulta de DRESS cuando el Gerente la conteste."
+  }
  ]
 }
