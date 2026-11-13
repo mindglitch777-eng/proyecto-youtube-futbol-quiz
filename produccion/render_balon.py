@@ -52,6 +52,9 @@ def silueta(tr):
     return fantasma
 
 
+VENTANA_PERFECT = 0.22   # 13/11: antes 0,4 s → el trofeo ya estaba lejos y el medidor marcaba 4 % con "PERFECT!" en pantalla
+
+
 def main(guion):
     g = json.loads(Path(guion).read_text())
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
@@ -91,14 +94,14 @@ def main(guion):
         dist = math.hypot(x - tx, y - ty)
         pct = max(0, min(100, round(100 * (1 - dist / (2 * RX)) ** 1.6)))
         de = min(min(abs(t - e), dur - abs(t - e)) for e in encajes)
-        if de < 1 / FPS:
+        tras = min(((t - x_) % dur) for x_ in encajes)                       # solo DESPUÉS del encaje (no delata)
+        if de < 1 / FPS or tras < VENTANA_PERFECT:                             # 13/11: el medidor no contradice al "PERFECT!"
             pct = 100
         d = ImageDraw.Draw(im)
         col = (255, 215, 0) if pct >= 98 else ((255, 255, 255) if pct < 80 else (255, 150, 40))
         P.texto(d, (W / 2, 420), f"{pct}%", 190, col, 14, (20, 20, 30))
         P.texto(d, (W / 2, 1880 - 30), g["nombre"].upper(), 64, (255, 255, 255), 9, (20, 20, 30))
-        tras = min(((t - x_) % dur) for x_ in encajes)                       # solo DESPUÉS del encaje (no delata)
-        if tras < 0.4:
+        if tras < VENTANA_PERFECT:
             e = tras
             if e < 0.12:
                 im.alpha_composite(Image.new("RGBA", (W, H), (255, 215, 0, int(70 * (1 - e / 0.12)))))
