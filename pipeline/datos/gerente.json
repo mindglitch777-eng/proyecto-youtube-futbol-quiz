@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-13",
- "hora": "14:56",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 2490,
   "mediana_48h_semana_anterior": 6044,
@@ -71,7 +71,7 @@
   }
  },
  "cerebro": {
-  "fecha": "2026-11-13T14:56-03:00",
+  "fecha": "2026-11-13T15:42-03:00",
   "videos_medidos": 64,
   "formatos": {
    "rueda": {
@@ -256,20 +256,20 @@
     "rueda": "19%",
     "cabezas": "12%",
     "fitall": "11%",
-    "balon": "4%",
     "pared": "4%",
+    "balon": "4%",
     "q20balon": "4%",
-    "penal": "2%",
     "siuu": "2%",
+    "penal": "2%",
     "tridente": "2%",
-    "find": "1%",
-    "plinko": "1%",
-    "dress": "1%",
-    "circulo": "1%",
     "trayectoria": "1%",
+    "plinko": "1%",
     "torre": "1%",
+    "find": "1%",
+    "q20costo": "1%",
     "q20fichaje": "1%",
-    "q20costo": "1%"
+    "dress": "1%",
+    "circulo": "1%"
    }
   },
   "experimentos": {
@@ -914,7 +914,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 3,
+  "olas_hace_h": 4,
   "investigacion": "2026-11-11",
   "poda": {
    "podadas": {},
@@ -928,5 +928,28 @@
   },
   "advertencias": []
  },
- "parte": null
+ "parte": {
+  "fecha": "2026-11-13",
+  "titular": "821 de 1.000 suscriptores (faltan 179). Vistas de Shorts en 90 días: 699 K de 10 M (7 %); al ritmo de esta semana faltan ~28 semanas. Últimas 24 h: ~58 K vistas y ~48 suscriptores, mejor que los ~45 K y ~30 del 11 al 12/11 (confianza baja: es 1 día).",
+  "funciona": [
+   "WHEEL sigue siendo el motor: mediana 8.117 a las 48 h (3,3x el canal, 11 videos, confianza ALTA) y 2,14 suscriptores cada 1.000, el mejor del canal. La rueda de las 21:30 del 11/11 hizo 23.143.",
+   "HEAD FIT: mediana 15.207 (6,1x) en 3 videos medidos; confianza BAJA todavía, pero es la mayor oportunidad (solo 6 % de los videos).",
+   "Originalidad 86/100 sin alertas; inspector visual: 28 videos revisados, 0 defectos. Todas las máquinas corrieron bien en 24 h."
+  ],
+  "no_funciona": [
+   "La mediana del canal a las 48 h cayó a 2.490 esta semana (antes 6.044, -59 %): es el efecto de haber subido 9-15 por día del 9 al 13/11. Desde el 14/11 se vuelve a 6.",
+   "WHEEL cansado: sus últimos 4 rinden el 36 % de los 4 anteriores (salió 2 veces por día). Ya corregido a 1 por día; se mide el 16/11.",
+   "FIT ALL -56 % (mediana 2.110, 0,8x) y los de 20 s flojos (WHO IS THIS 177 vistas).",
+   "El sábado 14/11 tiene HEAD FIT 2 veces (15:00 y 23:00) y 7 videos: ya estaban subidos antes del arreglo; no los toco (borrar o cambiar videos subidos es decisión tuya)."
+  ],
+  "hice": [
+   "Puse en marcha LEGS WHEEL, CONVEYOR STOP y HEAD SLOT (aprobados en #6 y #7) como pruebas, máximo 3 por semana cada uno y como máximo 1 variante de WHEEL/HEAD FIT por día. Prueba de humo: TODO OK.",
+   "Respondí tu consulta de DRESS UP (#4): no sacarlo todavía, sigue pausado; arreglar el parche negro y acortarlo, probar 2 veces y si queda bajo 120 % visto, se saca.",
+   "Cerré #3 como pediste (STOP sigue en 2 por día; reviso el 18/11)."
+  ],
+  "para_el_ceo": [
+   "Consulta DRESS UP: leé mi respuesta en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/4 y comentá si estás de acuerdo o si preferís 'sacar'.",
+   "Sábado 14/11 sale HEAD FIT 2 veces (ya programado en YouTube). Si querés que saque uno, decímelo; yo recomiendo dejarlo (es 1 día y es el mejor formato)."
+  ]
+ }
 }

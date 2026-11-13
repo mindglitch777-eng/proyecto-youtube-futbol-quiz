@@ -23,6 +23,7 @@ GRILLA = [("15:00", "stop", "grilla"),   # 13/11: 09:00 rendía 2.907 de mediana
           ("13:00", "prueba", None), ("17:00", "prueba", None),
           ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "stop", "grilla2")]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
+VARIANTES = {"cinta", "piernas", "slot"}                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
 MIN_VIDEOS_PODA = 4
 MAX_PRUEBA_SEMANA = 3                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
 
@@ -145,6 +146,8 @@ def main(inicio=None, dias=7):
             tope = {k: CONFIG["pruebas"][k].get("max_semana", MAX_PRUEBA_SEMANA) for k in activas}  # algunos formatos solo N por semana
             del_dia = ({x["tipo"] for x in slots if x["fecha"] == dia} |        # variedad: nunca el mismo formato dos veces en el día
                        {t for _, t, _ in GRILLA_SEMANA if t != "prueba"} | FIJOS)  # (los fijos ya tienen su lugar más tarde)
+            if del_dia & VARIANTES:                                             # ya salió una variante de WHEEL/HEAD FIT hoy: no otra
+                del_dia |= VARIANTES
             cand = [k for k in activas if k not in del_dia and k not in ola_fija and semana.get(k, 0) < tope[k]] or \
                    [k for k in activas if semana.get(k, 0) < tope[k]] or activas
             if not cand:
