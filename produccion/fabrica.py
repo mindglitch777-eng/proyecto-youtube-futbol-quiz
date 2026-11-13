@@ -196,14 +196,21 @@ def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.7, tipo=None):
     if ok(base):
         return _con_tags(base, tags)
     ns = [n for n in nombres if n] or ["Messi", "Ronaldo", "Mbappé"]
+    est = estrellas_nombres()                                                  # 13/11: solo superestrellas en el título
+    ns = sorted(ns, key=lambda n: n not in est)                                # (con "Cole/Gavi/Pedri" rendía 1.841 vs 5.714)
+    n_est = sum(1 for n in ns if n in est)
     while len(ns) < 3:
         ns.append(rng.choice(["Messi", "Ronaldo", "Mbappé", "Yamal", "Neymar"]))
     pool = VARIANTES.get(tipo, [])
+    if n_est < 2:                                                              # una sola estrella en el video: variantes con un nombre
+        pool = [x for x in pool if "{b}" not in x and "{c}" not in x] or pool
+    elif n_est < 3:
+        pool = [x for x in pool if "{c}" not in x] or pool
     mejor = (2.0, base)                                                        # si nada queda bajo el umbral: la MENOS parecida (nunca la repetida)
     for _ in range(200):
         if not pool:
             break
-        resto = ns[1:]
+        resto = [n for n in ns[1:] if n in est] if n_est >= 3 else ns[1:]
         if tipo in ("rueda", "cabezas", "stop", "fitall"):                                # el protagonista (la superestrella) SIEMPRE va primero
             a = ns[0]; b, c = (rng.sample(resto, 2) if len(resto) >= 2 else (resto + ns)[:2])
         else:
@@ -222,6 +229,7 @@ def titulo_unico(titulo, previos, rng, nombres=(), umbral=0.7, tipo=None):
 
 
 def titulo_stop(V, rng, nombres, nivel=None):
+    nombres = sorted(nombres, key=lambda n: n not in estrellas_nombres())       # 13/11: superestrellas primero (título y hashtags)
     base = (V.titulo("stop_formula", TIT_STOP_FORMULA, rng) if V else rng.choice(TIT_STOP_FORMULA)).format(a=nombres[0], b=nombres[1])
     if nivel and False:                                                        # el nivel queda en pantalla, no en el título
         base += f" · Level {nivel}"
@@ -229,6 +237,12 @@ def titulo_stop(V, rng, nombres, nivel=None):
         if len(base) + len(tag(n)) + 1 <= 100:
             base += " " + tag(n)
     return base
+
+
+def estrellas_nombres():
+    """Nombres de las superestrellas (los que se reconocen en 0,4 s). Solo estos van en los títulos."""
+    return {nombre_de(c) for c in SUPERESTRELLAS} | {"Messi", "Ronaldo", "Cristiano Ronaldo", "Mbappé", "Yamal", "Lamine Yamal",
+                                                     "Neymar", "Vinícius", "Vinícius Jr."}
 
 
 def nombre_de(clave):
@@ -317,7 +331,7 @@ def guion_rueda(gid, rng, V, fecha):
         base = cuerpo.rsplit("_", 1)[0]
         pool = [t for t in TORSOS_RUEDA if t.rsplit("_", 1)[0] != base]
         estrellas = [t for t in pool if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
-        torsos = rng.sample(estrellas, 2) + rng.sample([t for t in pool if t not in estrellas], 5)
+        torsos = rng.sample(estrellas, 3) + rng.sample([t for t in pool if t not in estrellas], 4)   # 13/11: 3 estrellas (antes 2)
         rng.shuffle(torsos)
         clave = (cuerpo,) + tuple(sorted(torsos))
         if clave not in usados:
@@ -567,7 +581,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             g = guion_rueda(gid, rng, V, sl["fecha"])
             otros_ = [nombre_de(t.rsplit("_", 1)[0]) for t in g["torsos"]]               # cualquiera de la rueda (varía el título)
             est_ = [o for o in g["otros"]] + [o for o in otros_ if o not in g["otros"]]
-            a, b = rng.sample(est_[:4], 2) if len(est_) >= 2 else (est_ + ["Ronaldo", "Mbappé"])[:2]
+            est_ = [o for o in est_ if o in estrellas_nombres()] or est_        # 13/11: en el título solo superestrellas de la rueda
+            a, b = rng.sample(est_, 2) if len(est_) >= 2 else (est_ + ["Ronaldo", "Mbappé"])[:2]
             titulo = V.titulo("rueda", TIT_RUEDA, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
             desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")

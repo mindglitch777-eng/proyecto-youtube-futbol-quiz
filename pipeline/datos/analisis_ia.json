@@ -41,6 +41,22 @@
  "hallazgos": [
   {
    "tipo": "no",
+   "titulo": "Los títulos con jugadores poco conocidos se hunden",
+   "dato": "Títulos solo con superestrellas (Messi, Ronaldo, Mbappé, Yamal, Neymar, Vinícius): mediana 5.714 a las 48 h (23 videos). Mezclando con Cole, Pedri, Gavi, Haaland, Kane, Salah: 1.841 (6 videos). La rueda con 3 estrellas en el título hizo 13-18 K; con 'Cole' o 'Pedri' 1,4-2,6 K.",
+   "por_que": "El que desliza decide en menos de medio segundo: un nombre que no reconoce no lo frena. El sistema anti-repetición estaba metiendo jugadores secundarios para variar.",
+   "confianza": "media (6 videos del lado flojo)",
+   "accion": "Arreglado el 13/11: los títulos llevan solo superestrellas y la rueda trae 3 estrellas (antes 2). La variedad sale de combinar estrellas, cuerpos y ganchos, no de nombres desconocidos."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Las 09:00 eran la peor hora",
+   "dato": "09:00: mediana 2.907 · 15:00: 12.070 · cerebro: 14:00 +27 %, 21:00 +25 %.",
+   "por_que": "Las 9 de Argentina es de madrugada en México y EE. UU., que son la mayor parte del público.",
+   "confianza": "media",
+   "accion": "Desde la grilla del 16/11 el STOP de la mañana pasa a las 15:00."
+  },
+  {
+   "tipo": "no",
    "titulo": "Subir de más bajó el canal",
    "dato": "9/11: 15 videos, 10/11: 14, 11 al 13/11: 9 por día. En esos días las vistas diarias cayeron de ~70 K a ~42 K y los suscriptores de ~90 a ~40 por día.",
    "por_que": "YouTube reparte la audiencia del canal entre todos los videos del día: más videos flojos = menos empuje para los buenos, y el promedio del canal baja.",
@@ -112,6 +128,10 @@
   "Una prueba A/B gana con ≥ 90 % de seguridad y ≥ 4 videos por lado."
  ],
  "acciones": [
+  {
+   "quien": "Claude + Ingeniero",
+   "que": "13/11: títulos solo con superestrellas, rueda con 3 estrellas, 09:00 → 15:00, y el Ingeniero arma 2 variantes nuevas de WHEEL / HEAD FIT con prototipo."
+  },
   {
    "quien": "Sistema",
    "que": "Desde el 14/11: 6 videos por día, un solo WHEEL, máximo 3 por semana por formato de prueba."
