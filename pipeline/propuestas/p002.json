@@ -4,11 +4,35 @@
  "titulo": "CONVEYOR STOP y HEAD SLOT (variantes de WHEEL y HEAD FIT)",
  "que_mostrar": "Misma mecánica ganadora (elegir entre superestrellas + parar justo), otro objeto que se mueve y otra recompensa. Solo superestrellas.",
  "slots": [
-  {"tipo": "cinta"},
-  {"tipo": "slot"},
-  {"tipo": "cinta"},
-  {"tipo": "slot"},
-  {"tipo": "cinta"},
-  {"tipo": "slot"}
- ]
+  {
+   "tipo": "cinta"
+  },
+  {
+   "tipo": "slot"
+  },
+  {
+   "tipo": "cinta"
+  },
+  {
+   "tipo": "slot"
+  },
+  {
+   "tipo": "cinta"
+  },
+  {
+   "tipo": "slot"
+  }
+ ],
+ "prototipo": {
+  "hoja": "reports/propuestas/p002/hoja.jpg",
+  "videos": [
+   "produccion/prototipos/p002/p002_01_dom13_1200_cinta.mp4",
+   "produccion/prototipos/p002/p002_02_dom13_1300_slot.mp4",
+   "produccion/prototipos/p002/p002_03_dom13_1400_cinta.mp4",
+   "produccion/prototipos/p002/p002_04_dom13_1500_slot.mp4",
+   "produccion/prototipos/p002/p002_05_dom13_1600_cinta.mp4",
+   "produccion/prototipos/p002/p002_06_dom13_1700_slot.mp4"
+  ],
+  "release": "propuesta-p002"
+ }
 }
