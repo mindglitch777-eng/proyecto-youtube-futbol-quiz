@@ -100,6 +100,11 @@
    "nombre": "BALLON D'OR PICKS",
    "min": 0,
    "max": 7
+  },
+  "piernas": {
+   "nombre": "LEGS WHEEL",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -210,6 +215,11 @@
   },
   "q20balon": {
    "listo": true
+  },
+  "piernas": {
+   "listo": false,
+   "max_semana": 3,
+   "nota": "13/11 variante de WHEEL: torso de superestrella fijo + rueda de piernas. Propuesta con prototipo; entra cuando el CEO apruebe."
   }
  }
 }

@@ -33,12 +33,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -342,6 +342,32 @@ def guion_rueda(gid, rng, V, fecha):
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(2, 6), otros=otros)
 
 
+# LEGS WHEEL (13/11): WHEEL al revés. Torso de superestrella fijo arriba (cara en el cuadro 0) y rueda de piernas abajo.
+TIT_PIERNAS = ["Find {n}'s real legs 🦵🛑 {a} or {b}?", "{n} vs {a} or {b} legs challenge 🦵🔥", "Give {n} his legs back 🦵🛑 Only 1% can",
+               "Stop on {n}'s REAL legs 🦵😱 {a} or {b}?"]
+
+
+def guion_piernas(gid, rng, V, fecha):
+    usados = V.grupos.setdefault("piernas", set())
+    ult = V.contadores.setdefault("piernas_ult", [])
+    cuerpo = min(sorted(CUERPOS_RUEDA), key=lambda c: (c == (ult[-1] if ult else None), ult[-6:].count(c), rng.random()))
+    ult.append(cuerpo); del ult[:-12]
+    base = cuerpo.rsplit("_", 1)[0]
+    pool = sorted(p.stem for p in (ROOT / "assets" / "recortes" / "cuerpos").glob("*.png") if not p.stem.startswith(base))
+    nombre = CUERPOS_RUEDA[cuerpo]
+    est = {c.rsplit("_", 1)[0]: n for c, n in CUERPOS_RUEDA.items() if c != cuerpo and not c.startswith(base)}
+    for _ in range(100):                                                       # 2 de las piernas son de otras superestrellas (las del título)
+        dos = rng.sample(sorted(est), 2)
+        de_est = [rng.choice([x for x in pool if x.startswith(k)]) for k in dos]
+        piernas = de_est + rng.sample([x for x in pool if not x.startswith(tuple(est))], 3)
+        rng.shuffle(piernas)
+        clave = (cuerpo,) + tuple(sorted(piernas))
+        if clave not in usados:
+            usados.add(clave); break
+    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, piernas=piernas, dur=6.6, vueltas=3, t_encaje=0.45, sentido=rng.choice([1, -1]),
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(1, 5), otros=[est[k] for k in dos])
+
+
 # Formatos nuevos con la mecánica STOP (ideas de la IA de YouTube Studio, 02/11)
 TIT_SIUU = ["Pause Ronaldo at 67 😱 SIUUU challenge", "Only 1% stop CR7 at 67 🛑 SIUUU", "Stop at 67 = SIUUU 🔥 Can you do it?",
             "SIUUU at 67 🛑 Pause it at the top!"]
@@ -577,6 +603,13 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                 fijado = f"I was sure {ns[(g['ganador'] + 1) % 4]} had it 😭 who did you pick?"
             desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
+        elif tipo == "piernas":
+            g = guion_piernas(gid, rng, V, sl["fecha"])
+            a, b = g["otros"]
+            titulo = V.titulo("piernas", TIT_PIERNAS, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
+            desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. Comment your number 👇\n"
+                    + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
+            fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
         elif tipo == "rueda":
             g = guion_rueda(gid, rng, V, sl["fecha"])
             otros_ = [nombre_de(t.rsplit("_", 1)[0]) for t in g["torsos"]]               # cualquiera de la rueda (varía el título)

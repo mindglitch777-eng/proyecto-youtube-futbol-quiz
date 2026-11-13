@@ -27,6 +27,9 @@ TEXTOS = {
     "rueda": dict(gancho=["STOP ON {n}", "FIND {n}'S BODY", "STOP ON {n}'S BODY"],
                   apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "ONLY 1% GET IT"],
                   cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+    "piernas": dict(gancho=["FIND {n}'S REAL LEGS", "STOP ON {n}'S LEGS", "GIVE {n} HIS LEGS BACK"],
+                    apuesta=["99% IMPOSSIBLE", "ONLY 1% GET IT", "6 LEGS · ONLY 1 FITS"],
+                    cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
     "find": dict(gancho=["FIND THE REAL {n}", "ONLY 1% FIND THEM ALL"], apuesta=["3 ROUNDS · NO MISTAKES"],
                  cta=["COMMENT YOUR NUMBERS · FOLLOW FOR PART 2"]),
     "plinko": dict(gancho=["PICK YOUR PLAYER NOW", "WHO LANDS ON 99?"], apuesta=["WRONG PICK = YOU LOSE"],
@@ -43,6 +46,7 @@ TEXTOS = {
 }
 FIJADO = {"stop": "How many tries did it take you? 😤 I read them all 👇",
           "rueda": "What number did you stop it on? 👀 I read them all 👇",
+          "piernas": "What number were his REAL legs? 🦵 Be honest 👀 I read them all 👇",
           "find": "How many did you get right? Be honest 👀 I read them all 👇",
           "plinko": "Who did you pick? 👀 I read them all 👇",
           "cabeza": "Did you get it before it landed? 👀 I read them all 👇",
