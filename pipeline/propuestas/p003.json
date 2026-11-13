@@ -3,8 +3,23 @@
  "issue": 6,
  "titulo": "LEGS WHEEL: la variante de WHEEL al revés",
  "slots": [
-  {"tipo": "piernas"},
-  {"tipo": "piernas"},
-  {"tipo": "piernas"}
- ]
+  {
+   "tipo": "piernas"
+  },
+  {
+   "tipo": "piernas"
+  },
+  {
+   "tipo": "piernas"
+  }
+ ],
+ "prototipo": {
+  "hoja": "reports/propuestas/p003/hoja.jpg",
+  "videos": [
+   "produccion/prototipos/p003/p003_01_dom13_1200_piernas.mp4",
+   "produccion/prototipos/p003/p003_02_dom13_1300_piernas.mp4",
+   "produccion/prototipos/p003/p003_03_dom13_1400_piernas.mp4"
+  ],
+  "release": "propuesta-p003"
+ }
 }
