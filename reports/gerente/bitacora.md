@@ -27,3 +27,11 @@ Formato de cada entrada:
 - **Decidí e hice:** nada en la grilla (la propuesta espera al CEO).
 - **Revisar el 2026-11-12:** pedirle al Ingeniero (jueves) que arregle esos 2 defectos antes de que DRESS o BALLON D'OR vuelvan a salir.
 - **Para el CEO:** Issue #3 (bajar el STOP a 1 por día) con su prueba visual.
+
+## 2026-11-13 · Ingeniero
+- **Ingeniero:** 2 formatos de prueba nuevos con `"listo": false`: **CONVEYOR STOP** (`cinta`, variante de WHEEL: torsos de 6 superestrellas
+  colgados de una cinta aérea sobre las piernas de una estrella) y **HEAD SLOT** (`slot`, variante de HEAD FIT: tragamonedas de cabezas de
+  6 superestrellas que desemboca en el cuello; JACKPOT + monedas). Solo superestrellas, con una estrella en el cuadro 0. Avanzan a saltos y
+  el PERFECT!/JACKPOT! se ve solo mientras la pieza correcta está calzada. Propuesta p002 con 3 muestras de cada uno (Issue #7).
+  La prueba de humo con --render dio TODO OK. No toqué render_balon.py ni DRESS: los tiene la sesión principal.
+- **Para el CEO:** Issue #7 (aprobar o no CONVEYOR STOP y HEAD SLOT; si entran, que alternen con WHEEL/HEAD FIT, sin sumarse como extras).

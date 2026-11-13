@@ -105,6 +105,16 @@
    "nombre": "LEGS WHEEL",
    "min": 0,
    "max": 7
+  },
+  "cinta": {
+   "nombre": "CONVEYOR STOP",
+   "min": 0,
+   "max": 7
+  },
+  "slot": {
+   "nombre": "HEAD SLOT",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -220,6 +230,16 @@
    "listo": false,
    "max_semana": 3,
    "nota": "13/11 variante de WHEEL: torso de superestrella fijo + rueda de piernas. Propuesta con prototipo; entra cuando el CEO apruebe."
+  },
+  "cinta": {
+   "listo": false,
+   "max_semana": 3,
+   "nota": "13/11 variante de WHEEL: torsos de 6 superestrellas colgados de una cinta aérea sobre las piernas de una estrella. Propuesta p002; entra cuando el CEO apruebe."
+  },
+  "slot": {
+   "listo": false,
+   "max_semana": 3,
+   "nota": "13/11 variante de HEAD FIT: tragamonedas de cabezas de 6 superestrellas que desemboca en el cuello de una estrella; JACKPOT + monedas. Propuesta p002; entra cuando el CEO apruebe."
   }
  }
 }

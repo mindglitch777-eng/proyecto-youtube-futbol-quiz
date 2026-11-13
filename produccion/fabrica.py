@@ -33,12 +33,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "cinta": "CONVEYOR STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "cinta": "render_cinta.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -368,6 +368,54 @@ def guion_piernas(gid, rng, V, fecha):
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(1, 5), otros=[est[k] for k in dos])
 
 
+# CONVEYOR STOP y HEAD SLOT (13/11): variantes de WHEEL y HEAD FIT con otro objeto que se mueve y otra recompensa.
+# SOLO superestrellas en la cinta / el rodillo (lección del 13/11: los secundarios rinden 3 veces menos). La variedad sale de
+# qué estrella es el dueño, el orden y el gancho, no de nombres nuevos.
+TORSOS_ESTRELLA = {"cristiano_ronaldo": ["cristiano_ronaldo_0"], "lionel_messi": ["lionel_messi_0"], "kylian_mbapp": ["kylian_mbapp_0"],
+                   "lamine_yamal": ["lamine_yamal_0"], "neymar": ["neymar_2"], "vin_cius_j_nior": ["vin_cius_j_nior_0", "vin_cius_j_nior_3"]}
+TIT_CINTA = ["{n} vs {a} or {b} stop challenge 🛑🔥", "{n} vs {a} or {b} conveyor challenge 😱🛑", "Stop {n}'s body on the belt 🛑 {a} or {b}?",
+             "Find {n}'s real body 🛑🔥 {a} or {b}?"]
+TIT_SLOT = ["{n} vs {a} or {b} head slot 🎰🛑", "Hit the {n} JACKPOT 🎰 {a} or {b}?", "Fit {n}'s head 🎰 Only 1% hit the jackpot",
+            "{n} head fit slot machine 😱🎰 {a} or {b}?"]
+
+
+def _dueno(V, clave_ult, opciones, rng):
+    ult = V.contadores.setdefault(clave_ult, [])
+    c = min(sorted(opciones), key=lambda c: (c == (ult[-1] if ult else None), ult[-6:].count(c), rng.random()))
+    ult.append(c); del ult[:-12]
+    return c
+
+
+def guion_cinta(gid, rng, V, fecha):
+    usados = V.grupos.setdefault("cinta", set())
+    cuerpo = _dueno(V, "cinta_ult", CUERPOS_RUEDA, rng)
+    base = cuerpo.rsplit("_", 1)[0]
+    for _ in range(100):
+        torsos = [rng.choice(v) for k, v in sorted(TORSOS_ESTRELLA.items()) if k != base]
+        rng.shuffle(torsos)
+        k = rng.randint(1, 5)
+        clave = (cuerpo, str(k)) + tuple(torsos)
+        if clave not in usados:
+            usados.add(clave); break
+    otros = [nombre_de(t.rsplit("_", 1)[0]) for t in torsos]
+    return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], torsos=torsos, dur=6.6, vueltas=2, t_encaje=0.45,
+                sentido=rng.choice([1, -1]), musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=k, otros=otros)
+
+
+def guion_slot(gid, rng, V, fecha):
+    usados = V.grupos.setdefault("slot", set())
+    cuerpo = _dueno(V, "slot_ult", CUERPOS_FIT, rng); clave = CUERPOS_FIT[cuerpo]
+    est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
+    for _ in range(100):
+        cab = list(est); rng.shuffle(cab)
+        k = rng.randint(1, 5)
+        cl = (cuerpo, str(k)) + tuple(cab)
+        if cl not in usados:
+            usados.add(cl); break
+    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=2, t_encaje=0.45,
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=k, otros=[nombre_de(c) for c in cab])
+
+
 # Formatos nuevos con la mecánica STOP (ideas de la IA de YouTube Studio, 02/11)
 TIT_SIUU = ["Pause Ronaldo at 67 😱 SIUUU challenge", "Only 1% stop CR7 at 67 🛑 SIUUU", "Stop at 67 = SIUUU 🔥 Can you do it?",
             "SIUUU at 67 🛑 Pause it at the top!"]
@@ -608,6 +656,18 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             a, b = g["otros"]
             titulo = V.titulo("piernas", TIT_PIERNAS, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
             desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. Comment your number 👇\n"
+                    + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
+            fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo in ("cinta", "slot"):
+            g = (guion_cinta if tipo == "cinta" else guion_slot)(gid, rng, V, sl["fecha"])
+            a, b = rng.sample(g["otros"], 2)
+            titulo = V.titulo(tipo, TIT_CINTA if tipo == "cinta" else TIT_SLOT, rng).format(n=g["nombre"], a=a, b=b)
+            for x in (g["nombre"], a, b):
+                if len(titulo) + len(tag(x)) + 1 <= 100:
+                    titulo += " " + tag(x)
+            meta = (f"Stop the belt when {g['nombre']}'s REAL body is on top of the legs 🛑" if tipo == "cinta"
+                    else f"Stop the slot when {g['nombre']}'s head fits PERFECTLY 🎰🛑")
+            desc = (f"{meta} Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
         elif tipo == "rueda":
