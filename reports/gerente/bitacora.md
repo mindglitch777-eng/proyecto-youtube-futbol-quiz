@@ -49,3 +49,16 @@ Formato de cada entrada:
 - **Revisar el 2026-11-18:** 2.º STOP del día contra el 1.º (hoy ~2.350 vs ~10.500): si sigue igual, volver a presentar 1 por día.
 - **Revisar el 2026-11-24:** piernas/cinta/slot con 4 videos: poda o sigue.
 - **Para el CEO:** respuesta de DRESS UP en el Issue #4.
+
+## 2026-11-14 · Gerente IA (turno diario)
+- **Vi:** 874 suscriptores (+53 en un día); 758 K de 10 M vistas (8 %). Mediana de la semana a 48 h 2.143 (-63 %), todavía arrastra los días de 9-15 subidas.
+  HEAD FIT llegó a 4 medidos: 9.459 (confianza media), pero sus últimos vienen bajando (-71 %, baja). WHEEL 6.842 (alta), cansado (24 %). STOP +28 %.
+  Originalidad 88, inspector 41 sin defectos, reserva 12/12, todos los workflows OK, sin advertencias. 15/11 con sus 6 (1 WHEEL, 1 HEAD FIT); 16/11 trae el primer LEGS WHEEL.
+- **Decidí e hice:** CEO decidió en #4 (DRESS): arreglo el lunes 16/11, 2 pruebas antes del 20/11, fecha límite 22/11; si no está o queda < 120 % visto o < mediana, se saca para siempre. Le pasé el pedido al Ingeniero.
+  6 preguntas: n = 1 video (por eso se prueba, no se decide) / dato sano / ola "dress" subiendo a favor / peor caso: 2 lugares de prueba flojos, se saca el 22/11 / se mide % visto y vistas 48 h / del CEO (decidido).
+  En la grilla, nada: el cambio del 13/11 está en evaluación.
+- **No toqué (a propósito):** WHEEL 1 por día y las variantes (recién arrancan); HEAD FIT 2 veces hoy (ya subido); WHO IS THIS (1 video, 96 % visto: el cerebro casi no lo elige).
+- **Revisar el 2026-11-16:** WHEEL ≥ 5 K a 48 h con 1 por día; propuesta DRESS si el Ingeniero lo terminó.
+- **Revisar el 2026-11-18:** 2.º STOP vs 1.º; tendencia de HEAD FIT con 1 por día.
+- **Revisar el 2026-11-22:** DRESS (fecha límite del CEO). **2026-11-24:** piernas/cinta/slot con 4 videos.
+- **Para el CEO:** nada.
