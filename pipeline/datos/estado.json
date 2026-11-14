@@ -65,33 +65,34 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-14T20:58:17+00:00",
+   "inicio": "2026-11-14T23:07:51+00:00",
    "resumen": {
-    "videos": 92,
-    "vistas_totales": 776690,
+    "videos": 93,
+    "vistas_totales": 780129,
     "por_formato": {
-     "trayectoria": "1 videos · mediana 1,101 · mejor 1,101",
-     "fitall": "8 videos · mediana 3,659 · mejor 21,181",
-     "stop": "34 videos · mediana 2,081 · mejor 12,599",
-     "rueda": "15 videos · mediana 7,729 · mejor 23,451",
-     "cabezas": "5 videos · mediana 14,201 · mejor 19,379",
-     "q20costo": "1 videos · mediana 1,242 · mejor 1,242",
-     "find": "4 videos · mediana 1,061 · mejor 2,821",
-     "q20fichaje": "1 videos · mediana 149 · mejor 149",
-     "circulo": "1 videos · mediana 6,656 · mejor 6,656",
-     "siuu": "1 videos · mediana 918 · mejor 918",
-     "tridente": "1 videos · mediana 1,048 · mejor 1,048",
-     "pared": "2 videos · mediana 960 · mejor 1,283",
-     "balon": "1 videos · mediana 9,136 · mejor 9,136",
-     "dress": "1 videos · mediana 10,607 · mejor 10,607",
-     "cabeza": "1 videos · mediana 633 · mejor 633",
-     "plinko": "1 videos · mediana 563 · mejor 563",
-     "ring": "1 videos · mediana 705 · mejor 705",
-     "otros": "2 videos · mediana 562 · mejor 737",
-     "carrera": "2 videos · mediana 526 · mejor 637"
+     "stop": "35 videos · mediana 2,149 · mejor 12,549",
+     "q20balon": "1 videos · mediana 882 · mejor 882",
+     "trayectoria": "1 videos · mediana 1,112 · mejor 1,112",
+     "fitall": "8 videos · mediana 3,618 · mejor 21,181",
+     "rueda": "15 videos · mediana 7,700 · mejor 23,451",
+     "cabezas": "5 videos · mediana 14,095 · mejor 20,756",
+     "q20costo": "1 videos · mediana 1,222 · mejor 1,222",
+     "find": "4 videos · mediana 1,058 · mejor 2,761",
+     "q20fichaje": "1 videos · mediana 147 · mejor 147",
+     "circulo": "1 videos · mediana 6,563 · mejor 6,563",
+     "siuu": "1 videos · mediana 908 · mejor 908",
+     "tridente": "1 videos · mediana 1,038 · mejor 1,038",
+     "pared": "2 videos · mediana 954 · mejor 1,275",
+     "balon": "1 videos · mediana 9,080 · mejor 9,080",
+     "dress": "1 videos · mediana 10,558 · mejor 10,558",
+     "cabeza": "1 videos · mediana 631 · mejor 631",
+     "plinko": "1 videos · mediana 561 · mejor 561",
+     "ring": "1 videos · mediana 703 · mejor 703",
+     "otros": "2 videos · mediana 561 · mejor 735",
+     "carrera": "2 videos · mediana 526 · mejor 636"
     }
    },
-   "fin": "2026-11-14T20:58:18+00:00"
+   "fin": "2026-11-14T23:07:52+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -141,12 +142,12 @@
     "errores": [],
     "total_publicados": 117
    },
-   "inicio": "2026-11-14T20:58:16+00:00",
-   "fin": "2026-11-14T20:58:16+00:00"
+   "inicio": "2026-11-14T23:07:49+00:00",
+   "fin": "2026-11-14T23:07:49+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-14T20:58:23+00:00",
+   "fin": "2026-11-14T23:07:57+00:00",
    "resumen": {
     "videos": 79,
     "por_formato": {
@@ -175,5 +176,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-14T20:58:23+00:00"
+ "actualizado": "2026-11-14T23:07:57+00:00"
 }
