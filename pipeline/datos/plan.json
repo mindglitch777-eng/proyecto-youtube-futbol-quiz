@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-15",
+ "inicio": "2026-11-16",
  "grilla": [
   "15:00 stop/grilla",
   "13:00 prueba",
@@ -18,40 +18,49 @@
   "tridente",
   "cabezas",
   "rueda",
-  "fitall",
   "q20fichaje",
   "q20costo",
-  "q20balon"
+  "q20balon",
+  "piernas",
+  "cinta",
+  "slot"
  ],
- "podadas": {},
+ "podadas": {
+  "fitall": {
+   "fecha": "2026-11-14",
+   "rinde": "41% del STOP",
+   "videos": 5
+  }
+ },
  "promovidas": {
   "rueda": {
-   "fecha": "2026-11-13",
-   "rinde": "152% del STOP",
-   "videos": 10
+   "fecha": "2026-11-14",
+   "rinde": "104% del STOP",
+   "videos": 12
   }
  },
  "puntaje": {
-  "rueda": 597.5,
+  "rueda": 408.9,
   "stop": 392.9,
-  "cabezas": 361.4,
+  "cabezas": 313.0,
   "dress": 324.6,
-  "balon": 376.3,
+  "balon": 374.3,
+  "fitall": 160.1,
   "find": 28.0,
-  "fitall": 130.9,
-  "pared": 62.4,
+  "circulo": 91.9,
+  "pared": 62.3,
   "otros": 54.0,
   "ring": 73.1,
   "carrera": 29.3,
   "cabeza": 136.5,
-  "tridente": 72.0,
+  "tridente": 73.2,
   "plinko": 41.2,
-  "siuu": 31.9
+  "siuu": 32.3
  },
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-15",
+   "fecha": "2026-11-16",
    "hora": "13:00",
    "tipo": "stop",
    "dificil": true,
@@ -63,28 +72,23 @@
    }
   },
   {
-   "fecha": "2026-11-15",
+   "fecha": "2026-11-16",
    "hora": "15:00",
    "tipo": "cabezas"
   },
   {
-   "fecha": "2026-11-15",
+   "fecha": "2026-11-16",
    "hora": "17:00",
-   "tipo": "q20balon"
+   "tipo": "piernas"
   },
   {
-   "fecha": "2026-11-15",
+   "fecha": "2026-11-16",
    "hora": "20:00",
-   "tipo": "balon"
+   "tipo": "circulo"
   },
   {
-   "fecha": "2026-11-15",
+   "fecha": "2026-11-16",
    "hora": "21:30",
-   "tipo": "rueda"
-  },
-  {
-   "fecha": "2026-11-15",
-   "hora": "23:00",
    "tipo": "stop",
    "dificil": true,
    "hard": false,
@@ -93,6 +97,11 @@
     "id": "e1_stop_arranque",
     "brazo": "estrella"
    }
+  },
+  {
+   "fecha": "2026-11-16",
+   "hora": "23:00",
+   "tipo": "rueda"
   }
  ]
 }
