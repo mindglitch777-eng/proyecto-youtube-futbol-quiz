@@ -6917,5 +6917,799 @@
     "Agregar reacciones en pantalla tipo emojis 3D cuando el personaje falla en conseguir helado."
    ]
   }
+ },
+ {
+  "id": "vSCSgT8so3c",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "RyukX",
+  "subs": 14900,
+  "creado": "2026-11-07",
+  "vistas": 9355390,
+  "horas": 61,
+  "vph": 154490,
+  "dur": 6,
+  "likes": 90815,
+  "coment": 183,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Ruleta de Encaje de Jugadores",
+   "mecanica": "Una rueda giratoria con rostros de futbolistas rota sobre un cuerpo sin cabeza. El espectador busca pausar justo cuando el rostro correcto calza con el cuerpo.",
+   "que_hace_el_espectador": "Pausar el video para acertar el encaje exacto de la cabeza.",
+   "cuadro_0": "Arriba: Rueda circular con 8 cabezas recortadas. Centro: Cuerpo de Portugal sin cabeza. Abajo: Figura de Cristiano Ronaldo en estadio lleno.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Rueda de cabezas de Portugal comienza a girar sobre cuerpo sin cabeza.",
+     "sonido": "Voz/canto melódico de fondo"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Rueda girando a velocidad constante sobre el fondo de estadio.",
+     "sonido": "Música continua"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Rotación fluida de rostros alineados en círculo.",
+     "sonido": "Música continua"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La rueda mantiene el giro circular continuo.",
+     "sonido": "Música continua"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Continuación de la rotación sobre la figura central.",
+     "sonido": "Música subiendo de tono"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Giro continuo buscando el punto de encaje.",
+     "sonido": "Música subiendo de tono"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Preparación del cambio de ritmo visual y sonoro.",
+     "sonido": "Crescendo de audio"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Transición rápida de imagen y destello visual.",
+     "sonido": "Beat drop pesado / impacto de grave"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La rueda gira a ritmo acelerado tras el impacto.",
+     "sonido": "Base de trap / bajo pesado"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Última vuelta rápida de rostros sobre la plantilla.",
+     "sonido": "Base de ritmo rápido"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Fin del ciclo, cuadro final listo para loop.",
+     "sonido": "Corte de audio sincronizado"
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, el giro ininterrumpido y el audio empalman perfectamente al reiniciar.",
+   "gancho": "Movimiento giratorio rápido y reto visual de pausa precisa.",
+   "dopamina": [
+    "Desafío de juego interactivo (0.0s)",
+    "Satisfacción al pausar en el encaje correcto (3.5s)"
+   ],
+   "audio": "Canción viral de TikTok con transición a beat drop de bajo pesado.",
+   "por_que_comentan": "Comparten si lograron pausar en el marco exacto o cuántos intentos requirieron.",
+   "assets_necesarios": [
+    "PNG recortado de cuerpo de jugador",
+    "PNGs recortados de cabezas de jugadores",
+    "Imagen de fondo de estadio",
+    "Audio de tendencia con beat drop"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "Posicionar imagen de fondo y cuerpo central fijo en MoviePy/Pygame.",
+    "Disponer cabezas en radio constante usando funciones trigonométricas (seno/coseno).",
+    "Incrementar ángulo de rotación por fotograma para generar el giro continuo.",
+    "Añadir audio sincronizando el beat drop a los 3.5 segundos."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar efectos de partículas brillantes al lograr la pausa correcta.",
+    "Variar la velocidad de rotación en cada vuelta para mayor dificultad.",
+    "Incluir marcador de puntuación o temporizador en pantalla."
+   ]
+  }
+ },
+ {
+  "id": "XuEBW3czg4U",
+  "titulo": "Legendary Football Stop Challenge ⚽🛑#ronaldo #messi #neymar #halland #challenge #viral #usa",
+  "canal": "GoalStop",
+  "subs": 11200,
+  "creado": "2026-11-01",
+  "vistas": 3035744,
+  "horas": 139,
+  "vph": 21858,
+  "dur": 6,
+  "likes": 42418,
+  "coment": 929,
+  "familia": "stop",
+  "analisis": {
+   "nombre_formato": "Football Stop Challenge / Puzzle Speed Run",
+   "mecanica": "Un mosaico dividido en 4 cuadrantes muestra personajes del fútbol con porcentajes. Una pieza recortada de un rostro se desplaza a altísima velocidad por toda la pantalla. El espectador debe pausar el video en el instante exacto en que la pieza encaja en la cara incompleta.",
+   "que_hace_el_espectador": "Pausar repetidamente la pantalla para intentar adivinar y encajar la pieza en la cara correspondiente.",
+   "cuadro_0": "Matriz 2x2. Arriba-izq: fondo verde, Vinicius Jr caricaturizado con boca gigante, texto '49%'. Arriba-der: fondo rojo, Georgina Rodríguez, texto '1%'. Abajo-izq: fondo celeste, Haaland con cara graciosa, texto '70%'. Abajo-der: fondo azulgrana, Messi con hueco en la cara, texto '99%'. Centro: logo 'GOALSTOP'. Pieza de rostro flotante sobre el cuadro.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Se muestra el grid 2x2. La pieza flotante inicia movimiento rápido en el cuadrante de Messi.",
+     "sonido": "Audio viral 'El Dictador' inicio de loop."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La pieza salta velozmente al cuadrante superior izquierdo (Vinicius).",
+     "sonido": "Audio continuo en ritmo perfecto."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "La pieza cruza diagonalmente hacia Haaland (cuadrante inferior izquierdo).",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La pieza sube rápidamente hacia Georgina (cuadrante superior derecho).",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "La pieza orbita cerca del logo central 'GOALSTOP'.",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La pieza desciende rápido al cuadrante de Messi pero desalineada.",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La pieza gira y se desplaza hacia el área de Haaland.",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "La pieza cruza la pantalla horizontalmente a gran velocidad.",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La pieza pasa por 1 frame muy cerca del encaje perfecto de Messi.",
+     "sonido": "Audio continuo."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "La pieza se desplaza a la posición inicial para cerrar la trayectoria.",
+     "sonido": "Audio continuo llegando al cierre del compás."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Posición idéntica al segundo 0.0 para un loop visual perfecto.",
+     "sonido": "El audio reengancha limpiamente."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, la posición de la pieza animada al segundo 5.0 coincide exactamente con la del segundo 0.0, logrando un bucle infinito perfecto.",
+   "gancho": "La propuesta de juego interactivo ('Stop Challenge') de alta velocidad que tienta al espectador a interactuar con la pantalla al instante.",
+   "dopamina": [
+    "Reto de reflejos interactivo",
+    "Estética exagerada/caricaturesca de futbolistas",
+    "Porcentajes cuantitativos que llaman la atención (99%, 70%)"
+   ],
+   "audio": "Track de audio viral estilo TikTok ('El Dictador edit') con ritmo acelerado e ideal para bucles.",
+   "por_que_comentan": "Los usuarios comentan si lograron o no pausar a tiempo ('Lo logré al primer intento', 'Casi encajo a Messi'), o comentan sobre la caricatura graciosa de Vinicius/Haaland.",
+   "assets_necesarios": [
+    "Fondo dividido en 4 rectángulos de colores (Verde, Rojo, Celeste, Azulgrana)",
+    "PNG 1: Vinicius caricaturizado",
+    "PNG 2: Georgina Rodríguez",
+    "PNG 3: Erling Haaland cara graciosa",
+    "PNG 4: Lionel Messi con recorte en el rostro",
+    "PNG 5: Pieza recortada del rostro para mover",
+    "PNG 6: Badge/Logo central 'GOALSTOP'",
+    "Audio MP3 en loop"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo de 1080x1920 px dividido en 4 cuadrantes de 540x960 px con sus colores base usando PIL/MoviePy.",
+    "2. Superponer las 4 imágenes fijas (PNGs) centradas en cada cuadrante con sus textos de porcentaje.",
+    "3. Colocar la insignia central 'GOALSTOP' en el punto (540, 960).",
+    "4. Definir una curva o spline de trayectoria con keyframes (x, y, rotación) a 60 FPS para la pieza recortada, haciendo que en el frame X pase exactamente por la posición del encaje.",
+    "5. Renderizar el video a 60 FPS y acoplar la pista de audio MP3 en bucle perfecto."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de frames o 'Nivel de Dificultad' en texto (ej. 'Dificultad: Imposible') para aumentar la competitividad.",
+    "Añadir un destello brillante o efecto de sonido de victoria exactamente en el frame donde la pieza encaja perfectamente.",
+    "Automatizar con código la generación masiva cambiando imágenes y futbolistas automáticamente desde un dataset."
+   ]
+  }
+ },
+ {
+  "id": "GgEO7eTTPvc",
+  "titulo": "Can Anyone Solve This? FitAll Neymar Jr Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "CURSED SOUL ",
+  "subs": 32000,
+  "creado": "2026-11-05",
+  "vistas": 1989439,
+  "horas": 109,
+  "vph": 18273,
+  "dur": 6,
+  "likes": 23347,
+  "coment": 22,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Rueda de Pausa de Cabezas",
+   "mecanica": "Una rueda de recortes de caras gira sobre un cuerpo sentado. El usuario debe pausar el video cuando la cabeza correcta coincida con el cuerpo.",
+   "que_hace_el_espectador": "Pausar el video para intentar alinear la cabeza correcta.",
+   "cuadro_0": "Fondo de estadio. En la base, dos futbolistas estáticos. Al centro, un cuerpo sentado. Arriba, una rueda giratoria con 8 recortes de caras (Neymar, Messi, Ronaldo, Mario, etc.).",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicia la rotación de la rueda de cabezas alrededor del cuello del cuerpo central.",
+     "sonido": "Música viral con voz y beat."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "La rueda gira 45 grados. Mario y Neymar se desplazan en el círculo.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Neymar pasa por la zona superior del pivote.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Messi y Ronaldo pasan por la zona inferior de la rueda.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "La rueda completa media vuelta. Giro fluido constante.",
+     "sonido": "Efecto de impacto / beat fuerte."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Continuación de la rotación. Posición invertida de figuras.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Mario se aproxima al punto de encaje del cuello.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Neymar Jr (Brasil) rota hacia la posición superior central.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La rueda completa una rotación casi completa a velocidad constante.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Últimos grados de rotación alineando la rueda con la posición inicial.",
+     "sonido": "Cierre del ciclo musical."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Posición idéntica al cuadro inicial para loop perfecto.",
+     "sonido": "Reinicio del loop de audio."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, la velocidad de rotación constante y el audio empalman perfectamente el frame final con el inicial.",
+   "gancho": "Desafío de pausa interactivo con personajes populares y formato visual llamativo.",
+   "dopamina": [
+    "Reto de precisión al pausar",
+    "Reconocimiento de figuras famosas (Neymar, Messi, Mario)"
+   ],
+   "audio": "Audio viral en español ('Préstame tu caballo') mezclado con ritmo rápido.",
+   "por_que_comentan": "Publican capturas o comentan si lograron pausar en la cabeza de Neymar o Mario.",
+   "assets_necesarios": [
+    "Fondo de estadio 1080x1920",
+    "PNG cuerpo sentado",
+    "8 PNGs de cabezas/torsos recortados",
+    "2 PNGs de futbolistas para la base",
+    "Pista de audio MP3"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Definir lienzo 1080x1920 y colocar fondo y personajes base.",
+    "2. Establecer punto pivote (X, Y) en el cuello del cuerpo central.",
+    "3. Calcular posición de las 8 cabezas en círculo usando trigonometría (r*cos(a), r*sin(a)).",
+    "4. Incrementar el ángulo de rotación 'a' frame a frame a 30/60 FPS.",
+    "5. Renderizar y exportar video en loop con el audio integrado."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar marco/target brillante en el cuello para indicar el punto exacto de encaje.",
+    "Variar la velocidad de rotación (aceleraciones y frenados) para aumentar la dificultad.",
+    "Incluir contador de puntos o efecto visual cuando se logra la coincidencia perfecta."
+   ]
+  }
+ },
+ {
+  "id": "Kw6DrybMevM",
+  "titulo": "Haaland Picked The Wrong Bowl 😭 #parody #football #haaland",
+  "canal": "MusMusTV",
+  "subs": 153000,
+  "creado": "2026-07-06",
+  "vistas": 1909637,
+  "horas": 148,
+  "vph": 12942,
+  "dur": 11,
+  "likes": 7586,
+  "coment": 11,
+  "familia": "3d_ia",
+  "analisis": {
+   "nombre_formato": "Shell Game Football Parody",
+   "mecanica": "Jugadores de fútbol recortados eligen cuencos. Yamal gana puntos y Haaland falla recibiendo harina en el rostro.",
+   "que_hace_el_espectador": "Mirar la comedia y esperar el remate del castigo.",
+   "cuadro_0": "Arriba: Marcador 'Yamal 0 VS 0 Haaland'. Centro: Yamal, Mbappé, Haaland y Bellingham frente a mesa con cuencos metálicos.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Mesa con cuencos metálicos. Marcador 0-0.",
+     "sonido": "Música cómica de fondo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Yamal levanta cuenco.",
+     "sonido": "Música cómica."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Yamal encuentra objeto. Marcador sube a 1-0.",
+     "sonido": "Efecto de triunfo breve."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Siguiente cuenco en juego.",
+     "sonido": "Música cómica."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Yamal destapa segundo objeto.",
+     "sonido": "Música de victoria."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Marcador cambia a 2-0.",
+     "sonido": "Risas de fondo."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Turno de Haaland.",
+     "sonido": "Música cómica."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Haaland confía en ganar.",
+     "sonido": "Suspenso corto."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Haaland agarra el cuenco grande.",
+     "sonido": "Aceleración de música."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Haaland levanta el cuenco.",
+     "sonido": "Grito de ánimo."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Haaland flexiona músculos celebrando antes de tiempo.",
+     "sonido": "Efecto de poder."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Haaland baila eufórico.",
+     "sonido": "Música cómica."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Haaland se agacha a revisar.",
+     "sonido": "Silbido."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Haaland se acerca al plato.",
+     "sonido": "Tensión."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Cara de Haaland choca contra la harina.",
+     "sonido": "Golpe seco."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Explosión de harina en la cara.",
+     "sonido": "Efecto puf / impacto."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Nube de harina cubriendo la mesa.",
+     "sonido": "Risas estruendosas."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Haaland reaparece totalmente blanco de harina.",
+     "sonido": "Risas continuas."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Marcador cambia a 2 - -1.",
+     "sonido": "Risas y burlas."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Yamal, Mbappé y Bellingham se ríen de Haaland.",
+     "sonido": "Risas histéricas."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Reacción final de Haaland cubierto de harina.",
+     "sonido": "Fin del audio."
+    }
+   ],
+   "duracion_s": 10.5,
+   "loop": "No empalma directamente en bucle.",
+   "gancho": "Humor visual absurdo con rostros hiper-expresivos de futbolistas famosos.",
+   "dopamina": [
+    "Aciertos consecutivos de Yamal (1.0s y 2.5s)",
+    "Falsa victoria y baile de Haaland (5.0s)",
+    "Remate físico con harina y puntaje -1 (8.0s)"
+   ],
+   "audio": "Música de comedia tipo polka, efectos de acierto, impacto y risas de fondo.",
+   "por_que_comentan": "Por la burla del marcador negativo (-1) y la cara de Haaland llena de harina.",
+   "assets_necesarios": [
+    "PNGs recortados de Yamal, Haaland, Mbappé, Bellingham",
+    "Overlay UI de marcador",
+    "PNGs de cuencos metálicos, premios y plato con harina",
+    "Pista musical cómica y librería de efectos de sonido"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Montar escena 1080x1920 con fondo estático de mesa usando MoviePy o OpenCV.",
+    "2. Renderizar sprites PNG de jugadores y cuencos con traslación Y para levantar recipientes.",
+    "3. Alternar la textura facial de Haaland a 'versión harina' tras la colisión en t=7.0s.",
+    "4. Actualizar dinámicamente las capas de texto del marcador según marcas de tiempo.",
+    "5. Mezclar pista musical con efectos sincronizados en cada hito."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Hacer zoom in dinámico con sacudida de cámara en el golpe de harina.",
+    "Añadir sistema de partículas 2D para el polvo de la harina.",
+    "Incluir opción para que la audiencia elija el cuenco mediante comentario."
+   ]
+  }
+ },
+ {
+  "id": "INCq9O-cje0",
+  "titulo": "Can Anyone Solve This? Fit All Raphinha Stars 🎯⚽ | Football Challenge HQ",
+  "canal": "HUNT LIKE A PRO 56",
+  "subs": 857000,
+  "creado": "2025-01-12",
+  "vistas": 1885657,
+  "horas": 92,
+  "vph": 20481,
+  "dur": 6,
+  "likes": 29026,
+  "coment": 66,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Wheel Fit Puzzle Challenge",
+   "mecanica": "Una ruleta circular de recortes del jugador gira en la parte superior mientras abajo hay una silueta fija. Al final, un recorte encaja perfectamente en la silueta al ritmo del beat.",
+   "que_hace_el_espectador": "Pausar en el momento exacto para hacer coincidir la imagen con el contorno o mirar la resolución.",
+   "cuadro_0": "Fondo de césped verde vertical. Arriba: ruleta giratoria con 8 recortes de Raphinha (camiseta Brasil). Centro: aro dorado. Abajo: silueta vacía con borde azul y amarillo.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Ruleta superior empieza a girar rápidamente sobre césped. Silueta inferior vacía.",
+     "sonido": "Voz melódica con guitarra acústica ('No, préstame tu caballo...')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Continúa rotación continua de las figuras de Raphinha en círculo.",
+     "sonido": "Música acústica en progreso."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Rotación fluida de la ruleta. Se muestran distintas poses del jugador.",
+     "sonido": "Continúa la canción acústica."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "La ruleta mantiene velocidad constante en la zona central-superior.",
+     "sonido": "Voz de la canción previa al remate."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Un recorte de Raphinha se desplaza levemente hacia el área de encaje.",
+     "sonido": "Transición de audio hacia el golpe de ritmo."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La figura seleccionada desciende aproximándose a la silueta inferior.",
+     "sonido": "Crescendo musical rápido."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "El recorte de Raphinha encaja perfectamente dentro de la silueta delineada.",
+     "sonido": "Corte de audio y entrada de beat dinámico/remix."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Efecto de destello o animación sobre la figura encajada.",
+     "sonido": "Beat electrónico/funk en pleno desarrollo."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Se mantiene la imagen encajada con movimiento leve de pulso.",
+     "sonido": "Música de ritmo sostenido."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Reinicio gradual de la posición de los elementos para empalmar.",
+     "sonido": "Remate del loop de audio."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Vuelve a la composición del cuadro inicial.",
+     "sonido": "Final del audio preparado para bucle."
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "Sí, el audio corta justo en el beat para reiniciar limpiamente con el giro inicial.",
+   "gancho": "Reto visual de encaje rápido y simetría satisfactoria.",
+   "dopamina": [
+    "Sincronización exacta de la pieza a los 3.0s",
+    "Cambio de audio a beat enérgico al encajar"
+   ],
+   "audio": "Transición viral de canción acústica lenta a beat de funk brasileño/remix dinámico.",
+   "por_que_comentan": "Comentan si lograron pausar el video justo en el encaje o discuten sobre la figura del futbolista.",
+   "assets_necesarios": [
+    "Fondo 1080x1920 textura césped",
+    "PNG recorte silueta objetivo con borde brillante",
+    "8 PNGs recortados de Raphinha en distintas poses",
+    "Icono centro ruleta (aro dorado)",
+    "Pista de audio MP3 con transición acústico a beat"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Crear lienzo 1080x1920 con fondo de césped estático.",
+    "2. Renderizar 8 imágenes PNG equidistantes en un radio R=300px girando a Omega rad/s.",
+    "3. En t=2.5s, animar la posición (x,y) del PNG objetivo desde la ruleta hacia las coordenadas exactas de la silueta inferior mediante interpolación lineal.",
+    "4. En t=3.0s, fijar la posición y activar efecto de escala (1.0 a 1.05) coincidiendo con el cambio de audio.",
+    "5. Exportar a 60 fps usando MoviePy/OpenCV."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar marcador de intentos/fallos tipo videojuego.",
+    "Incluir efecto de partículas doradas cuando la pieza encaja.",
+    "Variar la velocidad de rotación de forma aleatoria para dificultar la pausa exacto."
+   ]
+  }
+ },
+ {
+  "id": "Hd9k7t2epc8",
+  "titulo": "THIS CHALLENGE GOT WAY TOO INTENSE! 😳 #football #shorts",
+  "canal": "David Qəhrəmanlı",
+  "subs": 5510,
+  "creado": "2019-10-20",
+  "vistas": 1860782,
+  "horas": 153,
+  "vph": 12173,
+  "dur": 15,
+  "likes": 4993,
+  "coment": 99,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Tanda de Penaltis Dramática",
+   "mecanica": "Dos niños ejecutan penaltis alternados con reacciones intensas y cortes rápidos tras cada gol o atajada.",
+   "que_hace_el_espectador": "Mirar la sucesión rápida de tiros y anticipar el resultado de cada penalti.",
+   "cuadro_0": "Arriba: Texto 'THINGS GOT INTENSE! 😳' en rojo/blanco. Centro: Niño con camiseta del Inter llorando/emocionado mientras otro lo sostiene. Fondo: Cancha sintética.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Texto 'THINGS GOT INTENSE! 😳'. Niño llorando emocionado al frente.",
+     "sonido": "Gritos y música de suspenso."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Corte a tiro de penalti en ejecución.",
+     "sonido": "Efecto de patada."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "El balón entra en la portería.",
+     "sonido": "Red resonando."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Celebración con brazos en alto.",
+     "sonido": "Grito de 'Gol'."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Niño con camiseta #10 acomoda el balón.",
+     "sonido": "Música acelerada."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Ejecución de tiro potente.",
+     "sonido": "Impacto de balón."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Atajada del portero lanzándose al suelo.",
+     "sonido": "SFX de parada."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Corte a nuevo intento desde el punto penalti.",
+     "sonido": "Silbato."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Disparo ajustado al poste.",
+     "sonido": "Impacto potente."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "El balón entra rozando el larguero.",
+     "sonido": "Grito eufórico."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Celebración corriendo a cámara.",
+     "sonido": "Música en clímax."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Jugador azul prepara penalti decisivo.",
+     "sonido": "Tensión sonora."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Carrera hacia el balón y disparo.",
+     "sonido": "Patada seca."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "El portero detiene el balón abajo a la derecha.",
+     "sonido": "SFX de atajada."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Gesto de frustración del tirador.",
+     "sonido": "Lamento corto."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Niño #10 listo para el tiro final.",
+     "sonido": "Tambores tácticos."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Disparo colocado con chanfle.",
+     "sonido": "Impacto preciso."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Golazo al rincón superior.",
+     "sonido": "Grito de gol masivo."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Festejo eufórico hacia la banda.",
+     "sonido": "Música victoriosa."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Último intento del rival.",
+     "sonido": "Suspenso final."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Atajada espectacular con una mano.",
+     "sonido": "SFX de impacto fuerte."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Niño cayendo al césped de alegría.",
+     "sonido": "Risas y gritos."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Reacción dramática a cámara.",
+     "sonido": "Música en peak."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Corriendo en círculos por la cancha.",
+     "sonido": "Vítores."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "Primer plano del ganador festejando.",
+     "sonido": "Grito final."
+    },
+    {
+     "t": "12.5",
+     "pantalla": "Abrazo entre los dos competidores.",
+     "sonido": "Música bajando."
+    },
+    {
+     "t": "13.0",
+     "pantalla": "Gesto de emoción intensa a la lente.",
+     "sonido": "Efecto de risas."
+    },
+    {
+     "t": "13.5",
+     "pantalla": "Transición hacia el marco inicial de llanto.",
+     "sonido": "Bucle sonoro."
+    },
+    {
+     "t": "14.0",
+     "pantalla": "Conexión visual con el primer cuadro.",
+     "sonido": "Reinicio de pista."
+    },
+    {
+     "t": "14.5",
+     "pantalla": "Frame idéntico al inicio.",
+     "sonido": "Audio enganchado."
+    },
+    {
+     "t": "15.0",
+     "pantalla": "Fin del loop.",
+     "sonido": "Silencio breve."
+    }
+   ],
+   "duracion_s": 15,
+   "loop": "Sí, empalma la efervescencia final con la reacción exagerada del inicio.",
+   "gancho": "Gancho visual inmediato con texto llamativo y un niño llorando efusivamente en 0.5s.",
+   "dopamina": [
+    "Ritmo frenético de tiros cada 2 segundos.",
+    "Atajadas y goles alternados.",
+    "Reacciones dramáticas y eufóricas."
+   ],
+   "audio": "Música de fondo enérgica/viral combinada con SFX de patadas, silbatos y gritos.",
+   "por_que_comentan": "Debaten si la emoción es real o actuada y opinan sobre la calidad de las atajadas.",
+   "assets_necesarios": [
+    "Sprites recortados de jugadores y portero",
+    "Fondo 2D de cancha con portería",
+    "Sprite de balón de fútbol",
+    "SFX de patadas, red y silbato",
+    "Pista de audio viral"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Montar escena con Pygame/MoviePy usando assets recortados sobre fondo de cancha.",
+    "2. Programar interpolación Bézier para trayectorias del balón hacia la portería.",
+    "3. Animación de sprites de portero (lanzamiento) y tirador según el resultado.",
+    "4. Renderizar overlay de texto 'THINGS GOT INTENSE!' y sincronizar pistas SFX."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir barra de potencia dinámica y marcador de goles interactivo.",
+    "Aplicar efecto cámara lenta justo antes de cada atajada o gol.",
+    "Incluir contadores de 'Match Point' para elevar la tensión."
+   ]
+  }
  }
 ]
