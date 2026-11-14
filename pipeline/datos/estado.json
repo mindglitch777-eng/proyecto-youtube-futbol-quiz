@@ -65,32 +65,32 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-14T16:40:20+00:00",
+   "inicio": "2026-11-14T18:45:05+00:00",
    "resumen": {
-    "videos": 90,
-    "vistas_totales": 757782,
+    "videos": 91,
+    "vistas_totales": 772389,
     "por_formato": {
-     "stop": "34 videos · mediana 2,126 · mejor 12,697",
-     "rueda": "15 videos · mediana 7,787 · mejor 23,433",
-     "cabezas": "5 videos · mediana 9,115 · mejor 14,498",
-     "fitall": "7 videos · mediana 1,843 · mejor 21,121",
+     "fitall": "8 videos · mediana 3,704 · mejor 21,146",
+     "stop": "34 videos · mediana 2,104 · mejor 12,648",
+     "rueda": "15 videos · mediana 7,758 · mejor 23,438",
+     "cabezas": "5 videos · mediana 14,275 · mejor 18,303",
      "q20costo": "1 videos · mediana 1,202 · mejor 1,202",
-     "find": "4 videos · mediana 1,067 · mejor 2,777",
-     "q20fichaje": "1 videos · mediana 153 · mejor 153",
-     "circulo": "1 videos · mediana 6,860 · mejor 6,860",
-     "siuu": "1 videos · mediana 936 · mejor 936",
-     "tridente": "1 videos · mediana 1,067 · mejor 1,067",
-     "pared": "2 videos · mediana 972 · mejor 1,300",
-     "balon": "1 videos · mediana 9,251 · mejor 9,251",
-     "dress": "1 videos · mediana 10,702 · mejor 10,702",
-     "cabeza": "1 videos · mediana 637 · mejor 637",
-     "plinko": "1 videos · mediana 566 · mejor 566",
-     "ring": "1 videos · mediana 709 · mejor 709",
-     "otros": "2 videos · mediana 565 · mejor 741",
-     "carrera": "2 videos · mediana 529 · mejor 640"
+     "find": "4 videos · mediana 1,064 · mejor 2,777",
+     "q20fichaje": "1 videos · mediana 151 · mejor 151",
+     "circulo": "1 videos · mediana 6,758 · mejor 6,758",
+     "siuu": "1 videos · mediana 925 · mejor 925",
+     "tridente": "1 videos · mediana 1,057 · mejor 1,057",
+     "pared": "2 videos · mediana 966 · mejor 1,292",
+     "balon": "1 videos · mediana 9,195 · mejor 9,195",
+     "dress": "1 videos · mediana 10,654 · mejor 10,654",
+     "cabeza": "1 videos · mediana 635 · mejor 635",
+     "plinko": "1 videos · mediana 565 · mejor 565",
+     "ring": "1 videos · mediana 707 · mejor 707",
+     "otros": "2 videos · mediana 564 · mejor 739",
+     "carrera": "2 videos · mediana 528 · mejor 639"
     }
    },
-   "fin": "2026-11-14T16:40:21+00:00"
+   "fin": "2026-11-14T18:45:06+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -138,14 +138,14 @@
     "en_cola": 0,
     "freno": null,
     "errores": [],
-    "total_publicados": 114
+    "total_publicados": 117
    },
-   "inicio": "2026-11-14T16:40:12+00:00",
-   "fin": "2026-11-14T16:40:19+00:00"
+   "inicio": "2026-11-14T18:44:55+00:00",
+   "fin": "2026-11-14T18:45:04+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-14T16:40:26+00:00",
+   "fin": "2026-11-14T18:45:13+00:00",
    "resumen": {
     "videos": 70,
     "por_formato": {
@@ -173,5 +173,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-14T16:40:26+00:00"
+ "actualizado": "2026-11-14T18:45:13+00:00"
 }
