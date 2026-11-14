@@ -1,138 +1,138 @@
 {
- "fecha": "2026-11-14T15:45-03:00",
- "videos_medidos": 73,
+ "fecha": "2026-11-14T17:58-03:00",
+ "videos_medidos": 74,
  "formatos": {
   "cabezas": {
-   "vistas_48h_esperadas": 5502,
-   "mediana_48h": 14275,
+   "vistas_48h_esperadas": 5463,
+   "mediana_48h": 14201,
    "videos": 4,
    "peso_datos": 3.1,
    "prob_mejor": 0.31,
    "confianza": "media"
   },
   "rueda": {
-   "vistas_48h_esperadas": 5221,
-   "mediana_48h": 6793,
+   "vistas_48h_esperadas": 5254,
+   "mediana_48h": 6718,
    "videos": 13,
    "peso_datos": 9.6,
-   "prob_mejor": 0.19,
+   "prob_mejor": 0.2,
    "confianza": "alta"
   },
   "dress": {
-   "vistas_48h_esperadas": 4111,
-   "mediana_48h": 10654,
+   "vistas_48h_esperadas": 4105,
+   "mediana_48h": 10607,
    "videos": 1,
    "peso_datos": 0.6,
    "prob_mejor": 0.15,
    "confianza": "baja"
   },
   "balon": {
-   "vistas_48h_esperadas": 4107,
-   "mediana_48h": 9195,
+   "vistas_48h_esperadas": 4098,
+   "mediana_48h": 9136,
    "videos": 1,
    "peso_datos": 0.7,
    "prob_mejor": 0.15,
    "confianza": "baja"
   },
   "circulo": {
-   "vistas_48h_esperadas": 3840,
-   "mediana_48h": 6758,
+   "vistas_48h_esperadas": 3801,
+   "mediana_48h": 6656,
    "videos": 1,
    "peso_datos": 0.9,
    "prob_mejor": 0.12,
    "confianza": "baja"
   },
   "stop": {
-   "vistas_48h_esperadas": 2941,
-   "mediana_48h": 2290,
+   "vistas_48h_esperadas": 2944,
+   "mediana_48h": 2279,
    "videos": 32,
    "peso_datos": 20.8,
    "prob_mejor": 0.0,
    "confianza": "alta"
   },
   "fitall": {
-   "vistas_48h_esperadas": 2887,
-   "mediana_48h": 1816,
+   "vistas_48h_esperadas": 2896,
+   "mediana_48h": 1790,
    "videos": 6,
    "peso_datos": 5.1,
    "prob_mejor": 0.0,
    "confianza": "media"
   },
   "ring": {
-   "vistas_48h_esperadas": 2345,
-   "mediana_48h": 707,
+   "vistas_48h_esperadas": 2343,
+   "mediana_48h": 705,
    "videos": 1,
    "peso_datos": 0.4,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "tridente": {
-   "vistas_48h_esperadas": 2245,
-   "mediana_48h": 1057,
+   "vistas_48h_esperadas": 2239,
+   "mediana_48h": 1048,
    "videos": 1,
    "peso_datos": 0.8,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "plinko": {
-   "vistas_48h_esperadas": 2195,
-   "mediana_48h": 565,
+   "vistas_48h_esperadas": 2192,
+   "mediana_48h": 563,
    "videos": 1,
    "peso_datos": 0.5,
    "prob_mejor": 0.02,
    "confianza": "baja"
   },
   "cabeza": {
-   "vistas_48h_esperadas": 2193,
-   "mediana_48h": 635,
+   "vistas_48h_esperadas": 2191,
+   "mediana_48h": 633,
    "videos": 1,
    "peso_datos": 0.5,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "siuu": {
-   "vistas_48h_esperadas": 2102,
-   "mediana_48h": 925,
+   "vistas_48h_esperadas": 2096,
+   "mediana_48h": 918,
    "videos": 1,
    "peso_datos": 0.8,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
+  "find": {
+   "vistas_48h_esperadas": 1924,
+   "mediana_48h": 1363,
+   "videos": 4,
+   "peso_datos": 2.3,
+   "prob_mejor": 0.0,
+   "confianza": "baja"
+  },
   "otros": {
-   "vistas_48h_esperadas": 1873,
-   "mediana_48h": 739,
+   "vistas_48h_esperadas": 1871,
+   "mediana_48h": 737,
    "videos": 2,
    "peso_datos": 0.8,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "pared": {
-   "vistas_48h_esperadas": 1859,
-   "mediana_48h": 1292,
+   "vistas_48h_esperadas": 1853,
+   "mediana_48h": 1283,
    "videos": 2,
    "peso_datos": 1.4,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "carrera": {
-   "vistas_48h_esperadas": 1800,
-   "mediana_48h": 639,
+   "vistas_48h_esperadas": 1798,
+   "mediana_48h": 637,
    "videos": 2,
    "peso_datos": 0.8,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
-  "find": {
-   "vistas_48h_esperadas": 1738,
-   "mediana_48h": 762,
-   "videos": 3,
-   "peso_datos": 1.4,
-   "prob_mejor": 0.0,
-   "confianza": "baja"
-  },
   "q20fichaje": {
-   "vistas_48h_esperadas": 1205,
-   "mediana_48h": 151,
+   "vistas_48h_esperadas": 1200,
+   "mediana_48h": 149,
    "videos": 1,
    "peso_datos": 0.9,
    "prob_mejor": 0.0,
@@ -153,7 +153,7 @@
    "videos": 1
   },
   "13:00": {
-   "efecto": "+6%",
+   "efecto": "+7%",
    "videos": 8
   },
   "14:00": {
@@ -161,12 +161,12 @@
    "videos": 1
   },
   "15:00": {
-   "efecto": "+7%",
+   "efecto": "+8%",
    "videos": 5
   },
   "17:00": {
-   "efecto": "-9%",
-   "videos": 8
+   "efecto": "-5%",
+   "videos": 9
   },
   "18:30": {
    "efecto": "-37%",
@@ -181,7 +181,7 @@
    "videos": 6
   },
   "21:30": {
-   "efecto": "-0%",
+   "efecto": "+1%",
    "videos": 3
   },
   "22:00": {
@@ -189,7 +189,7 @@
    "videos": 1
   },
   "22:15": {
-   "efecto": "+4%",
+   "efecto": "+3%",
    "videos": 3
   },
   "23:00": {
@@ -206,19 +206,19 @@
    "fitall": "10%",
    "balon": "5%",
    "q20balon": "3%",
-   "siuu": "2%",
    "penal": "2%",
+   "siuu": "2%",
+   "tridente": "2%",
    "circulo": "2%",
    "pared": "2%",
-   "tridente": "2%",
-   "find": "1%",
-   "piernas": "1%",
-   "q20costo": "1%",
    "torre": "1%",
-   "q20fichaje": "1%",
+   "find": "1%",
    "trayectoria": "1%",
+   "q20costo": "1%",
    "dress": "1%",
-   "plinko": "1%"
+   "plinko": "1%",
+   "piernas": "1%",
+   "q20fichaje": "1%"
   }
  },
  "experimentos": {
@@ -229,13 +229,13 @@
     "medicion": {
      "\"grilla\"": {
       "videos": 12,
-      "vistas_48h_esperadas": 2321,
-      "p_mejor": 0.44
+      "vistas_48h_esperadas": 2337,
+      "p_mejor": 0.45
      },
      "\"estrella\"": {
       "videos": 6,
-      "vistas_48h_esperadas": 2471,
-      "p_mejor": 0.56
+      "vistas_48h_esperadas": 2463,
+      "p_mejor": 0.55
      }
     }
    },
@@ -245,12 +245,12 @@
     "medicion": {
      "false": {
       "videos": 0,
-      "vistas_48h_esperadas": 2941,
+      "vistas_48h_esperadas": 2944,
       "p_mejor": 0.5
      },
      "true": {
       "videos": 0,
-      "vistas_48h_esperadas": 2941,
+      "vistas_48h_esperadas": 2944,
       "p_mejor": 0.5
      }
     }
@@ -262,6 +262,6 @@
   "inicio": "2026-11-11",
   "mediana_48h_inicial": 4423,
   "objetivo": "+25 % en 3 semanas con originalidad ≥75",
-  "mediana_48h_ultimos_7_dias": 2216
+  "mediana_48h_ultimos_7_dias": 2182
  }
 }
