@@ -19,13 +19,15 @@ from datetime import date, datetime, timedelta, timezone
 
 from comun import CONFIG, cargar, etapa, guardar
 
-GRILLA = [("15:00", "stop", "grilla"),   # 13/11: 09:00 rendía 2.907 de mediana (la peor hora); 15:00 12.070 (2 videos) y 14:00 +27 % en el cerebro
-          ("13:00", "prueba", None), ("17:00", "prueba", None),
-          ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "stop", "grilla2")]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
+# 15/11 DECISIÓN DEL CEO: sale el STOP clásico (desde el 07/11: mediana 1.650 a 48 h, 0 videos de 10 K, 2 de 6 lugares) y salen los
+# quiz. Los 4 lugares de prueba van a la mecánica que funciona (PARAR en el momento justo) con otras lógicas: WHEEL/HEAD FIT y sus
+# variantes (LEGS WHEEL, CONVEYOR, HEAD SLOT), BALLON D'OR, FIT ALL, SIUUU, PENALTY, GOAT CIRCLE. El cerebro elige cuál.
+GRILLA = [("13:00", "prueba", None), ("15:00", "prueba", None), ("17:00", "prueba", None),
+          ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "prueba", None)]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
 VARIANTES = {"cinta", "piernas", "slot"}                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
 MIN_VIDEOS_PODA = 4
-MAX_PRUEBA_SEMANA = 3                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
+MAX_PRUEBA_SEMANA = 4                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
 
 
 def fechas(inicio, dias):
@@ -146,10 +148,11 @@ def main(inicio=None, dias=7):
             tope = {k: CONFIG["pruebas"][k].get("max_semana", MAX_PRUEBA_SEMANA) for k in activas}  # algunos formatos solo N por semana
             del_dia = ({x["tipo"] for x in slots if x["fecha"] == dia} |        # variedad: nunca el mismo formato dos veces en el día
                        {t for _, t, _ in GRILLA_SEMANA if t != "prueba"} | FIJOS)  # (los fijos ya tienen su lugar más tarde)
-            if del_dia & VARIANTES:                                             # ya salió una variante de WHEEL/HEAD FIT hoy: no otra
+            if sum(1 for x in slots if x["fecha"] == dia and x["tipo"] in VARIANTES) >= 2:   # 15/11: hasta 2 variantes distintas por día
                 del_dia |= VARIANTES
             cand = [k for k in activas if k not in del_dia and k not in ola_fija and semana.get(k, 0) < tope[k]] or \
-                   [k for k in activas if semana.get(k, 0) < tope[k]] or activas
+                   [k for k in activas if k not in del_dia and k not in ola_fija] or \
+                   [k for k in activas if semana.get(k, 0) < tope[k]] or activas    # 15/11: antes pasarse del cupo que repetir en el día
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
             fijas = [k for k in promovidas if k not in hoy_pruebas and k not in FIJOS and k not in del_dia]   # las fijas ya tienen su lugar

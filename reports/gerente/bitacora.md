@@ -62,3 +62,11 @@ Formato de cada entrada:
 - **Revisar el 2026-11-18:** 2.º STOP vs 1.º; tendencia de HEAD FIT con 1 por día.
 - **Revisar el 2026-11-22:** DRESS (fecha límite del CEO). **2026-11-24:** piernas/cinta/slot con 4 videos.
 - **Para el CEO:** nada.
+
+## 2026-11-15 · DECISIÓN DEL CEO (cargada por Claude, sesión principal)
+- **Sale el STOP clásico** de la grilla (desde el 07/11: mediana 1.650 a 48 h, mejor 4.043, 0 videos de 10 K en 10 medidos; ocupaba 2 de 6 lugares).
+- **Salen los quiz**: WHO IS THIS, PRICE TAG, BALLON Q y CAREER (listo:false; 182-1.251 vistas, 92 % visto).
+- **Enfoque**: la mecánica que funciona (PARAR en el momento justo) con otras lógicas y mucha variedad. Grilla: WHEEL y HEAD FIT fijos + 4 lugares de prueba que reparte el cerebro entre LEGS WHEEL, CONVEYOR STOP, HEAD SLOT (hasta 2 variantes distintas por día), BALLON D'OR, FIT ALL, SIUUU, PENALTY y GOAT CIRCLE. Prueba ≤4 por semana; nunca un formato repetido en el día.
+- Reserva: sin STOP (4 retirados); se repone con WHEEL y HEAD FIT.
+- Pendiente de explicarle al CEO y decidir: WALL, TRIDENT y FIND (no son de la lógica de parar).
+- **Revisar el 20/11**: vistas por día y videos de 10 K por día contra la semana anterior (~60 K y ~1,5).
