@@ -141,7 +141,7 @@ def main():
     hoy = datetime.now(ART).date()
     for d in (0, 1):
         f = (hoy + timedelta(days=d)).isoformat()
-        n = sum(1 for x in pub if x["fecha"] == f and x.get("video_id") and not x.get("reemplazado"))
+        n = sum(1 for x in pub if x["fecha"] == f and x.get("video_id") and not x.get("reemplazado") and not x.get("cancelado"))
         if n < 6 and (d == 0 or datetime.now(ART).hour >= 20):
             problemas.append(f"{f}: {n} videos subidos de 6")
     res = json.loads((DATOS / "reserva.json").read_text()) if (DATOS / "reserva.json").exists() else {"videos": []}

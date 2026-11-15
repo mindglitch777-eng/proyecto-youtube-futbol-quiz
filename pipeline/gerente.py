@@ -35,7 +35,7 @@ def main():
     hoy = datetime.now(ART).date()
     rend = {v["id"]: v for v in cargar("rendimiento.json", {}).get("videos", [])}
     an = {v["video"]: v for v in cargar("analytics.json", {}).get("por_video", [])}
-    pub = [p for p in cargar("publicados.json", []) if p.get("video_id") and not p.get("reemplazado")]
+    pub = [p for p in cargar("publicados.json", []) if p.get("video_id") and not p.get("reemplazado") and not p.get("cancelado")]
     filas = []
     for p in pub:
         v = rend.get(p["video_id"])

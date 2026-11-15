@@ -31,7 +31,7 @@ def horarios_con_viejos(ids_actuales):
     Bloquea solo ese horario (±1 h), no el día entero."""
     p = RAIZ / "pipeline" / "datos" / "publicados.json"
     pub = json.loads(p.read_text()) if p.exists() else []
-    return [(x["fecha"], x["hora"]) for x in pub if x.get("video_id") and not x.get("reemplazado") and x["id"] not in ids_actuales]
+    return [(x["fecha"], x["hora"]) for x in pub if x.get("video_id") and not x.get("reemplazado") and not x.get("cancelado") and x["id"] not in ids_actuales]
 
 
 def choca(m, viejos):
@@ -85,7 +85,7 @@ def main():
     import reserva
     ocupados = [(m["fecha"], m["hora"]) for m, _ in todos.values() if not m.get("extra")] + list(viejos) + \
                [(x["fecha"], x["hora"]) for x in json.loads((RAIZ / "pipeline" / "datos" / "publicados.json").read_text())
-                if x.get("video_id") and not x.get("reemplazado")]
+                if x.get("video_id") and not x.get("reemplazado") and not x.get("cancelado")]
     for f, h in reserva.huecos(ocupados):
         r = reserva.tomar(f, h)
         if r:
