@@ -40,3 +40,20 @@ Una pregunta por mensaje, copiada tal cual. Pasá captura de cada respuesta.
    `https://www.googleapis.com/auth/youtube.upload https://www.googleapis.com/auth/youtube.readonly https://www.googleapis.com/auth/yt-analytics.readonly`
 4. Authorize → cuenta del canal → Exchange authorization code for tokens → copiá el **refresh token**.
 5. GitHub → Settings → Secrets and variables → Actions → **YT_REFRESH_TOKEN** → Update → pegalo. (Nunca en el chat: el repo es público.)
+
+## 15/11 · Preguntas de ENGAGEMENT (pedido del CEO) — para la IA de YouTube Studio
+Lo que funciona:
+1. Comparando mis Shorts que superaron las 15.000 visualizaciones con los que no llegaron a 3.000 en los últimos 28 días, ¿en qué se diferencian el porcentaje de vistos vs. deslizados, la retención y los primeros 3 segundos?
+2. En mis Shorts con más vistas, ¿en qué segundo exacto se va la mayoría de la gente, y en qué segundo hay más repeticiones?
+3. ¿Qué Shorts míos generaron más suscriptores por cada 1.000 vistas, y qué tienen en común?
+Engagement:
+4. ¿Qué tipo de comentario fijado o pregunta al final del video genera más comentarios en canales de desafíos de pausa de fútbol como el mío?
+5. Mis espectadores, ¿comentan más cuando el video les pide elegir un jugador, adivinar un número o decir en qué intento lo lograron?
+6. ¿Qué duración de Short (5-7 s, 8-12 s o más de 15 s) da mejor retención y más repeticiones en mi canal y en los desafíos de pausa en general?
+Formatos nuevos:
+7. En los desafíos de pausa de fútbol que se volvieron virales este mes, ¿qué elementos se repiten en los primeros 2 segundos: texto, sonido, cara del jugador, cuenta regresiva?
+8. ¿Qué jugadores y qué leyendas generan más interés entre mis espectadores en este momento, y hay algún enfrentamiento cara a cara (por ejemplo Messi vs Ronaldo) que estén buscando?
+Publicación:
+9. Con mi público, ¿conviene publicar 6 u 8 Shorts por día? ¿Cuánto tiempo conviene dejar entre un Short y otro para que no compitan entre sí?
+10. ¿Hay algo en mis títulos, hashtags o descripciones que esté frenando la distribución en el feed de Shorts?
+Con las respuestas: guía de engagement para el Ingeniero (gancho, duración, pregunta final y comentario fijado de cada formato nuevo).
