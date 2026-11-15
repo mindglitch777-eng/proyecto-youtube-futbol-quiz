@@ -3,6 +3,19 @@
 Leelo antes del manual. El manual te enseña a no equivocarte con los números; esto te dice HACIA DÓNDE va la empresa.
 Ante cualquier duda, la pregunta es: **¿esto nos acerca a monetizar de forma sostenible?**
 
+## 0. VIGENTE DESDE EL 15/11 (decisiones del CEO + auditoría). Leelo primero: manda sobre lo que diga más abajo.
+Informe de la auditoría: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
+- **La métrica que manda** es **videos de 10 K o más (a 48 h) por día** (meta 3; hoy ~0,9) y **vistas por día** (meta 110 K; hoy ~52 K). Está en `gerente.json` → "norte". El titular del parte y cada decisión se justifican contra esto, no contra la mediana.
+- **Lógica única del canal**: PARAR en el momento justo, con superestrellas (y leyendas: Ronaldinho, Zidane, Beckham, Henry, Zlatan) en el primer cuadro, títulos SOLO con superestrellas y premio visual al parar bien. **Fuera**: STOP clásico, quiz (WHO IS THIS, PRICE TAG, BALLON Q, CAREER), TRIDENT, FIND, WALL.
+- **Familias** (máximo 2 por día cada una, lo hace solo `e4_plan.py`): WHEEL (rueda, piernas, cinta) · CABEZAS (cabezas, slot, fitall) · ELEGÍ (favorito, circulo) · MOMENTO (balon, siuu, penal).
+- **Semana de volumen 19-25/11**: 8 videos por día (los 2 extra, 18:30 y 22:15, solo WHEEL/CABEZAS/ELEGÍ). El 23/11 y el 26/11 se compara contra la semana de 6: si no sube la cantidad de videos de 10 K por día, se vuelve a 6.
+- **Estrenos**: formato nuevo aprobado → en `config.json` "estreno_hasta" = fecha + 7 días: tiene 3 lugares asegurados su primera semana.
+- **Poda nueva** (automática, contra la mediana del canal; protege formatos con un video de 10 K entre sus últimos 4). Cada cambio queda en `poda.json` "historial" y la vigilancia lo avisa en un Issue "aviso". Si ves una poda equivocada, revertila y anotalo.
+- **GERENTE, CADA DÍA (A4)**: mirá la **hoja de control** de mañana y pasado: `control.jpg` en el Release `semana-<fecha>` (bajala por REST: `gh api repos/mindglitch777-eng/proyecto-youtube-futbol-quiz/releases/tags/semana-<fecha> --jq '.assets[]|select(.name=="control.jpg").id'` y `gh api -H "Accept: application/octet-stream" repos/mindglitch777-eng/proyecto-youtube-futbol-quiz/releases/assets/<id> > control.jpg`; GraphQL no anda en estas sesiones). Buscá: texto cortado, medidor que contradice al festejo (ej. "80 % GOLAZO!"), cara de otro jugador, recortes rotos, pantallas raras. Si hay un defecto: arreglalo (o pedíselo al Ingeniero) y, si el video ya está subido, avisale al CEO para que lo borre y lo cubra un extra.
+- **INGENIERO, CADA LUNES (C1, sprint creativo)**: construí **2 formatos nuevos de la lógica de parar POR TU CUENTA** (sin esperar pedido), cruzando lo que explota en el mercado (último `reports/investigacion_*.md`, `olas.json`) con lo que funciona acá. Una propuesta con prototipo; revisá la hoja a ojo. Usá también `analytics.json` "curvas" (en qué segundo se va la gente) para mejorar los formatos que caen. Los jueves: terminar/corregir y atender pedidos.
+- **Pruebas A/B en curso** (`experimentos.json`): título de WHEEL ("vs" contra "Find X's real body") y FAVORITE con o sin leyendas.
+- **Fotos**: antes de usar un jugador nuevo, verificá a ojo que la foto sea de él (Kaká y Ronaldo Nazário estaban equivocados).
+
 ## 1. El objetivo (en orden de prioridad)
 
 1. **Ser monetizable y seguir siéndolo.** Entrar al Programa de Socios de YouTube y no perderlo.
