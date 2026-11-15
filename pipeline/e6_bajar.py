@@ -23,7 +23,7 @@ LIMITE_24H = 10            # YouTube deja ~10 subidas cada 24 h por canal: el pl
 def hechos():
     p = RAIZ / "pipeline" / "datos" / "publicados.json"
     pub = json.loads(p.read_text()) if p.exists() else []
-    return {x["id"] for x in pub if (x.get("video_id") and not x.get("reemplazado")) or x.get("manual")}
+    return {x["id"] for x in pub if (x.get("video_id") and not x.get("reemplazado")) or x.get("manual") or x.get("cancelado")}   # 15/11: cancelado = el CEO lo sacó, NO se vuelve a subir
 
 
 def horarios_con_viejos(ids_actuales):

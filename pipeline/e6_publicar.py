@@ -49,7 +49,7 @@ def main():
     videos = json.loads((carpeta / "videos.json").read_text()) if (carpeta / "videos.json").exists() else []
     vencidos = json.loads((carpeta / "vencidos.json").read_text()) if (carpeta / "vencidos.json").exists() else []
     publicados = cargar("publicados.json", [])
-    hechos = {p["id"] for p in publicados if (p.get("video_id") and not p.get("reemplazado")) or p.get("manual")}
+    hechos = {p["id"] for p in publicados if (p.get("video_id") and not p.get("reemplazado")) or p.get("manual") or p.get("cancelado")}   # 15/11: cancelado = no se vuelve a subir
     cola = [m for m in videos if m["id"] not in hechos]
     problemas = [f"Se pasó la hora y NO se subió: {v}" for v in vencidos]
 
