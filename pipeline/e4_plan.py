@@ -32,9 +32,9 @@ FAMILIAS = {"rueda": "WHEEL", "piernas": "WHEEL", "cinta": "WHEEL",
             "favorito": "ELEGI", "circulo": "ELEGI",
             "balon": "MOMENTO", "siuu": "MOMENTO", "penal": "MOMENTO"}
 MAX_FAMILIA_DIA = 2
-# 15/11 (auditoría B1): SEMANA DE VOLUMEN 19-25/11: 8 videos por día. Los 2 lugares extra van SOLO a familias que ya dieron
+# 15/11 (auditoría B1 + CEO: "arranquemos ya"): SEMANA DE VOLUMEN 16-22/11 (16 y 17 con extras): 8 videos por día. Los 2 lugares extra van SOLO a familias que ya dieron
 # videos de 10 K (WHEEL, CABEZAS, ELEGÍ). Se compara contra la semana de 6 (videos de 10 K por día y vistas por día).
-VOLUMEN = dict(desde="2026-11-19", hasta="2026-11-25", horas=["18:30", "22:15"], familias={"WHEEL", "CABEZAS", "ELEGI"})                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
+VOLUMEN = dict(desde="2026-11-16", hasta="2026-11-22", horas=["18:30", "22:15"], familias={"WHEEL", "CABEZAS", "ELEGI"})                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
 MIN_VIDEOS_PODA = 4
 ESTRENO_LUGARES = 3                                                             # 15/11 CEO: cada formato nuevo, 3 lugares asegurados en su 1.ª semana
 MAX_PRUEBA_SEMANA = 4                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
