@@ -105,6 +105,14 @@ TIT_STOP_SERIE = ["Football Stop Challenge #{n} ⚽🛑 {tema} edition", "Stop a
 # REGLA PARA SIEMPRE (pedido del dueño del canal): en el primer cuadro de TODOS los videos aparece una superestrella
 # (la cara más conocida frena el scroll: el 49% que hoy desliza decide en <0,4 s). Va en el lugar más visible de cada formato.
 SUPERESTRELLAS = ["cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar", "vin_cius_j_nior"]
+# REGLA DEL CEO (15/11): en TODOS los videos solo jugadores MUY famosos: las 6 superestrellas de hoy + 5 leyendas. Nunca secundarios
+# (con secundarios rendíamos 3 veces menos). Fotos de leyendas revisadas a ojo el 15/11 (afuera: Beckham sin camiseta, Henry con
+# aro y texto, Zidane de traje con la copa; Kaká y Ronaldo Nazário tienen fotos de otra persona).
+LEYENDAS = ["ronaldinho", "zinedine_zidane", "david_beckham", "thierry_henry", "zlatan_ibrahimovi"]
+FAMOSOS = SUPERESTRELLAS + LEYENDAS
+TORSOS_LEYENDA = ["david_beckham_0", "david_beckham_2", "david_beckham_3", "ronaldinho_0", "ronaldinho_1", "ronaldinho_2", "ronaldinho_3",
+                  "thierry_henry_0", "thierry_henry_1", "thierry_henry_3", "zinedine_zidane_0", "zinedine_zidane_3",
+                  "zlatan_ibrahimovi_0", "zlatan_ibrahimovi_1", "zlatan_ibrahimovi_2", "zlatan_ibrahimovi_3"]
 _uso_estrellas = {}
 
 
@@ -331,7 +339,10 @@ def guion_rueda(gid, rng, V, fecha):
         base = cuerpo.rsplit("_", 1)[0]
         pool = [t for t in TORSOS_RUEDA if t.rsplit("_", 1)[0] != base]
         estrellas = [t for t in pool if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
-        torsos = rng.sample(estrellas, 3) + rng.sample([t for t in pool if t not in estrellas], 4)   # 13/11: 3 estrellas (antes 2)
+        ley = [t for t in TORSOS_LEYENDA if t.rsplit("_", 1)[0] != base]
+        ley = rng.sample(ley, len(ley))
+        ley = [t for i, t in enumerate(ley) if t.rsplit("_", 1)[0] not in {x.rsplit("_", 1)[0] for x in ley[:i]}][:4]   # 4 leyendas distintas
+        torsos = rng.sample(estrellas, 3) + ley                                # 15/11 CEO: solo famosos (3 estrellas + 4 leyendas)
         rng.shuffle(torsos)
         clave = (cuerpo,) + tuple(sorted(torsos))
         if clave not in usados:
@@ -359,7 +370,7 @@ def guion_piernas(gid, rng, V, fecha):
     for _ in range(100):                                                       # 2 de las piernas son de otras superestrellas (las del título)
         dos = rng.sample(sorted(est), 2)
         de_est = [rng.choice([x for x in pool if x.startswith(k)]) for k in dos]
-        piernas = de_est + rng.sample([x for x in pool if not x.startswith(tuple(est))], 3)
+        piernas = de_est + rng.sample([x for x in pool if x.startswith(tuple(LEYENDAS))], 3)   # 15/11 CEO: solo famosos (leyendas)
         rng.shuffle(piernas)
         clave = (cuerpo,) + tuple(sorted(piernas))
         if clave not in usados:
@@ -517,7 +528,8 @@ def guion_cabezas(gid, rng, V, fecha):
     cuerpo = rng.choice(sorted(CUERPOS_FIT)); clave = CUERPOS_FIT[cuerpo]
     otras = [c for c in FOTOS if c != clave]
     est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
-    cab = rng.sample(est, 3) + rng.sample([c for c in otras if c not in est], 4); rng.shuffle(cab)
+    ley = [c for c in LEYENDAS if c in FOTOS and c != clave]
+    cab = rng.sample(est, min(3, len(est))) + rng.sample(ley, min(4, len(ley))); rng.shuffle(cab)   # 15/11 CEO: solo famosos
     return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=4,
                 sentido=rng.choice([1, -1]), pos_correcto=rng.randint(2, 6), musica=f"rueda_original_{rng.randint(0, 2)}")
 
@@ -536,7 +548,7 @@ def guion_pared(gid, rng, V, fecha):
 
 def guion_circulo(gid, rng, V, fecha):
     est = [c for c in SUPERESTRELLAS if c in FOTOS]
-    resto = rng.sample([c for c in FOTOS if c not in est], 3)
+    resto = rng.sample([c for c in LEYENDAS if c in FOTOS], 3)                 # 15/11 CEO: solo famosos (leyendas)
     cl = est + resto; rng.shuffle(cl)
     return dict(id=gid, claves=cl, nombres=[nombre_de(c) for c in cl], dur=8.0, musica=V.musica(rng))
 

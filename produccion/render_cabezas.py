@@ -104,7 +104,7 @@ def main(guion):
         num = int(((a0 - base) % 360) // paso) % n + 1
         P.texto(d, (110, 300), f"{num}.", 150, (255, 255, 255), 13, (230, 30, 30))
         tras = min(((t - e) % dur) for e in encajes)
-        if tras < 0.5:
+        if tras < 0.1:                                                    # 15/11: PERFECT FIT! solo mientras calza (antes 0,5 s)
             if tras < 0.12:
                 im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(60 * (1 - tras / 0.12)))))
                 d = ImageDraw.Draw(im)

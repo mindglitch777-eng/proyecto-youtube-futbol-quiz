@@ -96,7 +96,7 @@ def cuadro(g, A, t, enc):
     P.texto(d, (W / 2, 1860), g["nombre"].upper(), 70, (255, 255, 255), 10, (20, 20, 30))
     for te in enc:
         e = t - te
-        if -0.05 <= e < 0.3:
+        if -0.05 <= e < 0.22:                                             # 15/11: PERFECT! solo mientras calza
             if e < 0.15:
                 im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(55 * (1 - max(e, 0) / 0.15)))))
                 d = ImageDraw.Draw(im)

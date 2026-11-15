@@ -152,7 +152,7 @@ def cuadro(g, A, t, enc):
     P.texto(d, (110, 260), f"{num}.", 150, (255, 255, 255), 13, (230, 30, 30))
     for te in enc:
         e = t - te
-        if -0.05 <= e < 0.55:
+        if -0.03 <= e < 0.1:                                              # 15/11: PERFECT! solo mientras calza (antes 0,55 s: salía con otro jugador)
             if e < 0.15:
                 im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(55 * (1 - max(e, 0) / 0.15)))))
                 d = ImageDraw.Draw(im)
