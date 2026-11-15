@@ -41,6 +41,30 @@
  "hallazgos": [
   {
    "tipo": "funciona",
+   "titulo": "YouTube confirma: lo que frena el dedo es WHEEL, DRESS y las caras",
+   "dato": "Vistos vs. deslizados (IA de YouTube Studio, 14 días): WHEEL 'X vs Y or Z' 66,2 %, DRESS 66,0 %, 'Find Yamal's real body' 64,8 %. Los peores: STOP clásico 36-42 % (63 % desliza) y un FIT ALL 37,5 %.",
+   "por_que": "Dos cosas distintas: que se frenen (vistos vs. deslizados) y que lo vean entero (% visto). WHEEL tiene las dos. FIND frena a 70-72 % pero se va antes del final, por eso YouTube no lo empuja (1-2,5 K).",
+   "confianza": "alta (dato directo de YouTube)",
+   "accion": "Confirmada la salida del STOP clásico. DRESS frena tan bien como WHEEL: vale la pena el arreglo (plazo 22/11). La poda vigila FIT ALL."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Nuestro público mira desafíos de pausa, comparativas y jugadas virales",
+   "dato": "Según YouTube, en otros canales miran: (1) desafíos de pausa de caras, siluetas y cuerpos; (2) comparativas cara a cara (CR7 vs Messi, Haaland vs Lewandowski); (3) jugadas virales de Yamal, CR7, Neymar, Bellingham.",
+   "por_que": "Estamos en el centro de lo que les gusta. Lo que falta: comparativas y jugadas con la lógica de parar.",
+   "confianza": "alta",
+   "accion": "Sprint del lunes: SKILL STOP (jugadas) y un VS STOP (cara a cara: parás y gana el que elegiste) además de STOP TO ESCAPE."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Horarios: los fines de semana el pico es de 11 a 15 h",
+   "dato": "Sábado: pico 11-15 h; domingo: 12-15 h; de lunes a viernes, parejo de 11 a 00 h y más los jueves y viernes después de las 21 h.",
+   "por_que": "El fin de semana la gente mira al mediodía.",
+   "confianza": "alta",
+   "accion": "En la semana de volumen, sábado y domingo el lugar extra va a las 12:00 en vez de las 18:30."
+  },
+  {
+   "tipo": "funciona",
    "titulo": "WHEEL es el motor del canal",
    "dato": "Mediana 6.842 a las 48 h (3,2x el canal) en 13 videos; 1,67 suscriptores cada 1.000; 173 % visto. La de las 09:00 del 13/11 hizo 22.149.",
    "por_que": "Reto de parar justo + elegir entre superestrellas: el que mira juega y se queda a ver si acertó.",

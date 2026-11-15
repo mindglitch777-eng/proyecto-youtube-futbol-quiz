@@ -93,3 +93,11 @@ Informe: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
 - **C2 Pruebas A/B**: se cancelan las de STOP; nuevas: título de WHEEL ("vs" contra "Find X's real body") y FAVORITE con o sin leyendas.
 - **D1**: fábrica semanal archivada.
 - **Revisar el 23/11**: semana de volumen (fuertes por día y vistas por día) y si la vigilancia nueva detectó algo.
+
+## 2026-11-15 · DATOS DE LA IA DE YOUTUBE STUDIO (los pidió el CEO) · lo que no da la API
+- Vistos vs. deslizados (14 días): mejores WHEEL "X vs Y or Z" 66,2 %, DRESS 66,0 %, "Find Yamal's real body" 64,8 %, FIND 70-72 % (pero se van antes del final: 1-2,5 K). Peores: STOP clásico 36-42 %, un FIT ALL 37,5 %.
+- Nuestro público mira en otros canales: desafíos de pausa (caras, siluetas, cuerpos), comparativas cara a cara (CR7 vs Messi, Haaland vs Lewandowski) y jugadas virales (Yamal, CR7, Neymar, Bellingham).
+- Horarios: sábado pico 11-15 h, domingo 12-15 h; semana parejo 11-00 h, jueves y viernes fuerte después de las 21 h. → En la semana de volumen el lugar extra del fin de semana pasa a las 12:00.
+- Vistas diarias del feed de Shorts: 9/11 35.678 · 10/11 63.851 · 11/11 28.390 (el peor: muchos deslizamientos) · 12/11 43.098 · 13/11 65.826 · 14/11 52.893.
+- **PEDIDO PARA EL INGENIERO (lunes 16/11)**: además de STOP TO ESCAPE y SKILL STOP, un **VS STOP** (comparativa cara a cara con la lógica de parar: dos estrellas, parás y gana el que elegiste / el medidor decide). Es el 2.º interés de nuestro público.
+- **GERENTE, cada lunes**: pedile al CEO que le pregunte a la IA de YouTube Studio los "vistos vs. deslizados" de la semana (no hay API para eso) y sumalo al análisis.

@@ -175,7 +175,9 @@ def main(inicio=None, dias=7):
         hoy_pruebas = []
         grilla_dia = list(GRILLA_SEMANA)
         if VOLUMEN["desde"] <= dia <= VOLUMEN["hasta"]:
-            grilla_dia = sorted(grilla_dia + [(h_, "fuerte", None) for h_ in VOLUMEN["horas"]])
+            finde = date.fromisoformat(dia).weekday() >= 5                     # IA de YouTube (15/11): sábado y domingo el pico es 11-15 h
+            horas_extra = ["12:00", "22:15"] if finde else VOLUMEN["horas"]
+            grilla_dia = sorted(grilla_dia + [(h_, "fuerte", None) for h_ in horas_extra])
         fijos_dia = [t for _, t, _ in grilla_dia if t not in ("prueba", "fuerte")]
 
         def params(k):                                                         # C2: lo que ganó una prueba A/B + la prueba en curso
