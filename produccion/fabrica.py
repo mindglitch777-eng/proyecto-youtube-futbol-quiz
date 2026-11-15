@@ -247,6 +247,14 @@ def titulo_stop(V, rng, nombres, nivel=None):
     return base
 
 
+def _cuatro_hashtags(desc):
+    """Deja como máximo 3 hashtags de jugadores/tema + #shorts (la IA de YouTube: saturar de etiquetas no suma)."""
+    tags = _re.findall(r"#\w+", desc)
+    quedan = [t for t in tags if t.lower() not in ("#shorts",)][:3] + ["#shorts"]
+    limpio = _re.sub(r"[ \t]*#\w+", "", desc).rstrip()
+    return limpio + "\n" + " ".join(dict.fromkeys(quedan))
+
+
 def estrellas_nombres():
     """Nombres de las superestrellas (los que se reconocen en 0,4 s). Solo estos van en los títulos."""
     return {nombre_de(c) for c in SUPERESTRELLAS} | {"Messi", "Ronaldo", "Cristiano Ronaldo", "Mbappé", "Yamal", "Lamine Yamal",
@@ -701,7 +709,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             g = guion_piernas(gid, rng, V, sl["fecha"])
             a, b = g["otros"]
             titulo = V.titulo("piernas", TIT_PIERNAS, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
-            desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. Comment your number 👇\n"
+            desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
         elif tipo in ("cinta", "slot"):
@@ -713,7 +721,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                     titulo += " " + tag(x)
             meta = (f"Stop the belt when {g['nombre']}'s REAL body is on top of the legs 🛑" if tipo == "cinta"
                     else f"Stop the slot when {g['nombre']}'s head fits PERFECTLY 🎰🛑")
-            desc = (f"{meta} Only 1% get it first try. Comment your number 👇\n"
+            desc = (f"{meta} Only 1% get it first try. How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
         elif tipo == "rueda":
@@ -729,7 +737,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                 pool_t = [t for t in TIT_RUEDA if " vs " in t]
             titulo = (rng.choice(pool_t) if sl.get("titulo_estilo") else V.titulo("rueda", TIT_RUEDA, rng)).format(n=g["nombre"], a=a, b=b) \
                 + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
-            desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
+            desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
         elif tipo in ("trayectoria", "tridente"):
@@ -752,7 +760,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                     titulo += " " + tag(x)
             meta = {"cabezas": f"Pause when {ns[0]}'s head fits PERFECTLY 🛑", "pared": "Pick who won't fall BEFORE the countdown ends 👀",
                     "circulo": "Pause when the ball touches YOUR GOAT 🐐"}[tipo]
-            desc = f"{meta}\nComment your pick 👇 Follow for part 2 🔥\n" + " ".join(tag(x) for x in ns4) + " #football #soccer #challenge #shorts"
+            desc = f"{meta}\nHow many tries did it take you? 👇 Follow for part 2 🔥\n" + " ".join(tag(x) for x in ns4) + " #football #soccer #challenge #shorts"
             fijado = ""; fotos = []; nombres = ns4
         elif tipo in ("q20fichaje", "q20costo", "q20balon"):                     # formatos de 20 s con voz (anti-repetición propia)
             import q20_guiones as Q20
@@ -769,7 +777,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             for x in (tag(n), "#fitchallenge"):
                 if len(titulo) + len(x) + 1 <= 100:
                     titulo += " " + x
-            desc = (f"8 heads of {n}… only ONE is real 🎯 Pause when the REAL head fits!\nComment your number 👇 Follow for part 2 🔥\n"
+            desc = (f"8 heads of {n}… only ONE is real 🎯 Pause when the REAL head fits!\nHow many tries did it take you? 👇 Follow for part 2 🔥\n"
                     f"{tag(n)} #fitchallenge #football #soccer #challenge #shorts")
             fijado = ""; fotos = []; nombres = [n]
         elif tipo in ("siuu", "penal", "balon"):
@@ -782,7 +790,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                 titulo += " " + etiquetas_
             meta = {"siuu": "Pause it EXACTLY at 67 🛑 (Ronaldo at the top = SIUUU)", "penal": "Pause when the target is in the top corner (100%) ⚽",
                     "balon": f"Pause when the Ballon d'Or fits in {n}'s hands (100%) 🏆"}[tipo]
-            desc = f"{meta}\nComment your number 👇 Follow for part 2 🔥\n{etiquetas_} #football #soccer #stopchallenge #shorts"
+            desc = f"{meta}\nHow many tries did it take you? 👇 Follow for part 2 🔥\n{etiquetas_} #football #soccer #stopchallenge #shorts"
             fijado = ""; fotos = [FOTOS[g["pateador"]]] if tipo == "penal" and g.get("pateador") in FOTOS else []; nombres = [n]
         elif tipo == "find":
             g = guion_find(gid, rng, usados, V)
@@ -814,6 +822,9 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             fotos = [q["foto"] for q in g["cuadrantes"]]; nombres = [q["nombre"] for q in g["cuadrantes"]]
         import gancho as G
         fijado = G.FIJADO.get(tipo, fijado)                                    # comentario fijado que invita a responder (guía YouTube)
+        if sl.get("dur"):                                                       # 15/11: prueba A/B de duración (IA de YouTube: 7-9 s es lo óptimo)
+            g["dur"] = sl["dur"]
+        desc = _cuatro_hashtags(desc)                                          # 15/11 (IA de YouTube): 3-4 hashtags, no más
         ruta = sem / "guiones" / f"{gid}.json"
         ruta.write_text(json.dumps(g, ensure_ascii=False, indent=1))
         desc_completa = (f"{desc}\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n"

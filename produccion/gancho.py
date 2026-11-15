@@ -23,22 +23,22 @@ TEXTOS = {
     "stop": dict(gancho=["STOP AT 100%", "ONLY 1% CAN", "STOP IT AT 100%"],
                  apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "NOBODY STOPS IT AT 100%"],
                  dificil=["IMPOSSIBLE LEVEL: 3 TRIES", "HARD MODE: ONLY 3 TRIES"],
-                 cta=["COMMENT 1-4 · FOLLOW FOR PART 2"]),
+                 cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "rueda": dict(gancho=["STOP ON {n}", "FIND {n}'S BODY", "STOP ON {n}'S BODY"],
                   apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "ONLY 1% GET IT"],
-                  cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+                  cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "favorito": dict(gancho=["STOP ON YOUR FAVORITE", "PAUSE ON YOUR GOAT", "STOP THE BALL ON YOUR IDOL"],
                      apuesta=["IT GETS FASTER...", "ONLY REAL FANS GET HIM", "BE QUICK!"],
                      cta=["COMMENT WHO YOU GOT · FOLLOW FOR PART 2"]),
     "piernas": dict(gancho=["FIND {n}'S REAL LEGS", "STOP ON {n}'S LEGS", "GIVE {n} HIS LEGS BACK"],
                     apuesta=["99% IMPOSSIBLE", "ONLY 1% GET IT", "6 LEGS · ONLY 1 FITS"],
-                    cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+                    cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "cinta": dict(gancho=["STOP ON {n}'S BODY", "FIND {n}'S BODY", "STOP THE BELT ON {n}"],
                   apuesta=["99% IMPOSSIBLE", "ONLY 1% GET IT", "6 STARS · ONLY 1 FITS"],
-                  cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+                  cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "slot": dict(gancho=["FIT {n}'S HEAD", "HIT THE {n} JACKPOT", "STOP ON {n}'S HEAD"],
                  apuesta=["99.9% IMPOSSIBLE", "ONLY 1% HIT THE JACKPOT", "6 STARS · ONLY 1 FITS"],
-                 cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+                 cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "find": dict(gancho=["FIND THE REAL {n}", "ONLY 1% FIND THEM ALL"], apuesta=["3 ROUNDS · NO MISTAKES"],
                  cta=["COMMENT YOUR NUMBERS · FOLLOW FOR PART 2"]),
     "plinko": dict(gancho=["PICK YOUR PLAYER NOW", "WHO LANDS ON 99?"], apuesta=["WRONG PICK = YOU LOSE"],
@@ -49,7 +49,7 @@ TEXTOS = {
                   cta=["COMMENT HOW MANY · FOLLOW FOR PART 2"]),
     "fitall": dict(gancho=["CAN ANYONE SOLVE THIS?", "FIND {n}'S REAL HEAD", "FIT {n}'S REAL HEAD"],
                    apuesta=["8 HEADS · ONLY 1 IS REAL", "99% PICK THE WRONG HEAD", "IMPOSSIBLE LEVEL"],
-                   cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+                   cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "torre": dict(gancho=["GUESS THE FLAG FIRST", "WHOSE FLAG IS THIS?"], apuesta=["GUESS BEFORE THE COLORS"],
                   cta=["COMMENT YOUR GUESS · FOLLOW FOR PART 2"]),
 }
@@ -73,6 +73,12 @@ FIJADO = {"stop": "How many tries did it take you? 😤 I read them all 👇",
           "circulo": "Who's your GOAT? 🐐 I read them all 👇",
           "trayectoria": "Did you guess him before 3 seconds? Be honest 👀 I read them all 👇",
           "tridente": "What was your total? Did you go bankrupt? 💸 I read them all 👇"}
+
+
+# 15/11 (IA de YouTube Studio): lo que más comenta nuestro público es EN QUÉ INTENTO LO LOGRÓ ("first try", "8 tries but I did it").
+FIJADO_INTENTO = "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥"
+for _k in ("rueda", "piernas", "cinta", "cabezas", "slot", "fitall", "balon", "siuu", "penal"):
+    FIJADO[_k] = FIJADO_INTENTO
 
 
 def elegir(tipo, semilla, nombre="", dificil=False):

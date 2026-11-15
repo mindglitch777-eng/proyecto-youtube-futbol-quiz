@@ -47,6 +47,18 @@
      "p_mejor": 0.5
     }
    }
+  },
+  {
+   "id": "e5_cabezas_duracion",
+   "tipo": "cabezas",
+   "param": "dur",
+   "brazos": [
+    6.4,
+    8.0
+   ],
+   "inicio": "2026-11-15",
+   "estado": "en curso",
+   "pregunta": "¿HEAD FIT rinde más con 6,4 s (actual) o con 8 s (la IA de YouTube dice que 7-9 s es lo óptimo)?"
   }
  ],
  "terminados": [

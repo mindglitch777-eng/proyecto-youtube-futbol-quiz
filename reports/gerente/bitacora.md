@@ -109,3 +109,8 @@ Ver estrategia.md sección 00: un solo mensaje el lunes con todo lo pendiente; m
 - **Permiso de Google**: la vigilancia prueba en cada corrida que Google siga aceptando el permiso del canal; si lo rechaza, alarma con los pasos exactos (README sección 3.5 → secreto YT_REFRESH_TOKEN).
 - **Semáforo** en la página (Resumen): verde = no hay que hacer nada · amarillo = algo para decidir · rojo = algo roto.
 - **Balance quincenal** (balance.yml, el 1 y el 15 de cada mes, sin IA): últimas 2 semanas contra las 2 anteriores (vistas y suscriptores por día, videos de 10 K por día, semanas para 10 M), veredicto y recomendaciones; Issue "aviso". Gerente: leelo y actuá sobre sus recomendaciones.
+
+## 2026-11-15 · ENGAGEMENT (respuestas de la IA de YouTube Studio a las 10 preguntas del CEO) · aplicado por Claude
+- Hallazgos: >15 K vistas = 55-66 % vistos y 170-220 % visto (se repite 2 veces); <3 K = 36-45 % vistos. Caída fuerte a los 5,5-6 s (videos de 7 s); pico de repeticiones a los 2,5-3,2 s. Más suscriptores: WHEEL con Messi/Ronaldo/Yamal/Mbappé (2,2-2,6 cada 1.000). El público comenta EN QUÉ INTENTO lo logró. Duración óptima 7-9 s. Duelos: Ronaldo vs Messi, Yamal vs Mbappé/Vinícius. Recomienda 2-4 por día con 2-3 h de separación y 3-4 hashtags.
+- Hice: CTA "HOW MANY TRIES? COMMENT 👇" y comentario fijado de intentos en todos los formatos de parar; descripción con la misma pregunta; máximo 4 hashtags; separación ≥1,5 h en la semana de 8 (extras a las 11:00 y 18:30; afuera 22:15); prueba A/B nueva: HEAD FIT 6,4 s contra 8 s; guía de engagement en estrategia.md para todo formato nuevo.
+- Pendiente del CEO: la IA recomienda 2-4 videos por día; nuestra prueba de 8 sigue hasta el 22/11 y el 24/11 se decide con números (videos de 10 K por día y vistas por día).
