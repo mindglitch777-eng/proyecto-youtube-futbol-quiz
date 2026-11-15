@@ -40,6 +40,50 @@
   "nota": "programado a mano"
  },
  {
+  "id": "s1117_02_mar17_1500_penal",
+  "tipo": "penal",
+  "variante": null,
+  "fecha": "2026-11-17",
+  "hora": "15:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "15/11 Gerente: hecho antes del arreglo de PENALTY (festeja \"80 % GOLAZO!\"). NO subir; lo cubre un extra rehecho."
+ },
+ {
+  "id": "s1117_03_mar17_1700_circulo",
+  "tipo": "circulo",
+  "variante": null,
+  "fecha": "2026-11-17",
+  "hora": "17:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (Pedri y \"Antoine\" en título/caras). NO subir; lo cubre un extra rehecho."
+ },
+ {
+  "id": "s1117_05_mar17_2130_cabezas",
+  "tipo": "cabezas",
+  "variante": null,
+  "fecha": "2026-11-17",
+  "hora": "21:30",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (cabezas de secundarios en la rueda). NO subir; lo cubre un extra rehecho."
+ },
+ {
+  "id": "s1117_06_mar17_2300_rueda",
+  "tipo": "rueda",
+  "variante": null,
+  "fecha": "2026-11-17",
+  "hora": "23:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (torsos de secundarios). NO subir; lo cubre un extra rehecho."
+ },
+ {
   "id": "s1_05_dom01_0900_stop",
   "tipo": "stop",
   "fecha": "2026-11-01",
@@ -1802,47 +1846,39 @@
   "subido": "2026-11-15T17:18:52+00:00"
  },
  {
-  "id": "s1117_02_mar17_1500_penal",
-  "tipo": "penal",
+  "id": "o11150232_05_lun16_2130_cinta",
+  "tipo": "cinta",
   "variante": null,
-  "fecha": "2026-11-17",
-  "hora": "15:00",
-  "titulo": null,
-  "video_id": null,
-  "error": null,
-  "cancelado": "15/11 Gerente: hecho antes del arreglo de PENALTY (festeja \"80 % GOLAZO!\"). NO subir; lo cubre un extra rehecho."
- },
- {
-  "id": "s1117_03_mar17_1700_circulo",
-  "tipo": "circulo",
-  "variante": null,
-  "fecha": "2026-11-17",
-  "hora": "17:00",
-  "titulo": null,
-  "video_id": null,
-  "error": null,
-  "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (Pedri y \"Antoine\" en título/caras). NO subir; lo cubre un extra rehecho."
- },
- {
-  "id": "s1117_05_mar17_2130_cabezas",
-  "tipo": "cabezas",
-  "variante": null,
-  "fecha": "2026-11-17",
+  "exp": null,
+  "fecha": "2026-11-16",
   "hora": "21:30",
-  "titulo": null,
-  "video_id": null,
+  "titulo": "Stop Neymar's body on the belt 🛑 Vinícius or Mbappé? #neymar #vinicius #mbappe",
+  "video_id": "497Gw2B7HMs",
   "error": null,
-  "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (cabezas de secundarios en la rueda). NO subir; lo cubre un extra rehecho."
+  "subido": "2026-11-15T19:23:32+00:00"
  },
  {
-  "id": "s1117_06_mar17_2300_rueda",
-  "tipo": "rueda",
+  "id": "o11151256_02_lun16_2215_balon",
+  "tipo": "balon",
   "variante": null,
-  "fecha": "2026-11-17",
-  "hora": "23:00",
-  "titulo": null,
-  "video_id": null,
+  "exp": null,
+  "fecha": "2026-11-16",
+  "hora": "22:15",
+  "titulo": "Stop the Ballon d'Or at 100% 🏆 Ronaldo edition #ronaldo #ballondor",
+  "video_id": "O3ueHixM2Co",
   "error": null,
-  "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (torsos de secundarios). NO subir; lo cubre un extra rehecho."
+  "subido": "2026-11-15T19:23:35+00:00"
+ },
+ {
+  "id": "s1117_01_mar17_1300_balon",
+  "tipo": "balon",
+  "variante": null,
+  "exp": null,
+  "fecha": "2026-11-17",
+  "hora": "13:00",
+  "titulo": "Freeze the Ballon d'Or in Yamal's hands  Stop at 100% 💀🛑 #yamal #ballondor",
+  "video_id": "_Ta0Zn-y5YQ",
+  "error": null,
+  "subido": "2026-11-15T19:23:37+00:00"
  }
 ]
