@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-15",
- "hora": "14:19",
+ "hora": "15:45",
  "canal": {
   "mediana_48h_semana": 2152,
   "mediana_48h_semana_anterior": 2958,
@@ -65,10 +65,8 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-15T13:40-03:00",
-   "problemas": [
-    "2026-11-15: 5 videos subidos de 6"
-   ],
+   "hora": "2026-11-15T14:40-03:00",
+   "problemas": [],
    "acciones": [],
    "avisos": []
   }
@@ -86,10 +84,12 @@
    "2026-11-11": 0,
    "2026-11-12": 0,
    "2026-11-13": 4
-  }
+  },
+  "vistas_por_dia": 47249,
+  "subs_por_dia": 45.7
  },
  "cerebro": {
-  "fecha": "2026-11-15T14:19-03:00",
+  "fecha": "2026-11-15T15:45-03:00",
   "videos_medidos": 81,
   "formatos": {
    "cabezas": {
@@ -306,19 +306,19 @@
     "balon": "3%",
     "circulo": "3%",
     "tridente": "2%",
-    "penal": "2%",
     "siuu": "2%",
-    "find": "1%",
-    "plinko": "1%",
-    "pared": "1%",
-    "trayectoria": "1%",
-    "favorito": "1%",
-    "piernas": "1%",
-    "q20costo": "1%",
-    "cinta": "1%",
+    "penal": "2%",
     "torre": "1%",
-    "slot": "1%",
-    "q20fichaje": "1%"
+    "trayectoria": "1%",
+    "piernas": "1%",
+    "find": "1%",
+    "q20costo": "1%",
+    "favorito": "1%",
+    "pared": "1%",
+    "plinko": "1%",
+    "q20fichaje": "1%",
+    "cinta": "1%",
+    "slot": "1%"
    }
   },
   "experimentos": {
@@ -1074,7 +1074,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 3,
+  "olas_hace_h": 5,
   "investigacion": "2026-11-13",
   "poda": {
    "podadas": {
@@ -1099,22 +1099,22 @@
   ]
  },
  "parte": {
-  "fecha": "2026-11-14",
-  "titular": "874 de 1.000 suscriptores (+53 desde ayer; faltan 126). Vistas de Shorts en 90 días: 758 K de 10 M (8 %). A este ritmo de suscriptores los 1.000 llegan en ~3 días; las vistas siguen siendo el cuello de botella (~29 semanas).",
+  "fecha": "2026-11-15",
+  "titular": "887 de 1.000 suscriptores (faltan 113). La métrica que manda: 1,0 video de 10 K por día (meta 3) y ~47 K vistas por día (meta 110 K). Suscriptores del último día: solo +11 (el día anterior +58).",
   "funciona": [
-   "HEAD FIT ya tiene 4 videos medidos: mediana 9.459 a las 48 h (4,4x el canal, confianza MEDIA). Es la oportunidad más clara: solo el 7 % de los videos.",
-   "WHEEL sigue arriba: mediana 6.842 (3,2x, 13 medidos, ALTA). La rueda de las 09:00 del 13/11 hizo 22.149.",
-   "Originalidad 88/100 (sube), inspector 41 videos sin defectos, reserva 12/12, todas las máquinas OK. Mañana 15/11 tiene sus 6 videos con 1 solo WHEEL y 1 solo HEAD FIT."
+   "HEAD FIT: mediana 13.115 a las 48 h (6,1x el canal, 5 medidos, confianza media). El de las 23:00 del 13/11 hizo 22.877.",
+   "WHEEL: mediana 7.471 (3,5x, 15 medidos, alta) y ya no figura como cansado. 3 ruedas de 22-23 K en los últimos días.",
+   "El 13/11 tuvo 4 videos de 10 K (el mejor día de la semana). Inspector: 58 videos sin defectos; reserva 12/12; todas las máquinas OK."
   ],
   "no_funciona": [
-   "La mediana del canal a las 48 h de la semana está en 2.143 (antes 5.794, -63 %): son todavía los videos de los días con 9-15 subidas. El arreglo (6 por día) recién arrancó hoy.",
-   "WHEEL cansado: sus últimos 4 rinden el 24 % de los 4 anteriores (la rueda de las 21:30 del 13/11 hizo 1.436). Es el efecto de 2 por día; hoy es el primer día con 1. Se juzga el 16/11.",
-   "HEAD FIT también muestra caída en sus últimos videos (-71 %): ojo, hoy sale 2 veces (ya estaba subido). Confianza baja en esa tendencia (6 videos).",
-   "Los de 20 s siguen flojos: WHO IS THIS 181 vistas y 96 % visto."
+   "Revisando a ojo los videos del 17/11 (todavía sin subir) encontré 4 hechos ANTES de los arreglos del 15/11: PENALTY festejaba con 80 % ('80 % GOLAZO!'), GOAT CIRCLE traía a Pedri y 'Antoine' en el título, y HEAD FIT y WHEEL tenían secundarios entre las opciones.",
+   "Los suscriptores se frenaron: +11 en el último día (el anterior +58). Confianza baja (1 día, domingo).",
+   "Originalidad bajó de 88 a 77 (sigue bien, sin alertas): hay menos formatos distintos desde que salieron STOP y los quiz.",
+   "El 16/11 sale 3 veces la familia WHEEL (LEGS WHEEL 17:00, CONVEYOR 21:30, WHEEL 23:00) y un extra a las 22:15 a 45 minutos de los vecinos: quedó de antes de las reglas nuevas; el CONVEYOR de las 21:30 lo eligió el CEO, así que no lo toqué."
   ],
   "hice": [
-   "Le pasé al Ingeniero tu decisión sobre DRESS UP (#4): arreglo el lunes 16/11, propuesta con 2 muestras, pruebas antes del 20/11, fecha límite 22/11. Dato a favor: el detector marca la ola 'dress' subiendo.",
-   "No toqué la grilla: el cambio de ayer (6 por día, 1 WHEEL, variantes nuevas) está en evaluación. LEGS WHEEL sale por primera vez el 16/11 a las 17:00."
+   "Cancelé esos 4 videos del 17/11 antes de que se suban y pedí a la fábrica que los rehaga con el código de hoy (mismos formatos y horarios). Mañana reviso a ojo los nuevos.",
+   "Hoja de control: armé una propia del 16-17/11 (no había, esos lotes son anteriores a la máquina)."
   ],
   "para_el_ceo": [
    "Nada para vos hoy."

@@ -117,3 +117,15 @@ Ver estrategia.md sección 00: un solo mensaje el lunes con todo lo pendiente; m
 
 ## 2026-11-15 · DECISIÓN DEL CEO: cantidad de videos por día
 Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con números: videos de 10 K por día y vistas por día contra la semana anterior. Si 8 no mejora → 6. Si 6 tampoco mejora → probar 4 por día con 2-3 h de separación (lo que recomienda la IA de YouTube). Gerente: el 24/11 presentale al CEO la comparación en tu mensaje y esperá su "sí".
+
+## 2026-11-15 · Gerente IA (turno diario)
+- **Vi:** métrica que manda: 1,0 video de 10 K por día (meta 3) y ~47 K vistas por día (meta 110 K). 887 suscriptores (+11 en el día; el anterior +58).
+  HEAD FIT 13.115 (5 medidos, media); WHEEL 7.471 (15, alta) ya sin cansancio. Originalidad 88 → 77 (bien). Inspector 58 sin defectos, reserva 12/12, workflows OK
+  (TABLERO falló 1 vez a las 06:22 al publicar la página; la corrida anterior y las siguientes del sistema andan). Advertencia: el 17/11 sin videos subidos todavía: es el tope de ~10 subidas cada 24 h, no una falla.
+  Hoja de control del 16-17/11 armada a mano (esos lotes son anteriores a la máquina): 4 videos del 17/11 con defectos.
+- **Decidí e hice:** cancelé (sin subir) PENALTY 15:00 ("80 % GOLAZO!"), GOAT CIRCLE 17:00 (Pedri, "Antoine"), HEAD FIT 21:30 y WHEEL 23:00 (secundarios) del 17/11 y lancé la fábrica con esos 4 como extras rehechos (mismos formatos y horas).
+  6 preguntas: n = 4 videos revisados cuadro por cuadro / dato sano (lo vi) / no hay otra explicación: se fabricaron antes de los arreglos (05:20 UTC vs 05:54 y 15:54) / peor caso: la fábrica falla y el 17/11 queda con 4 huecos → la reserva (12) los cubre; se deshace borrando "cancelado" / se mide: mañana el 17/11 tiene sus 8 y los nuevos se ven bien / mío (arreglar fallas, A4).
+- **No toqué (a propósito):** 16/11 con 3 de la familia WHEEL y un extra a las 22:15 (el CONVEYOR de las 21:30 lo eligió el CEO); el extra de PIERNAS a las 22:15 del 17/11 (45 min de los vecinos, se ve bien; regla nueva aplica desde el 18/11).
+- **Revisar el 2026-11-16:** los 4 rehechos del 17/11 (a ojo) y que el 17/11 tenga sus 8 subidos; WHEEL a 1 por día a las 48 h; entrega del Ingeniero.
+- **Revisar el 2026-11-20/22/24:** vistas y videos de 10 K por día (20/11), DRESS (22/11), cantidad por día para el CEO (24/11).
+- **Para el CEO:** nada.
