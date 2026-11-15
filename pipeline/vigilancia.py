@@ -61,6 +61,25 @@ def main():
                 hace = (ahora - datetime.fromisoformat(ok[0]["updated_at"].replace("Z", "+00:00"))).total_seconds() / 3600
                 if hace > horas:
                     problemas.append(f"{wf} no termina bien hace {hace:.0f} h (máximo {horas} h)")
+    # 2a. (15/11) PERMISO DE GOOGLE: lo único que puede frenar el canal sin que las máquinas lo arreglen
+    import os
+    if all(os.environ.get(k) for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")):
+        try:
+            import requests
+            v = {k: os.environ[k].strip().strip('"').strip("'").strip() for k in ("YT_CLIENT_ID", "YT_CLIENT_SECRET", "YT_REFRESH_TOKEN")}
+            r = requests.post("https://oauth2.googleapis.com/token", data=dict(client_id=v["YT_CLIENT_ID"].removeprefix("https://").rstrip("/"),
+                              client_secret=v["YT_CLIENT_SECRET"], refresh_token=v["YT_REFRESH_TOKEN"], grant_type="refresh_token"), timeout=60)
+            mem["permiso_google"] = dict(hora=datetime.now(ART).isoformat(timespec="minutes"), ok=r.status_code == 200)
+            if r.status_code != 200:
+                problemas.append("🔑 GOOGLE RECHAZÓ EL PERMISO DEL CANAL: no se pueden subir videos ni medir. Qué hacer (10 minutos): "
+                                 "1) seguí pipeline/README.md, sección 3 (paso 3.5), para generar un refresh token nuevo con tu cuenta del canal; "
+                                 "2) en GitHub → Settings → Secrets and variables → Actions, reemplazá YT_REFRESH_TOKEN; "
+                                 "3) listo: la próxima publicación sube lo atrasado sola (hay videos con 2-3 días de margen y la reserva). "
+                                 f"Detalle técnico: {r.status_code} {r.text[:120]}")
+        except Exception as e:
+            print("no pude probar el permiso de Google:", e)
+    else:
+        problemas.append("faltan los secretos del canal en la vigilancia (YT_CLIENT_ID / YT_CLIENT_SECRET / YT_REFRESH_TOKEN)")
     # 2b. (auditoría A3, 15/11) FALLAS SILENCIOSAS: pasos que fallaron dentro de una corrida que siguió de largo
     for wf in ("fabrica_diaria.yml", "publicar_diario.yml"):
         rs = [r for r in corridas(wf, 3) if r.get("status") == "completed"]

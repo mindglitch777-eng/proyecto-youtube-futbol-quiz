@@ -1,0 +1,29 @@
+name: BALANCE quincenal (¿vamos más rápido o más lento?)
+
+# Máquina sin IA (15/11, pedido del CEO): el 1 y el 15 de cada mes compara las últimas 2 semanas contra las 2 anteriores
+# y deja el resultado en un Issue "aviso" (llega al celular). Ver pipeline/balance.py.
+on:
+  schedule:
+    - cron: "29 13 1,15 * *"   # 10:29 de Argentina
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  balance:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    env:
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: git fetch -q origin datos-vivos || true
+      - run: cd pipeline && python balance.py
+      - name: Guardar
+        if: always()
+        run: python3 pipeline/guardar_avance.py "Balance quincenal"

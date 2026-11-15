@@ -115,6 +115,10 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
 .trio{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));margin-top:12px}
 .trio .panel h3{margin:0 0 8px;font-family:var(--display);font-size:19px}
 .trio ul{margin:0;padding-left:18px}.trio li{margin:5px 0;font-size:14px;line-height:1.45}
+.semaforo{display:flex;gap:16px;align-items:center;border-radius:20px;padding:18px 20px;margin-top:12px;border:2px solid var(--sc);background:var(--panel)}
+.semaforo .luzg{flex:0 0 auto;width:64px;height:64px;border-radius:50%;background:var(--sc);box-shadow:0 0 28px var(--sc)}
+.semaforo h2{font-family:var(--display);font-size:clamp(22px,4.5vw,30px);margin:0;line-height:1.1}
+.semaforo ul{margin:6px 0 0;padding-left:18px;font-size:14px;color:#cfdad3}
 .sem{display:inline-block;width:10px;height:10px;border-radius:50%;margin-right:6px;vertical-align:1px}
 /* mapa del sistema */
 .smapa{width:100%;height:auto;display:block;touch-action:manipulation}
@@ -178,6 +182,8 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
 </nav>
 <div class="app">
  <section data-tab="resumen">
+  <div class="semaforo" id="semaforo" style="--sc:var(--idle)"><div class="luzg"></div>
+    <div style="min-width:0"><h2 id="sem-t">Revisando…</h2><ul id="sem-l"></ul></div></div>
   <div class="hero" id="hero" style="margin-top:12px">
     <div class="k" id="hero-k">Cómo está el canal</div>
     <h1 id="hero-t">Cargando…</h1>
@@ -626,6 +632,25 @@ function pintarSistemaResumen() {
   const malos = NODOS.filter(n => ESTADOS[n.id] && ["err", "warn"].includes(ESTADOS[n.id].cls)).map(n => n.t);
   $("r-sis-d").textContent = malos.length ? "mirar: " + malos.join(", ") : "todo en orden";
 }
+function pintarSemaforo() {
+  // UN SOLO VISTAZO (15/11, pedido del CEO): verde = no hacés nada · amarillo = hay algo para decidir · rojo = algo se rompió
+  const rojo = [], amarillo = [];
+  const v = vigUltimo();
+  (v.problemas || []).forEach(p => rojo.push(p));
+  Object.entries(ESTADOS || {}).forEach(([k, e]) => { if (e.cls === "err") { const n = NODOS.find(x => x.id === k); rojo.push(`${n ? n.t : k}: ${e.txt}`); } });
+  const iss = ISSUES || [];
+  iss.filter(i => tipoIssue(i) === "alerta").forEach(i => rojo.push(`Alarma abierta: ${i.title}`));
+  const prop = iss.filter(i => tipoIssue(i) === "propuesta"), cons = iss.filter(i => tipoIssue(i) === "consulta");
+  if (prop.length) amarillo.push(`${prop.length} propuesta${prop.length > 1 ? "s" : ""} para decidir (pestaña Propuestas, respondé sí o no)`);
+  if (cons.length) amarillo.push(`${cons.length} consulta${cons.length > 1 ? "s" : ""} con respuesta del Gerente para leer`);
+  const est = rojo.length ? ["var(--err)", "Algo se rompió y necesita atención"] : amarillo.length ? ["var(--amber)", "Todo anda. Hay algo para que decidas"]
+            : ["var(--ok)", "Todo en orden. No tenés que hacer nada hoy"];
+  $("semaforo").style.setProperty("--sc", est[0]); $("sem-t").textContent = est[1];
+  const L = $("sem-l"); L.innerHTML = "";
+  [...new Set(rojo)].slice(0, 4).forEach(x => L.append(el("li", null, x)));
+  amarillo.forEach(x => L.append(el("li", null, x)));
+  if (!rojo.length && !amarillo.length) L.append(el("li", null, "La fábrica, la publicación, la reserva, la vigilancia y la poda trabajan solas."));
+}
 function pintarResumen() {
   const G = D_GER || {}, A = D_AN || {}, p = G.parte || {}, v = A.veredicto || {};
   const HC = {green: ["#17301f", "var(--ok)"], amber: ["#2e2614", "var(--amber)"], red: ["#33191a", "var(--err)"]}[v.color] || ["#1a2a1f", "var(--lime)"];
@@ -649,6 +674,7 @@ function pintarResumen() {
     $("r-fuertes-d").textContent = `meta 3 · vistas por día ${G.norte.vistas_por_dia ? fmt(G.norte.vistas_por_dia) : "—"} (meta 110 K)`; }
   if (reservaLibre() != null) $("r-res").textContent = `${reservaLibre()}/12`;
   calcEstados();
+  pintarSemaforo();
 }
 
 // ===================== cerebro =====================

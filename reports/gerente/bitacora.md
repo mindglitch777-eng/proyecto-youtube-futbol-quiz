@@ -104,3 +104,8 @@ Informe: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
 
 ## 2026-11-15 · MODO SIMPLE PARA EL CEO (pedido del CEO)
 Ver estrategia.md sección 00: un solo mensaje el lunes con todo lo pendiente; martes a domingo avisar solo si hace falta el CEO; el CEO puede decidir escribiéndole directo al Gerente en su sesión fija. Las propuestas siguen necesitando su "sí".
+
+## 2026-11-15 · TRANQUILIDAD PARA EL CEO (3 máquinas nuevas, pedidas por el CEO)
+- **Permiso de Google**: la vigilancia prueba en cada corrida que Google siga aceptando el permiso del canal; si lo rechaza, alarma con los pasos exactos (README sección 3.5 → secreto YT_REFRESH_TOKEN).
+- **Semáforo** en la página (Resumen): verde = no hay que hacer nada · amarillo = algo para decidir · rojo = algo roto.
+- **Balance quincenal** (balance.yml, el 1 y el 15 de cada mes, sin IA): últimas 2 semanas contra las 2 anteriores (vistas y suscriptores por día, videos de 10 K por día, semanas para 10 M), veredicto y recomendaciones; Issue "aviso". Gerente: leelo y actuá sobre sus recomendaciones.
