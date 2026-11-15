@@ -1,8 +1,14 @@
 {
  "relanzados": [],
  "ultimo": {
-  "hora": "2026-11-14T22:58-03:00",
-  "problemas": [],
-  "acciones": []
- }
+  "hora": "2026-11-15T02:55-03:00",
+  "problemas": [
+   "la medición en vivo tiene 4.1 h (máximo 3 h)"
+  ],
+  "acciones": [],
+  "avisos": [
+   "fitall: vuelve (auditoría A2: la poda vieja lo comparaba contra STOP; tuvo videos de 20.984 y 8.486)"
+  ]
+ },
+ "cambios_avisados": 1
 }
