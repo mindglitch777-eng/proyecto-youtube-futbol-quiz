@@ -70,3 +70,4 @@ Formato de cada entrada:
 - Reserva: sin STOP (4 retirados); se repone con WHEEL y HEAD FIT.
 - Pendiente de explicarle al CEO y decidir: WALL, TRIDENT y FIND (no son de la lógica de parar).
 - **Revisar el 20/11**: vistas por día y videos de 10 K por día contra la semana anterior (~60 K y ~1,5).
+- 15/11 (madrugada) CEO: también salen TRIDENT y FIND (no son de la lógica de parar; WALL ya no estaba en rotación). El CEO borra en YouTube Studio los 5 programados que no van (STOP 15/11 13:00 y 23:00, BALLON Q 15/11 17:00, STOP 16/11 13:00 y 21:30; marcados "reemplazado" en publicados.json) y la fábrica los cubre con extras de la lógica nueva: 15/11 13:00 HEAD SLOT, 17:00 CONVEYOR STOP, 23:00 GOAT CIRCLE · 16/11 13:00 FIT ALL, 21:30 CONVEYOR STOP.

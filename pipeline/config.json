@@ -192,8 +192,9 @@
    "listo": true
   },
   "find": {
-   "listo": true,
-   "max_semana": 1
+   "listo": false,
+   "max_semana": 1,
+   "nota": "15/11 CEO: fuera, no usa la lógica de parar (FIND 2.692/2.860, 0 suscriptores)."
   },
   "dress": {
    "listo": false,
@@ -207,7 +208,8 @@
    "nota": "15/11 CEO: los quiz no funcionan (WHO IS THIS 182, PRICE TAG 1.251, BALLON Q 889/445, CAREER 1.122; 92 % visto). Fuera de rotación."
   },
   "tridente": {
-   "listo": true
+   "listo": false,
+   "nota": "15/11 CEO: fuera, no usa la lógica de parar (TRIDENT 1.663 vistas)."
   },
   "cabezas": {
    "listo": true
