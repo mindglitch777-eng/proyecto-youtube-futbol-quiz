@@ -106,7 +106,7 @@ def main(guion):
         d.line([(mx - 80, my), (mx + 80, my)], fill=(230, 30, 30), width=6); d.line([(mx, my - 80), (mx, my + 80)], fill=(230, 30, 30), width=6)
         dist = math.hypot(mx - ex, my - ey)
         pct = max(0, min(99, round(100 * (1 - dist / 1400) ** 1.5)))
-        if min(min(abs(t - e), dur - abs(t - e)) for e in goles) < 0.5 / FPS:
+        if min(min(abs(t - e), dur - abs(t - e)) for e in goles) < 0.5 / FPS or tras < 0.3:   # 15/11: el medidor no contradice al GOLAZO!
             pct = 100
         col = (255, 215, 0) if pct >= 98 else ((255, 255, 255) if pct < 85 else (255, 150, 40))
         P.texto(d, (W / 2, 330), f"{pct}%", 170, col, 14, (20, 20, 30))
@@ -119,10 +119,11 @@ def main(guion):
             im.alpha_composite(pelota.resize((tam, tam)), (int(bx - tam / 2), int(by - tam / 2)))
         else:
             d.ellipse([bx - tam / 2, by - tam / 2, bx + tam / 2, by + tam / 2], fill=(255, 255, 255), outline=(20, 20, 30), width=6)
-        im.alpha_composite(cara, (int(W / 2 - cara.width / 2), 1600))
+        y_cara = H - cara.height - 95                                          # 15/11: el nombre quedaba cortado abajo
+        im.alpha_composite(cara, (int(W / 2 - cara.width / 2), y_cara))
         d = ImageDraw.Draw(im)
-        P.texto(d, (W / 2, 1600 + cara.height + 10), g["nombre"].upper(), 56, (255, 255, 255), 8, (20, 20, 30))
-        if tras < 0.45:
+        P.texto(d, (W / 2, y_cara + cara.height + 42), g["nombre"].upper(), 56, (255, 255, 255), 8, (20, 20, 30))
+        if tras < 0.3:
             if tras < 0.12:
                 im.alpha_composite(Image.new("RGBA", (W, H), (255, 255, 255, int(90 * (1 - tras / 0.12)))))
                 d = ImageDraw.Draw(im)

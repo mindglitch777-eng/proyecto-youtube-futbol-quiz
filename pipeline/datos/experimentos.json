@@ -1,6 +1,56 @@
 {
  "activos": [
   {
+   "id": "e3_rueda_titulo",
+   "tipo": "rueda",
+   "param": "titulo_estilo",
+   "brazos": [
+    "vs",
+    "find"
+   ],
+   "inicio": "2026-11-15",
+   "estado": "en curso",
+   "pregunta": "¿WHEEL rinde más con título 'X vs Y or Z stop challenge' o con 'Find X's real body'?",
+   "medicion": {
+    "\"vs\"": {
+     "videos": 0,
+     "vistas_48h_esperadas": 5747,
+     "p_mejor": 0.51
+    },
+    "\"find\"": {
+     "videos": 0,
+     "vistas_48h_esperadas": 5747,
+     "p_mejor": 0.49
+    }
+   }
+  },
+  {
+   "id": "e4_favorito_leyendas",
+   "tipo": "favorito",
+   "param": "leyendas",
+   "brazos": [
+    true,
+    false
+   ],
+   "inicio": "2026-11-15",
+   "estado": "en curso",
+   "pregunta": "¿STOP ON YOUR FAVORITE rinde más con leyendas (Ronaldinho, Zidane…) o solo con estrellas de hoy?",
+   "medicion": {
+    "true": {
+     "videos": 0,
+     "vistas_48h_esperadas": 3088,
+     "p_mejor": 0.5
+    },
+    "false": {
+     "videos": 0,
+     "vistas_48h_esperadas": 3088,
+     "p_mejor": 0.5
+    }
+   }
+  }
+ ],
+ "terminados": [
+  {
    "id": "e1_stop_arranque",
    "tipo": "stop",
    "param": "arranque",
@@ -10,7 +60,7 @@
    ],
    "pregunta": "¿El STOP rinde más arrancando con la grilla de 4 o con zoom a la estrella?",
    "inicio": "2026-11-11",
-   "estado": "en curso",
+   "estado": "cancelado",
    "medicion": {
     "\"grilla\"": {
      "videos": 13,
@@ -22,7 +72,10 @@
      "vistas_48h_esperadas": 2403,
      "p_mejor": 0.58
     }
-   }
+   },
+   "ganador": null,
+   "fin": "2026-11-15",
+   "motivo": "auditoría C2: el STOP clásico salió de la grilla (CEO 15/11)"
   },
   {
    "id": "e2_stop_hard",
@@ -34,7 +87,7 @@
    ],
    "pregunta": "¿El STOP de la noche rinde más en modo HARD (grilla nueva, más difícil) o normal?",
    "inicio": "2026-11-11",
-   "estado": "en curso",
+   "estado": "cancelado",
    "medicion": {
     "false": {
      "videos": 0,
@@ -46,8 +99,10 @@
      "vistas_48h_esperadas": 2829,
      "p_mejor": 0.5
     }
-   }
+   },
+   "ganador": null,
+   "fin": "2026-11-15",
+   "motivo": "auditoría C2: el STOP clásico salió de la grilla (CEO 15/11)"
   }
- ],
- "terminados": []
+ ]
 }

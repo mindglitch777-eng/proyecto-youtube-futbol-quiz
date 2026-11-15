@@ -53,6 +53,7 @@ jobs:
           cd produccion/semana_$D
           gh release delete "semana-$D" -y --cleanup-tag 2>/dev/null || true
           gh release create "semana-$D" --target "$GITHUB_REF_NAME" -t "Día $D" -n "Videos del $D (fábrica diaria)" ./*.mp4 videos.json CALENDARIO.md
+          python3 ../../pipeline/hoja_control.py . control.jpg && gh release upload "semana-$D" control.jpg --clobber || true   # A4: hoja de control diaria
       - name: REGLA 10 · refuerzo de ola (la ola caliente sale HOY y MAÑANA, no en 2 días)
         id: ola
         run: cd pipeline && echo "dir=$(python refuerzo_ola.py | grep -E '^(semana_ola_|nada)' | tail -1)" >> "$GITHUB_OUTPUT"   # 15/11: los modelos de caras imprimen "loading data from…"

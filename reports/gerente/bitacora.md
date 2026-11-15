@@ -80,3 +80,16 @@ El CEO aprobó probar las 3 ideas (todas con superestrellas en el cuadro 0, tít
 Además del lunes: el arreglo de DRESS (rectángulo negro + más corto) con fecha límite 22/11 (#4).
 Cada uno: produccion/render_<nombre>.py, en fabrica.py y config.json con "listo": false, propuesta con prototipo. **Al aprobarse**, poné en config "estreno_hasta": fecha +7 días: el planificador les asegura 3 lugares en su primera semana (mecanismo nuevo del 15/11) y después compiten en el cerebro.
 - 15/11 Claude: **STOP ON YOUR FAVORITE en rotación** (idea aprobada por el CEO): 6 caras grandes (3 estrellas de hoy + 3 leyendas: Ronaldinho, Zidane, Beckham, Henry, Zlatan; aro dorado "LEGEND"), la pelota salta y hay que pausar en tu favorito. Estreno hasta el 24/11 (3 lugares asegurados). Kaká queda afuera: su foto es de otra persona (revisar assets/fotos/kak_*). Pedido del CEO: sumar leyendas también en los otros formatos cuando haya recortes buenos.
+
+## 2026-11-15 · AUDITORÍA (Claude, sesión principal) · puntos aplicados por pedido del CEO ("haz los puntos necesarios")
+Informe: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
+- **A1 Medición**: 24 horarios fijos (antes "cada hora" corría 3-4 veces por día) + una medición extra después de cada publicación y cada vigilancia.
+- **A2 Poda nueva**: contra la mediana del canal (antes contra STOP); protege formatos con un video de 10 K entre sus últimos 4; poda si los últimos 3 quedan debajo de la mediana; cada cambio queda en poda.json "historial". **FIT ALL vuelve** (la poda vieja lo había sacado el 14/11 sin avisar).
+- **A3 Vigilancia**: 12 horarios fijos; además mira pasos que fallan dentro de una corrida, si cada robot corrió lo que tiene que correr (desde el 17/11), medición fresca (máx. 3 h), si el Gerente/Ingeniero guardaron su trabajo, y avisa podas/promociones en un Issue con etiqueta "aviso".
+- **A4 Hoja de control diaria**: la fábrica sube control.jpg al Release del día (4 cuadros por video). El Gerente la mira cada día. 1.ª revisión (17/11): PENALTY mostraba "80 % GOLAZO!" y el nombre cortado → arreglado.
+- **B1 Semana de volumen 19-25/11**: 8 por día; los 2 extra (18:30 y 22:15) solo para familias WHEEL, CABEZAS y ELEGÍ. Se compara contra la semana de 6.
+- **B2 Familias**: máximo 2 por familia por día (WHEEL: rueda/piernas/cinta · CABEZAS: cabezas/slot/fitall · ELEGÍ: favorito/circulo · MOMENTO: balon/siuu/penal).
+- **B3 Métrica que manda**: videos de 10 K o más por día (hoy 0,86 en los últimos 7 días medidos) y vistas por día (~52 K). Meta: 3 y 110 K. En gerente.json "norte" y en la página.
+- **C2 Pruebas A/B**: se cancelan las de STOP; nuevas: título de WHEEL ("vs" contra "Find X's real body") y FAVORITE con o sin leyendas.
+- **D1**: fábrica semanal archivada.
+- **Revisar el 23/11**: semana de volumen (fuertes por día y vistas por día) y si la vigilancia nueva detectó algo.

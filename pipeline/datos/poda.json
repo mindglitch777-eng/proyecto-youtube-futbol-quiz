@@ -1,21 +1,18 @@
 {
  "podadas": {
-  "fitall": {
-   "fecha": "2026-11-14",
-   "rinde": "41% del STOP",
-   "videos": 5
-  },
   "find": {
    "fecha": "2026-11-15",
    "rinde": "7% del STOP",
    "videos": 4
   }
  },
- "promovidas": {
-  "rueda": {
-   "fecha": "2026-11-14",
-   "rinde": "104% del STOP",
-   "videos": 12
+ "promovidas": {},
+ "historial": [
+  {
+   "fecha": "2026-11-15",
+   "formato": "fitall",
+   "cambio": "vuelve",
+   "motivo": "auditoría A2: la poda vieja lo comparaba contra STOP; tuvo videos de 20.984 y 8.486"
   }
- }
+ ]
 }

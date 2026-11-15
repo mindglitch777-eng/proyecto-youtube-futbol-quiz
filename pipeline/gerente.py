@@ -182,8 +182,30 @@ def main():
     if canal["videos_semana"] < 10:
         adv.append("Menos de 10 videos medidos en la semana: las comparaciones de canal son débiles.")
     salud["advertencias"] = adv
+    # ---- B3 (auditoría 15/11): LA MÉTRICA QUE MANDA = videos de 10 K o más por día + vistas por día del canal
+    fuertes = {}
+    for v in cargar("rendimiento.json", {}).get("videos", []):
+        if v.get("horas", 0) >= 48 and v.get("vistas_48h") is not None:
+            fuertes.setdefault(v["publicado"][:10], []).append(v["vistas_48h"])
+    dias_ok = sorted(fuertes)[-7:]
+    norte = dict(fuertes_por_dia=round(sum(sum(1 for a in fuertes[d] if a >= 10_000) for d in dias_ok) / max(1, len(dias_ok)), 2),
+                 dias=len(dias_ok), meta_fuertes=3, meta_vistas_dia=110_000,
+                 detalle={d: sum(1 for a in fuertes[d] if a >= 10_000) for d in dias_ok})
+    try:
+        import subprocess as _sp
+        vivo = json.loads(_sp.run(["git", "show", "origin/datos-vivos:vivo.json"], capture_output=True, text=True, cwd=RAIZ).stdout or "{}")
+        cs = vivo.get("canal_serie", [])
+        if len(cs) >= 2:
+            t0 = datetime.fromisoformat(cs[-1][0]) - timedelta(days=3)
+            base = min((x for x in cs if datetime.fromisoformat(x[0]) >= t0), key=lambda x: x[0])
+            h_vent = (datetime.fromisoformat(cs[-1][0]) - datetime.fromisoformat(base[0])).total_seconds() / 3600
+            if h_vent > 12:
+                norte["vistas_por_dia"] = int((cs[-1][1] - base[1]) / h_vent * 24)
+                norte["subs_por_dia"] = round((cs[-1][2] - base[2]) / h_vent * 24, 1)
+    except Exception as e:
+        norte["error_vivo"] = str(e)[:100]
     previo = cargar("gerente.json", {})
-    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, blindaje=blindaje, cerebro=cer, historia=historia,
+    out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, blindaje=blindaje, norte=norte, cerebro=cer, historia=historia,
                oportunidades=oportunidades, cansados=cansados, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
@@ -209,6 +231,9 @@ def main():
                                                        for e in cer["experimentos"]["activos"]) or "ninguna")
              + " | Terminadas: " + ("; ".join(f"{e['id']} → {e['estado']} {e.get('ganador')}" for e in cer["experimentos"]["terminados"]) or "ninguna")
              + f" | Meta: mediana 48 h {cer['meta'].get('mediana_48h_inicial')} → {cer['meta'].get('mediana_48h_ultimos_7_dias')} (objetivo +25 % en 3 semanas)"), "",
+         f"**LA MÉTRICA QUE MANDA (B3):** videos de 10 K o más por día = {norte['fuertes_por_dia']} (meta 3; últimos {norte['dias']} días medidos: "
+         + ", ".join(f"{d[5:]} {n}" for d, n in norte['detalle'].items()) + f") · vistas por día ≈ {norte.get('vistas_por_dia', 's/d'):,} (meta 110.000)"
+         if isinstance(norte.get('vistas_por_dia'), int) else f"**LA MÉTRICA QUE MANDA (B3):** videos de 10 K o más por día = {norte['fuertes_por_dia']} (meta 3) · vistas por día s/d", "",
          "**ADVERTENCIAS (leer antes de decidir):** " + (" · ".join(adv) if adv else "ninguna"), "",
          f"**Canal:** mediana a las 48 h esta semana {canal['mediana_48h_semana'] or '-'} (antes {canal['mediana_48h_semana_anterior'] or '-'}, "
          f"{canal.get('cambio', 's/d')}) · {canal['videos_semana']} videos · % visto {canal['pct_visto_semana'] or '-'}", "",

@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-15T02:37-03:00",
+ "fecha": "2026-11-15T02:53-03:00",
  "videos_medidos": 79,
  "formatos": {
   "cabezas": {
@@ -216,56 +216,69 @@
    "balon": "4%",
    "circulo": "2%",
    "penal": "2%",
-   "tridente": "2%",
    "siuu": "2%",
-   "slot": "1%",
-   "cinta": "1%",
+   "tridente": "2%",
    "q20costo": "1%",
+   "find": "1%",
+   "piernas": "1%",
+   "trayectoria": "1%",
+   "plinko": "1%",
    "pared": "1%",
    "q20fichaje": "1%",
-   "find": "1%",
+   "cinta": "1%",
    "torre": "1%",
-   "plinko": "1%",
-   "piernas": "1%",
-   "trayectoria": "1%"
+   "slot": "1%"
   }
  },
  "experimentos": {
   "activos": [
    {
-    "id": "e1_stop_arranque",
-    "pregunta": "¿El STOP rinde más arrancando con la grilla de 4 o con zoom a la estrella?",
+    "id": "e3_rueda_titulo",
+    "pregunta": "¿WHEEL rinde más con título 'X vs Y or Z stop challenge' o con 'Find X's real body'?",
     "medicion": {
-     "\"grilla\"": {
-      "videos": 13,
-      "vistas_48h_esperadas": 2205,
-      "p_mejor": 0.42
+     "\"vs\"": {
+      "videos": 0,
+      "vistas_48h_esperadas": 5747,
+      "p_mejor": 0.51
      },
-     "\"estrella\"": {
-      "videos": 6,
-      "vistas_48h_esperadas": 2403,
-      "p_mejor": 0.58
+     "\"find\"": {
+      "videos": 0,
+      "vistas_48h_esperadas": 5747,
+      "p_mejor": 0.49
      }
     }
    },
    {
-    "id": "e2_stop_hard",
-    "pregunta": "¿El STOP de la noche rinde más en modo HARD (grilla nueva, más difícil) o normal?",
+    "id": "e4_favorito_leyendas",
+    "pregunta": "¿STOP ON YOUR FAVORITE rinde más con leyendas (Ronaldinho, Zidane…) o solo con estrellas de hoy?",
     "medicion": {
-     "false": {
-      "videos": 0,
-      "vistas_48h_esperadas": 2829,
-      "p_mejor": 0.5
-     },
      "true": {
       "videos": 0,
-      "vistas_48h_esperadas": 2829,
+      "vistas_48h_esperadas": 3088,
+      "p_mejor": 0.5
+     },
+     "false": {
+      "videos": 0,
+      "vistas_48h_esperadas": 3088,
       "p_mejor": 0.5
      }
     }
    }
   ],
-  "terminados": []
+  "terminados": [
+   {
+    "id": "e1_stop_arranque",
+    "estado": "cancelado",
+    "ganador": null,
+    "fin": "2026-11-15"
+   },
+   {
+    "id": "e2_stop_hard",
+    "estado": "cancelado",
+    "ganador": null,
+    "fin": "2026-11-15"
+   }
+  ]
  },
  "meta": {
   "inicio": "2026-11-11",

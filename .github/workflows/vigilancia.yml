@@ -2,7 +2,19 @@ name: VIGILANCIA (cada 2 h · relanza lo que falla y avisa)
 
 on:
   schedule:
-    - cron: "23 */2 * * *"
+    # 15/11 (auditoría A3): "23 */2" corría 3-4 veces por día. 12 horarios fijos.
+    - cron: "37 1 * * *"
+    - cron: "29 3 * * *"
+    - cron: "43 5 * * *"
+    - cron: "19 7 * * *"
+    - cron: "53 9 * * *"
+    - cron: "11 11 * * *"
+    - cron: "47 13 * * *"
+    - cron: "31 15 * * *"
+    - cron: "7 17 * * *"
+    - cron: "59 19 * * *"
+    - cron: "23 21 * * *"
+    - cron: "41 23 * * *"
   workflow_dispatch:
 
 permissions:
@@ -24,6 +36,9 @@ jobs:
       - uses: actions/setup-python@v5
         with: {python-version: "3.12"}
       - run: python pipeline/vigilancia.py
+      - name: Medición extra (A1)
+        if: always()
+        run: gh workflow run medir_vivo.yml --ref "$GITHUB_REF_NAME" || true
       - name: Guardar
         if: always()
         run: python3 pipeline/guardar_avance.py "Vigilancia"

@@ -421,14 +421,15 @@ TIT_FAVORITO = ["Stop the ball on your favorite player ⚽🛑 {a}, {b} or {c}?"
                 "Who's your favorite? Stop the ball! ⚽🛑 {a}, {b}, {c}", "Pause on your idol ⚽😱 {a} or {b}?"]
 
 
-def guion_favorito(gid, rng, V, fecha):
+def guion_favorito(gid, rng, V, fecha, leyendas=True):
     """15/11 (CEO): 3 estrellas de hoy + 3 leyendas, caras grandes. La del cuadro 0 (donde arranca la pelota) es una estrella de hoy."""
     hoy = ["lionel_messi", "cristiano_ronaldo", "kylian_mbapp", "lamine_yamal", "neymar", "vin_cius_j_nior"]
-    leyendas = ["ronaldinho", "zinedine_zidane", "david_beckham", "thierry_henry", "zlatan_ibrahimovi"]   # Kaká: foto equivocada, afuera
+    leyendas_ = ["ronaldinho", "zinedine_zidane", "david_beckham", "thierry_henry", "zlatan_ibrahimovi"]   # Kaká: foto equivocada, afuera
     ult = V.contadores.setdefault("favorito_ult", [])
     primero = min(hoy, key=lambda c: (ult[-5:].count(c), rng.random()))                  # rota la estrella del cuadro 0
     ult.append(primero); del ult[:-12]
-    otros = rng.sample([c for c in hoy if c != primero], 2) + rng.sample(leyendas, 3)
+    otros = (rng.sample([c for c in hoy if c != primero], 2) + rng.sample(leyendas_, 3) if leyendas
+             else [c for c in hoy if c != primero])                                        # C2: prueba A/B con o sin leyendas
     rng.shuffle(otros)
     jug = [primero] + otros
     sal = [0]
@@ -678,7 +679,7 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
         elif tipo == "favorito":
-            g = guion_favorito(gid, rng, V, sl["fecha"])
+            g = guion_favorito(gid, rng, V, sl["fecha"], leyendas=sl.get("leyendas", True))
             a, b, c3 = g["nombres"][:3]
             titulo = V.titulo("favorito", TIT_FAVORITO, rng).format(a=a, b=b, c=c3) + " " + " ".join(tag(x) for x in (a, b, c3))
             desc = ("Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n"
@@ -709,7 +710,13 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             est_ = [o for o in g["otros"]] + [o for o in otros_ if o not in g["otros"]]
             est_ = [o for o in est_ if o in estrellas_nombres()] or est_        # 13/11: en el título solo superestrellas de la rueda
             a, b = rng.sample(est_, 2) if len(est_) >= 2 else (est_ + ["Ronaldo", "Mbappé"])[:2]
-            titulo = V.titulo("rueda", TIT_RUEDA, rng).format(n=g["nombre"], a=a, b=b) + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
+            pool_t = TIT_RUEDA                                                  # C2 (15/11): prueba A/B del estilo de título
+            if sl.get("titulo_estilo") == "find":
+                pool_t = [t for t in TIT_RUEDA if t.startswith("Find")]
+            elif sl.get("titulo_estilo") == "vs":
+                pool_t = [t for t in TIT_RUEDA if " vs " in t]
+            titulo = (rng.choice(pool_t) if sl.get("titulo_estilo") else V.titulo("rueda", TIT_RUEDA, rng)).format(n=g["nombre"], a=a, b=b) \
+                + " " + " ".join(tag(x) for x in (g["nombre"], a, b))
             desc = (f"Stop the wheel when {g['nombre']}'s body is PERFECT 🛑 Only 1% get it first try. Comment your number 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]

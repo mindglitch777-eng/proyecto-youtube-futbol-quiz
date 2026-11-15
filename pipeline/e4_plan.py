@@ -25,7 +25,16 @@ from comun import CONFIG, cargar, etapa, guardar
 GRILLA = [("13:00", "prueba", None), ("15:00", "prueba", None), ("17:00", "prueba", None),
           ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "prueba", None)]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
-VARIANTES = {"cinta", "piernas", "slot"}                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
+VARIANTES = {"cinta", "piernas", "slot"}
+# 15/11 (auditoría B2): FAMILIAS. El público se cansa de la MECÁNICA, no solo del formato: máximo 2 por familia por día.
+FAMILIAS = {"rueda": "WHEEL", "piernas": "WHEEL", "cinta": "WHEEL",
+            "cabezas": "CABEZAS", "slot": "CABEZAS", "fitall": "CABEZAS",
+            "favorito": "ELEGI", "circulo": "ELEGI",
+            "balon": "MOMENTO", "siuu": "MOMENTO", "penal": "MOMENTO"}
+MAX_FAMILIA_DIA = 2
+# 15/11 (auditoría B1): SEMANA DE VOLUMEN 19-25/11: 8 videos por día. Los 2 lugares extra van SOLO a familias que ya dieron
+# videos de 10 K (WHEEL, CABEZAS, ELEGÍ). Se compara contra la semana de 6 (videos de 10 K por día y vistas por día).
+VOLUMEN = dict(desde="2026-11-19", hasta="2026-11-25", horas=["18:30", "22:15"], familias={"WHEEL", "CABEZAS", "ELEGI"})                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
 MIN_VIDEOS_PODA = 4
 ESTRENO_LUGARES = 3                                                             # 15/11 CEO: cada formato nuevo, 3 lugares asegurados en su 1.ª semana
 MAX_PRUEBA_SEMANA = 4                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
@@ -59,19 +68,48 @@ def puntajes():
 
 
 def podar():
-    """Decide podas y promociones con los datos; las guarda en datos/poda.json (persisten entre semanas)."""
+    """15/11 (auditoría A2): poda y promoción contra el CANAL (antes contra STOP, que ya no existe).
+    - Mediana del canal = vistas a 48 h de los videos de los últimos 14 días.
+    - PROTEGIDO: un formato con un video de 10 K o más entre sus últimos 4 nunca se poda (FIT ALL tenía uno de 21 K y lo sacó).
+    - PODA rápida: sus últimos 3 videos medidos, todos debajo de la mediana del canal.
+    - PROMOCIÓN: ≥4 videos medidos y mediana ≥ 1,5 veces la del canal.
+    - Una podada que pasa a estar protegida vuelve sola. Cada cambio queda en poda.json "historial" (la vigilancia lo avisa)."""
+    import statistics as st
     poda = cargar("poda.json", {"podadas": {}, "promovidas": {}})
-    pts, n = puntajes()
-    stop = pts.get("stop")
-    hoy = datetime.now(timezone.utc).date().isoformat()
-    for k in CONFIG["pruebas"]:
-        if k not in pts or n.get(k, 0) < MIN_VIDEOS_PODA or not stop:
+    poda.setdefault("historial", [])
+    pts, _ = puntajes()
+    rend = {v["id"]: v for v in cargar("rendimiento.json", {}).get("videos", [])}
+    hoy = datetime.now(timezone.utc).date()
+    por, canal = {}, []
+    for x in sorted(cargar("publicados.json", []), key=lambda x: x["fecha"]):
+        r = rend.get(x.get("video_id"))
+        if not r or r.get("horas", 0) < 48 or r.get("vistas_48h") is None or x.get("reemplazado"):
             continue
-        rel = pts[k] / stop
-        if rel < 0.5 and k not in poda["podadas"]:
-            poda["podadas"][k] = dict(fecha=hoy, rinde=f"{rel:.0%} del STOP", videos=n[k])
-        elif rel >= 1.0:
-            poda["promovidas"][k] = dict(fecha=hoy, rinde=f"{rel:.0%} del STOP", videos=n[k])
+        por.setdefault(x["tipo"], []).append(r["vistas_48h"])
+        if (hoy - date.fromisoformat(x["fecha"])).days <= 14:
+            canal.append(r["vistas_48h"])
+    med = st.median(canal) if canal else None
+    if not med:
+        guardar("poda.json", poda); return poda, pts
+    def anotar(k, que, por_que):
+        poda["historial"].append(dict(fecha=hoy.isoformat(), formato=k, cambio=que, motivo=por_que))
+    for k, v in CONFIG["pruebas"].items():
+        if k in FIJOS or not v.get("listo"):
+            continue
+        xs = por.get(k, [])
+        protegido = any(a >= 10_000 for a in xs[-4:])
+        if k in poda["podadas"] and protegido:
+            poda["podadas"].pop(k); anotar(k, "vuelve", f"tiene un video de {max(xs[-4:]):,} entre sus últimos 4 (protegido)")
+            continue
+        if k not in poda["podadas"] and not protegido and len(xs) >= 3 and all(a < med for a in xs[-3:]):
+            poda["podadas"][k] = dict(fecha=hoy.isoformat(), rinde=f"últimos 3: {', '.join(f'{a:,}' for a in xs[-3:])} vs canal {int(med):,}",
+                                      videos=len(xs))
+            anotar(k, "podado", poda["podadas"][k]["rinde"])
+        elif len(xs) >= 4 and st.median(xs) >= 1.5 * med and k not in poda["promovidas"]:
+            poda["promovidas"][k] = dict(fecha=hoy.isoformat(), rinde=f"mediana {int(st.median(xs)):,} vs canal {int(med):,}", videos=len(xs))
+            anotar(k, "promovido", poda["promovidas"][k]["rinde"])
+    poda["historial"] = poda["historial"][-100:]
+    poda["mediana_canal"] = int(med)
     guardar("poda.json", poda)
     return poda, pts
 
@@ -135,9 +173,20 @@ def main(inicio=None, dias=7):
     for d in range(dias):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []
-        for hora, tipo, estilo in GRILLA_SEMANA:
+        grilla_dia = list(GRILLA_SEMANA)
+        if VOLUMEN["desde"] <= dia <= VOLUMEN["hasta"]:
+            grilla_dia = sorted(grilla_dia + [(h_, "fuerte", None) for h_ in VOLUMEN["horas"]])
+        fijos_dia = [t for _, t, _ in grilla_dia if t not in ("prueba", "fuerte")]
+
+        def params(k):                                                         # C2: lo que ganó una prueba A/B + la prueba en curso
+            if not cerebro:
+                return {}
+            out = dict(cerebro.parametros_ganadores(k))
+            out.update(cerebro.brazo_para(k, sum(1 for x in slots if x["tipo"] == k)))
+            return out
+        for hora, tipo, estilo in grilla_dia:
             if tipo in FIJOS or tipo in ola_fija:                             # formato que ya funciona / ola del momento: lugar fijo
-                slots.append(dict(fecha=dia, hora=hora, tipo=tipo)); continue
+                slots.append(dict(fecha=dia, hora=hora, tipo=tipo, **params(tipo))); continue
             if tipo == "stop":
                 sl = dict(fecha=dia, hora=hora, tipo="stop", dificil=True, hard=(estilo == "grilla2" and d % 2 == 1),
                           arranque="grilla")                             # 07/11: el zoom estrella no mejoró el "eligió ver"
@@ -149,11 +198,17 @@ def main(inicio=None, dias=7):
             tope = {k: CONFIG["pruebas"][k].get("max_semana", MAX_PRUEBA_SEMANA) for k in activas}  # algunos formatos solo N por semana
             del_dia = ({x["tipo"] for x in slots if x["fecha"] == dia} |        # variedad: nunca el mismo formato dos veces en el día
                        {t for _, t, _ in GRILLA_SEMANA if t != "prueba"} | FIJOS)  # (los fijos ya tienen su lugar más tarde)
-            if sum(1 for x in slots if x["fecha"] == dia and x["tipo"] in VARIANTES) >= 2:   # 15/11: hasta 2 variantes distintas por día
-                del_dia |= VARIANTES
-            cand = [k for k in activas if k not in del_dia and k not in ola_fija and semana.get(k, 0) < tope[k]] or \
-                   [k for k in activas if k not in del_dia and k not in ola_fija] or \
-                   [k for k in activas if semana.get(k, 0) < tope[k]] or activas    # 15/11: antes pasarse del cupo que repetir en el día
+            ya = [x["tipo"] for x in slots if x["fecha"] == dia]
+            fam_n = {}
+            for t in ya + [t for t in fijos_dia if t not in ya]:               # B2: tope por familia (cuenta también los fijos del día)
+                fam_n[FAMILIAS.get(t, t)] = fam_n.get(FAMILIAS.get(t, t), 0) + 1
+            del_dia |= {k for k in activas if fam_n.get(FAMILIAS.get(k, k), 0) >= MAX_FAMILIA_DIA}
+            flojos = {k for k in activas if FAMILIAS.get(k) not in VOLUMEN["familias"]} if tipo == "fuerte" else set()   # B1
+            libres = [k for k in activas if k not in del_dia and k not in ola_fija]
+            cand = [k for k in libres if k not in flojos and semana.get(k, 0) < tope[k]] or \
+                   [k for k in libres if k not in flojos] or \
+                   [k for k in libres if semana.get(k, 0) < tope[k]] or libres or \
+                   [k for k in activas if semana.get(k, 0) < tope[k]] or activas    # nunca repetir en el día ni pasar el tope de familia
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
             estrenos = [k for k in cand if (CONFIG["pruebas"][k].get("estreno_hasta") or "") >= dia
@@ -167,7 +222,7 @@ def main(inicio=None, dias=7):
                 k = (cerebro.elegir(M, cand, rng, factor, previos, [x["tipo"] for x in slots]) if cerebro
                      else min(cand, key=lambda k: (usos[k] / peso[k], rng.random())))   # Fase 2: Thompson + tope de originalidad
             usos[k] += 1; hoy_pruebas.append(k); semana[k] = semana.get(k, 0) + 1
-            slots.append(dict(fecha=dia, hora=hora, tipo=k))
+            slots.append(dict(fecha=dia, hora=hora, tipo=k, **params(k)))
     guardar("plan.json", dict(inicio=inicio.isoformat(), grilla=[f"{h} {t}{'/' + e if e else ''}" for h, t, e in GRILLA],
                               pruebas_activas=activas, podadas=poda["podadas"], promovidas=poda["promovidas"],
                               puntaje={k: round(v, 1) for k, v in pts.items()}, motor="cerebro" if cerebro else "clásico", slots=slots))

@@ -194,7 +194,7 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
   <div class="grid g4">
     <div class="panel kpi"><div class="v" id="r-sis">—</div><div class="l">partes del sistema sanas</div><div class="d muted" id="r-sis-d"></div></div>
     <div class="panel kpi"><div class="v" id="r-orig">—</div><div class="l">originalidad (meta ≥ 75)</div><div class="d muted" id="r-orig-d"></div></div>
-    <div class="panel kpi"><div class="v" id="r-racha">—</div><div class="l">días seguidos con 6 videos</div><div class="d muted">meta 14</div></div>
+    <div class="panel kpi"><div class="v" id="r-fuertes">—</div><div class="l">videos de 10 K por día (la métrica que manda)</div><div class="d muted" id="r-fuertes-d">meta 3</div></div>
     <div class="panel kpi"><div class="v" id="r-res">—</div><div class="l">videos de reserva</div><div class="d muted">meta 12</div></div>
   </div>
  </section>
@@ -645,7 +645,8 @@ function pintarResumen() {
   (ISSUES || []).filter(i => tipoIssue(i) === "propuesta").forEach(i => vos.push(`Decidir: ${i.title} (#${i.number})`));
   li("r-vos", vos.length ? vos : ["Nada para vos hoy."]);
   if (G.originalidad) { $("r-orig").textContent = G.originalidad.indice; $("r-orig-d").textContent = G.originalidad.lectura || ""; }
-  if (G.blindaje) $("r-racha").textContent = G.blindaje.dias_seguidos_con_6;
+  if (G.norte) { $("r-fuertes").textContent = G.norte.fuertes_por_dia;
+    $("r-fuertes-d").textContent = `meta 3 · vistas por día ${G.norte.vistas_por_dia ? fmt(G.norte.vistas_por_dia) : "—"} (meta 110 K)`; }
   if (reservaLibre() != null) $("r-res").textContent = `${reservaLibre()}/12`;
   calcEstados();
 }
