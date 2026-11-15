@@ -1,5 +1,5 @@
 {
- "semana": "2026-11-16",
+ "semana": "2026-11-17",
  "etapas": {
   "radar": {
    "estado": "ok",
@@ -97,23 +97,25 @@
   "plan": {
    "estado": "ok",
    "resumen": {
-    "semana": "2026-11-16 → 2026-11-16",
+    "semana": "2026-11-17 → 2026-11-17",
     "cupos": {
-     "stop": 2,
-     "cabezas": 1,
-     "piernas": 1,
+     "balon": 1,
+     "penal": 1,
      "circulo": 1,
+     "slot": 1,
+     "cabezas": 1,
      "rueda": 1
     },
     "podadas": [
-     "fitall"
+     "fitall",
+     "find"
     ],
     "promovidas": [
      "rueda"
     ]
    },
-   "inicio": "2026-11-14T13:30:49+00:00",
-   "fin": "2026-11-14T13:30:49+00:00"
+   "inicio": "2026-11-15T05:22:59+00:00",
+   "fin": "2026-11-15T05:22:59+00:00"
   },
   "produccion": {
    "estado": "ok",
@@ -121,17 +123,17 @@
     "videos": 6,
     "errores": 0
    },
-   "inicio": "2026-11-14T13:30:49+00:00",
-   "fin": "2026-11-14T13:32:34+00:00"
+   "inicio": "2026-11-15T05:22:59+00:00",
+   "fin": "2026-11-15T05:24:31+00:00"
   },
   "control": {
    "estado": "ok",
    "resumen": {
-    "pasan": "3 de 6",
-    "rehechos": 7
+    "pasan": "1 de 6",
+    "rehechos": 11
    },
-   "inicio": "2026-11-14T13:32:34+00:00",
-   "fin": "2026-11-14T13:35:42+00:00"
+   "inicio": "2026-11-15T05:24:31+00:00",
+   "fin": "2026-11-15T05:28:28+00:00"
   },
   "publicacion": {
    "estado": "ok",
@@ -176,5 +178,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-15T02:13:29+00:00"
+ "actualizado": "2026-11-15T05:28:28+00:00"
 }

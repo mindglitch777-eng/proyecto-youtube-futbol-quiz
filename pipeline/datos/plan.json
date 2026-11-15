@@ -1,26 +1,20 @@
 {
- "inicio": "2026-11-16",
+ "inicio": "2026-11-17",
  "grilla": [
-  "15:00 stop/grilla",
   "13:00 prueba",
+  "15:00 prueba",
   "17:00 prueba",
   "20:00 cabezas",
   "21:30 rueda",
-  "23:00 stop/grilla2"
+  "23:00 prueba"
  ],
  "pruebas_activas": [
   "siuu",
   "penal",
   "balon",
-  "find",
   "circulo",
-  "trayectoria",
-  "tridente",
   "cabezas",
   "rueda",
-  "q20fichaje",
-  "q20costo",
-  "q20balon",
   "piernas",
   "cinta",
   "slot"
@@ -30,6 +24,11 @@
    "fecha": "2026-11-14",
    "rinde": "41% del STOP",
    "videos": 5
+  },
+  "find": {
+   "fecha": "2026-11-15",
+   "rinde": "7% del STOP",
+   "videos": 4
   }
  },
  "promovidas": {
@@ -40,66 +39,53 @@
   }
  },
  "puntaje": {
-  "rueda": 408.9,
-  "stop": 392.9,
-  "cabezas": 313.0,
+  "rueda": 336.2,
+  "stop": 393.0,
+  "cabezas": 199.0,
   "dress": 324.6,
   "balon": 374.3,
-  "fitall": 160.1,
+  "fitall": 119.5,
+  "circulo": 91.8,
   "find": 28.0,
-  "circulo": 91.9,
   "pared": 62.3,
   "otros": 54.0,
   "ring": 73.1,
   "carrera": 29.3,
+  "tridente": 73.0,
   "cabeza": 136.5,
-  "tridente": 73.2,
   "plinko": 41.2,
-  "siuu": 32.3
+  "siuu": 32.2,
+  "q20costo": 65.7
  },
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-16",
+   "fecha": "2026-11-17",
    "hora": "13:00",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "grilla",
-   "exp": {
-    "id": "e1_stop_arranque",
-    "brazo": "grilla"
-   }
+   "tipo": "balon"
   },
   {
-   "fecha": "2026-11-16",
+   "fecha": "2026-11-17",
    "hora": "15:00",
-   "tipo": "cabezas"
+   "tipo": "penal"
   },
   {
-   "fecha": "2026-11-16",
+   "fecha": "2026-11-17",
    "hora": "17:00",
-   "tipo": "piernas"
-  },
-  {
-   "fecha": "2026-11-16",
-   "hora": "20:00",
    "tipo": "circulo"
   },
   {
-   "fecha": "2026-11-16",
-   "hora": "21:30",
-   "tipo": "stop",
-   "dificil": true,
-   "hard": false,
-   "arranque": "estrella",
-   "exp": {
-    "id": "e1_stop_arranque",
-    "brazo": "estrella"
-   }
+   "fecha": "2026-11-17",
+   "hora": "20:00",
+   "tipo": "slot"
   },
   {
-   "fecha": "2026-11-16",
+   "fecha": "2026-11-17",
+   "hora": "21:30",
+   "tipo": "cabezas"
+  },
+  {
+   "fecha": "2026-11-17",
    "hora": "23:00",
    "tipo": "rueda"
   }
