@@ -27,6 +27,9 @@ TEXTOS = {
     "rueda": dict(gancho=["STOP ON {n}", "FIND {n}'S BODY", "STOP ON {n}'S BODY"],
                   apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "ONLY 1% GET IT"],
                   cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
+    "favorito": dict(gancho=["STOP ON YOUR FAVORITE", "PAUSE ON YOUR GOAT", "STOP THE BALL ON YOUR IDOL"],
+                     apuesta=["IT GETS FASTER...", "ONLY REAL FANS GET HIM", "BE QUICK!"],
+                     cta=["COMMENT WHO YOU GOT · FOLLOW FOR PART 2"]),
     "piernas": dict(gancho=["FIND {n}'S REAL LEGS", "STOP ON {n}'S LEGS", "GIVE {n} HIS LEGS BACK"],
                     apuesta=["99% IMPOSSIBLE", "ONLY 1% GET IT", "6 LEGS · ONLY 1 FITS"],
                     cta=["COMMENT YOUR NUMBER · FOLLOW FOR PART 2"]),
@@ -52,6 +55,7 @@ TEXTOS = {
 }
 FIJADO = {"stop": "How many tries did it take you? 😤 I read them all 👇",
           "rueda": "What number did you stop it on? 👀 I read them all 👇",
+          "favorito": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
           "piernas": "What number were his REAL legs? 🦵 Be honest 👀 I read them all 👇",
           "cinta": "What number did you stop the belt on? 👀 I read them all 👇",
           "slot": "Did you hit the JACKPOT? 🎰 What number? I read them all 👇",

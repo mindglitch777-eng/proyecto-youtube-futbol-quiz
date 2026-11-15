@@ -33,12 +33,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "cinta": "CONVEYOR STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "cinta": "CONVEYOR STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "cinta": "render_cinta.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "cinta": "render_cinta.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -416,6 +416,32 @@ def guion_slot(gid, rng, V, fecha):
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=k, otros=[nombre_de(c) for c in cab])
 
 
+# STOP ON YOUR FAVORITE (15/11, aprobado por el CEO): 6 cartas de superestrellas, la pelota salta y hay que pausar en tu favorito.
+TIT_FAVORITO = ["Stop the ball on your favorite player ⚽🛑 {a}, {b} or {c}?", "Can you stop on your GOAT? 🐐⚽ {a} or {b}?",
+                "Who's your favorite? Stop the ball! ⚽🛑 {a}, {b}, {c}", "Pause on your idol ⚽😱 {a} or {b}?"]
+
+
+def guion_favorito(gid, rng, V, fecha):
+    """15/11 (CEO): 3 estrellas de hoy + 3 leyendas, caras grandes. La del cuadro 0 (donde arranca la pelota) es una estrella de hoy."""
+    hoy = ["lionel_messi", "cristiano_ronaldo", "kylian_mbapp", "lamine_yamal", "neymar", "vin_cius_j_nior"]
+    leyendas = ["ronaldinho", "zinedine_zidane", "david_beckham", "thierry_henry", "zlatan_ibrahimovi"]   # Kaká: foto equivocada, afuera
+    ult = V.contadores.setdefault("favorito_ult", [])
+    primero = min(hoy, key=lambda c: (ult[-5:].count(c), rng.random()))                  # rota la estrella del cuadro 0
+    ult.append(primero); del ult[:-12]
+    otros = rng.sample([c for c in hoy if c != primero], 2) + rng.sample(leyendas, 3)
+    rng.shuffle(otros)
+    jug = [primero] + otros
+    sal = [0]
+    while len(sal) < 26:
+        c = rng.randrange(6)
+        if c != sal[-1] and (len(sal) < 25 or c != 0):
+            sal.append(c)
+    import render_favorito as RF
+    nombres = [RF.NOMBRE[c].title().replace("Mbappé", "Mbappé") for c in jug]
+    return dict(id=gid, jugadores=jug, saltos=sal, dur=7.0, musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0",
+                nombres=nombres)
+
+
 # Formatos nuevos con la mecánica STOP (ideas de la IA de YouTube Studio, 02/11)
 TIT_SIUU = ["Pause Ronaldo at 67 😱 SIUUU challenge", "Only 1% stop CR7 at 67 🛑 SIUUU", "Stop at 67 = SIUUU 🔥 Can you do it?",
             "SIUUU at 67 🛑 Pause it at the top!"]
@@ -651,6 +677,13 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                 fijado = f"I was sure {ns[(g['ganador'] + 1) % 4]} had it 😭 who did you pick?"
             desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
+        elif tipo == "favorito":
+            g = guion_favorito(gid, rng, V, sl["fecha"])
+            a, b, c3 = g["nombres"][:3]
+            titulo = V.titulo("favorito", TIT_FAVORITO, rng).format(a=a, b=b, c=c3) + " " + " ".join(tag(x) for x in (a, b, c3))
+            desc = ("Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n"
+                    + " ".join(tag(x) for x in g["nombres"]) + " #football #soccer #stopchallenge #shorts")
+            fijado = ""; fotos = []; nombres = g["nombres"][:3]
         elif tipo == "piernas":
             g = guion_piernas(gid, rng, V, sl["fecha"])
             a, b = g["otros"]
