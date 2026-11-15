@@ -101,3 +101,6 @@ Informe: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
 - Vistas diarias del feed de Shorts: 9/11 35.678 · 10/11 63.851 · 11/11 28.390 (el peor: muchos deslizamientos) · 12/11 43.098 · 13/11 65.826 · 14/11 52.893.
 - **PEDIDO PARA EL INGENIERO (lunes 16/11)**: además de STOP TO ESCAPE y SKILL STOP, un **VS STOP** (comparativa cara a cara con la lógica de parar: dos estrellas, parás y gana el que elegiste / el medidor decide). Es el 2.º interés de nuestro público.
 - **GERENTE, cada lunes**: pedile al CEO que le pregunte a la IA de YouTube Studio los "vistos vs. deslizados" de la semana (no hay API para eso) y sumalo al análisis.
+
+## 2026-11-15 · MODO SIMPLE PARA EL CEO (pedido del CEO)
+Ver estrategia.md sección 00: un solo mensaje el lunes con todo lo pendiente; martes a domingo avisar solo si hace falta el CEO; el CEO puede decidir escribiéndole directo al Gerente en su sesión fija. Las propuestas siguen necesitando su "sí".

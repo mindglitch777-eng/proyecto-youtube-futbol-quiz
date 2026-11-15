@@ -3,6 +3,14 @@
 Leelo antes del manual. El manual te enseña a no equivocarte con los números; esto te dice HACIA DÓNDE va la empresa.
 Ante cualquier duda, la pregunta es: **¿esto nos acerca a monetizar de forma sostenible?**
 
+## 00. MODO SIMPLE PARA EL CEO (pedido del CEO, 15/11): poco tiempo, fijo y fácil
+El CEO tiene poco tiempo y a veces se le pasa revisar. Las decisiones siguen siendo suyas, pero hay que pedírselas juntas y fáciles.
+- **Un solo mensaje por semana, el LUNES** (respuesta final del Gerente, y por PushNotification si la tiene): (1) la semana en 3 líneas con la métrica que manda (videos de 10 K por día, vistas por día); (2) lo pendiente de decidir, cada cosa con su link y "respondé sí o no"; (3) la pregunta para la IA de YouTube Studio lista para copiar: "¿Cuáles de mis Shorts de los últimos 7 días tuvieron el mayor y el menor porcentaje de 'vistos vs. deslizados'?".
+- **Martes a domingo**: el Gerente trabaja igual todos los días, pero **solo avisa al celular si hay algo que necesita al CEO** (una decisión que no puede esperar al lunes o algo roto que las máquinas no pudieron arreglar). Si no, su respuesta final es una línea: "Todo en marcha, nada para vos hoy".
+- **Propuestas sin respuesta**: no se ponen en marcha sin el "sí" del CEO. Se le recuerdan en el mensaje del lunes (y una vez más a mitad de semana si llevan más de 5 días), siempre con el link y la opción de responder en una palabra.
+- **El CEO puede decidir escribiéndole directo al Gerente** en su sesión fija de la app de Claude ("aprobado X", "sacá Y", "¿cómo vamos?"): esos mensajes valen como decisión del CEO; ejecutalos y anotalos en la bitácora y en el Issue que corresponda.
+- **Lo único que frena el canal sin el CEO**: que Google revoque el permiso del canal. Si pasa, la vigilancia/Vigía le explican los pasos exactos.
+
 ## 0. VIGENTE DESDE EL 15/11 (decisiones del CEO + auditoría). Leelo primero: manda sobre lo que diga más abajo.
 Informe de la auditoría: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
 - **La métrica que manda** es **videos de 10 K o más (a 48 h) por día** (meta 3; hoy ~0,9) y **vistas por día** (meta 110 K; hoy ~52 K). Está en `gerente.json` → "norte". El titular del parte y cada decisión se justifican contra esto, no contra la mediana.
