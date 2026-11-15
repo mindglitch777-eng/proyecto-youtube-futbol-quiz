@@ -71,3 +71,11 @@ Formato de cada entrada:
 - Pendiente de explicarle al CEO y decidir: WALL, TRIDENT y FIND (no son de la lógica de parar).
 - **Revisar el 20/11**: vistas por día y videos de 10 K por día contra la semana anterior (~60 K y ~1,5).
 - 15/11 (madrugada) CEO: también salen TRIDENT y FIND (no son de la lógica de parar; WALL ya no estaba en rotación). El CEO borra en YouTube Studio los 5 programados que no van (STOP 15/11 13:00 y 23:00, BALLON Q 15/11 17:00, STOP 16/11 13:00 y 21:30; marcados "reemplazado" en publicados.json) y la fábrica los cubre con extras de la lógica nueva: 15/11 13:00 HEAD SLOT, 17:00 CONVEYOR STOP, 23:00 GOAT CIRCLE · 16/11 13:00 FIT ALL, 21:30 CONVEYOR STOP.
+
+## 2026-11-15 · PEDIDO DEL CEO PARA EL INGENIERO (lunes 16/11) · 3 formatos nuevos con la lógica de PARAR
+El CEO aprobó probar las 3 ideas (todas con superestrellas en el cuadro 0, títulos solo con estrellas, premio visual al parar bien):
+1. **STOP ON YOUR FAVORITE** (lo arma Claude, sesión principal, hoy 15/11): la pelota rebota entre 6 superestrellas; parás en tu favorito. Mercado: "CAN YOU STOP THE BALL ON YOUR FAVORITE PLAYER?" 1,3 M en 3 días.
+2. **STOP TO ESCAPE** (Ingeniero): estrellas encerradas (laberinto/jaula); parar en el momento justo abre la puerta de tu estrella; tensión de "quién se salva". Mercado: "DISC SPEED CHALLENGE · WHO will GET OUT?" 1,1 M; "Ronaldo & Yamal vs MONSTER in the SECRET MAZE" 3,5 M.
+3. **SKILL STOP** (Ingeniero): duelo "Ronaldo x Yamal" de habilidades (recortes animados, sin descargar videos de YouTube); hay que parar justo en el caño/gol. Mercado: "Ronaldo x Yamal Skills" 4 M (lo más visto de la semana).
+Además del lunes: el arreglo de DRESS (rectángulo negro + más corto) con fecha límite 22/11 (#4).
+Cada uno: produccion/render_<nombre>.py, en fabrica.py y config.json con "listo": false, propuesta con prototipo. **Al aprobarse**, poné en config "estreno_hasta": fecha +7 días: el planificador les asegura 3 lugares en su primera semana (mecanismo nuevo del 15/11) y después compiten en el cerebro.

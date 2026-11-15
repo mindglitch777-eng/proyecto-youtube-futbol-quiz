@@ -27,6 +27,7 @@ GRILLA = [("13:00", "prueba", None), ("15:00", "prueba", None), ("17:00", "prueb
 FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
 VARIANTES = {"cinta", "piernas", "slot"}                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
 MIN_VIDEOS_PODA = 4
+ESTRENO_LUGARES = 3                                                             # 15/11 CEO: cada formato nuevo, 3 lugares asegurados en su 1.ª semana
 MAX_PRUEBA_SEMANA = 4                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
 
 
@@ -155,8 +156,12 @@ def main(inicio=None, dias=7):
                    [k for k in activas if semana.get(k, 0) < tope[k]] or activas    # 15/11: antes pasarse del cupo que repetir en el día
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
+            estrenos = [k for k in cand if (CONFIG["pruebas"][k].get("estreno_hasta") or "") >= dia
+                        and semana.get(k, 0) < ESTRENO_LUGARES]                  # 15/11: formato nuevo = lugares asegurados su 1.ª semana
             fijas = [k for k in promovidas if k not in hoy_pruebas and k not in FIJOS and k not in del_dia]   # las fijas ya tienen su lugar
-            if fijas and not hoy_pruebas and not ola_fija:                     # una promovida sale todos los días
+            if estrenos:                                                        # ESTRENO: el que menos salió esta semana
+                k = min(estrenos, key=lambda k: (semana.get(k, 0), rng.random()))
+            elif fijas and not hoy_pruebas and not ola_fija:                   # una promovida sale todos los días
                 k = fijas[0]
             else:                                                               # la menos usada (pesada por rendimiento)
                 k = (cerebro.elegir(M, cand, rng, factor, previos, [x["tipo"] for x in slots]) if cerebro
