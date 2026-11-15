@@ -1376,6 +1376,16 @@
     "bukayo_saka_2",
     "cole_palmer_1",
     "cristiano_ronaldo_0",
+    "erling_haaland_1",
+    "lautaro_mart_nez_1",
+    "lionel_messi_0",
+    "vin_cius_j_nior_3"
+   ],
+   [
+    "kylian_mbapp_12",
+    "bukayo_saka_2",
+    "cole_palmer_1",
+    "cristiano_ronaldo_0",
     "jude_bellingham_0",
     "lamine_yamal_0",
     "lautaro_mart_nez_1",
@@ -2145,6 +2155,16 @@
     "neymar_1",
     "bukayo_saka_2",
     "cristiano_ronaldo_0",
+    "jude_bellingham_0",
+    "kylian_mbapp_0",
+    "lionel_messi_0",
+    "raphinha_0",
+    "ronaldinho_0"
+   ],
+   [
+    "neymar_1",
+    "bukayo_saka_2",
+    "cristiano_ronaldo_0",
     "kylian_mbapp_0",
     "lautaro_mart_nez_1",
     "pedri_2",
@@ -2465,9 +2485,27 @@
     "vin_cius_j_nior",
     "kylian_mbapp",
     "cristiano_ronaldo"
+   ],
+   [
+    "neymar_3",
+    "5",
+    "lamine_yamal",
+    "kylian_mbapp",
+    "cristiano_ronaldo",
+    "vin_cius_j_nior",
+    "lionel_messi"
    ]
   ],
   "cinta": [
+   [
+    "cristiano_ronaldo_14",
+    "2",
+    "kylian_mbapp_0",
+    "lionel_messi_0",
+    "vin_cius_j_nior_0",
+    "neymar_2",
+    "lamine_yamal_0"
+   ],
    [
     "kylian_mbapp_12",
     "1",
@@ -2485,6 +2523,15 @@
     "cristiano_ronaldo_0",
     "vin_cius_j_nior_0",
     "neymar_2"
+   ],
+   [
+    "neymar_1",
+    "5",
+    "cristiano_ronaldo_0",
+    "vin_cius_j_nior_0",
+    "lamine_yamal_0",
+    "kylian_mbapp_0",
+    "lionel_messi_0"
    ]
   ]
  },
@@ -3149,7 +3196,8 @@
   "bombardiro_0",
   "trallallero_2",
   "tung_tung_0",
-  "patapim_0"
+  "patapim_0",
+  "trallallero_1"
  ],
  "titulos": {
   "plinko": [
@@ -3550,7 +3598,9 @@
    3,
    0,
    2,
-   3
+   3,
+   0,
+   1
   ],
   "cabezas": [
    2,
@@ -3611,6 +3661,8 @@
    2,
    1,
    2,
+   1,
+   0,
    1
   ],
   "circulo": [
@@ -3622,7 +3674,8 @@
    0,
    2,
    1,
-   0
+   0,
+   2
   ],
   "trayectoria": [
    0,
@@ -3667,7 +3720,8 @@
    2,
    0,
    2,
-   5
+   5,
+   6
   ],
   "piernas": [
    2,
@@ -3678,11 +3732,14 @@
    3,
    0,
    2,
-   1
+   1,
+   2
   ],
   "cinta": [
    3,
-   0
+   0,
+   1,
+   2
   ]
  },
  "semillas": [
@@ -3770,7 +3827,8 @@
    "cristiano_ronaldo",
    "kylian_mbapp",
    "cristiano_ronaldo",
-   "lionel_messi"
+   "lionel_messi",
+   "vin_cius_j_nior"
   ],
   "q20_fichajes": [
    "felix_2019"
@@ -3796,8 +3854,6 @@
    "zinedine_zidane"
   ],
   "rueda_ult": [
-   "kylian_mbapp_12",
-   "neymar_1",
    "cristiano_ronaldo_14",
    "vin_cius_j_nior_14",
    "lamine_yamal_10",
@@ -3807,7 +3863,9 @@
    "neymar_1",
    "lionel_messi_3",
    "vin_cius_j_nior_14",
-   "lamine_yamal_10"
+   "lamine_yamal_10",
+   "neymar_1",
+   "kylian_mbapp_12"
   ],
   "piernas_ult": [
    "lionel_messi_3",
@@ -3818,11 +3876,14 @@
    "cristiano_ronaldo_14",
    "lionel_messi_3",
    "lamine_yamal_10",
-   "kylian_mbapp_12"
+   "kylian_mbapp_12",
+   "neymar_3"
   ],
   "cinta_ult": [
    "kylian_mbapp_12",
-   "lamine_yamal_10"
+   "lamine_yamal_10",
+   "cristiano_ronaldo_14",
+   "neymar_1"
   ]
  }
 }
