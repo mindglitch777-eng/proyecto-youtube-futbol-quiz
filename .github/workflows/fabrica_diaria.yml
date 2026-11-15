@@ -55,7 +55,7 @@ jobs:
           gh release create "semana-$D" --target "$GITHUB_REF_NAME" -t "Día $D" -n "Videos del $D (fábrica diaria)" ./*.mp4 videos.json CALENDARIO.md
       - name: REGLA 10 · refuerzo de ola (la ola caliente sale HOY y MAÑANA, no en 2 días)
         id: ola
-        run: cd pipeline && echo "dir=$(python refuerzo_ola.py | tail -1)" >> "$GITHUB_OUTPUT"
+        run: cd pipeline && echo "dir=$(python refuerzo_ola.py | grep -E '^(semana_ola_|nada)' | tail -1)" >> "$GITHUB_OUTPUT"   # 15/11: los modelos de caras imprimen "loading data from…"
         env: {EXTRA_SLOTS: "${{ github.event.inputs.extra }}"}
         continue-on-error: true
       - name: Publicar el refuerzo como Release
@@ -68,7 +68,7 @@ jobs:
           gh release create "$T" --target "$GITHUB_REF_NAME" -t "Refuerzo de ola ${D#semana_ola_}" -n "Videos extra de la ola caliente" ./*.mp4 videos.json
       - name: Reserva (F1) · mantener 12 videos listos por si la fábrica falla
         id: reserva
-        run: cd pipeline && echo "r=$(python reserva.py producir | tail -1)" >> "$GITHUB_OUTPUT"
+        run: cd pipeline && echo "r=$(python reserva.py producir | grep -E '^(nada|reserva_)' | tail -1)" >> "$GITHUB_OUTPUT"
         continue-on-error: true
       - name: Publicar la reserva como Release
         if: steps.reserva.outputs.r != 'nada' && steps.reserva.outputs.r != ''
