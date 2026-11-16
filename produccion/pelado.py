@@ -54,6 +54,13 @@ def busto(clave, ancho=560):
     cv2.rectangle(m, (int(cx - A * 0.22), int(p[8, 1])), (int(cx + A * 0.22), int(p[8, 1] + A * 0.5)), cv2.GC_FGD, -1)
     cv2.rectangle(m, (int(cx - A * 0.8), int(p[8, 1] + A * 0.75)), (int(cx + A * 0.8), h - 2), cv2.GC_FGD, -1)
     m[:3, :] = cv2.GC_BGD; m[:, :3] = cv2.GC_BGD; m[:, -3:] = cv2.GC_BGD
+    # 16/11: lo que se rellenó por fuera de la foto (bordes estirados) es FONDO seguro. Antes GrabCut lo tomaba como camiseta
+    # y quedaban bloques/rectángulos negros sobre el pecho y los costados (DRESS UP, Issue #4).
+    bt, bb_, bl, br = int(pad[0] * s) + 2, int(pad[1] * s) + 2, int(pad[2] * s) + 2, int(pad[3] * s) + 2
+    if pad[0]: m[:bt, :] = cv2.GC_BGD
+    if pad[1]: m[h - bb_:, :] = cv2.GC_BGD
+    if pad[2]: m[:, :bl] = cv2.GC_BGD
+    if pad[3]: m[:, w - br:] = cv2.GC_BGD
     bg, fg = np.zeros((1, 65)), np.zeros((1, 65))
     cv2.grabCut(crop, m, None, bg, fg, 6, cv2.GC_INIT_WITH_MASK)
     a = np.where((m == cv2.GC_FGD) | (m == cv2.GC_PR_FGD), 255, 0).astype(np.uint8)

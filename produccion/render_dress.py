@@ -130,7 +130,7 @@ def cuadro(g, A, t, dur):
         im.alpha_composite(b["pelado"], (int(dxs[i]), Y_BUSTO))
     t_fin = n * T_ITEM
     k_act = min(n - 1, int(t // T_ITEM)); lt = t - k_act * T_ITEM
-    if t < t_fin + 0.6:
+    if t < t_fin + g.get("cola", 0.9) - 0.3:
         quedan = [j for j in range(n) if items[j]["ok"] and (j < k_act or (j == k_act and lt >= T_CAE) or t >= t_fin)]
         cayendo = [k_act] if t < t_fin and not (items[k_act]["ok"] and lt >= T_CAE) else []
         orden = lambda j: 0 if items[j]["n"].split("~")[0] in ("payaso", "pelo_azul", "peluca_rosa", "pelo_verde") or items[j]["n"].startswith("pelo") else (
@@ -168,16 +168,19 @@ def audio(g, dur):
         if it["ok"]:
             add(t0 + T_CAE, M.golpe(0.1), 0.6); add(t0 + T_CAE, M.ding(0.5), 0.45)
     tf = len(g["items"]) * T_ITEM
-    add(tf + 0.8, M.whoosh(0.4), 0.5)
+    add(tf + g.get("cola", 0.9) - 0.1, M.whoosh(0.4), 0.5)
     mu = P.musica(g, dur)
     return np.tanh((mu * 0.7 + fx) * 1.1) * 0.9, np.tanh(fx * 1.1) * 0.85
 
 
 def main(guion):
+    global T_ITEM, T_CAE, T_DECIDE
     g = json.loads(Path(guion).read_text())
+    T_ITEM, T_CAE = g.get("t_item", T_ITEM), g.get("t_cae", T_CAE)           # 16/11: versión corta (Issue #4: 108 % visto con 11,4 s)
+    T_DECIDE = T_CAE + 0.5
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
     A = armar(g)
-    dur = len(g["items"]) * T_ITEM + 0.9
+    dur = len(g["items"]) * T_ITEM + g.get("cola", 0.9)
     mudo = out / "mudo.mp4"
     p = subprocess.Popen(["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS),
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)

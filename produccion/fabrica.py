@@ -595,15 +595,17 @@ def guion_plinko(gid, rng, V, fecha):
 
 
 def guion_dress(gid, rng, V, fecha):
-    grupo = con_estrella(V.grupo("dress", 2, rng, JUGADORES, fecha), rng)
+    estrellas = [j for j in JUGADORES if j[1] in SUPERESTRELLAS]              # 16/11: solo superestrellas (regla del 13/11 para títulos)
+    grupo = con_estrella(V.grupo("dress", 2, rng, estrellas, fecha), rng, estrellas)
+    # 16/11: sin tonos amarillos (se perdían contra el fondo amarillo)
     malos = [{"n": "payaso", "ok": False}, {"n": "pelo_azul~" + str(rng.choice([220, 280, 30, 0])), "ok": False},
-             {"n": "peluca_rosa~" + str(rng.choice([320, 190, 50])), "ok": False}]
+             {"n": "peluca_rosa~" + str(rng.choice([320, 190, 280])), "ok": False}]
     rng.shuffle(malos)
-    pelo = {"n": "pelo_verde" + rng.choice(["", "~0", "~45", "~270", "~200"]), "ok": True}
-    medio = [{"n": "cadena", "ok": True}] + malos
-    rng.shuffle(medio)
+    pelo = {"n": "pelo_verde" + rng.choice(["", "~0", "~270", "~200"]), "ok": True}
+    medio = [{"n": "cadena", "ok": True}] + malos[:1]                         # 16/11: 4 accesorios (antes 5) y más rápidos
+    rng.shuffle(medio)                                                        # → 6,8 s en vez de 11,4 s (Issue #4: 108 % visto)
     return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], musica=V.musica(rng),
-                items=[{"n": "anteojos", "ok": True}] + medio + [pelo])
+                items=[{"n": "anteojos", "ok": True}] + medio + [pelo], t_item=1.55, t_cae=0.95, cola=0.6)
 
 
 def guion_torre(gid, rng, V, fecha):
