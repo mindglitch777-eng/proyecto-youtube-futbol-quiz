@@ -140,7 +140,10 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   empalma antes; solo superestrellas; sin tonos amarillos. Sigue listo:false; avisado al Gerente para su propuesta.
   (2) Formato nuevo **VS STOP** (`vs`, listo:false), pedido del 15/11: 2 superestrellas cara a cara + medidor de duelo; pausar con la
   pelota en la zona dorada corona a tu estrella (la corona se ve solo mientras está en la zona). Propuesta p005 (Issue #14).
-  Pendientes: STOP TO ESCAPE y SKILL STOP (próximo turno, jueves 19/11).
+  (3) Arreglo para todos los formatos: el 👇 del CTA (cambio del 15/11) salía como un cuadradito vacío porque la fuente de los carteles
+  no tiene emojis; gancho.py ahora los saca al dibujar. Hoja de p005 regenerada (sin el cuadradito y con torsos de ancho parejo).
+  Para el jueves 19/11 (pedido del Gerente, prioridad alta): 3-4 variantes visuales al azar en BALLON D'OR, PENALTY y HEAD SLOT
+  (originalidad 68; distancia > 10 dentro del mismo formato); después STOP TO ESCAPE y SKILL STOP.
 - **Para el CEO:** Issue #14 (VS STOP).
 
 ## 2026-11-16 · Gerente IA · REVISIÓN SEMANAL (lunes)

@@ -486,7 +486,7 @@ def guion_vs(gid, rng, V, fecha):
     a, b = [n.upper() for n in nombres]
     tx = dict(gancho=rng.choice([f"{a} OR {b}?", "STOP ON YOUR GOAT", f"{a} VS {b}"]),
               apuesta=rng.choice(["STOP IN THE GOLD ZONE", "GOLD ZONE = HE WINS", "ONLY 1% STOP IT IN TIME"]),
-              cta="WHO DID YOU PICK? COMMENT 👇")
+              cta="WHO DID YOU PICK? COMMENT NOW")
     return dict(id=gid, cuerpos=duelo, nombres=nombres, colores=cols, dur=7.0, fase=rng.choice([0.0, math.pi]),
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
 

@@ -32,6 +32,7 @@ W, H, FPS = 1080, 1920, 30
 BAR_Y, BAR_X0, BAR_X1 = 720, 90, 990
 UMBRAL = 0.88                         # |posición| desde la que la pelota está en la zona dorada (≈0,5 s por pasada)
 ESC = 2.1
+ANCHO_MAX = 600
 
 
 @lru_cache(maxsize=8)
@@ -45,8 +46,11 @@ def armar(g):
     tor = []
     for c in g["cuerpos"]:
         t, cx = R.torso(c, True, ESC)
+        if t.width > ANCHO_MAX:                                                # poses abiertas (Yamal agachado) taparían al otro
+            k = ANCHO_MAX / t.width
+            t = t.resize((ANCHO_MAX, int(t.height * k)), Image.LANCZOS); cx *= k
         tor.append((t, cx))
-    pos = [(300, 1830), (780, 1830)]                                           # centro de la cara en x, pie del torso en y
+    pos = [(290, 1830), (790, 1830)]                                           # centro de la cara en x, pie del torso en y
     brillo = [ImageEnhance.Brightness(t).enhance(1.12) for t, _ in tor]
     apagado = []
     for t, _ in tor:

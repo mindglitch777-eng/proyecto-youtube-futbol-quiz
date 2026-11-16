@@ -35,7 +35,7 @@ TEXTOS = {
                     cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
     "vs": dict(gancho=["STOP ON YOUR GOAT", "WHO WINS? STOP IT", "PICK YOUR GOAT"],
                apuesta=["STOP IN THE GOLD ZONE", "ONLY 1% STOP IT IN TIME", "GOLD ZONE = HE WINS"],
-               cta=["WHO DID YOU PICK? COMMENT 👇"]),
+               cta=["WHO DID YOU PICK? COMMENT NOW"]),
     "cinta": dict(gancho=["STOP ON {n}'S BODY", "FIND {n}'S BODY", "STOP THE BELT ON {n}"],
                   apuesta=["99% IMPOSSIBLE", "ONLY 1% GET IT", "6 STARS · ONLY 1 FITS"],
                   cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
@@ -98,7 +98,14 @@ def _fuente(tam):
     return ImageFont.truetype(str(FUENTE), tam)
 
 
+def sin_emojis(txt):
+    """16/11: la fuente de los carteles no tiene emojis (el 👇 del CTA salía como un cuadradito vacío en todos los formatos)."""
+    limpio = "".join(ch for ch in txt if ord(ch) < 0x2190 or ch in "·")
+    return " ".join(limpio.split())
+
+
 def cartel(im, txt, cy, ancho_max=1000, tam=88, pop=1.0, fondo=(10, 10, 16, 215), color=(255, 230, 40)):
+    txt = sin_emojis(txt)
     d = ImageDraw.Draw(im, "RGBA")
     tam = int(tam * pop)
     while tam > 30 and _fuente(tam).getlength(txt) > ancho_max:
@@ -126,6 +133,7 @@ def cartel_gancho(im, txt, cy, pop=1.0):
     """Gancho GRANDE (pedido: que se entienda en el menor tiempo posible): franja oscura de lado a lado,
     cartel STOP rojo a la izquierda y 3-4 palabras enormes en amarillo con borde negro grueso, latiendo."""
     from PIL import Image
+    txt = sin_emojis(txt)
     W = im.width; alto = 230
     base = im if im.mode == "RGBA" else im.convert("RGBA")
     banda = Image.new("RGBA", (W, alto), (8, 8, 12, 225))
