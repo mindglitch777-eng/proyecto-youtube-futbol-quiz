@@ -142,3 +142,17 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   pelota en la zona dorada corona a tu estrella (la corona se ve solo mientras está en la zona). Propuesta p005 (Issue #14).
   Pendientes: STOP TO ESCAPE y SKILL STOP (próximo turno, jueves 19/11).
 - **Para el CEO:** Issue #14 (VS STOP).
+
+## 2026-11-16 · Gerente IA · REVISIÓN SEMANAL (lunes)
+- **La semana (9 → 16/11):** +307 K vistas (~44 K por día) y +259 suscriptores (~37 por día); la anterior: ~+390 K y ~+550. Videos de 10 K: 1,0 por día (meta 3); vistas por día ~58 K (meta 110 K). 903 suscriptores.
+  Qué pasó: 9-15 subidas por día y WHEEL 2 veces por día (corregido el 14/11); el 15/11 el CEO dejó solo la lógica de parar con famosos (fuera STOP clásico, quiz, TRIDENT y FIND).
+- **Vi hoy:** originalidad 88 → 77 → 68 ("se empieza a ver repetitivo", 11 de 60 casi idénticos): BALLON D'OR, PENALTY y HEAD SLOT a distancia 0-6 entre sí. CONVEYOR STOP debutó con 12.152 en ~14 h (baja: 1 video); HEAD SLOT 1.843.
+  WHEEL 7.866 (16, alta), HEAD FIT 8.139 (6, media). Inspector 80 sin defectos; reserva 12/12. El 17/11 tiene 5 de 8 subidos (los 3 que faltan están fabricados y esperan el tope de subidas). Imagen de #14 perdida por choque de prototipos.
+- **Decidí e hice:** (1) BALLON D'OR y PENALTY a máx. 2 por semana + pedido al Ingeniero de 3-4 variantes visuales (también HEAD SLOT; el jueves, antes que ESCAPE y SKILL).
+  6 preguntas: n = 11 pares casi idénticos medidos por huella / dato sano (huellas de cada video) / otra explicación: los reintentos (r0/r1) inflan un poco el conteo, pero también hay pares entre videos distintos subidos / peor caso: 2-3 lugares de prueba menos para MOMENTO; se deshace sacando max_semana / se mide: índice > 80 el 23/11 / mío (pesos de las pruebas, pedido al Ingeniero).
+  (2) Máquina de prototipos: el guardado ya no se pierde por un choque y falla si no guarda; relancé la de VS STOP (#14). Mío (arreglar fallas).
+- **No toqué (a propósito):** HEAD SLOT (está en estreno hasta el 22/11); la semana de 8 (decisión del CEO, se mide el 24/11); los avisos duplicados de balance (#10 y #12).
+- **PLAN DE LA SEMANA (16-22/11):** 8 videos por día con la lógica de parar y solo famosos. WHEEL y HEAD FIT fijos; estrenos de CONVEYOR, LEGS WHEEL, HEAD SLOT y FAVORITE (3 lugares asegurados cada uno).
+  El Ingeniero (jueves) hace las variantes visuales y después STOP TO ESCAPE y SKILL STOP. DRESS: 2 pruebas si el CEO dice sí (#13).
+- **Revisar el 2026-11-19:** entrega del Ingeniero (variantes) · **20/11** vistas y videos de 10 K por día · **22/11** DRESS · **23/11** originalidad (> 80) y fin de estrenos · **24/11** comparación de la semana de 8 para el CEO.
+- **Para el CEO:** #13 (DRESS) y #14 (VS STOP), sí o no. Pregunta de YouTube Studio de "vistos vs. deslizados".
