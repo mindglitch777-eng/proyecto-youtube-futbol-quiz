@@ -4,8 +4,23 @@
  "titulo": "VS STOP (duelo cara a cara con la lógica de parar)",
  "que_mostrar": "Dos superestrellas frente a frente y un medidor de duelo: pausar con la pelota en la zona dorada de tu estrella.",
  "slots": [
-  {"tipo": "vs"},
-  {"tipo": "vs"},
-  {"tipo": "vs"}
- ]
+  {
+   "tipo": "vs"
+  },
+  {
+   "tipo": "vs"
+  },
+  {
+   "tipo": "vs"
+  }
+ ],
+ "prototipo": {
+  "hoja": "reports/propuestas/p005/hoja.jpg",
+  "videos": [
+   "produccion/prototipos/p005/p005_01_mie16_1200_vs.mp4",
+   "produccion/prototipos/p005/p005_02_mie16_1300_vs.mp4",
+   "produccion/prototipos/p005/p005_03_mie16_1400_vs.mp4"
+  ],
+  "release": "propuesta-p005"
+ }
 }
