@@ -4,7 +4,19 @@
  "titulo": "DRESS UP arreglado (sin rectángulo negro, 6,8 s, solo superestrellas)",
  "que_mostrar": "Las 2 muestras de DRESS UP con el arreglo del Ingeniero: sin bloques negros, más corto y con loop. Decisión del CEO en #4: 2 pruebas antes del 20/11; si no pasan 120 % visto y la mediana del canal, sale para siempre el 22/11.",
  "slots": [
-  {"tipo": "dress"},
-  {"tipo": "dress"}
- ]
+  {
+   "tipo": "dress"
+  },
+  {
+   "tipo": "dress"
+  }
+ ],
+ "prototipo": {
+  "hoja": "reports/propuestas/p004/hoja.jpg",
+  "videos": [
+   "produccion/prototipos/p004/p004_01_mie16_1200_dress.mp4",
+   "produccion/prototipos/p004/p004_02_mie16_1300_dress.mp4"
+  ],
+  "release": "propuesta-p004"
+ }
 }
