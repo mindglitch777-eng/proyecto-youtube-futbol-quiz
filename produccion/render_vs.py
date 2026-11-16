@@ -29,10 +29,10 @@ import render_rueda as R
 
 ROOT = Path(__file__).resolve().parent
 W, H, FPS = 1080, 1920, 30
-BAR_Y, BAR_X0, BAR_X1 = 720, 90, 990
+BAR_Y, BAR_X0, BAR_X1 = 800, 90, 990
 UMBRAL = 0.88                         # |posición| desde la que la pelota está en la zona dorada (≈0,5 s por pasada)
 ESC = 2.1
-ANCHO_MAX = 600
+ANCHO_MAX = 800
 
 
 @lru_cache(maxsize=8)
