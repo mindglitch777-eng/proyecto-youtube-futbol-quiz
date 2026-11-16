@@ -57,4 +57,6 @@ jobs:
           git add reports/propuestas pipeline/propuestas
           git commit -m "Prototipos de propuestas" || echo "nada nuevo"
           git stash -u -q || true                                              # voces y restos del render: no se guardan acá
-          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done
+          ok=0                                                                  # 16/11: si otra corrida guardó la misma hoja, gana la nuestra (más nueva); antes el choque tiraba TODO el guardado
+          for i in 1 2 3 4; do git pull --rebase -X theirs -q origin "${GITHUB_REF_NAME}" && git push origin "HEAD:${GITHUB_REF_NAME}" && ok=1 && break; git rebase --abort 2>/dev/null || true; sleep 7; done
+          [ "$ok" = 1 ] || { echo "::error::No se pudo guardar la hoja: el comentario del Issue va a mostrar una imagen rota"; exit 1; }
