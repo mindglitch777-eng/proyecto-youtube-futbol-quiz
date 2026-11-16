@@ -143,7 +143,8 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   (3) Arreglo para todos los formatos: el 👇 del CTA (cambio del 15/11) salía como un cuadradito vacío porque la fuente de los carteles
   no tiene emojis; gancho.py ahora los saca al dibujar. Hoja de p005 regenerada (sin el cuadradito y con torsos de ancho parejo).
   Para el jueves 19/11 (pedido del Gerente, prioridad alta): 3-4 variantes visuales al azar en BALLON D'OR, PENALTY y HEAD SLOT
-  (originalidad 68; distancia > 10 dentro del mismo formato); después STOP TO ESCAPE y SKILL STOP.
+  (originalidad 68; distancia > 10 dentro del mismo formato), y también 3 variantes en VS STOP (estadio/paleta, lugar del medidor);
+  después STOP TO ESCAPE y SKILL STOP. Ojo: los videos ya fabricados y no subidos siguen con el cuadradito del CTA.
 - **Para el CEO:** Issue #14 (VS STOP).
 
 ## 2026-11-16 · Gerente IA · REVISIÓN SEMANAL (lunes)
