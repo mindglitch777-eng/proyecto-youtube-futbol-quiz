@@ -129,3 +129,7 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Revisar el 2026-11-16:** los 4 rehechos del 17/11 (a ojo) y que el 17/11 tenga sus 8 subidos; WHEEL a 1 por día a las 48 h; entrega del Ingeniero.
 - **Revisar el 2026-11-20/22/24:** vistas y videos de 10 K por día (20/11), DRESS (22/11), cantidad por día para el CEO (24/11).
 - **Para el CEO:** nada.
+
+## 2026-11-16 (tarde) · Gerente IA · DRESS UP
+- El Ingeniero terminó el arreglo de DRESS (commit 24f99d2): sin rectángulos negros, 6,8 s (antes 11,4 s), solo superestrellas. Propuesta p004 con 2 muestras: Issue #13. Sigue `listo: false` hasta el "sí" del CEO.
+- **Revisar el 2026-11-22:** si aprobado, los 2 videos a las 48 h (≥120 % visto y ≥ mediana del canal); si no, DRESS sale para siempre.
