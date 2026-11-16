@@ -2143,6 +2143,16 @@
    ],
    [
     "lionel_messi_3",
+    "david_beckham_0",
+    "kylian_mbapp_0",
+    "lamine_yamal_0",
+    "ronaldinho_2",
+    "vin_cius_j_nior_0",
+    "zinedine_zidane_0",
+    "zlatan_ibrahimovi_1"
+   ],
+   [
+    "lionel_messi_3",
     "jude_bellingham_0",
     "jude_bellingham_1",
     "lautaro_mart_nez_1",
@@ -2192,6 +2202,16 @@
     "vin_cius_j_nior_0"
    ],
    [
+    "neymar_1",
+    "david_beckham_3",
+    "lamine_yamal_0",
+    "lionel_messi_0",
+    "ronaldinho_1",
+    "thierry_henry_3",
+    "vin_cius_j_nior_3",
+    "zlatan_ibrahimovi_1"
+   ],
+   [
     "vin_cius_j_nior_14",
     "bukayo_saka_2",
     "jude_bellingham_1",
@@ -2220,6 +2240,16 @@
     "neymar_2",
     "phil_foden_0",
     "raphinha_0"
+   ],
+   [
+    "vin_cius_j_nior_14",
+    "cristiano_ronaldo_0",
+    "kylian_mbapp_0",
+    "neymar_2",
+    "ronaldinho_0",
+    "thierry_henry_3",
+    "zinedine_zidane_3",
+    "zlatan_ibrahimovi_2"
    ]
   ],
   "trayectoria": [
@@ -2257,8 +2287,16 @@
     "2"
    ],
    [
+    "cristiano_ronaldo",
+    "9"
+   ],
+   [
     "kylian_mbapp",
     "1"
+   ],
+   [
+    "kylian_mbapp",
+    "7"
    ],
    [
     "lamine_yamal",
@@ -2279,6 +2317,10 @@
    [
     "vin_cius_j_nior",
     "3"
+   ],
+   [
+    "vin_cius_j_nior",
+    "8"
    ]
   ],
   "q20_pares": [
@@ -2469,9 +2511,42 @@
     "lamine_yamal_11",
     "pedri_2",
     "vin_cius_j_nior_12"
+   ],
+   [
+    "lionel_messi_3",
+    "david_beckham_0",
+    "neymar_3",
+    "ronaldinho_2",
+    "thierry_henry_0",
+    "vin_cius_j_nior_12"
+   ],
+   [
+    "neymar_1",
+    "david_beckham_0",
+    "kylian_mbapp_11",
+    "lionel_messi_2",
+    "thierry_henry_0",
+    "zinedine_zidane_3"
+   ],
+   [
+    "vin_cius_j_nior_14",
+    "cristiano_ronaldo_1",
+    "david_beckham_0",
+    "lamine_yamal_11",
+    "thierry_henry_0",
+    "zlatan_ibrahimovi_1"
    ]
   ],
   "slot": [
+   [
+    "cristiano_ronaldo_14",
+    "2",
+    "lamine_yamal",
+    "lionel_messi",
+    "kylian_mbapp",
+    "neymar",
+    "vin_cius_j_nior"
+   ],
    [
     "cristiano_ronaldo_14",
     "3",
@@ -2491,6 +2566,15 @@
     "lamine_yamal"
    ],
    [
+    "kylian_mbapp_13",
+    "2",
+    "vin_cius_j_nior",
+    "cristiano_ronaldo",
+    "neymar",
+    "lamine_yamal",
+    "lionel_messi"
+   ],
+   [
     "lamine_yamal_10",
     "3",
     "lionel_messi",
@@ -2507,6 +2591,15 @@
     "vin_cius_j_nior",
     "kylian_mbapp",
     "cristiano_ronaldo"
+   ],
+   [
+    "lionel_messi_3",
+    "3",
+    "cristiano_ronaldo",
+    "vin_cius_j_nior",
+    "lamine_yamal",
+    "kylian_mbapp",
+    "neymar"
    ],
    [
     "neymar_3",
@@ -3222,7 +3315,15 @@
   "trallallero_1",
   "chipi_chapa_0",
   "tung_tung_0",
-  "bombardiro_0"
+  "bombardiro_0",
+  "trallallero_2",
+  "patapim_0",
+  "trallallero_1",
+  "chipi_chapa_0",
+  "bombardiro_0",
+  "tung_tung_0",
+  "trallallero_1",
+  "chipi_chapa_0"
  ],
  "titulos": {
   "plinko": [
@@ -3626,7 +3727,9 @@
    3,
    0,
    1,
-   2
+   2,
+   0,
+   1
   ],
   "cabezas": [
    2,
@@ -3690,7 +3793,10 @@
    1,
    0,
    1,
-   2
+   2,
+   0,
+   2,
+   1
   ],
   "circulo": [
    0,
@@ -3703,6 +3809,8 @@
    1,
    0,
    2,
+   0,
+   1,
    0
   ],
   "trayectoria": [
@@ -3723,7 +3831,10 @@
    0,
    1,
    2,
-   1
+   1,
+   0,
+   2,
+   0
   ],
   "balon": [
    0,
@@ -3738,7 +3849,10 @@
    2,
    1,
    0,
-   2
+   2,
+   1,
+   0,
+   1
   ],
   "fitall": [
    2,
@@ -3757,14 +3871,20 @@
    2,
    1,
    3,
-   0
+   0,
+   2,
+   0,
+   3
   ],
   "slot": [
    3,
    0,
    2,
    1,
-   2
+   2,
+   3,
+   1,
+   0
   ],
   "cinta": [
    3,
@@ -3774,7 +3894,9 @@
   ],
   "favorito": [
    3,
-   2
+   2,
+   1,
+   0
   ]
  },
  "semillas": [
@@ -3889,9 +4011,6 @@
    "zinedine_zidane"
   ],
   "rueda_ult": [
-   "vin_cius_j_nior_14",
-   "lamine_yamal_10",
-   "lionel_messi_3",
    "kylian_mbapp_12",
    "cristiano_ronaldo_14",
    "neymar_1",
@@ -3900,20 +4019,29 @@
    "lamine_yamal_10",
    "neymar_1",
    "kylian_mbapp_12",
-   "cristiano_ronaldo_14"
+   "cristiano_ronaldo_14",
+   "lionel_messi_3",
+   "vin_cius_j_nior_14",
+   "neymar_1"
   ],
   "piernas_ult": [
    "lionel_messi_3",
    "lamine_yamal_10",
    "cristiano_ronaldo_14",
-   "kylian_mbapp_12"
+   "kylian_mbapp_12",
+   "neymar_1",
+   "vin_cius_j_nior_14",
+   "lionel_messi_3"
   ],
   "slot_ult": [
    "cristiano_ronaldo_14",
    "lionel_messi_3",
    "lamine_yamal_10",
    "kylian_mbapp_12",
-   "neymar_3"
+   "neymar_3",
+   "kylian_mbapp_13",
+   "lionel_messi_3",
+   "cristiano_ronaldo_14"
   ],
   "cinta_ult": [
    "kylian_mbapp_12",
@@ -3923,7 +4051,9 @@
   ],
   "favorito_ult": [
    "cristiano_ronaldo",
-   "neymar"
+   "neymar",
+   "kylian_mbapp",
+   "vin_cius_j_nior"
   ]
  }
 }
