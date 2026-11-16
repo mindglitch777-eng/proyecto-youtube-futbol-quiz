@@ -9,6 +9,7 @@ Uso: python3 produccion/fabrica.py 2026-10-31 7 [semilla]
 Salida: produccion/semana_<fecha>/
 """
 import json
+import math
 import random
 import subprocess
 import sys
@@ -33,12 +34,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "cinta": "CONVEYOR STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "cinta": "render_cinta.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -462,6 +463,34 @@ def guion_favorito(gid, rng, V, fecha, leyendas=True):
                 nombres=nombres)
 
 
+# VS STOP (16/11): dos superestrellas cara a cara y un medidor de duelo; pausás con la pelota en la zona dorada de tu estrella.
+# Duelos que pide el público (Studio 15/11): Ronaldo vs Messi, Yamal vs Mbappé / Vinícius. Solo superestrellas.
+DUELOS = [("cristiano_ronaldo_14", "lionel_messi_3"), ("lamine_yamal_10", "kylian_mbapp_12"), ("lamine_yamal_10", "vin_cius_j_nior_14"),
+          ("cristiano_ronaldo_14", "kylian_mbapp_12"), ("lionel_messi_3", "lamine_yamal_10"), ("neymar_1", "vin_cius_j_nior_14"),
+          ("lionel_messi_3", "kylian_mbapp_12"), ("cristiano_ronaldo_14", "neymar_1")]
+COLOR_VS = {"cristiano_ronaldo": (220, 30, 40), "lionel_messi": (80, 165, 235), "lamine_yamal": (205, 25, 45), "kylian_mbapp": (40, 70, 190),
+            "vin_cius_j_nior": (40, 170, 70), "neymar": (250, 210, 0)}
+TIT_VS = ["{a} vs {b} 🛑 Stop on your GOAT", "{a} or {b}? 👑 Pause it in the gold zone", "{a} vs {b} stop challenge 👑🔥",
+          "Who wins? {a} vs {b} 🛑 Only 1% stop it"]
+
+
+def guion_vs(gid, rng, V, fecha):
+    ult = V.contadores.setdefault("vs_ult", [])
+    duelo = min(DUELOS, key=lambda d: (ult[-6:].count("|".join(d)), DUELOS.index(d) > 2, rng.random()))   # primero los 3 más pedidos
+    ult.append("|".join(duelo)); del ult[:-12]
+    duelo = list(duelo)
+    if rng.random() < 0.5:
+        duelo.reverse()
+    nombres = [CUERPOS_RUEDA[c] for c in duelo]
+    cols = [COLOR_VS[c.rsplit("_", 1)[0]] for c in duelo]
+    a, b = [n.upper() for n in nombres]
+    tx = dict(gancho=rng.choice([f"{a} OR {b}?", "STOP ON YOUR GOAT", f"{a} VS {b}"]),
+              apuesta=rng.choice(["STOP IN THE GOLD ZONE", "GOLD ZONE = HE WINS", "ONLY 1% STOP IT IN TIME"]),
+              cta="WHO DID YOU PICK? COMMENT 👇")
+    return dict(id=gid, cuerpos=duelo, nombres=nombres, colores=cols, dur=7.0, fase=rng.choice([0.0, math.pi]),
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
+
+
 # Formatos nuevos con la mecánica STOP (ideas de la IA de YouTube Studio, 02/11)
 TIT_SIUU = ["Pause Ronaldo at 67 😱 SIUUU challenge", "Only 1% stop CR7 at 67 🛑 SIUUU", "Stop at 67 = SIUUU 🔥 Can you do it?",
             "SIUUU at 67 🛑 Pause it at the top!"]
@@ -714,6 +743,16 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo == "vs":
+            g = guion_vs(gid, rng, V, sl["fecha"])
+            a, b = g["nombres"]
+            titulo = V.titulo("vs", TIT_VS, rng).format(a=a, b=b)
+            for x in (a, b):
+                if len(titulo) + len(tag(x)) + 1 <= 100:
+                    titulo += " " + tag(x)
+            desc = (f"Pause when the ball is in YOUR player's gold zone 👑 {a} or {b}? Who did you make win? Comment 👇\n"
+                    + " ".join(tag(x) for x in (a, b)) + " #football #stopchallenge #shorts")
+            fijado = ""; fotos = []; nombres = [a, b]
         elif tipo in ("cinta", "slot"):
             g = (guion_cinta if tipo == "cinta" else guion_slot)(gid, rng, V, sl["fecha"])
             a, b = rng.sample(g["otros"], 2)

@@ -133,3 +133,12 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 ## 2026-11-16 (tarde) · Gerente IA · DRESS UP
 - El Ingeniero terminó el arreglo de DRESS (commit 24f99d2): sin rectángulos negros, 6,8 s (antes 11,4 s), solo superestrellas. Propuesta p004 con 2 muestras: Issue #13. Sigue `listo: false` hasta el "sí" del CEO.
 - **Revisar el 2026-11-22:** si aprobado, los 2 videos a las 48 h (≥120 % visto y ≥ mediana del canal); si no, DRESS sale para siempre.
+
+## 2026-11-16 · Ingeniero
+- **Ingeniero:** (1) DRESS UP (#4) arreglado: el rectángulo negro venía de pelado.busto (el relleno fuera de la foto se tomaba como
+  camiseta); ahora es fondo, revisado a ojo en los 15 bustos. Versión corta de 6,8 s (antes 11,4 s): 4 accesorios a 1,55 s y el loop
+  empalma antes; solo superestrellas; sin tonos amarillos. Sigue listo:false; avisado al Gerente para su propuesta.
+  (2) Formato nuevo **VS STOP** (`vs`, listo:false), pedido del 15/11: 2 superestrellas cara a cara + medidor de duelo; pausar con la
+  pelota en la zona dorada corona a tu estrella (la corona se ve solo mientras está en la zona). Propuesta p005 (Issue #14).
+  Pendientes: STOP TO ESCAPE y SKILL STOP (próximo turno, jueves 19/11).
+- **Para el CEO:** Issue #14 (VS STOP).
