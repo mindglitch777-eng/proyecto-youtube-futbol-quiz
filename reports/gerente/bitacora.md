@@ -160,3 +160,5 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   El Ingeniero (jueves) hace las variantes visuales y después STOP TO ESCAPE y SKILL STOP. DRESS: 2 pruebas si el CEO dice sí (#13).
 - **Revisar el 2026-11-19:** entrega del Ingeniero (variantes) · **20/11** vistas y videos de 10 K por día · **22/11** DRESS · **23/11** originalidad (> 80) y fin de estrenos · **24/11** comparación de la semana de 8 para el CEO.
 - **Para el CEO:** #13 (DRESS) y #14 (VS STOP), sí o no. Pregunta de YouTube Studio de "vistos vs. deslizados".
+- 16/11 (tarde): el Ingeniero arregló el cuadradito del CTA (el 👇 no se dibujaba en casi todos los formatos de parar; commit ef01f30). Los videos del 17 y el 18/11 ya fabricados lo traen.
+  **Decidí no rehacerlos**: es un detalle chico en el texto del final, y rehacer ~12 videos gasta el tope de subidas y arriesga dejar horarios vacíos. Desde el lote del 19/11 sale bien. Revisar en la hoja de control del 19/11.
