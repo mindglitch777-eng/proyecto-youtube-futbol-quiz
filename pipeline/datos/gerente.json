@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-17",
- "hora": "07:39",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 1784,
   "mediana_48h_semana_anterior": 2225,
@@ -25,12 +25,12 @@
  },
  "originalidad": {
   "fecha": "2026-11-17",
-  "indice": 65,
+  "indice": 57,
   "subidas_semana": 71,
   "formato_mas_usado": "stop",
   "concentracion": 0.21,
   "parecido_titulos": 0.66,
-  "casi_identicos": 11,
+  "casi_identicos": 16,
   "medidos": 60,
   "musicas_distintas": 9,
   "reparto_semana": {
@@ -54,12 +54,12 @@
   },
   "alertas": [
    "Los títulos se parecen 66% en promedio: falta variedad de frases.",
-   "11 de los últimos 60 videos son casi idénticos a otro (misma imagen en los mismos momentos)."
+   "16 de los últimos 60 videos son casi idénticos a otro (misma imagen en los mismos momentos)."
   ],
   "lectura": "OJO: se empieza a ver repetitivo"
  },
  "inspeccion": {
-  "revisados": 80,
+  "revisados": 104,
   "con_defectos": 0,
   "ejemplos": []
  },
@@ -68,7 +68,7 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-17T06:44-03:00",
+   "hora": "2026-11-17T13:55-03:00",
    "problemas": [],
    "acciones": [],
    "avisos": []
@@ -87,10 +87,12 @@
    "2026-11-13": 4,
    "2026-11-14": 1,
    "2026-11-15": 0
-  }
+  },
+  "vistas_por_dia": 43605,
+  "subs_por_dia": 28.2
  },
  "cerebro": {
-  "fecha": "2026-11-17T07:39-03:00",
+  "fecha": "2026-11-17T15:42-03:00",
   "videos_medidos": 95,
   "formatos": {
    "rueda": {
@@ -323,16 +325,16 @@
     "circulo": "6%",
     "q20balon": "5%",
     "piernas": "4%",
-    "favorito": "4%",
     "slot": "4%",
-    "penal": "2%",
+    "favorito": "4%",
     "cinta": "2%",
+    "penal": "2%",
+    "trayectoria": "1%",
+    "siuu": "1%",
     "tridente": "1%",
     "find": "1%",
     "q20costo": "1%",
-    "trayectoria": "1%",
-    "q20fichaje": "1%",
-    "siuu": "1%"
+    "q20fichaje": "1%"
    }
   },
   "experimentos": {
@@ -1107,19 +1109,14 @@
  ],
  "olas_calientes": [
   {
-   "mecanica": "dress",
+   "mecanica": "quiz",
    "estado": "subiendo",
-   "vph": 1170,
+   "vph": 1033,
    "nuestros": [
-    "dress"
-   ]
-  },
-  {
-   "mecanica": "wheel",
-   "estado": "subiendo",
-   "vph": 1190,
-   "nuestros": [
-    "rueda"
+    "trayectoria",
+    "tridente",
+    "q20fichaje",
+    "q20costo"
    ]
   }
  ],
@@ -1134,7 +1131,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 19,
+  "olas_hace_h": 3,
   "investigacion": "2026-11-15",
   "poda": {
    "podadas": {
@@ -1153,35 +1150,32 @@
      "motivo": "auditoría A2: la poda vieja lo comparaba contra STOP; tuvo videos de 20.984 y 8.486"
     }
    ],
-   "mediana_canal": 2273
+   "mediana_canal": 2034
   },
   "advertencias": [
    "Pasado mañana (2026-11-19) no tiene videos subidos todavía (normal si la fábrica de hoy aún no corrió; si ya corrió, es un problema)."
   ]
  },
  "parte": {
-  "fecha": "2026-11-16",
-  "titular": "903 de 1.000 suscriptores (faltan 97). La métrica que manda: 1,0 video de 10 K por día (meta 3) y ~58 K vistas por día (meta 110 K). La semana: +307 K vistas y +259 suscriptores, peor que la anterior (~390 K y ~550).",
+  "fecha": "2026-11-17",
+  "titular": "919 de 1.000 suscriptores (faltan 81; +16 en el día). La métrica que manda: 1,0 video de 10 K por día (meta 3) y ~44 K vistas por día (meta 110 K, y bajando).",
   "funciona": [
-   "CONVEYOR STOP debutó con 12.152 vistas en ~14 h (868 por hora, el mejor ritmo del canal en 72 h). Es 1 video: confianza baja, pero arrancó muy bien.",
-   "WHEEL: mediana 7.866 (4,4x el canal, 16 medidos, alta). HEAD FIT: 8.139 (4,5x, 6 medidos, media). Las ruedas de las 21:30 hacen 12 K de mediana.",
-   "Máquinas: inspector 80 videos sin defectos, reserva 12/12 y 12 de 14 días con sus videos completos."
+   "Los estrenos arrancaron fuerte: CONVEYOR STOP hizo 23.494 con su 1.er video, FAVORITE 10.443 en 13 h (803 por hora, el mejor ritmo del canal) y HEAD SLOT 4.046. Confianza baja (1 video cada uno).",
+   "WHEEL sigue siendo el más firme: mediana 6.539 a las 48 h (3,7x el canal, 16 medidos, alta)."
   ],
   "no_funciona": [
-   "Originalidad 88 → 77 → 68 en 3 días ('se empieza a ver repetitivo'). BALLON D'OR, PENALTY y HEAD SLOT salen casi iguales entre sí aunque cambie el jugador. Es el riesgo de 'contenido inauténtico'.",
-   "La semana creció menos que la anterior: −21 % en vistas y −53 % en suscriptores. Fue la semana de las 9-15 subidas por día; la corrección arrancó el 14/11.",
-   "HEAD SLOT debutó con 1.843 (1 video, confianza baja).",
-   "La imagen de la propuesta VS STOP (#14) se perdió por un choque entre 2 máquinas de prototipos. Ya la arreglé y la estoy regenerando."
+   "Originalidad 57/100 (hace 4 días era 88; a los 55 pasa a ser la prioridad uno): 16 de los últimos 60 videos son casi idénticos a otro y los títulos se parecen 66 %. El Ingeniero hace las variantes visuales y de títulos el jueves 19/11.",
+   "HEAD FIT se cansa: sus últimos 4 rinden el 59 % de los 4 anteriores y su mediana bajó a 4.418 (alta).",
+   "Vistas por día ~44 K: la semana de 8 todavía no muestra mejora (se juzga el 24/11).",
+   "En la hoja de control del 19/11 encontré el WHEEL de las 23:00 con el título 'Mbappé vs Vinícius or Vinícius'. Un título subido no se puede corregir."
   ],
   "hice": [
-   "BALLON D'OR y PENALTY bajan a máximo 2 por semana, y le pedí al Ingeniero 3-4 variantes visuales de cada uno (y de HEAD SLOT) para el jueves. Reviso el 23/11.",
-   "Arreglé la máquina de prototipos para que un choque no pierda la hoja, y relancé la de VS STOP.",
-   "DRESS UP arreglado: propuesta con 2 muestras en #13 (te recomiendo que sí)."
+   "DRESS UP (aprobado en #13): 2 videos de prueba, el 19/11 a las 20:00 (en lugar de un BALLON D'OR que pasaba su tope) y el 20/11 a las 20:00. El 18/11 ya estaba subido. Los dos se miden el 22/11.",
+   "Arreglé la causa del título repetido (WHEEL podía elegir 2 fotos del mismo jugador; lo probé en 400 títulos y quedó en 0) y mandé a rehacer ese video antes de que se suba.",
+   "VS STOP (#14): le pasé al Ingeniero tu pedido de hacerlo más difícil y más rápido. Lo trae el jueves con la hoja nueva."
   ],
   "para_el_ceo": [
-   "DRESS UP vuelve a prueba (2 videos antes del 20/11): respondé sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/13",
-   "VS STOP (duelo cara a cara, formato nuevo del Ingeniero): respondé sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/14",
-   "Pregunta para la IA de YouTube Studio: \"¿Cuáles de mis Shorts de los últimos 7 días tuvieron el mayor y el menor porcentaje de 'vistos vs. deslizados'?\""
+   "Nada para vos hoy."
   ]
  }
 }

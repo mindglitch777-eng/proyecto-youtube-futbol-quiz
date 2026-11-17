@@ -167,3 +167,17 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Ingeniero:** pedido del Gerente para el jueves 19/11 (CEO en #14): VS STOP más difícil (pelota más rápida y zona dorada más chica,
   con la corona siempre honesta) y regenerar la hoja de #14; 3 variantes visuales en VS, BALLON D'OR, PENALTY y HEAD SLOT
   (originalidad 57, alarma en 55); estructuras de título nuevas para WHEEL, HEAD FIT y sus variantes (títulos 66 % parecidos), con superestrellas al inicio.
+
+## 2026-11-17 · Gerente IA (turno diario)
+- **Vi:** 919 suscriptores (+16). Métrica que manda: 1,0 video de 10 K por día y ~44 K vistas por día (bajando). Originalidad 57 (límite 55): 16 de 60 casi idénticos y títulos 66 % parecidos.
+  Estrenos: CONVEYOR 23.494 (1.º) y 3.476 (2.º, 10 h), FAVORITE 10.443 en 13 h, HEAD SLOT 4.046 (baja). HEAD FIT cansado (59 %, mediana 4.418, alta). WHEEL 6.539 (alta).
+  Máquinas OK (solo mediciones canceladas por pisarse, normal). Inspector 104 sin defectos. Hoja de control 19/11: WHEEL 23:00 "Mbappé vs Vinícius or Vinícius".
+  CEO: "Aprobado" en #13 (DRESS); en #14 pidió VS STOP "más difícil, con velocidad mayor".
+- **Decidí e hice:** (1) DRESS: extras 19/11 20:00 (cancelé el BALLON D'OR de esa hora, que pasaba su tope de 2) y 20/11 20:00. El 18/11 estaba todo subido salvo HEAD FIT (fijo), así que el 2.º va el 20/11; los dos se miden el 22/11.
+  6 preguntas: n = 1 video previo (por eso son pruebas) / dato sano / otra explicación: ola "dress" subiendo / peor caso: 2 lugares flojos, sale el 22/11 / se mide % visto ≥ 120 y ≥ mediana a 48 h / del CEO (aprobado).
+  (2) Arreglé la causa del título con nombre repetido en WHEEL y mandé a rehacer el del 19/11 23:00. Mío (arreglar fallas).
+  (3) VS STOP: pedido del CEO pasado al Ingeniero (jueves); #14 queda abierta.
+- **No toqué (a propósito):** HEAD FIT (es fijo; se mira el 20/11); los videos del 17-18/11 con el cuadradito en el CTA (decidido ayer).
+- **Revisar el 2026-11-18:** cancelar el video que el plan ponga el 20/11 a las 20:00 (ahí va DRESS) y verificar que los 2 DRESS y el WHEEL rehecho se vean bien; cerrar #13.
+- **Revisar el 2026-11-19:** entrega del Ingeniero (variantes, títulos, VS STOP). **20/11:** HEAD FIT y vistas por día. **22/11** DRESS. **23/11** originalidad. **24/11** comparación para el CEO.
+- **Para el CEO:** nada.

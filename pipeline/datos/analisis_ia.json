@@ -1,10 +1,10 @@
 {
- "fecha": "2026-11-16",
- "autor": "Gerente IA · revisión semanal (lunes 16/11)",
+ "fecha": "2026-11-17",
+ "autor": "Gerente IA · parte diario (17/11)",
  "veredicto": {
   "color": "amber",
-  "titulo": "Faltan 97 suscriptores; la originalidad es el riesgo de la semana",
-  "frase": "903 suscriptores. El canal hace 1 video de 10 K por día (meta 3) y ~58 K vistas por día (meta 110 K). La semana pasada creció menos que la anterior. Lo nuevo que más promete es CONVEYOR STOP. Lo que más preocupa es que 3 formatos salen casi iguales entre sí: ya está pedido el arreglo."
+  "titulo": "Los estrenos prometen; la originalidad está cerca del límite",
+  "frase": "919 suscriptores (faltan 81). CONVEYOR STOP y FAVORITE arrancaron con 23 K y 10 K. Pero la originalidad bajó a 57 (el límite es 55) y las vistas por día bajaron a ~44 K. El jueves llegan las variantes visuales y de títulos."
  },
  "numeros_clave": [
   {
@@ -14,46 +14,54 @@
   },
   {
    "label": "Vistas por día",
-   "valor": "~58 K",
+   "valor": "~44 K",
    "nota": "meta 110 K"
   },
   {
    "label": "Suscriptores",
-   "valor": "903 / 1.000",
-   "nota": "+259 en la semana"
+   "valor": "919 / 1.000",
+   "nota": "+16 en el día"
   },
   {
    "label": "Originalidad",
-   "valor": "68/100",
-   "nota": "88 hace 3 días · 'empieza a verse repetitivo'"
+   "valor": "57/100",
+   "nota": "límite 55 · era 88 el 14/11"
   },
   {
    "label": "CONVEYOR STOP",
-   "valor": "12.152",
-   "nota": "1.er video, en ~14 h"
+   "valor": "23.494",
+   "nota": "1.er video"
   },
   {
-   "label": "WHEEL",
-   "valor": "7.866",
-   "nota": "mediana 48 h, 16 medidos"
+   "label": "FAVORITE",
+   "valor": "10.443",
+   "nota": "1.er video, en 13 h"
   }
  ],
  "hallazgos": [
   {
    "tipo": "no",
    "titulo": "La originalidad cae rápido: 3 formatos salen casi iguales entre sí",
-   "dato": "Índice 88 → 77 → 68 en 3 días; 11 de los últimos 60 videos son casi idénticos a otro. Son BALLON D'OR, PENALTY y HEAD SLOT: distancia 0-6 entre videos del mismo formato, aunque cambie el jugador.",
+   "dato": "Índice 88 → 77 → 68 → 57 en 4 días; 16 de los últimos 60 videos son casi idénticos a otro y los títulos se parecen 66 %. BALLON D'OR, PENALTY y HEAD SLOT salen casi iguales entre sí.",
    "por_que": "Usan el mismo fondo, el mismo armado y los mismos momentos; solo cambia la cara. Un revisor de YouTube lo ve como plantilla: es nuestro mayor riesgo para monetizar.",
    "confianza": "alta (lo mide la huella visual de cada video)",
-   "accion": "BALLON D'OR y PENALTY a máx. 2 por semana; el Ingeniero arma 3-4 variantes visuales de cada uno (jueves 19/11). Se revisa el 23/11: el índice tiene que volver arriba de 80."
+   "accion": "BALLON D'OR y PENALTY a máx. 2 por semana (el del 19/11 se cambió por DRESS). El jueves 19/11 el Ingeniero suma variantes visuales y estructuras de título nuevas. Si baja de 55 antes, es prioridad uno."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Un título con el mismo jugador dos veces casi se sube",
+   "dato": "WHEEL del 19/11 23:00: 'Mbappé vs Vinícius or Vinícius'. Lo encontró la hoja de control antes de subirse.",
+   "por_que": "La rueda elegía 3 fotos de estrellas al azar y Vinícius tiene 2 fotos.",
+   "confianza": "alta",
+   "accion": "Arreglado (3 jugadores distintos; 0 errores en 400 títulos de prueba) y video rehecho."
   },
   {
    "tipo": "funciona",
-   "titulo": "CONVEYOR STOP arrancó muy fuerte",
-   "dato": "Su 1.er video (15/11 17:00) hizo 12.152 vistas en ~14 h: 868 por hora, el mejor ritmo del canal en 72 h. HEAD SLOT, en cambio, 1.843.",
-   "por_que": "Hereda la decisión entre superestrellas de WHEEL pero se ve distinto (cinta en vez de rueda).",
-   "confianza": "baja (1 video)",
-   "accion": "Sigue en estreno hasta el 22/11 (3 lugares asegurados). Al 4.º video medido se decide."
+   "titulo": "Los estrenos arrancaron fuerte",
+   "dato": "CONVEYOR STOP 23.494 (su 1.er video; el 2.º 3.476 en 10 h), FAVORITE 10.443 en 13 h (803 por hora, el mejor ritmo del canal), HEAD SLOT 4.046.",
+   "por_que": "Mantienen lo que funciona (elegir entre superestrellas y parar justo) pero se ven distintos.",
+   "confianza": "baja (1-2 videos cada uno)",
+   "accion": "Siguen en estreno (3 lugares asegurados); se deciden con 4 videos medidos."
   },
   {
    "tipo": "no",
@@ -90,7 +98,7 @@
   {
    "tipo": "funciona",
    "titulo": "WHEEL es el motor del canal",
-   "dato": "Mediana 7.866 a las 48 h (4,4x el canal) en 16 videos; 1,29 suscriptores cada 1.000; 174 % visto. A las 21:30 hace 12 K de mediana.",
+   "dato": "Mediana 6.539 a las 48 h (3,7x el canal) en 16 videos; 184 % visto; 1,29 suscriptores cada 1.000.",
    "por_que": "Reto de parar justo + elegir entre superestrellas: el que mira juega y se queda a ver si acertó.",
    "confianza": "alta (11 videos)",
    "accion": "1 por día fijo a las 21:30. Sus variantes nuevas (LEGS WHEEL, CONVEYOR STOP) alternan, máximo 1 variante por día."
@@ -120,12 +128,12 @@
    "accion": "Mirar el promedio de 7 días, no el día."
   },
   {
-   "tipo": "funciona",
-   "titulo": "HEAD FIT es la mayor oportunidad",
-   "dato": "Mediana 8.139 a las 48 h (4,5x el canal) en 6 medidos; el mejor 29.775. Viene bajando en sus últimos (−69 %).",
-   "por_que": "Superestrella reconocible en el cuadro 0 + reto claro.",
-   "confianza": "media (5 videos)",
-   "accion": "Fijo 1 por día; su variante HEAD SLOT ya está en prueba; A/B de duración 6,4 s contra 8 s en curso."
+   "tipo": "ojo",
+   "titulo": "HEAD FIT se cansa",
+   "dato": "Mediana 4.418 a las 48 h (2,5x el canal) en 8 medidos; sus últimos 4 rinden el 59 % de los 4 anteriores.",
+   "por_que": "Sale todos los días y ahora también tiene a HEAD SLOT y FIT ALL en la misma familia.",
+   "confianza": "alta",
+   "accion": "Mirar el 20/11; si sigue bajando, proponer al CEO sacarlo de lugar fijo algunos días (es formato fijo: decide el CEO)."
   },
   {
    "tipo": "no",
@@ -141,7 +149,7 @@
    "dato": "1 video: 10.702 a las 48 h (5x), 1,45 subs/1.000, pero 108,7 % visto y un parche negro. El detector marca la ola 'dress' subiendo.",
    "por_que": "Frena el scroll, pero la gente se va antes del loop.",
    "confianza": "baja (1 video)",
-   "accion": "Arreglado por el Ingeniero (sin parche negro, 6,8 s). Propuesta #13 con 2 muestras: espera el sí del CEO; fecha límite 22/11."
+   "accion": "Aprobado por el CEO (#13): 2 pruebas, 19/11 20:00 y 20/11 20:00. El 22/11: si no pasan 120 % visto y la mediana del canal, sale para siempre."
   }
  ],
  "reglas_matematicas": [
@@ -155,19 +163,19 @@
  "acciones": [
   {
    "quien": "Gerente IA",
-   "que": "16/11: BALLON D'OR y PENALTY máx. 2 por semana; máquina de prototipos arreglada; propuesta DRESS (#13)."
+   "que": "17/11: DRESS 19/11 y 20/11 a las 20:00; WHEEL con 3 estrellas distintas; VS STOP con el pedido del CEO pasado al Ingeniero."
   },
   {
    "quien": "Ingeniero",
-   "que": "Jueves 19/11: variantes visuales de BALLON D'OR, PENALTY y HEAD SLOT (prioridad), después STOP TO ESCAPE y SKILL STOP."
-  },
-  {
-   "quien": "CEO",
-   "que": "Responder sí o no en #13 (DRESS) y #14 (VS STOP); pasar los 'vistos vs. deslizados' de la semana de YouTube Studio."
+   "que": "Jueves 19/11: variantes visuales y de títulos (originalidad), VS STOP más difícil y más rápido, después STOP TO ESCAPE y SKILL STOP."
   },
   {
    "quien": "Gerente IA",
-   "que": "20/11 vistas y videos de 10 K por día · 22/11 DRESS · 23/11 originalidad · 24/11 comparación de la semana de 8 para el CEO."
+   "que": "18/11: sacar el video del plan del 20/11 a las 20:00 (ahí va DRESS) · 20/11 vistas y 10 K por día · 22/11 DRESS · 23/11 originalidad · 24/11 comparación para el CEO."
+  },
+  {
+   "quien": "CEO",
+   "que": "Nada por ahora."
   }
  ]
 }
