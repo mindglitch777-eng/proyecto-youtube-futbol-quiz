@@ -162,3 +162,8 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Para el CEO:** #13 (DRESS) y #14 (VS STOP), sí o no. Pregunta de YouTube Studio de "vistos vs. deslizados".
 - 16/11 (tarde): el Ingeniero arregló el cuadradito del CTA (el 👇 no se dibujaba en casi todos los formatos de parar; commit ef01f30). Los videos del 17 y el 18/11 ya fabricados lo traen.
   **Decidí no rehacerlos**: es un detalle chico en el texto del final, y rehacer ~12 videos gasta el tope de subidas y arriesga dejar horarios vacíos. Desde el lote del 19/11 sale bien. Revisar en la hoja de control del 19/11.
+
+## 2026-11-17 · Ingeniero (anotación)
+- **Ingeniero:** pedido del Gerente para el jueves 19/11 (CEO en #14): VS STOP más difícil (pelota más rápida y zona dorada más chica,
+  con la corona siempre honesta) y regenerar la hoja de #14; 3 variantes visuales en VS, BALLON D'OR, PENALTY y HEAD SLOT
+  (originalidad 57, alarma en 55); estructuras de título nuevas para WHEEL, HEAD FIT y sus variantes (títulos 66 % parecidos), con superestrellas al inicio.
