@@ -178,6 +178,6 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   (2) Arreglé la causa del título con nombre repetido en WHEEL y mandé a rehacer el del 19/11 23:00. Mío (arreglar fallas).
   (3) VS STOP: pedido del CEO pasado al Ingeniero (jueves); #14 queda abierta.
 - **No toqué (a propósito):** HEAD FIT (es fijo; se mira el 20/11); los videos del 17-18/11 con el cuadradito en el CTA (decidido ayer).
-- **Revisar el 2026-11-18:** cancelar el video que el plan ponga el 20/11 a las 20:00 (ahí va DRESS) y verificar que los 2 DRESS y el WHEEL rehecho se vean bien; cerrar #13.
+- **Revisar el 2026-11-18:** cancelar el video que el plan ponga el 20/11 a las 20:00 (ahí va DRESS). (Los 2 DRESS y el WHEEL rehecho ya los revisé a ojo: bien. #13 cerrada.)
 - **Revisar el 2026-11-19:** entrega del Ingeniero (variantes, títulos, VS STOP). **20/11:** HEAD FIT y vistas por día. **22/11** DRESS. **23/11** originalidad. **24/11** comparación para el CEO.
 - **Para el CEO:** nada.
