@@ -351,7 +351,8 @@ def guion_rueda(gid, rng, V, fecha):
         ley = [t for t in TORSOS_LEYENDA if t.rsplit("_", 1)[0] != base]
         ley = rng.sample(ley, len(ley))
         ley = [t for i, t in enumerate(ley) if t.rsplit("_", 1)[0] not in {x.rsplit("_", 1)[0] for x in ley[:i]}][:4]   # 4 leyendas distintas
-        torsos = rng.sample(estrellas, 3) + ley                                # 15/11 CEO: solo famosos (3 estrellas + 4 leyendas)
+        claves = rng.sample(sorted({t.rsplit("_", 1)[0] for t in estrellas}), 3)   # 17/11: 3 estrellas DISTINTAS (antes 2 fotos del mismo: "Vinícius or Vinícius")
+        torsos = [rng.choice([t for t in estrellas if t.rsplit("_", 1)[0] == k]) for k in claves] + ley   # 15/11 CEO: solo famosos (3 estrellas + 4 leyendas)
         rng.shuffle(torsos)
         clave = (cuerpo,) + tuple(sorted(torsos))
         if clave not in usados:
