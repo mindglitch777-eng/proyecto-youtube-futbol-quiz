@@ -84,6 +84,28 @@
   "cancelado": "15/11 Gerente: hecho antes de la regla SOLO FAMOSOS (torsos de secundarios). NO subir; lo cubre un extra rehecho."
  },
  {
+  "id": "s1119_06_jue19_2000_balon",
+  "tipo": "balon",
+  "variante": null,
+  "fecha": "2026-11-19",
+  "hora": "20:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "17/11 Gerente: lugar para DRESS UP (aprobado por el CEO en #13); BALLON D'OR ya pasaba su tope de 2 por semana. NO subir."
+ },
+ {
+  "id": "s1119_08_jue19_2300_rueda",
+  "tipo": "rueda",
+  "variante": null,
+  "fecha": "2026-11-19",
+  "hora": "23:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "17/11 Gerente: título con nombre repetido (\"Mbappé vs Vinícius or Vinícius\"). NO subir; lo cubre un extra rehecho."
+ },
+ {
   "id": "s1_05_dom01_0900_stop",
   "tipo": "stop",
   "fecha": "2026-11-01",
@@ -2056,25 +2078,81 @@
   "subido": "2026-11-17T10:39:29+00:00"
  },
  {
-  "id": "s1119_06_jue19_2000_balon",
-  "tipo": "balon",
+  "id": "s1118_08_mie18_2300_cabezas",
+  "tipo": "cabezas",
   "variante": null,
-  "fecha": "2026-11-19",
-  "hora": "20:00",
-  "titulo": null,
-  "video_id": null,
+  "exp": {
+   "id": "e5_cabezas_duracion",
+   "brazo": 6.4
+  },
+  "fecha": "2026-11-18",
+  "hora": "23:00",
+  "titulo": "Fit Neymar's head 🛑 Only 1% can #neymar #messi #ronaldo",
+  "video_id": "QTw6tfau2IQ",
   "error": null,
-  "cancelado": "17/11 Gerente: lugar para DRESS UP (aprobado por el CEO en #13); BALLON D'OR ya pasaba su tope de 2 por semana. NO subir."
+  "subido": "2026-11-17T21:46:28+00:00"
  },
  {
-  "id": "s1119_08_jue19_2300_rueda",
-  "tipo": "rueda",
+  "id": "s1119_01_jue19_1100_slot",
+  "tipo": "slot",
   "variante": null,
+  "exp": null,
   "fecha": "2026-11-19",
-  "hora": "23:00",
-  "titulo": null,
-  "video_id": null,
+  "hora": "11:00",
+  "titulo": "Mbappé vs Yamal or Neymar head slot 🎰🛑 #mbappe #yamal #neymar",
+  "video_id": "h1xbM6V6t2U",
   "error": null,
-  "cancelado": "17/11 Gerente: título con nombre repetido (\"Mbappé vs Vinícius or Vinícius\"). NO subir; lo cubre un extra rehecho."
+  "subido": "2026-11-17T21:46:30+00:00"
+ },
+ {
+  "id": "s1119_02_jue19_1300_cinta",
+  "tipo": "cinta",
+  "variante": null,
+  "exp": null,
+  "fecha": "2026-11-19",
+  "hora": "13:00",
+  "titulo": "Find Messi's real body 🛑🔥 Vinícius or Neymar? #messi #vinicius #neymar",
+  "video_id": "1d_JtYdw0pU",
+  "error": null,
+  "subido": "2026-11-17T21:46:32+00:00"
+ },
+ {
+  "id": "s1119_03_jue19_1500_favorito",
+  "tipo": "favorito",
+  "variante": null,
+  "exp": {
+   "id": "e4_favorito_leyendas",
+   "brazo": true
+  },
+  "fecha": "2026-11-19",
+  "hora": "15:00",
+  "titulo": "Pause on your idol ⚽😱 Ronaldo or Ronaldinho? #ronaldo #ronaldinho #zlatan",
+  "video_id": "3lqoPAYqDYs",
+  "error": null,
+  "subido": "2026-11-17T21:46:34+00:00"
+ },
+ {
+  "id": "s1119_04_jue19_1700_circulo",
+  "tipo": "circulo",
+  "variante": null,
+  "exp": null,
+  "fecha": "2026-11-19",
+  "hora": "17:00",
+  "titulo": "Who is the BEST footballer? 🐐 Pause it! #neymar #mbappe #yamal",
+  "video_id": "9-4VxYwWsxQ",
+  "error": null,
+  "subido": "2026-11-17T21:46:35+00:00"
+ },
+ {
+  "id": "s1119_05_jue19_1830_penal",
+  "tipo": "penal",
+  "variante": null,
+  "exp": null,
+  "fecha": "2026-11-19",
+  "hora": "18:30",
+  "titulo": "Can Ronaldo score at 100%?  Stop it in the top corner ⚽🛑 #ronaldo #penalty",
+  "video_id": "Ypeq2fTckLw",
+  "error": null,
+  "subido": "2026-11-17T21:46:38+00:00"
  }
 ]
