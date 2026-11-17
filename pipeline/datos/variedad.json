@@ -977,6 +977,10 @@
    ],
    [
     "Mbappé",
+    "Ronaldo"
+   ],
+   [
+    "Mbappé",
     "Yamal"
    ],
    [
@@ -990,6 +994,10 @@
    [
     "Messi",
     "Salah"
+   ],
+   [
+    "Messi",
+    "Yamal"
    ],
    [
     "Messi",
@@ -3258,6 +3266,14 @@
   [
    "2026-11-16",
    "Benzema"
+  ],
+  [
+   "2026-11-19",
+   "Ronaldo"
+  ],
+  [
+   "2026-11-20",
+   "Yamal"
   ]
  ],
  "ganadores": {
@@ -3428,7 +3444,9 @@
   "chipi_chapa_0",
   "trallallero_2",
   "patapim_0",
-  "bombardiro_0"
+  "bombardiro_0",
+  "chipi_chapa_0",
+  "trallallero_2"
  ],
  "titulos": {
   "plinko": [
@@ -3610,7 +3628,9 @@
    4,
    1,
    0,
-   3
+   3,
+   1,
+   4
   ],
   "stop_tema": [
    5,
