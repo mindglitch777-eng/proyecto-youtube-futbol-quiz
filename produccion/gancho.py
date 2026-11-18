@@ -27,6 +27,7 @@ TEXTOS = {
     "rueda": dict(gancho=["STOP ON {n}", "FIND {n}'S BODY", "STOP ON {n}'S BODY"],
                   apuesta=["99% IMPOSSIBLE", "IMPOSSIBLE LEVEL", "ONLY 1% GET IT"],
                   cta=["HOW MANY TRIES? COMMENT 👇 · FOLLOW FOR PART 2"]),
+    "escape": dict(gancho=["FREE YOUR GOAT", "WHO ESCAPES?"], apuesta=["TINY KEYHOLE · 1% CAN"], cta=["HOW MANY TRIES? WHO ESCAPED?"]),
     "favorito": dict(gancho=["STOP ON YOUR FAVORITE", "PAUSE ON YOUR GOAT", "STOP THE BALL ON YOUR IDOL"],
                      apuesta=["IT GETS FASTER...", "ONLY REAL FANS GET HIM", "BE QUICK!"],
                      cta=["COMMENT WHO YOU GOT · FOLLOW FOR PART 2"]),
@@ -81,6 +82,7 @@ FIJADO = {"stop": "How many tries did it take you? 😤 I read them all 👇",
 
 # 15/11 (IA de YouTube Studio): lo que más comenta nuestro público es EN QUÉ INTENTO LO LOGRÓ ("first try", "8 tries but I did it").
 FIJADO_INTENTO = "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥"
+FIJADO["escape"] = "Who did you free, and on which try? 🔑 First try = drop a 🔥"
 for _k in ("rueda", "piernas", "cinta", "cabezas", "slot", "fitall", "balon", "siuu", "penal"):
     FIJADO[_k] = FIJADO_INTENTO
 

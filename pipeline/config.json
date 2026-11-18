@@ -125,6 +125,11 @@
    "nombre": "VS STOP",
    "min": 0,
    "max": 7
+  },
+  "escape": {
+   "nombre": "STOP TO ESCAPE",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -277,6 +282,12 @@
    "max_semana": 4,
    "nota": "18/11: el CEO pidió 'más difícil, más rápido' (#14): 4 idas en 7 s y zona dorada 0,94. Estreno: 3 lugares asegurados la 1.ª semana.",
    "estreno_hasta": "2026-11-25"
+  },
+  "escape": {
+   "listo": true,
+   "max_semana": 4,
+   "estreno_hasta": "2026-11-25",
+   "nota": "18/11 pedido del CEO (formatos nuevos ya, más difíciles). Estreno: 3 lugares asegurados la 1.ª semana."
   }
  }
 }

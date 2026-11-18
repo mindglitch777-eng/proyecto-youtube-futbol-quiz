@@ -34,12 +34,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -502,6 +502,30 @@ def guion_vs(gid, rng, V, fecha):
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
 
 
+# STOP TO ESCAPE (18/11, pedido del CEO: formatos nuevos ya, más difíciles): 3 estrellas en jaulas, una llave rápida;
+# pausás cuando la llave está en la cerradura de tu estrella y escapa.
+TIT_ESCAPE = ["Free {a}, {b} or {c}? 🔑 Stop the key in the lock", "Who escapes? 🔑 {a}, {b} or {c}",
+              "{a} vs {b} vs {c}: free your GOAT 🔑🛑", "Stop the key to free {a} 🔑 Only 1% can"]
+
+
+def guion_escape(gid, rng, V, fecha):
+    ult = V.contadores.setdefault("escape_ult", [])
+    hoy = sorted(TORSOS_ESTRELLA)
+    dos = sorted(hoy, key=lambda c: (ult[-6:].count(c), rng.random()))[:2]
+    ult.extend(dos); del ult[:-12]
+    ley = rng.choice(TORSOS_LEYENDA)
+    presos = [rng.choice(TORSOS_ESTRELLA[dos[0]]), ley, rng.choice(TORSOS_ESTRELLA[dos[1]])]
+    if rng.random() < 0.5:
+        presos[0], presos[2] = presos[2], presos[0]
+    nombres = [nombre_de(c.rsplit("_", 1)[0]) for c in presos]
+    a, b, c = [n.upper() for n in nombres]
+    tx = dict(gancho=rng.choice(["FREE YOUR GOAT", "WHO ESCAPES?", "STOP THE KEY"]),
+              apuesta=rng.choice(["TINY KEYHOLE · 1% CAN", "IMPOSSIBLE SPEED", "ONLY 1% FREE HIM"]),
+              cta="HOW MANY TRIES? WHO ESCAPED?")
+    return dict(id=gid, presos=presos, nombres=nombres, dur=7.5, idas=3, zona=26, fase=round(rng.uniform(0, 6.28), 2),
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
+
+
 # Formatos nuevos con la mecánica STOP (ideas de la IA de YouTube Studio, 02/11)
 TIT_SIUU = ["Pause Ronaldo at 67 😱 SIUUU challenge", "Only 1% stop CR7 at 67 🛑 SIUUU", "Stop at 67 = SIUUU 🔥 Can you do it?",
             "SIUUU at 67 🛑 Pause it at the top!"]
@@ -740,6 +764,13 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                 fijado = f"I was sure {ns[(g['ganador'] + 1) % 4]} had it 😭 who did you pick?"
             desc += "\n" + " ".join(tag(n) for n in ns) + f" #football #soccer #{'plinko' if tipo == 'plinko' else 'challenge'} #goat #shorts"
             fotos = [FOTOS[c] for c in g["jugadores"]]; nombres = ns
+        elif tipo == "escape":
+            g = guion_escape(gid, rng, V, sl["fecha"])
+            a, b, c3 = g["nombres"]
+            titulo = V.titulo("escape", TIT_ESCAPE, rng).format(a=a, b=b, c=c3) + " " + " ".join(tag(x) for x in (a, b, c3))
+            desc = ("Stop the key in the lock to free your GOAT 🔑🛑 How many tries did it take you? 👇\n"
+                    + " ".join(tag(x) for x in g["nombres"]) + " #football #shorts")
+            fijado = ""; fotos = []; nombres = g["nombres"]
         elif tipo == "favorito":
             g = guion_favorito(gid, rng, V, sl["fecha"], leyendas=sl.get("leyendas", True))
             a, b, c3 = g["nombres"][:3]
