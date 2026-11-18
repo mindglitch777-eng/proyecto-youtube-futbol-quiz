@@ -66,12 +66,13 @@ def armar(g):
 
 def x_de(g, t):
     """Posición de la pelota en el medidor, de -1 (estrella izquierda) a 1 (derecha). Arranca en el medio, ya moviéndose."""
-    return math.sin(2 * math.pi * t * 2 / g["dur"] + g.get("fase", 0.0))
+    return math.sin(2 * math.pi * t * g.get("idas", 2) / g["dur"] + g.get("fase", 0.0))   # 18/11 CEO: más rápido = más difícil
 
 
 def ganador(g, t):
     x = x_de(g, t)
-    return 0 if x <= -UMBRAL else 1 if x >= UMBRAL else None
+    u = g.get("umbral", UMBRAL)                                               # 18/11: zona dorada más chica = más difícil
+    return 0 if x <= -u else 1 if x >= u else None
 
 
 def entradas(g):
@@ -94,7 +95,7 @@ def medidor(im, g, t, gana):
     d.rounded_rectangle([xm, BAR_Y - 38, BAR_X1, BAR_Y + 38], 38, fill=c1)
     d.rectangle([xm - 40, BAR_Y - 38, xm + 40, BAR_Y + 38], fill=c0); d.rectangle([xm, BAR_Y - 38, xm + 40, BAR_Y + 38], fill=c1)
     mitad = (BAR_X1 - BAR_X0) / 2
-    zona = mitad - (mitad - 40) * UMBRAL + 22                                  # lo dorado = donde está la pelota cuando gana
+    zona = mitad - (mitad - 40) * g.get("umbral", UMBRAL) + 22                                  # lo dorado = donde está la pelota cuando gana
     for k, (xa, xb) in enumerate(((BAR_X0, BAR_X0 + zona), (BAR_X1 - zona, BAR_X1))):
         on = gana == k
         d.rounded_rectangle([xa, BAR_Y - 38, xb, BAR_Y + 38], 30, fill=(255, 214, 40) if on else (255, 196, 30, 200),

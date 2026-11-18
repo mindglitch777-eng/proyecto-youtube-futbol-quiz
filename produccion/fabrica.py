@@ -495,9 +495,10 @@ def guion_vs(gid, rng, V, fecha):
     cols = [COLOR_VS[c.rsplit("_", 1)[0]] for c in duelo]
     a, b = [n.upper() for n in nombres]
     tx = dict(gancho=rng.choice([f"{a} OR {b}?", "STOP ON YOUR GOAT", f"{a} VS {b}"]),
-              apuesta=rng.choice(["STOP IN THE GOLD ZONE", "GOLD ZONE = HE WINS", "ONLY 1% STOP IT IN TIME"]),
-              cta="WHO DID YOU PICK? COMMENT NOW")
+              apuesta=rng.choice(["IMPOSSIBLE SPEED", "TINY GOLD ZONE · 1% CAN", "ONLY 1% STOP IT IN TIME"]),
+              cta="HOW MANY TRIES? WHO WON?")
     return dict(id=gid, cuerpos=duelo, nombres=nombres, colores=cols, dur=7.0, fase=rng.choice([0.0, math.pi]),
+                idas=4, umbral=0.94,                                           # 18/11 CEO: "más difícil, más rápido" (antes 2 idas y 0,88)
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
 
 
