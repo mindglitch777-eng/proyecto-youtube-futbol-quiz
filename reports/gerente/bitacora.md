@@ -181,3 +181,14 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Revisar el 2026-11-18:** cancelar el video que el plan ponga el 20/11 a las 20:00 (ahí va DRESS). (Los 2 DRESS y el WHEEL rehecho ya los revisé a ojo: bien. #13 cerrada.)
 - **Revisar el 2026-11-19:** entrega del Ingeniero (variantes, títulos, VS STOP). **20/11:** HEAD FIT y vistas por día. **22/11** DRESS. **23/11** originalidad. **24/11** comparación para el CEO.
 - **Para el CEO:** nada.
+
+## 2026-11-18 · Gerente IA (turno diario)
+- **Vi:** 942 suscriptores (+23). Vistas del canal por día: 16/11 +35 K y 17/11 +28 K (13-14/11 ~60 K): baja desde la semana de 8 (baja: 2 días). 10 K por día: 1,0.
+  CONVEYOR 23.540 y 23.111 (baja, 2 videos); FAVORITE 17.008; LEGS WHEEL 1.555; HEAD FIT cansado (54 %, 3.798). Originalidad 49 en el tablero: falsa alarma (con lo subido, 76).
+  Hoja de control 20/11: HEAD SLOT 15:00 y HEAD FIT 23:00, los dos "Fit Mbappé's head" con el mismo cuerpo. 19/11: 5 subidos + 3 pendientes (DRESS, HEAD FIT, WHEEL rehecho): bien.
+- **Decidí e hice:** (1) Originalidad mide solo lo subido (falla de medición). (2) Tope semanal cuenta los 6 días anteriores. (3) HEAD FIT y HEAD SLOT rotan jugador juntos; rehíce el HEAD SLOT del 20/11. (4) DRESS 20/11 20:00 (cancelé el PENALTY de esa hora).
+  6 preguntas (para 1-3, son arreglos de fallas): n = 60 huellas / 4 BALLON D'OR / 3 Mbappé en 2 días · dato sano: verificado contra publicados.json · otra explicación: no, el código lo muestra · peor caso: el índice nuevo subestima repetición de lo que viene → igual se ve en la hoja de control diaria; se deshace con git · se mide: índice el 23/11, BALLON D'OR ≤ 2 por semana, sin el mismo jugador en HEAD FIT/HEAD SLOT 2 días seguidos · mío (arreglar fallas).
+- **No toqué (a propósito):** la cantidad por día (decisión del CEO el 24/11); HEAD FIT (es fijo).
+- **Para el 24/11 (al CEO):** con 8 por día los topes no alcanzan (~42 lugares de prueba por semana contra ~29 de topes), así que los formatos se repiten por fuerza. Llevar ese dato junto con las vistas por día.
+- **Revisar el 2026-11-19:** entrega del Ingeniero y hoja de VS STOP (#14) · **21/11** HEAD FIT · **22/11** DRESS · **23/11** originalidad > 80 · **24/11** comparación para el CEO.
+- **Para el CEO:** nada.

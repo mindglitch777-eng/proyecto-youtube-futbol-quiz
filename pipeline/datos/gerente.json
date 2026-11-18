@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-18",
- "hora": "07:05",
+ "hora": "15:43",
  "canal": {
   "mediana_48h_semana": 1640,
   "mediana_48h_semana_anterior": 2263,
@@ -25,14 +25,14 @@
  },
  "originalidad": {
   "fecha": "2026-11-18",
-  "indice": 57,
+  "indice": 76,
   "subidas_semana": 71,
   "formato_mas_usado": "stop",
   "concentracion": 0.18,
   "parecido_titulos": 0.66,
-  "casi_identicos": 16,
-  "medidos": 60,
-  "musicas_distintas": 9,
+  "casi_identicos": 3,
+  "medidos": 41,
+  "musicas_distintas": 10,
   "reparto_semana": {
    "rueda": 11,
    "stop": 13,
@@ -52,13 +52,12 @@
    "penal": 2
   },
   "alertas": [
-   "Los títulos se parecen 66% en promedio: falta variedad de frases.",
-   "16 de los últimos 60 videos son casi idénticos a otro (misma imagen en los mismos momentos)."
+   "Los títulos se parecen 66% en promedio: falta variedad de frases."
   ],
-  "lectura": "OJO: se empieza a ver repetitivo"
+  "lectura": "BIEN: variado"
  },
  "inspeccion": {
-  "revisados": 104,
+  "revisados": 127,
   "con_defectos": 0,
   "ejemplos": []
  },
@@ -67,7 +66,7 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-18T06:04-03:00",
+   "hora": "2026-11-18T15:27-03:00",
    "problemas": [],
    "acciones": [],
    "avisos": []
@@ -86,10 +85,12 @@
    "2026-11-14": 0,
    "2026-11-15": 1,
    "2026-11-16": 0
-  }
+  },
+  "vistas_por_dia": 38882,
+  "subs_por_dia": 17.0
  },
  "cerebro": {
-  "fecha": "2026-11-18T07:05-03:00",
+  "fecha": "2026-11-18T15:43-03:00",
   "videos_medidos": 100,
   "formatos": {
    "cinta": {
@@ -336,15 +337,15 @@
     "fitall": "9%",
     "circulo": "8%",
     "balon": "7%",
-    "q20balon": "5%",
     "favorito": "5%",
     "slot": "5%",
-    "piernas": "4%",
+    "q20balon": "5%",
     "cinta": "4%",
+    "piernas": "4%",
     "penal": "4%",
+    "q20fichaje": "1%",
     "find": "1%",
     "q20costo": "1%",
-    "q20fichaje": "1%",
     "trayectoria": "1%"
    }
   },
@@ -1173,14 +1174,11 @@
  ],
  "olas_calientes": [
   {
-   "mecanica": "quiz",
+   "mecanica": "wheel",
    "estado": "subiendo",
-   "vph": 1033,
+   "vph": 1476,
    "nuestros": [
-    "trayectoria",
-    "tridente",
-    "q20fichaje",
-    "q20costo"
+    "rueda"
    ]
   }
  ],
@@ -1195,7 +1193,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 18,
+  "olas_hace_h": 3,
   "investigacion": "2026-11-17",
   "poda": {
    "podadas": {
@@ -1214,7 +1212,7 @@
      "motivo": "auditoría A2: la poda vieja lo comparaba contra STOP; tuvo videos de 20.984 y 8.486"
     }
    ],
-   "mediana_canal": 2034
+   "mediana_canal": 1959
   },
   "advertencias": [
    "Mañana (2026-11-19) tiene 5 videos subidos de 6: revisá producción y subida YA.",
@@ -1222,22 +1220,21 @@
   ]
  },
  "parte": {
-  "fecha": "2026-11-17",
-  "titular": "919 de 1.000 suscriptores (faltan 81; +16 en el día). La métrica que manda: 1,0 video de 10 K por día (meta 3) y ~44 K vistas por día (meta 110 K, y bajando).",
+  "fecha": "2026-11-18",
+  "titular": "942 de 1.000 suscriptores (faltan 58). La métrica que manda: 1,0 video de 10 K por día (meta 3); vistas por día en baja: +35 K el 16/11 y +28 K el 17/11 (el 13 y el 14/11 eran ~60 K).",
   "funciona": [
-   "Los estrenos arrancaron fuerte: CONVEYOR STOP hizo 23.494 con su 1.er video, FAVORITE 10.443 en 13 h (803 por hora, el mejor ritmo del canal) y HEAD SLOT 4.046. Confianza baja (1 video cada uno).",
-   "WHEEL sigue siendo el más firme: mediana 6.539 a las 48 h (3,7x el canal, 16 medidos, alta)."
+   "CONVEYOR STOP: sus 2 primeros videos hicieron 23.540 y 23.111 (12,6x el canal). Es lo mejor que salió en semanas. Confianza baja (2 videos), pero es la gran pista.",
+   "FAVORITE: 17.008 con su 2.º video. WHEEL sigue firme: mediana 7.434 (alta)."
   ],
   "no_funciona": [
-   "Originalidad 57/100 (hace 4 días era 88; a los 55 pasa a ser la prioridad uno): 16 de los últimos 60 videos son casi idénticos a otro y los títulos se parecen 66 %. El Ingeniero hace las variantes visuales y de títulos el jueves 19/11.",
-   "HEAD FIT se cansa: sus últimos 4 rinden el 59 % de los 4 anteriores y su mediana bajó a 4.418 (alta).",
-   "Vistas por día ~44 K: la semana de 8 todavía no muestra mejora (se juzga el 24/11).",
-   "En la hoja de control del 19/11 encontré el WHEEL de las 23:00 con el título 'Mbappé vs Vinícius or Vinícius'. Un título subido no se puede corregir."
+   "Las vistas por día bajan desde que arrancó la semana de 8 videos (35 K y 28 K en los 2 primeros días). Es poco tiempo para concluir (2 días), pero va en la misma dirección que la lección del 13/11. Se decide el 24/11 como pediste.",
+   "HEAD FIT se cansa: sus últimos 4 rinden el 54 % de los 4 anteriores (mediana 3.798). Tenía a Mbappé en 1 de cada 3 videos (ver abajo).",
+   "LEGS WHEEL debutó flojo: 1.555 (1 video, confianza baja)."
   ],
   "hice": [
-   "DRESS UP (aprobado en #13): 2 videos de prueba, el 19/11 a las 20:00 (en lugar de un BALLON D'OR que pasaba su tope) y el 20/11 a las 20:00. El 18/11 ya estaba subido. Los dos se miden el 22/11.",
-   "Arreglé la causa del título repetido (WHEEL podía elegir 2 fotos del mismo jugador; lo probé en 400 títulos y quedó en 0) y mandé a rehacer ese video antes de que se suba.",
-   "VS STOP (#14): le pasé al Ingeniero tu pedido de hacerlo más difícil y más rápido. Lo trae el jueves con la hoja nueva."
+   "La alarma de originalidad (49, 'producción en masa') era un error de medición: contaba reintentos y videos sin subir. Medido con lo que está en el canal da 76 ('bien'). Lo arreglé. Lo que sí es real: los títulos se parecen 66 % y hay 3 pares casi iguales de BALLON D'OR y PENALTY. Las variantes del Ingeniero llegan mañana.",
+   "Arreglé 2 fallas que repetían contenido: (1) el tope semanal no contaba los días anteriores (BALLON D'OR salió 4 veces con tope 2); (2) HEAD FIT elegía el cuerpo al azar y Mbappé salía en 1 de cada 3. Ahora HEAD FIT y HEAD SLOT rotan jugador juntos. Rehíce el HEAD SLOT del 20/11, que repetía a Mbappé.",
+   "DRESS 2.ª prueba: el 20/11 a las 20:00 (en lugar de un PENALTY)."
   ],
   "para_el_ceo": [
    "Nada para vos hoy."

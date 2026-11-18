@@ -1,13 +1,13 @@
 {
  "fecha": "2026-11-18",
- "indice": 57,
+ "indice": 76,
  "subidas_semana": 71,
  "formato_mas_usado": "stop",
  "concentracion": 0.18,
  "parecido_titulos": 0.66,
- "casi_identicos": 16,
- "medidos": 60,
- "musicas_distintas": 9,
+ "casi_identicos": 3,
+ "medidos": 41,
+ "musicas_distintas": 10,
  "reparto_semana": {
   "rueda": 11,
   "stop": 13,
@@ -27,8 +27,7 @@
   "penal": 2
  },
  "alertas": [
-  "Los títulos se parecen 66% en promedio: falta variedad de frases.",
-  "16 de los últimos 60 videos son casi idénticos a otro (misma imagen en los mismos momentos)."
+  "Los títulos se parecen 66% en promedio: falta variedad de frases."
  ],
- "lectura": "OJO: se empieza a ver repetitivo"
+ "lectura": "BIEN: variado"
 }
