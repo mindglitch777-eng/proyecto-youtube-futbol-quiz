@@ -170,6 +170,12 @@ def main(inicio=None, dias=7):
     con_datos = sum(1 for g in grilla if (hrs.get(g[0][:2]) or {}).get("videos", 0) >= 2 or (M and (M["horas"].get(g[0][:5]) or {}).get("videos", 0) >= 2))
     GRILLA_SEMANA = sorted(nueva) if con_datos >= 4 else grilla                 # sin datos suficientes: la grilla de noche fija
     slots = []; semana = {}
+    # 18/11: el tope semanal (max_semana, estrenos) cuenta también lo ya subido en los 6 días anteriores. Antes el plan se arma de a
+    # 1 día y el contador arrancaba en 0 cada vez: BALLON D'OR con tope 2 salió 16, 17, 18 y 20/11.
+    desde_sem = (inicio - timedelta(days=6)).isoformat()
+    for p_ in cargar("publicados.json", []):
+        if p_.get("video_id") and not p_.get("cancelado") and not p_.get("reemplazado") and desde_sem <= p_["fecha"] < inicio.isoformat():
+            semana[p_["tipo"]] = semana.get(p_["tipo"], 0) + 1
     for d in range(dias):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []

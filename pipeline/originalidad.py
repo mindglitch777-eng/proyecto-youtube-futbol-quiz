@@ -95,8 +95,19 @@ def reporte():
         if otros:
             sims.append(max(difflib.SequenceMatcher(None, _norm(t), _norm(o)).ratio() for o in otros))
     sim_tit = sum(sims) / len(sims) if sims else 0
-    hs = _cargar("huellas.json", [])[-60:]
-    casi = [x for x in hs if x.get("distancia", 999) <= UMBRAL_CASI_IGUAL]
+    # 18/11: solo videos SUBIDOS (antes contaba reintentos del inspector, cancelados y pendientes: 55 de 60 huellas no estaban
+    # en el canal y el índice marcaba 49 cuando lo publicado daba ~77). La distancia se mide contra los subidos anteriores.
+    ids_pub = {p["id"]: (p["fecha"], p.get("hora", "")) for p in pub if not p.get("cancelado")}
+    ult = {}
+    for x in _cargar("huellas.json", []):
+        if x["id"] in ids_pub:
+            ult[x["id"]] = x                                                    # la última huella de cada video (la que se subió)
+    hs = sorted(ult.values(), key=lambda x: ids_pub[x["id"]])[-60:]
+    casi = []
+    for k, x in enumerate(hs):
+        d = min((distancia(x["h"], y["h"]) for y in hs[:k]), default=999)
+        if d <= UMBRAL_CASI_IGUAL:
+            casi.append(x)
     musicas = [x.get("musica") for x in hs[-30:] if x.get("musica")]
     # índice 0-100 (100 = muy variado): penaliza concentración de plantilla, títulos parecidos y videos casi idénticos
     indice = 100

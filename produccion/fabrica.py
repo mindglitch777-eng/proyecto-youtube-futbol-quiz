@@ -407,6 +407,15 @@ def _dueno(V, clave_ult, opciones, rng):
     return c
 
 
+def _dueno_jugador(V, clave_ult, opciones, rng):
+    """18/11: rota por JUGADOR (no por foto) y la memoria la comparten HEAD FIT y HEAD SLOT: antes Mbappé (2 cuerpos de 6) salía
+    en los dos el mismo día ("Fit Mbappé's head" 19/11 y 2 veces el 20/11)."""
+    ult = V.contadores.setdefault(clave_ult, [])
+    c = min(sorted(opciones), key=lambda c: (opciones[c] in ult[-2:], ult[-6:].count(opciones[c]), rng.random()))
+    ult.append(opciones[c]); del ult[:-12]
+    return c
+
+
 def guion_cinta(gid, rng, V, fecha):
     usados = V.grupos.setdefault("cinta", set())
     cuerpo = _dueno(V, "cinta_ult", CUERPOS_RUEDA, rng)
@@ -425,7 +434,7 @@ def guion_cinta(gid, rng, V, fecha):
 
 def guion_slot(gid, rng, V, fecha):
     usados = V.grupos.setdefault("slot", set())
-    cuerpo = _dueno(V, "slot_ult", CUERPOS_FIT, rng); clave = CUERPOS_FIT[cuerpo]
+    cuerpo = _dueno_jugador(V, "fit_ult", CUERPOS_FIT, rng); clave = CUERPOS_FIT[cuerpo]
     est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
     for _ in range(100):
         cab = list(est); rng.shuffle(cab)
@@ -563,7 +572,7 @@ def guion_fitall(gid, rng, V, fecha):
 
 
 def guion_cabezas(gid, rng, V, fecha):
-    cuerpo = rng.choice(sorted(CUERPOS_FIT)); clave = CUERPOS_FIT[cuerpo]
+    cuerpo = _dueno_jugador(V, "fit_ult", CUERPOS_FIT, rng); clave = CUERPOS_FIT[cuerpo]
     otras = [c for c in FOTOS if c != clave]
     est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
     ley = [c for c in LEYENDAS if c in FOTOS and c != clave]
