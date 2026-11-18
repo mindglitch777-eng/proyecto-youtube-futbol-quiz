@@ -22,9 +22,12 @@ from comun import CONFIG, cargar, etapa, guardar
 # 15/11 DECISIÓN DEL CEO: sale el STOP clásico (desde el 07/11: mediana 1.650 a 48 h, 0 videos de 10 K, 2 de 6 lugares) y salen los
 # quiz. Los 4 lugares de prueba van a la mecánica que funciona (PARAR en el momento justo) con otras lógicas: WHEEL/HEAD FIT y sus
 # variantes (LEGS WHEEL, CONVEYOR, HEAD SLOT), BALLON D'OR, FIT ALL, SIUUU, PENALTY, GOAT CIRCLE. El cerebro elige cuál.
-GRILLA = [("13:00", "prueba", None), ("15:00", "prueba", None), ("17:00", "prueba", None),
-          ("20:00", "cabezas", None), ("21:30", "rueda", None), ("23:00", "prueba", None)]   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
-FIJOS = {"rueda", "cabezas"}                                                    # formatos que ya funcionan, con lugar fijo
+# 18/11 DECISIÓN DEL CEO: volvemos a 6 por día SOLO con lo que rinde muy bien. CONVEYOR (2 de 2 videos de 19-23 K) sale todos los
+# días; STOP ON YOUR FAVORITE (17 K) también; WHEEL y HEAD FIT (cansados) se turnan: un día cada uno. 3 lugares de prueba para lo
+# que rinde + estrenos de formatos nuevos (lo nuevo pega más: CONVEYOR, FAVORITE y HEAD FIT hicieron sus mejores números al debut).
+GRILLA = [("13:00", "prueba", None), ("15:00", "favorito", None), ("17:00", "prueba", None),
+          ("20:00", "rueda", None), ("21:30", "cinta", None), ("23:00", "prueba", None)]   # WHEEL aguanta (mediana 7,3 K después del debut); HEAD FIT pasa a prueba   # 07/11: la noche rinde 4-7 veces más   # 06/11: HEAD FIT fijo (23.514 vistas en su 1.er video)
+FIJOS = {"rueda", "cinta", "favorito"}                                         # 18/11: lugar fijo todos los días
 VARIANTES = {"cinta", "piernas", "slot"}
 # 15/11 (auditoría B2): FAMILIAS. El público se cansa de la MECÁNICA, no solo del formato: máximo 2 por familia por día.
 FAMILIAS = {"rueda": "WHEEL", "piernas": "WHEEL", "cinta": "WHEEL",
@@ -34,7 +37,7 @@ FAMILIAS = {"rueda": "WHEEL", "piernas": "WHEEL", "cinta": "WHEEL",
 MAX_FAMILIA_DIA = 2
 # 15/11 (auditoría B1 + CEO: "arranquemos ya"): SEMANA DE VOLUMEN 16-22/11 (16 y 17 con extras): 8 videos por día. Los 2 lugares extra van SOLO a familias que ya dieron
 # videos de 10 K (WHEEL, CABEZAS, ELEGÍ). Se compara contra la semana de 6 (videos de 10 K por día y vistas por día).
-VOLUMEN = dict(desde="2026-11-16", hasta="2026-11-22", horas=["11:00", "18:30"], familias={"WHEEL", "CABEZAS", "ELEGI"})                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
+VOLUMEN = dict(desde="2026-11-16", hasta="2026-11-20", horas=["11:00", "18:30"], familias={"WHEEL", "CABEZAS", "ELEGI"})                                        # 13/11: variantes de WHEEL/HEAD FIT (Issues #6 y #7): máx. 1 por día (lección: WHEEL 2 veces por día se cansó)
 MIN_VIDEOS_PODA = 4
 ESTRENO_LUGARES = 3                                                             # 15/11 CEO: cada formato nuevo, 3 lugares asegurados en su 1.ª semana
 MAX_PRUEBA_SEMANA = 4                                                           # Fase 2: un formato de prueba sale ≤3 veces por semana (variedad)
@@ -179,7 +182,8 @@ def main(inicio=None, dias=7):
     for d in range(dias):
         dia = (inicio + timedelta(days=d)).isoformat()
         hoy_pruebas = []
-        grilla_dia = list(GRILLA_SEMANA)
+        alt = "rueda" if date.fromisoformat(dia).toordinal() % 2 == 0 else "cabezas"   # 18/11: WHEEL y HEAD FIT descansan día por medio
+        grilla_dia = [(h_, alt if t_ == "alterno" else t_, e_) for h_, t_, e_ in GRILLA_SEMANA]
         if VOLUMEN["desde"] <= dia <= VOLUMEN["hasta"]:
             finde = date.fromisoformat(dia).weekday() >= 5                     # IA de YouTube (15/11): sábado y domingo el pico es 11-15 h
             horas_extra = VOLUMEN["horas"]                                    # 15/11 (IA de YouTube): ≥1,5 h entre videos; 11:00 cubre el pico del fin de semana
@@ -212,11 +216,12 @@ def main(inicio=None, dias=7):
                 fam_n[FAMILIAS.get(t, t)] = fam_n.get(FAMILIAS.get(t, t), 0) + 1
             del_dia |= {k for k in activas if fam_n.get(FAMILIAS.get(k, k), 0) >= MAX_FAMILIA_DIA}
             flojos = {k for k in activas if FAMILIAS.get(k) not in VOLUMEN["familias"]} if tipo == "fuerte" else set()   # B1
-            libres = [k for k in activas if k not in del_dia and k not in ola_fija]
+            libres = [k for k in activas if k not in del_dia and k not in ola_fija
+                      and not (CONFIG["pruebas"][k].get("tope_duro") and semana.get(k, 0) >= tope[k])]   # 18/11: topes duros (originalidad)
             cand = [k for k in libres if k not in flojos and semana.get(k, 0) < tope[k]] or \
                    [k for k in libres if k not in flojos] or \
                    [k for k in libres if semana.get(k, 0) < tope[k]] or libres or \
-                   [k for k in activas if semana.get(k, 0) < tope[k]] or activas    # nunca repetir en el día ni pasar el tope de familia
+                   [k for k in activas if k not in del_dia and k not in ola_fija] or activas   # 18/11: antes pasar un tope que repetir en el día
             if not cand:
                 slots.append(dict(fecha=dia, hora=hora, tipo="stop", dificil=False, arranque=rng.choice(["estrella", "grilla"]))); continue
             estrenos = [k for k in cand if (CONFIG["pruebas"][k].get("estreno_hasta") or "") >= dia

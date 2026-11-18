@@ -193,17 +193,20 @@
  },
  "pruebas": {
   "siuu": {
-   "listo": true
+   "listo": false,
+   "nota": "18/11 CEO: solo formatos que rinden muy bien (SIUUU 664-1.305). En pausa; puede volver rehecho más difícil."
   },
   "penal": {
    "listo": true,
    "max_semana": 2,
-   "nota": "16/11 Gerente: máx. 2 por semana hasta que tenga variantes visuales (originalidad 68: sus videos salen casi idénticos entre sí, distancia 0-6). Revisar 23/11."
+   "nota": "16/11 Gerente: máx. 2 por semana hasta que tenga variantes visuales (originalidad 68: sus videos salen casi idénticos entre sí, distancia 0-6). Revisar 23/11.",
+   "tope_duro": true
   },
   "balon": {
    "listo": true,
    "max_semana": 2,
-   "nota": "16/11 Gerente: máx. 2 por semana hasta que tenga variantes visuales (originalidad 68: sus videos salen casi idénticos entre sí, distancia 0-6). Revisar 23/11."
+   "nota": "16/11 Gerente: máx. 2 por semana hasta que tenga variantes visuales (originalidad 68: sus videos salen casi idénticos entre sí, distancia 0-6). Revisar 23/11.",
+   "tope_duro": true
   },
   "find": {
    "listo": false,
@@ -215,7 +218,8 @@
    "nota": "17/11: CEO aprobó 2 pruebas (#13): 19/11 20:00 y 20/11 20:00 como extras rehechos. Queda fuera de la rotación del cerebro (listo:false). 22/11: si no pasan 120 % visto y la mediana del canal a 48 h, sale para siempre."
   },
   "circulo": {
-   "listo": true
+   "listo": false,
+   "nota": "18/11 CEO: solo formatos que rinden muy bien (GOAT CIRCLE ~1-1,4 K en sus últimos videos). En pausa; puede volver rehecho más difícil."
   },
   "trayectoria": {
    "listo": false,
@@ -247,14 +251,13 @@
    "nota": "15/11 CEO: los quiz no funcionan (WHO IS THIS 182, PRICE TAG 1.251, BALLON Q 889/445, CAREER 1.122; 92 % visto). Fuera de rotación."
   },
   "piernas": {
-   "listo": true,
+   "listo": false,
    "max_semana": 3,
-   "nota": "13/11 variante de WHEEL: torso de superestrella fijo + rueda de piernas. Propuesta con prototipo; entra cuando el CEO apruebe. 13/11: APROBADO por el CEO (Issue #6); en rotación, máx. 1 variante por día.",
+   "nota": "18/11 CEO: solo formatos que rinden muy bien (LEGS WHEEL 1,5-1,8 K en sus 3 videos). En pausa; puede volver rehecho más difícil.",
    "estreno_hasta": "2026-11-22"
   },
   "cinta": {
    "listo": true,
-   "max_semana": 3,
    "nota": "13/11 variante de WHEEL: torsos de 6 superestrellas colgados de una cinta aérea sobre las piernas de una estrella. Propuesta p002; entra cuando el CEO apruebe. 13/11: APROBADO por el CEO (Issue #7); en rotación, máx. 1 variante por día.",
    "estreno_hasta": "2026-11-22"
   },
@@ -266,7 +269,6 @@
   },
   "favorito": {
    "listo": true,
-   "max_semana": 4,
    "estreno_hasta": "2026-11-24",
    "nota": "15/11 idea aprobada por el CEO (mercado 1,3 M). Estreno: 3 lugares asegurados la 1.ª semana."
   },

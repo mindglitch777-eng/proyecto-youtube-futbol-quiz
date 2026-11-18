@@ -19,7 +19,7 @@ from comun import RAIZ, cargar, guardar
 ART = timezone(timedelta(hours=-3))
 OBJETIVO = 12
 POR_CORRIDA = 4
-TIPOS = ["rueda", "cabezas"]                                         # 15/11: sin STOP clásico (decisión del CEO)
+TIPOS = ["rueda", "cabezas", "cinta"]                                         # 15/11: sin STOP clásico (decisión del CEO)
 HORAS = ["13:00", "15:00", "17:00", "20:00", "21:30", "23:00"]        # la grilla del día (misma que e4_plan.GRILLA)
 
 

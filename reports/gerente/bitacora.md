@@ -192,3 +192,9 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Para el 24/11 (al CEO):** con 8 por día los topes no alcanzan (~42 lugares de prueba por semana contra ~29 de topes), así que los formatos se repiten por fuerza. Llevar ese dato junto con las vistas por día.
 - **Revisar el 2026-11-19:** entrega del Ingeniero y hoja de VS STOP (#14) · **21/11** HEAD FIT · **22/11** DRESS · **23/11** originalidad > 80 · **24/11** comparación para el CEO.
 - **Para el CEO:** nada.
+
+## 2026-11-18 · DECISIÓN DEL CEO (cargada por Claude, sesión principal): fin de la semana de 8, vuelta a 6 SOLO con lo que rinde
+- Datos: vistas por día 65 K (14/11) → 49 K → 35 K (16, arranca 8/día) → 28 K → ~21 K (18, parcial); suscriptores por día de ~50 a ~20. Se corta la prueba de 8: el 19 y el 20/11 ya están subidos; desde el 21/11, 6 por día.
+- Hallazgo: LO NUEVO PEGA MÁS y después se gasta: CONVEYOR 19-23 K en sus 2 primeros, FAVORITE 17 K en el primero, HEAD FIT 11,8 K y 10,6 K al debut y ~3,3 K después. WHEEL es el que mejor aguanta (mediana 7,3 K después del debut).
+- Grilla nueva (e4_plan.py): fijos todos los días CONVEYOR (21:30), WHEEL (20:00) y FAVORITE (15:00); 3 lugares de prueba (HEAD FIT pasa a prueba por cansancio). En pausa: GOAT CIRCLE, LEGS WHEEL y SIUUU (listo:false; pueden volver rehechos más difíciles). PENALTY y BALLON D'OR: tope duro de 2 por semana (videos casi iguales). Nunca un formato 2 veces en el día.
+- **Falta de formatos**: con esos topes, esta semana faltan ~7 videos para cubrir 6 por día sin repetir. PEDIDO URGENTE PARA EL INGENIERO (jueves 19/11, prioridad 1): formatos nuevos con la lógica de parar, en la piel de lo que pega (CONVEYOR/WHEEL/FAVORITE), MÁS DIFÍCILES (más rápidos, zona de acierto más chica, "modo imposible"), con la guía de engagement: VS STOP más difícil (#14), STOP TO ESCAPE, SKILL STOP, y 1-2 variantes visuales de CONVEYOR (otra "piel": cinta doble, ascensor, carrusel) que se puedan alternar.
