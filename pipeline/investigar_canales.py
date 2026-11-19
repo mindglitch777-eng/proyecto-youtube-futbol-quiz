@@ -40,7 +40,8 @@ Nuestro canal hace Shorts de fútbol SIN CARA, en inglés, de 6-9 s, hechos 100 
 famosos, animación 2D, texto y sonido; no podemos usar clips de partidos ni personas filmadas). Nuestra lógica ganadora: el que mira
 ELIGE entre superestrellas y tiene que PARAR/PAUSAR en el momento justo (ruedas, cintas, caras que encajan, etc.).
 Respondé SOLO un JSON con estas claves (en español, frases cortas):
-{{"nombre_formato": "nombre corto en inglés",
+{{"es_futbol": true/false (¿el tema central es fútbol o futbolistas?),
+ "nombre_formato": "nombre corto en inglés",
  "mecanica": "qué pasa en el video, paso a paso, en 2 frases",
  "primer_segundo": "qué se ve y se lee en el primer segundo",
  "por_que_engancha": "la razón psicológica principal (1 frase)",
@@ -168,6 +169,8 @@ def main():
     def puntaje(x):
         a = x["analisis"]
         enc = float(a.get("encaja_con_nuestra_logica") or 1); rep = float(a.get("replicable_con_codigo") or 1)
+        if a.get("es_futbol") is False:                                       # 19/11: el primer informe trajo videos de motivación (no fútbol)
+            return 0.0
         return round(math.log10(max(x["ratio"], 1.1)) * enc * rep * (0.3 if a.get("usa_clips_reales") and rep < 3 else 1), 2)
     sem = (hoy().date() - timedelta(days=7)).isoformat()
     recientes = sorted((dict(x, puntaje=puntaje(x)) for x in vistos.values() if x["fecha"] >= sem), key=lambda x: -x["puntaje"])

@@ -23,7 +23,9 @@ Leé solo lo que la tarea necesita:
   CTA "HOW MANY TRIES?". Al estilo de `produccion/render_cinta.py` / `render_escape.py`. Sumalo a fabrica.py y config.json con
   `"listo": false`. Presentalo como PROPUESTA con muestra: Issue con etiqueta "propuesta" + `pipeline/propuestas/<id>.json`
   ("issue", "slots" de 2-3 muestras); prototipo.yml las renderiza. Mirá la hoja: si algo se ve mal, corregí y regenerá.
-  Ideas: `reports/dossier/` (el informe más nuevo).
+  Ideas: `reports/dossier/` (el informe más nuevo). **Si la ola es una mecánica que YA tenemos** (ej. caras que giran y encajan =
+  HEAD FIT/WHEEL): no hagas un clon; mirá el video y mejorá el NUESTRO con lo que lo hace funcionar (primer segundo, velocidad,
+  jugadores, tamaño de las caras) o hacé la variante que el público todavía no vio. Compará siempre contra nuestro formato parecido.
 - **SEMANA**: mensaje semanal al CEO (estrategia.md sección 00: cómo vamos, qué funcionó, qué salió, qué viene) y actualizá los
   `hallazgos` de `pipeline/datos/analisis_ia.json` con números reales (el veredicto y los números clave los pone la máquina).
 
