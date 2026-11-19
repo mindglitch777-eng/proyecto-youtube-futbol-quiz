@@ -76,11 +76,21 @@ def piernas(nombre):
     return p.crop((bb[0], 0, bb[2], bb[3])), (x + fw / 2) - bb[0]
 
 
-@lru_cache(maxsize=4)
+@lru_cache(maxsize=8)
 def fondo(nombre=None):
-    f = ROOT / "assets" / "fondos" / f"{nombre}.jpg" if nombre else None
+    """nombre = "estadio_5" o con variante (19/11, originalidad): "estadio_5~espejo", "~calido", "~frio" (se pueden combinar)."""
+    base, *var = (nombre or "").split("~")
+    f = ROOT / "assets" / "fondos" / f"{base}.jpg" if base else None
     if f and f.exists():
-        return Image.open(f).convert("RGBA").resize((W, H))
+        im = Image.open(f).convert("RGBA").resize((W, H))
+        if "espejo" in var:
+            im = im.transpose(Image.FLIP_LEFT_RIGHT)
+        for v, (r_, g_, b_) in (("calido", (1.08, 1.0, 0.88)), ("frio", (0.9, 1.0, 1.1))):
+            if v in var:
+                rr, gg, bb, aa = im.split()
+                im = Image.merge("RGBA", [rr.point(lambda x, k=r_: min(255, int(x * k))), gg.point(lambda x, k=g_: min(255, int(x * k))),
+                                          bb.point(lambda x, k=b_: min(255, int(x * k))), aa])
+        return im
     import render_rueda_fondo as RF
     return RF.dibujado()
 

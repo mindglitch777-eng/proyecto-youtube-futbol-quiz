@@ -447,7 +447,7 @@ def guion_slot(gid, rng, V, fecha):
         if cl not in usados:
             usados.add(cl); break
     return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=2, t_encaje=0.45,
-                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=k, otros=[nombre_de(c) for c in cab])
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "slot", rng), pos_correcto=k, otros=[nombre_de(c) for c in cab])
 
 
 # STOP ON YOUR FAVORITE (15/11, aprobado por el CEO): 6 cartas de superestrellas, la pelota salta y hay que pausar en tu favorito.
@@ -488,6 +488,20 @@ TIT_VS = ["{a} vs {b} 🛑 Stop on your GOAT", "{a} or {b}? 👑 Pause it in the
           "Who wins? {a} vs {b} 🛑 Only 1% stop it"]
 
 
+# 19/11 (originalidad 57; BALLON D'OR/PENALTY/HEAD SLOT con huellas a distancia 0-6): fondo al azar entre los estadios SIN marca
+# de agua (0, 1, 5, 6), con espejo y tono de color. La huella (dHash en grises) cambia sobre todo con el fondo y el espejo.
+FONDOS_LIMPIOS = ["estadio_0", "estadio_1", "estadio_5", "estadio_6"]
+
+
+def fondo_variado(V, tipo, rng):
+    ult = V.contadores.setdefault(f"{tipo}_fondo", [])
+    opciones = [f + e + c for f in FONDOS_LIMPIOS for e in ("", "~espejo") for c in ("", "~calido", "~frio")]
+    usados = {x.split("~")[0] + ("~espejo" if "espejo" in x else "") for x in ult[-4:]}
+    cand = [o for o in opciones if o.split("~")[0] + ("~espejo" if "espejo" in o else "") not in usados] or opciones
+    f = rng.choice(cand); ult.append(f); del ult[:-12]
+    return f
+
+
 # SKILL STOP · NUTMEG (19/11, pedido del CEO): defensor superestrella con las piernas abiertas (recortes con hueco medido) y
 # la cara del atacante (estrella o leyenda); pausar con la pelota entre los pies. Solo famosos.
 DEFENSORES_CANO = {"kylian_mbapp_13": "kylian_mbapp", "kylian_mbapp_11": "kylian_mbapp", "lionel_messi_3": "lionel_messi",
@@ -507,7 +521,7 @@ def guion_cano(gid, rng, V, fecha):
               apuesta=rng.choice(["ONLY 1% STOP IT", "BETWEEN THE LEGS = WIN", "IMPOSSIBLE SPEED"]),
               cta="HOW MANY TRIES? COMMENT NOW")
     return dict(id=gid, defensor=defe, nombre_def=b, atacante=atq, nombre_atq=a, dur=7.5, pasadas=4, lento=4.0,
-                t0=round(rng.uniform(0.0, 0.4), 2), musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
+                t0=round(rng.uniform(0.0, 0.4), 2), musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "cano", rng), textos=tx)
 
 
 def guion_vs(gid, rng, V, fecha):
@@ -525,7 +539,7 @@ def guion_vs(gid, rng, V, fecha):
               cta="HOW MANY TRIES? WHO WON?")
     return dict(id=gid, cuerpos=duelo, nombres=nombres, colores=cols, dur=7.0, fase=rng.choice([0.0, math.pi]),
                 idas=4, umbral=0.94,                                           # 18/11 CEO: "más difícil, más rápido" (antes 2 idas y 0,88)
-                musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "vs", rng), textos=tx)
 
 
 # STOP TO ESCAPE (18/11, pedido del CEO: formatos nuevos ya, más difíciles): 3 estrellas en jaulas, una llave rápida;
@@ -580,14 +594,15 @@ def guion_penal(gid, rng, V, fecha):
     n, c = min(estrellas, key=lambda e: (sum(1 for x in hechos if x[0] == e[1]), rng.random()))
     hechos.add((c, str(len(hechos))))
     lista, _ = extra_mejor("arquero", None)
-    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=5, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"))
+    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=5, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"),
+                fondo=fondo_variado(V, "penal", rng))
 
 
 def guion_balon(gid, rng, V, fecha):
     cuerpo = rng.choice(sorted(CUERPOS_RUEDA))
     lista, _ = extra_mejor("trofeo_bo", None)
     return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], trofeo=(rng.choice(lista) if lista else "trofeo_bo_1"),
-                dur=6.0, vueltas=5, musica=V.musica(rng))
+                dur=6.0, vueltas=5, musica=V.musica(rng), fondo=fondo_variado(V, "balon", rng))
 
 
 # Tendencias de la semana del 04/11 (radar + Gemini): FIT challenge 6,6 M · balance at the wall 6,9 M · "who is the best" 6 M

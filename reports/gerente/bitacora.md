@@ -206,5 +206,8 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   detrás de sus piernas; pausar con la pelota entre los pies (cámara lenta 4x en el hueco; NUTMEG! solo mientras está ahí). Hueco medido
   en cada recorte; defensores con hueco limpio: Mbappé 11/13, Messi 3, Ronaldo 10 (la pelota suelta del recorte se saca). Propuesta p006 (Issue #15).
   (2) Títulos: estructuras nuevas en WHEEL (+3), HEAD FIT (+3) y CONVEYOR (+2), siempre con la superestrella al inicio; la prueba A/B de WHEEL no cambia.
-  (3) STOP TO ESCAPE y VS más difícil los hizo la sesión principal (18/11). Pendiente: jugada MOMENTO nueva y variantes visuales de BALLON/PENALTY/HEAD SLOT/VS.
+  (3) Originalidad: BALLON D'OR, PENALTY, HEAD SLOT, VS y SKILL STOP eligen fondo al azar entre los 4 estadios SIN marca de agua
+  (0, 1, 5, 6) con espejo y tono cálido/frío, sin repetir los últimos 4. Medido con originalidad.py en 3 videos de cada uno:
+  distancia de huella 55-79 (BALLON), 56-83 (PENALTY), 50-63 (HEAD SLOT); antes 0-6. WHEEL y CONVEYOR sin tocar (fijos que rinden).
+  (4) STOP TO ESCAPE y VS más difícil los hizo la sesión principal (18/11). Pendiente: jugada MOMENTO nueva.
 - **Para el CEO:** Issue #15 (SKILL STOP).
