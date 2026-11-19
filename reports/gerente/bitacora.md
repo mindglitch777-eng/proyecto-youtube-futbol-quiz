@@ -235,3 +235,9 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - Fuera como defensor: Messi_3 (manos en la cintura, hueco chico), Vinícius_10 (piernas juntas), Neymar_1 (su cara queda tapada por el aro del atacante), Zlatan_1 (la foto trae su propia pelota). Atacante: rota entre las 6 superestrellas y las 5 leyendas.
 - Estreno hasta 26/11 (3 lugares asegurados), máx. 4 por semana, familia nueva SKILL. Inspector: PASA (Yamal, Mbappé). Prueba de humo: TODO OK.
 - Pendiente para el Ingeniero (lunes 23/11): más recortes de superestrellas con las piernas MUY abiertas (Ronaldo, Messi, Neymar, Vinícius) para rotar el defensor.
+
+## 19/11 · Investigación 2.0 y parte automático (CEO: "arrancá"; menos Claude, más específico)
+- **Investigación 2.0** (pipeline/investigar_canales.py, corre dentro de investigar.yml cada 2 días): sigue canales de Shorts de fútbol (se descubren solos), marca los videos FUERA DE SERIE (≥5x la mediana de SU canal), Gemini mira los mejores y dice si encajan con nuestra lógica y si se hacen con código. Sale un informe de 1 página: reports/dossier/dossier_AAAA-MM-DD.md + datos/dossier.json.
+- **Regla corregida**: la investigación decía "BAJAR" a WHEEL y HEAD FIT (comparaba mercado contra nosotros) y el plan les bajaba el peso a la mitad. Ahora cada formato se compara contra la mediana del canal de los últimos 14 días; el mercado solo puede sugerir PROBAR.
+- **Parte diario sin IA** (pipeline/parte_auto.py, lo llama gerente.py): titular, qué funciona, qué no, qué hicieron las máquinas y qué tiene que decidir el CEO. Si el agente IA escribe el parte ese día, se respeta el suyo.
+- Siguiente paso (con el sí del CEO, después de revisar el primer informe): apagar Gerente diario y Vigía; queda un agente lunes y jueves que lee el informe y construye.

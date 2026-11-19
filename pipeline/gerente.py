@@ -208,7 +208,12 @@ def main():
     out = dict(fecha=hoy.isoformat(), hora=datetime.now(ART).strftime("%H:%M"), canal=canal, monetizacion=monet, originalidad=orig, inspeccion=inspeccion, blindaje=blindaje, norte=norte, cerebro=cer, historia=historia,
                oportunidades=oportunidades, cansados=cansados, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
-               parte=previo.get("parte"))                                     # el "parte" lo escribe el Gerente IA (se conserva hasta el próximo)
+               parte=previo.get("parte"))
+    try:                                                                       # 19/11: parte automático (sin IA) si el agente no escribió el de hoy
+        import parte_auto
+        out["parte"] = parte_auto.aplicar(out)
+    except Exception as e:
+        print("parte automático falló:", e)
     guardar("gerente.json", out)
     L = [f"# Números del día · {hoy.isoformat()}", "",
          f"**Monetización:** suscriptores {monet['suscriptores'] if monet['suscriptores'] is not None else 's/d'} / 1.000 · vistas de Shorts 90 días "

@@ -17,7 +17,7 @@ from comun import RAIZ, cargar, gemini, guardar
 
 ART = timezone(timedelta(hours=-3))
 NUESTRO = {  # familia del mercado -> nuestros formatos de esa familia
-    "stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"], "dress": ["dress"],
+    "stop": ["stop", "siuu", "penal", "balon", "cano", "escape"], "wheel": ["rueda", "cinta", "piernas"], "fit": ["fitall", "cabezas", "slot"], "find": ["find"], "dress": ["dress"],
     "quiz": ["trayectoria", "tridente", "q20fichaje", "q20costo"], "goat": ["circulo"], "balance": ["pared"],
 }
 CONOCIDAS = set(NUESTRO) | {"skills", "meme", "otros", "3d_ia", "transformacion", "satisfying"}
@@ -45,28 +45,42 @@ def nuestro_canal():
     return out
 
 
+def mediana_canal(dias=14):
+    """Mediana a 48 h del canal en los últimos `dias` (la vara contra la que se mide cada formato)."""
+    desde = (datetime.now(ART) - timedelta(days=dias)).date().isoformat()
+    xs = [v["vistas_48h"] for v in cargar("rendimiento.json", {}).get("videos", [])
+          if v.get("horas", 0) >= 48 and v.get("vistas_48h") is not None and v.get("publicado", "")[:10] >= desde]
+    return st.median(xs) if len(xs) >= 10 else None
+
+
 def recomendar(olas7, olas3, canal):
+    """19/11 (CEO): cada formato NUESTRO se juzga contra la mediana RECIENTE del canal (14 días); el mercado solo puede sugerir
+    PROBAR, nunca BAJAR. (Antes comparaba la mediana del mercado —cientos de miles— con nuestras vistas a 48 h y decía "BAJAR"
+    a WHEEL y HEAD FIT, y el plan les bajaba el peso a la mitad.)"""
+    med_canal = mediana_canal() or st.median([n["mediana_48h"] for n in canal.values()] or [0])
     recs = []
     for fam, nuestros in NUESTRO.items():
-        m7 = olas7.get(fam); m3 = olas3.get(fam)
-        if not m7:
-            continue
-        sube = m3 and m7["mas_1M"] and (m3["mas_1M"] / max(1, m7["mas_1M"])) > 0.5
-        nos = [canal[n] for n in nuestros if n in canal]
-        nos_med = max((n["mediana_48h"] for n in nos), default=None)
-        if m7["mediana"] >= 150_000 and (nos_med or 0) >= 8_000:
-            acc = "SUBIR: ola fuerte y a nosotros nos rinde"
-        elif m7["mediana"] >= 150_000:
-            acc = "PROBAR MÁS: el mercado explota y todavía no lo exprimimos"
-        elif (nos_med or 0) >= 8_000:
-            acc = "MANTENER: nos rinde aunque el mercado esté tibio"
-        elif nos_med is None:
-            acc = "PROBAR POCO: todavía no tenemos datos propios"
-        else:
-            acc = "BAJAR: sin ola y sin resultado propio"
-        recs.append(dict(familia=fam, nuestros=nuestros, mercado_mediana=m7["mediana"], mercado_1M=m7["mas_1M"], subiendo=bool(sube),
-                         nuestra_mediana_48h=nos_med, accion=acc + (" · en subida" if sube else "")))
-    return sorted(recs, key=lambda r: -r["mercado_mediana"])
+        m7 = olas7.get(fam) or {}; m3 = olas3.get(fam) or {}
+        sube = bool(m3 and m7.get("mas_1M") and (m3["mas_1M"] / max(1, m7["mas_1M"])) > 0.5)
+        con_datos = [n for n in nuestros if n in canal]
+        grupos = [[n] for n in con_datos] or [nuestros]
+        for g in grupos:
+            x = canal.get(g[0]) if con_datos else None
+            rel = (x["mediana_48h"] / med_canal) if x and med_canal else None
+            if rel is not None and rel >= 1.5 and x["videos"] >= 2:
+                acc = "SUBIR: nos rinde más que la mediana del canal"
+            elif rel is not None and rel <= 0.5 and x["videos"] >= 4:
+                acc = "BAJAR: no nos rinde (con 4 o más videos propios)"
+            elif rel is not None:
+                acc = "MANTENER: rinde parecido al canal o todavía hay pocos videos"
+            elif m7.get("mediana", 0) >= 150_000:
+                acc = "PROBAR MÁS: el mercado explota y no tenemos datos propios"
+            else:
+                acc = "PROBAR POCO: sin datos propios"
+            recs.append(dict(familia=fam, nuestros=g, mercado_mediana=m7.get("mediana", 0), mercado_1M=m7.get("mas_1M", 0), subiendo=sube,
+                             nuestra_mediana_48h=x["mediana_48h"] if x else None, videos=x["videos"] if x else 0,
+                             vs_canal=None if rel is None else round(rel, 2), accion=acc + (" · ola en subida" if sube else "")))
+    return sorted(recs, key=lambda r: -(r["vs_canal"] or 0))
 
 
 def nuevas_tendencias(olas3, filas7):
@@ -115,6 +129,11 @@ def main():
     import comentarios
     import investigar_olas
     investigar_olas.main(); comentarios.main()
+    try:                                                                       # 19/11: investigación 2.0 (canales seguidos + fuera de serie)
+        import investigar_canales
+        investigar_canales.main()
+    except Exception as e:
+        print("investigación 2.0 falló:", e, flush=True)
     olas = cargar("olas.json", {})
     o7, o3 = olas.get("7d", {}).get("familias", {}), olas.get("3d", {}).get("familias", {})
     canal = nuestro_canal()
@@ -141,8 +160,9 @@ def main():
     for k, r in sorted(canal.items(), key=lambda kv: -kv[1]["mediana_48h"]):
         L.append(f"| {k} | {r['videos']} | {r['mediana_48h']:,} | {r['mejor']:,} | {r['pct_visto'] or '-'} | {r['mas_10k']} | "
                  f"{r['imposible']['mediana_48h'] or '-'} ({r['imposible']['videos']}) |")
-    L += ["", "## Qué hacer", ""] + [f"- **{r['familia']}** ({', '.join(r['nuestros'])}): {r['accion']} — mercado {r['mercado_mediana']:,}, "
-                                     f"nosotros {r['nuestra_mediana_48h'] or '-'}" for r in recs]
+    L += ["", f"## Qué hacer (cada formato contra la mediana del canal de los últimos 14 días: {mediana_canal() or '-'})", ""] + [
+        f"- **{', '.join(r['nuestros'])}** ({r['familia']}): {r['accion']} — nosotros {r['nuestra_mediana_48h'] or '-'} "
+        f"({r['vs_canal'] or '-'}x, {r['videos']} videos) · mercado {r['mercado_mediana']:,}" for r in recs]
     import diagnostico
     diag = diagnostico.main()
     L += ["", "## Por qué falló / qué repetir (diagnóstico por formato)", ""]
