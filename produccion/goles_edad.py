@@ -15,7 +15,8 @@ from pathlib import Path
 
 DIR = Path(__file__).resolve().parent / "assets" / "goles"
 NOMBRE = {"messi": "Messi", "ronaldo": "Ronaldo", "mbappe": "Mbappé", "yamal": "Yamal", "neymar": "Neymar", "zlatan": "Zlatan",
-          "henry": "Henry", "ronaldinho": "Ronaldinho", "vinicius": "Vinícius", "zidane": "Zidane", "beckham": "Beckham"}
+          "henry": "Henry", "ronaldinho": "Ronaldinho", "vinicius": "Vinícius", "zidane": "Zidane", "beckham": "Beckham",
+          "lewandowski": "Lewandowski", "benzema": "Benzema", "kane": "Kane", "rooney": "Rooney", "haaland": "Haaland", "r9": "Ronaldo R9"}
 RESERVA = re.compile(r"\b(B|C|II|III|Castilla|Atlètic|Atletic|Reserves?|Youth|Juniors?|U-?\d\d|under-\d\d|Under-\d\d|Academy|Promesas)\b|Barcelona Atl", re.I)
 HOY = date.today()
 

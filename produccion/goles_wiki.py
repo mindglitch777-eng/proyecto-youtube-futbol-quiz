@@ -13,7 +13,9 @@ import requests
 OUT = Path(__file__).resolve().parent / "assets" / "goles"; OUT.mkdir(parents=True, exist_ok=True)
 JUGADORES = {"messi": "Lionel Messi", "ronaldo": "Cristiano Ronaldo", "mbappe": "Kylian Mbappé", "yamal": "Lamine Yamal",
              "neymar": "Neymar", "zlatan": "Zlatan Ibrahimović", "henry": "Thierry Henry", "ronaldinho": "Ronaldinho",
-             "vinicius": "Vinícius Júnior", "zidane": "Zinedine Zidane", "beckham": "David Beckham"}
+             "vinicius": "Vinícius Júnior", "zidane": "Zinedine Zidane", "beckham": "David Beckham",
+             "lewandowski": "Robert Lewandowski", "benzema": "Karim Benzema", "kane": "Harry Kane", "rooney": "Wayne Rooney",
+             "haaland": "Erling Haaland", "r9": "Ronaldo (Brazilian footballer)"}
 S = requests.Session()
 S.headers["User-Agent"] = "futbol-quiz-research/0.1 (https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz)"
 
