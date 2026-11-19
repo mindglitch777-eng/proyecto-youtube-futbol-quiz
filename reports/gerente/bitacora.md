@@ -200,3 +200,11 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Falta de formatos**: con esos topes, esta semana faltan ~7 videos para cubrir 6 por día sin repetir. PEDIDO URGENTE PARA EL INGENIERO (jueves 19/11, prioridad 1): formatos nuevos con la lógica de parar, en la piel de lo que pega (CONVEYOR/WHEEL/FAVORITE), MÁS DIFÍCILES (más rápidos, zona de acierto más chica, "modo imposible"), con la guía de engagement: VS STOP más difícil (#14), STOP TO ESCAPE, SKILL STOP, y 1-2 variantes visuales de CONVEYOR (otra "piel": cinta doble, ascensor, carrusel) que se puedan alternar.
 
 - 18/11 Claude: **STOP TO ESCAPE** construido y en rotación como estreno (hasta el 25/11): 3 estrellas (2 de hoy + 1 leyenda) en jaulas, llave rápida (3 idas en 7,5 s), cerradura chica; "X ESCAPED!" solo mientras la llave está en la cerradura. Familia nueva ESCAPE. **VS STOP** más difícil (4 idas, zona 0,94) también en rotación como estreno. Al Ingeniero le quedan: SKILL STOP y una jugada MOMENTO nueva (no BALLON ni PENALTY), más las variantes de títulos.
+
+## 2026-11-19 · Ingeniero
+- **Ingeniero:** (1) Formato nuevo **SKILL STOP** (`cano`, listo:false, familia nueva): defensor superestrella enorme, la pelota corre por
+  detrás de sus piernas; pausar con la pelota entre los pies (cámara lenta 4x en el hueco; NUTMEG! solo mientras está ahí). Hueco medido
+  en cada recorte; defensores con hueco limpio: Mbappé 11/13, Messi 3, Ronaldo 10 (la pelota suelta del recorte se saca). Propuesta p006 (Issue #15).
+  (2) Títulos: estructuras nuevas en WHEEL (+3), HEAD FIT (+3) y CONVEYOR (+2), siempre con la superestrella al inicio; la prueba A/B de WHEEL no cambia.
+  (3) STOP TO ESCAPE y VS más difícil los hizo la sesión principal (18/11). Pendiente: jugada MOMENTO nueva y variantes visuales de BALLON/PENALTY/HEAD SLOT/VS.
+- **Para el CEO:** Issue #15 (SKILL STOP).

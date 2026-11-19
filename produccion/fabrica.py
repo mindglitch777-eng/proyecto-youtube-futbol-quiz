@@ -34,12 +34,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "cano": "SKILL STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "cano": "render_cano.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -335,8 +335,11 @@ TORSOS_RUEDA = ["cristiano_ronaldo_0", "lionel_messi_0", "kylian_mbapp_0", "lami
                 "vin_cius_j_nior_0", "vin_cius_j_nior_3", "jude_bellingham_0", "jude_bellingham_1", "mohamed_salah_0", "harry_kane_1",
                 "pedri_2", "ronaldinho_0", "phil_foden_0", "bukayo_saka_2", "cole_palmer_1", "raphinha_0", "lautaro_mart_nez_1"]
 # WHEEL: SIEMPRE la fórmula del mercado "X vs Y or Z stop challenge" (07/11: con ella 18-26k vistas; "Stop the wheel on Messi" 3,4k)
-TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "{n} vs {a} or {b} stop challenge 😱🔥", "{n} vs {a} or {b} stop challenge 🛑🤯",
-             "Find {n}'s real body 🛑🔥 {a} or {b}?"]                                 # 15.641: también funciona
+TIT_RUEDA = ["{n} vs {a} or {b} stop challenge 🔥🛑", "{n} vs {a} or {b} stop challenge 😱🔥",
+             "Find {n}'s real body 🛑🔥 {a} or {b}?",                                 # 15.641: también funciona
+             # 19/11 (originalidad: títulos 66 % parecidos): estructuras nuevas, siempre con la superestrella al inicio
+             "{n}'s body is hiding here 🛑 {a} or {b}?", "{n}, {a} or {b}? Only one body fits 😱",
+             "{n} body swap with {a} and {b} 🤯 Stop it right"]
 
 
 def guion_rueda(gid, rng, V, fecha):
@@ -395,7 +398,8 @@ def guion_piernas(gid, rng, V, fecha):
 TORSOS_ESTRELLA = {"cristiano_ronaldo": ["cristiano_ronaldo_0"], "lionel_messi": ["lionel_messi_0"], "kylian_mbapp": ["kylian_mbapp_0"],
                    "lamine_yamal": ["lamine_yamal_0"], "neymar": ["neymar_2"], "vin_cius_j_nior": ["vin_cius_j_nior_0", "vin_cius_j_nior_3"]}
 TIT_CINTA = ["{n} vs {a} or {b} stop challenge 🛑🔥", "{n} vs {a} or {b} conveyor challenge 😱🛑", "Stop {n}'s body on the belt 🛑 {a} or {b}?",
-             "Find {n}'s real body 🛑🔥 {a} or {b}?"]
+             "Find {n}'s real body 🛑🔥 {a} or {b}?",
+             "{n}'s body is on the belt 🛑 {a} or {b}?", "{n} on the conveyor 😱 Only one body fits: {a} or {b}?"]   # 19/11: más estructuras
 TIT_SLOT = ["{n} vs {a} or {b} head slot 🎰🛑", "Hit the {n} JACKPOT 🎰 {a} or {b}?", "Fit {n}'s head 🎰 Only 1% hit the jackpot",
             "{n} head fit slot machine 😱🎰 {a} or {b}?"]
 
@@ -484,6 +488,28 @@ TIT_VS = ["{a} vs {b} 🛑 Stop on your GOAT", "{a} or {b}? 👑 Pause it in the
           "Who wins? {a} vs {b} 🛑 Only 1% stop it"]
 
 
+# SKILL STOP · NUTMEG (19/11, pedido del CEO): defensor superestrella con las piernas abiertas (recortes con hueco medido) y
+# la cara del atacante (estrella o leyenda); pausar con la pelota entre los pies. Solo famosos.
+DEFENSORES_CANO = {"kylian_mbapp_13": "kylian_mbapp", "kylian_mbapp_11": "kylian_mbapp", "lionel_messi_3": "lionel_messi",
+                   "cristiano_ronaldo_10": "cristiano_ronaldo"}           # 19/11: los únicos recortes con hueco limpio entre los pies
+TIT_CANO = ["{a} vs {b} skills 🛑 Stop the nutmeg", "Can {a} nutmeg {b}? 🛑 Only 1% stop it", "{a} nutmegs {b}? 😱 Pause it between the legs",
+            "{a} skills vs {b} 🛑 Stop it between the legs"]
+
+
+def guion_cano(gid, rng, V, fecha):
+    ult = V.contadores.setdefault("cano_ult", [])
+    defe = min(sorted(DEFENSORES_CANO), key=lambda c: (ult[-6:].count(c), rng.random()))
+    ult.append(defe); del ult[:-12]
+    clave_def = DEFENSORES_CANO[defe]
+    atq = rng.choice([c for c in SUPERESTRELLAS if c != clave_def and c in FOTOS] * 2 + [c for c in LEYENDAS if c in FOTOS])
+    a, b = nombre_de(atq), nombre_de(clave_def)
+    tx = dict(gancho=rng.choice([f"NUTMEG {b.upper()}", "STOP THE NUTMEG", f"{a.upper()} VS {b.upper()}"]),
+              apuesta=rng.choice(["ONLY 1% STOP IT", "BETWEEN THE LEGS = WIN", "IMPOSSIBLE SPEED"]),
+              cta="HOW MANY TRIES? COMMENT NOW")
+    return dict(id=gid, defensor=defe, nombre_def=b, atacante=atq, nombre_atq=a, dur=7.5, pasadas=4, lento=4.0,
+                t0=round(rng.uniform(0.0, 0.4), 2), musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
+
+
 def guion_vs(gid, rng, V, fecha):
     ult = V.contadores.setdefault("vs_ult", [])
     duelo = min(DUELOS, key=lambda d: (ult[-6:].count("|".join(d)), DUELOS.index(d) > 2, rng.random()))   # primero los 3 más pedidos
@@ -569,7 +595,9 @@ CUERPOS_FIT = {"kylian_mbapp_13": "kylian_mbapp", "kylian_mbapp_12": "kylian_mba
                "cristiano_ronaldo_14": "cristiano_ronaldo", "lamine_yamal_10": "lamine_yamal", "neymar_3": "neymar"}
 CUERPOS_PARED = ["lionel_messi_3", "kylian_mbapp_10", "cristiano_ronaldo_14", "bukayo_saka_3", "ousmane_demb_l_3",
                  "lautaro_mart_nez_3", "kylian_mbapp_11"]                          # (sin mohamed_salah_1: tiene marca de agua)
-TIT_CABEZAS = ["99.9% WILL FAIL the FIT challenge 💀 {n} edition", "Fit {n}'s head 🛑 Only 1% can", "{n} head fit challenge 😱 Pause it!"]
+TIT_CABEZAS = ["99.9% WILL FAIL the FIT challenge 💀 {n} edition", "Fit {n}'s head 🛑 Only 1% can", "{n} head fit challenge 😱 Pause it!",
+               "{n} lost his head 😱 Stop on the right one", "{n} without a head?! 🛑 Only 1% fit it",          # 19/11: estructuras nuevas
+               "{n}'s head is spinning 💀 Pause it on the real one"]
 TIT_PARED = ["Who has the best balance? 👀⚽ {a}, {b}, {c} or {d}", "Who won't fall? 😱 {a} vs {b} vs {c} vs {d}",
              "Only one stays up 🤯 {a}, {b}, {c} or {d}?"]
 TIT_CIRCULO = ["Pause on your GOAT 🐐 {a}, {b} or {c}?", "Who is the BEST footballer? 🐐 Pause it!", "Stop the ball on your GOAT 🐐⚽"]
@@ -785,6 +813,16 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo == "cano":
+            g = guion_cano(gid, rng, V, sl["fecha"])
+            a, b = g["nombre_atq"], g["nombre_def"]
+            titulo = V.titulo("cano", TIT_CANO, rng).format(a=a, b=b)
+            for x in (a, b):
+                if len(titulo) + len(tag(x)) + 1 <= 100:
+                    titulo += " " + tag(x)
+            desc = (f"Pause when the ball is between {b}'s legs 🛑 Only 1% nutmeg him. How many tries? Comment 👇\n"
+                    + " ".join(tag(x) for x in (a, b)) + " #football #skills #shorts")
+            fijado = ""; fotos = []; nombres = [a, b]
         elif tipo == "vs":
             g = guion_vs(gid, rng, V, sl["fecha"])
             a, b = g["nombres"]
