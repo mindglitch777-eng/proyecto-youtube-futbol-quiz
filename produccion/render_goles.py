@@ -131,10 +131,49 @@ class Video:
         self.fondo = self.armar_fondo()
         self.res = [M.Resorte(Y0 + i * FILA, 7.0) for i in range(len(self.js))]
         self.escala = M.Resorte(80.0, 2.5)
-        self.cambios = self.lideres()
+        self.cambios = []                                                      # se detectan en vivo (lo que se VE en pantalla)
+        self.hits, self.sonidos, self.lider = {}, [], None
+        self.n_anios = self.hasta - self.desde + 1
+
+    # 19/11 (CEO, mirando el original cuadro por cuadro): cada año entra desde la derecha una LÍNEA con la edad y, en la fila de
+    # cada jugador, una burbuja "+N" con SUS goles de ese año. La línea viaja a la izquierda; cuando la burbuja choca con la cara
+    # del jugador, el número sube y la barra crece (con sonido). Esa espera ("¿cuántos trae este año?") es lo que retiene.
+    def anio(self, t):
+        """(edad que se suma, avance 0-1 de la línea) · (None, None) antes de empezar · (hasta, None) al terminar."""
+        if t < INTRO:
+            return None, None
+        k = int((t - INTRO) // self.spe)
+        if k >= self.n_anios:
+            return self.hasta, None
+        return self.desde + k, (t - INTRO) / self.spe - k
+
+    @staticmethod
+    def x_linea(u):
+        x0, x1 = W + 110, X0 - 70
+        return x0 - (x0 - x1) * min(1.0, u / 0.9)
+
+    @staticmethod
+    def hasta_edad(j, a):
+        if a < j["e0"]:
+            return 0
+        return j["acum"][min(a, j["edad_max"])] if min(a, j["edad_max"]) in j["acum"] else j["acum"][max(k for k in j["acum"] if k <= a)]
+
+    def gano(self, j, a):
+        return self.hasta_edad(j, a) - self.hasta_edad(j, a - 1) if a <= j["edad_max"] else 0
+
+    def mostrado(self, i, t, a, u):
+        j = self.js[i]
+        if a is None:
+            return float(self.hasta_edad(j, self.desde - 1))
+        if u is None:
+            return float(self.hasta_edad(j, self.hasta))
+        base = self.hasta_edad(j, a - 1)
+        h = self.hits.get((i, a))
+        return base + (self.gano(j, a) * M.suave((t - h) / 0.55) if h is not None else 0.0)
 
     def edad(self, t):
-        return min(self.hasta + 1, self.desde + max(0.0, t - INTRO) / self.spe)
+        a, u = self.anio(t)
+        return self.desde if a is None else (a if u is None else a + min(u, 0.999))
 
     def lideres(self):
         out, prev, e = [], None, self.desde
@@ -161,7 +200,14 @@ class Video:
     def cuadro(self, t, dt):
         L = M.Lienzo(self.fondo); c = L.c
         e = self.edad(t)
-        vals = [goles(j, e) for j in self.js]
+        a, u = self.anio(t)
+        vals = [self.mostrado(i, t, a, u) for i in range(len(self.js))]
+        lid = int(np.argmax(vals)) if max(vals) >= 1 else None
+        if lid is not None:
+            if self.lider is not None and lid != self.lider and vals[lid] - vals[self.lider] >= 1:
+                self.cambios.append((t, lid)); self.lider = lid
+            elif self.lider is None:
+                self.lider = lid
         tope = self.escala.paso(max(60.0, max(vals) * 1.15), dt)
         orden = sorted(range(len(self.js)), key=lambda i: -vals[i])
         ys = [0] * len(self.js)
@@ -174,9 +220,16 @@ class Video:
             x = X0 + ANCHO * k * paso / tope
             L.linea(x, 670, x, 1600, (255, 255, 255), 2, 0.07); guias.append((x, k * paso))
         textos = []
+        xl = self.x_linea(u) if u is not None else None
+        if xl is not None and xl > X0 - 60:                                    # la línea del año (detrás de las barras)
+            al = min(1.0, (W + 110 - xl) / 120) * min(1.0, (xl - (X0 - 70)) / 60)
+            L.brillo(xl, 1130, 300, (60, 230, 120), 0.10 * al)
+            L.linea(xl, 690, xl, 1600, (70, 235, 125), 6, 0.85 * al)
+        burbujas, choques = [], []
         for i in sorted(range(len(self.js)), key=lambda i: ys[i]):
             j = self.js[i]; y = ys[i] + 40
-            club = club_de(j, e)
+            hit = a is not None and u is not None and (i, a) in self.hits
+            club = club_de(j, (a if (hit or u is None) else a - 1) if a is not None else self.desde)
             c1, c2 = (CLUB[club][1], CLUB[club][2]) if club in CLUB else (ACENTO.get(j["k"], (200, 200, 200)), (240, 240, 240))
             largo = max(150, ANCHO * vals[i] / tope)
             for k_, a_ in ((10, 0.10), (6, 0.14), (3, 0.18)):                  # sombra suave
@@ -195,6 +248,16 @@ class Video:
             if b is not None:
                 M.imagen(L, b, X0 + 52, y + GROSOR / 2 - 6)
             fx = X0 + largo + 10
+            # ¿la burbuja de este año llegó a la cara?
+            if a is not None and u is not None and xl is not None:
+                g_ = self.gano(j, a)
+                if g_ > 0 and (i, a) not in self.hits and xl <= fx + D_CARA / 2 + 20:
+                    self.hits[(i, a)] = t; self.sonidos.append((t, sum(1 for k_ in self.hits if k_[1] == a)))
+                h = self.hits.get((i, a))
+                if g_ > 0 and h is None:
+                    burbujas.append((xl, y + GROSOR / 2, f"+{g_}"))
+                elif h is not None and t - h < 0.35:
+                    choques.append((fx, y + GROSOR / 2 + 4, (t - h) / 0.35, f"+{g_}"))
             M.imagen(L, sup_cara(j["k"]), fx, y + GROSOR / 2 + 4)
             esc = sup_escudo(club) if club else None
             if esc is not None:
@@ -204,13 +267,19 @@ class Video:
             textos.append(("num", num, X0 + largo - 78, y + GROSOR / 2 - 4, (25, 25, 32) if claro else CREMA, largo))
             sub = club.replace(" (loan)", "").upper() if club else ""
             textos.append(("nom", j["nombre"].upper(), X0 + 6, y - 32, sub))
-            ent = math.floor(e)
-            if self.desde < ent <= j["edad_max"] and e - ent < 1.2:
-                gan = j["acum"].get(ent, 0) - j["acum"].get(ent - 1, 0)
-                if gan > 0:
-                    textos.append(("mas", f"+{gan}", W - 70, y - 30, min(1, (1.2 - (e - ent)) * 3)))
-            if j["activo"] and e >= j["edad_max"] + 0.6:
-                textos.append(("now", "TODAY", X0 + 6, y - 32, j["nombre"].upper()))
+        # (marca) burbujas
+        for x, y, s_ in burbujas:
+            ancho = 46 + 34 * len(s_)
+            L.rect_redondo(x - ancho / 2 + 3, y - 36 + 6, ancho, 72, 36, (0, 0, 0), 0.25)
+            L.rect_redondo(x - ancho / 2, y - 36, ancho, 72, 36, (46, 196, 98), 1.0, borde=(255, 255, 255), ancho=4)
+            textos.append(("burb", s_, x, y - 2))
+        for x, y, k_, s_ in choques:
+            L.brillo(x, y, 110 + 140 * k_, (90, 245, 140), 0.55 * (1 - k_))
+            L.circulo(x, y, D_CARA / 2 + 10 + 40 * k_, None, borde=(90, 245, 140), ancho=8 * (1 - k_) + 1, borde_a=1 - k_)
+            textos.append(("pop", s_, x, y - D_CARA / 2 - 30 - 50 * k_, 1 - k_))
+        if xl is not None and xl > X0 - 60:
+            al = min(1.0, (W + 110 - xl) / 120) * min(1.0, (xl - (X0 - 70)) / 60)
+            textos.append(("edadlinea", f"AGE {a}", xl, 662, al))
         # línea de tiempo
         ty = 1672
         L.linea(90, ty, W - 90, ty, (255, 255, 255), 8, 0.15)
@@ -263,10 +332,17 @@ class Video:
                 M.texto(d, (x, y), s, 48, CREMA, 0, anchor="lm")
                 if sub_:
                     M.texto(d, (x + M.fuente(48).getlength(s) + 18, y + 4), sub_, 26, GRIS, 0, anchor="lm", cual=M.ARCHIVO)
-            elif tx[0] == "mas":
-                _, s, x, y, a_ = tx
-                col = tuple(int(v * a_ + 20 * (1 - a_)) for v in (90, 235, 130))
-                M.texto(d, (x, y), s, 44, col, 0, anchor="rm")
+            elif tx[0] == "burb":
+                _, s_, x, y = tx
+                M.texto(d, (x, y), s_, 50, (255, 255, 255), 0)
+            elif tx[0] == "pop":
+                _, s_, x, y, a_ = tx
+                M.texto(d, (x, y), s_, int(54 + 20 * (1 - a_)), tuple(int(20 + (v - 20) * a_) for v in (110, 250, 150)), 0)
+            elif tx[0] == "edadlinea":
+                _, s_, x, y, a_ = tx
+                if x > 120:
+                    d.rounded_rectangle((x - 70, y - 24, x + 70, y + 24), 24, fill=tuple(int(v * a_) for v in (46, 196, 98)))
+                    M.texto(d, (x, y), s_, 30, tuple(int(v * a_) for v in (255, 255, 255)), 0, cual=M.ARCHIVO)
         for a in marcas:
             x = 90 + (W - 180) * (a - self.desde) / (self.hasta + 1 - self.desde)
             M.texto(d, (x, 1708), f"{a}", 26, GRIS, 0, cual=M.ARCHIVO)
@@ -290,10 +366,17 @@ class Video:
         dur = self.dur; sr = M.SR; n = int(dur * sr)
         mu = ME.pista(dur, self.g.get("semilla", 0), golpes=[tc for tc, _ in self.cambios])
         fx = np.zeros(n, np.float32)
-        for a in range(self.desde + 1, self.hasta + 2):                         # tic suave en cada cumpleaños
-            i = int((INTRO + (a - self.desde) * self.spe) * sr)
+        notas = [1046.5, 1318.5, 1568.0, 2093.0, 2637.0]
+        for tc, orden in self.sonidos:                                          # cada burbuja que choca: nota que sube (arpegio)
+            i = int(tc * sr)
             if i < n:
-                s = M.pluck(1760, 0.12, 0.12); fx[i:i + len(s)] += s[: n - i]
+                s_ = M.pluck(notas[min(orden, len(notas)) - 1], 0.35, 0.30)
+                fx[i:i + len(s_)] += s_[: n - i]
+            # conteo: tics rápidos mientras sube el número
+            for k in range(6):
+                i2 = int((tc + 0.06 + k * 0.08) * sr)
+                if i2 < n:
+                    s2 = M.pluck(3200, 0.03, 0.05); fx[i2:i2 + len(s2)] += s2[: n - i2]
         con = np.tanh((mu * 0.9 + fx) * 1.05) * 0.92
         return con, np.tanh(fx * 1.1) * 0.8
 
