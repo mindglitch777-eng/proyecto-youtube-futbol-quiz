@@ -30,12 +30,12 @@ DATOS = ROOT / "assets" / "goles" / "goles_edad.json"
 CARA = {"messi": "lionel_messi", "ronaldo": "cristiano_ronaldo", "mbappe": "kylian_mbapp", "yamal": "lamine_yamal", "neymar": "neymar",
         "vinicius": "vin_cius_j_nior", "ronaldinho": "ronaldinho", "zidane": "zinedine_zidane", "beckham": "david_beckham",
         "henry": "thierry_henry", "zlatan": "zlatan_ibrahimovi", "lewandowski": "robert_lewandowski", "benzema": "karim_benzema",
-        "kane": "harry_kane", "rooney": "wayne_rooney", "haaland": "erling_haaland"}
+        "kane": "harry_kane", "rooney": "wayne_rooney", "haaland": "erling_haaland", "r9": "ronaldo_nazario"}
 ACENTO = {"messi": (108, 180, 238), "ronaldo": (230, 40, 55), "mbappe": (60, 110, 230), "neymar": (250, 210, 40), "lewandowski": (230, 40, 70),
           "zlatan": (250, 210, 0), "henry": (60, 110, 230), "ronaldinho": (250, 210, 40), "benzema": (60, 110, 230), "kane": (240, 240, 245),
-          "rooney": (240, 240, 245), "haaland": (120, 200, 255), "zidane": (60, 110, 230), "beckham": (240, 240, 245), "vinicius": (250, 210, 40)}
+          "rooney": (240, 240, 245), "haaland": (120, 200, 255), "r9": (250, 210, 40), "zidane": (60, 110, 230), "beckham": (240, 240, 245), "vinicius": (250, 210, 40)}
 PAIS = {"messi": "AR", "ronaldo": "PT", "mbappe": "FR", "yamal": "ES", "neymar": "BR", "vinicius": "BR", "ronaldinho": "BR", "zidane": "FR",
-        "beckham": "ENG", "henry": "FR", "zlatan": "SE", "lewandowski": "PL", "benzema": "FR", "kane": "ENG", "rooney": "ENG", "haaland": "NO"}
+        "beckham": "ENG", "henry": "FR", "zlatan": "SE", "lewandowski": "PL", "benzema": "FR", "kane": "ENG", "rooney": "ENG", "haaland": "NO", "r9": "BR"}
 # club -> (escudo, color 1, color 2)
 CLUB = {"Barcelona": ("barcelona", (165, 0, 68), (0, 77, 152)), "Paris Saint-Germain": ("psg", (0, 58, 112), (218, 41, 28)),
         "Inter Miami": ("inter_miami", (240, 150, 190), (35, 31, 32)), "Sporting CP": ("sporting", (0, 128, 87), (240, 240, 240)),
@@ -52,7 +52,9 @@ CLUB = {"Barcelona": ("barcelona", (165, 0, 68), (0, 77, 152)), "Paris Saint-Ger
         "Malmö FF": ("", (100, 170, 230), (240, 240, 240)), "Red Bull Salzburg": ("salzburg", (210, 20, 50), (240, 240, 240)),
         "Molde": ("", (0, 70, 150), (240, 240, 240)), "Bryne": ("", (220, 30, 40), (240, 240, 240)),
         "Al-Ittihad": ("", (250, 205, 0), (30, 30, 30)), "Chicago Fire": ("", (200, 16, 46), (0, 40, 85)), "Paris Saint-Germain (loan)": ("psg", (0, 58, 112), (218, 41, 28)),
-        "Real Madrid (loan)": ("real_madrid", (236, 236, 240), (254, 190, 16))}
+        "Real Madrid (loan)": ("real_madrid", (236, 236, 240), (254, 190, 16)),
+        "PSV": ("", (230, 20, 40), (240, 240, 240)), "Cruzeiro": ("", (0, 60, 150), (240, 240, 240)),
+        "Corinthians": ("corinthians", (240, 240, 240), (30, 30, 30))}
 
 # selección: (color 1, color 2, nombre) para las carreras de goles con la selección
 NACION = {"AR": ((108, 180, 238), (245, 245, 245), "ARGENTINA"), "PT": ((200, 16, 46), (0, 120, 60), "PORTUGAL"),

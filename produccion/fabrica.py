@@ -80,7 +80,7 @@ def elegir(rng, k, usados):
             usados.add(clave); return grupo
 
 
-NOMBRE = {"kak": "Kaká", "ousmane_demb_l": "Dembélé", "son_heung_min": "Son", "arda_g_ler": "Güler", "vin_cius_j_nior": "Vinícius",
+NOMBRE = {"ronaldo_nazario": "R9", "kak": "Kaká", "ousmane_demb_l": "Dembélé", "son_heung_min": "Son", "arda_g_ler": "Güler", "vin_cius_j_nior": "Vinícius",
           "kylian_mbapp": "Mbappé", "zlatan_ibrahimovi": "Zlatan", "federico_valverde": "Valverde", "jamal_musiala": "Musiala",
           "florian_wirtz": "Wirtz", "bukayo_saka": "Saka", "phil_foden": "Foden", "declan_rice": "Rice", "kevin_de_bruyne": "De Bruyne",
           "marcus_rashford": "Rashford", "david_beckham": "Beckham", "toni_kroos": "Kroos", "gareth_bale": "Bale", "karim_benzema": "Benzema",
@@ -557,7 +557,7 @@ TIT_ESCAPE = ["Free {a}, {b} or {c}? 🔑 Stop the key in the lock", "Who escape
 GOLES_CARA = {"messi": "lionel_messi", "ronaldo": "cristiano_ronaldo", "mbappe": "kylian_mbapp", "yamal": "lamine_yamal", "neymar": "neymar",
               "vinicius": "vin_cius_j_nior", "ronaldinho": "ronaldinho", "zidane": "zinedine_zidane", "beckham": "david_beckham",
               "henry": "thierry_henry", "zlatan": "zlatan_ibrahimovi", "lewandowski": "robert_lewandowski", "benzema": "karim_benzema",
-              "kane": "harry_kane", "rooney": "wayne_rooney", "haaland": "erling_haaland"}
+              "kane": "harry_kane", "rooney": "wayne_rooney", "haaland": "erling_haaland", "r9": "ronaldo_nazario"}
 TIT_GOLES = ["{s}: {y} 🐐 Who's the GOAT?", "{s} — {y} ⚽ Who wins?", "Who had more? {s} {y} 📊", "{y}: {s} 👀 Wait for the end",
              "{s} {y} ⚽ The answer will surprise you"]
 
