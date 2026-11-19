@@ -128,6 +128,17 @@
   "cancelado": "18/11 Gerente: \"Fit Mbappé's head\" con el mismo cuerpo que el HEAD FIT de las 23:00 y el HEAD SLOT del 19/11. NO subir; lo cubre un extra rehecho con otro jugador."
  },
  {
+  "id": "s1121_04_sab21_2000_escape",
+  "tipo": "escape",
+  "variante": null,
+  "fecha": "2026-11-21",
+  "hora": "20:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "19/11 Gerente: el cartel \"RONALDINHO ESCAPED!\" se cortaba en el borde. NO subir; lo cubre un extra rehecho."
+ },
+ {
   "id": "s1_05_dom01_0900_stop",
   "tipo": "stop",
   "fecha": "2026-11-01",
@@ -2307,14 +2318,60 @@
   "subido": "2026-11-18T23:10:43+00:00"
  },
  {
-  "id": "s1121_04_sab21_2000_escape",
-  "tipo": "escape",
+  "id": "s1120_08_vie20_2300_cabezas",
+  "tipo": "cabezas",
   "variante": null,
-  "fecha": "2026-11-21",
-  "hora": "20:00",
-  "titulo": null,
-  "video_id": null,
+  "exp": {
+   "id": "e5_cabezas_duracion",
+   "brazo": 6.4
+  },
+  "fecha": "2026-11-20",
+  "hora": "23:00",
+  "titulo": "This is almost impossible! Fit Mbappé 🎯⚽ #mbappe #messi #ronaldo",
+  "video_id": "_qToD9pNDGg",
   "error": null,
-  "cancelado": "19/11 Gerente: el cartel \"RONALDINHO ESCAPED!\" se cortaba en el borde. NO subir; lo cubre un extra rehecho."
+  "subido": "2026-11-19T19:05:14+00:00"
+ },
+ {
+  "id": "s1121_01_sab21_1300_vs",
+  "tipo": "vs",
+  "variante": null,
+  "exp": null,
+  "fecha": "2026-11-21",
+  "hora": "13:00",
+  "titulo": "Yamal or Mbappé? 👑 Pause it in the gold zone #yamal #mbappe",
+  "video_id": "rGv85UGxNUc",
+  "error": null,
+  "subido": "2026-11-19T19:05:16+00:00"
+ },
+ {
+  "id": "s1121_02_sab21_1500_rueda",
+  "tipo": "rueda",
+  "variante": null,
+  "exp": {
+   "id": "e3_rueda_titulo",
+   "brazo": "vs"
+  },
+  "fecha": "2026-11-21",
+  "hora": "15:00",
+  "titulo": "Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mbappe #vinicius",
+  "video_id": "t5dVxMPHeEI",
+  "error": null,
+  "subido": "2026-11-19T19:05:19+00:00"
+ },
+ {
+  "id": "s1121_03_sab21_1700_favorito",
+  "tipo": "favorito",
+  "variante": null,
+  "exp": {
+   "id": "e4_favorito_leyendas",
+   "brazo": true
+  },
+  "fecha": "2026-11-21",
+  "hora": "17:00",
+  "titulo": "Stop the ball on your favorite player ⚽🛑 Messi, Beckham or Ronaldo? #messi #beckham #ronaldo",
+  "video_id": "dQqohRxe9v0",
+  "error": null,
+  "subido": "2026-11-19T19:05:21+00:00"
  }
 ]
