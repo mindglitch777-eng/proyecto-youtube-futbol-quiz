@@ -515,7 +515,10 @@ def guion_cano(gid, rng, V, fecha):
     defe = min(sorted(DEFENSORES_CANO), key=lambda c: (ult[-6:].count(c), rng.random()))
     ult.append(defe); del ult[:-12]
     clave_def = DEFENSORES_CANO[defe]
-    atq = rng.choice([c for c in SUPERESTRELLAS if c != clave_def and c in FOTOS] * 2 + [c for c in LEYENDAS if c in FOTOS])
+    ult_a = V.contadores.setdefault("cano_atq", [])                           # el atacante también rota (no 3 veces el mismo)
+    pool = [c for c in SUPERESTRELLAS if c != clave_def and c in FOTOS] * 2 + [c for c in LEYENDAS if c in FOTOS]
+    atq = rng.choice([c for c in pool if c not in ult_a[-3:]] or pool)
+    ult_a.append(atq); del ult_a[:-12]
     a, b = nombre_de(atq), nombre_de(clave_def)
     tx = dict(gancho=rng.choice([f"NUTMEG {b.upper()}", "STOP THE NUTMEG", f"{a.upper()} VS {b.upper()}"]),
               apuesta=rng.choice(["ONLY 1% STOP IT", "BETWEEN THE LEGS = WIN", "IMPOSSIBLE SPEED"]),
