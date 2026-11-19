@@ -1,105 +1,105 @@
 {
- "fecha": "2026-11-19T18:30-03:00",
- "videos_medidos": 108,
+ "fecha": "2026-11-19T20:16-03:00",
+ "videos_medidos": 109,
  "formatos": {
   "cinta": {
-   "vistas_48h_esperadas": 6230,
-   "mediana_48h": 19400,
+   "vistas_48h_esperadas": 6177,
+   "mediana_48h": 19162,
    "videos": 2,
    "peso_datos": 1.7,
    "prob_mejor": 0.44,
    "confianza": "baja"
   },
   "favorito": {
-   "vistas_48h_esperadas": 5242,
-   "mediana_48h": 14078,
+   "vistas_48h_esperadas": 5215,
+   "mediana_48h": 13915,
    "videos": 2,
    "peso_datos": 1.8,
    "prob_mejor": 0.27,
    "confianza": "baja"
   },
   "rueda": {
-   "vistas_48h_esperadas": 4244,
-   "mediana_48h": 6494,
+   "vistas_48h_esperadas": 4224,
+   "mediana_48h": 6480,
    "videos": 17,
    "peso_datos": 10.5,
    "prob_mejor": 0.04,
    "confianza": "alta"
   },
   "cabezas": {
-   "vistas_48h_esperadas": 4082,
-   "mediana_48h": 3384,
+   "vistas_48h_esperadas": 4059,
+   "mediana_48h": 3358,
    "videos": 8,
    "peso_datos": 5.4,
    "prob_mejor": 0.05,
    "confianza": "media"
   },
   "balon": {
-   "vistas_48h_esperadas": 3304,
-   "mediana_48h": 7022,
+   "vistas_48h_esperadas": 3275,
+   "mediana_48h": 7001,
    "videos": 4,
    "peso_datos": 3.1,
    "prob_mejor": 0.03,
    "confianza": "media"
   },
   "dress": {
-   "vistas_48h_esperadas": 3211,
-   "mediana_48h": 8630,
+   "vistas_48h_esperadas": 3192,
+   "mediana_48h": 8608,
    "videos": 1,
    "peso_datos": 0.5,
-   "prob_mejor": 0.06,
+   "prob_mejor": 0.07,
    "confianza": "baja"
   },
   "penal": {
-   "vistas_48h_esperadas": 3201,
-   "mediana_48h": 5765,
+   "vistas_48h_esperadas": 3169,
+   "mediana_48h": 5669,
    "videos": 1,
    "peso_datos": 0.9,
    "prob_mejor": 0.05,
    "confianza": "baja"
   },
   "slot": {
-   "vistas_48h_esperadas": 2758,
-   "mediana_48h": 3672,
-   "videos": 1,
-   "peso_datos": 0.8,
-   "prob_mejor": 0.02,
+   "vistas_48h_esperadas": 2588,
+   "mediana_48h": 3637,
+   "videos": 2,
+   "peso_datos": 1.7,
+   "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "fitall": {
-   "vistas_48h_esperadas": 2186,
-   "mediana_48h": 1223,
+   "vistas_48h_esperadas": 2173,
+   "mediana_48h": 1219,
    "videos": 10,
    "peso_datos": 7.0,
    "prob_mejor": 0.0,
    "confianza": "alta"
   },
   "stop": {
-   "vistas_48h_esperadas": 2094,
-   "mediana_48h": 1861,
+   "vistas_48h_esperadas": 2086,
+   "mediana_48h": 1857,
    "videos": 38,
    "peso_datos": 20.8,
    "prob_mejor": 0.0,
    "confianza": "alta"
   },
   "ring": {
-   "vistas_48h_esperadas": 2055,
-   "mediana_48h": 621,
+   "vistas_48h_esperadas": 2042,
+   "mediana_48h": 620,
    "videos": 1,
    "peso_datos": 0.3,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "circulo": {
-   "vistas_48h_esperadas": 1958,
-   "mediana_48h": 1089,
+   "vistas_48h_esperadas": 1941,
+   "mediana_48h": 1070,
    "videos": 3,
    "peso_datos": 2.4,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "plinko": {
-   "vistas_48h_esperadas": 1946,
+   "vistas_48h_esperadas": 1935,
    "mediana_48h": 494,
    "videos": 1,
    "peso_datos": 0.4,
@@ -107,87 +107,87 @@
    "confianza": "baja"
   },
   "cabeza": {
-   "vistas_48h_esperadas": 1936,
-   "mediana_48h": 542,
+   "vistas_48h_esperadas": 1925,
+   "mediana_48h": 541,
    "videos": 1,
    "peso_datos": 0.4,
    "prob_mejor": 0.01,
    "confianza": "baja"
   },
   "tridente": {
-   "vistas_48h_esperadas": 1881,
-   "mediana_48h": 741,
+   "vistas_48h_esperadas": 1870,
+   "mediana_48h": 739,
    "videos": 1,
    "peso_datos": 0.6,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "q20costo": {
-   "vistas_48h_esperadas": 1798,
-   "mediana_48h": 691,
+   "vistas_48h_esperadas": 1787,
+   "mediana_48h": 688,
    "videos": 1,
    "peso_datos": 0.7,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "trayectoria": {
-   "vistas_48h_esperadas": 1767,
-   "mediana_48h": 670,
+   "vistas_48h_esperadas": 1755,
+   "mediana_48h": 666,
    "videos": 1,
    "peso_datos": 0.7,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "siuu": {
-   "vistas_48h_esperadas": 1761,
-   "mediana_48h": 625,
+   "vistas_48h_esperadas": 1750,
+   "mediana_48h": 622,
    "videos": 1,
    "peso_datos": 0.6,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "otros": {
-   "vistas_48h_esperadas": 1708,
-   "mediana_48h": 651,
+   "vistas_48h_esperadas": 1698,
+   "mediana_48h": 650,
    "videos": 2,
    "peso_datos": 0.6,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "carrera": {
-   "vistas_48h_esperadas": 1652,
-   "mediana_48h": 567,
+   "vistas_48h_esperadas": 1644,
+   "mediana_48h": 566,
    "videos": 2,
    "peso_datos": 0.6,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "pared": {
-   "vistas_48h_esperadas": 1605,
-   "mediana_48h": 974,
+   "vistas_48h_esperadas": 1596,
+   "mediana_48h": 971,
    "videos": 2,
    "peso_datos": 1.1,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "find": {
-   "vistas_48h_esperadas": 1586,
-   "mediana_48h": 1190,
+   "vistas_48h_esperadas": 1578,
+   "mediana_48h": 1187,
    "videos": 4,
    "peso_datos": 1.8,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "q20balon": {
-   "vistas_48h_esperadas": 1342,
-   "mediana_48h": 626,
+   "vistas_48h_esperadas": 1333,
+   "mediana_48h": 621,
    "videos": 3,
    "peso_datos": 2.3,
    "prob_mejor": 0.0,
    "confianza": "baja"
   },
   "q20fichaje": {
-   "vistas_48h_esperadas": 1070,
+   "vistas_48h_esperadas": 1064,
    "mediana_48h": 90,
    "videos": 1,
    "peso_datos": 0.7,
@@ -229,8 +229,8 @@
    "videos": 5
   },
   "20:00": {
-   "efecto": "-32%",
-   "videos": 7
+   "efecto": "-30%",
+   "videos": 8
   },
   "21:00": {
    "efecto": "+37%",
@@ -256,23 +256,24 @@
  "originalidad": {
   "tope": "35%",
   "ultimos_7_dias": {
-   "rueda": "15%",
-   "stop": "14%",
-   "cabezas": "12%",
-   "circulo": "7%",
+   "rueda": "14%",
+   "cabezas": "13%",
+   "stop": "13%",
    "balon": "7%",
    "favorito": "7%",
+   "circulo": "7%",
    "fitall": "6%",
+   "cinta": "6%",
    "slot": "6%",
    "q20balon": "5%",
-   "cinta": "5%",
    "piernas": "4%",
    "penal": "4%",
    "dress": "2%",
-   "find": "1%",
    "trayectoria": "1%",
+   "vs": "1%",
+   "find": "1%",
    "q20costo": "1%",
-   "vs": "1%"
+   "escape": "1%"
   }
  },
  "experimentos": {
@@ -283,12 +284,12 @@
     "medicion": {
      "\"vs\"": {
       "videos": 0,
-      "vistas_48h_esperadas": 4244,
+      "vistas_48h_esperadas": 4224,
       "p_mejor": 0.51
      },
      "\"find\"": {
       "videos": 0,
-      "vistas_48h_esperadas": 4244,
+      "vistas_48h_esperadas": 4224,
       "p_mejor": 0.49
      }
     }
@@ -299,12 +300,12 @@
     "medicion": {
      "true": {
       "videos": 0,
-      "vistas_48h_esperadas": 5242,
+      "vistas_48h_esperadas": 5215,
       "p_mejor": 0.5
      },
      "false": {
       "videos": 0,
-      "vistas_48h_esperadas": 5242,
+      "vistas_48h_esperadas": 5215,
       "p_mejor": 0.5
      }
     }
@@ -315,12 +316,12 @@
     "medicion": {
      "6.4": {
       "videos": 0,
-      "vistas_48h_esperadas": 4082,
+      "vistas_48h_esperadas": 4059,
       "p_mejor": 0.51
      },
      "8.0": {
       "videos": 0,
-      "vistas_48h_esperadas": 4082,
+      "vistas_48h_esperadas": 4059,
       "p_mejor": 0.49
      }
     }
@@ -345,6 +346,6 @@
   "inicio": "2026-11-11",
   "mediana_48h_inicial": 4423,
   "objetivo": "+25 % en 3 semanas con originalidad ≥75",
-  "mediana_48h_ultimos_7_dias": 1777
+  "mediana_48h_ultimos_7_dias": 1911
  }
 }
