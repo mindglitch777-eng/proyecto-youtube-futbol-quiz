@@ -44,9 +44,12 @@ def filas(tabla):
                 continue
             for c in linea[1:].split("||"):
                 c = c.strip()
+                n = 1
                 if "|" in c and re.match(r'^\s*(rowspan|colspan|style|align|scope)[^|]*\|', c):
-                    c = c.split("|", 1)[1].strip()
-                celdas.append(c)
+                    attr, c = c.split("|", 1); c = c.strip()
+                    m = re.search(r'colspan\s*=\s*"?(\d+)', attr)
+                    n = int(m.group(1)) if m else 1
+                celdas += [c] * n
         if celdas:
             out.append(celdas)
     return out
@@ -78,6 +81,18 @@ def procesar(k):
         if not (es_club or es_sel):
             continue
         actual = None
+        # grupos del encabezado (para separar liga / copas / continental / otros / total)
+        grupos = []
+        for linea in tb.split("\n"):
+            if linea.startswith("|") and not linea.startswith(("|-", "|+", "|}", "{|")):
+                break                                                          # empezaron las filas de datos
+            if linea.startswith("!") and "colspan" in linea:
+                for h in re.split(r"!!|\|\|", linea[1:]):
+                    m = re.search(r'colspan\s*=\s*"?(\d+)"?\s*\|\s*(.*)', h)
+                    if m:
+                        grupos.append((m.group(2).strip().lower(), int(m.group(1))))
+                    elif "rowspan" in h:
+                        pass
         for c in filas(tb):
             idx = next((i for i, x in enumerate(c) if re.fullmatch(r"(\d{4})(?:[–-](\d{2,4}))?", x)), None)
             if idx is None:
@@ -88,6 +103,17 @@ def procesar(k):
             if not ns or actual is None:
                 continue
             goles = ns[-1]
+            comp = {}
+            if not es_sel and grupos:
+                resto = c[idx + 1:]
+                pos = 0
+                for nom, ancho in grupos:
+                    celda = resto[pos + ancho - 1] if pos + ancho - 1 < len(resto) else ""
+                    v = int(celda.replace(",", "")) if re.fullmatch(r"\d[\d,]*", celda or "") else 0
+                    clave = ("liga" if nom.startswith("league") and ancho == 3 else "continental" if ("continental" in nom or "europe" in nom)
+                             else "total" if nom.startswith("total") else "copas" if "cup" in nom or "state" in nom else "otros")
+                    comp[clave] = comp.get(clave, 0) + v
+                    pos += ancho
             if RESERVA.search(actual) or (es_sel and re.search(r"under|U-?\d\d|Olympic", actual, re.I)):
                 continue
             m = re.fullmatch(r"(\d{4})(?:[–-](\d{2,4}))?", c[idx])
@@ -97,7 +123,7 @@ def procesar(k):
             else:
                 d_fin = date(int(m.group(1)), 12, 31)
             e = edad(nac, min(d_fin, HOY))
-            filas_out.append(dict(tipo="club" if not es_sel else "seleccion", equipo=actual, temporada=c[idx], goles=goles, edad=e))
+            filas_out.append(dict(tipo="club" if not es_sel else "seleccion", equipo=actual, temporada=c[idx], goles=goles, edad=e, **comp))
             if es_sel:
                 selec_total += goles
             else:
@@ -117,11 +143,27 @@ def procesar(k):
         cl = [f for f in filas_out if f["edad"] == e and f["tipo"] == "club"]
         if cl:
             clubes[e] = max(cl, key=lambda f: f["goles"])["equipo"]
+    # series acumuladas por estadística (19/11: el sistema de GOALS BY AGE cambia de tema para no repetirse)
+    NO_EUROPA = re.compile(r"Inter Miami|Al-|Santos|Galaxy|Chicago|Cruzeiro|Corinthians|Flamengo|Grêmio|Red Bulls|Querétaro|Mineiro|Fluminense|São Paulo|Botafogo", re.I)
+    def serie(filtro, campo="goles"):
+        out_, s_ = {}, 0
+        for e_ in range(e0, edad_hoy + 1):
+            s_ += sum(f.get(campo, 0) or 0 for f in filas_out if f["edad"] == e_ and filtro(f))
+            out_[e_] = s_
+        return out_
+    series = dict(total=None, club=serie(lambda f: f["tipo"] == "club"), seleccion=serie(lambda f: f["tipo"] == "seleccion"),
+                  liga=serie(lambda f: f["tipo"] == "club", "liga"),
+                  europa=serie(lambda f: f["tipo"] == "club" and not NO_EUROPA.search(f["equipo"]), "continental"))
     retiro = max(f["edad"] for f in filas_out)
     activo = any(f["edad"] == edad_hoy for f in filas_out)
     if not activo:
         acum = {e: v for e, v in acum.items() if e <= retiro}
-    return dict(nombre=NOMBRE[k], nacimiento=nac.isoformat(), edad_hoy=edad_hoy, activo=activo, total=s if activo else acum[retiro],
+    for k_, v_ in list(series.items()):
+        if v_ is not None and not activo:
+            series[k_] = {e: x for e, x in v_.items() if e <= retiro}
+    series["total"] = acum
+    chequeo = {k_: (v_[max(v_)] if v_ else 0) for k_, v_ in series.items()}
+    return dict(series=series, chequeo=chequeo, nombre=NOMBRE[k], nacimiento=nac.isoformat(), edad_hoy=edad_hoy, activo=activo, total=s if activo else acum[retiro],
                 club=club_total, seleccion=selec_total, acumulado_por_edad=acum, club_por_edad=clubes, filas=filas_out)
 
 

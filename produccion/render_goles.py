@@ -54,6 +54,15 @@ CLUB = {"Barcelona": ("barcelona", (165, 0, 68), (0, 77, 152)), "Paris Saint-Ger
         "Al-Ittihad": ("", (250, 205, 0), (30, 30, 30)), "Chicago Fire": ("", (200, 16, 46), (0, 40, 85)), "Paris Saint-Germain (loan)": ("psg", (0, 58, 112), (218, 41, 28)),
         "Real Madrid (loan)": ("real_madrid", (236, 236, 240), (254, 190, 16))}
 
+# selección: (color 1, color 2, nombre) para las carreras de goles con la selección
+NACION = {"AR": ((108, 180, 238), (245, 245, 245), "ARGENTINA"), "PT": ((200, 16, 46), (0, 120, 60), "PORTUGAL"),
+          "PL": ((220, 20, 60), (245, 245, 245), "POLAND"), "SE": ((0, 106, 167), (254, 204, 0), "SWEDEN"),
+          "BR": ((0, 156, 59), (255, 223, 0), "BRAZIL"), "FR": ((0, 45, 150), (237, 41, 57), "FRANCE"),
+          "ENG": ((236, 236, 240), (200, 16, 46), "ENGLAND"), "ES": ((200, 16, 30), (255, 196, 0), "SPAIN"),
+          "NO": ((200, 16, 46), (0, 32, 91), "NORWAY")}
+# fondos (originalidad: cada video puede tener otra paleta)
+PALETAS = [((6, 9, 20), (24, 36, 74)), ((10, 6, 22), (48, 24, 78)), ((4, 14, 12), (16, 58, 44)), ((16, 6, 8), (70, 18, 28)),
+           ((8, 10, 12), (36, 44, 56)), ((4, 10, 24), (10, 60, 96))]
 X0, Y0, FILA, GROSOR, D_CARA = 60, 700, 228, 132, 156
 ANCHO = W - X0 - 190
 INTRO, OUTRO = 1.6, 4.5
@@ -95,9 +104,10 @@ def sup_bandera(k):
 def cargar(g):
     d = json.loads(DATOS.read_text())
     js = []
+    est = g.get("estadistica", "total")
     for k in g["jugadores"]:
         x = d["jugadores"][k]
-        acum = {int(e): v for e, v in x["acumulado_por_edad"].items()}
+        acum = {int(e): v for e, v in (x.get("series", {}).get(est) or x["acumulado_por_edad"]).items()}
         js.append(dict(k=k, nombre=x["nombre"], acum=acum, e0=min(acum), edad_max=max(acum), activo=x.get("activo", False),
                        club={int(e): c for e, c in x.get("club_por_edad", {}).items()}))
     return js
@@ -125,11 +135,13 @@ class Video:
         self.g = g
         self.js = cargar(g)
         self.desde = g.get("desde", min(j["e0"] for j in self.js))
-        self.hasta = max(j["edad_max"] for j in self.js)
+        self.hasta = min(g.get("hasta", 99), max(j["edad_max"] for j in self.js))
+        self.seleccion = g.get("estadistica") == "seleccion"
         self.spe = g.get("seg_por_edad", 2.3)
         self.dur = round(INTRO + (self.hasta - self.desde + 1) * self.spe + OUTRO, 2)
         self.fondo = self.armar_fondo()
-        self.res = [M.Resorte(Y0 + i * FILA, 7.0) for i in range(len(self.js))]
+        self.y0 = Y0 + (4 - len(self.js)) * FILA / 2                          # con 2-3 jugadores las barras quedan centradas
+        self.res = [M.Resorte(self.y0 + i * FILA, 7.0) for i in range(len(self.js))]
         self.escala = M.Resorte(80.0, 2.5)
         self.cambios = []                                                      # se detectan en vivo (lo que se VE en pantalla)
         self.hits, self.sonidos, self.lider = {}, [], None
@@ -188,7 +200,8 @@ class Video:
         return out
 
     def armar_fondo(self):
-        s = M.superficie_fondo((6, 9, 20), (24, 36, 74), cy=0.42)
+        c1_, c2_ = PALETAS[self.g.get("paleta", 0) % len(PALETAS)]
+        s = M.superficie_fondo(c1_, c2_, cy=0.42)
         L = M.Lienzo(s)
         for i in range(9):                                                     # rayos de luz diagonales, muy suaves
             x = -300 + i * 230
@@ -212,7 +225,7 @@ class Video:
         orden = sorted(range(len(self.js)), key=lambda i: -vals[i])
         ys = [0] * len(self.js)
         for r, i in enumerate(orden):
-            ys[i] = self.res[i].paso(Y0 + r * FILA, dt)
+            ys[i] = self.res[i].paso(self.y0 + r * FILA, dt)
         # líneas guía de la escala
         paso = next(p for p in (20, 50, 100, 200, 250, 500) if tope / p <= 5)
         guias = []
@@ -230,7 +243,10 @@ class Video:
             j = self.js[i]; y = ys[i] + 40
             hit = a is not None and u is not None and (i, a) in self.hits
             club = club_de(j, (a if (hit or u is None) else a - 1) if a is not None else self.desde)
-            c1, c2 = (CLUB[club][1], CLUB[club][2]) if club in CLUB else (ACENTO.get(j["k"], (200, 200, 200)), (240, 240, 240))
+            if self.seleccion:                                                 # carrera de goles con la selección: colores del país
+                c1, c2, club = NACION[PAIS[j["k"]]][0], NACION[PAIS[j["k"]]][1], NACION[PAIS[j["k"]]][2].title()
+            else:
+                c1, c2 = (CLUB[club][1], CLUB[club][2]) if club in CLUB else (ACENTO.get(j["k"], (200, 200, 200)), (240, 240, 240))
             largo = max(150, ANCHO * vals[i] / tope)
             for k_, a_ in ((10, 0.10), (6, 0.14), (3, 0.18)):                  # sombra suave
                 L.rect_redondo(X0 + 4, y + k_, largo, GROSOR, 30, (0, 0, 0), a_)
@@ -259,7 +275,7 @@ class Video:
                 elif h is not None and t - h < 0.35:
                     choques.append((fx, y + GROSOR / 2 + 4, (t - h) / 0.35, f"+{g_}"))
             M.imagen(L, sup_cara(j["k"]), fx, y + GROSOR / 2 + 4)
-            esc = sup_escudo(club) if club else None
+            esc = sup_escudo(club) if club and not self.seleccion else None
             if esc is not None:
                 M.imagen(L, esc, fx + 58, y + GROSOR / 2 + 58)
             claro = sum(c1) / 3 > 170

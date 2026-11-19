@@ -34,12 +34,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "cano": "SKILL STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "goles": "GOALS BY AGE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "cano": "SKILL STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "cano": "render_cano.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "goles": "render_goles.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "cano": "render_cano.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -552,6 +552,28 @@ TIT_ESCAPE = ["Free {a}, {b} or {c}? 🔑 Stop the key in the lock", "Who escape
               "{a} vs {b} vs {c}: free your GOAT 🔑🛑", "Stop the key to free {a} 🔑 Only 1% can"]
 
 
+# GOALS BY AGE (19/11, CEO): carrera de goles REALES por edad; sistema dinámico (goles_catalogo.py): grupos × estadísticas ×
+# escenarios, nunca el mismo escenario hasta agotar el catálogo; varía paleta, música y ritmo.
+GOLES_CARA = {"messi": "lionel_messi", "ronaldo": "cristiano_ronaldo", "mbappe": "kylian_mbapp", "yamal": "lamine_yamal", "neymar": "neymar",
+              "vinicius": "vin_cius_j_nior", "ronaldinho": "ronaldinho", "zidane": "zinedine_zidane", "beckham": "david_beckham",
+              "henry": "thierry_henry", "zlatan": "zlatan_ibrahimovi", "lewandowski": "robert_lewandowski", "benzema": "karim_benzema",
+              "kane": "harry_kane", "rooney": "wayne_rooney", "haaland": "erling_haaland"}
+TIT_GOLES = ["{s}: {y} 🐐 Who's the GOAT?", "{s} — {y} ⚽ Who wins?", "Who had more? {s} {y} 📊", "{y}: {s} 👀 Wait for the end",
+             "{s} {y} ⚽ The answer will surprise you"]
+
+
+def guion_goles(gid, rng, V, fecha):
+    import goles_catalogo as GC
+    usados = V.contadores.setdefault("goles_usados", [])
+    e = GC.elegir(rng, usados)
+    usados.append(e["clave"]); del usados[:-80]
+    pal = V.contadores.setdefault("goles_paleta", [])
+    paleta = min(range(6), key=lambda k: (pal[-4:].count(k), rng.random())); pal.append(paleta); del pal[:-12]
+    return dict(id=gid, jugadores=e["jugadores"], estadistica=e["estadistica"], desde=e["desde"], **({"hasta": e["hasta"]} if e.get("hasta") else {}),
+                seg_por_edad=round(rng.uniform(2.25, 2.55), 2), semilla=rng.randint(0, 999), paleta=paleta,
+                titulo=e["titulo"], subtitulo=e["subtitulo"], yt=e["yt"], clave=e["clave"])
+
+
 def guion_escape(gid, rng, V, fecha):
     ult = V.contadores.setdefault("escape_ult", [])
     hoy = sorted(TORSOS_ESTRELLA)
@@ -818,6 +840,15 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             desc = ("Stop the key in the lock to free your GOAT 🔑🛑 How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in g["nombres"]) + " #football #shorts")
             fijado = ""; fotos = []; nombres = g["nombres"]
+        elif tipo == "goles":
+            g = guion_goles(gid, rng, V, sl["fecha"])
+            ns = [nombre_de(GOLES_CARA[k]) for k in g["jugadores"]]
+            sub = g["subtitulo"].title() if " vs " not in g["subtitulo"].lower() and "·" not in g["subtitulo"] else " vs ".join(ns)
+            titulo = V.titulo("goles", TIT_GOLES, rng).format(s=sub, y=g["yt"])
+            titulo = titulo[:95] + " " + " ".join(tag(x) for x in ns[:2])
+            desc = (f"{g['yt'][0].upper() + g['yt'][1:]}: " + " vs ".join(ns) + ". Official goals (club + country), season by season.\n"
+                    "Who's the GOAT? Comment 👇\n" + " ".join(tag(x) for x in ns) + " #football #soccer #goals #shorts")
+            fijado = "Who's the GOAT for you? 👇"; fotos = []; nombres = ns
         elif tipo == "favorito":
             g = guion_favorito(gid, rng, V, sl["fecha"], leyendas=sl.get("leyendas", True))
             a, b, c3 = g["nombres"][:3]
