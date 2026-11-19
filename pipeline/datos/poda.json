@@ -6,14 +6,26 @@
    "videos": 4
   }
  },
- "promovidas": {},
+ "promovidas": {
+  "cabezas": {
+   "fecha": "2026-11-19",
+   "rinde": "mediana 3,349 vs canal 1,948",
+   "videos": 8
+  }
+ },
  "historial": [
   {
    "fecha": "2026-11-15",
    "formato": "fitall",
    "cambio": "vuelve",
    "motivo": "auditoría A2: la poda vieja lo comparaba contra STOP; tuvo videos de 20.984 y 8.486"
+  },
+  {
+   "fecha": "2026-11-19",
+   "formato": "cabezas",
+   "cambio": "promovido",
+   "motivo": "mediana 3,349 vs canal 1,948"
   }
  ],
- "mediana_canal": 1959
+ "mediana_canal": 1948
 }

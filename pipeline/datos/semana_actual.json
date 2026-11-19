@@ -1,190 +1,55 @@
 {
- "inicio": "2026-11-20",
+ "inicio": "2026-11-21",
  "videos": [
   {
-   "id": "s1120_01_vie20_1100_favorito",
+   "id": "s1121_01_sab21_1300_vs",
    "n": 1,
-   "fecha": "2026-11-20",
-   "hora": "11:00",
-   "tipo": "favorito",
-   "formato": "STOP ON YOUR FAVORITE",
-   "titulo": "Pause on your idol ⚽😱 Vinícius or Neymar? #vinicius #neymar #messi",
-   "descripcion": "Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n#vinicius #neymar #messi #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
-   "jugadores": [
-    "Vinícius",
-    "Neymar",
-    "Messi"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "vinícius",
-    "neymar",
-    "messi"
-   ],
-   "archivo": "s1120_01_vie20_1100_favorito.mp4",
-   "exp": {
-    "id": "e4_favorito_leyendas",
-    "brazo": true
-   },
-   "listo": true,
-   "control": "NO PASA: nunca más de 4 s sin un cambio grande en pantalla"
-  },
-  {
-   "id": "s1120_02_vie20_1300_cinta",
-   "n": 2,
-   "fecha": "2026-11-20",
+   "fecha": "2026-11-21",
    "hora": "13:00",
-   "tipo": "cinta",
-   "formato": "CONVEYOR STOP",
-   "titulo": "Stop Ronaldo's body on the belt 🛑 Vinícius or Yamal? #ronaldo #vinicius #yamal",
-   "descripcion": "Stop the belt when Ronaldo's REAL body is on top of the legs 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#ronaldo #vinicius #yamal #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
+   "tipo": "vs",
+   "formato": "VS STOP",
+   "titulo": "Yamal or Mbappé? 👑 Pause it in the gold zone #yamal #mbappe",
+   "descripcion": "Pause when the ball is in YOUR player's gold zone 👑 Yamal or Mbappé? Who did you make win? Comment 👇\n#yamal #mbappe #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who did you make win? 👑 And how many tries did it take? I read them all 👇",
    "jugadores": [
-    "Ronaldo",
-    "Vinícius",
-    "Yamal"
+    "Yamal",
+    "Mbappé"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "ronaldo",
-    "vinícius",
-    "yamal"
+    "yamal",
+    "mbappé"
    ],
-   "archivo": "s1120_02_vie20_1300_cinta.mp4",
+   "archivo": "s1121_01_sab21_1300_vs.mp4",
    "listo": true,
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   },
   {
-   "id": "s1120_03_vie20_1500_slot",
-   "n": 3,
-   "fecha": "2026-11-20",
+   "id": "s1121_02_sab21_1500_rueda",
+   "n": 2,
+   "fecha": "2026-11-21",
    "hora": "15:00",
-   "tipo": "slot",
-   "formato": "HEAD SLOT",
-   "titulo": "Fit Mbappé's head 🎰 Only 1% hit the jackpot #mbappe #vinicius #ronaldo",
-   "descripcion": "Stop the slot when Mbappé's head fits PERFECTLY 🎰🛑 Only 1% get it first try. How many tries did it take you? 👇\n#mbappe #vinicius #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "tipo": "rueda",
+   "formato": "WHEEL STOP",
+   "titulo": "Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mbappe #vinicius",
+   "descripcion": "Stop the wheel when Ronaldo's body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#ronaldo #mbappe #vinicius #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
    "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
+    "Ronaldo",
     "Mbappé",
-    "Vinícius",
-    "Ronaldo"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "mbappé",
-    "vinícius",
-    "ronaldo"
-   ],
-   "archivo": "s1120_03_vie20_1500_slot.mp4",
-   "listo": true,
-   "control": "NO PASA: brillo del cuadro 0 ≥ 130; cara más grande ≥ 3 % de la pantalla en el cuadro 0"
-  },
-  {
-   "id": "s1120_04_vie20_1700_circulo",
-   "n": 4,
-   "fecha": "2026-11-20",
-   "hora": "17:00",
-   "tipo": "circulo",
-   "formato": "GOAT CIRCLE",
-   "titulo": "Pause on your GOAT 🐐 Neymar, Messi or Zlatan? #neymar #messi #zlatan",
-   "descripcion": "Pause when the ball touches YOUR GOAT 🐐\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#neymar #messi #zlatan #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "Who's your GOAT? 🐐 I read them all 👇",
-   "jugadores": [
-    "Neymar",
-    "Messi",
-    "Zlatan",
     "Vinícius"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "neymar",
-    "messi",
-    "zlatan",
+    "ronaldo",
+    "mbappé",
     "vinícius"
    ],
-   "archivo": "s1120_04_vie20_1700_circulo.mp4",
-   "listo": true,
-   "control": "PASA"
-  },
-  {
-   "id": "s1120_05_vie20_1830_balon",
-   "n": "Messi",
-   "fecha": "2026-11-20",
-   "hora": "18:30",
-   "tipo": "balon",
-   "formato": "BALLON D'OR 100%",
-   "titulo": "Give Messi the Ballon d'Or 🏆🛑 Only 1% can #messi #ballondor",
-   "descripcion": "Pause when the Ballon d'Or fits in Messi's hands (100%) 🏆\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#messi #ballondor #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
-   "jugadores": [
-    "Messi"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "messi"
-   ],
-   "archivo": "s1120_05_vie20_1830_balon.mp4",
-   "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
-  },
-  {
-   "id": "s1120_06_vie20_2000_penal",
-   "n": "Neymar",
-   "fecha": "2026-11-20",
-   "hora": "20:00",
-   "tipo": "penal",
-   "formato": "PENALTY 100",
-   "titulo": "Can Messi score at 100%? ⚽🛑 Stop it in the top corner #messi #penalty",
-   "descripcion": "Pause when the target is in the top corner (100%) ⚽\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#messi #penalty #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n- Lionel Messi: \"Lionel Messi 20180626.jpg\" by Кирилл Венедиктов, CC BY-SA 3.0 (https://commons.wikimedia.org/wiki/File:Lionel_Messi_20180626.jpg). Edited.",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
-   "jugadores": [
-    "Messi"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "messi"
-   ],
-   "archivo": "s1120_06_vie20_2000_penal.mp4",
-   "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
-  },
-  {
-   "id": "s1120_07_vie20_2130_rueda",
-   "n": 7,
-   "fecha": "2026-11-20",
-   "hora": "21:30",
-   "tipo": "rueda",
-   "formato": "WHEEL STOP",
-   "titulo": "Neymar vs Yamal or Mbappé stop challenge 😱🔥 #neymar #mbappe #yamal",
-   "descripcion": "Stop the wheel when Neymar's body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#neymar #mbappe #yamal #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
-   "jugadores": [
-    "Neymar",
-    "Mbappé",
-    "Yamal"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "neymar",
-    "mbappé",
-    "yamal"
-   ],
-   "archivo": "s1120_07_vie20_2130_rueda.mp4",
+   "archivo": "s1121_02_sab21_1500_rueda.mp4",
    "exp": {
     "id": "e3_rueda_titulo",
     "brazo": "vs"
@@ -193,17 +58,75 @@
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   },
   {
-   "id": "s1120_08_vie20_2300_cabezas",
-   "n": 8,
-   "fecha": "2026-11-20",
-   "hora": "23:00",
+   "id": "s1121_03_sab21_1700_favorito",
+   "n": 3,
+   "fecha": "2026-11-21",
+   "hora": "17:00",
+   "tipo": "favorito",
+   "formato": "STOP ON YOUR FAVORITE",
+   "titulo": "Stop the ball on your favorite player ⚽🛑 Messi, Beckham or Ronaldo? #messi #beckham #ronaldo",
+   "descripcion": "Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n#messi #beckham #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
+   "jugadores": [
+    "Messi",
+    "Beckham",
+    "Ronaldo"
+   ],
+   "tags": [
+    "football",
+    "soccer",
+    "shorts",
+    "messi",
+    "beckham",
+    "ronaldo"
+   ],
+   "archivo": "s1121_03_sab21_1700_favorito.mp4",
+   "exp": {
+    "id": "e4_favorito_leyendas",
+    "brazo": true
+   },
+   "listo": true,
+   "control": "PASA"
+  },
+  {
+   "id": "s1121_04_sab21_2000_escape",
+   "n": 4,
+   "fecha": "2026-11-21",
+   "hora": "20:00",
+   "tipo": "escape",
+   "formato": "STOP TO ESCAPE",
+   "titulo": "Free Vinícius, Ronaldinho or Neymar? 🔑 Stop the key in the lock #vinicius #ronaldinho #neymar",
+   "descripcion": "Stop the key in the lock to free your GOAT 🔑🛑 How many tries did it take you? 👇\n#vinicius #ronaldinho #neymar #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who did you free, and on which try? 🔑 First try = drop a 🔥",
+   "jugadores": [
+    "Vinícius",
+    "Ronaldinho",
+    "Neymar"
+   ],
+   "tags": [
+    "football",
+    "soccer",
+    "shorts",
+    "vinícius",
+    "ronaldinho",
+    "neymar"
+   ],
+   "archivo": "s1121_04_sab21_2000_escape.mp4",
+   "listo": true,
+   "control": "NO PASA: brillo del cuadro 0 ≥ 130; cara más grande ≥ 3 % de la pantalla en el cuadro 0; movimiento en el primer segundo ≥ 4; nunca más de 4 s sin un cambio grande en pantalla"
+  },
+  {
+   "id": "s1121_05_sab21_2130_cabezas",
+   "n": 5,
+   "fecha": "2026-11-21",
+   "hora": "21:30",
    "tipo": "cabezas",
    "formato": "HEAD FIT",
-   "titulo": "This is almost impossible! Fit Mbappé 🎯⚽ #mbappe #messi #ronaldo",
-   "descripcion": "Pause when Mbappé's head fits PERFECTLY 🛑\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#mbappe #messi #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "titulo": "This is almost impossible! Fit Neymar 🎯⚽ #neymar #messi #ronaldo",
+   "descripcion": "Pause when Neymar's head fits PERFECTLY 🛑\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#neymar #messi #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
    "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
-    "Mbappé",
+    "Neymar",
     "Messi",
     "Ronaldo",
     "Mbappé"
@@ -212,16 +135,43 @@
     "football",
     "soccer",
     "shorts",
-    "mbappé",
+    "neymar",
     "messi",
     "ronaldo",
     "mbappé"
    ],
-   "archivo": "s1120_08_vie20_2300_cabezas.mp4",
+   "archivo": "s1121_05_sab21_2130_cabezas.mp4",
    "exp": {
     "id": "e5_cabezas_duracion",
     "brazo": 6.4
    },
+   "listo": true,
+   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
+  },
+  {
+   "id": "s1121_06_sab21_2300_cinta",
+   "n": 6,
+   "fecha": "2026-11-21",
+   "hora": "23:00",
+   "tipo": "cinta",
+   "formato": "CONVEYOR STOP",
+   "titulo": "Find Vinícius's real body 🛑🔥 Ronaldo or Mbappé? #vinicius #ronaldo #mbappe",
+   "descripcion": "Stop the belt when Vinícius's REAL body is on top of the legs 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#vinicius #ronaldo #mbappe #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
+   "jugadores": [
+    "Vinícius",
+    "Ronaldo",
+    "Mbappé"
+   ],
+   "tags": [
+    "football",
+    "soccer",
+    "shorts",
+    "vinícius",
+    "ronaldo",
+    "mbappé"
+   ],
+   "archivo": "s1121_06_sab21_2300_cinta.mp4",
    "listo": true,
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   }
