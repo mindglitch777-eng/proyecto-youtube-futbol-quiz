@@ -65,13 +65,18 @@ def main():
     pedido = json.loads((BASE / "pedido_fotos.json").read_text())
     cred_path = OUT / "creditos.json"
     creditos = json.loads(cred_path.read_text()) if cred_path.exists() else {}
-    for nombre in pedido:
-        slug = re.sub(r"[^a-z0-9]+", "_", nombre.lower()).strip("_")
+    for item in pedido:
+        # 19/11: un pedido puede ser {"articulo", "clave", "buscar": [...]} cuando el nombre es ambiguo (ej. R9 ≠ Cristiano)
+        if isinstance(item, dict):
+            nombre, slug, busquedas = item["articulo"], item["clave"], item.get("buscar", [item["articulo"]])
+        else:
+            nombre, busquedas = item, [item, item + " portrait"]
+            slug = re.sub(r"[^a-z0-9]+", "_", nombre.lower()).strip("_")
         ya = {v["archivo"] for k, v in creditos.items() if k.startswith(slug + "_")}
         n = len(ya)
         if n > EXTRA:
             continue
-        candidatos = [principal(nombre)] + extras(nombre) + extras(nombre + " portrait")
+        candidatos = [principal(nombre)] + [x for q in busquedas for x in extras(q)]
         for t in dict.fromkeys(c for c in candidatos if c and c not in ya):
             meta = info(t)
             if not meta or not meta["thumb"] or not LIBRES.search(meta["licencia"] or ""):
