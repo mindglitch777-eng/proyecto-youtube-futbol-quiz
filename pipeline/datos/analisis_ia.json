@@ -1,16 +1,21 @@
 {
- "fecha": "2026-11-18",
- "autor": "Gerente IA · parte diario (18/11)",
+ "fecha": "2026-11-19",
+ "autor": "Gerente IA · parte diario (19/11)",
  "veredicto": {
   "color": "amber",
-  "titulo": "CONVEYOR STOP explota; las vistas por día bajan con 8 videos",
-  "frase": "942 suscriptores (faltan 58). CONVEYOR STOP hizo 23 K en sus 2 primeros videos. Pero desde que subimos 8 por día, el canal suma menos vistas por día (35 K y 28 K). Se decide el 24/11 con la semana completa."
+  "titulo": "Faltan 45 suscriptores; se vuelve a 6 por día con lo que rinde",
+  "frase": "955 suscriptores. La semana de 8 bajó las vistas por día (el 18/11, +21 K). El CEO cortó la prueba: desde el 21/11 son 6 por día, con CONVEYOR, WHEEL y FAVORITE fijos. Lo nuevo pega más al principio y después se gasta, por eso hacen falta formatos nuevos todas las semanas."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "942 / 1.000",
-   "nota": "faltan 58"
+   "valor": "955 / 1.000",
+   "nota": "faltan 45"
+  },
+  {
+   "label": "Vistas del canal por día",
+   "valor": "+21 K · +35 K",
+   "nota": "18/11 y 19/11 (parcial)"
   },
   {
    "label": "Videos de 10 K por día",
@@ -18,50 +23,45 @@
    "nota": "meta 3"
   },
   {
-   "label": "Vistas del canal por día",
-   "valor": "35 K · 28 K",
-   "nota": "16 y 17/11 (13-14/11 ~60 K)"
+   "label": "CONVEYOR STOP",
+   "valor": "19.378",
+   "nota": "mediana, 2 medidos"
   },
   {
-   "label": "CONVEYOR STOP",
-   "valor": "23,5 K · 23,1 K",
-   "nota": "sus 2 primeros videos"
+   "label": "FAVORITE",
+   "valor": "15.327",
+   "nota": "1 medido"
   },
   {
    "label": "Originalidad",
-   "valor": "76/100",
-   "nota": "medida con lo subido"
-  },
-  {
-   "label": "WHEEL",
-   "valor": "7.434",
-   "nota": "mediana 48 h, 15 medidos"
+   "valor": "69/100",
+   "nota": "títulos 69 % parecidos"
   }
  ],
  "hallazgos": [
   {
    "tipo": "ojo",
    "titulo": "La originalidad está bien medida con lo subido (76), pero los títulos se parecen",
-   "dato": "El índice marcaba 49 porque contaba reintentos y videos sin subir (55 de 60). Con lo publicado: 76; 3 de 41 videos casi iguales (todos BALLON D'OR o PENALTY) y títulos 66 % parecidos.",
+   "dato": "Índice 69 (con lo subido). Los videos casi iguales bajaron, pero los títulos se parecen 69 %. El 19/11 el Ingeniero sumó fondos al azar (distancia 50-83 entre videos del mismo formato; antes 0-6) y títulos nuevos para WHEEL, HEAD FIT y CONVEYOR.",
    "por_que": "BALLON D'OR y PENALTY tienen un solo armado visual, y WHEEL/HEAD FIT usan pocas frases de título.",
    "confianza": "alta",
-   "accion": "Medición arreglada. El Ingeniero trae el 19/11 variantes visuales y títulos nuevos. Meta: > 80 el 23/11."
+   "accion": "Se mide el 23/11: meta > 80."
   },
   {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP es la gran pista",
-   "dato": "Sus 2 primeros videos: 23.540 y 23.111 (12,6x el canal). FAVORITE: 17.008 con su 2.º. LEGS WHEEL: 1.555 con su 1.º.",
+   "dato": "CONVEYOR: 23.540 y 23.111 en sus 2 primeros (mediana 19.378 con los medidos). FAVORITE: 17.242 (mediana 15.327).",
    "por_que": "Mantienen lo que funciona (elegir entre superestrellas y parar justo) pero se ven distintos.",
    "confianza": "baja (1-2 videos cada uno)",
-   "accion": "Siguen en estreno; con 4 videos medidos se decide si CONVEYOR merece más lugares."
+   "accion": "Desde el 18/11 son fijos todos los días (decisión del CEO), junto con WHEEL."
   },
   {
    "tipo": "no",
    "titulo": "Con 8 videos por día el canal suma menos vistas por día",
-   "dato": "+35 K (16/11) y +28 K (17/11); el 13 y el 14/11, con 6-7 videos, eran ~60 K.",
+   "dato": "Vistas del canal por día: 14/11 ~65 K, 16/11 +35 K, 17/11 +28 K, 18/11 +21 K (y +10 suscriptores, el peor día).",
    "por_que": "Igual que el 13/11: más videos reparten el empuje y repiten formatos (los topes semanales no alcanzan con 8 por día).",
-   "confianza": "baja (2 días)",
-   "accion": "El CEO decide el 24/11 con la semana entera."
+   "confianza": "media (4 días)",
+   "accion": "El CEO cortó la prueba el 18/11: desde el 21/11 son 6 por día, solo con lo que rinde."
   },
   {
    "tipo": "funciona",
@@ -122,10 +122,10 @@
   {
    "tipo": "ojo",
    "titulo": "HEAD FIT se cansa",
-   "dato": "Mediana 3.798 (2,3x el canal) en 8 medidos; sus últimos 4 rinden el 54 % de los 4 anteriores. Mbappé salía en 1 de cada 3 (el cuerpo se elegía al azar y tiene 2 fotos de 6).",
+   "dato": "Mediana 3.349 (2,1x el canal); sus últimos 4 rinden el 51 % de los 4 anteriores.",
    "por_que": "Sale todos los días y ahora también tiene a HEAD SLOT y FIT ALL en la misma familia.",
    "confianza": "alta",
-   "accion": "Desde el 18/11 HEAD FIT y HEAD SLOT rotan jugador juntos. Se mira el 21/11."
+   "accion": "Pasó a prueba el 18/11 (decisión del CEO). HEAD FIT y HEAD SLOT rotan jugador juntos desde el 18/11."
   },
   {
    "tipo": "no",
@@ -154,20 +154,16 @@
  ],
  "acciones": [
   {
-   "quien": "Gerente IA",
-   "que": "18/11: medición de originalidad arreglada; tope semanal entre días; rotación de jugador en HEAD FIT/HEAD SLOT; DRESS 20/11 20:00."
+   "quien": "CEO",
+   "que": "18/11: fin de la semana de 8; 6 por día con CONVEYOR, WHEEL y FAVORITE fijos. Falta responder SKILL STOP (#15)."
   },
   {
    "quien": "Ingeniero",
-   "que": "19/11: VS STOP más difícil, variantes visuales y títulos nuevos."
+   "que": "SKILL STOP con pelota más grande; jugada MOMENTO nueva; variantes visuales de CONVEYOR."
   },
   {
    "quien": "Gerente IA",
-   "que": "21/11 HEAD FIT · 22/11 DRESS · 23/11 originalidad > 80 · 24/11 comparación de la semana de 8 para el CEO."
-  },
-  {
-   "quien": "CEO",
-   "que": "Nada por ahora."
+   "que": "21/11 HEAD FIT · 22/11 DRESS (2 pruebas) · 23/11 originalidad > 80 · lunes 23/11 mensaje semanal."
   }
  ]
 }

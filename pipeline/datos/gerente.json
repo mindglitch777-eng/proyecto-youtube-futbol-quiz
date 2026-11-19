@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-19",
- "hora": "07:15",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 1588,
   "mediana_48h_semana_anterior": 2047,
@@ -57,7 +57,7 @@
   "lectura": "OJO: se empieza a ver repetitivo"
  },
  "inspeccion": {
-  "revisados": 127,
+  "revisados": 143,
   "con_defectos": 0,
   "ejemplos": []
  },
@@ -66,10 +66,12 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-19T06:28-03:00",
+   "hora": "2026-11-19T13:37-03:00",
    "problemas": [],
    "acciones": [],
-   "avisos": []
+   "avisos": [
+    "cabezas: promovido (mediana 3,349 vs canal 1,948)"
+   ]
   }
  },
  "norte": {
@@ -85,10 +87,12 @@
    "2026-11-15": 1,
    "2026-11-16": 1,
    "2026-11-17": 1
-  }
+  },
+  "vistas_por_dia": 28026,
+  "subs_por_dia": 19.5
  },
  "cerebro": {
-  "fecha": "2026-11-19T07:15-03:00",
+  "fecha": "2026-11-19T15:42-03:00",
   "videos_medidos": 104,
   "formatos": {
    "cinta": {
@@ -337,18 +341,18 @@
   "originalidad": {
    "tope": "35%",
    "ultimos_7_dias": {
-    "rueda": "14%",
     "stop": "14%",
+    "rueda": "14%",
     "cabezas": "12%",
     "balon": "8%",
     "circulo": "8%",
-    "slot": "6%",
     "fitall": "6%",
+    "slot": "6%",
     "favorito": "6%",
     "q20balon": "5%",
     "cinta": "5%",
-    "piernas": "4%",
     "penal": "4%",
+    "piernas": "4%",
     "dress": "3%",
     "trayectoria": "1%",
     "q20costo": "1%",
@@ -1177,16 +1181,7 @@
    "id": "O3ueHixM2Co"
   }
  ],
- "olas_calientes": [
-  {
-   "mecanica": "wheel",
-   "estado": "subiendo",
-   "vph": 1476,
-   "nuestros": [
-    "rueda"
-   ]
-  }
- ],
+ "olas_calientes": [],
  "salud": {
   "subidas_programadas": {
    "2026-11-19": 8,
@@ -1198,7 +1193,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 19,
+  "olas_hace_h": 3,
   "investigacion": "2026-11-17",
   "poda": {
    "podadas": {
@@ -1208,40 +1203,51 @@
      "videos": 4
     }
    },
-   "promovidas": {},
+   "promovidas": {
+    "cabezas": {
+     "fecha": "2026-11-19",
+     "rinde": "mediana 3,349 vs canal 1,948",
+     "videos": 8
+    }
+   },
    "historial": [
     {
      "fecha": "2026-11-15",
      "formato": "fitall",
      "cambio": "vuelve",
      "motivo": "auditoría A2: la poda vieja lo comparaba contra STOP; tuvo videos de 20.984 y 8.486"
+    },
+    {
+     "fecha": "2026-11-19",
+     "formato": "cabezas",
+     "cambio": "promovido",
+     "motivo": "mediana 3,349 vs canal 1,948"
     }
    ],
-   "mediana_canal": 1959
+   "mediana_canal": 1948
   },
   "advertencias": [
    "Pasado mañana (2026-11-21) no tiene videos subidos todavía (normal si la fábrica de hoy aún no corrió; si ya corrió, es un problema)."
   ]
  },
  "parte": {
-  "fecha": "2026-11-18",
-  "titular": "942 de 1.000 suscriptores (faltan 58). La métrica que manda: 1,0 video de 10 K por día (meta 3); vistas por día en baja: +35 K el 16/11 y +28 K el 17/11 (el 13 y el 14/11 eran ~60 K).",
+  "fecha": "2026-11-19",
+  "titular": "955 de 1.000 suscriptores (faltan 45). Vistas por día: 18/11 fue el peor día (+21 K y +10 suscriptores); el 19/11 va mejor (+35 K y +25 hasta las 15:43). Desde el 21/11 vuelven a ser 6 por día, como decidiste.",
   "funciona": [
-   "CONVEYOR STOP: sus 2 primeros videos hicieron 23.540 y 23.111 (12,6x el canal). Es lo mejor que salió en semanas. Confianza baja (2 videos), pero es la gran pista.",
-   "FAVORITE: 17.008 con su 2.º video. WHEEL sigue firme: mediana 7.434 (alta)."
+   "CONVEYOR STOP: mediana 19.378 en sus 2 videos medidos (12,2x el canal). FAVORITE: 15.327 (9,7x). Confianza baja (1-2 videos medidos), pero son las dos mejores pistas, y ya son fijos.",
+   "El Ingeniero entregó lo pedido: fondos variados en BALLON D'OR, PENALTY, HEAD SLOT, VS y SKILL STOP (ya no salen casi iguales), títulos nuevos y SKILL STOP (#15)."
   ],
   "no_funciona": [
-   "Las vistas por día bajan desde que arrancó la semana de 8 videos (35 K y 28 K en los 2 primeros días). Es poco tiempo para concluir (2 días), pero va en la misma dirección que la lección del 13/11. Se decide el 24/11 como pediste.",
-   "HEAD FIT se cansa: sus últimos 4 rinden el 54 % de los 4 anteriores (mediana 3.798). Tenía a Mbappé en 1 de cada 3 videos (ver abajo).",
-   "LEGS WHEEL debutó flojo: 1.555 (1 video, confianza baja)."
+   "HEAD FIT sigue cansado (51 %, mediana 3.349): ya pasó a prueba.",
+   "Los títulos se parecen 69 % (índice de originalidad 69). Los títulos nuevos del Ingeniero recién empiezan a salir.",
+   "La hoja de control del 21/11 mostró el cartel 'RONALDINHO ESCAPED!' cortado en el borde: lo arreglé (también en VS) y rehíce ese video antes de subirlo."
   ],
   "hice": [
-   "La alarma de originalidad (49, 'producción en masa') era un error de medición: contaba reintentos y videos sin subir. Medido con lo que está en el canal da 76 ('bien'). Lo arreglé. Lo que sí es real: los títulos se parecen 66 % y hay 3 pares casi iguales de BALLON D'OR y PENALTY. Las variantes del Ingeniero llegan mañana.",
-   "Arreglé 2 fallas que repetían contenido: (1) el tope semanal no contaba los días anteriores (BALLON D'OR salió 4 veces con tope 2); (2) HEAD FIT elegía el cuerpo al azar y Mbappé salía en 1 de cada 3. Ahora HEAD FIT y HEAD SLOT rotan jugador juntos. Rehíce el HEAD SLOT del 20/11, que repetía a Mbappé.",
-   "DRESS 2.ª prueba: el 20/11 a las 20:00 (en lugar de un PENALTY)."
+   "Revisé SKILL STOP (#15) y te recomiendo que sí, con un arreglo: la pelota es muy chica. Se lo pedí al Ingeniero ya.",
+   "Arreglé el cartel cortado de ESCAPE y VS, y rehíce el ESCAPE del 21/11."
   ],
   "para_el_ceo": [
-   "Nada para vos hoy."
+   "SKILL STOP (el caño): respondé sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/15 (te recomiendo que sí, con la pelota más grande)."
   ]
  }
 }

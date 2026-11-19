@@ -211,3 +211,13 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   distancia de huella 55-79 (BALLON), 56-83 (PENALTY), 50-63 (HEAD SLOT); antes 0-6. WHEEL y CONVEYOR sin tocar (fijos que rinden).
   (4) STOP TO ESCAPE y VS más difícil los hizo la sesión principal (18/11). Pendiente: jugada MOMENTO nueva.
 - **Para el CEO:** Issue #15 (SKILL STOP).
+
+## 2026-11-19 · Gerente IA (turno diario)
+- **Vi:** 955 suscriptores. Vistas por día: 18/11 +21 K y +10 suscriptores (el peor); 19/11 +35 K y +25 hasta las 15:43. CEO (18/11): fin de la semana de 8 → 6 por día desde el 21/11 con CONVEYOR, WHEEL y FAVORITE fijos.
+  CONVEYOR 19.378 (2 medidos), FAVORITE 15.327 (1), HEAD FIT cansado (51 %). Originalidad 69 (títulos 69 %). Máquinas OK. Entrega del Ingeniero: fondos variados, títulos nuevos, SKILL STOP (#15).
+  Hoja de control 21/11: ESCAPE 20:00 con "RONALDINHO ESCAPED!" cortado; el resto bien.
+- **Decidí e hice:** (1) ESCAPE y VS ajustan el cartel al ancho; rehíce el ESCAPE del 21/11. 6 preguntas: 1 video visto / medido 1.126 px vs 1.080 / sin otra explicación / peor caso: texto más chico, se deshace con git / se ve en la hoja de control / mío (arreglar fallas).
+  (2) SKILL STOP (#15): le recomendé al CEO que sí, con la pelota 2-3 veces más grande; ese arreglo ya se lo pedí al Ingeniero.
+- **No toqué:** la grilla nueva del CEO (arranca el 21/11).
+- **Revisar el 2026-11-20:** el ESCAPE rehecho a ojo. **21/11** HEAD FIT · **22/11** DRESS · **23/11** originalidad > 80 y mensaje semanal.
+- **Para el CEO:** #15 (SKILL STOP), sí o no.
