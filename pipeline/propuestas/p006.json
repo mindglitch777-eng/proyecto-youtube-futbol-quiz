@@ -13,5 +13,14 @@
   {
    "tipo": "cano"
   }
- ]
+ ],
+ "prototipo": {
+  "hoja": "reports/propuestas/p006/hoja.jpg",
+  "videos": [
+   "produccion/prototipos/p006/p006_01_sab19_1200_cano.mp4",
+   "produccion/prototipos/p006/p006_02_sab19_1300_cano.mp4",
+   "produccion/prototipos/p006/p006_03_sab19_1400_cano.mp4"
+  ],
+  "release": "propuesta-p006"
+ }
 }
