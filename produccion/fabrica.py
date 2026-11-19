@@ -505,8 +505,8 @@ def fondo_variado(V, tipo, rng):
 
 # SKILL STOP · NUTMEG (19/11, pedido del CEO): defensor superestrella con las piernas abiertas (recortes con hueco medido) y
 # la cara del atacante (estrella o leyenda); pausar con la pelota entre los pies. Solo famosos.
-DEFENSORES_CANO = {"kylian_mbapp_13": "kylian_mbapp", "kylian_mbapp_11": "kylian_mbapp",
-                   "lionel_messi_3": "lionel_messi"}                       # 19/11: recortes con hueco limpio y pelota visible (Ronaldo_10: hueco chico)
+DEFENSORES_CANO = {"kylian_mbapp_13": "kylian_mbapp", "lamine_yamal_3": "lamine_yamal"}   # 19/11 (CEO aprobó #15): solo piernas MUY abiertas = pelota grande
+# (fuera: Messi_3 manos en la cintura, Vinícius_10 piernas juntas, Neymar_1 cara tapada por el aro, Zlatan_1 trae su propia pelota)
 TIT_CANO = ["{a} vs {b} skills 🛑 Stop the nutmeg", "Can {a} nutmeg {b}? 🛑 Only 1% stop it", "{a} nutmegs {b}? 😱 Pause it between the legs",
             "{a} skills vs {b} 🛑 Stop it between the legs"]
 

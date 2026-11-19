@@ -33,7 +33,7 @@ VARIANTES = {"cinta", "piernas", "slot"}
 FAMILIAS = {"rueda": "WHEEL", "piernas": "WHEEL", "cinta": "WHEEL",
             "cabezas": "CABEZAS", "slot": "CABEZAS", "fitall": "CABEZAS",
             "favorito": "ELEGI", "circulo": "ELEGI",
-            "balon": "MOMENTO", "siuu": "MOMENTO", "penal": "MOMENTO", "vs": "DUELO", "dress": "MOMENTO", "escape": "ESCAPE"}
+            "balon": "MOMENTO", "siuu": "MOMENTO", "penal": "MOMENTO", "vs": "DUELO", "dress": "MOMENTO", "escape": "ESCAPE", "cano": "SKILL"}
 MAX_FAMILIA_DIA = 2
 # 15/11 (auditoría B1 + CEO: "arranquemos ya"): SEMANA DE VOLUMEN 16-22/11 (16 y 17 con extras): 8 videos por día. Los 2 lugares extra van SOLO a familias que ya dieron
 # videos de 10 K (WHEEL, CABEZAS, ELEGÍ). Se compara contra la semana de 6 (videos de 10 K por día y vistas por día).

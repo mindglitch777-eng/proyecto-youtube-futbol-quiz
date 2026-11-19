@@ -295,9 +295,10 @@
    "nota": "18/11 pedido del CEO (formatos nuevos ya, más difíciles). Estreno: 3 lugares asegurados la 1.ª semana."
   },
   "cano": {
-   "listo": false,
-   "max_semana": 3,
-   "nota": "19/11 pedido del CEO (SKILL STOP): caño. Defensor superestrella grande; la pelota corre por detrás de sus piernas y hay que pausar con la pelota entre los pies (cámara lenta 4x en el hueco; NUTMEG! solo mientras está ahí). Propuesta con prototipo; entra cuando el CEO apruebe (al aprobarse: estreno_hasta +7 días)."
+   "listo": true,
+   "max_semana": 4,
+   "nota": "19/11 pedido del CEO (SKILL STOP): caño. Defensor superestrella grande; la pelota corre por detrás de sus piernas y hay que pausar con la pelota entre los pies (cámara lenta 4x en el hueco; NUTMEG! solo mientras está ahí). Propuesta con prototipo; entra cuando el CEO apruebe (al aprobarse: estreno_hasta +7 días). APROBADO 19/11 (#15) con arreglos: pelota grande (radio 124, antes 40) y solo defensores con piernas muy abiertas (Mbappé, Yamal). Estreno hasta 26/11.",
+   "estreno_hasta": "2026-11-26"
   }
  }
 }

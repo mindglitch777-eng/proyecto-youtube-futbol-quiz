@@ -229,3 +229,9 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 ## 2026-11-19 · Ingeniero (anotación)
 - **Ingeniero:** acordado con el Gerente: Messi sigue como defensor de SKILL STOP (con brillo) hasta tener otra foto con más hueco.
   Para el lunes 23/11: más fondos propios revisados a 1080x1920 (sin marcas de agua) y una foto de Messi con más hueco entre los pies.
+
+## 19/11 · SKILL STOP aprobado por el CEO (#15) y activado
+- Arreglos: pelota GRANDE (radio 124 px; antes 40 con Messi) y solo defensores con piernas muy abiertas: Mbappé (kylian_mbapp_13) y Yamal (lamine_yamal_3).
+- Fuera como defensor: Messi_3 (manos en la cintura, hueco chico), Vinícius_10 (piernas juntas), Neymar_1 (su cara queda tapada por el aro del atacante), Zlatan_1 (la foto trae su propia pelota). Atacante: rota entre las 6 superestrellas y las 5 leyendas.
+- Estreno hasta 26/11 (3 lugares asegurados), máx. 4 por semana, familia nueva SKILL. Inspector: PASA (Yamal, Mbappé). Prueba de humo: TODO OK.
+- Pendiente para el Ingeniero (lunes 23/11): más recortes de superestrellas con las piernas MUY abiertas (Ronaldo, Messi, Neymar, Vinícius) para rotar el defensor.

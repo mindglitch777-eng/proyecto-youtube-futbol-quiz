@@ -63,7 +63,7 @@ def defensor(clave):
     s = ALTO_DEF / im.height
     im = im.resize((int(im.width * s), ALTO_DEF), Image.LANCZOS)
     a = np.asarray(im.split()[3]) > 100
-    for r in range(100, 24, -2):                                               # la pelota más grande que entra entera en el hueco
+    for r in range(124, 63, -2):                                               # 19/11 (#15): pelota GRANDE (mín. 64), la mayor que entra en el hueco
         ancho, cx = hueco(a, ALTO_DEF - 1 - r - 4)                             # (medido a la altura del centro de la pelota)
         arriba, _ = hueco(a, ALTO_DEF - 1 - 2 * r - 4)
         if min(ancho, arriba) / 2 * 0.9 >= r:
