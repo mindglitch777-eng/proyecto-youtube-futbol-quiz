@@ -9360,167 +9360,164 @@
   "coment": 48,
   "familia": "dress",
   "analisis": {
-   "nombre_formato": "Dressing Challenge",
-   "mecanica": "Caída secuencial de accesorios (gafas, cadenas, peinados) sobre dos futbolistas calvos sincronizados con la música hasta lograr el outfit final.",
-   "que_hace_el_espectador": "Mirar la transformación visual y evaluar cuál personaje luce mejor.",
-   "cuadro_0": "Fondo azul degradado. Arriba a la izquierda lista '1., 2., 3., 4.'. Abajo CR7 (Portugal) y Yamal (Barça) calvos.",
+   "nombre_formato": "Dressing Challenge / Selection Match",
+   "mecanica": "Caen accesorios numerados desde la parte superior hacia dos futbolistas (Ronaldo y Yamal). Algunos se equipan exitosamente y otros se descartan.",
+   "que_hace_el_espectador": "Mira la transformación visual y compara el aspecto final de ambos futbolistas.",
+   "cuadro_0": "Fondo azul. Lista numerada (1-4) arriba a la izquierda. Cristiano Ronaldo y Lamine Yamal calvos en la parte inferior. Gafas de sol flotando en la posición 2.",
    "linea_de_tiempo": [
     {
-     "t": "0.0",
-     "pantalla": "Vista inicial de CR7 y Yamal calvos con lista numerada a la izquierda.",
-     "sonido": "Música urbana / reggaetón inicia"
+     "t": "0.0s",
+     "pantalla": "Gafas de sol aparecen en la posición 2 del menú superior.",
+     "sonido": "Música reguetón / dembow de fondo."
     },
     {
-     "t": "0.5",
-     "pantalla": "Aparecen gafas de sol negras en la parte superior.",
-     "sonido": "Beat continuo"
+     "t": "0.5s",
+     "pantalla": "Las gafas bajan hacia las caras de Ronaldo y Yamal.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "1.0",
-     "pantalla": "Las gafas bajan y se colocan en los ojos de ambos futbolistas.",
-     "sonido": "Golpe de ritmo"
+     "t": "1.0s",
+     "pantalla": "Las gafas se colocan correctamente en los rostros de ambos jugadores.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "1.5",
-     "pantalla": "Gafas fijas en los rostros.",
-     "sonido": "Beat de fondo"
+     "t": "1.5s",
+     "pantalla": "Aparecen cadenas de oro flotando arriba.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "2.0",
-     "pantalla": "Aparecen cadenas de oro arriba.",
-     "sonido": "Vocal track / beat"
+     "t": "2.0s",
+     "pantalla": "Las cadenas bajan al cuello de Ronaldo y Yamal.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "2.5",
-     "pantalla": "Las cadenas bajan hacia los cuellos.",
-     "sonido": "Corte de ritmo"
+     "t": "2.5s",
+     "pantalla": "Cadenas equipadas con éxito.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "3.0",
-     "pantalla": "Cadenas equipadas en ambos jugadores.",
-     "sonido": "Beat continuo"
+     "t": "3.0s",
+     "pantalla": "Aparecen pelucas rosadas/moradas en la parte superior.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "3.5",
-     "pantalla": "Vista de gafas y cadenas puestas.",
-     "sonido": "Vocal 'Y qué fue'"
+     "t": "3.5s",
+     "pantalla": "Pelucas caen sobre la cabeza de los jugadores.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "4.0",
-     "pantalla": "Cae una peluca rosa larga desde arriba.",
-     "sonido": "Beat urbano"
+     "t": "4.0s",
+     "pantalla": "Las pelucas rosadas se borran/descartan rápidamente.",
+     "sonido": "Efecto de sonido de descarte / transición."
     },
     {
-     "t": "4.5",
-     "pantalla": "La peluca rosa se posiciona sobre las cabezas.",
-     "sonido": "Música acelerada"
+     "t": "4.5s",
+     "pantalla": "Aparece un nuevo peinado cresta roja en la parte superior.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "5.0",
-     "pantalla": "Peluca rosa colocada momentáneamente.",
-     "sonido": "Beat continuo"
+     "t": "5.0s",
+     "pantalla": "La cresta roja baja hacia las cabezas.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "5.5",
-     "pantalla": "La peluca rosa se descarta cayendo hacia abajo.",
-     "sonido": "Efecto de transición sonora"
+     "t": "5.5s",
+     "pantalla": "La cresta roja se equipa momentáneamente.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "6.0",
-     "pantalla": "Desaparece la peluca rosa.",
-     "sonido": "Beat continuo"
+     "t": "6.0s",
+     "pantalla": "La cresta roja es rechazada y se elimina.",
+     "sonido": "Efecto de sonido de descarte."
     },
     {
-     "t": "6.5",
-     "pantalla": "Cae un peinado cresta mohicana roja desde arriba.",
-     "sonido": "Vocal / golpe de ritmo"
+     "t": "6.5s",
+     "pantalla": "Jugadores quedan nuevamente solo con gafas y cadenas.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "7.0",
-     "pantalla": "Cresta roja se coloca en las cabezas.",
-     "sonido": "Beat fuerte"
+     "t": "7.0s",
+     "pantalla": "Aparece peinado mohicano de picos rojos arriba.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "7.5",
-     "pantalla": "La cresta roja se descarta cayendo hacia abajo.",
-     "sonido": "Transición sonora"
+     "t": "7.5s",
+     "pantalla": "El mohicano cae sobre las cabezas de Ronaldo y Yamal.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "8.0",
-     "pantalla": "Desaparece la cresta roja.",
-     "sonido": "Beat continuo"
+     "t": "8.0s",
+     "pantalla": "El mohicano de picos es descartado rápidamente.",
+     "sonido": "Efecto de sonido de descarte."
     },
     {
-     "t": "8.5",
-     "pantalla": "Cae peluca de estilo anime rojo desde arriba.",
-     "sonido": "Efecto 'Doggy Style' / voz"
+     "t": "8.5s",
+     "pantalla": "Aparece nuevo peinado estilo anime rojo arriba.",
+     "sonido": "Vocal 'Doggystyle' / cambio de ritmo."
     },
     {
-     "t": "9.0",
-     "pantalla": "El pelo anime rojo cubre las cabezas.",
-     "sonido": "Beat marcado"
+     "t": "9.0s",
+     "pantalla": "El peinado anime rojo cae tapando los ojos.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "9.5",
-     "pantalla": "El pelo anime rojo se ajusta sobre los ojos.",
-     "sonido": "Música final"
+     "t": "9.5s",
+     "pantalla": "El peinado anime se descarta.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "10.0",
-     "pantalla": "Resultado final con gafas, cadena y pelo anime rojo.",
-     "sonido": "Remate del tema musical"
+     "t": "10.0s",
+     "pantalla": "Regresa la vista de los jugadores con gafas y cadenas equipadas.",
+     "sonido": "Música de fondo en bucle."
     },
     {
-     "t": "10.5",
-     "pantalla": "Pose final con todo el outfit completo.",
-     "sonido": "Música desacelerando"
+     "t": "10.5s",
+     "pantalla": "Pausa final mostrando el equipamiento final.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "11.0",
-     "pantalla": "Muestra del estilo definitivo de CR7 y Yamal.",
-     "sonido": "Cierre de pista audio"
+     "t": "11.0s",
+     "pantalla": "Transición suave de reinicio de animación.",
+     "sonido": "Música de fondo continuada."
     },
     {
-     "t": "11.5",
-     "pantalla": "Transición hacia el inicio.",
-     "sonido": "Silencio breve"
-    },
-    {
-     "t": "12.0",
-     "pantalla": "Reinicio del bucle.",
-     "sonido": "Reinicio del beat"
+     "t": "11.5s",
+     "pantalla": "Preparación para el bucle al estado inicial.",
+     "sonido": "Fin del loop musical."
     }
    ],
    "duracion_s": 12,
-   "loop": "Se reinicia sin pausa volviendo al estado calvo original.",
-   "gancho": "Impacto cómico de ver a CR7 y Yamal calvos al inicio.",
+   "loop": "Sí, empalma perfectamente al reiniciar la caída de objetos desde el menú superior.",
+   "gancho": "La transformación humorística e inesperada de futbolistas ultra famosos (CR7 y Yamal) calvos.",
    "dopamina": [
-    "Sincronización exacta del encaje de objetos con el beat a los 1s, 3s y 9s."
+    "Expectativa de qué objeto va a caer (cada 1.5s)",
+    "Satisfacción visual cuando el accesorio encaja perfectamente",
+    "Humor por descartes absurdos de peinados"
    ],
-   "audio": "Track urbano/reggaetón con acentos marcados para la caída de accesorios.",
-   "por_que_comentan": "Debaten quién quedó mejor vestimenta o se burlan del aspecto calvo.",
+   "audio": "Track dembow/reguetón viral con cortes de voz cómicos para marcar caídas de objetos.",
+   "por_que_comentan": "Debaten quién se ve mejor, se ríen del aspecto calvo de los jugadores o piden otros futbolistas.",
    "assets_necesarios": [
-    "PNG CR7 recortado sin pelo",
-    "PNG Lamine Yamal recortado sin pelo",
-    "PNG Gafas de sol",
-    "PNG Cadena de oro",
-    "PNG Peluca rosa",
-    "PNG Cresta roja",
-    "PNG Pelo anime rojo",
-    "Audio MP3 reggaetón"
+    "PNG recortado Cristiano Ronaldo sin pelo",
+    "PNG recortado Lamine Yamal sin pelo",
+    "PNG gafas de sol urbanas",
+    "PNG cadenas de oro",
+    "PNGs de varios estilos de pelucas/peinados",
+    "Fondo azul degrade 1080x1920"
    ],
    "replicable_con_codigo": true,
    "dificultad_1a5": 2,
    "receta_para_programarlo": [
-    "1. Crear lienzo 1080x1920 con fondo degradado azul.",
-    "2. Colocar imágenes fijas de CR7 y Yamal en la parte inferior.",
-    "3. Definir función de animación Y(t) para desplazar accesorios desde top Y=-200 hasta la posición del cuerpo.",
-    "4. Aplicar desfases de tiempo (timestamps) para cada accesorio y renderizar con MoviePy/PIL."
+    "Crear canvas vertical 1080x1920 con fondo azul degrade en MoviePy/PyGame.",
+    "Posicionar los PNGs recortados de Ronaldo y Yamal fijamente en la parte inferior (y: 1200).",
+    "Definir lista de objetos PNG con coordenadas (x, y) de origen (arriba) y destino (cabeza/rostro/cuello).",
+    "Interpolar posición Y con animación de interpolación lineal/bounce de 0.5s por objeto.",
+    "Eliminar objetos rechazados mediante animación de salida rápida o fade out.",
+    "Sincronizar eventos de caída con los beats del audio importado."
    ],
    "como_lo_hacemos_mejor": [
-    "Agregar marcador de puntos dinámico tipo votación.",
-    "Usar efectos sonoros de impacto (pop/whoosh) al encajar accesorios.",
-    "Incluir un tercer jugador rival para mayor variedad."
+    "Agregar barra de votación interactiva en pantalla para incitar comentarios.",
+    "Incluir efectos de sonido (SFX) más extravagantes al equipar objetos dorados o épicos.",
+    "Añadir un 'resultado final' con puntuación numéricas para cada jugador."
    ]
   }
  },
@@ -9538,124 +9535,157 @@
   "coment": 76,
   "familia": "otros",
   "analisis": {
-   "nombre_formato": "Skit CGI vs Highlights de Potencia",
-   "mecanica": "Un personaje fuerte (Hulk) desafía a Roberto Carlos en 3D; se muestran clips de remates devastadores de Roberto Carlos y finaliza con la reacción de miedo de Hulk.",
-   "que_hace_el_espectador": "Mira la interacción cómica y admira los potentes disparos del futbolista.",
-   "cuadro_0": "Arriba: Leyendas en rojo 'ROBERTO CARLOS' y verde 'HULK'. Centro: Personaje 3D de Hulk y Roberto Carlos en una terraza. Abajo: Marca de agua 'Lv7' y subtítulo descriptivo.",
+   "nombre_formato": "Confrontación Meme y Demostración de Poder",
+   "mecanica": "Un personaje desafía a otro, se muestra una demostración exagerada de fuerza y el desafiante termina sometiéndose de forma cómica.",
+   "que_hace_el_espectador": "Solo mirar y entretenerse con la edición absurda.",
+   "cuadro_0": "Arriba: Textos 'ROBERTO CARLOS' (rojo) y 'HULK' (verde). Centro: Roberto Carlos encarando a Hulk en una terraza urbana. Fondo: Edificios y cielo al atardecer.",
    "linea_de_tiempo": [
     {
      "t": "0.0",
-     "pantalla": "Hulk 3D camina e ignora a Roberto Carlos en la terraza.",
-     "sonido": "Música bass house de fondo."
+     "pantalla": "Roberto Carlos camina hacia Hulk en la terraza.",
+     "sonido": "Música Phonk de fondo"
     },
     {
      "t": "0.5",
-     "pantalla": "Texto en pantalla: 'Hulk showing attitude to Roberto Carlos'.",
-     "sonido": "Música bass house continúa."
+     "pantalla": "Aparecen carteles 'ROBERTO CARLOS' y 'HULK'.",
+     "sonido": "Beat Phonk continuo"
     },
     {
      "t": "1.0",
-     "pantalla": "Roberto Carlos se acerca y lo confronta sutilmente.",
-     "sonido": "Música bass house y tono de confrontación."
+     "pantalla": "Roberto Carlos empuja suavemente el hombro de Hulk.",
+     "sonido": "Beat Phonk"
     },
     {
      "t": "1.5",
-     "pantalla": "Roberto Carlos empuja levemente el brazo musculoso de Hulk.",
-     "sonido": "Efecto de sonido de toque/golpe ligero."
+     "pantalla": "Texto 'Hulk showing attitude' en pantalla.",
+     "sonido": "Beat Phonk"
     },
     {
      "t": "2.0",
-     "pantalla": "Hulk se mantiene firme mirando fijamente a Roberto Carlos.",
-     "sonido": "Música en aumento."
+     "pantalla": "Hulk presumiendo músculos desafiante.",
+     "sonido": "Beat Phonk"
     },
     {
      "t": "2.5",
-     "pantalla": "Roberto Carlos toca de nuevo el brazo de Hulk.",
-     "sonido": "Efecto de sonido de tensión."
+     "pantalla": "Roberto Carlos observa seriamente a Hulk.",
+     "sonido": "Beat Phonk"
     },
     {
      "t": "3.0",
-     "pantalla": "Hulk desvía la mirada con actitud desafiante.",
-     "sonido": "Música electrónica pegajosa."
+     "pantalla": "Hulk mantiene la postura desafiante.",
+     "sonido": "Beat Phonk"
     },
     {
      "t": "3.5",
-     "pantalla": "Roberto Carlos le habla seriamente a Hulk.",
-     "sonido": "Beat de la música."
+     "pantalla": "Roberto Carlos prepara su demostración.",
+     "sonido": "Beat Phonk"
     },
     {
      "t": "4.0",
-     "pantalla": "Hulk se agacha para tomar impulso o responder.",
-     "sonido": "Efecto de sonido grave."
+     "pantalla": "Corte a gimnasio indoor, Roberto Carlos toma distancia.",
+     "sonido": "SFX silbato / tensión"
     },
     {
      "t": "4.5",
-     "pantalla": "Transición rápida hacia los tiros de Roberto Carlos.",
-     "sonido": "Transición sonora rápida (whoosh)."
+     "pantalla": "Roberto Carlos corre hacia la pelota.",
+     "sonido": "Pasos veloces"
     },
     {
      "t": "5.0",
-     "pantalla": "Roberto Carlos patea un balón atravesando un panel blanco en un gimnasio.",
-     "sonido": "Impacto sordo y rotura de pared."
+     "pantalla": "Potente disparo que atraviesa un panel blanco.",
+     "sonido": "SFX explosión / disparo"
     },
     {
      "t": "5.5",
-     "pantalla": "El balón destruye el objetivo a toda velocidad.",
-     "sonido": "Música a alto volumen."
+     "pantalla": "La pelota rompe la estructura de fondo.",
+     "sonido": "SFX impacto pesado"
     },
     {
      "t": "6.0",
-     "pantalla": "Roberto Carlos corre hacia otra estructura de prueba.",
-     "sonido": "Pasos y música activa."
+     "pantalla": "Segundo tiro a máxima velocidad.",
+     "sonido": "SFX ráfaga de aire"
     },
     {
      "t": "6.5",
-     "pantalla": "Roberto Carlos dispara con la zurda destruyendo un bloque duro.",
-     "sonido": "Estruendo de explosión/rotura."
+     "pantalla": "Destrucción total del bloque de madera.",
+     "sonido": "SFX madera rompiéndose"
     },
     {
      "t": "7.0",
-     "pantalla": "Fragmentos volando tras la potencia del disparo.",
-     "sonido": "Efecto de escombros cayendo."
+     "pantalla": "Tercer disparo atravesando múltiples paneles.",
+     "sonido": "SFX impacto masivo"
     },
     {
      "t": "7.5",
-     "pantalla": "Corte de regreso a la terraza con Hulk y Roberto Carlos.",
-     "sonido": "Transición rápida."
+     "pantalla": "Escombros volando por la potencia del tiro.",
+     "sonido": "SFX escombros"
     },
     {
      "t": "8.0",
-     "pantalla": "Hulk reacciona asustado con un emoji de calavera flotante.",
-     "sonido": "Efecto de sonido cómico de miedo / remate musical."
+     "pantalla": "Corte de regreso a la terraza con Hulk.",
+     "sonido": "Transición de audio rápida"
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Hulk reacciona aterrorizado.",
+     "sonido": "SFX efecto cómico de miedo"
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Aparece icono de calavera 💀 sobre la escena.",
+     "sonido": "SFX sonido de meme / eco"
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Hulk hace inclinación de respeto hacia Roberto Carlos.",
+     "sonido": "Beat Phonk final"
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Roberto Carlos queda victorioso en pantalla.",
+     "sonido": "Música Phonk concluyendo"
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Cierre con zoom a la cara de Hulk asustado.",
+     "sonido": "Fade out audio"
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Pantalla final con animación de loop.",
+     "sonido": "Silencio / reinicio"
     }
    ],
-   "duracion_s": 8.0,
-   "loop": "No empalma directamente en bucle perfecto, pero la brevedad invita a volver a verlo.",
-   "gancho": "La comparación cómica entre la fuerza ficticia de Hulk y la fuerza real del disparo de Roberto Carlos.",
+   "duracion_s": 11.0,
+   "loop": "Sí, empalma la inclinación final de Hulk con el inicio de la caminata inicial.",
+   "gancho": "Enfrentamiento absurdo entre personajes hipermusculados y figuras reales.",
    "dopamina": [
-    "Expectativa del conflicto en t=1.0s",
-    "Satisfacción visual por destrucción física en t=5.5s y t=6.5s",
-    "Remate humorístico en t=8.0s"
+    "Corte a destrucción extrema con pelota a los 5.0s",
+    "Remate cómico con emoji de calavera a los 9.0s"
    ],
-   "audio": "Track de Phonk/Bass House con efectos de sonido de impactos fuertes y rompecabezas.",
-   "por_que_comentan": "Debaten sobre la potencia legendaria de la pierna izquierda de Roberto Carlos y se ríen de la animación.",
+   "audio": "Música Phonk de ritmo rápido combinada con SFX de impactos, explosiones y efectos de sonido meme.",
+   "por_que_comentan": "Debaten sobre la fuerza real de Roberto Carlos comparada con la edición exagerada.",
    "assets_necesarios": [
-    "Modelo 3D/Sprites de Hulk y Roberto Carlos",
-    "Fondo 3D de terraza urbana",
-    "Clips/Animaciones de disparos rompiendo objetos",
-    "Efectos de sonido de impacto y Phonk audio"
+    "PNG recortado de Roberto Carlos",
+    "PNG recortado de Hulk",
+    "Fondo de terraza urbana",
+    "Fondo de cancha de deportes indoor",
+    "Sprite de pelota de fútbol y partículas de impacto",
+    "Overlay de calavera 💀",
+    "Track audio Phonk y SFX de explosiones/impactos"
    ],
    "replicable_con_codigo": true,
    "dificultad_1a5": 4,
    "receta_para_programarlo": [
-    "Renderizar animación 3D inicial (0 a 4.5s) usando Blender/Three.js con leyendas superpuestas.",
-    "Programar sistema de partículas y física de destrucción para los disparos (4.5s a 7.5s).",
-    "Agregar superposición de UI (textos, sombras y emoji) mediante capas en MoviePy/FFmpeg en 8.0s."
+    "1. Crear canvas 1080x1920 y posicionar fondos según la escena.",
+    "2. Animar transformaciones (escala y translación) de sprites de Roberto Carlos y Hulk en la terraza.",
+    "3. Programar sistema de partículas y 'camera shake' para la secuencia de disparos en el gimnasio.",
+    "4. Sincronizar aparición de textos, emoji 💀 y pistas de audio por timestamps."
    ],
    "como_lo_hacemos_mejor": [
-    "Incluir medidor de potencia en km/h durante los disparos.",
-    "Usar sonido Phonk de mayor tendencia actual.",
-    "Agregar un final donde Hulk intenta patear y falla cómicamente."
+    "Agregar barra de energía/poder tipo videojuego de pelea.",
+    "Incluir efectos visuales estilo Anime (rayos/aura) durante los tiros.",
+    "Añadir encuesta interactiva en pantalla '¿Quién gana?'."
    ]
   }
  },
@@ -9673,112 +9703,145 @@
   "coment": 8,
   "familia": "3d_ia",
   "analisis": {
-   "nombre_formato": "Roblox Penalty / Obstacle Voice Challenge",
-   "mecanica": "Dos avatars de Roblox (Ronaldo y Messi) compiten en pistas de obstáculos avanzando mediante impulsos de voz y sorteando barreras mecánicas hasta la meta.",
-   "que_hace_el_espectador": "Mira la competencia, anticipa cuál avatar tropezará y comenta sobre la victoria de Ronaldo o Messi.",
-   "cuadro_0": "Plano picado de pista gris Roblox con líneas de carretera. Ronaldo (camiseta Portugal #7) a la izquierda y Messi (Argentina #10) a la derecha con balón gigante.",
+   "nombre_formato": "Voice Control Obstacle Runner (Ronaldo vs Messi)",
+   "mecanica": "Simulación de juego controlado por voz donde los gritos icónicos de Ronaldo ('Siuuu') y Messi deforman una pelota de fútbol (estirándola vertical u horizontalmente) para superar obstáculos en una pista recta. Messi comete un error, se estrella contra las vallas y queda noqueado; Ronaldo supera los obstáculos finales y cruza la meta, donde lo espera un remate cómico con Messi y la Copa del Mundo.",
+   "que_hace_el_espectador": "Solo mirar y reírse de las reacciones absurdas, anticipar si Ronaldo logrará llegar al final y debatir sobre la rivalidad Messi vs Ronaldo.",
+   "cuadro_0": "Perspectiva isométrica en 3D sobre una pista negra con línea central blanca discontinua sobre un suelo gris estilo studs de Roblox. A la izquierda, avatar de Ronaldo (camiseta roja y verde de Portugal #7) inclinado hacia atrás con cuello/torso deformado. A la derecha, avatar de Messi (camiseta albiceleste de Argentina #10). En el centro, una pelota de fútbol deformada verticalmente pasando entre dos bloques de madera. Cielo azul con nubes pixeladas estilo Minecraft arriba.",
    "linea_de_tiempo": [
     {
      "t": "0.0",
-     "pantalla": "Ronaldo rechina/cae de espaldas; Messi junto a balón sobre la pista.",
-     "sonido": "Grito 'Siuu' distorsionado"
+     "pantalla": "Ronaldo grita 'Siuuu', su cuerpo se arquea hacia atrás y la pelota se aplasta lateralmente en forma elíptica vertical para pasar entre dos maderos verticales.",
+     "sonido": "Grito distorsionado 'Siuuu'"
     },
     {
      "t": "0.5",
-     "pantalla": "Ronaldo se levanta. Messi empieza a avanzar hacia barreras de madera.",
-     "sonido": "Efecto de salto y 'Siuu'"
+     "pantalla": "La pelota pasa limpiamente el primer obstáculo y recupera su forma esférica normal.",
+     "sonido": "Final del grito 'Siuuu'"
     },
     {
      "t": "1.0",
-     "pantalla": "Messi patea el balón contra la barrera de madera.",
-     "sonido": "Sonido de choque de madera"
+     "pantalla": "Messi corre al lado de la pelota; aparece una valla baja horizontal.",
+     "sonido": "Silencio breve / pasos"
     },
     {
      "t": "1.5",
-     "pantalla": "Ronaldo se inclina hacia atrás al recibir impacto de vara horizontal.",
-     "sonido": "Grito agudo"
+     "pantalla": "Messi grita con tono agudo; la pelota se aplasta verticalmente contra el piso (disco plano) para deslizarse bajo la valla.",
+     "sonido": "Grito agudo distorsionado tipo 'Quéee'"
     },
     {
      "t": "2.0",
-     "pantalla": "Messi rompe barrera y cae en agujero negro que aparece en la pista.",
-     "sonido": "Grito 'Siuu' distorsionado"
+     "pantalla": "La pelota supera la valla baja; Ronaldo y Messi siguen corriendo a la par.",
+     "sonido": "Eco del grito de Messi"
     },
     {
      "t": "2.5",
-     "pantalla": "Ronaldo avanza esquivando pequeñas vallas horizontales.",
-     "sonido": "Efecto 'Siuu' y silbato"
+     "pantalla": "Siguiente obstáculo: maderos estrechos. Ronaldo se prepara.",
+     "sonido": "Toma de aire / silencio"
     },
     {
      "t": "3.0",
-     "pantalla": "Messi reaparece saltando sobre múltiples vallas continuas.",
-     "sonido": "Grito 'Siuu' repetido"
+     "pantalla": "Ronaldo grita 'Siuuu'; se vuelve a estirar hacia atrás y la pelota se alarga verticalmente.",
+     "sonido": "Grito 'Siuuu' de Ronaldo"
     },
     {
      "t": "3.5",
-     "pantalla": "Messi pierde el equilibrio al final del tramo de vallas.",
-     "sonido": "Grito de caída"
+     "pantalla": "La pelota elíptica cruza el estrecho sin tocar los bordes de madera.",
+     "sonido": "Voz sostenida 'uuu'"
     },
     {
      "t": "4.0",
-     "pantalla": "Messi cae al suelo con estrellas girando en su cabeza (atrapado).",
-     "sonido": "Efecto de mareo / pajaritos"
+     "pantalla": "Aparece una serie sucesiva de múltiples vallas tipo escalera/obstáculos repetidos.",
+     "sonido": "Efecto de tensión ascendente"
     },
     {
      "t": "4.5",
-     "pantalla": "Ronaldo observa a Messi fuera de combate y se prepara para correr.",
-     "sonido": "Silbido de pájaros"
+     "pantalla": "Messi intenta gritar para hacer saltar o aplanar la pelota, pero pierde la coordinación.",
+     "sonido": "Grito quebrado y desafinado de Messi"
     },
     {
      "t": "5.0",
-     "pantalla": "Ronaldo realiza 'Siuu' e incrementa velocidad en la pista limpia.",
-     "sonido": "Grito 'Siuu' fuerte"
+     "pantalla": "Messi tropieza violentamente contra las vallas de madera y sale volando hacia atrás.",
+     "sonido": "Golpe seco 'thud' y grito de caída"
     },
     {
      "t": "5.5",
-     "pantalla": "Ronaldo supera las últimas trabas mecánicas rápidamente.",
-     "sonido": "Efecto aceleración"
+     "pantalla": "Messi cae de espaldas sobre la pista, con los brazos en alto.",
+     "sonido": "Voz de dolor / 'Huh?'"
     },
     {
      "t": "6.0",
-     "pantalla": "Ronaldo cruza la línea de meta de cuadrícula en el piso.",
-     "sonido": "Sonido triunfal / Corneta"
+     "pantalla": "Messi queda tendido en el suelo con pajaritos/estrellas amarillas girando sobre su cabeza (efecto mareo/KO).",
+     "sonido": "Efecto de sonido de pajaritos piando de caricatura"
     },
     {
      "t": "6.5",
-     "pantalla": "Ronaldo celebra frente a un trofeo gigante de la Copa del Mundo que aparece al final.",
-     "sonido": "Risa / Grito de victoria"
+     "pantalla": "Ronaldo se detiene un instante a mirar a Messi noqueado con cara de sorpresa.",
+     "sonido": "Pajaritos piando continuo"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Ronaldo retoma la carrera en solitario hacia la meta con la pelota rodando adelante.",
+     "sonido": "Pasos sobre el asfalto"
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Aparece el obstáculo final: dos postes verticales estrechos.",
+     "sonido": "Silencio de preparación"
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Ronaldo ejecuta su último 'Siuuu' con máxima potencia; torso arqueado al límite.",
+     "sonido": "Grito 'Siuuu' potente y saturado"
+    },
+    {
+     "t": "8.5",
+     "pantalla": "La pelota super-estirada pasa a gran velocidad entre los maderos.",
+     "sonido": "Siuuu sostenido"
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Ronaldo cruza la línea de meta marcada con cinta blanca y negra de cuadros.",
+     "sonido": "Audio meme japonés 'Chotto matte'"
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Aparece repentinamente Messi con un trofeo gigante de la Copa del Mundo en la cabeza cayendo de espaldas; a Ronaldo se le salen los ojos de las órbitas (efecto awooga).",
+     "sonido": "Efecto de bocina de ojos saltones estilo Tom y Jerry / remate cómico"
     }
    ],
-   "duracion_s": 6.8,
-   "loop": "No conecta directamente en bucle continuo, pero reinicia con la posición inicial de partida.",
-   "gancho": "Choque visual inmediato con avatares icónicos de Roblox en una física absurda y graciosa.",
+   "duracion_s": 10.0,
+   "loop": "No es un loop infinito exacto, pero la energía frenética del final y la curiosidad por el gag final invitan a volver a verlo inmediatamente.",
+   "gancho": "La combinación inmediata de las dos máximas figuras del fútbol (Ronaldo y Messi) con estéticas de Roblox y animaciones de deformación física exageradas.",
    "dopamina": [
-    "Superación de obstáculos inverosímiles (t 0.5 - 3.0)",
-    "Derrota cómica de Messi con animación de mareo (t 4.0)",
-    "Remate y victoria triunfal con copa gigante (t 6.5)"
+    "Sincronización perfecta entre el grito vocal y la deformación de la pelota (satisfacción de física)",
+    "Fallo cómico de Messi al tropezar con las vallas (humor slapstick)",
+    "Remate inesperado con la Copa del Mundo gigante y ojos saltones (recompensa visual absurda)"
    ],
-   "audio": "Efectos de voz distorsionados 'Siuu', sonidos de física de Roblox, efectos de comedia (pajaritos, cornetas).",
-   "por_que_comentan": "Debate sobre la rivalidad Ronaldo vs Messi y burlas por las caídas físicas del juego.",
+   "audio": "Gritos icónicos editados con pitch shifting y saturación ('Siuuu' de Ronaldo, gritos agudos de Messi), sonidos clásicos de dibujos animados (pajaritos de mareo, ojos que saltan) y meme de voz japonesa.",
+   "por_que_comentan": "Debate eterno sobre quién es mejor (CR7 vs Messi), risas por el tropezón de Messi y comentarios sobre la Copa del Mundo al final.",
    "assets_necesarios": [
-    "Sprite/Modelo 3D Ronaldo Roblox",
-    "Sprite/Modelo 3D Messi Roblox",
-    "Textura de carretera/pista",
-    "Modelos 3D vallas/barreras madera",
-    "Modelo 3D Copa del Mundo",
-    "Audio FX 'Siuu' y efectos cómicos"
+    "Sprite o modelo 3D de avatar Ronaldo (con ropa Portugal #7)",
+    "Sprite o modelo 3D de avatar Messi (con ropa Argentina #10)",
+    "Sprite de pelota de fútbol con capacidad de escala X/Y independiente",
+    "Textura de carretera con líneas y maderos/vallas de madera",
+    "Sprite de ojos saltones de caricatura",
+    "Sprite de Copa del Mundo gigante",
+    "Audios: 'Siuuu', grito agudo Messi, pajaritos cartoon, golpe y meme final"
    ],
    "replicable_con_codigo": true,
    "dificultad_1a5": 3,
    "receta_para_programarlo": [
-    "Crear escena 3D en Ursina/Pygame 3D con cámara en perspectiva isométrica elevada.",
-    "Definir trayectoria recta para dos carriles con coordenadas Z de progreso.",
-    "Mover personajes incrementando Z y disparar animaciones de rotación/caída al detectar colisiones con obstáculos.",
-    "Sincronizar reproducción de audio en hitboxes clave."
+    "Crear una escena en 2.5D o 3D (Three.js o Pygame/Pillow con proyección isométrica) con una cinta transportadora que simula el avance de la pista a velocidad constante v = 300 px/s.",
+    "Instanciar los obstáculos de madera con posiciones fijas a lo largo de la pista (valla horizontal baja y postes verticales estrechos).",
+    "Vincular la pista de audio con eventos temporales: al detectar el pico del 'Siuuu', aplicar una transformación de escala a la pelota (scale_x = 0.35, scale_y = 1.8) y rotación al sprite de Ronaldo (-25 grados).",
+    "Al detectar el grito de Messi, transformar la pelota en sentido inverso (scale_x = 1.8, scale_y = 0.35) para pasar bajo la valla.",
+    "En t = 5.0 s, activar animación de ragdoll/rotación en Messi para simular la caída, spawnear un emisor de partículas circulares con sprites de estrellas/pajaritos sobre su cabeza y pausar su movimiento en X.",
+    "Al cruzar la línea de meta (t = 9.0 s), detener la cámara y superponer el sprite de Ronaldo con ojos estirados (+300% escala hacia la cámara) y el modelo de Messi con la cabeza trofeo cayendo."
    ],
    "como_lo_hacemos_mejor": [
-    "Agregar barra de progreso/vida superior estilo juego arcade.",
-    "Incluir más personajes famosos (ej. Mbappé, Haaland) en carriles paralelos.",
-    "Hacer el loop perfecto conectando la copa con la línea de salida."
+    "Hacerlo interactivo tipo minijuego donde el espectador deba comentar 'SIUUU' o 'MESSI' para definir quién gana la carrera.",
+    "Agregar un medidor de decibelios visual en pantalla (micrófono flotante con ondas de color) que justifique la deformación de la pelota.",
+    "Incluir un final alternativo según el equipo que apoye la audiencia (uno donde Ronaldo gana la Champions y otro donde Messi gana el Balón de Oro)."
    ]
   }
  },
@@ -9796,146 +9859,145 @@
   "coment": 6,
   "familia": "dress",
   "analisis": {
-   "nombre_formato": "Glow Up Challenge por Etapas",
-   "mecanica": "Dos personajes (Yamal y Ronaldo) pasan por 4 etapas de transformación (ducha, pesas, camiseta, peinado) activadas por elementos que caen sobre ellos.",
-   "que_hace_el_espectador": "Mira la transformación paso a paso y compara cuál versión queda mejor al final.",
-   "cuadro_0": "Fondo amarillo radiante. Lista numerada 1-4 a la izquierda. Arriba: dos duchas. Abajo: Lamine Yamal y Cristiano Ronaldo enojados y cubiertos de barro.",
+   "nombre_formato": "Dressing Challenge Glow-Up",
+   "mecanica": "Transformación paso a paso de dos futbolistas (Yamal y Ronaldo) en 4 etapas: ducha, gimnasio, camiseta y peinado.",
+   "que_hace_el_espectador": "Comparar ambos personajes, anticipar el resultado final y mirar el cambio físico.",
+   "cuadro_0": "Fondo amarillo con rayos. Arriba: lista 1 a 4 con icono de duchas. Abajo: Lamine Yamal y Cristiano Ronaldo calvos, enojados y llenos de barro.",
    "linea_de_tiempo": [
     {
      "t": "0.0",
-     "pantalla": "Personajes sucios enojados. Duchas arriba con lista 1-4.",
-     "sonido": "Música reggaetón de fondo / beat dinámico."
+     "pantalla": "Aparece lista con icono de ducha (1). Personajes sucios abajo.",
+     "sonido": "Música alegre de tendencia"
     },
     {
      "t": "0.5",
-     "pantalla": "Las duchas bajan a la boca/rostro de los personajes.",
-     "sonido": "Efecto de sonido de agua / chasquido."
+     "pantalla": "Las duchas bajan y limpian la cara de los personajes.",
+     "sonido": "Efecto de agua / música"
     },
     {
      "t": "1.0",
-     "pantalla": "El barro desaparece; rostros quedan limpios pero rojos y enojados.",
-     "sonido": "Beat de música en progreso."
+     "pantalla": "Limpieza completa. Rostros rojos sin barro.",
+     "sonido": "Música continuada"
     },
     {
      "t": "1.5",
-     "pantalla": "La opción 1 se completa. Aparecen pesas en la parte superior.",
-     "sonido": "Transición sonora."
+     "pantalla": "Icono 2: Mancuernas arriba.",
+     "sonido": "Música continuada"
     },
     {
      "t": "2.0",
-     "pantalla": "Las pesas bajan a los ojos/pecho de los personajes.",
-     "sonido": "Efecto de golpe o impacto metálico."
+     "pantalla": "Las mancuernas bajan a los ojos y luego al cuerpo.",
+     "sonido": "Efecto de impacto / golpe"
     },
     {
      "t": "2.5",
-     "pantalla": "Los personajes se vuelven extremadamente musculosos.",
-     "sonido": "Beat de música en aumento."
+     "pantalla": "Transformación muscular en torso y brazos.",
+     "sonido": "Música continuada"
     },
     {
      "t": "3.0",
-     "pantalla": "Opción 2 completada. Aparecen las camisetas (Barça y Real Madrid) arriba.",
-     "sonido": "Vocal / sample de la canción."
+     "pantalla": "Icono 3: Camisetas arriba (Barça y Real Madrid).",
+     "sonido": "Música continuada"
     },
     {
      "t": "3.5",
-     "pantalla": "Las camisetas bajan flotando hacia los torsos.",
-     "sonido": "Efecto de deslizamiento / suosh."
+     "pantalla": "Las camisetas descienden hacia los cuerpos.",
+     "sonido": "Efecto de deslicatado"
     },
     {
      "t": "4.0",
-     "pantalla": "Las camisetas se acomodan sobre los cuerpos musculosos.",
-     "sonido": "Beat continuo."
+     "pantalla": "Camisetas equipadas perfectamente en los personajes.",
+     "sonido": "Música continuada"
     },
     {
      "t": "4.5",
-     "pantalla": "Opción 3 completada. Se muestran peinados en la parte superior.",
-     "sonido": "Cambio de ritmo en la canción."
+     "pantalla": "Icono 4: Peinados con moño samurai arriba.",
+     "sonido": "Música continuada"
     },
     {
      "t": "5.0",
-     "pantalla": "Los peinados bajan hacia las cabezas calvas.",
-     "sonido": "Efecto de colocación rápida."
+     "pantalla": "Los peinados bajan a las cabezas.",
+     "sonido": "Efecto de ajuste"
     },
     {
      "t": "5.5",
-     "pantalla": "Los peinados se ajustan en la cabeza de cada jugador.",
-     "sonido": "Pico musical."
+     "pantalla": "Cambio de expresión a sonrientes y alegres.",
+     "sonido": "Voz 'Doggy Style' / remate"
     },
     {
      "t": "6.0",
-     "pantalla": "Las expresiones cambian de enojo a sonrisas felices.",
-     "sonido": "Risa o remate sonoro."
+     "pantalla": "Resultado final completo congelado.",
+     "sonido": "Música remate"
     },
     {
      "t": "6.5",
-     "pantalla": "Transformación completa final (Barça Yamal vs Real Madrid Ronaldo).",
-     "sonido": "Vocal 'Doggy Style' o remate de audio viral."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "7.0",
-     "pantalla": "Posado final sonriente con outfits completos.",
-     "sonido": "Cierre de música en bucle."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "7.5",
-     "pantalla": "Muestra final estática de la comparación.",
-     "sonido": "Audio final."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "8.0",
-     "pantalla": "Muestra final lista para reiniciar.",
-     "sonido": "Fade out breve."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "8.5",
-     "pantalla": "Reinicio rápido al estado inicial.",
-     "sonido": "Conexión con inicio."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "9.0",
-     "pantalla": "Cuadro final previo al bucle.",
-     "sonido": "Silencio o empalme."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "9.5",
-     "pantalla": "Transición de vuelta a 0.0s.",
-     "sonido": "Empalme de audio."
+     "pantalla": "Muestra del look final listo.",
+     "sonido": "Música remate"
     },
     {
      "t": "10.0",
      "pantalla": "Fin del video.",
-     "sonido": "Fin del bucle."
+     "sonido": "Corte de audio"
     }
    ],
-   "duracion_s": 10,
-   "loop": "Sí, el cambio de ritmo final conecta de inmediato con la llegada de los objetos iniciales.",
-   "gancho": "La transformación grotesca inicial (barro y enojo) genera curiosidad por ver el resultado final.",
+   "duracion_s": 10.0,
+   "loop": "No conecta perfectamente en loop infinito, se centra en mostrar el resultado final los últimos 4 segundos.",
+   "gancho": "La deformación inicial graciosa (sucios, calvos y enojados) de futbolistas ultra famosos.",
    "dopamina": [
-    "Progreso numerado 1 al 4 (0.0s - 6.0s)",
-    "Revelación de musculatura instantánea (2.5s)",
-    "Resultado final alegre y estético (6.0s)"
+    "Satisfacción visual al limpiar el barro (1.0s)",
+    "Aumento instantáneo de masa muscular (2.5s)",
+    "Poner la camiseta de su club (4.0s)",
+    "Revelación de la cara feliz con pelo (5.5s)"
    ],
-   "audio": "Remix de reggaetón/trend dinámico con remate vocal cómico ('Doggy style').",
-   "por_que_comentan": "Debaten quién quedó mejor vestible/peinado o apoya a su equipo (Barça vs Real Madrid).",
+   "audio": "Canción viral de tendencia con ritmo acelerado y remate de voz al final.",
+   "por_que_comentan": "Debaten quién quedó mejor, qué club es superior o se ríen de las caras iniciales.",
    "assets_necesarios": [
-    "Fondo amarillo con destellos",
-    "PNGs de rostros sucios, limpios, musculosos y sonrientes de Yamal y Ronaldo",
-    "PNGs de duchas, pesas, camisetas y peinados",
-    "Efectos de sonido de impacto, agua y música trend"
+    "Fondo de rayos amarillos",
+    "PNG ducha, mancuernas, camisetas, pelo",
+    "Recortes de cara sucia, muscular y sonriente de Yamal y Ronaldo"
    ],
    "replicable_con_codigo": true,
    "dificultad_1a5": 2,
    "receta_para_programarlo": [
-    "Crear un lienzo vertical 1080x1920 con MoviePy o PIL en Python.",
-    "Colocar fondo estático y renderizar texto con la lista 1-4.",
-    "Animar la posición Y de los assets (duchas, pesas, ropa, pelo) para que desciendan de y=200 a y=1200 en intervalos de 1.5s.",
-    "Cambiar las capas de los personajes según la clave de tiempo transcurrida.",
-    "Sincronizar efectos de sonido en cada fotograma de impacto."
+    "Crear canvas vertical 1080x1920 con fondo amarillo.",
+    "Cargar sprites de personajes en 3 estados (sucio, muscular, final).",
+    "Interpolar posición Y de los objetos descendentes (ducha, mancuerna, jersey, pelo) cada 1.5s.",
+    "Sustituir el sprite de fondo del personaje al colisionar el objeto."
    ],
    "como_lo_hacemos_mejor": [
-    "Agregar una barra de votación interactiva interactiva en pantalla.",
-    "Incluir animaciones de partículas deslumbrantes en cada transformación.",
-    "Usar combinaciones de accesorios más absurdas o divertidas antes del resultado final."
+    "Agregar barra de votación interactiva en pantalla.",
+    "Incluir sonidos de impacto más exagerados (cartoon sound effects).",
+    "Hacer un loop perfecto donde vuelvan a ensuciarse al final."
    ]
   }
  },
@@ -9953,175 +10015,138 @@
   "coment": 678,
   "familia": "otros",
   "analisis": {
-   "nombre_formato": "Meme de colapso por pieza clave",
-   "mecanica": "Un personaje retira la única pieza que sostiene una escultura masiva (etiquetada como equipo), provocando su colapso total.",
-   "que_hace_el_espectador": "Solo mirar y relacionar la metáfora visual con el rendimiento futbolístico.",
-   "cuadro_0": "Centro: Escultura gigante de esferas rojas y amarillas etiquetada 'Argentina', con una pequeña esfera azul 'MESSI'. Derecha: Hombre observando. Abajo: Marcador Argentina 1-2 Uruguay.",
+   "nombre_formato": "Pieza Clave / Efecto Dominó Metafórico",
+   "mecanica": "Se presenta una estructura compleja etiquetada como un equipo u organización; se quita una sola pieza clave identificada con un jugador estrella y toda la estructura colapsa dramáticamente.",
+   "que_hace_el_espectador": "Solo mirar, empatizar con la narrativa futbolística y debatir la dependencia del equipo en los comentarios.",
+   "cuadro_0": "Plano medio-largo de un hombre junto a una escultura de cuentas de colores (rojo y amarillo). Texto blanco con borde negro 'Argentina' sobre la escultura y 'MESSI' sobre una pequeña cuenta azul. En la esquina inferior, marcador superpuesto: Argentina 1 - 2 Uruguay.",
    "linea_de_tiempo": [
     {
      "t": "0.0",
-     "pantalla": "Vista general de la escultura etiquetada 'Argentina' y la pieza azul 'MESSI'. Marcador abajo.",
-     "sonido": "Música triste en tono bajo."
+     "pantalla": "Escultura ondulante de esferas amarillas y rojas con texto 'Argentina'. A la derecha, un hombre de camisa azul mira intrigado. Marcador 1-2 abajo.",
+     "sonido": "Voz melancólica femenina cantando '...was dancing in the rain...'"
     },
     {
      "t": "0.5",
-     "pantalla": "Primer plano de la pieza azul 'MESSI' incrustada en la estructura amarilla.",
-     "sonido": "Continúa música melancólica."
+     "pantalla": "Corte a primer plano de la textura de esferas. Se destaca una sola pastilla azul rotulada 'MESSI'.",
+     "sonido": "Música instrumental suave con piano y voz sostenida."
     },
     {
      "t": "1.0",
-     "pantalla": "El hombre mira fijamente la escultura con expresión pensativa.",
-     "sonido": "Vocal de la canción triste."
+     "pantalla": "Continúa el primer plano en detalle de la pastilla azul rodeada de amarillas.",
+     "sonido": "Voz femenina: '...felt alive and I can't complain...'"
     },
     {
      "t": "1.5",
-     "pantalla": "Una mano se acerca y toma la pieza azul 'MESSI'.",
-     "sonido": "Continúa la canción."
+     "pantalla": "Plano medio del hombre observando fijamente con curiosidad y tentación.",
+     "sonido": "Voz melancólica continuando la frase."
     },
     {
      "t": "2.0",
-     "pantalla": "La mano retira completamente la pieza 'MESSI'.",
-     "sonido": "Pausa/transición musical breve."
+     "pantalla": "Retorno al primer plano de la esfera azul 'MESSI' entre las amarillas.",
+     "sonido": "Melodía melancólica constante."
     },
     {
      "t": "2.5",
-     "pantalla": "El hombre reacciona sorprendido mientras la escultura empieza a temblar.",
-     "sonido": "Entra el coro emocional de la música."
+     "pantalla": "Una mano entra a cuadro y pellizca la pastilla azul para retirarla.",
+     "sonido": "Transición vocal hacia el estribillo."
     },
     {
      "t": "3.0",
-     "pantalla": "Las esferas amarillas de la estructura comienzan a desmoronarse masivamente.",
-     "sonido": "Coro musical triste a volumen completo."
+     "pantalla": "La mano extrae la pastilla azul dejando un hueco vacío.",
+     "sonido": "Respiración contenida y voz lírica."
     },
     {
      "t": "3.5",
-     "pantalla": "El hombre mira asombrado cómo cae la parte inferior de la escultura.",
-     "sonido": "Continúa el coro triste."
+     "pantalla": "Plano medio: el hombre come la pastilla con gesto casual.",
+     "sonido": "Comienza crescendo dramático: 'Take me home...'"
     },
     {
      "t": "4.0",
-     "pantalla": "Toda la escultura colapsa derramándose en el suelo.",
-     "sonido": "Continúa el coro triste."
+     "pantalla": "Primer plano: las esferas amarillas alrededor del hueco empiezan a aflojarse y vibrar.",
+     "sonido": "Vocal femenina con mayor intensidad emocional."
     },
     {
      "t": "4.5",
-     "pantalla": "Plano general de la estructura destruida y el flujo de esferas cayendo.",
-     "sonido": "Continúa la música melancólica."
+     "pantalla": "Las esferas alrededor del orificio comienzan a deslizarse y caer en cascada.",
+     "sonido": "Sonido sordo de inicio de derrumbe mezclado con música."
     },
     {
      "t": "5.0",
-     "pantalla": "Las esferas cubren el suelo en su totalidad mientras cae la parte roja.",
-     "sonido": "Continúa la música."
+     "pantalla": "Plano general: el hombre retrocede alarmado mientras el orificio se ensancha.",
+     "sonido": "Voz: '...take me home where I belong...'"
     },
     {
      "t": "5.5",
-     "pantalla": "Efecto de distorsión visual y desenfoque suave sobre el desastre.",
-     "sonido": "Música con filtro de eco/reverberación."
+     "pantalla": "El flujo de esferas se convierte en un chorro continuo cayendo al piso.",
+     "sonido": "Ruido continuo de cuentas plásticas lloviendo."
     },
     {
      "t": "6.0",
-     "pantalla": "El hombre parado frente a la ruina de la escultura en cámara lenta.",
-     "sonido": "Voz principal del tema melancólico."
+     "pantalla": "Plano amplio de la escultura entera ('Argentina') desinflándose y vaciándose como un embudo.",
+     "sonido": "Cascada intensa de esferas sobre el suelo."
     },
     {
      "t": "6.5",
-     "pantalla": "Caída final de partículas rojas sobre la pila del suelo.",
-     "sonido": "Continúa la música."
+     "pantalla": "La escultura pierde volumen rápidamente dejando escapar miles de esferas rojas y amarillas.",
+     "sonido": "Efecto de avalancha plástica sonora."
     },
     {
      "t": "7.0",
-     "pantalla": "Plano medio del hombre cubierto parcialmente por el polvo/partículas.",
-     "sonido": "Decaimiento del coro."
+     "pantalla": "La estructura colapsa en su base; el hombre mira atónito.",
+     "sonido": "Música en punto álgido con eco dramático."
     },
     {
      "t": "7.5",
-     "pantalla": "Vista de la masa de esferas esparcidas en la base.",
-     "sonido": "Continúa música."
+     "pantalla": "El suelo se inunda por completo de cuentas de colores que rebotan.",
+     "sonido": "Voz: '...I got no other place to go...'"
     },
     {
      "t": "8.0",
-     "pantalla": "Plano amplio de la sala con la escultura destruida.",
-     "sonido": "Continúa música."
+     "pantalla": "Plano cerrado a la cara del protagonista en shock total.",
+     "sonido": "Estribillo triste en máxima intensidad."
     },
     {
      "t": "8.5",
-     "pantalla": "La cámara hace un leve zoomOut mostrando la magnitud del desastre.",
-     "sonido": "Música atenuándose."
+     "pantalla": "Plano a los pies: el hombre rodeado por una alfombra de esferas que no para de crecer.",
+     "sonido": "Chorreo final de esferas desparramándose."
     },
     {
      "t": "9.0",
-     "pantalla": "Detalle de las partículas en el piso.",
-     "sonido": "Música triste de fondo."
-    },
-    {
-     "t": "9.5",
-     "pantalla": "El hombre camina alejándose lentamente de las ruinas.",
-     "sonido": "Continúa la pista de audio."
-    },
-    {
-     "t": "10.0",
-     "pantalla": "Plano final del espacio con la etiqueta 'Argentina' flotando sobre la nada.",
-     "sonido": "Outro de la canción."
-    },
-    {
-     "t": "10.5",
-     "pantalla": "Oscurecimiento paulatino de la escena.",
-     "sonido": "Fade out de audio."
-    },
-    {
-     "t": "11.0",
-     "pantalla": "Pantalla casi en negro con ligera textura de fondo.",
-     "sonido": "Silencio o nota final sosteniéndose."
-    },
-    {
-     "t": "11.5",
-     "pantalla": "Fundido completo a negro.",
-     "sonido": "Silencio."
-    },
-    {
-     "t": "12.0",
-     "pantalla": "Cierre del video.",
-     "sonido": "Silencio."
-    },
-    {
-     "t": "12.5",
-     "pantalla": "Cierre completo.",
-     "sonido": "Silencio."
-    },
-    {
-     "t": "13.0",
-     "pantalla": "Fin del clip.",
-     "sonido": "Silencio."
+     "pantalla": "Corte abrupto con el suelo cubierto y la música desvaneciéndose.",
+     "sonido": "Fade out del tema musical."
     }
    ],
-   "duracion_s": 13,
-   "loop": "No conecta visualmente al final, pero la estructura del meme incita a volver a verlo para apreciar el momento exacto del colapso.",
-   "gancho": "Expectativa visual de qué pasará al retirar la pequeña perla 'MESSI' de la gran escultura.",
+   "duracion_s": 9.2,
+   "loop": "No tiene loop continuo; corta abruptamente tras la caída y recomienza desde el plano estático.",
+   "gancho": "La metáfora visual hipnótica e instantánea de fragilidad de un equipo de fútbol al retirar a su máximo ídolo.",
    "dopamina": [
-    "Satisfacción por la física del colapso de partículas masivo (t. 3.0)",
-    "Humor dramático por la exageración de la metáfora futbolística (t. 4.0)"
+    "Retiro táctil de la pieza prohibida (0:03)",
+    "Satisfacción visual del colapso en cascada tipo efecto dominó (0:05 - 0:07)",
+    "Reacción cómica de culpa del personaje (0:08)"
    ],
-   "audio": "Remix triste y melancólico de 'Take Me Home' / 'Thank You'.",
-   "por_que_comentan": "Debaten sobre la importancia real de Messi en la selección argentina o bromean con el resultado del partido.",
+   "audio": "Canción 'Runaway' de AURORA en tono triste/épico, complementada con foley de miles de esferas plásticas desmoronándose.",
+   "por_que_comentan": "Hinchas debatiendo si Argentina depende exclusivamente de Messi o criticando el rendimiento del equipo en ese partido específico.",
    "assets_necesarios": [
-    "Clip o simulación 3D de estructura de partículas colapsando",
-    "Texto etiquetador para 'Argentina' y 'MESSI'",
-    "Overlay de marcador deportivo",
-    "Pista de audio sad/viral"
+    "Fondo 2D/3D de un museo o galería minimalista",
+    "Sprite/PNG de una torre o estructura formada por esferas o bloques 2D",
+    "PNG de bloque/esfera azul resaltada",
+    "Sprites recortados de silueta de personaje o mano",
+    "Audio de AURORA o pista melancólica similar",
+    "Efecto de sonido de caída de canicas/piezas"
    ],
    "replicable_con_codigo": true,
-   "dificultad_1a5": 4,
+   "dificultad_1a5": 3,
    "receta_para_programarlo": [
-    "1. Crear un sistema de partículas 2D/3D amontonadas formando una estructura sólida.",
-    "2. Asignar un nodo o partícula clave destacada ('MESSI').",
-    "3. Programar evento de extracción del nodo clave.",
-    "4. Activar motor de física (gravedad + colisiones) al quitar el nodo para derrumbar el resto de partículas.",
-    "5. Renderizar escena agregando overlays de texto y marcador."
+    "Crear lienzo vertical 1080x1920 con Pygame o Arcade/Pymunk para simulación física 2D.",
+    "Generar una pirámide o torre de 150-200 círculos rígidos con gravedad desactivada o bloqueada por articulaciones, excepto uno central destacado en celeste ('Messi').",
+    "A los 2.5s, animar vector de movimiento que remueve la pieza celeste del sistema físico.",
+    "A los 4.0s, activar gravedad completa y debilitar elasticidad/fricción de las partículas restantes para provocar el derrumbe en masa.",
+    "Renderizar overlays de texto fijos ('Argentina', marcador) con PIL/OpenCV y sincronizar con MoviePy exportando a 30 o 60 fps con la pista de audio."
    ],
    "como_lo_hacemos_mejor": [
-    "Usar física de partículas interactiva donde el usuario pueda tocar la pantalla para quitar la pieza.",
-    "Permitir cambiar dinámicamente los nombres del equipo y jugador clave mediante plantillas.",
-    "Agregar efectos de sonido de desmoronamiento realista sincronizados con el audio triste."
+    "Usar física 2D de ragdolls y caras caricaturizadas de los jugadores reales para maximizar la identificación cómica.",
+    "Agregar contador numérico de posesión/probabilidad de victoria cayendo a cero en tiempo real durante el derrumbe.",
+    "Hacer el final en bucle perfecto donde la última partícula en caer sea reabsorbida al inicio de la estructura."
    ]
   }
  },
@@ -10139,100 +10164,161 @@
   "coment": 80,
   "familia": "otros",
   "analisis": {
-   "nombre_formato": "comparativa_reacciones_jugadores",
-   "mecanica": "Presentación rápida a ritmo de música de famosos futbolistas u otras figuras con expresiones faciales llamativas, cambiando de personaje cada medio segundo mediante cortes secos sincronizados con el beat.",
-   "que_hace_el_espectador": "Mira en bucle rápido intentando reconocer a todos los jugadores y se queda enganchado por el ritmo y la edición acelerada.",
-   "cuadro_0": "Primer plano horizontal recortado de Lamine Yamal dentro de un auto con camisa a rayas beiges y bufanda, gestualizando con expresión seria/musical, fondo oscuro difuminado, marca de agua en pantalla izquierda.",
+   "nombre_formato": "Edit de Futbolistas al Ritmo de la Música",
+   "mecanica": "Secuencia rápida de clips de futbolistas famosos sincronizados con el beat de un tema de reguetón.",
+   "que_hace_el_espectador": "Solo mirar, disfrutar el ritmo y comentar sobre los jugadores.",
+   "cuadro_0": "Layout vertical. Centro: Lamine Yamal en un auto con bufanda. Esquina: marca de agua 'era7'.",
    "linea_de_tiempo": [
     {
      "t": "0.0",
-     "pantalla": "Lamine Yamal cantando en auto",
-     "sonido": "Beat trap latino upbeat comienza"
+     "pantalla": "Lamine Yamal cantando dentro del auto.",
+     "sonido": "Vocal reguetón inicio."
     },
     {
      "t": "0.5",
-     "pantalla": "Lamine Yamal con distinta iluminación",
-     "sonido": "Beat continúa"
+     "pantalla": "Lamine Yamal moviéndose al ritmo.",
+     "sonido": "Beat continuo."
     },
     {
      "t": "1.0",
-     "pantalla": "Anthony Gordon con gorra y trenzas rubias mirando sorprendido",
-     "sonido": "Beat continúa"
+     "pantalla": "Lamine Yamal (zoom leve).",
+     "sonido": "Vocal rápido."
     },
     {
      "t": "1.5",
-     "pantalla": "Anthony Gordon hablando a cámara",
-     "sonido": "Beat continúa"
+     "pantalla": "Lamine Yamal mirando de lado.",
+     "sonido": "Beat reguetón."
     },
     {
      "t": "2.0",
-     "pantalla": "Pedri mirando serio a cámara",
-     "sonido": "Beat continúa"
+     "pantalla": "Corte a Nico Williams con gorra.",
+     "sonido": "Cambio de verso."
     },
     {
      "t": "2.5",
-     "pantalla": "Pedri primer plano sonriendo levemente",
-     "sonido": "Beat continúa"
+     "pantalla": "Nico Williams en entrevista hablando.",
+     "sonido": "Vocal pegadizo."
     },
     {
      "t": "3.0",
-     "pantalla": "Jude Bellingham pensativo hablando",
-     "sonido": "Beat continúa"
+     "pantalla": "Nico Williams con accesorios.",
+     "sonido": "Beat de percusión."
     },
     {
      "t": "3.5",
-     "pantalla": "Jude Bellingham en plano más cercano explicando algo",
-     "sonido": "Beat continúa"
+     "pantalla": "Nico Williams sonriendo.",
+     "sonido": "Vocal."
     },
     {
      "t": "4.0",
-     "pantalla": "Anthony Gordon (otro jugador o similar) con pelo rubio sonriendo",
-     "sonido": "Beat continúa"
+     "pantalla": "Corte a Pedri mirando a cámara.",
+     "sonido": "Línea vocal corta."
     },
     {
      "t": "4.5",
-     "pantalla": "Anthony Gordon en entrevista con camiseta de Barcelona",
-     "sonido": "Beat continúa"
+     "pantalla": "Pedri hablando en entrevista.",
+     "sonido": "Beat constante."
     },
     {
      "t": "5.0",
-     "pantalla": "Harry Kane hablando sonriente con micrófono de prensa",
-     "sonido": "Beat continúa"
+     "pantalla": "Pedri sonriendo.",
+     "sonido": "Transición sonora."
     },
     {
      "t": "5.5",
-     "pantalla": "Harry Kane primer plano riendo",
-     "sonido": "Beat termina en corte seco"
+     "pantalla": "Corte a Jude Bellingham en polo beige.",
+     "sonido": "Vocal suave."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Jude Bellingham hablando serio.",
+     "sonido": "Beat fuerte."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Jude Bellingham mirando abajo.",
+     "sonido": "Vocal continuo."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Jude Bellingham en primer plano.",
+     "sonido": "Remate de frase."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Corte a Anthony Gordon con camiseta del Barça.",
+     "sonido": "Vocal rápido."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Anthony Gordon hablando sonriente.",
+     "sonido": "Beat rítmico."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Anthony Gordon en set de entrevista.",
+     "sonido": "Vocal."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Corte a Harry Kane en zona mixta.",
+     "sonido": "Frase de cierre."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Harry Kane frente a micrófonos.",
+     "sonido": "Beat de salida."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Harry Kane hablando de cerca.",
+     "sonido": "Música decayendo."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Harry Kane sonriendo.",
+     "sonido": "Cierre de verso."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Harry Kane en primer plano final.",
+     "sonido": "Beat final."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Último cuadro de Harry Kane.",
+     "sonido": "Enganche de loop."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "Retorno al inicio (Lamine Yamal).",
+     "sonido": "Inicio del loop."
     }
    ],
-   "duracion_s": 5.5,
-   "loop": "si, el último frame corta abruptamente de vuelta al beat inicial de Lamine Yamal",
-   "gancho": "La velocidad de cambio de caras conocidas de futbolistas famosos en menos de 1 segundo genera curiosidad instantánea",
+   "duracion_s": 12.0,
+   "loop": "Sí, el beat final empalma directamente con el arranque del tema.",
+   "gancho": "Aparición inmediata de estrellas del fútbol juvenil e internacional en clips de alta energía.",
    "dopamina": [
-    "Cambio visual cada 0.5 segundos",
-    "Sincronización milimétrica con el beat del trap",
-    "Efectos de flash de luz en algunos cortes"
+    "Transición fluida de jugador cada 1.5 - 2 segundos.",
+    "Sincronización labial/movimiento con el ritmo de la música."
    ],
-   "audio": "Remix de trap latino con bajo pesado y voces cortadas, ideal para edits de fútbol en Shorts y TikTok",
-   "por_que_comentan": "Debaten sobre quién es el mejor jugador, critican o alaban las caras graciosas que ponen y nombran a sus favoritos",
+   "audio": "Track urbano/reguetón a ritmo rápido con acentos marcados en las transiciones.",
+   "por_que_comentan": "Debaten sobre cuál jugador es mejor o bromean sobre las caras que hacen.",
    "assets_necesarios": [
-    "Recortes PNG en primer plano de Lamine Yamal, Anthony Gordon, Pedri, Jude Bellingham y Harry Kane",
-    "Audio track de trap con beats cada 0.5s",
-    "Fondo animado sutil o desenfocado"
+    "Clips de video de Lamine Yamal, Nico Williams, Pedri, Bellingham, Gordon y Kane",
+    "Archivo de audio reguetón/edit"
    ],
    "replicable_con_codigo": true,
    "dificultad_1a5": 2,
    "receta_para_programarlo": [
-    "1. Configurar proyecto en Python (MoviePy o OpenCV) a 9:16 vertical (1080x1920) a 30 fps.",
-    "2. Cargar el audio track y detectar los timestamps de los beats cada 0.5 segundos.",
-    "3. Crear una lista con las rutas de las imágenes de los jugadores en orden de aparición.",
-    "4. Aplicar un bucle que corte y reemplace la imagen en pantalla exactamente en cada marca de tiempo del beat.",
-    "5. Añadir un efecto de zoom in sutil (escala de 1.0 a 1.05) en cada clip para dar dinamismo antes del siguiente corte."
+    "1. Definir lista de vídeos con tiempos de corte: [0.0, 2.0, 4.0, 5.5, 7.5, 9.0].",
+    "2. Cargar pistas de vídeo y aplicar escala uniforme 1080x1920.",
+    "3. Superponer pista de audio principal y renderizar cortes limpios sin transición."
    ],
    "como_lo_hacemos_mejor": [
-    "Añadir subtítulos automáticos dinámicos y coloridos con la letra de la canción para retener aún más la atención.",
-    "Incluir una barra de progreso invisible o temática de fútbol abajo para medir el tiempo restante del short.",
-    "Hacer un mini 'easter egg' o personaje sorpresa en el último frame antes del bucle para generar comentarios."
+    "Añadir subtítulos estilizados tipo karaoke.",
+    "Incluir una carta de stats (FIFA/FC24) flotante para cada jugador.",
+    "Agregar efectos de destello en cada cambio de personaje."
    ]
   }
  }
