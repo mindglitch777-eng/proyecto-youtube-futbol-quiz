@@ -149,6 +149,8 @@ def cuadro(g, A, t, ent):
         d = ImageDraw.Draw(im)
         txt = f"{g['nombres'][gana].upper()} WINS!"
         tam = 118 if len(txt) <= 11 else 100
+        while tam > 48 and P.fuente(tam).getlength(txt) > W - 80:                # 19/11: nombres largos (RONALDINHO) no se cortan
+            tam -= 4
         P.texto(d, (W / 2, 1660), txt, int(tam * min(1, 0.65 + e * 4)), (255, 230, 40), 13)
     im = G.capa(im, t, g["dur"], A["textos"], 120, sin_fin=True) or im
     return im.convert("RGB")

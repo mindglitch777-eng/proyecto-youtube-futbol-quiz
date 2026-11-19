@@ -116,7 +116,11 @@ def cuadro(g, A, t, ent):
         P.texto(d, (xc, J_BOT + 52), g["nombres"][i].upper(), 54 if len(g["nombres"][i]) <= 8 else 42, (255, 255, 255), 8)
     llave(d, x_llave(g, t), RIEL_Y - 110)
     if gana is not None:
-        P.texto(d, (W / 2, 1790), f"{g['nombres'][gana].upper()} ESCAPED!", 84, (255, 230, 40), 11)
+        txt = f"{g['nombres'][gana].upper()} ESCAPED!"
+        tam = 84                                                                # 19/11: "RONALDINHO ESCAPED!" se cortaba: achicar hasta que entre
+        while tam > 48 and P.fuente(tam).getlength(txt) > W - 80:
+            tam -= 4
+        P.texto(d, (W / 2, 1790), txt, tam, (255, 230, 40), 11)
     G.capa(im, t, g["dur"], A["textos"], 95, ancho_max=1000, tam=80)
     return im.convert("RGB")
 
