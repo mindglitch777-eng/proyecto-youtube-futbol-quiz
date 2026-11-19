@@ -1,0 +1,27 @@
+{
+ "fecha": "2026-11-19 17:55",
+ "tareas": [
+  {
+   "id": "ola-vSCSgT8so3c",
+   "prioridad": 2,
+   "tipo": "OLA",
+   "que": "Ola: «Spinning Face Puzzle» hizo 12,613,697 vistas (146.3x su canal). Construir NUESTRA versión ya (propuesta con muestra): Hacer una rueda giratoria rápida con botas de oro o trofeos donde el espectador deba pausar exactamente cuando la bota encaje con el cuerpo de su superestrella favorita (Messi, Mbappé o Haaland).",
+   "video": "https://www.youtube.com/shorts/vSCSgT8so3c"
+  },
+  {
+   "id": "recambio-2026-11-19",
+   "prioridad": 3,
+   "tipo": "RECAMBIO",
+   "que": "Hay 4 formatos fuertes en rotación (cinta, rueda, cabezas, balon) y se cansan cabezas. Construir un formato nuevo de la misma lógica (elegir entre superestrellas + parar justo), más difícil o con otra vuelta, como propuesta con muestra. Mirar primero el informe (reports/dossier/) por ideas.",
+   "fuertes": [
+    "cinta",
+    "rueda",
+    "cabezas",
+    "balon"
+   ],
+   "cansados": [
+    "cabezas"
+   ]
+  }
+ ]
+}
