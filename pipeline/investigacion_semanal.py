@@ -129,11 +129,7 @@ def main():
     import comentarios
     import investigar_olas
     investigar_olas.main(); comentarios.main()
-    try:                                                                       # 19/11: investigación 2.0 (canales seguidos + fuera de serie)
-        import investigar_canales
-        investigar_canales.main()
-    except Exception as e:
-        print("investigación 2.0 falló:", e, flush=True)
+    # 19/11: la investigación 2.0 (investigar_canales.py) corre TODOS LOS DÍAS en su propio workflow (radar_canales.yml)
     olas = cargar("olas.json", {})
     o7, o3 = olas.get("7d", {}).get("familias", {}), olas.get("3d", {}).get("familias", {})
     canal = nuestro_canal()

@@ -4,7 +4,7 @@ on:
   schedule:
     - cron: "7 20 */2 * *"     # cada 2 días a las 17:07 (Argentina): las olas pasan rápido (pedido 09/11)
   push:
-    paths: [pipeline/investigacion_semanal.py, pipeline/investigar_canales.py]
+    paths: [pipeline/investigacion_semanal.py]
   workflow_dispatch:
 
 permissions:
@@ -27,5 +27,5 @@ jobs:
         if: always()
         run: |
           python3 pipeline/guardar_avance.py "Investigación automática"
-          git add reports/investigacion_*.md reports/dossier 2>/dev/null; git commit -q -m "Investigación automática: informe" || true
+          git add reports/investigacion_*.md 2>/dev/null; git commit -q -m "Investigación automática: informe" || true
           for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done

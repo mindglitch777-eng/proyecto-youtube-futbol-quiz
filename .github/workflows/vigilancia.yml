@@ -40,6 +40,9 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -q requests
       - run: python pipeline/vigilancia.py
+      - name: Despertador (lista de tareas para la IA, sin IA)
+        if: always()
+        run: python pipeline/despertador.py || true
       - name: Medición extra (A1)
         if: always()
         run: gh workflow run medir_vivo.yml --ref "$GITHUB_REF_NAME" || true
