@@ -76,10 +76,17 @@ def piernas(nombre):
     return p.crop((bb[0], 0, bb[2], bb[3])), (x + fw / 2) - bb[0]
 
 
+# 19/11 Gerente: estadios revisados a ojo SIN marca de agua. estadio_1 y estadio_5 tienen "Magnific" repetido; el resto vienen de
+# bancos de imágenes (Dreamstime, Vecteezy, Freepik) y no están revisados. Para sumar uno: mirarlo a tamaño completo y agregarlo acá.
+ESTADIOS_REVISADOS = {"estadio_0", "estadio_6"}
+
+
 @lru_cache(maxsize=8)
 def fondo(nombre=None):
     """nombre = "estadio_5" o con variante (19/11, originalidad): "estadio_5~espejo", "~calido", "~frio" (se pueden combinar)."""
     base, *var = (nombre or "").split("~")
+    if base.startswith("estadio_") and base not in ESTADIOS_REVISADOS:      # 19/11: nunca un fondo sin revisar (marcas de agua)
+        base = "estadio_0"
     f = ROOT / "assets" / "fondos" / f"{base}.jpg" if base else None
     if f and f.exists():
         im = Image.open(f).convert("RGBA").resize((W, H))

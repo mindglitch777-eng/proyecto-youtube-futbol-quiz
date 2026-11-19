@@ -490,7 +490,8 @@ TIT_VS = ["{a} vs {b} 🛑 Stop on your GOAT", "{a} or {b}? 👑 Pause it in the
 
 # 19/11 (originalidad 57; BALLON D'OR/PENALTY/HEAD SLOT con huellas a distancia 0-6): fondo al azar entre los estadios SIN marca
 # de agua (0, 1, 5, 6), con espejo y tono de color. La huella (dHash en grises) cambia sobre todo con el fondo y el espejo.
-FONDOS_LIMPIOS = ["estadio_0", "estadio_1", "estadio_5", "estadio_6"]
+# 19/11 Gerente: estadio_1 y estadio_5 (Freepik premium) TIENEN marca de agua "Magnific" repetida en el cielo: fuera. Solo los revisados a ojo.
+FONDOS_LIMPIOS = ["estadio_0", "estadio_6"]
 
 
 def fondo_variado(V, tipo, rng):

@@ -223,3 +223,5 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **No toqué:** la grilla nueva del CEO (arranca el 21/11).
 - **Revisar el 2026-11-20:** el ESCAPE rehecho a ojo. **21/11** HEAD FIT · **22/11** DRESS · **23/11** originalidad > 80 y mensaje semanal.
 - **Para el CEO:** #15 (SKILL STOP), sí o no.
+- 19/11 (tarde): revisando la hoja nueva de SKILL STOP encontré la marca de agua "Magnific" en el fondo. Venía de estadio_1 y estadio_5, que entraron hoy como "fondos sin marca" en BALLON D'OR, PENALTY, HEAD SLOT, VS y SKILL STOP.
+  No llegó a ningún video (el cambio era de las 15:26 y después solo se fabricó el ESCAPE, que no usa esos fondos). Los saqué y el cargador solo acepta estadios revisados (0 y 6). Regeneré la hoja de #15.
