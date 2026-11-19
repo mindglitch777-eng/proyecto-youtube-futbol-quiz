@@ -55,16 +55,29 @@ def defensor(clave):
     if n > 2:
         k = 1 + int(np.argmax(st[1:, cv2.CC_STAT_AREA]))
         im.putalpha(Image.fromarray(np.where(lab == k, al, 0).astype(np.uint8)))
+    if clave == "cristiano_ronaldo_10":                                       # mancha rosa del short (viene de la foto) → blanco
+        arr = np.asarray(im).copy(); rr, gg, bb = (arr[..., i].astype(int) for i in range(3))
+        rosa = (rr > 150) & (bb > 90) & (gg < rr * 0.62) & (bb > rr * 0.45)
+        arr[rosa, :3] = (236, 236, 240); im = Image.fromarray(arr)
     im = im.crop(im.getbbox())
     s = ALTO_DEF / im.height
     im = im.resize((int(im.width * s), ALTO_DEF), Image.LANCZOS)
     a = np.asarray(im.split()[3]) > 100
-    for r in range(54, 24, -2):                                                # la pelota más grande que entra entera en el hueco
+    for r in range(100, 24, -2):                                               # la pelota más grande que entra entera en el hueco
         ancho, cx = hueco(a, ALTO_DEF - 1 - r - 4)                             # (medido a la altura del centro de la pelota)
         arriba, _ = hueco(a, ALTO_DEF - 1 - 2 * r - 4)
-        if min(ancho, arriba) / 2 * 0.84 >= r:
+        if min(ancho, arriba) / 2 * 0.9 >= r:
             return im, r, ancho, cx
     raise ValueError(f"{clave}: sin hueco entre las piernas")
+
+
+@lru_cache(maxsize=8)
+def brillo(r):
+    from PIL import ImageFilter
+    lado = int(r * 4.4); c = lado / 2
+    im = Image.new("RGBA", (lado, lado), (255, 220, 40, 0))
+    ImageDraw.Draw(im).ellipse([c - r * 1.65, c - r * 1.65, c + r * 1.65, c + r * 1.65], fill=(255, 220, 40, 190))
+    return im.filter(ImageFilter.GaussianBlur(r * 0.35))
 
 
 def armar(g):
@@ -80,7 +93,7 @@ def armar(g):
 
 def tol(ancho, r):
     """Caño = la pelota con el centro dentro del hueco y a lo sumo media pelota tapada por una pierna."""
-    return min(max(ancho / 2 - r * 0.5, r * 0.6), r * 0.75)                  # tope: zona chica también en los huecos anchos
+    return min(max(ancho / 2 - r * 0.5, r * 0.6), r * 0.75, 40)              # tope: zona chica también con pelota grande
 
 
 def recorrido(g, gx, tol, r):
@@ -118,9 +131,13 @@ def cuadro(g, A, f):
     d = ImageDraw.Draw(im, "RGBA")
     d.ellipse([x - r * 1.1, PISO - 10, x + r * 1.1, PISO + 6], fill=(0, 0, 0, 90))  # sombra
     prev = A["tabla"][f - 1] if f else A["tabla"][-1]
-    for k in (3, 2, 1):                                                        # estela (se nota la velocidad)
-        xx = x + (prev - x) * k * 0.7
-        d.ellipse([xx - r * 0.8, y - r * 0.8, xx + r * 0.8, y + r * 0.8], fill=(255, 255, 255, 40 + 25 * (3 - k)))
+    for k in (5, 4, 3, 2, 1):                                                  # estela dorada larga (se sigue en el celular)
+        xx = x + (prev - x) * k * 0.8
+        rk = r * (0.55 + 0.08 * (5 - k))
+        d.ellipse([xx - rk, y - rk, xx + rk, y + rk], fill=(255, 214, 40, 35 + 22 * (5 - k)))
+    br = brillo(r); pulso = 0.75 + 0.25 * math.sin(t * 2 * math.pi * 3)      # aro de luz que late alrededor de la pelota
+    im.alpha_composite(Image.eval(br, lambda v: int(v * pulso)) if pulso < 1 else br, (int(x - br.width / 2), int(y - br.height / 2)))
+    d = ImageDraw.Draw(im, "RGBA")
     d.ellipse([x - r, y - r, x + r, y + r], fill=(255, 255, 255), outline=(20, 20, 30), width=4)
     ang = x / r
     for j in range(5):

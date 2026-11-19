@@ -210,6 +210,8 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
   (0, 1, 5, 6) con espejo y tono cálido/frío, sin repetir los últimos 4. Medido con originalidad.py en 3 videos de cada uno:
   distancia de huella 55-79 (BALLON), 56-83 (PENALTY), 50-63 (HEAD SLOT); antes 0-6. WHEEL y CONVEYOR sin tocar (fijos que rinden).
   (4) STOP TO ESCAPE y VS más difícil los hizo la sesión principal (18/11). Pendiente: jugada MOMENTO nueva.
+  (5) Pedido del Gerente sobre #15: pelota hasta 2x más grande (Mbappé r 84-100; Messi r 40, el máximo que entra en su hueco), estela dorada y
+  brillo que late; mancha rosa del short de Ronaldo pintada de blanco; Ronaldo_10 sale como defensor (hueco chico, pelota r 30). Hoja regenerada.
 - **Para el CEO:** Issue #15 (SKILL STOP).
 
 ## 2026-11-19 · Gerente IA (turno diario)
