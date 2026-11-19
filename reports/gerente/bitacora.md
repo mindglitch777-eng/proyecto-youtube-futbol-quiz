@@ -225,3 +225,7 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Para el CEO:** #15 (SKILL STOP), sí o no.
 - 19/11 (tarde): revisando la hoja nueva de SKILL STOP encontré la marca de agua "Magnific" en el fondo. Venía de estadio_1 y estadio_5, que entraron hoy como "fondos sin marca" en BALLON D'OR, PENALTY, HEAD SLOT, VS y SKILL STOP.
   No llegó a ningún video (el cambio era de las 15:26 y después solo se fabricó el ESCAPE, que no usa esos fondos). Los saqué y el cargador solo acepta estadios revisados (0 y 6). Regeneré la hoja de #15.
+
+## 2026-11-19 · Ingeniero (anotación)
+- **Ingeniero:** acordado con el Gerente: Messi sigue como defensor de SKILL STOP (con brillo) hasta tener otra foto con más hueco.
+  Para el lunes 23/11: más fondos propios revisados a 1080x1920 (sin marcas de agua) y una foto de Messi con más hueco entre los pies.
