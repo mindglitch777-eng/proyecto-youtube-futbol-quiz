@@ -1,0 +1,3202 @@
+{
+ "fuente": "Wikipedia (en), Career statistics: club primer equipo + selección mayor, goles oficiales",
+ "fecha": "2026-11-19",
+ "jugadores": {
+  "beckham": {
+   "nombre": "Beckham",
+   "nacimiento": "1975-05-02",
+   "edad_hoy": 51,
+   "activo": false,
+   "total": 146,
+   "club": 129,
+   "seleccion": 17,
+   "acumulado_por_edad": {
+    "18": 0,
+    "19": 0,
+    "20": 3,
+    "21": 11,
+    "22": 23,
+    "23": 35,
+    "24": 44,
+    "25": 52,
+    "26": 66,
+    "27": 85,
+    "28": 100,
+    "29": 109,
+    "30": 114,
+    "31": 120,
+    "32": 125,
+    "33": 130,
+    "34": 134,
+    "35": 136,
+    "36": 138,
+    "37": 146,
+    "38": 146
+   },
+   "club_por_edad": {
+    "18": "Manchester United",
+    "19": "Manchester United",
+    "20": "Preston North End (loan)",
+    "21": "Manchester United",
+    "22": "Manchester United",
+    "23": "Manchester United",
+    "24": "Manchester United",
+    "25": "Manchester United",
+    "26": "Manchester United",
+    "27": "Manchester United",
+    "28": "Manchester United",
+    "29": "Real Madrid",
+    "30": "Real Madrid",
+    "31": "Real Madrid",
+    "32": "Real Madrid",
+    "33": "LA Galaxy",
+    "34": "LA Galaxy",
+    "35": "LA Galaxy",
+    "36": "LA Galaxy",
+    "37": "LA Galaxy",
+    "38": "Paris Saint-Germain"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1992–93",
+     "goles": 0,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1993–94",
+     "goles": 0,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1994–95",
+     "goles": 1,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1995–96",
+     "goles": 8,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1996–97",
+     "goles": 12,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1997–98",
+     "goles": 11,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1998–99",
+     "goles": 9,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "1999–2000",
+     "goles": 8,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2000–01",
+     "goles": 9,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2001–02",
+     "goles": 16,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2002–03",
+     "goles": 11,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Preston North End (loan)",
+     "temporada": "1994–95",
+     "goles": 2,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2003–04",
+     "goles": 7,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2004–05",
+     "goles": 4,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2005–06",
+     "goles": 5,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2006–07",
+     "goles": 4,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2007",
+     "goles": 1,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2008",
+     "goles": 5,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2009",
+     "goles": 2,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2010",
+     "goles": 2,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2011",
+     "goles": 2,
+     "edad": 36
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2012",
+     "goles": 8,
+     "edad": 37
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan (loan)",
+     "temporada": "2008–09",
+     "goles": 2,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan (loan)",
+     "temporada": "2009–10",
+     "goles": 0,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2012–13",
+     "goles": 0,
+     "edad": 38
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "1996",
+     "goles": 0,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "1997",
+     "goles": 0,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "1998",
+     "goles": 1,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "1999",
+     "goles": 0,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2000",
+     "goles": 0,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2001",
+     "goles": 5,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2002",
+     "goles": 3,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2003",
+     "goles": 4,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2004",
+     "goles": 2,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2005",
+     "goles": 1,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2006",
+     "goles": 1,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2007",
+     "goles": 0,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2008",
+     "goles": 0,
+     "edad": 33
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "England",
+     "temporada": "2009",
+     "goles": 0,
+     "edad": 34
+    }
+   ]
+  },
+  "henry": {
+   "nombre": "Henry",
+   "nacimiento": "1977-08-17",
+   "edad_hoy": 49,
+   "activo": false,
+   "total": 411,
+   "club": 360,
+   "seleccion": 51,
+   "acumulado_por_edad": {
+    "17": 3,
+    "18": 6,
+    "19": 16,
+    "20": 27,
+    "21": 34,
+    "22": 60,
+    "23": 87,
+    "24": 122,
+    "25": 157,
+    "26": 207,
+    "27": 240,
+    "28": 276,
+    "29": 296,
+    "30": 320,
+    "31": 350,
+    "32": 357,
+    "33": 359,
+    "34": 376,
+    "35": 391,
+    "36": 401,
+    "37": 411
+   },
+   "club_por_edad": {
+    "17": "Monaco",
+    "18": "Monaco",
+    "19": "Monaco",
+    "20": "Monaco",
+    "21": "Juventus",
+    "22": "Arsenal",
+    "23": "Arsenal",
+    "24": "Arsenal",
+    "25": "Arsenal",
+    "26": "Arsenal",
+    "27": "Arsenal",
+    "28": "Arsenal",
+    "29": "Arsenal",
+    "30": "Barcelona",
+    "31": "Barcelona",
+    "32": "Barcelona",
+    "33": "New York Red Bulls",
+    "34": "New York Red Bulls",
+    "35": "New York Red Bulls",
+    "36": "New York Red Bulls",
+    "37": "New York Red Bulls"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "1994–95",
+     "goles": 3,
+     "edad": 17
+    },
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "1995–96",
+     "goles": 3,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "1996–97",
+     "goles": 10,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "1997–98",
+     "goles": 11,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "1998–99",
+     "goles": 1,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "1998–99",
+     "goles": 3,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "1999–2000",
+     "goles": 0,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "1999–2000",
+     "goles": 26,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2000–01",
+     "goles": 22,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2001–02",
+     "goles": 32,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2002–03",
+     "goles": 32,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2003–04",
+     "goles": 39,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2004–05",
+     "goles": 30,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2005–06",
+     "goles": 33,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal",
+     "temporada": "2006–07",
+     "goles": 12,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2007–08",
+     "goles": 19,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2008–09",
+     "goles": 26,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2009–10",
+     "goles": 4,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "New York Red Bulls",
+     "temporada": "2010",
+     "goles": 2,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "New York Red Bulls",
+     "temporada": "2011",
+     "goles": 15,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "New York Red Bulls",
+     "temporada": "2012",
+     "goles": 15,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "New York Red Bulls",
+     "temporada": "2013",
+     "goles": 10,
+     "edad": 36
+    },
+    {
+     "tipo": "club",
+     "equipo": "New York Red Bulls",
+     "temporada": "2014",
+     "goles": 10,
+     "edad": 37
+    },
+    {
+     "tipo": "club",
+     "equipo": "Arsenal (loan)",
+     "temporada": "2011–12",
+     "goles": 2,
+     "edad": 34
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1997",
+     "goles": 0,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1998",
+     "goles": 3,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1999",
+     "goles": 0,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2000",
+     "goles": 5,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2001",
+     "goles": 3,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2002",
+     "goles": 3,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2003",
+     "goles": 11,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2004",
+     "goles": 3,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2005",
+     "goles": 3,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2006",
+     "goles": 8,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2007",
+     "goles": 5,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2008",
+     "goles": 4,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2009",
+     "goles": 3,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2010",
+     "goles": 0,
+     "edad": 33
+    }
+   ]
+  },
+  "mbappe": {
+   "nombre": "Mbappé",
+   "nacimiento": "1998-12-20",
+   "edad_hoy": 27,
+   "activo": true,
+   "total": 453,
+   "club": 386,
+   "seleccion": 67,
+   "acumulado_por_edad": {
+    "17": 1,
+    "18": 27,
+    "19": 49,
+    "20": 97,
+    "21": 130,
+    "22": 175,
+    "23": 222,
+    "24": 275,
+    "25": 329,
+    "26": 375,
+    "27": 453
+   },
+   "club_por_edad": {
+    "17": "Monaco",
+    "18": "Monaco",
+    "19": "Paris Saint-Germain (loan)",
+    "20": "Paris Saint-Germain",
+    "21": "Paris Saint-Germain",
+    "22": "Paris Saint-Germain",
+    "23": "Paris Saint-Germain",
+    "24": "Paris Saint-Germain",
+    "25": "Paris Saint-Germain",
+    "26": "Real Madrid",
+    "27": "Real Madrid"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "2015–16",
+     "goles": 1,
+     "edad": 17
+    },
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "2016–17",
+     "goles": 26,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Monaco",
+     "temporada": "2017–18",
+     "goles": 0,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain (loan)",
+     "temporada": "2017–18",
+     "goles": 21,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2018–19",
+     "goles": 39,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2019–20",
+     "goles": 30,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2020–21",
+     "goles": 42,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2021–22",
+     "goles": 39,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2022–23",
+     "goles": 41,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2023–24",
+     "goles": 44,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2024–25",
+     "goles": 44,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2025–26",
+     "goles": 42,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2026–27",
+     "goles": 17,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2017",
+     "goles": 1,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2018",
+     "goles": 9,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2019",
+     "goles": 3,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2020",
+     "goles": 3,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2021",
+     "goles": 8,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2022",
+     "goles": 12,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2023",
+     "goles": 10,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2024",
+     "goles": 2,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2025",
+     "goles": 7,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2026",
+     "goles": 12,
+     "edad": 27
+    }
+   ]
+  },
+  "messi": {
+   "nombre": "Messi",
+   "nacimiento": "1987-06-24",
+   "edad_hoy": 39,
+   "activo": true,
+   "total": 937,
+   "club": 811,
+   "seleccion": 126,
+   "acumulado_por_edad": {
+    "18": 1,
+    "19": 11,
+    "20": 34,
+    "21": 52,
+    "22": 93,
+    "23": 142,
+    "24": 199,
+    "25": 284,
+    "26": 350,
+    "27": 399,
+    "28": 461,
+    "29": 510,
+    "30": 568,
+    "31": 617,
+    "32": 673,
+    "33": 705,
+    "34": 752,
+    "35": 781,
+    "36": 821,
+    "37": 850,
+    "38": 896,
+    "39": 937
+   },
+   "club_por_edad": {
+    "18": "Barcelona",
+    "19": "Barcelona",
+    "20": "Barcelona",
+    "21": "Barcelona",
+    "22": "Barcelona",
+    "23": "Barcelona",
+    "24": "Barcelona",
+    "25": "Barcelona",
+    "26": "Barcelona",
+    "27": "Barcelona",
+    "28": "Barcelona",
+    "29": "Barcelona",
+    "30": "Barcelona",
+    "31": "Barcelona",
+    "32": "Barcelona",
+    "33": "Barcelona",
+    "34": "Barcelona",
+    "35": "Paris Saint-Germain",
+    "36": "Paris Saint-Germain",
+    "37": "Inter Miami",
+    "38": "Inter Miami",
+    "39": "Inter Miami"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2004–05",
+     "goles": 1,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2005–06",
+     "goles": 8,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2006–07",
+     "goles": 17,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2007–08",
+     "goles": 16,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2008–09",
+     "goles": 38,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2009–10",
+     "goles": 47,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2010–11",
+     "goles": 53,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2011–12",
+     "goles": 73,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2012–13",
+     "goles": 60,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2013–14",
+     "goles": 41,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2014–15",
+     "goles": 58,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2015–16",
+     "goles": 41,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2016–17",
+     "goles": 54,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2017–18",
+     "goles": 45,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2018–19",
+     "goles": 51,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2019–20",
+     "goles": 31,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2020–21",
+     "goles": 38,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2021–22",
+     "goles": 11,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2022–23",
+     "goles": 21,
+     "edad": 36
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Miami",
+     "temporada": "2023",
+     "goles": 11,
+     "edad": 36
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Miami",
+     "temporada": "2024",
+     "goles": 23,
+     "edad": 37
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Miami",
+     "temporada": "2025",
+     "goles": 43,
+     "edad": 38
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Miami",
+     "temporada": "2026",
+     "goles": 30,
+     "edad": 39
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2005",
+     "goles": 0,
+     "edad": 18
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2006",
+     "goles": 2,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2007",
+     "goles": 6,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2008",
+     "goles": 2,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2009",
+     "goles": 3,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2010",
+     "goles": 2,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2011",
+     "goles": 4,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2012",
+     "goles": 12,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2013",
+     "goles": 6,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2014",
+     "goles": 8,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2015",
+     "goles": 4,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2016",
+     "goles": 8,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2017",
+     "goles": 4,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2018",
+     "goles": 4,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2019",
+     "goles": 5,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2020",
+     "goles": 1,
+     "edad": 33
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2021",
+     "goles": 9,
+     "edad": 34
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2022",
+     "goles": 18,
+     "edad": 35
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2023",
+     "goles": 8,
+     "edad": 36
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2024",
+     "goles": 6,
+     "edad": 37
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2025",
+     "goles": 3,
+     "edad": 38
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Argentina",
+     "temporada": "2026",
+     "goles": 11,
+     "edad": 39
+    }
+   ]
+  },
+  "neymar": {
+   "nombre": "Neymar",
+   "nacimiento": "1992-02-05",
+   "edad_hoy": 34,
+   "activo": true,
+   "total": 461,
+   "club": 381,
+   "seleccion": 80,
+   "acumulado_por_edad": {
+    "17": 14,
+    "18": 57,
+    "19": 88,
+    "20": 140,
+    "21": 163,
+    "22": 193,
+    "23": 236,
+    "24": 271,
+    "25": 294,
+    "26": 329,
+    "27": 353,
+    "28": 375,
+    "29": 398,
+    "30": 418,
+    "31": 438,
+    "32": 439,
+    "33": 450,
+    "34": 461
+   },
+   "club_por_edad": {
+    "17": "Santos",
+    "18": "Santos",
+    "19": "Santos",
+    "20": "Santos",
+    "21": "Santos",
+    "22": "Barcelona",
+    "23": "Barcelona",
+    "24": "Barcelona",
+    "25": "Barcelona",
+    "26": "Paris Saint-Germain",
+    "27": "Paris Saint-Germain",
+    "28": "Paris Saint-Germain",
+    "29": "Paris Saint-Germain",
+    "30": "Paris Saint-Germain",
+    "31": "Paris Saint-Germain",
+    "32": "Al-Hilal",
+    "33": "Santos",
+    "34": "Santos"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2009",
+     "goles": 14,
+     "edad": 17
+    },
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2010",
+     "goles": 42,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2011",
+     "goles": 24,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2012",
+     "goles": 43,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2013",
+     "goles": 13,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2013–14",
+     "goles": 15,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2014–15",
+     "goles": 39,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2015–16",
+     "goles": 31,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2016–17",
+     "goles": 20,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2017–18",
+     "goles": 28,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2018–19",
+     "goles": 23,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2019–20",
+     "goles": 19,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2020–21",
+     "goles": 17,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2021–22",
+     "goles": 13,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2022–23",
+     "goles": 18,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Hilal",
+     "temporada": "2023–24",
+     "goles": 1,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Hilal",
+     "temporada": "2024–25",
+     "goles": 0,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2025",
+     "goles": 11,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Santos",
+     "temporada": "2026",
+     "goles": 10,
+     "edad": 34
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2010",
+     "goles": 1,
+     "edad": 18
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2011",
+     "goles": 7,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2012",
+     "goles": 9,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2013",
+     "goles": 10,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2014",
+     "goles": 15,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2015",
+     "goles": 4,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2016",
+     "goles": 4,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2017",
+     "goles": 3,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2018",
+     "goles": 7,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2019",
+     "goles": 1,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2020",
+     "goles": 3,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2021",
+     "goles": 6,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2022",
+     "goles": 7,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2023",
+     "goles": 2,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2024",
+     "goles": 0,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2025",
+     "goles": 0,
+     "edad": 33
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2026",
+     "goles": 1,
+     "edad": 34
+    }
+   ]
+  },
+  "ronaldinho": {
+   "nombre": "Ronaldinho",
+   "nacimiento": "1980-03-21",
+   "edad_hoy": 46,
+   "activo": false,
+   "total": 299,
+   "club": 266,
+   "seleccion": 33,
+   "acumulado_por_edad": {
+    "18": 6,
+    "19": 35,
+    "20": 64,
+    "21": 67,
+    "22": 84,
+    "23": 98,
+    "24": 126,
+    "25": 145,
+    "26": 171,
+    "27": 200,
+    "28": 209,
+    "29": 219,
+    "30": 234,
+    "31": 257,
+    "32": 273,
+    "33": 290,
+    "34": 291,
+    "35": 299
+   },
+   "club_por_edad": {
+    "18": "Grêmio",
+    "19": "Grêmio",
+    "20": "Grêmio",
+    "21": "Grêmio",
+    "22": "Paris Saint-Germain",
+    "23": "Paris Saint-Germain",
+    "24": "Barcelona",
+    "25": "Barcelona",
+    "26": "Barcelona",
+    "27": "Barcelona",
+    "28": "Barcelona",
+    "29": "AC Milan",
+    "30": "AC Milan",
+    "31": "Flamengo",
+    "32": "Atlético Mineiro",
+    "33": "Atlético Mineiro",
+    "34": "Atlético Mineiro",
+    "35": "Querétaro"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Grêmio",
+     "temporada": "1998",
+     "goles": 6,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Grêmio",
+     "temporada": "1999",
+     "goles": 22,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Grêmio",
+     "temporada": "2000",
+     "goles": 28,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Grêmio",
+     "temporada": "2001",
+     "goles": 2,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2001–02",
+     "goles": 13,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2002–03",
+     "goles": 12,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2003–04",
+     "goles": 22,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2004–05",
+     "goles": 13,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2005–06",
+     "goles": 26,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2006–07",
+     "goles": 24,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2007–08",
+     "goles": 9,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2008–09",
+     "goles": 10,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2009–10",
+     "goles": 15,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2010–11",
+     "goles": 1,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Flamengo",
+     "temporada": "2011",
+     "goles": 21,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Flamengo",
+     "temporada": "2012",
+     "goles": 7,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Atlético Mineiro",
+     "temporada": "2012",
+     "goles": 9,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Atlético Mineiro",
+     "temporada": "2013",
+     "goles": 17,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Atlético Mineiro",
+     "temporada": "2014",
+     "goles": 1,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "Querétaro",
+     "temporada": "2014–15",
+     "goles": 8,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "Fluminense",
+     "temporada": "2015",
+     "goles": 0,
+     "edad": 35
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "1999",
+     "goles": 7,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2000",
+     "goles": 1,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2001",
+     "goles": 1,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2002",
+     "goles": 4,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2003",
+     "goles": 2,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2004",
+     "goles": 6,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2005",
+     "goles": 6,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2006",
+     "goles": 0,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2007",
+     "goles": 5,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2008",
+     "goles": 0,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2009",
+     "goles": 0,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2010",
+     "goles": 0,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2011",
+     "goles": 1,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2012",
+     "goles": 0,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2013",
+     "goles": 0,
+     "edad": 33
+    }
+   ]
+  },
+  "ronaldo": {
+   "nombre": "Ronaldo",
+   "nacimiento": "1985-02-05",
+   "edad_hoy": 41,
+   "activo": true,
+   "total": 985,
+   "club": 839,
+   "seleccion": 146,
+   "acumulado_por_edad": {
+    "18": 5,
+    "19": 18,
+    "20": 29,
+    "21": 47,
+    "22": 75,
+    "23": 118,
+    "24": 145,
+    "25": 181,
+    "26": 241,
+    "27": 306,
+    "28": 371,
+    "29": 427,
+    "30": 491,
+    "31": 555,
+    "32": 608,
+    "33": 658,
+    "34": 700,
+    "35": 740,
+    "36": 789,
+    "37": 816,
+    "38": 843,
+    "39": 900,
+    "40": 943,
+    "41": 985
+   },
+   "club_por_edad": {
+    "18": "Sporting CP",
+    "19": "Manchester United",
+    "20": "Manchester United",
+    "21": "Manchester United",
+    "22": "Manchester United",
+    "23": "Manchester United",
+    "24": "Manchester United",
+    "25": "Real Madrid",
+    "26": "Real Madrid",
+    "27": "Real Madrid",
+    "28": "Real Madrid",
+    "29": "Real Madrid",
+    "30": "Real Madrid",
+    "31": "Real Madrid",
+    "32": "Real Madrid",
+    "33": "Real Madrid",
+    "34": "Juventus",
+    "35": "Juventus",
+    "36": "Juventus",
+    "37": "Manchester United",
+    "38": "Al-Nassr",
+    "39": "Al-Nassr",
+    "40": "Al-Nassr",
+    "41": "Al-Nassr"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Sporting CP",
+     "temporada": "2002–03",
+     "goles": 5,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2003–04",
+     "goles": 6,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2004–05",
+     "goles": 9,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2005–06",
+     "goles": 12,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2006–07",
+     "goles": 23,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2007–08",
+     "goles": 42,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2008–09",
+     "goles": 26,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2009–10",
+     "goles": 33,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2010–11",
+     "goles": 53,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2011–12",
+     "goles": 60,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2012–13",
+     "goles": 55,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2013–14",
+     "goles": 51,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2014–15",
+     "goles": 61,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2015–16",
+     "goles": 51,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2016–17",
+     "goles": 42,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2017–18",
+     "goles": 44,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2018–19",
+     "goles": 28,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2019–20",
+     "goles": 37,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2020–21",
+     "goles": 36,
+     "edad": 36
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2021–22",
+     "goles": 0,
+     "edad": 37
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2021–22",
+     "goles": 24,
+     "edad": 37
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2022–23",
+     "goles": 3,
+     "edad": 38
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Nassr",
+     "temporada": "2022–23",
+     "goles": 14,
+     "edad": 38
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Nassr",
+     "temporada": "2023–24",
+     "goles": 50,
+     "edad": 39
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Nassr",
+     "temporada": "2024–25",
+     "goles": 35,
+     "edad": 40
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Nassr",
+     "temporada": "2025–26",
+     "goles": 30,
+     "edad": 41
+    },
+    {
+     "tipo": "club",
+     "equipo": "Al-Nassr",
+     "temporada": "2026–27",
+     "goles": 9,
+     "edad": 41
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2003",
+     "goles": 0,
+     "edad": 18
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2004",
+     "goles": 7,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2005",
+     "goles": 2,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2006",
+     "goles": 6,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2007",
+     "goles": 5,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2008",
+     "goles": 1,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2009",
+     "goles": 1,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2010",
+     "goles": 3,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2011",
+     "goles": 7,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2012",
+     "goles": 5,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2013",
+     "goles": 10,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2014",
+     "goles": 5,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2015",
+     "goles": 3,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2016",
+     "goles": 13,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2017",
+     "goles": 11,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2018",
+     "goles": 6,
+     "edad": 33
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2019",
+     "goles": 14,
+     "edad": 34
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2020",
+     "goles": 3,
+     "edad": 35
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2021",
+     "goles": 13,
+     "edad": 36
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2022",
+     "goles": 3,
+     "edad": 37
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2023",
+     "goles": 10,
+     "edad": 38
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2024",
+     "goles": 7,
+     "edad": 39
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2025",
+     "goles": 8,
+     "edad": 40
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Portugal",
+     "temporada": "2026",
+     "goles": 3,
+     "edad": 41
+    }
+   ]
+  },
+  "vinicius": {
+   "nombre": "Vinícius",
+   "nacimiento": "2000-07-12",
+   "edad_hoy": 26,
+   "activo": true,
+   "total": 162,
+   "club": 143,
+   "seleccion": 19,
+   "acumulado_por_edad": {
+    "17": 4,
+    "18": 18,
+    "19": 23,
+    "20": 29,
+    "21": 51,
+    "22": 76,
+    "23": 101,
+    "24": 125,
+    "25": 150,
+    "26": 162
+   },
+   "club_por_edad": {
+    "17": "Flamengo",
+    "18": "Flamengo",
+    "19": "Real Madrid",
+    "20": "Real Madrid",
+    "21": "Real Madrid",
+    "22": "Real Madrid",
+    "23": "Real Madrid",
+    "24": "Real Madrid",
+    "25": "Real Madrid",
+    "26": "Real Madrid"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Flamengo",
+     "temporada": "2017",
+     "goles": 4,
+     "edad": 17
+    },
+    {
+     "tipo": "club",
+     "equipo": "Flamengo",
+     "temporada": "2018",
+     "goles": 10,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2018–19",
+     "goles": 4,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2019–20",
+     "goles": 5,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2020–21",
+     "goles": 6,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2021–22",
+     "goles": 22,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2022–23",
+     "goles": 23,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2023–24",
+     "goles": 24,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2024–25",
+     "goles": 22,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2025–26",
+     "goles": 22,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2026–27",
+     "goles": 1,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2019",
+     "goles": 0,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2020",
+     "goles": 0,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2021",
+     "goles": 0,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2022",
+     "goles": 2,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2023",
+     "goles": 1,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2024",
+     "goles": 2,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2025",
+     "goles": 3,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Brazil",
+     "temporada": "2026",
+     "goles": 11,
+     "edad": 26
+    }
+   ]
+  },
+  "yamal": {
+   "nombre": "Yamal",
+   "nacimiento": "2007-07-13",
+   "edad_hoy": 19,
+   "activo": true,
+   "total": 73,
+   "club": 62,
+   "seleccion": 11,
+   "acumulado_por_edad": {
+    "15": 0,
+    "16": 9,
+    "17": 28,
+    "18": 55,
+    "19": 73
+   },
+   "club_por_edad": {
+    "15": "Barcelona",
+    "16": "Barcelona",
+    "17": "Barcelona",
+    "18": "Barcelona",
+    "19": "Barcelona"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2022–23",
+     "goles": 0,
+     "edad": 15
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2023–24",
+     "goles": 7,
+     "edad": 16
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2024–25",
+     "goles": 18,
+     "edad": 17
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2025–26",
+     "goles": 24,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2026–27",
+     "goles": 13,
+     "edad": 19
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Spain",
+     "temporada": "2023",
+     "goles": 2,
+     "edad": 16
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Spain",
+     "temporada": "2024",
+     "goles": 1,
+     "edad": 17
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Spain",
+     "temporada": "2025",
+     "goles": 3,
+     "edad": 18
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Spain",
+     "temporada": "2026",
+     "goles": 5,
+     "edad": 19
+    }
+   ]
+  },
+  "zidane": {
+   "nombre": "Zidane",
+   "nacimiento": "1972-06-23",
+   "edad_hoy": 54,
+   "activo": false,
+   "total": 156,
+   "club": 125,
+   "seleccion": 31,
+   "acumulado_por_edad": {
+    "17": 0,
+    "18": 0,
+    "19": 1,
+    "20": 6,
+    "21": 17,
+    "22": 27,
+    "23": 37,
+    "24": 50,
+    "25": 58,
+    "26": 74,
+    "27": 77,
+    "28": 86,
+    "29": 94,
+    "30": 107,
+    "31": 122,
+    "32": 136,
+    "33": 144,
+    "34": 156
+   },
+   "club_por_edad": {
+    "17": "Cannes",
+    "18": "Cannes",
+    "19": "Cannes",
+    "20": "Cannes",
+    "21": "Bordeaux",
+    "22": "Bordeaux",
+    "23": "Bordeaux",
+    "24": "Bordeaux",
+    "25": "Juventus",
+    "26": "Juventus",
+    "27": "Juventus",
+    "28": "Juventus",
+    "29": "Juventus",
+    "30": "Real Madrid",
+    "31": "Real Madrid",
+    "32": "Real Madrid",
+    "33": "Real Madrid",
+    "34": "Real Madrid"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Cannes",
+     "temporada": "1988–89",
+     "goles": 0,
+     "edad": 17
+    },
+    {
+     "tipo": "club",
+     "equipo": "Cannes",
+     "temporada": "1989–90",
+     "goles": 0,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Cannes",
+     "temporada": "1990–91",
+     "goles": 1,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Cannes",
+     "temporada": "1991–92",
+     "goles": 5,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Bordeaux",
+     "temporada": "1992–93",
+     "goles": 11,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Bordeaux",
+     "temporada": "1993–94",
+     "goles": 8,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Bordeaux",
+     "temporada": "1994–95",
+     "goles": 8,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Bordeaux",
+     "temporada": "1995–96",
+     "goles": 12,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "1996–97",
+     "goles": 7,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "1997–98",
+     "goles": 11,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "1998–99",
+     "goles": 2,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "1999–2000",
+     "goles": 5,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2000–01",
+     "goles": 6,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2001–02",
+     "goles": 12,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2002–03",
+     "goles": 12,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2003–04",
+     "goles": 10,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2004–05",
+     "goles": 6,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Real Madrid",
+     "temporada": "2005–06",
+     "goles": 9,
+     "edad": 34
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1994",
+     "goles": 2,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1995",
+     "goles": 2,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1996",
+     "goles": 1,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1997",
+     "goles": 1,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1998",
+     "goles": 5,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "1999",
+     "goles": 1,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2000",
+     "goles": 4,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2001",
+     "goles": 2,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2002",
+     "goles": 1,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2003",
+     "goles": 3,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2004",
+     "goles": 4,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2005",
+     "goles": 2,
+     "edad": 33
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "France",
+     "temporada": "2006",
+     "goles": 3,
+     "edad": 34
+    }
+   ]
+  },
+  "zlatan": {
+   "nombre": "Zlatan",
+   "nacimiento": "1981-10-03",
+   "edad_hoy": 45,
+   "activo": false,
+   "total": 573,
+   "club": 511,
+   "seleccion": 62,
+   "acumulado_por_edad": {
+    "18": 1,
+    "19": 15,
+    "20": 28,
+    "21": 51,
+    "22": 69,
+    "23": 96,
+    "24": 110,
+    "25": 125,
+    "26": 147,
+    "27": 178,
+    "28": 201,
+    "29": 226,
+    "30": 264,
+    "31": 310,
+    "32": 360,
+    "33": 393,
+    "34": 454,
+    "35": 482,
+    "36": 483,
+    "37": 505,
+    "38": 547,
+    "39": 564,
+    "40": 572,
+    "41": 573,
+    "42": 573
+   },
+   "club_por_edad": {
+    "18": "Malmö FF",
+    "19": "Malmö FF",
+    "20": "Ajax",
+    "21": "Ajax",
+    "22": "Ajax",
+    "23": "Juventus",
+    "24": "Juventus",
+    "25": "Inter Milan",
+    "26": "Inter Milan",
+    "27": "Inter Milan",
+    "28": "Barcelona",
+    "29": "AC Milan (loan)",
+    "30": "AC Milan",
+    "31": "Paris Saint-Germain",
+    "32": "Paris Saint-Germain",
+    "33": "Paris Saint-Germain",
+    "34": "Paris Saint-Germain",
+    "35": "Manchester United",
+    "36": "Manchester United",
+    "37": "LA Galaxy",
+    "38": "LA Galaxy",
+    "39": "AC Milan",
+    "40": "AC Milan",
+    "41": "AC Milan"
+   },
+   "filas": [
+    {
+     "tipo": "club",
+     "equipo": "Malmö FF",
+     "temporada": "1999",
+     "goles": 1,
+     "edad": 18
+    },
+    {
+     "tipo": "club",
+     "equipo": "Malmö FF",
+     "temporada": "2000",
+     "goles": 14,
+     "edad": 19
+    },
+    {
+     "tipo": "club",
+     "equipo": "Malmö FF",
+     "temporada": "2001",
+     "goles": 3,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Ajax",
+     "temporada": "2001–02",
+     "goles": 9,
+     "edad": 20
+    },
+    {
+     "tipo": "club",
+     "equipo": "Ajax",
+     "temporada": "2002–03",
+     "goles": 21,
+     "edad": 21
+    },
+    {
+     "tipo": "club",
+     "equipo": "Ajax",
+     "temporada": "2003–04",
+     "goles": 15,
+     "edad": 22
+    },
+    {
+     "tipo": "club",
+     "equipo": "Ajax",
+     "temporada": "2004–05",
+     "goles": 3,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2004–05",
+     "goles": 16,
+     "edad": 23
+    },
+    {
+     "tipo": "club",
+     "equipo": "Juventus",
+     "temporada": "2005–06",
+     "goles": 10,
+     "edad": 24
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Milan",
+     "temporada": "2006–07",
+     "goles": 15,
+     "edad": 25
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Milan",
+     "temporada": "2007–08",
+     "goles": 22,
+     "edad": 26
+    },
+    {
+     "tipo": "club",
+     "equipo": "Inter Milan",
+     "temporada": "2008–09",
+     "goles": 29,
+     "edad": 27
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2009–10",
+     "goles": 21,
+     "edad": 28
+    },
+    {
+     "tipo": "club",
+     "equipo": "Barcelona",
+     "temporada": "2010–11",
+     "goles": 1,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan (loan)",
+     "temporada": "2010–11",
+     "goles": 21,
+     "edad": 29
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2011–12",
+     "goles": 35,
+     "edad": 30
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2012–13",
+     "goles": 35,
+     "edad": 31
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2013–14",
+     "goles": 41,
+     "edad": 32
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2014–15",
+     "goles": 30,
+     "edad": 33
+    },
+    {
+     "tipo": "club",
+     "equipo": "Paris Saint-Germain",
+     "temporada": "2015–16",
+     "goles": 50,
+     "edad": 34
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2016–17",
+     "goles": 28,
+     "edad": 35
+    },
+    {
+     "tipo": "club",
+     "equipo": "Manchester United",
+     "temporada": "2017–18",
+     "goles": 1,
+     "edad": 36
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2018",
+     "goles": 22,
+     "edad": 37
+    },
+    {
+     "tipo": "club",
+     "equipo": "LA Galaxy",
+     "temporada": "2019",
+     "goles": 31,
+     "edad": 38
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2019–20",
+     "goles": 11,
+     "edad": 38
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2020–21",
+     "goles": 17,
+     "edad": 39
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2021–22",
+     "goles": 8,
+     "edad": 40
+    },
+    {
+     "tipo": "club",
+     "equipo": "AC Milan",
+     "temporada": "2022–23",
+     "goles": 1,
+     "edad": 41
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2001",
+     "goles": 1,
+     "edad": 20
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2002",
+     "goles": 2,
+     "edad": 21
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2003",
+     "goles": 3,
+     "edad": 22
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2004",
+     "goles": 8,
+     "edad": 23
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2005",
+     "goles": 4,
+     "edad": 24
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2006",
+     "goles": 0,
+     "edad": 25
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2007",
+     "goles": 0,
+     "edad": 26
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2008",
+     "goles": 2,
+     "edad": 27
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2009",
+     "goles": 2,
+     "edad": 28
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2010",
+     "goles": 3,
+     "edad": 29
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2011",
+     "goles": 3,
+     "edad": 30
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2012",
+     "goles": 11,
+     "edad": 31
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2013",
+     "goles": 9,
+     "edad": 32
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2014",
+     "goles": 3,
+     "edad": 33
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2015",
+     "goles": 11,
+     "edad": 34
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2016",
+     "goles": 0,
+     "edad": 35
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2017",
+     "goles": 0,
+     "edad": 36
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2018",
+     "goles": 0,
+     "edad": 37
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2019",
+     "goles": 0,
+     "edad": 38
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2020",
+     "goles": 0,
+     "edad": 39
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2021",
+     "goles": 0,
+     "edad": 40
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2022",
+     "goles": 0,
+     "edad": 41
+    },
+    {
+     "tipo": "seleccion",
+     "equipo": "Sweden",
+     "temporada": "2023",
+     "goles": 0,
+     "edad": 42
+    }
+   ]
+  }
+ }
+}
