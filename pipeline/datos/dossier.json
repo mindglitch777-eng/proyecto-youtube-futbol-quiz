@@ -1,29 +1,29 @@
 {
  "fecha": "2026-11-20",
  "canales_seguidos": 80,
- "canales_nuevos": 16,
- "revisados": 181,
- "fuera_de_serie": 399,
+ "canales_nuevos": 17,
+ "revisados": 185,
+ "fuera_de_serie": 406,
  "interacciones": {
   "comentar": {
-   "videos": 26,
-   "mediana": 2952184
+   "videos": 25,
+   "mediana": 3323916
   },
   "ninguna": {
-   "videos": 6,
-   "mediana": 1282365
+   "videos": 5,
+   "mediana": 1615273
   },
   "pausar": {
    "videos": 2,
-   "mediana": 7808973
+   "mediana": 7808974
   },
   "elegir": {
-   "videos": 1,
-   "mediana": 8292564
+   "videos": 2,
+   "mediana": 10638605
   },
   "adivinar": {
-   "videos": 1,
-   "mediana": 3010176
+   "videos": 2,
+   "mediana": 2632957
   }
  },
  "ideas": [
@@ -52,6 +52,30 @@
    "idea_para_nosotros": "Hacer una rueda giratoria rápida con botas de oro o trofeos donde el espectador deba pausar exactamente cuando la bota encaje con el cuerpo de su superestrella favorita (Messi, Mbappé o Haaland)."
   },
   {
+   "id": "cw3-O3X77ro",
+   "canal": "Danix",
+   "subs": 6950,
+   "nuevo": false,
+   "vistas": 12984646,
+   "ratio": 116.4,
+   "puntaje": 51.65,
+   "nombre_formato": "Disc Speed Lock Escape Challenge",
+   "mecanica": "Dos personas quitan rápidamente discos coloridos de una cuerda para bajar el contador de cada jugador de fútbol. A medida que el contador llega a cero, la caja del jugador correspondiente cambia de estado y se desbloquea.",
+   "primer_segundo": "Se ven las caricaturas de Haaland, Yamal, Messi y Ronaldo con candados y números en 12, junto a un muñeco en una cabina.",
+   "por_que_engancha": "Genera curiosidad y ritmo acelerado al ver caer el número del contador rápidamente hasta desbloquear cada personaje.",
+   "interaccion": "elegir",
+   "jugadores": [
+    "Erling Haaland",
+    "Lamine Yamal",
+    "Lionel Messi",
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 5,
+   "idea_para_nosotros": "Crear un minijuego animado 2D donde varios contadores bajan a distinta velocidad y el espectador debe pausar el video exactamente cuando el contador de su jugador favorito llegue a cero."
+  },
+  {
    "id": "qJJvYQ-o5DE",
    "canal": "Rono",
    "subs": 21200,
@@ -78,23 +102,24 @@
    "canal": "RyukX",
    "subs": 20300,
    "nuevo": true,
-   "vistas": 3004250,
+   "vistas": 3004252,
    "ratio": 58.8,
    "puntaje": 44.23,
-   "nombre_formato": "Rotating Head Match Challenge",
-   "mecanica": "Un cuerpo sin cabeza con la camiseta del Barcelona permanece fijo en el centro mientras varias cabezas de futbolistas giran en círculo arriba. El espectador debe lograr pausar el video en el segundo exacto en que la cabeza de Neymar se alinea perfectamente con el cuerpo.",
-   "primer_segundo": "Se ve un cuerpo de futbolista en la cancha y una rueda giratoria con cabezas de jugadores como Lamine Yamal, Gavi y Neymar.",
-   "por_que_engancha": "El reto de coordinación visual estimula el deseo de lograr el encaje perfecto pausando en el instante preciso.",
+   "nombre_formato": "Image Spin Match",
+   "mecanica": "Un círculo con varias caras de futbolistas gira en pantalla sobre un fondo de estadio. El espectador debe pausar el video en el momento exacto para que la cabeza del jugador encaje con el cuerpo en el centro.",
+   "primer_segundo": "Se ve la rueda superior girando con múltiples jugadores y la figura central de Lamine Yamal con camiseta de Barcelona.",
+   "por_que_engancha": "Genera el impulso irresistible de intentar pausar en el momento justo para completar el personaje correctamente.",
    "interaccion": "pausar",
    "jugadores": [
     "Neymar Jr",
     "Lamine Yamal",
-    "Gavi"
+    "Gavi",
+    "Vinicius Jr"
    ],
    "usa_clips_reales": false,
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
-   "idea_para_nosotros": "Crear un tragamonedas de tres franjas (cabeza, torso y piernas) girando a toda velocidad con recortes de Messi, CR7 y Mbappé. El usuario debe pausar para armar una superestrella completa y comentar si logró el trío perfecto."
+   "idea_para_nosotros": "Podemos hacer una tragamonedas con tres rodillos independientes donde el usuario deba pausar para formar el tridente ofensivo perfecto de su equipo favorito."
   },
   {
    "id": "XG1Q4kxVk5M",
@@ -206,6 +231,29 @@
    "idea_para_nosotros": "Hacer un juego tipo 'Tres en raya' (Tic-Tac-Toe) animado donde el usuario deba pausar justo cuando se alineen tres fotos idénticas de su estrella favorita para ganar."
   },
   {
+   "id": "W9FJdx2wPog",
+   "canal": "Simon_Editor",
+   "subs": 4090,
+   "nuevo": true,
+   "vistas": 1088386,
+   "ratio": 78.8,
+   "puntaje": 28.45,
+   "nombre_formato": "Age Stats Bar Race",
+   "mecanica": "Muestra una carrera de barras animadas comparando la cantidad de goles internacionales de Messi, Ronaldo y Neymar año a año según su edad. Al llegar a los 39 años, Ronaldo queda como líder y se muestran edits con sus celebraciones.",
+   "primer_segundo": "Aparece el título 'INTERNATIONAL GOALS', la edad 'AGE: 18' y el conteo inicial de goles de Messi (2), Neymar (1) y Ronaldo (0).",
+   "por_que_engancha": "Genera curiosidad constante por ver la remontada de las estadísticas y alimenta el eterno debate sobre el mejor goleador.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Lionel Messi",
+    "Cristiano Ronaldo",
+    "Neymar"
+   ],
+   "usa_clips_reales": true,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 3,
+   "idea_para_nosotros": "Hacer correr las barras a alta velocidad y pedirle al espectador que ponga PAUSA exactamente a los 25 años para elegir a su ganador y comparar stats sin usar clips reales."
+  },
+  {
    "id": "cd5s0Sf6WuA",
    "canal": "PULSE",
    "subs": 54900,
@@ -253,30 +301,6 @@
    "idea_para_nosotros": "Hacer un desafío interactivo de pausa donde los Balones de Oro caen en ranuras para formar nombres de superestrellas, y el usuario debe pausar exactamente cuando el conteo de trofeos coincida con la realidad del jugador."
   },
   {
-   "id": "cw3-O3X77ro",
-   "canal": "Danix",
-   "subs": 6950,
-   "nuevo": false,
-   "vistas": 12984546,
-   "ratio": 116.4,
-   "puntaje": 24.79,
-   "nombre_formato": "Disc Stack Unlocking Challenge",
-   "mecanica": "Los participantes retiran discos de una pila para reducir rápidamente un contador sobre las cajas de los futbolistas. Al llegar a cero, el candado se abre y cambia el personaje animado dentro de la caja.",
-   "primer_segundo": "Un joven junto a una torre de discos de colores y 4 contadores en 12 con las caras de Haaland, Yamal, Messi y Ronaldo.",
-   "por_que_engancha": "Genera expectativa y suspenso al ver descender el contador a gran velocidad para descubrir qué futbolista se liberará.",
-   "interaccion": "ninguna",
-   "jugadores": [
-    "Erling Haaland",
-    "Lamine Yamal",
-    "Lionel Messi",
-    "Cristiano Ronaldo"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 3,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Hacer un contador digital de alta velocidad para 4 superestrellas atrapadas; el usuario debe pausar el video en el momento exacto en que la barra de su jugador favorito llega al 100% para liberarlo."
-  },
-  {
    "id": "VtqRWJDY_Ks",
    "canal": "GoalQuiz",
    "subs": 2490,
@@ -304,14 +328,14 @@
    "canal": "zxpic7 ",
    "subs": 51400,
    "nuevo": true,
-   "vistas": 2255667,
+   "vistas": 2255739,
    "ratio": 68.1,
    "puntaje": 22.0,
-   "nombre_formato": "AI Anime Mashup Showcase",
-   "mecanica": "Muestra una pasarela animada por IA de futbolistas famosos disfrazados como personajes de Akatsuki de Naruto. Cada personaje se presenta secuencialmente con su nombre y una pose temática.",
-   "primer_segundo": "Aparece Messi caracterizado como Sasori con el texto 'WHAT IF FOOTBALLERS WERE IN THE AKATSUKI? Messi'.",
-   "por_que_engancha": "Combina dos pasiones masivas (fútbol e historia del anime) generando curiosidad visual sobre cómo se ven sus ídolos en ese universo.",
-   "interaccion": "comentar",
+   "nombre_formato": "Akatsuki footballers mashup",
+   "mecanica": "Muestra imágenes generadas por IA de famosos futbolistas vestidos como miembros de los Akatsuki de Naruto, uno tras otro. El espectador reconoce rápidamente a cada estrella en un contexto de anime inesperado.",
+   "primer_segundo": "Aparece Messi con el cuerpo y atuendo de Sasori de Akatsuki, con texto superpuesto que dice 'WHAT IF FOOTBALLERS WERE IN THE AKATSUKI?' y 'Messi'.",
+   "por_que_engancha": "Combina la cultura pop del anime muy popular con superestrellas mundiales del fútbol, generando curiosidad inmediata por ver quién sigue en la lista.",
+   "interaccion": "adivinar",
    "jugadores": [
     "Messi",
     "Ronaldo",
@@ -326,7 +350,7 @@
    "usa_clips_reales": false,
    "replicable_con_codigo": 4,
    "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Hacer un juego interactivo de 'Frena el frame': una cinta veloz de cuerpos de personajes anime/superhéroes y el usuario debe pausar en el segundo exacto cuando la cabeza del futbolista encaja con su traje perfecto."
+   "idea_para_nosotros": "Hacer un quiz interactivo de detener el video donde el espectador deba elegir qué personaje de anime o superhéroe encaja exactamente con las estadísticas o estilo de juego de cada estrella."
   },
   {
    "id": "ZQUp7KUFhRg",
@@ -369,95 +393,76 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 2,
    "idea_para_nosotros": "Diseñar un juego 2D de cinta deslizante donde el espectador deba pausar en el milisegundo exacto para encajar la cara meme correcta sobre el cuerpo de Ronaldo, Yamal o Güler."
-  },
-  {
-   "id": "fRrDj9KUrR8",
-   "canal": "Visual Mindset",
-   "subs": 39400,
-   "nuevo": true,
-   "vistas": 8246640,
-   "ratio": 97.8,
-   "puntaje": 19.9,
-   "nombre_formato": "Stickman Mindset Comparison",
-   "mecanica": "Tres stickmen representan Motivación, Obsesión y Disciplina pateando balones de fútbol a lo largo del tiempo (Día 1, 30 y 365). Se observa cómo evoluciona la cantidad de tiros y el éxito final según cada mentalidad.",
-   "primer_segundo": "Se lee 'DAY 1' arriba con tres secciones divididas: MOTIVATION, OBSESSION y DISCIPLINE.",
-   "por_que_engancha": "Genera curiosidad y debate sobre qué mentalidad es la mejor para lograr el éxito en el fútbol.",
-   "interaccion": "comentar",
-   "jugadores": [],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 2,
-   "idea_para_nosotros": "Hacer un minijuego interactivo de pausar/encajar donde el usuario debe detener la barra de potencia de un tiro libre para futbolistas emblemáticos según su estilo (Messi = Talento, Ronaldo = Disciplina, Neymar = Magia)."
   }
  ],
  "sin_analizar": [
   {
    "id": "FQbegL854vk",
    "canal": "Loop Touch Pro ",
-   "vistas": 3330216,
-   "ratio": 173.8,
+   "vistas": 3330371,
+   "ratio": 173.4,
    "titulo": "Comment ‘FIRST TOUCH’ if you need yours 🎁⚽️🔥 #football #soccer #footballshorts #soccershorts"
   },
   {
    "id": "c2KNsvJD4QQ",
    "canal": "SWiZZY",
-   "vistas": 981428,
-   "ratio": 245.2,
+   "vistas": 981874,
+   "ratio": 245.3,
    "titulo": "Ceedee Lamb gets baptized!Rigged after #nfl #49ers # #fyp #shorts #edit #footballshorts #football"
   },
   {
    "id": "EMqBnLplBMc",
    "canal": "iFutGol",
-   "vistas": 1446790,
-   "ratio": 187.2,
+   "vistas": 1447703,
+   "ratio": 187.9,
    "titulo": "Ronaldinho Gaucho skills  2026 #football  #shorts"
   },
   {
    "id": "WiFy4P7O1u8",
    "canal": "iFutGol",
-   "vistas": 1444132,
-   "ratio": 186.8,
+   "vistas": 1444471,
+   "ratio": 187.5,
    "titulo": "Almost a beautiful assist from Ronaldinho! #shorts  #football #funnymoments"
   },
   {
    "id": "R5rZVJDTAtQ",
    "canal": "funny people",
-   "vistas": 4197015,
+   "vistas": 4197796,
    "ratio": 119.0,
    "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge jersey 😱🔥#viral #viralshorts #barca"
   },
   {
    "id": "CQ5857lc34A",
    "canal": "Blockstalks",
-   "vistas": 7005934,
+   "vistas": 7007061,
    "ratio": 98.6,
    "titulo": "Bro hit a wall😭😭 #football  #funny #shorts"
   },
   {
    "id": "2Q2BKwVKVvk",
    "canal": "Simon_Editor",
-   "vistas": 802823,
+   "vistas": 802848,
    "ratio": 58.1,
    "titulo": "GTA X Football through the generations. 😎⚽️ #soccer #gta #shorts "
   },
   {
    "id": "gJ6dv_A9gDo",
    "canal": "One  Goal",
-   "vistas": 3499264,
+   "vistas": 3499375,
    "ratio": 111.5,
    "titulo": "This is How Harry Kane Scores a Goal #football #footballshorts #soccer"
   },
   {
    "id": "BsQ9Mh64c80",
    "canal": "NeoxxGamingYT",
-   "vistas": 854989,
+   "vistas": 855021,
    "ratio": 175.6,
    "titulo": "Ronaldo helps Messi run away from the lava ball #shorts"
   },
   {
    "id": "MY9iQ2xzahc",
    "canal": "J&L Studios ",
-   "vistas": 1171273,
+   "vistas": 1171284,
    "ratio": 47.4,
    "titulo": "NEYMAR VS RONALDINHO — QUEM É O MELHOR? 🔥 #neymar #ronaldinho"
   }
