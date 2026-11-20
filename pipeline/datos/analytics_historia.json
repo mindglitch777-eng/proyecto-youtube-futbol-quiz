@@ -6933,10 +6933,10 @@
  "2026-11-20": {
   "por_formato": {
    "rueda": {
-    "videos": 18,
-    "mediana_pct_visto": 183.3,
-    "mediana_subs_cada_1000": 1.34,
-    "mediana_vistas": 11386
+    "videos": 19,
+    "mediana_pct_visto": 181.4,
+    "mediana_subs_cada_1000": 1.38,
+    "mediana_vistas": 9327
    },
    "stop": {
     "videos": 14,
@@ -6945,10 +6945,10 @@
     "mediana_vistas": 13523
    },
    "cabezas": {
-    "videos": 9,
-    "mediana_pct_visto": 175.6,
-    "mediana_subs_cada_1000": 0.87,
-    "mediana_vistas": 5219
+    "videos": 10,
+    "mediana_pct_visto": 176.1,
+    "mediana_subs_cada_1000": 0.81,
+    "mediana_vistas": 5020
    },
    "stop/estrella": {
     "videos": 7,
@@ -6959,14 +6959,14 @@
    "cinta": {
     "videos": 2,
     "mediana_pct_visto": 157.0,
-    "mediana_subs_cada_1000": 0.52,
-    "mediana_vistas": 23310
+    "mediana_subs_cada_1000": 0.51,
+    "mediana_vistas": 23389
    },
    "dress": {
     "videos": 1,
     "mediana_pct_visto": 108.7,
     "mediana_subs_cada_1000": 1.45,
-    "mediana_vistas": 23478
+    "mediana_vistas": 23485
    },
    "fitall": {
     "videos": 10,
@@ -6978,49 +6978,55 @@
     "videos": 17,
     "mediana_pct_visto": 176.6,
     "mediana_subs_cada_1000": 0.49,
-    "mediana_vistas": 2622
+    "mediana_vistas": 2623
    },
    "balon": {
-    "videos": 4,
-    "mediana_pct_visto": 139.8,
-    "mediana_subs_cada_1000": 1.19,
-    "mediana_vistas": 2612
+    "videos": 5,
+    "mediana_pct_visto": 133.2,
+    "mediana_subs_cada_1000": 0.99,
+    "mediana_vistas": 2114
    },
    "favorito": {
-    "videos": 2,
-    "mediana_pct_visto": 165.7,
-    "mediana_subs_cada_1000": 0.57,
-    "mediana_vistas": 10506
+    "videos": 3,
+    "mediana_pct_visto": 144.5,
+    "mediana_subs_cada_1000": 0.64,
+    "mediana_vistas": 6694
    },
    "circulo": {
-    "videos": 3,
-    "mediana_pct_visto": 142.3,
-    "mediana_subs_cada_1000": 0.37,
-    "mediana_vistas": 1358
+    "videos": 4,
+    "mediana_pct_visto": 146.5,
+    "mediana_subs_cada_1000": 0.42,
+    "mediana_vistas": 1753
+   },
+   "penal": {
+    "videos": 2,
+    "mediana_pct_visto": 132.8,
+    "mediana_subs_cada_1000": 0.0,
+    "mediana_vistas": 3512
    },
    "slot": {
-    "videos": 2,
-    "mediana_pct_visto": 146.8,
+    "videos": 3,
+    "mediana_pct_visto": 151.3,
     "mediana_subs_cada_1000": 0.0,
-    "mediana_vistas": 3220
+    "mediana_vistas": 4524
    },
    "find": {
     "videos": 4,
     "mediana_pct_visto": 112.1,
     "mediana_subs_cada_1000": 0.17,
-    "mediana_vistas": 2452
+    "mediana_vistas": 2454
    },
-   "penal": {
-    "videos": 1,
-    "mediana_pct_visto": 146.6,
-    "mediana_subs_cada_1000": 0.0,
-    "mediana_vistas": 3394
+   "piernas": {
+    "videos": 2,
+    "mediana_pct_visto": 157.2,
+    "mediana_subs_cada_1000": 0.39,
+    "mediana_vistas": 2418
    },
    "pared": {
     "videos": 2,
-    "mediana_pct_visto": 138.4,
+    "mediana_pct_visto": 138.3,
     "mediana_subs_cada_1000": 0.4,
-    "mediana_vistas": 1813
+    "mediana_vistas": 1814
    },
    "otros": {
     "videos": 2,
@@ -7058,12 +7064,6 @@
     "mediana_subs_cada_1000": 0.61,
     "mediana_vistas": 1635
    },
-   "piernas": {
-    "videos": 1,
-    "mediana_pct_visto": 152.7,
-    "mediana_subs_cada_1000": 0.64,
-    "mediana_vistas": 1554
-   },
    "q20balon": {
     "videos": 3,
     "mediana_pct_visto": 88.3,
@@ -7072,15 +7072,15 @@
    },
    "siuu": {
     "videos": 1,
-    "mediana_pct_visto": 127.7,
+    "mediana_pct_visto": 127.6,
     "mediana_subs_cada_1000": 0.0,
-    "mediana_vistas": 1325
+    "mediana_vistas": 1326
    },
    "q20costo": {
     "videos": 1,
     "mediana_pct_visto": 91.4,
-    "mediana_subs_cada_1000": 0.78,
-    "mediana_vistas": 1290
+    "mediana_subs_cada_1000": 0.77,
+    "mediana_vistas": 1292
    },
    "trayectoria": {
     "videos": 1,
@@ -7091,18 +7091,18 @@
   },
   "videos": {
    "0qIFGj-Qf0c": [
-    33551,
-    174.51,
+    33560,
+    174.5,
     78
    ],
    "KyIfRMvDzmM": [
-    30760,
+    30761,
     161.95,
     73
    ],
    "wDxr4u26r4E": [
-    29858,
-    209.24,
+    29873,
+    209.23,
     41
    ],
    "myDZJPIBuMQ": [
@@ -7111,8 +7111,8 @@
     30
    ],
    "6BfaFDHJJqY": [
-    28856,
-    185.11,
+    28862,
+    185.14,
     47
    ],
    "zgM3yB3pktk": [
@@ -7121,12 +7121,12 @@
     53
    ],
    "1WF6cOYl2KY": [
-    26428,
-    182.9,
+    26430,
+    182.89,
     33
    ],
    "1MOCpefbZZw": [
-    26067,
+    26068,
     186.56,
     25
    ],
@@ -7136,43 +7136,43 @@
     24
    ],
    "BtXUM5VH2eI": [
-    23515,
-    163,
+    23535,
+    162.95,
     14
    ],
    "A7Aa_EDgAXs": [
-    23486,
-    186.09,
+    23501,
+    186.03,
     36
    ],
    "CCJLnw_evdY": [
-    23478,
-    108.69,
+    23485,
+    108.72999999999999,
     34
    ],
    "22mMQE-D3wg": [
-    23427,
-    193.45,
+    23428,
+    193.43,
     22
    ],
    "e9LAjWa_pdQ": [
-    23356,
-    190.12,
+    23361,
+    190.13,
     22
    ],
    "497Gw2B7HMs": [
-    23105,
-    151.09,
+    23243,
+    151.13,
     10
    ],
    "WP_HdxZ1Gfc": [
-    22927,
-    220.6,
+    22942,
+    220.56999999999996,
     20
    ],
    "KTDO0Y6QReA": [
-    22206,
-    179.63,
+    22216,
+    179.81,
     24
    ],
    "MNrWpaRuLcc": [
@@ -7181,8 +7181,8 @@
     24
    ],
    "AMH-L0FzyfE": [
-    21237,
-    243.75,
+    21241,
+    243.74,
     8
    ],
    "daDLuYk6Y9g": [
@@ -7191,8 +7191,8 @@
     14
    ],
    "pJj39920AVE": [
-    19962,
-    180.79,
+    19963,
+    180.78,
     30
    ],
    "N5c8YbQJrtQ": [
@@ -7211,28 +7211,33 @@
     24
    ],
    "9dr4dccQ_Kc": [
-    17001,
-    176.38,
+    17212,
+    179.72,
     11
    ],
    "jwFAvKhtd5U": [
-    15699,
+    15700,
     193.48,
     18
    ],
    "_RfpvCN6Eag": [
-    13446,
-    185.26,
+    13451,
+    185.22,
     23
    ],
+   "_Ta0Zn-y5YQ": [
+    11207,
+    158.85,
+    2
+   ],
    "LMIJpxTP9wg": [
-    10453,
-    242.44,
+    10463,
+    242.49999999999997,
     1
    ],
    "N8yEXebpTp4": [
-    9326,
-    210.88,
+    9327,
+    210.84,
     11
    ],
    "gz_4UDbG-C8": [
@@ -7246,8 +7251,8 @@
     3
    ],
    "hK_1xdMY9uQ": [
-    7924,
-    207.83,
+    7926,
+    207.81,
     0
    ],
    "vKgoXhoMqcQ": [
@@ -7260,9 +7265,14 @@
     189.92,
     6
    ],
+   "YUa4nTH30Sc": [
+    6694,
+    144.53,
+    2
+   ],
    "i6Gkng36epU": [
-    6667,
-    159.1,
+    6670,
+    159.04,
     8
    ],
    "4RGjtopNTjY": [
@@ -7270,25 +7280,35 @@
     175.56,
     4
    ],
+   "lPbn_7C2jt4": [
+    5754,
+    139.09,
+    0
+   ],
    "i2UtWrrEh98": [
     5721,
     185.74,
     2
    ],
    "9Dc1PRNJJ3I": [
-    5646,
-    189.93,
+    5708,
+    189.53,
     3
+   ],
+   "fMTiRwV0bhg": [
+    5336,
+    150.5,
+    0
+   ],
+   "O9FyKjg--EQ": [
+    5244,
+    193.68,
+    4
    ],
    "k7cIc4tdmaU": [
     5233,
     147.07,
     15
-   ],
-   "O9FyKjg--EQ": [
-    5219,
-    193.86,
-    4
    ],
    "U0Jahqvsgxc": [
     5204,
@@ -7296,8 +7316,8 @@
     4
    ],
    "DnIwUK895mc": [
-    5107,
-    175.29,
+    5108,
+    175.24,
     7
    ],
    "Yli3risHh_U": [
@@ -7310,19 +7330,19 @@
     193.08,
     3
    ],
-   "fMTiRwV0bhg": [
-    4930,
-    148.74,
-    0
-   ],
    "Gy6CvuzKzfQ": [
-    4791,
-    176.72,
+    4797,
+    176.64,
     3
    ],
+   "e9pnbQ2PxjM": [
+    4524,
+    162.23,
+    1
+   ],
    "Xqeo67YoyTc": [
-    4447,
-    175.07,
+    4451,
+    175.05,
     4
    ],
    "WPZklFKMN1o": [
@@ -7334,11 +7354,6 @@
     4205,
     178.86,
     7
-   ],
-   "YUa4nTH30Sc": [
-    4011,
-    154.93,
-    2
    ],
    "ipxTpvPLBMw": [
     3912,
@@ -7365,11 +7380,6 @@
     166.29,
     5
    ],
-   "lPbn_7C2jt4": [
-    3394,
-    146.55,
-    0
-   ],
    "_0NJWRBJx1E": [
     3344,
     188.8,
@@ -7378,11 +7388,6 @@
    "LkxOtZw-yk0": [
     3312,
     176.55,
-    1
-   ],
-   "_Ta0Zn-y5YQ": [
-    3194,
-    145.9,
     1
    ],
    "4u_c4pqweVA": [
@@ -7395,9 +7400,14 @@
     197.38,
     4
    ],
+   "BEAxTc4wM_8": [
+    2904,
+    127.77000000000001,
+    2
+   ],
    "1IUuedHzzTM": [
-    2880,
-    126.71,
+    2883,
+    126.76,
     1
    ],
    "Z_AD82k7E7k": [
@@ -7411,9 +7421,14 @@
     5
    ],
    "LsHNveuBHsI": [
-    2622,
+    2623,
     183.93,
     0
+   ],
+   "vS4c9KUBYcE": [
+    2605,
+    156.83,
+    2
    ],
    "VEihORW20T0": [
     2434,
@@ -7421,14 +7436,19 @@
     2
    ],
    "R_AhsbjpPWk": [
-    2364,
-    137.16,
+    2365,
+    137.08,
     0
    ],
    "KwDUOD8dcfE": [
     2334,
     179.34,
     3
+   ],
+   "FVxoIN6Zq1w": [
+    2328,
+    152.72,
+    1
    ],
    "5XnuMCbjrCQ": [
     2296,
@@ -7439,6 +7459,11 @@
     2280,
     176.92,
     4
+   ],
+   "In-9eSD5EFE": [
+    2232,
+    157.57,
+    0
    ],
    "BYdJAUR0UWg": [
     2228,
@@ -7455,6 +7480,26 @@
     173.37,
     2
    ],
+   "QTw6tfau2IQ": [
+    2161,
+    194.05,
+    1
+   ],
+   "O3ueHixM2Co": [
+    2114,
+    133.13,
+    5
+   ],
+   "h5FLDUsbVT8": [
+    2105,
+    152.04,
+    1
+   ],
+   "qffGupQxi_A": [
+    2084,
+    151.32,
+    0
+   ],
    "RSZcrb-cV0g": [
     2073,
     75.01,
@@ -7470,11 +7515,6 @@
     133.22,
     2
    ],
-   "O3ueHixM2Co": [
-    2027,
-    133.79,
-    4
-   ],
    "AFu3sIrQy-o": [
     2025,
     112.00000000000001,
@@ -7489,6 +7529,16 @@
     1964,
     205.81,
     0
+   ],
+   "rC_W-IyGpz8": [
+    1852,
+    132.7,
+    0
+   ],
+   "MiN81e7O6e0": [
+    1825,
+    197.78,
+    1
    ],
    "g1j4LxZDPMw": [
     1811,
@@ -7526,8 +7576,8 @@
     1
    ],
    "fn3R10LoYZ0": [
-    1603,
-    217.37,
+    1606,
+    217.19,
     0
    ],
    "Tof43I5Re6A": [
@@ -7535,29 +7585,19 @@
     251.06,
     2
    ],
-   "vS4c9KUBYcE": [
-    1554,
-    152.72,
-    1
-   ],
-   "MiN81e7O6e0": [
-    1544,
-    203.43999999999997,
-    1
-   ],
    "XkjhL-Umqeg": [
     1537,
     151.91,
     3
    ],
-   "qffGupQxi_A": [
-    1510,
-    144.77,
-    0
-   ],
    "1kg24bfS42c": [
-    1503,
-    150.11,
+    1516,
+    149.51,
+    2
+   ],
+   "ba7l2qhDWRQ": [
+    1454,
+    291.57,
     2
    ],
    "lG5EOTIhP84": [
@@ -7566,8 +7606,13 @@
     2
    ],
    "s58JFYGEJFA": [
-    1360,
-    171.27,
+    1416,
+    170.41,
+    0
+   ],
+   "Yz6iAIUe9S0": [
+    1401,
+    120.92,
     0
    ],
    "k4hy4vIV7rY": [
@@ -7575,18 +7620,13 @@
     169.07,
     0
    ],
-   "Yz6iAIUe9S0": [
-    1358,
-    120.61999999999999,
-    0
-   ],
    "zloqZg25fvk": [
-    1325,
-    127.73999999999998,
+    1326,
+    127.56999999999998,
     0
    ],
    "1NW7zNo8Esc": [
-    1320,
+    1321,
     153.17,
     0
    ],
@@ -7596,13 +7636,18 @@
     1
    ],
    "Dqw1YsJlvVc": [
-    1290,
-    91.41,
+    1292,
+    91.44,
     1
    ],
    "hEOAm9MvhJc": [
     1274,
     73.36,
+    0
+   ],
+   "KdhOOWHjJTM": [
+    1270,
+    126.42999999999999,
     0
    ],
    "uXrgqExbxXw": [
@@ -7615,14 +7660,9 @@
     75.13,
     2
    ],
-   "ba7l2qhDWRQ": [
-    1222,
-    319.61,
-    1
-   ],
    "VaLQ-_HRll4": [
-    1217,
-    159.65,
+    1219,
+    159.52,
     0
    ],
    "4frL472breY": [
@@ -7630,15 +7670,15 @@
     163.87,
     1
    ],
+   "v6H2nf3x3bw": [
+    1097,
+    150.68,
+    1
+   ],
    "1104w9F2Plc": [
     1022,
     88.28,
     0
-   ],
-   "v6H2nf3x3bw": [
-    1002,
-    156.14,
-    1
    ],
    "odTCwUdLGA8": [
     982,
