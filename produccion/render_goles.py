@@ -67,7 +67,7 @@ PALETAS = [((6, 9, 20), (24, 36, 74)), ((10, 6, 22), (48, 24, 78)), ((4, 14, 12)
            ((8, 10, 12), (36, 44, 56)), ((4, 10, 24), (10, 60, 96))]
 X0, Y0, FILA, GROSOR, D_CARA = 60, 700, 228, 132, 156
 ANCHO = W - X0 - 190
-INTRO, OUTRO = 1.6, 4.5
+INTRO, OUTRO = 0.2, 3.0                     # 20/11 (inspector): nada de pantalla quieta al inicio ni al final
 CREMA, ORO, GRIS = (245, 246, 250), (255, 200, 40), (150, 162, 185)
 
 
@@ -249,7 +249,7 @@ class Video:
                 c1, c2, club = NACION[PAIS[j["k"]]][0], NACION[PAIS[j["k"]]][1], NACION[PAIS[j["k"]]][2].title()
             else:
                 c1, c2 = (CLUB[club][1], CLUB[club][2]) if club in CLUB else (ACENTO.get(j["k"], (200, 200, 200)), (240, 240, 240))
-            largo = max(150, ANCHO * vals[i] / tope)
+            largo = max(150, ANCHO * vals[i] / tope) * (0.35 + 0.65 * M.suave(min(1.0, t / 0.6)))   # entrada: las barras crecen desde el cuadro 0
             for k_, a_ in ((10, 0.10), (6, 0.14), (3, 0.18)):                  # sombra suave
                 L.rect_redondo(X0 + 4, y + k_, largo, GROSOR, 30, (0, 0, 0), a_)
             gr = M.cairo.LinearGradient(0, y, 0, y + GROSOR)
@@ -276,7 +276,9 @@ class Video:
                     burbujas.append((xl, y + GROSOR / 2, f"+{g_}"))
                 elif h is not None and t - h < 0.35:
                     choques.append((fx, y + GROSOR / 2 + 4, (t - h) / 0.35, f"+{g_}"))
-            M.imagen(L, sup_cara(j["k"]), fx, y + GROSOR / 2 + 4)
+            if t >= self.dur - OUTRO and i == self.lider:                     # final: el líder late (la pantalla nunca queda quieta)
+                L.brillo(fx, y + GROSOR / 2 + 4, 150 + 30 * math.sin(t * 7), ORO, 0.35 + 0.2 * math.sin(t * 7))
+            M.imagen(L, sup_cara(j["k"]), fx, y + GROSOR / 2 + 4, escala=(1 + 0.06 * math.sin(t * 7)) if (t >= self.dur - OUTRO and i == self.lider) else min(1.0, 0.6 + 0.4 * M.suave(t / 0.5)))
             esc = sup_escudo(club) if club and not self.seleccion else None
             if esc is not None:
                 M.imagen(L, esc, fx + 58, y + GROSOR / 2 + 58)
@@ -370,12 +372,12 @@ class Video:
             if k_ > 0.05:
                 s = f"{self.js[li]['nombre'].upper()} TAKES THE LEAD!"
                 M.texto(d, (W / 2, 1880 - 60 * k_ - 6), s, M.ajustar(s, 64, W - 230), tuple(int(v * k_) for v in ORO), 0)
-        if t >= self.dur - OUTRO + 0.6:
-            a_ = min(1, (t - (self.dur - OUTRO + 0.6)) / 0.4)
+        if t >= self.dur - OUTRO + 0.1:
+            a_ = min(1, (t - (self.dur - OUTRO + 0.1)) / 0.3)
             capa = Image.new("RGBA", (W, H), (0, 0, 0, 0)); dc = ImageDraw.Draw(capa)
             dc.rounded_rectangle((80, 1768, W - 80, 1880), 56, fill=(10, 14, 28, int(235 * a_)), outline=ORO + (int(255 * a_),), width=4)
             im = im.convert("RGBA"); im.alpha_composite(capa); d = ImageDraw.Draw(im)
-            M.texto(d, (W / 2, 1810), "WHO'S THE GOAT?", 62, tuple(int(v * a_) for v in ORO), 0)
+            M.texto(d, (W / 2, 1810), "WHO'S THE GOAT?", int(62 * (1 + 0.05 * math.sin(t * 7))), tuple(int(v * a_) for v in ORO), 0)
             M.texto(d, (W / 2, 1853), "COMMENT BELOW", 26, tuple(int(v * a_) for v in CREMA), 0, cual=M.ARCHIVO)
             im = im.convert("RGB")
         return im

@@ -40,6 +40,12 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -q requests
       - run: python pipeline/vigilancia.py
+      - name: Investigación diaria atrasada → relanzar (GitHub a veces se saltea tareas programadas)
+        if: always()
+        run: |
+          F=$(python3 -c "import json;print(json.load(open('pipeline/datos/dossier.json')).get('fecha',''))" 2>/dev/null || echo "")
+          H=$(TZ=America/Argentina/Buenos_Aires date +%F); HH=$(TZ=America/Argentina/Buenos_Aires date +%H)
+          if [ "$F" != "$H" ] && [ "$HH" -ge 13 ]; then gh workflow run radar_canales.yml --ref "$GITHUB_REF_NAME" || true; fi
       - name: Despertador (lista de tareas para la IA, sin IA)
         if: always()
         run: python pipeline/despertador.py || true
