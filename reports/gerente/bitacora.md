@@ -248,3 +248,12 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - Video (render_goles.py, motor profesional 60 fps): cada año entra una línea con las burbujas "+N" de cada jugador, chocan con su cara y suman (arpegio), barras con colores del club (o del país si es de selección), música original por código.
 - Sistema dinámico (goles_catalogo.py): 60 escenarios = 13 grupos coherentes (GOAT, Big 4, mejores 9, Brasil, Francia, Madrid, Barça, Premier, PSG, leyendas, nueva era) × 5 estadísticas (total, selección, liga, copas europeas, club) + "a la misma edad que Yamal / Mbappé / Haaland / Vinícius". Nunca repite un escenario hasta agotar el catálogo, ni el mismo grupo o estadística dos veces seguidas; cambia paleta (6), música (semilla) y ritmo.
 - Estreno hasta 26/11 (3 lugares asegurados), máx. 4 por semana, familia STATS. Se mide como cualquier formato: la poda decide.
+
+## 2026-11-20 · Gerente IA (turno diario) · 1.000 SUSCRIPTORES
+- **Vi:** 1.010 suscriptores (meta de 1.000 cumplida) y 1,002 M de vistas de Shorts en 90 días. Vistas por día: 18/11 +21 K, 19/11 +35 K y 20/11 +65 K (parcial). 10 K por día: 1,14.
+  CONVEYOR 16.694 (2 medidos), FAVORITE 11.372, HEAD SLOT rehecho (Ronaldo) 15.441, HEAD FIT cansado (43 %). Originalidad 68 (títulos 70 %). Máquinas OK.
+  Inspector: GOALS BY AGE (22/11 20:00) "pantalla congelada" 3 veces: medido, 1,7 s quieto al inicio y 3,4 s al final; dura 69,6 s. Hoja de control del 22/11: el resto bien.
+- **Decidí e hice:** pedido al Ingeniero (lunes): GOALS BY AGE con movimiento desde el cuadro 0 y el inspector avisado de la pausa final. No lo frené: es un formato que pidió el CEO, la falla es de retención (no de calidad) y se mide.
+- **No toqué:** la grilla nueva del CEO; DRESS (su 1.er video tiene <48 h).
+- **Revisar el 2026-11-22:** DRESS a 48 h (los 2). **23/11:** mensaje semanal: semana de 8 contra la vuelta a 6, originalidad, renovación.
+- **Para el CEO:** nada urgente. Pregunta suave: ¿GOALS BY AGE puede usar goleadores fuera de "solo famosos" (Lewandowski)?

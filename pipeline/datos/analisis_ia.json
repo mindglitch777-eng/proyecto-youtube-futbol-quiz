@@ -1,16 +1,26 @@
 {
  "fecha": "2026-11-20",
- "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
+ "autor": "Gerente IA · parte diario (20/11)",
  "veredicto": {
   "color": "green",
-  "titulo": "1010 de 1.000 suscriptores ✅",
-  "frase": "Todo anda solo. No tenés que hacer nada hoy."
+  "titulo": "1.000 suscriptores: la primera mitad de la monetización está hecha",
+  "frase": "1.010 suscriptores y 1 millón de vistas de Shorts en 90 días. Falta la otra mitad: 10 M de vistas en 90 días (10 %). Con 6 por día y los formatos que rinden (CONVEYOR, FAVORITE, WHEEL), las vistas por día volvieron a subir."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1010 / 1.000",
-   "nota": "faltan 0"
+   "valor": "1.010 / 1.000",
+   "nota": "✅ meta cumplida el 20/11"
+  },
+  {
+   "label": "Vistas Shorts 90 días",
+   "valor": "1,0 M / 10 M",
+   "nota": "10 %"
+  },
+  {
+   "label": "Vistas del canal por día",
+   "valor": "+21 K → +35 K → +65 K",
+   "nota": "18, 19 y 20/11 (parcial)"
   },
   {
    "label": "Videos de 10 K por día",
@@ -18,12 +28,25 @@
    "nota": "meta 3"
   },
   {
-   "label": "Vistas de Shorts 90 días",
-   "valor": "1,02 M",
-   "nota": "30.4 semanas a 10 M"
+   "label": "CONVEYOR STOP",
+   "valor": "16.694",
+   "nota": "mediana, 2 medidos"
+  },
+  {
+   "label": "Originalidad",
+   "valor": "68/100",
+   "nota": "títulos 70 % parecidos"
   }
  ],
  "hallazgos": [
+  {
+   "tipo": "funciona",
+   "titulo": "Volver a 6 por día con lo que rinde levantó las vistas",
+   "dato": "Vistas del canal por día: 16/11 +35 K, 17/11 +28 K, 18/11 +21 K (con 8 por día); 19/11 +35 K y 20/11 +65 K (parcial, ya con la grilla nueva en parte).",
+   "por_que": "Menos videos y solo formatos que pegan: el empuje de YouTube no se reparte entre videos flojos (la misma lección del 13/11).",
+   "confianza": "media (2 días; el 21/11 es el primer día completo de 6)",
+   "accion": "Seguir con 6 por día; el lunes 23/11 se compara la semana."
+  },
   {
    "tipo": "ojo",
    "titulo": "La originalidad está bien medida con lo subido (76), pero los títulos se parecen",
@@ -35,18 +58,10 @@
   {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP es la gran pista",
-   "dato": "CONVEYOR: 23.540 y 23.111 en sus 2 primeros (mediana 19.378 con los medidos). FAVORITE: 17.242 (mediana 15.327).",
+   "dato": "CONVEYOR: mediana 16.694 (9,1x) con 2 medidos; su 3.º hizo 16.784 en 18 h. FAVORITE: mediana 11.372 (6,2x).",
    "por_que": "Mantienen lo que funciona (elegir entre superestrellas y parar justo) pero se ven distintos.",
    "confianza": "baja (1-2 videos cada uno)",
    "accion": "Desde el 18/11 son fijos todos los días (decisión del CEO), junto con WHEEL."
-  },
-  {
-   "tipo": "no",
-   "titulo": "Con 8 videos por día el canal suma menos vistas por día",
-   "dato": "Vistas del canal por día: 14/11 ~65 K, 16/11 +35 K, 17/11 +28 K, 18/11 +21 K (y +10 suscriptores, el peor día).",
-   "por_que": "Igual que el 13/11: más videos reparten el empuje y repiten formatos (los topes semanales no alcanzan con 8 por día).",
-   "confianza": "media (4 días)",
-   "accion": "El CEO cortó la prueba el 18/11: desde el 21/11 son 6 por día, solo con lo que rinde."
   },
   {
    "tipo": "funciona",
@@ -107,10 +122,10 @@
   {
    "tipo": "ojo",
    "titulo": "HEAD FIT se cansa",
-   "dato": "Mediana 3.349 (2,1x el canal); sus últimos 4 rinden el 51 % de los 4 anteriores.",
+   "dato": "Mediana 2.848 (1,5x el canal) en 8 medidos; sus últimos 4 rinden el 43 % de los 4 anteriores. En cambio HEAD SLOT con Ronaldo hizo 15.441.",
    "por_que": "Sale todos los días y ahora también tiene a HEAD SLOT y FIT ALL en la misma familia.",
    "confianza": "alta",
-   "accion": "Pasó a prueba el 18/11 (decisión del CEO). HEAD FIT y HEAD SLOT rotan jugador juntos desde el 18/11."
+   "accion": "Es formato de prueba desde el 18/11: la poda decide sola."
   },
   {
    "tipo": "no",
@@ -139,16 +154,16 @@
  ],
  "acciones": [
   {
-   "quien": "CEO",
-   "que": "18/11: fin de la semana de 8; 6 por día con CONVEYOR, WHEEL y FAVORITE fijos. Falta responder SKILL STOP (#15)."
-  },
-  {
    "quien": "Ingeniero",
-   "que": "SKILL STOP con pelota más grande; jugada MOMENTO nueva; variantes visuales de CONVEYOR."
+   "que": "Lunes 23/11: GOALS BY AGE con movimiento desde el cuadro 0; fondos propios; recortes con piernas abiertas para SKILL STOP."
   },
   {
    "quien": "Gerente IA",
-   "que": "21/11 HEAD FIT · 22/11 DRESS (2 pruebas) · 23/11 originalidad > 80 · lunes 23/11 mensaje semanal."
+   "que": "22/11 DRESS (2 pruebas) · 23/11 mensaje semanal y originalidad."
+  },
+  {
+   "quien": "CEO",
+   "que": "Nada urgente. Confirmar si GOALS BY AGE puede usar goleadores que no están en 'solo famosos' (Lewandowski)."
   }
  ]
 }
