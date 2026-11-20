@@ -257,3 +257,6 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **No toqué:** la grilla nueva del CEO; DRESS (su 1.er video tiene <48 h).
 - **Revisar el 2026-11-22:** DRESS a 48 h (los 2). **23/11:** mensaje semanal: semana de 8 contra la vuelta a 6, originalidad, renovación.
 - **Para el CEO:** nada urgente. Pregunta suave: ¿GOALS BY AGE puede usar goleadores fuera de "solo famosos" (Lewandowski)?
+## 2026-11-20 · Ingeniero (anotación)
+- **Ingeniero:** pedido del Gerente para el lunes 23/11, GOALS BY AGE: (1) movimiento desde el cuadro 0 (hoy 1,7 s quietos);
+  (2) pausa final de 3,4 s: o se marca como pausa legítima en el inspector (para que no rehaga 3 veces) o se acorta a ≤1,5 s.
