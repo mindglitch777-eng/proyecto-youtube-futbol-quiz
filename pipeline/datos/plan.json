@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-21",
+ "inicio": "2026-11-22",
  "grilla": [
   "13:00 prueba",
   "15:00 favorito",
@@ -18,7 +18,9 @@
   "slot",
   "favorito",
   "vs",
-  "escape"
+  "escape",
+  "cano",
+  "goles"
  ],
  "podadas": {
   "find": {
@@ -32,20 +34,26 @@
    "fecha": "2026-11-19",
    "rinde": "mediana 3,349 vs canal 1,948",
    "videos": 8
+  },
+  "balon": {
+   "fecha": "2026-11-20",
+   "rinde": "mediana 4,262 vs canal 1,844",
+   "videos": 4
   }
  },
  "puntaje": {
-  "rueda": 397.3,
-  "stop": 89.6,
-  "cabezas": 184.6,
-  "cinta": 168.2,
+  "rueda": 359.9,
+  "stop": 89.5,
+  "cabezas": 173.8,
+  "cinta": 244.5,
   "dress": 324.8,
   "fitall": 87.4,
-  "balon": 130.3,
-  "favorito": 198.7,
-  "circulo": 61.3,
-  "slot": 47.8,
+  "balon": 120.7,
+  "favorito": 181.7,
+  "circulo": 61.9,
+  "slot": 41.7,
   "find": 37.6,
+  "penal": 42.7,
   "pared": 62.3,
   "otros": 54.0,
   "ring": 73.1,
@@ -53,7 +61,8 @@
   "cabeza": 136.5,
   "tridente": 73.0,
   "plinko": 41.2,
-  "q20balon": 67.5,
+  "piernas": 87.0,
+  "q20balon": 67.1,
   "siuu": 31.9,
   "q20costo": 58.5,
   "trayectoria": 111.5
@@ -61,13 +70,8 @@
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-21",
+   "fecha": "2026-11-22",
    "hora": "13:00",
-   "tipo": "vs"
-  },
-  {
-   "fecha": "2026-11-21",
-   "hora": "15:00",
    "tipo": "rueda",
    "titulo_estilo": "vs",
    "exp": {
@@ -76,34 +80,34 @@
    }
   },
   {
-   "fecha": "2026-11-21",
+   "fecha": "2026-11-22",
+   "hora": "15:00",
+   "tipo": "balon"
+  },
+  {
+   "fecha": "2026-11-22",
    "hora": "17:00",
+   "tipo": "cano"
+  },
+  {
+   "fecha": "2026-11-22",
+   "hora": "20:00",
+   "tipo": "goles"
+  },
+  {
+   "fecha": "2026-11-22",
+   "hora": "21:30",
+   "tipo": "cinta"
+  },
+  {
+   "fecha": "2026-11-22",
+   "hora": "23:00",
    "tipo": "favorito",
    "leyendas": true,
    "exp": {
     "id": "e4_favorito_leyendas",
     "brazo": true
    }
-  },
-  {
-   "fecha": "2026-11-21",
-   "hora": "20:00",
-   "tipo": "escape"
-  },
-  {
-   "fecha": "2026-11-21",
-   "hora": "21:30",
-   "tipo": "cabezas",
-   "dur": 6.4,
-   "exp": {
-    "id": "e5_cabezas_duracion",
-    "brazo": 6.4
-   }
-  },
-  {
-   "fecha": "2026-11-21",
-   "hora": "23:00",
-   "tipo": "cinta"
   }
  ]
 }
