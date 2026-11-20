@@ -1,41 +1,26 @@
 {
- "fecha": "2026-11-19",
- "autor": "Gerente IA · parte diario (19/11)",
+ "fecha": "2026-11-20",
+ "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
  "veredicto": {
-  "color": "amber",
-  "titulo": "Faltan 45 suscriptores; se vuelve a 6 por día con lo que rinde",
-  "frase": "955 suscriptores. La semana de 8 bajó las vistas por día (el 18/11, +21 K). El CEO cortó la prueba: desde el 21/11 son 6 por día, con CONVEYOR, WHEEL y FAVORITE fijos. Lo nuevo pega más al principio y después se gasta, por eso hacen falta formatos nuevos todas las semanas."
+  "color": "green",
+  "titulo": "990 de 1.000 suscriptores (faltan 10)",
+  "frase": "Todo anda solo. No tenés que hacer nada hoy."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "955 / 1.000",
-   "nota": "faltan 45"
-  },
-  {
-   "label": "Vistas del canal por día",
-   "valor": "+21 K · +35 K",
-   "nota": "18/11 y 19/11 (parcial)"
+   "valor": "990 / 1.000",
+   "nota": "faltan 10"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1,0",
+   "valor": "1,29",
    "nota": "meta 3"
   },
   {
-   "label": "CONVEYOR STOP",
-   "valor": "19.378",
-   "nota": "mediana, 2 medidos"
-  },
-  {
-   "label": "FAVORITE",
-   "valor": "15.327",
-   "nota": "1 medido"
-  },
-  {
-   "label": "Originalidad",
-   "valor": "69/100",
-   "nota": "títulos 69 % parecidos"
+   "label": "Vistas de Shorts 90 días",
+   "valor": "0,98 M",
+   "nota": "35.3 semanas a 10 M"
   }
  ],
  "hallazgos": [
