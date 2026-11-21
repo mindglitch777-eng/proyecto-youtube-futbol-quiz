@@ -1,17 +1,21 @@
 {
  "fecha": "2026-11-21",
  "canales_seguidos": 80,
- "canales_nuevos": 20,
- "revisados": 129,
- "fuera_de_serie": 286,
+ "canales_nuevos": 28,
+ "revisados": 175,
+ "fuera_de_serie": 375,
  "interacciones": {
   "comentar": {
-   "videos": 31,
-   "mediana": 2575849
+   "videos": 41,
+   "mediana": 1974632
   },
   "ninguna": {
-   "videos": 9,
-   "mediana": 1938192
+   "videos": 10,
+   "mediana": 1776732
+  },
+  "pausar": {
+   "videos": 3,
+   "mediana": 3432259
   },
   "elegir": {
    "videos": 3,
@@ -20,13 +24,59 @@
   "adivinar": {
    "videos": 3,
    "mediana": 3010176
-  },
-  "pausar": {
-   "videos": 2,
-   "mediana": 7808974
   }
  },
  "ideas": [
+  {
+   "id": "X2pLfT-C7AQ",
+   "canal": "pro Rider",
+   "subs": 3650,
+   "nuevo": false,
+   "vistas": 1757700,
+   "ratio": 583.8,
+   "puntaje": 69.16,
+   "nombre_formato": "Photo Frame Silhouette Fit",
+   "mecanica": "Se intentan encajar distintas figuras de futbolistas en la silueta vacía de un portarretratos junto a Georgina. Cada intento fallido se tachará arriba hasta colocar el recorte de Ronaldo que encaja a la perfección.",
+   "primer_segundo": "Se ve la figura de Messi acercándose a un portarretratos con Georgina y una silueta blanca.",
+   "por_que_engancha": "Genera expectativa y satisfacción al ver el encaje perfecto de las piezas junto a la pareja real.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Lionel Messi",
+    "Erling Haaland",
+    "Lamine Yamal",
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 5,
+   "idea_para_nosotros": "Crear un marco con la silueta del Balón de Oro donde varias cabezas recortadas de superestrellas pasan velozmente y el usuario debe pausar en el momento justo en que la cabeza correcta encaja sobre el trofeo."
+  },
+  {
+   "id": "Fm7lYIYTc4Y",
+   "canal": "pro Rider",
+   "subs": 3650,
+   "nuevo": false,
+   "vistas": 1594556,
+   "ratio": 529.6,
+   "puntaje": 68.1,
+   "nombre_formato": "Keychain Matching",
+   "mecanica": "Se presenta a Cristiano Jr. en un marco con un espacio libre al lado. Se prueban y descartan sucesivamente las figuras de Messi, Mbappé y Georgina hasta colocar la de Cristiano Ronaldo.",
+   "primer_segundo": "Se descarta la figura de Messi con una X roja mientras aparece una silueta vacía al lado de Cristiano Jr.",
+   "por_que_engancha": "Genera expectativa y empatía al buscar la pareja o acompañante perfecto para una figura conocida.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Lionel Messi",
+    "Kylian Mbappé",
+    "Georgina Rodríguez",
+    "Cristiano Ronaldo",
+    "Erling Haaland",
+    "Cristiano Jr."
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 5,
+   "idea_para_nosotros": "Crear un marco interactivo 2D donde una estrella busca a su dupla ideal; el usuario debe pausar el video en el milisegundo exacto en que pasa la foto de su compañero perfecto."
+  },
   {
    "id": "vSCSgT8so3c",
    "canal": "RyukX",
@@ -195,6 +245,27 @@
    "idea_para_nosotros": "Adaptar la progresión numérica a superestrellas (ej. Haaland vs Mbappé vs Messi) comparando goles/títulos por edad con una ruleta de pausas para que el usuario elija con qué mentalidad o jugador se identifica."
   },
   {
+   "id": "ejdBRLrQy6A",
+   "canal": "ᴘᴇɴᴀʟᴛʏ ᴛɪᴍᴇ ",
+   "subs": 95200,
+   "nuevo": true,
+   "vistas": 3432259,
+   "ratio": 84.0,
+   "puntaje": 38.49,
+   "nombre_formato": "Interactive Penalty Pick",
+   "mecanica": "Un jugador se prepara para patear un penal con la portería dividida en dos opciones con botones animados. El usuario debe elegir un lado y pausar antes de que el temporizador venza.",
+   "primer_segundo": "Un jugador de fútbol parado frente al balón listo para ejecutar un penal.",
+   "por_que_engancha": "Genera urgencia e interactividad inmediata al combinar la tensión del penal con un temporizador dinámico.",
+   "interaccion": "pausar",
+   "jugadores": [
+    "Eduardo Camavinga"
+   ],
+   "usa_clips_reales": true,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Crear una animación 2D de una tanda de penaltis donde una diana móvil cambia entre dos superestrellas y el usuario debe pausar exactamente cuando la diana encaje en el ángulo de su jugador preferido."
+  },
+  {
    "id": "9u5HxeSdIiE",
    "canal": "V1m7n",
    "subs": 9270,
@@ -225,6 +296,38 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 3,
    "idea_para_nosotros": "Hacer un minijuego de pausa donde la portada de GTA V tiene ranuras giratorias para la cara de cada jugador, y el espectador debe pausar para alinear a Messi, Ronaldo y Neymar al mismo tiempo."
+  },
+  {
+   "id": "2Q2BKwVKVvk",
+   "canal": "Simon_Editor",
+   "subs": 4240,
+   "nuevo": true,
+   "vistas": 807407,
+   "ratio": 47.2,
+   "puntaje": 33.48,
+   "nombre_formato": "GTA Football Generations",
+   "mecanica": "Muestra recortes de futbolistas icónicos agrupados de a tres según distintas eras y emparejados con logos de la saga GTA. Transiciona cronológicamente desde la generación actual (GTA VI) hasta leyendas históricas (GTA Vice City).",
+   "primer_segundo": "Se ve a Haaland, Mbappé y Lamine Yamal en ropa de verano junto al logo de Grand Theft Auto VI.",
+   "por_que_engancha": "Genera nostalgia y debate al asociar juegos clásicos de GTA con tríos dorados de cada época futbolística.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Erling Haaland",
+    "Kylian Mbappé",
+    "Lamine Yamal",
+    "Neymar Jr",
+    "Lionel Messi",
+    "Cristiano Ronaldo",
+    "Ronaldinho",
+    "Ronaldo Nazário",
+    "Zinedine Zidane",
+    "Diego Maradona",
+    "Pelé",
+    "Johan Cruyff"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer una ruleta interactiva de 'Crea tu trío GTA' donde 3 slots cambian rápido de jugador y el usuario debe pausar en el momento justo para armar el equipo ideal con una estrella de cada era."
   },
   {
    "id": "6HZ3LJX9G2Y",
@@ -296,184 +399,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 3,
    "idea_para_nosotros": "Hacer correr las barras a alta velocidad y pedirle al espectador que ponga PAUSA exactamente a los 25 años para elegir a su ganador y comparar stats sin usar clips reales."
-  },
-  {
-   "id": "9E_Oq67zA1M",
-   "canal": "V1m7n",
-   "subs": 9460,
-   "nuevo": true,
-   "vistas": 468518,
-   "ratio": 59.2,
-   "puntaje": 26.58,
-   "nombre_formato": "Ballon d'Or Top 5 Yearly Ranking",
-   "mecanica": "Presenta una lista animada del Top 5 de candidatos al Balón de Oro año por año desde 2005 hasta 2018. Cada año muestra tarjetas con la foto del jugador, escudo del club, posición del 1 al 5 y música rítmica.",
-   "primer_segundo": "Se ve el título 'TOP 5 - BALLON D'OR 2005' con Ronaldinho en el puesto número 1.",
-   "por_que_engancha": "Genera nostalgia y debate sobre la era dorada del fútbol y la hegemonía de Messi y Ronaldo.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Ronaldinho",
-    "Lampard",
-    "Gerrard",
-    "Henry",
-    "Ibrahimović",
-    "Cannavaro",
-    "Buffon",
-    "Kaká",
-    "Cristiano Ronaldo",
-    "Lionel Messi",
-    "Torres",
-    "Iniesta",
-    "Xavi",
-    "Modrić",
-    "Mbappé",
-    "Griezmann"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Crear un juego de pausar donde el usuario deba detener la ruleta para adivinar el ganador del Balón de Oro de un año aleatorio antes de que expire el tiempo."
-  },
-  {
-   "id": "cd5s0Sf6WuA",
-   "canal": "PULSE",
-   "subs": 54900,
-   "nuevo": true,
-   "vistas": 6453026,
-   "ratio": 157.9,
-   "puntaje": 26.38,
-   "nombre_formato": "Age-Based Goals Bar Chart Race",
-   "mecanica": "Una gráfica animada compara los goles acumulados por edad entre Haaland, Mbappé, Messi y Ronaldo. Conforme avanzan los años, el liderazgo cambia hasta el remate final donde Ronaldo supera a Messi.",
-   "primer_segundo": "Se ve el título 'GOALS BY AGE: CR7 vs Messi vs Mbappé vs Haaland' y la barra arrancando a los 17 años.",
-   "por_que_engancha": "Genera constante expectativa y debate sobre qué jugador fue mejor a cada etapa de su carrera.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Cristiano Ronaldo",
-    "Lionel Messi",
-    "Kylian Mbappé",
-    "Erling Haaland"
-   ],
-   "usa_clips_reales": true,
-   "replicable_con_codigo": 4,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Hacer un juego de 'PAUSA en la edad exacta': una cinta en 2D corre rápido con las edades de Messi/CR7 y el usuario debe pausar justo cuando coincidan sus fotos con su cifra máxima de goles."
-  },
-  {
-   "id": "nB0_g-rbsyQ",
-   "canal": "UV rawat k",
-   "subs": 10700,
-   "nuevo": true,
-   "vistas": 871318,
-   "ratio": 151.6,
-   "puntaje": 26.17,
-   "nombre_formato": "Realization Meme / Meme Comparison",
-   "mecanica": "Muestra una imagen meme que intenta deletrear 'RONALDO' y 'MESSI' usando trofeos de Balón de Oro. En la parte inferior se muestra la reacción entusiasta de los fans antes de entender la broma y su cara de desilusión tras darse cuenta del truco.",
-   "primer_segundo": "Aparece un tweet con Benzema y trofeos formando 'RONALDO', junto al texto 'Ronaldo fans before realizing:'.",
-   "por_que_engancha": "Explotar el humor de la rivalidad entre Messi y Ronaldo mediante un remate visual e irónico.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Karim Benzema",
-    "Cristiano Ronaldo",
-    "Lionel Messi"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 4,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Hacer un desafío interactivo de pausa donde los Balones de Oro caen en ranuras para formar nombres de superestrellas, y el usuario debe pausar exactamente cuando el conteo de trofeos coincida con la realidad del jugador."
-  },
-  {
-   "id": "VtqRWJDY_Ks",
-   "canal": "GoalQuiz",
-   "subs": 2490,
-   "nuevo": true,
-   "vistas": 3010176,
-   "ratio": 70.1,
-   "puntaje": 22.15,
-   "nombre_formato": "Spot the Real Face",
-   "mecanica": "Se muestra una cuadrícula de 16 caras deformadas cómicamente de un jugador con solo una normal y un timer decreciente. Al agotarse el tiempo se marca la cara correcta con un círculo rojo y avanza al siguiente futbolista.",
-   "primer_segundo": "Una cuadrícula de 16 caras caricaturizadas y el texto 'Find Yamal' con una barra de progreso.",
-   "por_que_engancha": "El humor bizarro de las caras deformadas activa la curiosidad inmediata y el desafío visual contrarreloj.",
-   "interaccion": "adivinar",
-   "jugadores": [
-    "Lamine Yamal",
-    "Vinícius Júnior",
-    "Neymar Jr"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 4,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Crear una ruleta o cinta ultra rápida con versiones distorsionadas de una superestrella y desafiar a pausar justo en la cara real."
   }
  ],
  "sin_analizar": [
   {
-   "id": "2Q2BKwVKVvk",
-   "canal": "Simon_Editor",
-   "vistas": 804452,
-   "ratio": 47.3,
-   "titulo": "GTA X Football through the generations. 😎⚽️ #soccer #gta #shorts "
-  },
-  {
-   "id": "c7JmAng0R8I",
-   "canal": "VaultFooty ",
-   "vistas": 2251200,
-   "ratio": 33.3,
-   "titulo": "Ranking The Best Goals In Training 🤯🔥 #football #soccer #footballshorts #viral"
-  },
-  {
-   "id": "jO8ixufyzH4",
-   "canal": "SMX",
-   "vistas": 763589,
-   "ratio": 133.1,
-   "titulo": "Pásame la maldita manguera 💀 #futbol #football #soccer #lamineyamal #barcelona #edit #viral #humor"
+   "id": "BsQ9Mh64c80",
+   "canal": "NeoxxGamingYT",
+   "vistas": 863178,
+   "ratio": 146.3,
+   "titulo": "Ronaldo helps Messi run away from the lava ball #shorts"
   },
   {
    "id": "cQaDHg9uUt4",
    "canal": "Cos Meme",
-   "vistas": 3795696,
-   "ratio": 78.3,
+   "vistas": 4072650,
+   "ratio": 86.2,
    "titulo": "Haaland Found the Best Way to Eat Chocolate 😂🍫 #football #haaland #memes"
   },
   {
-   "id": "0AlwCeCZ4yY",
-   "canal": "Football Lover Jisan",
-   "vistas": 694508,
-   "ratio": 43.3,
-   "titulo": "Ronaldo vs Messi 2007: Who did it better? 🔥⚽ #shorts"
-  },
-  {
-   "id": "fyfgP1gFwWg",
-   "canal": "MoShow Sports - معاذ شو ",
-   "vistas": 395779,
-   "ratio": 160.2,
-   "titulo": "«الحكم طرده فوراً! 🟥😳 لكن هل العقوبة كافية؟ #Shorts»"
-  },
-  {
-   "id": "Yz_heQV_owQ",
-   "canal": "TOTALFUTT",
-   "vistas": 3329256,
-   "ratio": 76.5,
-   "titulo": "Ronaldinho Engava até os GOLEIROS!"
+   "id": "k18mRwjvcqU",
+   "canal": "Marcelo_w09",
+   "vistas": 1424630,
+   "ratio": 119.8,
+   "titulo": "Part 4 | When Football lose control ☠️🔥|| #crashout #football #angry #fight #edit"
   },
   {
    "id": "2CGBpO-c6hQ",
    "canal": "Loop Touch Pro ",
-   "vistas": 2691466,
-   "ratio": 81.4,
+   "vistas": 3079199,
+   "ratio": 92.4,
    "titulo": "Comment ‘FIRST TOUCH’ if you need yours ⚽️🎄 #football #soccer #footballshorts #footballtraining"
+  },
+  {
+   "id": "2LtzdCNJ91E",
+   "canal": "FC CRISIS",
+   "vistas": 1099634,
+   "ratio": 124.2,
+   "titulo": "The great Football Era 🥶🔥 #football #footballshorts #edit #realmadrid #barcelona"
+  },
+  {
+   "id": "jO8ixufyzH4",
+   "canal": "SMX",
+   "vistas": 765400,
+   "ratio": 132.9,
+   "titulo": "Pásame la maldita manguera 💀 #futbol #football #soccer #lamineyamal #barcelona #edit #viral #humor"
+  },
+  {
+   "id": "yPn_Rjhi_e4",
+   "canal": "FitVision",
+   "vistas": 9943683,
+   "ratio": 60.7,
+   "titulo": "This Fighter Was LOSING HP Before the Match 😂🥋"
+  },
+  {
+   "id": "u4uiMXcAp4k",
+   "canal": "BallBloop",
+   "vistas": 3002536,
+   "ratio": 79.9,
+   "titulo": "Neymar & Yamal 😂🔥 What Happens Next?!"
   },
   {
    "id": "yIQfVh7NzFo",
    "canal": "Chigo_10",
-   "vistas": 587913,
-   "ratio": 42.6,
+   "vistas": 595601,
+   "ratio": 43.1,
    "titulo": "Arda Guler Last Night⚽🥶 subscribe for more edits"
   },
   {
-   "id": "tgPehf04lxI",
-   "canal": "BallBloop",
-   "vistas": 2626999,
-   "ratio": 79.4,
-   "titulo": "Neymar & Haaland Gone Crazy 😂🔥 #Shorts #football #neymar #haaland"
+   "id": "LTtUfMBJy0o",
+   "canal": "4nas",
+   "vistas": 3587147,
+   "ratio": 70.4,
+   "titulo": "Mbappe is unstoppable ☠️"
   }
  ]
 }
