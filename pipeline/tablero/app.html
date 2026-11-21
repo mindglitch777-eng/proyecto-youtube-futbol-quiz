@@ -243,6 +243,10 @@ button:focus-visible,a:focus-visible{outline:2px solid var(--lime);outline-offse
     <div class="panel"><div class="ph"><h2>Reglas matemáticas que usamos</h2></div><ul id="an-r" style="margin:0;padding-left:18px;line-height:1.6"></ul></div>
     <div class="panel"><div class="ph"><h2>Qué hacemos con esto</h2></div><div id="an-a"></div></div>
   </div>
+  <div class="grid g2">
+    <div class="panel"><div class="ph"><h2>Lista de ideas de formatos</h2><span class="sub" id="id-s"></span></div><div id="id-l"></div></div>
+    <div class="panel"><div class="ph"><h2>Olas confirmadas y jugadores del momento</h2></div><div id="id-o"></div><div id="id-j" style="margin-top:10px"></div></div>
+  </div>
  </section>
 
  <section data-tab="propuestas">
@@ -338,7 +342,7 @@ const fmt = n => n == null ? "—" : n >= 1e6 ? (n / 1e6).toFixed(1) + " M" : n 
 const SVGNS = "http://www.w3.org/2000/svg";
 const sv = (t, a) => { const e = document.createElementNS(SVGNS, t); for (const k in a) e.setAttribute(k, a[k]); return e; };
 const hace = iso => { if (!iso) return "—"; const m = Math.round((Date.now() - new Date(iso)) / 60000); return m < 1 ? "recién" : m < 60 ? `hace ${m} min` : m < 1440 ? `hace ${Math.round(m / 60)} h` : `hace ${Math.round(m / 1440)} d`; };
-let D_RES = null, D_VIG = null; let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null, D_GER = null, D_CER = null, D_AN = null, RUNS = [], ISSUES = null, SEL = "cerebro";
+let D_IDEAS = null, D_PLUS = null; let D_RES = null, D_VIG = null; let D = {}, CORRIDA = null, D_OLAS = null, D_INV = null, D_GER = null, D_CER = null, D_AN = null, RUNS = [], ISSUES = null, SEL = "cerebro";
 
 async function traer(url) { try { const r = await fetch(url, {cache: "no-store"}); return r.ok ? await r.json() : null; } catch (e) { return null; } }
 
@@ -353,6 +357,7 @@ async function cargar() {
   D_OLAS = olas; D_INV = inv;
   [D_GER, D_CER, D_AN] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/gerente.json")), traer(RAW(CFG.rama, "pipeline/datos/cerebro.json")),
                                             traer(RAW(CFG.rama, "pipeline/datos/analisis_ia.json"))]);
+  [D_IDEAS, D_PLUS] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/ideas.json")), traer(RAW(CFG.rama, "pipeline/datos/investigacion_plus.json"))]);
   [D_RES, D_VIG] = await Promise.all([traer(RAW(CFG.rama, "pipeline/datos/reserva.json")), traer(RAW(CFG.rama, "pipeline/datos/vigilancia.json"))]);
   D_GER = D_GER || s.gerente || null; D_CER = D_CER || s.cerebro || null; D_AN = D_AN || s.analisis_ia || null;
   D = {estado: estado || s.estado || {}, radar: (radar && radar.virales) || s.radar || [], analisis: analisis || s.analisis || {},
@@ -730,6 +735,23 @@ function pintarAnalisis() {
       <div class="q"><b>Por qué:</b> ${esc(h.por_que)}</div><div class="q"><b>Qué hacemos:</b> ${esc(h.accion)}</div>`; $("an-h").append(d); });
   $("an-r").innerHTML = ""; (A.reglas_matematicas || []).forEach(r => $("an-r").append(el("li", null, r)));
   $("an-a").innerHTML = ""; (A.acciones || []).forEach(a => { const f = el("div", "fila"); f.style.gridTemplateColumns = "auto 1fr"; f.append(el("span", "chip", a.quien), el("div", null, a.que)); $("an-a").append(f); });
+  pintarIdeas();
+}
+function pintarIdeas() {
+  // 21/11: lista de ideas (idea → propuesta → estreno → fijo / retirado), olas confirmadas y jugadores del momento (investigacion_plus.py)
+  const ORD = {estreno: 0, propuesta: 1, idea: 2, fijo: 3, rotacion: 4, retirado: 5};
+  const ideas = Object.values(D_IDEAS || {}).sort((a, b) => (ORD[a.estado] ?? 2) - (ORD[b.estado] ?? 2) || (b.puntaje || 0) - (a.puntaje || 0));
+  $("id-s").textContent = ideas.length ? `${ideas.length} ideas` : "";
+  $("id-l").innerHTML = ideas.length ? "" : '<div class="sub">Se llena con la investigación diaria.</div>';
+  ideas.slice(0, 12).forEach(i => { const f = el("div", "fila"); f.style.gridTemplateColumns = "auto 1fr auto";
+    const c = el("div"); c.innerHTML = `<b>${esc(i.nombre)}</b>${i.ola_canales ? ` · ola en ${i.ola_canales} canales` : ""}<div class="sub">${esc(i.como || "")}</div>`;
+    f.append(el("span", "chip", i.estado || "idea"), c, el("span", "num", String(i.puntaje ?? ""))); $("id-l").append(f); });
+  const P = D_PLUS || {};
+  $("id-o").innerHTML = ""; (P.olas || []).slice(0, 5).forEach(o => { const f = el("div", "fila"); f.style.gridTemplateColumns = "auto 1fr";
+    const c = el("div"); c.innerHTML = `<b>${esc(o.nombre)}</b> · ${o.canales} canales · ${fmt(o.vistas)} vistas<div class="sub">${esc(o.mecanica || "")}</div>`;
+    f.append(el("span", "chip", o.confirmada ? "✅ ola" : "señal"), c); $("id-o").append(f); });
+  if (!(P.olas || []).length) $("id-o").innerHTML = '<div class="sub">Todavía no hay olas confirmadas (hace falta la misma mecánica en 3 canales).</div>';
+  $("id-j").innerHTML = (P.jugadores || []).length ? "<b>Jugadores del momento:</b> " + P.jugadores.slice(0, 8).map(j => `${esc(j.jugador)} ${fmt(j.vph)}/h`).join(" · ") : "";
 }
 
 // ===================== propuestas + alarma =====================

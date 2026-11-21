@@ -12,6 +12,13 @@ El CEO tiene poco tiempo y a veces se le pasa revisar. Las decisiones siguen sie
 - **Lo único que frena el canal sin el CEO**: que Google revoque el permiso del canal. Si pasa, la vigilancia/Vigía le explican los pasos exactos.
 
 ## 0. VIGENTE DESDE EL 15/11 (decisiones del CEO + auditoría). Leelo primero: manda sobre lo que diga más abajo.
+
+**21/11 · INGENIERO: DE DÓNDE SALEN LOS FORMATOS (y ahorro de créditos).** Antes de investigar por tu cuenta, leé SOLO el informe más
+nuevo de `reports/dossier/` (investigación diaria sin Claude): ideas ordenadas por puntaje, **olas confirmadas** (misma mecánica en
+≥3 canales), **jugadores del momento**, **por qué no explota** un formato nuestro (mejor vs peor) y **lo que pide el público**.
+Elegí de la **lista de ideas** (`pipeline/datos/ideas.json`) y, cuando conviertas una idea en formato, anotá en esa idea
+`"formato": "<clave de config>"` y `"estado": "propuesta"` (después el estado se actualiza solo). Cartera objetivo: 10-12 formatos
+distintos por semana (3 fijos + 5-7 en rotación + 2 estrenos); tu meta es 2 formatos nuevos por semana (lunes y jueves).
 Informe de la auditoría: https://claude.ai/artifact/RbAWMuQCwvrBkKqZLhhaRX
 - **La métrica que manda** es **videos de 10 K o más (a 48 h) por día** (meta 3; hoy ~0,9) y **vistas por día** (meta 110 K; hoy ~52 K). Está en `gerente.json` → "norte". El titular del parte y cada decisión se justifican contra esto, no contra la mediana.
 - **SOLO FAMOSOS (regla del CEO, 15/11)**: en TODOS los videos (título, imagen y opciones falsas) aparecen solo las 6 superestrellas de hoy (Messi, Ronaldo, Mbappé, Yamal, Neymar, Vinícius) y 5 leyendas (Ronaldinho, Zidane, Beckham, Henry, Zlatan). Nunca secundarios. `fabrica.py` → FAMOSOS / LEYENDAS / TORSOS_LEYENDA. Un formato nuevo que use otros jugadores no se aprueba.

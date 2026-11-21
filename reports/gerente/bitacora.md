@@ -261,3 +261,8 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Ingeniero:** pedido del Gerente para el lunes 23/11, GOALS BY AGE: (1) movimiento desde el cuadro 0 (hoy 1,7 s quietos);
   (2) pausa final de 3,4 s: o se marca como pausa legítima en el inspector (para que no rehaga 3 veces) o se acorta a ≤1,5 s.
 - 20/11 (yo, por el aviso del Gerente): GOALS BY AGE ya no arranca quieto (barras y caras crecen desde el cuadro 0, la 1.ª línea entra en <1 s) ni termina quieto (el líder late); inspector PASA. Vigilancia relanza la investigación diaria si GitHub se la saltea (hoy no corrió a las 12:07). Lewandowski en GOALS BY AGE: excepción a 'solo famosos' por ser formato de goleadores históricos (el CEO pidió 'los mejores, con histórico').
+
+## 21/11 · Investigación mejorada (CEO: "las investigaciones son básicas") · sin Claude
+- pipeline/investigacion_plus.py (todos los días, después de la investigación 2.0): 1) olas CONFIRMADAS = misma mecánica en ≥3 canales en 7 días (Gemini agrupa); 2) por qué no explota = Gemini compara nuestro mejor vs peor video de un formato (con su retención), uno por día; 3) jugadores del momento (vistas por hora en los canales seguidos); 4) lo que pide el público (comentarios de la semana resumidos); 5) lista de ideas con estado (idea → propuesta → estreno → fijo/rotación/retirado) en datos/ideas.json, visible en la página (pestaña Análisis).
+- Cartera objetivo: 10-12 formatos distintos por semana (3 fijos + 5-7 en rotación + 2 estrenos); el Ingeniero (se queda lunes y jueves) apunta a 2 formatos nuevos por semana sacados de la lista de ideas.
+- Agentes: sin cambios. El lunes 23/11 se compara el Gerente Gemini con el Gerente de Claude antes de decidir recortes.

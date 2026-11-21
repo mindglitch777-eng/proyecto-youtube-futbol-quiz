@@ -110,6 +110,7 @@ def main():
         lista[c] = dict(desde=hoy_s, ultimo_fuera=None)
     info = info_canales(list(lista))
     fuera, revisados = [], 0
+    recientes_canal = {}                                                       # 21/11: para "jugadores del momento" (investigacion_plus.py)
     for cid, meta in list(lista.items()):
         i = info.get(cid)
         if not i or i["subs"] > MAX_SUBS:
@@ -121,6 +122,7 @@ def main():
         except Exception as e:
             print("canal falló", i["nombre"], e, flush=True); continue
         revisados += 1
+        recientes_canal[cid] = [dict(id=v["id"], t=v["titulo"][:120], v=v["vistas"], h=round(v["horas"])) for v in vids if v["horas"] <= 7 * 24]
         base = [v["vistas"] for v in vids if 72 <= v["horas"] <= 30 * 24]
         if len(base) < 5:
             continue
@@ -138,6 +140,7 @@ def main():
         orden = sorted(lista, key=lambda c: (lista[c].get("ultimo_fuera") or "", lista[c]["desde"]), reverse=True)
         lista = {c: lista[c] for c in orden[:MAX_CANALES]}
     guardar("canales_seguidos.json", lista)
+    guardar("canales_videos.json", recientes_canal)
     fuera.sort(key=lambda v: -(math.log10(v["ratio"]) * math.log10(v["vistas"]) * (1.3 if v["nuevo"] else 1)))
     print(f"canales revisados {revisados} · fuera de serie {len(fuera)}", flush=True)
 

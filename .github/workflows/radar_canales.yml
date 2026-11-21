@@ -27,6 +27,10 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -q requests
       - run: cd pipeline && python investigar_canales.py
+      - name: Investigación plus (olas confirmadas, por qué no explotan, jugadores, público, lista de ideas)
+        if: always()
+        run: cd pipeline && python investigacion_plus.py
+        continue-on-error: true
       - name: Despertador (¿hay una ola para la IA?)
         if: always()
         run: python pipeline/despertador.py || true
