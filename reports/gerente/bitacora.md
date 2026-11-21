@@ -276,3 +276,4 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **No toqué:** el plan que usa BALLON D'OR cuando faltan formatos (lo resuelven los formatos nuevos del lunes); la cantidad por día.
 - **Revisar el 2026-11-22:** DRESS (los 2 a 48 h). **23/11:** mensaje semanal (comparar con el Gerente Gemini del #16).
 - **Para el CEO:** nada.
+- 21/11 (CEO): Haaland suma como SUPERESTRELLA (el más visto por hora en la investigación). Entra en WHEEL (piernas erling_haaland_3), CONVEYOR/ESCAPE (torso erling_haaland_1), SKILL STOP (defensor, pelota radio 124), títulos y GOALS BY AGE. NO en VS (foto con brazos abiertos: queda chico y cortado). Inspector PASA.

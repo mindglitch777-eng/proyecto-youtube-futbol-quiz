@@ -105,7 +105,7 @@ TIT_STOP_SERIE = ["Football Stop Challenge #{n} ⚽🛑 {tema} edition", "Stop a
 
 # REGLA PARA SIEMPRE (pedido del dueño del canal): en el primer cuadro de TODOS los videos aparece una superestrella
 # (la cara más conocida frena el scroll: el 49% que hoy desliza decide en <0,4 s). Va en el lugar más visible de cada formato.
-SUPERESTRELLAS = ["cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar", "vin_cius_j_nior"]
+SUPERESTRELLAS = ["cristiano_ronaldo", "lionel_messi", "kylian_mbapp", "lamine_yamal", "neymar", "vin_cius_j_nior", "erling_haaland"]   # 21/11: +Haaland (CEO; el más visto por hora en la investigación)
 # REGLA DEL CEO (15/11): en TODOS los videos solo jugadores MUY famosos: las 6 superestrellas de hoy + 5 leyendas. Nunca secundarios
 # (con secundarios rendíamos 3 veces menos). Fotos de leyendas revisadas a ojo el 15/11 (afuera: Beckham sin camiseta, Henry con
 # aro y texto, Zidane de traje con la copa; Kaká y Ronaldo Nazário tienen fotos de otra persona).
@@ -330,7 +330,7 @@ def guion_cabeza(gid, rng, usados_cab, V=None):
 
 # WHEEL STOP: piernas de una superestrella (foto de cuerpo entero de frente) + rueda de 8 torsos. Solo recortes aprobados a ojo.
 CUERPOS_RUEDA = {"lionel_messi_3": "Messi", "lamine_yamal_10": "Yamal", "kylian_mbapp_12": "Mbappé",
-                 "cristiano_ronaldo_14": "Ronaldo", "neymar_1": "Neymar", "vin_cius_j_nior_14": "Vinícius"}   # 08/11: +3 probados a ojo
+                 "cristiano_ronaldo_14": "Ronaldo", "neymar_1": "Neymar", "vin_cius_j_nior_14": "Vinícius", "erling_haaland_3": "Haaland"}   # 08/11: +3 probados a ojo
 TORSOS_RUEDA = ["cristiano_ronaldo_0", "lionel_messi_0", "kylian_mbapp_0", "lamine_yamal_0", "neymar_2", "erling_haaland_1",
                 "vin_cius_j_nior_0", "vin_cius_j_nior_3", "jude_bellingham_0", "jude_bellingham_1", "mohamed_salah_0", "harry_kane_1",
                 "pedri_2", "ronaldinho_0", "phil_foden_0", "bukayo_saka_2", "cole_palmer_1", "raphinha_0", "lautaro_mart_nez_1"]
@@ -396,7 +396,8 @@ def guion_piernas(gid, rng, V, fecha):
 # SOLO superestrellas en la cinta / el rodillo (lección del 13/11: los secundarios rinden 3 veces menos). La variedad sale de
 # qué estrella es el dueño, el orden y el gancho, no de nombres nuevos.
 TORSOS_ESTRELLA = {"cristiano_ronaldo": ["cristiano_ronaldo_0"], "lionel_messi": ["lionel_messi_0"], "kylian_mbapp": ["kylian_mbapp_0"],
-                   "lamine_yamal": ["lamine_yamal_0"], "neymar": ["neymar_2"], "vin_cius_j_nior": ["vin_cius_j_nior_0", "vin_cius_j_nior_3"]}
+                   "lamine_yamal": ["lamine_yamal_0"], "neymar": ["neymar_2"], "vin_cius_j_nior": ["vin_cius_j_nior_0", "vin_cius_j_nior_3"],
+                   "erling_haaland": ["erling_haaland_1"]}
 TIT_CINTA = ["{n} vs {a} or {b} stop challenge 🛑🔥", "{n} vs {a} or {b} conveyor challenge 😱🛑", "Stop {n}'s body on the belt 🛑 {a} or {b}?",
              "Find {n}'s real body 🛑🔥 {a} or {b}?",
              "{n}'s body is on the belt 🛑 {a} or {b}?", "{n} on the conveyor 😱 Only one body fits: {a} or {b}?"]   # 19/11: más estructuras
@@ -481,9 +482,9 @@ def guion_favorito(gid, rng, V, fecha, leyendas=True):
 # Duelos que pide el público (Studio 15/11): Ronaldo vs Messi, Yamal vs Mbappé / Vinícius. Solo superestrellas.
 DUELOS = [("cristiano_ronaldo_14", "lionel_messi_3"), ("lamine_yamal_10", "kylian_mbapp_12"), ("lamine_yamal_10", "vin_cius_j_nior_14"),
           ("cristiano_ronaldo_14", "kylian_mbapp_12"), ("lionel_messi_3", "lamine_yamal_10"), ("neymar_1", "vin_cius_j_nior_14"),
-          ("lionel_messi_3", "kylian_mbapp_12"), ("cristiano_ronaldo_14", "neymar_1")]
+          ("lionel_messi_3", "kylian_mbapp_12"), ("cristiano_ronaldo_14", "neymar_1")]   # 21/11: Haaland NO en VS (su foto de cuerpo tiene los brazos abiertos y queda chico y cortado)
 COLOR_VS = {"cristiano_ronaldo": (220, 30, 40), "lionel_messi": (80, 165, 235), "lamine_yamal": (205, 25, 45), "kylian_mbapp": (40, 70, 190),
-            "vin_cius_j_nior": (40, 170, 70), "neymar": (250, 210, 0)}
+            "vin_cius_j_nior": (40, 170, 70), "neymar": (250, 210, 0), "erling_haaland": (110, 190, 240)}
 TIT_VS = ["{a} vs {b} 🛑 Stop on your GOAT", "{a} or {b}? 👑 Pause it in the gold zone", "{a} vs {b} stop challenge 👑🔥",
           "Who wins? {a} vs {b} 🛑 Only 1% stop it"]
 
@@ -505,7 +506,7 @@ def fondo_variado(V, tipo, rng):
 
 # SKILL STOP · NUTMEG (19/11, pedido del CEO): defensor superestrella con las piernas abiertas (recortes con hueco medido) y
 # la cara del atacante (estrella o leyenda); pausar con la pelota entre los pies. Solo famosos.
-DEFENSORES_CANO = {"kylian_mbapp_13": "kylian_mbapp", "lamine_yamal_3": "lamine_yamal"}   # 19/11 (CEO aprobó #15): solo piernas MUY abiertas = pelota grande
+DEFENSORES_CANO = {"kylian_mbapp_13": "kylian_mbapp", "lamine_yamal_3": "lamine_yamal", "erling_haaland_3": "erling_haaland"}   # 19/11 (CEO aprobó #15): solo piernas MUY abiertas = pelota grande
 # (fuera: Messi_3 manos en la cintura, Vinícius_10 piernas juntas, Neymar_1 cara tapada por el aro, Zlatan_1 trae su propia pelota)
 TIT_CANO = ["{a} vs {b} skills 🛑 Stop the nutmeg", "Can {a} nutmeg {b}? 🛑 Only 1% stop it", "{a} nutmegs {b}? 😱 Pause it between the legs",
             "{a} skills vs {b} 🛑 Stop it between the legs"]
