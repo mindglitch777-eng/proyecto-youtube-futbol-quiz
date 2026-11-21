@@ -19,14 +19,34 @@ from datetime import datetime, timedelta, timezone
 from comun import CONFIG, RAIZ, cargar
 
 ART = timezone(timedelta(hours=-3))
-HORA_EXTRA = "22:15"
+HORA_EXTRA = "18:30"                                                             # 21/11: antes 22:15 (45 min de los vecinos de 21:30 y 23:00); regla ≥1,5 h entre videos
 OLA_A_FORMATO = {"stop": ["stop", "siuu", "penal", "balon"], "wheel": ["rueda"], "fit": ["fitall", "cabezas"], "find": ["find"],
                  "dress": ["dress"], "quiz": ["trayectoria", "tridente", "q20fichaje", "q20costo"], "goat": ["circulo"]}
 
 
+def merece_extra(k):
+    """21/11 (lección del 13/11): extra solo si el formato tiene ≥4 videos propios medidos que rinden ≥1,5x la mediana del canal,
+    y no pasó su tope semanal (max_semana) contando lo subido en los últimos 7 días. Antes la ola del MERCADO bastaba:
+    BALLON D'OR (tope 2) salió 5 veces en una semana."""
+    f = cargar("gerente.json", {}).get("formatos", {}).get(k, {})
+    try:
+        x = float(str(f.get("vs_canal", "0")).rstrip("x"))
+    except ValueError:
+        x = 0.0
+    if f.get("medidos", 0) < 4 or x < 1.5:
+        return False
+    tope = CONFIG["pruebas"].get(k, {}).get("max_semana")
+    if tope:
+        desde = (datetime.now(ART).date() - timedelta(days=7)).isoformat()
+        n = sum(1 for p in cargar("publicados.json", []) if p.get("tipo") == k and p.get("video_id") and not p.get("cancelado") and p["fecha"] >= desde)
+        if n >= tope:
+            return False
+    return True
+
+
 def ola_caliente():
     poda = cargar("poda.json", {"podadas": {}, "promovidas": {}})
-    listos = [k for k, v in CONFIG["pruebas"].items() if v.get("listo") and k not in poda["podadas"]]
+    listos = [k for k, v in CONFIG["pruebas"].items() if v.get("listo") and k not in poda["podadas"] and merece_extra(k)]
     fijos = {"rueda", "cabezas"}
     for k in poda["promovidas"]:                                               # promovido por ola (no los de lugar fijo)
         if k in listos and k not in fijos:
