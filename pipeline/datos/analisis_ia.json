@@ -1,36 +1,59 @@
 {
  "fecha": "2026-11-21",
- "autor": "Gerente Gemini (semanal, sin Claude)",
+ "autor": "Gerente IA · parte diario (21/11)",
  "veredicto": {
-  "color": "amber",
-  "titulo": "11% de avance hacia la monetización con 1.056.478 vistas",
-  "frase": "Ya superamos la meta de suscriptores con 1.020, pero acumulamos 1.056.478 vistas de los 10 millones requeridos. Al ritmo semanal actual de 271.520 vistas tardaremos 32,9 semanas, por lo que necesitamos impulsar los formatos nuevos que están funcionando muy bien."
+  "color": "green",
+  "titulo": "Volver a 6 por día con lo que rinde levantó el canal",
+  "frase": "1.030 suscriptores. Las vistas por día volvieron a ~65 K (el 18/11 eran 21 K) y la mediana de la semana subió 74 %. CONVEYOR STOP y HEAD SLOT son los que más empujan. Ahora falta la otra mitad de la monetización: 10 M de vistas en 90 días (vamos 11 %)."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1020 / 1.000",
-   "nota": "faltan 0"
+   "valor": "1.030",
+   "nota": "✅ meta de 1.000 cumplida el 20/11"
+  },
+  {
+   "label": "Vistas Shorts 90 días",
+   "valor": "1,08 M / 10 M",
+   "nota": "11 %"
+  },
+  {
+   "label": "Vistas del canal por día",
+   "valor": "+65 K · +68 K",
+   "nota": "20 y 21/11 (parcial); 18/11 +21 K"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1,29",
-   "nota": "meta 3"
+   "valor": "1,57",
+   "nota": "meta 3; venía en 1,0"
   },
   {
-   "label": "Vistas de Shorts 90 días",
-   "valor": "1,06 M",
-   "nota": "32.9 semanas a 10 M"
+   "label": "CONVEYOR STOP",
+   "valor": "36.946",
+   "nota": "su mejor video (19/11)"
+  },
+  {
+   "label": "Mediana de la semana",
+   "valor": "2.280",
+   "nota": "+74 %"
   }
  ],
  "hallazgos": [
   {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP arranca como el formato más fuerte",
-   "dato": "Mediana de 16.176 vistas a las 48 h (un video logró 34.581 vistas en 36 h)",
+   "dato": "CONVEYOR: 36.946 (19/11 13:00), mediana 15.137 (6,6x) con 3 medidos. HEAD SLOT: mediana 9.059 (4,0x) con 4 medidos; FAVORITE 7.444.",
    "por_que": "El dinamismo de frenar la cinta atrapa al espectador en los primeros segundos",
    "confianza": "baja (con 2 videos)",
    "accion": "Aumentar la producción de este formato para aprovechar el impulso inicial antes de que se gaste"
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Los extras automáticos de 'ola' se salteaban las reglas",
+   "dato": "El 21/11 salió un BALLON D'OR extra a las 22:15 porque la familia STOP estaba 'subiendo' en el MERCADO. BALLON D'OR tiene tope de 2 por semana y salió 5 veces.",
+   "por_que": "La máquina de olas no miraba nuestros números ni los topes (la lección del 13/11 solo estaba escrita, no en el código).",
+   "confianza": "alta",
+   "accion": "Arreglado el 21/11: extra solo de un formato con ≥4 videos propios a ≥1,5x el canal y sin pasar su tope, a las 18:30."
   },
   {
    "tipo": "funciona",
@@ -75,8 +98,16 @@
  ],
  "acciones": [
   {
-   "quien": "Ingeniero (lunes)",
-   "que": "Construir e implementar el nuevo formato «Spinning Face Puzzle»: hacer una rueda giratoria rápida animada con trofeos o botas de oro donde el espectador deba pausar el video exactamente cuando el elemento encaje con la superestrella (Messi, Mbappé o Haaland)."
+   "quien": "Gerente IA",
+   "que": "21/11: extras de ola con la lección del 13/11 en el código. 22/11: DRESS. Lunes 23/11: mensaje semanal."
+  },
+  {
+   "quien": "Ingeniero",
+   "que": "Lunes 23/11: fondos propios, foto de Messi y recortes con piernas abiertas para SKILL STOP; 2 formatos nuevos de la lista de ideas."
+  },
+  {
+   "quien": "CEO",
+   "que": "Nada por ahora."
   }
  ]
 }

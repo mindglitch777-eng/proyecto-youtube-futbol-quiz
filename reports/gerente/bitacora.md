@@ -266,3 +266,13 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - pipeline/investigacion_plus.py (todos los días, después de la investigación 2.0): 1) olas CONFIRMADAS = misma mecánica en ≥3 canales en 7 días (Gemini agrupa); 2) por qué no explota = Gemini compara nuestro mejor vs peor video de un formato (con su retención), uno por día; 3) jugadores del momento (vistas por hora en los canales seguidos); 4) lo que pide el público (comentarios de la semana resumidos); 5) lista de ideas con estado (idea → propuesta → estreno → fijo/rotación/retirado) en datos/ideas.json, visible en la página (pestaña Análisis).
 - Cartera objetivo: 10-12 formatos distintos por semana (3 fijos + 5-7 en rotación + 2 estrenos); el Ingeniero (se queda lunes y jueves) apunta a 2 formatos nuevos por semana sacados de la lista de ideas.
 - Agentes: sin cambios. El lunes 23/11 se compara el Gerente Gemini con el Gerente de Claude antes de decidir recortes.
+
+## 2026-11-21 · Gerente IA (turno diario)
+- **Vi:** 1.030 suscriptores; 1,08 M de vistas en 90 días. Vistas por día: 20/11 +65 K, 21/11 +68 K (parcial). Mediana de la semana +74 %; 10 K por día 1,57.
+  CONVEYOR 36.946 (mediana 15.137, 3 medidos), HEAD SLOT 9.059 (4, media), FAVORITE 7.444 (4), WHEEL 5.190 (+70 %), HEAD FIT 2.661 (−56 %). DRESS: 5.285 y 643 (19 h).
+  El Ingeniero arregló GOALS BY AGE (rehizo el del 22/11) y Lewandowski quedó como excepción. Extra automático BALLON D'OR el 21/11 a las 22:15 (5.º de la semana, tope 2).
+- **Decidí e hice:** refuerzo_ola.py con la lección del 13/11 en el código (≥4 propios, ≥1,5x, tope semanal) y la hora a las 18:30.
+  6 preguntas: n = 5 BALLON D'OR en 7 días / dato sano (publicados.json) / otra explicación: el plan también lo elige cuando faltan formatos (anotado para el lunes) / peor caso: menos extras de ola, que de todos modos no rendían (los de 22:15: mediana 1.412); se deshace con git / se mide: ningún extra que rompa un tope · mío (arreglar fallas).
+- **No toqué:** el plan que usa BALLON D'OR cuando faltan formatos (lo resuelven los formatos nuevos del lunes); la cantidad por día.
+- **Revisar el 2026-11-22:** DRESS (los 2 a 48 h). **23/11:** mensaje semanal (comparar con el Gerente Gemini del #16).
+- **Para el CEO:** nada.
