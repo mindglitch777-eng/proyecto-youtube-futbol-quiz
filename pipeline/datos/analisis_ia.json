@@ -1,10 +1,10 @@
 {
  "fecha": "2026-11-21",
- "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
+ "autor": "Gerente Gemini (semanal, sin Claude)",
  "veredicto": {
-  "color": "green",
-  "titulo": "1020 de 1.000 suscriptores ✅",
-  "frase": "Todo anda solo. No tenés que hacer nada hoy."
+  "color": "amber",
+  "titulo": "11% de avance hacia la monetización con 1.056.478 vistas",
+  "frase": "Ya superamos la meta de suscriptores con 1.020, pero acumulamos 1.056.478 vistas de los 10 millones requeridos. Al ritmo semanal actual de 271.520 vistas tardaremos 32,9 semanas, por lo que necesitamos impulsar los formatos nuevos que están funcionando muy bien."
  },
  "numeros_clave": [
   {
@@ -26,107 +26,43 @@
  "hallazgos": [
   {
    "tipo": "funciona",
-   "titulo": "Volver a 6 por día con lo que rinde levantó las vistas",
-   "dato": "Vistas del canal por día: 16/11 +35 K, 17/11 +28 K, 18/11 +21 K (con 8 por día); 19/11 +35 K y 20/11 +65 K (parcial, ya con la grilla nueva en parte).",
-   "por_que": "Menos videos y solo formatos que pegan: el empuje de YouTube no se reparte entre videos flojos (la misma lección del 13/11).",
-   "confianza": "media (2 días; el 21/11 es el primer día completo de 6)",
-   "accion": "Seguir con 6 por día; el lunes 23/11 se compara la semana."
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "La originalidad está bien medida con lo subido (76), pero los títulos se parecen",
-   "dato": "Índice 69 (con lo subido). Los videos casi iguales bajaron, pero los títulos se parecen 69 %. El 19/11 el Ingeniero sumó fondos al azar (distancia 50-83 entre videos del mismo formato; antes 0-6) y títulos nuevos para WHEEL, HEAD FIT y CONVEYOR.",
-   "por_que": "BALLON D'OR y PENALTY tienen un solo armado visual, y WHEEL/HEAD FIT usan pocas frases de título.",
-   "confianza": "alta",
-   "accion": "Se mide el 23/11: meta > 80."
+   "titulo": "CONVEYOR STOP arranca como el formato más fuerte",
+   "dato": "Mediana de 16.176 vistas a las 48 h (un video logró 34.581 vistas en 36 h)",
+   "por_que": "El dinamismo de frenar la cinta atrapa al espectador en los primeros segundos",
+   "confianza": "baja (con 2 videos)",
+   "accion": "Aumentar la producción de este formato para aprovechar el impulso inicial antes de que se gaste"
   },
   {
    "tipo": "funciona",
-   "titulo": "CONVEYOR STOP es la gran pista",
-   "dato": "CONVEYOR: mediana 16.694 (9,1x) con 2 medidos; su 3.º hizo 16.784 en 18 h. FAVORITE: mediana 11.372 (6,2x).",
-   "por_que": "Mantienen lo que funciona (elegir entre superestrellas y parar justo) pero se ven distintos.",
-   "confianza": "baja (1-2 videos cada uno)",
-   "accion": "Desde el 18/11 son fijos todos los días (decisión del CEO), junto con WHEEL."
+   "titulo": "STOP ON YOUR FAVORITE muestra un excelente rendimiento inicial",
+   "dato": "Mediana de 8.840 vistas a las 48 h",
+   "por_que": "La consigna directa de parar en la superestrella favorita explota el sesgo de la audiencia",
+   "confianza": "baja (con 3 videos)",
+   "accion": "Mantener en rotación activa probando combinaciones con superestrellas como Messi, Ronaldo y Mbappé"
   },
   {
    "tipo": "funciona",
-   "titulo": "YouTube confirma: lo que frena el dedo es WHEEL, DRESS y las caras",
-   "dato": "Vistos vs. deslizados (IA de YouTube Studio, 14 días): WHEEL 'X vs Y or Z' 66,2 %, DRESS 66,0 %, 'Find Yamal's real body' 64,8 %. Los peores: STOP clásico 36-42 % (63 % desliza) y un FIT ALL 37,5 %.",
-   "por_que": "Dos cosas distintas: que se frenen (vistos vs. deslizados) y que lo vean entero (% visto). WHEEL tiene las dos. FIND frena a 70-72 % pero se va antes del final, por eso YouTube no lo empuja (1-2,5 K).",
-   "confianza": "alta (dato directo de YouTube)",
-   "accion": "Confirmada la salida del STOP clásico. DRESS frena tan bien como WHEEL: vale la pena el arreglo (plazo 22/11). La poda vigila FIT ALL."
+   "titulo": "WHEEL STOP se mantiene como el pilar más confiable",
+   "dato": "Mediana de 6.267 vistas a las 48 h superando la expectativa de 4.001",
+   "por_que": "Es un formato establecido que no pierde tracción fácilmente",
+   "confianza": "alta (con 19 videos)",
+   "accion": "Conservar como base estable de la fábrica diaria de 6 videos"
   },
   {
    "tipo": "ojo",
-   "titulo": "Nuestro público mira desafíos de pausa, comparativas y jugadas virales",
-   "dato": "Según YouTube, en otros canales miran: (1) desafíos de pausa de caras, siluetas y cuerpos; (2) comparativas cara a cara (CR7 vs Messi, Haaland vs Lewandowski); (3) jugadas virales de Yamal, CR7, Neymar, Bellingham.",
-   "por_que": "Estamos en el centro de lo que les gusta. Lo que falta: comparativas y jugadas con la lógica de parar.",
-   "confianza": "alta",
-   "accion": "Sprint del lunes: SKILL STOP (jugadas) y un VS STOP (cara a cara: parás y gana el que elegiste) además de STOP TO ESCAPE."
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "Horarios: los fines de semana el pico es de 11 a 15 h",
-   "dato": "Sábado: pico 11-15 h; domingo: 12-15 h; de lunes a viernes, parejo de 11 a 00 h y más los jueves y viernes después de las 21 h.",
-   "por_que": "El fin de semana la gente mira al mediodía.",
-   "confianza": "alta",
-   "accion": "En la semana de volumen, sábado y domingo el lugar extra va a las 12:00 en vez de las 18:30."
-  },
-  {
-   "tipo": "funciona",
-   "titulo": "WHEEL es el motor del canal",
-   "dato": "Mediana 6.539 a las 48 h (3,7x el canal) en 16 videos; 184 % visto; 1,29 suscriptores cada 1.000.",
-   "por_que": "Reto de parar justo + elegir entre superestrellas: el que mira juega y se queda a ver si acertó.",
-   "confianza": "alta (11 videos)",
-   "accion": "1 por día fijo a las 21:30. Sus variantes nuevas (LEGS WHEEL, CONVEYOR STOP) alternan, máximo 1 variante por día."
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "WHEEL se recupera con 1 por día",
-   "dato": "Ya no figura como cansado; mediana 7.471 en 15 videos y 3 ruedas de 22-23 K en los últimos días.",
-   "por_que": "Con 1 por día la misma gente no lo ve dos veces.",
-   "confianza": "media",
-   "accion": "Se confirma el 16/11 con los primeros de 1 por día a las 48 h."
+   "titulo": "Formatos de cabezas rinden bien pero requieren vigilancia",
+   "dato": "HEAD SLOT tiene mediana de 3.223 vistas y HEAD FIT de 3.017 vistas",
+   "por_que": "Tienen picos altos (un slot logró 13.793 vistas en 38 h) pero muestran señales de desgaste rápido",
+   "confianza": "alta (con 10 videos)",
+   "accion": "Rotar elementos visuales y no saturar la grilla con esta mecánica"
   },
   {
    "tipo": "no",
-   "titulo": "Subir de más bajó el canal",
-   "dato": "Del 9 al 13/11 se subieron 9-15 videos por día; la mediana a las 48 h de la semana cayó a 2.490 (antes 6.044) y las vistas diarias de ~70 K a ~45 K.",
-   "por_que": "YouTube reparte el empuje del canal entre todos los videos del día: más videos flojos = menos empuje para los buenos.",
-   "confianza": "media",
-   "accion": "6 por día desde el 14/11. Extras solo con formatos con ≥4 videos propios que rindan ≥1,5x la mediana, máximo 1 por día."
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "Los suscriptores van a saltos",
-   "dato": "+58 del 13 al 14/11 y +11 del 14 al 15/11 (887). Promedio de la semana ~46 por día.",
-   "por_que": "Los suscriptores llegan con los videos que despegan (ruedas y HEAD FIT de 20 K+); un día sin uno fuerte trae pocos.",
-   "confianza": "baja (días sueltos)",
-   "accion": "Mirar el promedio de 7 días, no el día."
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "HEAD FIT se cansa",
-   "dato": "Mediana 2.848 (1,5x el canal) en 8 medidos; sus últimos 4 rinden el 43 % de los 4 anteriores. En cambio HEAD SLOT con Ronaldo hizo 15.441.",
-   "por_que": "Sale todos los días y ahora también tiene a HEAD SLOT y FIT ALL en la misma familia.",
-   "confianza": "alta",
-   "accion": "Es formato de prueba desde el 18/11: la poda decide sola."
-  },
-  {
-   "tipo": "no",
-   "titulo": "FIT ALL vuelve, sin brillar todavía",
-   "dato": "Mediana 1.611 (0,7x) en 7 medidos, pero sus últimos rinden casi 3 veces más (+189 %) y tiene el % visto más alto (208 %).",
-   "por_que": "La poda nueva lo devolvió (compara contra el canal, no contra STOP). Los quiz de 20 s salieron (182-1.251 vistas).",
-   "confianza": "media",
-   "accion": "Sigue en prueba; la poda decide sola."
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "DRESS UP: arranca fuerte pero no se vuelve a mirar",
-   "dato": "1 video: 10.702 a las 48 h (5x), 1,45 subs/1.000, pero 108,7 % visto y un parche negro. El detector marca la ola 'dress' subiendo.",
-   "por_que": "Frena el scroll, pero la gente se va antes del loop.",
-   "confianza": "baja (1 video)",
-   "accion": "Aprobado por el CEO (#13): 2 pruebas, 19/11 20:00 y 20/11 20:00. El 22/11: si no pasan 120 % visto y la mediana del canal, sale para siempre."
+   "titulo": "STOP CHALLENGE y FIT ALL se quedaron rezagados",
+   "dato": "STOP CHALLENGE registró mediana de 1.748 vistas (38 videos) y FIT ALL de 1.152 vistas (10 videos)",
+   "por_que": "Son formatos sobreexpuestos que la audiencia ya ignora",
+   "confianza": "alta (con 38 videos)",
+   "accion": "Reducir su presencia al mínimo para liberar cupo a formatos más frescos"
   }
  ],
  "reglas_matematicas": [
@@ -139,16 +75,8 @@
  ],
  "acciones": [
   {
-   "quien": "Ingeniero",
-   "que": "Lunes 23/11: GOALS BY AGE con movimiento desde el cuadro 0; fondos propios; recortes con piernas abiertas para SKILL STOP."
-  },
-  {
-   "quien": "Gerente IA",
-   "que": "22/11 DRESS (2 pruebas) · 23/11 mensaje semanal y originalidad."
-  },
-  {
-   "quien": "CEO",
-   "que": "Nada urgente. Confirmar si GOALS BY AGE puede usar goleadores que no están en 'solo famosos' (Lewandowski)."
+   "quien": "Ingeniero (lunes)",
+   "que": "Construir e implementar el nuevo formato «Spinning Face Puzzle»: hacer una rueda giratoria rápida animada con trofeos o botas de oro donde el espectador deba pausar el video exactamente cuando el elemento encaje con la superestrella (Messi, Mbappé o Haaland)."
   }
  ]
 }
