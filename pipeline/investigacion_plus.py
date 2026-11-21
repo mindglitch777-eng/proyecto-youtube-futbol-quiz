@@ -19,7 +19,15 @@ import re
 import sys
 from datetime import datetime, timedelta, timezone
 
-from comun import CONFIG, RAIZ, cargar, gemini, guardar, yt
+import time
+
+from comun import CONFIG, RAIZ, cargar, gemini as _gemini, guardar, yt
+
+FIN = time.time() + 12 * 60                                                   # presupuesto total de Gemini: 12 min
+
+
+def gemini(partes):
+    return _gemini(partes, intentos=1, timeout=150, limite=FIN)
 
 ART = timezone(timedelta(hours=-3))
 JUGADORES = {"Messi": r"messi", "Ronaldo": r"ronaldo(?!inho)|cr7|cristiano", "Mbappé": r"mbapp", "Yamal": r"yamal", "Neymar": r"neymar",

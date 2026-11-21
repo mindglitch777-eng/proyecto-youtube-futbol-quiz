@@ -86,14 +86,21 @@ def yt_videos(ids):
 MODELOS = ["gemini-3.5-flash", "gemini-3.6-flash", "gemini-flash-latest", "gemini-3.5-flash-lite"]
 
 
-def gemini(partes, json_out=True, intentos=3):
-    """partes: lista de dicts de 'parts' (texto, file_data con link de YouTube o archivo subido)."""
+def gemini(partes, json_out=True, intentos=3, timeout=600, limite=None):
+    """partes: lista de dicts de 'parts' (texto, file_data con link de YouTube o archivo subido).
+    21/11: timeout por pedido y `limite` = hora (time.time()) después de la cual no se intenta más (una noche lenta de Gemini
+    trabó la investigación 40 min)."""
     key = os.environ["GEMINI_API_KEY"]
     for vuelta in range(intentos):
         for m in MODELOS:
-            r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={key}",
-                              json={"contents": [{"parts": partes}],
-                                    "generationConfig": {"responseMimeType": "application/json"} if json_out else {}}, timeout=600)
+            if limite and time.time() > limite:
+                return None
+            try:
+                r = requests.post(f"https://generativelanguage.googleapis.com/v1beta/models/{m}:generateContent?key={key}",
+                                  json={"contents": [{"parts": partes}],
+                                        "generationConfig": {"responseMimeType": "application/json"} if json_out else {}}, timeout=timeout)
+            except requests.RequestException:
+                continue
             if r.status_code == 200:
                 try:
                     t = r.json()["candidates"][0]["content"]["parts"][0]["text"]
@@ -101,6 +108,8 @@ def gemini(partes, json_out=True, intentos=3):
                 except (KeyError, IndexError, json.JSONDecodeError):
                     continue
             time.sleep(2)
+        if limite and time.time() > limite:
+            return None
         time.sleep(20 * (vuelta + 1))
     return None
 

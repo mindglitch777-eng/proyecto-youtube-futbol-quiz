@@ -147,6 +147,8 @@ def main():
     vistos = cargar("fuera_de_serie.json", {})
     por_canal = {}
     if not sin_gemini:
+        import time
+        fin_gemini = time.time() + 14 * 60                                     # 21/11: presupuesto total de Gemini: 14 min
         hechos = 0
         for v in fuera:
             if hechos >= MAX_GEMINI:
@@ -156,7 +158,8 @@ def main():
             por_canal[v["canal_id"]] = por_canal.get(v["canal_id"], 0) + 1
             try:
                 a = gemini([{"file_data": {"file_uri": f"https://www.youtube.com/watch?v={v['id']}"}},
-                            {"text": PROMPT.format(titulo=v["titulo"], vistas=v["vistas"], ratio=v["ratio"])}])
+                            {"text": PROMPT.format(titulo=v["titulo"], vistas=v["vistas"], ratio=v["ratio"])}],
+                           intentos=1, timeout=150, limite=fin_gemini)
                 if isinstance(a, list):
                     a = next((x for x in a if isinstance(x, dict)), None)
             except Exception as e:
