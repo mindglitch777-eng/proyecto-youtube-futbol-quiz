@@ -1,0 +1,65 @@
+# 29 · Comparación con los virales (cuadro por cuadro, Gemini)
+
+## FIT ALL · viral 12,614,559 (RyukX (canal de 2 semanas)) vs nuestro 10,137
+
+https://www.youtube.com/shorts/vSCSgT8so3c · https://www.youtube.com/shorts/AMH-L0FzyfE
+
+**Diferencia clave:** El video viral prioriza la escala visual masiva a pantalla completa y música de tendencia a alto ritmo, mientras que el nuestro utiliza formatos pequeños con banners estáticos que ralentizan la acción.
+
+- **primer segundo** · viral: Comienza al instante con movimiento hiperdinámico a pantalla completa, colores saturados y música de tendencia desde el cuadro 0. · nuestro: Comienza con banners de texto estáticos en la parte superior y una rueda muy pequeña en el centro con espacio vacío.
+- **duracion y ritmo** · viral: Duración ultra corta (4.5s) con movimiento de rotación continuo a alta velocidad que sostiene la retención visual. · nuestro: Ritmo pausado con iteraciones lineales (pantallas de nivel 3, 1, 7, 5) que rompen la continuidad visual.
+- **tamano y claridad** · viral: Recortes masivos a cuerpo entero y caras gigantes con alto contraste que ocupan casi la totalidad del canvas vertical. · nuestro: Cabezas diminutas dispuestas en un aro delgado sobre un fondo de estadio genérico que reduce el impacto visual.
+- **dificultad** · viral: Giro extremadamente rápido que genera una ventana de acierto imperceptible, obligando a pausar o repetir el Short. · nuestro: Giro lento y predecible con transiciones pausadas donde el resultado se revela de forma pasiva.
+- **texto en pantalla** · viral: Sin banners o cajas de texto pesadas; el foco absoluto es la animación y la imagen principal. · nuestro: Banners amarillos y rojos gigantes arriba y abajo ('FIT RONALDO'S REAL HEAD', 'PERFECT!') que ocupan tercio de pantalla.
+- **sonido** · viral: Audio musical pegadizo y de tendencia (Phonk/canción viral) sincronizado con el giro. · nuestro: Efectos de sonido genéricos de videojuego/gritos ('Siuuu') desconectados de un ritmo musical envolvente.
+- **final y loop** · viral: Corte abrupto en el clímax que reinicia de forma imperceptible, generando reproducciones continuas. · nuestro: Termina con un cartel de 'PERFECT!' estático que frena el ritmo y destruye la posibilidad de un bucle fluido.
+
+**Cambios:**
+- Aumentar el tamaño de los recortes de personajes/cabezas al 70-80% de la pantalla para eliminar fondo vacío.
+- Eliminar los banners de texto estáticos superiores e inferiores ('FIT RONALDO'S REAL HEAD', 'PERFECT!').
+- Usar pistas de audio virales o Phonk en lugar de efectos de sonido genéricos de juego.
+- Aumentar la velocidad de rotación para incentivar a los usuarios a pausar el video manualmente.
+- Eliminar la pantalla de victoria final para lograr un bucle infinito (seamless loop) con el primer segundo.
+
+## DRESS UP · viral 30,979,765 (Muzam) vs nuestro 8,116
+
+https://www.youtube.com/shorts/PwYDlELz-f8 · https://www.youtube.com/shorts/CCJLnw_evdY
+
+**Diferencia clave:** El video viral prioriza la velocidad visual extrema y caras gigantes hiperclaras sin texto distractor, convirtiendo el Short en un reto de pausa adictivo.
+
+- **primer segundo** · viral: Inicia directamente con la animación en movimiento sin textos explicativos molestos, capturando la atención visual al instante. · nuestro: Muestra un cartel superior estático ('STOP IT ON THE FACE' / 'PAUSE WHEN IT FITS') que ralentiza el enganche inicial y quita espacio vertical.
+- **duracion y ritmo** · viral: 15 segundos de duración total con caídas extremadamente rápidas (cambio de objeto cada 1-1.5 segundos), generando urgencia y re-visitas constantes. · nuestro: Ritmo más pausado y predecible, con pausas innecesarias entre cada intento de acierto.
+- **tamano y claridad** · viral: Caras masivas que ocupan más del 50% de la pantalla, con recortado ultra limpio, contraste saturado y sombras/accesorios perfectamente alineados. · nuestro: Caras más pequeñas, con recorte menos preciso en la frente y bordes visibles que arruinan la ilusión del encaje.
+- **dificultad** · viral: Ventana de acierto hiperestrecha (milisegundos) que obliga al usuario a pausar varias veces o repetirlo para lograr el 'pausa perfecta'. · nuestro: Velocidad de movimiento lenta y predecible, lo que reduce la interactividad y las ganas de comentar/reintentar.
+- **texto en pantalla** · viral: Solo una lista limpia '1. 2. 3. 4.' a la izquierda que no tapan la animación central ni distraen. · nuestro: Banners superiores gigantes con texto rojo/negro ('4 TRIES - NO MISTAKES', 'COMMENT HOW MANY') que ensucian el área visual clave.
+- **sonido** · viral: Audio contagioso de alta tendencia (remix urbano acelerado) sincronizado con el impacto visual de los objetos. · nuestro: Audio secundario/genérico sin el impacto rítmico necesario para mantener el retención activa.
+- **final y loop** · viral: Corta de golpe en la última combinación, haciendo que el loop vuelva a arrancar instantáneamente sin que el espectador lo note. · nuestro: Finaliza con llamados a la acción ('FOLLOW FOR PART 2') que rompen el bucle automático de reproducción.
+
+**Cambios:**
+- Eliminar los banners superiores de texto ('STOP IT ON THE FACE') y dejar solo la lista lateral '1. 2. 3. 4.'
+- Aumentar el tamaño de las caras un 25% para que ocupen toda la mitad inferior de la pantalla.
+- Aumentar la velocidad de caída/animación de los elementos al doble (máximo 1 segundo por intento).
+- Usar recortados de caras en ultra alta definición con el borde superior plano perfecto para que el pelo calce de forma realista.
+- Eliminar el call to action final para garantizar un loop perfecto e imperceptible entre el segundo final y el segundo 0.
+
+## STOP · viral 6,916,100 (TURBO06 (canal de 11 días)) vs nuestro 29,884
+
+https://www.youtube.com/shorts/4k5Zzh5S4Mk · https://www.youtube.com/shorts/wDxr4u26r4E
+
+**Diferencia clave:** El video viral mantiene una interfaz limpia y una duración adecuada para que el espectador intente resolver el reto visualmente.
+
+- **primer segundo** · viral: Inicia de inmediato con la acción del juego de calce visual sin pantallas previas. · nuestro: Presenta textos explicativos centrales que distraen del inicio de la dinámica.
+- **duracion y ritmo** · viral: Duración aproximada de 5 segundos con ritmo constante y animación fluida. · nuestro: Duración muy corta de 2 segundos con ritmo excesivamente acelerado.
+- **tamano y claridad** · viral: Rostros de futbolistas de gran tamaño con recortes de alta visibilidad. · nuestro: Cuadrantes más reducidos y recortes tapados por iconos o efectos sobrepuestos.
+- **dificultad** · viral: Velocidad moderada que permite al usuario intentar encajar las piezas visualmente. · nuestro: Velocidad muy alta con ventana de acierto breve y saturación de intentos.
+- **texto en pantalla** · viral: Porcentajes limpios en la zona inferior sin tapar a las figuras principales. · nuestro: Múltiples textos centrales ('CAN YOU STOP...', 'ONLY 3 TRIES') que obstruyen la imagen.
+- **sonido** · viral: Bucle de audio rítmico coordinado con el avance del juego. · nuestro: Efectos sonoros de conteo rápido con remate vocal corto.
+- **final y loop** · viral: Cierre limpio que reinicia la animación de forma casi imperceptible. · nuestro: Final con texto de llamada a la acción que rompe la continuidad del bucle.
+
+**Cambios:**
+- Extender la duración total del Short a 5 segundos.
+- Remover textos flotantes centrales para dejar el campo visual limpio.
+- Aumentar el tamaño de las figuras principales ocupando mayor superficie de pantalla.
+- Reducir la velocidad de movimiento de las piezas flotantes a la mitad.
+- Ubicarlos porcentajes únicamente en el borde inferior de cada panel.
+
