@@ -65,39 +65,39 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-21T20:06:58+00:00",
+   "inicio": "2026-11-21T21:55:15+00:00",
    "resumen": {
     "videos": 138,
-    "vistas_totales": 1091435,
+    "vistas_totales": 1097443,
     "por_formato": {
-     "circulo": "6 videos · mediana 2,553 · mejor 4,372",
-     "slot": "5 videos · mediana 3,039 · mejor 22,652",
-     "cinta": "4 videos · mediana 14,290 · mejor 36,003",
-     "favorito": "5 videos · mediana 6,052 · mejor 10,986",
-     "rueda": "20 videos · mediana 6,239 · mejor 12,223",
-     "cabezas": "11 videos · mediana 2,860 · mejor 10,973",
-     "dress": "2 videos · mediana 6,816 · mejor 8,116",
-     "penal": "2 videos · mediana 2,998 · mejor 4,472",
-     "balon": "5 videos · mediana 3,353 · mejor 8,208",
-     "piernas": "2 videos · mediana 2,384 · mejor 2,517",
-     "fitall": "10 videos · mediana 1,055 · mejor 10,137",
-     "q20balon": "3 videos · mediana 531 · mejor 877",
-     "stop": "38 videos · mediana 1,545 · mejor 9,914",
-     "trayectoria": "1 videos · mediana 585 · mejor 585",
-     "q20costo": "1 videos · mediana 612 · mejor 612",
-     "find": "4 videos · mediana 880 · mejor 1,362",
-     "q20fichaje": "1 videos · mediana 81 · mejor 81",
-     "siuu": "1 videos · mediana 567 · mejor 567",
-     "tridente": "1 videos · mediana 679 · mejor 679",
-     "pared": "2 videos · mediana 684 · mejor 902",
+     "balon": "6 videos · mediana 2,446 · mejor 8,135",
+     "circulo": "6 videos · mediana 2,516 · mejor 4,924",
+     "slot": "5 videos · mediana 3,021 · mejor 22,285",
+     "cinta": "4 videos · mediana 14,190 · mejor 35,503",
+     "favorito": "5 videos · mediana 6,102 · mejor 10,907",
+     "rueda": "20 videos · mediana 6,224 · mejor 12,192",
+     "cabezas": "11 videos · mediana 2,844 · mejor 10,926",
+     "dress": "2 videos · mediana 7,090 · mejor 8,098",
+     "penal": "2 videos · mediana 3,000 · mejor 4,493",
+     "piernas": "2 videos · mediana 2,360 · mejor 2,492",
+     "fitall": "10 videos · mediana 1,051 · mejor 10,094",
+     "q20balon": "3 videos · mediana 528 · mejor 871",
+     "stop": "38 videos · mediana 1,539 · mejor 9,894",
+     "trayectoria": "1 videos · mediana 582 · mejor 582",
+     "q20costo": "1 videos · mediana 609 · mejor 609",
+     "find": "4 videos · mediana 878 · mejor 1,356",
+     "q20fichaje": "1 videos · mediana 80 · mejor 80",
+     "siuu": "1 videos · mediana 565 · mejor 565",
+     "tridente": "1 videos · mediana 677 · mejor 677",
+     "pared": "2 videos · mediana 682 · mejor 900",
      "cabeza": "1 videos · mediana 516 · mejor 516",
-     "plinko": "1 videos · mediana 474 · mejor 474",
-     "ring": "1 videos · mediana 596 · mejor 596",
-     "otros": "2 videos · mediana 480 · mejor 625",
-     "carrera": "2 videos · mediana 452 · mejor 547"
+     "plinko": "1 videos · mediana 473 · mejor 473",
+     "ring": "1 videos · mediana 595 · mejor 595",
+     "otros": "2 videos · mediana 480 · mejor 624",
+     "carrera": "2 videos · mediana 450 · mejor 546"
     }
    },
-   "fin": "2026-11-21T20:06:59+00:00"
+   "fin": "2026-11-21T21:55:16+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -143,18 +143,18 @@
   "publicacion": {
    "estado": "ok",
    "resumen": {
-    "subidos": 3,
+    "subidos": 1,
     "en_cola": 0,
     "freno": null,
     "errores": [],
-    "total_publicados": 177
+    "total_publicados": 178
    },
-   "inicio": "2026-11-21T20:06:50+00:00",
-   "fin": "2026-11-21T20:06:57+00:00"
+   "inicio": "2026-11-21T21:55:11+00:00",
+   "fin": "2026-11-21T21:55:13+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-21T20:07:05+00:00",
+   "fin": "2026-11-21T21:55:20+00:00",
    "resumen": {
     "videos": 127,
     "por_formato": {
@@ -190,5 +190,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-21T20:07:05+00:00"
+ "actualizado": "2026-11-21T21:55:20+00:00"
 }
