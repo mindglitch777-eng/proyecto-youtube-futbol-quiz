@@ -1,0 +1,28 @@
+name: Comparar con los virales (Gemini, cuadro por cuadro)
+
+on:
+  push:
+    paths: [pipeline/comparar_virales.py]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  comparar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: cd pipeline && python comparar_virales.py
+      - name: Guardar
+        if: always()
+        run: |
+          python3 pipeline/guardar_avance.py "Comparación con virales"
+          git add reports/29_comparacion_virales.md 2>/dev/null; git commit -q -m "Comparación con los virales" || true
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done

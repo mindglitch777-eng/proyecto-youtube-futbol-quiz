@@ -100,7 +100,7 @@ def podar():
         if k in FIJOS or not v.get("listo"):
             continue
         xs = por.get(k, [])
-        protegido = any(a >= 10_000 for a in xs[-4:])
+        protegido = any(a >= 10_000 for a in xs[-4:]) or (v.get("protegido_hasta") or "") >= hoy.isoformat()   # 21/11: protección a mano (CEO)
         if k in poda["podadas"] and protegido:
             poda["podadas"].pop(k); anotar(k, "vuelve", f"tiene un video de {max(xs[-4:]):,} entre sus últimos 4 (protegido)")
             continue
