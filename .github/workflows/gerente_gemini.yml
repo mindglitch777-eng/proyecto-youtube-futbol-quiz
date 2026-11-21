@@ -1,0 +1,32 @@
+name: Gerente Gemini (semanal, sin Claude)
+
+on:
+  schedule:
+    - cron: "23 12 * * 1"      # lunes 09:23 de Argentina (antes del ingeniero del lunes)
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  issues: write
+
+jobs:
+  gerente:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    env:
+      GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+      GH_TOKEN: ${{ github.token }}
+    steps:
+      - uses: actions/checkout@v4
+        with: {fetch-depth: 30}
+      - run: git fetch -q origin datos-vivos || true
+      - uses: actions/setup-python@v5
+        with: {python-version: "3.12"}
+      - run: pip install -q requests
+      - run: python3 pipeline/gerente_gemini.py
+      - name: Guardar
+        if: always()
+        run: |
+          python3 pipeline/guardar_avance.py "Gerente Gemini"
+          git add reports/gerente/semanal_*.md 2>/dev/null; git commit -q -m "Gerente Gemini: mensaje semanal" || true
+          for i in 1 2 3 4; do git pull --rebase -q origin "${GITHUB_REF_NAME}" && git push -q origin "HEAD:${GITHUB_REF_NAME}" && break; sleep 7; done

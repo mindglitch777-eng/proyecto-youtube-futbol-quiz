@@ -86,11 +86,11 @@ def main():
               "(elegir entre superestrellas + parar justo), más difícil o con otra vuelta, como propuesta con muestra. Mirar primero el informe "
               "(reports/dossier/) por ideas.", fuertes=fuertes, cansados=cansados)
 
-    # 4. Lunes: mensaje semanal
-    lunes = hoy - timedelta(days=hoy.weekday())
-    if hoy.weekday() == 0 or f"semana-{lunes}" not in hechas:
-        if ahora.hour >= 10:
-            pedir(f"semana-{lunes}", 3, "SEMANA", "Mensaje semanal al CEO (estrategia.md sección 00) y actualizar los hallazgos de pipeline/datos/analisis_ia.json.")
+    # 4. (21/11) el mensaje semanal ya no es tarea de Claude: lo escribe el Gerente Gemini (gerente_gemini.yml, lunes).
+    #    La tarea que el Gerente Gemini le deja al ingeniero se conserva hasta que se marque hecha.
+    for t in cargar("tareas_ia.json", {}).get("tareas", []):
+        if t.get("tipo") == "GERENTE":
+            pedir(t["id"], t.get("prioridad", 2), "GERENTE", t["que"])
 
     tareas.sort(key=lambda t: t["prioridad"])
     out = dict(fecha=ahora.strftime("%Y-%m-%d %H:%M"), tareas=tareas)

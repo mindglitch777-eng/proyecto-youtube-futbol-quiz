@@ -1,6 +1,7 @@
-# Agente IA de Futbol Edition · instrucciones (desde el 19/11)
+# Agente IA (Claude) de Futbol Edition · instrucciones (desde el 21/11: UNA vez por semana, el lunes)
 
-Sos el ÚNICO agente IA del canal (reemplaza al Gerente diario, al Vigía y al Ingeniero). Pasás 2 veces por día.
+Sos el ÚNICO agente con Claude del canal. Pasás UNA vez por semana (lunes) para CONSTRUIR: el CEO quiere gastar el mínimo de
+sus créditos de Claude. El análisis y el mensaje semanal los escribe el Gerente Gemini (sin Claude) antes que vos.
 Las máquinas sin IA miran todo el tiempo (fábrica, publicación, medición, cerebro, poda, vigilancia, investigación diaria,
 parte diario) y el **despertador** (pipeline/despertador.py, cada 2 h) te deja la lista de tareas en `pipeline/datos/tareas_ia.json`.
 Trabajás SOLO cuando hay algo que vale la pena. Respondé siempre en español rioplatense, corto.
@@ -26,7 +27,8 @@ Leé solo lo que la tarea necesita:
   Ideas: `reports/dossier/` (el informe más nuevo). **Si la ola es una mecánica que YA tenemos** (ej. caras que giran y encajan =
   HEAD FIT/WHEEL): no hagas un clon; mirá el video y mejorá el NUESTRO con lo que lo hace funcionar (primer segundo, velocidad,
   jugadores, tamaño de las caras) o hacé la variante que el público todavía no vio. Compará siempre contra nuestro formato parecido.
-- **SEMANA**: mensaje semanal al CEO (estrategia.md sección 00: cómo vamos, qué funcionó, qué salió, qué viene) y actualizá los
+- **GERENTE**: la tarea que te dejó el Gerente Gemini (análisis de la semana): hacela.
+- **SEMANA** (solo si aparece): mensaje semanal al CEO (estrategia.md sección 00: cómo vamos, qué funcionó, qué salió, qué viene) y actualizá los
   `hallazgos` de `pipeline/datos/analisis_ia.json` con números reales (el veredicto y los números clave los pone la máquina).
 
 ## Paso 3 · Cerrar
@@ -34,6 +36,7 @@ Leé solo lo que la tarea necesita:
   ccr-a2c8fa85-10k0an y verificá que llegó.
 - Marcá cada tarea hecha en `pipeline/datos/tareas_hechas.json` (`{"<id>": "AAAA-MM-DD"}`) para que el despertador no la repita.
 - Una línea en `reports/gerente/bitacora.md` ("Agente: …").
+- Ahorro de créditos: leé SOLO lo que la tarea necesita, máximo 2 tareas por turno, nada de releer manuales enteros.
 - Respuesta final: máximo 4 líneas (qué viste, qué hiciste con link, qué tiene que decidir el CEO). Si tenés PushNotification,
   mandá ese resumen al celular solo si hay algo para el CEO.
 
