@@ -1,29 +1,29 @@
 {
- "fecha": "2026-11-20",
+ "fecha": "2026-11-21",
  "canales_seguidos": 80,
- "canales_nuevos": 17,
- "revisados": 185,
- "fuera_de_serie": 406,
+ "canales_nuevos": 20,
+ "revisados": 129,
+ "fuera_de_serie": 286,
  "interacciones": {
   "comentar": {
-   "videos": 25,
-   "mediana": 3323916
+   "videos": 31,
+   "mediana": 2575849
   },
   "ninguna": {
-   "videos": 5,
-   "mediana": 1615273
+   "videos": 9,
+   "mediana": 1938192
+  },
+  "elegir": {
+   "videos": 3,
+   "mediana": 8292564
+  },
+  "adivinar": {
+   "videos": 3,
+   "mediana": 3010176
   },
   "pausar": {
    "videos": 2,
    "mediana": 7808974
-  },
-  "elegir": {
-   "videos": 2,
-   "mediana": 10638605
-  },
-  "adivinar": {
-   "videos": 2,
-   "mediana": 2632957
   }
  },
  "ideas": [
@@ -154,6 +154,28 @@
    "idea_para_nosotros": "Podemos crear un juego de pausa rápida donde 3 caras de jugadores estilo GTA cambian a gran velocidad y el usuario debe pausar en el momento exacto para armar un trío perfecto de la misma era."
   },
   {
+   "id": "R5rZVJDTAtQ",
+   "canal": "funny people",
+   "subs": 14200,
+   "nuevo": false,
+   "vistas": 4237417,
+   "ratio": 120.2,
+   "puntaje": 41.6,
+   "nombre_formato": "Dressing Challenge",
+   "mecanica": "Dos personajes mudan su aspecto y equipamiento a medida que pasan las opciones numeradas del 1 al 4. Al final, se visten con camisetas de fútbol y peinados, cambiando su actitud de enojados a felices.",
+   "primer_segundo": "Se ven dos duchas numeradas arriba a la izquierda y dos hombres sucios y enojados abajo esperando el cambio.",
+   "por_que_engancha": "Genera curiosidad y anticipación por ver cómo quedarán los jugadores tras vestirse y cambiar de expresión.",
+   "interaccion": "elegir",
+   "jugadores": [
+    "Lamine Yamal",
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer un quiz de vestimenta donde el espectador deba pausar para adivinar qué camiseta histórica le corresponde a cada estrella."
+  },
+  {
    "id": "T7p_KWaaA84",
    "canal": "Visual Mindset",
    "subs": 39400,
@@ -231,6 +253,28 @@
    "idea_para_nosotros": "Hacer un juego tipo 'Tres en raya' (Tic-Tac-Toe) animado donde el usuario deba pausar justo cuando se alineen tres fotos idénticas de su estrella favorita para ganar."
   },
   {
+   "id": "w4niVaBlliA",
+   "canal": "FootyEdits FC",
+   "subs": 39000,
+   "nuevo": true,
+   "vistas": 8024296,
+   "ratio": 27.6,
+   "puntaje": 28.82,
+   "nombre_formato": "Father and Son Stat Meme",
+   "mecanica": "Primero muestra al hijo de Messi fallando de forma graciosa mientras la carta de FIFA muestra una baja de nivel. Luego muestra al hijo de Kane marcando gol y celebrando junto a su padre mientras sus estadísticas suben.",
+   "primer_segundo": "Aparece un niño con la camiseta del Barcelona etiquetado como 'Messi.Son' y una carta de FIFA de Messi de 102 de media.",
+   "por_que_engancha": "Genera humor mediante la comparación irónica y la parodia de las habilidades heredadas de las superestrellas.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Lionel Messi",
+    "Harry Kane"
+   ],
+   "usa_clips_reales": true,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Podemos hacer una ruleta dinámica donde el usuario deba pausar para elegir qué hijo de futbolista (Messi, Ronaldo, Haaland) hereda las mejores estadísticas de su padre. Si detienen el video a tiempo, desbloquean la carta '99 OVR Futura Leyenda'."
+  },
+  {
    "id": "W9FJdx2wPog",
    "canal": "Simon_Editor",
    "subs": 4090,
@@ -252,6 +296,42 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 3,
    "idea_para_nosotros": "Hacer correr las barras a alta velocidad y pedirle al espectador que ponga PAUSA exactamente a los 25 años para elegir a su ganador y comparar stats sin usar clips reales."
+  },
+  {
+   "id": "9E_Oq67zA1M",
+   "canal": "V1m7n",
+   "subs": 9460,
+   "nuevo": true,
+   "vistas": 468518,
+   "ratio": 59.2,
+   "puntaje": 26.58,
+   "nombre_formato": "Ballon d'Or Top 5 Yearly Ranking",
+   "mecanica": "Presenta una lista animada del Top 5 de candidatos al Balón de Oro año por año desde 2005 hasta 2018. Cada año muestra tarjetas con la foto del jugador, escudo del club, posición del 1 al 5 y música rítmica.",
+   "primer_segundo": "Se ve el título 'TOP 5 - BALLON D'OR 2005' con Ronaldinho en el puesto número 1.",
+   "por_que_engancha": "Genera nostalgia y debate sobre la era dorada del fútbol y la hegemonía de Messi y Ronaldo.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Ronaldinho",
+    "Lampard",
+    "Gerrard",
+    "Henry",
+    "Ibrahimović",
+    "Cannavaro",
+    "Buffon",
+    "Kaká",
+    "Cristiano Ronaldo",
+    "Lionel Messi",
+    "Torres",
+    "Iniesta",
+    "Xavi",
+    "Modrić",
+    "Mbappé",
+    "Griezmann"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 3,
+   "idea_para_nosotros": "Crear un juego de pausar donde el usuario deba detener la ruleta para adivinar el ganador del Balón de Oro de un año aleatorio antes de que expire el tiempo."
   },
   {
    "id": "cd5s0Sf6WuA",
@@ -322,149 +402,78 @@
    "replicable_con_codigo": 4,
    "encaja_con_nuestra_logica": 3,
    "idea_para_nosotros": "Crear una ruleta o cinta ultra rápida con versiones distorsionadas de una superestrella y desafiar a pausar justo en la cara real."
-  },
-  {
-   "id": "AvBXav2Uib4",
-   "canal": "zxpic7 ",
-   "subs": 51400,
-   "nuevo": true,
-   "vistas": 2255739,
-   "ratio": 68.1,
-   "puntaje": 22.0,
-   "nombre_formato": "Akatsuki footballers mashup",
-   "mecanica": "Muestra imágenes generadas por IA de famosos futbolistas vestidos como miembros de los Akatsuki de Naruto, uno tras otro. El espectador reconoce rápidamente a cada estrella en un contexto de anime inesperado.",
-   "primer_segundo": "Aparece Messi con el cuerpo y atuendo de Sasori de Akatsuki, con texto superpuesto que dice 'WHAT IF FOOTBALLERS WERE IN THE AKATSUKI?' y 'Messi'.",
-   "por_que_engancha": "Combina la cultura pop del anime muy popular con superestrellas mundiales del fútbol, generando curiosidad inmediata por ver quién sigue en la lista.",
-   "interaccion": "adivinar",
-   "jugadores": [
-    "Messi",
-    "Ronaldo",
-    "Neymar",
-    "Harry Kane",
-    "Haaland",
-    "Mbappe",
-    "Yamal",
-    "Lewandowski",
-    "Zlatan"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 4,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Hacer un quiz interactivo de detener el video donde el espectador deba elegir qué personaje de anime o superhéroe encaja exactamente con las estadísticas o estilo de juego de cada estrella."
-  },
-  {
-   "id": "ZQUp7KUFhRg",
-   "canal": "Visual Mindset",
-   "subs": 39400,
-   "nuevo": true,
-   "vistas": 9341410,
-   "ratio": 110.8,
-   "puntaje": 20.45,
-   "nombre_formato": "Dual Narrative Contrast",
-   "mecanica": "Se muestra un mismo accidente (niño tira una jarra) en dos pantallas divididas simultáneas. Arriba el padre reacciona gritando y generando trauma, mientras abajo hace una pausa para respirar y consolar al hijo.",
-   "primer_segundo": "Un niño en animación 2D camina llevando un recipiente hacia un adulto en pantalla dividida arriba y abajo.",
-   "por_que_engancha": "El contraste visual inmediato genera fuerte carga emocional y lección de vida reflexiva que invita a compartir.",
-   "interaccion": "comentar",
-   "jugadores": [],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 2,
-   "idea_para_nosotros": "Hacer una pantalla dividida tipo 'Reacción de DT ante un penal fallado': Arriba (DT tóxico) vs Abajo (DT motivador) usando recortes de caras de futbolistas, donde el usuario debe pausar en el segundo exacto donde la barra de moral llega al 100%."
-  },
-  {
-   "id": "iB6YQgorMW8",
-   "canal": "SIHAQZ",
-   "subs": 18300,
-   "nuevo": true,
-   "vistas": 4960061,
-   "ratio": 110.4,
-   "puntaje": 20.43,
-   "nombre_formato": "Player Tunnel Meme Edit",
-   "mecanica": "Un jugador recorre un pasillo de entrenamiento recibiendo palmadas cómicas con efectos de sonido de memes. Durante el trayecto se intercambian las caras de los futbolistas y sus cartas de juego con animaciones divertidas.",
-   "primer_segundo": "Se ve a los jugadores en el pasillo de entrenamiento con etiquetas de Yamal y Güler más una carta especial de Güler.",
-   "por_que_engancha": "Apela al humor absurdo de memes virales y la comparación cómica entre futbolistas del momento.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Lamine Yamal",
-    "Arda Güler",
-    "Cristiano Ronaldo"
-   ],
-   "usa_clips_reales": true,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 2,
-   "idea_para_nosotros": "Diseñar un juego 2D de cinta deslizante donde el espectador deba pausar en el milisegundo exacto para encajar la cara meme correcta sobre el cuerpo de Ronaldo, Yamal o Güler."
   }
  ],
  "sin_analizar": [
   {
-   "id": "FQbegL854vk",
-   "canal": "Loop Touch Pro ",
-   "vistas": 3330371,
-   "ratio": 173.4,
-   "titulo": "Comment ‘FIRST TOUCH’ if you need yours 🎁⚽️🔥 #football #soccer #footballshorts #soccershorts"
-  },
-  {
-   "id": "c2KNsvJD4QQ",
-   "canal": "SWiZZY",
-   "vistas": 981874,
-   "ratio": 245.3,
-   "titulo": "Ceedee Lamb gets baptized!Rigged after #nfl #49ers # #fyp #shorts #edit #footballshorts #football"
-  },
-  {
-   "id": "EMqBnLplBMc",
-   "canal": "iFutGol",
-   "vistas": 1447703,
-   "ratio": 187.9,
-   "titulo": "Ronaldinho Gaucho skills  2026 #football  #shorts"
-  },
-  {
-   "id": "WiFy4P7O1u8",
-   "canal": "iFutGol",
-   "vistas": 1444471,
-   "ratio": 187.5,
-   "titulo": "Almost a beautiful assist from Ronaldinho! #shorts  #football #funnymoments"
-  },
-  {
-   "id": "R5rZVJDTAtQ",
-   "canal": "funny people",
-   "vistas": 4197796,
-   "ratio": 119.0,
-   "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge jersey 😱🔥#viral #viralshorts #barca"
-  },
-  {
-   "id": "CQ5857lc34A",
-   "canal": "Blockstalks",
-   "vistas": 7007061,
-   "ratio": 98.6,
-   "titulo": "Bro hit a wall😭😭 #football  #funny #shorts"
-  },
-  {
    "id": "2Q2BKwVKVvk",
    "canal": "Simon_Editor",
-   "vistas": 802848,
-   "ratio": 58.1,
+   "vistas": 804452,
+   "ratio": 47.3,
    "titulo": "GTA X Football through the generations. 😎⚽️ #soccer #gta #shorts "
   },
   {
-   "id": "gJ6dv_A9gDo",
-   "canal": "One  Goal",
-   "vistas": 3499375,
-   "ratio": 111.5,
-   "titulo": "This is How Harry Kane Scores a Goal #football #footballshorts #soccer"
+   "id": "c7JmAng0R8I",
+   "canal": "VaultFooty ",
+   "vistas": 2251200,
+   "ratio": 33.3,
+   "titulo": "Ranking The Best Goals In Training 🤯🔥 #football #soccer #footballshorts #viral"
   },
   {
-   "id": "BsQ9Mh64c80",
-   "canal": "NeoxxGamingYT",
-   "vistas": 855021,
-   "ratio": 175.6,
-   "titulo": "Ronaldo helps Messi run away from the lava ball #shorts"
+   "id": "jO8ixufyzH4",
+   "canal": "SMX",
+   "vistas": 763589,
+   "ratio": 133.1,
+   "titulo": "Pásame la maldita manguera 💀 #futbol #football #soccer #lamineyamal #barcelona #edit #viral #humor"
   },
   {
-   "id": "MY9iQ2xzahc",
-   "canal": "J&L Studios ",
-   "vistas": 1171284,
-   "ratio": 47.4,
-   "titulo": "NEYMAR VS RONALDINHO — QUEM É O MELHOR? 🔥 #neymar #ronaldinho"
+   "id": "cQaDHg9uUt4",
+   "canal": "Cos Meme",
+   "vistas": 3795696,
+   "ratio": 78.3,
+   "titulo": "Haaland Found the Best Way to Eat Chocolate 😂🍫 #football #haaland #memes"
+  },
+  {
+   "id": "0AlwCeCZ4yY",
+   "canal": "Football Lover Jisan",
+   "vistas": 694508,
+   "ratio": 43.3,
+   "titulo": "Ronaldo vs Messi 2007: Who did it better? 🔥⚽ #shorts"
+  },
+  {
+   "id": "fyfgP1gFwWg",
+   "canal": "MoShow Sports - معاذ شو ",
+   "vistas": 395779,
+   "ratio": 160.2,
+   "titulo": "«الحكم طرده فوراً! 🟥😳 لكن هل العقوبة كافية؟ #Shorts»"
+  },
+  {
+   "id": "Yz_heQV_owQ",
+   "canal": "TOTALFUTT",
+   "vistas": 3329256,
+   "ratio": 76.5,
+   "titulo": "Ronaldinho Engava até os GOLEIROS!"
+  },
+  {
+   "id": "2CGBpO-c6hQ",
+   "canal": "Loop Touch Pro ",
+   "vistas": 2691466,
+   "ratio": 81.4,
+   "titulo": "Comment ‘FIRST TOUCH’ if you need yours ⚽️🎄 #football #soccer #footballshorts #footballtraining"
+  },
+  {
+   "id": "yIQfVh7NzFo",
+   "canal": "Chigo_10",
+   "vistas": 587913,
+   "ratio": 42.6,
+   "titulo": "Arda Guler Last Night⚽🥶 subscribe for more edits"
+  },
+  {
+   "id": "tgPehf04lxI",
+   "canal": "BallBloop",
+   "vistas": 2626999,
+   "ratio": 79.4,
+   "titulo": "Neymar & Haaland Gone Crazy 😂🔥 #Shorts #football #neymar #haaland"
   }
  ]
 }
