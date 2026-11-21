@@ -1,31 +1,32 @@
 {
- "fecha": "2026-11-20",
- "indice": 70,
- "subidas_semana": 69,
- "formato_mas_usado": "rueda",
+ "fecha": "2026-11-21",
+ "indice": 69,
+ "subidas_semana": 67,
+ "formato_mas_usado": "cabezas",
  "concentracion": 0.13,
- "parecido_titulos": 0.7,
+ "parecido_titulos": 0.71,
  "casi_identicos": 4,
  "medidos": 60,
  "musicas_distintas": 7,
  "reparto_semana": {
-  "rueda": 9,
-  "stop": 9,
-  "fitall": 3,
-  "trayectoria": 1,
+  "stop": 7,
+  "rueda": 8,
+  "balon": 7,
+  "q20balon": 3,
   "cabezas": 9,
-  "q20balon": 4,
-  "balon": 6,
   "piernas": 3,
   "circulo": 6,
   "slot": 5,
-  "cinta": 4,
-  "favorito": 5,
+  "cinta": 5,
+  "fitall": 1,
+  "favorito": 6,
   "penal": 3,
-  "dress": 2
+  "dress": 2,
+  "vs": 1,
+  "escape": 1
  },
  "alertas": [
-  "Los títulos se parecen 70% en promedio: falta variedad de frases."
+  "Los títulos se parecen 71% en promedio: falta variedad de frases."
  ],
  "lectura": "OJO: se empieza a ver repetitivo"
 }
