@@ -12,6 +12,10 @@ on:
         description: 'Videos EXTRA ya mismo (JSON: [{"fecha":"2026-11-12","hora":"18:30","tipo":"q20costo"}])'
         required: false
         default: ""
+      rehacer:
+        description: 'Rehacer el día objetivo aunque ya esté fabricado (fecha AAAA-MM-DD; solo si no hay nada subido de ese día)'
+        required: false
+        default: ""
 
 permissions:
   contents: write
@@ -42,7 +46,8 @@ jobs:
         continue-on-error: true
       - name: Plan del día objetivo
         id: plan
-        run: cd pipeline && echo "dia=$(python fabrica_dia.py 2 | tail -1)" >> "$GITHUB_OUTPUT"   # 2 días: reaccionar antes a las olas
+        run: cd pipeline && echo "dia=$(python fabrica_dia.py 2 | tail -1)" >> "$GITHUB_OUTPUT"
+        env: {REHACER: "${{ github.event.inputs.rehacer }}"}   # 2 días: reaccionar antes a las olas
       - name: Producción + control
         if: steps.plan.outputs.dia != 'nada'
         run: cd pipeline && python e5_produccion.py

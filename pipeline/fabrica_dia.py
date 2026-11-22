@@ -19,7 +19,11 @@ ART = timezone(timedelta(hours=-3))
 
 def ocupado(fecha):
     if any(p["fecha"] == fecha and p.get("video_id") and not p.get("reemplazado") and not __import__("re").match(r"o\d{4,8}_", p["id"]) for p in cargar("publicados.json", [])):
-        return True
+        return True                                                            # algo de ese día ya está en YouTube: NUNCA se rehace
+    import os
+    if os.environ.get("REHACER", "").strip() == fecha:                         # 22/11 (CEO): rehacer un día fabricado que todavía no se subió
+        print(f"rehacer {fecha}: se ignora el paquete anterior (no hay nada subido de ese día)", file=sys.stderr)
+        return False
     for vj in (RAIZ / "produccion").glob("semana_*/videos.json"):
         if any(m["fecha"] == fecha and not m.get("extra") for m in json.loads(vj.read_text())):
             return True
