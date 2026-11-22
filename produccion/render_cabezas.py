@@ -7,6 +7,7 @@ Uso: python3 produccion/render_cabezas.py guion.json
 guion: {"id", "cuerpo": "kylian_mbapp_13", "clave": "kylian_mbapp", "nombre": "Mbappé", "cabezas": [7 claves], "dur": 8.0, "vueltas": 2}
 """
 import json
+import os
 import math
 import subprocess
 import sys
@@ -26,7 +27,7 @@ import render_rueda as R
 ROOT = Path(__file__).resolve().parent
 W, H, FPS = 1080, 1920, 30
 FOTOS = json.loads((ROOT / "assets" / "fotos" / "frontales.json").read_text())
-ALTO_CABEZA = 255
+ALTO_CABEZA = 295 if os.environ.get("GANCHO_LIMPIO") == "1" else 255   # 22/11 versión limpia: cabezas más grandes
 T_ENCAJE = 0.45          # encaje en la costura del loop: nunca hay un "ya se resolvió" (Studio 07/11)
 
 

@@ -291,3 +291,4 @@ Fuentes: IA de YouTube Studio (capturas del CEO), comparación cuadro por cuadro
 4. **Formato nuevo "comparación de equipos"**: "Real Madrid vs Barcelona — Who wins?" (Footypoints hizo 38 M; la IA de YouTube dice que nuestro público mira comparaciones de equipos), con la lógica de parar en el momento justo, como PROPUESTA con muestra.
 5. Música propia con más ritmo (estilo phonk/trap) para los formatos cortos: produccion/musica_epica.py ya genera pistas por código; adaptala a 6-9 s con golpe en el loop.
 Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; inspector y prueba de humo antes de subir.
+- 22/11 (CEO: 'desde que arranque la semana'): versión limpia con caras más grandes en HEAD FIT (+15 %) y HEAD SLOT (+23 %); FIT ALL queda para el rediseño del Ingeniero. Se rehace la fábrica del 24/11 (no estaba subida) para que los primeros limpios salgan el martes.

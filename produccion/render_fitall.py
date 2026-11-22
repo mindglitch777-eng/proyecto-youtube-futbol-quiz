@@ -13,6 +13,7 @@ guion: {"id", "cuerpo": "cristiano_ronaldo_14", "senuelos": ["cristiano_ronaldo_
         "pos_correcto": 3}
 """
 import json
+import os
 import math
 import subprocess
 import sys
@@ -29,7 +30,7 @@ import render_rueda as RR
 ROOT = Path(__file__).resolve().parent
 REC = ROOT / "assets" / "recortes"
 W, H, FPS = 1080, 1920, 30
-CARA = 128                    # alto de cara (px) de todas las cabezas y del cuerpo: quedan parejas
+CARA = 128                    # 22/11: el tamaño de FIT ALL lo rediseña el Ingeniero (con 160 el anillo se salía de la pantalla)
 K_PELO = 0.75                 # cuánto pelo entra arriba de la cara (en caras)
 K_CUELLO = 1.06               # corte justo debajo del mentón: el cuello de la camiseta queda en el cuerpo (no delata)
 K_ANCHO = 1.05                # media anchura de la cabeza recortada (en caras): sin hombros ni camiseta (no delata)

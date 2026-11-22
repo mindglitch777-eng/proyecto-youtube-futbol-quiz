@@ -12,6 +12,7 @@ guion: {"id", "cuerpo": "kylian_mbapp_13", "clave": "kylian_mbapp", "nombre": "M
         "dur": 6.4, "vueltas": 3, "t_encaje": 0.45, "musica", "fondo", "pos_correcto": 2}
 """
 import json
+import os
 import math
 import random
 import subprocess
@@ -29,8 +30,9 @@ import render_rueda as R
 
 ROOT = Path(__file__).resolve().parent
 W, H, FPS = 1080, 1920, 30
-PASO = 300                      # alto de cada casilla del rodillo
-VENT = 230                      # medio ancho de la ventana
+PASO = 370 if os.environ.get("GANCHO_LIMPIO") == "1" else 300   # 22/11 versión limpia: rodillo más grande
+_PASO_VIEJO = 300                      # alto de cada casilla del rodillo
+VENT = 280 if os.environ.get("GANCHO_LIMPIO") == "1" else 230                      # medio ancho de la ventana
 DORADO = (255, 196, 30)
 QUIETO = 0.4                    # fracción de cada casilla en que el rodillo se frena (avanza a saltos, como una tragamonedas)
 
