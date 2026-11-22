@@ -1,41 +1,26 @@
 {
- "fecha": "2026-11-21",
- "autor": "Gerente IA · parte diario (21/11)",
+ "fecha": "2026-11-22",
+ "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
  "veredicto": {
-  "color": "green",
-  "titulo": "Volver a 6 por día con lo que rinde levantó el canal",
-  "frase": "1.030 suscriptores. Las vistas por día volvieron a ~65 K (el 18/11 eran 21 K) y la mediana de la semana subió 74 %. CONVEYOR STOP y HEAD SLOT son los que más empujan. Ahora falta la otra mitad de la monetización: 10 M de vistas en 90 días (vamos 11 %)."
+  "color": "amber",
+  "titulo": "1060 de 1.000 suscriptores ✅",
+  "frase": "Todo anda. Faltan videos de 10 K: la fábrica sigue probando formatos."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1.030",
-   "nota": "✅ meta de 1.000 cumplida el 20/11"
-  },
-  {
-   "label": "Vistas Shorts 90 días",
-   "valor": "1,08 M / 10 M",
-   "nota": "11 %"
-  },
-  {
-   "label": "Vistas del canal por día",
-   "valor": "+65 K · +68 K",
-   "nota": "20 y 21/11 (parcial); 18/11 +21 K"
+   "valor": "1060 / 1.000",
+   "nota": "faltan 0"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1,57",
-   "nota": "meta 3; venía en 1,0"
+   "valor": "0,86",
+   "nota": "meta 3"
   },
   {
-   "label": "CONVEYOR STOP",
-   "valor": "36.946",
-   "nota": "su mejor video (19/11)"
-  },
-  {
-   "label": "Mediana de la semana",
-   "valor": "2.280",
-   "nota": "+74 %"
+   "label": "Vistas de Shorts 90 días",
+   "valor": "1,14 M",
+   "nota": "26.4 semanas a 10 M"
   }
  ],
  "hallazgos": [
