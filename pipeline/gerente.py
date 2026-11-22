@@ -209,6 +209,11 @@ def main():
                oportunidades=oportunidades, cansados=cansados, formatos=formatos, horas=horas,
                mejores=recientes[:3], peores=recientes[-3:][::-1] if len(recientes) > 3 else [], olas_calientes=calientes, salud=salud,
                parte=previo.get("parte"))
+    try:                                                                       # 22/11: prueba A/B "versión limpia"
+        import prueba_limpio
+        out["prueba_limpio"] = prueba_limpio.main()
+    except Exception as e:
+        print("prueba limpia falló:", e)
     try:                                                                       # 19/11: parte automático (sin IA) si el agente no escribió el de hoy
         import parte_auto
         out["parte"] = parte_auto.aplicar(out)

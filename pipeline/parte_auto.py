@@ -57,6 +57,11 @@ def armar(G):
            for v in (G.get("peores") or [])[:2]]
     if fuertes is not None and fuertes < norte.get("meta_fuertes", 3):
         no.append(f"Videos de 10 K o más por día: {str(fuertes).replace('.', ',')} (meta {norte.get('meta_fuertes', 3)})")
+    pl = G.get("prueba_limpio") or {}
+    if pl.get("limpia", {}).get("videos") or pl.get("normal", {}).get("videos"):
+        L_, N_ = pl.get("limpia", {}), pl.get("normal", {})
+        funciona.append(f"Prueba VERSIÓN LIMPIA: {pl.get('veredicto')} · limpia {L_.get('videos', 0)} videos (x{L_.get('relativo', '-')} su formato, "
+                        f"{L_.get('pct_visto', '-')} % visto) vs normal {N_.get('videos', 0)} (x{N_.get('relativo', '-')}, {N_.get('pct_visto', '-')} %)")
     hice = []
     poda = salud.get("poda") or {}
     hice += [f"Poda automática: {nombre(h['formato'])} {h['cambio']} ({h['motivo']})" for h in poda.get("historial", []) if h["fecha"] == hoy]

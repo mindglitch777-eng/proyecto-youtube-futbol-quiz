@@ -277,3 +277,17 @@ Se termina la prueba de 8 por día (16-22/11) y el **24/11** se decide con núme
 - **Revisar el 2026-11-22:** DRESS (los 2 a 48 h). **23/11:** mensaje semanal (comparar con el Gerente Gemini del #16).
 - **Para el CEO:** nada.
 - 21/11 (CEO): Haaland suma como SUPERESTRELLA (el más visto por hora en la investigación). Entra en WHEEL (piernas erling_haaland_3), CONVEYOR/ESCAPE (torso erling_haaland_1), SKILL STOP (defensor, pelota radio 124), títulos y GOALS BY AGE. NO en VS (foto con brazos abiertos: queda chico y cortado). Inspector PASA.
+
+## 22/11 · CAMBIO DE RUMBO (CEO): ejecución de los canales que explotan, sin cambiar la estrategia (6 por día)
+Fuentes: IA de YouTube Studio (capturas del CEO), comparación cuadro por cuadro con Gemini (reports/29_comparacion_virales.md) y la historia de 24 canales virales (reports/28_competencia_historia.md).
+- Datos de YouTube: 6 por día = 74,6 K vistas por día (12,4 K por video) vs 8+ = 51 K y 3-5 = 34 K → SE QUEDAN 6 POR DÍA. La gente se va entre 5,5 y 6,0 s (justo el cartel final). Para pasar 40 K hace falta 180-200 % visto (que lo vuelvan a ver); desde el 16/11 cada repetición cuenta como vista. Los mejores superan 64 % de "eligió verlo"; los peores 37-46 %. 82 % del público es nuevo.
+- HECHO: prueba A/B "VERSIÓN LIMPIA" en 13 formatos (fabrica.LIMPIO_PRUEBA, alterna por formato): sin carteles grandes ni cartel final, solo el gancho chico el primer segundo, el video vuelve a empezar sin corte. Medición: pipeline/prueba_limpio.py (relativo a la mediana del formato), decide sola con ≥4 por lado y ≥25 % de diferencia; sale en el parte diario.
+- HECHO: CONVEYOR usa más el título "Find X's real body" (los 2 mejores del canal). FIT ALL protegido de la poda hasta el 30/11.
+
+### PEDIDO DEL CEO PARA EL INGENIERO (lunes 23/11, prioridad en este orden)
+1. **Caras y cuerpos MÁS GRANDES** en FIT ALL, HEAD FIT, HEAD SLOT y DRESS (que ocupen 60-80 % de la pantalla, como RyukX 12,6 M y Muzam 31 M): hoy son chicos con mucho fondo vacío. Hacelo como parámetro `escala` del guion (no cambies el comportamiento por defecto) y sumalo a la prueba limpia.
+2. **FIT ALL al estilo RyukX** (12,6 M, 6 s): giro más rápido y continuo, la cara gigante, sin pantallas de nivel intermedias, corta de golpe y vuelve a empezar. Comparación completa en reports/29_comparacion_virales.md.
+3. **Formato nuevo "caras que giran y encajan"** (número 1 de la lista de ideas, pipeline/datos/ideas.json; ejemplo https://www.youtube.com/shorts/vSCSgT8so3c) con nuestra vuelta propia, como PROPUESTA con muestra.
+4. **Formato nuevo "comparación de equipos"**: "Real Madrid vs Barcelona — Who wins?" (Footypoints hizo 38 M; la IA de YouTube dice que nuestro público mira comparaciones de equipos), con la lógica de parar en el momento justo, como PROPUESTA con muestra.
+5. Música propia con más ritmo (estilo phonk/trap) para los formatos cortos: produccion/musica_epica.py ya genera pistas por código; adaptala a 6-9 s con golpe en el loop.
+Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; inspector y prueba de humo antes de subir.

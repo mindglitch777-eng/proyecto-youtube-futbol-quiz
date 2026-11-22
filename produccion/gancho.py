@@ -8,12 +8,13 @@ GANCHO + APUESTA + CTA (guía de la IA de YouTube para subir "visto vs. descarta
 Cada formato tiene sus propios textos (no todos iguales).
 """
 import math
+import os
 import random
 from functools import lru_cache
 from pathlib import Path
 
 import numpy as np
-from PIL import ImageDraw, ImageFont
+from PIL import Image, ImageDraw, ImageFont
 
 ROOT = Path(__file__).resolve().parent
 FUENTE = ROOT / "assets" / "fuentes" / "ArchivoBlack-Regular.ttf"
@@ -166,6 +167,29 @@ def cartel_gancho(im, txt, cy, pop=1.0):
 
 
 def capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False, grande=True):
+    if os.environ.get("GANCHO_LIMPIO") == "1":                                 # 22/11 prueba A/B "versión limpia" (CEO + IA de YouTube)
+        return capa_limpia(im, t, tx, cy, ancho_max)
+    return _capa(im, t, dur, tx, cy, ancho_max, tam, sin_fin, grande)
+
+
+def capa_limpia(im, t, tx, cy, ancho_max=1000):
+    """VERSIÓN LIMPIA: el juego se ve entero desde el cuadro 0. Solo el gancho, chico, el primer segundo (se apaga 1,0-1,3 s);
+    sin apuesta ni CTA ni cartel final: el video vuelve a empezar sin corte (desde el 16/11 cada repetición cuenta como vista)."""
+    if t >= 1.3:
+        return im
+    a = 1.0 if t < 1.0 else 1 - (t - 1.0) / 0.3
+    if a <= 0:
+        return im
+    capa_ = Image.new("RGBA", im.size, (0, 0, 0, 0))
+    cartel(capa_, tx["gancho"], cy, min(ancho_max, 860), 64, 1.0)
+    if a < 1:
+        capa_.putalpha(capa_.split()[3].point(lambda v: int(v * a)))
+    if im.mode == "RGBA":
+        im.alpha_composite(capa_); return im
+    base = im.convert("RGBA"); base.alpha_composite(capa_); im.paste(base.convert(im.mode)); return im
+
+
+def _capa(im, t, dur, tx, cy, ancho_max=1000, tam=88, sin_fin=False, grande=True):
     """Dibuja el texto que toca en el segundo t: gancho (0-1,5 s), apuesta (medio) o CTA (último 1,2 s).
     sin_fin=True (loops cortos): gancho → apuesta → CTA en el medio → el gancho vuelve 0,9 s antes de la costura,
     así el final no se nota (los datos de Studio mostraban la caída justo cuando "terminaba" el reto)."""

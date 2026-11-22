@@ -400,7 +400,8 @@ TORSOS_ESTRELLA = {"cristiano_ronaldo": ["cristiano_ronaldo_0"], "lionel_messi":
                    "erling_haaland": ["erling_haaland_1"]}
 TIT_CINTA = ["{n} vs {a} or {b} stop challenge 🛑🔥", "{n} vs {a} or {b} conveyor challenge 😱🛑", "Stop {n}'s body on the belt 🛑 {a} or {b}?",
              "Find {n}'s real body 🛑🔥 {a} or {b}?",
-             "{n}'s body is on the belt 🛑 {a} or {b}?", "{n} on the conveyor 😱 Only one body fits: {a} or {b}?"]   # 19/11: más estructuras
+             "{n}'s body is on the belt 🛑 {a} or {b}?", "{n} on the conveyor 😱 Only one body fits: {a} or {b}?",
+             "Find {n}'s real body 🛑🔥 {a} or {b}?", "Find {n}'s real body 🛑🔥 {a} or {b}?"]   # 22/11 (CEO + IA de YouTube): "Find X's real body" = los 2 mejores del canal (37 K y 33 K) → sale más seguido (serie)
 TIT_SLOT = ["{n} vs {a} or {b} head slot 🎰🛑", "Hit the {n} JACKPOT 🎰 {a} or {b}?", "Fit {n}'s head 🎰 Only 1% hit the jackpot",
             "{n} head fit slot machine 😱🎰 {a} or {b}?"]
 
@@ -775,9 +776,17 @@ def tag(n):
     return "#" + "".join(ch for ch in n.lower() if ch.isalnum())
 
 
+# 22/11 PRUEBA A/B "VERSIÓN LIMPIA" (CEO; IA de YouTube Studio + comparación cuadro por cuadro con los virales + 24 canales):
+# la mitad de los videos de cada formato sale sin carteles grandes ni cartel final (vuelve a empezar sin corte). Se mide en prueba_limpio.py.
+LIMPIO_PRUEBA = {"rueda", "cinta", "favorito", "cabezas", "slot", "fitall", "balon", "penal", "escape", "cano", "vs", "piernas", "dress"}
+
+
 def render(args):
     tipo, ruta = args
-    r = subprocess.run([sys.executable, str(ROOT / SCRIPT[tipo]), str(ruta)], capture_output=True, text=True, cwd=ROOT)
+    import os
+    limpio = json.loads(Path(ruta).read_text()).get("limpio")
+    env = dict(os.environ, GANCHO_LIMPIO="1" if limpio else "0")
+    r = subprocess.run([sys.executable, str(ROOT / SCRIPT[tipo]), str(ruta)], capture_output=True, text=True, cwd=ROOT, env=env)
     return ruta, r.returncode, r.stderr[-400:]
 
 
@@ -998,6 +1007,9 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             g["dur"] = sl["dur"]
         desc = _cuatro_hashtags(desc)                                          # 15/11 (IA de YouTube): 3-4 hashtags, no más
         ruta = sem / "guiones" / f"{gid}.json"
+        if tipo in LIMPIO_PRUEBA:                                             # 22/11 prueba A/B "versión limpia": alterna por formato
+            k = f"limpio_{tipo}"; V.contadores[k] = V.contadores.get(k, 0) + 1
+            g["limpio"] = V.contadores[k] % 2 == 1
         ruta.write_text(json.dumps(g, ensure_ascii=False, indent=1))
         desc_completa = (f"{desc}\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n"
                          f"{creditos(fotos)}")
@@ -1010,7 +1022,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                                descripcion=desc_completa, fijado=fijado, jugadores=nombres,
                                tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4",
                                **({"variante": g["arranque"]} if g.get("arranque") else {}),
-                               **({"exp": sl["exp"]} if sl.get("exp") else {})))      # Fase 2: prueba A/B del cerebro (se mide sola)
+                               **({"exp": sl["exp"]} if sl.get("exp") else {}),
+                               **({"limpio": g["limpio"]} if "limpio" in g else {})))      # Fase 2: prueba A/B del cerebro (se mide sola)
         trabajos.append((tipo, ruta))
         filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
     if not renderizar:                                                          # prueba de humo: solo guiones y títulos (sin video ni memoria)
