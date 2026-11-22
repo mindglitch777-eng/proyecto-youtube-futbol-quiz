@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-22 14:35",
+ "fecha": "2026-11-22 15:28",
  "tareas": [
   {
    "id": "ola-X2pLfT-C7AQ",
@@ -18,14 +18,12 @@
    "id": "recambio-2026-11-22",
    "prioridad": 3,
    "tipo": "RECAMBIO",
-   "que": "Hay 7 formatos fuertes en rotación (cinta, favorito, slot, rueda, cabezas, balon, penal) y se cansan rueda. Construir un formato nuevo de la misma lógica (elegir entre superestrellas + parar justo), más difícil o con otra vuelta, como propuesta con muestra. Mirar primero el informe (reports/dossier/) por ideas.",
+   "que": "Hay 5 formatos fuertes en rotación (cinta, slot, favorito, rueda, penal) y se cansan rueda. Construir un formato nuevo de la misma lógica (elegir entre superestrellas + parar justo), más difícil o con otra vuelta, como propuesta con muestra. Mirar primero el informe (reports/dossier/) por ideas.",
    "fuertes": [
     "cinta",
-    "favorito",
     "slot",
+    "favorito",
     "rueda",
-    "cabezas",
-    "balon",
     "penal"
    ],
    "cansados": [
