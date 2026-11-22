@@ -1364,6 +1364,16 @@
    [
     "cristiano_ronaldo_14",
     "david_beckham_3",
+    "erling_haaland_1",
+    "lamine_yamal_0",
+    "ronaldinho_3",
+    "thierry_henry_0",
+    "vin_cius_j_nior_3",
+    "zlatan_ibrahimovi_2"
+   ],
+   [
+    "cristiano_ronaldo_14",
+    "david_beckham_3",
     "lamine_yamal_0",
     "lionel_messi_0",
     "neymar_2",
@@ -1400,6 +1410,16 @@
     "raphinha_0",
     "ronaldinho_0",
     "vin_cius_j_nior_0"
+   ],
+   [
+    "erling_haaland_3",
+    "cristiano_ronaldo_0",
+    "david_beckham_0",
+    "kylian_mbapp_0",
+    "lionel_messi_0",
+    "ronaldinho_1",
+    "zinedine_zidane_0",
+    "zlatan_ibrahimovi_1"
    ],
    [
     "kylian_mbapp_12",
@@ -2314,6 +2334,16 @@
    [
     "neymar_1",
     "cristiano_ronaldo_0",
+    "david_beckham_0",
+    "lionel_messi_0",
+    "ronaldinho_1",
+    "thierry_henry_0",
+    "vin_cius_j_nior_3",
+    "zinedine_zidane_0"
+   ],
+   [
+    "neymar_1",
+    "cristiano_ronaldo_0",
     "lamine_yamal_0",
     "lautaro_mart_nez_1",
     "mohamed_salah_0",
@@ -2887,6 +2917,16 @@
     "lamine_yamal_0"
    ],
    [
+    "erling_haaland_3",
+    "3",
+    "kylian_mbapp_0",
+    "cristiano_ronaldo_0",
+    "lamine_yamal_0",
+    "lionel_messi_0",
+    "vin_cius_j_nior_3",
+    "neymar_2"
+   ],
+   [
     "kylian_mbapp_12",
     "1",
     "cristiano_ronaldo_0",
@@ -2947,6 +2987,16 @@
     "vin_cius_j_nior_0",
     "lionel_messi_0",
     "neymar_2",
+    "cristiano_ronaldo_0"
+   ],
+   [
+    "lamine_yamal_10",
+    "4",
+    "vin_cius_j_nior_0",
+    "lionel_messi_0",
+    "neymar_2",
+    "kylian_mbapp_0",
+    "erling_haaland_1",
     "cristiano_ronaldo_0"
    ],
    [
@@ -3011,6 +3061,16 @@
     "lamine_yamal_0",
     "kylian_mbapp_0",
     "lionel_messi_0"
+   ],
+   [
+    "vin_cius_j_nior_14",
+    "3",
+    "lamine_yamal_0",
+    "erling_haaland_1",
+    "kylian_mbapp_0",
+    "neymar_2",
+    "lionel_messi_0",
+    "cristiano_ronaldo_0"
    ],
    [
     "vin_cius_j_nior_14",
@@ -3729,7 +3789,10 @@
   "tung_tung_0",
   "bombardiro_0",
   "trallallero_1",
-  "trallallero_2"
+  "trallallero_2",
+  "patapim_0",
+  "chipi_chapa_0",
+  "bombardiro_0"
  ],
  "titulos": {
   "plinko": [
@@ -4046,8 +4109,6 @@
    1
   ],
   "rueda": [
-   3,
-   0,
    2,
    1,
    3,
@@ -4142,6 +4203,8 @@
    3,
    0,
    3,
+   4,
+   5,
    4,
    5,
    4,
@@ -4301,7 +4364,10 @@
    0,
    2,
    1,
-   2
+   2,
+   0,
+   2,
+   0
   ],
   "fitall": [
    2,
@@ -4361,7 +4427,10 @@
    4,
    5,
    4,
-   5
+   5,
+   1,
+   4,
+   0
   ],
   "favorito": [
    3,
@@ -4378,6 +4447,9 @@
    1,
    3,
    1,
+   0,
+   2,
+   3,
    0
   ],
   "vs": [
@@ -4392,6 +4464,9 @@
    3,
    1,
    0,
+   2,
+   1,
+   3,
    2
   ],
   "cano": [
@@ -4406,7 +4481,10 @@
    4,
    2,
    1,
-   0
+   0,
+   3,
+   1,
+   2
   ]
  },
  "semillas": [
@@ -4521,9 +4599,6 @@
    "zinedine_zidane"
   ],
   "rueda_ult": [
-   "kylian_mbapp_12",
-   "vin_cius_j_nior_14",
-   "neymar_1",
    "lamine_yamal_10",
    "lionel_messi_3",
    "cristiano_ronaldo_14",
@@ -4532,7 +4607,10 @@
    "vin_cius_j_nior_14",
    "kylian_mbapp_12",
    "lamine_yamal_10",
-   "lionel_messi_3"
+   "lionel_messi_3",
+   "cristiano_ronaldo_14",
+   "erling_haaland_3",
+   "neymar_1"
   ],
   "piernas_ult": [
    "lionel_messi_3",
@@ -4558,9 +4636,6 @@
    "kylian_mbapp_12"
   ],
   "cinta_ult": [
-   "kylian_mbapp_12",
-   "lamine_yamal_10",
-   "cristiano_ronaldo_14",
    "neymar_1",
    "lionel_messi_3",
    "vin_cius_j_nior_14",
@@ -4569,12 +4644,12 @@
    "lionel_messi_3",
    "cristiano_ronaldo_14",
    "neymar_1",
-   "kylian_mbapp_12"
+   "kylian_mbapp_12",
+   "vin_cius_j_nior_14",
+   "lamine_yamal_10",
+   "erling_haaland_3"
   ],
   "favorito_ult": [
-   "vin_cius_j_nior",
-   "lionel_messi",
-   "lamine_yamal",
    "cristiano_ronaldo",
    "neymar",
    "kylian_mbapp",
@@ -4583,7 +4658,10 @@
    "lamine_yamal",
    "cristiano_ronaldo",
    "neymar",
-   "kylian_mbapp"
+   "kylian_mbapp",
+   "vin_cius_j_nior",
+   "lionel_messi",
+   "lamine_yamal"
   ],
   "fit_ult": [
    "cristiano_ronaldo",
@@ -4608,14 +4686,18 @@
    "lionel_messi_3|kylian_mbapp_12"
   ],
   "escape_ult": [
-   "cristiano_ronaldo",
-   "lamine_yamal",
    "kylian_mbapp",
    "lionel_messi",
    "vin_cius_j_nior",
    "neymar",
    "lamine_yamal",
-   "vin_cius_j_nior"
+   "vin_cius_j_nior",
+   "cristiano_ronaldo",
+   "erling_haaland",
+   "lionel_messi",
+   "kylian_mbapp",
+   "neymar",
+   "lamine_yamal"
   ],
   "balon_fondo": [
    "estadio_0~espejo~frio",
@@ -4624,7 +4706,10 @@
    "estadio_0~frio",
    "estadio_6~calido",
    "estadio_0~espejo~frio",
-   "estadio_6~espejo~calido"
+   "estadio_6~espejo~calido",
+   "estadio_0~espejo~calido",
+   "estadio_0~calido",
+   "estadio_6"
   ],
   "cano_ult": [
    "lamine_yamal_3",
@@ -4654,13 +4739,19 @@
    "haaland|club|edad26",
    "nueva_era|liga|full",
    "big4|europa|full",
-   "goat_neymar|seleccion|full"
+   "goat_neymar|seleccion|full",
+   "brasil|total|full",
+   "fenomenos|europa|full",
+   "big4|total|full"
   ],
   "goles_paleta": [
    0,
    2,
    4,
-   3
+   3,
+   1,
+   5,
+   2
   ],
   "vs_fondo": [
    "estadio_0~calido",

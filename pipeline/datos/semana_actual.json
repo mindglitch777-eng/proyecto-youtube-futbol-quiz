@@ -1,30 +1,30 @@
 {
- "inicio": "2026-11-23",
+ "inicio": "2026-11-24",
  "videos": [
   {
-   "id": "s1123_01_lun23_1300_rueda",
+   "id": "s1124_01_mar24_1300_rueda",
    "n": 1,
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "13:00",
    "tipo": "rueda",
    "formato": "WHEEL STOP",
-   "titulo": "Messi vs Mbappé or Neymar stop challenge 😱🔥 #messi #mbappe #neymar",
-   "descripcion": "Stop the wheel when Messi's body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#messi #mbappe #neymar #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "titulo": "Neymar vs Vinícius or Ronaldo stop challenge 😱🔥 #neymar #ronaldo #vinicius",
+   "descripcion": "Stop the wheel when Neymar's body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#neymar #ronaldo #vinicius #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
    "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
-    "Messi",
-    "Mbappé",
-    "Neymar"
+    "Neymar",
+    "Ronaldo",
+    "Vinícius"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "messi",
-    "mbappé",
-    "neymar"
+    "neymar",
+    "ronaldo",
+    "vinícius"
    ],
-   "archivo": "s1123_01_lun23_1300_rueda.mp4",
+   "archivo": "s1124_01_mar24_1300_rueda.mp4",
    "exp": {
     "id": "e3_rueda_titulo",
     "brazo": "vs"
@@ -33,129 +33,135 @@
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   },
   {
-   "id": "s1123_02_lun23_1500_balon",
-   "n": "Yamal",
-   "fecha": "2026-11-23",
+   "id": "s1124_02_mar24_1500_balon",
+   "n": "Neymar",
+   "fecha": "2026-11-24",
    "hora": "15:00",
    "tipo": "balon",
    "formato": "BALLON D'OR 100%",
-   "titulo": "Stop the Ballon d'Or at 100% 🏆 Neymar edition #neymar #ballondor",
-   "descripcion": "Pause when the Ballon d'Or fits in Neymar's hands (100%) 🏆\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#neymar #ballondor #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "titulo": "Freeze the Ballon d'Or in Mbappé's hands 🏆 Stop at 100% #mbappe #ballondor",
+   "descripcion": "Pause when the Ballon d'Or fits in Mbappé's hands (100%) 🏆\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#mbappe #ballondor #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
    "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
-    "Neymar"
+    "Mbappé"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "neymar"
+    "mbappé"
    ],
-   "archivo": "s1123_02_lun23_1500_balon.mp4",
+   "archivo": "s1124_02_mar24_1500_balon.mp4",
    "listo": true,
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   },
   {
-   "id": "s1123_03_lun23_1700_vs",
+   "id": "s1124_03_mar24_1700_goles",
    "n": 3,
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "17:00",
-   "tipo": "vs",
-   "formato": "VS STOP",
-   "titulo": "Who wins? Messi vs Mbappé 🛑 Only 1% stop it #messi #mbappe",
-   "descripcion": "Pause when the ball is in YOUR player's gold zone 👑 Messi or Mbappé? Who did you make win? Comment 👇\n#messi #mbappe #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "Who did you make win? 👑 And how many tries did it take? I read them all 👇",
+   "tipo": "goles",
+   "formato": "GOALS BY AGE",
+   "titulo": "Who had more? Ronaldo vs Messi vs Lewandowski vs Zlatan goals by age 📊 #ronaldo #messi",
+   "descripcion": "Goals by age: Ronaldo vs Messi vs Lewandowski vs Zlatan. Official goals (club + country), season by season.\nWho's the GOAT? Comment 👇\n#ronaldo #messi #lewandowski #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who's the GOAT for you? 👇",
    "jugadores": [
+    "Ronaldo",
     "Messi",
-    "Mbappé"
+    "Lewandowski",
+    "Zlatan"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
+    "ronaldo",
     "messi",
-    "mbappé"
+    "lewandowski",
+    "zlatan"
    ],
-   "archivo": "s1123_03_lun23_1700_vs.mp4",
+   "archivo": "s1124_03_mar24_1700_goles.mp4",
    "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
+   "control": "NO PASA: brillo del cuadro 0 ≥ 130; cara más grande ≥ 3 % de la pantalla en el cuadro 0; movimiento en el primer segundo ≥ 4; nunca más de 4 s sin un cambio grande en pantalla; duración ≤ 25 s (FIND 12-18 s)"
   },
   {
-   "id": "s1123_04_lun23_2000_cano",
+   "id": "s1124_04_mar24_2000_escape",
    "n": 4,
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "20:00",
-   "tipo": "cano",
-   "formato": "SKILL STOP",
-   "titulo": "Henry skills vs Mbappé 🛑 Stop it between the legs #henry #mbappe",
-   "descripcion": "Pause when the ball is between Mbappé's legs 🛑 Only 1% nutmeg him. How many tries? Comment 👇\n#henry #mbappe #football #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries to nutmeg him? 😤 Be honest, I read them all 👇",
+   "tipo": "escape",
+   "formato": "STOP TO ESCAPE",
+   "titulo": "Neymar vs Zlatan vs Yamal: free your GOAT 🔑🛑 #neymar #zlatan #yamal",
+   "descripcion": "Stop the key in the lock to free your GOAT 🔑🛑 How many tries did it take you? 👇\n#neymar #zlatan #yamal #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who did you free, and on which try? 🔑 First try = drop a 🔥",
    "jugadores": [
-    "Henry",
-    "Mbappé"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "henry",
-    "mbappé"
-   ],
-   "archivo": "s1123_04_lun23_2000_cano.mp4",
-   "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
-  },
-  {
-   "id": "s1123_05_lun23_2130_cinta",
-   "n": 5,
-   "fecha": "2026-11-23",
-   "hora": "21:30",
-   "tipo": "cinta",
-   "formato": "CONVEYOR STOP",
-   "titulo": "Mbappé on the conveyor 😱 Only one body fits: Neymar or Yamal? #mbappe #neymar #yamal",
-   "descripcion": "Stop the belt when Mbappé's REAL body is on top of the legs 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#mbappe #neymar #yamal #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
-   "jugadores": [
-    "Mbappé",
     "Neymar",
+    "Zlatan",
     "Yamal"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "mbappé",
     "neymar",
+    "zlatan",
     "yamal"
    ],
-   "archivo": "s1123_05_lun23_2130_cinta.mp4",
+   "archivo": "s1124_04_mar24_2000_escape.mp4",
    "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
+   "control": "NO PASA: brillo del cuadro 0 ≥ 130; cara más grande ≥ 3 % de la pantalla en el cuadro 0; movimiento en el primer segundo ≥ 4; nunca más de 4 s sin un cambio grande en pantalla"
   },
   {
-   "id": "s1123_06_lun23_2300_favorito",
-   "n": 6,
-   "fecha": "2026-11-23",
-   "hora": "23:00",
-   "tipo": "favorito",
-   "formato": "STOP ON YOUR FAVORITE",
-   "titulo": "Stop the ball on your favorite player ⚽🛑 Mbappé, Vinícius or Henry? #mbappe #vinicius #henry",
-   "descripcion": "Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n#mbappe #vinicius #henry #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
+   "id": "s1124_05_mar24_2130_cinta",
+   "n": 5,
+   "fecha": "2026-11-24",
+   "hora": "21:30",
+   "tipo": "cinta",
+   "formato": "CONVEYOR STOP",
+   "titulo": "Haaland vs Messi or Ronaldo stop challenge 🛑🔥 #haaland #messi #ronaldo",
+   "descripcion": "Stop the belt when Haaland's REAL body is on top of the legs 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#haaland #messi #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
-    "Mbappé",
-    "Vinícius",
-    "Henry"
+    "Haaland",
+    "Messi",
+    "Ronaldo"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "mbappé",
-    "vinícius",
-    "henry"
+    "haaland",
+    "messi",
+    "ronaldo"
    ],
-   "archivo": "s1123_06_lun23_2300_favorito.mp4",
+   "archivo": "s1124_05_mar24_2130_cinta.mp4",
+   "listo": true,
+   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
+  },
+  {
+   "id": "s1124_06_mar24_2300_favorito",
+   "n": 6,
+   "fecha": "2026-11-24",
+   "hora": "23:00",
+   "tipo": "favorito",
+   "formato": "STOP ON YOUR FAVORITE",
+   "titulo": "Stop the ball on your favorite player ⚽🛑 Yamal, Ronaldinho or Vinícius? #yamal #ronaldinho #vinicius",
+   "descripcion": "Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n#yamal #ronaldinho #vinicius #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
+   "jugadores": [
+    "Yamal",
+    "Ronaldinho",
+    "Vinícius"
+   ],
+   "tags": [
+    "football",
+    "soccer",
+    "shorts",
+    "yamal",
+    "ronaldinho",
+    "vinícius"
+   ],
+   "archivo": "s1124_06_mar24_2300_favorito.mp4",
    "exp": {
     "id": "e4_favorito_leyendas",
     "brazo": true

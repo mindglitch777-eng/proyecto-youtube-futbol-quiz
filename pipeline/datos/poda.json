@@ -16,6 +16,11 @@
    "fecha": "2026-11-20",
    "rinde": "mediana 4,262 vs canal 1,844",
    "videos": 4
+  },
+  "slot": {
+   "fecha": "2026-11-22",
+   "rinde": "mediana 8,460 vs canal 2,188",
+   "videos": 4
   }
  },
  "historial": [
@@ -36,7 +41,13 @@
    "formato": "balon",
    "cambio": "promovido",
    "motivo": "mediana 4,262 vs canal 1,844"
+  },
+  {
+   "fecha": "2026-11-22",
+   "formato": "slot",
+   "cambio": "promovido",
+   "motivo": "mediana 8,460 vs canal 2,188"
   }
  ],
- "mediana_canal": 1766
+ "mediana_canal": 2188
 }

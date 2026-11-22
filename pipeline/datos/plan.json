@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-23",
+ "inicio": "2026-11-24",
  "grilla": [
   "13:00 prueba",
   "15:00 favorito",
@@ -39,22 +39,27 @@
    "fecha": "2026-11-20",
    "rinde": "mediana 4,262 vs canal 1,844",
    "videos": 4
+  },
+  "slot": {
+   "fecha": "2026-11-22",
+   "rinde": "mediana 8,460 vs canal 2,188",
+   "videos": 4
   }
  },
  "puntaje": {
-  "rueda": 329.4,
+  "rueda": 354.1,
   "stop": 89.6,
-  "cabezas": 163.4,
-  "cinta": 242.5,
-  "dress": 324.8,
-  "fitall": 87.5,
-  "balon": 99.2,
-  "favorito": 134.8,
-  "circulo": 67.4,
-  "penal": 39.4,
-  "slot": 50.9,
+  "cabezas": 167.3,
+  "cinta": 270.9,
+  "dress": 263.2,
+  "fitall": 87.6,
+  "balon": 113.7,
+  "favorito": 152.8,
+  "slot": 98.6,
+  "circulo": 65.2,
+  "penal": 66.9,
   "find": 37.6,
-  "piernas": 70.0,
+  "piernas": 83.5,
   "pared": 62.2,
   "otros": 54.0,
   "ring": 73.1,
@@ -70,7 +75,7 @@
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "13:00",
    "tipo": "rueda",
    "titulo_estilo": "vs",
@@ -80,27 +85,27 @@
    }
   },
   {
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "15:00",
    "tipo": "balon"
   },
   {
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "17:00",
-   "tipo": "vs"
+   "tipo": "goles"
   },
   {
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "20:00",
-   "tipo": "cano"
+   "tipo": "escape"
   },
   {
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "21:30",
    "tipo": "cinta"
   },
   {
-   "fecha": "2026-11-23",
+   "fecha": "2026-11-24",
    "hora": "23:00",
    "tipo": "favorito",
    "leyendas": true,
