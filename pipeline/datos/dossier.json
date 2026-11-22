@@ -1,25 +1,25 @@
 {
  "fecha": "2026-11-22",
  "canales_seguidos": 80,
- "canales_nuevos": 17,
- "revisados": 176,
- "fuera_de_serie": 357,
+ "canales_nuevos": 21,
+ "revisados": 153,
+ "fuera_de_serie": 307,
  "interacciones": {
   "comentar": {
-   "videos": 50,
-   "mediana": 1852567
+   "videos": 58,
+   "mediana": 1958059
   },
   "ninguna": {
-   "videos": 12,
-   "mediana": 2076610
+   "videos": 15,
+   "mediana": 1938192
+  },
+  "pausar": {
+   "videos": 4,
+   "mediana": 3218255
   },
   "elegir": {
    "videos": 4,
    "mediana": 6264990
-  },
-  "pausar": {
-   "videos": 3,
-   "mediana": 3432259
   },
   "adivinar": {
    "videos": 3,
@@ -266,6 +266,29 @@
    "idea_para_nosotros": "Crear una animación 2D de una tanda de penaltis donde una diana móvil cambia entre dos superestrellas y el usuario debe pausar exactamente cuando la diana encaje en el ángulo de su jugador preferido."
   },
   {
+   "id": "xKKMqLvW-VU",
+   "canal": "Trivia Pitch",
+   "subs": 964,
+   "nuevo": true,
+   "vistas": 1080579,
+   "ratio": 32.0,
+   "puntaje": 37.63,
+   "nombre_formato": "Find the Real Player",
+   "mecanica": "Aparece una grilla de 16 fotos de caras editadas con filtros donde solo una es real, y hay que pausar el video en el segundo exacto para adivinar cuál es el jugador correcto antes de que termine la cuenta regresiva.",
+   "primer_segundo": "Se ve el título 'FIND HOLAND' junto a una animación de un hombre confuso y una cuadrícula de 16 rostros con una cuenta regresiva de 3 segundos.",
+   "por_que_engancha": "Genera curiosidad visual y desafía la velocidad de reacción del espectador al obligarlo a detener el video en el momento justo para acertar.",
+   "interaccion": "pausar",
+   "jugadores": [
+    "Haaland",
+    "Yamal",
+    "Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 5,
+   "idea_para_nosotros": "Podríamos hacer un '¿Cuál es el verdadero?' usando fotos de la infancia de los jugadores mezcladas con caras deformadas con IA, desafiando a pausar en el correcto."
+  },
+  {
    "id": "ZD9-f1-LQg0",
    "canal": "Cris07",
    "subs": 4810,
@@ -378,100 +401,78 @@
    "replicable_con_codigo": 4,
    "encaja_con_nuestra_logica": 4,
    "idea_para_nosotros": "Hacer un juego tipo 'Tres en raya' (Tic-Tac-Toe) animado donde el usuario deba pausar justo cuando se alineen tres fotos idénticas de su estrella favorita para ganar."
-  },
-  {
-   "id": "w4niVaBlliA",
-   "canal": "FootyEdits FC",
-   "subs": 39000,
-   "nuevo": true,
-   "vistas": 8024296,
-   "ratio": 27.6,
-   "puntaje": 28.82,
-   "nombre_formato": "Father and Son Stat Meme",
-   "mecanica": "Primero muestra al hijo de Messi fallando de forma graciosa mientras la carta de FIFA muestra una baja de nivel. Luego muestra al hijo de Kane marcando gol y celebrando junto a su padre mientras sus estadísticas suben.",
-   "primer_segundo": "Aparece un niño con la camiseta del Barcelona etiquetado como 'Messi.Son' y una carta de FIFA de Messi de 102 de media.",
-   "por_que_engancha": "Genera humor mediante la comparación irónica y la parodia de las habilidades heredadas de las superestrellas.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Lionel Messi",
-    "Harry Kane"
-   ],
-   "usa_clips_reales": true,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Podemos hacer una ruleta dinámica donde el usuario deba pausar para elegir qué hijo de futbolista (Messi, Ronaldo, Haaland) hereda las mejores estadísticas de su padre. Si detienen el video a tiempo, desbloquean la carta '99 OVR Futura Leyenda'."
   }
  ],
  "sin_analizar": [
   {
-   "id": "2CGBpO-c6hQ",
-   "canal": "Loop Touch Pro ",
-   "vistas": 3220006,
-   "ratio": 86.9,
-   "titulo": "Comment ‘FIRST TOUCH’ if you need yours ⚽️🎄 #football #soccer #footballshorts #footballtraining"
+   "id": "Ug4--LNNFp8",
+   "canal": "FootballPlanet",
+   "vistas": 953097,
+   "ratio": 34.0,
+   "titulo": "Lamine se tiñe el pelo de azul 😯🟦 #shorts #lamineyamal #futbol #viral #españa"
   },
   {
-   "id": "jO8ixufyzH4",
-   "canal": "SMX",
-   "vistas": 767159,
-   "ratio": 132.9,
-   "titulo": "Pásame la maldita manguera 💀 #futbol #football #soccer #lamineyamal #barcelona #edit #viral #humor"
+   "id": "sYywP0i0URw",
+   "canal": "FootyFace",
+   "vistas": 1297454,
+   "ratio": 31.4,
+   "titulo": "This Is Almost Impossible!! Fit All Ronaldinho Legends 🎯⚽ | Football Challenge HQ"
   },
   {
-   "id": "Wvy10dJ2AOQ",
-   "canal": "Blockstalks",
-   "vistas": 4131281,
-   "ratio": 76.6,
-   "titulo": "Bro got hops😭😭 #football  #edit #shorts"
+   "id": "1xpNPfeb3XY",
+   "canal": "SUVO SPORTS 🔥",
+   "vistas": 3405714,
+   "ratio": 24.1,
+   "titulo": "💥India vs Pakistan Highlights football match 2026 ⚽😱 #india #pakistan #football #cr7 #usa #shorts"
   },
   {
-   "id": "ZXc5qiKdODs",
-   "canal": "SullySJ",
-   "vistas": 626181,
-   "ratio": 137.7,
-   "titulo": "Love me ronaldo edition #fyp #edit #football #loveme #ronaldo"
+   "id": "jF1jm9mYsc0",
+   "canal": "Fantasyball007",
+   "vistas": 6657694,
+   "ratio": 51.6,
+   "titulo": "Mbappé's Oreo Magic Trick Had Haaland Completely Fooled 😂🍪 #shorts #mbappe #haaland"
   },
   {
-   "id": "6CXTHsjpZn4",
-   "canal": "Loop Touch Pro ",
-   "vistas": 2913510,
-   "ratio": 78.6,
-   "titulo": "Comment ‘FIRST TOUCH’ if you need yours 🔥⚽️🎄 #soccer #football #footballshorts #soccershorts"
+   "id": "UDvOHZ_nAeQ",
+   "canal": "Endform TV",
+   "vistas": 1188062,
+   "ratio": 29.3,
+   "titulo": "Who Is the Real GOAT? ⚽👑 Final Form Decides…"
   },
   {
-   "id": "tgPehf04lxI",
-   "canal": "BallBloop",
-   "vistas": 2947390,
-   "ratio": 77.3,
-   "titulo": "Neymar & Haaland Gone Crazy 😂🔥 #Shorts #football #neymar #haaland"
+   "id": "8zEGE03jwpg",
+   "canal": "Hunters Strike",
+   "vistas": 921033,
+   "ratio": 84.1,
+   "titulo": "La meilleure célébration ? ✨👀 #football #footballshorts #footballchallenge"
   },
   {
-   "id": "m8GWswsoar8",
-   "canal": "Flipzi USA",
-   "vistas": 2018264,
-   "ratio": 81.2,
-   "titulo": "Kylian Mbappe | Unstoppable force 🥶🔥 #mbappe #realmadrid #shorts"
+   "id": "yPn_Rjhi_e4",
+   "canal": "FitVision",
+   "vistas": 10341539,
+   "ratio": 43.0,
+   "titulo": "This Fighter Was LOSING HP Before the Match 😂🥋"
   },
   {
-   "id": "LTtUfMBJy0o",
-   "canal": "4nas",
-   "vistas": 3598641,
-   "ratio": 66.9,
-   "titulo": "Mbappe is unstoppable ☠️"
+   "id": "Si7hYE46yI0",
+   "canal": "OtaKux ",
+   "vistas": 1192199,
+   "ratio": 75.7,
+   "titulo": "Arda Güler vs The Legends 🤯⚽️ #ardaguler #football #shorts"
   },
   {
-   "id": "B77JRLUFm0E",
-   "canal": "SKILLS CREW",
-   "vistas": 2164102,
-   "ratio": 77.4,
-   "titulo": "Who’s going to win between England and Spain? ⚽️🔥 #nationsleague #england #spain #footballchallenge"
+   "id": "NSKErxzEOV0",
+   "canal": "D'Football Genius",
+   "vistas": 1998527,
+   "ratio": 64.2,
+   "titulo": "Rare penalty moments 😆"
   },
   {
-   "id": "-vZ6QsXlQvk",
-   "canal": "Janeshooorts",
-   "vistas": 1622638,
-   "ratio": 83.7,
-   "titulo": "🏆 ¿REALMENTE KANE MERECÍA EL BALÓN DE ORO? 😳🔥"
+   "id": "o1aOBktsbZE",
+   "canal": "CROATBALL",
+   "vistas": 5641007,
+   "ratio": 48.5,
+   "titulo": "Netherlands 7 0 Greece | Highlights"
   }
  ]
 }
