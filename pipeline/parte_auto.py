@@ -62,6 +62,13 @@ def armar(G):
         L_, N_ = pl.get("limpia", {}), pl.get("normal", {})
         funciona.append(f"Prueba VERSIÓN LIMPIA: {pl.get('veredicto')} · limpia {L_.get('videos', 0)} videos (x{L_.get('relativo', '-')} su formato, "
                         f"{L_.get('pct_visto', '-')} % visto) vs normal {N_.get('videos', 0)} (x{N_.get('relativo', '-')}, {N_.get('pct_visto', '-')} %)")
+    try:
+        sers = cargar("series.json", {})
+        for k, s in sers.items():
+            funciona.append(f"MODO SERIE: {nombre(k)} pegó ({s['vistas']:,} vistas, {s['x_canal']}x el canal) → sale 1 por día hasta el "
+                            f"{s['hasta'][8:10]}/{s['hasta'][5:7]} con el título «{s['titulo'][:60]}»".replace(",", "."))
+    except Exception:
+        pass
     hice = []
     poda = salud.get("poda") or {}
     hice += [f"Poda automática: {nombre(h['formato'])} {h['cambio']} ({h['motivo']})" for h in poda.get("historial", []) if h["fecha"] == hoy]

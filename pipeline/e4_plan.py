@@ -172,6 +172,11 @@ def main(inicio=None, dias=7):
         nueva.append((h_, "prueba", None))
     con_datos = sum(1 for g in grilla if (hrs.get(g[0][:2]) or {}).get("videos", 0) >= 2 or (M and (M["horas"].get(g[0][:5]) or {}).get("videos", 0) >= 2))
     GRILLA_SEMANA = sorted(nueva) if con_datos >= 4 else grilla                 # sin datos suficientes: la grilla de noche fija
+    try:                                                                       # 22/11 MODO SERIE (serie.py): lo que pegó se repite 5 días
+        import serie as SERIE
+        SERIE.actualizar()
+    except Exception as e:
+        print("serie falló:", e); SERIE = None
     slots = []; semana = {}
     # 18/11: el tope semanal (max_semana, estrenos) cuenta también lo ya subido en los 6 días anteriores. Antes el plan se arma de a
     # 1 día y el contador arrancaba en 0 cada vez: BALLON D'OR con tope 2 salió 16, 17, 18 y 20/11.
@@ -190,11 +195,15 @@ def main(inicio=None, dias=7):
             grilla_dia = sorted(grilla_dia + [(h_, "fuerte", None) for h_ in horas_extra])
         fijos_dia = [t for _, t, _ in grilla_dia if t not in ("prueba", "fuerte")]
 
+        series_dia = SERIE.activas(dia) if SERIE else {}
+
         def params(k):                                                         # C2: lo que ganó una prueba A/B + la prueba en curso
-            if not cerebro:
-                return {}
-            out = dict(cerebro.parametros_ganadores(k))
-            out.update(cerebro.brazo_para(k, sum(1 for x in slots if x["tipo"] == k)))
+            out = {}
+            if cerebro:
+                out = dict(cerebro.parametros_ganadores(k))
+                out.update(cerebro.brazo_para(k, sum(1 for x in slots if x["tipo"] == k)))
+            if k in series_dia:                                                # modo serie: mismo título base que el video que pegó
+                out["serie_titulo"] = series_dia[k]["titulo"]
             return out
         for hora, tipo, estilo in grilla_dia:
             if tipo in FIJOS or tipo in ola_fija:                             # formato que ya funciona / ola del momento: lugar fijo
@@ -227,7 +236,11 @@ def main(inicio=None, dias=7):
             estrenos = [k for k in cand if (CONFIG["pruebas"][k].get("estreno_hasta") or "") >= dia
                         and semana.get(k, 0) < ESTRENO_LUGARES]                  # 15/11: formato nuevo = lugares asegurados su 1.ª semana
             fijas = [k for k in promovidas if k not in hoy_pruebas and k not in FIJOS and k not in del_dia]   # las fijas ya tienen su lugar
-            if estrenos:                                                        # ESTRENO: el que menos salió esta semana
+            en_serie = [k for k in series_dia if k in activas and k not in FIJOS and k not in hoy_pruebas
+                        and k not in {x["tipo"] for x in slots if x["fecha"] == dia}]
+            if en_serie:                                                        # MODO SERIE: 1 por día mientras dure (antes que todo)
+                k = en_serie[0]
+            elif estrenos:                                                      # ESTRENO: el que menos salió esta semana
                 k = min(estrenos, key=lambda k: (semana.get(k, 0), rng.random()))
             elif fijas and not hoy_pruebas and not ola_fija:                   # una promovida sale todos los días
                 k = fijas[0]

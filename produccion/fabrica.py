@@ -1016,7 +1016,11 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
         (sem / f"{gid}.txt").write_text(
             f"=== PROGRAMAR ===\n{dia.isoformat()} a las {hora} (hora de Argentina)\n\n=== TÍTULO ===\n{titulo}\n\n=== DESCRIPCIÓN ===\n{desc_completa}\n\n"
             f"=== COMENTARIO PARA FIJAR ===\n{fijado}\n\n=== AL SUBIR ===\n- Idioma del video: Inglés. Solo hashtags en inglés.\n")
-        titulo = titulo_unico(titulo, previos_titulos, rng, [x for x in nombres if isinstance(x, str)][:4], tipo=tipo)
+        if sl.get("serie_titulo"):                                            # 22/11 MODO SERIE: mismo título base, jugadores nuevos
+            import serie as SERIE
+            titulo = SERIE.titulo_serie(sl["serie_titulo"], nombres, tag)
+        else:
+            titulo = titulo_unico(titulo, previos_titulos, rng, [x for x in nombres if isinstance(x, str)][:4], tipo=tipo)
         previos_titulos.append(titulo)
         manifiesto.append(dict(id=gid, n=n, fecha=dia.isoformat(), hora=hora, tipo=tipo, formato=FORMATO[tipo], titulo=titulo,
                                descripcion=desc_completa, fijado=fijado, jugadores=nombres,
