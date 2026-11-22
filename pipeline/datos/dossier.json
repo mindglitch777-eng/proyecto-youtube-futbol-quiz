@@ -1,25 +1,25 @@
 {
- "fecha": "2026-11-21",
+ "fecha": "2026-11-22",
  "canales_seguidos": 80,
- "canales_nuevos": 28,
- "revisados": 175,
- "fuera_de_serie": 375,
+ "canales_nuevos": 17,
+ "revisados": 176,
+ "fuera_de_serie": 357,
  "interacciones": {
   "comentar": {
-   "videos": 41,
-   "mediana": 1974632
+   "videos": 50,
+   "mediana": 1852567
   },
   "ninguna": {
-   "videos": 10,
-   "mediana": 1776732
+   "videos": 12,
+   "mediana": 2076610
+  },
+  "elegir": {
+   "videos": 4,
+   "mediana": 6264990
   },
   "pausar": {
    "videos": 3,
    "mediana": 3432259
-  },
-  "elegir": {
-   "videos": 3,
-   "mediana": 8292564
   },
   "adivinar": {
    "videos": 3,
@@ -266,6 +266,30 @@
    "idea_para_nosotros": "Crear una animación 2D de una tanda de penaltis donde una diana móvil cambia entre dos superestrellas y el usuario debe pausar exactamente cuando la diana encaje en el ángulo de su jugador preferido."
   },
   {
+   "id": "ZD9-f1-LQg0",
+   "canal": "Cris07",
+   "subs": 4810,
+   "nuevo": true,
+   "vistas": 2561784,
+   "ratio": 69.3,
+   "puntaje": 36.81,
+   "nombre_formato": "Toy Drop Player Race",
+   "mecanica": "Cuatro participantes vestidos de comida lanzan pelotas saltarinas sobre una mesa para competir en representación de 4 futbolistas. La pelota ganadora define el duelo final entre Ronaldo y Messi pidiendo la interacción del público.",
+   "primer_segundo": "Aparece la pregunta 'Who is your fav player? GUESS WHO WON' junto a recortes de Neymar, Ronaldo, Speed y Messi.",
+   "por_que_engancha": "Genera curiosidad inmediata por descubrir qué jugador ganará el reto físico en solo 9 segundos.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Neymar",
+    "Cristiano Ronaldo",
+    "IShowSpeed",
+    "Lionel Messi"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Reemplazar el juego físico por una carrera 2D estilo pinball animada por código donde 4 fichas de jugadores caen al azar, pidiéndole al usuario que pause en el frame exacto donde su jugador favorito gana."
+  },
+  {
    "id": "9u5HxeSdIiE",
    "canal": "V1m7n",
    "subs": 9270,
@@ -376,101 +400,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 4,
    "idea_para_nosotros": "Podemos hacer una ruleta dinámica donde el usuario deba pausar para elegir qué hijo de futbolista (Messi, Ronaldo, Haaland) hereda las mejores estadísticas de su padre. Si detienen el video a tiempo, desbloquean la carta '99 OVR Futura Leyenda'."
-  },
-  {
-   "id": "W9FJdx2wPog",
-   "canal": "Simon_Editor",
-   "subs": 4090,
-   "nuevo": true,
-   "vistas": 1088386,
-   "ratio": 78.8,
-   "puntaje": 28.45,
-   "nombre_formato": "Age Stats Bar Race",
-   "mecanica": "Muestra una carrera de barras animadas comparando la cantidad de goles internacionales de Messi, Ronaldo y Neymar año a año según su edad. Al llegar a los 39 años, Ronaldo queda como líder y se muestran edits con sus celebraciones.",
-   "primer_segundo": "Aparece el título 'INTERNATIONAL GOALS', la edad 'AGE: 18' y el conteo inicial de goles de Messi (2), Neymar (1) y Ronaldo (0).",
-   "por_que_engancha": "Genera curiosidad constante por ver la remontada de las estadísticas y alimenta el eterno debate sobre el mejor goleador.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Lionel Messi",
-    "Cristiano Ronaldo",
-    "Neymar"
-   ],
-   "usa_clips_reales": true,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Hacer correr las barras a alta velocidad y pedirle al espectador que ponga PAUSA exactamente a los 25 años para elegir a su ganador y comparar stats sin usar clips reales."
   }
  ],
  "sin_analizar": [
   {
-   "id": "BsQ9Mh64c80",
-   "canal": "NeoxxGamingYT",
-   "vistas": 863178,
-   "ratio": 146.3,
-   "titulo": "Ronaldo helps Messi run away from the lava ball #shorts"
-  },
-  {
-   "id": "cQaDHg9uUt4",
-   "canal": "Cos Meme",
-   "vistas": 4072650,
-   "ratio": 86.2,
-   "titulo": "Haaland Found the Best Way to Eat Chocolate 😂🍫 #football #haaland #memes"
-  },
-  {
-   "id": "k18mRwjvcqU",
-   "canal": "Marcelo_w09",
-   "vistas": 1424630,
-   "ratio": 119.8,
-   "titulo": "Part 4 | When Football lose control ☠️🔥|| #crashout #football #angry #fight #edit"
-  },
-  {
    "id": "2CGBpO-c6hQ",
    "canal": "Loop Touch Pro ",
-   "vistas": 3079199,
-   "ratio": 92.4,
+   "vistas": 3220006,
+   "ratio": 86.9,
    "titulo": "Comment ‘FIRST TOUCH’ if you need yours ⚽️🎄 #football #soccer #footballshorts #footballtraining"
-  },
-  {
-   "id": "2LtzdCNJ91E",
-   "canal": "FC CRISIS",
-   "vistas": 1099634,
-   "ratio": 124.2,
-   "titulo": "The great Football Era 🥶🔥 #football #footballshorts #edit #realmadrid #barcelona"
   },
   {
    "id": "jO8ixufyzH4",
    "canal": "SMX",
-   "vistas": 765400,
+   "vistas": 767159,
    "ratio": 132.9,
    "titulo": "Pásame la maldita manguera 💀 #futbol #football #soccer #lamineyamal #barcelona #edit #viral #humor"
   },
   {
-   "id": "yPn_Rjhi_e4",
-   "canal": "FitVision",
-   "vistas": 9943683,
-   "ratio": 60.7,
-   "titulo": "This Fighter Was LOSING HP Before the Match 😂🥋"
+   "id": "Wvy10dJ2AOQ",
+   "canal": "Blockstalks",
+   "vistas": 4131281,
+   "ratio": 76.6,
+   "titulo": "Bro got hops😭😭 #football  #edit #shorts"
   },
   {
-   "id": "u4uiMXcAp4k",
+   "id": "ZXc5qiKdODs",
+   "canal": "SullySJ",
+   "vistas": 626181,
+   "ratio": 137.7,
+   "titulo": "Love me ronaldo edition #fyp #edit #football #loveme #ronaldo"
+  },
+  {
+   "id": "6CXTHsjpZn4",
+   "canal": "Loop Touch Pro ",
+   "vistas": 2913510,
+   "ratio": 78.6,
+   "titulo": "Comment ‘FIRST TOUCH’ if you need yours 🔥⚽️🎄 #soccer #football #footballshorts #soccershorts"
+  },
+  {
+   "id": "tgPehf04lxI",
    "canal": "BallBloop",
-   "vistas": 3002536,
-   "ratio": 79.9,
-   "titulo": "Neymar & Yamal 😂🔥 What Happens Next?!"
+   "vistas": 2947390,
+   "ratio": 77.3,
+   "titulo": "Neymar & Haaland Gone Crazy 😂🔥 #Shorts #football #neymar #haaland"
   },
   {
-   "id": "yIQfVh7NzFo",
-   "canal": "Chigo_10",
-   "vistas": 595601,
-   "ratio": 43.1,
-   "titulo": "Arda Guler Last Night⚽🥶 subscribe for more edits"
+   "id": "m8GWswsoar8",
+   "canal": "Flipzi USA",
+   "vistas": 2018264,
+   "ratio": 81.2,
+   "titulo": "Kylian Mbappe | Unstoppable force 🥶🔥 #mbappe #realmadrid #shorts"
   },
   {
    "id": "LTtUfMBJy0o",
    "canal": "4nas",
-   "vistas": 3587147,
-   "ratio": 70.4,
+   "vistas": 3598641,
+   "ratio": 66.9,
    "titulo": "Mbappe is unstoppable ☠️"
+  },
+  {
+   "id": "B77JRLUFm0E",
+   "canal": "SKILLS CREW",
+   "vistas": 2164102,
+   "ratio": 77.4,
+   "titulo": "Who’s going to win between England and Spain? ⚽️🔥 #nationsleague #england #spain #footballchallenge"
+  },
+  {
+   "id": "-vZ6QsXlQvk",
+   "canal": "Janeshooorts",
+   "vistas": 1622638,
+   "ratio": 83.7,
+   "titulo": "🏆 ¿REALMENTE KANE MERECÍA EL BALÓN DE ORO? 😳🔥"
   }
  ]
 }
