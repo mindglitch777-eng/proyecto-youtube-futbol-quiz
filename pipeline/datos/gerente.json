@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-22",
- "hora": "14:57",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 2418,
   "mediana_48h_semana_anterior": 1338,
@@ -32,7 +32,7 @@
   "parecido_titulos": 0.7,
   "casi_identicos": 4,
   "medidos": 60,
-  "musicas_distintas": 8,
+  "musicas_distintas": 7,
   "reparto_semana": {
    "stop": 5,
    "cabezas": 7,
@@ -58,7 +58,7 @@
   "lectura": "OJO: se empieza a ver repetitivo"
  },
  "inspeccion": {
-  "revisados": 154,
+  "revisados": 172,
   "con_defectos": 3,
   "ejemplos": [
    "s1122_04_dom22_2000_goles: pantalla congelada 3.2 s",
@@ -71,7 +71,7 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-22T14:27-03:00",
+   "hora": "2026-11-22T15:28-03:00",
    "problemas": [],
    "acciones": [],
    "avisos": []
@@ -90,10 +90,12 @@
    "2026-11-18": 1,
    "2026-11-19": 2,
    "2026-11-20": 1
-  }
+  },
+  "vistas_por_dia": 56166,
+  "subs_por_dia": 28.4
  },
  "cerebro": {
-  "fecha": "2026-11-22T14:57-03:00",
+  "fecha": "2026-11-22T15:42-03:00",
   "videos_medidos": 130,
   "formatos": {
    "cinta": {
@@ -370,14 +372,14 @@
     "circulo": "8%",
     "slot": "6%",
     "stop": "6%",
-    "penal": "4%",
     "piernas": "4%",
+    "penal": "4%",
     "goles": "4%",
-    "dress": "3%",
+    "vs": "3%",
     "q20balon": "3%",
+    "dress": "3%",
     "escape": "3%",
     "cano": "3%",
-    "vs": "3%",
     "fitall": "1%"
    }
   },
@@ -1302,7 +1304,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 3,
+  "olas_hace_h": 4,
   "investigacion": "2026-11-21",
   "poda": {
    "podadas": {
@@ -1361,25 +1363,22 @@
  },
  "parte": {
   "fecha": "2026-11-22",
-  "autor": "máquina (sin IA)",
-  "titular": "1070 de 1.000 suscriptores ✅",
+  "titular": "1.070 suscriptores y 1,16 M de vistas de Shorts en 90 días (12 %). Ritmo de la semana 351 K (venía 273-299 K): al ritmo actual, 25 semanas para los 10 M (eran 33). Vistas por día: +68 K (21/11) y +62 K hoy hasta las 15:38.",
   "funciona": [
-   "WHEEL STOP del 21/11 15:00: 24.661 vistas en 24 h",
-   "CONVEYOR STOP del 19/11 13:00: 37.670 vistas en 74 h",
-   "HEAD SLOT del 19/11 11:00: 24.070 vistas en 76 h",
-   "Los más firmes (cerebro): CONVEYOR STOP mediana 13.744 (4 videos) · HEAD SLOT mediana 6.409 (5 videos)"
+   "CONVEYOR STOP: mediana 13.635 (5,6x el canal, 4 medidos, confianza media), mejor 37.670. HEAD SLOT: 6.409 (5 medidos), mejor 24.070.",
+   "DRESS arreglado: su 1.ª prueba hizo 5.259 a las 48 h (2,2x la mediana) con 162 % visto (antes 109 %). La mediana del canal de la semana subió 81 % (2.418)."
   ],
   "no_funciona": [
-   "WHEEL STOP se cansa: sus últimos 4 rinden el 52 % de los 4 anteriores",
-   "DRESS UP del 20/11: 1.002 vistas en 43 h",
-   "GOAT CIRCLE del 19/11: 2.678 vistas en 70 h",
-   "Videos de 10 K o más por día: 1,0 (meta 3)"
+   "La 2.ª prueba de DRESS va 1.002 (43 h), debajo de la mediana.",
+   "WHEEL se cansa: sus últimos 4 rinden el 52 % de los 4 anteriores (sale todos los días). FAVORITE baja −58 %.",
+   "Videos de 10 K por día: 1,0 (meta 3). Títulos 70 % parecidos (originalidad 70)."
   ],
   "hice": [
-   "Poda automática: HEAD SLOT promovido (mediana 8,460 vs canal 2,188)"
+   "DRESS (fecha límite de hoy): según tu regla NO se saca (una de las 2 pruebas pasó con holgura). Te dejé la decisión en el #4: volver como prueba (máx. 2 por semana) o no.",
+   "Revisé a ojo la hoja del 24/11 (primeros videos en versión limpia): bien."
   ],
   "para_el_ceo": [
-   "Nada para vos hoy."
+   "DRESS: ¿vuelve como formato de prueba (máx. 2 por semana)? Respondé sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/4 (te recomiendo que sí)."
   ]
  },
  "prueba_limpio": {

@@ -292,3 +292,11 @@ Fuentes: IA de YouTube Studio (capturas del CEO), comparación cuadro por cuadro
 5. Música propia con más ritmo (estilo phonk/trap) para los formatos cortos: produccion/musica_epica.py ya genera pistas por código; adaptala a 6-9 s con golpe en el loop.
 Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; inspector y prueba de humo antes de subir.
 - 22/11 (CEO: 'desde que arranque la semana'): versión limpia con caras más grandes en HEAD FIT (+15 %) y HEAD SLOT (+23 %); FIT ALL queda para el rediseño del Ingeniero. Se rehace la fábrica del 24/11 (no estaba subida) para que los primeros limpios salgan el martes.
+
+## 2026-11-22 · Gerente IA (turno diario) · decisión DRESS
+- **Vi:** 1.070 suscriptores; 1,16 M en 90 días; ritmo semanal 351 K (25 semanas para 10 M; eran 33). Vistas por día +68 K (21/11), +62 K (22/11 parcial). Mediana semana 2.418 (+81 %). 10 K por día 1,0.
+  CONVEYOR 13.635 (4, media), HEAD SLOT 6.409 (5), FAVORITE 5.324 (−58 %), WHEEL 4.978 cansado (52 %). Hoja de control 24/11 (versión limpia): bien.
+- **DRESS (fecha límite del CEO):** prueba 1 (19/11) 5.259 a 48 h y 162 % visto ✅; prueba 2 (20/11) 1.002 a 43 h ❌. La regla del CEO saca a DRESS si fallan los 2 → NO se saca. Volverlo a la rotación es del CEO: lo pregunté en #4 (recomiendo sí, prueba con máx. 2 por semana). Queda listo:false hasta su respuesta.
+- **No toqué:** WHEEL (fijo, decisión del CEO); la prueba de versión limpia (recién arranca el 24/11).
+- **Revisar el 2026-11-23:** mensaje semanal (WHEEL cansado, DRESS, cartera de formatos, comparación con el Gerente Gemini).
+- **Para el CEO:** #4 (DRESS sí o no).

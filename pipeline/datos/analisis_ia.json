@@ -1,35 +1,50 @@
 {
  "fecha": "2026-11-22",
- "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
+ "autor": "Gerente IA · parte diario (22/11)",
  "veredicto": {
   "color": "green",
-  "titulo": "1070 de 1.000 suscriptores ✅",
-  "frase": "Todo anda solo. No tenés que hacer nada hoy."
+  "titulo": "El ritmo hacia los 10 M mejoró: 25 semanas (eran 33)",
+  "frase": "1.070 suscriptores y 1,16 M de vistas en 90 días. Con 6 por día y los formatos que rinden, el canal suma ~60-68 K vistas por día. Lo que más empuja: CONVEYOR STOP y HEAD SLOT. DRESS arreglado aprobó su 1.ª prueba."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1070 / 1.000",
-   "nota": "faltan 0"
+   "valor": "1.070",
+   "nota": "✅ meta cumplida"
+  },
+  {
+   "label": "Vistas Shorts 90 días",
+   "valor": "1,16 M / 10 M",
+   "nota": "12 % · 25 semanas al ritmo actual"
+  },
+  {
+   "label": "Vistas del canal por día",
+   "valor": "+68 K · +62 K",
+   "nota": "21 y 22/11 (parcial)"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1",
+   "valor": "1,0",
    "nota": "meta 3"
   },
   {
-   "label": "Vistas de Shorts 90 días",
-   "valor": "1,16 M",
-   "nota": "25.2 semanas a 10 M"
+   "label": "CONVEYOR STOP",
+   "valor": "13.635",
+   "nota": "mediana, 4 medidos"
+  },
+  {
+   "label": "Mediana de la semana",
+   "valor": "2.418",
+   "nota": "+81 %"
   }
  ],
  "hallazgos": [
   {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP arranca como el formato más fuerte",
-   "dato": "CONVEYOR: 36.946 (19/11 13:00), mediana 15.137 (6,6x) con 3 medidos. HEAD SLOT: mediana 9.059 (4,0x) con 4 medidos; FAVORITE 7.444.",
+   "dato": "CONVEYOR: mediana 13.635 (5,6x) con 4 medidos, mejor 37.670. HEAD SLOT: 6.409 (5 medidos), mejor 24.070. FAVORITE baja (−58 %).",
    "por_que": "El dinamismo de frenar la cinta atrapa al espectador en los primeros segundos",
-   "confianza": "baja (con 2 videos)",
+   "confianza": "media (4-5 videos)",
    "accion": "Aumentar la producción de este formato para aprovechar el impulso inicial antes de que se gaste"
   },
   {
@@ -83,16 +98,16 @@
  ],
  "acciones": [
   {
-   "quien": "Gerente IA",
-   "que": "21/11: extras de ola con la lección del 13/11 en el código. 22/11: DRESS. Lunes 23/11: mensaje semanal."
+   "quien": "CEO",
+   "que": "Responder en #4 si DRESS vuelve como prueba."
   },
   {
    "quien": "Ingeniero",
-   "que": "Lunes 23/11: fondos propios, foto de Messi y recortes con piernas abiertas para SKILL STOP; 2 formatos nuevos de la lista de ideas."
+   "que": "Lunes 23/11: caras más grandes, FIT ALL estilo RyukX, 2 formatos nuevos (caras que giran, comparación de equipos), música con más ritmo."
   },
   {
-   "quien": "CEO",
-   "que": "Nada por ahora."
+   "quien": "Gerente IA",
+   "que": "Lunes 23/11: mensaje semanal y comparación con el Gerente Gemini."
   }
  ]
 }
