@@ -52,7 +52,7 @@ def silueta(tr):
     return fantasma
 
 
-VENTANA_PERFECT = 0.22   # 13/11: antes 0,4 s → el trofeo ya estaba lejos y el medidor marcaba 4 % con "PERFECT!" en pantalla
+VENTANA_PERFECT = 0.18   # 13/11: antes 0,4 s → el trofeo ya estaba lejos y el medidor marcaba 4 % con "PERFECT!" en pantalla
 
 
 def main(guion):

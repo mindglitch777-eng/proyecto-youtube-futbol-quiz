@@ -362,7 +362,8 @@ def guion_rueda(gid, rng, V, fecha):
             usados.add(clave); break
     nombre = CUERPOS_RUEDA[cuerpo]
     otros = [nombre_de(t.rsplit("_", 1)[0]) for t in torsos if t.rsplit("_", 1)[0] in SUPERESTRELLAS]
-    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=6.6, vueltas=4, t_encaje=0.45, sentido=rng.choice([1, -1]),
+    # 22/11 (CEO: "comentan first try → 100 % visto; la meta es 200 %"): TODOS los retos ~25-50 % más rápidos (más vueltas/pasadas, ventanas más chicas)
+    return dict(id=gid, cuerpo=cuerpo, nombre=nombre, torsos=torsos, dur=6.6, vueltas=5, t_encaje=0.45, sentido=rng.choice([1, -1]),
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=rng.randint(2, 6), otros=otros)
 
 
@@ -434,7 +435,7 @@ def guion_cinta(gid, rng, V, fecha):
         if clave not in usados:
             usados.add(clave); break
     otros = [nombre_de(t.rsplit("_", 1)[0]) for t in torsos]
-    return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], torsos=torsos, dur=6.6, vueltas=2, t_encaje=0.45,
+    return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], torsos=torsos, dur=6.6, vueltas=3, t_encaje=0.45,
                 sentido=rng.choice([1, -1]), musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", pos_correcto=k, otros=otros)
 
 
@@ -448,7 +449,7 @@ def guion_slot(gid, rng, V, fecha):
         cl = (cuerpo, str(k)) + tuple(cab)
         if cl not in usados:
             usados.add(cl); break
-    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=2, t_encaje=0.45,
+    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=3, t_encaje=0.45,
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "slot", rng), pos_correcto=k, otros=[nombre_de(c) for c in cab])
 
 
@@ -469,9 +470,9 @@ def guion_favorito(gid, rng, V, fecha, leyendas=True):
     rng.shuffle(otros)
     jug = [primero] + otros
     sal = [0]
-    while len(sal) < 26:
+    while len(sal) < 34:
         c = rng.randrange(6)
-        if c != sal[-1] and (len(sal) < 25 or c != 0):
+        if c != sal[-1] and (len(sal) < 33 or c != 0):
             sal.append(c)
     import render_favorito as RF
     nombres = [RF.NOMBRE[c].title().replace("Mbappé", "Mbappé") for c in jug]
@@ -526,7 +527,7 @@ def guion_cano(gid, rng, V, fecha):
     tx = dict(gancho=rng.choice([f"NUTMEG {b.upper()}", "STOP THE NUTMEG", f"{a.upper()} VS {b.upper()}"]),
               apuesta=rng.choice(["ONLY 1% STOP IT", "BETWEEN THE LEGS = WIN", "IMPOSSIBLE SPEED"]),
               cta="HOW MANY TRIES? COMMENT NOW")
-    return dict(id=gid, defensor=defe, nombre_def=b, atacante=atq, nombre_atq=a, dur=7.5, pasadas=4, lento=4.0,
+    return dict(id=gid, defensor=defe, nombre_def=b, atacante=atq, nombre_atq=a, dur=7.5, pasadas=5, lento=3.0,
                 t0=round(rng.uniform(0.0, 0.4), 2), musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "cano", rng), textos=tx)
 
 
@@ -544,7 +545,7 @@ def guion_vs(gid, rng, V, fecha):
               apuesta=rng.choice(["IMPOSSIBLE SPEED", "TINY GOLD ZONE · 1% CAN", "ONLY 1% STOP IT IN TIME"]),
               cta="HOW MANY TRIES? WHO WON?")
     return dict(id=gid, cuerpos=duelo, nombres=nombres, colores=cols, dur=7.0, fase=rng.choice([0.0, math.pi]),
-                idas=4, umbral=0.94,                                           # 18/11 CEO: "más difícil, más rápido" (antes 2 idas y 0,88)
+                idas=5, umbral=0.95,                                           # 18/11 CEO: "más difícil, más rápido" (antes 2 idas y 0,88)
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "vs", rng), textos=tx)
 
 
@@ -590,7 +591,7 @@ def guion_escape(gid, rng, V, fecha):
     tx = dict(gancho=rng.choice(["FREE YOUR GOAT", "WHO ESCAPES?", "STOP THE KEY"]),
               apuesta=rng.choice(["TINY KEYHOLE · 1% CAN", "IMPOSSIBLE SPEED", "ONLY 1% FREE HIM"]),
               cta="HOW MANY TRIES? WHO ESCAPED?")
-    return dict(id=gid, presos=presos, nombres=nombres, dur=7.5, idas=3, zona=26, fase=round(rng.uniform(0, 6.28), 2),
+    return dict(id=gid, presos=presos, nombres=nombres, dur=7.5, idas=4, zona=22, fase=round(rng.uniform(0, 6.28), 2),
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo="estadio_0", textos=tx)
 
 
@@ -622,7 +623,7 @@ def guion_penal(gid, rng, V, fecha):
     n, c = min(estrellas, key=lambda e: (sum(1 for x in hechos if x[0] == e[1]), rng.random()))
     hechos.add((c, str(len(hechos))))
     lista, _ = extra_mejor("arquero", None)
-    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=5, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"),
+    return dict(id=gid, pateador=c, nombre=n, dur=6.0, vueltas=6, musica=V.musica(rng), arquero=(rng.choice(lista) if lista else "arquero_0"),
                 fondo=fondo_variado(V, "penal", rng))
 
 
@@ -630,7 +631,7 @@ def guion_balon(gid, rng, V, fecha):
     cuerpo = rng.choice(sorted(CUERPOS_RUEDA))
     lista, _ = extra_mejor("trofeo_bo", None)
     return dict(id=gid, cuerpo=cuerpo, nombre=CUERPOS_RUEDA[cuerpo], trofeo=(rng.choice(lista) if lista else "trofeo_bo_1"),
-                dur=6.0, vueltas=5, musica=V.musica(rng), fondo=fondo_variado(V, "balon", rng))
+                dur=6.0, vueltas=6, musica=V.musica(rng), fondo=fondo_variado(V, "balon", rng))
 
 
 # Tendencias de la semana del 04/11 (radar + Gemini): FIT challenge 6,6 M · balance at the wall 6,9 M · "who is the best" 6 M
@@ -663,7 +664,7 @@ def guion_fitall(gid, rng, V, fecha):
     ult.append(est); del ult[:-12]
     cuerpo = rng.choice(RF.CUERPOS[est])
     mus = MUSICA_FITALL.get(est) or ["walkout_0", "walkout_1", "parado_bailao_0", "rueda_original_1"]
-    return dict(id=gid, cuerpo=cuerpo, senuelos=RF.senuelos(cuerpo, rng), nombre=RF.NOMBRES[est], dur=4.0, vueltas=3, t_encaje=0.45,
+    return dict(id=gid, cuerpo=cuerpo, senuelos=RF.senuelos(cuerpo, rng), nombre=RF.NOMBRES[est], dur=4.0, vueltas=4, t_encaje=0.45,
                 sentido=rng.choice([1, -1]), musica=rng.choice(mus), fondo="estadio_0", pos_correcto=rng.randint(1, 6))
 
 
@@ -673,7 +674,7 @@ def guion_cabezas(gid, rng, V, fecha):
     est = [c for c in SUPERESTRELLAS if c != clave and c in FOTOS]
     ley = [c for c in LEYENDAS if c in FOTOS and c != clave]
     cab = rng.sample(est, min(3, len(est))) + rng.sample(ley, min(4, len(ley))); rng.shuffle(cab)   # 15/11 CEO: solo famosos
-    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=4,
+    return dict(id=gid, cuerpo=cuerpo, clave=clave, nombre=nombre_de(clave), cabezas=cab, dur=6.4, vueltas=5,
                 sentido=rng.choice([1, -1]), pos_correcto=rng.randint(2, 6), musica=f"rueda_original_{rng.randint(0, 2)}")
 
 
