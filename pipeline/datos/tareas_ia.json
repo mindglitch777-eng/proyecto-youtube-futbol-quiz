@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-21 22:28",
+ "fecha": "2026-11-22 00:30",
  "tareas": [
   {
    "id": "ola-X2pLfT-C7AQ",
@@ -13,6 +13,24 @@
    "prioridad": 2,
    "tipo": "GERENTE",
    "que": "Construir e implementar el nuevo formato «Spinning Face Puzzle»: hacer una rueda giratoria rápida animada con trofeos o botas de oro donde el espectador deba pausar el video exactamente cuando el elemento encaje con la superestrella (Messi, Mbappé o Haaland)."
+  },
+  {
+   "id": "recambio-2026-11-22",
+   "prioridad": 3,
+   "tipo": "RECAMBIO",
+   "que": "Hay 7 formatos fuertes en rotación (cinta, favorito, slot, rueda, cabezas, balon, penal) y se cansan rueda. Construir un formato nuevo de la misma lógica (elegir entre superestrellas + parar justo), más difícil o con otra vuelta, como propuesta con muestra. Mirar primero el informe (reports/dossier/) por ideas.",
+   "fuertes": [
+    "cinta",
+    "favorito",
+    "slot",
+    "rueda",
+    "cabezas",
+    "balon",
+    "penal"
+   ],
+   "cansados": [
+    "rueda"
+   ]
   }
  ]
 }
