@@ -782,6 +782,45 @@ def tag(n):
 LIMPIO_PRUEBA = {"rueda", "cinta", "favorito", "cabezas", "slot", "fitall", "balon", "penal", "escape", "cano", "vs", "piernas", "dress"}
 
 
+IMPOSIBLE_RE = __import__("re").compile(r"impossib|imposib|\b1 ?%|99(\.9)? ?%|nobody|no one|can'?t|fail|only 1", __import__("re").I)
+
+
+def promete_imposible(titulo, g):
+    """22/11 (CEO): ¿el título o los textos del video prometen algo imposible / 1 % / 99 % fail?"""
+    txt = " ".join([titulo or ""] + [str(v) for v in (g.get("textos") or {}).values()])
+    return bool(IMPOSIBLE_RE.search(txt))
+
+
+def endurecer(g):
+    """Nivel IMPOSIBLE de verdad (además de la velocidad nueva del 22/11): +1 vuelta/ida/pasada, ventanas más chicas, más saltos.
+    Así lo que promete el título es real: casi nadie lo logra al primer intento → lo vuelven a ver (más % visto)."""
+    g = dict(g)
+    if isinstance(g.get("vueltas"), int):
+        g["vueltas"] += 1
+    elif isinstance(g.get("vueltas"), list):
+        g["vueltas"] = [v + 2 for v in g["vueltas"]]
+    for k in ("idas", "pasadas"):
+        if isinstance(g.get(k), int):
+            g[k] += 1
+    if g.get("zona"):
+        g["zona"] = max(14, int(g["zona"] * 0.8))
+    if g.get("umbral"):
+        g["umbral"] = min(0.97, round(g["umbral"] + 0.01, 3))
+    if g.get("lento"):
+        g["lento"] = max(2.0, g["lento"] - 0.5)
+    if isinstance(g.get("saltos"), list) and len(g["saltos"]) > 2:              # FAVORITE: más saltos (mismo patrón sin repetir seguido)
+        s_ = list(g["saltos"]); n = max(int(len(s_) * 1.3), len(s_) + 6); i = 1
+        while len(s_) < n:
+            c = s_[i % (len(s_) - 1)]
+            if c != s_[-1]:
+                s_.append(c)
+            i += 1
+        if s_[-1] == s_[0]:
+            s_.append(next(c for c in range(6) if c not in (s_[-1], s_[0])))
+        g["saltos"] = s_
+    return g
+
+
 def render(args):
     tipo, ruta = args
     import os
@@ -1008,6 +1047,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             g["dur"] = sl["dur"]
         desc = _cuatro_hashtags(desc)                                          # 15/11 (IA de YouTube): 3-4 hashtags, no más
         ruta = sem / "guiones" / f"{gid}.json"
+        if promete_imposible(titulo, g):                                       # 22/11 (CEO): si promete "imposible", ES imposible
+            g = endurecer(g); g["imposible"] = True
         if tipo in LIMPIO_PRUEBA:                                             # 22/11 prueba A/B "versión limpia": alterna por formato
             k = f"limpio_{tipo}"; V.contadores[k] = V.contadores.get(k, 0) + 1
             g["limpio"] = V.contadores[k] % 2 == 1
@@ -1028,7 +1069,8 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
                                tags=["football", "soccer", "shorts"] + [x.lower() for x in nombres], archivo=f"{gid}.mp4",
                                **({"variante": g["arranque"]} if g.get("arranque") else {}),
                                **({"exp": sl["exp"]} if sl.get("exp") else {}),
-                               **({"limpio": g["limpio"]} if "limpio" in g else {})))      # Fase 2: prueba A/B del cerebro (se mide sola)
+                               **({"limpio": g["limpio"]} if "limpio" in g else {}),
+                               **({"imposible": True} if g.get("imposible") else {})))      # Fase 2: prueba A/B del cerebro (se mide sola)
         trabajos.append((tipo, ruta))
         filas.append(f"| {n} | {dia.isoformat()} ({DIAS[dia.weekday()]}) | {hora} | {FORMATO[tipo]} | {titulo} | `{gid}` |")
     if not renderizar:                                                          # prueba de humo: solo guiones y títulos (sin video ni memoria)
