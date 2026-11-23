@@ -13,14 +13,14 @@
    "pregunta": "¿WHEEL rinde más con título 'X vs Y or Z stop challenge' o con 'Find X's real body'?",
    "medicion": {
     "\"vs\"": {
-     "videos": 2,
-     "vistas_48h_esperadas": 4703,
-     "p_mejor": 0.62
+     "videos": 3,
+     "vistas_48h_esperadas": 6789,
+     "p_mejor": 0.76
     },
     "\"find\"": {
      "videos": 0,
-     "vistas_48h_esperadas": 3801,
-     "p_mejor": 0.38
+     "vistas_48h_esperadas": 4193,
+     "p_mejor": 0.24
     }
    }
   },
@@ -37,14 +37,14 @@
    "pregunta": "¿STOP ON YOUR FAVORITE rinde más con leyendas (Ronaldinho, Zidane…) o solo con estrellas de hoy?",
    "medicion": {
     "true": {
-     "videos": 3,
-     "vistas_48h_esperadas": 3487,
-     "p_mejor": 0.45
+     "videos": 4,
+     "vistas_48h_esperadas": 3486,
+     "p_mejor": 0.46
     },
     "false": {
      "videos": 0,
-     "vistas_48h_esperadas": 3772,
-     "p_mejor": 0.55
+     "vistas_48h_esperadas": 3733,
+     "p_mejor": 0.54
     }
    }
   },
@@ -62,13 +62,13 @@
    "medicion": {
     "6.4": {
      "videos": 3,
-     "vistas_48h_esperadas": 2877,
-     "p_mejor": 0.48
+     "vistas_48h_esperadas": 2743,
+     "p_mejor": 0.47
     },
     "8.0": {
      "videos": 0,
-     "vistas_48h_esperadas": 2991,
-     "p_mejor": 0.52
+     "vistas_48h_esperadas": 2915,
+     "p_mejor": 0.53
     }
    }
   }
