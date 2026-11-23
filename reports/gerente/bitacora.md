@@ -304,3 +304,13 @@ Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; i
 - PARA EL INGENIERO (sumado al pedido del CEO del 22/11): 6) DRESS UP al estilo Muzam (31 M): caídas el doble de rápidas, caras 25 % más grandes, solo la lista 1-2-3-4 al costado, sin carteles ni CTA final; volver a activarlo como estreno con la versión nueva. 7) FAVORITE: en la versión limpia (GANCHO_LIMPIO=1) sacar el cartel final propio "WHO DID YOU GET?".
 - 22/11 (CEO: 'comentan first try → 100 % visto; la meta es 200 %'): todos los retos más rápidos: WHEEL 4→5 vueltas, CONVEYOR 2→3, HEAD SLOT 2→3, HEAD FIT 4→5, FIT ALL 3→4, PENALTY y BALLON 5→6 (ventana PERFECT 0,22→0,18 s), FAVORITE 26→34 saltos, ESCAPE 3→4 idas y cerradura 26→22, VS 4→5 idas (umbral 0,95), SKILL STOP 4→5 pasadas y cámara lenta 4x→3x. Inspector PASA en los 6 probados. Revisar el 27-28/11: % visto (meta >180 %) y comentarios 'first try' vs 'impossible'.
 - 22/11 (CEO: 'si dice imposible, que sea imposible de verdad'): NIVEL IMPOSIBLE automático. Si el título o los textos prometen imposible / 1 % / 99 % fail, el guion se endurece además de la velocidad nueva (+1 vuelta/ida/pasada, cerradura -20 %, umbral +0,01, menos cámara lenta, +30 % saltos). Queda marcado 'imposible' en publicados para comparar % visto y comentarios contra los normales.
+
+## 2026-11-23 · Ingeniero
+- **Ingeniero:** pedidos del CEO del 22/11 y del Gerente: (1) **FAVORITE** limpio sin "WHO DID YOU GET?". (2) **DRESS estilo Muzam**: 6 accesorios a
+  1 s, caras +25 % (param escala), solo la lista 1-4 que se llena, sin carteles ni CTA, corte seco al loop (6,3 s); sigue listo:false (#4).
+  (3) **FIT ALL**: params escala/estilo/n_cabezas; la mitad limpia de la prueba A/B usa estilo RyukX (caras +70 %, 6 cabezas, +1 vuelta, sin
+  contador ni PERFECT!); afuera una mano que se colaba en una cabeza de Mbappé. (4) Formato nuevo **FACE SPIN** (`anillos`, listo:false): cara
+  gigante en 3 anillos que giran; pausar cuando queda armada (7 cuadros por pasada). Propuesta p007 (Issue #17).
+  Inspector sin defectos en DRESS, FIT ALL x2 y FACE SPIN x2. Pendiente (jueves 26/11): comparación de equipos, música phonk, fondos propios
+  revisados a 1080x1920, foto de Messi con más hueco; mancha oscura junto a la cabeza de Neymar en DRESS (viene del recorte de pelo).
+- **Para el CEO:** Issue #17 (FACE SPIN) y #4 (DRESS nuevo).

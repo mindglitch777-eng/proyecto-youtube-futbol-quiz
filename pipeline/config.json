@@ -140,6 +140,11 @@
    "nombre": "GOALS BY AGE",
    "min": 0,
    "max": 7
+  },
+  "anillos": {
+   "nombre": "FACE SPIN",
+   "min": 0,
+   "max": 7
   }
  },
  "radar": {
@@ -312,6 +317,11 @@
    "max_semana": 4,
    "estreno_hasta": "2026-11-26",
    "nota": "19/11 pedido del CEO (idea de la investigación 2.0: un video así hizo 6,45 M). Carrera de goles REALES por edad (Wikipedia) con la línea del año y burbujas +N. Sistema dinámico: goles_catalogo.py (60 escenarios: grupos × estadísticas × 'a la misma edad'), nunca repite hasta agotar el catálogo; varía paleta, música original y ritmo. ~60-70 s."
+  },
+  "anillos": {
+   "listo": false,
+   "max_semana": 3,
+   "nota": "23/11 idea n.º 1 (caras que giran y encajan) con vuelta propia: la cara gigante de una estrella en 3 anillos que giran; pausar cuando queda armada (PERFECT FACE! solo mientras está armada). Propuesta con prototipo; entra cuando el CEO apruebe."
   }
  }
 }

@@ -34,12 +34,12 @@ LOOKS = ["corona", "anteojos", "payaso", "cowboy", "cuernos", "aureola", "cadena
 DIAS = ["lun", "mar", "mie", "jue", "vie", "sab", "dom"]
 HORAS = {"stopA": "09:00", "find": "13:00", "look": "17:00", "noche": "21:00"}   # hora de Argentina
 FORMATO = {"stop": "STOP", "find": "FIND", "look": "¿CUÁL LOOK?", "cabeza": "CATCH THE RIGHT HEAD", "plinko": "PLINKO GOAT",
-           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "goles": "GOALS BY AGE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "cano": "SKILL STOP", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
+           "hoyo": "BALL TO THE HOLE", "dress": "DRESS UP", "torre": "BALL TOWER", "rueda": "WHEEL STOP", "piernas": "LEGS WHEEL", "favorito": "STOP ON YOUR FAVORITE", "escape": "STOP TO ESCAPE", "goles": "GOALS BY AGE", "cinta": "CONVEYOR STOP", "vs": "VS STOP", "cano": "SKILL STOP", "anillos": "FACE SPIN", "slot": "HEAD SLOT", "siuu": "SIUUU 67",
            "penal": "PENALTY 100", "balon": "BALLON D'OR 100%", "cabezas": "HEAD FIT", "fitall": "FIT ALL", "pared": "WALL BALANCE",
            "circulo": "GOAT CIRCLE", "trayectoria": "GUESS BY CAREER", "tridente": "TRIDENT €150M",
            "q20fichaje": "HIDDEN TRANSFER", "q20costo": "WHO COST MORE", "q20balon": "BALLON D'OR PICKS"}
 SCRIPT = {"stop": "render_stop.py", "find": "render_find_v2.py", "look": "render_look.py", "cabeza": "render_cabeza.py",
-          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "goles": "render_goles.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "cano": "render_cano.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
+          "plinko": "render_plinko.py", "rueda": "render_rueda.py", "piernas": "render_piernas.py", "favorito": "render_favorito.py", "escape": "render_escape.py", "goles": "render_goles.py", "cinta": "render_cinta.py", "vs": "render_vs.py", "cano": "render_cano.py", "anillos": "render_anillos.py", "slot": "render_slot.py", "siuu": "render_siuu.py",
           "penal": "render_penal.py", "balon": "render_balon.py", "cabezas": "render_cabezas.py", "fitall": "render_fitall.py",
           "pared": "render_pared.py", "circulo": "render_circulo.py", "trayectoria": "render_trayectoria.py",
           "tridente": "render_tridente.py", "q20fichaje": "render_q20.py", "q20costo": "render_q20.py", "q20balon": "render_q20.py",
@@ -531,6 +531,25 @@ def guion_cano(gid, rng, V, fecha):
                 t0=round(rng.uniform(0.0, 0.4), 2), musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "cano", rng), textos=tx)
 
 
+# FACE SPIN (23/11, idea n.º 1 "caras que giran y encajan"): la cara gigante de una estrella en 3 anillos que giran;
+# pausar cuando la cara queda armada. Solo famosos; la estrella rota (no se repite en los últimos 4).
+TIT_ANILLOS = ["{n}'s face is spinning 😵 Stop it when it's fixed", "Fix {n}'s face 🛑 Only 1% stop it right", "{n} face puzzle 🧩 Pause it perfect",
+               "Can you fix {n}'s face? 😱 Stop the rings"]
+
+
+def guion_anillos(gid, rng, V, fecha):
+    ult = V.contadores.setdefault("anillos_ult", [])
+    pool = [c for c in FAMOSOS if c in FOTOS]
+    clave = rng.choice([c for c in pool if c not in ult[-4:]] or pool)
+    ult.append(clave); del ult[:-12]
+    n = nombre_de(clave)
+    giros = rng.choice([[2, -4, 6], [-2, 4, -6], [2, 6, -4], [-4, 2, 6]])
+    tx = dict(gancho=rng.choice([f"FIX {n.upper()}'S FACE", "STOP WHEN IT'S FIXED", f"{n.upper()} FACE PUZZLE"]),
+              apuesta=rng.choice(["ONLY 1% STOP IT", "PERFECT FACE = WIN", "IMPOSSIBLE SPEED"]), cta="HOW MANY TRIES? COMMENT NOW")
+    return dict(id=gid, clave=clave, nombre=n, dur=7.0, giros=giros, t_encaje=round(rng.uniform(1.0, 1.6), 2), quieto=0.02,
+                musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "anillos", rng), textos=tx)
+
+
 def guion_vs(gid, rng, V, fecha):
     ult = V.contadores.setdefault("vs_ult", [])
     duelo = min(DUELOS, key=lambda d: (ult[-6:].count("|".join(d)), DUELOS.index(d) > 2, rng.random()))   # primero los 3 más pedidos
@@ -915,6 +934,15 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
             desc = (f"Stop the wheel when {g['nombre']}'s REAL legs are on top 🦵🛑 Only 1% get it first try. How many tries did it take you? 👇\n"
                     + " ".join(tag(x) for x in (g["nombre"], a, b)) + " #football #soccer #stopchallenge #shorts")
             fijado = ""; fotos = []; nombres = [g["nombre"], a, b]
+        elif tipo == "anillos":
+            g = guion_anillos(gid, rng, V, sl["fecha"])
+            n = g["nombre"]
+            titulo = V.titulo("anillos", TIT_ANILLOS, rng).format(n=n)
+            if len(titulo) + len(tag(n)) + 1 <= 100:
+                titulo += " " + tag(n)
+            desc = (f"Pause when {n}'s face is PERFECT 🛑 Only 1% get it first try. How many tries? Comment 👇\n"
+                    + tag(n) + " #football #stopchallenge #shorts")
+            fijado = ""; fotos = []; nombres = [n]
         elif tipo == "cano":
             g = guion_cano(gid, rng, V, sl["fecha"])
             a, b = g["nombre_atq"], g["nombre_def"]
