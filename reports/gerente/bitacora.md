@@ -315,3 +315,15 @@ Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; i
   Inspector sin defectos en DRESS, FIT ALL x2 y FACE SPIN x2. Pendiente (jueves 26/11): comparación de equipos, música phonk, fondos propios
   revisados a 1080x1920, foto de Messi con más hueco; mancha oscura junto a la cabeza de Neymar en DRESS (viene del recorte de pelo).
 - **Para el CEO:** Issue #17 (FACE SPIN) y #4 (DRESS nuevo).
+
+## 2026-11-23 · Gerente IA · REVISIÓN SEMANAL (lunes)
+- **La semana (15 → 22/11):** +313 K vistas y +192 suscriptores (la anterior ~+300 K y ~+243). 1.100 suscriptores; 1,21 M en 90 días; ritmo 375 K por semana → 23,5 semanas para 10 M (eran 33).
+  Se probó 8 por día (16-18/11): las vistas por día cayeron a +21 K. El CEO volvió a 6 con CONVEYOR, WHEEL y FAVORITE fijos: 20-22/11, +62-68 K por día. Mediana de la semana +95 %.
+  10 K por día: 1,0 (meta 3). Originalidad 76 (bien). 13 formatos activos en 8 familias; 5 en estreno (FAVORITE hasta el 24, VS y ESCAPE el 25, SKILL STOP y GOALS el 26).
+- **Lo que pasó en la semana:** semana de 8 cortada; fondos con marca de agua frenados a tiempo; extras de ola y topes semanales en el código; DRESS aprobó la regla; 1.000 suscriptores el 20/11.
+- **Comparación con el Gerente Gemini (#16):** su mensaje está bien en números y formatos, pero dice "nada para vos" (no vio que DRESS y SKILL STOP esperaban decisión). Describe la idea viral como "rueda con trofeos" (el viral es una cara en anillos). No revisa hojas de control ni encuentra fallas: esta semana se frenaron 7 videos con defectos y 2 fondos con marca de agua gracias a la revisión a ojo. Recomendación: Gemini puede escribir el resumen de números; la revisión visual y los arreglos siguen necesitando a Claude.
+- **PLAN DE LA SEMANA (23-29/11):** 6 por día. Medir la prueba de versión limpia (desde el 24/11) y el "nivel imposible". Decidir los estrenos que terminan (24-26/11) con 4 videos.
+  FACE SPIN y DRESS si el CEO dice sí. Ingeniero, jueves 26/11: comparación de equipos, música phonk, fondos propios y foto de Messi.
+- **Decidí e hice:** nada en la grilla (todo sano y con cambios recientes en evaluación).
+- **Revisar el 2026-11-26:** entrega del Ingeniero. **27/11:** primeras mediciones de la versión limpia. **30/11:** semana.
+- **Para el CEO:** #4 (DRESS) y #17 (FACE SPIN), sí o no.

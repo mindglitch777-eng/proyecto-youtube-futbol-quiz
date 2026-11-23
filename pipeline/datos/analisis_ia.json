@@ -1,33 +1,56 @@
 {
  "fecha": "2026-11-23",
- "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
+ "autor": "Gerente IA · revisión semanal (lunes 23/11)",
  "veredicto": {
   "color": "green",
-  "titulo": "1100 de 1.000 suscriptores ✅",
-  "frase": "Todo anda solo. No tenés que hacer nada hoy."
+  "titulo": "Media monetización hecha; el ritmo hacia los 10 M mejoró a 23,5 semanas",
+  "frase": "1.100 suscriptores y 1,21 M de vistas en 90 días. La vuelta a 6 por día con lo que rinde levantó las vistas por día a ~65 K. Lo que falta es pegar más videos grandes: 1 de 10 K por día, y la meta son 3."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1100 / 1.000",
-   "nota": "faltan 0"
+   "valor": "1.100",
+   "nota": "✅ +192 en la semana"
+  },
+  {
+   "label": "Vistas Shorts 90 días",
+   "valor": "1,21 M / 10 M",
+   "nota": "12 % · 23,5 semanas al ritmo actual"
+  },
+  {
+   "label": "Vistas del canal por día",
+   "valor": "~65 K",
+   "nota": "meta 110 K"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1",
+   "valor": "1,0",
    "nota": "meta 3"
   },
   {
-   "label": "Vistas de Shorts 90 días",
-   "valor": "1,21 M",
-   "nota": "23.5 semanas a 10 M"
+   "label": "Mediana de la semana",
+   "valor": "2.443",
+   "nota": "+95 %"
+  },
+  {
+   "label": "Originalidad",
+   "valor": "76/100",
+   "nota": "bien"
   }
  ],
  "hallazgos": [
   {
+   "tipo": "no",
+   "titulo": "Falta pegar más videos grandes",
+   "dato": "1,0 video de 10 K por día (meta 3). La mediana subió (+95 %), pero la mayoría de los videos queda en 2-3 K y solo CONVEYOR y HEAD SLOT pasan seguido los 10 K.",
+   "por_que": "El crecimiento viene de que no haya videos flojos, no de más videos fuertes. Lo nuevo pega al principio y después se gasta.",
+   "confianza": "media",
+   "accion": "Formatos nuevos cada semana (FACE SPIN, comparación de equipos), prueba de versión limpia y retos más difíciles (meta 200 % visto). Se mide el lunes 30/11."
+  },
+  {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP arranca como el formato más fuerte",
-   "dato": "CONVEYOR: mediana 13.635 (5,6x) con 4 medidos, mejor 37.670. HEAD SLOT: 6.409 (5 medidos), mejor 24.070. FAVORITE baja (−58 %).",
+   "dato": "CONVEYOR: mediana 12.536 (5,1x) con 4 medidos, mejor 37.382. HEAD SLOT 6.817 (promovido por la poda). ESCAPE debutó con 18.327 y VS con 8.020.",
    "por_que": "El dinamismo de frenar la cinta atrapa al espectador en los primeros segundos",
    "confianza": "media (4-5 videos)",
    "accion": "Aumentar la producción de este formato para aprovechar el impulso inicial antes de que se gaste"
@@ -84,15 +107,15 @@
  "acciones": [
   {
    "quien": "CEO",
-   "que": "Responder en #4 si DRESS vuelve como prueba."
+   "que": "Responder #4 (DRESS) y #17 (FACE SPIN)."
   },
   {
    "quien": "Ingeniero",
-   "que": "Lunes 23/11: caras más grandes, FIT ALL estilo RyukX, 2 formatos nuevos (caras que giran, comparación de equipos), música con más ritmo."
+   "que": "Jueves 26/11: comparación de equipos, música phonk, fondos propios, foto de Messi."
   },
   {
    "quien": "Gerente IA",
-   "que": "Lunes 23/11: mensaje semanal y comparación con el Gerente Gemini."
+   "que": "Medir la prueba de versión limpia y el nivel imposible; fin de estrenos 24-26/11."
   }
  ]
 }

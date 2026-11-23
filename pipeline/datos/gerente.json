@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-23",
- "hora": "07:43",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 2443,
   "mediana_48h_semana_anterior": 1256,
@@ -57,7 +57,7 @@
   "lectura": "BIEN: variado"
  },
  "inspeccion": {
-  "revisados": 155,
+  "revisados": 171,
   "con_defectos": 3,
   "ejemplos": [
    "s1122_04_dom22_2000_goles: pantalla congelada 3.2 s",
@@ -70,7 +70,7 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-23T06:44-03:00",
+   "hora": "2026-11-23T13:30-03:00",
    "problemas": [],
    "acciones": [],
    "avisos": []
@@ -89,10 +89,12 @@
    "2026-11-19": 2,
    "2026-11-20": 2,
    "2026-11-21": 0
-  }
+  },
+  "vistas_por_dia": 64872,
+  "subs_por_dia": 32.7
  },
  "cerebro": {
-  "fecha": "2026-11-23T07:43-03:00",
+  "fecha": "2026-11-23T15:42-03:00",
   "videos_medidos": 135,
   "formatos": {
    "cinta": {
@@ -368,14 +370,14 @@
     "cabezas": "9%",
     "circulo": "7%",
     "slot": "6%",
-    "penal": "4%",
     "piernas": "4%",
+    "penal": "4%",
     "goles": "4%",
-    "dress": "3%",
     "stop": "3%",
+    "vs": "3%",
     "escape": "3%",
     "cano": "3%",
-    "vs": "3%",
+    "dress": "3%",
     "fitall": "1%"
    }
   },
@@ -1314,10 +1316,50 @@
   {
    "mecanica": "goat",
    "estado": "subiendo",
-   "vph": 2207,
+   "vph": 1990,
    "nuestros": [
     "circulo"
    ]
+  },
+  {
+   "mecanica": "find",
+   "estado": "subiendo",
+   "vph": 704,
+   "nuestros": [
+    "find"
+   ]
+  },
+  {
+   "mecanica": "transformacion",
+   "estado": "subiendo",
+   "vph": 583,
+   "nuestros": []
+  },
+  {
+   "mecanica": "dress",
+   "estado": "subiendo",
+   "vph": 1197,
+   "nuestros": [
+    "dress"
+   ]
+  },
+  {
+   "mecanica": "3d_ia",
+   "estado": "subiendo",
+   "vph": 556,
+   "nuestros": []
+  },
+  {
+   "mecanica": "satisfying",
+   "estado": "subiendo",
+   "vph": 116,
+   "nuestros": []
+  },
+  {
+   "mecanica": "balance",
+   "estado": "subiendo",
+   "vph": 731,
+   "nuestros": []
   }
  ],
  "salud": {
@@ -1331,7 +1373,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 20,
+  "olas_hace_h": 1,
   "investigacion": "2026-11-21",
   "poda": {
    "podadas": {
@@ -1384,7 +1426,7 @@
      "motivo": "mediana 8,460 vs canal 2,188"
     }
    ],
-   "mediana_canal": 2188
+   "mediana_canal": 2063
   },
   "advertencias": [
    "Pasado mañana (2026-11-25) no tiene videos subidos todavía (normal si la fábrica de hoy aún no corrió; si ya corrió, es un problema)."
@@ -1392,24 +1434,25 @@
  },
  "parte": {
   "fecha": "2026-11-23",
-  "autor": "máquina (sin IA)",
-  "titular": "1100 de 1.000 suscriptores ✅",
+  "titular": "Semana: 1.100 suscriptores (meta cumplida) y 1,21 M de vistas de Shorts en 90 días (12 %). Al ritmo actual (375 K por semana), 23,5 semanas para los 10 M (hace una semana eran 33). La métrica que manda sigue floja: 1,0 video de 10 K por día (meta 3); vistas por día ~65 K (meta 110 K).",
   "funciona": [
-   "WHEEL STOP del 21/11 15:00: 25.734 vistas en 41 h",
-   "CONVEYOR STOP del 21/11 23:00: 20.073 vistas en 33 h",
-   "STOP TO ESCAPE del 21/11 20:00: 18.327 vistas en 36 h",
-   "Los más firmes (cerebro): CONVEYOR STOP mediana 12.977 (4 videos) · HEAD SLOT mediana 6.817 (5 videos)"
+   "Volver a 6 por día con los formatos que rinden: las vistas por día pasaron de +21 K (18/11, con 8 por día) a +65-68 K (20-22/11). Mediana de la semana +95 % (2.443).",
+   "CONVEYOR STOP: mediana 12.536 (5,1x, 4 medidos), mejor 37.382. HEAD SLOT: 6.817 (5 medidos), promovido solo por la poda. ESCAPE debutó con 18.327 y VS con 8.020 (1 video cada uno).",
+   "Originalidad de vuelta en 'bien' (76): fondos variados y rotación de jugadores."
   ],
   "no_funciona": [
-   "DRESS UP del 20/11: 1.038 vistas en 60 h",
-   "BALLON D'OR 100% del 20/11: 1.845 vistas en 61 h",
-   "Videos de 10 K o más por día: 1,0 (meta 3)"
+   "Videos de 10 K por día: 1,0 (meta 3). Pegan pocos videos fuertes; la mayoría queda en 2-3 K.",
+   "FIT ALL (986, 0,4x) y BALLON D'OR (1.634, 0,7x) flojos; FAVORITE bajando (−58 %). Títulos todavía 66 % parecidos.",
+   "Suscriptores de la semana: +192 (la anterior ~+243)."
   ],
   "hice": [
-   "Fábrica, publicación, medición, cerebro, poda y vigilancia trabajaron solos."
+   "Revisé FACE SPIN (#17): está muy bien, te recomiendo que sí.",
+   "DRESS: no se sacó (tu regla pedía que fallaran las 2 pruebas y una pasó con 5.259). El Ingeniero ya lo rehízo al estilo Muzam."
   ],
   "para_el_ceo": [
-   "Nada para vos hoy."
+   "DRESS vuelve como prueba (máx. 2 por semana)? sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/4",
+   "FACE SPIN (formato nuevo)? sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/17",
+   "Pregunta para la IA de YouTube Studio: \"¿Cuáles de mis Shorts de los últimos 7 días tuvieron el mayor y el menor porcentaje de 'vistos vs. deslizados'?\""
   ]
  },
  "prueba_limpio": {
