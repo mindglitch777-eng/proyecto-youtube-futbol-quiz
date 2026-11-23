@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-24",
+ "inicio": "2026-11-25",
  "grilla": [
   "13:00 prueba",
   "15:00 favorito",
@@ -47,21 +47,21 @@
   }
  },
  "puntaje": {
-  "rueda": 354.1,
+  "cinta": 245.9,
+  "rueda": 331.1,
   "stop": 89.6,
-  "cabezas": 167.3,
-  "cinta": 270.9,
-  "dress": 263.2,
+  "cabezas": 160.1,
+  "dress": 116.5,
   "fitall": 87.6,
-  "balon": 113.7,
-  "favorito": 152.8,
-  "slot": 98.6,
-  "circulo": 65.2,
-  "penal": 66.9,
+  "slot": 63.2,
+  "balon": 88.2,
+  "favorito": 100.8,
+  "circulo": 62.3,
+  "penal": 66.8,
   "find": 37.6,
-  "piernas": 83.5,
+  "piernas": 84.0,
   "pared": 62.2,
-  "otros": 54.0,
+  "otros": 54.1,
   "ring": 73.1,
   "carrera": 29.3,
   "cabeza": 136.5,
@@ -70,42 +70,44 @@
   "q20balon": 67.1,
   "siuu": 31.4,
   "q20costo": 58.0,
-  "trayectoria": 111.5
+  "trayectoria": 110.7
  },
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "hora": "13:00",
    "tipo": "rueda",
    "titulo_estilo": "vs",
    "exp": {
     "id": "e3_rueda_titulo",
     "brazo": "vs"
-   }
+   },
+   "serie_titulo": "Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mbappe #vinicius"
   },
   {
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "hora": "15:00",
    "tipo": "balon"
   },
   {
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "hora": "17:00",
    "tipo": "goles"
   },
   {
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "hora": "20:00",
-   "tipo": "escape"
+   "tipo": "vs"
   },
   {
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "hora": "21:30",
-   "tipo": "cinta"
+   "tipo": "cinta",
+   "serie_titulo": "Find Vinícius's real body 🛑🔥 Ronaldo or Mbappé? #vinicius #ronaldo #mbappe"
   },
   {
-   "fecha": "2026-11-24",
+   "fecha": "2026-11-25",
    "hora": "23:00",
    "tipo": "favorito",
    "leyendas": true,
