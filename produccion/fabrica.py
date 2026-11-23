@@ -546,7 +546,7 @@ def guion_anillos(gid, rng, V, fecha):
     giros = rng.choice([[2, -4, 6], [-2, 4, -6], [2, 6, -4], [-4, 2, 6]])
     tx = dict(gancho=rng.choice([f"FIX {n.upper()}'S FACE", "STOP WHEN IT'S FIXED", f"{n.upper()} FACE PUZZLE"]),
               apuesta=rng.choice(["ONLY 1% STOP IT", "PERFECT FACE = WIN", "IMPOSSIBLE SPEED"]), cta="HOW MANY TRIES? COMMENT NOW")
-    return dict(id=gid, clave=clave, nombre=n, dur=7.0, giros=giros, t_encaje=round(rng.uniform(1.0, 1.6), 2), quieto=0.02,
+    return dict(id=gid, clave=clave, nombre=n, dur=7.0, giros=giros, t_encaje=round(rng.uniform(0.35, 0.45), 2), quieto=0.02,   # cuadro 0 casi armado (cara reconocible) y calza enseguida
                 musica=f"rueda_original_{rng.randint(0, 2)}", fondo=fondo_variado(V, "anillos", rng), textos=tx)
 
 

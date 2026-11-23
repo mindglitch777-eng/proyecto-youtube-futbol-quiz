@@ -310,7 +310,8 @@ Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; i
   1 s, caras +25 % (param escala), solo la lista 1-4 que se llena, sin carteles ni CTA, corte seco al loop (6,3 s); sigue listo:false (#4).
   (3) **FIT ALL**: params escala/estilo/n_cabezas; la mitad limpia de la prueba A/B usa estilo RyukX (caras +70 %, 6 cabezas, +1 vuelta, sin
   contador ni PERFECT!); afuera una mano que se colaba en una cabeza de Mbappé. (4) Formato nuevo **FACE SPIN** (`anillos`, listo:false): cara
-  gigante en 3 anillos que giran; pausar cuando queda armada (7 cuadros por pasada). Propuesta p007 (Issue #17).
+  gigante en 3 anillos que giran; pausar cuando queda armada (7 cuadros por pasada; el cuadro 0 arranca casi armado, cara reconocible).
+  Propuesta p007 (Issue #17).
   Inspector sin defectos en DRESS, FIT ALL x2 y FACE SPIN x2. Pendiente (jueves 26/11): comparación de equipos, música phonk, fondos propios
   revisados a 1080x1920, foto de Messi con más hueco; mancha oscura junto a la cabeza de Neymar en DRESS (viene del recorte de pelo).
 - **Para el CEO:** Issue #17 (FACE SPIN) y #4 (DRESS nuevo).
