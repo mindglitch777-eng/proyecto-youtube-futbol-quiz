@@ -738,10 +738,12 @@ def guion_dress(gid, rng, V, fecha):
              {"n": "peluca_rosa~" + str(rng.choice([320, 190, 280])), "ok": False}]
     rng.shuffle(malos)
     pelo = {"n": "pelo_verde" + rng.choice(["", "~0", "~270", "~200"]), "ok": True}
-    medio = [{"n": "cadena", "ok": True}] + malos[:1]                         # 16/11: 4 accesorios (antes 5) y más rápidos
-    rng.shuffle(medio)                                                        # → 6,8 s en vez de 11,4 s (Issue #4: 108 % visto)
+    # 23/11 estilo Muzam (31 M, pedido del CEO): 6 accesorios a 1 s (caídas el doble de rápidas), caras 25 % más grandes,
+    # solo la lista 1-2-3-4 al costado (se llena con lo que calza), sin carteles ni CTA, corte seco al loop. 6,3 s.
+    medio = [{"n": "cadena", "ok": True}, {"n": rng.choice(["corona", "galera"]), "ok": True}] + malos[:2]
+    rng.shuffle(medio)
     return dict(id=gid, jugadores=[c for _, c, _ in grupo], nombres=[n for n, _, _ in grupo], musica=V.musica(rng),
-                items=[{"n": "anteojos", "ok": True}] + medio + [pelo], t_item=1.55, t_cae=0.95, cola=0.6)
+                items=[{"n": "anteojos", "ok": True}] + medio + [pelo], t_item=1.0, t_cae=0.5, cola=0.3, escala=1.25, estilo="muzam")
 
 
 def guion_torre(gid, rng, V, fecha):
@@ -1052,6 +1054,9 @@ def fabricar(slots, sem, rng, prefijo="s1", procesos=3, renderizar=True):
         if tipo in LIMPIO_PRUEBA:                                             # 22/11 prueba A/B "versión limpia": alterna por formato
             k = f"limpio_{tipo}"; V.contadores[k] = V.contadores.get(k, 0) + 1
             g["limpio"] = V.contadores[k] % 2 == 1
+            if tipo == "fitall" and g["limpio"]:                               # 23/11 (CEO): FIT ALL limpio = estilo RyukX (12,6 M):
+                g.update(estilo="ryukx", escala=1.7, n_cabezas=6,              # caras ~70 % más grandes, 6 cabezas, giro más rápido,
+                         vueltas=g.get("vueltas", 4) + 1, pos_correcto=min(g.get("pos_correcto", 3), 5))   # sin contador ni PERFECT!
         ruta.write_text(json.dumps(g, ensure_ascii=False, indent=1))
         desc_completa = (f"{desc}\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n"
                          f"{creditos(fotos)}")

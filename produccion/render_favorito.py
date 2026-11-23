@@ -10,6 +10,7 @@ guion: {"id", "jugadores": [6 claves de SUPERESTRELLAS], "saltos": [índices de 
 """
 import json
 import math
+import os
 import subprocess
 import sys
 from functools import lru_cache
@@ -102,7 +103,7 @@ def cuadro(g, A, ts, t):
     b = pelota().rotate(-t * 720, resample=Image.BICUBIC)
     im.alpha_composite(b, (int(x - BALL / 2), int(y - BALL / 2 + 60)))
     d = ImageDraw.Draw(im)
-    if t > g["dur"] - 1.6:
+    if t > g["dur"] - 1.6 and os.environ.get("GANCHO_LIMPIO") != "1":        # 23/11: la versión limpia no tiene cartel final (loop sin corte)
         P.texto(d, (W / 2, 1840), "WHO DID YOU GET?", 74, (255, 230, 40), 11)
     import gancho as G
     G.capa(im, t, g["dur"], A["textos"], 95, ancho_max=1000, tam=80)

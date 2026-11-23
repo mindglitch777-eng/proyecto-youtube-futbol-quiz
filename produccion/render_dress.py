@@ -111,7 +111,8 @@ def armar(g):
     global Y_BUSTO
     bs = [PE.busto(k, ANCHO_B) for k in g["jugadores"]]
     Y_BUSTO = H - max(b["img"].height for b in bs) + 40
-    dxs = [W / 2 - ANCHO_B + 270, W / 2 - 270]
+    k = ANCHO_B / 960
+    dxs = [W / 2 - ANCHO_B + 270 * k, W / 2 - 270 * k]
     geos = [geo(b, dx, Y_BUSTO) for b, dx in zip(bs, dxs)]
     piezas = [[pieza(it, b, gg) for b, gg in zip(bs, geos)] for it in g["items"]]
     return bs, dxs, geos, piezas
@@ -147,8 +148,12 @@ def cuadro(g, A, t, dur):
                         y = (-img.height - 40) + (H + img.height + 80) * u
                 im.alpha_composite(img, (int(x), int(y)))
     d = ImageDraw.Draw(im)
+    puestos = [it for j, it in enumerate(items) if it["ok"] and (j < k_act or (j == k_act and lt >= T_CAE) or t >= t_fin)]
     for r in range(4):
         P.texto(d, (70, 250 + r * 105), f"{r + 1}.", 86, (255, 255, 255), 9)
+        if g.get("estilo") == "muzam" and r < len(puestos):                   # 23/11: la lista se llena con lo que calzó
+            nom = NOMBRE.get(puestos[r]["n"].split("~")[0].split(":")[0], "")
+            d.text((122, 250 + r * 105), nom, font=P.fuente(58), fill=(30, 170, 60), anchor="lm", stroke_width=7, stroke_fill=(255, 255, 255))
     return im.convert("RGB")
 
 
@@ -174,8 +179,9 @@ def audio(g, dur):
 
 
 def main(guion):
-    global T_ITEM, T_CAE, T_DECIDE
+    global T_ITEM, T_CAE, T_DECIDE, ANCHO_B
     g = json.loads(Path(guion).read_text())
+    ANCHO_B = int(960 * g.get("escala", 1.0))                                 # 23/11 (CEO): caras más grandes como parámetro
     T_ITEM, T_CAE = g.get("t_item", T_ITEM), g.get("t_cae", T_CAE)           # 16/11: versión corta (Issue #4: 108 % visto con 11,4 s)
     T_DECIDE = T_CAE + 0.5
     out = ROOT / "salida" / g["id"]; out.mkdir(parents=True, exist_ok=True)
@@ -186,10 +192,12 @@ def main(guion):
                           "-i", "-", "-c:v", "libx264", "-preset", "medium", "-crf", "19", "-pix_fmt", "yuv420p", str(mudo)], stdin=subprocess.PIPE)
     import gancho as G
     tx = G.textos_de(g, "dress")
-    inicio = G.capa(cuadro(g, A, 0.0, dur), 0.0, dur, tx, 110)
+    muzam = g.get("estilo") == "muzam"                                         # 23/11 estilo Muzam (31 M): sin carteles, corte seco al loop
+    capa = (lambda im, t: G.capa_limpia(im, t, tx, 110)) if muzam else (lambda im, t: G.capa(im, t, dur, tx, 110))
+    inicio = capa(cuadro(g, A, 0.0, dur), 0.0)
     for f in range(int(round(dur * FPS))):
-        t = f / FPS; im = G.capa(cuadro(g, A, t, dur), t, dur, tx, 110)
-        if t > dur - 0.3:
+        t = f / FPS; im = capa(cuadro(g, A, t, dur), t)
+        if t > dur - 0.3 and not muzam:
             im = Image.blend(im, inicio, (t - (dur - 0.3)) / 0.3)
         p.stdin.write(np.asarray(im, np.uint8).tobytes())
     p.stdin.close(); p.wait()

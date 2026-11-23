@@ -48,11 +48,11 @@ def _abrir(ref):
 
 
 @lru_cache(maxsize=32)
-def cabeza(ref):
-    """Cabeza + cuello (sin hombros), con la cara de CARA px. Devuelve la imagen centrada en la cara."""
+def cabeza(ref, cara=CARA):
+    """Cabeza + cuello (sin hombros), con la cara de `cara` px. Devuelve la imagen centrada en la cara."""
     im = _abrir(ref)
     x, y, fw, fh = RR.cara(im)
-    s = CARA / fh
+    s = cara / fh
     im = im.resize((max(1, int(im.width * s)), max(1, int(im.height * s))), Image.LANCZOS)
     x, y, fw, fh = x * s, y * s, fw * s, fh * s
     cx = x + fw / 2
@@ -69,15 +69,22 @@ def cabeza(ref):
     m = np.maximum(m, cuello * np.clip((fh * 0.3 - np.abs(xx - ww / 2)) / 8, 0, 1))
     a = np.asarray(c).copy()
     a[..., 3] = (a[..., 3] * m).astype(np.uint8)
+    import cv2                                                                 # 23/11: solo la parte unida a la cara (afuera manos/brazos sueltos)
+    n_, lab, _, _ = cv2.connectedComponentsWithStats((a[..., 3] > 30).astype(np.uint8))
+    yc, xc = int(min(hh - 1, (y - caja[1]) + fh / 2)), int(min(ww - 1, cx - caja[0]))
+    if n_ > 2 and lab[yc, xc] > 0:
+        a[..., 3] = np.where(lab == lab[yc, xc], a[..., 3], 0)
+        out = Image.fromarray(a); bb = out.getbbox()
+        return out.crop((bb[0], bb[1], bb[2], hh))                             # el borde de abajo (cuello) no se mueve
     return Image.fromarray(a)
 
 
 @lru_cache(maxsize=8)
-def cuerpo(nombre):
+def cuerpo(nombre, cara=CARA):
     """Cuerpo sin cabeza (desde el corte del cuello hasta los pies) y la x del cuello."""
     im = Image.open(REC / "cuerpos" / f"{nombre}.png").convert("RGBA")
     x, y, fw, fh = RR.cara(im)
-    s = CARA / fh
+    s = cara / fh
     im = im.resize((int(im.width * s), int(im.height * s)), Image.LANCZOS)
     x, y, fw, fh = x * s, y * s, fw * s, fh * s
     corte = int(y + K_CUELLO * fh)
@@ -128,17 +135,40 @@ def senuelos(cuerpo_, rng, n=7):
     return elegidas[:n]
 
 
+def es_cara(img):
+    """Al menos 30 % de los píxeles visibles con tono de piel (cualquier tono): si no, el recorte no es una cara."""
+    a = np.asarray(img).astype(int); vis = a[..., 3] > 128
+    if vis.sum() < 100:
+        return False
+    r, g_, b = a[..., 0], a[..., 1], a[..., 2]
+    piel = vis & (r > 60) & (r > g_) & (g_ > b - 10) & (r - b > 15) & (r < 255)
+    return piel.sum() / vis.sum() >= 0.30
+
+
 def armar(g):
+    # 23/11 (CEO, estilo RyukX 12,6 M): "escala" agranda caras, cuerpo y anillo (las cabezas pueden salir un poco de la pantalla
+    # al girar, como en el viral). Sin escala, igual que antes.
+    esc = g.get("escala", 1.0); cara = int(CARA * esc)
     ref_ok = "cuerpos/" + g["cuerpo"]
-    pz = [cabeza(r if "/" in r else "torsos/" + r) for r in g["senuelos"]]
-    k = g.get("pos_correcto", 3)
-    pz.insert(k, cabeza(ref_ok))
-    body, cuello_x = cuerpo(g["cuerpo"])
+    pz = []
+    for r_ in g["senuelos"]:                                                  # 23/11: afuera los "señuelos" que no son una cara
+        c_ = cabeza(r_ if "/" in r_ else "torsos/" + r_, cara)               # (pedazos de brazo/camiseta mal detectados)
+        if es_cara(c_):
+            pz.append(c_)
+    if g.get("n_cabezas"):
+        pz = pz[: g["n_cabezas"] - 1]
+    k = min(g.get("pos_correcto", 3), len(pz))
+    pz.insert(k, cabeza(ref_ok, cara))
+    body, cuello_x = cuerpo(g["cuerpo"], cara)
     alto = max(p.height for p in pz)
-    r = HUECO + alto / 2
+    r = HUECO * esc + alto / 2
+    if g.get("n_cabezas"):                                                     # anillo justo para n cabezas (caras gigantes)
+        r = len(pz) * alto / (2 * math.pi) * 1.02
     cuello_y = PIE_Y - body.height
+    if esc > 1:                                                                # cuerpo grande: el cuello baja, los pies quedan fuera de cuadro
+        cuello_y = max(cuello_y, int(H * 0.62))
     cy = cuello_y - pz[k].height / 2 - r
-    sobra = (cy - r - alto / 2) - 230                                          # lugar libre bajo el cartel de arriba: el anillo lo usa
+    sobra = (cy - r - alto / 2) - (40 if g.get("estilo") == "ryukx" else 230)  # lugar libre arriba: el anillo lo usa
     if sobra > 0:
         r += sobra / 2; cy -= sobra / 2
     return dict(piezas=pz, correcto=k, cuerpo=body, cuello_x=cuello_x, r=r, centro=(W / 2, cy), cuello_y=cuello_y,
@@ -190,23 +220,29 @@ def cuadro(g, A, t, enc):
     fy = A["cuello_y"] + 40
     d.polygon([(cx + 150, fy - 34), (cx + 150, fy + 34), (cx + 95, fy)], fill=(255, 255, 255, 235))
     d.rectangle((cx + 150, fy - 12, cx + 230, fy + 12), fill=(255, 255, 255, 235))
-    num = int(((a0 - angulo(g, A, 0)) % 360) // paso) % n + 1
-    P.texto(d, (110, 300), f"{num}.", 150, (255, 255, 255), 13, (230, 30, 30))
+    ryukx = g.get("estilo") == "ryukx"                                         # 23/11: sin contador ni PERFECT! (solo el destello)
+    if not ryukx:
+        num = int(((a0 - angulo(g, A, 0)) % 360) // paso) % n + 1
+        P.texto(d, (110, 300), f"{num}.", 150, (255, 255, 255), 13, (230, 30, 30))
     for te in enc:
         e = t - te
         if -0.03 <= e < 0.1:                                              # 15/11: PERFECT! solo mientras calza
             if e < 0.15:
                 im.alpha_composite(Image.new("RGBA", (W, H), (60, 230, 90, int(60 * (1 - max(e, 0) / 0.15)))))
                 d = ImageDraw.Draw(im)
-            P.texto(d, (W / 2, H - 70), "PERFECT!", int(110 * min(1, (e + 0.05) / 0.1)) + 1, (255, 230, 40), 12)
-    if t < T_ZOOM:                                                             # arranque: zoom a las cabezas (caras grandes en el cuadro 0)
+            if not ryukx:
+                P.texto(d, (W / 2, H - 70), "PERFECT!", int(110 * min(1, (e + 0.05) / 0.1)) + 1, (255, 230, 40), 12)
+    if t < T_ZOOM and not ryukx:                                                             # arranque: zoom a las cabezas (caras grandes en el cuadro 0)
         u = t / T_ZOOM; z = 1 + (ZOOM - 1) * (1 - u) ** 2
         fx, fy = cx, A["cuello_y"] - A["r"] * 0.55
         w, h = W / z, H / z
         x0 = min(max(0, fx - w / 2), W - w); y0 = min(max(0, fy - h / 2), H - h)
         im = im.crop((int(x0), int(y0), int(x0 + w), int(y0 + h))).resize((W, H), Image.BICUBIC)
     import gancho as G
-    G.capa(im, t, g["dur"], A["textos"], 95, ancho_max=1000, tam=78)
+    if ryukx:
+        G.capa_limpia(im, t, A["textos"], 95)
+    else:
+        G.capa(im, t, g["dur"], A["textos"], 95, ancho_max=1000, tam=78)
     return im.convert("RGB")
 
 
