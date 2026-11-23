@@ -1,17 +1,17 @@
 {
- "fecha": "2026-11-22",
+ "fecha": "2026-11-23",
  "canales_seguidos": 80,
- "canales_nuevos": 21,
- "revisados": 153,
- "fuera_de_serie": 307,
+ "canales_nuevos": 18,
+ "revisados": 163,
+ "fuera_de_serie": 338,
  "interacciones": {
   "comentar": {
-   "videos": 58,
-   "mediana": 1958059
+   "videos": 62,
+   "mediana": 1852567
   },
   "ninguna": {
-   "videos": 15,
-   "mediana": 1938192
+   "videos": 16,
+   "mediana": 1845830
   },
   "pausar": {
    "videos": 4,
@@ -313,6 +313,28 @@
    "idea_para_nosotros": "Reemplazar el juego físico por una carrera 2D estilo pinball animada por código donde 4 fichas de jugadores caen al azar, pidiéndole al usuario que pause en el frame exacto donde su jugador favorito gana."
   },
   {
+   "id": "0UMA9TwB_zU",
+   "canal": "L.I.H.",
+   "subs": 1920,
+   "nuevo": false,
+   "vistas": 535245,
+   "ratio": 194.6,
+   "puntaje": 36.63,
+   "nombre_formato": "Player Comparison Edit",
+   "mecanica": "Compara alternadamente a dos estrellas de fútbol (Lamine Yamal y Kylian Mbappé) en varias categorías mediante cortes rápidos y texto en pantalla. Al final repasa imágenes destacadas y festejos de ambos para alimentar el debate entre los fans.",
+   "primer_segundo": "Se ve a Lamine Yamal pateando de zurda con el texto 'Left foot...'.",
+   "por_que_engancha": "Genera debate inmediato y rivalidad de hinchadas comparando dos de las mayores figuras jóvenes del fútbol actual.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Lamine Yamal",
+    "Kylian Mbappé"
+   ],
+   "usa_clips_reales": true,
+   "replicable_con_codigo": 4,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Crear una ruleta o cinta 2D animada por código donde el usuario deba pausar el video en el segundo exacto para armar a su jugador ideal combinando atributos de Yamal y Mbappé."
+  },
+  {
    "id": "9u5HxeSdIiE",
    "canal": "V1m7n",
    "subs": 9270,
@@ -375,104 +397,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 4,
    "idea_para_nosotros": "Hacer una ruleta interactiva de 'Crea tu trío GTA' donde 3 slots cambian rápido de jugador y el usuario debe pausar en el momento justo para armar el equipo ideal con una estrella de cada era."
-  },
-  {
-   "id": "6HZ3LJX9G2Y",
-   "canal": "PULSE",
-   "subs": 55100,
-   "nuevo": true,
-   "vistas": 4178035,
-   "ratio": 102.0,
-   "puntaje": 32.14,
-   "nombre_formato": "Grid Elimination / Tic-Tac-Toe Battle",
-   "mecanica": "Se presenta una cuadrícula donde fotos recortadas de estrellas de fútbol van cambiando y eliminándose unas a otras. Tras varias rondas de eliminación entre varias figuras, Cristiano Ronaldo aparece al final como el ganador supremo.",
-   "primer_segundo": "Se observa una grilla con imágenes animadas de Mbappé y Lamine Yamal sobre fondo blanco.",
-   "por_que_engancha": "Genera expectativa y debate al ir eliminando progresivamente a jugadores TOP hasta revelar al ganador.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Kylian Mbappé",
-    "Lamine Yamal",
-    "Erling Haaland",
-    "Harry Kane",
-    "Lionel Messi",
-    "Cristiano Ronaldo"
-   ],
-   "usa_clips_reales": true,
-   "replicable_con_codigo": 4,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Hacer un juego tipo 'Tres en raya' (Tic-Tac-Toe) animado donde el usuario deba pausar justo cuando se alineen tres fotos idénticas de su estrella favorita para ganar."
   }
  ],
  "sin_analizar": [
   {
+   "id": "PYTJTIjQ1sk",
+   "canal": "OddlyVerse_OV",
+   "vistas": 1232090,
+   "ratio": 445.8,
+   "titulo": "He thought it was his turn 😂"
+  },
+  {
+   "id": "Fap67CK1ruA",
+   "canal": "ZynHitz",
+   "vistas": 1598054,
+   "ratio": 119.9,
+   "titulo": "Ronaldo Won The World Cup In 2010 😳 #ronaldo #cristianoronaldo #cr7"
+  },
+  {
+   "id": "QgzsGeXoPKY",
+   "canal": "Cris07",
+   "vistas": 2737069,
+   "ratio": 90.9,
+   "titulo": "😱Ronaldo Vs Messi Vs Neymar Vs Ishowspeed 🔥 Guess Won win 🏆👀 #footballshorts #shortsfeed #shorts"
+  },
+  {
+   "id": "hrnoen7DYCU",
+   "canal": "Dubender ",
+   "vistas": 11755441,
+   "ratio": 187.9,
+   "titulo": "🇧🇷 BRAZIL vs FRANCE 🇫🇷 #football #brasil #neymar #shorts"
+  },
+  {
+   "id": "CzaZUPu5u7A",
+   "canal": "Sports News USA",
+   "vistas": 631448,
+   "ratio": 404.3,
+   "titulo": "Top 5 CRAZIEST College Football Game Winners EVER! 🏆 Number 1 Will Shock You! #cgsong #Shorts"
+  },
+  {
+   "id": "LTtUfMBJy0o",
+   "canal": "4nas",
+   "vistas": 3601983,
+   "ratio": 74.6,
+   "titulo": "Mbappe is unstoppable ☠️"
+  },
+  {
+   "id": "9SgMU3iTWFY",
+   "canal": "TIFOO",
+   "vistas": 986670,
+   "ratio": 111.3,
+   "titulo": "Haaland vs Kane vs CR7 vs Messi Goals or Trophies, Who Wins the Showdown ⚽🏆"
+  },
+  {
+   "id": "qPLYn60uv2g",
+   "canal": "Fantasyball007",
+   "vistas": 11979316,
+   "ratio": 52.5,
+   "titulo": "Haaland & Mbappé Scared the Life Out of the Boys! 😱😂 #shorts #haaland #mbappe #yamal"
+  },
+  {
+   "id": "lC3xvw_grHY",
+   "canal": "HerudinAnwar",
+   "vistas": 903295,
+   "ratio": 35.9,
+   "titulo": "LEVEL CHALLENGE GUYS !! #shorts #shortvideo #football #challenge #funny #comedy"
+  },
+  {
    "id": "Ug4--LNNFp8",
    "canal": "FootballPlanet",
-   "vistas": 953097,
-   "ratio": 34.0,
+   "vistas": 953171,
+   "ratio": 33.6,
    "titulo": "Lamine se tiñe el pelo de azul 😯🟦 #shorts #lamineyamal #futbol #viral #españa"
-  },
-  {
-   "id": "sYywP0i0URw",
-   "canal": "FootyFace",
-   "vistas": 1297454,
-   "ratio": 31.4,
-   "titulo": "This Is Almost Impossible!! Fit All Ronaldinho Legends 🎯⚽ | Football Challenge HQ"
-  },
-  {
-   "id": "1xpNPfeb3XY",
-   "canal": "SUVO SPORTS 🔥",
-   "vistas": 3405714,
-   "ratio": 24.1,
-   "titulo": "💥India vs Pakistan Highlights football match 2026 ⚽😱 #india #pakistan #football #cr7 #usa #shorts"
-  },
-  {
-   "id": "jF1jm9mYsc0",
-   "canal": "Fantasyball007",
-   "vistas": 6657694,
-   "ratio": 51.6,
-   "titulo": "Mbappé's Oreo Magic Trick Had Haaland Completely Fooled 😂🍪 #shorts #mbappe #haaland"
-  },
-  {
-   "id": "UDvOHZ_nAeQ",
-   "canal": "Endform TV",
-   "vistas": 1188062,
-   "ratio": 29.3,
-   "titulo": "Who Is the Real GOAT? ⚽👑 Final Form Decides…"
-  },
-  {
-   "id": "8zEGE03jwpg",
-   "canal": "Hunters Strike",
-   "vistas": 921033,
-   "ratio": 84.1,
-   "titulo": "La meilleure célébration ? ✨👀 #football #footballshorts #footballchallenge"
-  },
-  {
-   "id": "yPn_Rjhi_e4",
-   "canal": "FitVision",
-   "vistas": 10341539,
-   "ratio": 43.0,
-   "titulo": "This Fighter Was LOSING HP Before the Match 😂🥋"
-  },
-  {
-   "id": "Si7hYE46yI0",
-   "canal": "OtaKux ",
-   "vistas": 1192199,
-   "ratio": 75.7,
-   "titulo": "Arda Güler vs The Legends 🤯⚽️ #ardaguler #football #shorts"
-  },
-  {
-   "id": "NSKErxzEOV0",
-   "canal": "D'Football Genius",
-   "vistas": 1998527,
-   "ratio": 64.2,
-   "titulo": "Rare penalty moments 😆"
-  },
-  {
-   "id": "o1aOBktsbZE",
-   "canal": "CROATBALL",
-   "vistas": 5641007,
-   "ratio": 48.5,
-   "titulo": "Netherlands 7 0 Greece | Highlights"
   }
  ]
 }
