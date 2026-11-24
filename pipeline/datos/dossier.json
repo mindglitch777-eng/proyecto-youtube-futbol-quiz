@@ -1,29 +1,29 @@
 {
  "fecha": "2026-11-23",
  "canales_seguidos": 80,
- "canales_nuevos": 18,
- "revisados": 163,
- "fuera_de_serie": 338,
+ "canales_nuevos": 27,
+ "revisados": 160,
+ "fuera_de_serie": 333,
  "interacciones": {
   "comentar": {
-   "videos": 62,
-   "mediana": 1852567
+   "videos": 69,
+   "mediana": 1763649
   },
   "ninguna": {
-   "videos": 16,
+   "videos": 18,
    "mediana": 1845830
   },
   "pausar": {
-   "videos": 4,
-   "mediana": 3218255
+   "videos": 5,
+   "mediana": 3432259
+  },
+  "adivinar": {
+   "videos": 5,
+   "mediana": 3010176
   },
   "elegir": {
    "videos": 4,
    "mediana": 6264990
-  },
-  "adivinar": {
-   "videos": 3,
-   "mediana": 3010176
   }
  },
  "ideas": [
@@ -245,6 +245,30 @@
    "idea_para_nosotros": "Adaptar la progresión numérica a superestrellas (ej. Haaland vs Mbappé vs Messi) comparando goles/títulos por edad con una ruleta de pausas para que el usuario elija con qué mentalidad o jugador se identifica."
   },
   {
+   "id": "QgzsGeXoPKY",
+   "canal": "Cris07",
+   "subs": 6570,
+   "nuevo": true,
+   "vistas": 2743605,
+   "ratio": 91.1,
+   "puntaje": 39.19,
+   "nombre_formato": "Guess Who Won",
+   "mecanica": "Cuatro personas disfrazadas lanzan pelotas de baloncesto hacia un aro central. Se revela una competencia final entre Ronaldo y Messi pidiendo like o comentario.",
+   "primer_segundo": "Se ven las caricaturas de Ronaldo, Ishowspeed, Messi y Neymar arriba con el texto 'GUESS WHO WON'.",
+   "por_que_engancha": "Combina la curiosidad de adivinar el ganador con la rivalidad clásica entre Ronaldo y Messi.",
+   "interaccion": "adivinar",
+   "jugadores": [
+    "Ronaldo",
+    "Messi",
+    "Neymar",
+    "Ishowspeed"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer una ruleta animada en 2D con fotos reales de Ronaldo, Messi, Neymar y Mbappé donde el espectador deba pausar para elegir al ganador definitivo de un Balón de Oro."
+  },
+  {
    "id": "ejdBRLrQy6A",
    "canal": "ᴘᴇɴᴀʟᴛʏ ᴛɪᴍᴇ ",
    "subs": 95200,
@@ -365,110 +389,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 3,
    "idea_para_nosotros": "Hacer un minijuego de pausa donde la portada de GTA V tiene ranuras giratorias para la cara de cada jugador, y el espectador debe pausar para alinear a Messi, Ronaldo y Neymar al mismo tiempo."
-  },
-  {
-   "id": "2Q2BKwVKVvk",
-   "canal": "Simon_Editor",
-   "subs": 4240,
-   "nuevo": true,
-   "vistas": 807407,
-   "ratio": 47.2,
-   "puntaje": 33.48,
-   "nombre_formato": "GTA Football Generations",
-   "mecanica": "Muestra recortes de futbolistas icónicos agrupados de a tres según distintas eras y emparejados con logos de la saga GTA. Transiciona cronológicamente desde la generación actual (GTA VI) hasta leyendas históricas (GTA Vice City).",
-   "primer_segundo": "Se ve a Haaland, Mbappé y Lamine Yamal en ropa de verano junto al logo de Grand Theft Auto VI.",
-   "por_que_engancha": "Genera nostalgia y debate al asociar juegos clásicos de GTA con tríos dorados de cada época futbolística.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Erling Haaland",
-    "Kylian Mbappé",
-    "Lamine Yamal",
-    "Neymar Jr",
-    "Lionel Messi",
-    "Cristiano Ronaldo",
-    "Ronaldinho",
-    "Ronaldo Nazário",
-    "Zinedine Zidane",
-    "Diego Maradona",
-    "Pelé",
-    "Johan Cruyff"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Hacer una ruleta interactiva de 'Crea tu trío GTA' donde 3 slots cambian rápido de jugador y el usuario debe pausar en el momento justo para armar el equipo ideal con una estrella de cada era."
   }
  ],
  "sin_analizar": [
   {
-   "id": "PYTJTIjQ1sk",
-   "canal": "OddlyVerse_OV",
-   "vistas": 1232090,
-   "ratio": 445.8,
-   "titulo": "He thought it was his turn 😂"
-  },
-  {
-   "id": "Fap67CK1ruA",
-   "canal": "ZynHitz",
-   "vistas": 1598054,
-   "ratio": 119.9,
-   "titulo": "Ronaldo Won The World Cup In 2010 😳 #ronaldo #cristianoronaldo #cr7"
-  },
-  {
-   "id": "QgzsGeXoPKY",
-   "canal": "Cris07",
-   "vistas": 2737069,
-   "ratio": 90.9,
-   "titulo": "😱Ronaldo Vs Messi Vs Neymar Vs Ishowspeed 🔥 Guess Won win 🏆👀 #footballshorts #shortsfeed #shorts"
-  },
-  {
-   "id": "hrnoen7DYCU",
-   "canal": "Dubender ",
-   "vistas": 11755441,
-   "ratio": 187.9,
-   "titulo": "🇧🇷 BRAZIL vs FRANCE 🇫🇷 #football #brasil #neymar #shorts"
-  },
-  {
-   "id": "CzaZUPu5u7A",
-   "canal": "Sports News USA",
-   "vistas": 631448,
-   "ratio": 404.3,
-   "titulo": "Top 5 CRAZIEST College Football Game Winners EVER! 🏆 Number 1 Will Shock You! #cgsong #Shorts"
-  },
-  {
-   "id": "LTtUfMBJy0o",
-   "canal": "4nas",
-   "vistas": 3601983,
-   "ratio": 74.6,
-   "titulo": "Mbappe is unstoppable ☠️"
-  },
-  {
    "id": "9SgMU3iTWFY",
    "canal": "TIFOO",
-   "vistas": 986670,
-   "ratio": 111.3,
+   "vistas": 996096,
+   "ratio": 112.3,
    "titulo": "Haaland vs Kane vs CR7 vs Messi Goals or Trophies, Who Wins the Showdown ⚽🏆"
   },
   {
-   "id": "qPLYn60uv2g",
-   "canal": "Fantasyball007",
-   "vistas": 11979316,
-   "ratio": 52.5,
-   "titulo": "Haaland & Mbappé Scared the Life Out of the Boys! 😱😂 #shorts #haaland #mbappe #yamal"
+   "id": "pbYOyftPqcM",
+   "canal": "FootyMorph ",
+   "vistas": 760881,
+   "ratio": 38.8,
+   "titulo": "Lamine Yamal vs Ronaldo 😱🤯 Dressing chelleng 🔥#viral"
   },
   {
-   "id": "lC3xvw_grHY",
-   "canal": "HerudinAnwar",
-   "vistas": 903295,
-   "ratio": 35.9,
-   "titulo": "LEVEL CHALLENGE GUYS !! #shorts #shortvideo #football #challenge #funny #comedy"
+   "id": "SC43bbVpXlQ",
+   "canal": "BADSHAH CUBER ",
+   "vistas": 2852985,
+   "ratio": 70.2,
+   "titulo": "#ronaldo #messi #worldcup2026 #shorts #fyp #football #trending #usa #cr7 #viral"
   },
   {
-   "id": "Ug4--LNNFp8",
-   "canal": "FootballPlanet",
-   "vistas": 953171,
-   "ratio": 33.6,
-   "titulo": "Lamine se tiñe el pelo de azul 😯🟦 #shorts #lamineyamal #futbol #viral #españa"
+   "id": "1xpNPfeb3XY",
+   "canal": "SUVO SPORTS 🔥",
+   "vistas": 3442869,
+   "ratio": 25.1,
+   "titulo": "💥India vs Pakistan Highlights football match 2026 ⚽😱 #india #pakistan #football #cr7 #usa #shorts"
+  },
+  {
+   "id": "sYywP0i0URw",
+   "canal": "FootyFace",
+   "vistas": 1298179,
+   "ratio": 30.7,
+   "titulo": "This Is Almost Impossible!! Fit All Ronaldinho Legends 🎯⚽ | Football Challenge HQ"
+  },
+  {
+   "id": "Si7hYE46yI0",
+   "canal": "OtaKux ",
+   "vistas": 1386172,
+   "ratio": 81.3,
+   "titulo": "Arda Güler vs The Legends 🤯⚽️ #ardaguler #football #shorts"
+  },
+  {
+   "id": "GgkMes8koeg",
+   "canal": "4nas",
+   "vistas": 3178506,
+   "ratio": 62.2,
+   "titulo": "When Bellingham loses control ☠🔥"
+  },
+  {
+   "id": "337LHxgcYRY",
+   "canal": "GoalQuiz",
+   "vistas": 2083969,
+   "ratio": 26.1,
+   "titulo": "ONLY 1% CAN FIND YAMAL, NEYMAR & VALVERDE! 🧠 | FIND THE PLAYER"
+  },
+  {
+   "id": "EAKY438BAZo",
+   "canal": "BallBloop",
+   "vistas": 2602030,
+   "ratio": 63.1,
+   "titulo": "Neymar the Magician! 🪄😱 Mbappé Can't Believe It!"
+  },
+  {
+   "id": "8zEGE03jwpg",
+   "canal": "Hunters Strike",
+   "vistas": 931065,
+   "ratio": 80.9,
+   "titulo": "La meilleure célébration ? ✨👀 #football #footballshorts #footballchallenge"
   }
  ]
 }

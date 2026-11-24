@@ -92,84 +92,124 @@
     "Mantener la duración de las transiciones rápidas pero controladas, evitando que el usuario sienta que el juego es imposible.",
     "Añadir llamadas a la acción agresivas al final ('COMMENT WHO YOU GOT') para disparar la interacción."
    ]
+  },
+  "fitall": {
+   "fecha": "2026-11-23",
+   "formato": "FIT ALL",
+   "mejor": {
+    "id": "AMH-L0FzyfE",
+    "vistas": 9068
+   },
+   "peor": {
+    "id": "OPrij2qKXXw",
+    "vistas": 705
+   },
+   "diferencias": [
+    "Jugador y atractivo global: Cristiano Ronaldo genera un gancho masivo inmediato y universal comparado con Vinícius Jr.",
+    "Audio y memes: El video ganador utiliza el icónico grito 'SIUUU' de Ronaldo que potencia la retención auditiva; el perdedor usa un audio en alemán irrelevante ('Walk out... halts Maul') que confunde y ahuyenta a la audiencia internacional.",
+    "Texto del gancho superior: El ganador usa 'FIT RONALDO'S REAL HEAD' (más coherente con la acción de encajar); el perdedor usa 'FIND VINÍCIUS'S REAL HEAD'.",
+    "Limpieza visual: El video de Vinícius tiene una flecha blanca añadida en el cuello innecesaria y distractora, mientras que el de Ronaldo mantiene la interfaz limpia y centrada en la ruleta."
+   ],
+   "primer_segundo": "Mostrar inmediatamente una superestrella de alcance masivo (Cristiano o Messi) con la ruleta ya girando a alta velocidad, el texto imperativo 'STOP FIT [NOMBRE]'S REAL HEAD' y un audio/meme característico de inmediato (como el 'SIUUU').",
+   "cambios": [
+    "Usar exclusivamente audios y efectos universales de fútbol o sonidos meme reconocibles a nivel mundial, eliminando voces en idiomas locales como alemán.",
+    "Priorizar jugadores Tier 1 absolutos de la cultura meme y masiva (Cristiano Ronaldo, Messi, Haaland, Mbappé) antes que figuras secundarias.",
+    "Eliminar elementos gráficos residuales confusos (como la flecha blanca en el cuello) y unificar el verbo de la consigna a 'FIT' en lugar de 'FIND'."
+   ]
   }
  },
  "jugadores": [
   {
    "jugador": "Ronaldo",
-   "videos": 303,
-   "vistas": 136117056,
-   "vph": 1815908
+   "videos": 316,
+   "vistas": 145379049,
+   "vph": 1946269
   },
   {
    "jugador": "Yamal",
-   "videos": 212,
-   "vistas": 97752432,
-   "vph": 1814437
+   "videos": 182,
+   "vistas": 98078077,
+   "vph": 1649557
   },
   {
    "jugador": "Mbappé",
-   "videos": 90,
-   "vistas": 58228960,
-   "vph": 1294159
+   "videos": 93,
+   "vistas": 67994046,
+   "vph": 1264067
   },
   {
    "jugador": "Haaland",
-   "videos": 49,
-   "vistas": 42290400,
-   "vph": 1073115
+   "videos": 57,
+   "vistas": 51249243,
+   "vph": 1017928
   },
   {
    "jugador": "Messi",
-   "videos": 141,
-   "vistas": 47579161,
-   "vph": 782721
+   "videos": 163,
+   "vistas": 66013033,
+   "vph": 950378
   },
   {
    "jugador": "Neymar",
-   "videos": 148,
-   "vistas": 58107816,
-   "vph": 781105
+   "videos": 147,
+   "vistas": 61655675,
+   "vph": 818917
   },
   {
    "jugador": "Bellingham",
-   "videos": 33,
-   "vistas": 32148789,
-   "vph": 739999
+   "videos": 29,
+   "vistas": 31339811,
+   "vph": 672283
   },
   {
    "jugador": "Raphinha",
    "videos": 23,
-   "vistas": 8235913,
-   "vph": 182117
+   "vistas": 10063423,
+   "vph": 191737
+  },
+  {
+   "jugador": "Vinícius",
+   "videos": 26,
+   "vistas": 4061055,
+   "vph": 98344
   },
   {
    "jugador": "Kane",
    "videos": 14,
-   "vistas": 10699052,
-   "vph": 94647
+   "vistas": 9447209,
+   "vph": 85612
+  },
+  {
+   "jugador": "Ronaldinho",
+   "videos": 13,
+   "vistas": 8782477,
+   "vph": 80583
   },
   {
    "jugador": "Salah",
    "videos": 5,
-   "vistas": 1104995,
-   "vph": 83667
-  },
-  {
-   "jugador": "Ronaldinho",
-   "videos": 15,
-   "vistas": 7668228,
-   "vph": 78336
-  },
-  {
-   "jugador": "Vinícius",
-   "videos": 31,
-   "vistas": 3485310,
-   "vph": 61764
+   "vistas": 1423341,
+   "vph": 59048
   }
  ],
  "publico": {
-  "comentarios": 18
+  "comentarios": 18,
+  "pedidos": [
+   "Ronaldinho",
+   "Zidane",
+   "Neymar",
+   "Messi",
+   "Cristiano Ronaldo"
+  ],
+  "quejas": [
+   "Corrección y burla en tono amistoso por no reconocer a Kylian Mbappé o dudar sobre jugadores del PSG"
+  ],
+  "dificultad": "Fácil; múltiples usuarios comentan haberlo conseguido al primer intento ('first try', 'a la primera').",
+  "ideas": [
+   "Retos o filtros con leyendas clásicas como Zidane, Ronaldinho y David Beckham",
+   "Especial o desafío temático sobre jugadores del PSG o Mbappé",
+   "Versiones con mayor dificultad o menor tiempo para los formatos de cinta, rueda y vs"
+  ]
  },
  "fecha": "2026-11-23"
 }
