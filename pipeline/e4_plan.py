@@ -108,6 +108,9 @@ def podar():
             poda["podadas"][k] = dict(fecha=hoy.isoformat(), rinde=f"últimos 3: {', '.join(f'{a:,}' for a in xs[-3:])} vs canal {int(med):,}",
                                       videos=len(xs))
             anotar(k, "podado", poda["podadas"][k]["rinde"])
+        elif k in poda["promovidas"] and len(xs) >= 4 and st.median(xs[-4:]) < med:   # 24/11: un promovido que ya no rinde, baja
+            poda["promovidas"].pop(k)
+            anotar(k, "deja de ser promovido", f"mediana de sus últimos 4: {int(st.median(xs[-4:])):,} vs canal {int(med):,}")
         elif len(xs) >= 4 and st.median(xs) >= 1.5 * med and k not in poda["promovidas"]:
             poda["promovidas"][k] = dict(fecha=hoy.isoformat(), rinde=f"mediana {int(st.median(xs)):,} vs canal {int(med):,}", videos=len(xs))
             anotar(k, "promovido", poda["promovidas"][k]["rinde"])
@@ -158,7 +161,10 @@ def main(inicio=None, dias=7):
             return M["horas"][h[:5]]["efecto"]                                  # cerebro: efecto de la hora descontando el formato
         x = hrs.get(h[:2]); return (x["mediana"] / 8000 - 1) if x and x["videos"] >= 2 else 0.0
     grilla = list(GRILLA)
-    ola_fija = [k for k in promovidas if k not in FIJOS][:1]                      # la promovida de la ola toma un lugar fijo (y compite por las mejores horas)
+    tope_ = lambda k: CONFIG["pruebas"].get(k, {}).get("max_semana")              # 24/11: la promovida respeta su tope semanal (BALLON D'OR, tope 2, salía todos los días)
+    desde_ = (inicio - timedelta(days=6)).isoformat()
+    usados_ = lambda k: sum(1 for p_ in cargar("publicados.json", []) if p_.get("tipo") == k and p_.get("video_id") and not p_.get("cancelado") and desde_ <= p_["fecha"] < inicio.isoformat())
+    ola_fija = [k for k in promovidas if k not in FIJOS and not (tope_(k) and usados_(k) >= tope_(k))][:1]   # la promovida de la ola toma un lugar fijo (y compite por las mejores horas)
     if ola_fija:
         i = next(i for i, g in enumerate(grilla) if g[1] == "prueba")
         grilla[i] = (grilla[i][0], ola_fija[0], None)
