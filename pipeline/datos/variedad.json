@@ -4747,6 +4747,9 @@
    4,
    2,
    0
+  ],
+  "anillos": [
+   1
   ]
  },
  "semillas": [
@@ -5060,6 +5063,12 @@
    "estadio_0",
    "estadio_0~espejo~calido"
   ],
-  "limpio_slot": 3
+  "limpio_slot": 3,
+  "anillos_ult": [
+   "erling_haaland"
+  ],
+  "anillos_fondo": [
+   "estadio_6~espejo"
+  ]
  }
 }
