@@ -1,16 +1,26 @@
 {
  "fecha": "2026-11-24",
- "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
+ "autor": "Gerente IA · parte diario (24/11)",
  "veredicto": {
-  "color": "amber",
-  "titulo": "1130 de 1.000 suscriptores ✅",
-  "frase": "Todo anda. Hay algo para que decidas."
+  "color": "green",
+  "titulo": "La mejor racha del canal: +73 K y +88 K vistas por día",
+  "frase": "1.140 suscriptores y 1,26 M de vistas en 90 días (13 %). Con 6 por día, formatos nuevos y versión limpia, la mediana de la semana subió 180 %. Al ritmo actual, los 10 M llegan en ~23 semanas."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1130 / 1.000",
-   "nota": "faltan 0"
+   "valor": "1.140",
+   "nota": "✅"
+  },
+  {
+   "label": "Vistas Shorts 90 días",
+   "valor": "1,26 M / 10 M",
+   "nota": "13 % · 22,9 semanas"
+  },
+  {
+   "label": "Vistas del canal por día",
+   "valor": "+73 K · +88 K",
+   "nota": "23 y 24/11 (parcial)"
   },
   {
    "label": "Videos de 10 K por día",
@@ -18,19 +28,32 @@
    "nota": "meta 3"
   },
   {
-   "label": "Vistas de Shorts 90 días",
-   "valor": "1,26 M",
-   "nota": "22.9 semanas a 10 M"
+   "label": "Mediana de la semana",
+   "valor": "3.282",
+   "nota": "+180 %"
+  },
+  {
+   "label": "ESCAPE",
+   "valor": "18.520",
+   "nota": "1.er video"
   }
  ],
  "hallazgos": [
   {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP es el nuevo rey del canal",
-   "dato": "mediana a 48 h de 12.533 vistas (esperadas: 7.482)",
+   "dato": "CONVEYOR: mediana 12.027 (3,7x) con 5 medidos. ESCAPE debutó con 18.520, VS con 6.813, HEAD SLOT 5.960. FACE SPIN entra el 26/11.",
    "por_que": "Estrenó el 22/11 y la mecánica de la cinta transportadora enganchó directo a la audiencia (un video metió 17.188 vistas en 22 h).",
    "confianza": "media (con 4 videos)",
    "accion": "El cerebro estadístico le dará máxima prioridad en la fábrica diaria."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Los 'promovidos' no bajaban nunca y se salteaban el tope",
+   "dato": "BALLON D'OR fue promovido el 20/11 (4.262) y salió 4 veces en 5 días con tope de 2; hoy rinde 1.860. HEAD FIT, también promovido, rinde 2.179.",
+   "por_que": "La poda promovía pero nunca despromovía, y el plan le daba un lugar diario al promovido sin mirar el tope.",
+   "confianza": "alta",
+   "accion": "Arreglado el 24/11: el promovido respeta su tope y baja si sus últimos 4 quedan debajo del canal."
   },
   {
    "tipo": "funciona",

@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-24",
- "hora": "09:24",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 3282,
   "mediana_48h_semana_anterior": 1171,
@@ -55,7 +55,7 @@
   "lectura": "BIEN: variado"
  },
  "inspeccion": {
-  "revisados": 149,
+  "revisados": 167,
   "con_defectos": 3,
   "ejemplos": [
    "s1122_04_dom22_2000_goles: pantalla congelada 3.2 s",
@@ -68,7 +68,7 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-24T08:35-03:00",
+   "hora": "2026-11-24T13:26-03:00",
    "problemas": [],
    "acciones": [],
    "avisos": []
@@ -87,10 +87,12 @@
    "2026-11-20": 2,
    "2026-11-21": 2,
    "2026-11-22": 1
-  }
+  },
+  "vistas_por_dia": 45178,
+  "subs_por_dia": 33.4
  },
  "cerebro": {
-  "fecha": "2026-11-24T09:24-03:00",
+  "fecha": "2026-11-24T15:42-03:00",
   "videos_medidos": 142,
   "formatos": {
    "cinta": {
@@ -380,15 +382,15 @@
     "balon": "12%",
     "cinta": "11%",
     "cabezas": "8%",
+    "circulo": "6%",
     "goles": "6%",
     "slot": "6%",
-    "circulo": "6%",
     "vs": "5%",
     "penal": "5%",
-    "dress": "3%",
-    "piernas": "3%",
     "escape": "3%",
-    "cano": "3%"
+    "dress": "3%",
+    "cano": "3%",
+    "piernas": "3%"
    }
   },
   "experimentos": {
@@ -1316,51 +1318,21 @@
  ],
  "olas_calientes": [
   {
-   "mecanica": "goat",
+   "mecanica": "meme",
    "estado": "subiendo",
-   "vph": 1990,
-   "nuestros": [
-    "circulo"
-   ]
-  },
-  {
-   "mecanica": "find",
-   "estado": "subiendo",
-   "vph": 704,
-   "nuestros": [
-    "find"
-   ]
-  },
-  {
-   "mecanica": "transformacion",
-   "estado": "subiendo",
-   "vph": 583,
+   "vph": 3430,
    "nuestros": []
-  },
-  {
-   "mecanica": "dress",
-   "estado": "subiendo",
-   "vph": 1197,
-   "nuestros": [
-    "dress"
-   ]
   },
   {
    "mecanica": "3d_ia",
    "estado": "subiendo",
-   "vph": 556,
-   "nuestros": []
-  },
-  {
-   "mecanica": "satisfying",
-   "estado": "subiendo",
-   "vph": 116,
+   "vph": 572,
    "nuestros": []
   },
   {
    "mecanica": "balance",
    "estado": "subiendo",
-   "vph": 731,
+   "vph": 1559,
    "nuestros": []
   }
  ],
@@ -1375,7 +1347,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 18,
+  "olas_hace_h": 1,
   "investigacion": "2026-11-24",
   "poda": {
    "podadas": {
@@ -1428,7 +1400,7 @@
      "motivo": "mediana 8,460 vs canal 2,188"
     }
    ],
-   "mediana_canal": 2063
+   "mediana_canal": 2036
   },
   "advertencias": [
    "Pasado mañana (2026-11-26) no tiene videos subidos todavía (normal si la fábrica de hoy aún no corrió; si ya corrió, es un problema)."
@@ -1436,26 +1408,21 @@
  },
  "parte": {
   "fecha": "2026-11-24",
-  "autor": "máquina (sin IA)",
-  "titular": "1130 de 1.000 suscriptores ✅",
+  "titular": "1.140 suscriptores y 1,26 M de vistas en 90 días (13 %; 22,9 semanas al ritmo actual). Mejor racha del canal: +73 K vistas el 23/11 y +88 K hoy hasta las 15:01. Mediana de la semana +180 %.",
   "funciona": [
-   "CONVEYOR STOP del 22/11 21:30: 23.055 vistas en 36 h",
-   "CONVEYOR STOP del 23/11 21:30: 5.509 vistas en 12 h",
-   "WHEEL STOP del 21/11 15:00: 25.751 vistas en 66 h",
-   "Los más firmes (cerebro): CONVEYOR STOP mediana 12.027 (5 videos) · HEAD SLOT mediana 5.960 (5 videos)",
-   "MODO SERIE: WHEEL STOP pegó (25.734 vistas. 12.5x el canal) → sale 1 por día hasta el 28/11 con el título «Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mb»",
-   "MODO SERIE: CONVEYOR STOP pegó (20.073 vistas. 9.7x el canal) → sale 1 por día hasta el 28/11 con el título «Find Vinícius's real body 🛑🔥 Ronaldo or Mbappé? #vinicius #r»"
+   "ESCAPE: 18.520 en su 1.er video (5,6x). CONVEYOR: mediana 12.027 (3,7x, 5 medidos). VS: 6.813. HEAD SLOT: 5.960.",
+   "Videos de 10 K por día: 1,29 (venía en 1,0)."
   ],
   "no_funciona": [
-   "SKILL STOP del 22/11: 1.704 vistas en 40 h",
-   "BALLON D'OR 100% del 21/11: 2.581 vistas en 59 h",
-   "Videos de 10 K o más por día: 1,29 (meta 3)"
+   "FIT ALL: 883 de mediana (0,3x, 9 medidos). Está protegido hasta el 30/11 por tu decisión; ese día se decide.",
+   "HEAD FIT (2.179) y BALLON D'OR (1.860) están debajo del canal, pero seguían 'promovidos' por la poda y salían casi todos los días: BALLON D'OR 4 veces en 5 días con tope de 2."
   ],
   "hice": [
-   "Fábrica, publicación, medición, cerebro, poda y vigilancia trabajaron solos."
+   "FACE SPIN (aprobado en #17) en marcha: primer video el 26/11 a las 15:00, en el lugar de un BALLON D'OR que pasaba su tope.",
+   "Arreglé la poda: un formato promovido ahora respeta su tope semanal y deja de ser promovido si sus últimos 4 quedan debajo del canal."
   ],
   "para_el_ceo": [
-   "Propuesta para decidir: #17 Propuesta p007: FACE SPIN (la cara de la estrella en 3 anillos que giran: pausá cuando queda armada) (respondé sí o no en el Issue)"
+   "DRESS: ¿vuelve como prueba? sí o no en https://github.com/mindglitch777-eng/proyecto-youtube-futbol-quiz/issues/4 (sigue esperando; te recomiendo que sí)."
   ]
  },
  "prueba_limpio": {

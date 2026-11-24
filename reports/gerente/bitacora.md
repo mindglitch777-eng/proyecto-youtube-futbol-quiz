@@ -327,3 +327,13 @@ Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; i
 - **Decidí e hice:** nada en la grilla (todo sano y con cambios recientes en evaluación).
 - **Revisar el 2026-11-26:** entrega del Ingeniero. **27/11:** primeras mediciones de la versión limpia. **30/11:** semana.
 - **Para el CEO:** #4 (DRESS) y #17 (FACE SPIN), sí o no.
+
+## 2026-11-24 · Gerente IA (turno diario)
+- **Vi:** 1.140 suscriptores; 1,26 M en 90 días (22,9 semanas). Vistas por día +73 K (23/11) y +88 K (24/11 parcial). Mediana de la semana 3.282 (+180 %). 10 K por día 1,29.
+  ESCAPE 18.520 (1), CONVEYOR 12.027 (5), VS 6.813 (1), HEAD SLOT 5.960 (5); FIT ALL 883 (protegido hasta 30/11), BALLON D'OR 1.860, HEAD FIT 2.179. CEO: "Aprobado" en #17 (FACE SPIN). #4 (DRESS) sin respuesta.
+- **Decidí e hice:** (1) FACE SPIN en rotación (estreno hasta 01/12, máx. 4); primer video el 26/11 15:00 en el lugar de un BALLON D'OR que pasaba su tope. #17 cerrada.
+  (2) Poda: el promovido respeta el tope y baja si deja de rendir (BALLON D'OR salía casi todos los días).
+  6 preguntas: n = 4 BALLON D'OR en 5 días · dato sano (publicados.json) · otra explicación: no, es el código · peor caso: un promovido bueno sale menos; se deshace con git · se mide: ningún formato sobre su tope · mío (arreglar fallas).
+- **No toqué:** FIT ALL (protegido por el CEO hasta el 30/11).
+- **Revisar el 2026-11-26:** el primer FACE SPIN a ojo y la entrega del Ingeniero. **27/11:** primeras mediciones de la versión limpia. **30/11:** FIT ALL.
+- **Para el CEO:** #4 (DRESS).
