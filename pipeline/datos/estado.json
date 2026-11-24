@@ -1,5 +1,5 @@
 {
- "semana": "2026-11-25",
+ "semana": "2026-11-26",
  "etapas": {
   "radar": {
    "estado": "ok",
@@ -106,14 +106,14 @@
   "plan": {
    "estado": "ok",
    "resumen": {
-    "semana": "2026-11-25 → 2026-11-25",
+    "semana": "2026-11-26 → 2026-11-26",
     "cupos": {
-     "rueda": 1,
-     "balon": 1,
-     "goles": 1,
-     "vs": 1,
      "cinta": 1,
-     "favorito": 1
+     "balon": 1,
+     "cano": 1,
+     "slot": 1,
+     "favorito": 1,
+     "rueda": 1
     },
     "podadas": [
      "find"
@@ -124,8 +124,8 @@
      "slot"
     ]
    },
-   "inicio": "2026-11-23T18:05:43+00:00",
-   "fin": "2026-11-23T18:05:43+00:00"
+   "inicio": "2026-11-24T17:47:52+00:00",
+   "fin": "2026-11-24T17:47:52+00:00"
   },
   "produccion": {
    "estado": "ok",
@@ -133,17 +133,17 @@
     "videos": 6,
     "errores": 0
    },
-   "inicio": "2026-11-23T18:05:43+00:00",
-   "fin": "2026-11-23T18:09:24+00:00"
+   "inicio": "2026-11-24T17:47:53+00:00",
+   "fin": "2026-11-24T17:49:17+00:00"
   },
   "control": {
    "estado": "ok",
    "resumen": {
-    "pasan": "1 de 6",
-    "rehechos": 10
+    "pasan": "0 de 6",
+    "rehechos": 12
    },
-   "inicio": "2026-11-23T18:09:24+00:00",
-   "fin": "2026-11-23T18:19:51+00:00"
+   "inicio": "2026-11-24T17:49:17+00:00",
+   "fin": "2026-11-24T17:53:03+00:00"
   },
   "publicacion": {
    "estado": "ok",
@@ -197,5 +197,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-24T12:24:51+00:00"
+ "actualizado": "2026-11-24T17:53:03+00:00"
 }
