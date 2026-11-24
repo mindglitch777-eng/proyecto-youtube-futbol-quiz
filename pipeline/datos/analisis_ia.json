@@ -1,10 +1,10 @@
 {
  "fecha": "2026-11-23",
- "autor": "Gerente IA · revisión semanal (lunes 23/11)",
+ "autor": "Gerente Gemini (semanal, sin Claude)",
  "veredicto": {
-  "color": "green",
-  "titulo": "Media monetización hecha; el ritmo hacia los 10 M mejoró a 23,5 semanas",
-  "frase": "1.100 suscriptores y 1,21 M de vistas en 90 días. La vuelta a 6 por día con lo que rinde levantó las vistas por día a ~65 K. Lo que falta es pegar más videos grandes: 1 de 10 K por día, y la meta son 3."
+  "color": "amber",
+  "titulo": "1.236.847 vistas acumuladas y 21,9 semanas para monetizar",
+  "frase": "Ya cumplimos la meta de suscriptores alcanzando 1.120 subs, pero al ritmo de 399.508 vistas por semana nos quedan 21,9 semanas para llegar a los 10 millones. Venimos acelerando fuerte metiendo 73.054 vistas en el día, pero hay que subir los videos fuertes a 3 por día."
  },
  "numeros_clave": [
   {
@@ -40,60 +40,44 @@
  ],
  "hallazgos": [
   {
-   "tipo": "no",
-   "titulo": "Falta pegar más videos grandes",
-   "dato": "1,0 video de 10 K por día (meta 3). La mediana subió (+95 %), pero la mayoría de los videos queda en 2-3 K y solo CONVEYOR y HEAD SLOT pasan seguido los 10 K.",
-   "por_que": "El crecimiento viene de que no haya videos flojos, no de más videos fuertes. Lo nuevo pega al principio y después se gasta.",
-   "confianza": "media",
-   "accion": "Formatos nuevos cada semana (FACE SPIN, comparación de equipos), prueba de versión limpia y retos más difíciles (meta 200 % visto). Se mide el lunes 30/11."
+   "tipo": "funciona",
+   "titulo": "CONVEYOR STOP es el nuevo rey del canal",
+   "dato": "mediana a 48 h de 12.533 vistas (esperadas: 7.482)",
+   "por_que": "Estrenó el 22/11 y la mecánica de la cinta transportadora enganchó directo a la audiencia (un video metió 17.188 vistas en 22 h).",
+   "confianza": "media (con 4 videos)",
+   "accion": "El cerebro estadístico le dará máxima prioridad en la fábrica diaria."
   },
   {
    "tipo": "funciona",
-   "titulo": "CONVEYOR STOP arranca como el formato más fuerte",
-   "dato": "CONVEYOR: mediana 12.536 (5,1x) con 4 medidos, mejor 37.382. HEAD SLOT 6.817 (promovido por la poda). ESCAPE debutó con 18.327 y VS con 8.020.",
-   "por_que": "El dinamismo de frenar la cinta atrapa al espectador en los primeros segundos",
-   "confianza": "media (4-5 videos)",
-   "accion": "Aumentar la producción de este formato para aprovechar el impulso inicial antes de que se gaste"
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "Los extras automáticos de 'ola' se salteaban las reglas",
-   "dato": "El 21/11 salió un BALLON D'OR extra a las 22:15 porque la familia STOP estaba 'subiendo' en el MERCADO. BALLON D'OR tiene tope de 2 por semana y salió 5 veces.",
-   "por_que": "La máquina de olas no miraba nuestros números ni los topes (la lección del 13/11 solo estaba escrita, no en el código).",
-   "confianza": "alta",
-   "accion": "Arreglado el 21/11: extra solo de un formato con ≥4 videos propios a ≥1,5x el canal y sin pasar su tope, a las 18:30."
+   "titulo": "HEAD SLOT rinde muy por encima del promedio",
+   "dato": "mediana a 48 h de 6.379 vistas (esperadas: 4.290)",
+   "por_que": "Fue promovido el 22/11 tras marcar una mediana de 8.460 frente al promedio del canal.",
+   "confianza": "media (con 5 videos)",
+   "accion": "Mantenerlo firme en la rotación combinando con Messi y Mbappé."
   },
   {
    "tipo": "funciona",
-   "titulo": "STOP ON YOUR FAVORITE muestra un excelente rendimiento inicial",
-   "dato": "Mediana de 8.840 vistas a las 48 h",
-   "por_que": "La consigna directa de parar en la superestrella favorita explota el sesgo de la audiencia",
-   "confianza": "baja (con 3 videos)",
-   "accion": "Mantener en rotación activa probando combinaciones con superestrellas como Messi, Ronaldo y Mbappé"
-  },
-  {
-   "tipo": "funciona",
-   "titulo": "WHEEL STOP se mantiene como el pilar más confiable",
-   "dato": "Mediana de 6.267 vistas a las 48 h superando la expectativa de 4.001",
-   "por_que": "Es un formato establecido que no pierde tracción fácilmente",
-   "confianza": "alta (con 19 videos)",
-   "accion": "Conservar como base estable de la fábrica diaria de 6 videos"
-  },
-  {
-   "tipo": "ojo",
-   "titulo": "Formatos de cabezas rinden bien pero requieren vigilancia",
-   "dato": "HEAD SLOT tiene mediana de 3.223 vistas y HEAD FIT de 3.017 vistas",
-   "por_que": "Tienen picos altos (un slot logró 13.793 vistas en 38 h) pero muestran señales de desgaste rápido",
-   "confianza": "alta (con 10 videos)",
-   "accion": "Rotar elementos visuales y no saturar la grilla con esta mecánica"
+   "titulo": "WHEEL STOP se consolida como pilar indestructible",
+   "dato": "mediana a 48 h de 5.850 vistas (esperadas: 4.193)",
+   "por_que": "Con 22 videos producidos mantiene un rendimiento sólido y constante (un video de Ronaldo vs Vini metió 25.735 vistas).",
+   "confianza": "alta (con 22 videos)",
+   "accion": "Seguir usando como base segura de vistas diarias."
   },
   {
    "tipo": "no",
-   "titulo": "STOP CHALLENGE y FIT ALL se quedaron rezagados",
-   "dato": "STOP CHALLENGE registró mediana de 1.748 vistas (38 videos) y FIT ALL de 1.152 vistas (10 videos)",
-   "por_que": "Son formatos sobreexpuestos que la audiencia ya ignora",
-   "confianza": "alta (con 38 videos)",
-   "accion": "Reducir su presencia al mínimo para liberar cupo a formatos más frescos"
+   "titulo": "DRESS UP y los formatos viejos se desploman",
+   "dato": "DRESS UP cayó a 1.043 vistas y HIDDEN TRANSFER a 76 vistas",
+   "por_que": "La audiencia se agota rápido de los formatos repetidos y pierden retención.",
+   "confianza": "baja (con 1 video) / media en descarte",
+   "accion": "Poda automática del sistema y reemplazo por ideas frescas."
+  },
+  {
+   "tipo": "ojo",
+   "titulo": "Ritmo de videos fuertes por debajo del objetivo",
+   "dato": "1,14 videos fuertes por día frente a la meta de 3",
+   "por_que": "Aunque el total diario subió a 73.054 vistas, nos faltan más pegadas individuales masivas para achicar las 21,9 semanas.",
+   "confianza": "alta (con 7 dias)",
+   "accion": "Aprobar el estreno inmediato de los nuevos formatos investigados."
   }
  ],
  "reglas_matematicas": [
@@ -106,16 +90,8 @@
  ],
  "acciones": [
   {
-   "quien": "CEO",
-   "que": "Responder #4 (DRESS) y #17 (FACE SPIN)."
-  },
-  {
-   "quien": "Ingeniero",
-   "que": "Jueves 26/11: comparación de equipos, música phonk, fondos propios, foto de Messi."
-  },
-  {
-   "quien": "Gerente IA",
-   "que": "Medir la prueba de versión limpia y el nivel imposible; fin de estrenos 24-26/11."
+   "quien": "Ingeniero (lunes)",
+   "que": "Construir e implementar el nuevo formato «Photo Frame Silhouette Fit»: un marco con la silueta del Balón de Oro por donde pasan cabezas recortadas de superestrellas a gran velocidad para pausar en el segundo exacto."
   }
  ]
 }
