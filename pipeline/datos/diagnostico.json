@@ -1,173 +1,163 @@
 {
  "balon": {
-  "videos": 6,
-  "mediana_48h": 2458,
-  "factores": [
-   {
-    "campo": "estrella",
-    "valor": "Messi",
-    "videos": 2,
-    "rinde": "165% de la mediana",
-    "accion": "REPETIR"
-   },
-   {
-    "campo": "plantilla",
-    "valor": "freeze the ballon d'or in {x}'s hands",
-    "videos": 2,
-    "rinde": "186% de la mediana",
-    "accion": "REPETIR"
-   },
-   {
-    "campo": "plantilla",
-    "valor": "stop the ballon d'or at 100% {x}",
-    "videos": 2,
-    "rinde": "160% de la mediana",
-    "accion": "REPETIR"
-   }
-  ],
+  "videos": 8,
+  "mediana_48h": 2566,
+  "factores": [],
   "flojos": [
    {
     "titulo": "Freeze the Ballon d'Or in Vinícius's hands  Stop at 100% ⚽🎯 #vinicius ",
-    "v48": 1074,
+    "v48": 941,
     "hora": "17 h",
     "pct": 133.22
+   },
+   {
+    "titulo": "Stop the Ballon d'Or at 100% 🏆 Ronaldo edition #ronaldo #ballondor",
+    "v48": 1143,
+    "hora": "22 h",
+    "pct": 136.2
    }
   ]
  },
  "cabezas": {
-  "videos": 11,
-  "mediana_48h": 2827,
+  "videos": 13,
+  "mediana_48h": 2401,
   "factores": [
    {
     "campo": "estrella",
     "valor": "Yamal",
-    "videos": 2,
-    "rinde": "211% de la mediana",
-    "accion": "REPETIR"
-   },
-   {
-    "campo": "plantilla",
-    "valor": "can you fit {x}'s head perfectly",
     "videos": 2,
     "rinde": "215% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "plantilla",
+    "valor": "can you fit {x}'s head perfectly",
+    "videos": 2,
+    "rinde": "225% de la mediana",
+    "accion": "REPETIR"
+   },
+   {
+    "campo": "plantilla",
     "valor": "{x} head fit challenge pause it",
     "videos": 2,
-    "rinde": "204% de la mediana",
+    "rinde": "219% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Can you fit Neymar's head perfectly? 🤯 #neymar #messi #ronaldo",
-    "v48": 1305,
+    "v48": 1053,
     "hora": "21 h",
-    "pct": 197.65
+    "pct": 197.61
    }
   ]
  },
  "cinta": {
-  "videos": 4,
-  "mediana_48h": 14086,
-  "factores": [
-   {
-    "campo": "hora",
-    "valor": "13 h",
-    "videos": 2,
-    "rinde": "165% de la mediana",
-    "accion": "REPETIR"
-   }
-  ],
+  "videos": 6,
+  "mediana_48h": 16442,
+  "factores": [],
   "flojos": []
  },
  "circulo": {
   "videos": 6,
-  "mediana_48h": 2542,
+  "mediana_48h": 1962,
   "factores": [
    {
     "campo": "estrella",
     "valor": "Messi",
     "videos": 2,
-    "rinde": "169% de la mediana",
+    "rinde": "327% de la mediana",
+    "accion": "REPETIR"
+   },
+   {
+    "campo": "plantilla",
+    "valor": "pause on your goat {x} {x} or",
+    "videos": 2,
+    "rinde": "290% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Pause on your GOAT 🐐 Neymar, Yamal or Mbappé? #neymar #yamal #mbappe",
-    "v48": 770,
+    "v48": 628,
     "hora": "17 h",
-    "pct": 150
+    "pct": 149.38
    },
    {
     "titulo": "Stop the ball on your GOAT 🐐⚽ #gavi #ronaldo #yamal",
-    "v48": 827,
+    "v48": 708,
     "hora": "23 h",
-    "pct": 120.53
+    "pct": 120.59
    }
   ]
  },
  "favorito": {
-  "videos": 5,
-  "mediana_48h": 5991,
+  "videos": 7,
+  "mediana_48h": 4355,
   "factores": [
    {
     "campo": "hora",
     "valor": "18 h",
     "videos": 2,
-    "rinde": "163% de la mediana",
+    "rinde": "186% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Pause on your idol ⚽😱 Vinícius or Neymar? #vinicius #neymar #messi",
-    "v48": 2054,
+    "v48": 1689,
     "hora": "11 h",
-    "pct": null
+    "pct": 142.35
    }
   ]
  },
  "fitall": {
   "videos": 10,
-  "mediana_48h": 1048,
+  "mediana_48h": 958,
   "factores": [
    {
     "campo": "hora",
     "valor": "15 h",
     "videos": 4,
-    "rinde": "207% de la mediana",
+    "rinde": "206% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "estrella",
     "valor": "Mbappé",
     "videos": 3,
-    "rinde": "344% de la mediana",
+    "rinde": "334% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": []
  },
  "rueda": {
-  "videos": 20,
-  "mediana_48h": 6206,
+  "videos": 23,
+  "mediana_48h": 5797,
   "factores": [
    {
     "campo": "hora",
     "valor": "09 h",
     "videos": 5,
-    "rinde": "37% de la mediana",
+    "rinde": "36% de la mediana",
+    "accion": "EVITAR"
+   },
+   {
+    "campo": "hora",
+    "valor": "13 h",
+    "videos": 2,
+    "rinde": "25% de la mediana",
     "accion": "EVITAR"
    },
    {
     "campo": "plantilla",
     "valor": "find {x}'s real body {x} or {y}",
     "videos": 2,
-    "rinde": "37% de la mediana",
+    "rinde": "36% de la mediana",
     "accion": "EVITAR"
    },
    {
@@ -178,41 +168,41 @@
     "accion": "EVITAR"
    },
    {
-    "campo": "plantilla",
-    "valor": "find {x}'s real body {x} or {x}",
+    "campo": "hora",
+    "valor": "15 h",
     "videos": 3,
-    "rinde": "155% de la mediana",
+    "rinde": "196% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Find Mbappé's real body 🛑🔥 Yamal or Cole? #mbappe #yamal #cole",
-    "v48": 646,
+    "v48": 586,
     "hora": "21 h",
     "pct": 181.37
    },
    {
     "titulo": "Find Yamal's real body 🛑🔥 Salah or Messi? #yamal #messi #salah",
-    "v48": 791,
+    "v48": 722,
     "hora": "09 h",
     "pct": 193.87
    },
    {
     "titulo": "Find Mbappé's real body 🛑🔥 Lautaro or Yamal? #mbappe #lautaro #yamal",
-    "v48": 842,
+    "v48": 740,
     "hora": "13 h",
     "pct": 216.73
    },
    {
     "titulo": "Ronaldo vs Messi or Vinícius stop challenge 🛑🤯 #ronaldo #vinicius #mes",
-    "v48": 1131,
+    "v48": 915,
     "hora": "23 h",
-    "pct": 284.17
+    "pct": 280.86
    },
    {
     "titulo": "Yamal vs Vinícius or Neymar stop challenge 🛑🤯 #yamal #vinicius #neymar",
-    "v48": 1293,
+    "v48": 1186,
     "hora": "09 h",
     "pct": 170.94
    }
@@ -220,103 +210,109 @@
  },
  "slot": {
   "videos": 5,
-  "mediana_48h": 3003,
+  "mediana_48h": 6187,
   "factores": [
    {
-    "campo": "hora",
-    "valor": "15 h",
+    "campo": "plantilla",
+    "valor": "fit {x}'s head only 1% hit the",
     "videos": 2,
-    "rinde": "295% de la mediana",
-    "accion": "REPETIR"
-   },
-   {
-    "campo": "estrella",
-    "valor": "Ronaldo",
-    "videos": 2,
-    "rinde": "295% de la mediana",
-    "accion": "REPETIR"
+    "rinde": "32% de la mediana",
+    "accion": "EVITAR"
    },
    {
     "campo": "plantilla",
     "valor": "{x} vs {x} or {x} head slot",
     "videos": 2,
-    "rinde": "609% de la mediana",
+    "rinde": "220% de la mediana",
     "accion": "REPETIR"
    }
   ],
-  "flojos": []
+  "flojos": [
+   {
+    "titulo": "Fit Yamal's head 🎰 Only 1% hit the jackpot #yamal #ronaldo #messi",
+    "v48": 1340,
+    "hora": "20 h",
+    "pct": 150.38
+   },
+   {
+    "titulo": "Fit Neymar's head 🎰 Only 1% hit the jackpot #neymar #messi #mbappe",
+    "v48": 2598,
+    "hora": "13 h",
+    "pct": 150.51
+   }
+  ]
  },
  "stop": {
   "videos": 33,
-  "mediana_48h": 1330,
+  "mediana_48h": 1263,
   "factores": [
    {
     "campo": "hora",
     "valor": "21 h",
     "videos": 7,
-    "rinde": "157% de la mediana",
+    "rinde": "155% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "estrella",
     "valor": "Neymar",
     "videos": 3,
-    "rinde": "157% de la mediana",
+    "rinde": "155% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "estrella",
     "valor": "sin estrella",
     "videos": 10,
-    "rinde": "177% de la mediana",
+    "rinde": "176% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "plantilla",
     "valor": "football stop challenge can you stop {x}",
     "videos": 5,
-    "rinde": "157% de la mediana",
+    "rinde": "155% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "plantilla",
     "valor": "football stop challenge pause at the perfect",
     "videos": 4,
-    "rinde": "177% de la mediana",
+    "rinde": "176% de la mediana",
     "accion": "REPETIR"
    },
    {
     "campo": "variante",
     "valor": "-",
     "videos": 9,
-    "rinde": "223% de la mediana",
+    "rinde": "222% de la mediana",
     "accion": "REPETIR"
    }
   ],
   "flojos": [
    {
     "titulo": "Stop Ronaldo at 100% ⚽🛑 Only 1% can do it #ronaldo #zlatan #bellingham",
-    "v48": 478,
+    "v48": 449,
     "hora": "17 h",
     "pct": 169.07
    },
    {
     "titulo": "Football Stop Challenge ⚽🛑 Only 1% can stop Mbappé 6️⃣7️⃣ · Level 27 #",
-    "v48": 580,
+    "v48": 540,
     "hora": "20 h",
     "pct": 151.6
    },
    {
-    "titulo": "Football Stop Challenge ⚽🛑 Impossible level: Saka vs Yamal #yamal #gul",
-    "v48": 649,
-    "hora": "13 h",
-    "pct": 153.35
+    "titulo": "Football Stop Challenge ⚽🛑 Stop Yamal at 100% if you can #yamal #guler",
+    "v48": 576,
+    "hora": "21 h",
+    "pct": 160.98
    },
    {
-    "titulo": "Football Stop Challenge ⚽🛑 Stop Yamal at 100% if you can #yamal #guler",
-    "v48": 657,
-    "hora": "21 h",
-    "pct": 159.52
+    "titulo": "Football Stop Challenge ⚽🛑 Impossible level: Saka vs Yamal #yamal #gul",
+    "v48": 579,
+    "hora": "13 h",
+    "pct": 153.35
    }
   ]
  }

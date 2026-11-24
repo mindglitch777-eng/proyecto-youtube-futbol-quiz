@@ -12221,5 +12221,838 @@
     "Hacer que cada cuadrante se revele individualmente en lugar de todos juntos."
    ]
   }
+ },
+ {
+  "id": "ZD9-f1-LQg0",
+  "titulo": "😱Ronaldo Vs Messi Vs Neymar Vs Ishowspeed 🔥 Guess Won win 🏆👀 #footballshorts #shortsfeed #shorts",
+  "canal": "Cris07",
+  "subs": 6560,
+  "creado": "2026-09-15",
+  "vistas": 3708139,
+  "horas": 61,
+  "vph": 60515,
+  "dur": 10,
+  "likes": 0,
+  "coment": 1770,
+  "familia": "quiz",
+  "analisis": {
+   "nombre_formato": "Desafío Pop-Up Player Battle",
+   "mecanica": "Una pelota física recorre una mesa activando trampas mecánicas; el resultado determina la llamada a la acción entre futbolistas famosos.",
+   "que_hace_el_espectador": "Elegir a su futbolista favorito, predecir el resultado del mecanismo y votar comentando o dando me gusta.",
+   "cuadro_0": "Arriba: Banner con caras de Neymar, Ronaldo, Speed y Messi con texto 'Who is your fav player'. Centro: 4 personas disfrazadas de comida tras mesa con trampas florales. Abajo: Pelota mecánica en primer plano y miniatura de reacción.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Presentación del banner superior y participantes en la mesa con el juguete listo.",
+     "sonido": "Música rítmica de inicio."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Manos listas para accionar el mecanismo de la mesa.",
+     "sonido": "Música de fondo en aumento."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Aparece número 3 de conteo en pantalla.",
+     "sonido": "Voz de conteo: 'Three'."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Aparecen números 2 y 1 de conteo.",
+     "sonido": "Voz: 'Two, One'."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Lanzamiento de la pelota en la mesa ('GO!').",
+     "sonido": "Grito 'GO!' y silbato."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "La pelota avanza hacia las trampas de plástico.",
+     "sonido": "Efecto de movimiento rápido."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La pelota entra en el primer objetivo floral.",
+     "sonido": "Efecto de colisión suave."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Mapeo de trayectoria mientras la pelota rebota.",
+     "sonido": "Beat musical continuo."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "La pelota activa el mecanismo pop-up.",
+     "sonido": "Tensión sonora."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Cierre/salto brusco de la trampa floral.",
+     "sonido": "Efecto 'Pop' mecánico."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "La pelota sale disparada hacia el final de la mesa.",
+     "sonido": "Efecto de resorte 'Boing'."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Reacción de los participantes en la mesa.",
+     "sonido": "Gritos de emoción."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "La pelota llega al objetivo ganador.",
+     "sonido": "Efecto de impacto final."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Detención del mecanismo en el punto decisivo.",
+     "sonido": "Campana de victoria."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Transición hacia el resultado final.",
+     "sonido": "Fanfarria breve."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Superposición de tarjetas: Ronaldo (Like) vs Messi (Comment).",
+     "sonido": "Locución o efecto de llamado a acción."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Animación de iconos 'Like' y 'Comment' parpadeando.",
+     "sonido": "Sonido de click y notificación."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Pantalla final con llamada a votar.",
+     "sonido": "Remate musical."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Fin del video.",
+     "sonido": "Corte de audio."
+    }
+   ],
+   "duracion_s": 9.0,
+   "loop": "Conecta la música final con el conteo inicial permitiendo reproducción continua.",
+   "gancho": "La comparación inmediata de futbolistas de élite combinada con un conteo rápido y movimiento físico impredecible.",
+   "dopamina": [
+    "Conteo inicial rápido (1s)",
+    "Activación mecánica del juguete (4.5s)",
+    "Resolución del duelo Ronaldo vs Messi (7.5s)"
+   ],
+   "audio": "Música rítmica acelerada, voz de conteo en inglés, efectos de impacto/pop y efectos de victoria.",
+   "por_que_comentan": "Para registrar su voto por Messi o debate de preferencia frente a Ronaldo/Neymar.",
+   "assets_necesarios": [
+    "PNGs recortados de Ronaldo, Messi, Neymar y Speed",
+    "Gráficos de 'Like' y 'Comment'",
+    "Audios de conteo 3-2-1",
+    "Efectos de sonido pop/mecanismo",
+    "Fondo animado o video de trayectoria"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Crear layout estático con PIL/OpenCV (header de jugadores y footer de reacción).",
+    "2. Programar la física 2D de una pelota cayendo/rebotando mediante Pymunk o Math script.",
+    "3. Sincronizar desencadenantes de eventos (sprites pop-up) según posición X/Y de la pelota.",
+    "4. Superponer capa final de tarjetas Ronaldo/Messi usando compositing en MoviePy."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar marcadores de puntuación dinámicos en tiempo real.",
+    "Utilizar animaciones con efectos de partículas al activar cada trampa.",
+    "Incluir físicas de gravedad aleatoria para mayor impredecibilidad."
+   ]
+  }
+ },
+ {
+  "id": "IHxQSExuw4s",
+  "titulo": "Ronaldo and Messi's musical styles  #ronaldo  #kindness #jesus #shorts",
+  "canal": "Ro - Be Kind",
+  "subs": 12300,
+  "creado": "2023-03-13",
+  "vistas": 2896169,
+  "horas": 40,
+  "vph": 72277,
+  "dur": 15,
+  "likes": 11722,
+  "coment": 6,
+  "familia": "dress",
+  "analisis": {
+   "nombre_formato": "Transición humorística con cambio de outfits en auto",
+   "mecanica": "Dos personajes (caracterizados como Messi y Ronaldo) están en la parte delantera de un vehículo con niños atrás. Tocan la pantalla táctil y botones del auto imitando una rutina técnica, lo que desencadena una transformación cómica repentina a disfraces llamativos/cosplay bailando la canción en la escena final.",
+   "que_hace_el_espectador": "Mira la interacción inicial intrigado por la rutina del auto, esperando el remate visual y el cambio sorpresa de vestuario para bailar.",
+   "cuadro_0": "Plano medio desde el parabrisas delantero hacia el interior del auto. Dos hombres sentados adelante (uno con camiseta de Argentina/Messi a la izquierda, otro con camiseta de Portugal/Ronaldo a la derecha). En el asiento trasero se ven dos niñas vestidas de rosa. Asientos de cuero color naranja/marrón.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Vista frontal del interior del auto con Messi y Ronaldo sentados adelante y dos niñas atrás.",
+     "sonido": "Golpe seco / Click de inicio"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Primer plano del dedo presionando el botón de encendido del auto.",
+     "sonido": "Efecto de encendido / Click"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Plano general interior, Messi y Ronaldo miran al frente fijamente mientras suena la música de fondo.",
+     "sonido": "Música suave de intro ('I'm done hiding now...')"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Vista desde la ventana izquierda: Messi mira hacia atrás a las niñas en el auto.",
+     "sonido": "Música de intro continuando"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Ronaldo mira de reojo hacia la izquierda intrigado.",
+     "sonido": "Voz cantando de fondo"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Messi hace un gesto con el pulgar hacia arriba a las niñas en la parte trasera.",
+     "sonido": "Voz de la canción ('...shining like a...')"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Ronaldo mira seriamente hacia la cámara en primer plano lateral.",
+     "sonido": "Voz de la canción continuando"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Primer plano de la mano presionando una opción en la pantalla táctil del vehículo.",
+     "sonido": "Beep de pantalla táctil"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Messi y las niñas miran atentamente la pantalla táctil central.",
+     "sonido": "Música creciendo en intensidad"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Dedo deslizando un control deslizable en el menú digital del auto.",
+     "sonido": "Efecto de sonido de menú digital"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Ronaldo al volante reacciona con mirada desafiante antes del drop.",
+     "sonido": "Pre-drop de la canción / Build-up"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Corte de transición repentino: ¡Transformación instantánea! Ahora Messi tiene peluca negra y outfit azul sexy; Ronaldo tiene peluca morada y chaqueta amarilla de carreras.",
+     "sonido": "Drop de la canción a todo volumen ('WE GOING UP UP UP!')"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Messi y Ronaldo bailan frenéticamente y hacen muecas a la cámara al ritmo de la música, las niñas atrás gritan/celebran.",
+     "sonido": "Música eufórica bailando ('...UP UP UP IT'S OUR MOMENT!')"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Cierre con ambos agitándose en el asiento, risas y baile coordinado.",
+     "sonido": "Remate del coro de la canción"
+    }
+   ],
+   "duracion_s": 15,
+   "loop": "No empalma en loop continuo directo, finaliza en el clímax del baile.",
+   "gancho": "La curiosidad de ver a personajes famosos (dobles de Messi y Ronaldo) en una situación cotidiana dentro de un auto futurista realizando una cuenta regresiva/preparación antes del cambio inesperado.",
+   "dopamina": [
+    "Identificación inicial con las camisetas de Messi y Ronaldo (0-2s).",
+    "Tensión/Intriga de los botones de la pantalla del auto (3-4.5s).",
+    "Recompensa visual y de comedia con el cambio absurdo de atuendo y baile enérgico (5.5s en adelante)."
+   ],
+   "audio": "Canción pop/electrónica enérgica ('K-Pop / Anime dance style trend') con voz femenina pegadiza y drop explosivo.",
+   "por_que_comentan": "La gente comenta por el contraste gracioso entre la rivalidad Messi-Ronaldo, el vestuario cosplay absurdo y las reacciones de las niñas atrás.",
+   "assets_necesarios": [
+    "Recortes PNG / Sprite sheets de Messi y Ronaldo (normal y disfrazados).",
+    "Fondo estático o animado del interior de un auto futurista con pantalla táctil.",
+    "EFX de audio: beeps táctiles, sonido de motor/click, track de audio enérgico."
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Crear un canvas 1080x1920 (9:16 vertical).",
+    "2. Renderizar capas: Fondo (Interior de Auto) -> Personajes traseros (niñas) -> Asientos -> Personajes delanteros (Messi/Ronaldo) -> Interfaz UI en pantalla táctil.",
+    "3. En t=0.0 a 5.0s, animar zooms sutiles de cámara y cambio de imágenes de interfaz táctil según los toques.",
+    "4. En t=5.5s, intercalar un destello blanco/efecto de transición (flash 0.1s) y reemplazar los assets PNG de vestuario por las versiones cosplay/extravagantes.",
+    "5. Animar rotación/traslación oscilatoria rápida (Shake + Bounce) de los personajes al ritmo de los BPMs de la música hasta t=15.0s."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar un contador de energía/potencia en la interfaz táctil del auto que cargue al 100% justo antes del drop.",
+    "Incluir efectos gráficos estilo anime (rayos de velocidad, destellos de luz) en el momento del cambio de vestuario.",
+    "Hacer que la transición empalme perfectamente en loop infinito enganchando el final del baile con el inicio del video."
+   ]
+  }
+ },
+ {
+  "id": "X2pLfT-C7AQ",
+  "titulo": "Wait for the PERFECT FIT! 😍❤️ Ronaldo Football Edition ⚽🔥 #shorts",
+  "canal": "pro Rider",
+  "subs": 3950,
+  "creado": "2024-03-21",
+  "vistas": 2817487,
+  "horas": 98,
+  "vph": 28690,
+  "dur": 15,
+  "likes": 10332,
+  "coment": 4,
+  "familia": "fit",
+  "analisis": {
+   "nombre_formato": "Perfect Fit Challenge - Football Edition",
+   "mecanica": "Una mano coloca figuras recortadas de futbolistas sobre un llavero marco transparente con la silueta de la pareja de Georgina. Cada intento fallido marca una 'X' en la barra superior hasta que Cristiano Ronaldo encaja perfectamente con un 'check' verde.",
+   "que_hace_el_espectador": "Adivinar la pareja correcta, esperar la resolución del encaje perfecto y comentar su futbolista favorito.",
+   "cuadro_0": "Arriba: 5 iconos redondos de futbolistas (Messi, Haaland, Yamal, Ronaldo, Mbappé/otro). Centro: Llavero de acrílico con foto de Georgina Rodríguez y silueta hueca. En mano: Miniatura 3D de Messi. Abajo a la izquierda: Creador reaccionando.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Se sostiene la figura de Messi frente al llavero marco.",
+     "sonido": "Música pop/remix alegre de fondo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Messi no encaja; se coloca una 'X' roja sobre la cara de Messi arriba.",
+     "sonido": "Efecto de sonido 'fail' o buzz."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Aparece el llavero vacío listo para el siguiente intento.",
+     "sonido": "Música de fondo continúa."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Se acerca la figura 3D de Haaland.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Haaland se prueba en la silueta pero no entra.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Se marca 'X' roja en Haaland. Transición al siguiente.",
+     "sonido": "Efecto sonido 'fail'."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Llavero vacío nuevamente.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Se acerca la figura de Lamine Yamal.",
+     "sonido": "Voz en off / reacción corta del creador."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Se intenta encajar a Yamal en el marco.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Yamal no encaja en la silueta.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Yamal se inclina y ajusta pero se descarta.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Se prueba de nuevo a Yamal cerca de Georgina.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "No coincide la silueta.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Yamal es retirado del marco.",
+     "sonido": "Música de fondo."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Se coloca 'X' roja sobre la cara de Yamal en la barra superior.",
+     "sonido": "Efecto sonido 'fail'."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Aparece el recorte en papel de Cristiano Ronaldo.",
+     "sonido": "Cambio de música a tema romántico/dramático ('Earned It')."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Ronaldo se aproxima a la silueta transparente del llavero.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Ronaldo se alinea exactamente con el marco.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "La figura se inserta suavemente en el espacio vacante.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Ronaldo entra parcialmente en la silueta.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Se desliza completando la imagen de la pareja.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "El encaje es exacto y perfecto.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Se retira la mano mostrando la imagen completa de Georgina y Ronaldo.",
+     "sonido": "Música romántica."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Aparece un 'check' verde en la cara de Ronaldo arriba.",
+     "sonido": "Efecto de sonido de éxito/campana ('ding')."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "Vista final del llavero completo con la pareja feliz.",
+     "sonido": "Música finaliza."
+    },
+    {
+     "t": "12.5",
+     "pantalla": "El creador reacciona satisfecho en la esquina inferior.",
+     "sonido": "Música finaliza."
+    },
+    {
+     "t": "13.0",
+     "pantalla": "Cierre del video en marco final completo.",
+     "sonido": "Silencio / fade out."
+    }
+   ],
+   "duracion_s": 13.5,
+   "loop": "Empalma indirectamente al reiniciar el ciclo de prueba con Messi.",
+   "gancho": "Curiosidad visual instantánea por ver qué figura encaja en la silueta del llavero.",
+   "dopamina": [
+    "Expectativa del encaje visual (0:00-0:07)",
+    "Satisfacción auditiva y visual al completarse el puzzle (0:08-11.5)"
+   ],
+   "audio": "Mezcla de audio viral: canción pop/remix rápida para desaciertos y 'Earned It' de The Weeknd para la resolución correcta, con efectos de error y acierto.",
+   "por_que_comentan": "Debaten sobre quién debería ser la pareja ideal o apoyan a su futbolista favorito.",
+   "assets_necesarios": [
+    "Fondo de textura de pared blanca",
+    "Imagen recortada de Georgina Rodríguez en llavero",
+    "PNGs recortados de Messi, Haaland, Yamal y Ronaldo",
+    "Iconos de X roja y Check verde",
+    "Efectos de sonido (fail, ding) y pistas musicales"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Definir canvas vertical 1080x1920 con fondo estático.",
+    "2. Renderizar barra superior con avatares circulares.",
+    "3. Colocar elemento central (llavero) con máscara de recorte transparente.",
+    "4. Animar la trayectoria de traslación/escala de cada PNG de jugador hacia la máscara.",
+    "5. Aplicar overlays de 'X' o 'Check' según la marca de tiempo usando keyframes en MoviePy o OpenCV."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar efectos de partículas brillantes al lograr el encaje perfecto.",
+    "Usar animaciones de física de resorte (spring animations) para que las figuras reboten al fallar.",
+    "Añadir un contador de tiempo o barra de progreso temática para aumentar la tensión."
+   ]
+  }
+ },
+ {
+  "id": "ZxdQYWaPwrM",
+  "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥#viral #shorts #trending",
+  "canal": "Football Funny Lab",
+  "subs": 16800,
+  "creado": "2026-10-16",
+  "vistas": 2756475,
+  "horas": 125,
+  "vph": 22135,
+  "dur": 11,
+  "likes": 24260,
+  "coment": 63,
+  "familia": "dress",
+  "analisis": {
+   "nombre_formato": "Ronaldo & Lamine Dress Challenge",
+   "mecanica": "Aparecen 2 jugadores de fútbol (Cristiano Ronaldo y Lamine Yamal) sobre un fondo amarillo vibrante con numeración lateral del 1 al 4. Cada 0.5 segundos descienden accesorios (cadenas, anteojos, pelos, sombreros) desde la parte superior hasta encajar mágicamente en la cabeza o cuello de ambos jugadores, simulando un juego interactivo de vestimenta.",
+   "que_hace_el_espectador": "Ver y anticipar qué accesorio se posicionará en cada turno, comentando su favorito o debatiendo el estilo.",
+   "cuadro_0": "Fondo amarillo pleno con números 1, 2, 3, 4 grandes en negro al margen izquierdo. Arriba dos collares flotando. Abajo rostros de Cristiano Ronaldo (izq) y Lamine Yamal (der) con camisetas de Portugal y España respectivamente.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Fondo amarillo, números 1-4, collares arriba, jugadores sin accesorios.",
+     "sonido": "Beat trap enérgico (rang-kiti-kankin-kan)"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Aparecen anteojos negros sobre los ojos de ambos jugadores y collares dorados en sus cuellos.",
+     "sonido": "Beat trap enérgico"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Anteojos en ojos, caen pelos grises/negros punk sobre las cabezas de los jugadores.",
+     "sonido": "Beat trap enérgico"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Se quitan los anteojos y pelos, la pantalla muestra pelos rojos encendidos sobre la cabeza.",
+     "sonido": "Beat trap enérgico"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Pelos rojos reemplazados por pelo verde punk gigante.",
+     "sonido": "Beat trap enérgico"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Pelo verde reemplazado por sombreros de copa rojos con plumas situados abajo tapando la mitad inferior o superior.",
+     "sonido": "Beat trap enérgico y corte final"
+    }
+   ],
+   "duracion_s": 3.0,
+   "loop": "si, vuelve al cuadro 0 con la misma música fluida",
+   "gancho": "La transformación rápida y dinámica de dos íconos del fútbol mundial con accesorios absurdos y musicales.",
+   "dopamina": [
+    "Cambio rápido de estímulo visual cada 0.5s",
+    "Efecto 'snap' o encaje perfecto de accesorios en los rostros",
+    "Música hipnótica con letra pegadiza"
+   ],
+   "audio": "Beat trap latino con voces cortadas ('rang-kiti-kankin-kan') y efectos de colocación de objetos",
+   "por_que_comentan": "Debaten qué jugador luce mejor con cada accesorio o eligen su número favorito del 1 al 4.",
+   "assets_necesarios": [
+    "fondo_amarillo.png",
+    "jugadores_base.png",
+    "collares.png",
+    "anteojos.png",
+    "pelo_gris.png",
+    "pelo_rojo.png",
+    "pelo_verde.png",
+    "sombrero.png",
+    "audio_beat.mp3"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Crear lienzo vertical 1080x1920 con fondo amarillo #FFD700.",
+    "2. Dibujar números 1, 2, 3, 4 tipografía bold a la izquierda.",
+    "3. Renderizar imagen estática de los rostros de Ronaldo y Lamine abajo.",
+    "4. En un bucle de 0.5s, superponer coordenadas (x, y) de cada accesorio (anteojos, pelos, sombreros) sobre las cabezas de los jugadores."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar animación de escala (zoom in/out) al cambiar cada accesorio para aumentar la retención.",
+    "Incluir una barra de progreso lateral que se llene como temporizador de juego.",
+    "Permitir votación interactiva en pantalla usando stickers nativos de YouTube."
+   ]
+  }
+ },
+ {
+  "id": "QgzsGeXoPKY",
+  "titulo": "😱Ronaldo Vs Messi Vs Neymar Vs Ishowspeed 🔥 Guess Won win 🏆👀 #footballshorts #shortsfeed #shorts",
+  "canal": "Cris07",
+  "subs": 6560,
+  "creado": "2026-09-15",
+  "vistas": 2738948,
+  "horas": 34,
+  "vph": 79423,
+  "dur": 10,
+  "likes": 0,
+  "coment": 2337,
+  "familia": "quiz",
+  "analisis": {
+   "nombre_formato": "Adivina Quién Gana - Desafío de Personajes",
+   "mecanica": "Cuatro personajes o avatares compiten en un minijuego de habilidad (lanzar una pelota a un aro). Aparece una cuenta regresiva 3, 2, 1, tiran los objetos y un ganador anota el punto. Al final se pide like para Ronaldo y comentario para Messi.",
+   "que_hace_el_espectador": "Adivina quién gana antes del lanzamiento y comenta o da like según su jugador favorito.",
+   "cuadro_0": "Arriba: 4 fotos de perfil recortadas (Cristiano, IShowSpeed, Messi, Neymar) con barra de VS. Al medio: 4 personas disfrazadas de comida (Cheetos, papas fritas, pizza, zanahoria) preparadas frente a una mesa blanca con aros desplegables y un casco naranja con un aro en primer plano. Colores vivos, rojo y blanco dominante. Abajo: Tapa de casco naranja con marca de agua '@cris0777' y botón de suscripción animado.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Muestra inicial de los 4 participantes disfrazados detrás de la mesa, caras de los futbolistas arriba con 'GUESS WHO WON'.",
+     "sonido": "Música rítmica enérgica y alegre"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Se acerca el zoom o se preparan para lanzar.",
+     "sonido": "Efecto de tensión musical"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Aparece número '3' grande y rojo en pantalla.",
+     "sonido": "Voz contadora: '3'"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Aparece número '2' grande y rojo en pantalla.",
+     "sonido": "Voz contadora: '2'"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Aparece número '1' grande y rojo con la palabra 'GO'.",
+     "sonido": "Voz contadora: '1', sonido de salida 'Go!'"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Las personas disfrazadas lanzan pelotas de baloncesto hacia el centro de la mesa.",
+     "sonido": "Efecto de swoosh de lanzamiento"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "La pelota del disfraz de pizza/zanahoria vuela hacia el aro naranja principal.",
+     "sonido": "Efecto de rebote de pelota"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "La pelota entra en el aro y anota.",
+     "sonido": "Efecto de victoria / cheering"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Transición a pantallas estáticas de Cristiano Ronaldo (Real Madrid) y Lionel Messi (Barcelona) divididas por una línea roja.",
+     "sonido": "Música épica de votación"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Aparecen iconos animados de LIKE y COMMENT sobre los futbolistas.",
+     "sonido": "Sonido de burbuja / click"
+    }
+   ],
+   "duracion_s": 5,
+   "loop": "si",
+   "gancho": "La combinación de caras de futbolistas famosos con disfraces divertidos de comida y una cuenta regresiva rápida genera curiosidad inmediata sobre quién encestará.",
+   "dopamina": [
+    "Cuenta regresiva visual y sonora (3, 2, 1, GO)",
+    "Movimiento rápido de lanzamiento en cámara lenta simulada",
+    "Llamado a la acción interactivo (Like vs Comentario)"
+   ],
+   "audio": "Beat electrónico rápido con efectos de voz en cuenta regresiva y sonidos de acierto.",
+   "por_que_comentan": "Debaten apasionadamente sobre si prefieren a Ronaldo (Like) o a Messi (Comentario) y quién ganó el mini desafío.",
+   "assets_necesarios": [
+    "4 avatares recortados de futbolistas",
+    "Imágenes de disfraces o avatares recortados",
+    "Pelota y aro 3D o PNG en perspectiva",
+    "Gráficos de Like y Comentario",
+    "Efectos de sonido de cuenta regresiva y victoria"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "Configurar canvas vertical de 1080x1920 a 30fps.",
+    "Cargar imágenes de fondo, avatares superiores y textos de título con animación de entrada (scale up).",
+    "Programar secuencia de texto de cuenta regresiva (3, 2, 1, GO) en escala gigante roja con sombra negra de t=1.0s a t=2.0s.",
+    "Animar las imágenes de los personajes moviéndose hacia adelante y una pelota con trayectoria parabólica en bezier de t=2.5s a t=3.5s.",
+    "A los t=4.0s cortar a la pantalla final dividida con las fotos de Ronaldo y Messi y los botones flotantes de Like y Comentario."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Usar avatares 3D propios con físicas reales simuladas en Python (Pygame / Blender headless) para mayor calidad visual.",
+    "Incluir una barra de porcentaje en tiempo real basada en los votos de los usuarios en los comentarios.",
+    "Agregar efectos de partículas de celebración (confeti) cuando la pelota encesta en el aro."
+   ]
+  }
+ },
+ {
+  "id": "C8H90D305uA",
+  "titulo": "They Stole ALL of Haaland's Giant Snacks! 😱🍿 #shorts #haaland #mbappe #yamal #bellingham",
+  "canal": "Fantasyball007",
+  "subs": 504000,
+  "creado": "2026-02-04",
+  "vistas": 2670056,
+  "horas": 30,
+  "vph": 87583,
+  "dur": 14,
+  "likes": 10509,
+  "coment": 6,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Robo de Snacks Gigantes - Headswap Meme",
+   "mecanica": "El personaje principal intenta quedarse con snacks gigantes, pero otros futbolistas se los roban uno a uno hasta dejarlo solo con una galleta miniatura, terminando en llanto y burla.",
+   "que_hace_el_espectador": "Mira la secuencia cómica y el remate final.",
+   "cuadro_0": "Mbappé sonriendo con bolsa gigante de Doritos verdes al centro. Dos mesas con snacks gigante rosa y morado a los lados sobre fondo de cocina blanca.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Mbappé sostiene bolsa verde gigante feliz.",
+     "sonido": "Música rítmica de fondo."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Mbappé presume su bolsa verde.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Yamal entra desde la derecha y roba la bolsa verde.",
+     "sonido": "Efecto de deslizamiento rápido (swoosh)."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Mbappé mira hacia el lado sorprendido.",
+     "sonido": "Efecto de confusión."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Mbappé se cruza de brazos molesto.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Mbappé voltea hacia la bolsa rosa.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Mbappé toma la bolsa rosa entusiasmado.",
+     "sonido": "Efecto alegre."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Yamal aparece de nuevo señalando hacia afuera.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Yamal se lleva la bolsa rosa.",
+     "sonido": "Efecto de robo/swoosh."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Mbappé queda triste sin bolsa rosa.",
+     "sonido": "Efecto triste breve."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Mbappé pasa a la bolsa morada.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Mbappé agarra la bolsa morada alegre.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Mbappé posa con la bolsa morada.",
+     "sonido": "Música continua."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Haaland entra por la izquierda.",
+     "sonido": "Efecto de pisadas o alerta."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Haaland se lleva la bolsa morada.",
+     "sonido": "Efecto swoosh."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Queda solo una pequeña galleta en la mesa.",
+     "sonido": "Efecto de caída pequeña."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Primer plano a la minigalleta solitaria.",
+     "sonido": "Silencio breve o nota triste."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Mbappé toma la galleta con cara triste.",
+     "sonido": "Efecto de llanto empezando."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Primer plano de Mbappé llorando con lágrimas animadas.",
+     "sonido": "Llanto exagerado."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Mbappé desconsolado sostiene la galleta.",
+     "sonido": "Llanto continuo."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Mbappé mira la galleta llorando.",
+     "sonido": "Llanto alto."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Alejamiento de cámara: aparecen Haaland, Yamal y Bellingham alrededor.",
+     "sonido": "Gritos de celebración y risas."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Los futbolistas festejando con las bolsas gigantes mientras Mbappé llora.",
+     "sonido": "Gritos de victoria."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Todos celebran en grupo rodeando a Mbappé.",
+     "sonido": "Risas y música festiva."
+    },
+    {
+     "t": "12.0",
+     "pantalla": "Cuadro final con la burla completa.",
+     "sonido": "Risas continuas."
+    },
+    {
+     "t": "12.5",
+     "pantalla": "Pose final de celebración colectiva.",
+     "sonido": "Corte de audio."
+    },
+    {
+     "t": "13.0",
+     "pantalla": "Fin del video.",
+     "sonido": "Fin."
+    }
+   ],
+   "duracion_s": 13,
+   "loop": "Conecta la risa final con la pose alegre inicial, simulando un ciclo de frustración infinito.",
+   "gancho": "La bolsa de snack gigante y la cara exagerada del jugador en el primer segundo atraen atención inmediata.",
+   "dopamina": [
+    "Patrón repetitivo de robo con ritmo cómico",
+    "Remate con la galleta miniatura",
+    "Aparición sorpresiva del resto de futbolistas al final"
+   ],
+   "audio": "Beat hip-hop alegre combinado con efectos de sonido tipo swoosh, llanto exagerado de bebé y vitoreos de victoria.",
+   "por_que_comentan": "Debaten sobre la rivalidad entre los futbolistas y se burlan de la reacción de Mbappé.",
+   "assets_necesarios": [
+    "PNGs de rostros/cuerpos de Mbappé, Yamal, Haaland y Bellingham",
+    "PNGs de bolsas de snacks gigantes (verde, rosa, morada)",
+    "PNG de galleta pequeña",
+    "Fondo de cocina interior",
+    "Overlay de lágrimas animadas",
+    "Efectos de sonido (swoosh, cry, celebration)"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "Crear canvas 1080x1920 con el fondo estático de la cocina.",
+    "Colocar personajes y snacks en capas usando coordenadas relativas.",
+    "Animar traslaciones horizontales para las entradas y robos de snacks.",
+    "Disparar animación de escala y lágrimas en la escena final del llanto.",
+    "Sincronizar clips de audio para cada evento de robo y remate."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir barras de salud o poder que bajan con cada snack robado.",
+    "Incluir un final alternativo interactivo según el comentario más votado.",
+    "Agregar efectos visuales tipo cómic en cada robo."
+   ]
+  }
  }
 ]
