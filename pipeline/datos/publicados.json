@@ -139,6 +139,17 @@
   "cancelado": "19/11 Gerente: el cartel \"RONALDINHO ESCAPED!\" se cortaba en el borde. NO subir; lo cubre un extra rehecho."
  },
  {
+  "id": "s1126_02_jue26_1500_balon",
+  "tipo": "balon",
+  "variante": null,
+  "fecha": "2026-11-26",
+  "hora": "15:00",
+  "titulo": null,
+  "video_id": null,
+  "error": null,
+  "cancelado": "24/11 Gerente: BALLON D'OR pasaba su tope de 2 por semana (4.º en 5 días); el lugar es para FACE SPIN (aprobado por el CEO en #17). NO subir."
+ },
+ {
   "id": "s1_05_dom01_0900_stop",
   "tipo": "stop",
   "fecha": "2026-11-01",
@@ -2769,14 +2780,59 @@
   "subido": "2026-11-23T22:09:34+00:00"
  },
  {
-  "id": "s1126_02_jue26_1500_balon",
-  "tipo": "balon",
+  "id": "s1126_01_jue26_1300_cinta",
+  "tipo": "cinta",
   "variante": null,
+  "exp": null,
+  "limpio": true,
+  "imposible": null,
+  "fecha": "2026-11-26",
+  "hora": "13:00",
+  "titulo": "Find Ronaldo's real body 🛑🔥 Mbappé or Vinícius? #ronaldo #mbappe #vinicius",
+  "video_id": "BwFpTbGhTJg",
+  "error": null,
+  "subido": "2026-11-24T20:44:44+00:00"
+ },
+ {
+  "id": "o11241551_01_jue26_1500_anillos",
+  "tipo": "anillos",
+  "variante": null,
+  "exp": null,
+  "limpio": null,
+  "imposible": true,
   "fecha": "2026-11-26",
   "hora": "15:00",
-  "titulo": null,
-  "video_id": null,
+  "titulo": "Fix Haaland's face 🛑 Only 1% stop it right #haaland",
+  "video_id": "0SO5SvrSYTw",
   "error": null,
-  "cancelado": "24/11 Gerente: BALLON D'OR pasaba su tope de 2 por semana (4.º en 5 días); el lugar es para FACE SPIN (aprobado por el CEO en #17). NO subir."
+  "subido": "2026-11-24T20:44:46+00:00"
+ },
+ {
+  "id": "s1126_03_jue26_1700_cano",
+  "tipo": "cano",
+  "variante": null,
+  "exp": null,
+  "limpio": true,
+  "imposible": true,
+  "fecha": "2026-11-26",
+  "hora": "17:00",
+  "titulo": "Messi skills vs Yamal 🛑 Stop it between the legs #messi #yamal",
+  "video_id": "DvkWH3mPbhk",
+  "error": null,
+  "subido": "2026-11-24T20:44:48+00:00"
+ },
+ {
+  "id": "s1126_04_jue26_2000_slot",
+  "tipo": "slot",
+  "variante": null,
+  "exp": null,
+  "limpio": true,
+  "imposible": null,
+  "fecha": "2026-11-26",
+  "hora": "20:00",
+  "titulo": "Fit Messi's head 🎰 Only 1% hit the jackpot #messi #neymar #mbappe",
+  "video_id": "BPkSd6nQqVg",
+  "error": null,
+  "subido": "2026-11-24T20:44:50+00:00"
  }
 ]
