@@ -14,12 +14,12 @@
    "medicion": {
     "\"vs\"": {
      "videos": 3,
-     "vistas_48h_esperadas": 6789,
+     "vistas_48h_esperadas": 6716,
      "p_mejor": 0.76
     },
     "\"find\"": {
      "videos": 0,
-     "vistas_48h_esperadas": 4193,
+     "vistas_48h_esperadas": 4181,
      "p_mejor": 0.24
     }
    }
@@ -38,13 +38,13 @@
    "medicion": {
     "true": {
      "videos": 4,
-     "vistas_48h_esperadas": 3486,
-     "p_mejor": 0.46
+     "vistas_48h_esperadas": 3452,
+     "p_mejor": 0.45
     },
     "false": {
      "videos": 0,
-     "vistas_48h_esperadas": 3733,
-     "p_mejor": 0.54
+     "vistas_48h_esperadas": 3730,
+     "p_mejor": 0.55
     }
    }
   },
@@ -61,14 +61,14 @@
    "pregunta": "¿HEAD FIT rinde más con 6,4 s (actual) o con 8 s (la IA de YouTube dice que 7-9 s es lo óptimo)?",
    "medicion": {
     "6.4": {
-     "videos": 3,
-     "vistas_48h_esperadas": 2743,
-     "p_mejor": 0.47
+     "videos": 4,
+     "vistas_48h_esperadas": 3236,
+     "p_mejor": 0.53
     },
     "8.0": {
      "videos": 0,
-     "vistas_48h_esperadas": 2915,
-     "p_mejor": 0.53
+     "vistas_48h_esperadas": 3122,
+     "p_mejor": 0.47
     }
    }
   }
