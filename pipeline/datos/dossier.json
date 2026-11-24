@@ -1,25 +1,25 @@
 {
  "fecha": "2026-11-24",
  "canales_seguidos": 80,
- "canales_nuevos": 23,
- "revisados": 180,
- "fuera_de_serie": 405,
+ "canales_nuevos": 22,
+ "revisados": 183,
+ "fuera_de_serie": 409,
  "interacciones": {
   "comentar": {
-   "videos": 73,
+   "videos": 79,
    "mediana": 1941486
   },
   "ninguna": {
-   "videos": 22,
+   "videos": 24,
    "mediana": 1974120
   },
   "pausar": {
-   "videos": 7,
-   "mediana": 3004252
+   "videos": 10,
+   "mediana": 2055067
   },
   "adivinar": {
-   "videos": 7,
-   "mediana": 2743605
+   "videos": 8,
+   "mediana": 2555335
   },
   "elegir": {
    "videos": 4,
@@ -359,97 +359,103 @@
    "idea_para_nosotros": "Podríamos hacer un '¿Cuál es el verdadero?' usando fotos de la infancia de los jugadores mezcladas con caras deformadas con IA, desafiando a pausar en el correcto."
   },
   {
-   "id": "sYywP0i0URw",
-   "canal": "FootyFace",
-   "subs": 11600,
+   "id": "tL8IflhtbH4",
+   "canal": "Endform TV",
+   "subs": 18700,
    "nuevo": true,
-   "vistas": 1298361,
-   "ratio": 30.7,
-   "puntaje": 37.18,
-   "nombre_formato": "Stop-the-Frame Challenge",
-   "mecanica": "Varios Ronaldinhos flotan alrededor girando como una ruleta sobre un estadio digital. El usuario debe pausar el video justo cuando un Ronaldinho cae dentro de la marca circular de la esquina.",
-   "primer_segundo": "Se ve a Ronaldinho vestido de amarillo en el centro y arriba múltiples versiones suyas flotando en círculo.",
-   "por_que_engancha": "Genera el deseo irreprimible de competir y acertar el momento exacto mediante la pausa.",
+   "vistas": 1150811,
+   "ratio": 31.0,
+   "puntaje": 37.28,
+   "nombre_formato": "Legend Evolution Drop",
+   "mecanica": "Las caras de varios futbolistas caen repetidamente por un tubo hacia un círculo luminoso y se fusionan al chocar. Al final del video, el bucle converge en la revelación de la forma final de una superestrella.",
+   "primer_segundo": "Se ve una estructura vertical con un círculo brillante de colores y varias fotos superpuestas de jugadores de fútbol cayendo, mientras suena una voz repetitiva.",
+   "por_que_engancha": "Genera curiosidad constante e invita a pausar el video en el momento exacto para descubrir qué leyenda aparecerá.",
    "interaccion": "pausar",
    "jugadores": [
-    "Ronaldinho"
+    "Henry",
+    "Kaká",
+    "Zidane",
+    "Ronaldinho",
+    "Ronaldo",
+    "Maradona",
+    "Pelé"
    ],
    "usa_clips_reales": false,
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
-   "idea_para_nosotros": "Hacer una ruleta con tres leyendas del Barcelona y que el espectador tenga que pausar para elegir al mejor gambeteador."
+   "idea_para_nosotros": "Podríamos hacer una ruleta temática de leyendas donde el usuario deba pausar para adivinar qué dorsal o bota legendaria formará al jugador definitivo."
   }
  ],
  "sin_analizar": [
   {
+   "id": "rm1AjHjP5g0",
+   "canal": "Blockstalks",
+   "vistas": 2426919,
+   "ratio": 65.6,
+   "titulo": "Bro got an arm🔥🔥 #football  #edit #shorts"
+  },
+  {
+   "id": "t39uRVzyCFg",
+   "canal": "ROYAL GAMING",
+   "vistas": 560215,
+   "ratio": 99.5,
+   "titulo": "Ronaldo & Messi Running Away From Meteor! #shorts"
+  },
+  {
+   "id": "gbqc7obsm6E",
+   "canal": "Extra Time Quiz ",
+   "vistas": 2528582,
+   "ratio": 23.6,
+   "titulo": "Mbappé, Vini & Bellingham vs Yamal, Raphinha & Lewandowski ⚽🔥"
+  },
+  {
+   "id": "LLleDjdbwMQ",
+   "canal": "ODDLYX",
+   "vistas": 3031606,
+   "ratio": 57.4,
+   "titulo": "Is This The Craziest Soccer Ball Ever? 😳⚽ #Football #Soccer #FootballShorts"
+  },
+  {
+   "id": "8zEGE03jwpg",
+   "canal": "Hunters Strike",
+   "vistas": 938489,
+   "ratio": 80.8,
+   "titulo": "La meilleure célébration ? ✨👀 #football #footballshorts #footballchallenge"
+  },
+  {
    "id": "Go9Jl3YrQ-w",
    "canal": "Memeland",
-   "vistas": 2166137,
-   "ratio": 36.9,
+   "vistas": 2248147,
+   "ratio": 23.9,
    "titulo": "Car Logo Merge 👀 Will it reach the Final Form? #shorts"
   },
   {
-   "id": "pGC3kVvvyMg",
-   "canal": "Ronaldessi",
-   "vistas": 608464,
-   "ratio": 161.1,
-   "titulo": "Mbappe & Yamal funny video #viral #shorts #mbappe #haaland #trending #football #ai"
+   "id": "N6riiHcM8_4",
+   "canal": "Futbolelite",
+   "vistas": 2596946,
+   "ratio": 57.6,
+   "titulo": "😱 Speed se volvió loco al ver la estatua de Ronaldo #futbol #cr7 #viral#ronaldo#shorts"
   },
   {
-   "id": "btMP1vLO5pw",
-   "canal": "Extra Time Quiz ",
-   "vistas": 3353095,
-   "ratio": 31.5,
-   "titulo": "Ronaldo vs 7 Legends Combined: Who Scored More? ⚽🔥"
+   "id": "NzPj5AsxhVc",
+   "canal": "Gridiron Hearts",
+   "vistas": 1254173,
+   "ratio": 26.1,
+   "titulo": "Raiders Fans Sat Down For Fernando Mendoza's First Touchdown...🥺❤️ #nfl #shorts"
   },
   {
-   "id": "x0B7rzejv8Q",
-   "canal": "Memeland",
-   "vistas": 2033861,
-   "ratio": 34.7,
-   "titulo": "Will it reach the Final Form? How many ball's to reach the final form? #shorts"
+   "id": "Oe0YRicFaZo",
+   "canal": "JOY VAI SQUAD",
+   "vistas": 3082383,
+   "ratio": 53.4,
+   "titulo": "Bayern Munich vs FC Köln big funny highlights football match 🔥⚽ #allianzarena #football #shorts"
   },
   {
-   "id": "1xpNPfeb3XY",
-   "canal": "SUVO SPORTS 🔥",
-   "vistas": 3447090,
-   "ratio": 26.0,
-   "titulo": "💥India vs Pakistan Highlights football match 2026 ⚽😱 #india #pakistan #football #cr7 #usa #shorts"
-  },
-  {
-   "id": "XrCechmm3Aw",
-   "canal": "TB EIDT ",
-   "vistas": 1839073,
-   "ratio": 29.9,
-   "titulo": "Mbappe Is Hungry 😂 | Mbappe Begging For Food From Haaland, Bellingham & Yamal#shorts"
-  },
-  {
-   "id": "ZxdQYWaPwrM",
-   "canal": "Football Funny Lab",
-   "vistas": 2799148,
-   "ratio": 27.1,
-   "titulo": "Lamine Yamal vs Ronaldo Dressing Challenge 😱🔥#viral #shorts #trending"
-  },
-  {
-   "id": "337LHxgcYRY",
-   "canal": "GoalQuiz",
-   "vistas": 2301139,
-   "ratio": 27.3,
-   "titulo": "ONLY 1% CAN FIND YAMAL, NEYMAR & VALVERDE! 🧠 | FIND THE PLAYER"
-  },
-  {
-   "id": "GgkMes8koeg",
-   "canal": "4nas",
-   "vistas": 3183387,
-   "ratio": 65.7,
-   "titulo": "When Bellingham loses control ☠🔥"
-  },
-  {
-   "id": "PV29HxdhoXo",
-   "canal": "𝑹𝑼𝑵𝑵𝑬𝑹 𝑹𝑰𝑪𝑪𝑯",
-   "vistas": 2324021,
-   "ratio": 68.3,
-   "titulo": "Ronaldo Speed at 41 💀🔥"
+   "id": "mosNoPKj-Ys",
+   "canal": "FutXFiles",
+   "vistas": 915632,
+   "ratio": 27.5,
+   "titulo": "¡LAMINE YAMAL ES DEL MADRID! 😱 PEDRI DESCUBRE SU SECRETO 😂#shorts"
   }
  ]
 }
