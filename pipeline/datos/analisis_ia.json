@@ -1,41 +1,26 @@
 {
- "fecha": "2026-11-24",
- "autor": "Gerente IA · parte diario (24/11)",
+ "fecha": "2026-11-25",
+ "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
  "veredicto": {
   "color": "green",
-  "titulo": "La mejor racha del canal: +73 K y +88 K vistas por día",
-  "frase": "1.140 suscriptores y 1,26 M de vistas en 90 días (13 %). Con 6 por día, formatos nuevos y versión limpia, la mediana de la semana subió 180 %. Al ritmo actual, los 10 M llegan en ~23 semanas."
+  "titulo": "1150 de 1.000 suscriptores ✅",
+  "frase": "Todo anda solo. No tenés que hacer nada hoy."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1.140",
-   "nota": "✅"
-  },
-  {
-   "label": "Vistas Shorts 90 días",
-   "valor": "1,26 M / 10 M",
-   "nota": "13 % · 22,9 semanas"
-  },
-  {
-   "label": "Vistas del canal por día",
-   "valor": "+73 K · +88 K",
-   "nota": "23 y 24/11 (parcial)"
+   "valor": "1150 / 1.000",
+   "nota": "faltan 0"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1,29",
+   "valor": "1,43",
    "nota": "meta 3"
   },
   {
-   "label": "Mediana de la semana",
-   "valor": "3.282",
-   "nota": "+180 %"
-  },
-  {
-   "label": "ESCAPE",
-   "valor": "18.520",
-   "nota": "1.er video"
+   "label": "Vistas de Shorts 90 días",
+   "valor": "1,31 M",
+   "nota": "22.2 semanas a 10 M"
   }
  ],
  "hallazgos": [
