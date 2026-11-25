@@ -337,3 +337,12 @@ Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; i
 - **No toqué:** FIT ALL (protegido por el CEO hasta el 30/11).
 - **Revisar el 2026-11-26:** el primer FACE SPIN a ojo y la entrega del Ingeniero. **27/11:** primeras mediciones de la versión limpia. **30/11:** FIT ALL.
 - **Para el CEO:** #4 (DRESS).
+
+## 2026-11-25 · Gerente IA (turno diario)
+- **Vi:** 1.160 suscriptores; 1,33 M en 90 días; ritmo 403 K por semana (21,5 semanas). Vistas por día +88 K (24/11), +66 K (25/11 parcial). 10 K por día 1,43. Originalidad 77.
+  ESCAPE 16.020 (2), CONVEYOR 13.786 (6), VS 5.949, HEAD SLOT 5.447; debajo del canal: HEAD FIT 1.976, BALLON D'OR 2.025, DRESS 2.216, PENALTY 2.160, SKILL STOP 1.619 (1). WHEEL 2.913 (0,9x, fijo). Máquinas OK.
+  Hojas del 26 y del 27/11 (FACE SPIN Haaland y Zidane; HEAD FIT/HEAD SLOT con jugadores distintos): bien.
+- **Decidí e hice:** nada (día sano; cambios del 24/11 en evaluación).
+- **No toqué:** WHEEL (fijo; si sigue < 1x el 30/11, se lo presento al CEO); FIT ALL (protegido hasta el 30/11).
+- **Revisar el 2026-11-26:** entrega del Ingeniero. **27/11:** recordatorio de #4 al CEO (5 días). **30/11:** FIT ALL, WHEEL, versión limpia.
+- **Para el CEO:** nada urgente (#4 pendiente).

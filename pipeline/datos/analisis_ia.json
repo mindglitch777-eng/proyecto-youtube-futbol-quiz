@@ -1,16 +1,26 @@
 {
  "fecha": "2026-11-25",
- "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
+ "autor": "Gerente IA · parte diario (25/11)",
  "veredicto": {
   "color": "green",
-  "titulo": "1150 de 1.000 suscriptores ✅",
-  "frase": "Todo anda solo. No tenés que hacer nada hoy."
+  "titulo": "El canal suma ~74 K vistas por día; 21,5 semanas para los 10 M",
+  "frase": "1.160 suscriptores y 1,33 M de vistas en 90 días. CONVEYOR y ESCAPE empujan; HEAD FIT, BALLON D'OR y DRESS quedaron debajo del canal."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1150 / 1.000",
-   "nota": "faltan 0"
+   "valor": "1.160",
+   "nota": "✅"
+  },
+  {
+   "label": "Vistas Shorts 90 días",
+   "valor": "1,33 M / 10 M",
+   "nota": "13 % · 21,5 semanas"
+  },
+  {
+   "label": "Vistas por día (7 días)",
+   "valor": "~74 K",
+   "nota": "meta 110 K"
   },
   {
    "label": "Videos de 10 K por día",
@@ -18,16 +28,21 @@
    "nota": "meta 3"
   },
   {
-   "label": "Vistas de Shorts 90 días",
-   "valor": "1,33 M",
-   "nota": "21.5 semanas a 10 M"
+   "label": "ESCAPE",
+   "valor": "16.020",
+   "nota": "mediana, 2 videos"
+  },
+  {
+   "label": "CONVEYOR STOP",
+   "valor": "13.786",
+   "nota": "mediana, 6 medidos"
   }
  ],
  "hallazgos": [
   {
    "tipo": "funciona",
    "titulo": "CONVEYOR STOP es el nuevo rey del canal",
-   "dato": "CONVEYOR: mediana 12.027 (3,7x) con 5 medidos. ESCAPE debutó con 18.520, VS con 6.813, HEAD SLOT 5.960. FACE SPIN entra el 26/11.",
+   "dato": "CONVEYOR: mediana 13.786 (4,3x) con 6 medidos. ESCAPE 16.020 (2 videos), VS 5.949, HEAD SLOT 5.447. SKILL STOP 1.619 (1 medido).",
    "por_que": "Estrenó el 22/11 y la mecánica de la cinta transportadora enganchó directo a la audiencia (un video metió 17.188 vistas en 22 h).",
    "confianza": "media (con 4 videos)",
    "accion": "El cerebro estadístico le dará máxima prioridad en la fábrica diaria."
@@ -57,12 +72,12 @@
    "accion": "Seguir usando como base segura de vistas diarias."
   },
   {
-   "tipo": "no",
+   "tipo": "ojo",
    "titulo": "DRESS UP y los formatos viejos se desploman",
-   "dato": "DRESS UP cayó a 1.043 vistas y HIDDEN TRANSFER a 76 vistas",
+   "dato": "Prueba 1 (19/11) 6.199 vistas, prueba 2 (20/11) 1.002 a 48 h. Mediana de las 2: 2.216 (0,7x el canal, que subió a 3.188).",
    "por_que": "La audiencia se agota rápido de los formatos repetidos y pierden retención.",
    "confianza": "baja (con 1 video) / media en descarte",
-   "accion": "Poda automática del sistema y reemplazo por ideas frescas."
+   "accion": "El CEO decide en #4. Con el canal más alto, ya no se recomienda con fuerza."
   },
   {
    "tipo": "ojo",

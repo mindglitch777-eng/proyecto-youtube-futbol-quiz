@@ -1,6 +1,6 @@
 {
  "fecha": "2026-11-25",
- "hora": "08:13",
+ "hora": "15:42",
  "canal": {
   "mediana_48h_semana": 3188,
   "mediana_48h_semana_anterior": 1144,
@@ -55,7 +55,7 @@
   "lectura": "BIEN: variado"
  },
  "inspeccion": {
-  "revisados": 143,
+  "revisados": 159,
   "con_defectos": 3,
   "ejemplos": [
    "s1122_04_dom22_2000_goles: pantalla congelada 3.2 s",
@@ -68,7 +68,7 @@
   "meta": 14,
   "reserva": 12,
   "vigilancia": {
-   "hora": "2026-11-25T07:25-03:00",
+   "hora": "2026-11-25T15:00-03:00",
    "problemas": [],
    "acciones": [],
    "avisos": []
@@ -87,10 +87,12 @@
    "2026-11-21": 2,
    "2026-11-22": 2,
    "2026-11-23": 2
-  }
+  },
+  "vistas_por_dia": 74348,
+  "subs_por_dia": 36.7
  },
  "cerebro": {
-  "fecha": "2026-11-25T08:13-03:00",
+  "fecha": "2026-11-25T15:42-03:00",
   "videos_medidos": 148,
   "formatos": {
    "cinta": {
@@ -391,16 +393,16 @@
   "originalidad": {
    "tope": "35%",
    "ultimos_7_dias": {
-    "favorito": "15%",
     "rueda": "15%",
+    "favorito": "15%",
     "cinta": "13%",
     "balon": "11%",
     "cabezas": "6%",
-    "slot": "6%",
     "goles": "6%",
-    "cano": "5%",
+    "slot": "6%",
     "circulo": "5%",
     "vs": "5%",
+    "cano": "5%",
     "escape": "3%",
     "penal": "3%",
     "dress": "3%",
@@ -1323,21 +1325,9 @@
  ],
  "olas_calientes": [
   {
-   "mecanica": "meme",
-   "estado": "subiendo",
-   "vph": 3430,
-   "nuestros": []
-  },
-  {
-   "mecanica": "3d_ia",
-   "estado": "subiendo",
-   "vph": 572,
-   "nuestros": []
-  },
-  {
    "mecanica": "balance",
    "estado": "subiendo",
-   "vph": 1559,
+   "vph": 1270,
    "nuestros": []
   }
  ],
@@ -1352,7 +1342,7 @@
   "alerta_problemas": [],
   "en_cola": 0,
   "etapas_con_error": {},
-  "olas_hace_h": 17,
+  "olas_hace_h": 1,
   "investigacion": "2026-11-24",
   "poda": {
    "podadas": {
@@ -1405,7 +1395,7 @@
      "motivo": "mediana 8,460 vs canal 2,188"
     }
    ],
-   "mediana_canal": 2036
+   "mediana_canal": 2025
   },
   "advertencias": [
    "Pasado mañana (2026-11-27) no tiene videos subidos todavía (normal si la fábrica de hoy aún no corrió; si ya corrió, es un problema)."
@@ -1413,26 +1403,20 @@
  },
  "parte": {
   "fecha": "2026-11-25",
-  "autor": "máquina (sin IA)",
-  "titular": "1150 de 1.000 suscriptores ✅",
+  "titular": "1.160 suscriptores y 1,33 M de vistas en 90 días (13 %). Ritmo de la semana 403 K: 21,5 semanas para los 10 M. Vistas por día: +88 K (24/11) y +66 K hoy hasta las 15:01; promedio de 7 días ~74 K.",
   "funciona": [
-   "CONVEYOR STOP del 23/11 21:30: 32.420 vistas en 35 h",
-   "CONVEYOR STOP del 24/11 21:30: 7.896 vistas en 11 h",
-   "CONVEYOR STOP del 22/11 21:30: 23.113 vistas en 59 h",
-   "Los más firmes (cerebro): CONVEYOR STOP mediana 16.243 (6 videos) · HEAD SLOT mediana 5.447 (5 videos)",
-   "MODO SERIE: WHEEL STOP pegó (25.751 vistas. 12.6x el canal) → sale 1 por día hasta el 29/11 con el título «Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mb»",
-   "MODO SERIE: CONVEYOR STOP pegó (23.055 vistas. 11.3x el canal) → sale 1 por día hasta el 29/11 con el título «Messi's body is on the belt 🛑 Mbappé or Yamal? #messi #mbapp»"
+   "ESCAPE: mediana 16.020 (5,0x) con sus 2 primeros. CONVEYOR: 13.786 (4,3x, 6 medidos, media). Videos de 10 K por día: 1,43 (venía en 1,0).",
+   "Mediana de la semana +179 % (3.188). Originalidad 77 (bien)."
   ],
   "no_funciona": [
-   "BALLON D'OR 100% del 24/11: 16 vistas en 17 h",
-   "BALLON D'OR 100% del 23/11: 1.011 vistas en 41 h",
-   "Videos de 10 K o más por día: 1,43 (meta 3)"
+   "HEAD FIT (1.976), BALLON D'OR (2.025), DRESS (2.216) y PENALTY (2.160) quedan debajo del canal (0,6-0,7x). SKILL STOP arrancó flojo (1.619, 1 medido).",
+   "WHEEL baja a 2.913 (0,9x): es fijo, lo sigo de cerca."
   ],
   "hice": [
-   "Fábrica, publicación, medición, cerebro, poda y vigilancia trabajaron solos."
+   "Revisé a ojo las hojas del 26 y del 27/11 (los dos primeros FACE SPIN, Haaland y Zidane): bien."
   ],
   "para_el_ceo": [
-   "Nada para vos hoy."
+   "Nada urgente. DRESS (#4) espera tu sí o no desde el 22/11; con los números de hoy (0,7x) ya no te lo recomiendo con fuerza."
   ]
  },
  "prueba_limpio": {
