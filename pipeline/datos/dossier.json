@@ -1,29 +1,29 @@
 {
- "fecha": "2026-11-24",
+ "fecha": "2026-11-25",
  "canales_seguidos": 80,
  "canales_nuevos": 22,
- "revisados": 183,
- "fuera_de_serie": 409,
+ "revisados": 198,
+ "fuera_de_serie": 467,
  "interacciones": {
   "comentar": {
-   "videos": 79,
-   "mediana": 1941486
+   "videos": 85,
+   "mediana": 1974632
   },
   "ninguna": {
-   "videos": 24,
-   "mediana": 1974120
+   "videos": 28,
+   "mediana": 1684370
   },
   "pausar": {
-   "videos": 10,
-   "mediana": 2055067
+   "videos": 11,
+   "mediana": 1298361
   },
   "adivinar": {
    "videos": 8,
    "mediana": 2555335
   },
   "elegir": {
-   "videos": 4,
-   "mediana": 6264990
+   "videos": 5,
+   "mediana": 4237417
   }
  },
  "ideas": [
@@ -228,6 +228,28 @@
    "idea_para_nosotros": "Podemos crear un juego de pausa rápida donde 3 caras de jugadores estilo GTA cambian a gran velocidad y el usuario debe pausar en el momento exacto para armar un trío perfecto de la misma era."
   },
   {
+   "id": "Pp9ZQySFyls",
+   "canal": "FootyMorph ",
+   "subs": 3960,
+   "nuevo": true,
+   "vistas": 1135555,
+   "ratio": 49.9,
+   "puntaje": 42.45,
+   "nombre_formato": "Outfit Swap Challenge",
+   "mecanica": "Ronaldo y Yamal van probándose 4 disfraces/outfits diferentes que se deslizan desde arriba. Cada atuendo dura unos segundos antes de caer el siguiente.",
+   "primer_segundo": "Aparecen Ronaldo y Yamal en shorts con los atuendos cayendo sobre sus cuerpos y una lista numerada del 1 al 4 a la izquierda.",
+   "por_que_engancha": "Genera curiosidad y gracia al ver a futbolistas de élite vestidos con disfraces ridículos o inusuales.",
+   "interaccion": "elegir",
+   "jugadores": [
+    "Cristiano Ronaldo",
+    "Lamine Yamal"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 5,
+   "idea_para_nosotros": "Hacer un 'Pausa para armar tu outfit legendario' donde camisetas y trajes históricos pasan a alta velocidad y el espectador debe pausar para vestir a su estrella preferida."
+  },
+  {
    "id": "R5rZVJDTAtQ",
    "canal": "funny people",
    "subs": 14200,
@@ -357,105 +379,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
    "idea_para_nosotros": "Podríamos hacer un '¿Cuál es el verdadero?' usando fotos de la infancia de los jugadores mezcladas con caras deformadas con IA, desafiando a pausar en el correcto."
-  },
-  {
-   "id": "tL8IflhtbH4",
-   "canal": "Endform TV",
-   "subs": 18700,
-   "nuevo": true,
-   "vistas": 1150811,
-   "ratio": 31.0,
-   "puntaje": 37.28,
-   "nombre_formato": "Legend Evolution Drop",
-   "mecanica": "Las caras de varios futbolistas caen repetidamente por un tubo hacia un círculo luminoso y se fusionan al chocar. Al final del video, el bucle converge en la revelación de la forma final de una superestrella.",
-   "primer_segundo": "Se ve una estructura vertical con un círculo brillante de colores y varias fotos superpuestas de jugadores de fútbol cayendo, mientras suena una voz repetitiva.",
-   "por_que_engancha": "Genera curiosidad constante e invita a pausar el video en el momento exacto para descubrir qué leyenda aparecerá.",
-   "interaccion": "pausar",
-   "jugadores": [
-    "Henry",
-    "Kaká",
-    "Zidane",
-    "Ronaldinho",
-    "Ronaldo",
-    "Maradona",
-    "Pelé"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 5,
-   "idea_para_nosotros": "Podríamos hacer una ruleta temática de leyendas donde el usuario deba pausar para adivinar qué dorsal o bota legendaria formará al jugador definitivo."
   }
  ],
  "sin_analizar": [
   {
-   "id": "rm1AjHjP5g0",
-   "canal": "Blockstalks",
-   "vistas": 2426919,
-   "ratio": 65.6,
-   "titulo": "Bro got an arm🔥🔥 #football  #edit #shorts"
+   "id": "-Pgw1Xgj1vQ",
+   "canal": "BK10",
+   "vistas": 1473581,
+   "ratio": 128.5,
+   "titulo": "art of désiré doué 🎨"
   },
   {
-   "id": "t39uRVzyCFg",
-   "canal": "ROYAL GAMING",
-   "vistas": 560215,
-   "ratio": 99.5,
-   "titulo": "Ronaldo & Messi Running Away From Meteor! #shorts"
+   "id": "JHrKSEr_w5s",
+   "canal": "Soccersoul89",
+   "vistas": 730806,
+   "ratio": 125.0,
+   "titulo": "Yamal skills is everywhere #football #footballshorts"
   },
   {
-   "id": "gbqc7obsm6E",
-   "canal": "Extra Time Quiz ",
-   "vistas": 2528582,
-   "ratio": 23.6,
-   "titulo": "Mbappé, Vini & Bellingham vs Yamal, Raphinha & Lewandowski ⚽🔥"
+   "id": "Edy65LqhEtI",
+   "canal": "Ballex",
+   "vistas": 2143079,
+   "ratio": 31.0,
+   "titulo": "Real Madrid’s Comeback Today 😮‍💨 #shorts #football"
   },
   {
-   "id": "LLleDjdbwMQ",
-   "canal": "ODDLYX",
-   "vistas": 3031606,
-   "ratio": 57.4,
-   "titulo": "Is This The Craziest Soccer Ball Ever? 😳⚽ #Football #Soccer #FootballShorts"
+   "id": "-u9ztrIOAaw",
+   "canal": "Mischief Time Fan",
+   "vistas": 2745224,
+   "ratio": 77.3,
+   "titulo": "Mbappé failed to save the watermelon!😂 (3D Parody) #haaland  #funny #Mbappé"
   },
   {
    "id": "8zEGE03jwpg",
    "canal": "Hunters Strike",
-   "vistas": 938489,
-   "ratio": 80.8,
+   "vistas": 944139,
+   "ratio": 94.2,
    "titulo": "La meilleure célébration ? ✨👀 #football #footballshorts #footballchallenge"
-  },
-  {
-   "id": "Go9Jl3YrQ-w",
-   "canal": "Memeland",
-   "vistas": 2248147,
-   "ratio": 23.9,
-   "titulo": "Car Logo Merge 👀 Will it reach the Final Form? #shorts"
   },
   {
    "id": "N6riiHcM8_4",
    "canal": "Futbolelite",
-   "vistas": 2596946,
-   "ratio": 57.6,
+   "vistas": 3142363,
+   "ratio": 63.4,
    "titulo": "😱 Speed se volvió loco al ver la estatua de Ronaldo #futbol #cr7 #viral#ronaldo#shorts"
   },
   {
-   "id": "NzPj5AsxhVc",
-   "canal": "Gridiron Hearts",
-   "vistas": 1254173,
-   "ratio": 26.1,
-   "titulo": "Raiders Fans Sat Down For Fernando Mendoza's First Touchdown...🥺❤️ #nfl #shorts"
+   "id": "rm1AjHjP5g0",
+   "canal": "Blockstalks",
+   "vistas": 2571092,
+   "ratio": 65.9,
+   "titulo": "Bro got an arm🔥🔥 #football  #edit #shorts"
   },
   {
-   "id": "Oe0YRicFaZo",
-   "canal": "JOY VAI SQUAD",
-   "vistas": 3082383,
-   "ratio": 53.4,
-   "titulo": "Bayern Munich vs FC Köln big funny highlights football match 🔥⚽ #allianzarena #football #shorts"
+   "id": "CujfsQv8v2M",
+   "canal": "HEISTIC",
+   "vistas": 2131909,
+   "ratio": 67.6,
+   "titulo": "Ronaldo retired from Portugal..😭💔 - Ronaldo Sad Edit | #ronaldo #edit #sad"
   },
   {
-   "id": "mosNoPKj-Ys",
-   "canal": "FutXFiles",
-   "vistas": 915632,
-   "ratio": 27.5,
-   "titulo": "¡LAMINE YAMAL ES DEL MADRID! 😱 PEDRI DESCUBRE SU SECRETO 😂#shorts"
+   "id": "tmuJKtMC6WI",
+   "canal": "3DAnimLiga",
+   "vistas": 1074674,
+   "ratio": 28.8,
+   "titulo": "Messi and Haaland + Ronaldo TV #football #ronaldo #messi #animation #shorts #funny #haaland"
+  },
+  {
+   "id": "Xzi-YY57xzk",
+   "canal": "Gaol Zynox",
+   "vistas": 854057,
+   "ratio": 30.4,
+   "titulo": "Is Lamine Yamal Bald or Does He Wear a Wig? 🤯 #football #soccer #yamal  #sports #shorts"
   }
  ]
 }
