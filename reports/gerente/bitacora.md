@@ -346,3 +346,6 @@ Reglas: nada de cambiar 6 por día ni los fijos; todo como prueba o propuesta; i
 - **No toqué:** WHEEL (fijo; si sigue < 1x el 30/11, se lo presento al CEO); FIT ALL (protegido hasta el 30/11).
 - **Revisar el 2026-11-26:** entrega del Ingeniero. **27/11:** recordatorio de #4 al CEO (5 días). **30/11:** FIT ALL, WHEEL, versión limpia.
 - **Para el CEO:** nada urgente (#4 pendiente).
+
+## 25/11 · CEO: pausa de los agentes de Claude hasta el lunes 30/11 (ahorro de uso semanal)
+- Pausados: Gerente diario, Vigía e Ingeniero (jueves 26/11 no corre). Se reactivan el lunes 30/11 a la mañana. Siguen solas las máquinas: fábrica (6 por día), publicación, medición, cerebro, poda, vigilancia, prueba versión limpia, nivel imposible, modo serie, investigación diaria (Gemini), parte automático y Gerente Gemini del lunes. Pendiente del CEO: DRESS (#4).
