@@ -1,50 +1,50 @@
 {
- "inicio": "2026-11-27",
+ "inicio": "2026-11-28",
  "videos": [
   {
-   "id": "s1127_01_vie27_1300_rueda",
+   "id": "s1128_01_sab28_1300_favorito",
    "n": 1,
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "13:00",
-   "tipo": "rueda",
-   "formato": "WHEEL STOP",
-   "titulo": "Find Ronaldo's real body 🛑🔥 Vinícius or Messi? #ronaldo #messi #vinicius",
-   "descripcion": "Stop the wheel when Ronaldo's body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#ronaldo #messi #vinicius #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
+   "tipo": "favorito",
+   "formato": "STOP ON YOUR FAVORITE",
+   "titulo": "Can you stop on your GOAT? 🐐⚽ Ronaldo or Henry? #ronaldo #henry #neymar",
+   "descripcion": "Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n#ronaldo #henry #neymar #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
    "jugadores": [
     "Ronaldo",
-    "Messi",
-    "Vinícius"
+    "Henry",
+    "Neymar"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
     "ronaldo",
-    "messi",
-    "vinícius"
+    "henry",
+    "neymar"
    ],
-   "archivo": "s1127_01_vie27_1300_rueda.mp4",
+   "archivo": "s1128_01_sab28_1300_favorito.mp4",
    "exp": {
-    "id": "e3_rueda_titulo",
-    "brazo": "vs"
+    "id": "e4_favorito_leyendas",
+    "brazo": true
    },
-   "limpio": false,
+   "limpio": true,
    "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
+   "control": "NO PASA: movimiento en el primer segundo ≥ 4"
   },
   {
-   "id": "s1127_02_vie27_1500_cabezas",
+   "id": "s1128_02_sab28_1500_cabezas",
    "n": 2,
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "15:00",
    "tipo": "cabezas",
    "formato": "HEAD FIT",
-   "titulo": "Neymar lost his head 😱 Stop on the right one #neymar #messi #ronaldo",
-   "descripcion": "Pause when Neymar's head fits PERFECTLY 🛑\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#neymar #messi #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "titulo": "Mbappé without a head?! 🛑 Only 1% fit it #mbappe #messi #ronaldo",
+   "descripcion": "Pause when Mbappé's head fits PERFECTLY 🛑\nHow many tries did it take you? 👇 Follow for part 2 🔥\n#mbappe #messi #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
    "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
-    "Neymar",
+    "Mbappé",
     "Messi",
     "Ronaldo",
     "Mbappé"
@@ -53,129 +53,130 @@
     "football",
     "soccer",
     "shorts",
-    "neymar",
+    "mbappé",
     "messi",
     "ronaldo",
     "mbappé"
    ],
-   "archivo": "s1127_02_vie27_1500_cabezas.mp4",
+   "archivo": "s1128_02_sab28_1500_cabezas.mp4",
    "exp": {
     "id": "e5_cabezas_duracion",
     "brazo": 6.4
    },
-   "limpio": true,
-   "listo": true,
-   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
-  },
-  {
-   "id": "s1127_03_vie27_1700_anillos",
-   "n": "Zidane",
-   "fecha": "2026-11-27",
-   "hora": "17:00",
-   "tipo": "anillos",
-   "formato": "FACE SPIN",
-   "titulo": "Zidane's face is spinning 😵 Stop it when it's fixed #zidane",
-   "descripcion": "Pause when Zidane's face is PERFECT 🛑 Only 1% get it first try. How many tries? Comment 👇\n#zidane #football #stopchallenge #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries to fix his face? 😵 Be honest, I read them all 👇",
-   "jugadores": [
-    "Zidane"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "zidane"
-   ],
-   "archivo": "s1127_03_vie27_1700_anillos.mp4",
-   "imposible": true,
-   "listo": true,
-   "control": "PASA"
-  },
-  {
-   "id": "s1127_04_vie27_2000_slot",
-   "n": 4,
-   "fecha": "2026-11-27",
-   "hora": "20:00",
-   "tipo": "slot",
-   "formato": "HEAD SLOT",
-   "titulo": "Hit the Ronaldo JACKPOT 🎰 Neymar or Haaland? #ronaldo #neymar #haaland",
-   "descripcion": "Stop the slot when Ronaldo's head fits PERFECTLY 🎰🛑 Only 1% get it first try. How many tries did it take you? 👇\n#ronaldo #neymar #haaland #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
-   "jugadores": [
-    "Ronaldo",
-    "Neymar",
-    "Haaland"
-   ],
-   "tags": [
-    "football",
-    "soccer",
-    "shorts",
-    "ronaldo",
-    "neymar",
-    "haaland"
-   ],
-   "archivo": "s1127_04_vie27_2000_slot.mp4",
    "limpio": false,
    "listo": true,
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   },
   {
-   "id": "s1127_05_vie27_2130_favorito",
-   "n": 5,
-   "fecha": "2026-11-27",
-   "hora": "21:30",
-   "tipo": "favorito",
-   "formato": "STOP ON YOUR FAVORITE",
-   "titulo": "Can you stop on your GOAT? 🐐⚽ Vinícius or Henry? #vinicius #henry #messi",
-   "descripcion": "Stop the ball on your favorite player ⚽🛑 It gets faster every jump. Who did you get? Comment 👇\n#vinicius #henry #messi #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
-   "fijado": "Who did you stop on? 👀 Be honest, was it your favorite? I read them all 👇",
+   "id": "s1128_03_sab28_1700_anillos",
+   "n": "Yamal",
+   "fecha": "2026-11-28",
+   "hora": "17:00",
+   "tipo": "anillos",
+   "formato": "FACE SPIN",
+   "titulo": "Yamal face puzzle 🧩 Pause it perfect #yamal",
+   "descripcion": "Pause when Yamal's face is PERFECT 🛑 Only 1% get it first try. How many tries? Comment 👇\n#yamal #football #stopchallenge #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "How many tries to fix his face? 😵 Be honest, I read them all 👇",
    "jugadores": [
-    "Vinícius",
-    "Henry",
+    "Yamal"
+   ],
+   "tags": [
+    "football",
+    "soccer",
+    "shorts",
+    "yamal"
+   ],
+   "archivo": "s1128_03_sab28_1700_anillos.mp4",
+   "imposible": true,
+   "listo": true,
+   "control": "PASA"
+  },
+  {
+   "id": "s1128_04_sab28_2000_slot",
+   "n": 4,
+   "fecha": "2026-11-28",
+   "hora": "20:00",
+   "tipo": "slot",
+   "formato": "HEAD SLOT",
+   "titulo": "Ronaldo vs Neymar or Messi head slot 🎰🛑 #ronaldo #neymar #messi",
+   "descripcion": "Stop the slot when Ronaldo's head fits PERFECTLY 🎰🛑 Only 1% get it first try. How many tries did it take you? 👇\n#ronaldo #neymar #messi #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
+   "jugadores": [
+    "Ronaldo",
+    "Neymar",
     "Messi"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
-    "vinícius",
-    "henry",
+    "ronaldo",
+    "neymar",
     "messi"
    ],
-   "archivo": "s1127_05_vie27_2130_favorito.mp4",
-   "exp": {
-    "id": "e4_favorito_leyendas",
-    "brazo": true
-   },
-   "limpio": false,
+   "archivo": "s1128_04_sab28_2000_slot.mp4",
+   "limpio": true,
+   "imposible": true,
    "listo": true,
-   "control": "PASA"
+   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   },
   {
-   "id": "s1127_06_vie27_2300_cinta",
-   "n": 6,
-   "fecha": "2026-11-27",
-   "hora": "23:00",
+   "id": "s1128_05_sab28_2130_cinta",
+   "n": 5,
+   "fecha": "2026-11-28",
+   "hora": "21:30",
    "tipo": "cinta",
    "formato": "CONVEYOR STOP",
-   "titulo": "Find Vinícius's real body 🛑🔥 Neymar or Mbappé? #vinicius #neymar #mbappe",
-   "descripcion": "Stop the belt when Vinícius's REAL body is on top of the legs 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#vinicius #neymar #mbappe #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "titulo": "Messi vs Neymar or Ronaldo conveyor challenge 😱🛑 #messi #neymar #ronaldo",
+   "descripcion": "Stop the belt when Messi's REAL body is on top of the legs 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#messi #neymar #ronaldo #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
+   "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
+   "jugadores": [
+    "Messi",
+    "Neymar",
+    "Ronaldo"
+   ],
+   "tags": [
+    "football",
+    "soccer",
+    "shorts",
+    "messi",
+    "neymar",
+    "ronaldo"
+   ],
+   "archivo": "s1128_05_sab28_2130_cinta.mp4",
+   "limpio": true,
+   "listo": true,
+   "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
+  },
+  {
+   "id": "s1128_06_sab28_2300_rueda",
+   "n": 6,
+   "fecha": "2026-11-28",
+   "hora": "23:00",
+   "tipo": "rueda",
+   "formato": "WHEEL STOP",
+   "titulo": "Vinícius vs Neymar or Ronaldo stop challenge 😱🔥 #vinicius #ronaldo #neymar",
+   "descripcion": "Stop the wheel when Vinícius's body is PERFECT 🛑 Only 1% get it first try. How many tries did it take you? 👇\n#vinicius #ronaldo #neymar #shorts\n\nPhoto credits (Wikimedia Commons). Images were modified; the modified images are shared under CC BY-SA 4.0:\n",
    "fijado": "How many tries did it take you? 🛑 If it was the 1st, drop a 🔥",
    "jugadores": [
     "Vinícius",
-    "Neymar",
-    "Mbappé"
+    "Ronaldo",
+    "Neymar"
    ],
    "tags": [
     "football",
     "soccer",
     "shorts",
     "vinícius",
-    "neymar",
-    "mbappé"
+    "ronaldo",
+    "neymar"
    ],
-   "archivo": "s1127_06_vie27_2300_cinta.mp4",
-   "limpio": false,
+   "archivo": "s1128_06_sab28_2300_rueda.mp4",
+   "exp": {
+    "id": "e3_rueda_titulo",
+    "brazo": "vs"
+   },
+   "limpio": true,
    "listo": true,
    "control": "NO PASA: cara más grande ≥ 3 % de la pantalla en el cuadro 0"
   }

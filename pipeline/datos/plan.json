@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-27",
+ "inicio": "2026-11-28",
  "grilla": [
   "13:00 prueba",
   "15:00 favorito",
@@ -36,11 +36,6 @@
    "rinde": "mediana 3,349 vs canal 1,948",
    "videos": 8
   },
-  "balon": {
-   "fecha": "2026-11-20",
-   "rinde": "mediana 4,262 vs canal 1,844",
-   "videos": 4
-  },
   "slot": {
    "fecha": "2026-11-22",
    "rinde": "mediana 8,460 vs canal 2,188",
@@ -48,31 +43,31 @@
   }
  },
  "puntaje": {
-  "cinta": 215.5,
-  "rueda": 313.7,
-  "stop": 89.7,
-  "cabezas": 167.4,
-  "slot": 111.2,
-  "dress": 167.7,
-  "fitall": 87.6,
-  "escape": 261.9,
-  "balon": 81.9,
-  "favorito": 96.3,
-  "circulo": 70.2,
-  "vs": 107.2,
+  "cinta": 246.7,
+  "rueda": 306.1,
+  "stop": 89.6,
+  "cabezas": 155.7,
+  "slot": 111.5,
+  "dress": 166.1,
+  "fitall": 87.5,
+  "escape": 257.3,
+  "balon": 54.3,
+  "favorito": 112.8,
+  "circulo": 70.0,
+  "vs": 107.4,
   "penal": 74.5,
   "find": 37.6,
-  "piernas": 84.2,
+  "piernas": 84.3,
   "pared": 62.2,
   "otros": 54.3,
+  "goles": 50.2,
   "ring": 73.1,
   "carrera": 29.3,
+  "cano": 45.4,
   "cabeza": 136.5,
   "tridente": 73.2,
   "plinko": 41.2,
-  "goles": 38.5,
-  "q20balon": 67.1,
-  "cano": 63.3,
+  "q20balon": 66.5,
   "siuu": 31.4,
   "q20costo": 58.0,
   "trayectoria": 110.7
@@ -80,18 +75,17 @@
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "13:00",
-   "tipo": "rueda",
-   "titulo_estilo": "vs",
+   "tipo": "favorito",
+   "leyendas": true,
    "exp": {
-    "id": "e3_rueda_titulo",
-    "brazo": "vs"
-   },
-   "serie_titulo": "Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mbappe #vinicius"
+    "id": "e4_favorito_leyendas",
+    "brazo": true
+   }
   },
   {
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "15:00",
    "tipo": "cabezas",
    "dur": 6.4,
@@ -101,30 +95,31 @@
    }
   },
   {
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "17:00",
    "tipo": "anillos"
   },
   {
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "20:00",
    "tipo": "slot"
   },
   {
-   "fecha": "2026-11-27",
+   "fecha": "2026-11-28",
    "hora": "21:30",
-   "tipo": "favorito",
-   "leyendas": true,
-   "exp": {
-    "id": "e4_favorito_leyendas",
-    "brazo": true
-   }
-  },
-  {
-   "fecha": "2026-11-27",
-   "hora": "23:00",
    "tipo": "cinta",
    "serie_titulo": "Mbappé on the conveyor 😱 Only one body fits: Neymar or Yamal? #mbappe #neymar #yamal"
+  },
+  {
+   "fecha": "2026-11-28",
+   "hora": "23:00",
+   "tipo": "rueda",
+   "titulo_estilo": "vs",
+   "exp": {
+    "id": "e3_rueda_titulo",
+    "brazo": "vs"
+   },
+   "serie_titulo": "Ronaldo vs Vinícius or Mbappé stop challenge 💀🔥 #ronaldo #mbappe #vinicius"
   }
  ]
 }

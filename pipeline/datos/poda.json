@@ -12,11 +12,6 @@
    "rinde": "mediana 3,349 vs canal 1,948",
    "videos": 8
   },
-  "balon": {
-   "fecha": "2026-11-20",
-   "rinde": "mediana 4,262 vs canal 1,844",
-   "videos": 4
-  },
   "slot": {
    "fecha": "2026-11-22",
    "rinde": "mediana 8,460 vs canal 2,188",
@@ -47,7 +42,13 @@
    "formato": "slot",
    "cambio": "promovido",
    "motivo": "mediana 8,460 vs canal 2,188"
+  },
+  {
+   "fecha": "2026-11-26",
+   "formato": "balon",
+   "cambio": "deja de ser promovido",
+   "motivo": "mediana de sus últimos 4: 1,458 vs canal 2,013"
   }
  ],
- "mediana_canal": 2025
+ "mediana_canal": 2013
 }
