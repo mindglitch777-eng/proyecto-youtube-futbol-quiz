@@ -14,12 +14,12 @@
    "medicion": {
     "\"vs\"": {
      "videos": 5,
-     "vistas_48h_esperadas": 5197,
+     "vistas_48h_esperadas": 5157,
      "p_mejor": 0.68
     },
     "\"find\"": {
      "videos": 0,
-     "vistas_48h_esperadas": 3819,
+     "vistas_48h_esperadas": 3800,
      "p_mejor": 0.32
     }
    }
@@ -37,14 +37,14 @@
    "pregunta": "¿STOP ON YOUR FAVORITE rinde más con leyendas (Ronaldinho, Zidane…) o solo con estrellas de hoy?",
    "medicion": {
     "true": {
-     "videos": 5,
-     "vistas_48h_esperadas": 3887,
-     "p_mejor": 0.5
+     "videos": 6,
+     "vistas_48h_esperadas": 3542,
+     "p_mejor": 0.48
     },
     "false": {
      "videos": 0,
-     "vistas_48h_esperadas": 3867,
-     "p_mejor": 0.5
+     "vistas_48h_esperadas": 3628,
+     "p_mejor": 0.52
     }
    }
   },
@@ -62,12 +62,12 @@
    "medicion": {
     "6.4": {
      "videos": 4,
-     "vistas_48h_esperadas": 2666,
+     "vistas_48h_esperadas": 2652,
      "p_mejor": 0.48
     },
     "8.0": {
      "videos": 0,
-     "vistas_48h_esperadas": 2753,
+     "vistas_48h_esperadas": 2741,
      "p_mejor": 0.52
     }
    }
