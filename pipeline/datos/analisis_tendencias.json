@@ -13054,5 +13054,735 @@
     "Agregar efectos visuales tipo cómic en cada robo."
    ]
   }
+ },
+ {
+  "id": "EAKY438BAZo",
+  "titulo": "Neymar the Magician! 🪄😱 Mbappé Can't Believe It!",
+  "canal": "BallBloop",
+  "subs": 6410,
+  "creado": "2016-11-13",
+  "vistas": 12108512,
+  "horas": 70,
+  "vph": 172777,
+  "dur": 15,
+  "likes": 48449,
+  "coment": 42,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "magia_comestible_sorpresa",
+   "mecanica": "Un jugador (Neymar) hace un truco de magia imposible con una galleta Oreo (separar la crema con un hilo invisible), se la ofrece a otro (Mbappé) que come la otra parte y al final la crema desaparece mágicamente de la boca de Mbappé, generando una reacción extrema.",
+   "que_hace_el_espectador": "solo mirar...",
+   "cuadro_0": "Arriba logo 'ball bloop' brillante sobre fondo azul oscuro con luces de neón rosa y azul. Al medio Neymar con camiseta amarilla de Brasil sosteniendo una galleta Oreo cortada en dos mitades unidas por un hilo transparente fino. Al lado izquierdo Mbappé con camiseta blanca de Real Madrid mirando el teléfono. Abajo paquete de galletas Oreo abierto sobre mesa de madera clara.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Neymar sostiene la galleta partida con hilo transparente en el centro, sonriendo a la cámara.",
+     "sonido": "Música alegre de fondo con percusión rítmica."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Neymar hace gesto de silencio con el dedo índice frente a sus labios.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Neymar toma otra galleta entera del paquete sobre la mesa.",
+     "sonido": "Efecto de sonido de agarre o deslizamiento."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Neymar le ofrece la galleta entera a Mbappé, quien la recibe sin dejar de mirar su teléfono.",
+     "sonido": "Sonido sutil de interacción."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Ambos dan un mordisco a sus respectivas galletas al mismo tiempo.",
+     "sonido": "Efecto de crujido de galleta (crunch)."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Neymar muestra su galleta donde la crema se desliza misteriosamente hacia abajo.",
+     "sonido": "Música sube de volumen."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Mbappé mastica y al abrir la boca se ve que la crema blanca ha desaparecido por completo.",
+     "sonido": "Efecto de sonido tipo 'mambo' sorpresa (BAM)."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Mbappé abre los ojos desorbitados por la sorpresa, mirando fijo a la cámara con la boca abierta.",
+     "sonido": "Efecto de estallido o golpe musical corto."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Neymar sonríe triunfante mirando a Mbappé.",
+     "sonido": "Música finaliza con acorde alegre."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Plano final con la reacción de shock máxima de Mbappé con texto 'BAMBOOZOLED'.",
+     "sonido": "Sonido de risas o asombro rápido."
+    }
+   ],
+   "duracion_s": 5.0,
+   "loop": "si, empalma volviendo al inicio con el gesto de Neymar sosteniendo la galleta con hilo.",
+   "gancho": "La cara de ilusión de Neymar haciendo un truco absurdo y la reacción desmesurada de Mbappé.",
+   "dopamina": [
+    "efecto de sonido crunch al comer",
+    "cambio brusco en la cara de Mbappé con zoom de sorpresa",
+    "música rítmica constante"
+   ],
+   "audio": "Música de fondo estilo beat juguetón con efectos de sonido en cada gag visual (mordisco y sorpresa).",
+   "por_que_comentan": "Debaten si el truco con hilo es real, si los jugadores son dobles o reales, y la graciosa cara de shock de Mbappé.",
+   "assets_necesarios": [
+    "imagen_png_neymar_sonriendo",
+    "imagen_png_mbappe_sorprendido",
+    "imagen_png_galleta_oreo_entera",
+    "imagen_png_galleta_partida_crema",
+    "logo_ball_bloop",
+    "efecto_sonido_crunch",
+    "efecto_sonido_sorpresa"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Configurar lienzo vertical 1080x1920 con fondo de estudio gamer nocturno (neón azul y rosa).",
+    "2. Colocar logo 'ball bloop' en la esquina superior izquierda a t=0.0.",
+    "3. Animar la aparición de Neymar en la mitad derecha y Mbappé en la izquierda con PNGs estáticos.",
+    "4. Sincronizar el efecto de sonido de mordisco a t=2.0 con animación de escala en las galletas.",
+    "5. Aplicar zoom dinámico en la cara de Mbappé a t=3.5 simulando impacto visual."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir subtítulos dinámicos estilo karaoke flotando cerca de las bocas cuando comen.",
+    "Incluir un contador de 'Nivel de Magia' en la esquina superior derecha que suba con cada segundo.",
+    "Poner efectos de partículas brillantes doradas cuando Neymar muestra el truco de la crema."
+   ]
+  }
+ },
+ {
+  "id": "omtz3KwTy1E",
+  "titulo": "What will the score be tonight?👀⚽️#arsenal #dortmund #tristangac #football #shorts #trending #viral",
+  "canal": "Tristan Gac",
+  "subs": 253000,
+  "creado": "2026-01-27",
+  "vistas": 4522302,
+  "horas": 30,
+  "vph": 149748,
+  "dur": 17,
+  "likes": 16189,
+  "coment": 12,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "duelo_freestyle_jueces",
+   "mecanica": "Dos jugadores compiten por rondas realizando trucos de freestyle con balón. Dos jueces muestran carteles con puntuaciones (del 1 al 10) después de cada actuación. Se acumulan los puntos y al final se declara un ganador.",
+   "que_hace_el_espectador": "solo mirar y adivinar quién ganará los puntos de los jueces en cada ronda",
+   "cuadro_0": "Arriba logos de Arsenal y Dortmund con 'vs' al medio. Debajo texto 'Arsenal FC' y bandera inglesa. Fondo negro con banderas de países colgando. Mesa de jueces con dos personas sentadas, carteles blancos con números.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Inicio ronda 1 Arsenal: jugador con camiseta roja hace truco de suelo con balón.",
+     "sonido": "Música hip-hop y aplausos."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Jugador de Arsenal termina la acrobacia en el suelo.",
+     "sonido": "Golpe seco de música."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Jugador camina hacia la mesa de los jueces.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Jueces muestran carteles: 9 y 8.",
+     "sonido": "Efecto de sonido de puntuación."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Score actualizado: Arsenal 17 puntos.",
+     "sonido": "Sonido de campana/marcador."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Entra jugador de Dortmund con camiseta amarilla.",
+     "sonido": "Música sigue."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Jugador Dortmund hace truco en el suelo.",
+     "sonido": "Aplausos del público."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Jugador Dortmund equilibra balón en los pies acostado.",
+     "sonido": "Música en tensión."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Jueces muestran carteles: 10 y 10.",
+     "sonido": "Efecto de puntuación máxima."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Score actualizado: Dortmund 20 puntos.",
+     "sonido": "Sonido de marcador."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Empieza Ronda 2: Jugador Arsenal haciendo jueguitos.",
+     "sonido": "Ritmo de música enérgico."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Arsenal continúa dominando el balón en el aire.",
+     "sonido": "Música continúa."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Jueces muestran carteles: 9 y 10.",
+     "sonido": "Efecto de puntuación."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Score total actualizado: Arsenal 36, Dortmund 20.",
+     "sonido": "Sonido de marcador."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Empieza turno Dortmund ronda 2: dominadas rápidas.",
+     "sonido": "Música sube de volumen."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Dortmund patea el balón al aire con giro.",
+     "sonido": "Golpe musical."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Jueces muestran carteles: 9 y 6.",
+     "sonido": "Efecto de puntuación."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Score final: Arsenal 36 vs Dortmund 35.",
+     "sonido": "Redoble de tambores."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Juez levanta el brazo del ganador (Arsenal).",
+     "sonido": "Ovación y bocina de victoria."
+    }
+   ],
+   "duracion_s": 9.5,
+   "loop": "si, termina con la celebración y reinicia con el primer plano del truco de Arsenal",
+   "gancho": "Acrobacias extremas con balón y la expectativa de las calificaciones de los jueces en formato corto",
+   "dopamina": [
+    "carteles de puntuación de los jueces a los 2s y 4s",
+    "actualización de marcadores numéricos animados",
+    "revelación del ganador al final"
+   ],
+   "audio": "Beat de hip-hop underground con efectos de sonido estilo game show para puntuaciones y victoria",
+   "por_que_comentan": "Debaten si los jueces robaron a Dortmund o si la puntuación fue justa",
+   "assets_necesarios": [
+    "logos_equipos.png",
+    "banderas_fondo.png",
+    "mesa_jueces.png",
+    "carteles_puntaje.png",
+    "avatares_jugadores.png",
+    "fuente_marcador.ttf"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Configurar lienzo vertical 1080x1920 en Python (PIL o Manim).",
+    "2. Cargar imagen de fondo con banderas y superponer UI superior con logos y marcador central.",
+    "3. Animar la aparición de videos recortados (o animaciones 2D de avatares) de los jugadores haciendo trucos.",
+    "4. En t=1.5s, t=4.0s, etc., superponer imágenes de carteles numéricos con efecto pop-up.",
+    "5. Actualizar dinámicamente los textos de puntuación total en pantalla con animación de conteo rápido.",
+    "6. Añadir efectos de sonido sincronizados mediante biblioteca de audio (Pygame/MoviePy)."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar una barra de expectativa animada antes de que los jueces levanten los carteles.",
+    "Permitir que la audiencia vote en pantalla antes de ver la nota de los jueces.",
+    "Incluir repetición en cámara lenta del mejor truco justo antes del veredicto final."
+   ]
+  }
+ },
+ {
+  "id": "l6SwNB4Nlsk",
+  "titulo": "Neymar Said NO! 💀",
+  "canal": "CR7IUM",
+  "subs": 101000,
+  "creado": "2025-05-25",
+  "vistas": 3886071,
+  "horas": 97,
+  "vph": 40186,
+  "dur": 17,
+  "likes": 0,
+  "coment": 52,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Compilación vs Clímax Subvertido",
+   "mecanica": "Secuencia rápida de futbolistas famosos siendo humillados (caños) por freestylers, culminando con un jugador estrella que revierte la situación con éxito.",
+   "que_hace_el_espectador": "Solo mirar anticipando si el último jugador también caerá en el truco.",
+   "cuadro_0": "Gareth Bale y freestyler en jaula circular verde. Arriba: etiquetas '*FREESTYLER*' y 'G. BALE'. Centro: subtítulo '\"G.BALE VS FREESTYLER\"' y 'YOU CAN'T NUTMEG ME!'. Abajo: pelota en césped artificial.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Bale vs Freestyler en círculo verde con textos identificativos.",
+     "sonido": "Voz árabe trap en loop rítmico."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El freestyler amaga pisando la pelota.",
+     "sonido": "Beat constante de trap."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Freestyler pasa la pelota entre las piernas de Bale.",
+     "sonido": "Beat rítmico."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Bale reacciona sorprendido, texto '*COOKED*' y emoji de risa.",
+     "sonido": "Beat vocal rítmico."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Bale se ríe avergonzado y se aleja.",
+     "sonido": "Beat constante."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Bale sonríe aceptando la derrota.",
+     "sonido": "Beat constante."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Transición flash a cancha abierta: Dembélé vs Freestyler.",
+     "sonido": "Golpe de beat / corte rápido."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "El freestyler hace caño a Dembélé, texto '*NUTMEG*'.",
+     "sonido": "Base trap rítmica."
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Corte a 'SECOND TRY': freestyler encara a Dembélé nuevamente.",
+     "sonido": "Base trap."
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Segundo caño a Dembélé, texto '*NUTMEG 2X*'.",
+     "sonido": "Base trap."
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Dembélé queda atrás mientras la pelota entra al arco.",
+     "sonido": "Vocal rítmico."
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Flash blanco y transición.",
+     "sonido": "Swoosh / beat sostenido."
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Piso azul interior: Kevin De Bruyne vs Freestyler.",
+     "sonido": "Base trap rítmica."
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Freestyler toca la pelota entre las piernas de KDB.",
+     "sonido": "Base trap rítmica."
+    },
+    {
+     "t": "7.0",
+     "pantalla": "De Bruyne se gira sorprendido, texto '*NUTMEG*'.",
+     "sonido": "Voz árabe trap."
+    },
+    {
+     "t": "7.5",
+     "pantalla": "Transición a Suárez frente a freestyler femenina.",
+     "sonido": "Continuidad del beat."
+    },
+    {
+     "t": "8.0",
+     "pantalla": "Freestyler pasa la pelota por debajo de Suárez.",
+     "sonido": "Continuidad del beat."
+    },
+    {
+     "t": "8.5",
+     "pantalla": "Suárez salta intentando cerrar las piernas y falla; ella celebra.",
+     "sonido": "Continuidad del beat."
+    },
+    {
+     "t": "9.0",
+     "pantalla": "Corte a Neymar con camiseta amarilla: '\"BUT THIS TIME... NEYMAR\"'.",
+     "sonido": "Tensión en el audio."
+    },
+    {
+     "t": "9.5",
+     "pantalla": "Neymar domina la pelota y se acerca al freestyler.",
+     "sonido": "Pausa vocal o redoble corto."
+    },
+    {
+     "t": "10.0",
+     "pantalla": "Freestyler intenta meter la pierna (círculo verde resaltando pelota).",
+     "sonido": "Grito meme 'Ayyy!' pitch alto."
+    },
+    {
+     "t": "10.5",
+     "pantalla": "Neymar bloquea y pisa la pelota con reflejo instantáneo.",
+     "sonido": "Remate trap / drop con bajo distorsionado."
+    },
+    {
+     "t": "11.0",
+     "pantalla": "Pantalla dividida: Neymar burlón arriba, jugada abajo con texto '*NEYMAR STRIKES BACK*'.",
+     "sonido": "Beat trap pesado y risas de fondo."
+    },
+    {
+     "t": "11.5",
+     "pantalla": "Neymar domina y sale victorioso humillando al rival.",
+     "sonido": "Fade out del beat con bajo."
+    }
+   ],
+   "duracion_s": 12.0,
+   "loop": "No es loop infinito perfecto; reinicia abruptamente al primer clip de Bale.",
+   "gancho": "Estrellas del fútbol mundial siendo expuestas y burladas en situaciones 1v1 informales.",
+   "dopamina": [
+    "Caño exitoso a Bale en t=1.5s",
+    "Doble caño humillante a Dembélé en t=4.5s",
+    "Giro argumental y bloqueo épico de Neymar en t=10.5s"
+   ],
+   "audio": "Remix drill/trap árabe con vocales en loop y remate con sample cómico vocal 'Ayyy' y drop pesado.",
+   "por_que_comentan": "Debaten si Neymar es el rey del joga bonito y defienden o se burlan de Bale y Dembélé.",
+   "assets_necesarios": [
+    "Recortes PNG de futbolistas famosos",
+    "Recortes PNG de un freestyler o rival genérico",
+    "PNG de pelota de fútbol",
+    "Fondos temáticos (cancha, jaula street, estadio)",
+    "Track trap rítmico y efecto de sonido 'Ayyy' cómico",
+    "Gráficos: emojis, flechas verdes, rótulos de texto brillantes"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "Crear canvas vertical 1080x1920 con MoviePy o Pygame.",
+    "Definir 4 micro-escenas de 2.5s cada una: Bale, Dembélé, KDB y Neymar.",
+    "Para cada escena: colocar PNG de fondo, interpolar escala/posición del PNG del freestyler y de la pelota cruzando el eje X entre los pies del futbolista.",
+    "Agregar sacudida de pantalla (shake) y zoom al ocurrir el caño junto con el texto emergente '*NUTMEG*'.",
+    "En la escena final (t=9s a 11.5s): animar la pelota rebotando contra el pie del jugador estrella y dividir pantalla con su sticker festejando."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir medidor de respeto/humillación animado que baje a 0% en cada caño y suba a 100% con Neymar.",
+    "Insertar cámara lenta con zoom dramático en el momento exacto que la pelota pasa entre las piernas.",
+    "Hacer loop perfecto donde el pase de Neymar inicie el amague del primer clip."
+   ]
+  }
+ },
+ {
+  "id": "8eQfZBs7-lA",
+  "titulo": "Lamine vs Vini: ¿quién gana al bebé? 👶 #shorts #humor #realmadrid",
+  "canal": "FootMayhem",
+  "subs": 27300,
+  "creado": "2017-04-06",
+  "vistas": 3101557,
+  "horas": 141,
+  "vph": 22018,
+  "dur": 16,
+  "likes": 13403,
+  "coment": 112,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "Elección de Bebé Meme (Barca vs Madrid)",
+   "mecanica": "Un bebé elige entre la camiseta del Barça (Lamine) y del Madrid (Vini). Al agarrar la del Madrid, la usa para limpiarse los mocos, generando un remate cómico.",
+   "que_hace_el_espectador": "Mirar la elección del bebé, reír con el giro inesperado y comentar en el debate futbolístico.",
+   "cuadro_0": "Arriba/Fondo: póster fotográfico. Centro: bebé en silla alta. Izquierda: Lamine Yamal (Barca). Derecha: Vinicius Jr (Madrid). Abajo/Mesa: camisetas mini #10 y #7.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Bebé al centro con Lamine y Vini a los lados.",
+     "sonido": "Voz Lamine: '¡Coge la mía campeón...'"
+    },
+    {
+     "t": "0.5",
+     "pantalla": "Bebé mira la mesa.",
+     "sonido": "Voz Lamine: '...la del Barça!'"
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Bebé extiende la mano hacia la mesa.",
+     "sonido": "Silencio breve / ambiente"
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Bebé duda entre las dos camisetas.",
+     "sonido": "Voz Vini: 'No, no...'"
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Vini mira al bebé fijamente.",
+     "sonido": "Voz Vini: '...la del Madrid que es la buena'"
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Mano del bebé toca la camiseta del Madrid.",
+     "sonido": "Efecto de expectación"
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Vini abre la boca celebrando.",
+     "sonido": "Voz Vini: '¡Lo sabía!'"
+    },
+    {
+     "t": "3.5",
+     "pantalla": "Bebé levanta la camiseta número 7.",
+     "sonido": "Voz Vini: 'Este niño es madridista'"
+    },
+    {
+     "t": "4.0",
+     "pantalla": "Bebé se lleva la camiseta a la cara.",
+     "sonido": "Voz Vini alegre"
+    },
+    {
+     "t": "4.5",
+     "pantalla": "Bebé se limpia la boca y nariz con la camiseta.",
+     "sonido": "Voz Vini cambia a sorpresa: 'Oye...'"
+    },
+    {
+     "t": "5.0",
+     "pantalla": "Bebé refriega la camiseta en la cara.",
+     "sonido": "Voz Vini: '...que es nueva'"
+    },
+    {
+     "t": "5.5",
+     "pantalla": "Lamine sonríe al ver la escena.",
+     "sonido": "Voz Lamine: 'Ha elegido bien...'"
+    },
+    {
+     "t": "6.0",
+     "pantalla": "Bebé sigue usándola de pañuelo.",
+     "sonido": "Voz Lamine: '...necesitaba un pañuelo'"
+    },
+    {
+     "t": "6.5",
+     "pantalla": "Lamine y Vini miran a la cámara.",
+     "sonido": "Voz Lamine: '¿Ha elegido bien Lamine...?'"
+    },
+    {
+     "t": "7.0",
+     "pantalla": "Encuadre final con texto de llamada a la acción.",
+     "sonido": "Voz Lamine: '...o Vini?'"
+    }
+   ],
+   "duracion_s": 7.0,
+   "loop": "Empalma la pregunta final directamente con el inicio de la discusión al reiniciar.",
+   "gancho": "La rivalidad Barça-Madrid representada por sus estrellas jóvenes puestas en una situación tierna y graciosa.",
+   "dopamina": [
+    "Suspenso por ver qué camiseta elige el bebé (0-3s)",
+    "Remate humorístico e inesperado al usarla de pañuelo (4-6s)"
+   ],
+   "audio": "Voces imitadas/IA de Lamine Yamal y Vinicius Jr en español con tono cómico.",
+   "por_que_comentan": "Hinchas del Barça se burlan del Madrid; hinchas del Madrid defienden a su equipo o se ríen del chiste.",
+   "assets_necesarios": [
+    "Sprite recortado Lamine Yamal",
+    "Sprite recortado Vinicius Jr",
+    "Video base de bebé en silla",
+    "PNG mini camiseta Barça #10",
+    "PNG mini camiseta Madrid #7"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 3,
+   "receta_para_programarlo": [
+    "1. Montar fondo y superponer recortes PNG de Lamine y Vini en los laterales.",
+    "2. Superponer capas de camisetas en la mesa con coordenadas fijas.",
+    "3. Sincronizar tracks de audio de las voces con la animación del brazo del bebé.",
+    "4. Añadir marcador de texto inferior para la pregunta final."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar contador de votos flotante en pantalla (Barça vs Madrid).",
+    "Incluir efectos de sonido meme (risas grabadas, 'wasted' o sonido de corneta).",
+    "Generar variantes aleatorias donde el bebé elige la otra camiseta para aumentar el tiempo de reproducción."
+   ]
+  }
+ },
+ {
+  "id": "M_H3LohDnns",
+  "titulo": "Worst vs best accuracy… #football #nfl #ncaa #collegefootball #quarterback #highlight #elite",
+  "canal": "Weezy",
+  "subs": 85400,
+  "creado": "2020-07-22",
+  "vistas": 2945028,
+  "horas": 159,
+  "vph": 18569,
+  "dur": 7,
+  "likes": 21519,
+  "coment": 280,
+  "familia": "goat",
+  "analisis": {
+   "nombre_formato": "Acierto vs Falla",
+   "mecanica": "Muestra un intento fallido o malo de una habilidad deportiva seguido de un intento perfecto con indicador de acierto ('Best accuracy ✅').",
+   "que_hace_el_espectador": "solo mirar y comparar el contraste entre un error y un éxito.",
+   "cuadro_0": "Arriba cielo nocturno iluminado por reflectores, al centro un campo de césped sintético verde con líneas blancas, a la derecha un jugador de espaldas con campera camuflada y gorro esperando atrapar un balón que cae del cielo. Abajo texto en cuadro blanco con bordes negros: 'Best accuracy✅'.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Jugador parado en el campo esperando el balón bajo los reflectores nocturnos.",
+     "sonido": "Voz cantando o cantito musical rítmico ('back it up')."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El balón cae, el jugador estira los brazos pero falla la recepción o se tropieza.",
+     "sonido": "Música rítmica continúa."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Jugador corre decepcionado tras el fallo.",
+     "sonido": "Efecto de risa o sonido cómico de fondo."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Transición rápida o corte al inicio de un nuevo intento.",
+     "sonido": "Beat de música enérgico ('bow, bow, bow')."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "El balón es lanzado nuevamente alto en el cielo nocturno.",
+     "sonido": "Beat fuerte de música."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "El jugador extiende los brazos con precisión perfecta para atrapar el balón.",
+     "sonido": "Aparece texto 'Best accuracy✅' y sonido de éxito/impacto."
+    }
+   ],
+   "duracion_s": 3.0,
+   "loop": "sí, empalma al reiniciar el video mostrando el contraste desde el primer segundo.",
+   "gancho": "La incertidumbre del primer lanzamiento y la etiqueta de validación con check verde.",
+   "dopamina": [
+    "Texto con check verde de validación",
+    "Efecto de sonido de éxito",
+    "Contraste rápido entre fallo y acierto"
+   ],
+   "audio": "Música de fondo con ritmo bailable y repetición vocal ('back it up') seguida de beats contundentes.",
+   "por_que_comentan": "Comentan sobre la dificultad del lanzamiento o comparan qué tan bueno fue el segundo intento.",
+   "assets_necesarios": [
+    "Fondo de cancha de fútbol americano nocturna (PNG)",
+    "Sprite de jugador de espaldas en múltiples poses (PNG)",
+    "Balón de fútbol americano (PNG)",
+    "Texto estilizado 'Best accuracy ✅'",
+    "Efectos de sonido de impacto y música rítmica"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 2,
+   "receta_para_programarlo": [
+    "1. Cargar fondo de cancha sintética con iluminación nocturna.",
+    "2. Animar la caída parabólica del balón (coordenadas X, Y) usando ecuaciones físicas simples.",
+    "3. En t=1.5s, reiniciar la animación del balón con trayectoria perfecta hacia las manos del jugador.",
+    "4. Mostrar el texto 'Best accuracy ✅' con animación de escala (pop-in) en t=2.0s."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Agregar una barra de precisión estilo videojuego que se llene en tiempo real.",
+    "Incluir repetición en cámara lenta (slow motion) solo en el momento exacto de la atrapada perfecta.",
+    "Sumar reacciones flotantes de emoji cada vez que acierta."
+   ]
+  }
+ },
+ {
+  "id": "CBbECl4M7NQ",
+  "titulo": "Neymar was a cheat code in Paris 🇧🇷⚽ #neymar #footballpov #shorts",
+  "canal": "FOOTBALL IS LIFE | POV ⚽",
+  "subs": 15600,
+  "creado": "2018-07-02",
+  "vistas": 2616289,
+  "horas": 65,
+  "vph": 40496,
+  "dur": 16,
+  "likes": 0,
+  "coment": 24,
+  "familia": "otros",
+  "analisis": {
+   "nombre_formato": "POV Futbolista Estelar",
+   "mecanica": "Simulación en primera persona (POV) de un jugador regateando y marcando un golazo en un estadio repleto, mezclando cámara en movimiento, narración emocionante y efectos de sonido de estadio.",
+   "que_hace_el_espectador": "Solo mirar y sentir la adrenalina de la jugada inmersiva.",
+   "cuadro_0": "Vista en primera persona (POV) desde el suelo del césped de un estadio iluminado de noche, con pasto verde brillante en primer plano y las piernas/tatuajes del jugador preparándose para levantarse.",
+   "linea_de_tiempo": [
+    {
+     "t": "0.0",
+     "pantalla": "Caída al césped en POV con estadio iluminado de fondo.",
+     "sonido": "Golpe sordo de caída y rugido del público."
+    },
+    {
+     "t": "0.5",
+     "pantalla": "El jugador se levanta apoyando las manos en el pasto.",
+     "sonido": "Grito de aliento y ambiente de estadio."
+    },
+    {
+     "t": "1.0",
+     "pantalla": "Comienza a correr hacia adelante con el balón a sus pies.",
+     "sonido": "Relator emocionado gritando en inglés."
+    },
+    {
+     "t": "1.5",
+     "pantalla": "Primer regate gambeteando al defensa rival en banda izquierda.",
+     "sonido": "Patada al balón y murmullo de la multitud."
+    },
+    {
+     "t": "2.0",
+     "pantalla": "Segundo regate rápido superando a otro defensor.",
+     "sonido": "Grito del comentarista '¡He's back up!'."
+    },
+    {
+     "t": "2.5",
+     "pantalla": "Carrera en diagonal hacia el área chica.",
+     "sonido": "Relator: 'Neymar is furious! What a run!'."
+    },
+    {
+     "t": "3.0",
+     "pantalla": "Disparo potente al arco desde el borde del área.",
+     "sonido": "Sonido fuerte de impacto de bota con balón."
+    },
+    {
+     "t": "3.5",
+     "pantalla": "El balón entra rozando el poste, gol.",
+     "sonido": "Explosión ensordecedora de gol y grito desaforado del narrador: 'What a goal!'."
+    }
+   ],
+   "duracion_s": 4.0,
+   "loop": "si empalma con el inicio y cómo",
+   "gancho": "Caída dramática inicial y perspectiva POV extrema que sorprende al instante.",
+   "dopamina": [
+    "Efecto de velocidad en la carrera",
+    "Regates limpios",
+    "Narración apasionada",
+    "Gol en el último segundo"
+   ],
+   "audio": "Ambiente de estadio masivo, relator de fútbol en inglés muy enérgico y efectos de sonido de golpe de balón.",
+   "por_que_comentan": "Comentan sobre la habilidad del jugador, la calidad de la animación POV y si recuerda jugadas reales de Neymar.",
+   "assets_necesarios": [
+    "Césped en 3D o textura tileable",
+    "Modelo de piernas y botines con tatuajes en POV",
+    "Balón de fútbol texturizado",
+    "Estadio con iluminación nocturna y público animado",
+    "Audio de relator de fútbol"
+   ],
+   "replicable_con_codigo": true,
+   "dificultad_1a5": 4,
+   "receta_para_programarlo": [
+    "1. Configurar escena 3D en Pygame o Three.js/Python con perspectiva de cámara en primera persona (altura y ángulo de visión simulando un jugador).",
+    "2. Animar los primeros 1.0 segundos con una rotación de cámara hacia arriba simulando levantarse del césped.",
+    "3. Implementar un movimiento de avance con animación de piernas y balón rodando por delante del campo visual.",
+    "4. Programar disparos de partículas y giros de cámara rápidos en los segundos 2.0 a 3.0 para simular regates y el tiro a puerta."
+   ],
+   "como_lo_hacemos_mejor": [
+    "Añadir vibración de cámara (screen shake) realista al chutar el balón.",
+    "Permitir que el espectador elija el destino del disparo (esquina superior o inferior) mediante votación en comentarios.",
+    "Incluir repetición instantánea en cámara lenta desde la perspectiva del arquero tras el gol."
+   ]
+  }
  }
 ]
