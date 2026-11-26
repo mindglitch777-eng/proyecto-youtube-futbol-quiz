@@ -1,29 +1,29 @@
 {
- "fecha": "2026-11-25",
+ "fecha": "2026-11-26",
  "canales_seguidos": 80,
- "canales_nuevos": 21,
- "revisados": 189,
- "fuera_de_serie": 426,
+ "canales_nuevos": 24,
+ "revisados": 196,
+ "fuera_de_serie": 452,
  "interacciones": {
   "comentar": {
-   "videos": 88,
-   "mediana": 1893015
+   "videos": 93,
+   "mediana": 1763649
   },
   "ninguna": {
-   "videos": 32,
-   "mediana": 1455722
+   "videos": 35,
+   "mediana": 1375915
   },
   "pausar": {
-   "videos": 11,
-   "mediana": 1298361
+   "videos": 12,
+   "mediana": 1577296
+  },
+  "elegir": {
+   "videos": 8,
+   "mediana": 2366701
   },
   "adivinar": {
    "videos": 8,
    "mediana": 2555335
-  },
-  "elegir": {
-   "videos": 5,
-   "mediana": 4237417
   }
  },
  "ideas": [
@@ -126,6 +126,27 @@
    "idea_para_nosotros": "Crear un minijuego animado 2D donde varios contadores bajan a distinta velocidad y el espectador debe pausar el video exactamente cuando el contador de su jugador favorito llegue a cero."
   },
   {
+   "id": "uvJQQcH5a8s",
+   "canal": "Varsha Plays",
+   "subs": 15500,
+   "nuevo": false,
+   "vistas": 608852,
+   "ratio": 339.0,
+   "puntaje": 50.6,
+   "nombre_formato": "Cartoon Gate Upgrade Runner",
+   "mecanica": "Un avatar animado de Cristiano Ronaldo avanza por una pista eligiendo entre dos puertas con baterías (verde para potenciar, roja para debilitar). Según la puerta elegida, su apariencia se transforma entre hipermusculoso, normal o extremadamente flaco.",
+   "primer_segundo": "Se ve a Cristiano Ronaldo con cuerpo cibernético hipermusculoso frente a dos puertas con baterías verde y roja.",
+   "por_que_engancha": "Genera curiosidad visual y satisfacción al ver las transformaciones extremas e instantáneas del personaje.",
+   "interaccion": "elegir",
+   "jugadores": [
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Crear un minijuego en 2D donde la cara de una estrella (ej. Messi o Haaland) avanza por una cinta y el espectador debe pausar en el milisegundo exacto para hacerlo pasar por el portón del 'Balón de Oro' en lugar de la puerta de 'Lesión'."
+  },
+  {
    "id": "9SgMU3iTWFY",
    "canal": "TIFOO",
    "subs": 6460,
@@ -148,6 +169,27 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 4,
    "idea_para_nosotros": "Crear una ruleta animada de trofeos donde el espectador deba pausar en el segundo exacto para encajar el trofeo con la estrella correspondiente y descubrir si acertó."
+  },
+  {
+   "id": "a85VDBiAdvo",
+   "canal": "Varsha Plays",
+   "subs": 15500,
+   "nuevo": false,
+   "vistas": 1315656,
+   "ratio": 732.5,
+   "puntaje": 45.84,
+   "nombre_formato": "Gate Choice Character Runner",
+   "mecanica": "Un personaje animado de Ronaldo avanza por un camino eligiendo entre puertas con baterías verdes (energía) o rojas (descarga). Cada elección transforma su estado físico entre musculoso súper Saiyajin, normal o triste.",
+   "primer_segundo": "Ronaldo musculoso en versión cibernética parado frente a dos puertas con baterías.",
+   "por_que_engancha": "Genera curiosidad visual por descubrir las cómicas transformaciones extremas del personaje según la puerta elegida.",
+   "interaccion": "elegir",
+   "jugadores": [
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 4,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer un runner de velocidad donde el usuario deba pausar el video exactamente cuando Messi o Mbappé pasen por el portal del 'Balón de Oro' para transformarlos en su versión Prime."
   },
   {
    "id": "qJJvYQ-o5DE",
@@ -335,121 +377,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 4,
    "idea_para_nosotros": "Hacer una ruleta animada en 2D con fotos reales de Ronaldo, Messi, Neymar y Mbappé donde el espectador deba pausar para elegir al ganador definitivo de un Balón de Oro."
-  },
-  {
-   "id": "ejdBRLrQy6A",
-   "canal": "ᴘᴇɴᴀʟᴛʏ ᴛɪᴍᴇ ",
-   "subs": 95200,
-   "nuevo": true,
-   "vistas": 3432259,
-   "ratio": 84.0,
-   "puntaje": 38.49,
-   "nombre_formato": "Interactive Penalty Pick",
-   "mecanica": "Un jugador se prepara para patear un penal con la portería dividida en dos opciones con botones animados. El usuario debe elegir un lado y pausar antes de que el temporizador venza.",
-   "primer_segundo": "Un jugador de fútbol parado frente al balón listo para ejecutar un penal.",
-   "por_que_engancha": "Genera urgencia e interactividad inmediata al combinar la tensión del penal con un temporizador dinámico.",
-   "interaccion": "pausar",
-   "jugadores": [
-    "Eduardo Camavinga"
-   ],
-   "usa_clips_reales": true,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Crear una animación 2D de una tanda de penaltis donde una diana móvil cambia entre dos superestrellas y el usuario debe pausar exactamente cuando la diana encaje en el ángulo de su jugador preferido."
-  },
-  {
-   "id": "uF-j0kW2yfw",
-   "canal": "Bro Did It Again ",
-   "subs": 11600,
-   "nuevo": false,
-   "vistas": 721215,
-   "ratio": 354.8,
-   "puntaje": 38.25,
-   "nombre_formato": "celebrity dance challenge",
-   "mecanica": "Tres futbolistas famosos con grandes cabezas flotantes bailan sincronizados en el centro mientras un espectador reacciona abajo. Al final posan juntos.",
-   "primer_segundo": "Tres jugadores de espaldas con cabezas gigantes flotantes y un hombre mirando abajo a la izquierda.",
-   "por_que_engancha": "La sorpresa y el humor absurdo de ver a estrellas de fútbol con cabezas gigantes bailando un trend viral.",
-   "interaccion": "ninguna",
-   "jugadores": [
-    "Haaland",
-    "Mbappé"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 3,
-   "idea_para_nosotros": "Hacer un quiz donde el usuario deba pausar para elegir qué jugador baila mejor entre dos estrellas."
   }
  ],
  "sin_analizar": [
   {
-   "id": "fZG8j4O57DE",
-   "canal": "Bro Did It Again ",
-   "vistas": 553845,
-   "ratio": 272.4,
-   "titulo": "#funny #challenge #relatable #shorts #reels"
+   "id": "pnM76eLcUN4",
+   "canal": "Varsha Plays",
+   "vistas": 519844,
+   "ratio": 289.4,
+   "titulo": "Messi vs Bellingham vs Ronaldo 😱🏆 ONE WRONG CHOICE! ⚽🔥  #shorts"
   },
   {
-   "id": "Edy65LqhEtI",
-   "canal": "Ballex",
-   "vistas": 2159172,
-   "ratio": 31.2,
-   "titulo": "Real Madrid’s Comeback Today 😮‍💨 #shorts #football"
+   "id": "omtz3KwTy1E",
+   "canal": "Tristan Gac",
+   "vistas": 6961818,
+   "ratio": 69.8,
+   "titulo": "What will the score be tonight?👀⚽️#arsenal #dortmund #tristangac #football #shorts #trending #viral"
   },
   {
    "id": "-u9ztrIOAaw",
    "canal": "Mischief Time Fan",
-   "vistas": 2845878,
-   "ratio": 79.9,
+   "vistas": 3004716,
+   "ratio": 84.1,
    "titulo": "Mbappé failed to save the watermelon!😂 (3D Parody) #haaland  #funny #Mbappé"
   },
   {
    "id": "N6riiHcM8_4",
    "canal": "Futbolelite",
-   "vistas": 3362211,
-   "ratio": 72.3,
+   "vistas": 3658250,
+   "ratio": 76.8,
    "titulo": "😱 Speed se volvió loco al ver la estatua de Ronaldo #futbol #cr7 #viral#ronaldo#shorts"
   },
   {
-   "id": "tmuJKtMC6WI",
-   "canal": "3DAnimLiga",
-   "vistas": 1193293,
-   "ratio": 32.0,
-   "titulo": "Messi and Haaland + Ronaldo TV #football #ronaldo #messi #animation #shorts #funny #haaland"
-  },
-  {
-   "id": "8zEGE03jwpg",
-   "canal": "Hunters Strike",
-   "vistas": 951340,
-   "ratio": 94.7,
-   "titulo": "La meilleure célébration ? ✨👀 #football #footballshorts #footballchallenge"
-  },
-  {
-   "id": "CujfsQv8v2M",
-   "canal": "HEISTIC",
-   "vistas": 2196626,
-   "ratio": 69.1,
-   "titulo": "Ronaldo retired from Portugal..😭💔 - Ronaldo Sad Edit | #ronaldo #edit #sad"
+   "id": "OddESxCNiI8",
+   "canal": "Buka ",
+   "vistas": 2135031,
+   "ratio": 85.3,
+   "titulo": "Survival skills: Ronaldo Messi's clever idea☘️❤️#viral #shorts#camping"
   },
   {
    "id": "dpxjtjaB-e0",
    "canal": "Proyecto1mp4",
-   "vistas": 1327084,
-   "ratio": 76.5,
+   "vistas": 1503513,
+   "ratio": 88.3,
    "titulo": "Prime Bellingham is Unstoppable 🧱😤 #football #soccer #shorts"
   },
   {
-   "id": "rm1AjHjP5g0",
-   "canal": "Blockstalks",
-   "vistas": 2617782,
-   "ratio": 61.7,
-   "titulo": "Bro got an arm🔥🔥 #football  #edit #shorts"
+   "id": "jEWp57Bkd0Y",
+   "canal": "Tristan Gac",
+   "vistas": 5728464,
+   "ratio": 57.4,
+   "titulo": "I can’t believe we just did that! 🤯 #tristangac #freestyle #funny #fyp #viral #shorts #trending"
   },
   {
-   "id": "omtz3KwTy1E",
-   "canal": "Tristan Gac",
-   "vistas": 5630734,
-   "ratio": 49.7,
-   "titulo": "What will the score be tonight?👀⚽️#arsenal #dortmund #tristangac #football #shorts #trending #viral"
+   "id": "Sk77dbUow1M",
+   "canal": "Blinko Shorts",
+   "vistas": 505153,
+   "ratio": 38.3,
+   "titulo": "Neymar Jr Penalty Kick Mind Games & Goal!"
+  },
+  {
+   "id": "CujfsQv8v2M",
+   "canal": "HEISTIC",
+   "vistas": 2214480,
+   "ratio": 69.1,
+   "titulo": "Ronaldo retired from Portugal..😭💔 - Ronaldo Sad Edit | #ronaldo #edit #sad"
+  },
+  {
+   "id": "YbNRNnITMmA",
+   "canal": "Aerooo 🚀",
+   "vistas": 8121334,
+   "ratio": 19.6,
+   "titulo": "Neymar jr x Onana x Martinez Skills 🔥😅"
   }
  ]
 }
