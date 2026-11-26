@@ -1,41 +1,26 @@
 {
- "fecha": "2026-11-25",
- "autor": "Gerente IA · parte diario (25/11)",
+ "fecha": "2026-11-26",
+ "autor": "Parte automático (sin IA) · hallazgos del último turno del agente",
  "veredicto": {
   "color": "green",
-  "titulo": "El canal suma ~74 K vistas por día; 21,5 semanas para los 10 M",
-  "frase": "1.160 suscriptores y 1,33 M de vistas en 90 días. CONVEYOR y ESCAPE empujan; HEAD FIT, BALLON D'OR y DRESS quedaron debajo del canal."
+  "titulo": "1190 de 1.000 suscriptores ✅",
+  "frase": "Todo anda solo. No tenés que hacer nada hoy."
  },
  "numeros_clave": [
   {
    "label": "Suscriptores",
-   "valor": "1.160",
-   "nota": "✅"
-  },
-  {
-   "label": "Vistas Shorts 90 días",
-   "valor": "1,33 M / 10 M",
-   "nota": "13 % · 21,5 semanas"
-  },
-  {
-   "label": "Vistas por día (7 días)",
-   "valor": "~74 K",
-   "nota": "meta 110 K"
+   "valor": "1190 / 1.000",
+   "nota": "faltan 0"
   },
   {
    "label": "Videos de 10 K por día",
-   "valor": "1,43",
+   "valor": "1,29",
    "nota": "meta 3"
   },
   {
-   "label": "ESCAPE",
-   "valor": "16.020",
-   "nota": "mediana, 2 videos"
-  },
-  {
-   "label": "CONVEYOR STOP",
-   "valor": "13.786",
-   "nota": "mediana, 6 medidos"
+   "label": "Vistas de Shorts 90 días",
+   "valor": "1,37 M",
+   "nota": "22.0 semanas a 10 M"
   }
  ],
  "hallazgos": [
