@@ -1,68 +1,140 @@
 {
  "olas": [
   {
-   "nombre": "dressing_accessory_challenge",
-   "mecanica": "Elementos visuales o accesorios caen secuencialmente desde arriba para vestir o transformar a futbolistas.",
+   "nombre": "cgi_meme_skit_food",
+   "mecanica": "Sketch animado o con CGI donde futbolistas interactúan y pelean por comida de forma exagerada.",
    "canales": 4,
-   "videos": 5,
-   "vistas": 17352787,
+   "videos": 6,
+   "vistas": 9832757,
    "confirmada": true,
-   "encaje": 4.4,
-   "codigo": 5.0,
+   "encaje": 1.8,
+   "codigo": 2.7,
    "ejemplos": [
-    "https://www.youtube.com/shorts/qJJvYQ-o5DE",
-    "https://www.youtube.com/shorts/R5rZVJDTAtQ",
-    "https://www.youtube.com/shorts/ZxdQYWaPwrM"
-   ]
-  },
-  {
-   "nombre": "spinning_face_puzzle",
-   "mecanica": "Una rueda o caras flotantes giran en pantalla y el usuario debe pausar en el momento exacto para encajarla.",
-   "canales": 3,
-   "videos": 4,
-   "vistas": 20348569,
-   "confirmada": true,
-   "encaje": 4.8,
-   "codigo": 5.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/vSCSgT8so3c",
-    "https://www.youtube.com/shorts/ejdBRLrQy6A",
-    "https://www.youtube.com/shorts/M2nAkVqx0G0"
+    "https://www.youtube.com/shorts/RcE_AZ7llYY",
+    "https://www.youtube.com/shorts/icQnDvGozgk",
+    "https://www.youtube.com/shorts/XrCechmm3Aw"
    ]
   },
   {
    "nombre": "age_based_goals_chart",
-   "mecanica": "Gráfica animada de barras que compara goles acumulados por edad entre diferentes estrellas del fútbol.",
+   "mecanica": "Gráficas animadas de barras que comparan los goles acumulados por edad entre grandes estrellas.",
+   "canales": 3,
+   "videos": 6,
+   "vistas": 30549365,
+   "confirmada": true,
+   "encaje": 2.8,
+   "codigo": 4.8,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/rmRq4vA2B6k",
+    "https://www.youtube.com/shorts/cd5s0Sf6WuA",
+    "https://www.youtube.com/shorts/rPKBkr_mcm0"
+   ]
+  },
+  {
+   "nombre": "dressing_challenge_outfit_swap",
+   "mecanica": "Personajes o jugadores cambian de ropa y accesorios rápidamente según opciones numeradas.",
+   "canales": 3,
+   "videos": 4,
+   "vistas": 9060223,
+   "confirmada": true,
+   "encaje": 4.5,
+   "codigo": 5.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/R5rZVJDTAtQ",
+    "https://www.youtube.com/shorts/ZxdQYWaPwrM",
+    "https://www.youtube.com/shorts/Pp9ZQySFyls"
+   ]
+  },
+  {
+   "nombre": "storytelling_hero_moment",
+   "mecanica": "Entrevistas combinadas con clips de archivo para narrar un momento histórico o de superación.",
    "canales": 3,
    "videos": 3,
-   "vistas": 11369166,
+   "vistas": 4633509,
    "confirmada": true,
-   "encaje": 3.0,
-   "codigo": 4.7,
+   "encaje": 1.7,
+   "codigo": 2.3,
    "ejemplos": [
-    "https://www.youtube.com/shorts/cd5s0Sf6WuA",
-    "https://www.youtube.com/shorts/btMP1vLO5pw",
-    "https://www.youtube.com/shorts/W9FJdx2wPog"
+    "https://www.youtube.com/shorts/dWEI6nUrkfY",
+    "https://www.youtube.com/shorts/SbYpnPpxCUU",
+    "https://www.youtube.com/shorts/636xJzeorhY"
    ]
   },
   {
    "nombre": "player_showcase_edit",
-   "mecanica": "Seguidilla rápida de jugadores con sus estadísticas de videojuego y revelación de cartas coleccionables.",
+   "mecanica": "Secuencia rápida de jugadores históricos o actuales con estadísticas estilo videojuego.",
    "canales": 3,
    "videos": 3,
-   "vistas": 3021075,
+   "vistas": 2133546,
    "confirmada": true,
    "encaje": 1.3,
    "codigo": 1.7,
    "ejemplos": [
-    "https://www.youtube.com/shorts/-Pgw1Xgj1vQ",
     "https://www.youtube.com/shorts/UXXrBex7FfE",
+    "https://www.youtube.com/shorts/pYFtlzEHjHc",
     "https://www.youtube.com/shorts/e4KUsScpA20"
    ]
   },
   {
+   "nombre": "fc_card_downgrade_meme",
+   "mecanica": "Un jugador falla de forma ridícula y su carta de estadísticas se degrada a una versión cómica.",
+   "canales": 2,
+   "videos": 2,
+   "vistas": 47650016,
+   "confirmada": false,
+   "encaje": 2.0,
+   "codigo": 2.5,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/2k9Sxr3uC8c",
+    "https://www.youtube.com/shorts/ppE-gFF5AKg"
+   ]
+  },
+  {
+   "nombre": "illusion_body_swap",
+   "mecanica": "Truco de magia visual con ilusiones ópticas de cuerpos separados o transformación de objetos.",
+   "canales": 2,
+   "videos": 2,
+   "vistas": 19705784,
+   "confirmada": false,
+   "encaje": 2.5,
+   "codigo": 4.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/qPLYn60uv2g",
+    "https://www.youtube.com/shorts/EAKY438BAZo"
+   ]
+  },
+  {
+   "nombre": "player_customization_challenge",
+   "mecanica": "Elementos visuales o accesorios caen sobre futbolistas cambiando su apariencia al ritmo de la música.",
+   "canales": 2,
+   "videos": 2,
+   "vistas": 11104338,
+   "confirmada": false,
+   "encaje": 4.0,
+   "codigo": 5.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/qJJvYQ-o5DE",
+    "https://www.youtube.com/shorts/ZxdQYWaPwrM"
+   ]
+  },
+  {
+   "nombre": "nfl_game_highlight",
+   "mecanica": "Jugadas impactantes, atrapadas o golpes fuertes en partidos de fútbol americano.",
+   "canales": 2,
+   "videos": 3,
+   "vistas": 7924835,
+   "confirmada": false,
+   "encaje": 1.0,
+   "codigo": 1.3,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/Wvy10dJ2AOQ",
+    "https://www.youtube.com/shorts/rm1AjHjP5g0",
+    "https://www.youtube.com/shorts/c2KNsvJD4QQ"
+   ]
+  },
+  {
    "nombre": "football_trick_compilation",
-   "mecanica": "Secuencia rápida de diferentes jugadores realizando habilidades, amagues y jugadas vistosas en canchas.",
+   "mecanica": "Compilado rápido de diferentes jugadores realizando habilidades y amagues con el balón.",
    "canales": 2,
    "videos": 2,
    "vistas": 7117984,
@@ -76,7 +148,7 @@
   },
   {
    "nombre": "spot_the_real_face",
-   "mecanica": "Cuadrícula con múltiples caras deformadas con filtros y una sola real bajo un temporizador decreciente.",
+   "mecanica": "Grilla de caras deformadas con filtro donde solo una es real y hay que adivinar con temporizador.",
    "canales": 2,
    "videos": 3,
    "vistas": 6457821,
@@ -91,36 +163,35 @@
   },
   {
    "nombre": "ronaldo_sync_edit",
-   "mecanica": "Compilado aesthetic de momentos icónicos de Cristiano Ronaldo sincronizados con la letra de la canción.",
+   "mecanica": "Compilados de momentos y celebraciones de Cristiano Ronaldo sincronizados con letras de canciones.",
    "canales": 2,
-   "videos": 3,
-   "vistas": 6448321,
+   "videos": 2,
+   "vistas": 5700774,
    "confirmada": false,
-   "encaje": 1.7,
-   "codigo": 2.3,
+   "encaje": 2.0,
+   "codigo": 3.0,
    "ejemplos": [
     "https://www.youtube.com/shorts/cnJBJZ7Gbm8",
-    "https://www.youtube.com/shorts/N6YlRCglSgY",
     "https://www.youtube.com/shorts/ZXc5qiKdODs"
    ]
   },
   {
-   "nombre": "nfl_game_highlight_clip",
-   "mecanica": "Clip de jugadas impactantes o recepciones duras en partidos de fútbol americano.",
+   "nombre": "stop_the_moment_challenge",
+   "mecanica": "Jugadas rápidas donde el usuario debe pausar el video en el momento exacto.",
    "canales": 2,
    "videos": 2,
-   "vistas": 5203608,
+   "vistas": 4905611,
    "confirmada": false,
-   "encaje": 1.0,
-   "codigo": 1.0,
+   "encaje": 4.0,
+   "codigo": 3.5,
    "ejemplos": [
-    "https://www.youtube.com/shorts/Wvy10dJ2AOQ",
-    "https://www.youtube.com/shorts/c2KNsvJD4QQ"
+    "https://www.youtube.com/shorts/LTtUfMBJy0o",
+    "https://www.youtube.com/shorts/sYywP0i0URw"
    ]
   },
   {
    "nombre": "lava_ball_escape_3d",
-   "mecanica": "Animación 3D donde futbolistas huyen de una bola gigante de lava y uno va sacrificando a los demás.",
+   "mecanica": "Animación 3D donde futbolistas escapan de una bola de lava gigante en un puente en ruinas.",
    "canales": 2,
    "videos": 3,
    "vistas": 4284950,
@@ -134,22 +205,22 @@
    ]
   },
   {
-   "nombre": "storytelling_hero_moment",
-   "mecanica": "Entrevistas a protagonistas combinadas con clips de archivo para narrar un gol o momento histórico.",
+   "nombre": "football_storytelling_shorts",
+   "mecanica": "Narración rápida de curiosidades y datos insólitos del fútbol con voz en off y memes.",
    "canales": 2,
    "videos": 2,
-   "vistas": 4018028,
+   "vistas": 4219407,
    "confirmada": false,
-   "encaje": 1.5,
+   "encaje": 1.0,
    "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/dWEI6nUrkfY",
-    "https://www.youtube.com/shorts/SbYpnPpxCUU"
+    "https://www.youtube.com/shorts/DiGs6NLGsCc",
+    "https://www.youtube.com/shorts/Fap67CK1ruA"
    ]
   },
   {
    "nombre": "gta_football_eras",
-   "mecanica": "Portadas de videojuegos GTA adaptadas con tríos de futbolistas estrella según diferentes generaciones y épocas.",
+   "mecanica": "Portadas de videojuegos GTA adaptadas con tríos de futbolistas de distintas generaciones y épocas.",
    "canales": 2,
    "videos": 3,
    "vistas": 3891756,
@@ -163,37 +234,36 @@
    ]
   },
   {
-   "nombre": "realization_meme_comparison",
-   "mecanica": "Imagen meme de confusión seguida de la reacción del fan al darse cuenta del chiste o truco.",
+   "nombre": "voiceover_sport_explainer",
+   "mecanica": "Voz en off que explica reglas o historias poco conocidas de deportes acompañadas de imágenes.",
    "canales": 2,
-   "videos": 3,
-   "vistas": 3274075,
+   "videos": 2,
+   "vistas": 3581935,
    "confirmada": false,
-   "encaje": 2.7,
-   "codigo": 3.7,
+   "encaje": 1.0,
+   "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/ppE-gFF5AKg",
-    "https://www.youtube.com/shorts/bMCO3gDAILA",
-    "https://www.youtube.com/shorts/nB0_g-rbsyQ"
+    "https://www.youtube.com/shorts/oXA9AS9Q4Zk",
+    "https://www.youtube.com/shorts/Fap67CK1ruA"
    ]
   },
   {
-   "nombre": "football_fights_compilation",
-   "mecanica": "Compilado de faltas duras, trifulcas y cruces agresivos entre futbolistas al ritmo de música pesada.",
+   "nombre": "emotional_highlight_tribute",
+   "mecanica": "Tributo melancólico a un jugador con texto emotivo y música de fondo.",
    "canales": 2,
    "videos": 2,
-   "vistas": 2571056,
+   "vistas": 3120438,
    "confirmada": false,
-   "encaje": 2.5,
-   "codigo": 3.0,
+   "encaje": 1.0,
+   "codigo": 1.5,
    "ejemplos": [
-    "https://www.youtube.com/shorts/zn5TSYXiKsk",
-    "https://www.youtube.com/shorts/2Q2BKwVKVvk"
+    "https://www.youtube.com/shorts/knl4ZWc15sM",
+    "https://www.youtube.com/shorts/-Pgw1Xgj1vQ"
    ]
   },
   {
    "nombre": "audio_meme_edit",
-   "mecanica": "Video que arranca con un meme de comedia y transiciona a una compilación de jugadas al ritmo de la música.",
+   "mecanica": "Videos virales de comedia que transicionan a compilaciones de jugadas al ritmo de la música.",
    "canales": 2,
    "videos": 2,
    "vistas": 1563961,
@@ -206,21 +276,22 @@
    ]
   },
   {
-   "nombre": "fc_card_downgrade_meme",
-   "mecanica": "Jugador falla un tiro y su carta de FIFA o FC Mobile se degrada automáticamente a una versión cómica.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 46354045,
+   "nombre": "player_comparison_versus",
+   "mecanica": "Compara el rendimiento, regates o jugadas de dos futbolistas en diferentes épocas.",
+   "canales": 2,
+   "videos": 2,
+   "vistas": 1438307,
    "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 2.0,
+   "encaje": 3.5,
+   "codigo": 3.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/2k9Sxr3uC8c"
+    "https://www.youtube.com/shorts/0AlwCeCZ4yY",
+    "https://www.youtube.com/shorts/0UMA9TwB_zU"
    ]
   },
   {
    "nombre": "dual_narrative_contrast",
-   "mecanica": "Pantalla dividida que contrasta dos reacciones o tres mentalidades de monigotes a lo largo del tiempo.",
+   "mecanica": "Dos pantallas divididas comparan distintas reacciones o mentalidades ante situaciones de la vida o deporte.",
    "canales": 1,
    "videos": 3,
    "vistas": 26535587,
@@ -234,23 +305,8 @@
    ]
   },
   {
-   "nombre": "year_by_year_stat_comparison",
-   "mecanica": "Contador animado que compara año a año la acumulación de goles entre tridentes o duplas famosas.",
-   "canales": 1,
-   "videos": 4,
-   "vistas": 23007953,
-   "confirmada": false,
-   "encaje": 2.8,
-   "codigo": 5.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/rmRq4vA2B6k",
-    "https://www.youtube.com/shorts/rPKBkr_mcm0",
-    "https://www.youtube.com/shorts/IjyRzdtW27Y"
-   ]
-  },
-  {
-   "nombre": "product_showcase",
-   "mecanica": "Demostración de un dispositivo o accesorio de entrenamiento de fútbol para interiores o exteriores.",
+   "nombre": "indoor_training_product_showcase",
+   "mecanica": "Demostración de un accesorio de entrenamiento de fútbol para interiores con contador o rebote.",
    "canales": 1,
    "videos": 5,
    "vistas": 18104938,
@@ -264,8 +320,36 @@
    ]
   },
   {
+   "nombre": "player_skill_match_meme",
+   "mecanica": "Imitación de jugadas de fútbol con cartas de estadísticas infladas y tono humorístico.",
+   "canales": 1,
+   "videos": 2,
+   "vistas": 17091113,
+   "confirmada": false,
+   "encaje": 3.0,
+   "codigo": 3.5,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/agQojev5cwo",
+    "https://www.youtube.com/shorts/w4niVaBlliA"
+   ]
+  },
+  {
+   "nombre": "spinning_face_puzzle",
+   "mecanica": "Una rueda con caras gira sobre un cuerpo y el usuario debe pausar para encajarla exactamente.",
+   "canales": 1,
+   "videos": 2,
+   "vistas": 15617949,
+   "confirmada": false,
+   "encaje": 5.0,
+   "codigo": 5.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/vSCSgT8so3c",
+    "https://www.youtube.com/shorts/M2nAkVqx0G0"
+   ]
+  },
+  {
    "nombre": "disc_speed_lock_challenge",
-   "mecanica": "Participantes quitan rápidamente discos de una cuerda para bajar el contador y desbloquear la caja de un jugador.",
+   "mecanica": "Participantes quitan rápidamente discos de colores de una cuerda para desbloquear casilleros.",
    "canales": 1,
    "videos": 1,
    "vistas": 12984646,
@@ -277,21 +361,8 @@
    ]
   },
   {
-   "nombre": "illusion_body_swap",
-   "mecanica": "Ilusión visual donde un jugador parece tener la cabeza separada y transforma su ropa en pelota.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 12766650,
-   "confirmada": false,
-   "encaje": 3.0,
-   "codigo": 4.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/qPLYn60uv2g"
-   ]
-  },
-  {
    "nombre": "acrobatic_team_builder",
-   "mecanica": "Creador realiza acrobacias físicas para ir sumando o moviendo caras de futbolistas entre equipos.",
+   "mecanica": "Creador realiza acrobacias físicas para ir sumando o moviendo caras de futbolistas a equipos.",
    "canales": 1,
    "videos": 1,
    "vistas": 11761619,
@@ -303,21 +374,8 @@
    ]
   },
   {
-   "nombre": "player_skill_match_meme",
-   "mecanica": "Jugador imita una habilidad y aparece otro haciendo una gracia exagerada con estadísticas infladas.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 9066817,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/agQojev5cwo"
-   ]
-  },
-  {
    "nombre": "comedy_trick_shots",
-   "mecanica": "Creadores realizando pases y acrobacias de fútbol imposibles en escenarios extravagantes y cómicos.",
+   "mecanica": "Creadores realizan pases y jugadas de fútbol imposibles en escenarios extravagantes.",
    "canales": 1,
    "videos": 1,
    "vistas": 9033910,
@@ -329,8 +387,8 @@
    ]
   },
   {
-   "nombre": "pitch_controversy_debate",
-   "mecanica": "Muestra una jugada violenta o polémica de partido y pide al espectador opinar en los comentarios.",
+   "nombre": "pitch_brawl_debate",
+   "mecanica": "Muestra una pelea o falta violenta en un partido de fútbol pidiendo la opinión del espectador.",
    "canales": 1,
    "videos": 4,
    "vistas": 8781753,
@@ -344,34 +402,61 @@
    ]
   },
   {
-   "nombre": "father_son_stat_meme",
-   "mecanica": "Compara el rendimiento de los hijos de futbolistas famosos mostrando cambios en sus estadísticas tipo FIFA.",
+   "nombre": "who_stops_player_challenge",
+   "mecanica": "Gambetear a diferentes arqueros en una cancha urbana con cartas de rating cambiantes.",
    "canales": 1,
    "videos": 1,
-   "vistas": 8024296,
+   "vistas": 8197079,
    "confirmada": false,
-   "encaje": 4.0,
+   "encaje": 5.0,
    "codigo": 5.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/w4niVaBlliA"
+    "https://www.youtube.com/shorts/YbNRNnITMmA"
    ]
   },
   {
-   "nombre": "animated_oreo_magic_prank",
-   "mecanica": "Truco de magia animado donde un jugador regenera una galleta Oreo frente a sus compañeros asombrados.",
+   "nombre": "freestyle_battle_challenge",
+   "mecanica": "Freestylers representan clubes haciendo trucos evaluados por un jurado con puntajes.",
    "canales": 1,
    "videos": 1,
-   "vistas": 6939134,
+   "vistas": 7191636,
    "confirmada": false,
    "encaje": 2.0,
-   "codigo": 4.0,
+   "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/EAKY438BAZo"
+    "https://www.youtube.com/shorts/omtz3KwTy1E"
+   ]
+  },
+  {
+   "nombre": "celebrity_life_hack_reaction",
+   "mecanica": "Futbolistas prueban un truco viral de internet en un laboratorio o cocina casera.",
+   "canales": 1,
+   "videos": 2,
+   "vistas": 6373969,
+   "confirmada": false,
+   "encaje": 1.0,
+   "codigo": 2.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/u4uiMXcAp4k",
+    "https://www.youtube.com/shorts/tgPehf04lxI"
+   ]
+  },
+  {
+   "nombre": "synchronized_freestyle_challenge",
+   "mecanica": "Freestylers alineados intentan pasarse el balón sincronizadamente hasta lograr un truco final.",
+   "canales": 1,
+   "videos": 1,
+   "vistas": 5802232,
+   "confirmada": false,
+   "encaje": 1.0,
+   "codigo": 1.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/jEWp57Bkd0Y"
    ]
   },
   {
    "nombre": "toy_drop_player_race",
-   "mecanica": "Participantes compiten lanzando objetos para definir un duelo final entre Ronaldo y Messi.",
+   "mecanica": "Participantes lanzan objetos o pelotas para competir y definir un duelo final entre Ronaldo y Messi.",
    "canales": 1,
    "videos": 2,
    "vistas": 5305389,
@@ -385,7 +470,7 @@
   },
   {
    "nombre": "match_pov_highlight",
-   "mecanica": "Jugada emblemática histórica vista desde un ángulo inmersivo a nivel de campo.",
+   "mecanica": "Goles o jugadas históricas vistas desde un ángulo inmersivo a nivel de campo.",
    "canales": 1,
    "videos": 1,
    "vistas": 4984546,
@@ -397,35 +482,8 @@
    ]
   },
   {
-   "nombre": "player_tunnel_meme_edit",
-   "mecanica": "Jugadores en el túnel de vestuarios recibiendo palmadas con efectos de sonido de memes y cambios de cara.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 4960061,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 5.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/iB6YQgorMW8"
-   ]
-  },
-  {
-   "nombre": "cgi_meme_skit",
-   "mecanica": "Sketch humorístico con animaciones CGI donde futbolistas interactúan y se devoran comida de forma absurda.",
-   "canales": 1,
-   "videos": 2,
-   "vistas": 4425934,
-   "confirmada": false,
-   "encaje": 1.5,
-   "codigo": 3.5,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/icQnDvGozgk",
-    "https://www.youtube.com/shorts/XrCechmm3Aw"
-   ]
-  },
-  {
-   "nombre": "grid_elimination_battle",
-   "mecanica": "Cuadrícula con fotos de futbolistas que se van eliminando mutuamente ronda tras ronda hasta un ganador.",
+   "nombre": "grid_elimination_battles",
+   "mecanica": "Cuadrículas de eliminación donde estrellas de fútbol compiten hasta que queda un ganador supremo.",
    "canales": 1,
    "videos": 1,
    "vistas": 4178035,
@@ -438,7 +496,7 @@
   },
   {
    "nombre": "visual_metaphor_meme",
-   "mecanica": "Escultura o estructura simbólica que se desmorona por completo al retirar la pieza central de Messi.",
+   "mecanica": "Una estructura simbólica o escultura colapsa por completo al retirar una pieza clave.",
    "canales": 1,
    "videos": 1,
    "vistas": 4074067,
@@ -450,34 +508,21 @@
    ]
   },
   {
-   "nombre": "animation_parody_skit",
-   "mecanica": "Sketch de animación 3D paródico donde estrellas comen alimentos de utilería o cartón.",
+   "nombre": "statue_trolling_goat_debate",
+   "mecanica": "Creadores interactúan con estatuas de cera de futbolistas pidiendo votar en comentarios.",
    "canales": 1,
    "videos": 1,
-   "vistas": 3811513,
+   "vistas": 3742071,
    "confirmada": false,
    "encaje": 2.0,
-   "codigo": 3.0,
+   "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/RcE_AZ7llYY"
-   ]
-  },
-  {
-   "nombre": "stop_the_moment_challenge",
-   "mecanica": "Jugadas rápidas donde el usuario debe pausar el video en el momento exacto para congelar la acción.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 3607250,
-   "confirmada": false,
-   "encaje": 3.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/LTtUfMBJy0o"
+    "https://www.youtube.com/shorts/N6riiHcM8_4"
    ]
   },
   {
    "nombre": "penalty_trick_analysis",
-   "mecanica": "Desglose técnico de una jugada de penalti explicando el engaño al arquero y la dirección del disparo.",
+   "mecanica": "Análisis desglosado de una técnica de penalti y cómo engaña al arquero.",
    "canales": 1,
    "videos": 1,
    "vistas": 3507609,
@@ -489,21 +534,22 @@
    ]
   },
   {
-   "nombre": "skill_showcase_compilation",
-   "mecanica": "Diferentes personas realizan trucos y acrobacias con un balón en caminos rurales con cortes rápidos.",
+   "nombre": "football_fights_compilation",
+   "mecanica": "Compilación de faltas duras, discusiones y peleas reales entre futbolistas profesionales.",
    "canales": 1,
-   "videos": 1,
-   "vistas": 3448234,
+   "videos": 2,
+   "vistas": 3462025,
    "confirmada": false,
    "encaje": 1.0,
    "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/1xpNPfeb3XY"
+    "https://www.youtube.com/shorts/zn5TSYXiKsk",
+    "https://www.youtube.com/shorts/k18mRwjvcqU"
    ]
   },
   {
    "nombre": "interactive_penalty_pick",
-   "mecanica": "Minijuego interactivo donde el usuario debe elegir un lado del arco y pausar antes de que venza el timer.",
+   "mecanica": "El usuario debe elegir un lado de la portería y pausar antes de que venza el temporizador.",
    "canales": 1,
    "videos": 1,
    "vistas": 3432259,
@@ -515,34 +561,8 @@
    ]
   },
   {
-   "nombre": "player_card_tackle_edit",
-   "mecanica": "Jugadores entrenando con sus cartas personalizadas hasta que sufren una barrida defensiva.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 3383958,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/MAaPfy1sXhw"
-   ]
-  },
-  {
-   "nombre": "celebrity_life_hack_reaction",
-   "mecanica": "Futbolistas reaccionan o prueban un truco viral de internet convirtiendo líquidos en slime.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 3361126,
-   "confirmada": false,
-   "encaje": 1.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/u4uiMXcAp4k"
-   ]
-  },
-  {
    "nombre": "photo_frame_silhouette_fit",
-   "mecanica": "Prueban y descartan varios recortes de figuras hasta colocar el de Cristiano Ronaldo que encaja perfecto.",
+   "mecanica": "Se prueban y descartan recortes de personas hasta encontrar el que encaja perfectamente en un portarretratos.",
    "canales": 1,
    "videos": 2,
    "vistas": 3352256,
@@ -556,7 +576,7 @@
   },
   {
    "nombre": "club_logo_respect_comparison",
-   "mecanica": "Compara a un jugador pisando por accidente el escudo de su equipo con otro esquivándolo cuidadosamente.",
+   "mecanica": "Compara a un jugador faltando el respeto a un escudo con otro evitándolo cuidadosamente.",
    "canales": 1,
    "videos": 1,
    "vistas": 3323916,
@@ -569,7 +589,7 @@
   },
   {
    "nombre": "player_heated_moments_edit",
-   "mecanica": "Compilado de clips reales donde un jugador pierde el control y se enfrenta a rivales con música dramática.",
+   "mecanica": "Compilado de clips reales donde un jugador pierde el control y se enfrenta a rivales.",
    "canales": 1,
    "videos": 1,
    "vistas": 3190677,
@@ -581,8 +601,8 @@
    ]
   },
   {
-   "nombre": "top_list_funny_compilation",
-   "mecanica": "Ranking humorístico de jugadas o fallos arbitrales insólitos con efectos de sonido y memes.",
+   "nombre": "top_list_funny_failures",
+   "mecanica": "Ranking humorístico de fallos arbitrales o jugadas insólitas con memes y efectos de sonido.",
    "canales": 1,
    "videos": 1,
    "vistas": 3126491,
@@ -594,8 +614,22 @@
    ]
   },
   {
+   "nombre": "match_skill_highlight_split",
+   "mecanica": "Jugadas de fantasía de leyendas en pantalla partida junto a imágenes fijas o reacciones.",
+   "canales": 1,
+   "videos": 2,
+   "vistas": 2989741,
+   "confirmada": false,
+   "encaje": 1.5,
+   "codigo": 1.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/EMqBnLplBMc",
+    "https://www.youtube.com/shorts/WiFy4P7O1u8"
+   ]
+  },
+  {
    "nombre": "training_goals_ranking",
-   "mecanica": "Secuencia de golazos en entrenamientos de élite presentados en formato de ranking descendente.",
+   "mecanica": "Secuencia de golazos en entrenamientos de élite ordenados en un ranking del 6 al 1.",
    "canales": 1,
    "videos": 1,
    "vistas": 2586104,
@@ -607,21 +641,23 @@
    ]
   },
   {
-   "nombre": "voiceover_football_storytelling",
-   "mecanica": "Narrador relata de forma dramática finales de partidos destacando provocaciones y remontadas.",
+   "nombre": "cartoon_gate_upgrade_runner",
+   "mecanica": "Avatar animado avanza por una pista eligiendo puertas que transforman su estado físico.",
    "canales": 1,
-   "videos": 1,
-   "vistas": 2578958,
+   "videos": 3,
+   "vistas": 2549083,
    "confirmada": false,
-   "encaje": 1.0,
-   "codigo": 1.0,
+   "encaje": 4.0,
+   "codigo": 4.7,
    "ejemplos": [
-    "https://www.youtube.com/shorts/DiGs6NLGsCc"
+    "https://www.youtube.com/shorts/a85VDBiAdvo",
+    "https://www.youtube.com/shorts/pnM76eLcUN4",
+    "https://www.youtube.com/shorts/uvJQQcH5a8s"
    ]
   },
   {
    "nombre": "blind_gear_penalty_challenge",
-   "mecanica": "Participante elige equipamiento a ciegas y trata de patear un penal terminando en un tropiezo cómico.",
+   "mecanica": "Patear un penal a ciegas equipado con accesorios absurdos que terminan en tropiezo.",
    "canales": 1,
    "videos": 1,
    "vistas": 2512406,
@@ -633,8 +669,22 @@
    ]
   },
   {
-   "nombre": "rivalry_choice",
-   "mecanica": "Amigos se reencuentran mostrando cartas de futbolistas con efectos humorísticos y texto flotante.",
+   "nombre": "merge_evolution_goat_battle",
+   "mecanica": "Iconos de futbolistas se fusionan en un campo circular para revelar la forma final del GOAT.",
+   "canales": 1,
+   "videos": 2,
+   "vistas": 2507853,
+   "confirmada": false,
+   "encaje": 4.5,
+   "codigo": 5.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/UDvOHZ_nAeQ",
+    "https://www.youtube.com/shorts/tL8IflhtbH4"
+   ]
+  },
+  {
+   "nombre": "rivalry_choice_card",
+   "mecanica": "Amigos se reencuentran mostrando cartas de futbolistas con efectos humorísticos.",
    "canales": 1,
    "videos": 1,
    "vistas": 2498010,
@@ -647,7 +697,7 @@
   },
   {
    "nombre": "target_wall_challenge",
-   "mecanica": "Creadores intentan meter la pelota por agujeros etiquetados por dificultad en una pared con portero.",
+   "mecanica": "Creadores intentan meter la pelota por agujeros etiquetados por dificultad en una pared.",
    "canales": 1,
    "videos": 1,
    "vistas": 2444120,
@@ -659,21 +709,8 @@
    ]
   },
   {
-   "nombre": "player_speed_edit",
-   "mecanica": "Muestra un sprint a máxima velocidad de una estrella seguido de gestos de frustración al caer.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 2420232,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 1.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/PV29HxdhoXo"
-   ]
-  },
-  {
    "nombre": "misheard_player_names_meme",
-   "mecanica": "Mujer lee nombres en camisetas y los pronuncia de forma graciosa generando memes visuales.",
+   "mecanica": "Lectura literal y graciosa de nombres en camisetas con memes visuales acordes.",
    "canales": 1,
    "videos": 2,
    "vistas": 2335204,
@@ -687,7 +724,7 @@
   },
   {
    "nombre": "suitcase_convocation_humor",
-   "mecanica": "Sketch cómico donde un imitador intenta sacar a su hermano de una maleta por convocatoria técnica.",
+   "mecanica": "Sketch cómico sobre un familiar que no quiere salir de una maleta por haber sido convocado.",
    "canales": 1,
    "videos": 1,
    "vistas": 2306527,
@@ -699,8 +736,8 @@
    ]
   },
   {
-   "nombre": "akatsuki_footballers_mashup",
-   "mecanica": "Imágenes generadas por IA de futbolistas famosos vestidos como miembros de los Akatsuki de Naruto.",
+   "nombre": "anime_mashup_characters",
+   "mecanica": "Imágenes generadas por IA que transforman a futbolistas en personajes de anime conocidos.",
    "canales": 1,
    "videos": 1,
    "vistas": 2255739,
@@ -713,7 +750,7 @@
   },
   {
    "nombre": "baby_picks_jersey_comedy",
-   "mecanica": "Bebé elige entre camisetas de rivales históricos y protagoniza un remate humorístico.",
+   "mecanica": "Un bebé elige entre camisetas rivales generando una reacción cómica en los presentes.",
    "canales": 1,
    "videos": 1,
    "vistas": 2235393,
@@ -725,8 +762,21 @@
    ]
   },
   {
+   "nombre": "ronaldo_retirement_emotional_edit",
+   "mecanica": "Conversación en vestuario sobre el retiro de una leyenda combinada con momentos emotivos.",
+   "canales": 1,
+   "videos": 1,
+   "vistas": 2219564,
+   "confirmada": false,
+   "encaje": 1.0,
+   "codigo": 1.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/CujfsQv8v2M"
+   ]
+  },
+  {
    "nombre": "fan_interaction_meetup",
-   "mecanica": "Jugador famoso se acerca en auto a sorprender a unos fanáticos para regalarles algo.",
+   "mecanica": "Jugador famoso se acerca en auto o sorpresa a interactuar y regalar algo a los fanáticos.",
    "canales": 1,
    "videos": 1,
    "vistas": 2215028,
@@ -739,7 +789,7 @@
   },
   {
    "nombre": "ramp_percentage_challenge",
-   "mecanica": "Creadores representan países pateando una pelota por una pista inclinada con contadores de porcentaje.",
+   "mecanica": "Contador suma el porcentaje de recorrido que logra una pelota en una pista inclinada.",
    "canales": 1,
    "videos": 1,
    "vistas": 2164322,
@@ -751,8 +801,21 @@
    ]
   },
   {
+   "nombre": "celebrity_hide_and_seek",
+   "mecanica": "Versiones miniatura de futbolistas son descubiertas dentro de envases o productos.",
+   "canales": 1,
+   "videos": 1,
+   "vistas": 2160760,
+   "confirmada": false,
+   "encaje": 3.0,
+   "codigo": 5.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/OddESxCNiI8"
+   ]
+  },
+  {
    "nombre": "flipbook_animation",
-   "mecanica": "Libro de papel cuyas páginas pasan rápidamente mostrando una animación en loop.",
+   "mecanica": "Secuencia animada en papel pasando páginas rápidamente en loop.",
    "canales": 1,
    "videos": 1,
    "vistas": 2117208,
@@ -765,7 +828,7 @@
   },
   {
    "nombre": "fifa_card_skill_edit",
-   "mecanica": "Jugadas de fútbol acompañadas de cartas de FIFA en pantalla contrastando fallos con regates espectaculares.",
+   "mecanica": "Jugadas de fútbol contrastadas con cartas de FIFA y regates espectaculares.",
    "canales": 1,
    "videos": 1,
    "vistas": 2049001,
@@ -777,21 +840,8 @@
    ]
   },
   {
-   "nombre": "voiceover_sport_explainer",
-   "mecanica": "Voz en off explica las reglas o historia de un deporte menos conocido con un llamado a la acción final.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 1941486,
-   "confirmada": false,
-   "encaje": 1.0,
-   "codigo": 1.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/oXA9AS9Q4Zk"
-   ]
-  },
-  {
    "nombre": "slime_rating_progression",
-   "mecanica": "Slimes de colores que se estiran al grito de Ronaldo para desbloquear cartas con mayor puntuación.",
+   "mecanica": "Estiramiento de slimes al ritmo de un grito que desbloquea cartas de jugadores con mayor puntuación.",
    "canales": 1,
    "videos": 1,
    "vistas": 1938192,
@@ -803,22 +853,8 @@
    ]
   },
   {
-   "nombre": "gate_choice_character_runner",
-   "mecanica": "Avatar animado avanza por un camino eligiendo entre puertas que transforman su estado físico.",
-   "canales": 1,
-   "videos": 2,
-   "vistas": 1924508,
-   "confirmada": false,
-   "encaje": 4.0,
-   "codigo": 4.5,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/a85VDBiAdvo",
-    "https://www.youtube.com/shorts/uvJQQcH5a8s"
-   ]
-  },
-  {
    "nombre": "pause_to_win_challenge",
-   "mecanica": "Niños intentan superar un reto físico y al final aparece una prueba de fútbol para pausar.",
+   "mecanica": "Juegos interactivos donde hay que elegir opciones y pausar en el momento exacto.",
    "canales": 1,
    "videos": 1,
    "vistas": 1856231,
@@ -831,7 +867,7 @@
   },
   {
    "nombre": "player_jersey_number_drama",
-   "mecanica": "Actores representan un divertido conflicto por el dorsal número 10 de un equipo.",
+   "mecanica": "Actores representan disputas cómicas por el dorsal número 10 de un equipo.",
    "canales": 1,
    "videos": 1,
    "vistas": 1755068,
@@ -844,7 +880,7 @@
   },
   {
    "nombre": "ai_football_narrative_skit",
-   "mecanica": "Sketch narrativo con IA donde varios futbolistas complotan para evitar que Haaland gane un premio.",
+   "mecanica": "Sketch narrativo con IA donde las estrellas de fútbol protagonizan una historia de persecución o comedia.",
    "canales": 1,
    "videos": 1,
    "vistas": 1753468,
@@ -856,60 +892,34 @@
    ]
   },
   {
-   "nombre": "football_storytelling_shorts",
-   "mecanica": "Narra curiosidades insólitas o historias de partidos usando voz en off rápida, memes e imágenes.",
+   "nombre": "humiliating_goals_compilation",
+   "mecanica": "Goles donde los delanteros burlan creativamente a arqueros y defensores para humillarlos.",
    "canales": 1,
    "videos": 1,
-   "vistas": 1640449,
+   "vistas": 1593622,
    "confirmada": false,
    "encaje": 1.0,
    "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/Fap67CK1ruA"
+    "https://www.youtube.com/shorts/Wfhw8msglC8"
    ]
   },
   {
-   "nombre": "emotional_highlight_tribute",
-   "mecanica": "Video emotivo con música melancólica y textos en pantalla sobre un jugador triste o reflexivo.",
+   "nombre": "defending_highlights_compilation",
+   "mecanica": "Compilación de barridas y quites defensivos perfectos sincronizados con música.",
    "canales": 1,
    "videos": 1,
-   "vistas": 1615273,
-   "confirmada": false,
-   "encaje": 1.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/knl4ZWc15sM"
-   ]
-  },
-  {
-   "nombre": "match_skill_highlight_split",
-   "mecanica": "Video dividido en pantalla que muestra una jugada de fantasía arriba y una imagen fija del jugador abajo.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 1516319,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 1.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/EMqBnLplBMc"
-   ]
-  },
-  {
-   "nombre": "match_highlight_clip",
-   "mecanica": "Clip directo de un partido mostrando a una estrella interactuando con el público y ejecutando un tiro.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 1473422,
+   "vistas": 1552664,
    "confirmada": false,
    "encaje": 1.0,
    "codigo": 1.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/WiFy4P7O1u8"
+    "https://www.youtube.com/shorts/dpxjtjaB-e0"
    ]
   },
   {
-   "nombre": "ai_face_swap_comedy",
-   "mecanica": "Montaje fotorrealista con voces dobladas donde futbolistas actúan como padres de un bebé rival en un sketch.",
+   "nombre": "ai_face_swap_comedy_skit",
+   "mecanica": "Montaje con intercambio de caras o bebés con camisetas rivales dramatizando diálogos satíricos.",
    "canales": 1,
    "videos": 2,
    "vistas": 1466846,
@@ -922,21 +932,8 @@
    ]
   },
   {
-   "nombre": "legend_ranking_list",
-   "mecanica": "Ranking enumerado del 1 al 4 que revela leyendas y al final reordena los puestos con un ganador.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 1444208,
-   "confirmada": false,
-   "encaje": 3.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/Si7hYE46yI0"
-   ]
-  },
-  {
    "nombre": "animated_narrative_story_edit",
-   "mecanica": "Animación 2D tipo caricatura que narra la historia épica y superación de una estrella en un torneo.",
+   "mecanica": "Animación 2D tipo caricatura que narra una historia épica de superación en un torneo.",
    "canales": 1,
    "videos": 1,
    "vistas": 1438023,
@@ -949,7 +946,7 @@
   },
   {
    "nombre": "stat_comparison_meme",
-   "mecanica": "Infografía comparativa de goles con un clip meme humorístico en la mitad inferior.",
+   "mecanica": "Infografías comparativas de goles acompañadas de clips meme comiendo o reaccionando.",
    "canales": 1,
    "videos": 1,
    "vistas": 1423769,
@@ -961,8 +958,8 @@
    ]
   },
   {
-   "nombre": "champions_league_winners",
-   "mecanica": "Recorrido año por año de los ganadores de la UEFA Champions League con imágenes de celebración.",
+   "nombre": "champions_league_winners_showcase",
+   "mecanica": "Recorrido año por año de los ganadores y jugadores icónicos de la UEFA Champions League.",
    "canales": 1,
    "videos": 1,
    "vistas": 1411577,
@@ -974,8 +971,8 @@
    ]
   },
   {
-   "nombre": "player_hit_wall",
-   "mecanica": "Jugador golpea repetidamente un cuadro en la pared con un martillo y la escena cambia a una tele rota.",
+   "nombre": "player_hit_wall_meme",
+   "mecanica": "Jugador golpea repetidamente un cuadro o televisión con herramientas de forma absurda.",
    "canales": 1,
    "videos": 1,
    "vistas": 1375915,
@@ -987,21 +984,22 @@
    ]
   },
   {
-   "nombre": "merge_evolution_goat_battle",
-   "mecanica": "Iconos recortados de futbolistas absorben a otros en un juego de evolución hasta revelar la forma final del GOAT.",
+   "nombre": "player_edit_reaction",
+   "mecanica": "Streamers o creadores reaccionan a edits humorísticos y dramáticos de futbolistas.",
    "canales": 1,
-   "videos": 1,
-   "vistas": 1357042,
+   "videos": 2,
+   "vistas": 1373815,
    "confirmada": false,
-   "encaje": 4.0,
-   "codigo": 5.0,
+   "encaje": 1.5,
+   "codigo": 1.5,
    "ejemplos": [
-    "https://www.youtube.com/shorts/UDvOHZ_nAeQ"
+    "https://www.youtube.com/shorts/N6YlRCglSgY",
+    "https://www.youtube.com/shorts/ZXc5qiKdODs"
    ]
   },
   {
-   "nombre": "ronaldo_funny_meme",
-   "mecanica": "Avatar cabezón en pijama realiza acciones cómicas y llora al encontrar sorpresas extrañas.",
+   "nombre": "ronaldo_funny_meme_animation",
+   "mecanica": "Avatar cabezón de Cristiano Ronaldo en situaciones cómicas y de llanto por bromas.",
    "canales": 1,
    "videos": 1,
    "vistas": 1353007,
@@ -1014,7 +1012,7 @@
   },
   {
    "nombre": "blow_pipe_powder_challenge",
-   "mecanica": "Futbolistas compiten soplando por un tubo para lanzarse polvo de colores a la cara.",
+   "mecanica": "Competencia soplando por un tubo conectado para mancharse la cara con polvo de colores.",
    "canales": 1,
    "videos": 1,
    "vistas": 1277006,
@@ -1027,7 +1025,7 @@
   },
   {
    "nombre": "foosball_rank_level_up",
-   "mecanica": "Personaje de futbolín evoluciona de un rango bajo a uno máximo tras realizar una salvada épica.",
+   "mecanica": "Personaje de futbolín evoluciona de un rango bajo a uno máximo tras superar pruebas.",
    "canales": 1,
    "videos": 1,
    "vistas": 1263783,
@@ -1040,7 +1038,7 @@
   },
   {
    "nombre": "duo_celebration_list",
-   "mecanica": "Demostración numerada del 1 al 4 de distintas celebraciones de gol en pareja dentro de un campo.",
+   "mecanica": "Creador realiza varias celebraciones numeradas en pareja dentro de un campo de fútbol.",
    "canales": 1,
    "videos": 1,
    "vistas": 1257445,
@@ -1053,7 +1051,7 @@
   },
   {
    "nombre": "wholesome_respect_moments",
-   "mecanica": "Compilado de momentos reales de deportividad y respeto con un minijuego visual arriba.",
+   "mecanica": "Compilados de momentos de deportividad y respeto acompañados de minijuegos visuales.",
    "canales": 1,
    "videos": 1,
    "vistas": 1211155,
@@ -1065,21 +1063,21 @@
    ]
   },
   {
-   "nombre": "legend_evolution_drop",
-   "mecanica": "Caras de futbolistas caen por un tubo y se fusionan en un bucle hasta revelar la forma final.",
+   "nombre": "meme_player_comparison",
+   "mecanica": "Comparación humorística entre jóvenes promesas usando tarjetas tipo FIFA y efectos cómicos.",
    "canales": 1,
    "videos": 1,
-   "vistas": 1150811,
+   "vistas": 1106786,
    "confirmada": false,
-   "encaje": 5.0,
-   "codigo": 5.0,
+   "encaje": 3.0,
+   "codigo": 4.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/tL8IflhtbH4"
+    "https://www.youtube.com/shorts/bMCO3gDAILA"
    ]
   },
   {
    "nombre": "player_conspiracy_story",
-   "mecanica": "Plantea teorías disparatadas sobre el aspecto o manías físicas de una estrella del fútbol.",
+   "mecanica": "Teorías disparatadas y curiosidades sobre el aspecto o manías de un futbolista famoso.",
    "canales": 1,
    "videos": 1,
    "vistas": 1067141,
@@ -1105,7 +1103,7 @@
   },
   {
    "nombre": "header_challenge",
-   "mecanica": "Joven intenta cabecear una pelota suspendida a distintas alturas y niveles de dificultad.",
+   "mecanica": "Intentar cabecear una pelota suspendida a distintas alturas y niveles de dificultad.",
    "canales": 1,
    "videos": 1,
    "vistas": 940638,
@@ -1118,7 +1116,7 @@
   },
   {
    "nombre": "epic_miss_reaction",
-   "mecanica": "Jugador erra un gol increíble con el arco libre y festeja con ironía mientras suena una risa.",
+   "mecanica": "Un jugador erra un gol increíble con el arco libre y reacciona de forma irónica.",
    "canales": 1,
    "videos": 1,
    "vistas": 935070,
@@ -1130,21 +1128,21 @@
    ]
   },
   {
-   "nombre": "player_comparison_versus",
-   "mecanica": "Compara el rendimiento o regates de dos leyendas en momentos cumbre de sus carreras.",
+   "nombre": "realization_meme_comparison",
+   "mecanica": "Meme o imagen de trampa con trofeos que genera confusión antes de revelar la broma.",
    "canales": 1,
    "videos": 1,
-   "vistas": 903062,
+   "vistas": 871318,
    "confirmada": false,
    "encaje": 3.0,
-   "codigo": 2.0,
+   "codigo": 4.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/0AlwCeCZ4yY"
+    "https://www.youtube.com/shorts/nB0_g-rbsyQ"
    ]
   },
   {
    "nombre": "celebrity_taste_chain",
-   "mecanica": "Jugadores famosos prueban un alimento misterioso y se lo pasan a sus compañeros en cadena.",
+   "mecanica": "Jugadores famosos prueban alimentos o frutas y se los pasan en cadena a sus compañeros.",
    "canales": 1,
    "videos": 1,
    "vistas": 805424,
@@ -1156,21 +1154,8 @@
    ]
   },
   {
-   "nombre": "animation_comedy_chain_prank",
-   "mecanica": "Sketch en cadena donde un personaje engaña a otro con una broma ácida que se repite.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 803050,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/9pUqhwNG02w"
-   ]
-  },
-  {
    "nombre": "robot_goalkeeper_challenge",
-   "mecanica": "Personas patean penales contra un robot arquero automatizado hasta que una estrella destruye el arco.",
+   "mecanica": "Patear penales contra un robot arquero automatizado que termina siendo destruido.",
    "canales": 1,
    "videos": 1,
    "vistas": 783198,
@@ -1182,8 +1167,8 @@
    ]
   },
   {
-   "nombre": "football_tic_tac_toe",
-   "mecanica": "Participantes patean balones por turnos hacia una cuadrícula de tres en raya en la arena.",
+   "nombre": "football_tic_tac_toe_challenge",
+   "mecanica": "Patear balones hacia una cuadrícula de tres en raya en la arena para completar una línea.",
    "canales": 1,
    "videos": 1,
    "vistas": 763599,
@@ -1196,7 +1181,7 @@
   },
   {
    "nombre": "cartoon_skill_meme_montage",
-   "mecanica": "Regate viral replicado en cadena por personajes animados famosos con una barra sumadora.",
+   "mecanica": "Un regate viral es replicado cómicamente por personajes animados famosos en cadena.",
    "canales": 1,
    "videos": 1,
    "vistas": 739195,
@@ -1209,7 +1194,7 @@
   },
   {
    "nombre": "celebrity_dance_challenge",
-   "mecanica": "Futbolistas con grandes cabezas flotantes bailan sincronizados mientras un espectador reacciona abajo.",
+   "mecanica": "Futbolistas con grandes cabezas flotantes bailan sincronizados en el centro.",
    "canales": 1,
    "videos": 1,
    "vistas": 721215,
@@ -1222,7 +1207,7 @@
   },
   {
    "nombre": "player_choice_puzzle",
-   "mecanica": "Jugadores interactúan intercambiando objetos extraños como esponjas gigantes y donuts.",
+   "mecanica": "Intercambio de objetos y bromas visuales entre futbolistas con comida o esponjas.",
    "canales": 1,
    "videos": 1,
    "vistas": 676149,
@@ -1234,8 +1219,8 @@
    ]
   },
   {
-   "nombre": "goalkeeper_pov_chaos",
-   "mecanica": "Jugadas caóticas en área de liga amateur o fútbol base que terminan en goles cómicos.",
+   "nombre": "goalkeeper_pov_sunday_league",
+   "mecanica": "Escenas caóticas de liga amateur o arqueros con rebotes extraños y goles cómicos.",
    "canales": 1,
    "videos": 1,
    "vistas": 647220,
@@ -1248,7 +1233,7 @@
   },
   {
    "nombre": "player_lyric_edit",
-   "mecanica": "Cortes rápidos y fotos en blanco y negro sincronizados con una voz infantil viral y subtítulos estilizados.",
+   "mecanica": "Cortes rápidos y fotos en blanco y negro sincronizados con canciones virales y subtítulos estilizados.",
    "canales": 1,
    "videos": 1,
    "vistas": 625922,
@@ -1260,34 +1245,21 @@
    ]
   },
   {
-   "nombre": "player_highlight_passion_edit",
-   "mecanica": "Compilado rítmico en blanco y negro de jugadas intensas y entrega física de un futbolista.",
+   "nombre": "era_progression_nostalgia",
+   "mecanica": "Muestra la evolución alegre de los jugadores en mundiales hasta llegar a una etapa de retiro triste.",
    "canales": 1,
    "videos": 1,
-   "vistas": 617636,
+   "vistas": 601617,
    "confirmada": false,
-   "encaje": 1.0,
-   "codigo": 1.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/pYFtlzEHjHc"
-   ]
-  },
-  {
-   "nombre": "picked_last_redemption",
-   "mecanica": "Jugador elegido último en su infancia que entrena en solitario y triunfa años después como capitán.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 615481,
-   "confirmada": false,
-   "encaje": 2.0,
+   "encaje": 4.0,
    "codigo": 5.0,
    "ejemplos": [
-    "https://www.youtube.com/shorts/636xJzeorhY"
+    "https://www.youtube.com/shorts/OmmvKSkcmOE"
    ]
   },
   {
    "nombre": "skill_fail_edit",
-   "mecanica": "Regates espectaculares al ritmo de música que terminan en una caída o pérdida seguida de reacción.",
+   "mecanica": "Regates espectaculares que terminan en una caída o pérdida del balón con reacción cómica.",
    "canales": 1,
    "videos": 1,
    "vistas": 568281,
@@ -1299,21 +1271,8 @@
    ]
   },
   {
-   "nombre": "ai_football_comedy_skit",
-   "mecanica": "Sketch cómico donde jugadores se hacen bromas con pistolas de agua o galletas en un sofá.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 558759,
-   "confirmada": false,
-   "encaje": 2.0,
-   "codigo": 2.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/59WPmK9kI2o"
-   ]
-  },
-  {
    "nombre": "celebrity_reaction_prank",
-   "mecanica": "Broma a un streamer famoso regalándole cajas con la cara de un rival y mostrando clips de viaje.",
+   "mecanica": "Bromas a influencers o streamers regalando cajas con sorpresas de futbolistas.",
    "canales": 1,
    "videos": 1,
    "vistas": 556985,
@@ -1325,21 +1284,8 @@
    ]
   },
   {
-   "nombre": "player_comparison_edit",
-   "mecanica": "Compara alternadamente a dos estrellas actuales en varias categorías con cortes rápidos y texto.",
-   "canales": 1,
-   "videos": 1,
-   "vistas": 535245,
-   "confirmada": false,
-   "encaje": 4.0,
-   "codigo": 4.0,
-   "ejemplos": [
-    "https://www.youtube.com/shorts/0UMA9TwB_zU"
-   ]
-  },
-  {
    "nombre": "tournament_draw_reveal_edit",
-   "mecanica": "Presentador saca tiras de papel para armar cruces de eliminatoria con animaciones y música.",
+   "mecanica": "Presentador saca tiras de papel revelando cruces de eliminatoria con animación de escudos.",
    "canales": 1,
    "videos": 1,
    "vistas": 527438,
@@ -1351,8 +1297,21 @@
    ]
   },
   {
-   "nombre": "ballon_dor_ranking",
-   "mecanica": "Lista animada año por año del Top 5 de candidatos al Balón de Oro con tarjetas y música rítmica.",
+   "nombre": "penalty_mind_games",
+   "mecanica": "Análisis de la tensión y amagues psicológicos al patear un penal decisivo.",
+   "canales": 1,
+   "videos": 1,
+   "vistas": 512346,
+   "confirmada": false,
+   "encaje": 2.0,
+   "codigo": 2.0,
+   "ejemplos": [
+    "https://www.youtube.com/shorts/Sk77dbUow1M"
+   ]
+  },
+  {
+   "nombre": "ballon_dor_ranking_list",
+   "mecanica": "Listas animadas del Top 5 de candidatos o ganadores del Balón de Oro año por año.",
    "canales": 1,
    "videos": 1,
    "vistas": 468518,
@@ -1365,7 +1324,7 @@
   },
   {
    "nombre": "ball_burst_challenge",
-   "mecanica": "Jugadores golpean y explotan globos gigantes alternadamente con escudos de equipos.",
+   "mecanica": "Golpear y explotar globos gigantes con escudos de diferentes equipos alternadamente.",
    "canales": 1,
    "videos": 1,
    "vistas": 211884,
@@ -1426,26 +1385,27 @@
    ]
   },
   "cinta": {
-   "fecha": "2026-11-22",
+   "fecha": "2026-11-26",
    "formato": "CONVEYOR STOP",
    "mejor": {
-    "id": "1d_JtYdw0pU",
-    "vistas": 32175
+    "id": "bGF9z7ENvRo",
+    "vistas": 27676
    },
    "peor": {
-    "id": "BtXUM5VH2eI",
-    "vistas": 13007
+    "id": "6cZnPTi4Kqo",
+    "vistas": 8185
    },
    "diferencias": [
-    "El Short 1 utiliza a Messi como figura principal del primer segundo, generando mayor atracción visual inicial.",
-    "El Short 2 usa a Ronaldo al inicio, el cual tuvo menor impacto de retención en comparación.",
-    "Variación en la secuencia de apariciones de jugadores secundarios durante los fallos del juego."
+    "Pose y simetría del cuerpo: en el video 1 (Mbappé), las piernas están rectas y en pose estática centrada (manos en jarras), lo que genera un encaje visual perfecto y muy satisfactorio. En el video 2 (Ronaldo), las piernas están en plena carrera/movimiento angular, lo que hace que casi todos los torsos se vean deformes o mal alineados al frenar.",
+    "Premisa y copy superior: el video 1 usa '6 STARS · ONLY 1 FITS', una regla clara y desafiante de juego, mientras que el video 2 usa '99% IMPOSSIBLE', un cliché genérico que genera menos intriga interactiva.",
+    "Número de intento exitoso: el video 1 resuelve y celebra el 'PERFECT!' en el intento 2, dando una recompensa más rápida y clara para el bucle, mientras que el video 2 lo hace en el intento 4.",
+    "Coherencia de escala y corte: el corte de cintura de Mbappé con el uniforme del PSG coincide con exactitud geométrica en el centro del frame; en Ronaldo el torso luce flotando o desconectado de la cadera por la zancada."
    ],
-   "primer_segundo": "Iniciar el video mostrando a Messi alineado perfectamente ('PERFECT!') para maximizar la tasa de clic y enganche inmediato.",
+   "primer_segundo": "Iniciar en el cuadro 0 con una pose estática, vertical y simétrica para las piernas base; mostrar de inmediato el target a encajar sin poses de acción complejas que rompan la ilusión del puzzle.",
    "cambios": [
-    "Usar a Messi en el primer intento correcto como estándar principal para la fábrica de contenido.",
-    "Seleccionar futbolistas de alto impacto visual (Messi, Mbappe) en los primeros tres intentos.",
-    "Mantener la estructura de falla/acierto acelerada para evitar pérdida de retención."
+    "Usar exclusivamente piernas en pose estática/frontal (de pie o brazos en jarra) para que el empalme con los torsos del conveyor sea creíble y limpio.",
+    "Sustituir textos genéricos como '99% IMPOSSIBLE' por reglas numéricas concretas del reto (ej. '6 STARS · ONLY 1 FITS' o 'FIND THE REAL BODY').",
+    "Alinear la altura exacta de la línea de corte de la cintura para todos los torsos y evitar modelos en carrera o poses asimétricas."
    ]
   },
   "favorito": {
@@ -1545,75 +1505,75 @@
  "jugadores": [
   {
    "jugador": "Ronaldo",
-   "videos": 492,
-   "vistas": 220610698,
-   "vph": 3621417
+   "videos": 462,
+   "vistas": 214793504,
+   "vph": 3230157
   },
   {
    "jugador": "Yamal",
-   "videos": 267,
-   "vistas": 160380151,
-   "vph": 2310693
+   "videos": 261,
+   "vistas": 150569532,
+   "vph": 2118046
   },
   {
    "jugador": "Messi",
-   "videos": 249,
-   "vistas": 110335796,
-   "vph": 2141747
+   "videos": 207,
+   "vistas": 101828618,
+   "vph": 1778324
   },
   {
    "jugador": "Haaland",
    "videos": 90,
-   "vistas": 77739910,
-   "vph": 1195683
+   "vistas": 81081748,
+   "vph": 1174818
   },
   {
    "jugador": "Mbappé",
-   "videos": 172,
-   "vistas": 82598826,
-   "vph": 1010285
+   "videos": 146,
+   "vistas": 78850976,
+   "vph": 920850
   },
   {
    "jugador": "Neymar",
-   "videos": 125,
-   "vistas": 44506348,
-   "vph": 485468
+   "videos": 118,
+   "vistas": 44441491,
+   "vph": 491745
   },
   {
    "jugador": "Bellingham",
-   "videos": 46,
-   "vistas": 37868177,
-   "vph": 481964
+   "videos": 35,
+   "vistas": 39164352,
+   "vph": 459694
   },
   {
    "jugador": "Raphinha",
    "videos": 25,
-   "vistas": 18054709,
-   "vph": 209497
-  },
-  {
-   "jugador": "Vinícius",
-   "videos": 25,
-   "vistas": 8930468,
-   "vph": 111264
+   "vistas": 18032889,
+   "vph": 199010
   },
   {
    "jugador": "Ronaldinho",
-   "videos": 19,
-   "vistas": 7423678,
-   "vph": 84509
-  },
-  {
-   "jugador": "Pedri",
-   "videos": 14,
-   "vistas": 2965669,
-   "vph": 73931
+   "videos": 15,
+   "vistas": 6836334,
+   "vph": 70347
   },
   {
    "jugador": "Kane",
-   "videos": 9,
-   "vistas": 4537193,
-   "vph": 66452
+   "videos": 8,
+   "vistas": 4913852,
+   "vph": 70228
+  },
+  {
+   "jugador": "Vinícius",
+   "videos": 19,
+   "vistas": 5107129,
+   "vph": 66159
+  },
+  {
+   "jugador": "Pedri",
+   "videos": 10,
+   "vistas": 3084747,
+   "vph": 66085
   }
  ],
  "publico": {
@@ -1621,15 +1581,15 @@
   "pedidos": [
    "Ronaldo",
    "Neymar",
-   "Yamal"
+   "Yamal",
+   "Messi"
   ],
   "quejas": [],
-  "dificultad": "Los usuarios mencionan que los desafíos son fáciles, destacando que lo lograron al primer intento (\"Yo a la primera\", \"1 try\", \"First try\").",
+  "dificultad": "Dicen que es fácil (mencionan que lo lograron al primer intento: 'Yo a la primera', '1 try', 'First try', 'I did it')",
   "ideas": [
-   "Video dedicado a Cristiano Ronaldo",
-   "Video dedicado a Neymar",
-   "Video dedicado a Lamine Yamal",
-   "Comparativa de goles entre Cristiano Ronaldo y Messi"
+   "Video especial de Cristiano Ronaldo",
+   "Video centrado en Neymar",
+   "Desafíos con Lamine Yamal"
   ]
  },
  "fecha": "2026-11-26"

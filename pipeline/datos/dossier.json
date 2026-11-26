@@ -1,29 +1,29 @@
 {
  "fecha": "2026-11-26",
  "canales_seguidos": 80,
- "canales_nuevos": 24,
- "revisados": 196,
- "fuera_de_serie": 452,
+ "canales_nuevos": 20,
+ "revisados": 166,
+ "fuera_de_serie": 390,
  "interacciones": {
   "comentar": {
-   "videos": 93,
+   "videos": 95,
    "mediana": 1763649
   },
   "ninguna": {
-   "videos": 35,
-   "mediana": 1375915
+   "videos": 41,
+   "mediana": 1552664
   },
   "pausar": {
-   "videos": 12,
-   "mediana": 1577296
+   "videos": 13,
+   "mediana": 1856231
   },
   "elegir": {
-   "videos": 8,
+   "videos": 10,
    "mediana": 2366701
   },
   "adivinar": {
-   "videos": 8,
-   "mediana": 2555335
+   "videos": 9,
+   "mediana": 2367066
   }
  },
  "ideas": [
@@ -145,6 +145,52 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 4,
    "idea_para_nosotros": "Crear un minijuego en 2D donde la cara de una estrella (ej. Messi o Haaland) avanza por una cinta y el espectador debe pausar en el milisegundo exacto para hacerlo pasar por el portón del 'Balón de Oro' en lugar de la puerta de 'Lesión'."
+  },
+  {
+   "id": "OmmvKSkcmOE",
+   "canal": "kdramasedits12",
+   "subs": 1290,
+   "nuevo": false,
+   "vistas": 601617,
+   "ratio": 305.1,
+   "puntaje": 49.69,
+   "nombre_formato": "Era Progression Nostalgia",
+   "mecanica": "Muestra imágenes de Messi, Ronaldo y Neymar en los Mundiales 2022 y 2026 con tono alegre. En 2030 pasa a un tono triste y nostálgico mostrando su retiro de la alta competencia.",
+   "primer_segundo": "Aparece el texto '2022' junto a un póster del Mundial con Ronaldo, Messi y Neymar.",
+   "por_que_engancha": "Genera nostalgia y emoción al recordar el inevitable final de la era de estas tres leyendas.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Cristiano Ronaldo",
+    "Lionel Messi",
+    "Neymar"
+   ],
+   "usa_clips_reales": true,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer un juego interactivo de 'Frena en el año correcto': la cinta de años gira rápido y el usuario debe pausar en el año exacto en que cada leyenda jugará/jugó su último Mundial."
+  },
+  {
+   "id": "pnM76eLcUN4",
+   "canal": "Varsha Plays",
+   "subs": 16800,
+   "nuevo": false,
+   "vistas": 624575,
+   "ratio": 303.1,
+   "puntaje": 49.63,
+   "nombre_formato": "Runner Choice Challenge",
+   "mecanica": "Cada estrella de fútbol avanza por una pista de dos carriles eligiendo entre distintos objetos (camisetas, balones, dinero) para evolucionar su personaje. Al final del trayecto, el acumulado de decisiones determina si el jugador gana un trofeo o pierde.",
+   "primer_segundo": "Aparece la cara de Messi de fondo con una pista de carrera 3D y los avatares de Messi, Bellingham y Ronaldo.",
+   "por_que_engancha": "Genera curiosidad e identificación al ver cómo evoluciona cada estrella según los elementos seleccionados en la pista.",
+   "interaccion": "elegir",
+   "jugadores": [
+    "Lionel Messi",
+    "Jude Bellingham",
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer un Short interactivo de 'Elige y Pausa' donde una cinta transportadora rápida lleva trofeos y camisetas, y el espectador debe pausar en el milisegundo exacto para completar la equipación correcta de cada leyenda."
   },
   {
    "id": "9SgMU3iTWFY",
@@ -334,121 +380,78 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
    "idea_para_nosotros": "Hacer un desafío de 'botines misteriosos' cayendo desde arriba donde el espectador deba pausar para vestir a los jugadores con los botines correctos de su marca."
-  },
-  {
-   "id": "T7p_KWaaA84",
-   "canal": "Visual Mindset",
-   "subs": 39400,
-   "nuevo": true,
-   "vistas": 8947537,
-   "ratio": 106.1,
-   "puntaje": 40.51,
-   "nombre_formato": "Progression Counter Comparison",
-   "mecanica": "Tres personajes de monigotes comparan sus marcas de dominadas a lo largo del tiempo representando la Motivación, la Disciplina y la Obsesión. El contador de repeticiones sube velozmente hasta el día 365, cerrando con una pregunta directa al espectador.",
-   "primer_segundo": "Se ve a tres monigotes colgados de una barra en el 'DAY 1' con contadores de Motivación, Disciplina u Obsesión.",
-   "por_que_engancha": "Genera curiosidad visual y tensión al ver crecer desmedidamente los números y comparar el destino final de cada mentalidad.",
-   "interaccion": "comentar",
-   "jugadores": [],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Adaptar la progresión numérica a superestrellas (ej. Haaland vs Mbappé vs Messi) comparando goles/títulos por edad con una ruleta de pausas para que el usuario elija con qué mentalidad o jugador se identifica."
-  },
-  {
-   "id": "QgzsGeXoPKY",
-   "canal": "Cris07",
-   "subs": 6570,
-   "nuevo": true,
-   "vistas": 2743605,
-   "ratio": 91.1,
-   "puntaje": 39.19,
-   "nombre_formato": "Guess Who Won",
-   "mecanica": "Cuatro personas disfrazadas lanzan pelotas de baloncesto hacia un aro central. Se revela una competencia final entre Ronaldo y Messi pidiendo like o comentario.",
-   "primer_segundo": "Se ven las caricaturas de Ronaldo, Ishowspeed, Messi y Neymar arriba con el texto 'GUESS WHO WON'.",
-   "por_que_engancha": "Combina la curiosidad de adivinar el ganador con la rivalidad clásica entre Ronaldo y Messi.",
-   "interaccion": "adivinar",
-   "jugadores": [
-    "Ronaldo",
-    "Messi",
-    "Neymar",
-    "Ishowspeed"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Hacer una ruleta animada en 2D con fotos reales de Ronaldo, Messi, Neymar y Mbappé donde el espectador deba pausar para elegir al ganador definitivo de un Balón de Oro."
   }
  ],
  "sin_analizar": [
   {
-   "id": "pnM76eLcUN4",
-   "canal": "Varsha Plays",
-   "vistas": 519844,
-   "ratio": 289.4,
-   "titulo": "Messi vs Bellingham vs Ronaldo 😱🏆 ONE WRONG CHOICE! ⚽🔥  #shorts"
+   "id": "Edy65LqhEtI",
+   "canal": "Ballex",
+   "vistas": 2175046,
+   "ratio": 24.3,
+   "titulo": "Real Madrid’s Comeback Today 😮‍💨 #shorts #football"
   },
   {
-   "id": "omtz3KwTy1E",
-   "canal": "Tristan Gac",
-   "vistas": 6961818,
-   "ratio": 69.8,
-   "titulo": "What will the score be tonight?👀⚽️#arsenal #dortmund #tristangac #football #shorts #trending #viral"
+   "id": "4wM-2AOqDkw",
+   "canal": "ROYAL GAMING",
+   "vistas": 627510,
+   "ratio": 90.9,
+   "titulo": "Who is stronger? #babyduck #shorts"
   },
   {
-   "id": "-u9ztrIOAaw",
-   "canal": "Mischief Time Fan",
-   "vistas": 3004716,
-   "ratio": 84.1,
-   "titulo": "Mbappé failed to save the watermelon!😂 (3D Parody) #haaland  #funny #Mbappé"
+   "id": "b5escSbWF2w",
+   "canal": "Ntzin.editx77",
+   "vistas": 757848,
+   "ratio": 83.9,
+   "titulo": "Eai Jogador? #editrend #edit #neymar #shorts #prime #foryou #Messi #cr7 #viral #football #interativo"
   },
   {
-   "id": "N6riiHcM8_4",
-   "canal": "Futbolelite",
-   "vistas": 3658250,
-   "ratio": 76.8,
-   "titulo": "😱 Speed se volvió loco al ver la estatua de Ronaldo #futbol #cr7 #viral#ronaldo#shorts"
+   "id": "BeY_ZU_1Cl4",
+   "canal": "FM AYUSH LIVE",
+   "vistas": 3051233,
+   "ratio": 54.5,
+   "titulo": "Messi vs Bellingham vs Ronaldo 😱🏆 ONE WRONG CHOICE! ⚽🔥 #shorts"
   },
   {
-   "id": "OddESxCNiI8",
-   "canal": "Buka ",
-   "vistas": 2135031,
-   "ratio": 85.3,
-   "titulo": "Survival skills: Ronaldo Messi's clever idea☘️❤️#viral #shorts#camping"
-  },
-  {
-   "id": "dpxjtjaB-e0",
+   "id": "t4S_eqcXMR4",
    "canal": "Proyecto1mp4",
-   "vistas": 1503513,
-   "ratio": 88.3,
-   "titulo": "Prime Bellingham is Unstoppable 🧱😤 #football #soccer #shorts"
+   "vistas": 1169028,
+   "ratio": 68.6,
+   "titulo": "Prime Nico Paz 🐐🐐 #shorts #futbol #nicopaz"
   },
   {
-   "id": "jEWp57Bkd0Y",
-   "canal": "Tristan Gac",
-   "vistas": 5728464,
-   "ratio": 57.4,
-   "titulo": "I can’t believe we just did that! 🤯 #tristangac #freestyle #funny #fyp #viral #shorts #trending"
+   "id": "mosNoPKj-Ys",
+   "canal": "FutXFiles",
+   "vistas": 943739,
+   "ratio": 26.6,
+   "titulo": "¡LAMINE YAMAL ES DEL MADRID! 😱 PEDRI DESCUBRE SU SECRETO 😂#shorts"
   },
   {
-   "id": "Sk77dbUow1M",
-   "canal": "Blinko Shorts",
-   "vistas": 505153,
-   "ratio": 38.3,
-   "titulo": "Neymar Jr Penalty Kick Mind Games & Goal!"
-  },
-  {
-   "id": "CujfsQv8v2M",
-   "canal": "HEISTIC",
-   "vistas": 2214480,
-   "ratio": 69.1,
-   "titulo": "Ronaldo retired from Portugal..😭💔 - Ronaldo Sad Edit | #ronaldo #edit #sad"
-  },
-  {
-   "id": "YbNRNnITMmA",
+   "id": "iG1iaLyGZKE",
    "canal": "Aerooo 🚀",
-   "vistas": 8121334,
-   "ratio": 19.6,
-   "titulo": "Neymar jr x Onana x Martinez Skills 🔥😅"
+   "vistas": 7135087,
+   "ratio": 17.2,
+   "titulo": "Ronaldo x Yamal Skills 🔥😅👀"
+  },
+  {
+   "id": "KbHmnufGCjo",
+   "canal": "Volture",
+   "vistas": 5493381,
+   "ratio": 17.6,
+   "titulo": "A Adidas fez propaganda da Nike sem querer 💀"
+  },
+  {
+   "id": "-On26Dwy1-I",
+   "canal": "Arun Art 07",
+   "vistas": 1988059,
+   "ratio": 52.4,
+   "titulo": "True friendship #craft #diy #art #drawing #friendship #sketch #shorts"
+  },
+  {
+   "id": "QsEFxbbFFBE",
+   "canal": "Voice of Tamil Paiyan",
+   "vistas": 2788298,
+   "ratio": 47.5,
+   "titulo": "நீ பண்ணுமா 😂 #funny #collegelifememes #comedy #clgfun #memes #cricket #football #funnymemes"
   }
  ]
 }

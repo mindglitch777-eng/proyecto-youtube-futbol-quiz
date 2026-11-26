@@ -9,8 +9,8 @@
   ],
   "como": "Hacer una rueda giratoria rápida con botas de oro o trofeos donde el espectador deba pausar exactamente cuando la bota encaje con el cuerpo de su superestrella favorita (Messi, Mbappé o Haaland).",
   "ejemplo": "https://www.youtube.com/shorts/vSCSgT8so3c",
-  "ola_canales": 3,
-  "ola_confirmada": true
+  "ola_canales": 1,
+  "ola_confirmada": false
  },
  "disc_speed_lock_escape_challenge": {
   "nombre": "Disc Speed Lock Escape Challenge",
@@ -32,7 +32,9 @@
    "qJJvYQ-o5DE"
   ],
   "como": "Crear un minijuego donde varios elementos caen a gran velocidad y el espectador debe pausar el video en el momento exacto en que su jugador favorito obtiene el peinado u outfit correcto.",
-  "ejemplo": "https://www.youtube.com/shorts/qJJvYQ-o5DE"
+  "ejemplo": "https://www.youtube.com/shorts/qJJvYQ-o5DE",
+  "ola_canales": 2,
+  "ola_confirmada": false
  },
  "image_spin_match": {
   "nombre": "Image Spin Match",
@@ -462,7 +464,7 @@
   "desde": "2026-11-21",
   "puntaje": 4.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Jugada destacada de fútbol americano con impacto fuerte y reacción inmediata"
  },
@@ -1105,8 +1107,8 @@
   ],
   "como": "Hacer un desafío de 'botines misteriosos' cayendo desde arriba donde el espectador deba pausar para vestir a los jugadores con los botines correctos de su marca.",
   "ejemplo": "https://www.youtube.com/shorts/pbYOyftPqcM",
-  "ola_canales": 2,
-  "ola_confirmada": false
+  "ola_canales": 3,
+  "ola_confirmada": true
  },
  "stop_the_frame_challenge": {
   "nombre": "Stop-the-Frame Challenge",
@@ -1138,7 +1140,7 @@
   "desde": "2026-11-24",
   "puntaje": 8.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Un jugador falla de forma ridícula en la cancha y su carta de videojuego se degrada a una versión cómica."
  },
@@ -1178,7 +1180,7 @@
   "desde": "2026-11-24",
   "puntaje": 16.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Mostrar jugadas rápidas y regates pidiendo al usuario pausar el video en el momento exacto."
  },
@@ -1186,10 +1188,10 @@
   "nombre": "storytelling_hero_moment",
   "estado": "idea",
   "desde": "2026-11-24",
-  "puntaje": 6.0,
+  "puntaje": 10.2,
   "senales": [],
-  "ola_canales": 2,
-  "ola_confirmada": false,
+  "ola_canales": 3,
+  "ola_confirmada": true,
   "como": "Combinar entrevistas de jugadores narrando momentos de tensión con imágenes de archivo de sus goles históricos."
  },
  "player_heated_moments_edit": {
@@ -1208,7 +1210,7 @@
   "desde": "2026-11-24",
   "puntaje": 4.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Voz en off que explica las reglas, curiosidades o la historia de un deporte utilizando jugadas destacadas."
  },
@@ -1218,7 +1220,7 @@
   "desde": "2026-11-24",
   "puntaje": 12.0,
   "senales": [],
-  "ola_canales": 2,
+  "ola_canales": 1,
   "ola_confirmada": false,
   "como": "Mostrar una broma o truco visual absurdo seguido de la reacción de confusión y desilusión de los fans."
  },
@@ -1248,7 +1250,7 @@
   "desde": "2026-11-24",
   "puntaje": 14.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Comparar el rendimiento, regates o goles de dos leyendas en distintas épocas de sus carreras."
  },
@@ -1276,9 +1278,9 @@
   "nombre": "illusion_body_swap",
   "estado": "idea",
   "desde": "2026-11-24",
-  "puntaje": 6.0,
+  "puntaje": 10.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Ilusionismo visual donde la cabeza de un jugador parece separada del cuerpo o transforman objetos mágicamente."
  },
@@ -1318,7 +1320,7 @@
   "desde": "2026-11-24",
   "puntaje": 10.0,
   "senales": [],
-  "ola_canales": 2,
+  "ola_canales": 1,
   "ola_confirmada": false,
   "como": "Compilado de peleas reales, entradas violentas y encarareos agresivos entre futbolistas con música pesada."
  },
@@ -1528,7 +1530,7 @@
   "desde": "2026-11-24",
   "puntaje": 4.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Compilado melancólico con música emotiva que muestra a un jugador triste o reflexivo en el campo."
  },
@@ -2002,7 +2004,7 @@
   "nombre": "player_skill_match_meme",
   "estado": "idea",
   "desde": "2026-11-25",
-  "puntaje": 4.0,
+  "puntaje": 6.0,
   "senales": [],
   "ola_canales": 1,
   "ola_confirmada": false,
@@ -2022,10 +2024,10 @@
   "nombre": "cgi_meme_skit_food",
   "estado": "idea",
   "desde": "2026-11-25",
-  "puntaje": 3.0,
+  "puntaje": 14.4,
   "senales": [],
-  "ola_canales": 1,
-  "ola_confirmada": false,
+  "ola_canales": 4,
+  "ola_confirmada": true,
   "como": "Sketch animado o en CGI donde futbolistas estrella interactúan por comida y terminan protagonizando una broma cómica."
  },
  "camp_highlights_reaction": {
@@ -2277,7 +2279,9 @@
    "uvJQQcH5a8s"
   ],
   "como": "Crear un minijuego en 2D donde la cara de una estrella (ej. Messi o Haaland) avanza por una cinta y el espectador debe pausar en el milisegundo exacto para hacerlo pasar por el portón del 'Balón de Oro' en lugar de la puerta de 'Lesión'.",
-  "ejemplo": "https://www.youtube.com/shorts/uvJQQcH5a8s"
+  "ejemplo": "https://www.youtube.com/shorts/uvJQQcH5a8s",
+  "ola_canales": 1,
+  "ola_confirmada": false
  },
  "gate_choice_character_runner": {
   "nombre": "Gate Choice Character Runner",
@@ -2426,9 +2430,9 @@
   "nombre": "football_storytelling_shorts",
   "estado": "idea",
   "desde": "2026-11-26",
-  "puntaje": 2.0,
+  "puntaje": 4.0,
   "senales": [],
-  "ola_canales": 1,
+  "ola_canales": 2,
   "ola_confirmada": false,
   "como": "Narra curiosidades insólitas o historias de partidos usando voz en off rápida, memes e imágenes."
  },
@@ -2541,5 +2545,209 @@
   "ola_canales": 1,
   "ola_confirmada": false,
   "como": "Jugadores golpean y explotan globos gigantes alternadamente con escudos de equipos."
+ },
+ "era_progression_nostalgia": {
+  "nombre": "Era Progression Nostalgia",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 49.69,
+  "senales": [
+   "OmmvKSkcmOE"
+  ],
+  "como": "Hacer un juego interactivo de 'Frena en el año correcto': la cinta de años gira rápido y el usuario debe pausar en el año exacto en que cada leyenda jugará/jugó su último Mundial.",
+  "ejemplo": "https://www.youtube.com/shorts/OmmvKSkcmOE",
+  "ola_canales": 1,
+  "ola_confirmada": false
+ },
+ "runner_choice_challenge": {
+  "nombre": "Runner Choice Challenge",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 49.63,
+  "senales": [
+   "pnM76eLcUN4"
+  ],
+  "como": "Hacer un Short interactivo de 'Elige y Pausa' donde una cinta transportadora rápida lleva trofeos y camisetas, y el espectador debe pausar en el milisegundo exacto para completar la equipación correcta de cada leyenda.",
+  "ejemplo": "https://www.youtube.com/shorts/pnM76eLcUN4"
+ },
+ "indoor_training_product_showcase": {
+  "nombre": "indoor_training_product_showcase",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Demostración de un accesorio de entrenamiento de fútbol para interiores con contador o rebote."
+ },
+ "pitch_brawl_debate": {
+  "nombre": "pitch_brawl_debate",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Muestra una pelea o falta violenta en un partido de fútbol pidiendo la opinión del espectador."
+ },
+ "who_stops_player_challenge": {
+  "nombre": "who_stops_player_challenge",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 10.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Gambetear a diferentes arqueros en una cancha urbana con cartas de rating cambiantes."
+ },
+ "freestyle_battle_challenge": {
+  "nombre": "freestyle_battle_challenge",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 4.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Freestylers representan clubes haciendo trucos evaluados por un jurado con puntajes."
+ },
+ "synchronized_freestyle_challenge": {
+  "nombre": "synchronized_freestyle_challenge",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Freestylers alineados intentan pasarse el balón sincronizadamente hasta lograr un truco final."
+ },
+ "grid_elimination_battles": {
+  "nombre": "grid_elimination_battles",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 8.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Cuadrículas de eliminación donde estrellas de fútbol compiten hasta que queda un ganador supremo."
+ },
+ "statue_trolling_goat_debate": {
+  "nombre": "statue_trolling_goat_debate",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 4.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Creadores interactúan con estatuas de cera de futbolistas pidiendo votar en comentarios."
+ },
+ "rivalry_choice_card": {
+  "nombre": "rivalry_choice_card",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 8.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Amigos se reencuentran mostrando cartas de futbolistas con efectos humorísticos."
+ },
+ "ronaldo_retirement_emotional_edit": {
+  "nombre": "ronaldo_retirement_emotional_edit",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Conversación en vestuario sobre el retiro de una leyenda combinada con momentos emotivos."
+ },
+ "celebrity_hide_and_seek": {
+  "nombre": "celebrity_hide_and_seek",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 6.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Versiones miniatura de futbolistas son descubiertas dentro de envases o productos."
+ },
+ "humiliating_goals_compilation": {
+  "nombre": "humiliating_goals_compilation",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Goles donde los delanteros burlan creativamente a arqueros y defensores para humillarlos."
+ },
+ "defending_highlights_compilation": {
+  "nombre": "defending_highlights_compilation",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Compilación de barridas y quites defensivos perfectos sincronizados con música."
+ },
+ "champions_league_winners_showcase": {
+  "nombre": "champions_league_winners_showcase",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 4.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Recorrido año por año de los ganadores y jugadores icónicos de la UEFA Champions League."
+ },
+ "player_hit_wall_meme": {
+  "nombre": "player_hit_wall_meme",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 4.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Jugador golpea repetidamente un cuadro o televisión con herramientas de forma absurda."
+ },
+ "ronaldo_funny_meme_animation": {
+  "nombre": "ronaldo_funny_meme_animation",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 2.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Avatar cabezón de Cristiano Ronaldo en situaciones cómicas y de llanto por bromas."
+ },
+ "meme_player_comparison": {
+  "nombre": "meme_player_comparison",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 6.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Comparación humorística entre jóvenes promesas usando tarjetas tipo FIFA y efectos cómicos."
+ },
+ "penalty_mind_games": {
+  "nombre": "penalty_mind_games",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 4.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Análisis de la tensión y amagues psicológicos al patear un penal decisivo."
+ },
+ "ballon_dor_ranking_list": {
+  "nombre": "ballon_dor_ranking_list",
+  "estado": "idea",
+  "desde": "2026-11-26",
+  "puntaje": 6.0,
+  "senales": [],
+  "ola_canales": 1,
+  "ola_confirmada": false,
+  "como": "Listas animadas del Top 5 de candidatos o ganadores del Balón de Oro año por año."
  }
 }
