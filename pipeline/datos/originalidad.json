@@ -7,7 +7,7 @@
  "parecido_titulos": 0.7,
  "casi_identicos": 1,
  "medidos": 60,
- "musicas_distintas": 5,
+ "musicas_distintas": 4,
  "reparto_semana": {
   "favorito": 8,
   "cinta": 8,
@@ -24,7 +24,8 @@
   "anillos": 2
  },
  "alertas": [
-  "Los títulos se parecen 70% en promedio: falta variedad de frases."
+  "Los títulos se parecen 70% en promedio: falta variedad de frases.",
+  "Solo 4 pistas de música distintas en los últimos 29 videos."
  ],
  "lectura": "BIEN: variado"
 }

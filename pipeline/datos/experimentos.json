@@ -13,14 +13,14 @@
    "pregunta": "¿WHEEL rinde más con título 'X vs Y or Z stop challenge' o con 'Find X's real body'?",
    "medicion": {
     "\"vs\"": {
-     "videos": 6,
-     "vistas_48h_esperadas": 4492,
-     "p_mejor": 0.63
+     "videos": 7,
+     "vistas_48h_esperadas": 5078,
+     "p_mejor": 0.67
     },
     "\"find\"": {
      "videos": 0,
-     "vistas_48h_esperadas": 3543,
-     "p_mejor": 0.37
+     "vistas_48h_esperadas": 3760,
+     "p_mejor": 0.33
     }
    }
   },
@@ -38,13 +38,13 @@
    "medicion": {
     "true": {
      "videos": 7,
-     "vistas_48h_esperadas": 3137,
-     "p_mejor": 0.48
+     "vistas_48h_esperadas": 3055,
+     "p_mejor": 0.47
     },
     "false": {
      "videos": 0,
-     "vistas_48h_esperadas": 3244,
-     "p_mejor": 0.52
+     "vistas_48h_esperadas": 3188,
+     "p_mejor": 0.53
     }
    }
   },
@@ -62,13 +62,13 @@
    "medicion": {
     "6.4": {
      "videos": 4,
-     "vistas_48h_esperadas": 2410,
-     "p_mejor": 0.48
+     "vistas_48h_esperadas": 2362,
+     "p_mejor": 0.47
     },
     "8.0": {
      "videos": 0,
-     "vistas_48h_esperadas": 2546,
-     "p_mejor": 0.52
+     "vistas_48h_esperadas": 2519,
+     "p_mejor": 0.53
     }
    }
   }

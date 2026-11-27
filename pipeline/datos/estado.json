@@ -65,43 +65,44 @@
   },
   "rendimiento": {
    "estado": "ok",
-   "inicio": "2026-11-27T10:48:47+00:00",
+   "inicio": "2026-11-27T19:34:11+00:00",
    "resumen": {
-    "videos": 171,
-    "vistas_totales": 1446146,
+    "videos": 173,
+    "vistas_totales": 1469185,
     "por_formato": {
-     "favorito": "10 videos · mediana 3,344 · mejor 11,787",
-     "cinta": "9 videos · mediana 15,396 · mejor 25,600",
-     "vs": "2 videos · mediana 5,500 · mejor 6,176",
-     "goles": "3 videos · mediana 14,798 · mejor 16,825",
-     "balon": "11 videos · mediana 1,094 · mejor 8,592",
-     "rueda": "26 videos · mediana 4,762 · mejor 15,267",
-     "escape": "2 videos · mediana 12,772 · mejor 12,833",
-     "cano": "2 videos · mediana 1,122 · mejor 1,230",
-     "cabezas": "13 videos · mediana 2,117 · mejor 9,115",
-     "dress": "3 videos · mediana 3,206 · mejor 7,033",
-     "circulo": "6 videos · mediana 1,516 · mejor 7,637",
-     "slot": "5 videos · mediana 4,572 · mejor 12,078",
-     "penal": "2 videos · mediana 1,919 · mejor 2,945",
-     "piernas": "2 videos · mediana 1,482 · mejor 1,599",
-     "fitall": "10 videos · mediana 859 · mejor 7,920",
-     "q20balon": "3 videos · mediana 395 · mejor 632",
-     "stop": "38 videos · mediana 1,240 · mejor 8,675",
-     "trayectoria": "1 videos · mediana 449 · mejor 449",
-     "q20costo": "1 videos · mediana 480 · mejor 480",
-     "find": "4 videos · mediana 788 · mejor 1,072",
-     "q20fichaje": "1 videos · mediana 67 · mejor 67",
-     "siuu": "1 videos · mediana 463 · mejor 463",
-     "tridente": "1 videos · mediana 561 · mejor 561",
-     "pared": "2 videos · mediana 578 · mejor 760",
-     "cabeza": "1 videos · mediana 459 · mejor 459",
-     "plinko": "1 videos · mediana 427 · mejor 427",
-     "ring": "1 videos · mediana 537 · mejor 537",
-     "otros": "2 videos · mediana 434 · mejor 564",
-     "carrera": "2 videos · mediana 408 · mejor 495"
+     "cano": "3 videos · mediana 1,175 · mejor 1,184",
+     "anillos": "1 videos · mediana 1,765 · mejor 1,765",
+     "cinta": "10 videos · mediana 15,896 · mejor 24,417",
+     "favorito": "10 videos · mediana 3,338 · mejor 11,325",
+     "vs": "2 videos · mediana 5,984 · mejor 7,287",
+     "goles": "3 videos · mediana 14,387 · mejor 24,645",
+     "balon": "11 videos · mediana 1,083 · mejor 8,277",
+     "rueda": "26 videos · mediana 4,597 · mejor 14,800",
+     "escape": "2 videos · mediana 12,198 · mejor 12,428",
+     "cabezas": "13 videos · mediana 2,086 · mejor 9,040",
+     "dress": "3 videos · mediana 3,132 · mejor 6,978",
+     "circulo": "6 videos · mediana 1,484 · mejor 7,435",
+     "slot": "5 videos · mediana 4,454 · mejor 11,808",
+     "penal": "2 videos · mediana 1,883 · mejor 2,891",
+     "piernas": "2 videos · mediana 1,454 · mejor 1,569",
+     "fitall": "10 videos · mediana 850 · mejor 7,821",
+     "q20balon": "3 videos · mediana 389 · mejor 622",
+     "stop": "38 videos · mediana 1,226 · mejor 8,609",
+     "trayectoria": "1 videos · mediana 443 · mejor 443",
+     "q20costo": "1 videos · mediana 474 · mejor 474",
+     "find": "4 videos · mediana 782 · mejor 1,059",
+     "q20fichaje": "1 videos · mediana 66 · mejor 66",
+     "siuu": "1 videos · mediana 458 · mejor 458",
+     "tridente": "1 videos · mediana 555 · mejor 555",
+     "pared": "2 videos · mediana 572 · mejor 753",
+     "cabeza": "1 videos · mediana 456 · mejor 456",
+     "plinko": "1 videos · mediana 424 · mejor 424",
+     "ring": "1 videos · mediana 534 · mejor 534",
+     "otros": "2 videos · mediana 432 · mejor 561",
+     "carrera": "2 videos · mediana 406 · mejor 493"
     }
    },
-   "fin": "2026-11-27T10:48:49+00:00"
+   "fin": "2026-11-27T19:34:13+00:00"
   },
   "plan": {
    "estado": "ok",
@@ -146,18 +147,18 @@
   "publicacion": {
    "estado": "ok",
    "resumen": {
-    "subidos": 0,
+    "subidos": 4,
     "en_cola": 0,
     "freno": null,
     "errores": [],
-    "total_publicados": 208
+    "total_publicados": 212
    },
-   "inicio": "2026-11-27T10:48:46+00:00",
-   "fin": "2026-11-27T10:48:46+00:00"
+   "inicio": "2026-11-27T19:34:02+00:00",
+   "fin": "2026-11-27T19:34:10+00:00"
   },
   "analytics": {
    "estado": "ok",
-   "fin": "2026-11-27T10:48:56+00:00",
+   "fin": "2026-11-27T19:34:19+00:00",
    "resumen": {
     "videos": 159,
     "por_formato": {
@@ -197,5 +198,5 @@
  },
  "publicados": [],
  "historial": [],
- "actualizado": "2026-11-27T16:45:15+00:00"
+ "actualizado": "2026-11-27T19:34:19+00:00"
 }
