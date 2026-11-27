@@ -1,5 +1,5 @@
 {
- "inicio": "2026-11-28",
+ "inicio": "2026-11-29",
  "grilla": [
   "13:00 prueba",
   "15:00 favorito",
@@ -31,11 +31,6 @@
   }
  },
  "promovidas": {
-  "cabezas": {
-   "fecha": "2026-11-19",
-   "rinde": "mediana 3,349 vs canal 1,948",
-   "videos": 8
-  },
   "slot": {
    "fecha": "2026-11-22",
    "rinde": "mediana 8,460 vs canal 2,188",
@@ -43,27 +38,27 @@
   }
  },
  "puntaje": {
-  "cinta": 246.7,
-  "rueda": 306.1,
-  "stop": 89.6,
-  "cabezas": 155.7,
-  "slot": 111.5,
-  "dress": 166.1,
+  "cinta": 263.8,
+  "rueda": 285.6,
+  "stop": 89.7,
+  "cabezas": 156.1,
+  "slot": 125.2,
+  "dress": 167.6,
   "fitall": 87.5,
-  "escape": 257.3,
-  "balon": 54.3,
-  "favorito": 112.8,
+  "escape": 189.5,
+  "balon": 55.0,
+  "favorito": 95.3,
   "circulo": 70.0,
-  "vs": 107.4,
+  "vs": 106.4,
   "penal": 74.5,
+  "goles": 70.5,
   "find": 37.6,
-  "piernas": 84.3,
+  "piernas": 84.5,
   "pared": 62.2,
   "otros": 54.3,
-  "goles": 50.2,
   "ring": 73.1,
   "carrera": 29.3,
-  "cano": 45.4,
+  "cano": 47.5,
   "cabeza": 136.5,
   "tridente": 73.2,
   "plinko": 41.2,
@@ -75,8 +70,13 @@
  "motor": "cerebro",
  "slots": [
   {
-   "fecha": "2026-11-28",
+   "fecha": "2026-11-29",
    "hora": "13:00",
+   "tipo": "slot"
+  },
+  {
+   "fecha": "2026-11-29",
+   "hora": "15:00",
    "tipo": "favorito",
    "leyendas": true,
    "exp": {
@@ -85,33 +85,23 @@
    }
   },
   {
-   "fecha": "2026-11-28",
-   "hora": "15:00",
-   "tipo": "cabezas",
-   "dur": 6.4,
-   "exp": {
-    "id": "e5_cabezas_duracion",
-    "brazo": 6.4
-   }
-  },
-  {
-   "fecha": "2026-11-28",
+   "fecha": "2026-11-29",
    "hora": "17:00",
-   "tipo": "anillos"
+   "tipo": "escape"
   },
   {
-   "fecha": "2026-11-28",
+   "fecha": "2026-11-29",
    "hora": "20:00",
-   "tipo": "slot"
+   "tipo": "vs"
   },
   {
-   "fecha": "2026-11-28",
+   "fecha": "2026-11-29",
    "hora": "21:30",
    "tipo": "cinta",
    "serie_titulo": "Mbappé on the conveyor 😱 Only one body fits: Neymar or Yamal? #mbappe #neymar #yamal"
   },
   {
-   "fecha": "2026-11-28",
+   "fecha": "2026-11-29",
    "hora": "23:00",
    "tipo": "rueda",
    "titulo_estilo": "vs",
