@@ -1,29 +1,29 @@
 {
- "fecha": "2026-11-26",
+ "fecha": "2026-11-27",
  "canales_seguidos": 80,
- "canales_nuevos": 20,
- "revisados": 166,
- "fuera_de_serie": 390,
+ "canales_nuevos": 28,
+ "revisados": 180,
+ "fuera_de_serie": 403,
  "interacciones": {
   "comentar": {
-   "videos": 95,
-   "mediana": 1763649
+   "videos": 84,
+   "mediana": 1507472
   },
   "ninguna": {
    "videos": 41,
-   "mediana": 1552664
+   "mediana": 1473422
   },
   "pausar": {
-   "videos": 13,
-   "mediana": 1856231
+   "videos": 12,
+   "mediana": 1577296
   },
   "elegir": {
    "videos": 10,
-   "mediana": 2366701
+   "mediana": 1978179
   },
   "adivinar": {
-   "videos": 9,
-   "mediana": 2367066
+   "videos": 8,
+   "mediana": 2311402
   }
  },
  "ideas": [
@@ -76,30 +76,6 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
    "idea_para_nosotros": "Crear un marco interactivo 2D donde una estrella busca a su dupla ideal; el usuario debe pausar el video en el milisegundo exacto en que pasa la foto de su compañero perfecto."
-  },
-  {
-   "id": "vSCSgT8so3c",
-   "canal": "RyukX",
-   "subs": 20300,
-   "nuevo": true,
-   "vistas": 12613697,
-   "ratio": 146.3,
-   "puntaje": 54.13,
-   "nombre_formato": "Spinning Face Puzzle",
-   "mecanica": "Una rueda con recortes de caras de futbolistas gira continuamente sobre la silueta de un cuerpo. El objetivo es pausar el video en el instante preciso en que la cabeza encaja perfectamente con el cuerpo del jugador.",
-   "primer_segundo": "Se observa una rueda giratoria de rostros de la selección de Portugal sobre un cuerpo recortado en el campo de juego.",
-   "por_que_engancha": "Activa la necesidad de precisión y reto visual inmediato al obligar al espectador a pausar en el milisegundo exacto.",
-   "interaccion": "pausar",
-   "jugadores": [
-    "Cristiano Ronaldo",
-    "Bruno Fernandes",
-    "Joao Felix",
-    "Bernardo Silva"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 5,
-   "idea_para_nosotros": "Hacer una rueda giratoria rápida con botas de oro o trofeos donde el espectador deba pausar exactamente cuando la bota encaje con el cuerpo de su superestrella favorita (Messi, Mbappé o Haaland)."
   },
   {
    "id": "cw3-O3X77ro",
@@ -238,28 +214,6 @@
    "idea_para_nosotros": "Hacer un runner de velocidad donde el usuario deba pausar el video exactamente cuando Messi o Mbappé pasen por el portal del 'Balón de Oro' para transformarlos en su versión Prime."
   },
   {
-   "id": "qJJvYQ-o5DE",
-   "canal": "Rono",
-   "subs": 21200,
-   "nuevo": true,
-   "vistas": 8292564,
-   "ratio": 179.1,
-   "puntaje": 45.06,
-   "nombre_formato": "Player Customization Challenge",
-   "mecanica": "Elementos visuales como gafas, cadenas y peinados caen secuencialmente sobre las imágenes de Cristiano Ronaldo y Lamine Yamal. Con cada accesorio añadido, la apariencia de ambos cambia al ritmo de la música.",
-   "primer_segundo": "Se ven las imágenes de Cristiano Ronaldo y Lamine Yamal rapados mientras bajan unas gafas de sol.",
-   "por_que_engancha": "La transformación progresiva y graciosa de los jugadores despierta curiosidad por ver el look final.",
-   "interaccion": "elegir",
-   "jugadores": [
-    "Cristiano Ronaldo",
-    "Lamine Yamal"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Crear un minijuego donde varios elementos caen a gran velocidad y el espectador debe pausar el video en el momento exacto en que su jugador favorito obtiene el peinado u outfit correcto."
-  },
-  {
    "id": "M2nAkVqx0G0",
    "canal": "RyukX",
    "subs": 20300,
@@ -282,38 +236,6 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
    "idea_para_nosotros": "Podemos hacer una tragamonedas con tres rodillos independientes donde el usuario deba pausar para formar el tridente ofensivo perfecto de su equipo favorito."
-  },
-  {
-   "id": "XG1Q4kxVk5M",
-   "canal": "V1m7n",
-   "subs": 9270,
-   "nuevo": true,
-   "vistas": 1109717,
-   "ratio": 153.3,
-   "puntaje": 43.71,
-   "nombre_formato": "GTA Football Trios",
-   "mecanica": "Muestra tríos de futbolistas estrella ilustrados al estilo de portadas del videojuego GTA según su época. Transita mediante un efecto de escáner desde las estrellas actuales hasta leyendas del pasado.",
-   "primer_segundo": "Aparecen Haaland, Mbappé y Lamine Yamal vestidos al estilo GTA VI con el logotipo del juego en el centro.",
-   "por_que_engancha": "Combina la estética icónica de la saga GTA con la nostalgia y comparación de tríos legendarios del fútbol.",
-   "interaccion": "comentar",
-   "jugadores": [
-    "Erling Haaland",
-    "Kylian Mbappé",
-    "Lamine Yamal",
-    "Lionel Messi",
-    "Cristiano Ronaldo",
-    "Neymar Jr",
-    "Ronaldinho",
-    "Ronaldo Nazário",
-    "Zinedine Zidane",
-    "Diego Maradona",
-    "Johan Cruyff",
-    "Pelé"
-   ],
-   "usa_clips_reales": false,
-   "replicable_con_codigo": 5,
-   "encaja_con_nuestra_logica": 4,
-   "idea_para_nosotros": "Podemos crear un juego de pausa rápida donde 3 caras de jugadores estilo GTA cambian a gran velocidad y el usuario debe pausar en el momento exacto para armar un trío perfecto de la misma era."
   },
   {
    "id": "Pp9ZQySFyls",
@@ -380,78 +302,147 @@
    "replicable_con_codigo": 5,
    "encaja_con_nuestra_logica": 5,
    "idea_para_nosotros": "Hacer un desafío de 'botines misteriosos' cayendo desde arriba donde el espectador deba pausar para vestir a los jugadores con los botines correctos de su marca."
+  },
+  {
+   "id": "iJ8qMk1knN0",
+   "canal": "TIFOO",
+   "subs": 7940,
+   "nuevo": false,
+   "vistas": 779802,
+   "ratio": 93.8,
+   "puntaje": 39.44,
+   "nombre_formato": "Player Trophy Comparison",
+   "mecanica": "Compara consecutivamente los 6 grandes trofeos del fútbol ganados por Yamal, Messi, Mbappé y Ronaldo. Muestra a cada jugador en pantalla mientras se van contando sus trofeos individuales y colectivos.",
+   "primer_segundo": "Se ven las imágenes de 4 futbolistas con marcador 0 y Lamine Yamal posando frente a 6 trofeos.",
+   "por_que_engancha": "Despierta el debate entre fanáticos al comparar directamente los logros históricos de leyendas contra jóvenes promesas.",
+   "interaccion": "comentar",
+   "jugadores": [
+    "Lamine Yamal",
+    "Lionel Messi",
+    "Kylian Mbappé",
+    "Cristiano Ronaldo"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer un juego interactivo de 'Crea tu Palmarés': una cinta veloz de trofeos donde el espectador debe pausar para asignarle un trofeo al azar a Messi o Ronaldo y ver quién junta más puntos."
+  },
+  {
+   "id": "QgzsGeXoPKY",
+   "canal": "Cris07",
+   "subs": 6570,
+   "nuevo": true,
+   "vistas": 2743605,
+   "ratio": 91.1,
+   "puntaje": 39.19,
+   "nombre_formato": "Guess Who Won",
+   "mecanica": "Cuatro personas disfrazadas lanzan pelotas de baloncesto hacia un aro central. Se revela una competencia final entre Ronaldo y Messi pidiendo like o comentario.",
+   "primer_segundo": "Se ven las caricaturas de Ronaldo, Ishowspeed, Messi y Neymar arriba con el texto 'GUESS WHO WON'.",
+   "por_que_engancha": "Combina la curiosidad de adivinar el ganador con la rivalidad clásica entre Ronaldo y Messi.",
+   "interaccion": "adivinar",
+   "jugadores": [
+    "Ronaldo",
+    "Messi",
+    "Neymar",
+    "Ishowspeed"
+   ],
+   "usa_clips_reales": false,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Hacer una ruleta animada en 2D con fotos reales de Ronaldo, Messi, Neymar y Mbappé donde el espectador deba pausar para elegir al ganador definitivo de un Balón de Oro."
+  },
+  {
+   "id": "ejdBRLrQy6A",
+   "canal": "ᴘᴇɴᴀʟᴛʏ ᴛɪᴍᴇ ",
+   "subs": 95200,
+   "nuevo": true,
+   "vistas": 3432259,
+   "ratio": 84.0,
+   "puntaje": 38.49,
+   "nombre_formato": "Interactive Penalty Pick",
+   "mecanica": "Un jugador se prepara para patear un penal con la portería dividida en dos opciones con botones animados. El usuario debe elegir un lado y pausar antes de que el temporizador venza.",
+   "primer_segundo": "Un jugador de fútbol parado frente al balón listo para ejecutar un penal.",
+   "por_que_engancha": "Genera urgencia e interactividad inmediata al combinar la tensión del penal con un temporizador dinámico.",
+   "interaccion": "pausar",
+   "jugadores": [
+    "Eduardo Camavinga"
+   ],
+   "usa_clips_reales": true,
+   "replicable_con_codigo": 5,
+   "encaja_con_nuestra_logica": 4,
+   "idea_para_nosotros": "Crear una animación 2D de una tanda de penaltis donde una diana móvil cambia entre dos superestrellas y el usuario debe pausar exactamente cuando la diana encaje en el ángulo de su jugador preferido."
   }
  ],
  "sin_analizar": [
   {
-   "id": "Edy65LqhEtI",
-   "canal": "Ballex",
-   "vistas": 2175046,
-   "ratio": 24.3,
-   "titulo": "Real Madrid’s Comeback Today 😮‍💨 #shorts #football"
+   "id": "BeY_ZU_1Cl4",
+   "canal": "FM AYUSH LIVE",
+   "vistas": 3160586,
+   "ratio": 56.2,
+   "titulo": "Messi vs Bellingham vs Ronaldo 😱🏆 ONE WRONG CHOICE! ⚽🔥 #shorts"
   },
   {
-   "id": "4wM-2AOqDkw",
-   "canal": "ROYAL GAMING",
-   "vistas": 627510,
-   "ratio": 90.9,
-   "titulo": "Who is stronger? #babyduck #shorts"
+   "id": "9XFZaTnwBGE",
+   "canal": "Run Fcc ",
+   "vistas": 1825721,
+   "ratio": 24.5,
+   "titulo": "Mbappe x Yamal skills 🤡🔥🥅"
+  },
+  {
+   "id": "2Mq5wdHsUCQ",
+   "canal": "FootyMorph ",
+   "vistas": 856125,
+   "ratio": 28.8,
+   "titulo": "Ronaldo vs Yamal – WHO WINS THE OUTFIT BATTLE? 🔥#viral #football #footballchallenge"
   },
   {
    "id": "b5escSbWF2w",
    "canal": "Ntzin.editx77",
-   "vistas": 757848,
-   "ratio": 83.9,
+   "vistas": 762825,
+   "ratio": 81.4,
    "titulo": "Eai Jogador? #editrend #edit #neymar #shorts #prime #foryou #Messi #cr7 #viral #football #interativo"
-  },
-  {
-   "id": "BeY_ZU_1Cl4",
-   "canal": "FM AYUSH LIVE",
-   "vistas": 3051233,
-   "ratio": 54.5,
-   "titulo": "Messi vs Bellingham vs Ronaldo 😱🏆 ONE WRONG CHOICE! ⚽🔥 #shorts"
   },
   {
    "id": "t4S_eqcXMR4",
    "canal": "Proyecto1mp4",
-   "vistas": 1169028,
-   "ratio": 68.6,
+   "vistas": 1193610,
+   "ratio": 68.0,
    "titulo": "Prime Nico Paz 🐐🐐 #shorts #futbol #nicopaz"
   },
   {
-   "id": "mosNoPKj-Ys",
-   "canal": "FutXFiles",
-   "vistas": 943739,
-   "ratio": 26.6,
-   "titulo": "¡LAMINE YAMAL ES DEL MADRID! 😱 PEDRI DESCUBRE SU SECRETO 😂#shorts"
+   "id": "4wM-2AOqDkw",
+   "canal": "ROYAL GAMING",
+   "vistas": 658664,
+   "ratio": 81.7,
+   "titulo": "Who is stronger? #babyduck #shorts"
   },
   {
-   "id": "iG1iaLyGZKE",
-   "canal": "Aerooo 🚀",
-   "vistas": 7135087,
-   "ratio": 17.2,
-   "titulo": "Ronaldo x Yamal Skills 🔥😅👀"
-  },
-  {
-   "id": "KbHmnufGCjo",
-   "canal": "Volture",
-   "vistas": 5493381,
-   "ratio": 17.6,
-   "titulo": "A Adidas fez propaganda da Nike sem querer 💀"
-  },
-  {
-   "id": "-On26Dwy1-I",
-   "canal": "Arun Art 07",
-   "vistas": 1988059,
-   "ratio": 52.4,
-   "titulo": "True friendship #craft #diy #art #drawing #friendship #sketch #shorts"
+   "id": "rlCqd-J5Wa8",
+   "canal": "Blockstalks",
+   "vistas": 2324193,
+   "ratio": 55.4,
+   "titulo": "Bro pressed Marlon 😭😭 #football #edit #shorts"
   },
   {
    "id": "QsEFxbbFFBE",
    "canal": "Voice of Tamil Paiyan",
-   "vistas": 2788298,
-   "ratio": 47.5,
+   "vistas": 3097548,
+   "ratio": 50.4,
    "titulo": "நீ பண்ணுமா 😂 #funny #collegelifememes #comedy #clgfun #memes #cricket #football #funnymemes"
+  },
+  {
+   "id": "mosNoPKj-Ys",
+   "canal": "FutXFiles",
+   "vistas": 948240,
+   "ratio": 25.9,
+   "titulo": "¡LAMINE YAMAL ES DEL MADRID! 😱 PEDRI DESCUBRE SU SECRETO 😂#shorts"
+  },
+  {
+   "id": "KbHmnufGCjo",
+   "canal": "Volture",
+   "vistas": 5619761,
+   "ratio": 17.0,
+   "titulo": "A Adidas fez propaganda da Nike sem querer 💀"
   }
  ]
 }
