@@ -1,5 +1,5 @@
 {
- "fecha": "2026-11-27 20:40",
+ "fecha": "2026-11-27 21:27",
  "tareas": [
   {
    "id": "ola-X2pLfT-C7AQ",
@@ -19,22 +19,6 @@
    "prioridad": 2,
    "tipo": "GERENTE",
    "que": "Construir e implementar el nuevo formato «Photo Frame Silhouette Fit»: un marco con la silueta del Balón de Oro por donde pasan cabezas recortadas de superestrellas a gran velocidad para pausar en el segundo exacto."
-  },
-  {
-   "id": "recambio-2026-11-27",
-   "prioridad": 3,
-   "tipo": "RECAMBIO",
-   "que": "Hay 5 formatos fuertes en rotación (cinta, goles, escape, rueda, slot) y se cansan balon. Construir un formato nuevo de la misma lógica (elegir entre superestrellas + parar justo), más difícil o con otra vuelta, como propuesta con muestra. Mirar primero el informe (reports/dossier/) por ideas.",
-   "fuertes": [
-    "cinta",
-    "goles",
-    "escape",
-    "rueda",
-    "slot"
-   ],
-   "cansados": [
-    "balon"
-   ]
   }
  ]
 }
