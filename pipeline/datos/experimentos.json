@@ -14,13 +14,13 @@
    "medicion": {
     "\"vs\"": {
      "videos": 7,
-     "vistas_48h_esperadas": 5061,
+     "vistas_48h_esperadas": 4992,
      "p_mejor": 0.67
     },
     "\"find\"": {
      "videos": 0,
-     "vistas_48h_esperadas": 3753,
-     "p_mejor": 0.33
+     "vistas_48h_esperadas": 3721,
+     "p_mejor": 0.34
     }
    }
   },
@@ -38,12 +38,12 @@
    "medicion": {
     "true": {
      "videos": 8,
-     "vistas_48h_esperadas": 3212,
+     "vistas_48h_esperadas": 3188,
      "p_mejor": 0.48
     },
     "false": {
      "videos": 0,
-     "vistas_48h_esperadas": 3310,
+     "vistas_48h_esperadas": 3278,
      "p_mejor": 0.52
     }
    }
@@ -62,12 +62,12 @@
    "medicion": {
     "6.4": {
      "videos": 4,
-     "vistas_48h_esperadas": 2334,
+     "vistas_48h_esperadas": 2324,
      "p_mejor": 0.47
     },
     "8.0": {
      "videos": 0,
-     "vistas_48h_esperadas": 2513,
+     "vistas_48h_esperadas": 2500,
      "p_mejor": 0.53
     }
    }
