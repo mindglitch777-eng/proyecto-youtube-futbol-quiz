@@ -37,7 +37,7 @@
    "engagedViews": 13711,
    "estimatedMinutesWatched": 3047,
    "averageViewDuration": 11,
-   "averageViewPercentage": 160.99,
+   "averageViewPercentage": 160.89,
    "likes": 274,
    "comments": 1,
    "shares": 1,
@@ -292,7 +292,7 @@
    "engagedViews": 9666,
    "estimatedMinutesWatched": 2012,
    "averageViewDuration": 10,
-   "averageViewPercentage": 155.95,
+   "averageViewPercentage": 156.05,
    "likes": 192,
    "comments": 1,
    "shares": 2,
@@ -487,7 +487,7 @@
    "engagedViews": 7272,
    "estimatedMinutesWatched": 1614,
    "averageViewDuration": 11,
-   "averageViewPercentage": 142.02,
+   "averageViewPercentage": 142.06,
    "likes": 86,
    "comments": 2,
    "shares": 1,
@@ -607,7 +607,7 @@
    "engagedViews": 4570,
    "estimatedMinutesWatched": 1490,
    "averageViewDuration": 14,
-   "averageViewPercentage": 201.71,
+   "averageViewPercentage": 201.66,
    "likes": 166,
    "comments": 3,
    "shares": 2,
@@ -907,7 +907,7 @@
    "engagedViews": 2036,
    "estimatedMinutesWatched": 578,
    "averageViewDuration": 12,
-   "averageViewPercentage": 176.69,
+   "averageViewPercentage": 176.66,
    "likes": 91,
    "comments": 0,
    "shares": 0,
@@ -1372,7 +1372,7 @@
    "engagedViews": 1085,
    "estimatedMinutesWatched": 277,
    "averageViewDuration": 11,
-   "averageViewPercentage": 165.4,
+   "averageViewPercentage": 165.38,
    "likes": 73,
    "comments": 0,
    "shares": 1,
@@ -1552,7 +1552,7 @@
    "engagedViews": 854,
    "estimatedMinutesWatched": 207,
    "averageViewDuration": 10,
-   "averageViewPercentage": 151.1,
+   "averageViewPercentage": 151.15,
    "likes": 41,
    "comments": 0,
    "shares": 0,
@@ -1762,7 +1762,7 @@
    "engagedViews": 830,
    "estimatedMinutesWatched": 202,
    "averageViewDuration": 11,
-   "averageViewPercentage": 144.99,
+   "averageViewPercentage": 145.11,
    "likes": 11,
    "comments": 1,
    "shares": 0,
@@ -8184,7 +8184,60 @@
   ]
  },
  "canal": {
-  "trafico": [],
+  "trafico": [
+   {
+    "insightTrafficSourceType": "SHORTS",
+    "views": 1325319
+   },
+   {
+    "insightTrafficSourceType": "YT_SEARCH",
+    "views": 48220
+   },
+   {
+    "insightTrafficSourceType": "YT_CHANNEL",
+    "views": 7617
+   },
+   {
+    "insightTrafficSourceType": "YT_OTHER_PAGE",
+    "views": 1313
+   },
+   {
+    "insightTrafficSourceType": "PLAYLIST",
+    "views": 324
+   },
+   {
+    "insightTrafficSourceType": "SOUND_PAGE",
+    "views": 291
+   },
+   {
+    "insightTrafficSourceType": "HASHTAGS",
+    "views": 272
+   },
+   {
+    "insightTrafficSourceType": "SUBSCRIBER",
+    "views": 136
+   },
+   {
+    "insightTrafficSourceType": "NO_LINK_OTHER",
+    "views": 127
+   },
+   {
+    "insightTrafficSourceType": "NOTIFICATION",
+    "views": 55
+   },
+   {
+    "insightTrafficSourceType": "RELATED_VIDEO",
+    "views": 25
+   },
+   {
+    "insightTrafficSourceType": "EXT_URL",
+    "views": 21
+   },
+   {
+    "insightTrafficSourceType": "IMMERSIVE_LIVE",
+    "views": 9
+   }
+  ],
   "paises": [
    {
     "country": "US",
@@ -8583,7 +8636,7 @@
     "day": "2026-11-23",
     "views": 48878,
     "subscribersGained": 35,
-    "averageViewPercentage": 143.9
+    "averageViewPercentage": 143.86
    },
    {
     "day": "2026-11-24",
