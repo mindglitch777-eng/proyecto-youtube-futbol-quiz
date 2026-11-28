@@ -1,12 +1,16 @@
 {
  "limpia": {
-  "videos": 0
+  "videos": 1,
+  "relativo": 1.24,
+  "mediana_48h": 7521,
+  "pct_visto": 140.9,
+  "comentarios": 2
  },
  "normal": {
-  "videos": 2,
-  "relativo": 2.04,
-  "mediana_48h": 7108,
-  "pct_visto": 174.9,
+  "videos": 3,
+  "relativo": 1.2,
+  "mediana_48h": 13053,
+  "pct_visto": 168.7,
   "comentarios": 0
  },
  "veredicto": "en curso"
